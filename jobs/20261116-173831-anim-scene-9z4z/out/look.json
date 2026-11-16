@@ -8,12 +8,5 @@
   "14.51"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s023",
-   "text": "हिस्सा / दूसरे postal",
-   "t": 2.93
-  }
- ]
+ "warnings": []
 }
