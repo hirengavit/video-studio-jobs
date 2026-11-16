@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s036" data-in="cut" data-section="PART 3 · REGULATION 22" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="section-topic">
+      <rect x="747" y="176" width="1058" height="184" rx="25" fill="#9e1b1b"/>
+      <text x="1276" y="250" font-family="Inter,sans-serif" text-anchor="middle" font-size="78" font-weight="750" fill="white">Regulation 22</text>
+      <text id="reg-hi" x="1276" y="319" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="54" font-weight="580" fill="#fde9a6">posting के तरीके</text>
+    </g>
+    <g id="letter-box-hero">
+      <g transform="rotate(1 387 556)">
+        <rect x="218" y="206" width="339" height="693" rx="8" fill="#e1d3b5"/>
+        <rect x="209" y="195" width="339" height="693" rx="8" fill="white" stroke="#ead9a8" stroke-width="3"/>
+        <image href="photo:india-post-letter-box-cutout" x="243" y="212" width="271" height="658" preserveAspectRatio="xMidYMid meet"/>
+      </g>
+      <text x="381" y="942" font-family="Inter,sans-serif" text-anchor="middle" font-size="32" font-weight="540" fill="#6f6a63">Suyash.dwivedi · CC BY-SA 4.0</text>
+    </g>
+    <g id="grid">
+      <rect x="752" y="470" width="514" height="110" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="1290" y="470" width="514" height="110" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="752" y="592" width="514" height="110" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M1308 592 H1786 Q1804 592 1804 610 V894 Q1804 912 1786 912 H770 Q752 912 752 894 V732 Q752 714 770 714 H1272 Q1290 714 1290 696 V610 Q1290 592 1308 592 Z" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    </g>
+    <g id="letters">
+      <text x="1009" y="516" fill="#9e1b1b" text-anchor="middle" font-family="Inter, sans-serif" font-size="47" font-weight="800">Letters</text>
+      <text id="letters-hi" x="1009" y="566" fill="#6f6a63" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650">पत्र</text>
+    </g>
+    <g id="cards">
+      <text x="1547" y="516" fill="#9e1b1b" text-anchor="middle" font-family="Inter, sans-serif" font-size="47" font-weight="800">Cards</text>
+      <text id="cards-hi" x="1547" y="566" fill="#6f6a63" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650">कार्ड</text>
+    </g>
+    <g id="others">
+      <path d="M1308 592 H1786 Q1804 592 1804 610 V894 Q1804 912 1786 912 H770 Q752 912 752 894 V732 Q752 714 770 714 H1272 Q1290 714 1290 696 V610 Q1290 592 1308 592 Z" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1334" y="819" fill="#2b2622" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="750">छपी डाक की बाकी श्रेणियाँ</text>
+    </g>
+    <g id="literature">
+      <rect x="753" y="593" width="512" height="108" rx="17" fill="#fde9a6"/>
+      <text x="1009" y="639" fill="#2b2622" text-anchor="middle" textLength="468" lengthAdjust="spacingAndGlyphs" font-family="Inter, sans-serif" font-size="44" font-weight="800">Literature for the blind</text>
+      <text id="literature-hi" x="1009" y="689" fill="#8a5d00" text-anchor="middle" textLength="405" lengthAdjust="spacingAndGlyphs" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="680">दृष्टिहीनों के लिए साहित्य</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.00, 'pop', '#grid', {from: 0.99, spring: 'fast'}],
+      [1.58, 'fade', '#letters', {dur: 0.20}],
+      [2.08, 'fade', '#letters-hi', {dur: 0.16}],
+      [3.24, 'fade', '#cards', {dur: 0.20}],
+      [3.74, 'fade', '#cards-hi', {dur: 0.16}],
+      [4.44, 'fade', '#others', {dur: 0.20}],
+      [6.70, 'pulse', '#letters', {amount: 0.05}],
+      [7.90, 'fade', '#literature', {dur: 0.19}],
+      [8.40, 'fade', '#literature-hi', {dur: 0.16}],
+    ],
+  }
+  </script>
+</section>
