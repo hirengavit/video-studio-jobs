@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s015" data-in="cut" data-section="PAYMENT OF POSTAGE" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" fill="none">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="hold">
+      <rect x="96" y="194" width="1728" height="770" rx="38" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="154" y="264" width="12" height="77" rx="6" fill="#f2b705"/>
+      <text x="196" y="325" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="76" font-weight="750" fill="#9e1b1b">बकाया तय करने के लिए</text>
+      <path d="M171 841H1742" stroke="#ead9a8" stroke-width="5" stroke-linecap="round"/>
+      <path id="stop" d="M1507 542V841" stroke="#4b4f58" stroke-width="24" stroke-linecap="round"/>
+      <g id="tagged-parcel">
+        <use href="piece:parcel-with-tag" transform="translate(170 405) scale(1.55)"/>
+        <path d="M571 704Q596 698 638 712" stroke="#8f744f" stroke-width="7" stroke-linecap="round"/>
+        <path d="M641 676H1007Q1021 676 1021 690V778Q1021 792 1007 792H641L607 734Z" fill="#fff" stroke="#2b2622" stroke-width="4" stroke-linejoin="round"/>
+        <circle cx="637" cy="734" r="8" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+        <text x="829" y="751" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="725" fill="#2b2622">Unpaid / कम paid</text>
+      </g>
+      <g id="hold-stamp">
+        <rect x="1049" y="414" width="570" height="112" rx="17" fill="#fff" stroke="#9e1b1b" stroke-width="6"/>
+        <text x="1334" y="489" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="66" font-weight="800" fill="#9e1b1b">रोका जा सकता है</text>
+      </g>
+    </g>
+    <g id="nosec">
+      <rect x="96" y="194" width="1728" height="770" rx="38" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="155" y="448" width="737" height="180" rx="26" fill="#f3ead6"/>
+      <text x="523" y="560" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="79" font-weight="750" fill="#9e1b1b">देय रकम बाकी</text>
+      <path d="M1330 253C1460 332 1580 356 1700 363V541C1700 716 1542 848 1330 921C1118 848 960 716 960 541V363C1080 356 1200 332 1330 253Z" fill="#f3ead6" stroke="#4b4f58" stroke-width="7" stroke-linejoin="round"/>
+      <g id="extra-security">
+        <text x="1330" y="558" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="#2b2622">Extra security</text>
+      </g>
+      <g id="no-security">
+        <path d="M1297 385L1363 451M1363 385L1297 451" stroke="#4b4f58" stroke-width="18" stroke-linecap="round"/>
+        <text x="1330" y="681" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="67" font-weight="800" fill="#4b4f58">नहीं मिलती</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#hold'], [5.50, '#nosec']],
+    on: [
+      [3.66, 'fade', '#stop', {dur: 0.16}],
+      [3.66, 'move', '#tagged-parcel', {by: [474, 0], spring: 'fast'}],
+      [4.05, 'stamp', '#hold-stamp', {from: 1.14, rot: -3, spring: 'fast'}],
+      [7.44, 'fade', '#extra-security', {dur: 0.18}],
+      [8.35, 'fade', '#no-security', {dur: 0.16}],
+    ],
+  }
+  </script>
+</section>
