@@ -31,6 +31,10 @@
     <text x="206" y="571" font-size="37" font-weight="690" fill="#6f6a63"><tspan font-family="Inter, sans-serif">bottle · flask · </tspan><tspan font-family="Noto Sans Devanagari, Inter, sans-serif">कोई ठीक </tspan><tspan font-family="Inter, sans-serif">container</tspan></text>
   </g>
   <g id="step2-badge"><circle cx="154" cy="635" r="31" fill="#9e1b1b"/><text x="154" y="652" text-anchor="middle" font-family="Inter, sans-serif" font-size="47" font-weight="850" fill="#fff">2</text></g>
+  <g id="step2-marks" fill="#f2b705" fill-opacity=".35" aria-hidden="true">
+    <rect id="step2-metal" x="415" y="600" width="140" height="65" rx="4"/>
+    <rect id="step2-wood" x="615" y="600" width="126" height="65" rx="4"/>
+  </g>
   <text id="step2-text" x="206" y="651" font-family="Inter, Noto Sans Devanagari, sans-serif" font-size="48" font-weight="790" fill="#2b2622">दूसरा पात्र: metal या लकड़ी का box</text>
   <g id="step3-badge"><circle cx="154" cy="727" r="31" fill="#9e1b1b"/><text x="154" y="744" text-anchor="middle" font-family="Inter, sans-serif" font-size="47" font-weight="850" fill="#fff">3</text></g>
   <text id="step3-text" x="206" y="743" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48" font-weight="790" fill="#2b2622">बीच में जगह</text>
@@ -45,9 +49,9 @@
   on:[
     [0,'pop','#step2-badge',{from:.83}],
     [.86,'type','#step2-text',{cps:23}],
-    [3.62,'highlight','#step2-text',{words:'metal',color:'#f2b705',opacity:.35,dur:.36,pad:3}],
+    [3.62,'reveal','#step2-metal',{from:'left',dur:.36}],
     [3.62,'pulse','#box',{amount:.035}],
-    [5.38,'highlight','#step2-text',{words:'लकड़ी',color:'#f2b705',opacity:.35,dur:.36,pad:3}],
+    [5.38,'reveal','#step2-wood',{from:'left',dur:.36}],
     [7.06,'pop','#step3-badge',{from:.83}],
     [8.12,'type','#step3-text',{cps:24}],
     [9.36,'draw','#gap-left',{dur:.34}],
