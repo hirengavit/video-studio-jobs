@@ -33,7 +33,7 @@
           <rect x="1426" y="364" width="330" height="96" rx="15" fill="#9e1b1b"/>
           <rect x="1436" y="374" width="310" height="76" rx="9" fill="none" stroke="#f3ead6" stroke-width="3" stroke-dasharray="3 8" stroke-linecap="round"/>
           <text id="hsg-500" x="1460" y="431" font-family="Inter,sans-serif" font-size="68" font-weight="830" fill="#fff">500</text>
-          <text x="1595" y="428" font-family="Inter,sans-serif" font-size="42" font-weight="730" fill="#fde9a6">articles</text>
+          <text x="1613" y="428" font-family="Inter,sans-serif" font-size="39" font-weight="730" fill="#fde9a6">articles</text>
         </g>
       </g>
       <text id="minimum-label" x="960" y="1009" text-anchor="middle" font-family="Inter,sans-serif" font-size="47" font-weight="690" fill="#6f6a63">minimum</text>
@@ -110,15 +110,15 @@
     <g id="minimum-trap">
       <rect x="120" y="959" width="1000" height="89" rx="20" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
       <text x="162" y="1018" class="hi" font-size="48" font-weight="770" fill="#2b2622">HSG: <tspan fill="#9e1b1b">500</tspan> · छोटे town का</text>
-      <text id="trap-250" x="799" y="1018" font-family="Inter,sans-serif" font-size="50" font-weight="800" fill="#4b4f58">250</text>
-      <text x="911" y="1018" class="hi" font-size="48" font-weight="770" fill="#4b4f58">नहीं</text>
+      <text id="trap-250" x="758" y="1018" font-family="Inter,sans-serif" font-size="50" font-weight="800" fill="#4b4f58">250</text>
+      <text x="875" y="1018" class="hi" font-size="48" font-weight="770" fill="#4b4f58">नहीं</text>
     </g>
   </svg>
   <script type="text/scene">
     {on: [
       [0.00, 'fade', '#hsg-grey', {dur: 0.24}],
       [1.30, 'stamp', '#min-3', {from: 1.10, rot: -2, spring: 'soft'}],
-      [5.76, 'pulse', '#hsg-500', {amount: 0.09, dur: 0.55}],
+      [5.76, 'pulse', '#hsg-500', {amount: 0.09}],
       [7.36, 'out', '#minimum-label', {dur: 0.12, scale: 1}],
       [7.48, 'fade', '#minimum-trap', {dur: 0.25}],
       [8.24, 'strike', '#trap-250', {color: '#4b4f58', width: 6, dur: 0.22, dim: 0.82}]
