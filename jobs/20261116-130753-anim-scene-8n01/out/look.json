@@ -10,22 +10,119 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "mostly-empty",
+   "kind": "error",
    "scene": "s007",
-   "message": "a card is mostly empty at 7.9 s: bring its items in sooner, or size it for what it holds now",
-   "t": 7.86
+   "message": "Failed to execute 'querySelectorAll' on 'Element': 'M192 340H1728Q1760 340 1760 372V908Q1760 940 1728 940H192Q160 940 160 908V372Q160 340 192 340Z' is not a valid selector.",
+   "t": 0.3
   },
   {
-   "kind": "mostly-empty",
+   "kind": "text-overlap",
    "scene": "s007",
-   "message": "a card is mostly empty at 10.5 s: bring its items in sooner, or size it for what it holds now",
-   "t": 10.48
+   "text": "1 / 1",
+   "t": 0.3
   },
   {
-   "kind": "mostly-empty",
+   "kind": "text-overlap",
    "scene": "s007",
-   "message": "a card is mostly empty at 12.9 s: bring its items in sooner, or size it for what it holds now",
-   "t": 12.95
+   "text": "2 / 2",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "3 / 3",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "4 / 4",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "5 / 5",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "6 / 6",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "7 / 7",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "Part 3 / Part 4",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "Part 3 / Part 5",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "Regulation 22 / Bulk cash prepayment",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "Regulation 22 / Regulation 95",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "विनियम 22 / थोक नकद अग्रिम भुगतान",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "विनियम 22 / विनियम 95",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "कौन सा item कहाँ post हो / Newspapers: posting without prepayment",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "Part 4 / Part 5",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "Bulk cash prepayment / Regulation 95",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "थोक नकद अग्रिम भुगतान / विनियम 95",
+   "t": 0.3
+  },
+  {
+   "kind": "low-contrast",
+   "scene": "s007",
+   "text": "3 (1.9:1) / 5 (1.8:1) / 4 (1.9:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
   }
  ]
 }
