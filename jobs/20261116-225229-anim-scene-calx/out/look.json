@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "2.08",
+  "4.15",
+  "6.23",
+  "8.30",
+  "10.23"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-off-frame",
+   "scene": "s186",
+   "text": "Post Office बंद",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s186",
+   "text": "Notified booking hours / तय booking समय",
+   "t": 8.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s186",
+   "text": "Dispatch arrangements / dispatch व्यवस्था",
+   "t": 10.23
+  }
+ ]
+}
