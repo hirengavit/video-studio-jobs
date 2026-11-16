@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "1.99",
+  "3.98",
+  "5.96",
+  "7.95",
+  "9.79"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s051",
+   "text": "PACKING SPECIFICATION / India Post Parcel · पैकिंग मानक",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s051",
+   "message": "a card is mostly empty at 2.0 s: bring its items in sooner, or size it for what it holds now",
+   "t": 1.99
+  }
+ ]
+}
