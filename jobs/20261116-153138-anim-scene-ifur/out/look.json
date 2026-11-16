@@ -8,12 +8,5 @@
   "10.11"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s080",
-   "text": "एक बार में 500 से ज़्यादा copies",
-   "t": 4.1
-  }
- ]
+ "warnings": []
 }
