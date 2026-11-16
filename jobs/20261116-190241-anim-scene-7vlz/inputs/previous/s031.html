@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s031" data-in="cut" data-section="DATE STAMPS" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="booking-office">
+      <rect x="84" y="178" width="560" height="462" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:post-office-front" transform="translate(169 191) scale(0.93)"/>
+      <g id="booking-title">
+        <text x="364" y="549" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="700" fill="#9e1b1b">Booking / Posting office</text>
+        <text id="booking-hi" x="364" y="610" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="500" fill="#6f6a63">बुकिंग कार्यालय</text>
+      </g>
+    </g>
+    <g id="destination-office">
+      <rect x="1276" y="178" width="560" height="462" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:post-office-front" transform="translate(1361 191) scale(0.93)"/>
+      <g id="destination-title">
+        <text x="1556" y="549" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="#9e1b1b">Destination office</text>
+        <text id="destination-hi" x="1556" y="610" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="500" fill="#6f6a63">गंतव्य कार्यालय</text>
+      </g>
+    </g>
+
+    <g id="route" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M364 740H1556" stroke="#d1bf96" stroke-width="12"/>
+      <path d="M511 740H1424 M1393 714L1424 740L1393 766" stroke="#9e1b1b" stroke-width="5"/>
+      <path d="M364 642V740 M1556 642V740" stroke="#d1bf96" stroke-width="5" stroke-dasharray="8 10"/>
+      <circle cx="364" cy="740" r="14" fill="#fbf7ee" stroke="#9e1b1b" stroke-width="4"/>
+      <circle cx="1556" cy="740" r="14" fill="#fbf7ee" stroke="#9e1b1b" stroke-width="4"/>
+    </g>
+
+    <g id="travelling-mail">
+      <use href="piece:envelope-article" transform="translate(164 540) scale(1)"/>
+      <rect x="238" y="660" width="252" height="89" rx="3" fill="white"/>
+      <path d="M247 672V807" stroke="#9e1b1b" stroke-width="8"/>
+      <g id="booking-mark"><g fill="none" stroke="#2b2622" stroke-width="3.4" opacity=".85"><circle cx="314" cy="701" r="34.6"/><circle cx="314" cy="701" r="30.9"/><rect x="287.7" y="693.9" width="52.5" height="14.1" rx="1.5"/></g><use href="piece:postal-date-stamp" transform="translate(275 662) scale(0.26)"/></g>
+      <g id="destination-mark"><g fill="none" stroke="#2b2622" stroke-width="3.4" opacity=".85"><circle cx="405" cy="701" r="34.6"/><circle cx="405" cy="701" r="30.9"/><rect x="378.7" y="693.9" width="52.5" height="14.1" rx="1.5"/></g><use href="piece:postal-date-stamp" transform="translate(366 662) scale(0.26)"/></g>
+    </g>
+
+    <g id="additional-mark">
+      <circle cx="961" cy="740" r="55" fill="#fbf7ee" stroke="#6f6a63" stroke-width="5" stroke-dasharray="9 8"/>
+      <path d="M937 740H985" fill="none" stroke="#6f6a63" stroke-width="4" stroke-dasharray="6 5"/>
+      <text x="961" y="843" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#6f6a63">और मुहरें भी</text>
+    </g>
+    <g id="minimum">
+      <rect x="750" y="881" width="420" height="101" rx="22" fill="#9e1b1b"/>
+      <text x="960" y="955" text-anchor="middle" font-family="Inter, sans-serif" font-size="79" font-weight="700" fill="#fff">≥ 2</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.90, "fade", "#booking-title", {dur: 0.22}],
+      [2.40, "fade", "#booking-hi", {dur: 0.20}],
+      [1.90, "stamp", "#booking-mark", {from: 1.22, spring: "soft", rot: -8}],
+      [3.86, "move", "#travelling-mail", {by: [1192, 0], spring: "slow"}],
+      [5.18, "fade", "#destination-title", {dur: 0.22}],
+      [5.68, "fade", "#destination-hi", {dur: 0.20}],
+      [5.18, "stamp", "#destination-mark", {from: 1.22, spring: "soft", rot: 8}],
+      [7.30, "pop", "#minimum", {spring: "soft", from: 0.92}],
+      [9.94, "fade", "#additional-mark", {dur: 0.20}]
+    ]
+  }
+  </script>
+</section>
