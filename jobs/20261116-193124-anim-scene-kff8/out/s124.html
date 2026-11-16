@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s124" data-in="cut" data-section="PART 7 · BUSINESS REPLY ARTICLES" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" fill="none">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text x="112" y="230" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="73" font-weight="800">Size</text>
+    <text id="size-hi" x="298" y="228" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="650">आकार</text>
+    <g id="old">
+      <rect x="100" y="265" width="820" height="635" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+      <text x="148" y="334" fill="#4b4f58" font-family="Inter, sans-serif" font-size="39" font-weight="800">OLD · Post Office Guide Part I</text>
+      <text x="148" y="390" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="680">पुराना</text>
+      <use href="piece:old-book-stack" transform="translate(727 269) scale(.39)"/>
+      <path d="M148 425H872" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <g id="business-reply">
+        <rect x="149" y="465" width="722" height="114" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="182" y="538" fill="#2b2622" font-family="Inter, sans-serif" font-size="58" font-weight="790">Business Reply size</text>
+      </g>
+      <g id="ordinary-cover">
+        <path d="M183 640H229M183 640L195 629M183 640L195 651M229 640L217 629M229 640L217 651" stroke="#6f6a63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="264" y="659" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="720">आम letter cover</text>
+      </g>
+      <g id="private-card">
+        <path d="M182 756H229M206 733V779" stroke="#6f6a63" stroke-width="5" stroke-linecap="round"/>
+        <text x="264" y="777" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="720">निजी postcard की शर्तें</text>
+      </g>
+    </g>
+    <g id="now">
+      <rect x="1000" y="265" width="820" height="635" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M1028 265H1792Q1820 265 1820 293H1000Q1000 265 1028 265Z" fill="#9e1b1b"/>
+      <text x="1048" y="365" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="62" font-weight="810">NOW</text>
+      <path d="M1048 425H1594" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <use id="now-postmark" href="piece:postal-date-stamp" transform="translate(1615 292) scale(.52)"/>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.50, 'fade', '#size-hi', {dur: 0.17}],
+      [2.56, 'fade', '#business-reply', {dur: 0.20}],
+      [4.74, 'fade', '#ordinary-cover', {dur: 0.20}],
+      [6.26, 'fade', '#private-card', {dur: 0.20}],
+    ],
+  }
+  </script>
+</section>
