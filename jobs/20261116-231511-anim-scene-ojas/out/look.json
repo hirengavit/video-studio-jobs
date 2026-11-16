@@ -8,12 +8,5 @@
   "10.49"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s042",
-   "text": "पारदर्शी खिड़की / 80",
-   "t": 2.13
-  }
- ]
+ "warnings": []
 }
