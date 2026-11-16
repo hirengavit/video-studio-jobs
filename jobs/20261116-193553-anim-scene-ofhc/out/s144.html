@@ -1,0 +1,42 @@
+<section class="vs-scene" id="s144" data-in="cut" data-section="PART 7 · BUSINESS REPLY ARTICLES" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect id="flow-backdrop" x="90" y="181" width="1740" height="831" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <g id="old-key-tag">
+      <rect x="136" y="226" width="494" height="88" rx="44" fill="#e5ded1"/>
+      <path d="M174 251h25l15 15v24h-40z M199 251v15h15 M183 274h20m-20 8h20" fill="none" stroke="#6f6a63" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+      <text x="246" y="284" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="700" fill="#514c46">पुरानी answer keys</text>
+    </g>
+    <g id="fee-card">
+      <rect x="136" y="366" width="820" height="458" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M160 366h772q24 0 24 24v12H136v-12q0-24 24-24z" fill="#9e1b1b"/>
+      <text x="181" y="504" font-size="66" font-weight="800" fill="#2b2622">Business Reply permit</text>
+      <text id="permit-hi" x="185" y="565" font-family="Noto Sans Devanagari, sans-serif" font-size="45" font-weight="600" fill="#6f6a63">व्यावसायिक उत्तर की अनुमति</text>
+      <path d="M181 610H911" stroke="#ead9a8" stroke-width="3"/>
+      <g id="annual-fee">
+        <text x="181" y="698" font-size="69" font-weight="800" fill="#9e1b1b">Annual fee</text>
+      </g>
+      <text id="fee-hi" x="185" y="765" font-family="Noto Sans Devanagari, sans-serif" font-size="45" font-weight="600" fill="#6f6a63">वार्षिक शुल्क</text>
+    </g>
+    <path id="flow-arrow" d="M1008 572h176m-39-34 39 34-39 34" fill="none" stroke="#9e1b1b" stroke-width="12" stroke-linejoin="round" stroke-linecap="round"/>
+    <g id="ucr-stamp">
+      <rect x="1236" y="429" width="548" height="286" rx="31" fill="#9e1b1b"/>
+      <rect x="1252" y="445" width="516" height="254" rx="20" fill="none" stroke="#d27b6d" stroke-width="3"/>
+      <text x="1510" y="624" text-anchor="middle" font-size="143" font-weight="900" fill="#ffffff" letter-spacing="7">UCR</text>
+    </g>
+    <text id="credited" x="1510" y="790" text-anchor="middle" font-family="Noto Sans Devanagari, sans-serif" font-size="59" font-weight="750" fill="#9e1b1b">में जमा</text>
+    <g id="ucr-expansion">
+      <text x="1490" y="862" text-anchor="middle" font-size="56" font-weight="810" fill="#2b2622">Unclassified Receipts</text>
+      <text id="expansion-hi" x="1490" y="924" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" style="line-height:1.3" font-weight="650" fill="#6f6a63">अवर्गीकृत प्राप्तियाँ</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.00, 'pulse', '#ucr-stamp', {amount: 0.06}],
+      [0.98, 'fade', '#ucr-expansion', {dur: 0.20}],
+      [1.48, 'fade', '#expansion-hi', {dur: 0.17}],
+    ],
+  }
+  </script>
+</section>
