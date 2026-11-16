@@ -10,11 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "low-contrast",
+   "kind": "text-overlap",
    "scene": "s084",
-   "text": "Original (1.9:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 1.76
+   "text": "अख़बार की / प्रतियाँ",
+   "t": 0.3
   }
  ]
 }
