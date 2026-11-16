@@ -10,10 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
+   "kind": "text-overlap",
    "scene": "s062",
-   "message": "pulse: option \"dur\" isn't used (it takes: amount)",
-   "t": 0.3
+   "text": "HSG: 500 · छोटे town का / 250",
+   "t": 7.86
   }
  ]
 }
