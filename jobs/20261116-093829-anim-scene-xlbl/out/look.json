@@ -8,25 +8,5 @@
   "10.03"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "mostly-empty",
-   "scene": "s019",
-   "message": "a card is mostly empty at 2.0 s: bring its items in sooner, or size it for what it holds now",
-   "t": 2.04
-  },
-  {
-   "kind": "low-contrast",
-   "scene": "s019",
-   "text": "Postage stamp (1.9:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 4.07
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s019",
-   "text": "भ्रामक निशान / न लगाइए",
-   "t": 10.03
-  }
- ]
+ "warnings": []
 }
