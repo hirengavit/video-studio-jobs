@@ -9,10 +9,10 @@
       <path id="stop" d="M1507 542V841" stroke="#4b4f58" stroke-width="24" stroke-linecap="round"/>
       <g id="tagged-parcel">
         <use href="piece:parcel-with-tag" transform="translate(170 405) scale(1.55)"/>
-        <path d="M571 704Q596 698 638 712" stroke="#8f744f" stroke-width="7" stroke-linecap="round"/>
-        <path d="M641 676H1007Q1021 676 1021 690V778Q1021 792 1007 792H641L607 734Z" fill="#fff" stroke="#2b2622" stroke-width="4" stroke-linejoin="round"/>
-        <circle cx="637" cy="734" r="8" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
-        <text x="829" y="751" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="725" fill="#2b2622">Unpaid / कम paid</text>
+        <path d="M501 683Q518 662 551 699" stroke="#8f744f" stroke-width="7" stroke-linecap="round"/>
+        <path d="M548 671H1100Q1114 671 1114 685V782Q1114 796 1100 796H548L500 734Z" fill="#fff" stroke="#2b2622" stroke-width="4" stroke-linejoin="round"/>
+        <circle cx="551" cy="717" r="8" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+        <text x="816" y="751" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="725" fill="#2b2622">Unpaid / कम paid</text>
       </g>
       <g id="hold-stamp">
         <rect x="1049" y="414" width="570" height="112" rx="17" fill="#fff" stroke="#9e1b1b" stroke-width="6"/>
@@ -38,8 +38,8 @@
     shots: [[0, '#hold'], [5.50, '#nosec']],
     on: [
       [3.66, 'fade', '#stop', {dur: 0.16}],
-      [3.66, 'move', '#tagged-parcel', {by: [474, 0], spring: 'fast'}],
-      [4.05, 'stamp', '#hold-stamp', {from: 1.14, rot: -3, spring: 'fast'}],
+      [3.66, 'move', '#tagged-parcel', {by: [374, 0], spring: 'fast'}],
+      [3.66, 'stamp', '#hold-stamp', {from: 1.14, rot: -3, spring: 'fast'}],
       [7.44, 'fade', '#extra-security', {dur: 0.18}],
       [8.35, 'fade', '#no-security', {dur: 0.16}],
     ],
