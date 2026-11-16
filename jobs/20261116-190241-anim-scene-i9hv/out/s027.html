@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s027" data-in="cut" data-section="PART 2 · REGULATION 18" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" fill="none">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="oldnew">
+      <g id="old-panel">
+        <rect id="old-card" x="100" y="170" width="820" height="730" rx="30" fill="#f3ead6" stroke="#d7c7a5" stroke-width="4"/>
+        <use id="old-guide" href="piece:old-book-stack" transform="translate(127 169) scale(.47)"/>
+        <text x="316" y="257" font-family="Inter,sans-serif" font-size="39" font-weight="800" fill="#625952">OLD · Post Office Guide Part I</text>
+        <text x="317" y="328" class="hi" font-size="49" font-weight="720" fill="#625952">पुराना</text>
+        <path d="M143 359H877" stroke="#d7c7a5" stroke-width="3"/>
+        <g id="old-envelope">
+          <rect x="225" y="412" width="570" height="300" rx="19" fill="#fffdf7" stroke="#8a7a63" stroke-width="5"/>
+          <path d="M245 436H775V515H245Z" fill="#fde9a6"/>
+          <g stroke="#8a5d00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M510 446v89m-12-75 12-14 12 14m-24 60 12 15 12-15"/>
+          </g>
+          <rect x="415" y="547" width="210" height="117" rx="13" fill="#fbf7ee" stroke="#d7c7a5" stroke-width="3"/>
+          <path d="M450 574h142m-142 26h124m-124 26h103" stroke="#8a7a63" stroke-width="5" stroke-linecap="round"/>
+        </g>
+        <g id="old-minimum">
+          <rect x="229" y="751" width="562" height="98" rx="49" fill="#fde9a6" stroke="#d7c7a5" stroke-width="3"/>
+          <text x="510" y="818" text-anchor="middle" class="hi" font-size="61" font-weight="800" fill="#2b2622">ऊपर ≥ 3 cm खाली</text>
+        </g>
+        <text id="advice-note" x="510" y="888" text-anchor="middle" class="hi" font-size="40" font-weight="600" fill="#6f6a63">सलाह</text>
+      </g>
+      <g id="now-panel">
+        <rect id="now-card" x="1000" y="170" width="820" height="730" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M1028 181H1792" stroke="#9e1b1b" stroke-width="18" stroke-linecap="round"/>
+        <text x="1054" y="260" font-family="Inter,sans-serif" font-size="67" font-weight="850" fill="#9e1b1b">NOW</text>
+        <text x="1056" y="328" class="hi" font-size="49" font-weight="720" fill="#6f6a63">नया</text>
+        <path d="M1043 359H1777" stroke="#ead9a8" stroke-width="3"/>
+      
+        <g id="reg-date">
+          <use href="piece:postal-date-stamp" transform="translate(1248 348) scale(1.08)"/>
+          <text x="1410" y="524" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="820" textLength="198" lengthAdjust="spacingAndGlyphs" fill="#9e1b1b">16.12.2024</text>
+        </g>
+        <text id="reg-title" x="1410" y="710" text-anchor="middle" font-family="Inter,sans-serif" font-size="65" font-weight="810" fill="#2b2622">Regulation 18</text>
+        <text id="reg-hi" x="1410" y="756" text-anchor="middle" class="hi" font-size="43" font-weight="640" fill="#6f6a63">विनियम 18</text>
+        <text id="now-distance" x="1107" y="838" font-family="Inter,sans-serif" font-size="102" font-weight="840" fill="#9e1b1b">40 mm</text>
+        <text id="equivalent" x="1470" y="838" font-family="Inter,sans-serif" font-size="75" font-weight="750" fill="#2b2622">= 4 cm</text>
+      </g>
+      <g id="guide-question">
+        <rect x="100" y="930" width="1720" height="70" rx="29" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="150" y="978" class="hi" font-size="42" font-weight="740" fill="#2b2622">सवाल पुराने Guide का →</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {on: [
+      [0, 'fade', '#advice-note', {dur: 0.23}],
+      [1.56, 'stamp', '#reg-date', {from: 1.04, rot: -4, spring: 'soft'}],
+      [3.46, 'fade', '#reg-title', {dur: 0.24}],
+      [3.96, 'fade', '#reg-hi', {dur: 0.23}],
+      [5.86, 'pop', '#now-distance', {from: 0.91, spring: 'fast'}],
+      [8.20, 'fade', '#equivalent', {dur: 0.24}],
+      [9.90, 'fade', '#guide-question', {dur: 0.24}]
+    ]}
+  </script>
+</section>
