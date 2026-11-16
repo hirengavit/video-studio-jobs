@@ -16,12 +16,6 @@
    "t": 1.96
   },
   {
-   "kind": "text-overlap",
-   "scene": "s054",
-   "text": "किनारे 15 / पते के चारों ओर 10",
-   "t": 3.92
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s054",
    "message": "a card is mostly empty at 3.9 s: bring its items in sooner, or size it for what it holds now",
