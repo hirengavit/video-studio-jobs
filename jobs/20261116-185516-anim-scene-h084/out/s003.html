@@ -1,0 +1,73 @@
+<section class="vs-scene" id="s003" data-in="cut" data-section="INLAND MAIL · POSTAGE AND POSTING" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="timeline">
+    <text x="200" y="259" font-size="92" font-weight="800" fill="#9e1b1b">Inland mail</text>
+    <text id="inland-hi" x="204" y="332" class="hi" font-size="48" font-weight="550" fill="#6f6a63">देशी डाक</text>
+    <g id="postage"><rect x="200" y="378" width="425" height="86" rx="43" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/><text x="412.5" y="432" text-anchor="middle" class="hi" font-size="43" font-weight="650" fill="#2b2622">Postage · डाक शुल्क</text></g>
+    <g id="posting"><rect x="652" y="378" width="495" height="86" rx="43" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/><text x="899.5" y="432" text-anchor="middle" class="hi" font-size="43" font-weight="650" fill="#2b2622">Posting · डाक में डालना</text></g>
+    <g id="track">
+      <rect x="200" y="554" width="1520" height="12" rx="6" fill="#ead9a8"/>
+      <circle cx="510" cy="560" r="17" fill="#f3ead6" stroke="#6f6a63" stroke-width="4"/>
+      <circle cx="1410" cy="560" r="22" fill="#f2b705" stroke="#fbf7ee" stroke-width="7"/>
+    </g>
+    <g id="date">
+      <use href="piece:postal-date-stamp" transform="translate(1305 326) scale(.7)"/>
+      <rect x="1340" y="411" width="140" height="40" rx="5" fill="#fbf7ee"/>
+      <text x="1410" y="441" text-anchor="middle" font-size="27" font-weight="800" fill="#2b2622">16.12.2024</text>
+    </g>
+    <g id="regulations">
+      <rect x="1100" y="720" width="620" height="240" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M1134 739h552" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+      <text id="reg-en" x="1410" y="810" text-anchor="middle" font-size="58" font-weight="800" fill="#9e1b1b"><tspan x="1410">Post Office</tspan><tspan x="1410" dy="58">Regulations</tspan></text>
+      <text id="regulations-hi" x="1480" y="928" text-anchor="end" class="hi" font-size="40" font-weight="600" fill="#6f6a63">डाकघर विनियम</text>
+      <text id="reg-year" x="1498" y="928" font-size="40" font-weight="800" fill="#9e1b1b">2024</text>
+    </g>
+
+      <g id="old-guide">
+        <rect x="200" y="720" width="620" height="240" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <use href="piece:old-book-stack" transform="translate(213 768) scale(.38)"/>
+        <text x="402" y="797" font-size="58" font-weight="800" fill="#2b2622"><tspan x="402">Post Office</tspan><tspan x="402" dy="59">Guide Part I</tspan></text>
+        <text id="old-hi" x="402" y="922" class="hi" font-size="40" font-weight="650" fill="#6f6a63">डाकघर गाइड भाग I</text>
+        <rect x="236" y="895" width="114" height="46" rx="23" fill="#ead9a8"/>
+        <text x="293" y="928" text-anchor="middle" class="hi" font-size="34" font-weight="720" fill="#2b2622">पहले</text>
+      </g>
+      <g id="paper-pill">
+        <rect x="228" y="978" width="564" height="64" rx="30" fill="#fde9a6"/>
+        <text x="510" y="1022" text-anchor="middle" class="hi" font-size="46" font-weight="770" fill="#8a5d00">पुराने papers: clause</text>
+      </g>
+    </g>
+    <g id="questions">
+      <text x="160" y="224" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="70" font-weight="800" fill="#9e1b1b">पूरी बात: 2 सवाल</text>
+      <g id="q1">
+        <rect x="160" y="260" width="1600" height="260" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <circle cx="259" cy="390" r="54" fill="#9e1b1b"/>
+        <text x="259" y="414" text-anchor="middle" font-size="65" font-weight="800" fill="#fff">1</text>
+        <text id="q1-words" x="353" y="414" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="790" fill="#2b2622">Item पर postage कहाँ<tspan id="q1-tail"> और कैसे दिखे?</tspan></text>
+        <use href="piece:envelope-article" transform="translate(1384 239) scale(.77)"/>
+        <rect x="1606" y="339" width="28" height="34" rx="4" fill="#f3ead6" stroke="#9e1b1b" stroke-width="3" stroke-dasharray="3 2"/>
+      </g>
+      <g id="q2">
+        <rect x="160" y="580" width="1600" height="260" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <circle cx="259" cy="710" r="54" fill="#9e1b1b"/>
+        <text x="259" y="734" text-anchor="middle" font-size="65" font-weight="800" fill="#fff">2</text>
+        <use href="piece:rupee-cash" transform="translate(1377 549) scale(.80)"/>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#timeline'], [8.16, '#questions']],
+    on: [
+      [0, 'type', '#reg-year', {cps: 14}],
+      [1.78, 'fade', '#old-guide', {dur: 0.19}],
+      [2.28, 'fade', '#old-hi', {dur: 0.18}],
+      [5.40, 'pop', '#paper-pill', {from: 0.94, spring: 'fast'}],
+      [9.04, 'pop', '#q1', {from: 0.96, spring: 'fast'}],
+      [9.04, 'pop', '#q2', {from: 0.96, spring: 'fast'}],
+      [10.60, 'fade', '#q1-words', {dur: 0.16}],
+      [12.40, 'fade', '#q1-tail', {dur: 0.08}],
+    ],
+  }
+  </script>
+</section>
