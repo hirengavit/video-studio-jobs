@@ -8,12 +8,5 @@
   "16.21"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s066",
-   "message": "fade: nothing found for \"#accountable-hi\"",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
