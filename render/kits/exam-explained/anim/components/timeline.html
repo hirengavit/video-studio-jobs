@@ -1,0 +1,27 @@
+<section class="vs-scene" id="timeline" data-in="fade" data-in-dur="0.4" data-section="Freedom struggle">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#f7f5ef"/>
+    <text id="title" x="960" y="270" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="800" fill="#24406e">From revolt to freedom</text>
+    <path id="axis" d="M220 560 H1700" stroke="#d6d2c4" stroke-width="8" stroke-linecap="round"/>
+    <g class="event" id="e1"><circle cx="330" cy="560" r="22" fill="#24406e"/><text x="330" y="470" text-anchor="middle" font-family="Inter, sans-serif" font-size="84" font-weight="800" fill="#24406e">1857</text><text x="330" y="650" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="700" fill="#1d2433">First war of</text><text x="330" y="702" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="700" fill="#1d2433">independence</text></g>
+    <g class="event" id="e2"><circle cx="740" cy="560" r="22" fill="#24406e"/><text x="740" y="470" text-anchor="middle" font-family="Inter, sans-serif" font-size="84" font-weight="800" fill="#24406e">1885</text><text x="740" y="650" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="700" fill="#1d2433">Congress</text><text x="740" y="702" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="700" fill="#1d2433">founded</text></g>
+    <g class="event" id="e3"><circle cx="1150" cy="560" r="22" fill="#24406e"/><text x="1150" y="470" text-anchor="middle" font-family="Inter, sans-serif" font-size="84" font-weight="800" fill="#24406e">1920</text><text x="1150" y="650" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="700" fill="#1d2433">Non-Cooperation</text><text x="1150" y="702" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="700" fill="#1d2433">Movement</text></g>
+    <g class="event" id="e4"><circle cx="1560" cy="560" r="26" fill="#e8822a"/><text id="y4" x="1560" y="470" text-anchor="middle" font-family="Inter, sans-serif" font-size="84" font-weight="800" fill="#e8822a">1947</text><text x="1560" y="650" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="700" fill="#1d2433">Independence</text><text x="1560" y="702" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="700" fill="#1d2433">15 August</text></g>
+    <text id="caption" x="960" y="860" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" fill="#6b7280">90 years from the first revolt to freedom</text>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}], [7, {zoom: 1.03}]],
+    on: [
+      [0.05, 'fade', '#title', {dur: 0.4}],
+      [0.3, 'draw', '#axis', {dur: 0.9}],
+      [0.9, 'pop', '#e1', {from: 0.6, spring: 'soft'}],
+      [2.0, 'pop', '#e2', {from: 0.6, spring: 'soft'}],
+      [3.1, 'pop', '#e3', {from: 0.6, spring: 'soft'}],
+      [4.2, 'pop', '#e4', {from: 0.6, spring: 'soft'}],
+      [4.6, 'pulse', '#y4', {amount: 0.08}],
+      [5.3, 'fade', '#caption', {dur: 0.5}],
+    ],
+  }
+  </script>
+</section>

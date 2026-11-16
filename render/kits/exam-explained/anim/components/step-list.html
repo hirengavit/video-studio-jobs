@@ -1,0 +1,21 @@
+<section class="vs-scene" id="step-list" data-in="fade" data-in-dur="0.4" data-section="Monsoon">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#f7f5ef"/>
+    <text id="title" x="260" y="290" font-family="Inter, sans-serif" font-size="64" font-weight="800" fill="#24406e">How the monsoon arrives</text>
+    <g class="step" id="st1"><circle cx="300" cy="420" r="40" fill="#24406e"/><text x="300" y="437" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#ffffff">1</text><text x="380" y="438" font-family="Inter, sans-serif" font-size="54" font-weight="700" fill="#1d2433">Land heats up faster than the sea</text></g>
+    <g class="step" id="st2"><circle cx="300" cy="560" r="40" fill="#24406e"/><text x="300" y="577" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#ffffff">2</text><text x="380" y="578" font-family="Inter, sans-serif" font-size="54" font-weight="700" fill="#1d2433">Low pressure forms over north India</text></g>
+    <g class="step" id="st3"><circle cx="300" cy="700" r="40" fill="#24406e"/><text x="300" y="717" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#ffffff">3</text><text x="380" y="718" font-family="Inter, sans-serif" font-size="54" font-weight="700" fill="#1d2433">Moist sea winds rush in and bring rain</text></g>
+    <text id="note" x="380" y="800" font-family="Inter, sans-serif" font-size="42" fill="#6b7280">Southwest monsoon · June to September</text>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.05, 'words', '#title', {gap: 0.08, dist: 16}],
+      [0.9, 'slide', '#st1', {from: 'left', dist: 60, spring: 'soft'}],
+      [2.3, 'slide', '#st2', {from: 'left', dist: 60, spring: 'soft'}],
+      [3.7, 'slide', '#st3', {from: 'left', dist: 60, spring: 'soft'}],
+      [4.5, 'fade', '#note', {dur: 0.4}],
+    ],
+  }
+  </script>
+</section>

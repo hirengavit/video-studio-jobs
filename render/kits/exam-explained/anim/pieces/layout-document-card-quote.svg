@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" role="img" aria-label="Empty quotation document card with quiet placeholder rules">
+  <g id="document-card">
+    <rect x="316" y="256" width="1300" height="440" rx="9" fill="#1d2433" opacity=".07"/>
+    <rect x="310" y="250" width="1300" height="440" rx="9" fill="#fdf9ec" stroke="#c9bb8c" stroke-width="3"/>
+    <rect x="326" y="266" width="1268" height="408" rx="2" fill="none" stroke="#c9bb8c" stroke-width="1.5"/>
+  </g>
+  <g id="quiet-lines" fill="none" stroke="#6b7280" stroke-width="3" stroke-linecap="round" opacity=".32">
+    <path d="M410 520H1490"/>
+    <path d="M410 565H1410"/>
+    <path d="M410 610H1290"/>
+  </g>
+</svg>

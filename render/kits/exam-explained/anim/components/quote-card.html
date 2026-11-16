@@ -1,0 +1,26 @@
+<section class="vs-scene" id="quote-card" data-in="fade" data-in-dur="0.4" data-section="The exact words">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#f7f5ef"/>
+    <g id="card">
+      <rect x="300" y="250" width="1320" height="470" rx="28" fill="#fffaf0" stroke="#cdb98a" stroke-width="4" filter="url(#vs-shadow)"/>
+      <text id="source" x="960" y="352" text-anchor="middle" font-family="Inter, sans-serif" font-size="34" font-weight="600" letter-spacing="5" fill="#8a7a5a">PREAMBLE · CONSTITUTION OF INDIA</text>
+      <text id="quote" x="960" y="520" text-anchor="middle" font-family="Georgia, serif" font-size="92" fill="#1d2433">WE, THE PEOPLE OF INDIA</text>
+      <path id="rule" d="M780 612 H1140" stroke="#cdb98a" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <text id="takeaway" x="960" y="860" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="700" fill="#24406e">Source of authority: the people</text>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}], [7.5, {zoom: 1.03}]],
+    on: [
+      [0.05, 'fade', '#card', {dur: 0.45}],
+      [0.35, 'fade', '#source', {dur: 0.4}],
+      [0.7, 'words', '#quote', {gap: 0.16, dist: 18}],
+      [1.5, 'draw', '#rule', {dur: 0.5}],
+      [2.3, 'highlight', '#quote', {words: 'THE PEOPLE', color: '#e8822a', opacity: 0.3, dur: 0.5}],
+      [3.6, 'slide', '#takeaway', {from: 'down', dist: 40, spring: 'soft'}],
+      [4.3, 'underline', '#takeaway', {color: '#e8822a', width: 6}],
+    ],
+  }
+  </script>
+</section>

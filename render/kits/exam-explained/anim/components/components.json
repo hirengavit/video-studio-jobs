@@ -1,0 +1,139 @@
+[
+  {
+    "id": "quote-card",
+    "name": "Quote card",
+    "description": "A cream document card that shows exact words (a law, an article, a definition, a quotation) in Georgia, with a small source label above and one phrase highlighted on its word, plus a one-line takeaway below the card.",
+    "use": "Whenever the exact wording matters: an Article or law, a definition, a judgment's line, a report's finding, a thinker's words.",
+    "adapt": "the words and source; which phrase is highlighted (highlight with words); drop the takeaway or the rule; longer text on two lines",
+    "ideas": [
+      "quote",
+      "exact words",
+      "definition",
+      "article",
+      "document",
+      "law"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-09-28T15:00:00.000Z"
+  },
+  {
+    "id": "compare-cards",
+    "name": "Compare cards",
+    "description": "A question heading, then two white cards side by side (a big year or label, a name, a small caption) that arrive one after the other, each with a solid verdict pill (red NOT / green YES), and a handwritten note with an arrow between them.",
+    "use": "Two sides of something: before vs after, case vs case, myth vs fact, yes vs no.",
+    "adapt": "2 or 3 cards; card contents; pill colour and words; drop the pills, the heading or the note",
+    "ideas": [
+      "compare",
+      "versus",
+      "before after",
+      "two sides",
+      "cases",
+      "myth fact"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-09-28T15:00:00.000Z"
+  },
+  {
+    "id": "question-card",
+    "name": "Question card",
+    "description": "A navy quick-check card: a small spaced label, the question arriving word by word, a timer ring with a question mark for a real pause, then a green answer pill.",
+    "use": "A quick check with a pause, or any question the viewer should try to answer before the reveal.",
+    "adapt": "question and answer; pause length (the ring's draw duration); drop the timer; several answer options instead of one",
+    "ideas": [
+      "quiz",
+      "quick check",
+      "question",
+      "pause",
+      "answer"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-09-28T15:00:00.000Z"
+  },
+  {
+    "id": "timeline",
+    "name": "Timeline",
+    "description": "A title, a horizontal line that draws in, then dated events that pop in one by one on their words (a big year above, a two-line label below); the key event is in saffron; an optional caption under it.",
+    "use": "Dates in order: history, reforms, missions, stages of a process over time.",
+    "adapt": "2 to 6 events (space them evenly); which one is highlighted; labels on one or two lines; drop the title or caption",
+    "ideas": [
+      "timeline",
+      "dates",
+      "history",
+      "sequence",
+      "years"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-09-28T15:00:00.000Z"
+  },
+  {
+    "id": "big-number",
+    "name": "Big number",
+    "description": "One large number that counts up, a small spaced label above it, a one-line context below with a key word underlined, and a small source line.",
+    "use": "A single real, sourced number worth remembering (a count, a percentage, a year).",
+    "adapt": "the number (prefix, suffix, decimals in count), label, context, source; drop the underline",
+    "ideas": [
+      "number",
+      "statistic",
+      "count",
+      "data",
+      "figure"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-09-28T15:00:00.000Z"
+  },
+  {
+    "id": "step-list",
+    "name": "Step list",
+    "description": "A title, then numbered steps (a navy circle with the number, a line of text) that slide in one at a time on their words, and a small note under them.",
+    "use": "A process, a procedure, or ordered points.",
+    "adapt": "2 to 5 steps; step text; drop the note; numbers or icons in the circles",
+    "ideas": [
+      "steps",
+      "process",
+      "procedure",
+      "list",
+      "how"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-09-28T15:00:00.000Z"
+  },
+  {
+    "id": "key-term",
+    "name": "Key term",
+    "description": "A white card with a saffron edge: a small KEY TERM tag, the term in large type revealed from the left, its meaning in plain words on one or two lines, and a small exam note.",
+    "use": "The first time an exam term appears (a glossary moment).",
+    "adapt": "term, meaning, exam note; drop the note; a second line of meaning",
+    "ideas": [
+      "term",
+      "glossary",
+      "definition",
+      "meaning",
+      "concept"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-09-28T15:00:00.000Z"
+  },
+  {
+    "id": "recap-card",
+    "name": "Recap card",
+    "description": "A white card with a navy border titled Remember, a short saffron rule, then 2 to 4 points that arrive one by one, each with a green tick.",
+    "use": "A recap at the end of a part or of the lecture.",
+    "adapt": "2 to 4 points; title; ticks or numbers",
+    "ideas": [
+      "recap",
+      "summary",
+      "remember",
+      "takeaway"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-09-28T15:00:00.000Z"
+  }
+]

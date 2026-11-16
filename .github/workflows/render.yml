@@ -1,0 +1,100 @@
+# Renders scene and drawing jobs in the cloud, so the Dot can see its work without a browser of its own.
+# Runs when scenes or drawing assets are pushed to job/... or done/... branches, or by hand from the Actions tab.
+# It commits scene pictures (out/look.jpg) and drawing sheets (out/sheets/). A preview video (out/preview.mp4) is made
+# only when the commit message contains [video] (or on a run started by hand), which keeps the usual look fast.
+name: Render scenes
+
+on:
+  push:
+    branches: ["done/**", "job/**"]
+    paths: ["jobs/**/out/*.html", "jobs/**/out/**/*.svg", "jobs/**/out/kit.json", "jobs/**/out/sets/*.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: render-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Want a video?
+        id: want
+        env:
+          MSG: ${{ github.event.head_commit.message }}
+        run: |
+          if [ "${{ github.event_name }}" = workflow_dispatch ] || [[ "$MSG" == *"[video]"* ]]; then echo "video=1" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Install the picture tools
+        run: python3 -c "import PIL" 2>/dev/null || pip install -q pillow
+
+      # This install sometimes hangs (an npm download that never ends). Each try has a time limit; if every try fails,
+      # the pictures are still rendered and committed, just without the video, so the Dot is never left waiting.
+      - name: Install the video renderer
+        id: renderer
+        if: steps.want.outputs.video == '1'
+        timeout-minutes: 8
+        continue-on-error: true
+        run: |
+          command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          for i in 1 2 3; do
+            if timeout 150 npm install -g hyperframes@0.8.72 --silent --no-audit --no-fund; then exit 0; fi
+            echo "npm install try $i didn't finish; trying again"
+          done
+          exit 1
+
+      - name: Render every scene or drawing job
+        run: |
+          export CHROME="$(command -v google-chrome || command -v chromium)"
+          found=0
+          for d in jobs/*/; do
+            [ -f "$d/render.json" ] || continue
+            type=$(node -e "console.log(require('./$d/render.json').type || 'scene')")
+            if [ "$type" != drawings ]; then
+              scene=$(node -e "console.log(require('./$d/render.json').scene)")
+              [ -f "$d/out/$scene.html" ] || continue
+            fi
+            found=1
+            echo "::group::$d"
+            if [ "$type" = drawings ]; then
+              (cd "$d" && node sheets.mjs)
+            else
+              (cd "$d" && node look.mjs)
+              if [ "${{ steps.renderer.outcome }}" = success ]; then (cd "$d" && node ../../render/video.mjs); elif [ "${{ steps.want.outputs.video }}" = 1 ]; then echo "The video renderer couldn't be installed this time: pictures only. Commit again with [video] to retry the video." > "$d/out/video-skipped.txt"; fi
+            fi
+            # A receipt, so every render makes a commit the Dot can recognise, even if the pictures didn't change.
+            printf '{"rendered": "%s", "at": "%s", "run": "%s"}\n' "$GITHUB_SHA" "$(date -u +%FT%TZ)" "$GITHUB_RUN_NUMBER" > "$d/out/rendered.json"
+            echo "::endgroup::"
+          done
+          [ $found = 1 ] || echo "No jobs to render."
+
+      - name: Save the pictures and video to the branch
+        run: |
+          git config user.name "render-bot"
+          git config user.email "render-bot@users.noreply.github.com"
+          for d in jobs/*/; do
+            for f in "$d"out/look.jpg "$d"out/look.json "$d"out/preview.mp4 "$d"out/rendered.json "$d"out/video-skipped.txt; do
+              if [ -f "$f" ]; then git add -f -- "$f"; fi
+            done
+            if [ -d "$d/out/sheets" ]; then git add -f -- "$d/out/sheets"; fi
+          done
+          if git diff --cached --quiet; then echo "Nothing new."; exit 0; fi
+          git commit -m "Rendered ${GITHUB_SHA::7}: pictures"
+          # Someone (the Dot, or the app's reminder) may have pushed to the branch while this render ran: take their
+          # commits under ours and push again, rather than lose the pictures.
+          for i in 1 2 3 4 5; do
+            if git push; then exit 0; fi
+            sleep $((i * 3))
+            git pull --rebase -q origin "$GITHUB_REF_NAME"
+          done
+          exit 1

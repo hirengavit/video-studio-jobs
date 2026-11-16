@@ -1,0 +1,437 @@
+[
+  {
+    "id": "compare-card",
+    "kind": "prop",
+    "description": "White bordered comparison card",
+    "ideas": [
+      "belonging versus legal force",
+      "wording versus rule"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "card",
+      "heading-area",
+      "content-area"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260927-161000-the-preamble-of-the-indian-constitution",
+    "createdAt": "2026-09-28T03:53:56.399Z"
+  },
+  {
+    "id": "doc-icon",
+    "kind": "prop",
+    "description": "Cream page with four lines",
+    "ideas": [
+      "constitution",
+      "preamble document"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "page",
+      "text-lines"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260927-161000-the-preamble-of-the-indian-constitution",
+    "createdAt": "2026-09-28T03:53:56.399Z"
+  },
+  {
+    "id": "document-card",
+    "kind": "prop",
+    "description": "Cream quotation card with a thin gold border (empty: the scene writes the quote and source)",
+    "ideas": [
+      "exact opening words",
+      "source of authority"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "card",
+      "quote",
+      "source"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260927-161000-the-preamble-of-the-indian-constitution",
+    "createdAt": "2026-09-28T03:53:56.400Z"
+  },
+  {
+    "id": "gavel",
+    "kind": "prop",
+    "description": "Navy gavel and sounding block",
+    "ideas": [
+      "court decision",
+      "judgment"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "gavel-head",
+      "gavel-handle",
+      "sounding-block"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260927-161000-the-preamble-of-the-indian-constitution",
+    "createdAt": "2026-09-28T03:53:56.400Z"
+  },
+  {
+    "id": "parliament-icon",
+    "kind": "prop",
+    "description": "Domed parliament building on steps",
+    "ideas": [
+      "Parliament adds words",
+      "1976 amendment"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "dome",
+      "building",
+      "steps"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260927-161000-the-preamble-of-the-indian-constitution",
+    "createdAt": "2026-09-28T03:53:56.400Z"
+  },
+  {
+    "id": "quick-check-card",
+    "kind": "prop",
+    "description": "Navy question card (empty: the scene writes the label, question and answer on it)",
+    "ideas": [
+      "case recall",
+      "Berubari answer"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "card",
+      "check-label",
+      "question",
+      "answer-pill"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260927-161000-the-preamble-of-the-indian-constitution",
+    "createdAt": "2026-09-28T03:53:56.400Z"
+  },
+  {
+    "id": "recap-card",
+    "kind": "prop",
+    "description": "White takeaway card with a navy border (empty: the scene writes the title and points)",
+    "ideas": [
+      "part of Constitution",
+      "no case won from words alone"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "card",
+      "heading",
+      "row-1",
+      "row-2",
+      "tick-1",
+      "tick-2"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260927-161000-the-preamble-of-the-indian-constitution",
+    "createdAt": "2026-09-28T03:53:56.400Z"
+  },
+  {
+    "id": "refund-slip",
+    "kind": "prop",
+    "description": "Cream refund receipt",
+    "ideas": [
+      "refund claim",
+      "rejected claim"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "receipt",
+      "refund-label"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260927-161000-the-preamble-of-the-indian-constitution",
+    "createdAt": "2026-09-28T03:53:56.401Z",
+    "text": [
+      "REFUND"
+    ]
+  },
+  {
+    "id": "ring-timer",
+    "kind": "symbol",
+    "description": "Pale ring with saffron progress arc",
+    "ideas": [
+      "thinking pause",
+      "answer reveal"
+    ],
+    "anchors": [
+      "top"
+    ],
+    "parts": [
+      "timer-ring",
+      "timer-arc"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260927-161000-the-preamble-of-the-indian-constitution",
+    "createdAt": "2026-09-28T03:53:56.401Z"
+  },
+  {
+    "id": "rule-book-closed",
+    "kind": "prop",
+    "description": "Closed navy hostel rule book",
+    "ideas": [
+      "opening lines",
+      "purpose of rules"
+    ],
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "parts": [
+      "cover",
+      "page-edge",
+      "title-plate"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260927-161000-the-preamble-of-the-indian-constitution",
+    "createdAt": "2026-09-28T03:53:56.401Z",
+    "text": [
+      "HOSTEL",
+      "RULE BOOK"
+    ]
+  },
+  {
+    "id": "rule-book-open",
+    "kind": "prop",
+    "description": "Open book with highlighted opening lines",
+    "ideas": [
+      "stated purpose",
+      "quiet campus and fair bills"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "left-page",
+      "right-page",
+      "opening-lines",
+      "placeholder-lines"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260927-161000-the-preamble-of-the-indian-constitution",
+    "createdAt": "2026-09-28T03:53:56.401Z"
+  },
+  {
+    "id": "timeline-axis",
+    "kind": "prop",
+    "description": "Warm grey timeline rule",
+    "ideas": [
+      "passage of time",
+      "case comparison"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "axis"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260927-161000-the-preamble-of-the-indian-constitution",
+    "createdAt": "2026-09-28T03:53:56.401Z"
+  },
+  {
+    "id": "timeline-dot",
+    "kind": "symbol",
+    "description": "Event marker with ink ring",
+    "ideas": [
+      "1960 event",
+      "1973 event"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "dot"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260927-161000-the-preamble-of-the-indian-constitution",
+    "createdAt": "2026-09-28T03:53:56.401Z"
+  },
+  {
+    "id": "verdict-pill",
+    "kind": "symbol",
+    "description": "Court verdict label, with red and green states",
+    "ideas": [
+      "not part verdict",
+      "part verdict"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "verdict-red",
+      "verdict-green"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260927-161000-the-preamble-of-the-indian-constitution",
+    "createdAt": "2026-09-28T03:53:56.402Z"
+  },
+  {
+    "id": "word-slot",
+    "kind": "symbol",
+    "description": "Saffron dashed word box",
+    "ideas": [
+      "socialist",
+      "secular",
+      "integrity"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "slot"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260927-161000-the-preamble-of-the-indian-constitution",
+    "createdAt": "2026-09-28T03:53:56.402Z"
+  },
+  {
+    "id": "layout-document-card-quote",
+    "kind": "symbol",
+    "description": "Full-frame layout guide with an empty cream document card, thin gold border, and three quiet grey placeholder rules; the scene supplies the quotation, source, and takeaway. (used by the Preamble video; kept so it still renders)",
+    "ideas": [
+      "exact quotation",
+      "highlighted phrase",
+      "source and takeaway"
+    ],
+    "viewBox": "0 0 1920 1080",
+    "anchors": [],
+    "parts": [
+      "document-card",
+      "quiet-lines"
+    ]
+  },
+  {
+    "id": "cross-mark",
+    "kind": "symbol",
+    "description": "Red (#c8413b) hand-drawn X made from two 10 px round-ended strokes, about 160 px square, for a draw-on animation.",
+    "ideas": [
+      "rejected idea",
+      "no court remedy"
+    ],
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "descending-stroke",
+      "ascending-stroke"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260928-170000-preamble-ab-luna",
+    "createdAt": "2026-09-28T16:43:32.962Z"
+  },
+  {
+    "id": "tick-mark",
+    "kind": "symbol",
+    "description": "Green (#2c8a57) hand-drawn tick made from one 10 px round-ended stroke, about 160 px square, for a draw-on animation.",
+    "ideas": [
+      "correct answer",
+      "belongs to the Constitution"
+    ],
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "tick-stroke"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20260928-170000-preamble-ab-luna",
+    "createdAt": "2026-09-28T16:43:32.962Z"
+  },
+  {
+    "id": "document-panel",
+    "kind": "prop",
+    "description": "Empty 1000×600 cream #fdf9ec document card with a thin 2 px #c9bb8c border and restrained 8 px rounded corners. Clear interior for scene-written Georgia excerpts and purpose statements; scene places its source below the card. Use at intrinsic size or uniform scale 0.88 for the hostel purpose composition. Fill and border can animate independently. Transparent outside the card; top anchor (500,0), base anchor (500,600).",
+    "ideas": [
+      "exact excerpts",
+      "opening-line goals",
+      "source of authority"
+    ],
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "document-panel-fill",
+      "document-panel-border"
+    ],
+    "viewBox": "0 0 1000 600",
+    "source": "20260930-100000-preamble-sol61",
+    "createdAt": "2026-09-30T05:57:42.541Z"
+  },
+  {
+    "id": "lecture-panel",
+    "kind": "prop",
+    "description": "Empty 1600×680 white lecture card with a 3 px #24406e border and modest 24 px rounded corners. Place at (160,220) on the scene canvas. Clear interior for scene-written headings, questions, comparisons and takeaways. Fill and border can animate independently. Transparent outside the card; top anchor (800,0), base anchor (800,680).",
+    "ideas": [
+      "court decisions",
+      "lecture questions",
+      "recap points"
+    ],
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "lecture-panel-fill",
+      "lecture-panel-border"
+    ],
+    "viewBox": "0 0 1600 680",
+    "source": "20260930-100000-preamble-sol61",
+    "createdAt": "2026-09-30T05:57:42.542Z"
+  },
+  {
+    "id": "quick-check-panel",
+    "kind": "prop",
+    "description": "Empty 1600×700 navy #24406e quick-check panel with modest 24 px rounded corners. Clear interior for the scene's pale saffron label, large white question, quiet timer and green answer pill. Its fill has an animation ID. Transparent outside the panel; top anchor (800,0), base anchor (800,700).",
+    "ideas": [
+      "quiz questions",
+      "thinking pauses",
+      "answer reveals"
+    ],
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "quick-check-panel-fill"
+    ],
+    "viewBox": "0 0 1600 700",
+    "source": "20260930-100000-preamble-sol61",
+    "createdAt": "2026-09-30T05:57:42.543Z"
+  }
+]

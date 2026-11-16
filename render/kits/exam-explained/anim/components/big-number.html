@@ -1,0 +1,20 @@
+<section class="vs-scene" id="big-number" data-in="fade" data-in-dur="0.4" data-section="Society in numbers">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#f7f5ef"/>
+    <text id="label" x="960" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" font-weight="600" letter-spacing="3" fill="#6b7280">LITERACY RATE OF INDIA</text>
+    <text id="num" x="960" y="620" text-anchor="middle" font-family="Inter, sans-serif" font-size="300" font-weight="800" fill="#24406e">74%</text>
+    <text id="context" x="960" y="760" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="700" fill="#1d2433">but only <tspan fill="#e8822a">65%</tspan> among women</text>
+    <text id="source" x="960" y="870" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" fill="#6b7280">Census of India 2011</text>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.05, 'tracking', '#label', {from: 26, dur: 0.7}],
+      [0.4, 'count', '#num', {from: 0, to: 74, suffix: '%', dur: 1.8}],
+      [2.6, 'slide', '#context', {from: 'down', dist: 40, spring: 'soft'}],
+      [3.3, 'underline', '#context', {words: '65%', color: '#e8822a', width: 6}],
+      [3.8, 'fade', '#source', {dur: 0.5}],
+    ],
+  }
+  </script>
+</section>

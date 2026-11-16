@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <rect id="document-panel-fill" x="0" y="0" width="1000" height="600" rx="8" fill="#fdf9ec"/>
+  <rect id="document-panel-border" x="1" y="1" width="998" height="598" rx="7" fill="none" stroke="#c9bb8c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle data-anchor="top" cx="500" cy="0" r="0"/>
+  <circle data-anchor="base" cx="500" cy="600" r="0"/>
+</svg>

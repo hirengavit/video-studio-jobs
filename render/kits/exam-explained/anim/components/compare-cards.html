@@ -1,0 +1,43 @@
+<section class="vs-scene" id="compare-cards" data-in="fade" data-in-dur="0.4" data-section="Energy">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#f7f5ef"/>
+    <text id="question" x="960" y="265" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="800" fill="#24406e">Will it ever run out?</text>
+    <g id="left">
+      <rect x="200" y="340" width="700" height="480" rx="28" fill="#ffffff" stroke="#e1dccd" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="550" y="470" text-anchor="middle" font-family="Inter, sans-serif" font-size="110" font-weight="800" fill="#24406e">Coal</text>
+      <text x="550" y="552" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" font-weight="600" fill="#1d2433">Non-renewable</text>
+      <text x="550" y="608" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" fill="#6b7280">Took millions of years to form</text>
+    </g>
+    <g id="left-verdict">
+      <rect x="350" y="665" width="400" height="96" rx="48" fill="#c8413b"/>
+      <path d="M390 695 L426 731 M426 695 L390 731" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+      <text x="590" y="730" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" font-weight="800" fill="#ffffff">RUNS OUT</text>
+    </g>
+    <g id="right">
+      <rect x="1020" y="340" width="700" height="480" rx="28" fill="#ffffff" stroke="#e1dccd" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="1370" y="470" text-anchor="middle" font-family="Inter, sans-serif" font-size="110" font-weight="800" fill="#24406e">Solar</text>
+      <text x="1370" y="552" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" font-weight="600" fill="#1d2433">Renewable</text>
+      <text x="1370" y="608" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" fill="#6b7280">The sun rises every day</text>
+    </g>
+    <g id="right-verdict">
+      <rect x="1170" y="665" width="400" height="96" rx="48" fill="#2c8a57"/>
+      <path d="M1220 713 L1240 733 L1278 691" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="1400" y="730" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" font-weight="800" fill="#ffffff">REFILLS</text>
+    </g>
+    <path id="arrow" d="M840 880 C 920 930, 1000 930, 1080 880 M1080 880 L1052 875 M1080 880 L1070 907" stroke="#e8822a" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <text id="note" x="960" y="975" text-anchor="middle" font-family="Caveat, cursive" font-size="54" font-weight="700" fill="#e8822a">the difference is time</text>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.05, 'words', '#question', {gap: 0.1, dist: 20}],
+      [0.9, 'reveal', '#left', {from: 'up', dur: 0.6}],
+      [1.9, 'pop', '#left-verdict', {from: 1.25, spring: 'snap'}],
+      [2.9, 'reveal', '#right', {from: 'up', dur: 0.6}],
+      [3.9, 'pop', '#right-verdict', {from: 1.25, spring: 'snap'}],
+      [4.6, 'draw', '#arrow', {dur: 0.6}],
+      [5.0, 'fade', '#note', {dur: 0.5}],
+    ],
+  }
+  </script>
+</section>

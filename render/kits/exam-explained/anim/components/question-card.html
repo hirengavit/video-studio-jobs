@@ -1,0 +1,32 @@
+<section class="vs-scene" id="question-card" data-in="fade" data-in-dur="0.4" data-section="Ancient history">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#f7f5ef"/>
+    <g id="card">
+      <rect x="360" y="230" width="1200" height="660" rx="36" fill="#24406e" filter="url(#vs-shadow)"/>
+      <text id="label" x="960" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="700" letter-spacing="8" fill="#f3c98b">QUICK CHECK</text>
+      <text id="q1" x="960" y="455" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="700" fill="#ffffff">Which Harappan city had</text>
+      <text id="q2" x="960" y="535" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="700" fill="#ffffff">the Great Bath?</text>
+      <g id="ring"><circle cx="960" cy="690" r="52" fill="none" stroke="#3b5a8f" stroke-width="10"/><text x="960" y="708" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="800" fill="#ffffff">?</text></g>
+      <path id="arc" d="M960 638 A52 52 0 1 1 959.9 638" stroke="#f3c98b" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <g id="answer">
+        <rect x="600" y="638" width="720" height="110" rx="55" fill="#2c8a57"/>
+        <text x="960" y="712" text-anchor="middle" font-family="Inter, sans-serif" font-size="58" font-weight="800" fill="#ffffff">Mohenjo-daro</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.05, 'fade', '#card', {dur: 0.4}],
+      [0.35, 'tracking', '#label', {from: 30, dur: 0.7}],
+      [0.9, 'words', '#q1', {gap: 0.11}],
+      [1.8, 'words', '#q2', {gap: 0.11}],
+      [3.0, 'fade', '#ring', {dur: 0.3}],
+      [3.0, 'draw', '#arc', {dur: 2.6, ease: 'linear'}],
+      [5.7, 'out', '#ring'],
+      [5.7, 'out', '#arc'],
+      [5.8, 'pop', '#answer', {from: 0.85, spring: 'soft'}],
+    ],
+  }
+  </script>
+</section>

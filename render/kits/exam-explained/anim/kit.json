@@ -1,0 +1,78 @@
+{
+ "palette": {
+  "canvas": "#f7f5ef",
+  "ink": "#1d2433",
+  "heading": "#24406e",
+  "card": "#24406e",
+  "seriesTag": "#24406e",
+  "highlight": "#e8822a",
+  "added": "#e8822a",
+  "changed": "#e8822a",
+  "correct": "#2c8a57",
+  "answer": "#2c8a57",
+  "wrong": "#c8413b",
+  "rejected": "#c8413b",
+  "supporting": "#6b7280",
+  "label": "#6b7280",
+  "documentPaper": "#fdf9ec",
+  "documentBorder": "#c9bb8c"
+ },
+ "boil": {
+  "fps": 8,
+  "amount": 0,
+  "all": false
+ },
+ "texture": {
+  "paper": 0
+ },
+ "transitions": [
+  "cut",
+  "fade",
+  "wipe"
+ ],
+ "moves": {
+  "deny": [
+   "smear",
+   "ticker",
+   "scatter",
+   "spin",
+   "float",
+   "wiggle",
+   "shake",
+   "bounce",
+   "flip",
+   "stamp",
+   "letters"
+  ]
+ },
+ "rules": {
+  "do": [
+   "Use a flat warm off-white canvas and one idea per screen, shown big: the main card or element fills most of the space below the header, with even margins.",
+   "Keep a grey Inter uppercase section label at top left and a navy series pill at top right; change them only with the section.",
+   "Use navy for headings and cards, saffron only for highlights or changed material, green only for correct answers, and red only for wrong or rejected ideas.",
+   "Build one point on its spoken word, then hold it still long enough to read; space visual beats about 3 to 5 seconds apart.",
+   "Use dark ink outlines about 3 px wide with rounded ends for simple flat icons.",
+   "Put exact definitions, quotations and formulae in Georgia on cream document cards with a thin gold border and a grey source below.",
+   "Use Inter for slide text and Caveat only for a small handwritten note; keep primary text large enough for a phone.",
+   "Use at most one hand-drawn annotation per screen, such as a saffron underline, circle, tick or arrow.",
+   "Use sourced figures for charts and tables, and label their source.",
+   "Use a navy quick-check card with a pale saffron label, white question, quiet ring timer and green answer pill; use green ticks in recaps.",
+   "Real photos usually look best as paper cut-outs or with a white paper border and soft shadow; use another treatment (full-bleed, framed, cropped to a detail) when it suits the moment better."
+  ],
+  "dont": [
+   "Do not crowd a screen with more than five items or overlap text.",
+   "Do not use colour for decoration or add glows, gradients, heavy texture or constant motion.",
+   "Do not invent numbers, source text, quotations, chart values or map facts.",
+   "Do not fake real people or documents; use real photos from the materials, with their credit.",
+   "Do not change layout during a point's reading hold or animate the fixed section label and series tag."
+  ]
+ },
+ "css": ".vs-scene { background: #f7f5ef; font-family: Inter, sans-serif; color: #1d2433; } .vs-scene .heading { fill: #24406e; font-family: Inter, sans-serif; font-weight: 700; } .vs-scene .supporting, .vs-scene .section-label { fill: #6b7280; font-family: Inter, sans-serif; } .vs-scene .section-label { letter-spacing: .14em; } .vs-scene .document-text { fill: #1d2433; font-family: Georgia, serif; } .vs-scene .ink-line { fill: none; stroke: #1d2433; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }",
+ "frame": {
+  "svg": "frame.svg",
+  "slots": [
+   "section",
+   "series"
+  ]
+ }
+}

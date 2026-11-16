@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 680" width="1600" height="680">
+  <rect id="lecture-panel-fill" x="0" y="0" width="1600" height="680" rx="24" fill="#ffffff"/>
+  <rect id="lecture-panel-border" x="1.5" y="1.5" width="1597" height="677" rx="22.5" fill="none" stroke="#24406e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle data-anchor="top" cx="800" cy="0" r="0"/>
+  <circle data-anchor="base" cx="800" cy="680" r="0"/>
+</svg>

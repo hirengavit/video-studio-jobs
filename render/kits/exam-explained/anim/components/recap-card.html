@@ -1,0 +1,24 @@
+<section class="vs-scene" id="recap-card" data-in="fade" data-in-dur="0.4" data-section="Ethics">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#f7f5ef"/>
+    <g id="card">
+      <rect x="280" y="230" width="1360" height="640" rx="32" fill="#ffffff" stroke="#24406e" stroke-width="4" filter="url(#vs-shadow)"/>
+      <text id="title" x="960" y="350" text-anchor="middle" font-family="Inter, sans-serif" font-size="68" font-weight="800" fill="#24406e">Remember</text>
+      <path id="rule" d="M860 390 H1060" stroke="#e8822a" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <g class="point" id="p1"><path d="M400 490 L430 520 L486 458" stroke="#2c8a57" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="530" y="512" font-family="Inter, sans-serif" font-size="54" font-weight="700" fill="#1d2433">Integrity: honest even when unseen</text></g>
+    <g class="point" id="p2"><path d="M400 610 L430 640 L486 578" stroke="#2c8a57" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="530" y="632" font-family="Inter, sans-serif" font-size="54" font-weight="700" fill="#1d2433">Empathy: feeling with others</text></g>
+    <g class="point" id="p3"><path d="M400 730 L430 760 L486 698" stroke="#2c8a57" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="530" y="752" font-family="Inter, sans-serif" font-size="54" font-weight="700" fill="#1d2433">Objectivity: decide on merit alone</text></g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.05, 'fade', '#card', {dur: 0.4}],
+      [0.4, 'draw', '#rule', {dur: 0.5}],
+      [1.0, 'slide', '#p1', {from: 'down', dist: 30, spring: 'soft'}],
+      [2.4, 'slide', '#p2', {from: 'down', dist: 30, spring: 'soft'}],
+      [3.8, 'slide', '#p3', {from: 'down', dist: 30, spring: 'soft'}],
+    ],
+  }
+  </script>
+</section>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <g fill="none" stroke="#c8413b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path id="descending-stroke" d="M125 125 C171 169 228 232 275 275"/>
+    <path id="ascending-stroke" d="M275 125 C229 172 169 232 125 275"/>
+  </g>
+  <circle data-anchor="top" cx="200" cy="120" r="0"/>
+  <circle data-anchor="base" cx="200" cy="280" r="0"/>
+</svg>
