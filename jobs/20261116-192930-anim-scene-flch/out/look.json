@@ -10,13 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "low-contrast",
-   "scene": "s117",
-   "text": "1 (1.2:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 0.3
-  },
-  {
    "kind": "off-frame",
    "scene": "s117",
    "message": "a card or panel (#s117-paper) runs 700 px past the frame edge at 4.7 s (check the camera zoom and the layout)",
