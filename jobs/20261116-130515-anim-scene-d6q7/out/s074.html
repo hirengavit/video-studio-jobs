@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s074" data-in="cut" data-section="BULK CASH PREPAYMENT" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" fill="none" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="limit">
+      <rect x="112" y="183" width="1696" height="285" rx="29" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:old-book-stack" transform="translate(156 164) scale(.68)"/>
+      <text x="473" y="306" class="hi" font-size="74" font-weight="770" fill="#9e1b1b">50 वाली पुरानी व्यवस्था</text>
+      <text id="ordinary" x="477" y="407" font-size="62" font-weight="730" fill="#2b2622">= Ordinary registered letter mail</text>
+      <g id="cash">
+        <rect x="112" y="500" width="1696" height="137" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <use href="piece:rupee-cash" transform="translate(155 497) scale(.35)"/>
+        <text x="960" y="586" text-anchor="middle" class="hi" font-size="67" font-weight="750" fill="#2b2622">Guide की cash सुविधा</text>
+      </g>
+      <g id="limit-bracket">
+        <path d="M139 688h1639m-1639 0v56m1639-56v56" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="547" y="731" width="826" height="94" rx="46" fill="#fde9a6"/>
+        <text x="960" y="792" text-anchor="middle" class="hi" font-size="54" font-weight="730" fill="#2b2622">बताई classes तक सीमित</text>
+      </g>
+    </g>
+    <g id="newspaper-inside">
+      <path d="M139 744v246h817V845" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="168" y="847" width="759" height="116" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:newspaper-bundle" transform="translate(189 855) scale(.43)"/>
+      <text x="345" y="894" font-size="47" font-weight="800" fill="#2b2622">Registered newspapers</text>
+      <text id="newspaper-hi" x="347" y="942" class="hi" font-size="42" font-weight="600" fill="#6f6a63">पंजीकृत समाचार पत्र</text>
+    </g>
+    <g id="outside-scope">
+      <rect x="1037" y="846" width="771" height="117" rx="25" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1422.5" y="924" text-anchor="middle" class="hi" font-size="61" font-weight="760" fill="#2b2622">हर postal product</text>
+      <path id="not-all" d="M1136 905H1708" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {on: [
+      [0, 'fade', '#newspaper-inside', {dur: 0.22}],
+      [0.50, 'fade', '#newspaper-hi', {dur: 0.22}],
+      [3.90, 'fade', '#outside-scope', {dur: 0.23}],
+      [8.64, 'draw', '#not-all', {dur: 0.28}]
+    ]}
+  </script>
+</section>
