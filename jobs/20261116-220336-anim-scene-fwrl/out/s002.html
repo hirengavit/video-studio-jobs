@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s002" data-section="INTRODUCTION" data-series="PACKING &amp; POSTING" data-in="cut">
+  <svg viewBox="0 0 1920 1080" aria-label="Postal rules now and before: Regulations 2024 and the former Guide Part I">
+    <g font-family="Inter, sans-serif" text-anchor="middle">
+      <g id="regulations-book">
+        <path d="M1122 880h438" stroke="#d9cdb8" stroke-width="3" stroke-linecap="round"/>
+        <use href="piece:regulations-book" transform="translate(1130 336.1) scale(1.4)"/>
+        <text id="new-title-1" x="1360" y="515" font-size="44" font-weight="750" fill="#2b2622">Post Office</text>
+        <text id="new-title-2" x="1360" y="566" font-size="44" font-weight="750" fill="#2b2622">Regulations</text>
+        <text id="year" x="1360" y="653" font-size="72" font-weight="850" fill="#9e1b1b">2024</text>
+      </g>
+      <text id="new-hi" x="1340" y="934" font-family="Noto Sans Devanagari, sans-serif" font-size="49" font-weight="680" fill="#2b2622">डाकघर विनियम 2024</text>
+      <g id="now">
+        <rect x="1132" y="951" width="416" height="68" rx="34" fill="#2e7d4f"/>
+        <text x="1340" y="999" font-size="44" font-weight="730" fill="#fff"><tspan font-family="Noto Sans Devanagari, sans-serif">अब यहाँ</tspan><tspan> · now</tspan></text>
+      </g>
+      <g id="older">
+        <path d="M298 880h524" stroke="#d9cdb8" stroke-width="3" stroke-linecap="round"/>
+        <use href="piece:old-book-stack" transform="translate(285.6 437.6) scale(1.4)"/>
+        <rect x="455" y="491" width="210" height="68" rx="34" fill="#eee9df" stroke="#d3cbc0" stroke-width="2"/>
+        <text x="560" y="541" font-family="Noto Sans Devanagari, sans-serif" font-size="48" font-weight="730" fill="#4b4f58">पहले</text>
+      </g>
+      <text id="old-title" x="560" y="934" font-size="54" font-weight="750" fill="#4b4f58">Post Office Guide Part I</text>
+      <text id="old-hi" x="560" y="995" font-family="Noto Sans Devanagari, sans-serif" font-size="49" font-weight="680" fill="#4b4f58">डाकघर गाइड भाग I</text>
+      <path id="arrow" d="M864 600h182m-30-25 30 25-30 25" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    on: [
+      [0, 'pop', '#regulations-book', { from:.92 }],
+      [.38, 'type', '#new-title-1', { cps:22 }],
+      [1.02, 'type', '#new-title-2', { cps:22 }],
+      [1.84, 'pop', '#year'],
+      [2.34, 'fade', '#new-hi', { dur:.34 }],
+      [3.90, 'pop', '#now', { from:.84 }],
+      [4.80, 'fade', '#older', { dur:.34 }],
+      [6.02, 'type', '#old-title', { cps:12 }],
+      [6.52, 'fade', '#old-hi', { dur:.34 }],
+      [7.16, 'draw', '#arrow', { dur:.46 }]
+    ]
+  })
+  </script>
+</section>
