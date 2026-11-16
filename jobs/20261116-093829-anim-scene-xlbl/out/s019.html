@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s019" data-in="cut" data-section="AFFIXING POSTAGE STAMPS" data-series="POSTAL RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="nocancel">
+  <rect x="100" y="188" width="1016" height="705" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+  <rect x="1160" y="188" width="660" height="705" rx="28" fill="white" stroke="#ead9a8" stroke-width="3"/>
+  <use href="piece:non-postage-labels" transform="translate(268 265) scale(1.9)"/>
+  <text x="386" y="710" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" font-weight="780" fill="#2b2622">Revenue stamp</text>
+  <text id="charity" x="829" y="710" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" font-weight="780" fill="#2b2622">Charity label</text>
+  <g id="postage">
+    <use href="piece:postage-stamp" transform="translate(1200 229) scale(1.45)"/>
+    <text x="1490" y="710" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="780" fill="#2b2622">Postage stamp</text>
+    <text id="postageHi" x="1490" y="778" text-anchor="middle" class="hi" font-size="46" font-weight="620" fill="#6f6a63">डाक टिकट</text>
+  </g>
+  <use id="cancel" href="piece:postal-date-stamp" opacity=".72" transform="translate(1438 403) scale(.71) rotate(12 150 150)"/>
+  <g id="denial">
+    <rect x="376" y="765" width="460" height="90" rx="44" fill="#4b4f58"/>
+    <text x="606" y="826" text-anchor="middle" class="hi" font-size="54" font-weight="740" fill="#fff">Cancel नहीं</text>
+  </g>
+</g>
+<g id="mislead">
+  <use id="envelope" href="piece:envelope-face-large" transform="translate(510 220) scale(.75)"/>
+  <g id="fake" fill="none" stroke="#4b4f58" stroke-width="3" opacity=".9">
+    <rect x="587" y="635" width="87" height="87" rx="6" stroke-dasharray="4 4"/>
+    <rect x="600" y="648" width="61" height="61" rx="3"/>
+    <path d="M611 694Q629 648 650 694Z"/>
+  </g>
+  <g id="point">
+    <ellipse cx="631" cy="679" rx="67" ry="65" fill="none" stroke="#4b4f58" stroke-width="5"/>
+    <path d="M689 714L758 790" stroke="#4b4f58" stroke-width="4" fill="none"/>
+    <text x="780" y="823" class="hi" font-size="52" font-weight="740" fill="#4b4f58">भ्रामक निशान</text>
+  </g>
+  <g id="reject">
+    <path d="M605 652l51 53m0-53-51 53" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+    <rect x="1126" y="778" width="307" height="83" rx="41" fill="#4b4f58"/>
+    <text x="1279" y="832" text-anchor="middle" class="hi" font-size="51" font-weight="760" fill="#fff">न लगाइए</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0,'#nocancel'],[6.2,'#mislead']],
+  on: [
+    [1.48,'fade','#charity',{dur:.22}],
+    [2.8,'fade','#postage',{dur:.23}],
+    [3.3,'fade','#postageHi',{dur:.22}],
+    [4.44,'stamp','#cancel',{from:1.3,rot:-5}],
+    [5.26,'fade','#denial',{dur:.2}],
+    [8.2,'fade','#point',{dur:.22}],
+    [9.18,'fade','#reject',{dur:.17}],
+  ],
+}
+</script>
+</section>
