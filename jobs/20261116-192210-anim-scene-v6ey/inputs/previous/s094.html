@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s094" data-in="cut" data-section="REGISTERED NEWSPAPER LICENCE" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="reg-card">
+      <rect id="reg-bg" x="100" y="209" width="738" height="327" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M134 229h670" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+      <text id="reg-name" x="469" y="358" font-size="65" font-weight="780" text-anchor="middle" fill="#6f6a63">Postal registration</text>
+      <text x="469" y="421" class="hi" font-size="44" font-weight="560" text-anchor="middle" fill="#6f6a63">डाक पंजीकरण</text>
+    </g>
+    <g fill="none" stroke="#6f6a63" stroke-width="13">
+      <rect x="862" y="340" width="113" height="63" rx="31" transform="rotate(-24 918 371)"/>
+      <rect x="947" y="340" width="113" height="63" rx="31" transform="rotate(-24 1003 371)"/>
+    </g>
+    <g id="lic-card">
+      <rect id="lic-bg" x="1082" y="209" width="738" height="327" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M1116 229h670" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+      <text id="lic-name" x="1451" y="358" font-size="73" font-weight="780" text-anchor="middle" fill="#6f6a63">Licence</text>
+      <text x="1451" y="421" class="hi" font-size="44" font-weight="560" text-anchor="middle" fill="#6f6a63">लाइसेंस</text>
+      <g id="ended">
+        <rect x="1331" y="451" width="240" height="61" rx="30" fill="#4b4f58"/>
+        <text x="1451" y="493" class="hi" font-size="40" font-weight="690" text-anchor="middle" fill="#fff">खत्म</text>
+      </g>
+    </g>
+    <g id="prior-scope">
+    <g id="renew">
+      <rect x="100" y="567" width="1720" height="127" rx="27" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="960" y="649" class="hi" font-size="65" font-weight="760" text-anchor="middle" fill="#2b2622">Renewal: दोनों साथ apply</text>
+    </g>
+    <g id="scope">
+      <rect x="100" y="728" width="1720" height="217" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:newspaper-bundle" transform="translate(180 752) scale(.77)"/>
+      <text x="494" y="818" class="hi" font-size="64" font-weight="740" fill="#9e1b1b">सिर्फ़ उस eligible newspaper</text>
+      <text id="scope-posting" x="494" y="898" class="hi" font-size="58" font-weight="670" fill="#2b2622">+ approved posting</text>
+    </g>
+    </g>
+    <g id="ordinary-letters">
+      <rect x="100" y="567" width="1720" height="158" rx="28" fill="#4b4f58"/>
+      <text x="192" y="671" class="hi" font-size="63" font-weight="740" fill="#ffffff">Firm की आम चिट्ठियाँ बिना stamp</text>
+      <g id="reject-letters">
+        <circle cx="1686" cy="646" r="48" fill="#ffffff"/>
+        <path d="M1667 627l38 38m0-38-38 38" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+      </g>
+    </g>
+    <g id="business-reply">
+      <rect x="100" y="762" width="1720" height="178" rx="28" fill="#4b4f58"/>
+      <text x="192" y="875" class="hi" font-size="60" font-weight="740" fill="#ffffff">Business Reply permit से बदल नहीं सकते</text>
+      <g id="reject-swap">
+        <circle cx="1686" cy="851" r="48" fill="#ffffff"/>
+        <path d="M1667 832l38 38m0-38-38 38" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {on: [
+      [0, 'out', '#prior-scope', {dur: 0.16}],
+      [0.18, 'fade', '#ordinary-letters', {dur: 0.20}],
+      [4.26, 'pop', '#reject-letters', {from: 0.8, spring: 'soft'}],
+      [5.50, 'fade', '#business-reply', {dur: 0.22}],
+      [8.16, 'pop', '#reject-swap', {from: 0.8, spring: 'soft'}]
+    ]}
+  </script>
+</section>
