@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.29",
+  "4.59",
+  "6.88",
+  "9.18",
+  "11.32"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s039",
+   "text": "याद रखें / REMEMBER",
+   "t": 0.3
+  }
+ ]
+}
