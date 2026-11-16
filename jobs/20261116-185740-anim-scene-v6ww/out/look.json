@@ -8,12 +8,5 @@
   "9.58"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s015",
-   "text": "बकाया तय करने के लिए / रोका जा सकता है",
-   "t": 3.89
-  }
- ]
+ "warnings": []
 }
