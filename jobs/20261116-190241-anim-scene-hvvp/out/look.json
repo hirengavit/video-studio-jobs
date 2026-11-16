@@ -8,12 +8,5 @@
   "11.35"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s028",
-   "text": "सवाल पुराने Guide का → / 3 cm",
-   "t": 2.3
-  }
- ]
+ "warnings": []
 }
