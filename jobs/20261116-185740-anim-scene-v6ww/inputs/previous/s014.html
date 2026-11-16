@@ -1,0 +1,75 @@
+<section class="vs-scene" id="s014" data-in="cut" data-section="AFFIXING POSTAGE STAMPS" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, 'Noto Sans Devanagari', sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="two">
+      <g id="counter">
+        <rect x="100" y="170" width="820" height="730" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <path d="M132 188h756" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+        <path d="M232 635H789" stroke="#ead9a8" stroke-width="3"/>
+        <use href="piece:post-counter-icon" transform="translate(315 220) scale(1.02)"/>
+        <use href="piece:rupee-cash" transform="translate(581 502) scale(.36)"/>
+        <text class="hi" x="510" y="748" fill="#2b2622" font-size="68" font-weight="700" text-anchor="middle">Counter पर cash देना</text>
+      </g>
+      <g id="bulk">
+        <rect x="1000" y="170" width="820" height="730" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <path d="M1032 188h756" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+        <path d="M1132 635h556" stroke="#ead9a8" stroke-width="3"/>
+        <use href="piece:envelope-article" transform="translate(1124 252) scale(1.08)"/>
+        <use href="piece:envelope-article" transform="translate(1152 280) scale(1.08)"/>
+        <use href="piece:envelope-article" transform="translate(1180 308) scale(1.08)"/>
+        <g transform="translate(1493 405) rotate(7)" fill="#fff" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M0 0h118l30 30v154H0z"/><path d="M118 0v30h30M22 55h102M22 82h102M22 109h72" fill="none"/>
+          <path d="M85 147l12 10 22-24" stroke="#2e7d4f" stroke-width="5" fill="none"/>
+        </g>
+        <text class="hi" x="1410" y="748" fill="#2b2622" font-size="68" font-weight="700" text-anchor="middle">Bulk cash की अनुमति</text>
+      </g>
+      <g id="separate">
+        <circle cx="960" cy="491" r="89" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+        <text x="960" y="481" text-anchor="middle" font-size="62" font-weight="800" fill="#9e1b1b">VS</text>
+        <text x="960" y="546" text-anchor="middle" class="hi" font-size="46" font-weight="700" fill="#2b2622">अलग</text>
+      </g>
+    </g>
+    <g id="oldnew">
+      <rect x="100" y="170" width="820" height="730" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:old-book-stack" transform="translate(729 184) scale(.4)"/>
+      <text x="156" y="268" font-size="37" font-weight="760" fill="#6f6a63">OLD · Post Office Guide Part I</text>
+      <text x="156" y="329" class="hi" font-size="47" fill="#6f6a63">पुराना</text>
+      <path d="M156 374h708" fill="none" stroke="#ead9a8" stroke-width="3"/>
+      <g id="old-advice">
+        <text x="510" y="549" text-anchor="middle" font-size="92" font-weight="700" fill="#2b2622">Prepayment</text>
+        <rect x="351" y="620" width="318" height="113" rx="56" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="510" y="694" text-anchor="middle" class="hi" font-size="61" font-weight="650" fill="#6f6a63">सलाह</text>
+      </g>
+      <g id="now-panel">
+        <rect x="1000" y="170" width="820" height="730" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <path d="M1032 188h756" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+        <text x="1056" y="268" font-size="53" font-weight="800" fill="#9e1b1b">NOW</text>
+        <path d="M1056 316h708" fill="none" stroke="#ead9a8" stroke-width="3"/>
+      </g>
+      <g id="date">
+        <use href="piece:postal-date-stamp" transform="translate(1275 346) scale(.9)"/>
+        <rect x="1318" y="453" width="184" height="56" rx="4" fill="#fff"/>
+        <text x="1410" y="494" text-anchor="middle" font-size="34" font-weight="800" fill="#2b2622">16.12.2024</text>
+      </g>
+      <text id="compulsory" x="1410" y="715" text-anchor="middle" class="hi" font-size="100" font-weight="800" fill="#9e1b1b">अनिवार्य</text>
+      <g id="exception">
+        <rect x="1070" y="766" width="680" height="89" rx="44" fill="#fde9a6"/>
+        <text x="1410" y="824" text-anchor="middle" class="hi" font-size="45" font-weight="650" fill="#2b2622">सिवाय authorised exceptions</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0,"#two"],[4.57,"#oldnew"]],
+    on: [
+      [1.77,"slide","#bulk",{from:"right",dist:135,spring:"soft"}],
+      [3.30,"fade","#separate",{dur:.22}],
+      [5.62,"fade","#old-advice",{dur:.28}],
+      [7.36,"fade","#now-panel",{dur:.24}],
+      [7.36,"stamp","#date",{from:1.25,rot:-3,spring:"soft"}],
+      [9.62,"fade","#compulsory",{dur:.24}],
+      [10.46,"fade","#exception",{dur:.24}]
+    ]
+  }
+  </script>
+</section>
