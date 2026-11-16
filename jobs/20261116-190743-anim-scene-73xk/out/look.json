@@ -8,12 +8,5 @@
   "12.43"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s048",
-   "text": "स्वयं बुकिंग कियोस्क",
-   "t": 2.52
-  }
- ]
+ "warnings": []
 }
