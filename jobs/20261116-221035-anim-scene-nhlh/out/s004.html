@@ -1,0 +1,72 @@
+<section class="vs-scene" id="s004" data-in="cut" data-section="INTRODUCTION" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text id="intro" x="200" y="227" fill="#9e1b1b" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="67" font-weight="810">पूरी बात</text>
+    <g id="four-step-title">
+      <circle cx="647" cy="205" r="39" fill="#9e1b1b"/>
+      <text id="four" x="647" y="224" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="55" font-weight="810">4</text>
+      <text x="705" y="227" fill="#9e1b1b" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="67" font-weight="810">कदम</text>
+    </g>
+    <path d="M200 269h1520" fill="none" stroke="#ead9a8" stroke-width="3"/>
+    <g id="step-slots" fill="#f7f0e1" stroke="#ead9a8" stroke-width="2" stroke-dasharray="10 10">
+      <rect x="200" y="300" width="1520" height="150" rx="24" stroke-dasharray="10 10"/>
+      <rect x="200" y="470" width="1520" height="150" rx="24" stroke-dasharray="10 10"/>
+      <rect x="200" y="640" width="1520" height="150" rx="24" stroke-dasharray="10 10"/>
+      <rect x="200" y="810" width="1520" height="150" rx="24" stroke-dasharray="10 10"/>
+    </g>
+    <g id="step1">
+      <rect x="200" y="300" width="1520" height="150" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="286" cy="375" r="44" fill="#9e1b1b"/>
+      <text x="286" y="393" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="54" font-weight="810">1</text>
+      <text id="allow-question" x="372" y="399" fill="#2b2622" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="61" font-weight="760">क्या सामान डाक से जा सकता है?</text>
+      <g id="envelope-question">
+        <use href="piece:icon-envelope-letter" transform="translate(1453 302) scale(.36)"/>
+        <circle cx="1625" cy="376" r="32" fill="#f3ead6"/>
+        <text x="1625" y="391" text-anchor="middle" fill="#9e1b1b" font-family="Inter,sans-serif" font-size="46" font-weight="800">?</text>
+      </g>
+    </g>
+    <g id="step2">
+      <rect x="200" y="470" width="1520" height="150" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="286" cy="545" r="44" fill="#9e1b1b"/>
+      <text x="286" y="563" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="54" font-weight="810">2</text>
+      <text id="pack" x="372" y="526" fill="#9e1b1b" font-family="Inter,sans-serif" font-size="64" font-weight="820">PACK</text>
+      <text id="pack-hi" x="372" y="579" fill="#6f6a63" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="690">पैक करें</text>
+      <g id="pack-detail">
+        <path d="M663 509v76" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+        <text id="pack-gist" x="713" y="562" fill="#6f6a63" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="650">सामान भी बचे…</text>
+        <text id="pack-detail-cont" x="1025" y="562" class="hi" fill="#6f6a63" font-size="42" font-weight="650">और दूसरी डाक भी</text>
+      </g>
+      <g id="parcel"><use href="piece:parcel-with-tag" transform="translate(1490 466) scale(.50)"/></g>
+    </g>
+    <g id="step3">
+      <rect x="200" y="640" width="1520" height="150" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="286" cy="715" r="44" fill="#9e1b1b"/>
+      <text x="286" y="733" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="54" font-weight="810">3</text>
+      <text id="close-label" x="372" y="696" fill="#9e1b1b" font-family="Inter,sans-serif" font-size="64" font-weight="820">CLOSE BY CLASS</text>
+      <text id="close-hi" x="372" y="749" fill="#6f6a63" class="hi" font-size="43" font-weight="690">class के हिसाब से बंद करें</text>
+      <g id="seal-icon"><use href="piece:wax-seal" transform="translate(1518 655) scale(1)"/></g>
+    </g>
+    <g id="step4">
+      <rect x="200" y="810" width="1520" height="150" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <circle id="badge-4" cx="286" cy="885" r="44" fill="#9e1b1b"/>
+      <text x="286" y="903" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="54" font-weight="810">4</text>
+      <text id="route-gist" x="372" y="902" fill="#6f6a63" class="hi" font-size="52" font-weight="740">सही रास्ते से…</text>
+      <g id="letter-box"><use href="piece:letter-box-icon" transform="translate(1549 821) scale(.31)"/></g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.02, 'type', '#pack-detail-cont', {cps:26}],
+      [2.36, 'slide', '#step3', {from:'right',dist:72,spring:'fast'}],
+      [3.20, 'pop', '#close-label', {from:.90,spring:'fast'}],
+      [3.70, 'fade', '#close-hi', {dur:.20}],
+      [3.70, 'pop', '#seal-icon', {from:.90,spring:'fast'}],
+      [4.20, 'highlight', '#close-label', {words:'CLASS',color:'#f2b705',opacity:.34,dur:.35,pad:8}],
+      [6.96, 'slide', '#step4', {from:'right',dist:72,spring:'fast'}],
+      [8.36, 'type', '#route-gist', {cps:26}],
+      [8.36, 'pop', '#letter-box', {from:.90,spring:'fast'}]
+    ]
+  }
+  </script>
+</section>
