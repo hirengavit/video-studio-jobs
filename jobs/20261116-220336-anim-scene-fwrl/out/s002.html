@@ -27,14 +27,14 @@
   <script type="text/scene">
   ({
     on: [
-      [0, 'pop', '#regulations-book', { from:.92 }],
+      [0, 'pulse', '#regulations-book', { amount:.045 }],
       [.38, 'type', '#new-title-1', { cps:22 }],
       [1.02, 'type', '#new-title-2', { cps:22 }],
       [1.84, 'pop', '#year'],
       [2.34, 'fade', '#new-hi', { dur:.34 }],
       [3.90, 'pop', '#now', { from:.84 }],
       [4.80, 'fade', '#older', { dur:.34 }],
-      [6.02, 'type', '#old-title', { cps:12 }],
+      [6.02, 'type', '#old-title', { cps:13 }],
       [6.52, 'fade', '#old-hi', { dur:.34 }],
       [7.16, 'draw', '#arrow', { dur:.46 }]
     ]
