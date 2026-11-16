@@ -1,0 +1,72 @@
+<section class="vs-scene" id="s013" data-in="cut" data-section="AFFIXING STAMPS" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <defs>
+      <clipPath id="s013-revenue-only"><rect x="486" y="355" width="444" height="426"/></clipPath>
+      <clipPath id="s013-charity-only"><rect x="1005" y="355" width="444" height="426"/></clipPath>
+    </defs>
+    <g id="emboss">
+      <rect x="104" y="204" width="796" height="756" rx="34" fill="#f3ead6"/>
+      <text x="502" y="311" text-anchor="middle" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="72" font-weight="800">Unaccountable item</text>
+      <text x="502" y="382" text-anchor="middle" fill="#6f6a63" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48">बिना हिसाब वाली डाक</text>
+      <use href="piece:embossed-envelope" transform="translate(122 278) scale(1.88)"/>
+      <g id="emboss-focus">
+        <circle cx="716" cy="551" r="76" fill="none" stroke="#f2b705" stroke-width="9"/>
+        <text x="502" y="920" text-anchor="middle" fill="#2b2622" font-size="55" font-family="Inter, sans-serif" font-weight="750">Embossed postage</text>
+      </g>
+      <g id="bars">
+        <rect x="950" y="204" width="866" height="756" rx="34" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1038" y="353" fill="#2b2622" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="62" font-weight="750">देय postage</text>
+        <rect id="full-bar" x="1042" y="385" width="674" height="80" rx="22" fill="#9e1b1b"/>
+        <text x="1038" y="557" fill="#2b2622" font-family="Inter, sans-serif" font-size="64" font-weight="750">Embossed</text>
+        <rect x="1042" y="590" width="674" height="102" rx="22" fill="#f3ead6"/>
+        <path id="paid-bar" d="M1064 590h390v102h-390a22 22 0 0 1-22-22v-58a22 22 0 0 1 22-22z" fill="#9e1b1b"/>
+        <path id="gap-fill" d="M1454 590h240a22 22 0 0 1 22 22v58a22 22 0 0 1-22 22h-240z" fill="#f2b705"/>
+        <text x="1584" y="766" text-anchor="middle" fill="#8a5d00" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="49" font-weight="800">कम</text>
+        <g id="topup">
+          <use href="piece:postage-stamp" transform="translate(1512 569) scale(.36)"/>
+          <text x="1378" y="883" text-anchor="middle" fill="#9e1b1b" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="58" font-weight="800">सिर्फ़ फ़र्क के stamps</text>
+        </g>
+      </g>
+    </g>
+    <g id="labels">
+      <g id="revenue-card">
+        <rect x="461" y="227" width="470" height="566" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="696" y="336" text-anchor="middle" fill="#9e1b1b" font-size="62" font-family="Inter, sans-serif" font-weight="800">Revenue stamp</text>
+        <g clip-path="url(#s013-revenue-only)">
+          <use href="piece:non-postage-labels" transform="translate(405 268) scale(2.78)"/>
+        </g>
+      </g>
+      <g id="charity-card">
+        <rect x="989" y="227" width="470" height="566" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1224" y="336" text-anchor="middle" fill="#9e1b1b" font-size="63" font-family="Inter, sans-serif" font-weight="800">Charity label</text>
+        <g clip-path="url(#s013-charity-only)">
+          <use href="piece:non-postage-labels" transform="translate(510 268) scale(2.78)"/>
+        </g>
+      </g>
+      <g id="excluded">
+        <g fill="none" stroke-linecap="round">
+          <path d="M611 459l172 170m0-170L611 629m528-170 172 170m0-170-172 170" stroke="#fbf7ee" stroke-width="31"/>
+          <path d="M611 459l172 170m0-170L611 629m528-170 172 170m0-170-172 170" stroke="#4b4f58" stroke-width="19"/>
+        </g>
+        <rect x="461" y="822" width="998" height="135" rx="31" fill="#4b4f58"/>
+        <text x="960" y="911" text-anchor="middle" fill="#fff" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="59" font-weight="800">इनसे postage नहीं चुकता</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, "#emboss"], [6.56, "#labels"]],
+    on: [
+      [1.80, "fade", "#emboss-focus", {dur:.24}],
+      [3.22, "fade", "#bars", {dur:.18}],
+      [3.22, "grow", "#full-bar", {axis:"x", origin:"left"}],
+      [3.28, "grow", "#paid-bar", {axis:"x", origin:"left"}],
+      [3.55, "fade", "#gap-fill", {dur:.24}],
+      [4.44, "pop", "#topup", {from:.94}],
+      [8.74, "fade", "#charity-card", {dur:.22}],
+      [10.50, "fade", "#excluded", {dur:.17}]
+    ]
+  }
+  </script>
+</section>
