@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s021" data-section="PART 1 · PACKING &amp; STRONG COVER" data-series="PACKING &amp; POSTING" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="old-demo">
+<path d="M185 208H1735Q1760 208 1760 233V829Q1760 854 1735 854H185Q160 854 160 829V233Q160 208 185 208Z" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<path d="M795 260V798" stroke="#ead9a8" stroke-width="3"/>
+<use href="piece:old-book-stack" transform="translate(219 241) scale(1.20)"/>
+<text id="old-title" x="467" y="704" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="740" fill="#6f6a63">पुराना आम निर्देश</text>
+<use id="demo-parcel" href="piece:parcel-with-tag" transform="translate(964 386) scale(1.60)"/>
+<g id="stamp-spots" fill="#fbf7ee" fill-opacity=".72" stroke="#6f6a63" stroke-width="4" stroke-dasharray="9 8"><circle id="spot-1" cx="1113" cy="590" r="57"/><circle id="spot-2" cx="1453" cy="590" r="57"/></g>
+<text id="at-least" x="854" y="320" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="720" fill="#2b2622">कम से कम</text>
+<text id="two" x="1100" y="327" font-family="Inter,sans-serif" font-size="96" font-weight="820" fill="#9e1b1b">2</text>
+<text id="offices" x="1220" y="320" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="38" font-weight="720" fill="#2b2622">post offices की date stamps</text>
+<g id="posting-stamp">
+  <circle cx="1113" cy="590" r="56" fill="#fbf7ee"/>
+  <use href="piece:postal-date-stamp" transform="translate(1051.5 528.5) scale(.41)"/>
+</g>
+<g id="destination-stamp">
+  <circle cx="1453" cy="590" r="56" fill="#fbf7ee"/>
+  <use href="piece:postal-date-stamp" transform="translate(1391.5 528.5) scale(.41)"/>
+</g>
+<g id="posting-label">
+  <rect x="880" y="732" width="340" height="95" rx="16" fill="#f3ead6"/>
+  <text x="1050" y="770" text-anchor="middle" font-family="Inter,sans-serif" font-size="34" font-weight="790" fill="#2b2622">Office of posting</text>
+</g>
+<text id="posting-hi" x="1050" y="809" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="32" font-weight="710" fill="#4b4f58">भेजने वाला डाकघर</text>
+<g id="destination-label">
+  <rect x="1240" y="732" width="485" height="95" rx="16" fill="#f3ead6"/>
+  <text x="1482.5" y="770" text-anchor="middle" font-family="Inter,sans-serif" font-size="34" font-weight="790" fill="#2b2622">Office of destination</text>
+</g>
+<text id="destination-hi" x="1482.5" y="809" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="32" font-weight="710" fill="#4b4f58">पहुँचने वाला डाकघर</text>
+</g>
+<g id="lesson">
+  <rect x="160" y="866" width="1600" height="124" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+  <text x="220" y="926" font-size="48" font-weight="795" fill="#2b2622"><tspan font-family="Noto Sans Devanagari,Inter,sans-serif">सीख: </tspan><tspan font-family="Inter,sans-serif">cover</tspan><tspan font-family="Noto Sans Devanagari,Inter,sans-serif"> सहे —</tspan></text>
+  <circle cx="252" cy="957" r="7" fill="#9e1b1b"/><circle cx="280" cy="957" r="7" fill="#9e1b1b"/><circle id="dot-3" cx="308" cy="957" r="7" fill="#c8b997"/>
+</g>
+<g id="journey-icon" stroke="#4b4f58" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M677 917h59v-24h-21v-13h-38zM715 893h12l9 11M736 902h33m-8-8 8 8-8 8"/>
+  <circle cx="689" cy="919" r="7" fill="#f3ead6"/><circle cx="723" cy="919" r="7" fill="#f3ead6"/>
+</g>
+<text id="journey" x="797" y="940" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="50" font-weight="790" fill="#2b2622">सफ़र का दबाव</text>
+<text id="stamping" x="1260" y="940" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="50" font-weight="790" fill="#2b2622">+ मुहर का दबाव</text>
+</svg>
+<script type="text/scene">
+({
+ on:[
+  [1.66,'stamp','#posting-stamp',{from:1.26,rot:-4,spring:'fast'}],
+  [1.66,'pop','#posting-label',{from:.94,spring:'fast'}],
+  [2.16,'fade','#posting-hi',{dur:.23}],
+  [3.40,'stamp','#destination-stamp',{from:1.26,rot:4,spring:'fast'}],
+  [3.40,'pop','#destination-label',{from:.94,spring:'fast'}],
+  [4.48,'fade','#destination-hi',{dur:.23}],
+  [5.46,'reveal','#lesson',{from:'left',dur:.48}],
+  [7.24,'fade','#journey-icon',{dur:.23}],
+  [7.24,'type','#journey',{cps:24}],
+  [9.60,'type','#stamping',{cps:24}],
+  [10.38,'highlight','#stamping',{words:'मुहर का दबाव',color:'#f2b705',opacity:.42,dur:.28}],
+  [10.38,'color','#dot-3',{to:'#9e1b1b',dur:.25}]
+ ]
+})
+</script>
+</section>
