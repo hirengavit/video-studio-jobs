@@ -8,12 +8,5 @@
   "6.56"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s053",
-   "text": "WINDOW · खिड़की की दूरी / बाएँ 15",
-   "t": 2.68
-  }
- ]
+ "warnings": []
 }
