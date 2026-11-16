@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s063" data-in="cut" data-section="PART 4 · BULK CASH (OLD GUIDE)" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect x="104" y="170" width="300" height="92" rx="21" fill="#9e1b1b"/>
+    <text x="254" y="234" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="56" font-weight="700" fill="white">उदाहरण</text>
+
+    <g id="firm-card">
+      <rect x="104" y="292" width="830" height="667" rx="28" fill="white" stroke="#ead9a8" stroke-width="3"/>
+      <g id="firm-icon" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="152" y="345" width="307" height="351" rx="22" fill="#f3ead6" stroke="#ead9a8"/>
+        <rect x="220" y="453" width="172" height="168" rx="9" fill="white"/>
+        <rect x="235" y="423" width="142" height="38" rx="7" fill="#9e1b1b"/>
+        <path d="M206 618H405V641H206Z" fill="#ead9a8"/>
+        <path d="M279 619V557H333V619" fill="#f3ead6"/>
+        <path d="M244 480H272V503H244ZM292 480H320V503H292ZM341 480H369V503H341ZM244 520H272V543H244ZM292 520H320V543H292ZM341 520H369V543H341Z" fill="#f3ead6"/>
+      </g>
+      <g id="packet-stack">
+        <use href="piece:parcel-with-tag" transform="translate(541 370) scale(0.72)"/>
+        <use href="piece:parcel-with-tag" transform="translate(511 405) scale(0.72)"/>
+        <use href="piece:parcel-with-tag" transform="translate(481 440) scale(0.72)"/>
+      </g>
+      <g id="packet-count">
+        <text id="count-300" x="519" y="785" font-family="Inter,sans-serif" text-anchor="middle" font-size="119" font-weight="760" fill="#9e1b1b">300</text>
+        <text id="packet-type" x="519" y="849" font-family="Inter,sans-serif" text-anchor="middle" font-size="59" font-weight="720" fill="#2b2622">Unregistered packets</text>
+        <text id="packet-hi" x="519" y="906" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="47" font-weight="530" fill="#6f6a63">अपंजीकृत पैकेट</text>
+      </g>
+    </g>
+
+    <g id="small-town">
+      <rect x="981" y="292" width="835" height="364" rx="28" fill="white" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1057" y="390" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="65" font-weight="720" fill="#2b2622">छोटा शहर</text>
+      <g id="threshold">
+        <rect x="1537" y="333" width="222" height="91" rx="17" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1648" y="399" font-family="Inter,sans-serif" text-anchor="middle" font-size="65" font-weight="750" fill="#2b2622">250</text>
+      </g>
+      <path d="M1058 454H1738" stroke="#ead9a8" stroke-width="3"/>
+      <g id="qualified">
+        <rect x="1054" y="499" width="690" height="110" rx="20" fill="#e7f0e9"/>
+        <circle cx="1119" cy="554" r="32" fill="#2e7d4f"/>
+        <path d="M1105 553L1115 563L1133 544" fill="none" stroke="white" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+        <text x="1185" y="579" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="720" fill="#2e7d4f">शर्त पूरी</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [3.60, "fade", "#packet-stack, #packet-count", {dur: 0.20}],
+      [3.60, "count", "#count-300", {to: 300, from: 0, dur: 0.53}],
+      [4.24, "fade", "#packet-type", {dur: 0.18}],
+      [4.74, "fade", "#packet-hi", {dur: 0.18}],
+      [6.84, "fade", "#small-town", {dur: 0.20}],
+      [7.92, "fade", "#threshold", {dur: 0.20}],
+      [9.04, "fade", "#qualified", {dur: 0.19}]
+    ]
+  }
+  </script>
+</section>
