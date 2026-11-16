@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s123" data-in="cut" data-section="PART 7 · BUSINESS REPLY ARTICLES" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="double">
+      <text x="960" y="279" text-anchor="middle" font-size="92" font-weight="800" fill="#9e1b1b">Double postcard</text>
+      <text id="double-hi" x="960" y="355" text-anchor="middle" class="hi" font-size="52" font-weight="580" fill="#6f6a63">दोहरा पोस्टकार्ड</text>
+      <path id="postcard-rest" d="M100 958H1820" fill="none" stroke="none"/>
+      <g id="postcard-shift" transform="translate(120 0)">
+      <g id="postcard-pair">
+      <circle data-anchor="base" cx="960" cy="958" r="0"/>
+      <use href="piece:postcard-blank" transform="translate(260.7 263) scale(1.85)"/>
+      <use href="piece:postcard-blank" transform="translate(919.3 263) scale(1.85)"/>
+      <path d="M960 424V842" stroke="#6f6a63" stroke-width="6" stroke-dasharray="7 16" stroke-linecap="round"/>
+      <g id="reply-half">
+        <rect x="967" y="428" width="646" height="409" rx="12" fill="#fde9a6" fill-opacity=".22" stroke="#f2b705" stroke-width="8"/>
+        <rect x="1070" y="875" width="439" height="83" rx="42" fill="#fde9a6"/>
+        <text x="1290" y="929" text-anchor="middle" class="hi" font-size="48" font-weight="690" fill="#2b2622">reply वाला हिस्सा</text>
+      </g>
+      </g>
+      </g>
+
+      <g id="catalog-beside">
+        <g transform="translate(1544 508) scale(0.9)"><rect x="13" y="18" width="222" height="281" rx="10" fill="#ead9a8" stroke="#a4a098" stroke-width="4"/><rect x="0" y="0" width="222" height="282" rx="10" fill="#fff" stroke="#9e1b1b" stroke-width="5"/><rect x="20" y="22" width="182" height="29" rx="5" fill="#9e1b1b"/><rect x="20" y="71" width="73" height="85" rx="6" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/><path d="M108 77h88m-88 22h78m-78 22h88m-88 22h72M20 181h176M20 209h158M20 237h176" fill="none" stroke="#a4a098" stroke-width="4" stroke-linecap="round"/></g>
+        <rect x="1482" y="804" width="336" height="77" rx="41" fill="#f3ead6"/>
+        <text x="1650" y="856" text-anchor="middle" class="hi" font-size="42" font-weight="690" fill="#6f6a63" textLength="288" lengthAdjust="spacingAndGlyphs">दूसरी सामग्री के साथ</text>
+      </g>
+    </g>
+    <g id="bre">
+      <text x="960" y="279" text-anchor="middle" font-size="91" font-weight="800" fill="#9e1b1b">Business Reply Envelope</text>
+      <text id="bre-hi" x="960" y="355" text-anchor="middle" class="hi" font-size="52" font-weight="590" fill="#6f6a63">व्यावसायिक जवाबी लिफ़ाफ़ा</text>
+      <use href="piece:envelope-face-large" transform="translate(248 431) scale(.51)"/>
+      <path d="M751 581v162m28-162v162" stroke="#2b2622" stroke-width="11" stroke-linecap="round"/>
+      <text x="969" y="649" text-anchor="middle" font-size="110" font-weight="700" fill="#9e1b1b">+</text>
+      <g transform="translate(1150 428) scale(1.21)"><rect x="13" y="18" width="222" height="281" rx="10" fill="#ead9a8" stroke="#a4a098" stroke-width="4"/><rect x="0" y="0" width="222" height="282" rx="10" fill="#fff" stroke="#9e1b1b" stroke-width="5"/><rect x="20" y="22" width="182" height="29" rx="5" fill="#9e1b1b"/><rect x="20" y="71" width="73" height="85" rx="6" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/><path d="M108 77h88m-88 22h78m-78 22h88m-88 22h72M20 181h176M20 209h158M20 237h176" fill="none" stroke="#a4a098" stroke-width="4" stroke-linecap="round"/></g>
+      <g id="with-only">
+        <rect x="483" y="879" width="954" height="102" rx="48" fill="#9e1b1b"/>
+        <text x="960" y="948" text-anchor="middle" class="hi" font-size="60" font-weight="750" fill="#ffffff">दूसरी सामग्री के साथ ही</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {shots: [[0, '#double'], [3.92, '#bre']], on: [
+      [0, 'place', '#postcard-pair', {on: '#postcard-rest', dx: -120}],
+      [0.20, 'move', '#postcard-shift', {by: [-120, 0], spring: 'soft'}],
+      [0.80, 'fade', '#catalog-beside', {dur: 0.20}],
+      [4.42, 'fade', '#bre-hi', {dur: 0.22}],
+      [5.85, 'fade', '#with-only', {dur: 0.24}]
+    ]}
+  </script>
+</section>
