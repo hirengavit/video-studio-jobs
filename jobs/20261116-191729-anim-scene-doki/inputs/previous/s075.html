@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s075" data-in="cut" data-section="BULK CASH PREPAYMENT" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect x="116" y="176" width="1688" height="786" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M147 177 H1773 Q1798 177 1801 200 H119 Q122 177 147 177Z" fill="#9e1b1b"/>
+    <text x="202" y="306" class="hi" font-size="77" font-weight="780" fill="#9e1b1b">आज</text>
+    <g id="rule">
+      <rect x="1377" y="229" width="340" height="146" rx="20" fill="#f3ead6"/>
+      <text x="1547" y="300" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="770" fill="#2b2622">Rule 9</text>
+      <text id="ruleHi" x="1547" y="353" text-anchor="middle" class="hi" font-size="44" font-weight="580" fill="#6f6a63">नियम 9</text>
+    </g>
+    <g id="cash">
+      <use href="piece:rupee-cash" transform="translate(187 338) scale(.68)"/>
+      <text x="510" y="480" font-family="Inter,sans-serif" font-size="90" font-weight="785" fill="#2b2622">Cash</text>
+      <text id="valid" x="513" y="553" class="hi" font-size="53" font-weight="670" fill="#2e7d4f">मान्य तरीका</text>
+    </g>
+    <path id="divider" d="M200 619H1720" fill="none" stroke="#ead9a8" stroke-width="3"/>
+    <text id="ask" x="204" y="744" class="hi" font-size="56" font-weight="660" fill="#2b2622">Item कैसे स्वीकार होगा?</text>
+    <g id="answer">
+      <path d="M854 731 H951 m-21-17 21 17-21 17" stroke="#8a5d00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <rect x="977" y="676" width="755" height="112" rx="22" fill="#fde9a6"/>
+      <text x="1354.5" y="748" text-anchor="middle" class="hi" font-size="47" font-weight="710" fill="#8a5d00">उस product की booking की शर्तें</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.36,'fade','#rule',{dur:.22}],
+      [0.86,'fade','#ruleHi',{dur:.22}],
+      [1.32,'fade','#cash',{dur:.24}],
+      [2.18,'fade','#valid',{dur:.2}],
+      [4.36,'fade','#divider',{dur:.22}],
+      [4.36,'fade','#ask',{dur:.22}],
+      [7.60,'fade','#answer',{dur:.25}],
+    ],
+  }
+  </script>
+</section>
