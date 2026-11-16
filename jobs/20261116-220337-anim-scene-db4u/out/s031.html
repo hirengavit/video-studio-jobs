@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s031" data-in="cut" data-section="PART 2 · LETTER ENVELOPE" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="trap">
+<rect x="160" y="160" width="1600" height="170" rx="22" fill="#9e1b1b"/>
+<text x="209" y="221" class="hi" font-size="50" font-weight="800" fill="white">EXAM TRAP · परीक्षा का जाल</text>
+<text id="trap-line" x="209" y="299" class="hi" font-size="65" font-weight="790" fill="#fff3cc">Staple ≠ लगातार बंद</text>
+<g id="trap-card">
+<rect x="160" y="380" width="1600" height="580" rx="28" fill="white" stroke="#ead9a8" stroke-width="4"/>
+<use href="piece:envelope-article" transform="translate(330 531) scale(1.1)"/>
+<g id="staples" fill="none" stroke="#4b4f58" stroke-width="11" stroke-linecap="round"><path d="M407 551v-19h43v19m153 0v-19h43v19"/></g>
+<path id="trap-cross" d="M741 704l87 87m0-87-87 87" fill="none" stroke="#4b4f58" stroke-width="18" stroke-linecap="round"/>
+<path d="M892 464V875" stroke="#ead9a8" stroke-width="4"/>
+<text id="t1" x="960" y="596" class="hi" font-size="68" font-weight="760" fill="#2b2622">Staple से बंद</text>
+<text id="t2" x="960" y="733" class="hi" font-size="72" font-weight="780" fill="#4b4f58">लगातार बंद?</text>
+<path id="strike-line" d="M952 707H1394" stroke="#4b4f58" stroke-width="12" stroke-linecap="round"/>
+</g></g>
+<g id="flap">
+<rect x="180" y="300" width="1160" height="600" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+<rect x="256" y="356" width="1008" height="488" rx="25" fill="#fff" stroke="#2b2622" stroke-width="6"/>
+<path d="M258 819L604 545M1261 819L915 545" fill="none" stroke="#d7c7a5" stroke-width="5"/>
+<path id="flap-fill" d="M260 383Q260 357 285 357H1235Q1260 357 1260 383L826 669Q760 715 694 669Z" fill="#fde9a6"/>
+<path id="flap-edge" d="M260 383L694 669Q760 715 826 669L1260 383" fill="none" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1374" y="374" width="426" height="442" rx="26" fill="white" stroke="#ead9a8" stroke-width="4"/>
+<text id="term" x="1587" y="529" text-anchor="middle" font-size="96" font-weight="820" fill="#2b2622">FLAP</text>
+<text id="term-hi" x="1587" y="638" text-anchor="middle" class="hi" font-size="66" font-weight="780" fill="#9e1b1b">पल्ला</text>
+<text id="term-def" x="1587" y="734" text-anchor="middle" class="hi" font-size="44" font-weight="630" fill="#6f6a63">बंद करने वाला पल्ला</text>
+</g></svg>
+<script type="text/scene">
+{shots:[[0,"#trap"],[7.97,"#flap"]],on:[
+[.46,"fade","#trap-line",{dur:.22}],
+[2.64,"pop","#trap-card,#staples",{from:.955,spring:"fast"}],
+[3.36,"fade","#t1",{dur:.20}],
+[4.10,"fade","#t2",{dur:.20}],
+[6.74,"draw","#strike-line,#trap-cross",{dur:.23}],
+[7.97,"draw","#flap-edge",{dur:.35}],
+[7.97,"fade","#term",{dur:.18}],
+[8.53,"fade","#term-hi",{dur:.18}],
+[9.13,"fade","#term-def",{dur:.20}]
+]}
+</script></section>
