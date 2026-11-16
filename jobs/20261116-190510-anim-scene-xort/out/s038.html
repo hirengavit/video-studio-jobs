@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s038" data-in="cut" data-section="PART 3 · REGULATION 22" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect x="100" y="170" width="820" height="730" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="1000" y="170" width="820" height="175" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect id="right-panel" x="1000" y="170" width="820" height="730" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M1034 190h752" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+    <text x="162" y="278" class="hi" font-size="55" font-weight="760" fill="#6f6a63">Regulation 22 · पहली list</text>
+    <text x="1062" y="278" class="hi" font-size="55" font-weight="780" fill="#9e1b1b">1 January 2026 से</text>
+    <path d="M162 321h696m204 0h696" stroke="#ead9a8" stroke-width="3"/>
+    <g id="list">
+      <rect x="143" y="356" width="734" height="251" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <g opacity=".62" fill="#c6c0b6">
+        <rect x="197" y="417" width="591" height="17" rx="7.5"/><rect x="197" y="478" width="497" height="17" rx="7.5"/><rect x="197" y="539" width="559" height="17" rx="7.5"/>
+      </g>
+    </g>
+    <g id="packets">
+      <rect x="143" y="622" width="734" height="241" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="181" y="649" width="620" height="183" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="491" y="733" text-anchor="middle" font-size="67" font-weight="780" fill="#2b2622">Small packets</text>
+      <text x="491" y="790" class="hi" text-anchor="middle" font-size="46" font-weight="590" fill="#6f6a63">छोटे पैकेट</text>
+    </g>
+    <path id="removed-strike" d="M255 711H727" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+    <path id="removed-cross" d="M818 724l32 32m0-32l-32 32" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+    <g id="date">
+      <use href="piece:postal-date-stamp" transform="translate(1284 352) scale(.84)"/>
+      <rect x="1324" y="454" width="172" height="50" rx="5" fill="#fff"/>
+      <text x="1410" y="491" text-anchor="middle" font-size="32" font-weight="800" fill="#2b2622">01.01.2026</text>
+    </g>
+    <g id="amendment">
+      <text x="1410" y="649" text-anchor="middle" font-size="62" font-weight="790" fill="#9e1b1b">Sixth Amendment</text>
+      <text x="1410" y="722" text-anchor="middle" font-size="62" font-weight="790" fill="#9e1b1b">Regulations 2025</text>
+    </g>
+    <g id="removed-note">
+      <rect x="1090" y="759" width="640" height="86" rx="43" fill="#fde9a6"/>
+      <text x="1410" y="815" class="hi" text-anchor="middle" font-size="52" font-weight="700" fill="#2b2622">list से हटा दिए</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [2.26,"fade","#list",{dur:.30}],
+      [5.32,"fade","#packets",{dur:.26}],
+      [7.12,"fade","#right-panel",{dur:.24}],
+      [7.12,"stamp","#date",{from:1.18,rot:-3,spring:"soft"}],
+      [9.66,"fade","#amendment",{dur:.32}],
+      [13.24,"pulse","#packets"],
+      [15.60,"draw","#removed-strike",{dur:.22}],
+      [15.60,"draw","#removed-cross",{dur:.22}],
+      [15.60,"fade","#removed-note",{dur:.22}]
+    ]
+  }
+  </script>
+</section>
