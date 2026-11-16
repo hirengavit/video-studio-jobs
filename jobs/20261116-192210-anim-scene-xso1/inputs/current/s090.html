@@ -1,0 +1,42 @@
+<section class="vs-scene" id="s090" data-in="cut" data-section="BULK CASH PREPAYMENT" data-series="POSTAL RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="fact">
+    <rect x="130" y="172" width="1660" height="245" rx="29" fill="#ebf5ed" stroke="#93bda0" stroke-width="3"/>
+    <circle cx="290" cy="294" r="64" fill="#fff" stroke="#2e7d4f" stroke-width="4"/>
+    <path d="M263 294l19 20 38-42" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="414" y="322" class="hi" font-size="84" font-weight="770" fill="#285f3d">7 दिन: bill मिलने से</text>
+  </g>
+  <g id="myth">
+    <rect x="130" y="451" width="1660" height="192" rx="28" fill="#f0efee" stroke="#c4c4c8" stroke-width="3"/>
+    <text x="414" y="571" class="hi" font-size="70" font-weight="700" fill="#4b4f58">bill पर छपी तारीख से</text>
+  </g>
+  <path id="strike" d="M407 542H1032" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+  <g id="cross" fill="none" stroke="#4b4f58" stroke-linecap="round">
+    <circle cx="290" cy="550" r="45" stroke-width="4"/>
+    <path d="M274 534l32 32m0-32-32 32" stroke-width="7"/>
+  </g>
+  <g id="band">
+    <rect x="130" y="705" width="960" height="195" rx="28" fill="#f3ead6"/>
+    <text x="610" y="825" text-anchor="middle" class="hi" font-size="69" font-weight="730" fill="#2b2622">समय पर न चुकाया</text>
+  </g>
+  <g id="stamp">
+    <rect x="1165" y="705" width="625" height="195" rx="25" fill="#fff" stroke="#9e1b1b" stroke-width="6"/>
+    <rect x="1180" y="720" width="595" height="165" rx="17" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-dasharray="8 8"/>
+    <text x="1477" y="801" text-anchor="middle" font-family="Inter,sans-serif" font-size="65" font-weight="805" fill="#9e1b1b">Licence cancel</text>
+    <text id="may" x="1477" y="859" text-anchor="middle" class="hi" font-size="47" font-weight="680" fill="#6f6a63">हो सकता है</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [.88,'fade','#myth',{dur:.15}],
+    [1.35,'draw','#strike',{dur:.22}],
+    [1.35,'fade','#cross',{dur:.16}],
+    [1.93,'fade','#band',{dur:.22}],
+    [5.54,'stamp','#stamp',{from:1.13,rot:-2,spring:'soft'}],
+    [6.44,'fade','#may',{dur:.18}],
+  ],
+}
+</script>
+</section>
