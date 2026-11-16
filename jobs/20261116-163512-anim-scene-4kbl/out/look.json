@@ -18,18 +18,6 @@
   {
    "kind": "text-off-frame",
    "scene": "s025",
-   "text": "ऊपरी",
-   "t": 2.09
-  },
-  {
-   "kind": "text-off-frame",
-   "scene": "s025",
-   "text": "हिस्सा",
-   "t": 2.09
-  },
-  {
-   "kind": "text-off-frame",
-   "scene": "s025",
    "text": "दूसरे postal",
    "t": 2.09
   },
@@ -43,12 +31,6 @@
    "kind": "text-off-frame",
    "scene": "s025",
    "text": "Regulation 18",
-   "t": 2.09
-  },
-  {
-   "kind": "text-off-frame",
-   "scene": "s025",
-   "text": "15 mm",
    "t": 2.09
   },
   {
