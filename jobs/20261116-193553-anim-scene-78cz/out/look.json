@@ -1,0 +1,43 @@
+{
+ "moments": [
+  "0.30",
+  "2.11",
+  "4.22",
+  "6.34",
+  "8.45",
+  "10.41"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s141",
+   "text": "Cash में prepayment व्यवस्था / Rule 9",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s141",
+   "message": "a card is mostly empty at 4.2 s: bring its items in sooner, or size it for what it holds now",
+   "t": 4.22
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s141",
+   "message": "a card is mostly empty at 6.3 s: bring its items in sooner, or size it for what it holds now",
+   "t": 6.34
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s141",
+   "message": "a card is mostly empty at 8.4 s: bring its items in sooner, or size it for what it holds now",
+   "t": 8.45
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s141",
+   "message": "a card is mostly empty at 10.4 s: bring its items in sooner, or size it for what it holds now",
+   "t": 10.41
+  }
+ ]
+}
