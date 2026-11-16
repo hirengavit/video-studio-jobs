@@ -8,18 +8,5 @@
   "1.61"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s152",
-   "text": "Deposit: अगले पखवाड़े से पहले",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s152",
-   "text": "सर्किल या क्षेत्र प्रमुख / bill मिलने के 7 दिन",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
