@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="cabin"><path d="M82 216V144H175V216" fill="#fbf7ee"/><path d="M72 144H184" stroke="#9e1b1b" stroke-width="7"/><rect x="99" y="159" width="58" height="35" rx="3" fill="#f3ead6"/></g>
+<g id="mail-bag"><path d="M252 154Q224 153 224 168L235 181Q211 202 215 229H297Q302 202 278 181L289 168Q289 153 261 154Z" fill="#f3ead6"/><path d="M235 180H278" stroke="#9e1b1b" stroke-width="6"/><rect x="238" y="194" width="36" height="24" rx="2" fill="#fbf7ee"/><path d="M239 196L256 208L273 196"/></g>
+<g id="hull"><path d="M39 216H365L327 272Q319 281 302 281H107Q86 281 74 265Z" fill="#fbf7ee"/><path d="M44 222H360L351 235H53Z" fill="#9e1b1b" stroke="none"/></g>
+<g id="water" stroke="#6f6a63"><path d="M40 299Q60 289 80 299T120 299T160 299T200 299T240 299T280 299T320 299T360 299"/><path d="M64 318Q84 308 104 318T144 318T184 318T224 318T264 318T304 318T344 318"/></g>
+<circle data-anchor="base" cx="202" cy="281" r="0"/>
+</svg>
