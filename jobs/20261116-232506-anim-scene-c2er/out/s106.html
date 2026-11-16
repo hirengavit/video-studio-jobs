@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s106" data-in="cut" data-section="PART 4 · SEALING" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="exception">
+<g id="guide"><use href="piece:old-book-stack" transform="translate(154 185) scale(.40)"/>
+<text x="365" y="278" class="hi" font-size="73" font-weight="810" fill="#4b4f58">Guide में एक छूट</text>
+<path d="M365 300H949" fill="none" stroke="#d7c7a5" stroke-width="6" stroke-linecap="round"/></g>
+<g id="parcel">
+<rect x="155" y="363" width="951" height="565" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+<use href="piece:parcel-with-tag" transform="translate(199 470) scale(1.4)"/>
+<g id="address-tag">
+<path d="M819 466H969L1085 552V868H811V546Z" fill="#fffdf7" stroke="#8a5d00" stroke-width="6" stroke-linejoin="round"/>
+<circle cx="924" cy="524" r="13" fill="#fbf7ee" stroke="#8a5d00" stroke-width="4"/>
+<path d="M856 599h174m-174 57h174m-174 57h174m-174 57h136" stroke="#6f6a63" stroke-width="6" stroke-linecap="round"/>
+</g>
+<path id="tie" d="M673 587Q722 408 814 435T924 524" fill="none" stroke="#947755" stroke-width="12" stroke-linecap="round"/>
+</g>
+<g id="note"><rect x="1125" y="428" width="603" height="350" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+<text id="note-en" x="1426" y="555" text-anchor="middle" font-family="Inter,sans-serif" font-size="70" font-weight="820" fill="#2b2622">Address label</text>
+<text id="note-hi" x="1426" y="664" text-anchor="middle" class="hi" font-size="56" font-weight="760" fill="#8a5d00">पता label · बड़ा और साफ़</text>
+</g></g>
+<g id="official-strips">
+  <g fill="#fde9a6" stroke="#8a5d00" stroke-width="2.5" stroke-linecap="round">
+    <rect x="842" y="579" width="204" height="47" rx="9"/>
+    <path d="M858 596h104m-104 12h73m63-15h33v19h-33Z" fill="none" stroke="#9d803f" stroke-width="2.5"/>
+  </g>
+  <g fill="#f3ead6" stroke="#6f6a63" stroke-width="2.5" stroke-linecap="round">
+    <rect x="842" y="635" width="204" height="47" rx="9"/>
+    <path d="M858 652h104m-104 12h73m63-15h33v19h-33Z" fill="none" stroke="#9d9075" stroke-width="2.5"/>
+  </g>
+  <circle cx="1013" cy="807" r="30" fill="#2e7d4f"/>
+  <path d="M998 807l11 11 20-23" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="not-stamps">
+  <rect x="1125" y="797" width="603" height="72" rx="25" fill="#4b4f58"/>
+  <text x="1426.5" y="845" text-anchor="middle" font-size="40" font-weight="790" fill="#fff"><tspan font-family="Noto Sans Devanagari,Inter,sans-serif">छूट </tspan><tspan font-family="Inter,sans-serif">stamps</tspan><tspan font-family="Noto Sans Devanagari,Inter,sans-serif"> के लिए नहीं</tspan></text>
+</g>
+<g id="postage-item"><use href="piece:postage-stamp" transform="translate(1510 862) scale(.6)"/></g>
+<text id="postage-name" x="1150" y="943" font-family="Inter,sans-serif" font-size="50" font-weight="820" fill="#9e1b1b">Postage stamps</text>
+<g id="article-only">
+  <circle cx="734" cy="616" r="31" fill="#2e7d4f"/>
+  <path d="M718 616l11 11 20-23" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="371" y="944" width="397" height="69" rx="34.5" fill="#e7f0e6" stroke="#bad7c0" stroke-width="3"/>
+  <text x="569.5" y="991" text-anchor="middle" font-size="42" font-weight="795" fill="#23683f"><tspan font-family="Inter,sans-serif">article</tspan><tspan font-family="Noto Sans Devanagari,Inter,sans-serif"> पर ही</tspan></text>
+</g>
+</svg>
+<script type="text/scene">
+({
+  on:[
+    [.80,'pop','#official-strips',{from:.92,spring:'fast'}],
+    [3.62,'reveal','#not-stamps',{from:'left',dur:.43}],
+    [5.40,'pop','#postage-item',{from:.90,spring:'fast'}],
+    [5.40,'type','#postage-name',{cps:24}],
+    [7.02,'move','#postage-item',{by:[-1010,-370],spring:'soft'}],
+    [8.50,'pop','#article-only',{from:.89,spring:'fast'}]
+  ]
+})
+</script>
+</section>
