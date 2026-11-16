@@ -58,6 +58,7 @@
 <script type="text/scene">
 {update(t,section,$){const stock=$('#parcel-stock')[0]?.querySelector('g[id$="-tag"],g[id="tag"]');if(stock)stock.setAttribute('visibility','hidden');},
 on:[
+[0,"out","#window",{dur:.15,scale:1}],
 [0,"move","#parcel",{by:[-300,0],spring:"fast"}],
 [0,"pop","#declaration",{from:.95,spring:"fast"}],
 [.50,"fade","#declaration-hi",{dur:.24}],
