@@ -15,18 +15,6 @@
    "text": "Advance deposit (1.0:1) / अग्रिम जमा (1.0:1)",
    "message": "text too close in colour to what's behind it",
    "t": 0.3
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s132",
-   "message": "a card is mostly empty at 4.8 s: bring its items in sooner, or size it for what it holds now",
-   "t": 4.77
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s132",
-   "message": "a card is mostly empty at 7.2 s: bring its items in sooner, or size it for what it holds now",
-   "t": 7.15
   }
  ]
 }
