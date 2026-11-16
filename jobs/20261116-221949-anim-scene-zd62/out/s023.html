@@ -41,24 +41,24 @@
 </g>
 <g id="address">
 <rect x="160" y="303" width="1080" height="613" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
-<rect x="1310" y="303" width="450" height="613" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+<rect id="frank-bg" x="1310" y="303" width="450" height="613" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
 <g id="address-heading"><text x="160" y="236" class="hi" font-size="67" font-weight="800" fill="#9e1b1b">Address side · पते वाली तरफ़</text></g>
-<use href="piece:envelope-article" transform="translate(189 258) scale(2.57)"/>
-<rect id="corner" x="833" y="568" width="173" height="144" rx="15" fill="none" stroke="#f2b705" stroke-width="8"/>
-<g id="corner-stamp"><use href="piece:postage-stamp" transform="translate(838 563) scale(.405)"/></g>
+<use href="piece:envelope-article" transform="translate(189 78) scale(2.57)"/>
+<rect id="corner" x="833" y="388" width="173" height="144" rx="15" fill="none" stroke="#f2b705" stroke-width="8"/>
+<g id="corner-stamp"><use href="piece:postage-stamp" transform="translate(838 383) scale(.405)"/></g>
 <g id="corner-note"><rect x="456" y="815" width="485" height="73" rx="36" fill="#fde9a6"/><text x="699" y="862" text-anchor="middle" class="hi" font-size="48" font-weight="810" fill="#4b3200">ऊपर दायाँ कोना</text></g>
 <g id="frank"><text x="1535" y="391" text-anchor="middle" font-family="Inter,sans-serif" font-size="67" font-weight="810" fill="#2b2622">Franking</text>
 <use href="piece:franking-impression" transform="translate(1358 449) scale(.89)"/></g>
 <text id="frank-hi" x="1535" y="451" text-anchor="middle" class="hi" font-size="49" font-weight="680" fill="#6f6a63">फ्रैंकिंग की छाप</text>
 <g id="reg"><rect x="1352" y="749" width="366" height="70" rx="35" fill="#9e1b1b"/><text x="1535" y="797" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="820" fill="#fff">Regulation 16</text></g>
 <text id="same" x="1535" y="873" text-anchor="middle" class="hi" font-size="46" font-weight="800" fill="#8a5d00">यही शर्तें</text>
-<path id="link" d="M1015 640H1352m-22-15 22 15-22 15" fill="none" stroke="#8a5d00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="link" d="M1015 460H1179Q1250 460 1250 550V603Q1250 640 1300 640H1352m-22-15 22 15-22 15" fill="none" stroke="#8a5d00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
 </g></svg>
 <script type="text/scene">
 {shots:[[0,"#carry"],[3.42,"#address"]],on:[
 [1.28,"fade","#tied",{dur:.18}],[1.28,"draw","#tag-underline",{dur:.30}],
 [4.38,"pop","#address-heading",{from:.96,spring:"fast"}],
 [5.68,"fade","#corner",{dur:.22}],[6.20,"stamp","#corner-stamp",{}],[6.20,"fade","#corner-note",{dur:.23}],
-[7.40,"pop","#frank",{from:.95,spring:"fast"}],[7.90,"fade","#frank-hi",{dur:.19}],
+[7.40,"fade","#frank-bg",{dur:.15}],[7.40,"pop","#frank",{from:.95,spring:"fast"}],[7.90,"fade","#frank-hi",{dur:.19}],
 [9.08,"pop","#reg",{from:.96,spring:"fast"}],[10.44,"fade","#same",{dur:.19}],[10.44,"draw","#link",{dur:.35}]]}
 </script></section>
