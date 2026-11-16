@@ -11,6 +11,7 @@
       <path d="M493 304V512" fill="none" stroke="#ead9a8" stroke-width="3"/>
       <text id="special-care" class="hi" x="559" y="365" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="61" font-weight="740" fill="#2b2622">fragile चीज़ों की खास सुरक्षा</text>
       <text id="no-duty" class="hi" x="559" y="461" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="69" font-weight="820" fill="#4b4f58">का ज़िम्मा नहीं</text>
+      <path id="no-underline" d="M841 498Q894 503 946 496" fill="none" stroke="#c9962b" stroke-width="6" stroke-linecap="round"/>
 
       <g id="parcel-drawing">
         <use href="piece:parcel-with-tag" transform="translate(330 583) scale(1.03)"/>
@@ -32,11 +33,16 @@
   </svg>
   <script type="text/scene">
   {
+    update(t, section, $) {
+      const parcel = $('#parcel-drawing')[0];
+      const stock = parcel?.querySelector('g[id$="-tag"],g[id="tag"]');
+      if (stock) stock.setAttribute('visibility','hidden');
+    },
     on: [
       [0, 'fade', '#counter', {dur:.28}],
       [.96, 'type', '#special-care', {cps:38}],
       [4.38, 'type', '#no-duty', {cps:42}],
-      [4.74, 'underline', '#no-duty', {words:'नहीं',color:'#c9962b',width:6,gap:8,dur:.36}],
+      [4.74, 'draw', '#no-underline', {dur:.36}],
       [6.18, 'draw', '#parcel-drawing', {dur:.4}],
       [6.48, 'fade', '#hanging-tag', {dur:.20}],
       [6.62, 'type', '#fragile-tag', {cps:21}],
