@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s103" data-in="cut" data-section="PART 6 · BUSINESS REPLY SERVICE" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="old-panel">
+      <rect x="100" y="170" width="820" height="730" rx="27" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="126" y="194" width="768" height="135" rx="19" fill="#fbf7ee"/>
+      <text x="165" y="246" font-family="Inter,sans-serif" font-size="37" font-weight="730" fill="#6f6a63">OLD · Post Office Guide Part I</text>
+      <text x="165" y="303" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="550" fill="#6f6a63">पुराना</text>
+      <use href="piece:old-book-stack" transform="translate(752 194) scale(0.34)"/>
+      <g id="old-reply">
+        <text x="510" y="486" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="66" font-weight="740" fill="#2b2622">हर reply पर</text>
+        <path d="M214 523H806" stroke="#d8c69a" stroke-width="3"/>
+      </g>
+      <g id="old-fee">
+        <rect x="189" y="568" width="642" height="203" rx="25" fill="white" stroke="#ead9a8" stroke-width="3"/>
+        <text x="510" y="660" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="95" font-weight="750" fill="#2b2622">10 पैसे</text>
+        <text x="510" y="746" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="46" font-weight="560" fill="#6f6a63">अतिरिक्त शुल्क</text>
+      </g>
+    </g>
+    <g id="now-panel">
+      <rect x="1000" y="170" width="820" height="730" rx="27" fill="white" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="1000" y="170" width="820" height="12" rx="6" fill="#9e1b1b"/>
+      <rect x="1026" y="194" width="768" height="135" rx="19" fill="#f3ead6"/>
+      <text x="1070" y="246" font-family="Inter,sans-serif" font-size="44" font-weight="740" fill="#9e1b1b">NOW</text>
+      <text x="1070" y="303" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="550" fill="#6f6a63">अब</text>
+      <text id="effective-date" x="1754" y="270" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="end" font-size="44" font-weight="680" fill="#9e1b1b">1 फ़रवरी 2002 से</text>
+      <g id="postmark">
+        <use href="piece:postal-date-stamp" transform="translate(1224 320) scale(1.24)" opacity=".20"/>
+        <g fill="none" stroke="#9e1b1b" stroke-width="3.7">
+          <circle cx="1410" cy="506" r="165"/>
+          <circle cx="1410" cy="506" r="147.56" stroke-width="3"/>
+          <rect x="1285" y="472.5" width="250" height="67" rx="3" fill="white"/>
+        </g>
+        <text x="1410" y="518" font-family="Inter,sans-serif" text-anchor="middle" font-size="34" font-weight="740" fill="#9e1b1b">01.02.2002</text>
+      </g>
+      <g id="usual">
+        <text x="1410" y="737" font-family="Inter,sans-serif" text-anchor="middle" font-size="58" font-weight="735" fill="#2b2622">Usual postage</text>
+        <text id="usual-hi" x="1410" y="781" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="44" font-weight="550" fill="#6f6a63">सामान्य डाक शुल्क</text>
+      </g>
+      <g id="new-fee">
+        <rect x="1098" y="813" width="624" height="70" rx="22" fill="#fde9a6"/>
+        <text x="1410" y="865" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="58" font-weight="740" fill="#8a5d00">+ ₹1 प्रति reply</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [2.80, "fade", "#old-reply", {dur: 0.22}],
+      [3.74, "fade", "#old-fee", {dur: 0.23}],
+      [6.04, "stamp", "#postmark", {from: 1.05, rot: -4, spring: "soft"}],
+      [6.04, "fade", "#effective-date", {dur: 0.23}],
+      [8.20, "fade", "#usual", {dur: 0.22}],
+      [8.70, "fade", "#usual-hi", {dur: 0.18}],
+      [10.10, "fade", "#new-fee", {dur: 0.22}]
+    ]
+  }
+  </script>
+</section>
