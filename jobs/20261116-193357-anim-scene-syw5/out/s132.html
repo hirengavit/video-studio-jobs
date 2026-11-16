@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s132" data-in="cut" data-section="PART 7 · BUSINESS REPLY ARTICLES" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" fill="none">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="deposit">
+      <g id="advance-card"><rect x="104" y="263" width="814" height="584" rx="35" fill="#9e1b1b"/>
+      <rect x="161" y="341" width="12" height="61" rx="6" fill="#f2b705"/>
+      <text x="208" y="468" fill="#fff" font-family="Inter, sans-serif" font-size="79" font-weight="820">Advance deposit</text>
+      <text id="advance-hi" x="214" y="562" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="720">अग्रिम जमा</text>
+      </g>
+      <g id="gauge">
+        <rect x="1350" y="257" width="250" height="492" rx="35" fill="#fff" stroke="#ead9a8" stroke-width="5"/>
+        <rect x="1373" y="280" width="204" height="446" rx="20" fill="#fbf7ee" stroke="#6f6a63" stroke-width="4"/>
+        <defs><clipPath id="gauge-window"><rect x="1379" y="286" width="192" height="434" rx="14"/></clipPath></defs>
+        <g clip-path="url(#gauge-window)"><rect id="deposit-level" x="1379" y="286" width="192" height="434" rx="14" fill="#f2b705" opacity=".65"/></g>
+        <path d="M1389 366H1430M1389 455H1430M1389 544H1430M1389 633H1430" stroke="#a4a098" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <g id="approx">
+        <text x="1475" y="823" text-anchor="middle" fill="#9e1b1b" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="800">करीब 15 दिन का</text>
+      </g>
+      <text id="deposit-cover" x="1475" y="900" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="54" font-weight="770">postage + handling</text>
+    </g>
+
+    <g id="ledger">
+      <g id="ledger-layout" transform="translate(104 257) scale(1.35)">
+        <rect x="0" y="0" width="873" height="137" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <use href="piece:invoice-sheet" transform="translate(35 21) scale(.23)"/>
+        <text x="140" y="68" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="53" font-weight="820">Delivery office</text>
+        <text id="ledger-hi" x="142" y="109" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="700">रोज़ का account</text>
+        <g id="ledger-grid">
+          <rect x="8" y="151" width="853" height="285" rx="15" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+          <path d="M8 237H861M8 303H861M8 370H861M125 151V436M301 151V436M419 151V436M555 151V436M732 151V436" stroke="#ead9a8" stroke-width="2.4"/>
+          <g id="column-date"><rect x="18" y="167" width="97" height="54" rx="12" fill="#f3ead6"/><text x="66.5" y="205" text-anchor="middle" fill="#2b2622" class="hi" font-size="34" font-weight="740">तारीख</text></g>
+          <g id="column-category"><rect x="135" y="167" width="156" height="54" rx="12" fill="#f3ead6"/><text x="213" y="205" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="34" font-weight="760">Category</text></g>
+          <g id="column-count"><rect x="311" y="167" width="98" height="54" rx="12" fill="#f3ead6"/><text x="360" y="205" text-anchor="middle" fill="#2b2622" class="hi" font-size="34" font-weight="740">गिनती</text></g>
+          <g id="column-postage"><rect x="427" y="167" width="120" height="54" rx="12" fill="#f3ead6"/><text x="487" y="205" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="34" font-weight="760">Postage</text></g>
+          <g id="column-handling"><rect x="565" y="158" width="157" height="72" rx="12" fill="#fde9a6"/><text x="643.5" y="187" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="30" font-weight="760"><tspan x="643.5">Handling</tspan><tspan x="643.5" dy="32">charge</tspan></text></g>
+        </g>
+      </g>
+    </g>
+    <text id="paid-tag" x="1475" y="823" text-anchor="middle" fill="#8a5d00" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="51" font-weight="760">अग्रिम जमा</text>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      ...(S.useState && typeof document !== 'undefined' ? (() => {
+        const start = Number(document.getElementById('s132')?.dataset.at || 0);
+        S.useState({s132Deposit: [[start,0],[start+.54,0],[start+1.54,1,'inOut']]});
+        return [[0, 'level', '#deposit-level', {state:'s132Deposit'}]];
+      })() : []),
+      [2.82, 'out', '#advance-card', {dur: 0.20, scale: 1}],
+      [2.82, 'out', '#approx', {dur: 0.20, scale: 1}],
+      [2.82, 'out', '#deposit-cover', {dur: 0.20, scale: 1}],
+      [3.06, 'fade', '#paid-tag', {dur: 0.20}],
+      [2.82, 'slide', '#ledger', {from: 'down', dist: 60, dur: .6, spring: 'soft'}],
+      [4.66, 'fade', '#ledger-hi', {dur: 0.20}],
+      [7.26, 'fade', '#column-date', {dur: 0.18}],
+      [9.00, 'fade', '#column-category', {dur: 0.18}],
+      [10.36, 'fade', '#column-count', {dur: 0.18}],
+      [11.08, 'fade', '#column-postage', {dur: 0.18}],
+      [11.92, 'fade', '#column-handling', {dur: 0.16}],
+    ],
+  }
+  </script>
+</section>
