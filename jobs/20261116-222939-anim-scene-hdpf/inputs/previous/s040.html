@@ -1,0 +1,39 @@
+<section class="vs-scene" id="s040" data-in="fade" data-in-dur="0.3" data-section="PART 2 · LETTER ENVELOPE" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text id="title" x="960" y="220" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="800" fill="#9e1b1b">WINDOW ENVELOPE</text>
+  <text id="title-hi" x="960" y="279" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="44" font-weight="620" fill="#6f6a63">खिड़की वाला लिफ़ाफ़ा</text>
+  <use id="diagram" href="piece:window-envelope" transform="translate(360 310) scale(2)"/>
+  <g id="window-note">
+    <rect x="396" y="414" width="394" height="81" rx="18" fill="#f3ead6"/>
+    <text id="lbl-win" x="593" y="469" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="44" font-weight="720" fill="#2b2622">पारदर्शी खिड़की</text>
+    <path d="M619 495v56h60" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="681" cy="551" r="6" fill="#9e1b1b"/>
+  </g>
+  <rect id="address-outline" x="714" y="567" width="440" height="99" rx="17" fill="none" stroke="#f2b705" stroke-width="6"/>
+  <text id="lbl-addr" x="960" y="813" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" font-weight="800" fill="#2b2622">ADDRESS BLOCK</text>
+  <text id="lbl-addr-hi" x="960" y="868" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="44" font-weight="620" fill="#6f6a63">पता</text>
+</svg>
+<script type="text/scene">
+  {
+    update(t, section, $) {
+      for (const id of ['barcode','logo-zone','postage-zone','barcode-zone']) {
+        for (const part of $("[id$='-" + id + "']")) {
+          if (part.closest('[id$="-diagram"]')) part.style.opacity = '0';
+        }
+      }
+    },
+    on: [
+      [.14, 'type', '#title', {cps:31}],
+      [.70, 'fade', '#title-hi', {dur:.22}],
+      [2.42, 'color', '[id$="-diagram"] [id$="-window"]', {prop:'stroke',to:'#9e1b1b',dur:.22}],
+      [2.42, 'pulse', '[id$="-diagram"] [id$="-window"]', {amount:.038}],
+      [3.20, 'fade', '#window-note', {dur:.23}],
+      [5.66, 'fade', '[id$="-diagram"] [id$="-address-block"]', {dur:.30}],
+      [11.74, 'draw', '#address-outline', {dur:.30}],
+      [11.74, 'type', '#lbl-addr', {cps:29}],
+      [12.30, 'fade', '#lbl-addr-hi', {dur:.24}]
+    ]
+  }
+</script>
+</section>
