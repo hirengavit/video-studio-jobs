@@ -8,12 +8,5 @@
   "16.45"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s091",
-   "text": "पुराना तरीका: 5 कदम",
-   "t": 13.28
-  }
- ]
+ "warnings": []
 }
