@@ -8,12 +8,5 @@
   "14.03"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s024",
-   "text": "कुछ छपा या लिखा नहीं",
-   "t": 8.51
-  }
- ]
+ "warnings": []
 }
