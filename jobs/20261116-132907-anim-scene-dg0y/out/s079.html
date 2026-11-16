@@ -1,5 +1,6 @@
 <section class="vs-scene" id="s079" data-in="cut" data-section="PART 5 · REGULATION 95" data-series="POSTAL RULES">
   <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <defs><path id="requirements-full" d="M813 198H1769Q1803 198 1803 232V909Q1803 943 1769 943H813Q779 943 779 909V232Q779 198 813 198Z"/></defs>
     <rect width="1920" height="1080" fill="#fbf7ee"/>
     <g id="prior-licence">
       <rect x="109" y="177" width="1702" height="802" rx="35" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
@@ -31,7 +32,7 @@
         <text x="424" y="820" text-anchor="middle" font-size="47" font-weight="750" fill="#ffffff">Registered newspaper</text>
       </g>
       <g id="requirements">
-        <rect x="779" y="198" width="1024" height="745" rx="34" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <path id="requirements-card" d="M813 198H1769Q1803 198 1803 232V460Q1803 494 1769 494H813Q779 494 779 460V232Q779 198 813 198Z" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
         <g id="issuer">
           <text x="852" y="313" class="hi" font-size="66" font-weight="800" fill="#9e1b1b">कौन देता है</text>
           <g id="circle-head">
@@ -49,7 +50,7 @@
           <text x="852" y="559" class="hi" font-size="62" font-weight="800" fill="#9e1b1b">शर्त</text>
           <g id="locally-published">
             <circle cx="883" cy="628" r="30" fill="#2e7d4f"/><path d="M870 628l9 9 17-20" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-            <text x="937" y="650" class="hi" font-size="53" font-weight="720" fill="#2b2622">Newspaper उसी क्षेत्र से प्रकाशित</text>
+            <text x="937" y="650" class="hi" font-size="48" font-weight="720" fill="#2b2622" textLength="710" lengthAdjust="spacingAndGlyphs">Newspaper उसी क्षेत्र से प्रकाशित</text>
           </g>
           <path d="M852 703h898" stroke="#ead9a8" stroke-width="3"/>
         </g>
@@ -64,6 +65,7 @@
       [1.14, 'fade', '#issuer', {dur: 0.22}],
       [2.90, 'fade', '#circle-head', {dur: 0.24}],
       [4.84, 'fade', '#region-head', {dur: 0.24}],
+      [6.83, 'morph', '#requirements-card', {to: '#requirements-full', dur: 0.28}],
       [6.96, 'fade', '#condition', {dur: 0.23}],
       [8.18, 'fade', '#locally-published', {dur: 0.24}]
     ]}
