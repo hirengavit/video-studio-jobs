@@ -8,12 +8,5 @@
   "10.35"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s175",
-   "text": "Franked, registered newspaper / फ्रैंक किए, पंजीकृत अख़बार",
-   "t": 6.3
-  }
- ]
+ "warnings": []
 }
