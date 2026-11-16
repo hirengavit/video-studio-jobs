@@ -23,7 +23,7 @@
         <g id="date-mark">
           <rect id="date-band-highlight" x="1300" y="487" width="220" height="57" rx="5" fill="#fde9a6" stroke="#f2b705" stroke-width="4"/>
           <use href="piece:postal-date-stamp" transform="translate(1246.8 353) scale(1.088)"/>
-          <text id="date-band-label" x="1410" y="588" text-anchor="middle" class="hi" font-size="45" font-weight="760" fill="#2b2622" textLength="193" lengthAdjust="spacingAndGlyphs">तारीख वाली मुहर</text>
+          <text id="date-band-label" x="1410" y="528" text-anchor="middle" class="hi" font-size="39" font-weight="760" fill="#2b2622" textLength="193" lengthAdjust="spacingAndGlyphs">तारीख वाली मुहर</text>
         </g>
         <g id="office-icon">
           <rect x="1074" y="719" width="672" height="142" rx="25" fill="#f3ead6"/>
@@ -36,8 +36,8 @@
   <script type="text/scene">
     { on: [
       [0, 'stamp', '#date-mark', {from: 1.10, rot: -4, spring: 'soft'}],
-      [0.18, 'swap', '#date-title-old', {to: '#date-title', dur: 0.18, dist: 5}],
-      [0.18, 'swap', '#date-hi-old', {to: '#date-hi', dur: 0.18, dist: 5}],
+      [0.184, 'swap', '#date-title-old', {to: '#date-title', dur: 0.008, dist: 0}],
+      [0.184, 'swap', '#date-hi-old', {to: '#date-hi', dur: 0.008, dist: 0}],
       [3.62, 'fade', '#date-band-highlight', {dur: 0.22}],
       [3.76, 'fade', '#date-band-label', {dur: 0.24}],
       [5.24, 'pop', '#office-icon', {from: 0.94, spring: 'soft'}],
