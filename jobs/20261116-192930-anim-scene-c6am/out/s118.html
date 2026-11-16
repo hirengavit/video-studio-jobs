@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s118" data-in="cut" data-section="PART 7 · BUSINESS REPLY ARTICLES" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="card">
+      <g id="carried-card">
+      <use id="reply-card" href="piece:business-reply-card" transform="translate(330 170) scale(2.25)"/>
+      <rect id="payment-band" x="426" y="408" width="800" height="88" rx="19" fill="#fde9a6"/>
+      <g id="payment-rules" fill="none" stroke="#6f6a63" stroke-width="3" stroke-linecap="round">
+        <path d="M463 437h260"/>
+        <path d="M463 473h200"/>
+      </g>
+      <g id="payment">
+        <text x="978" y="469" text-anchor="middle" class="hi" font-size="47" font-weight="740" fill="#2b2622">भुगतान वाली lines</text>
+      </g>
+    <g id="without-stamp">
+      <rect x="515" y="995" width="890" height="66" rx="29" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="960" y="1043" text-anchor="middle" class="hi" font-size="52" font-weight="750" fill="#9e1b1b">भारत में stamp बिना reply post</text>
+    </g>
+      </g>
+      <g id="postage-payer">
+        <path d="M600 496v17" stroke="#a87813" stroke-width="4" stroke-linecap="round"/>
+        <rect x="426" y="513" width="746" height="75" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="799" y="564" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">Postage: addressee चुकाएगा</text>
+      </g>
+      <g id="top-band">
+        <rect x="369" y="213" width="1180" height="176" rx="12" fill="#fde9a6" stroke="#f2b705" stroke-width="5"/>
+        <text id="postmark-room" x="959" y="317" text-anchor="middle" class="hi" font-size="74" font-weight="780" fill="#704b00">postmarks के लिए जगह</text>
+      </g>
+    </g>
+    <g id="advert">
+      <g id="advert-page">
+        <rect x="182" y="204" width="904" height="754" rx="27" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <rect x="236" y="256" width="795" height="115" rx="17" fill="#f3ead6"/>
+        <path d="M267 294h393m-393 37h270M242 432h785m-785 50h720m-720 50h760m-760 50h570m-570 50h316m-316 50h282m-282 50h322m-322 50h271m-271 50h302m-302 50h254" fill="none" stroke="#b8b0a4" stroke-width="6" stroke-linecap="round"/>
+        <g id="printed-reply-label">
+          <use href="piece:business-reply-card" transform="translate(660 654) scale(.61)"/>
+        </g>
+      </g>
+      <text x="1169" y="367" font-size="86" font-weight="810" fill="#9e1b1b">Permit holder</text>
+      <text id="permit-hi" x="1174" y="443" class="hi" font-size="49" font-weight="620" fill="#6f6a63">परमिट धारक</text>
+      <g id="authorised-callout">
+        <rect x="646" y="642" width="370" height="244" rx="12" fill="none" stroke="#f2b705" stroke-width="7"/>
+        <path d="M1018 736h87q46 0 46-46v-130h19" fill="none" stroke="#a87813" stroke-width="5" stroke-linecap="round"/>
+        <rect x="1170" y="514" width="628" height="111" rx="26" fill="#fde9a6"/>
+        <text x="1484" y="584" text-anchor="middle" font-size="49" font-weight="800" fill="#704b00">Authorised reply label</text>
+      </g>
+      <g id="advert-also">
+        <rect x="1170" y="666" width="628" height="104" rx="26" fill="#9e1b1b"/>
+        <text x="1484" y="733" text-anchor="middle" class="hi" font-size="54" font-weight="760" fill="#ffffff">advertisement में भी</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {shots: [[0, '#card'], [8.00, '#advert']], on: [
+      [1.06, 'fade', '#postage-payer', {dur: 0.22}],
+      [3.54, 'fade', '#top-band', {dur: 0.24}],
+      [4.86, 'fade', '#postmark-room', {dur: 0.24}],
+      [8.50, 'fade', '#permit-hi', {dur: 0.22}],
+      [9.08, 'fade', '#authorised-callout', {dur: 0.24}],
+      [12.16, 'fade', '#advert-also', {dur: 0.23}]
+    ]}
+  </script>
+</section>
