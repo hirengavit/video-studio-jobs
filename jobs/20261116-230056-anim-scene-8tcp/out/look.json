@@ -1,0 +1,49 @@
+{
+ "moments": [
+  "0.30",
+  "2.08",
+  "4.17",
+  "6.25",
+  "8.34",
+  "10.27"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s016",
+   "message": "highlight: \"निशान\" isn't in that <text> (it says \"\")",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s016",
+   "message": "a card is mostly empty at 2.1 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.08
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s016",
+   "message": "a card is mostly empty at 4.2 s: bring its items in sooner, or size it for what it holds now",
+   "t": 4.17
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s016",
+   "message": "a card is mostly empty at 6.3 s: bring its items in sooner, or size it for what it holds now",
+   "t": 6.25
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s016",
+   "message": "a card is mostly empty at 8.3 s: bring its items in sooner, or size it for what it holds now",
+   "t": 8.34
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s016",
+   "message": "a card is mostly empty at 10.3 s: bring its items in sooner, or size it for what it holds now",
+   "t": 10.27
+  }
+ ]
+}
