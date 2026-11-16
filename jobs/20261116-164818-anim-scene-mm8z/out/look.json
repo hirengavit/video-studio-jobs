@@ -12,6 +12,12 @@
   {
    "kind": "text-overlap",
    "scene": "s110",
+   "text": "वित्तीय वर्ष / Renewal: March में",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s110",
    "text": "दूसरी तिमाही / तीसरी तिमाही",
    "t": 0.3
   },
