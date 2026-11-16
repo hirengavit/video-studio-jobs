@@ -8,12 +8,5 @@
   "8.43"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s148",
-   "text": "थोक नकद भुगतान के कार्यालय / सर्किल प्रमुख",
-   "t": 3.43
-  }
- ]
+ "warnings": []
 }
