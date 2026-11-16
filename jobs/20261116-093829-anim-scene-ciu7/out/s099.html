@@ -1,0 +1,69 @@
+<section class="vs-scene" id="s099" data-in="wipe" data-in-dur="0.42" data-section="PART 6 · BUSINESS REPLY SERVICE" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="firm">
+      <rect x="104" y="260" width="416" height="480" rx="29" fill="white" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="134" y="291" width="356" height="280" rx="21" fill="#f3ead6"/>
+      <g stroke="#2b2622" stroke-width="4" stroke-linejoin="round">
+        <rect x="210" y="367" width="203" height="162" rx="10" fill="white"/>
+        <rect x="224" y="329" width="175" height="45" rx="8" fill="#9e1b1b"/>
+        <path d="M195 527H428V546H195Z" fill="#ead9a8"/>
+        <path d="M281 528V474H342V528M238 401H270V425H238ZM295 401H327V425H295ZM352 401H384V425H352ZM238 444H270V468H238ZM295 444H327V468H295ZM352 444H384V468H352Z" fill="#f3ead6"/>
+      </g>
+      <text x="312" y="637" font-family="Inter,sans-serif" font-size="60" text-anchor="middle" font-weight="720" fill="#9e1b1b">Firm</text>
+      <text id="firm-hi" x="312" y="699" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" text-anchor="middle" font-weight="520" fill="#6f6a63">संस्था</text>
+    </g>
+    <g id="customer">
+      <rect x="1400" y="260" width="416" height="480" rx="29" fill="white" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="1430" y="291" width="356" height="280" rx="21" fill="#f3ead6"/>
+      <g stroke="#2b2622" stroke-width="4" stroke-linejoin="round">
+        <path d="M1502 431H1714V534H1502Z" fill="white"/>
+        <path d="M1478 432L1608 336L1738 432Z" fill="#9e1b1b"/>
+        <rect x="1582" y="448" width="52" height="85" rx="6" fill="#9e1b1b"/>
+        <path d="M1523 453H1565V493H1523ZM1651 453H1693V493H1651Z" fill="#fde9a6"/>
+        <path d="M1491 534H1725V548H1491Z" fill="#ead9a8"/>
+      </g>
+      <text id="customer-en" x="1608" y="637" font-family="Inter,sans-serif" font-size="60" text-anchor="middle" font-weight="720" fill="#9e1b1b">Customer</text>
+      <text id="customer-hi" x="1608" y="699" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" text-anchor="middle" font-weight="520" fill="#6f6a63">ग्राहक</text>
+    </g>
+    <g id="route" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M555 494H1357" stroke="#ead9a8" stroke-width="17"/>
+      <path d="M555 494H1357M1323 466L1357 494L1323 522" stroke="#9e1b1b" stroke-width="7"/>
+    </g>
+    <g id="reply-card">
+      <use href="piece:business-reply-card" transform="translate(592 303) scale(0.45)"/>
+    </g>
+    <g id="reply-envelope">
+      <use href="piece:envelope-article" transform="translate(564 379) scale(0.95)"/>
+    </g>
+    <g id="reply-label">
+      <g transform="translate(0 86)" stroke="#2b2622" stroke-width="4" stroke-linejoin="round">
+        <path d="M627 585H776L814 623L776 661H627Q612 661 612 646V600Q612 585 627 585Z" fill="#fde9a6"/>
+        <circle cx="778" cy="623" r="9" fill="white"/>
+        <path d="M636 610H748M636 633H727" fill="none" stroke="#8a5d00"/>
+      </g>
+    </g>
+    <g id="business-reply">
+      <rect x="505" y="799" width="910" height="169" rx="24" fill="#9e1b1b"/>
+      <text x="960" y="874" font-family="Inter,sans-serif" font-size="71" text-anchor="middle" font-weight="750" fill="white">Business Reply</text>
+      <text id="business-reply-hi" x="960" y="935" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" text-anchor="middle" font-weight="570" fill="#fde9a6">व्यावसायिक जवाबी</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.50, "fade", "#firm-hi", {dur: 0.18}],
+      [0.71, "fade", "#customer-en", {dur: 0.20}],
+      [1.21, "fade", "#customer-hi", {dur: 0.18}],
+      [1.75, "fade", "#reply-card", {dur: 0.20}],
+      [1.75, "move", "#reply-card", {by: [242, 0], spring: "slow"}],
+      [3.67, "fade", "#reply-envelope", {dur: 0.20}],
+      [3.67, "move", "#reply-envelope", {by: [216, 0], spring: "slow"}],
+      [5.85, "fade", "#reply-label", {dur: 0.20}],
+      [5.85, "move", "#reply-label", {by: [340, 0], spring: "slow"}],
+      [6.31, "fade", "#business-reply", {dur: 0.20}],
+      [6.81, "fade", "#business-reply-hi", {dur: 0.18}]
+    ]
+  }
+  </script>
+</section>
