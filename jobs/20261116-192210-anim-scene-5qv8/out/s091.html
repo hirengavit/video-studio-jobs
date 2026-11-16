@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s091" data-in="cut" data-section="PART 5 · REGULATION 95" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" fill="none">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <path d="M116 624H1803" stroke="#ead9a8" stroke-width="5" stroke-linecap="round"/>
+    <g id="bill-fortnight">
+      <rect x="108" y="265" width="484" height="307" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="108" y="265" width="484" height="24" rx="12" fill="#9e1b1b"/>
+      <text x="350" y="421" fill="#2b2622" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="66" font-weight="800">Bill वाला</text>
+      <text x="350" y="507" fill="#6f6a63" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="700">पखवाड़ा</text>
+      <path d="M350 573V611" stroke="#9e1b1b" stroke-width="6"/><circle cx="350" cy="624" r="14" fill="#9e1b1b"/>
+    </g>
+    <g id="next-fortnight">
+      <rect x="642" y="265" width="496" height="307" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="642" y="265" width="496" height="24" rx="12" fill="#f2b705"/>
+      <text x="890" y="460" fill="#2b2622" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="780">अगला पखवाड़ा</text>
+      <path d="M890 573V611" stroke="#8a5d00" stroke-width="6"/><circle cx="890" cy="624" r="14" fill="#f2b705"/>
+    </g>
+    <g id="unpaid">
+      <rect x="590" y="701" width="603" height="237" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+      <use href="piece:rupee-cash" transform="translate(603 670) scale(.75)"/>
+      <path id="unpaid-cross" d="M704 759L804 859M804 759L704 859" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+      <text x="866" y="835" fill="#4b4f58" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="780">पैसा नहीं आया</text>
+    </g>
+    <g id="stop-sign"><g transform="translate(1519 621) scale(1.18) translate(-1519 -621)">
+      <path d="M1453 303H1585L1678 396V528L1585 621H1453L1360 528V396Z" fill="#9e1b1b" stroke="#7d1414" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M1460 320H1578L1661 403V521L1578 604H1460L1377 521V403Z" stroke="#fff" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M1469 462H1569" stroke="#fff" stroke-width="16" stroke-linecap="round"/>
+    </g>
+    </g>
+    <g id="stop-caption">
+      <rect x="1235" y="701" width="568" height="237" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <text x="1519" y="790" fill="#2b2622" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="730">बिना prepayment posting</text>
+      <text id="immediate" x="1519" y="885" fill="#9e1b1b" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="67" font-weight="820">तुरंत बंद</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [3.19, 'reveal', '#next-fortnight', {from: 'left', dur: 0.55}],
+      [6.60, 'fade', '#unpaid', {dur: 0.20}],
+      [7.30, 'draw', '#unpaid-cross', {dur: 0.23}],
+      [7.99, 'pop', '#stop-sign', {from: 0.85, spring: 'fast'}],
+      [8.44, 'fade', '#stop-caption', {dur: 0.20}],
+      [9.82, 'fade', '#immediate', {dur: 0.16}],
+    ],
+  }
+  </script>
+</section>
