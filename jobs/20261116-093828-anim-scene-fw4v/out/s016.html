@@ -12,7 +12,8 @@
 
     <g id="gum-diagram">
       <rect x="94" y="365" width="821" height="620" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
-      <rect x="154" y="559" width="701" height="253" rx="17" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+      <rect x="154" y="559" width="701" height="253" rx="17" fill="none" stroke="#2b2622" stroke-width="3"/>
+      <rect id="paper-contact-fill" x="156" y="561" width="697" height="249" rx="15" fill="#f3ead6"/>
       <path d="M154 790H855" fill="none" stroke="#d8c79b" stroke-width="3"/>
       <g id="stamp-face">
         <rect x="305" y="402" width="398" height="201" rx="17" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/>
@@ -49,7 +50,7 @@
       [3.12, "fade", "#gum-diagram", {dur: 0.28}],
       [4.35, "fade", "#stamp-gum, #surface-label", {dur: 0.25}],
       [5.72, "move", "#stamp-face", {by: [0, 161], spring: "soft"}],
-      [5.72, "fade", "#outside-rule", {dur: 0.22}],
+      [5.72, "fade", "#paper-contact-fill, #outside-rule", {dur: 0.22}],
       [9.03, "fade", "#parcel-card", {dur: 0.22}],
       [10.44, "fade", "#tag-focus", {dur: 0.17}],
       [10.44, "pulse", "#tag-focus ellipse", {amount: 0.065}],
