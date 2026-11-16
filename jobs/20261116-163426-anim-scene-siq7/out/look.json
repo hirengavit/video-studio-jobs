@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "2.45",
+  "4.89",
+  "7.34",
+  "9.78",
+  "12.08"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s119",
+   "text": "advertisement में भी (1.0:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  }
+ ]
+}
