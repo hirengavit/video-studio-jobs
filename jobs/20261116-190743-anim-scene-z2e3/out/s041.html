@@ -1,0 +1,108 @@
+<section class="vs-scene" id="s041" data-in="cut" data-section="PART 3 · REGULATION 22" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="formula">
+      <text x="120" y="265" class="hi" font-size="85" font-weight="770" fill="#9e1b1b">बकाया postage की वसूली</text>
+      <rect x="120" y="355" width="586" height="515" rx="28" fill="#9e1b1b"/>
+      <rect x="144" y="379" width="538" height="467" rx="28" fill="none" stroke="#fde9a6" stroke-width="4" stroke-dasharray="1 14" stroke-linecap="round"/>
+      <text x="413" y="559" text-anchor="middle" font-size="91" font-weight="800" fill="#fff">Unpaid</text>
+      <text x="413" y="661" text-anchor="middle" font-size="91" font-weight="800" fill="#fff">charge</text>
+      <text x="413" y="739" text-anchor="middle" class="hi" font-size="44" font-weight="700" fill="#fff">बकाया शुल्क</text>
+      <g id="domestic">
+        <rect id="domestic-card" x="755" y="355" width="1058" height="466" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text id="domestic-en" x="824" y="463" font-size="69" font-weight="780" fill="#2b2622">Domestic unpaid item</text>
+        <text id="domestic-hi" x="828" y="535" class="hi" font-size="48" font-weight="570" fill="#6f6a63">घरेलू बिना भुगतान डाक</text>
+        <path id="domestic-divider" d="M829 583h912" stroke="#ead9a8" stroke-width="3"/>
+        <g id="rate">
+          <rect id="rate-strip" x="816" y="628" width="931" height="153" rx="22" fill="#f3ead6"/>
+          <text id="rate-label" x="864" y="729" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="73" font-weight="680" fill="#2b2622">पूरा prepaid rate</text>
+          <rect id="times-highlight" x="1518" y="655" width="170" height="102" rx="21" fill="#fde9a6"/>
+          <text id="rate-factor" x="1603" y="728" text-anchor="middle" font-family="Georgia, serif" font-size="76" font-weight="700" fill="#2b2622">× 2</text>
+        </g>
+        <g id="shortpaid-motion">
+        <g id="shortpaid">
+          <rect x="816" y="672" width="931" height="64" rx="16" fill="#f3ead6"/>
+          <text x="864" y="722" class="hi" font-size="48" font-weight="760" fill="#2b2622">कम भुगतान</text>
+          <g id="shortfall">
+            <rect x="1438" y="678" width="272" height="52" rx="16" fill="#fde9a6"/>
+            <text x="1574" y="721" text-anchor="middle" class="hi" font-size="48" font-weight="800" fill="#2b2622">→ कमी × 2</text>
+          </g>
+        </g>
+        </g>
+        <g id="minimum">
+          <rect x="816" y="752" width="931" height="68" rx="16" fill="#f3ead6"/>
+          <text x="864" y="805" class="hi" font-size="48" font-weight="760" fill="#2b2622">न्यूनतम charge</text>
+          <g id="minimum-rupee">
+            <rect x="1438" y="756" width="272" height="60" rx="16" fill="#fde9a6"/>
+            <text x="1574" y="808" text-anchor="middle" font-size="64" font-weight="810" fill="#9e1b1b">₹1</text>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="who">
+      <text x="120" y="265" class="hi" font-size="85" font-weight="770" fill="#9e1b1b">बकाया postage की वसूली</text>
+      <g id="delivered-route">
+        <rect x="120" y="329" width="1693" height="271" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <rect x="1032" y="385" width="706" height="158" rx="24" fill="#f3ead6"/>
+        <use href="piece:envelope-article" transform="translate(196 291) scale(.88)"/>
+        <g id="home" stroke="#2b2622" stroke-width="5" stroke-linejoin="round">
+          <path d="M756 452V543H910V452L833 390Z" fill="#f3ead6"/>
+          <path d="M738 460L833 380L928 460" fill="none" stroke="#9e1b1b" stroke-width="11" stroke-linecap="round"/>
+          <path d="M808 543V486H854V543" fill="#fde9a6"/>
+          <rect x="869" y="476" width="24" height="27" rx="3" fill="#fff"/>
+        </g>
+        <path id="deliver-arrow" d="M515 464H689m-27-23 27 23-27 23" fill="none" stroke="#9e1b1b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+        <text id="deliver-label" x="1385" y="489" text-anchor="middle" class="hi" font-size="54" font-weight="760" fill="#2b2622">Delivery पर: addressee से</text>
+      </g>
+      <g id="returned-route">
+        <rect x="120" y="645" width="1693" height="271" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <rect id="return-label-pill" x="1032" y="701" width="706" height="158" rx="24" fill="#f3ead6"/>
+        <use href="piece:post-office-front" transform="translate(222 686) scale(.56)"/>
+        <use href="piece:envelope-article" transform="translate(655 604) scale(.88)"/>
+        <path id="return-arrow" d="M689 780H515m27-23-27 23 27 23" fill="none" stroke="#9e1b1b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+        <text id="return-label" x="1385" y="803" text-anchor="middle" class="hi" font-size="56" font-weight="760" fill="#2b2622">लौटे तो: sender से</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+  shots:[[0,"#formula"],[6.56,"#who"]],
+  update(t, section, $) {
+    const u = Math.min(1, Math.max(0, t / .38));
+    const p = u * u * (3 - 2 * u);
+    const set = (id, attr, a, b) => {
+      for (const el of $(id)) el.setAttribute(attr, a + (b-a) * p);
+    };
+    set("#domestic-card", "height", 466, 505);
+    set("#domestic-en", "y", 463, 452);
+    set("#domestic-hi", "y", 535, 520);
+    for (const el of $("#domestic-divider")) el.setAttribute("d", "M829 " + (583-16*p) + "h912");
+    set("#rate-strip", "y", 628, 588);
+    set("#rate-strip", "height", 153, 64);
+    set("#rate-strip", "rx", 22, 16);
+    set("#rate-label", "y", 729, 638);
+    set("#rate-label", "font-size", 73, 48);
+    set("#times-highlight", "x", 1518, 1438);
+    set("#times-highlight", "y", 655, 594);
+    set("#times-highlight", "width", 170, 272);
+    set("#times-highlight", "height", 102, 52);
+    set("#times-highlight", "rx", 21, 16);
+    set("#rate-factor", "x", 1603, 1574);
+    set("#rate-factor", "y", 728, 637);
+    set("#rate-factor", "font-size", 76, 48);
+    for (const el of $("#shortpaid-motion")) el.setAttribute("transform", "translate(0 " + (123*(1-p)) + ")");
+  },
+  on:[
+    [.15,"fade","#shortpaid",{dur:.21}],
+    [1.98,"fade","#shortfall",{dur:.26}],
+    [4.00,"fade","#minimum",{dur:.23}],
+    [4.82,"pop","#minimum-rupee",{spring:"fast",from:.87}],
+    [6.56,"fade","#delivered-route",{dur:.18}],
+    [6.56,"draw","#deliver-arrow",{dur:.55}],
+    [7.28,"fade","#deliver-label",{dur:.22}],
+    [8.88,"fade","#returned-route",{dur:.18}],
+    [8.88,"draw","#return-arrow",{dur:.55}],
+    [9.90,"fade","#return-label-pill,#return-label",{dur:.22}]
+  ]}
+  </script>
+</section>
