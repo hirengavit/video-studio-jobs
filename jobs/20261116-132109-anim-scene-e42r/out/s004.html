@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s004" data-in="cut" data-section="INLAND MAIL · POSTAGE AND POSTING" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="questions">
+      <text x="160" y="224" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="70" font-weight="800" fill="#9e1b1b">पूरी बात: 2 सवाल</text>
+      <g id="q1">
+        <rect x="160" y="260" width="1600" height="260" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <circle cx="259" cy="390" r="54" fill="#9e1b1b"/>
+        <text x="259" y="414" text-anchor="middle" font-size="65" font-weight="800" fill="#fff">1</text>
+        <text id="q1-words" x="353" y="414" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="790" fill="#2b2622">Item पर postage कहाँ और कैसे दिखे?</text>
+        <use href="piece:envelope-article" transform="translate(1384 239) scale(.77)"/>
+        <rect x="1606" y="339" width="28" height="34" rx="4" fill="#f3ead6" stroke="#9e1b1b" stroke-width="3" stroke-dasharray="3 2"/>
+        <path id="stamp-draw" d="M1609 342h21v27h-21z" fill="none" stroke="#9e1b1b" stroke-width="2.5" stroke-linejoin="round"/>
+      </g>
+      <g id="q2">
+        <rect x="160" y="580" width="1600" height="260" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <circle cx="259" cy="710" r="54" fill="#9e1b1b"/>
+        <text x="259" y="734" text-anchor="middle" font-size="65" font-weight="800" fill="#fff">2</text>
+        <use href="piece:rupee-cash" transform="translate(1377 549) scale(.80)"/>
+        <g id="q2-words">
+          <rect id="when" x="575" y="674" width="113" height="65" rx="12" fill="#fde9a6"/>
+          <rect id="how" x="702" y="674" width="269" height="65" rx="12" fill="#fde9a6"/>
+          <rect id="permit" x="986" y="674" width="343" height="65" rx="12" fill="#fde9a6"/>
+          <text x="353" y="722" font-size="49" font-weight="790" fill="#2b2622">Postage</text>
+          <text x="590" y="722" class="hi" font-size="49" font-weight="730" fill="#2b2622">कब,</text>
+          <text x="717" y="722" class="hi" font-size="49" font-weight="730" fill="#2b2622">किस तरीके से,</text>
+          <text x="1001" y="722" class="hi" font-size="49" font-weight="730" fill="#2b2622">किसकी अनुमति से?</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0,'draw','#stamp-draw',{dur:.45}],
+      [.82,'fade','#q2-words',{dur:.20}],
+      [2.16,'fade','#when',{dur:.16}],
+      [2.62,'fade','#how',{dur:.16}],
+      [4.22,'fade','#permit',{dur:.16}],
+    ],
+  }
+  </script>
+</section>
