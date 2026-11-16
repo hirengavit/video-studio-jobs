@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s044" data-in="cut" data-section="POSTING OF MAIL" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" fill="none">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="big">
+      <rect x="104" y="193" width="1712" height="754" rx="36" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M180 775H921" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <g id="box-display">
+        <use href="piece:letter-box" transform="translate(222 370) scale(.79)"/>
+        <text x="325" y="840" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="58" font-weight="800">Letter box</text>
+        <text id="box-hi" x="325" y="894" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="650">पत्र पेटी</text>
+      </g>
+      <g id="too-wide">
+        <rect x="512" y="296" width="360" height="100" rx="22" fill="#f3ead6"/>
+        <text x="692" y="360" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="62" font-weight="800">इतना बड़ा</text>
+      </g>
+      <path id="slot-cross" d="M301 470L348 518M348 470L301 518" stroke="#4b4f58" stroke-width="14" stroke-linecap="round"/>
+      <g id="counter">
+        <use href="piece:post-counter-icon" transform="translate(1133 398) scale(1.27)"/>
+        <path d="M1100 819H1692" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <g id="parcel-motion">
+        <g id="packet-pulse"><use href="piece:parcel-with-tag" transform="translate(479 459) scale(1.11)"/></g>
+      </g>
+      <g id="window-label">
+        <rect x="1086" y="249" width="604" height="105" rx="22" fill="#9e1b1b"/>
+        <text x="1388" y="318" text-anchor="middle" fill="#fff" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="800">Window पर हाथ में</text>
+      </g>
+    </g>
+    <g id="trap">
+      <g id="myth">
+        <rect x="159" y="240" width="1602" height="286" rx="34" fill="#e4e5e8"/>
+        <rect x="223" y="278" width="161" height="67" rx="33" fill="#4b4f58"/>
+        <text x="304" y="327" text-anchor="middle" fill="#fff" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="750">भ्रम</text>
+        <text id="misconception" x="230" y="446" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="82" font-weight="800">बड़ा size → accountable</text>
+      </g>
+      <g id="fact">
+        <rect x="159" y="569" width="1602" height="324" rx="34" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+        <rect x="223" y="609" width="161" height="69" rx="34" fill="#2e7d4f"/>
+        <text x="304" y="656" text-anchor="middle" fill="#fff" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="750">तथ्य</text>
+        <text x="230" y="793" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="79" font-weight="800">Size से accountable नहीं बनता</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#big'], [7.60, '#trap']],
+    on: [
+      [1.30, 'fade', '#too-wide', {dur: 0.18}],
+      [1.30, 'pulse', '#packet-pulse', {amount: 0.08}],
+      [3.02, 'fade', '#box-hi', {dur: 0.16}],
+      [3.46, 'fade', '#slot-cross', {dur: 0.14}],
+      [4.50, 'fade', '#counter', {dur: 0.21}],
+      [5.46, 'move', '#parcel-motion', {by: [679, -78], spring: 'fast'}],
+      [5.46, 'fade', '#window-label', {dur: 0.18}],
+      [11.16, 'strike', '#misconception', {color: '#4b4f58', width: 9, dur: 0.25, dim: 0.45}],
+      [11.16, 'fade', '#fact', {dur: 0.16}],
+    ],
+  }
+  </script>
+</section>
