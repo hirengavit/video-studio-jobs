@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "1.74",
+  "3.48",
+  "5.22",
+  "6.96",
+  "8.55"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s058",
+   "text": "Unregistered packets / बड़ा शहर",
+   "t": 6.96
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s058",
+   "text": "बड़ा शहर / QuartierLatin1968 · CC BY 2.5",
+   "t": 6.96
+  }
+ ]
+}
