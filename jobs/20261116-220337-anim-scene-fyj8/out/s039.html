@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s039" data-in="cut" data-section="PART 2 · LETTER ENVELOPE" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<path d="M192 200H1728Q1760 200 1760 232V908Q1760 940 1728 940H192Q160 940 160 908V232Q160 200 192 200Z" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+<rect x="257" y="251" width="430" height="92" rx="46" fill="#9e1b1b"/>
+<text x="300" y="313" font-family="'Noto Sans Devanagari',Inter,sans-serif" fill="#fff" font-size="46" font-weight="760">याद रखें</text>
+<path d="M490 275v45" stroke="#b8403a" stroke-width="3"/>
+<text x="518" y="307" font-family="Inter,sans-serif" fill="#fff" font-size="28" font-weight="820">REMEMBER</text>
+<path d="M260 579H1660" stroke="#d6be8a" stroke-width="3"/>
+<path d="M910 388V521M910 643V798" stroke="#ead9a8" stroke-width="3"/>
+<text id="r1v" x="260" y="485" font-family="Inter,sans-serif" fill="#9e1b1b" font-size="99" font-weight="820">70 GSM</text>
+<text id="r1m" x="1000" y="481" font-family="'Noto Sans Devanagari',Inter,sans-serif" fill="#2b2622" font-size="64" font-weight="740">= कागज़ का भार</text>
+<text id="r2m" x="1000" y="745" font-family="'Noto Sans Devanagari',Inter,sans-serif" fill="#2b2622" font-size="64" font-weight="740">मोटाई</text>
+<g id="r2v" fill="#9e1b1b" font-family="Inter,sans-serif" font-weight="820">
+<text id="min" x="260" y="749" font-family="Inter,sans-serif" font-size="96">0.15</text>
+<text id="dash" x="475" y="749" font-family="Inter,sans-serif" font-size="69">–</text>
+<text id="max" x="542" y="749" font-family="Inter,sans-serif" font-size="96">0.5</text>
+<text id="mm" x="715" y="749" font-family="Inter,sans-serif" font-size="62">mm</text>
+</g>
+<path id="thickness-line" d="M257 787Q548 793 826 787" fill="none" stroke="#8a5d00" stroke-width="5" stroke-linecap="round"/>
+</svg>
+<script type="text/scene">
+{
+camera:[[0,{zoom:1}],[10.22,{zoom:1.05},"inOut"]],
+on:[
+[1.22,"pop","#r1v",{from:.88,spring:"fast"}],
+[2.78,"fade","#r1m",{dur:.22}],
+[3.56,"highlight","#r1m",{words:"भार",color:"#f2b705",opacity:.44,dur:.33}],
+[4.84,"fade","#r2m",{dur:.23}],
+[6.10,"type","#min",{cps:18}],
+[7.42,"fade","#dash",{dur:.16}],
+[8.88,"type","#max",{cps:18}],
+[10.22,"fade","#mm",{dur:.20}],
+[10.22,"draw","#thickness-line",{dur:.44}]
+]
+}
+</script>
+</section>
