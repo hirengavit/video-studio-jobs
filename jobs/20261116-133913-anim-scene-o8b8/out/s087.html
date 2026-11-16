@@ -1,5 +1,6 @@
 <section class="vs-scene" id="s087" data-in="cut" data-section="FORTNIGHTLY BILLING" data-series="POSTAL RULES">
   <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <defs><path id="ledger-full" d="M175 184H1745Q1779 184 1779 218V735Q1779 769 1745 769H175Q141 769 141 735V218Q141 184 175 184Z"/></defs>
     <rect width="1920" height="1080" fill="#fbf7ee"/>
     <g id="copies">
       <g id="bill-copy-source">
@@ -34,17 +35,20 @@
     </g>
     <g id="head">
       <g id="ledger">
-        <rect x="141" y="184" width="1638" height="585" rx="34" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
-        <path d="M176 218v517" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round"/>
+        <path id="ledger-card" d="M175 184H1745Q1779 184 1779 218V346Q1779 380 1745 380H175Q141 380 141 346V218Q141 184 175 184Z" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M176 218v133" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round"/>
         <rect x="239" y="229" width="1441" height="121" rx="23" fill="#f3ead6"/>
         <use href="piece:invoice-sheet" transform="translate(264 238) scale(.25)"/>
         <text x="377" y="306" class="hi" font-size="57" font-weight="750" fill="#6f6a63">वसूली गई रकम</text>
+        <g id="ledger-body">
+        <path d="M176 348v387" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round"/>
         <path d="M241 553h1437m-1437 83h1437m-1437 83h1437" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
         <rect x="241" y="414" width="1437" height="108" rx="20" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
         <text id="ledger-quote" x="278" y="487" font-family="Georgia, serif" font-size="59" font-weight="700" fill="#2b2622">Postage realised in cash for ordinary services</text>
         <g id="credit-posted">
           <rect x="1267" y="575" width="371" height="92" rx="40" fill="#fde9a6"/>
           <text x="1452.5" y="639" text-anchor="middle" class="hi" font-size="58" font-weight="790" fill="#9e1b1b">जमा</text>
+        </g>
         </g>
       </g>
     </g>
@@ -55,6 +59,8 @@
       [0.46, 'fade', '#accounts-office', {dur: 0.24}],
       [2.36, 'fade', '#credit-watch', {dur: 0.24}],
       [2.86, 'fade', '#accounts-hi', {dur: 0.23}],
+      [7.04, 'morph', '#ledger-card', {to: '#ledger-full', dur: 0.30}],
+      [7.20, 'fade', '#ledger-body', {dur: 0.23}],
       [7.20, 'type', '#ledger-quote', {cps: 24}],
       [11.16, 'fade', '#credit-posted', {dur: 0.23}]
     ]}
