@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s082" data-in="cut" data-section="PART 5 · REGISTERED NEWSPAPERS" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="newspaper">
+      <path d="M361 177H1494L1559 242V948Q1559 967 1541 967H361Q342 967 342 948V196Q342 177 361 177Z" fill="white" stroke="#ead9a8" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M1494 177V223Q1494 242 1513 242H1559" fill="#f3ead6" stroke="#ead9a8" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M393 222H1445V310H393Z" fill="#f3ead6"/>
+      <path d="M393 325H1505M742 348V863M1109 348V538" stroke="#e0d4bc" stroke-width="3"/>
+      <path d="M415 356h293 M415 394h307 M415 432h265 M415 470h280 M415 508h293 M415 546h307 M415 584h265 M415 622h280 M415 660h293 M415 698h307 M415 736h265 M415 774h280 M415 812h293" stroke="#a7a39b" stroke-opacity=".45" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <path d="M782 356h293 M782 394h307 M782 432h265 M782 470h280 M782 508h293 M782 546h307" stroke="#a7a39b" stroke-opacity=".45" stroke-width="6" stroke-linecap="round" fill="none"/>
+      <path d="M1149 356h293 M1149 394h307 M1149 432h265 M1149 470h280 M1149 508h293 M1149 546h307" stroke="#a7a39b" stroke-opacity=".45" stroke-width="6" stroke-linecap="round" fill="none"/>
+    </g>
+    <g id="printblock">
+      <rect x="831" y="568" width="660" height="301" rx="18" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+      <g id="registration-line">
+        <text x="866" y="638" font-family="Inter,sans-serif" font-size="43" font-weight="730" fill="#2b2622">Postal Registration No. ……</text>
+        <text id="registration-hi" x="868" y="687" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="37" font-weight="560" fill="#6f6a63">डाक पंजीकरण संख्या</text>
+      </g>
+      <path d="M866 711H1454" stroke="#ead9a8" stroke-width="3"/>
+      <g id="licence-line">
+        <text x="866" y="780" font-family="Inter,sans-serif" font-size="48" font-weight="730" fill="#2b2622">Licence No.</text>
+        <text x="867" y="830" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="37" font-weight="560" fill="#6f6a63">लाइसेंस संख्या</text>
+        <text x="1336" y="780" font-family="Inter,sans-serif" font-size="48" font-weight="730" fill="#2b2622">……</text>
+      </g>
+      <g id="wpp">
+        <rect x="1148" y="736" width="172" height="60" rx="10" fill="#fde9a6"/>
+        <text id="wpp-letters" x="1234" y="781" font-family="Inter,sans-serif" text-anchor="middle" font-size="48" font-weight="780" fill="#8a5d00">WPP</text>
+      </g>
+    </g>
+    <g id="down">
+      <rect x="628" y="651" width="151" height="67" rx="12" fill="white" stroke="#ead9a8" stroke-width="2"/>
+      <path d="M800 634V770M784 750L800 770L816 750" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="704" y="699" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="43" font-weight="680" fill="#9e1b1b">नीचे</text>
+    </g>
+    <g id="before">
+      <path d="M1235 875V899" stroke="#8a5d00" stroke-width="4"/>
+      <rect x="1117" y="900" width="236" height="59" rx="13" fill="#fde9a6"/>
+      <text x="1235" y="943" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="42" font-weight="700" fill="#8a5d00">ठीक पहले</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}], [0.54, {zoom: 1}], [2.0, {on: "#printblock", zoom: 1.4}, "inOut"]],
+    on: [
+      [0.54, "fade", "#registration-line", {dur: 0.21}],
+      [1.04, "fade", "#registration-hi", {dur: 0.17}],
+      [2.38, "fade", "#licence-line", {dur: 0.22}],
+      [2.38, "fade", "#down", {dur: 0.23}],
+      [7.12, "fade", "#wpp", {dur: 0.22}],
+      [7.12, "type", "#wpp-letters", {cps: 8}],
+      [7.12, "fade", "#before", {dur: 0.24}]
+    ]
+  }
+  </script>
+</section>
