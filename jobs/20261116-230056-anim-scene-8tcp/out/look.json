@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s016",
-   "message": "highlight: \"निशान\" isn't in that <text> (it says \"\")",
-   "t": 0.3
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s016",
    "message": "a card is mostly empty at 2.1 s: bring its items in sooner, or size it for what it holds now",
