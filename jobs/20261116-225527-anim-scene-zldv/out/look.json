@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.76",
+  "3.52",
+  "5.28",
+  "7.04",
+  "8.65"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s195",
+   "message": "grow: option \"dur\" isn't used (it takes: axis, origin, spring, to)",
+   "t": 0.3
+  }
+ ]
+}
