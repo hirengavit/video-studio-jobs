@@ -1,0 +1,215 @@
+[
+  {
+    "id": "regulations-book",
+    "description": "Closed hard-cover book, postal-red #9e1b1b cover with a blank white title panel for the scene to letter (Post Office Regulations 2024), cream page edges, 3 px ink outline; 300x400",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s002",
+      "s007",
+      "s025",
+      "s026",
+      "s028",
+      "s078",
+      "s081",
+      "s088",
+      "s115",
+      "s140",
+      "s166",
+      "s202"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "window-envelope",
+    "description": "White DL envelope 600x300 with a transparent window (pale blue tint, ink outline) holding three address lines and a barcode strip; faint dashed zones for logo (top-left), postage (top-right) and barcode (bottom strip). Parts #paper #window #address-block #barcode #logo-zone #postage-zone #barcode-zone",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s040",
+      "s094"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "wax-seal",
+    "description": "Round red sealing-wax blob (#9e1b1b with a darker edge) with a blank raised device ring; 120x120",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s001",
+      "s004",
+      "s083",
+      "s084",
+      "s085",
+      "s086",
+      "s087",
+      "s091",
+      "s093",
+      "s097",
+      "s098",
+      "s102",
+      "s104",
+      "s136",
+      "s213"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "glass-bottle",
+    "description": "Glass bottle with a tight screw cap and pale blue liquid (part #liquid), ink outline; 140x300",
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "scenes": [
+      "s055",
+      "s056"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "protective-box",
+    "description": "Cut-away protective box (outer walls metal grey or wood brown via part colours) with a central cavity and sawdust-dot absorbent filling round it; 420x360. Parts #outer #filling #cavity",
+    "anchors": [
+      "base",
+      "mouth"
+    ],
+    "scenes": [
+      "s056",
+      "s209"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "airtight-tin",
+    "description": "Round grey metal tin with a sealed lid seam, ink outline; 220x240",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s073"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "wooden-case",
+    "description": "Small wooden case with plank lines and metal corners; 360x240",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s066",
+      "s077",
+      "s099"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "straight-pin",
+    "description": "Ink straight pin with a round red head and a sharp point; 200x30",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s125"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "ceramic-cup",
+    "description": "White ceramic cup with a thin red rim line, ink outline; 180x160",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s022",
+      "s055",
+      "s063",
+      "s064"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "letter-box-icon",
+    "description": "Flat ink pillar letter box, postal red, black slot, blank plate for lettering; 220x420",
+    "anchors": [
+      "base",
+      "mouth"
+    ],
+    "scenes": [
+      "s001",
+      "s004",
+      "s078",
+      "s142",
+      "s150",
+      "s177",
+      "s178",
+      "s180",
+      "s208"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "booking-receipt",
+    "description": "White receipt slip with a barcode, a tracking-number line and blank rules; 260x380",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s109",
+      "s147",
+      "s149",
+      "s194"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "clock-face",
+    "description": "Round ink clock with hour ticks on a cream face; hands are parts #hour-hand and #minute-hand; 260x260",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s063",
+      "s065",
+      "s181",
+      "s185",
+      "s186"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "phone-app",
+    "description": "Ink smartphone with a blank screen panel for the scene to fill; 200x380",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s153",
+      "s197",
+      "s210"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "booking-kiosk",
+    "description": "Ink self-booking kiosk: screen, receipt slot, base, postal-red trim; 240x460",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s153"
+    ],
+    "reuse": false
+  }
+]
