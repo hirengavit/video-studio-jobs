@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s088" data-in="cut" data-section="FORTNIGHTLY BILLING" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <defs><path id="ledger-full" d="M175 184H1745Q1779 184 1779 218V735Q1779 769 1745 769H175Q141 769 141 735V218Q141 184 175 184Z"/></defs>
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="head">
+      <g id="ledger">
+        <path id="ledger-card" d="M175 184H1745Q1779 184 1779 218V735Q1779 769 1745 769H175Q141 769 141 735V218Q141 184 175 184Z" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M176 218v133" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round"/>
+        <rect x="239" y="229" width="1441" height="121" rx="23" fill="#f3ead6"/>
+        <use href="piece:invoice-sheet" transform="translate(264 238) scale(.25)"/>
+        <text x="377" y="306" class="hi" font-size="57" font-weight="750" fill="#6f6a63">वसूली गई रकम</text>
+        <g id="ledger-body">
+        <path d="M176 348v387" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round"/>
+        <path d="M241 553h1437m-1437 83h1437m-1437 83h1437" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+        <rect x="241" y="414" width="1437" height="108" rx="20" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+        <text id="ledger-quote" x="278" y="487" font-family="Georgia, serif" font-size="59" font-weight="700" fill="#2b2622">Postage realised in cash for ordinary services</text>
+        <g id="credit-posted">
+          <rect x="1267" y="575" width="371" height="92" rx="40" fill="#fde9a6"/>
+          <text x="1452.5" y="639" text-anchor="middle" class="hi" font-size="58" font-weight="790" fill="#9e1b1b">जमा</text>
+        </g>
+        </g>
+      </g>
+      <text x="143" y="841" class="hi" font-size="51" font-weight="740" fill="#6f6a63">Records बताते हैं</text>
+      <g id="no-stamps">
+        <rect x="143" y="874" width="755" height="112" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="520" y="946" text-anchor="middle" class="hi" font-size="54" font-weight="730" fill="#2b2622">Items बिना stamps post हुए</text>
+      </g>
+      <g id="sender-charge">
+        <rect x="956" y="874" width="822" height="112" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1367" y="946" text-anchor="middle" class="hi" font-size="54" font-weight="730" fill="#9e1b1b">Sender charge का ज़िम्मेदार</text>
+      </g>
+    </g>
+    <g id="pay">
+      <rect x="130" y="212" width="640" height="622" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="1085" y="212" width="705" height="622" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M177 258h546M1132 258h611" stroke="#9e1b1b" stroke-width="9" stroke-linecap="round"/>
+      <use href="piece:invoice-sheet" transform="translate(305 318) scale(.96)"/>
+      <text x="450" y="785" text-anchor="middle" font-size="68" font-weight="790" fill="#2b2622">Bill</text>
+      <path id="pay-arrow" d="M814 519H1043m-28-26 28 26-28 26" fill="none" stroke="#9e1b1b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <use href="piece:post-office-front" transform="translate(1183 300) scale(1.2)"/>
+      <g id="named-office">
+        <rect x="1137" y="710" width="601" height="85" rx="35" fill="#fde9a6"/>
+        <text x="1437.5" y="768" text-anchor="middle" class="hi" font-size="51" font-weight="750" fill="#704b00">Bill में लिखा post office</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots:[[0,'#head'],[8.24,'#pay']],
+    on:[
+      [2.14,'fade','#no-stamps',{dur:.22}],
+      [5.28,'fade','#sender-charge',{dur:.22}],
+      [8.9,'draw','#pay-arrow',{dur:.42}],
+      [10.74,'fade','#named-office',{dur:.2}],
+    ],
+  }
+  </script>
+</section>
