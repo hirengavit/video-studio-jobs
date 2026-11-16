@@ -8,12 +8,5 @@
   "14.61"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s208",
-   "text": "Mobile Post Offices / चलते-फिरते डाकघर",
-   "t": 11.81
-  }
- ]
+ "warnings": []
 }
