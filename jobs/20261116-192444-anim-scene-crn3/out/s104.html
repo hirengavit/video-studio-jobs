@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s104" data-in="cut" data-section="PART 6 · BUSINESS REPLY SERVICE" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect x="115" y="173" width="1690" height="119" rx="24" fill="#9e1b1b"/>
+    <text x="960" y="253" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="70" font-weight="740" fill="white">Permit कैसे मिलता है</text>
+    <path d="M186 382V909" stroke="#ead9a8" stroke-width="7" stroke-linecap="round" stroke-dasharray="10 12"/>
+    <g id="future-steps" fill="none" stroke="#ead9a8" stroke-width="3" stroke-dasharray="9 9">
+      <circle cx="186" cy="711" r="40"/><rect x="267" y="668" width="1507" height="86" rx="20"/>
+      <circle cx="186" cy="810" r="40"/><rect x="267" y="767" width="1507" height="86" rx="20"/>
+      <circle cx="186" cy="909" r="40"/><rect x="267" y="866" width="1507" height="86" rx="20"/>
+    </g>
+    <g id="step-one">
+      <circle cx="186" cy="382" r="47" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="8"/>
+      <text x="186" y="401" font-family="Inter,sans-serif" text-anchor="middle" font-size="57" font-weight="750" fill="white">1</text>
+      <rect x="267" y="322" width="1507" height="324" rx="25" fill="white" stroke="#ead9a8" stroke-width="3"/>
+      <text x="334" y="413" font-family="Inter,sans-serif" font-size="67" font-weight="750" fill="#2b2622">Applicant</text>
+      <text id="applicant-hi" x="337" y="469" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="540" fill="#6f6a63">आवेदक</text>
+      <path d="M927 350V620" stroke="#ead9a8" stroke-width="3"/>
+      <g id="application">
+        <rect x="331" y="507" width="554" height="113" rx="16" fill="#f3ead6"/>
+        <use href="piece:invoice-sheet" transform="translate(358 519) scale(0.22)"/>
+        <text x="455" y="552" font-family="Inter,sans-serif" font-size="36" font-weight="735" fill="#2b2622">Application</text>
+        <text id="application-hi" x="457" y="595" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="32" font-weight="535" fill="#6f6a63">आवेदन</text>
+      </g>
+      <g id="card-proof">
+        <rect x="967" y="428" width="200" height="190" rx="16" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+        <use href="piece:business-reply-card" transform="translate(983 436) scale(0.30)"/>
+        <text x="1067" y="568" font-family="Inter,sans-serif" text-anchor="middle" font-size="32" font-weight="730" fill="#2b2622">Cards</text>
+        <text x="1067" y="609" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="32" font-weight="535" fill="#6f6a63">कार्ड</text>
+      </g>
+      <g id="envelope-proof">
+        <rect x="1191" y="428" width="200" height="190" rx="16" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+        <use href="piece:envelope-article" transform="translate(1173 371) scale(0.59)"/>
+        <text x="1291" y="568" font-family="Inter,sans-serif" text-anchor="middle" font-size="32" font-weight="730" fill="#2b2622">Envelopes</text>
+        <text x="1291" y="609" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="32" font-weight="535" fill="#6f6a63">लिफ़ाफ़े</text>
+      </g>
+      <g id="wrapper-proof">
+        <rect x="1415" y="428" width="200" height="190" rx="16" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+        <path d="M1438 447H1592V533H1438Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/><path d="M1438 447L1515 472L1592 447M1438 533L1515 510L1592 533" fill="none" stroke="#cbb78d" stroke-width="3"/><path d="M1491 482H1557M1491 499H1539" stroke="#a7a39b" stroke-width="3"/>
+        <text x="1515" y="568" font-family="Inter,sans-serif" text-anchor="middle" font-size="32" font-weight="730" fill="#2b2622">Wrappers</text>
+        <text x="1515" y="609" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="32" font-weight="535" fill="#6f6a63">रैपर</text>
+      </g>
+      <g id="proofs">
+        <rect x="967" y="350" width="648" height="64" rx="14" fill="#fde9a6"/>
+        <text x="1291" y="395" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="47" font-weight="710" fill="#8a5d00">पूरे छपे proofs</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [2.22, "fade", "#step-one", {dur: 0.23}],
+      [2.72, "fade", "#applicant-hi", {dur: 0.18}],
+      [3.36, "fade", "#application", {dur: 0.22}],
+      [3.86, "fade", "#application-hi", {dur: 0.18}],
+      [4.96, "pop", "#card-proof", {from: 0.85, spring: "soft"}],
+      [5.96, "pop", "#envelope-proof", {from: 0.85, spring: "soft"}],
+      [7.34, "pop", "#wrapper-proof", {from: 0.85, spring: "soft"}],
+      [8.58, "fade", "#proofs", {dur: 0.21}]
+    ]
+  }
+  </script>
+</section>
