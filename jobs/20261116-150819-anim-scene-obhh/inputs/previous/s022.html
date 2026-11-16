@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s022" data-in="cut" data-section="PART 2 · REGULATION 18" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" fill="none">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <use id="envelope" href="piece:envelope-face-large" transform="translate(120 200) scale(.95)"/>
+    <g id="upper-zone">
+      <rect x="140" y="221" width="1100" height="198" rx="8" fill="#fde9a6"/>
+      <rect x="1044" y="249" width="170" height="143" rx="7" stroke="#6f6a63" stroke-width="3" stroke-dasharray="11 8"/>
+      <text x="170" y="278" fill="#8a5d00" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800">ऊपरी</text>
+      <text x="170" y="328" fill="#8a5d00" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800">हिस्सा</text>
+    </g>
+    <g id="stamp">
+      <use href="piece:postage-stamp" transform="translate(1059 244) scale(.34)"/>
+      <text x="1128" y="381" fill="#2b2622" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="750">stamps</text>
+    </g>
+    <g id="postal-label">
+      <rect x="834" y="258" width="131" height="66" rx="8" fill="#fff" stroke="#9e1b1b" stroke-width="4"/>
+      <path d="M855 281H944M855 301H915" stroke="#a4a098" stroke-width="4" stroke-linecap="round"/>
+      <text x="899" y="381" fill="#2b2622" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="750">labels</text>
+    </g>
+    <g id="postmark">
+      <use href="piece:postal-date-stamp" transform="translate(648 242) scale(.34)"/>
+      <circle cx="699" cy="293" r="45" fill="none" stroke="#9e1b1b" stroke-width="4" opacity=".75"/>
+      <text x="699" y="381" fill="#2b2622" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="750">postmarks</text>
+    </g>
+    <g id="postal-marks" transform="translate(12 0)">
+      <path d="M420 270q15 -11 30 0t30 0t30 0M420 289q15 -11 30 0t30 0t30 0M420 308q15 -11 30 0t30 0t30 0" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+      <text x="461" y="356" fill="#2b2622" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="750">दूसरे postal</text>
+      <text x="461" y="399" fill="#2b2622" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="750">निशान</text>
+    </g>
+    <g id="legend">
+      <rect x="1320" y="200" width="520" height="205" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="1358" y="246" width="9" height="51" rx="4" fill="#f2b705"/>
+      <text x="1386" y="287" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="56" font-weight="800">Regulation 18</text>
+      <text id="legend-hi" x="1387" y="349" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="650">विनियम 18</text>
+    </g>
+    <rect x="517" y="568" width="510" height="187" rx="13" fill="#ffffff"/>
+    <g id="address-block-motion">
+      <rect x="522" y="573" width="500" height="177" rx="13" fill="#f5f3ef" fill-opacity=".92" stroke="#a4a098" stroke-width="3"/>
+      <path d="M543 598H985M543 643H939M543 686H963M543 726H843" fill="none" stroke="#6f6a63" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g id="obstruction">
+      <circle cx="542" cy="473" r="43" fill="#4b4f58" stroke="#fbf7ee" stroke-width="4"/>
+      <path d="M524 455l36 36m0-36-36 36" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+      <rect x="598" y="426" width="514" height="92" rx="40" fill="#4b4f58"/>
+      <text x="855" y="488" text-anchor="middle" class="hi" font-size="57" font-weight="770" fill="#ffffff">काम अटकता है</text>
+    </g>
+    <g id="measure-intro">
+      <rect x="1320" y="438" width="520" height="151" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1580" y="504" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Domestic envelope</text>
+      <text x="1580" y="559" text-anchor="middle" class="hi" font-size="48" font-weight="770" fill="#9e1b1b">4 नाप</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {on: [
+      [0, 'move', '#address-block-motion', {by: [0, -318], spring: 'slow'}],
+      [3.84, 'pop', '#obstruction', {from: 0.9, spring: 'soft'}],
+      [5.12, 'out', '#obstruction', {dur: 0.22}],
+      [5.12, 'move', '#address-block-motion', {by: [0, 318], spring: 'soft'}],
+      [7.30, 'fade', '#measure-intro', {dur: 0.24}]
+    ]}
+  </script>
+</section>
