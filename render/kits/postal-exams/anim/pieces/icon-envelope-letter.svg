@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<g id="envelope"><rect x="40" y="95" width="320" height="210" rx="7" fill="#ffffff"/>
+<g id="airmail" stroke="#9e1b1b" stroke-width="8"><path d="M60 102L72 114M102 102L114 114M144 102L156 114M186 102L198 114M228 102L240 114M270 102L282 114M312 102L324 114M60 286L72 298M102 286L114 298M144 286L156 298M186 286L198 298M228 286L240 298M270 286L282 298M312 286L324 298"/></g>
+<path id="folds" d="M48 291L158 201M352 291L242 201"/>
+<path id="flap" d="M48 117L188 224Q200 233 212 224L352 117"/></g>
+<circle data-anchor="base" cx="200" cy="305" r="0"/>
+<circle data-anchor="grip" cx="40" cy="200" r="0"/>
+</svg>
