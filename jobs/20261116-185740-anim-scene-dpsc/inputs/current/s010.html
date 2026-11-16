@@ -1,0 +1,37 @@
+<section class="vs-scene" id="s010" data-in="wipe" data-in-dur="0.4" data-in-opts='{"from":"right"}' data-section="PART 1 · REGULATION 16" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" fill="none">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="term-card">
+      <rect x="120" y="220" width="640" height="640" rx="32" fill="#9e1b1b"/>
+      <rect x="135" y="235" width="610" height="610" rx="24" stroke="#fbf7ee" stroke-width="10" stroke-linecap="round" stroke-dasharray="0 22"/>
+      <rect x="180" y="309" width="10" height="49" rx="5" fill="#f2b705"/>
+      <text x="207" y="347" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="650">पहले इतना याद रखिए</text>
+      <text id="term" x="440" y="520" fill="#fff" font-family="Inter, sans-serif" font-size="76" font-weight="800" text-anchor="middle">Prepayment</text>
+      <text id="term-hi" x="440" y="604" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="700" text-anchor="middle">अग्रिम भुगतान</text>
+    </g>
+    <g id="meaning-card">
+      <rect x="840" y="220" width="960" height="640" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <text x="914" y="347" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="650">अर्थ</text>
+      <path d="M914 387H1726" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <text id="before" x="914" y="498" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="76" font-weight="800">Posting से पहले</text>
+      <text id="pay-postage" x="914" y="592" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="700">postage और</text>
+      <text id="pay-dues" x="914" y="659" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="700">बाकी देय रकम चुकाना</text>
+      <g id="exception">
+        <rect x="912" y="693" width="810" height="104" rx="24" fill="#fde9a6"/>
+        <text x="1317" y="760" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" text-anchor="middle">छूट: सिर्फ़ authorised exception</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [2.12, 'type', '#term', {cps: 34}],
+      [2.62, 'fade', '#term-hi', {dur: 0.18}],
+      [2.96, 'fade', '#meaning-card', {dur: 0.20}],
+      [4.10, 'fade', '#pay-postage', {dur: 0.22}],
+      [5.50, 'fade', '#pay-dues', {dur: 0.22}],
+      [7.58, 'pop', '#exception', {from: 0.88, spring: 'fast'}],
+    ],
+  }
+  </script>
+</section>
