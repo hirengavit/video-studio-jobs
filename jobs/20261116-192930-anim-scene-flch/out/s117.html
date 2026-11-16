@@ -1,0 +1,70 @@
+<section class="vs-scene" id="s117" data-in="cut" data-section="PART 7 · BUSINESS REPLY ARTICLES" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="card">
+      <use id="reply-card" href="piece:business-reply-card" transform="translate(330 170) scale(2.25)"/>
+      <rect id="bars-focus" x="1397" y="438" width="106" height="428" fill="none" stroke="none"/>
+      <g id="bars-highlight">
+        <rect x="1379" y="420" width="133" height="464" rx="20" fill="none" stroke="#f2b705" stroke-width="8"/>
+        <path d="M1378 536h-64" fill="none" stroke="#8a5d00" stroke-width="5" stroke-linecap="round"/>
+        <rect x="898" y="489" width="416" height="93" rx="23" fill="#fde9a6" stroke="#e0c369" stroke-width="2"/>
+        <text x="1106" y="551" text-anchor="middle" class="hi" font-size="49" font-weight="770" fill="#2b2622">दो मोटी खड़ी lines</text>
+      </g>
+      <g id="identity">
+        <rect x="1043" y="773" width="270" height="75" rx="22" fill="#9e1b1b"/>
+        <text x="1178" y="824" text-anchor="middle" class="hi" font-size="47" font-weight="760" fill="#fff">पहचान</text>
+      </g>
+      <g id="six-entries">
+        <rect x="430" y="236" width="355" height="95" rx="40" fill="#fde9a6"/>
+        <text x="607.5" y="301" text-anchor="middle" class="hi" font-size="59" font-weight="800" fill="#704b00">छह बातें</text>
+      </g>
+      <g id="entry-1"><circle cx="483" cy="442" r="36" fill="#9e1b1b" stroke="#ffffff" stroke-width="5"/><text x="483" y="457" text-anchor="middle" font-size="45" font-weight="780" fill="#ffffff">1</text></g>
+      <g id="entry-2"><circle cx="746" cy="602" r="36" fill="#9e1b1b" stroke="#ffffff" stroke-width="5"/><text x="746" y="617" text-anchor="middle" font-size="45" font-weight="780" fill="#ffffff">2</text></g>
+      <g id="entry-3"><circle cx="747" cy="715" r="36" fill="#9e1b1b" stroke="#ffffff" stroke-width="5"/><text x="747" y="730" text-anchor="middle" font-size="45" font-weight="780" fill="#ffffff">3</text></g>
+      <g id="entry-4"><circle cx="445" cy="834" r="36" fill="#9e1b1b" stroke="#ffffff" stroke-width="5"/><text x="445" y="849" text-anchor="middle" font-size="45" font-weight="780" fill="#ffffff">4</text></g>
+      <g id="entry-5"><circle cx="1286" cy="302" r="36" fill="#9e1b1b" stroke="#ffffff" stroke-width="5"/><text x="1286" y="317" text-anchor="middle" font-size="45" font-weight="780" fill="#ffffff">5</text></g>
+      <g id="entry-6"><circle cx="1366" cy="472" r="36" fill="#9e1b1b" stroke="#ffffff" stroke-width="5"/><text x="1366" y="487" text-anchor="middle" font-size="45" font-weight="780" fill="#ffffff">6</text></g>
+      <g id="bracket-recipient">
+        <path d="M797 570v-15h443v15" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="1018.5" y="533" class="hi" text-anchor="middle" font-size="51" font-weight="740" fill="#9e1b1b">जवाब पाने वाला</text>
+      </g>
+      <g id="bracket-permit">
+        <path d="M482 852v16h276v-16" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="620" y="932" class="hi" text-anchor="middle" font-size="49" font-weight="740" fill="#9e1b1b">Permit की पहचान</text>
+      </g>
+      <g id="bracket-service">
+        <path d="M1333 352h190v531h-194v-13" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="1304" y="943" class="hi" text-anchor="middle" font-size="49" font-weight="740" fill="#9e1b1b">Service के निशान</text>
+      </g>
+      <rect id="payment-band" x="426" y="408" width="800" height="88" rx="19" fill="#fde9a6"/>
+      <g id="payment-rules" fill="none" stroke="#6f6a63" stroke-width="3" stroke-linecap="round">
+        <path d="M463 437h260"/>
+        <path d="M463 473h200"/>
+      </g>
+      <g id="payment">
+        <text x="978" y="469" text-anchor="middle" class="hi" font-size="47" font-weight="740" fill="#2b2622">भुगतान वाली lines</text>
+      </g>
+    </g>
+    <g id="without-stamp">
+      <rect x="515" y="995" width="890" height="66" rx="29" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="960" y="1043" text-anchor="middle" class="hi" font-size="52" font-weight="750" fill="#9e1b1b">भारत में stamp बिना reply post</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {
+      camera: [[0, {zoom:1}], [1.5,{on:'#bars-focus',zoom:1.5},'inOut'], [5.26,{on:'#bars-focus',zoom:1.5}], [6.2,{zoom:1},'inOut']],
+      on: [
+        [0,'color','#bracket-recipient path, #bracket-permit path, #bracket-service path',{prop:'stroke',to:'#a49b90',dur:.34}],
+        [0,'color','#bracket-recipient text, #bracket-permit text, #bracket-service text',{to:'#6f6a63',dur:.34}],
+        [.12,'out','#six-entries, #entry-1, #entry-2, #entry-3, #entry-4, #entry-5, #entry-6',{dur:.37}],
+        [.12,'out','#bracket-recipient, #bracket-permit, #bracket-service',{dur:.58}],
+        [2.06,'fade','#bars-highlight',{dur:.26}],
+        [3.68,'fade','#identity',{dur:.24}],
+        [5.26,'out','#bars-highlight, #identity',{dur:.28}],
+        [5.18,'fade','#payment-rules',{dur:.30}],
+        [5.26,'fade','#payment-band, #payment',{dur:.36}],
+        [8.46,'fade','#without-stamp',{dur:.27}]
+      ]
+    }
+  </script>
+</section>
