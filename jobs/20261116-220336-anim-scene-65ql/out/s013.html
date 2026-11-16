@@ -1,7 +1,7 @@
 <section class="vs-scene" id="s013" data-in="cut" data-section="PART 1 · PACKING &amp; STRONG COVER" data-series="PACKING &amp; POSTING">
   <svg viewBox="0 0 1920 1080" font-family="'Noto Sans Devanagari',Inter,sans-serif">
     <rect width="1920" height="1080" fill="#fbf7ee"/>
-    <text x="960" y="225" text-anchor="middle" font-size="66" font-weight="800" fill="#2b2622">कौन pack करे?</text>
+    <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="960" y="225" text-anchor="middle" font-size="66" font-weight="800" fill="#2b2622">कौन pack करे?</text>
     <g id="left">
       <rect x="140" y="275" width="740" height="515" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
       <path d="M170 275H850Q880 275 880 305V404H140V305Q140 275 170 275Z" fill="#9e1b1b"/>
@@ -11,37 +11,37 @@
       <path d="M1070 275H1750Q1780 275 1780 305V404H1040V305Q1040 275 1070 275Z" fill="#f2b705"/>
     </g>
     <text id="sender" x="510" y="364" text-anchor="middle" font-family="Inter,sans-serif" font-size="76" font-weight="810" fill="#fff">Sender</text>
-    <text id="sender-hi" x="510" y="473" text-anchor="middle" font-size="49" font-weight="650" fill="#6f6a63">भेजने वाला</text>
+    <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" id="sender-hi" x="510" y="473" text-anchor="middle" font-size="49" font-weight="650" fill="#6f6a63">भेजने वाला</text>
     <use id="parcel" href="piece:parcel-with-tag" transform="translate(307 458) scale(1)"/>
     <g id="sender-ok" transform="translate(801 709)">
       <circle r="39" fill="#e5f0e8"/><path d="M-17 0l11 11 24-25" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
     <g id="or">
       <circle cx="960" cy="534" r="54" fill="#2b2622" stroke="#fbf7ee" stroke-width="8"/>
-      <text x="960" y="555" text-anchor="middle" font-size="55" font-weight="790" fill="#fde9a6">या</text>
+      <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="960" y="555" text-anchor="middle" font-size="55" font-weight="790" fill="#fde9a6">या</text>
     </g>
     <text id="office" x="1410" y="364" text-anchor="middle" font-family="Inter,sans-serif" font-size="76" font-weight="810" fill="#2b2622">Post Office</text>
-    <text id="office-hi" x="1410" y="473" text-anchor="middle" font-size="49" font-weight="650" fill="#6f6a63">डाकघर</text>
-    <use id="building" href="piece:post-office-front" transform="translate(1234 466) scale(.82)"/>
+    <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" id="office-hi" x="1410" y="473" text-anchor="middle" font-size="49" font-weight="650" fill="#6f6a63">डाकघर</text>
+    <use id="building" href="piece:post-office-front" transform="translate(1241 476) scale(.79)"/>
     <g id="office-ok" transform="translate(1701 709)">
       <circle r="39" fill="#e5f0e8"/><path d="M-17 0l11 11 24-25" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
     <g id="condition">
       <rect x="1040" y="822" width="740" height="174" rx="26" fill="#fde9a6" stroke="#ead9a8" stroke-width="3"/>
       <text x="1410" y="883" text-anchor="middle" font-family="Inter,sans-serif" font-size="50" font-weight="790" fill="#2b2622">Administrative instructions</text>
-      <text id="condition-hi" x="1410" y="944" text-anchor="middle" font-size="46" font-weight="680" fill="#2b2622">प्रशासनिक निर्देशों के मुताबिक़</text>
+      <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" id="condition-hi" x="1410" y="944" text-anchor="middle" font-size="46" font-weight="680" fill="#2b2622">प्रशासनिक निर्देशों के मुताबिक़</text>
     </g>
   </svg>
   <script type="text/scene">
   {
     on: [
       [0, 'pop', '#left, #right', {from:.97, spring:'soft'}],
-      [1.10, 'type', '#sender', {dur:.36}],
+      [1.10, 'type', '#sender', {cps:18}],
       [1.10, 'pop', '#parcel', {from:.89, spring:'soft'}],
       [1.60, 'fade', '#sender-hi', {dur:.22}],
       [1.60, 'pop', '#sender-ok', {from:.75, spring:'soft'}],
       [2.62, 'pop', '#or', {from:.84, spring:'soft'}],
-      [3.00, 'type', '#office', {dur:.42}],
+      [3.00, 'type', '#office', {cps:27}],
       [3.00, 'pop', '#building', {from:.89, spring:'soft'}],
       [3.50, 'fade', '#office-hi', {dur:.22}],
       [3.50, 'pop', '#office-ok', {from:.75, spring:'soft'}],
