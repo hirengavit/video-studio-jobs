@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s093" data-in="cut" data-section="REGISTERED NEWSPAPER LICENCE" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="reg-card">
+      <rect id="reg-bg" x="100" y="209" width="738" height="357" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M134 229h670" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+      <text id="reg-name" x="469" y="358" font-size="65" font-weight="780" text-anchor="middle" fill="#9e1b1b">Postal registration</text>
+      <text x="469" y="421" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="32" style="line-height:1.3" font-weight="560" text-anchor="middle" fill="#6f6a63">डाक पंजीकरण</text>
+    </g>
+    <g fill="none" stroke="#6f6a63" stroke-width="13">
+      <rect x="862" y="340" width="113" height="63" rx="31" transform="rotate(-24 918 371)"/>
+      <rect x="947" y="340" width="113" height="63" rx="31" transform="rotate(-24 1003 371)"/>
+    </g>
+    <g id="lic-card">
+      <rect id="lic-bg" x="1082" y="209" width="738" height="357" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M1116 229h670" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+      <text id="lic-name" x="1451" y="358" font-size="73" font-weight="780" text-anchor="middle" fill="#9e1b1b">Licence</text>
+      <text x="1451" y="421" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="32" style="line-height:1.3" font-weight="560" text-anchor="middle" fill="#6f6a63">लाइसेंस</text>
+    </g>
+    <g id="ended">
+      <rect x="1371" y="451" width="160" height="56" rx="28" fill="#4b4f58"/>
+      <text x="1451" y="491" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="720" text-anchor="middle" fill="#fff">खत्म</text>
+    </g>
+    <g id="renew">
+      <rect x="100" y="588" width="1720" height="127" rx="27" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="960" y="670" class="hi" font-size="65" font-weight="760" text-anchor="middle" fill="#2b2622">Renewal: दोनों साथ apply</text>
+    </g>
+    <g id="scope">
+      <rect x="100" y="740" width="1720" height="217" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:newspaper-bundle" transform="translate(180 764) scale(.77)"/>
+      <text x="494" y="830" class="hi" font-size="64" font-weight="740" fill="#9e1b1b">सिर्फ़ उस eligible newspaper</text>
+      <text id="scope-posting" x="494" y="909" font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#2b2622">+ approved posting</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    update(t, section, $) {
+      for (const [id, start] of [["#reg-card", .86], ["#lic-card", 1.88]]) {
+        const u = Math.max(0, Math.min(1, (t-start)/.30));
+        for (const el of $(id)) el.setAttribute("opacity", 1-.4*u*u*(3-2*u));
+      }
+    },
+    on: [
+    [1.88,"fade","#ended",{dur:.24}],
+    [2.95,"fade","#renew",{dur:.25}],
+    [6.74,"fade","#scope",{dur:.27}],
+    [10.70,"fade","#scope-posting",{dur:.20}],
+    [10.70,"highlight","#scope-posting",{color:"#fde9a6",opacity:.9,dur:.32,pad:11}]
+  ] }
+  </script>
+</section>
