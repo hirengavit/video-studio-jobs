@@ -1,0 +1,288 @@
+[
+  {
+    "id": "regulations-book",
+    "kind": "prop",
+    "description": "Closed hard-cover book, postal-red #9e1b1b cover with a blank white title panel for the scene to letter (Post Office Regulations 2024), cream page edges, 3 px ink outline; 300x400",
+    "ideas": [
+      "distinguish current regulations from the old Guide",
+      "letter an empty cover title"
+    ],
+    "viewBox": "0 0 300 400",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "back-cover",
+      "page-edges",
+      "cover",
+      "spine",
+      "title-panel",
+      "binding-detail"
+    ]
+  },
+  {
+    "id": "window-envelope",
+    "kind": "prop",
+    "description": "White DL envelope 600x300 with a transparent window (pale blue tint, ink outline) holding three address lines and a barcode strip; faint dashed zones for logo (top-left), postage (top-right) and barcode (bottom strip). Parts #paper #window #address-block #barcode #logo-zone #postage-zone #barcode-zone",
+    "ideas": [
+      "measure DL size",
+      "highlight the window and postal zones"
+    ],
+    "viewBox": "0 0 600 300",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "paper",
+      "logo-zone",
+      "postage-zone",
+      "barcode-zone",
+      "window",
+      "window-glint",
+      "address-block",
+      "barcode"
+    ]
+  },
+  {
+    "id": "wax-seal",
+    "kind": "prop",
+    "description": "Round red sealing-wax blob (#9e1b1b with a darker edge) with a blank raised device ring; 120x120",
+    "ideas": [
+      "show a seal on a flap",
+      "highlight tamper-evident closure"
+    ],
+    "viewBox": "0 0 120 120",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "wax",
+      "device-bed",
+      "device-ring",
+      "sheen"
+    ]
+  },
+  {
+    "id": "glass-bottle",
+    "kind": "prop",
+    "description": "Glass bottle with a tight screw cap and pale blue liquid (part #liquid), ink outline; 140x300",
+    "ideas": [
+      "show a tightly closed liquid container",
+      "animate liquid as one group"
+    ],
+    "viewBox": "0 0 140 300",
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "parts": [
+      "glass",
+      "liquid",
+      "glass-glint",
+      "cap"
+    ]
+  },
+  {
+    "id": "protective-box",
+    "kind": "prop",
+    "description": "Cut-away protective box (outer walls metal grey or wood brown via part colours) with a central cavity and sawdust-dot absorbent filling round it; 420x360. Parts #outer #filling #cavity",
+    "ideas": [
+      "show an inner container surrounded by absorbent filling",
+      "contrast wooden and metal protection"
+    ],
+    "viewBox": "0 0 420 360",
+    "anchors": [
+      "base",
+      "mouth"
+    ],
+    "parts": [
+      "outer",
+      "box-shell",
+      "filling",
+      "cavity"
+    ]
+  },
+  {
+    "id": "airtight-tin",
+    "kind": "prop",
+    "description": "Round grey metal tin with a sealed lid seam, ink outline; 220x240",
+    "ideas": [
+      "identify sealed metal packaging",
+      "highlight the continuous lid seam"
+    ],
+    "viewBox": "0 0 220 240",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "body",
+      "lid",
+      "sealed-seam"
+    ]
+  },
+  {
+    "id": "wooden-case",
+    "kind": "prop",
+    "description": "Small wooden case with plank lines and metal corners; 360x240",
+    "ideas": [
+      "show reinforced packaging",
+      "point to the plank walls and metal corners"
+    ],
+    "viewBox": "0 0 360 240",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "case-planks",
+      "metal-corners"
+    ]
+  },
+  {
+    "id": "straight-pin",
+    "kind": "prop",
+    "description": "Ink straight pin with a round red head and a sharp point; 200x30",
+    "ideas": [
+      "show a pin hazard",
+      "call out the exposed point"
+    ],
+    "viewBox": "0 0 200 30",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "shaft",
+      "head"
+    ]
+  },
+  {
+    "id": "ceramic-cup",
+    "kind": "prop",
+    "description": "White ceramic cup with a thin red rim line, ink outline; 180x160",
+    "ideas": [
+      "illustrate fragile goods",
+      "identify the rim and handle"
+    ],
+    "viewBox": "0 0 180 160",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "handle",
+      "cup-body",
+      "opening",
+      "red-rim"
+    ]
+  },
+  {
+    "id": "letter-box-icon",
+    "kind": "prop",
+    "description": "Flat ink pillar letter box, postal red, black slot, blank plate for lettering; 220x420",
+    "ideas": [
+      "identify postal collection",
+      "label the blank plate and point to the slot"
+    ],
+    "viewBox": "0 0 220 420",
+    "anchors": [
+      "base",
+      "mouth"
+    ],
+    "parts": [
+      "pillar",
+      "cap",
+      "service-door",
+      "slot",
+      "plate",
+      "foot"
+    ]
+  },
+  {
+    "id": "booking-receipt",
+    "kind": "prop",
+    "description": "White receipt slip with a barcode, a tracking-number line and blank rules; 260x380",
+    "ideas": [
+      "show the receipt handoff",
+      "highlight the tracking line and barcode"
+    ],
+    "viewBox": "0 0 260 380",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "paper",
+      "header-band",
+      "blank-rules",
+      "barcode",
+      "tracking-line"
+    ]
+  },
+  {
+    "id": "clock-face",
+    "kind": "prop",
+    "description": "Round ink clock with hour ticks on a cream face; hands are parts #hour-hand and #minute-hand; 260x260",
+    "ideas": [
+      "show collection cutoffs and office hours",
+      "animate each hand around the centre"
+    ],
+    "viewBox": "0 0 260 260",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "rim",
+      "dial",
+      "hour-ticks",
+      "hour-hand",
+      "minute-hand",
+      "hub"
+    ]
+  },
+  {
+    "id": "phone-app",
+    "kind": "prop",
+    "description": "Ink smartphone with a blank screen panel for the scene to fill; 200x380",
+    "ideas": [
+      "show mobile booking",
+      "overlay the scene interface in the blank screen"
+    ],
+    "viewBox": "0 0 200 380",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "side-buttons",
+      "case",
+      "screen",
+      "speaker",
+      "home-bar"
+    ]
+  },
+  {
+    "id": "booking-kiosk",
+    "kind": "prop",
+    "description": "Ink self-booking kiosk: screen, receipt slot, base, postal-red trim; 240x460",
+    "ideas": [
+      "show self-booking",
+      "highlight the screen and receipt slot"
+    ],
+    "viewBox": "0 0 240 460",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "body",
+      "front-panel",
+      "screen-bezel",
+      "screen",
+      "postal-trim",
+      "receipt-slot",
+      "service-panel",
+      "base"
+    ]
+  }
+]
