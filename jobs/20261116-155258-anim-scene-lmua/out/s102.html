@@ -1,0 +1,39 @@
+<section class="vs-scene" id="s102" data-in="cut" data-section="PART 6 · BUSINESS REPLY SERVICE" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="charge">
+      <rect x="360" y="218" width="1200" height="563" rx="35" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M396 255h1128" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round"/>
+      <text x="960" y="388" text-anchor="middle" class="hi" font-size="82" font-weight="780" fill="#9e1b1b">हर लौटे जवाब पर</text>
+      <path id="sum-line" d="M437 470h1046" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <g id="usual-postage">
+        <text x="501" y="579" font-size="76" font-weight="810" fill="#2b2622">Usual postage</text>
+        <text id="usual-hi" x="506" y="657" class="hi" font-size="52" font-weight="660" fill="#6f6a63">सामान्य डाक शुल्क</text>
+      </g>
+          <g id="handling">
+        <rect x="1015" y="535" width="490" height="125" rx="34" fill="#9e1b1b"/>
+        <text x="1260" y="588" text-anchor="middle" class="hi" font-size="53" font-weight="820" fill="#fff" textLength="431" lengthAdjust="spacingAndGlyphs">+ ₹1 handling charge</text>
+        <text id="handling-hi" x="1260" y="634" text-anchor="middle" class="hi" font-size="40" font-weight="650" fill="#fde9a6">हैंडलिंग शुल्क</text>
+      </g>
+    </g>
+    <g id="not-permit-fee">
+      <rect x="180" y="815" width="585" height="150" rx="33" fill="#4b4f58"/>
+      <text x="235" y="910" font-size="65" font-weight="810" fill="#ffffff">≠</text>
+      <text x="328" y="909" font-size="54" font-weight="750" fill="#ffffff">Permit fee</text>
+    </g>
+    <g id="not-unpaid-dues">
+      <rect x="800" y="815" width="940" height="150" rx="33" fill="#4b4f58"/>
+      <text x="854" y="910" font-size="65" font-weight="810" fill="#ffffff">≠</text>
+      <text x="942" y="907" class="hi" font-size="50" font-weight="745" fill="#ffffff" textLength="731" lengthAdjust="spacingAndGlyphs">unpaid letter का दोगुना charge</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {on: [
+      [0.82, 'fade', '#handling', {dur: 0.23}],
+      [1.32, 'fade', '#handling-hi', {dur: 0.22}],
+      [2.98, 'move', '#handling', {by: [0, -32], spring: 'soft'}],
+      [4.34, 'fade', '#not-permit-fee', {dur: 0.23}],
+      [6.76, 'fade', '#not-unpaid-dues', {dur: 0.23}]
+    ]}
+  </script>
+</section>
