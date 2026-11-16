@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s032" data-in="cut" data-section="PART 2 · LETTER ENVELOPE" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="flap">
+<rect x="180" y="300" width="1160" height="600" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+<rect x="256" y="356" width="1008" height="488" rx="25" fill="#fff" stroke="#2b2622" stroke-width="6"/>
+<path d="M258 819L604 545M1261 819L915 545" fill="none" stroke="#d7c7a5" stroke-width="5"/>
+<path id="flap-fill" d="M260 383Q260 357 285 357H1235Q1260 357 1260 383L826 669Q760 715 694 669Z" fill="#fde9a6"/>
+<path id="flap-edge" d="M260 383L694 669Q760 715 826 669L1260 383" fill="none" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1374" y="374" width="426" height="442" rx="26" fill="white" stroke="#ead9a8" stroke-width="4"/>
+<text id="term" x="1587" y="529" text-anchor="middle" font-size="96" font-weight="820" fill="#2b2622">FLAP</text>
+<text id="term-hi" x="1587" y="638" text-anchor="middle" class="hi" font-size="66" font-weight="780" fill="#9e1b1b">पल्ला</text>
+<text id="term-def" x="1587" y="734" text-anchor="middle" class="hi" font-size="44" font-weight="630" fill="#6f6a63">बंद करने वाला पल्ला</text>
+</g><g id="three">
+<text x="140" y="248" class="hi" font-size="69" font-weight="800" fill="#9e1b1b">Flap की तीन जगहें</text>
+<g transform="translate(140 330)">
+<rect width="440" height="260" rx="14" fill="#fff" stroke="#2b2622" stroke-width="6"/>
+<path d="M5 251L161 124M435 251L279 124" fill="none" stroke="#d7c7a5" stroke-width="4"/>
+<path id="fill1" d="M5 5H435L248 133Q220 151 192 133Z" fill="#f8d9d2"/>
+<path id="f1" d="M5 5H435L248 133Q220 151 192 133Z" stroke="#9e1b1b" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="label1" x="220" y="330" text-anchor="middle" class="hi" font-size="45" font-weight="760" fill="#2b2622">पीछे, लंबी भुजा के ऊपर</text></g>
+<g transform="translate(740 330)">
+<rect width="440" height="260" rx="14" fill="#fff" stroke="#2b2622" stroke-width="6"/>
+<path d="M5 251L161 124M435 251L279 124" fill="none" stroke="#d7c7a5" stroke-width="4"/>
+<path id="fill2" d="M435 5V255L291 149Q269 130 291 111Z" fill="#f8d9d2"/>
+<path id="f2" d="M435 5V255L291 149Q269 130 291 111Z" stroke="#9e1b1b" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="label2" x="220" y="330" text-anchor="middle" class="hi" font-size="45" font-weight="760" fill="#2b2622">दाईं ओर</text></g>
+<g transform="translate(1340 330)">
+<rect width="440" height="260" rx="14" fill="#fff" stroke="#2b2622" stroke-width="6"/>
+<path d="M5 251L161 124M435 251L279 124" fill="none" stroke="#d7c7a5" stroke-width="4"/>
+<path id="fill3" d="M5 5V255L149 149Q171 130 149 111Z" fill="#f8d9d2"/>
+<path id="f3" d="M5 5V255L149 149Q171 130 149 111Z" stroke="#9e1b1b" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="label3" x="220" y="330" text-anchor="middle" class="hi" font-size="45" font-weight="760" fill="#2b2622">बाईं ओर</text></g>
+<g id="strip">
+<rect x="140" y="800" width="1640" height="160" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+<text x="204" y="899" class="hi" font-size="65" font-weight="790" fill="#2b2622">सतह: समतल</text>
+<g id="strip2"><rect x="607" y="834" width="370" height="89" rx="43" fill="#fde9a6"/><text x="792" y="894" text-anchor="middle" class="hi" font-size="63" font-weight="790" fill="#4b3200">और एक-सी</text></g>
+<path id="ruler" d="M1120 889H1675m-552 0v-38m69 38v-19m69 19v-30m69 30v-19m69 19v-30m69 30v-19m69 19v-30m69 30v-19m69 19v-38" fill="none" stroke="#8a5d00" stroke-width="7" stroke-linecap="round"/>
+</g></g></svg>
+<script type="text/scene">
+{shots:[[0,"#flap"],[2.14,"#three"]],on:[
+[.73,"pulse","#term",{amount:.065}],
+[3.06,"fade","#fill1",{dur:.24}],[3.06,"draw","#f1",{dur:.45}],[4.12,"fade","#label1",{dur:.19}],
+[5.29,"fade","#fill2",{dur:.24}],[5.29,"draw","#f2",{dur:.35}],[5.64,"fade","#label2",{dur:.19}],
+[6.61,"fade","#fill3",{dur:.24}],[6.61,"draw","#f3",{dur:.35}],[6.96,"fade","#label3",{dur:.19}],
+[8.40,"slide","#strip",{from:"down",dist:43,spring:"fast"}],[8.45,"draw","#ruler",{dur:.45}],[9.96,"fade","#strip2",{dur:.17}]
+]}
+</script></section>
