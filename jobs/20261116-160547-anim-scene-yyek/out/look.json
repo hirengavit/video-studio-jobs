@@ -34,12 +34,6 @@
    "t": 8.45
   },
   {
-   "kind": "text-overlap",
-   "scene": "s141",
-   "text": "Packing, sealing, posting के आम नियम / —",
-   "t": 10.41
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s141",
    "message": "a card is mostly empty at 10.4 s: bring its items in sooner, or size it for what it holds now",
