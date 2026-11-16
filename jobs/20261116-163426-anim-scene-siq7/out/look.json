@@ -8,13 +8,5 @@
   "12.08"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "low-contrast",
-   "scene": "s119",
-   "text": "advertisement में भी (1.0:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
