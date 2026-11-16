@@ -8,18 +8,5 @@
   "8.55"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s058",
-   "text": "दूसरे लोग / QuartierLatin1968 · CC BY 2.5",
-   "t": 6.96
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s058",
-   "text": "बड़ा शहर / QuartierLatin1968 · CC BY 2.5",
-   "t": 6.96
-  }
- ]
+ "warnings": []
 }
