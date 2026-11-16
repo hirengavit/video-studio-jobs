@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "2.30",
+  "4.60",
+  "6.90",
+  "9.20",
+  "11.35"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s028",
+   "message": "move: option \"dur\" isn't used (it takes: by, spring)",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s028",
+   "text": "सवाल पुराने Guide का → / 3 cm",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s028",
+   "text": "सवाल पुराने Guide का → / आज का नियम → 40 mm",
+   "t": 4.6
+  }
+ ]
+}
