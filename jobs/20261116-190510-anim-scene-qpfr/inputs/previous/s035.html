@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s035" data-in="wipe" data-in-dur="0.42" data-section="PART 3 · REGULATION 22" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="section-topic">
+      <rect x="747" y="176" width="1058" height="184" rx="25" fill="#9e1b1b"/>
+      <text x="1276" y="250" font-family="Inter,sans-serif" text-anchor="middle" font-size="78" font-weight="750" fill="white">Regulation 22</text>
+      <text id="reg-hi" x="1276" y="319" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="54" font-weight="580" fill="#fde9a6">posting के तरीके</text>
+    </g>
+    <g id="first">
+      <rect x="748" y="388" width="341" height="90" rx="18" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="919" y="450" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="52" font-weight="690" fill="#6f6a63">पहला तरीका</text>
+    </g>
+    <g id="letter-box-hero">
+      <g transform="rotate(1 387 556)">
+        <rect x="218" y="206" width="339" height="693" rx="8" fill="#e1d3b5"/>
+        <rect x="209" y="195" width="339" height="693" rx="8" fill="white" stroke="#ead9a8" stroke-width="3"/>
+        <image href="photo:india-post-letter-box-cutout" x="243" y="212" width="271" height="658" preserveAspectRatio="xMidYMid meet"/>
+      </g>
+      <text x="381" y="942" font-family="Inter,sans-serif" text-anchor="middle" font-size="32" font-weight="540" fill="#6f6a63">Suyash.dwivedi · CC BY-SA 4.0</text>
+    </g>
+    <g id="letter-box-term">
+      <text x="762" y="595" font-family="Inter,sans-serif" font-size="94" font-weight="760" fill="#2b2622">Letter box</text>
+      <text id="letter-box-hi" x="765" y="671" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="550" fill="#6f6a63">पत्र पेटी</text>
+    </g>
+    <g id="eight">
+      <rect x="751" y="743" width="1054" height="189" rx="22" fill="#9e1b1b"/>
+      <rect x="768" y="759" width="1019" height="155" rx="14" fill="none" stroke="#f3ead6" stroke-width="4" stroke-dasharray="8 10"/>
+      <text id="eight-num" x="966" y="881" font-family="Inter,sans-serif" font-size="140" font-weight="820" text-anchor="middle" fill="white">8</text>
+      <text id="eight-label" x="1099" y="870" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="65" font-weight="690" fill="white">तरह के items</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.50, "fade", "#reg-hi", {dur: 0.18}],
+      [3.12, "fade", "#first", {dur: 0.20}],
+      [4.12, "slide", "#letter-box-hero", {from: "down", dist: 45, spring: "soft"}],
+      [4.12, "fade", "#letter-box-term", {dur: 0.21}],
+      [4.62, "fade", "#letter-box-hi", {dur: 0.18}],
+      [6.88, "fade", "#eight", {dur: 0.19}],
+      [6.88, "stamp", "#eight-num", {from: 1.13, spring: "soft", rot: -6}],
+      [7.26, "fade", "#eight-label", {dur: 0.21}]
+    ]
+  }
+  </script>
+</section>
