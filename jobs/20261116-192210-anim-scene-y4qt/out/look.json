@@ -8,12 +8,5 @@
   "8.43"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s089",
-   "text": "7 / दिन",
-   "t": 5.15
-  }
- ]
+ "warnings": []
 }
