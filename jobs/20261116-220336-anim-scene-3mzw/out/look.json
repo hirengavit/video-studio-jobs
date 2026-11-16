@@ -8,12 +8,5 @@
   "14.27"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s010",
-   "text": "सामान की प्रकृति / + सफ़र की हालत",
-   "t": 14.27
-  }
- ]
+ "warnings": []
 }
