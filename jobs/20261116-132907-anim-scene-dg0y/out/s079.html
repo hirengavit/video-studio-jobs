@@ -1,0 +1,71 @@
+<section class="vs-scene" id="s079" data-in="cut" data-section="PART 5 · REGULATION 95" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="prior-licence">
+      <rect x="109" y="177" width="1702" height="802" rx="35" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M135 180h1650q23 0 23 23v150H112V203q0-23 23-23Z" fill="#f3ead6"/>
+      <text x="960" y="263" text-anchor="middle" font-family="Inter, sans-serif" font-size="82" font-weight="820" fill="#9e1b1b">Registered newspaper</text>
+      <text id="newspaper-hi" x="960" y="325" text-anchor="middle" font-family="Noto Sans Devanagari, sans-serif" font-size="49" font-weight="680" fill="#6f6a63">पंजीकृत समाचार पत्र</text>
+      <path d="M191 848H815" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <use href="piece:newspaper-bundle" transform="translate(187 403) scale(2.15)"/>
+      <g id="registration-chip">
+        <rect x="919" y="454" width="788" height="154" rx="34" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1313" y="522" text-anchor="middle" font-family="Inter, sans-serif" font-size="70" font-weight="800" fill="#2b2622">Postal registration</text>
+        <text id="registration-hi" x="1313" y="578" text-anchor="middle" font-family="Noto Sans Devanagari, sans-serif" font-size="43" font-weight="660" fill="#6f6a63">डाक पंजीकरण</text>
+      </g>
+      <g id="extra-licence">
+        <circle cx="1313" cy="657" r="35" fill="#fde9a6"/>
+        <path d="M1296 657h34m-17-17v34" stroke="#704b00" stroke-width="6" stroke-linecap="round"/>
+        <rect x="919" y="706" width="788" height="145" rx="34" fill="#9e1b1b"/>
+        <text x="1313" y="800" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="79" font-weight="800" fill="#ffffff">अलग licence</text>
+      </g>
+    </g>
+
+    <g id="eligibility">
+      <g id="licence-stamp">
+        <rect x="117" y="198" width="614" height="745" rx="37" fill="#9e1b1b"/>
+        <rect x="139" y="220" width="570" height="701" rx="25" fill="none" stroke="#fde9a6" stroke-opacity=".8" stroke-width="4" stroke-dasharray="4 11" stroke-linecap="round"/>
+        <text x="424" y="365" text-anchor="middle" font-size="105" font-weight="800" fill="#ffffff">Licence</text>
+        <text id="licence-hi" x="424" y="444" text-anchor="middle" class="hi" font-size="55" font-weight="700" fill="#fde9a6">लाइसेंस</text>
+        <use href="piece:newspaper-bundle" transform="translate(244 503) scale(1.20)"/>
+        <text x="424" y="820" text-anchor="middle" font-size="47" font-weight="750" fill="#ffffff">Registered newspaper</text>
+      </g>
+      <g id="requirements">
+        <rect x="779" y="198" width="1024" height="745" rx="34" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <g id="issuer">
+          <text x="852" y="313" class="hi" font-size="66" font-weight="800" fill="#9e1b1b">कौन देता है</text>
+          <g id="circle-head">
+            <rect x="852" y="353" width="432" height="84" rx="38" fill="#f3ead6"/>
+            <text x="1068" y="407" text-anchor="middle" font-size="44" font-weight="750" fill="#2b2622">Head of the Circle</text>
+          </g>
+          <g id="region-head">
+            <text x="1314" y="409" text-anchor="middle" font-size="48" font-weight="650" fill="#6f6a63">/</text>
+            <rect x="1345" y="353" width="405" height="84" rx="38" fill="#f3ead6"/>
+            <text x="1547.5" y="407" text-anchor="middle" font-size="43" font-weight="750" fill="#2b2622">Head of the Region</text>
+          </g>
+          <path d="M852 469h898" stroke="#ead9a8" stroke-width="3"/>
+        </g>
+        <g id="condition">
+          <text x="852" y="559" class="hi" font-size="62" font-weight="800" fill="#9e1b1b">शर्त</text>
+          <g id="locally-published">
+            <circle cx="883" cy="628" r="30" fill="#2e7d4f"/><path d="M870 628l9 9 17-20" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="937" y="650" class="hi" font-size="53" font-weight="720" fill="#2b2622">Newspaper उसी क्षेत्र से प्रकाशित</text>
+          </g>
+          <path d="M852 703h898" stroke="#ead9a8" stroke-width="3"/>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {shots: [[0, '#prior-licence'], [0.16, '#eligibility']], on: [
+      [0.16, 'slide', '#licence-stamp', {from: 'left', dist: 41, spring: 'fast'}],
+      [0.16, 'slide', '#requirements', {from: 'right', dist: 41, spring: 'fast'}],
+      [0.66, 'fade', '#licence-hi', {dur: 0.24}],
+      [1.14, 'fade', '#issuer', {dur: 0.22}],
+      [2.90, 'fade', '#circle-head', {dur: 0.24}],
+      [4.84, 'fade', '#region-head', {dur: 0.24}],
+      [6.96, 'fade', '#condition', {dur: 0.23}],
+      [8.18, 'fade', '#locally-published', {dur: 0.24}]
+    ]}
+  </script>
+</section>
