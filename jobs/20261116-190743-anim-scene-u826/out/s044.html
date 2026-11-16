@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s044" data-in="cut" data-section="PART 3 · REGULATION 22" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" fill="none">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="big">
+      <rect x="104" y="193" width="1712" height="754" rx="36" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M180 775H921" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <g id="box-display">
+        <use href="piece:letter-box" transform="translate(222 370) scale(.79)"/>
+        <text x="325" y="840" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="58" font-weight="800">Letter box</text>
+        <text id="box-hi" x="325" y="894" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="650">पत्र पेटी</text>
+      </g>
+      <g id="too-wide">
+        <rect x="512" y="296" width="360" height="100" rx="22" fill="#f3ead6"/>
+        <text x="692" y="360" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="62" font-weight="800">इतना बड़ा</text>
+      </g>
+      <g id="slot-cross" stroke-linecap="round">
+        <path d="M265 460L385 524M385 460L265 524" stroke="#fbf7ee" stroke-width="12"/>
+        <path d="M265 460L385 524M385 460L265 524" stroke="#4b4f58" stroke-width="6"/>
+      </g>
+      <g id="counter">
+        <use id="counter-surface" href="piece:post-counter-icon" transform="translate(1133 398) scale(1.27)"/>
+        <path d="M1100 819H1692" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <!-- Parcel art uses the counter-top destination coordinates. The outer staging group moves from the old left-hand starting position back to zero. -->
+      <g id="parcel-motion" transform="translate(-674.9 78.27)">
+        <g id="packet-pulse"><use id="parcel-body" href="piece:parcel-with-tag" transform="translate(1153.9 380.73) scale(1.11)"/></g>
+      </g>
+      <g id="window-label">
+        <rect x="1587" y="506" width="211" height="120" rx="20" fill="#9e1b1b"/>
+        <text x="1692.5" y="552" textLength="172" lengthAdjust="spacingAndGlyphs" text-anchor="middle" fill="#fff" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="800">Window पर</text>
+        <text x="1692.5" y="602" text-anchor="middle" fill="#fff" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="800">हाथ में</text>
+      </g>
+    </g>
+    <g id="trap">
+      <g id="myth">
+        <rect x="159" y="170" width="1602" height="330" rx="34" fill="#e4e5e8"/>
+        <rect x="223" y="221" width="161" height="67" rx="33" fill="#4b4f58"/>
+        <text x="304" y="269" text-anchor="middle" fill="#fff" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="750">भ्रम</text>
+        <text id="misconception" x="230" y="398" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="800">बड़ा size → accountable</text>
+      </g>
+      <g id="fact">
+        <rect x="159" y="560" width="1602" height="400" rx="34" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+        <rect x="223" y="615" width="161" height="69" rx="34" fill="#2e7d4f"/>
+        <text x="304" y="665" text-anchor="middle" fill="#fff" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="750">तथ्य</text>
+        <text x="230" y="813" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="800">Size से accountable नहीं बनता</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#big'], [7.60, '#trap']],
+    on: [
+      [1.30, 'fade', '#too-wide', {dur: 0.18}],
+      [1.30, 'pulse', '#packet-pulse', {amount: 0.08}],
+      [3.02, 'fade', '#box-hi', {dur: 0.16}],
+      [3.46, 'fade', '#slot-cross', {dur: 0.14}],
+      [4.50, 'fade', '#counter', {dur: 0.21}],
+      [5.46, 'move', '#parcel-motion', {by: [674.9, -78.27], spring: [34, 1]}],
+      [5.70, 'place', '#parcel-body', {on: '#counter-surface', x: 1387, dy: 78.27}],
+      [5.70, 'fade', '#window-label', {dur: 0.16}],
+      [11.16, 'strike', '#misconception', {color: '#4b4f58', width: 9, dur: 0.25, dim: 0.45}],
+      [11.16, 'fade', '#fact', {dur: 0.16}],
+    ],
+  }
+  </script>
+</section>
