@@ -1,0 +1,37 @@
+{
+ "moments": [
+  "0.30",
+  "1.42",
+  "2.83",
+  "4.25",
+  "5.66",
+  "6.93"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "off-frame",
+   "scene": "s153",
+   "message": "a card or panel (#s153-paper) runs 71 px past the frame edge at 4.3 s (check the camera zoom and the layout)",
+   "t": 4.25
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s153",
+   "text": "अगली बार",
+   "t": 5.66
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s153",
+   "text": "कोई envelope हाथ में आए",
+   "t": 5.66
+  },
+  {
+   "kind": "off-frame",
+   "scene": "s153",
+   "message": "a card or panel (#s153-paper) runs 633 px past the frame edge at 5.7 s (check the camera zoom and the layout)",
+   "t": 5.66
+  }
+ ]
+}
