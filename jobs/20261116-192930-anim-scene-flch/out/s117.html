@@ -15,31 +15,31 @@
         <text x="1178" y="824" text-anchor="middle" class="hi" font-size="47" font-weight="760" fill="#fff">पहचान</text>
       </g>
       <g id="six-entries">
-        <rect x="430" y="236" width="355" height="95" rx="40" fill="#fde9a6"/>
-        <text x="607.5" y="301" text-anchor="middle" class="hi" font-size="59" font-weight="800" fill="#704b00">छह बातें</text>
+        <rect x="81" y="204" width="225" height="95" rx="40" fill="#fde9a6"/>
+        <text x="193.5" y="267" text-anchor="middle" class="hi" font-size="48" font-weight="800" fill="#704b00">छह बातें</text>
       </g>
       <g id="entry-1"><circle cx="483" cy="442" r="36" fill="#9e1b1b" stroke="#ffffff" stroke-width="5"/><text x="483" y="457" text-anchor="middle" font-size="45" font-weight="780" fill="#ffffff">1</text></g>
       <g id="entry-2"><circle cx="746" cy="602" r="36" fill="#9e1b1b" stroke="#ffffff" stroke-width="5"/><text x="746" y="617" text-anchor="middle" font-size="45" font-weight="780" fill="#ffffff">2</text></g>
       <g id="entry-3"><circle cx="747" cy="715" r="36" fill="#9e1b1b" stroke="#ffffff" stroke-width="5"/><text x="747" y="730" text-anchor="middle" font-size="45" font-weight="780" fill="#ffffff">3</text></g>
       <g id="entry-4"><circle cx="445" cy="834" r="36" fill="#9e1b1b" stroke="#ffffff" stroke-width="5"/><text x="445" y="849" text-anchor="middle" font-size="45" font-weight="780" fill="#ffffff">4</text></g>
       <g id="entry-5"><circle cx="1286" cy="302" r="36" fill="#9e1b1b" stroke="#ffffff" stroke-width="5"/><text x="1286" y="317" text-anchor="middle" font-size="45" font-weight="780" fill="#ffffff">5</text></g>
-      <g id="entry-6"><circle cx="1366" cy="472" r="36" fill="#9e1b1b" stroke="#ffffff" stroke-width="5"/><text x="1366" y="487" text-anchor="middle" font-size="45" font-weight="780" fill="#ffffff">6</text></g>
+      <g id="entry-6"><circle cx="1336" cy="472" r="36" fill="#9e1b1b" stroke="#ffffff" stroke-width="5"/><text x="1336" y="487" text-anchor="middle" font-size="45" font-weight="780" fill="#ffffff">6</text></g>
       <g id="bracket-recipient">
         <path d="M797 570v-15h443v15" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
         <text x="1018.5" y="533" class="hi" text-anchor="middle" font-size="51" font-weight="740" fill="#9e1b1b">जवाब पाने वाला</text>
       </g>
       <g id="bracket-permit">
         <path d="M482 852v16h276v-16" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-        <text x="620" y="932" class="hi" text-anchor="middle" font-size="49" font-weight="740" fill="#9e1b1b">Permit की पहचान</text>
+        <text x="620" y="912" class="hi" text-anchor="middle" font-size="49" font-weight="740" fill="#9e1b1b">Permit की पहचान</text>
       </g>
       <g id="bracket-service">
-        <path d="M1333 352h190v531h-194v-13" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-        <text x="1304" y="943" class="hi" text-anchor="middle" font-size="49" font-weight="740" fill="#9e1b1b">Service के निशान</text>
+        <path d="M1333 352h190v531h-194v-13 M1523 352H483v41" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="1304" y="923" class="hi" text-anchor="middle" font-size="49" font-weight="740" fill="#9e1b1b">Service के निशान</text>
       </g>
       <rect id="payment-band" x="426" y="408" width="800" height="88" rx="19" fill="#fde9a6"/>
       <g id="payment-rules" fill="none" stroke="#6f6a63" stroke-width="3" stroke-linecap="round">
-        <path d="M463 437h260"/>
-        <path d="M463 473h200"/>
+        <path id="payment-rule-top" d="M547 423h260"/>
+        <path id="payment-rule-bottom" d="M547 462h200"/>
       </g>
       <g id="payment">
         <text x="978" y="469" text-anchor="middle" class="hi" font-size="47" font-weight="740" fill="#2b2622">भुगतान वाली lines</text>
@@ -53,6 +53,12 @@
   <script type="text/scene">
     {
       camera: [[0, {zoom:1}], [1.5,{on:'#bars-focus',zoom:1.5},'inOut'], [5.26,{on:'#bars-focus',zoom:1.5}], [6.2,{zoom:1},'inOut']],
+      update(t, section, $) {
+        const u = Math.max(0, Math.min(1, (t - 1.8) / 2.7));
+        const p = u * u * (3 - 2 * u);
+        for (const el of $("#payment-rule-top")) el.setAttribute("d", "M" + (547-84*p) + " " + (423+14*p) + "h260");
+        for (const el of $("#payment-rule-bottom")) el.setAttribute("d", "M" + (547-84*p) + " " + (462+11*p) + "h200");
+      },
       on: [
         [0,'color','#bracket-recipient path, #bracket-permit path, #bracket-service path',{prop:'stroke',to:'#a49b90',dur:.34}],
         [0,'color','#bracket-recipient text, #bracket-permit text, #bracket-service text',{to:'#6f6a63',dur:.34}],
@@ -61,7 +67,6 @@
         [2.06,'fade','#bars-highlight',{dur:.26}],
         [3.68,'fade','#identity',{dur:.24}],
         [5.26,'out','#bars-highlight, #identity',{dur:.28}],
-        [5.18,'fade','#payment-rules',{dur:.30}],
         [5.26,'fade','#payment-band',{dur:.36}],
         [5.90,'fade','#payment',{dur:.22}],
         [8.46,'fade','#without-stamp',{dur:.27}]
