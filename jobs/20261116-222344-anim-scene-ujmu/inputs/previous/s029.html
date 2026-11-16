@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s029" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}' data-section="PART 2 · LETTER ENVELOPE" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="title">
+      <rect x="191" y="279" width="11" height="49" rx="5" fill="#f2b705"/>
+      <text class="hi" x="224" y="316" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="800" fill="#9e1b1b">PART 2 · भाग 2</text>
+      <text x="190" y="467" font-family="Inter,sans-serif" font-size="104" font-weight="820" fill="#2b2622">Letter Envelope</text>
+      <text class="hi" x="193" y="586" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="71" font-weight="720" fill="#9e1b1b">पत्र लिफ़ाफ़ा: बंद करना और नाप</text>
+      <path d="M197 625Q410 611 685 625" fill="none" stroke="#f2b705" stroke-width="10" stroke-linecap="round"/>
+      <g id="reg88-pill">
+        <rect x="190" y="691" width="654" height="100" rx="49" fill="#fde9a6" stroke="#ead9a8" stroke-width="3"/>
+        <text class="hi" x="517" y="756" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="770" fill="#2b2622">REGULATION 88 · नियम 88</text>
+      </g>
+      <g id="chapter-stamp">
+        <rect x="1260" y="245" width="474" height="588" rx="24" fill="#9e1b1b"/>
+        <rect x="1260" y="245" width="474" height="588" rx="24" fill="none" stroke="#fbf7ee" stroke-width="15" stroke-dasharray="0 26" stroke-linecap="round"/>
+        <rect x="1303" y="288" width="388" height="379" rx="15" fill="#fbf7ee"/>
+        <use href="piece:envelope-article" transform="translate(1287 262) scale(1.05)"/>
+        <text x="1310" y="779" font-family="Inter,sans-serif" font-size="98" font-weight="810" fill="#fff">02</text>
+      </g>
+      <g id="progress">
+        <circle cx="205" cy="944" r="12" fill="#9e1b1b"/><circle cx="246" cy="944" r="12" fill="#f2b705"/>
+        <circle cx="287" cy="944" r="12" fill="#e6dcc4"/><circle cx="328" cy="944" r="12" fill="#e6dcc4"/><circle cx="369" cy="944" r="12" fill="#e6dcc4"/><circle cx="410" cy="944" r="12" fill="#e6dcc4"/><circle cx="451" cy="944" r="12" fill="#e6dcc4"/>
+        <text class="hi" x="487" y="958" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="41" font-weight="640" fill="#6f6a63">Part 2 of 7 · भाग 2 / 7</text>
+      </g>
+    </g>
+    <g id="closed">
+      <rect id="sand-panel" x="120" y="210" width="1160" height="746" rx="34" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <use id="closed-envelope" href="piece:envelope-article" transform="translate(380 270) scale(1.6)"/>
+      <rect id="seal-outline" x="492" y="454" width="416" height="272" rx="12" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linejoin="round"/>
+      <rect id="right-card" x="1340" y="260" width="460" height="640" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <g id="c-title" fill="#9e1b1b" font-family="Inter,sans-serif" text-anchor="middle" font-size="64" font-weight="820">
+        <text id="c-title-a" x="1570" y="384">LETTER</text>
+        <text id="c-title-b" x="1570" y="452">ENVELOPE</text>
+      </g>
+      <text id="c-hi" class="hi" x="1570" y="531" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="700" fill="#6f6a63">पत्र लिफ़ाफ़ा</text>
+      <path d="M1390 580h360" stroke="#ead9a8" stroke-width="3"/>
+      <text id="c-line" class="hi" x="1570" y="688" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="690" fill="#2b2622">सभी तरफ़ से</text>
+      <text id="c-line2" class="hi" x="1570" y="779" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="790" fill="#2b2622">लगातार बंद</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#title'], [3.80, '#closed']],
+    on: [
+      [1.96, 'stamp', '#reg88-pill', {from:1.06,rot:-4,spring:'soft'}],
+      [4.74, 'type', '#c-title-a', {cps:25}],
+      [4.95, 'type', '#c-title-b', {cps:28}],
+      [5.30, 'fade', '#c-hi', {dur:.23}],
+      [6.46, 'fade', '#c-line', {dur:.3}],
+      [7.72, 'draw', '#seal-outline', {dur:.7}],
+      [7.72, 'words', '#c-line2', {gap:.16,dist:17,spring:'soft'}],
+      [8.40, 'highlight', '#c-line2', {color:'#f2b705',opacity:.40,dur:.38}]
+    ]
+  }
+  </script>
+</section>
