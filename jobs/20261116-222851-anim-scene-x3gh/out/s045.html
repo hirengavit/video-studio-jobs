@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s045" data-in="cut" data-section="PART 2 · LETTER ENVELOPE" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="materials">
+      <rect x="160" y="180" width="1600" height="780" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M188 180H1732Q1760 180 1760 208V315H160V208Q160 180 188 180Z" fill="#9e1b1b"/>
+      <rect x="220" y="212" width="8" height="75" rx="4" fill="#f2b705"/>
+      <text x="256" y="244" font-size="53" font-weight="810" fill="#fff">WINDOW MATERIAL</text>
+      <text x="257" y="291" class="hi" font-size="43" font-weight="650" fill="#fde9a6">खिड़की का material</text>
+      <g id="choice">
+        <rect x="1254" y="217" width="440" height="67" rx="34" fill="#f3ead6"/>
+        <text x="1474" y="263" text-anchor="middle" class="hi" font-size="41" font-weight="730" fill="#6f6a63">तीन में से एक</text>
+      </g>
+      <rect x="196" y="337" width="1528" height="166" rx="18" fill="#fbf7ee"/>
+      <rect x="196" y="537" width="1528" height="166" rx="18" fill="#fbf7ee"/>
+      <rect x="196" y="737" width="1528" height="166" rx="18" fill="#fbf7ee"/>
+      <g id="n1"><circle cx="282" cy="380" r="37" fill="#9e1b1b"/><text x="282" y="395" text-anchor="middle" font-size="45" font-weight="810" fill="#fff">1</text></g>
+      <g id="n2"><circle cx="282" cy="580" r="37" fill="#9e1b1b"/><text x="282" y="595" text-anchor="middle" font-size="45" font-weight="810" fill="#fff">2</text></g>
+      <g id="n3"><circle cx="282" cy="780" r="37" fill="#9e1b1b"/><text x="282" y="795" text-anchor="middle" font-size="45" font-weight="810" fill="#fff">3</text></g>
+      <g id="p1"><rect x="1400" y="346" width="268" height="76" rx="35" fill="#fde9a6"/><text x="1534" y="399" text-anchor="middle" font-size="46" font-weight="820" fill="#8a5d00">35 GSM</text></g>
+      <g id="p2"><rect x="1400" y="546" width="268" height="76" rx="35" fill="#fde9a6"/><text x="1534" y="599" text-anchor="middle" font-size="46" font-weight="820" fill="#8a5d00">40 GSM</text></g>
+      <text id="m1" x="382" y="399" font-size="52" font-weight="800" fill="#2b2622">GLASSINE</text>
+      <text id="m1-hi" x="384" y="455" class="hi" font-size="40" font-weight="650" fill="#6f6a63">ग्लासीन कागज़</text>
+      <text id="m2" x="382" y="599" font-size="52" font-weight="800" fill="#2b2622">CELLOPHANE</text>
+      <text id="m2-hi" x="384" y="655" class="hi" font-size="40" font-weight="650" fill="#6f6a63">सेलोफ़ेन कागज़</text>
+      <g id="p3"><rect x="1400" y="746" width="268" height="76" rx="35" fill="#fde9a6"/><text x="1534" y="799" text-anchor="middle" font-size="46" font-weight="820" fill="#8a5d00">15 micron</text></g>
+      <text id="thickness" x="1534" y="875" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="650" fill="#6f6a63">मोटाई</text>
+      <text id="m3a" x="382" y="790" font-size="48" font-weight="800" fill="#2b2622">POLYVINYL CHLORIDE</text>
+      <text id="or" x="382" y="855" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="700" fill="#6f6a63">या</text>
+      <text id="m3b" x="466" y="855" font-size="44" font-weight="780" fill="#2b2622">BIAXIALLY ORIENTED POLYPROPYLENE</text>
+    </g>
+    <g id="zones">
+      <text id="zones-title" x="960" y="215" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="760" fill="#2b2622">postal काम के लिए जगह</text>
+      <rect x="350" y="278" width="1220" height="682" rx="34" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <use id="window-env" href="piece:window-envelope" transform="translate(441 326) scale(1.73)"/>
+      <rect id="logo-hi" x="492.9" y="372.7" width="238.7" height="100.3" rx="13.8" fill="#fde9a6" stroke="#a98a52" stroke-width="3.5" stroke-dasharray="12 10"/>
+      <g id="lbl-logo">
+        <rect x="133" y="357" width="252" height="132" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="259" y="414" text-anchor="middle" font-size="55" font-weight="820" fill="#2b2622">LOGO</text>
+        <text x="259" y="463" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="650" fill="#6f6a63">लोगो</text>
+        <path d="M398 423h84m-15-12 15 12-15 12" fill="none" stroke="#8a5d00" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0,'#materials'],[7.98,'#zones']],
+    on: [
+      [.84,'pop','#p3',{from:.93,spring:'soft'}],
+      [1.72,'fade','#thickness',{dur:.21}],
+      [2.72,'type','#m3a',{cps:29}],
+      [3.90,'fade','#or',{dur:.19}],
+      [4.80,'type','#m3b',{cps:25}],
+      [8.16,'fade','#zones-title',{dur:.23}],
+      [11.26,'fade','#logo-hi,#lbl-logo',{dur:.23}]
+    ]
+  }
+  </script>
+</section>
