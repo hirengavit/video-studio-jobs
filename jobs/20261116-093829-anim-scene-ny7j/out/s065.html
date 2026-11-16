@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s065" data-in="cut" data-section="BULK CASH PREPAYMENT" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="old">
+      <rect x="100" y="170" width="820" height="730" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:old-book-stack" transform="translate(729 184) scale(.4)"/>
+      <text x="156" y="268" font-family="Inter,sans-serif" font-size="37" font-weight="760" fill="#6f6a63">OLD · Post Office Guide Part I</text>
+      <text x="156" y="329" class="hi" font-size="47" font-weight="580" fill="#6f6a63">पुराना</text>
+      <path d="M156 374h708" fill="none" stroke="#ead9a8" stroke-width="3"/>
+      <text x="510" y="510" text-anchor="middle" class="hi" font-size="60" font-weight="750" fill="#2b2622">Guide की खास</text>
+      <text x="510" y="582" text-anchor="middle" class="hi" font-size="60" font-weight="750" fill="#2b2622">bulk व्यवस्थाएँ</text>
+      <g font-family="Inter,sans-serif" font-size="62" font-weight="770" text-anchor="middle" fill="#4d4944">
+        <rect x="175" y="666" rx="44" width="198" height="107" fill="#ebe6dc" stroke="#bdb3a7" stroke-width="2"/>
+        <text x="274" y="740">500</text>
+        <circle cx="392" cy="719" r="4" fill="#6f6a63"/>
+        <rect x="411" y="666" rx="44" width="198" height="107" fill="#ebe6dc" stroke="#bdb3a7" stroke-width="2"/>
+        <text x="510" y="740">250</text>
+        <circle cx="628" cy="719" r="4" fill="#6f6a63"/>
+        <rect x="647" y="666" rx="44" width="198" height="107" fill="#ebe6dc" stroke="#bdb3a7" stroke-width="2"/>
+        <text x="746" y="740">500</text>
+      </g>
+    </g>
+    <g id="now">
+      <rect x="1000" y="170" width="820" height="730" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M1032 188h756" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+      <text x="1056" y="268" font-family="Inter,sans-serif" font-size="53" font-weight="800" fill="#9e1b1b">NOW</text>
+      <path d="M1056 316h708" fill="none" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:post-counter-icon" transform="translate(1226 308) scale(.78)"/>
+      <use href="piece:rupee-cash" transform="translate(1451 449) scale(.34)"/>
+      <text x="1410" y="674" text-anchor="middle" class="hi" font-size="62" font-weight="780" fill="#2b2622">Counter पर cash</text>
+      <g id="minimum">
+        <rect x="1060" y="731" width="510" height="96" rx="43" fill="#f3ead6"/>
+        <text x="1315" y="794" text-anchor="middle" class="hi" font-size="52" font-weight="680" fill="#4b4f58">सामान्य minimum</text>
+      </g>
+      <path id="strike" d="M1121 777H1509" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+      <g id="denial">
+        <rect x="1597" y="731" width="163" height="96" rx="42" fill="#e7e8ea"/>
+        <text x="1678" y="794" text-anchor="middle" class="hi" font-size="52" font-weight="770" fill="#4b4f58">नहीं</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [4.58,'fade','#now',{dur:.25}],
+      [7.24,'fade','#minimum',{dur:.2}],
+      [8.18,'draw','#strike',{dur:.22}],
+      [8.18,'fade','#denial',{dur:.2}],
+    ],
+  }
+  </script>
+</section>
