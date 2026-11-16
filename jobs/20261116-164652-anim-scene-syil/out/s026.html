@@ -87,7 +87,7 @@
       <circle cx="1384" cy="841" r="38" fill="#9e1b1b"/>
       <text x="1384" y="857" text-anchor="middle" fill="#fff" font-size="54" font-weight="800" font-family="Inter, sans-serif">3</text>
       <g id="measure-three-label">
-        <text x="1451" y="830" class="hi" fill="#2b2622" font-size="37" font-weight="710">पते के चारों ओर 10 mm</text>
+        <text x="1451" y="830" class="hi" fill="#2b2622" font-size="35" font-weight="710">पते के चारों ओर 10 mm</text>
         <text x="1451" y="876" class="hi" fill="#6f6a63" font-size="35" font-weight="610">कुछ छपा या लिखा नहीं</text>
       </g>
     </g>
@@ -116,8 +116,8 @@
       <g id="old-panel">
         <rect id="old-card" x="100" y="170" width="820" height="730" rx="30" fill="#f3ead6" stroke="#d7c7a5" stroke-width="4"/>
         <use id="old-guide" href="piece:old-book-stack" transform="translate(127 169) scale(.47)"/>
-        <text x="332" y="257" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#625952">OLD · Post Office Guide Part I</text>
-        <text x="333" y="328" class="hi" font-size="49" font-weight="720" fill="#625952">पुराना</text>
+        <text x="316" y="257" font-family="Inter,sans-serif" font-size="39" font-weight="800" fill="#625952">OLD · Post Office Guide Part I</text>
+        <text x="317" y="328" class="hi" font-size="49" font-weight="720" fill="#625952">पुराना</text>
         <path d="M143 359H877" stroke="#d7c7a5" stroke-width="3"/>
         <g id="old-envelope">
           <rect x="225" y="412" width="570" height="300" rx="19" fill="#fffdf7" stroke="#8a7a63" stroke-width="5"/>
@@ -146,7 +146,7 @@
   {
     shots: [[0,"#env"],[3.30,"#oldnew"]],
     update(t, section, $) {
-      for (const el of $("#gap-reminder")) el.setAttribute("opacity", String(t < .46 ? 1 : 0));
+      for (const el of $("#gap-reminder")) el.setAttribute("display", t < .46 ? "inline" : "none");
     },
     on: [
       [0,"draw","#corner-ring",{dur:.69}],
