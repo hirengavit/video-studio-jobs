@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s041" data-in="cut" data-section="PART 2 · LETTER ENVELOPE" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text id="title" x="960" y="220" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="800" fill="#9e1b1b">WINDOW ENVELOPE</text>
+  <text id="title-hi" x="960" y="279" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="44" font-weight="620" fill="#6f6a63">खिड़की वाला लिफ़ाफ़ा</text>
+  <use id="diagram" href="piece:window-envelope" transform="translate(360 310) scale(2)"/>
+  <g id="window-note">
+    <rect x="396" y="414" width="394" height="81" rx="18" fill="#f3ead6"/>
+    <text id="lbl-win" x="593" y="469" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="44" font-weight="720" fill="#2b2622">पारदर्शी खिड़की</text>
+    <path d="M619 495v56h60" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="681" cy="551" r="6" fill="#9e1b1b"/>
+  </g>
+  <rect id="address-outline" x="714" y="567" width="440" height="99" rx="17" fill="none" stroke="#f2b705" stroke-width="6"/>
+  <text id="lbl-addr" x="960" y="813" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" font-weight="800" fill="#2b2622">ADDRESS BLOCK</text>
+  <text id="lbl-addr-hi" x="960" y="868" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="44" font-weight="620" fill="#6f6a63">पता</text>
+  <rect id="barcode-highlight" x="718" y="675" width="443" height="46" rx="11" fill="#f2b705" fill-opacity=".28" stroke="#f2b705" stroke-width="3" style="pointer-events:none"/>
+  <g id="barcode-note">
+    <rect x="409" y="659" width="236" height="68" rx="16" fill="#f3ead6"/>
+    <text id="lbl-bc" x="527" y="703" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="800" fill="#2b2622">BARCODE</text>
+    <path d="M645 693H713" stroke="#8a5d00" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g id="slide-chip">
+    <rect x="390" y="926" width="1140" height="77" rx="37" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text id="slide-warning" x="960" y="980" text-anchor="middle" class="hi" font-size="44" font-weight="760" fill="#2b2622">सामान खिसककर पता न छिपाए</text>
+  </g>
+  <path id="dim-w" d="M1245 536H1288M1245 742H1288M1273 536V742m-10-17 10 17 10-17m-20-172 10-17 10 17" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="lbl-w" x="1312" y="615" class="hi" font-size="44" font-weight="760" fill="#6f6a63">चौड़ाई</text>
+  <g id="val-w" font-family="Inter,sans-serif" font-size="43" font-weight="810" fill="#9e1b1b">
+    <text id="val-w-start" x="1312" y="687">35</text>
+    <text id="val-w-separator" x="1371" y="687">–</text>
+    <text id="val-w-end" x="1405" y="687">50</text>
+    <text id="val-w-unit" x="1475" y="687">mm</text>
+  </g>
+</svg>
+<script type="text/scene">
+  {
+    update(t, section, $) {
+      for (const id of ['logo-zone','postage-zone','barcode-zone']) {
+        for (const part of $("[id$='-" + id + "']")) {
+          if (part.closest('[id$="-diagram"]')) part.style.opacity = '0';
+        }
+      }
+      for (const part of $("[id$='-window']")) {
+        if (part.closest('[id$="-diagram"]')) part.setAttribute('stroke','#9e1b1b');
+      }
+    },
+    on:[
+      [.60,'fade','[id$="-diagram"] [id$="-barcode"]',{dur:.24}],
+      [.60,'reveal','#barcode-highlight',{from:'left',dur:.32}],
+      [.60,'fade','#barcode-note',{dur:.22}],
+      [3.20,'pop','#slide-chip',{from:.94,spring:'soft'}],
+      [4.98,'underline','#slide-warning',{words:'न छिपाए',color:'#9e1b1b',gap:4,dur:.27}],
+      [6.86,'draw','#dim-w',{dur:.42}],
+      [7.32,'fade','#lbl-w',{dur:.18}],
+      [7.32,'type','#val-w-start',{cps:12}],
+      [7.76,'fade','#val-w-separator',{dur:.14}],
+      [8.18,'type','#val-w-end',{cps:13}],
+      [8.50,'type','#val-w-unit',{cps:19}]
+    ]
+  }
+</script>
+</section>
