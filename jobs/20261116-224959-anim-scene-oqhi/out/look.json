@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.10",
+  "4.20",
+  "6.30",
+  "8.40",
+  "10.35"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s175",
+   "text": "Franked, registered newspaper / फ्रैंक किए, पंजीकृत अख़बार",
+   "t": 6.3
+  }
+ ]
+}
