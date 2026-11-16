@@ -8,12 +8,5 @@
   "13.07"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s083",
-   "text": "अख़बार की प्रतियाँ / 2",
-   "t": 5.29
-  }
- ]
+ "warnings": []
 }
