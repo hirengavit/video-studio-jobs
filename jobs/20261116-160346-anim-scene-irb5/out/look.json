@@ -18,14 +18,26 @@
   {
    "kind": "text-overlap",
    "scene": "s151",
-   "text": "Renewal: March / Deposit: अगले पखवाड़े से पहले",
-   "t": 9.06
+   "text": "Division के Head / usual postage",
+   "t": 2.26
   },
   {
    "kind": "text-overlap",
    "scene": "s151",
-   "text": "Deposit: अगले पखवाड़े से पहले / / रकम खत्म होने पर",
-   "t": 11.17
+   "text": "Division के Head / + ₹1",
+   "t": 4.53
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s151",
+   "text": "usual postage / Renewal: March",
+   "t": 6.79
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s151",
+   "text": "Deposit: अगले पखवाड़े से पहले",
+   "t": 9.06
   }
  ]
 }
