@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s022" data-in="cut" data-section="PART 1 · PACKING &amp; STRONG COVER" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<text x="160" y="216" font-family="Inter,sans-serif" font-size="68" font-weight="820" fill="#9e1b1b">Postage stamps</text>
+<text id="title-hi" x="800" y="214" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="670" fill="#6f6a63">डाक टिकट कहाँ?</text>
+<g id="article-card">
+<rect x="160" y="267" width="518" height="627" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<use href="piece:parcel-with-tag" transform="translate(208 342) scale(1.03)"/>
+<g id="article-stamp"><use href="piece:postage-stamp" transform="translate(477 467) scale(.32)"/></g>
+<g id="article-status">
+<text x="419" y="726" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="740" fill="#2b2622">article पर, पूरा चिपका</text>
+<circle cx="419" cy="814" r="43" fill="#e6f1e8"/><path d="M399 814l14 15 27-32" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<g id="contents-card">
+<rect x="701" y="267" width="518" height="627" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<use href="piece:ceramic-cup" transform="translate(781 345) scale(2.12)"/>
+<use href="piece:postage-stamp" transform="translate(859 468) scale(.35)"/>
+<g id="contents-status">
+<text x="960" y="726" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="740" fill="#2b2622">अंदर के सामान पर नहीं</text>
+<circle cx="960" cy="814" r="43" fill="#ecebf0"/><path d="M945 799l30 30m0-30l-30 30" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<g id="tag-card">
+<rect x="1242" y="267" width="518" height="627" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<g id="tag-string" fill="none" stroke-linecap="round">
+<path d="M1487 434C1440 390 1431 359 1403 355c-22-3-34 19-22 34 15 20 53 15 100 37" stroke="#947755" stroke-width="13"/>
+<path d="M1487 434C1440 390 1431 359 1403 355c-22-3-34 19-22 34 15 20 53 15 100 37" stroke="#f3ead6" stroke-width="7"/>
+</g>
+<path id="tag-paper" d="M1454 420L1499 397L1546 420L1595 609L1422 653L1374 467Z" fill="#f3ead6" stroke="#2b2622" stroke-width="4" stroke-linejoin="round"/>
+<circle cx="1475" cy="448" r="12" fill="#fff" stroke="#947755" stroke-width="3"/>
+<use href="piece:postage-stamp" transform="translate(1435 486) scale(.35)"/>
+<g id="tag-label">
+<text x="1501" y="713" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="780" fill="#2b2622">Label / Tag</text>
+<text x="1501" y="762" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="38" font-weight="630" fill="#6f6a63">लेबल / टैग</text>
+</g>
+<g id="tag-status" transform="translate(0 18)"><circle cx="1501" cy="814" r="43" fill="#ecebf0"/><path d="M1486 799l30 30m0-30l-30 30" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+[0,"pop","#article-card",{from:.97,spring:"fast"}],
+[.52,"fade","#title-hi",{dur:.20}],
+[.86,"pop","#article-stamp",{from:.92,spring:"fast"}],
+[2.44,"fade","#article-status",{dur:.23}],
+[3.44,"pop","#contents-card",{from:.97,spring:"fast"}],
+[4.76,"fade","#contents-status",{dur:.20}],
+[6.80,"pop","#tag-card",{from:.97,spring:"fast"}],
+[7.20,"pop","#tag-label",{from:.97,spring:"fast"}],
+[8.28,"pop","#tag-status",{from:.88,spring:"fast"}]
+]}
+</script>
+</section>
