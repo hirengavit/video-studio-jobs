@@ -35,7 +35,7 @@
       <g id="p2">
         <rect id="p2-bg" x="1100" y="557" width="460" height="72" rx="36" fill="#fde9a6"/>
         <text id="p2-label" class="hi" x="1140" y="606" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="750" fill="#2b2622">pins निकालकर →</text>
-        <text id="p2-rlo" x="1486" y="606" font-family="Inter,sans-serif" font-size="47" font-weight="750" fill="#2b2622">RLO</text>
+        <text id="p2-rlo" x="1486" y="606" font-family="Inter,sans-serif" font-size="43" font-weight="750" fill="#2b2622">RLO</text>
       </g>
     </g>
     <g id="k2"><circle cx="1655" cy="593" r="32" fill="#e5f0e8"/></g>
@@ -66,9 +66,9 @@
     update(t,section,$){
       const k=Math.max(0,Math.min(1,t/.44));
       const base=$('#p2-bg')[0], label=$('#p2-label')[0], rlo=$('#p2-rlo')[0];
-      const x=1140+label.getComputedTextLength()+20;
+      const x=1140+label.getComputedTextLength()+13;
       rlo.setAttribute('x',x);
-      base.setAttribute('width',460+k*(Math.max(460,x+127-1100)-460));
+      base.setAttribute('width',460+k*(Math.min(517,Math.max(460,x+116-1100))-460));
     },
     on:[
       [.08,'type','#p2-rlo',{cps:12}],
