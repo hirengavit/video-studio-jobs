@@ -1,0 +1,74 @@
+<section class="vs-scene" id="s111" data-in="cut" data-section="PART 6 · BUSINESS REPLY SERVICE" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="fee">
+      <rect x="120" y="218" width="560" height="662" rx="29" fill="#9e1b1b"/>
+      <rect x="144" y="242" width="512" height="614" rx="21" fill="none" stroke="#f3ead6" stroke-width="4" stroke-dasharray="8 11"/>
+      <text x="400" y="440" text-anchor="middle" font-family="Inter,sans-serif" font-size="81" font-weight="780" fill="#fff">Permit fee</text>
+      <text id="fee-hi" x="400" y="526" text-anchor="middle" class="hi" font-size="64" font-weight="690" fill="#fde9a6">परमिट शुल्क</text>
+      <g id="advance">
+        <rect x="208" y="629" width="384" height="101" rx="49" fill="#7d1414"/>
+        <text x="400" y="693" text-anchor="middle" class="hi" font-size="54" font-weight="680" fill="#fff">advance में</text>
+      </g>
+    </g>
+    <g id="valid-band">
+      <rect x="208" y="752" width="384" height="77" rx="38" fill="#fde9a6"/>
+      <text x="400" y="807" text-anchor="middle" font-size="49" font-weight="800" fill="#704b00">Valid</text>
+    </g>
+    <g id="valid-through">
+      <rect x="120" y="893" width="560" height="107" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="400" y="938" text-anchor="middle" class="hi" font-size="40" font-weight="690" fill="#2b2622">issue वाले financial year</text>
+      <text x="400" y="983" text-anchor="middle" class="hi" font-size="43" font-weight="790" fill="#9e1b1b">की 31 March तक</text>
+    </g>
+    <g id="march-chip">
+      <rect id="renewal-bg" x="1417" y="317" width="395" height="67" rx="28" fill="#fde9a6" stroke="#ead9a8" stroke-width="3"/>
+      <text id="renewal-label" x="1614.5" y="360" text-anchor="middle" class="hi" font-size="41" font-weight="740" fill="#8a5d00">Renewal: March में</text>
+    </g>
+    <g id="new-year">
+      <rect x="760" y="442" width="1040" height="457" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="938" y="577" text-anchor="middle" font-size="56" font-weight="790" fill="#6f6a63">March</text>
+      <path id="cross-year" d="M1051 558H1215m-22-20 22 20-22 20" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect id="april-bg" x="1253" y="503" width="476" height="114" rx="24" fill="#fde9a6"/>
+      <text id="april-label" x="1491" y="576" text-anchor="middle" class="hi" font-size="58" font-weight="780" fill="#704b00">1 April से 1 साल</text>
+      <g id="annual-fee">
+        <rect x="851" y="685" width="857" height="151" rx="28" fill="#9e1b1b"/>
+        <text x="903" y="777" font-size="48" font-weight="770" fill="#fff">Renewal annual fee</text>
+        <text id="rupees-200" x="1655" y="781" text-anchor="end" font-size="74" font-weight="820" fill="#fde9a6">₹200</text>
+      </g>
+      <g id="dues">
+        <rect x="851" y="640" width="500" height="226" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="895" y="708" font-size="50" font-weight="790" fill="#2b2622">Reply cards /<tspan x="895" dy="54">envelopes</tspan></text>
+        <text id="postage-line" x="895" y="826" class="hi" font-size="40" font-weight="690" fill="#2b2622">का बकाया postage</text>
+        <g id="unpaid">
+          <rect x="1367" y="734" width="373" height="90" rx="33" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+          <text x="1402" y="791" class="hi" font-size="40" font-weight="770" fill="#9e1b1b">न चुकाया</text>
+          <path d="M1589 779h112m-15-14 15 14-15 14" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </g>
+    </g>
+    <g id="apply-timely">
+      <rect x="760" y="919" width="475" height="81" rx="28" fill="#fde9a6"/>
+      <text x="997.5" y="974" text-anchor="middle" class="hi" font-size="53" font-weight="770" fill="#704b00">समय रहते apply</text>
+    </g>
+    <g id="no-grace">
+      <rect x="1260" y="919" width="540" height="81" rx="28" fill="#4b4f58"/>
+      <text x="1530" y="974" text-anchor="middle" class="hi" font-size="52" font-weight="770" fill="#fff">Grace period: नहीं</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on:[
+      [0,'fade','#apply-timely',{dur:.20}],
+      [2.76,'fade','#no-grace',{dur:.24}],
+      [4.64,'out','#annual-fee',{dur:.22,scale:1}],
+      [4.86,'fade','#dues',{dur:.24}],
+      [4.86,'color','#renewal-label, #april-label',{to:'#6f6a63',dur:.24}],
+      [4.86,'color','#renewal-bg, #april-bg',{to:'#f3ead6',dur:.24}],
+      [4.86,'color','#cross-year',{prop:'stroke',to:'#6f6a63',dur:.24}],
+      [6.72,'fade','#postage-line',{dur:.24}],
+      [8.04,'fade','#unpaid',{dur:.24}]
+    ]
+  }
+  </script>
+</section>
+
