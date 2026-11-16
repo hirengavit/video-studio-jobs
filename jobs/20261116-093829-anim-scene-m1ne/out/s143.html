@@ -1,7 +1,7 @@
 <section class="vs-scene" id="s143" data-in="cut" data-section="PART 7 · BUSINESS REPLY ARTICLES" data-series="POSTAL RULES">
   <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
     <rect width="1920" height="1080" fill="#fbf7ee"/>
-    <rect x="90" y="181" width="1740" height="771" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <rect id="flow-backdrop" x="90" y="181" width="1740" height="771" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
     <g id="old-key-tag">
       <rect x="136" y="226" width="494" height="88" rx="44" fill="#e5ded1"/>
       <path d="M174 251h25l15 15v24h-40z M199 251v15h15 M183 274h20m-20 8h20" fill="none" stroke="#6f6a63" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
@@ -28,12 +28,13 @@
   </svg>
   <script type="text/scene">
     {on: [
+      [2.40, 'fade', '#flow-backdrop', {dur: 0.22}],
       [2.40, 'fade', '#fee-card', {dur: 0.27}],
       [2.90, 'fade', '#permit-hi', {dur: 0.24}],
       [4.88, 'fade', '#annual-fee', {dur: 0.22}],
       [5.38, 'fade', '#fee-hi', {dur: 0.22}],
       [5.98, 'draw', '#flow-arrow', {dur: 0.28}],
-      [6.21, 'stamp', '#ucr-stamp', {dur: 0.32}],
+      [6.21, 'stamp', '#ucr-stamp'],
       [7.70, 'fade', '#credited', {dur: 0.22}]
     ]}
   </script>
