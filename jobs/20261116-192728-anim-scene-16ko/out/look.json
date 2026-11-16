@@ -10,18 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-overlap",
-   "scene": "s110",
-   "text": "दूसरी तिमाही / तीसरी तिमाही",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s110",
-   "text": "तीसरी तिमाही / चौथी तिमाही",
-   "t": 0.3
-  },
-  {
    "kind": "low-contrast",
    "scene": "s110",
    "text": "₹200 (1.4:1) / ₹150 (1.4:1) / − ₹50 (1.0:1)",
