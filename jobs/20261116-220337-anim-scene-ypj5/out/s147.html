@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s147" data-in="cut" data-section="PART 6 · WHERE TO POST" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="accountable">
+      <g id="term-card">
+        <rect x="120" y="210" width="640" height="610" rx="32" fill="#9e1b1b"/>
+        <rect x="120" y="210" width="640" height="610" rx="32" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+        <path d="M207 347h118" fill="none" stroke="#f2b705" stroke-width="9" stroke-linecap="round"/>
+        <text x="205" y="455" font-family="Inter,sans-serif" font-size="81" font-weight="850" fill="#fff">Accountable</text>
+        <text x="205" y="551" font-family="Inter,sans-serif" font-size="81" font-weight="850" fill="#fff">item</text>
+        <text id="term-hi" class="hi" x="209" y="666" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="65" font-weight="740" fill="#fde9a6">जवाबदेह वस्तु</text>
+      </g>
+      <g id="defcard">
+        <rect x="820" y="210" width="980" height="610" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <path d="M865 405h890m-890 191h890" fill="none" stroke="#ead9a8" stroke-width="3"/>
+      </g>
+      <g id="row-receipt">
+        <use href="piece:booking-receipt" transform="translate(916 241) scale(.35)"/>
+        <text class="hi" x="1058" y="329" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="65" font-weight="755" fill="#2b2622">booking पर रसीद</text>
+      </g>
+      <g id="row-track">
+        <path d="M908 506h126" fill="none" stroke="#c9962b" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="909" cy="506" r="9" fill="#fff" stroke="#8a5d00" stroke-width="4"/>
+        <circle cx="949" cy="506" r="9" fill="#fde9a6" stroke="#8a5d00" stroke-width="4"/>
+        <circle cx="990" cy="506" r="9" fill="#fde9a6" stroke="#8a5d00" stroke-width="4"/>
+        <circle cx="1031" cy="506" r="10" fill="#f2b705" stroke="#8a5d00" stroke-width="4"/>
+        <text x="1058" y="529" font-family="Inter,sans-serif" font-size="57" font-weight="790" fill="#2b2622">track-and-trace record</text>
+      </g>
+      <g id="row-sign">
+        <use href="piece:signature-slip" transform="translate(896 613) scale(.4)"/>
+        <text class="hi" x="1058" y="681" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="61" font-weight="755" fill="#2b2622">addressee का signature</text>
+      </g>
+      <g id="ink">
+        <rect x="1058" y="713" width="183" height="65" rx="32" fill="#f3ead6"/>
+        <text class="hi" x="1149.5" y="758" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="750" fill="#2b2622">स्याही</text>
+      </g>
+      <g id="digital">
+        <rect x="1260" y="713" width="198" height="65" rx="32" fill="#f3ead6"/>
+        <text x="1359" y="758" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="750" fill="#2b2622">digital</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0, 'stamp', '#term-card', {from:1.04,rot:-2,spring:'soft'}],
+      [.60, 'fade', '#term-hi', {dur:.24}],
+      [2.88, 'pop', '#row-receipt', {from:.94,spring:'soft'}],
+      [5.42, 'pop', '#row-track', {from:.94,spring:'soft'}],
+      [9.44, 'pop', '#row-sign', {from:.94,spring:'soft'}],
+      [10.56, 'pop', '#ink', {from:.91,spring:'soft'}],
+      [12.26, 'pop', '#digital', {from:.95,spring:'fast'}]
+    ]
+  }
+  </script>
+</section>
