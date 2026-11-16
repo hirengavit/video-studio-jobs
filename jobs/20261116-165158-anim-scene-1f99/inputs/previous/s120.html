@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s120" data-in="cut" data-section="PART 7 · BUSINESS REPLY ARTICLES" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="lang">
+      <text x="960" y="278" text-anchor="middle" class="hi" font-size="92" font-weight="790" fill="#9e1b1b">भाषा</text>
+      <g id="english-chip">
+        <rect id="english-chip-bg" x="200" y="330" width="475" height="108" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="437.5" y="402" text-anchor="middle" font-size="59" font-weight="790" fill="#2b2622">English</text>
+      </g>
+      <g id="hindi-chip">
+        <rect id="hindi-chip-bg" x="722.5" y="330" width="475" height="108" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="960" y="402" text-anchor="middle" font-size="59" font-weight="790" fill="#2b2622">Hindi</text>
+      </g>
+      <g id="regional-chip">
+        <rect id="regional-chip-bg" x="1245" y="330" width="475" height="108" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1482.5" y="402" text-anchor="middle" class="hi" font-size="57" font-weight="790" fill="#2b2622">Regional भाषा</text>
+      </g>
+      <use id="language-card" href="piece:business-reply-card" transform="translate(676 488) scale(1.015)"/>
+    
+      <text id="languages-only" x="698.5" y="476" text-anchor="middle" class="hi" font-size="42" font-weight="780" fill="#8a5d00">में ही</text>
+      <g id="restricted-entries">
+        <rect x="116" y="541" width="510" height="246" rx="31" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M148 576h446" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+        <text x="371" y="662" text-anchor="middle" font-size="54" font-weight="790" fill="#2b2622">Postage lines</text>
+        <text x="371" y="736" text-anchor="middle" font-size="49" font-weight="750" fill="#9e1b1b">+ permit number</text>
+      </g>
+      <g id="post-town">
+        <rect x="1294" y="541" width="510" height="246" rx="31" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M1326 576h446" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+        <text x="1549" y="651" text-anchor="middle" class="hi" font-size="54" font-weight="790" fill="#2b2622">Post town का नाम</text>
+        <g id="also-english">
+          <rect x="1332" y="688" width="434" height="74" rx="30" fill="#fde9a6"/>
+          <text x="1549" y="737" text-anchor="middle" class="hi" font-size="44" font-weight="740" fill="#704b00" textLength="378" lengthAdjust="spacingAndGlyphs">आखिर में English में भी</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {on: [
+      [0, 'fade', '#restricted-entries', {dur: 0.20}],
+      [4.04, 'color', '#english-chip-bg', {to: '#fde9a6', dur: 0.24}],
+      [5.32, 'color', '#hindi-chip-bg', {to: '#fde9a6', dur: 0.24}],
+      [5.32, 'color', '#regional-chip-bg', {to: '#e7e3dc', dur: 0.24}],
+      [5.58, 'fade', '#languages-only', {dur: 0.24}],
+      [6.84, 'fade', '#post-town', {dur: 0.24}],
+      [9.14, 'fade', '#also-english', {dur: 0.24}]
+    ]}
+  </script>
+</section>
