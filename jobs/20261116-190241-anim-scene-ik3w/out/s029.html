@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s029" data-in="cut" data-section="PART 2 · REGULATION 18" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" fill="none">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="datestamp">
+      <g id="postage-card">
+        <rect x="100" y="170" width="820" height="730" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M128 181H892" stroke="#9e1b1b" stroke-width="18" stroke-linecap="round"/>
+        <use href="piece:postage-stamp" transform="translate(280 345) scale(1.15)"/>
+        <text id="postage-title" x="510" y="289" text-anchor="middle" font-family="Inter,sans-serif" font-size="72" font-weight="830" fill="#9e1b1b">Postage stamp</text>
+        <text id="postage-hi" x="510" y="350" text-anchor="middle" class="hi" font-size="48" font-weight="710" fill="#625952">डाक टिकट</text>
+        <g id="postage-paid">
+          <rect x="160" y="756" width="700" height="92" rx="46" fill="#fde9a6"/>
+          <text x="510" y="817" text-anchor="middle" class="hi" font-size="49" font-weight="790" fill="#2b2622">= postage का भुगतान</text>
+        </g>
+      </g>
+      <g id="date-card">
+        <rect x="1000" y="170" width="820" height="730" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M1028 181H1792" stroke="#9e1b1b" stroke-width="18" stroke-linecap="round"/>
+        <text id="date-title-old" x="1410" y="289" text-anchor="middle" font-family="Inter,sans-serif" font-size="74" font-weight="830" fill="#9e1b1b">Date stamp</text>
+        <text id="date-title" x="1410" y="289" text-anchor="middle" font-family="Inter,sans-serif" font-size="68" font-weight="830" fill="#9e1b1b" textLength="600" lengthAdjust="spacingAndGlyphs">Postal date stamp</text>
+        <text id="date-hi-old" x="1410" y="350" text-anchor="middle" class="hi" font-size="48" font-weight="710" fill="#625952">तारीख मुहर</text>
+        <text id="date-hi" x="1410" y="350" text-anchor="middle" class="hi" font-size="48" font-weight="710" fill="#625952">डाक तारीख मुहर</text>
+        <g id="date-mark">
+          <rect id="date-band-highlight" x="1300" y="487" width="220" height="57" rx="5" fill="#fde9a6" stroke="#f2b705" stroke-width="4"/>
+          <use href="piece:postal-date-stamp" transform="translate(1246.8 353) scale(1.088)"/>
+          <text id="date-band-label" x="1410" y="588" text-anchor="middle" class="hi" font-size="45" font-weight="760" fill="#2b2622" textLength="193" lengthAdjust="spacingAndGlyphs">तारीख वाली मुहर</text>
+        </g>
+        <g id="office-icon">
+          <rect x="1074" y="719" width="672" height="142" rx="25" fill="#f3ead6"/>
+          <use href="piece:post-office-front" transform="translate(1111 723) scale(.392)"/>
+        </g>
+        <text id="office-handled" x="1304" y="805" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="750" fill="#2b2622" textLength="408" lengthAdjust="spacingAndGlyphs">Office ने item handle किया</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    { on: [
+      [0, 'stamp', '#date-mark', {from: 1.10, rot: -4, spring: 'soft'}],
+      [0.18, 'swap', '#date-title-old', {to: '#date-title', dur: 0.18, dist: 5}],
+      [0.18, 'swap', '#date-hi-old', {to: '#date-hi', dur: 0.18, dist: 5}],
+      [3.62, 'fade', '#date-band-highlight', {dur: 0.22}],
+      [3.76, 'fade', '#date-band-label', {dur: 0.24}],
+      [5.24, 'pop', '#office-icon', {from: 0.94, spring: 'soft'}],
+      [6.88, 'fade', '#office-handled', {dur: 0.25}]
+    ]}
+  </script>
+</section>
