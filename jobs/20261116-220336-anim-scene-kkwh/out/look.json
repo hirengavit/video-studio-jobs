@@ -1,0 +1,32 @@
+{
+ "moments": [
+  "0.30",
+  "2.17",
+  "4.34",
+  "6.51",
+  "8.68",
+  "10.70"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s014",
+   "text": "Booking (1.0:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 6.51
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s014",
+   "message": "a card is mostly empty at 8.7 s: bring its items in sooner, or size it for what it holds now",
+   "t": 8.68
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s014",
+   "message": "a card is mostly empty at 10.7 s: bring its items in sooner, or size it for what it holds now",
+   "t": 10.7
+  }
+ ]
+}
