@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s034" data-in="cut" data-section="DATE STAMPS" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="layers">
+      <rect x="120" y="215" width="1680" height="733" rx="28" fill="#f3ead6"/>
+      <text x="208" y="326" class="hi" font-size="78" font-weight="770" fill="#9e1b1b">डाक वस्तु की परतें</text>
+      <rect id="outer-layer" x="212" y="428" width="841" height="393" rx="48" fill="#fff" stroke="#2b2622" stroke-width="5"/>
+      <rect id="inner-layer" x="251" y="468" width="763" height="311" rx="34" fill="#fde9a6" stroke="#8a5d00" stroke-width="5"/>
+      <rect id="contents" x="312" y="524" width="641" height="198" rx="22" fill="#fbf7ee" stroke="#ead9a8" stroke-width="4"/>
+      <text x="632" y="646" text-anchor="middle" class="hi" font-size="65" font-weight="710" fill="#2b2622">भीतर की सामग्री</text>
+      <g id="paper-fold">
+        <path d="M214 660L343 727H919L1051 660V773Q1051 819 1006 819H258Q214 819 214 773Z" fill="#fff" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M230 672L343 727H919L1035 672" fill="none" stroke="#ead9a8" stroke-width="5" stroke-linejoin="round"/>
+      </g>
+      <g id="outer-cover">
+        <path d="M1035 798H1082L1129 842" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="1035" cy="798" r="9" fill="#9e1b1b"/>
+        <rect x="1131" y="785" width="578" height="114" rx="57" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1420" y="858" text-anchor="middle" class="hi" font-size="58" font-weight="750" fill="#2b2622">बाहर: मज़बूत कागज़</text>
+      </g>
+      <g id="adhesive-stamp"><use href="piece:postage-stamp" transform="translate(798 726) scale(.205)"/></g>
+      <g id="ink-mark"><use href="piece:postal-date-stamp" transform="translate(855 711) scale(.345)"/></g>
+      <g id="paper-caption">
+        <path d="M855 860H993" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round"/>
+        <text x="819" y="885" text-anchor="end" class="hi" font-size="55" font-weight="740" fill="#9e1b1b">इसी कागज़ पर</text>
+      </g>
+      <g id="wax">
+        <path d="M987 494H1128" stroke="#8a5d00" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="987" cy="494" r="11" fill="#f2b705"/>
+        <rect x="1131" y="415" width="578" height="178" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1420" y="500" text-anchor="middle" font-size="76" font-weight="780" fill="#9e1b1b">Wax-cloth</text>
+        <text id="wax-hi" x="1420" y="557" text-anchor="middle" class="hi" font-size="45" font-weight="590" fill="#6f6a63">मोमजामा</text>
+      </g>
+      <g id="inner-cover">
+        <rect x="1131" y="645" width="578" height="114" rx="57" fill="#fde9a6"/>
+        <text x="1420" y="719" text-anchor="middle" class="hi" font-size="63" font-weight="750" fill="#2b2622">अंदर का cover</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on:[
+      [0,"reveal","#paper-fold",{from:"down",dur:.60}],
+      [.86,"fade","#outer-cover",{dur:.25}],
+      [4.82,"stamp","#adhesive-stamp",{from:1.35,rot:-4,spring:"fast"}],
+      [6.30,"stamp","#ink-mark",{from:1.55,rot:-9,spring:"fast"}],
+      [6.44,"fade","#paper-caption",{dur:.24}]
+    ]
+  }
+  </script>
+</section>
