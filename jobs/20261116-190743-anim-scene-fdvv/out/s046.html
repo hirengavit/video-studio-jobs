@@ -6,20 +6,20 @@
       <rect x="194" y="233" width="765" height="118" rx="23" fill="#f3ead6"/>
       <use href="piece:old-book-stack" transform="translate(218 238) scale(.28)"/>
       <text x="368" y="305" class="hi" font-size="57" font-weight="730" fill="#6f6a63">Guide की एक व्यवस्था</text>
-      <g id="bundle">
-        <use href="piece:envelope-article" transform="translate(211 325) scale(1.13)"/>
-        <use href="piece:envelope-article" transform="translate(255 351) scale(1.13)"/>
-        <use href="piece:envelope-article" transform="translate(304 377) scale(1.13)"/>
-        <use href="piece:parcel-with-tag" transform="translate(606 496) scale(.61)"/>
+      <g id="bundle" transform="translate(505 761) scale(1.30) translate(-505 -761)">
+        <use href="piece:envelope-article" transform="translate(211 385) scale(1.13)"/>
+        <use href="piece:envelope-article" transform="translate(255 411) scale(1.13)"/>
+        <use href="piece:envelope-article" transform="translate(304 437) scale(1.13)"/>
+        <use href="piece:parcel-with-tag" transform="translate(606 556) scale(.61)"/>
       </g>
       <g id="bulkCaption">
-        <rect x="343" y="753" width="324" height="70" rx="35" fill="#fde9a6"/>
-        <text x="505" y="800" text-anchor="middle" class="hi" font-size="49" font-weight="730" fill="#8a5d00">थोक में</text>
+        <rect x="310" y="797" width="390" height="82" rx="41" fill="#fde9a6"/>
+        <text x="505" y="852" text-anchor="middle" class="hi" font-size="50" font-weight="730" fill="#8a5d00">थोक में</text>
       </g>
       <g id="window">
-        <path d="M949 562H1072m-23-21 23 21-23 21" fill="none" stroke="#8a5d00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M949 587H1072m-23-21 23 21-23 21" fill="none" stroke="#8a5d00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
         <use href="piece:post-counter-icon" transform="translate(1158 382) scale(1.16)"/>
-        <text x="1390" y="820" text-anchor="middle" class="hi" font-size="58" font-weight="740" fill="#2b2622">window पर</text>
+        <text id="window-label" x="1390" y="848" text-anchor="middle" class="hi" font-size="58" font-weight="740" fill="#2b2622">window पर</text>
       </g>
       <g id="fees">
         <rect x="1014" y="211" width="697" height="118" rx="23" fill="#fde9a6"/>
@@ -41,6 +41,9 @@
     on: [
       [3.52,'fade','#before',{dur:.22}],
       [5.56,'pulse','#bundle',{amount:.075}],
+      [6.50,'move','#bundle',{by:[0,-60],spring:'fast'}],
+      [6.50,'move','#bulkCaption',{by:[0,-54],spring:'fast'}],
+      [6.50,'move','#window-label',{by:[0,-28],spring:'fast'}],
       [7.22,'fade','#later',{dur:.23}],
       [9.06,'draw','#strike',{dur:.25}],
     ],
