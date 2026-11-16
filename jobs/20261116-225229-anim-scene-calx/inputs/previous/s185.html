@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s185" data-in="cut" data-section="PART 7 · BOXES, TIMING &amp; BOOKING" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="office">
+    <use href="piece:post-office-front" transform="translate(187.5 300) scale(1.25)"/>
+    <rect x="206" y="755" width="488" height="94" rx="20" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text id="office-label" x="450" y="815" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="740" fill="#2b2622">Post Office बंद</text>
+  </g>
+  <g id="mail-clock">
+    <use id="clock-17" href="piece:clock-face" transform="translate(1105 365) scale(1.5)"/>
+  </g>
+  <text id="closing-label" x="1300" y="279" text-anchor="middle" font-family="Inter,sans-serif" font-size="70" font-weight="820" fill="#9e1b1b">MAIL CLOSING</text>
+  <text id="closing-hi" x="1300" y="342" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="650" fill="#6f6a63">mail बंद होना</text>
+  <g id="count-back">
+    <path d="M1049 560H869l26-26m-26 26 26 26" stroke="#8a5d00" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="959" y="508" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="730" fill="#8a5d00">पीछे गिनें</text>
+  </g>
+  <g id="time-17">
+    <rect x="1166" y="773" width="268" height="112" rx="56" fill="#fde9a6"/>
+    <text x="1300" y="851" text-anchor="middle" font-family="Inter,sans-serif" font-size="74" font-weight="830" fill="#2b2622">17:00</text>
+  </g>
+</svg>
+<script type="text/scene">
+  {
+    update(t,section,$) {
+      for (const hand of $('[id$="-clock-17"] [id$="-hour-hand"]')) hand.setAttribute('d','M130 130L154 171.57');
+      for (const hand of $('[id$="-clock-17"] [id$="-minute-hand"]')) hand.setAttribute('d','M130 130V62');
+    },
+    on:[
+      [2.04,'strike','#office-label',{color:'#4b4f58',width:8,dim:.7,dur:.28}],
+      [3.08,'pop','#mail-clock',{from:.9,spring:'soft'}],
+      [3.72,'type','#closing-label',{cps:30}],
+      [3.97,'fade','#closing-hi',{dur:.23}],
+      [4.70,'draw','#count-back',{dur:.36}],
+      [7.10,'fade','[id$="-clock-17"] [id$="-hour-hand"], [id$="-clock-17"] [id$="-minute-hand"]',{dur:.18}],
+      [7.10,'pop','#time-17',{from:.9,spring:'soft'}]
+    ]
+  }
+</script>
+</section>
