@@ -8,42 +8,5 @@
   "8.89"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s003",
-   "text": "पूरी बात / 4",
-   "t": 1.81
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s003",
-   "message": "a card is mostly empty at 1.8 s: bring its items in sooner, or size it for what it holds now",
-   "t": 1.81
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s003",
-   "message": "a card is mostly empty at 3.6 s: bring its items in sooner, or size it for what it holds now",
-   "t": 3.62
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s003",
-   "message": "a card is mostly empty at 5.4 s: bring its items in sooner, or size it for what it holds now",
-   "t": 5.42
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s003",
-   "message": "a card is mostly empty at 7.2 s: bring its items in sooner, or size it for what it holds now",
-   "t": 7.23
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s003",
-   "message": "a card is mostly empty at 8.9 s: bring its items in sooner, or size it for what it holds now",
-   "t": 8.89
-  }
- ]
+ "warnings": []
 }
