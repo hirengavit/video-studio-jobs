@@ -1,0 +1,33 @@
+<section class="vs-scene" id="s114" data-in="cut" data-section="PART 6 · BUSINESS REPLY SERVICE" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" fill="none">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="flag">
+      <rect x="100" y="220" width="1720" height="110" rx="33" fill="#9e1b1b"/>
+      <path d="M166 301L205 238L244 301Z" fill="#f2b705" stroke="#f2b705" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M205 262V281" stroke="#7d1414" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="205" cy="291" r="4" fill="#7d1414"/>
+      <text x="286" y="296" fill="#fff" font-family="Inter, sans-serif" font-size="66" font-weight="830">EXAM TRAP</text>
+      <text x="748" y="294" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="720">परीक्षा का जाल</text>
+    </g>
+    <g id="claim">
+      <rect x="100" y="380" width="1720" height="480" rx="33" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <text x="960" y="556" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="770">Permit fee में सारे जवाबों का postage</text>
+      <path d="M214 621H1706" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <text id="includes" x="775" y="760" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="78" font-weight="790">शामिल</text>
+      <g id="verdict">
+        <rect x="951" y="668" width="308" height="130" rx="24" fill="#4b4f58"/>
+        <text x="1105" y="758" fill="#fff" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="78" font-weight="800">नहीं</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [2.12, 'fade', '#claim', {dur: 0.20}],
+      [5.28, 'fade', '#includes', {dur: 0.12}],
+      [5.86, 'strike', '#includes', {color: '#4b4f58', width: 10, dur: 0.19, dim: 0.45}],
+      [5.86, 'pop', '#verdict', {from: 0.94, spring: 'fast'}],
+    ],
+  }
+  </script>
+</section>
