@@ -21,8 +21,7 @@
       <text x="241" y="838" class="hi" font-size="60" font-weight="650" fill="#2b2622">कौन सा item कहाँ post हो</text></g>
     </g>
     <g id="part-4">
-      <rect x="160" y="340" width="1600" height="216" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
-      <rect id="card-4-full" x="160" y="340" width="1600" height="600" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path id="card-4-full" d="M192 340H1728Q1760 340 1760 372V524Q1760 556 1728 556H192Q160 556 160 524V372Q160 340 192 340Z" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
       <g id="tracker-4">
       <g transform="translate(298 170)"><rect x="-98" y="0" width="196" height="120" rx="13" fill="#9e1b1b"/><rect x="-90" y="8" width="180" height="104" rx="8" fill="none" stroke="#fff" stroke-opacity=".62" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="1 10"/><text y="81" text-anchor="middle" font-size="66" font-weight="780" fill="#fff">1</text><path d="m47 71 12 12 22-25" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
       <g transform="translate(518.67 170)"><rect x="-98" y="0" width="196" height="120" rx="13" fill="#9e1b1b"/><rect x="-90" y="8" width="180" height="104" rx="8" fill="none" stroke="#fff" stroke-opacity=".62" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="1 10"/><text y="81" text-anchor="middle" font-size="66" font-weight="780" fill="#fff">2</text><path d="m47 71 12 12 22-25" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
@@ -42,8 +41,7 @@
       <text id="bulk-hi" x="241" y="699" class="hi" font-size="48" font-weight="550" fill="#6f6a63">थोक नकद अग्रिम भुगतान</text>
     </g>
     <g id="part-5">
-      <rect x="160" y="340" width="1600" height="216" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
-      <rect id="card-5-full" x="160" y="340" width="1600" height="600" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path id="card-5-full" d="M192 340H1728Q1760 340 1760 372V524Q1760 556 1728 556H192Q160 556 160 524V372Q160 340 192 340Z" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
       <g id="tracker-5">
       <g transform="translate(298 170)"><rect x="-98" y="0" width="196" height="120" rx="13" fill="#9e1b1b"/><rect x="-90" y="8" width="180" height="104" rx="8" fill="none" stroke="#fff" stroke-opacity=".62" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="1 10"/><text y="81" text-anchor="middle" font-size="66" font-weight="780" fill="#fff">1</text><path d="m47 71 12 12 22-25" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
       <g transform="translate(518.67 170)"><rect x="-98" y="0" width="196" height="120" rx="13" fill="#9e1b1b"/><rect x="-90" y="8" width="180" height="104" rx="8" fill="none" stroke="#fff" stroke-opacity=".62" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="1 10"/><text y="81" text-anchor="middle" font-size="66" font-weight="780" fill="#fff">2</text><path d="m47 71 12 12 22-25" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
@@ -66,8 +64,8 @@
     {shots: [[0, '#part-3'], [2.50, '#part-4'], [7.08, '#part-5']], on: [
       [0, 'fade', '#gist-3', {dur: 0.20}],
       [2.50, 'fade', '#old-guide', {dur: 0.19}],
-      [5.12, 'grow', '#card-4-full', {axis: 'y', origin: 'top', spring: 'fast'}],
-      [8.44, 'grow', '#card-5-full', {axis: 'y', origin: 'top', spring: 'fast'}],
+      [5.12, 'morph', '#card-4-full', {to: 'M192 340H1728Q1760 340 1760 372V908Q1760 940 1728 940H192Q160 940 160 908V372Q160 340 192 340Z', dur: 0.29}],
+      [8.44, 'morph', '#card-5-full', {to: 'M192 340H1728Q1760 340 1760 372V908Q1760 940 1728 940H192Q160 940 160 908V372Q160 340 192 340Z', dur: 0.29}],
       [5.20, 'fade', '#bulk-title', {dur: 0.22}],
       [5.70, 'fade', '#bulk-hi', {dur: 0.22}],
       [8.52, 'fade', '#reg-5', {dur: 0.22}],
