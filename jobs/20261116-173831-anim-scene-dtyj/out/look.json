@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.84",
+  "5.67",
+  "8.51",
+  "11.34",
+  "14.03"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s024",
+   "text": "हिस्सा / दूसरे postal",
+   "t": 0.3
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s024",
+   "text": "पते के चारों ओर 10 mm",
+   "t": 5.67
+  }
+ ]
+}
