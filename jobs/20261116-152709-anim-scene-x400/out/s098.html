@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s098" data-in="cut" data-section="RECAP 2" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="part5">
+      <rect x="126" y="174" width="1668" height="815" rx="31" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M153 176H1767L960 385Z" fill="#f3ead6"/>
+      <path d="M153 176L960 385L1767 176" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="960" y="278" text-anchor="middle" font-size="79" font-weight="800" fill="#9e1b1b">Part 5</text>
+      <g id="seal-five">
+        <circle cx="960" cy="385" r="52" fill="#9e1b1b"/>
+        <circle cx="960" cy="385" r="39" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="4 7"/>
+        <text x="960" y="407" text-anchor="middle" font-size="59" font-weight="760" fill="#fde9a6">3</text>
+      </g>
+      <path d="M219 639H1698M219 804H1698" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+
+      <text x="374" y="526" font-size="68" font-weight="760" fill="#2b2622">Newspaper licence</text>
+      <text id="licence-hi" x="377" y="582" class="hi" font-size="45" font-weight="600" fill="#6f6a63">समाचार पत्र का लाइसेंस</text>
+      <g id="licence-fact">
+        <rect x="1092" y="469" width="606" height="86" rx="36" fill="#fde9a6"/>
+        <text x="1395" y="526" text-anchor="middle" font-size="50" font-weight="760" fill="#704b00">Circle / Region Head</text>
+      </g>
+      <g id="copies-fact">
+        <rect x="1092" y="566" width="606" height="61" rx="30" fill="#f3ead6"/>
+        <text x="1395" y="610" text-anchor="middle" font-size="47" font-weight="760" fill="#704b00">&gt; 500 copies</text>
+      </g>
+      <g id="tick-licence">
+        <circle cx="278" cy="539" r="46" fill="#e3f1e8"/>
+        <path d="M255 538L273 556L306 521" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+      </g>
+      <text id="bill-label" x="374" y="707" font-size="68" font-weight="760" fill="#2b2622">Bill</text>
+      <text id="bill-hi" x="377" y="760" class="hi" font-size="45" font-weight="600" fill="#6f6a63">बिल</text>
+      <g id="bill-fact">
+        <rect x="1092" y="665" width="606" height="102" rx="34" fill="#fde9a6"/>
+        <text x="1395" y="733" text-anchor="middle" font-size="56" font-weight="760" fill="#704b00">Form MS-98</text>
+      </g>
+      <g id="tick-bill">
+        <circle cx="278" cy="718" r="46" fill="#e3f1e8"/>
+        <path d="M255 717L273 735L306 700" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+      </g>
+      <text id="payment-label" x="374" y="902" class="hi" font-size="69" font-weight="760" fill="#2b2622">भुगतान</text>
+      <g id="payment-fact">
+        <rect x="1092" y="832" width="606" height="103" rx="34" fill="#fde9a6"/>
+        <text x="1395" y="900" text-anchor="middle" class="hi" font-size="50" font-weight="760" fill="#704b00">bill मिलने के 7 दिन</text>
+      </g>
+      <g id="tick-payment">
+        <circle cx="278" cy="882" r="46" fill="#e3f1e8"/>
+        <path d="M255 881L273 899L306 864" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {on: [
+      [0.00, 'fade', '#copies-fact', {dur: 0.23}],
+      [0.00, 'pop', '#tick-licence', {from: 0.85, spring: 'soft'}],
+      [2.14, 'fade', '#bill-label', {dur: 0.23}],
+      [2.64, 'fade', '#bill-hi', {dur: 0.23}],
+      [3.12, 'fade', '#bill-fact', {dur: 0.23}],
+      [3.12, 'pop', '#tick-bill', {from: 0.85, spring: 'soft'}],
+      [6.26, 'fade', '#payment-label', {dur: 0.23}],
+      [8.28, 'fade', '#payment-fact', {dur: 0.23}],
+      [8.28, 'pop', '#tick-payment', {from: 0.85, spring: 'soft'}]
+    ]}
+  </script>
+</section>
