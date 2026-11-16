@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s070" data-in="cut" data-section="PART 4 · BULK CASH (OLD GUIDE)" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="fifty">
+      <rect x="120" y="204" width="1680" height="629" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="197" y="256" width="770" height="108" rx="53" fill="#fbf7ee"/>
+      <text x="582" y="325" text-anchor="middle" class="hi" font-size="53" font-weight="730" fill="#6f6a63">पुराना Guide · अलग व्यवस्था</text>
+      <use id="old-volume" href="piece:old-book-stack" transform="translate(290 345) scale(1.40)"/>
+      <g id="fifty-count">
+        <rect x="1100" y="298" width="512" height="437" rx="34" fill="#9e1b1b"/>
+        <rect x="1125" y="323" width="462" height="387" rx="23" fill="none" stroke="#fde9a6" stroke-width="4" stroke-dasharray="1 14" stroke-linecap="round"/>
+        <text x="1356" y="545" text-anchor="middle" font-size="188" font-weight="850" fill="#fff">50</text>
+        <text id="articles" x="1356" y="660" text-anchor="middle" font-size="62" font-weight="710" fill="#fde9a6">articles</text>
+      </g>
+    </g>
+    <text id="office-caption" x="495" y="992" text-anchor="middle" class="hi" font-size="47" font-weight="725" fill="#2b2622">5 शहरों के चुने हुए offices</text>
+    <text id="period-note" x="1356" y="789" text-anchor="middle" class="hi" font-size="44" font-weight="640" fill="#6f6a63">उस समय के नाम</text>
+    <g id="office-row">
+      <g id="office-1"><use href="piece:post-office-front" transform="translate(129 837) scale(.30)"/></g>
+      <g id="office-2"><use href="piece:post-office-front" transform="translate(284 837) scale(.30)"/></g>
+      <g id="office-3"><use href="piece:post-office-front" transform="translate(439 837) scale(.30)"/></g>
+      <g id="office-4"><use href="piece:post-office-front" transform="translate(594 837) scale(.30)"/></g>
+      <g id="office-5"><use href="piece:post-office-front" transform="translate(749 837) scale(.30)"/></g>
+    </g>
+    <g id="registered-mail">
+      <rect x="940" y="852" width="860" height="147" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:registration-envelope" transform="translate(955 854) scale(.33)"/>
+      <text x="1106" y="919" font-size="43" font-weight="760" fill="#2b2622">Ordinary registered letter mail</text>
+      <text id="registered-hi" x="1108" y="972" class="hi" font-size="40" font-weight="620" fill="#6f6a63">साधारण पंजीकृत पत्र डाक</text>
+    </g>
+    <rect id="past-points-wash" x="120" y="835" width="1685" height="177" fill="#fbf7ee" opacity=".55" pointer-events="none"/>
+    <g id="fees">
+      <rect x="181" y="396" width="797" height="113" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="220" y="467" font-size="49" font-weight="770" fill="#2b2622">Postage + registration fee</text>
+    </g>
+    <g id="cash">
+      <rect x="181" y="538" width="273" height="235" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:rupee-cash" transform="translate(191 521) scale(.63)"/>
+      <text x="317" y="744" text-anchor="middle" class="hi" font-size="48" font-weight="780" fill="#2b2622">नकद</text>
+    </g>
+    <g id="journals">
+      <rect x="474" y="538" width="520" height="235" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:invoice-sheet" transform="translate(494 600) scale(.30)"/>
+      <text x="596" y="637" font-size="44" font-weight="780" fill="#2b2622" textLength="373" lengthAdjust="spacingAndGlyphs">Special registered</text>
+      <text x="596" y="696" font-size="44" font-weight="780" fill="#2b2622">journals</text>
+    </g>
+    <g id="threshold">
+      <rect x="1123" y="758" width="466" height="67" rx="35" fill="#9e1b1b"/>
+      <text x="1356" y="803" text-anchor="middle" font-size="48" font-weight="780" fill="#fff">≥ 50 articles</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [.12,'out','#old-volume',{dur:.20}],
+      [.34,'fade','#fees',{dur:.22}],
+      [.34,'fade','#past-points-wash',{dur:.24}],
+      [2.74,'fade','#cash',{dur:.22}],
+      [4.04,'fade','#journals',{dur:.22}],
+      [8.01,'out','#period-note',{dur:.20}],
+      [9.60,'fade','#threshold',{dur:.22}],
+      [10.30,'pulse','#fifty-count',{amount:.038}],
+    ],
+  }
+  </script>
+</section>
