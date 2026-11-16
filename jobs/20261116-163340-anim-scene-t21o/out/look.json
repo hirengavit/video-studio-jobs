@@ -1,0 +1,43 @@
+{
+ "moments": [
+  "0.30",
+  "0.35",
+  "0.70",
+  "1.06",
+  "1.41",
+  "1.61"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-off-frame",
+   "scene": "s152",
+   "text": "Deposit: अगले पखवाड़े से पहले",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s152",
+   "text": "सर्किल या क्षेत्र प्रमुख / bill मिलने के 7 दिन",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s152",
+   "text": "Division के Head / usual postage",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s152",
+   "text": "Division के Head / + ₹1",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s152",
+   "text": "usual postage / Renewal: March",
+   "t": 0.3
+  }
+ ]
+}
