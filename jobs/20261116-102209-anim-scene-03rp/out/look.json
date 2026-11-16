@@ -1,0 +1,26 @@
+{
+ "moments": [
+  "0.30",
+  "1.89",
+  "3.77",
+  "5.66",
+  "7.54",
+  "9.28"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s017",
+   "text": "item के बाहर लगे (1.3:1) / tag (1.8:1) / बंधी पर्ची (1.5:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s017",
+   "text": "अंदर का सामान",
+   "t": 7.54
+  }
+ ]
+}
