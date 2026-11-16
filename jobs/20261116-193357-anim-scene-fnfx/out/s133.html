@@ -9,44 +9,46 @@
         <g clip-path="url(#gauge-window)"><rect id="deposit-level" x="1379" y="286" width="192" height="434" rx="14" fill="#f2b705" opacity=".65"/></g>
         <path d="M1389 366H1430M1389 455H1430M1389 544H1430M1389 633H1430" stroke="#a4a098" stroke-width="5" stroke-linecap="round"/>
       </g>
-      <text id="paid-tag" x="1475" y="823" text-anchor="middle" fill="#8a5d00" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="760">अग्रिम जमा</text>
+      <text id="paid-tag" x="1475" y="823" text-anchor="middle" fill="#8a5d00" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="51" font-weight="760">अग्रिम जमा</text>
     </g>
     <g id="ledger">
-      <rect x="104" y="263" width="1179" height="212" rx="35" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
-      <use href="piece:invoice-sheet" transform="translate(156 316) scale(.28)"/>
-      <text x="274" y="374" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="68" font-weight="820">Delivery office</text>
-      <text id="ledger-hi" x="279" y="438" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="700">रोज़ का account</text>
-      <g id="ledger-grid">
-      <rect x="156" y="499" width="1073" height="290" rx="18" fill="#fbf7ee" stroke="#ead9a8" stroke-width="4"/>
-      <path d="M156 578H1229M156 650H1229M156 718H1229M326 499V789M530 499V789M684 499V789M867 499V789M1068 499V789" stroke="#ead9a8" stroke-width="3"/>
-      <g id="column-date"><rect x="167" y="511" width="148" height="54" rx="12" fill="#f3ead6"/><text x="241" y="550" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="740">तारीख</text></g>
-      <g id="column-category"><rect x="338" y="511" width="180" height="54" rx="12" fill="#f3ead6"/><text x="428" y="550" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="37" font-weight="760">Category</text></g>
-      <g id="column-count"><rect x="541" y="511" width="131" height="54" rx="12" fill="#f3ead6"/><text x="607" y="550" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="740">गिनती</text></g>
-      <g id="column-postage"><rect x="696" y="511" width="159" height="54" rx="12" fill="#f3ead6"/><text x="776" y="550" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="34" font-weight="760">Postage</text></g>
-      <g id="column-handling"><rect x="879" y="503" width="177" height="70" rx="12" fill="#fde9a6"/><text x="968" y="531" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="30" font-weight="780"><tspan x="968">Handling</tspan><tspan x="968" dy="32">charge</tspan></text></g>
-      <g id="column-balance"><rect x="1080" y="511" width="137" height="54" rx="12" fill="#fde9a6"/><text x="1148" y="550" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="780">बची रकम</text></g>
+      <g id="ledger-layout" transform="translate(104 257) scale(1.35)">
+        <rect x="0" y="0" width="873" height="137" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <use href="piece:invoice-sheet" transform="translate(35 21) scale(.23)"/>
+        <text x="140" y="68" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="53" font-weight="820">Delivery office</text>
+        <text id="ledger-hi" x="142" y="109" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="700">रोज़ का account</text>
+        <g id="ledger-grid">
+          <rect x="8" y="151" width="853" height="285" rx="15" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+          <path d="M8 237H861M8 303H861M8 370H861M125 151V436M301 151V436M419 151V436M555 151V436M732 151V436" stroke="#ead9a8" stroke-width="2.4"/>
+          <g id="column-date"><rect x="18" y="167" width="97" height="54" rx="12" fill="#f3ead6"/><text x="66.5" y="205" text-anchor="middle" fill="#2b2622" class="hi" font-size="34" font-weight="740">तारीख</text></g>
+          <g id="column-category"><rect x="135" y="167" width="156" height="54" rx="12" fill="#f3ead6"/><text x="213" y="205" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="34" font-weight="760">Category</text></g>
+          <g id="column-count"><rect x="311" y="167" width="98" height="54" rx="12" fill="#f3ead6"/><text x="360" y="205" text-anchor="middle" fill="#2b2622" class="hi" font-size="34" font-weight="740">गिनती</text></g>
+          <g id="column-postage"><rect x="427" y="167" width="120" height="54" rx="12" fill="#f3ead6"/><text x="487" y="205" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="34" font-weight="760">Postage</text></g>
+          <g id="column-handling"><rect x="565" y="158" width="157" height="72" rx="12" fill="#fde9a6"/><text x="643.5" y="187" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="30" font-weight="760"><tspan x="643.5">Handling</tspan><tspan x="643.5" dy="32">charge</tspan></text></g>
+          <g id="column-balance"><rect x="739" y="167" width="116" height="54" rx="12" fill="#fde9a6"/><text x="797" y="205" text-anchor="middle" fill="#2b2622" class="hi" font-size="34" font-weight="780">बची रकम</text></g>
+        </g>
       </g>
     </g>
 
     <g id="refill-note">
-      <rect x="105" y="872" width="540" height="116" rx="24" fill="#9e1b1b"/>
+      <rect x="105" y="888" width="540" height="88" rx="24" fill="#9e1b1b"/>
       <text x="375" y="946" text-anchor="middle" fill="#fff" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="760">Deposit दोबारा भरना</text>
     </g>
     <g id="calendar-one">
-      <rect x="665" y="872" width="91" height="116" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
-      <path d="M675 892H746" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
-      <text x="711" y="956" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="44" font-weight="800">1</text>
+      <rect x="665" y="888" width="91" height="88" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M675 903H746" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+      <text x="711" y="953" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="44" font-weight="800">1</text>
     </g>
     <g id="calendar-or"><text x="784" y="943" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="740">या</text></g>
     <g id="calendar-sixteen">
-      <rect x="812" y="872" width="91" height="116" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
-      <path d="M822 892H893" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
-      <text x="858" y="956" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="44" font-weight="800">16</text>
+      <rect x="812" y="888" width="91" height="88" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M822 903H893" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+      <text x="858" y="953" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="44" font-weight="800">16</text>
     </g>
     <g id="refill-deadline">
-      <rect x="940" y="872" width="343" height="116" rx="24" fill="#fde9a6"/>
-      <text x="1111" y="921" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="32" font-weight="760">तारीख वाले</text>
-      <text x="1111" y="962.6" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="32" font-weight="760">पखवाड़े से पहले</text>
+      <rect x="940" y="888" width="343" height="88" rx="24" fill="#fde9a6"/>
+      <text x="1111" y="920" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="32" font-weight="760">तारीख वाले</text>
+      <text x="1111" y="961.6" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="32" font-weight="760">पखवाड़े से पहले</text>
     </g>
   </svg>
   <script type="text/scene">
