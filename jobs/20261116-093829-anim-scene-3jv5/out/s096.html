@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s096" data-in="fade" data-in-dur="0.43" data-section="RECAP 2" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="part4">
+      <rect x="126" y="174" width="1668" height="815" rx="31" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M153 176H1767L960 385Z" fill="#f3ead6"/>
+      <path d="M153 176L960 385L1767 176" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="960" y="278" text-anchor="middle" font-size="79" font-weight="800" fill="#9e1b1b">Part 4</text>
+      <g id="seal">
+        <circle cx="960" cy="385" r="52" fill="#9e1b1b"/>
+        <circle cx="960" cy="385" r="39" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="4 7"/>
+        <text x="960" y="407" text-anchor="middle" font-size="59" font-weight="760" fill="#fde9a6">3</text>
+      </g>
+      <path d="M219 639H1698M219 804H1698" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+      <g id="cash-label">
+        <text x="374" y="526" font-size="68" font-weight="760" fill="#2b2622">Bulk cash</text>
+        <text id="cash-hi" x="377" y="582" font-family="Noto Sans Devanagari, sans-serif" font-size="45" font-weight="600" fill="#6f6a63">थोक नकद</text>
+      </g>
+      <g id="cash-fact">
+        <rect x="1092" y="469" width="606" height="131" rx="36" fill="#fde9a6"/>
+        <text x="1395" y="525" text-anchor="middle" font-size="60" font-weight="760" fill="#704b00">Head of the Circle</text>
+        <text id="head-hi" x="1395" y="577" text-anchor="middle" font-family="Noto Sans Devanagari, sans-serif" font-size="44" font-weight="620" fill="#704b00">सर्किल प्रमुख</text>
+      </g>
+      <g id="tick-one">
+        <circle cx="278" cy="539" r="46" fill="#e3f1e8"/>
+        <path d="M255 538L273 556L306 521" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+      </g>
+      <g id="packets-label">
+        <text x="374" y="704" font-size="65" font-weight="760" fill="#2b2622">Unregistered packets</text>
+        <text id="packets-hi" x="377" y="759" font-family="Noto Sans Devanagari, sans-serif" font-size="45" font-weight="600" fill="#6f6a63">अपंजीकृत पैकेट</text>
+      </g>
+      <g id="city-fact">
+        <rect x="1092" y="665" width="276" height="102" rx="34" fill="#fde9a6"/>
+        <text x="1230" y="731" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48" font-weight="720" fill="#704b00">बड़े शहर 500</text>
+      </g>
+      <g id="town-fact">
+        <rect x="1386" y="665" width="312" height="102" rx="34" fill="#fde9a6"/>
+        <text x="1542" y="731" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48" font-weight="720" fill="#704b00">छोटे town 250</text>
+      </g>
+      <g id="tick-two">
+        <circle cx="278" cy="718" r="46" fill="#e3f1e8"/>
+        <path d="M255 717L273 735L306 700" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"/>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {on: [
+      [2.78, 'fade', '#cash-label', {dur: 0.24}],
+      [3.28, 'fade', '#cash-hi', {dur: 0.20}],
+      [4.80, 'fade', '#cash-fact', {dur: 0.23}],
+      [4.95, 'pop', '#tick-one', {from: 0.85, spring: 'soft'}],
+      [5.30, 'fade', '#head-hi', {dur: 0.22}],
+      [5.86, 'fade', '#packets-label', {dur: 0.23}],
+      [6.36, 'fade', '#packets-hi', {dur: 0.22}],
+      [9.20, 'fade', '#city-fact', {dur: 0.21}],
+      [11.22, 'fade', '#town-fact', {dur: 0.21}],
+      [11.36, 'pop', '#tick-two', {from: 0.85, spring: 'soft'}]
+    ]}
+  </script>
+</section>
