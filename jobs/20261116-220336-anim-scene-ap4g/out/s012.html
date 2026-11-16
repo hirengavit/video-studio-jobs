@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s012" data-in="cut" data-section="PART 1 · PACKING &amp; STRONG COVER" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="counter-panel">
+      <rect x="154" y="360" width="612" height="554" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <use id="counter" href="piece:post-counter-icon" transform="translate(180 435.2) scale(1.4)"/>
+      <path id="counter-ledge" d="M208 760H712" fill="none"/>
+      <g id="parcel-entrance">
+        <use id="counter-parcel" href="piece:parcel-with-tag" transform="translate(360 585.78) scale(.62)"/>
+      </g>
+    </g>
+    <g id="rule-card">
+      <rect x="900" y="220" width="860" height="740" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M932 220H1728Q1760 220 1760 252V352H900V252Q900 220 932 220Z" fill="#9e1b1b"/>
+      <g id="kicker">
+        <text id="kicker-en" x="950" y="276" font-size="42" font-weight="800" fill="#fff">COUNTER RULE</text>
+        <text id="kicker-hi" x="950" y="327" class="hi" font-size="38" font-weight="700" fill="#fde9a6">काउंटर का सबसे ज़रूरी नियम</text>
+      </g>
+      <g id="parcel-name">
+        <text x="950" y="441" font-size="60" font-weight="800" fill="#9e1b1b">India Post Parcel</text>
+      </g>
+      <text id="parcel-hi" x="950" y="499" class="hi" font-size="43" font-weight="620" fill="#6f6a63">इंडिया पोस्ट पार्सल</text>
+      <g id="spec">
+        <rect x="948" y="534" width="764" height="116" rx="20" fill="#f3ead6"/>
+        <text x="976" y="605" font-size="49" font-weight="770" fill="#2b2622">Specifications</text>
+        <text id="fixed" x="1648" y="607" text-anchor="end" class="hi" font-size="43" font-weight="740" fill="#8a5d00">तय मानक</text>
+      </g>
+      <text id="condition" x="950" y="705" class="hi" font-size="43" font-weight="690" fill="#2b2622">के मुताबिक़ packing नहीं?</text>
+      <g id="booking">
+        <rect x="948" y="733" width="414" height="67" rx="32" fill="#f3ead6"/>
+        <text x="979" y="778" class="hi" font-size="40" font-weight="730" fill="#2b2622">Booking · बुकिंग</text>
+      </g>
+      <g id="verdict">
+        <rect x="948" y="822" width="764" height="92" rx="22" fill="#4b4f58"/>
+        <path d="M982 853l26 26m0-26-26 26" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+        <text x="1032" y="881" class="hi" font-size="47" font-weight="810" fill="#fff">NOT ACCEPTED · नहीं लेना</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {
+      camera:[[0,{zoom:1}],[8.48,{zoom:1.03,x:10,y:3},'inOut'],[9.22,{zoom:1.06,x:32,y:18},'inOut'],[9.98,{zoom:1.06,x:32,y:18}],[10.60,{zoom:1,x:0,y:0},'inOut']],
+      on:[
+        [0,'pop','#counter-panel',{from:.94,spring:'soft'}],
+        [0,'place','#counter-parcel',{on:'#counter-ledge'}],
+        [.16,'type','#kicker-en',{dur:.64}],
+        [.58,'type','#kicker-hi',{dur:1.24}],
+        [2.62,'pop','#parcel-name',{from:.94,spring:'soft'}],
+        [2.62,'pop','#parcel-entrance',{from:.9,spring:'soft'}],
+        [3.12,'fade','#parcel-hi',{dur:.24}],
+        [4.50,'pop','#spec',{from:.94,spring:'soft'}],
+        [5.00,'fade','#fixed',{dur:.22}],
+        [5.30,'highlight','#fixed',{color:'#f2b705',opacity:.36,dur:.35,pad:10}],
+        [7.02,'type','#condition',{dur:.65}],
+        [8.48,'pop','#booking',{from:.92,spring:'soft'}],
+        [9.22,'stamp','#verdict',{from:1.04,rot:-3,spring:'soft'}]
+      ]
+    }
+  </script>
+</section>
