@@ -40,6 +40,7 @@
   <circle cx="689" cy="919" r="7" fill="#f3ead6"/><circle cx="723" cy="919" r="7" fill="#f3ead6"/>
 </g>
 <text id="journey" x="797" y="940" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="50" font-weight="790" fill="#2b2622">सफ़र का दबाव</text>
+<rect id="stamping-highlight" x="1298" y="891" width="296" height="68" rx="7" fill="#f2b705" opacity=".42"/>
 <text id="stamping" x="1260" y="940" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="50" font-weight="790" fill="#2b2622">+ मुहर का दबाव</text>
 </svg>
 <script type="text/scene">
@@ -55,7 +56,7 @@
   [7.24,'fade','#journey-icon',{dur:.23}],
   [7.24,'type','#journey',{cps:24}],
   [9.60,'type','#stamping',{cps:24}],
-  [10.38,'highlight','#stamping',{words:'मुहर का दबाव',color:'#f2b705',opacity:.42,dur:.28}],
+  [10.38,'reveal','#stamping-highlight',{from:'left',dur:.28}],
   [10.38,'color','#dot-3',{to:'#9e1b1b',dur:.25}]
  ]
 })
