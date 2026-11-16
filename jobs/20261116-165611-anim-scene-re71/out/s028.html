@@ -43,9 +43,9 @@
       <g id="guide-question">
         <rect x="100" y="930" width="1720" height="70" rx="29" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
         <rect id="band-extended" x="100" y="904" width="1720" height="96" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
-        <g id="guide-first" class="hi" font-size="44" font-weight="740" fill="#2b2622">
-          <text x="150" y="978">सवाल पुराने Guide का →</text>
-          <text x="692" y="978" fill="#9e1b1b" font-weight="850">3 cm</text>
+        <g id="guide-first" font-size="44" font-weight="740" fill="#2b2622">
+          <text x="150" y="978" class="hi" textLength="485" lengthAdjust="spacingAndGlyphs">सवाल पुराने Guide का →</text>
+          <text x="664" y="978" font-family="Inter,sans-serif" fill="#9e1b1b" font-weight="850">3 cm</text>
         </g>
         <text id="guide-second" x="150" y="988" class="hi" font-size="42" font-weight="750" fill="#9e1b1b">आज का नियम → 40 mm</text>
       </g>
@@ -79,8 +79,8 @@
       on: [
         [0, 'color', '#old-highlight', {to: '#f5cc58', dur: 0.32}],
         [2.70, 'fade', '#band-extended', {dur: 0.18}],
-        [2.70, 'move', '#guide-first', {by: [0, -29], dur: 0.20}],
-        [2.91, 'fade', '#guide-second', {dur: 0.22}],
+        [2.70, 'move', '#guide-first', {by: [0, -44], spring: 'fast'}],
+        [3.10, 'fade', '#guide-second', {dur: 0.22}],
         [3.96, 'fade', '#now-highlight', {dur: 0.26}],
         [6.92, 'fade', '#date-hi', {dur: 0.23}],
         [7.74, 'fade', '#postage-title', {dur: 0.23}],
