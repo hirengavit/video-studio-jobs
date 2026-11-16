@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s046" data-in="cut" data-section="POSTING ARTICLES" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="bulk">
+      <rect x="117" y="185" width="1686" height="744" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="194" y="233" width="765" height="118" rx="23" fill="#f3ead6"/>
+      <use href="piece:old-book-stack" transform="translate(218 238) scale(.28)"/>
+      <text x="368" y="305" class="hi" font-size="57" font-weight="730" fill="#6f6a63">Guide की एक व्यवस्था</text>
+      <g id="bundle">
+        <use href="piece:envelope-article" transform="translate(211 385) scale(1.13)"/>
+        <use href="piece:envelope-article" transform="translate(255 411) scale(1.13)"/>
+        <use href="piece:envelope-article" transform="translate(304 437) scale(1.13)"/>
+        <use href="piece:parcel-with-tag" transform="translate(606 556) scale(.61)"/>
+      </g>
+      <g id="bulkCaption">
+        <rect x="343" y="807" width="324" height="70" rx="35" fill="#fde9a6"/>
+        <text x="505" y="854" text-anchor="middle" class="hi" font-size="49" font-weight="730" fill="#8a5d00">थोक में</text>
+      </g>
+      <g id="window">
+        <path d="M949 587H1072m-23-21 23 21-23 21" fill="none" stroke="#8a5d00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        <use href="piece:post-counter-icon" transform="translate(1158 382) scale(1.16)"/>
+        <text x="1390" y="848" text-anchor="middle" class="hi" font-size="58" font-weight="740" fill="#2b2622">window पर</text>
+      </g>
+      <g id="fees">
+        <rect x="1014" y="233" width="697" height="118" rx="23" fill="#fde9a6"/>
+        <text x="1362.5" y="310" text-anchor="middle" font-family="Inter,sans-serif" font-size="61" font-weight="760" fill="#8a5d00">Postage + late fee</text>
+      </g>
+      <g id="before">
+        <rect x="1014" y="358" width="697" height="80" rx="19" fill="#9e1b1b"/>
+        <text x="1362.5" y="414" text-anchor="middle" class="hi" font-size="60" font-weight="780" fill="#fff">पूरी पहले</text>
+      </g>
+    </g>
+    <g id="later">
+      <rect x="474" y="945" width="972" height="87" rx="41" fill="#e6e7ea"/>
+      <text x="960" y="1004" text-anchor="middle" class="hi" font-size="56" font-weight="690" fill="#4b4f58">बाद में पैसे देने का हक</text>
+    </g>
+    <path id="strike" d="M689 982H1231" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [3.52,'fade','#before',{dur:.22}],
+      [5.56,'pulse','#bundle',{amount:.075}],
+      [7.22,'fade','#later',{dur:.23}],
+      [9.06,'draw','#strike',{dur:.25}],
+    ],
+  }
+  </script>
+</section>
