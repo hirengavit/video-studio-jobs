@@ -10,18 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-off-frame",
-   "scene": "s026",
-   "text": "पते के चारों ओर 10 mm",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s026",
-   "text": "40 mm = पते तक का gap / Stamp की जगह: ऊपर दायाँ कोना",
-   "t": 1.81
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s026",
    "message": "a card (#s026-now-card) is mostly empty at 3.6 s: bring its items in sooner, or size it for what it holds now",
