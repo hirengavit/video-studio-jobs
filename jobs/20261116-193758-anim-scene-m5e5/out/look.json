@@ -8,5 +8,12 @@
   "11.47"
  ],
  "problems": [],
- "warnings": []
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s149",
+   "text": "Gazetted + / HSG offices",
+   "t": 0.3
+  }
+ ]
 }
