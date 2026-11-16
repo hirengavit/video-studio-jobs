@@ -8,12 +8,5 @@
   "3.40"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s076",
-   "text": "+ ज़रूरी agreement / / अनुमति",
-   "t": 2.84
-  }
- ]
+ "warnings": []
 }
