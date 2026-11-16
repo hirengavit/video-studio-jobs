@@ -8,18 +8,5 @@
   "11.47"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s149",
-   "text": "बड़े शहर 500 / छोटे शहर 250",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s149",
-   "text": "Gazetted + HSGoffices / चुने हुए कार्यालय",
-   "t": 2.32
-  }
- ]
+ "warnings": []
 }
