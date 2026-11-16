@@ -1,0 +1,187 @@
+[
+  {
+    "id": "envelope-face-large",
+    "kind": "prop",
+    "description": "Big white address-side envelope diagram, 1200x760 at scale 1, #ead9a8 border, ink outline 3 px: blank dashed top-right stamp box (#stamp-box), blank address block of 4 grey rules (#address-block), faint top band (#top-zone). No lettering.",
+    "ideas": [
+      "Stamp placement",
+      "Address-side clear zones",
+      "Postmark placement"
+    ],
+    "viewBox": "0 0 1200 760",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "paper",
+      "top-zone",
+      "stamp-box",
+      "address-block"
+    ]
+  },
+  {
+    "id": "postal-date-stamp",
+    "kind": "symbol",
+    "description": "Round ink postal date-stamp impression, 300x300: double ring, blank straight date bar across the middle, blank office arc; ink #2b2622 at 85% opacity. No real office name.",
+    "ideas": [
+      "Date impression",
+      "Office arc overlay",
+      "Cancellation"
+    ],
+    "viewBox": "0 0 300 300",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "rings",
+      "office-arc",
+      "date-bar"
+    ]
+  },
+  {
+    "id": "letter-box",
+    "kind": "prop",
+    "description": "Drawn postal-red (#9e1b1b) pillar letter box, 260x520: rounded cap, dark slot, cream plate (blank), plinth; ink outline 3 px. Stand-in when the photo is missing.",
+    "ideas": [
+      "Pillar letter box",
+      "Posting at a slot",
+      "Photo stand-in"
+    ],
+    "viewBox": "0 0 260 520",
+    "anchors": [
+      "base",
+      "top",
+      "mouth"
+    ],
+    "parts": [
+      "body",
+      "cap",
+      "slot",
+      "plate",
+      "plinth"
+    ]
+  },
+  {
+    "id": "parcel-with-tag",
+    "kind": "prop",
+    "description": "Brown-paper packet (#c9a978 on cream) tied crosswise with sand string, a white blank tag hanging from a loop; 420x320. Parts #packet, #string, #tag.",
+    "ideas": [
+      "Tied parcel",
+      "Show placement on tag",
+      "Mail transfer"
+    ],
+    "viewBox": "0 0 420 320",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "packet",
+      "string",
+      "tag"
+    ]
+  },
+  {
+    "id": "non-postage-labels",
+    "kind": "symbol",
+    "description": "Two generic labels side by side, no real design, words or emblem: #revenue a grey-green rectangular stamp with wavy frame and blank centre; #charity a round pale-yellow sticker with a heart outline. 360x200.",
+    "ideas": [
+      "Revenue versus charity labels",
+      "Separate non-postage designs"
+    ],
+    "viewBox": "0 0 360 200",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "revenue",
+      "charity"
+    ]
+  },
+  {
+    "id": "business-reply-card",
+    "kind": "prop",
+    "description": "White card, address side, 560x360: two thick ink vertical bars near the right edge (#bars), blank top band for postmarks (#top-band), blank address block (#address-block), blank permit-number line (#permit-line). No lettering.",
+    "ideas": [
+      "Business reply layout",
+      "Postmark band and permit fields",
+      "Two identifying vertical bars"
+    ],
+    "viewBox": "0 0 560 360",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "paper",
+      "top-band",
+      "bars",
+      "address-block",
+      "permit-line"
+    ]
+  },
+  {
+    "id": "invoice-sheet",
+    "kind": "prop",
+    "description": "White ruled form sheet 300x400: blank surface-coloured header strip, six blank rows, signature line at the bottom; ink outline. Used as invoice, statement of mailing, journal, bill and daily account.",
+    "ideas": [
+      "Invoice form",
+      "Mailing statement or journal",
+      "Bill or daily account"
+    ],
+    "viewBox": "0 0 300 400",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "paper",
+      "header",
+      "rows",
+      "signature-line"
+    ]
+  },
+  {
+    "id": "mail-bag",
+    "kind": "prop",
+    "description": "Canvas-sand mail bag with drawstring neck and a postal-red band, envelope corners peeking out of the mouth; 320x380.",
+    "ideas": [
+      "Open mail sack",
+      "Letters awaiting dispatch"
+    ],
+    "viewBox": "0 0 320 380",
+    "anchors": [
+      "base",
+      "mouth"
+    ],
+    "parts": [
+      "back-fabric",
+      "opening",
+      "envelopes",
+      "sack",
+      "band",
+      "drawstring",
+      "seams"
+    ]
+  },
+  {
+    "id": "rubber-date-stamp",
+    "kind": "prop",
+    "description": "Hand-held rubber date stamp: wooden knob, neck, slate base, side view; 200x300.",
+    "ideas": [
+      "Hand-held date stamp",
+      "Cancellation from the side"
+    ],
+    "viewBox": "0 0 200 300",
+    "anchors": [
+      "grip",
+      "base"
+    ],
+    "parts": [
+      "handle",
+      "neck",
+      "knob",
+      "base"
+    ]
+  }
+]
