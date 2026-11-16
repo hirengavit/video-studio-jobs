@@ -12,12 +12,6 @@
   {
    "kind": "mostly-empty",
    "scene": "s087",
-   "message": "a card is mostly empty at 5.0 s: bring its items in sooner, or size it for what it holds now",
-   "t": 4.96
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s087",
    "message": "a card is mostly empty at 7.4 s: bring its items in sooner, or size it for what it holds now",
    "t": 7.44
   }
