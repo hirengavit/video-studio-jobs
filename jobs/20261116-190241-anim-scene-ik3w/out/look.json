@@ -8,18 +8,5 @@
   "9.03"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s029",
-   "text": "Date stamp / Postal date stamp",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s029",
-   "text": "तारीख मुहर / डाक तारीख मुहर",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
