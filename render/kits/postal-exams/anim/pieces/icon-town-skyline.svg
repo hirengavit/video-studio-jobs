@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<g id="building-1"><path d="M22 161H99V311H22Z" fill="#fbf7ee"/><path d="M17 152H103V164H17Z" fill="#e3cfa3"/><path d="M47 267H75V311H47Z" fill="#e3cfa3"/><path d="M36 184H51V204H36ZM68 184H83V204H68ZM36 223H51V243H36ZM68 223H83V243H68Z" fill="#ffffff"/></g>
+<g id="building-2"><path d="M100 102H189V311H100Z" fill="#e3cfa3"/><path d="M96 94H194V106H96Z" fill="#fbf7ee"/><g fill="#ffffff"><path d="M116 124H137V147H116ZM153 124H174V147H153Z"/><path d="M116 163H137V186H116ZM153 163H174V186H153Z"/><path d="M116 202H137V225H116ZM153 202H174V225H153Z"/></g><path d="M132 263H159V311H132Z" fill="#fbf7ee"/></g>
+<g id="building-3"><path d="M190 181H282V311H190Z" fill="#fbf7ee"/><path d="M186 172H286V184H186Z" fill="#e3cfa3"/><path d="M205 202H227V229H205ZM246 202H268V229H246Z" fill="#ffffff"/><path d="M218 265H254V311H218Z" fill="#e3cfa3"/></g>
+<g id="building-4"><path d="M283 130H378V311H283Z" fill="#e3cfa3"/><path d="M279 122H382V134H279Z" fill="#fbf7ee"/><g fill="#ffffff"><path d="M299 155H321V180H299ZM341 155H363V180H341Z"/><path d="M299 197H321V222H299ZM341 197H363V222H341Z"/></g><path d="M316 265H346V311H316Z" fill="#fbf7ee"/></g>
+<path id="ground" d="M16 312H384"/>
+<circle data-anchor="base" cx="200" cy="312" r="0"/>
+</svg>
