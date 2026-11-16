@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s049" data-in="cut" data-section="POSTING OF MAIL" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" fill="none">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="franked-mail">
+      <rect x="105" y="210" width="655" height="470" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <text x="151" y="294" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="69" font-weight="800">Franked mail</text>
+      <text id="mail-hi" x="153" y="357" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="650">फ्रैंक की गई डाक</text>
+      <path d="M155 630H710" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <use href="piece:franking-machine" transform="translate(151 334) scale(.965)"/>
+      <rect x="515" y="479" width="185" height="130" rx="10" fill="#fbf7ee" stroke="#2b2622" stroke-width="4"/>
+      <path d="M525 595H604M525 582H624" stroke="#6f6a63" stroke-width="4" stroke-linecap="round"/>
+      <use href="piece:franking-impression" transform="translate(578 448) scale(.34)"/>
+    </g>
+    <g id="destination">
+      <rect x="1013" y="210" width="802" height="470" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <text x="1062" y="293" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="59" font-weight="800">Designated post office</text>
+      <text id="office-hi" x="1064" y="353" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650">निर्धारित डाकघर</text>
+      <use href="piece:post-office-front" transform="translate(1056 362) scale(.86)"/>
+      <g id="licence">
+        <rect x="1436" y="476" width="320" height="89" rx="20" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1596" y="533" fill="#2b2622" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750">Licence में तय</text>
+      </g>
+    </g>
+    <path id="send" d="M792 481H976M950 455L979 481L950 507" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="same-date">
+      <rect x="105" y="737" width="773" height="179" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="150" y="779" width="111" height="93" rx="13" fill="#fff" stroke="#2b2622" stroke-width="4"/>
+      <path d="M150 810H261M178 770V796M233 770V796" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+      <rect x="194" y="827" width="27" height="26" rx="4" fill="#f2b705"/>
+      <text x="290" y="842" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="760">Franking की तारीख को ही</text>
+    </g>
+    <g id="mailing-statement">
+      <rect x="1013" y="737" width="802" height="179" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <use href="piece:invoice-sheet" transform="translate(1058 760) scale(.33)"/>
+      <text x="1190" y="817" fill="#2b2622" font-family="Inter, sans-serif" font-size="48" font-weight="800">Statement of mailing</text>
+      <text id="statement-hi" x="1192" y="874" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650">डाक विवरण</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.66, 'fade', '#mail-hi', {dur: 0.2}],
+      [2.96, 'draw', '#send', {dur: 0.48}],
+      [2.96, 'fade', '#destination', {dur: 0.22}],
+      [3.46, 'fade', '#office-hi', {dur: 0.19}],
+      [6.14, 'fade', '#licence', {dur: 0.20}],
+      [8.84, 'fade', '#same-date', {dur: 0.22}],
+      [10.54, 'fade', '#mailing-statement', {dur: 0.22}],
+      [11.04, 'fade', '#statement-hi', {dur: 0.19}],
+    ],
+  }
+  </script>
+</section>
