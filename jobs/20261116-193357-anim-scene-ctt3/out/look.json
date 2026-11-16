@@ -8,12 +8,5 @@
   "11.75"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s130",
-   "text": "घरेलू बकाया नियम",
-   "t": 7.14
-  }
- ]
+ "warnings": []
 }
