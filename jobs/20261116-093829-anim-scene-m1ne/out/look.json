@@ -8,18 +8,5 @@
   "9.43"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s143",
-   "message": "stamp: option \"dur\" isn't used (it takes: from, spring, rot)",
-   "t": 0.3
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s143",
-   "message": "a card is mostly empty at 1.9 s: bring its items in sooner, or size it for what it holds now",
-   "t": 1.92
-  }
- ]
+ "warnings": []
 }
