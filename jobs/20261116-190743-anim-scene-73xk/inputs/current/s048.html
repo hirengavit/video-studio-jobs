@@ -1,0 +1,70 @@
+<section class="vs-scene" id="s048" data-in="cut" data-section="POSTING OF POSTAL ARTICLES" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <path id="branch-one" d="M703 475H769" stroke="#ead9a8" stroke-width="13" stroke-linecap="round"/>
+    <g id="core">
+      <circle cx="960" cy="475" r="203" fill="#9e1b1b"/>
+      <circle cx="960" cy="475" r="187" fill="none" stroke="#fff" stroke-opacity=".87" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 11"/>
+      <text x="960" y="399" text-anchor="middle" class="hi" font-size="44" font-weight="700" fill="#fff">बाकी</text>
+      <text x="960" y="454" text-anchor="middle" class="hi" font-size="44" font-weight="700" fill="#fff">authorised तरीके</text>
+      <text id="count" x="960" y="598" text-anchor="middle" font-size="138" font-weight="820" fill="#fde9a6">3</text>
+    </g>
+    <g id="outlet">
+      <rect x="94" y="326" width="609" height="326" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M126 351h545" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+      <use href="piece:post-office-front" transform="translate(125 376) scale(.31)"/>
+      <text x="273" y="445" font-size="43" font-weight="790" fill="#2b2622">Franchisee outlet</text>
+      <text id="outlet-hi" x="280" y="504" class="hi" font-size="44" font-weight="560" fill="#6f6a63">फ्रैंचाइज़ी आउटलेट</text>
+      <g id="example">
+        <path d="M131 535h535" stroke="#ead9a8" stroke-width="3"/>
+        <text x="399" y="578" text-anchor="middle" class="hi" font-size="41" font-weight="600" fill="#6f6a63">departmental instructions</text>
+        <text x="399" y="627" text-anchor="middle" class="hi" font-size="41" font-weight="600" fill="#6f6a63">से अनुमत items</text>
+      </g>
+    </g>
+    <path id="branch-two" d="M1163 475H1217" stroke="#ead9a8" stroke-width="13" stroke-linecap="round"/>
+    <g id="kiosk">
+      <rect x="1217" y="326" width="609" height="326" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M1249 351h545" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+      <g transform="translate(1260 382)" stroke="#2b2622" stroke-width="4" stroke-linejoin="round">
+        <rect x="8" y="0" width="102" height="145" rx="12" fill="#f3ead6"/>
+        <rect x="18" y="15" width="82" height="61" rx="6" fill="#fff"/>
+        <path d="M38 37h41m-41 16h31" stroke="#9e1b1b" stroke-linecap="round"/>
+        <path d="M42 96h35" stroke-linecap="round"/>
+        <path d="M0 145h118" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round"/>
+      </g>
+      <text x="1400" y="445" font-size="43" font-weight="790" fill="#2b2622">Self-booking kiosk</text>
+      <text id="kiosk-hi" x="1400" y="504" class="hi" font-size="44" font-weight="570" fill="#6f6a63">स्वयं बुकिंग कियोस्क</text>
+      <path d="M1254 535h535" stroke="#ead9a8" stroke-width="3"/>
+      <text id="designated-offices" x="1521.5" y="579" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="43" font-weight="620" fill="#6f6a63">कुछ designated offices</text>
+      <text id="regional-head" x="1521.5" y="627" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="43" font-weight="710" fill="#9e1b1b">Regional Head तय करते</text>
+    </g>
+    <path id="branch-three" d="M960 678V742" stroke="#ead9a8" stroke-width="13" stroke-linecap="round"/>
+    <g id="portal-app">
+      <rect x="445" y="742" width="1030" height="247" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M477 767h966" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+      <g transform="translate(509 799)" fill="#f3ead6" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="0" y="8" width="172" height="118" rx="12"/>
+        <path d="M0 39h172m-155-15h7m10 0h7m10 0h7"/>
+        <path d="M27 66h69m-69 19h50" stroke="#9e1b1b"/>
+        <rect x="128" y="34" width="70" height="124" rx="12" fill="#fff"/>
+        <path d="M148 52h30m-29 80h28" stroke="#9e1b1b"/>
+      </g>
+      <text x="756" y="838" font-size="51" font-weight="800" fill="#2b2622">Web portal / Mobile app</text>
+      <text id="web-hi" x="756" y="897" font-family="Noto Sans Devanagari, sans-serif" font-size="44" font-weight="590" fill="#6f6a63">वेब पोर्टल / मोबाइल ऐप</text>
+      <text id="allowed-items" x="756" y="954" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="730" fill="#9e1b1b">अनुमत items</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {on: [
+      [0, 'fade', '#branch-two', {dur: 0.20}],
+      [0, 'fade', '#kiosk', {dur: 0.20}],
+      [0.50, 'fade', '#kiosk-hi', {dur: 0.21}],
+      [1.82, 'fade', '#designated-offices', {dur: 0.23}],
+      [4.88, 'fade', '#regional-head', {dur: 0.23}],
+      [7.64, 'draw', '#branch-three', {dur: 0.22}],
+      [7.64, 'fade', '#portal-app', {dur: 0.25}],
+      [8.14, 'fade', '#web-hi', {dur: 0.23}],
+      [10.74, 'fade', '#allowed-items', {dur: 0.23}]
+    ]}
+  </script>
+</section>
