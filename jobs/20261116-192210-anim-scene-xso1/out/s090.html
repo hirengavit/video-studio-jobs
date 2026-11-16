@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s090" data-in="cut" data-section="PART 5 · REGULATION 95" data-series="POSTAL RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="fact">
+    <rect x="130" y="335" width="1660" height="120" rx="29" fill="#ebf5ed" stroke="#93bda0" stroke-width="3"/>
+    <circle cx="290" cy="395" r="43" fill="#fff" stroke="#2e7d4f" stroke-width="4"/>
+    <path d="M270 395l13 14 27-30" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="394" y="419" class="hi" font-size="66" font-weight="770" fill="#285f3d">7 दिन: bill मिलने से</text>
+  </g>
+  <g id="myth">
+    <rect x="130" y="483" width="1660" height="120" rx="28" fill="#f0efee" stroke="#c4c4c8" stroke-width="3"/>
+    <text x="394" y="566" class="hi" font-size="66" font-weight="700" fill="#4b4f58">bill पर छपी तारीख से</text>
+  </g>
+  <path id="strike" d="M388 541H1005" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+  <g id="cross" fill="none" stroke="#4b4f58" stroke-linecap="round">
+    <circle cx="290" cy="543" r="43" stroke-width="4"/>
+    <path d="M274 527l32 32m0-32-32 32" stroke-width="7"/>
+  </g>
+  <g id="band">
+    <rect x="130" y="631" width="1080" height="120" rx="28" fill="#f3ead6"/>
+    <text x="670" y="715" text-anchor="middle" class="hi" font-size="62" font-weight="730" fill="#2b2622">समय पर न चुकाया</text>
+  </g>
+  <g id="stamp">
+    <circle cx="1480" cy="708" r="130" fill="#fff" stroke="#9e1b1b" stroke-width="6"/>
+    <circle cx="1480" cy="708" r="117" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-dasharray="5 7"/>
+    <text x="1480" y="675" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="805" fill="#9e1b1b">Licence</text>
+    <text x="1480" y="723" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="805" fill="#9e1b1b">cancel</text>
+    <text id="may" x="1480" y="777" text-anchor="middle" class="hi" font-size="34" font-weight="680" fill="#6f6a63">हो सकता है</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [.88,'fade','#myth',{dur:.15}],
+    [1.35,'draw','#strike',{dur:.22}],
+    [1.35,'fade','#cross',{dur:.16}],
+    [2.50,'fade','#band',{dur:.22}],
+    [5.54,'stamp','#stamp',{from:1.13,rot:-2,spring:'soft'}],
+    [6.44,'fade','#may',{dur:.18}],
+  ],
+}
+</script>
+</section>
