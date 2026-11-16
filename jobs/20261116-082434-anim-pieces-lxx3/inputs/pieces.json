@@ -1,0 +1,166 @@
+[
+  {
+    "id": "envelope-face-large",
+    "description": "Big white address-side envelope diagram, 1200x760 at scale 1, #ead9a8 border, ink outline 3 px: blank dashed top-right stamp box (#stamp-box), blank address block of 4 grey rules (#address-block), faint top band (#top-zone). No lettering.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s001",
+      "s012",
+      "s019",
+      "s020",
+      "s021",
+      "s022",
+      "s023",
+      "s024",
+      "s025",
+      "s026",
+      "s153"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "postal-date-stamp",
+    "description": "Round ink postal date-stamp impression, 300x300: double ring, blank straight date bar across the middle, blank office arc; ink #2b2622 at 85% opacity. No real office name.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s001",
+      "s002",
+      "s014",
+      "s019",
+      "s021",
+      "s027",
+      "s029",
+      "s030",
+      "s031",
+      "s032",
+      "s034",
+      "s038",
+      "s066",
+      "s072",
+      "s084",
+      "s103",
+      "s137"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "letter-box",
+    "description": "Drawn postal-red (#9e1b1b) pillar letter box, 260x520: rounded cap, dark slot, cream plate (blank), plinth; ink outline 3 px. Stand-in when the photo is missing.",
+    "anchors": [
+      "base",
+      "top",
+      "mouth"
+    ],
+    "scenes": [
+      "s035",
+      "s039",
+      "s040",
+      "s042",
+      "s044",
+      "s100",
+      "s147"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "parcel-with-tag",
+    "description": "Brown-paper packet (#c9a978 on cream) tied crosswise with sand string, a white blank tag hanging from a loop; 420x320. Parts #packet, #string, #tag.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s015",
+      "s016",
+      "s017",
+      "s044"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "non-postage-labels",
+    "description": "Two generic labels side by side, no real design, words or emblem: #revenue a grey-green rectangular stamp with wavy frame and blank centre; #charity a round pale-yellow sticker with a heart outline. 360x200.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s013",
+      "s019"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "business-reply-card",
+    "description": "White card, address side, 560x360: two thick ink vertical bars near the right edge (#bars), blank top band for postmarks (#top-band), blank address block (#address-block), blank permit-number line (#permit-line). No lettering.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s099",
+      "s100",
+      "s101",
+      "s115",
+      "s116",
+      "s117",
+      "s118",
+      "s122",
+      "s127",
+      "s130",
+      "s131",
+      "s135",
+      "s136"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "invoice-sheet",
+    "description": "White ruled form sheet 300x400: blank surface-coloured header strip, six blank rows, signature line at the bottom; ink outline. Used as invoice, statement of mailing, journal, bill and daily account.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s049",
+      "s070",
+      "s083",
+      "s084",
+      "s085",
+      "s086",
+      "s087",
+      "s088",
+      "s132",
+      "s133"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "mail-bag",
+    "description": "Canvas-sand mail bag with drawstring neck and a postal-red band, envelope corners peeking out of the mouth; 320x380.",
+    "anchors": [
+      "base",
+      "mouth"
+    ],
+    "scenes": [
+      "s033"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "rubber-date-stamp",
+    "description": "Hand-held rubber date stamp: wooden knob, neck, slate base, side view; 200x300.",
+    "anchors": [
+      "grip",
+      "base"
+    ],
+    "scenes": [
+      "s032",
+      "s033"
+    ],
+    "reuse": false
+  }
+]
