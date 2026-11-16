@@ -8,25 +8,5 @@
   "10.29"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s025",
-   "text": "15 mm / 74 mm",
-   "t": 6.26
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s025",
-   "text": "frank / stamps",
-   "t": 6.26
-  },
-  {
-   "kind": "low-contrast",
-   "scene": "s025",
-   "text": "1 (1.2:1) / 2 (1.0:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 6.26
-  }
- ]
+ "warnings": []
 }
