@@ -8,18 +8,5 @@
   "10.33"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s058",
-   "message": "highlight: \"metal\" isn't in that <text> (it says \"\")",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s058",
-   "message": "highlight: \"लकड़ी\" isn't in that <text> (it says \"\")",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
