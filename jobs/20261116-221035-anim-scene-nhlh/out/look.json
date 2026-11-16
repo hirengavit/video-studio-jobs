@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-overlap",
-   "scene": "s004",
-   "text": "सामान भी बचे… / और दूसरी डाक भी",
-   "t": 1.86
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s004",
    "message": "a card is mostly empty at 7.4 s: bring its items in sooner, or size it for what it holds now",
