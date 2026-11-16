@@ -8,19 +8,5 @@
   "13.09"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "low-contrast",
-   "scene": "s191",
-   "text": "Window · खिड़की (1.9:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s191",
-   "text": "Window · खिड़की / घरेलू parcel घोषणा",
-   "t": 2.65
-  }
- ]
+ "warnings": []
 }
