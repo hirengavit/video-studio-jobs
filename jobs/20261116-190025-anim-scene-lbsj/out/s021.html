@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s021" data-in="wipe" data-in-dur="0.4" data-in-opts='{"from":"right"}' data-section="PART 2 · REGULATION 18" data-series="POSTAL RULES">
+  <svg viewBox="0 0 1920 1080" fill="none">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <use id="envelope" href="piece:envelope-face-large" transform="translate(120 200) scale(.95)"/>
+    <g id="upper-zone">
+      <rect x="140" y="221" width="1100" height="240" rx="8" fill="#fde9a6"/>
+      <rect x="1092" y="246" width="126" height="115" rx="7" stroke="#6f6a63" stroke-width="3" stroke-dasharray="11 8"/>
+      <text x="159" y="332" class="hi" font-size="40" font-weight="800" fill="#8a5d00" textLength="176" lengthAdjust="spacingAndGlyphs">ऊपरी हिस्सा</text>
+      <path d="M163 349H333" stroke="#d4a139" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g id="stamp">
+      <use href="piece:postage-stamp" transform="translate(1073 223) scale(.41)"/>
+      <text x="1155" y="415" fill="#2b2622" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="750">stamps</text>
+    </g>
+    <g id="postal-label">
+      <rect x="870" y="262" width="110" height="80" rx="8" fill="#fff" stroke="#9e1b1b" stroke-width="4"/>
+      <path d="M888 288H962M888 313H940" stroke="#a4a098" stroke-width="4" stroke-linecap="round"/>
+      <text x="925" y="415" fill="#2b2622" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="750">labels</text>
+    </g>
+    <g id="postmark">
+      <use href="piece:postal-date-stamp" transform="translate(644 252) scale(.34)"/>
+      <circle cx="695" cy="303" r="45" fill="none" stroke="#9e1b1b" stroke-width="4" opacity=".75"/>
+      <text x="695" y="415" fill="#2b2622" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="750">postmarks</text>
+    </g>
+    <g id="postal-marks">
+      <path d="M420 278q15 -11 30 0t30 0t30 0M420 299q15 -11 30 0t30 0t30 0M420 320q15 -11 30 0t30 0t30 0" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+      <text x="465" y="386" fill="#2b2622" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="750" textLength="199" lengthAdjust="spacingAndGlyphs">दूसरे postal</text>
+      <text x="465" y="438" fill="#2b2622" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="750">निशान</text>
+    </g>
+    <g id="legend">
+      <rect x="1320" y="200" width="520" height="205" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="1358" y="246" width="9" height="51" rx="4" fill="#f2b705"/>
+      <text x="1386" y="287" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="56" font-weight="800">Regulation 18</text>
+      <text id="legend-hi" x="1387" y="349" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="650">विनियम 18</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.50, 'fade', '#legend-hi', {dur: 0.16}],
+      [0.74, 'fade', '#upper-zone', {dur: 0.20}],
+      [2.30, 'pop', '#stamp', {from: 0.88, spring: 'fast'}],
+      [3.52, 'pop', '#postal-label', {from: 0.88, spring: 'fast'}],
+      [5.24, 'stamp', '#postmark', {from: 1.10, rot: -3, spring: 'fast'}],
+      [6.70, 'fade', '#postal-marks', {dur: 0.18}],
+    ],
+  }
+  </script>
+</section>
