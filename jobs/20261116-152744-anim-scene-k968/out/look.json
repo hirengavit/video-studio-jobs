@@ -8,12 +8,5 @@
   "10.77"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s133",
-   "text": "16 / तारीख वालेपखवाड़े से पहले",
-   "t": 8.74
-  }
- ]
+ "warnings": []
 }
