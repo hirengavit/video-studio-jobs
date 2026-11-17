@@ -1,0 +1,56 @@
+<section class="vs-scene" id="question-card-gu" data-in="fade" data-in-dur="0.4" data-section="પિન કોડ">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="panel">
+      <rect x="160" y="196" width="1600" height="790" rx="32" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+      <rect x="160" y="196" width="1600" height="790" rx="32" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+    </g>
+    <g id="label">
+      <rect x="240" y="262" width="10" height="44" rx="5" fill="#f2b705"/>
+      <text x="270" y="298" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="36" font-weight="700" fill="#fde9a6">ઝડપી પ્રશ્ન</text>
+    </g>
+    <text id="q1" x="240" y="406" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="60" font-weight="800" fill="#ffffff">6 અંકના PIN code માં પહેલો અંક</text>
+    <text id="q2" x="240" y="490" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="60" font-weight="800" fill="#ffffff">શું દર્શાવે છે?</text>
+    <g id="ring">
+      <circle cx="1590" cy="400" r="64" fill="#7d1414"/>
+      <circle cx="1590" cy="400" r="64" fill="none" stroke="#b8403a" stroke-width="12"/>
+      <text x="1590" y="422" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="800" fill="#fde9a6">?</text>
+    </g>
+    <path id="arc" d="M1590 336 A64 64 0 1 1 1589.9 336" stroke="#f2b705" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <g class="opt" id="oa"><rect id="oa-bg" x="240" y="580" width="700" height="160" rx="22" fill="#fbf7ee"/><text id="oa-l" x="290" y="652" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">A</text><text id="oa-t" x="350" y="650" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#2b2622">Sorting District</text><text id="oa-h" x="350" y="706" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">છટણી જિલ્લો</text></g>
+    <g class="opt" id="ob"><rect id="ob-bg" x="980" y="580" width="700" height="160" rx="22" fill="#fbf7ee"/><text id="ob-l" x="1030" y="652" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">B</text><text id="ob-t" x="1090" y="650" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#2b2622">Postal Zone</text><text id="ob-h" x="1090" y="706" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">ટપાલ ઝોન (વિસ્તાર)</text></g>
+    <g class="opt" id="oc"><rect id="oc-bg" x="240" y="764" width="700" height="160" rx="22" fill="#fbf7ee"/><text id="oc-l" x="290" y="836" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">C</text><text id="oc-t" x="350" y="834" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#2b2622">Delivery Post Office</text><text id="oc-h" x="350" y="890" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">વિતરણ ટપાલ કચેરી</text></g>
+    <g class="opt" id="od"><rect id="od-bg" x="980" y="764" width="700" height="160" rx="22" fill="#fbf7ee"/><text id="od-l" x="1030" y="860" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">D</text><text id="od-t" x="1090" y="862" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="46" font-weight="800" fill="#2b2622">રાજ્ય</text></g>
+    <g id="tick"><circle cx="1600" cy="660" r="40" fill="#ffffff"/><path d="M1580 661 L1594 675 L1621 645" stroke="#2e7d4f" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}], [9, {zoom: 1.02}]],
+    on: [
+      [0.05, 'reveal', '#panel', {from: 'up', dur: 0.6}],
+      [0.4, 'reveal', '#label', {from: 'left', dur: 0.5}],
+      [0.8, 'words', '#q1', {gap: 0.1, dist: 18}],
+      [1.6, 'words', '#q2', {gap: 0.1, dist: 18}],
+      [2.6, 'slide', '.opt', {from: 'down', dist: 40, spring: 'soft', stagger: 0.16}],
+      [3.4, 'fade', '#ring', {dur: 0.3}],
+      [3.4, 'draw', '#arc', {dur: 3.0, ease: 'linear'}],
+      [6.5, 'out', '#ring'],
+      [6.5, 'out', '#arc'],
+      [6.6, 'color', '#ob-bg', {to: '#2e7d4f', dur: 0.35}],
+      [6.6, 'color', '#ob-t', {to: '#ffffff', dur: 0.35}],
+      [6.6, 'color', '#ob-l', {to: '#ffffff', dur: 0.35}],
+      [6.6, 'color', '#ob-h', {to: '#dff0e5', dur: 0.35}],
+      [6.6, 'color', '#oa-t', {to: '#8c857b', dur: 0.35}],
+      [6.6, 'color', '#oc-t', {to: '#8c857b', dur: 0.35}],
+      [6.6, 'color', '#od-t', {to: '#8c857b', dur: 0.35}],
+      [6.6, 'color', '#oa-h', {to: '#8c857b', dur: 0.35}],
+      [6.6, 'color', '#oc-h', {to: '#8c857b', dur: 0.35}],
+      [6.6, 'color', '#oa-l', {to: '#8c857b', dur: 0.35}],
+      [6.6, 'color', '#oc-l', {to: '#8c857b', dur: 0.35}],
+      [6.6, 'color', '#od-l', {to: '#8c857b', dur: 0.35}],
+      [6.8, 'pop', '#tick', {from: 0.4, spring: 'soft'}],
+      [7.1, 'pulse', '#ob', {amount: 0.04}],
+    ],
+  }
+  </script>
+</section>
