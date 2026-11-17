@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s210" data-in="cut" data-section="OLD GUIDE → NEW RULES" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="facts-tabs">
+<g id="tab1"><rect x="160" y="184" width="75" height="57" rx="17" fill="#f3ead6"/><text x="197.5" y="225" text-anchor="middle" font-size="40" font-weight="820" fill="#6f6a63">1</text></g>
+<g id="tab2"><rect x="253" y="184" width="75" height="57" rx="17" fill="#f3ead6"/><text x="290.5" y="225" text-anchor="middle" font-size="40" font-weight="820" fill="#6f6a63">2</text></g>
+<g id="tab3"><rect x="346" y="184" width="75" height="57" rx="17" fill="#9e1b1b"/><text x="383.5" y="225" text-anchor="middle" font-size="40" font-weight="820" fill="white">3</text></g>
+</g>
+<text id="title" x="459" y="237" class="hi" font-size="62" font-weight="790" fill="#2b2622">तीन और facts</text>
+<text id="old-material" x="169" y="334" font-size="49" font-weight="800" fill="#6f6a63"><tspan font-family="Noto Sans Devanagari,Inter,sans-serif">पुराना </tspan><tspan font-family="Inter,sans-serif">exam material</tspan></text>
+<g id="phone">
+  <path d="M305 900H695" fill="none" stroke="#d7c7a5" stroke-width="4" stroke-linecap="round"/>
+  <use href="piece:phone-app" transform="translate(360 384.1) scale(1.4)"/>
+  <text id="app-line-1" x="500" y="610" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="850" fill="#9e1b1b">Click N</text>
+  <text id="app-line-2" x="500" y="665" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="850" fill="#9e1b1b">Book</text>
+</g>
+<g id="old-speed">
+  <rect x="822" y="435" width="380" height="110" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1012" y="506" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="810" fill="#2b2622">Speed Post</text>
+</g>
+<g id="old-registration">
+  <rect x="1220" y="435" width="540" height="110" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1490" y="506" text-anchor="middle" font-family="Inter,sans-serif" font-size="50" font-weight="810" fill="#2b2622">Registered articles</text>
+</g>
+<g id="online">
+  <path d="M821 582v18H1760v-18M1290 600v14" fill="none" stroke="#d4c39d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1290" y="681" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="770" fill="#6f6a63">Online booking</text>
+</g>
+<g id="now-panel">
+  <rect x="800" y="740" width="990" height="250" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+  <text x="830" y="816" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="44" font-weight="830" fill="#9e1b1b">अब</text>
+</g>
+<g id="new-speed">
+  <rect x="830" y="869" width="260" height="72" rx="22" fill="#9e1b1b"/>
+  <text x="960" y="920" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="820" fill="#fff">Speed Post</text>
+</g>
+<g id="add-on">
+  <rect x="1120" y="869" width="640" height="72" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text id="addon-text" x="1440" y="919" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="790" fill="#2b2622">+ Registration · add-on service</text>
+</g>
+</svg>
+<script type="text/scene">
+({
+ on:[
+   [1.80,'pop','#phone',{from:.88,spring:'fast'}],
+   [1.88,'type','#app-line-1',{cps:13}],
+   [2.94,'type','#app-line-2',{cps:14}],
+   [3.96,'pop','#old-speed',{from:.90,spring:'fast'}],
+   [5.10,'pop','#old-registration',{from:.90,spring:'fast'}],
+   [6.58,'fade','#online',{dur:.31}],
+   [8.16,'fade','#now-panel',{dur:.30}],
+   [9.32,'pop','#new-speed',{from:.90,spring:'fast'}],
+   [11.50,'fade','#add-on',{dur:.10}],
+   [11.50,'highlight','#addon-text',{words:'add-on',color:'#f2b705',opacity:.36,dur:.10,pad:4}]
+ ]
+})
+</script>
+</section>
