@@ -48,14 +48,22 @@
       <g id="pill4">
         <rect id="pill4-bg" x="1210" y="881" width="515" height="76" rx="38" fill="#fde9a6"/>
         <text id="pill4-label" class="hi" x="1243" y="932" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="41" font-weight="790" fill="#624600">letter box में मिलें →</text>
-        <text id="unpaid-en" x="1652" y="914" text-anchor="middle" font-family="Inter,sans-serif" font-size="31" font-weight="850" fill="#624600">Unpaid</text>
-        <text id="unpaid-hi" class="hi" x="1652" y="943" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="28" font-weight="760" fill="#624600">बिना भुगतान</text>
+        <text id="unpaid-en" x="1555" y="914" text-anchor="middle" font-family="Inter,sans-serif" font-size="41" font-weight="850" fill="#624600">Unpaid</text>
+        <text id="unpaid-hi" class="hi" x="1555" y="947" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="34" font-weight="760" fill="#624600">बिना भुगतान</text>
       </g>
-      <path id="tick4" d="M1747 921l10 10 19-21" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="tick4" d="M1667 921l10 10 19-21" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
   </svg>
   <script type="text/scene">
   {
+    update(t, section, $){
+      const progress = Math.max(0,Math.min(1,(t-.49)/.20));
+      const u = progress*progress*(3-2*progress);
+      const bg = $("#pill4-bg")[0], label = $("#pill4-label")[0];
+      bg.setAttribute("x",1210-175*u);
+      bg.setAttribute("width",515+175*u);
+      label.setAttribute("x",1243-175*u);
+    },
     on:[
       [.70,'type','#unpaid-en',{cps:23}],
       [.89,'fade','#unpaid-hi',{dur:.22}],
