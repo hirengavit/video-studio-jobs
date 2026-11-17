@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "2.40",
+  "4.80",
+  "7.19",
+  "9.59",
+  "11.84"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s074",
+   "message": "highlight: \"सुरक्षित\" isn't in that <text> (it says \"\")",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s074",
+   "text": "तेज़ गंध वाली चीज़ें / या metal case",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s074",
+   "text": "Insured सोना-चाँदी की सिल्लियाँ + सिक्के / → और सख्त · Part 4: Sealing",
+   "t": 0.3
+  }
+ ]
+}
