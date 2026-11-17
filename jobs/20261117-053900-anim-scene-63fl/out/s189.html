@@ -24,9 +24,9 @@
     <text id="airmail-label" x="529" y="594" font-family="Inter,sans-serif" font-size="45" font-weight="835" fill="#9e1b1b">AIRMAIL</text>
     <g id="date-impression"><use href="piece:postal-date-stamp" transform="translate(628 413) scale(.42)"/></g>
     <g id="cancel-waves" fill="none" stroke="#2b2622" stroke-width="5" opacity=".88" stroke-linecap="round">
-      <path d="M716 461q16-12 32 0t32 0 32 0 32 0 32 0 32 0"/>
-      <path d="M716 486q16-12 32 0t32 0 32 0 32 0 32 0 32 0"/>
-      <path d="M716 511q16-12 32 0t32 0 32 0 32 0 32 0 32 0"/>
+      <path d="M716 461q20-12 40 0t40 0 40 0 40 0 40 0 40 0 40 0 40 0"/>
+      <path d="M716 486q20-12 40 0t40 0 40 0 40 0 40 0 40 0 40 0 40 0"/>
+      <path d="M716 511q20-12 40 0t40 0 40 0 40 0 40 0 40 0 40 0 40 0"/>
     </g>
   </g>
   </g>
@@ -52,7 +52,10 @@
    const placed=$('#placed-envelope')[0];
    if(placed) placed.setAttribute('transform','translate(760 799) scale('+(1-.32*k)+') translate(-760 -799)');
    const going=$('#forward-envelope')[0];
-   if(going) going.setAttribute('transform','translate('+(760*easing(t,9.18,.60))+' 0)');
+   if(going){
+     going.setAttribute('transform','translate('+(760*easing(t,9.18,.60))+' 0)');
+     going.setAttribute('visibility',t>=9.78?'hidden':'visible');
+   }
    for(const flap of $('[id$="-airmail-envelope-piece"] [id$="-paper"] path')) flap.setAttribute('opacity','0');
  },
  on:[
