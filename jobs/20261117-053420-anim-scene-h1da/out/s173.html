@@ -1,0 +1,70 @@
+<section class="vs-scene" id="s173" data-in="cut" data-section="RECAP · PARTS 5–6" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="env">
+      <rect x="160" y="180" width="1600" height="800" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M185 181H1735Q1747 181 1752 194L960 343 168 194Q173 181 185 181Z" fill="#f3ead6"/>
+      <path d="M168 194L960 343 1752 194" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linejoin="round"/>
+      <text class="hi" x="960" y="237" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="760" fill="#6f6a63">Part 6 · भाग 6</text>
+      <text class="hi" x="960" y="305" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="820" fill="#9e1b1b">Letter box में क्या जाता है?</text>
+      <g id="seal">
+        <circle cx="960" cy="350" r="37" fill="#9e1b1b"/>
+        <circle cx="960" cy="350" r="28" fill="none" stroke="#fde9a6" stroke-width="2" stroke-dasharray="3 5"/>
+        <text x="960" y="365" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="820" fill="#fde9a6">6</text>
+      </g>
+      <g id="row-shells" fill="none" stroke="#ead9a8" stroke-width="2" stroke-dasharray="7 8">
+        <rect x="198" y="430" width="1524" height="114" rx="20"/>
+        <rect x="198" y="592" width="1524" height="114" rx="20"/>
+        <rect x="198" y="754" width="1524" height="114" rx="20"/>
+      </g>
+    </g>
+    <g id="row-1">
+      <text x="238" y="479" font-size="54" font-weight="810" fill="#2b2622">Postage-due categories</text>
+      <text x="239" y="522" class="hi" font-size="43" font-weight="640" fill="#6f6a63">देय postage वाली तय categories</text>
+    </g>
+    <g id="pill-1">
+      <rect x="1100" y="451" width="499" height="72" rx="36" fill="#fde9a6"/>
+      <text x="1349.5" y="500" text-anchor="middle" class="hi" font-size="47" font-weight="750" fill="#2b2622">letter box में</text>
+    </g>
+    <circle id="cert-1" cx="1655" cy="487" r="32" fill="#e5f0e8"/>
+    <path id="tick-1" d="M1640 487l11 11 22-25" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="row-2">
+      <text x="238" y="641" font-size="54" font-weight="810" fill="#2b2622">Literature for the blind</text>
+      <text x="239" y="684" class="hi" font-size="43" font-weight="640" fill="#6f6a63">दृष्टिहीनों के लिए साहित्य</text>
+    </g>
+    <g id="pill-2">
+      <rect x="1100" y="613" width="499" height="72" rx="36" fill="#fde9a6"/>
+      <text x="1349.5" y="662" text-anchor="middle" class="hi" font-size="47" font-weight="750" fill="#2b2622">छूट बनी है</text>
+    </g>
+    <circle id="cert-2" cx="1655" cy="649" r="32" fill="#e5f0e8"/>
+    <path id="tick-2" d="M1640 649l11 11 22-25" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="row-3">
+      <text x="238" y="803" font-size="54" font-weight="810" fill="#2b2622">Small packets</text>
+      <text x="239" y="846" class="hi" font-size="43" font-weight="640" fill="#6f6a63">छोटे पैकेट</text>
+    </g>
+    <g id="pill-3">
+      <rect x="1100" y="759" width="499" height="72" rx="36" fill="#fde9a6"/>
+      <text x="1349.5" y="808" text-anchor="middle" class="hi" font-size="47" font-weight="750" fill="#2b2622">1 January 2026</text>
+    </g>
+    <circle id="cert-3" cx="1655" cy="811" r="32" fill="#e5f0e8"/>
+    <path id="tick-3" d="M1640 811l11 11 22-25" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text id="removed" x="1349.5" y="860" text-anchor="middle" class="hi" font-size="34" font-weight="730" fill="#4b4f58">list से हटे</text>
+  </svg>
+  <script type="text/scene">
+    {on:[
+      [0,'slide','#row-1',{from:'left',dist:40,spring:'soft'}],
+      [3.34,'pop','#pill-1',{from:.93,spring:'soft'}],
+      [3.34,'fade','#cert-1',{dur:.18}],
+      [3.34,'draw','#tick-1',{dur:.29}],
+      [5.44,'slide','#row-2',{from:'left',dist:40,spring:'soft'}],
+      [7.02,'pop','#pill-2',{from:.93,spring:'soft'}],
+      [7.02,'fade','#cert-2',{dur:.18}],
+      [7.02,'draw','#tick-2',{dur:.29}],
+      [8.02,'slide','#row-3',{from:'left',dist:40,spring:'soft'}],
+      [9.34,'pop','#pill-3',{from:.93,spring:'soft'}],
+      [12.20,'type','#removed',{cps:36}],
+      [12.20,'fade','#cert-3',{dur:.18}],
+      [12.20,'draw','#tick-3',{dur:.30}]
+    ]}
+  </script>
+</section>
