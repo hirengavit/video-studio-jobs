@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <rect id="paper" x="3" y="3" width="594" height="294" rx="13" fill="#fff" stroke="#2b2622" stroke-width="3"/>
+  <g stroke="#a9a59e" stroke-width="2" stroke-dasharray="7 6">
+    <rect id="logo-zone" x="30" y="27" width="138" height="58" rx="8"/>
+    <rect id="postage-zone" x="437" y="24" width="131" height="65" rx="8"/>
+    <rect id="barcode-zone" x="44" y="239" width="512" height="40" rx="6"/>
+  </g>
+  <rect id="window" x="161" y="113" width="278" height="103" rx="10" fill="#e7f1f4" stroke="#2b2622" stroke-width="3"/>
+  <path id="window-glint" d="M169 191v-62q0-8 9-8h219" stroke="#fff" stroke-width="2"/>
+  <g id="address-block" stroke="#535e64" stroke-width="2.6">
+    <path d="M186 138h161m-161 16h199m-199 16h130"/>
+  </g>
+  <g id="barcode" stroke="#2b2622" stroke-linecap="butt">
+    <path stroke-width="2" d="M187 185v16m8-16v16m7-16v16m14-16v16m7-16v16m7-16v16m14-16v16m12-16v16m7-16v16m14-16v16m11-16v16m12-16v16m8-16v16m12-16v16m8-16v16m12-16v16m13-16v16m11-16v16m8-16v16m10-16v16"/>
+    <path stroke-width="5" d="M191 185v16m18-16v16m28-16v16m13-16v16m20-16v16m13-16v16m11-16v16m20-16v16m21-16v16m11-16v16m13-16v16m18-16v16"/>
+  </g>
+  <circle data-anchor="base" cx="300" cy="298.5" r="0"/>
+  <circle data-anchor="top" cx="300" cy="1.5" r="0"/>
+</svg>
