@@ -1,0 +1,42 @@
+<section class="vs-scene" id="s209" data-in="cut" data-section="OLD GUIDE → NEW RULES" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="facts-tabs">
+<g id="tab1"><rect x="160" y="178" width="75" height="68" rx="29" fill="#f3ead6"/><text x="197.5" y="229" text-anchor="middle" font-size="48" font-weight="820" fill="#6f6a63">1</text></g>
+<g id="tab2"><rect x="253" y="178" width="75" height="68" rx="29" fill="#9e1b1b"/><text x="290.5" y="229" text-anchor="middle" font-size="48" font-weight="820" fill="white">2</text></g>
+<g id="tab3"><rect x="346" y="178" width="75" height="68" rx="29" fill="#f3ead6"/><text x="383.5" y="229" text-anchor="middle" font-size="48" font-weight="820" fill="#6f6a63">3</text></g>
+</g>
+<text id="title" x="459" y="234" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="790" fill="#2b2622">तीन और facts</text>
+<g id="units">
+  <rect x="159" y="292" width="830" height="668" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+  <text x="205" y="384" font-family="Inter,sans-serif" font-size="47" font-weight="850" fill="#2b2622">PARCEL PACKAGING UNITS</text>
+  <text id="units-hi" x="208" y="454" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="720" fill="#6f6a63">पार्सल पैकेजिंग इकाइयाँ</text>
+  <g id="supplies">
+    <path d="M223 799H920" fill="none" stroke="#d4c39d" stroke-width="4" stroke-linecap="round"/>
+    <use href="piece:parcel-with-tag" transform="translate(237 566) scale(.83)"/>
+    <use href="piece:protective-box" transform="translate(597 514) scale(.80)"/>
+  </g>
+  <g id="supplies-pill">
+    <rect x="273" y="841" width="602" height="79" rx="38" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="574" y="895" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="740" fill="#2b2622">packing का सामान</text>
+  </g>
+</g>
+<g id="count-card">
+  <rect x="1051" y="292" width="695" height="668" rx="30" fill="#9e1b1b"/>
+  <rect x="1051" y="292" width="695" height="668" rx="30" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+  <text id="old-question" class="hi" x="1398.5" y="484" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="720" fill="#fde9a6">पुराने सवाल में</text>
+  <text id="unit-count" x="1398.5" y="722" text-anchor="middle" font-family="Inter,sans-serif" font-size="184" font-weight="850" fill="#fff">1,408</text>
+  <path id="count-underline" d="M1152 786Q1396 803 1644 784" fill="none" stroke="#f2b705" stroke-width="10" stroke-linecap="round"/>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+ [.50,'fade','#units-hi',{dur:.24}],
+ [1.88,'pop','#supplies',{from:.95,spring:'soft'}],
+ [2.30,'pop','#supplies-pill',{from:.96,spring:'fast'}],
+ [4.44,'pop','#count-card',{from:.96,spring:'fast',dur:.40}],
+ [6.32,'pop','#unit-count',{from:.91,spring:'soft'}],
+ [9,'draw','#count-underline',{dur:.40}]
+]}
+</script>
+</section>
