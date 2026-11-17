@@ -66,8 +66,11 @@
     put('#quick-mail-hi','y',mix(650,672));
     put('#quick-mail-hi','font-size',mix(34,39));
     put('#qms-split','transform','translate(0 '+mix(0,24)+')');
+    put('#qms-split','display',v>=.48?'none':'inline');
     put('#qms-split','opacity',1-clamp((v-.28)/.2));
+    put('#quick-mail-en','display',v<=.52?'none':'inline');
     put('#quick-mail-en','opacity',clamp((v-.52)/.24));
+    put('#quick-mail-en','font-size',36);
     put('#box-rule','d','M368 '+mix(880,865)+'H1552');
     put('#band-bg','y',mix(919,907));
     put('#band-bg','height',mix(78,91));
