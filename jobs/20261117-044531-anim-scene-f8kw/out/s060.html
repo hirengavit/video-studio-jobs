@@ -55,9 +55,10 @@
   <text id="step3-text" x="206" y="743" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48" font-weight="790" fill="#2b2622">बीच में जगह</text>
 </g>
 <text id="absorbent-note" x="206" y="807" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="42" font-weight="740" fill="#2b2622">बुरादा · चोकर ·</text>
+<rect id="absorbent-mark" x="479" y="766" width="300" height="62" rx="6" fill="#f2b705" fill-opacity=".38"/>
 <text id="absorbent-phrase" x="485" y="807" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="42" font-weight="740" fill="#2b2622">सोखने वाली चीज़</text>
 <g id="absorption-note">
-  <rect x="120" y="823" width="970" height="167" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <rect x="120" y="831" width="970" height="159" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
   <text id="just-padding" x="152" y="880" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="40" font-weight="770" fill="#4b4f58">सिर्फ़ गद्दी</text>
   <text id="protect-mail" x="152" y="950" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="40" font-weight="800" fill="#23633e">बहता liquid दूसरी डाक तक न फैले</text>
 </g>
@@ -76,7 +77,6 @@
     if(liquid) liquid.setAttribute('opacity',String(1-.7*k));
   },
   on:[
-    [0,'highlight','#absorbent-phrase',{color:'#f2b705',opacity:.38,pad:6,dur:0.001}],
     [1.48,'fade','#absorbent-stain',{dur:.80}],
     [4.39,'fade','#absorption-note',{dur:.28}],
     [4.39,'type','#just-padding',{cps:18}],
