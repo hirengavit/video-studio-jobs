@@ -12,7 +12,7 @@
 <path d="M104 98H1816M1000 1V98" stroke="#ead9a8" stroke-width="2"/>
 <text x="143" y="42" font-family="Inter,sans-serif" font-size="40" font-weight="780" fill="#2b2622">Packing</text><text x="143" y="84" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="32" font-weight="500" fill="#6f6a63">पैकिंग</text>
 <text id="packing-original" x="1039" y="62" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">25, 96 · International: 121</text>
-<g id="packing-focus" opacity="0" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">
+<g id="packing-focus" visibility="hidden" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">
   <text id="beat-25" fill="#9e1b1b" x="1060" y="62">25</text>
   <text x="1148" y="62">,</text>
   <text id="beat-96" fill="#9e1b1b" x="1177" y="62">96</text>
@@ -75,8 +75,8 @@
  update(t,section,$){
    const z=Math.max(0,Math.min(1,(t-1.20)/.26)), p=Math.max(0,Math.min(1,(t-1.88)/.30));
    for (const id of ['row2','row3','row4','row5','row6','row7','row8']) $('#'+id)[0].setAttribute('opacity',1-.40*z);
-   $('#packing-original')[0].setAttribute('opacity',1-Math.min(1,2*p));
-   $('#packing-focus')[0].setAttribute('opacity',Math.max(0,2*p-1));
+   $('#packing-original')[0].setAttribute('visibility',t<1.88?'visible':'hidden');
+   $('#packing-focus')[0].setAttribute('visibility',t<1.88?'hidden':'visible');
    $('#packing-band')[0].setAttribute('fill','rgb(255,'+Math.round(255-22*p)+','+Math.round(255-89*p)+')');
  },
  on:[
