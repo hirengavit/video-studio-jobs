@@ -44,9 +44,9 @@
   <text x="569.5" y="991" text-anchor="middle" font-size="42" font-weight="795" fill="#23683f"><tspan font-family="Inter,sans-serif">article</tspan><tspan font-family="Noto Sans Devanagari,Inter,sans-serif"> पर ही</tspan></text>
 </g>
 
-  <g id="ghost-stamp" opacity=".72"><use href="piece:postage-stamp" transform="translate(864 696) scale(.6)"/></g>
+  <g id="ghost-stamp" opacity=".72"><use href="piece:postage-stamp" transform="translate(797 664) scale(.6)"/></g>
   <g id="ghost-cross" stroke="#4b4f58" stroke-width="9" fill="none" stroke-linecap="round">
-    <path d="M866 713l62 62m0-62-62 62"/>
+    <path d="M886 752l62 62m0-62-62 62"/>
   </g>
   <g id="tag-warning">
     <rect x="1125" y="879" width="603" height="89" rx="27" fill="#e9e8e5"/>
@@ -54,7 +54,7 @@
   </g>
 </g>
 <g id="insured-list">
-  <rect x="160" y="190" width="1600" height="716" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <rect id="insured-paper" x="160" y="190" width="1600" height="100" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
   <path d="M190 190H1730Q1760 190 1760 220V286H160V220Q160 190 190 190Z" fill="#9e1b1b"/>
   <text x="220" y="256" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="790" fill="#fff">कीमती सामान: सही service</text>
   <g id="coins">
@@ -87,6 +87,11 @@
 <script type="text/scene">
 ({
   shots:[[0,'#tied-label'],[1.90,'#insured-list']],
+  update(t, section, $){
+    const smooth = (start, span) => {const u=Math.max(0,Math.min(1,(t-start)/span));return u*u*(3-2*u);};
+    const h=100+190*smooth(4.78,.28)+150*smooth(6.02,.28)+150*smooth(7.84,.28)+126*smooth(9.84,.28);
+    $('#insured-paper')[0].setAttribute('height',h);
+  },
   on:[
     [0,'pop','#ghost-stamp',{from:.94,spring:'soft'}],
     [1.14,'draw','#ghost-cross',{dur:.27}],
