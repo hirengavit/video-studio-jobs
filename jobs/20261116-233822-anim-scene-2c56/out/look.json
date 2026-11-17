@@ -8,12 +8,5 @@
   "11.82"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s192",
-   "text": "Administrative instructionsसे तय form / Form number: —",
-   "t": 2.39
-  }
- ]
+ "warnings": []
 }
