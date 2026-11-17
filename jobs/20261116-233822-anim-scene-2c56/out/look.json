@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.39",
+  "4.79",
+  "7.18",
+  "9.58",
+  "11.82"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s192",
+   "text": "Administrative instructionsसे तय form / Form number: —",
+   "t": 2.39
+  }
+ ]
+}
