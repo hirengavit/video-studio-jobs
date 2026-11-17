@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.98",
+  "5.97",
+  "8.95",
+  "11.94",
+  "14.77"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s187",
+   "text": "Post Office बंद / 16:30",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s187",
+   "message": "a card is mostly empty at 3.0 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.98
+  }
+ ]
+}
