@@ -41,9 +41,9 @@
 <g id="blade-pair"><g id="blade" fill="#f3ead6" stroke="#4b4f58" stroke-width="5" stroke-linejoin="round"><path d="M1551 747H1630Q1663 746 1685 691L1598 718H1551Z"/><path d="M1515 719H1567V748H1515Q1506 748 1506 739V728Q1506 719 1515 719Z" fill="#d5c5a5"/></g>
 <g id="blade-cross"><circle cx="1649" cy="757" r="29" fill="#edf0f1"/><path d="M1636 744l26 26m0-26l-26 26" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/></g>
 </g></g>
-<g id="staff-harm"><rect x="884" y="670" width="232" height="65" rx="17" fill="#edf0f1" stroke="#6f737c" stroke-width="3"/><text id="staff-harm-text" x="1000.0" y="716" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="760" fill="#34383f" class="hi">Staff · चोट</text></g>
-<g id="letter-harm"><rect x="1126" y="670" width="238" height="65" rx="17" fill="#edf0f1" stroke="#6f737c" stroke-width="3"/><text id="letter-harm-text" x="1245.0" y="716" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="760" fill="#34383f" class="hi">चिट्ठियाँ फटें</text></g>
-<g id="mail-harm"><rect x="1374" y="670" width="341" height="65" rx="17" fill="#edf0f1" stroke="#6f737c" stroke-width="3"/><text id="mail-harm-text" x="1544.5" y="716" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="760" fill="#34383f" class="hi">डाक का काम अटके</text></g>
+<g id="staff-harm"><rect x="884" y="670" width="232" height="65" rx="17" fill="#edf0f1" stroke="#6f737c" stroke-width="3"/><text id="staff-harm-text" textLength="186" lengthAdjust="spacingAndGlyphs" x="1000.0" y="716" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="760" fill="#34383f" class="hi">Staff · चोट</text></g>
+<g id="letter-harm"><rect x="1126" y="670" width="238" height="65" rx="17" fill="#edf0f1" stroke="#6f737c" stroke-width="3"/><text id="letter-harm-text" textLength="194" lengthAdjust="spacingAndGlyphs" x="1245.0" y="716" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="760" fill="#34383f" class="hi">चिट्ठियाँ फटें</text></g>
+<g id="mail-harm"><rect x="1374" y="670" width="341" height="65" rx="17" fill="#edf0f1" stroke="#6f737c" stroke-width="3"/><text id="mail-harm-text" textLength="298" lengthAdjust="spacingAndGlyphs" x="1544.5" y="716" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="760" fill="#34383f" class="hi">डाक का काम अटके</text><path id="mail-harm-underline" d="M1626 723Q1662 721 1693 723" stroke="#4b4f58" stroke-width="3" stroke-linecap="round" fill="none"/></g>
 </svg>
 <script type="text/scene">
 {
@@ -52,7 +52,7 @@
   [1.06,"pop","#staff-harm",{from:.89,spring:"fast"}],
   [3.88,"pop","#letter-harm",{from:.89,spring:"fast"}],
   [6.12,"pop","#mail-harm",{from:.89,spring:"fast"}],
-  [7.06,"underline","#mail-harm-text",{words:"अटके",color:"#4b4f58",width:3,gap:3,dur:.34}]
+  [7.06,"draw","#mail-harm-underline",{dur:.34}]
  ],
  update(t,section,$){
    const blade=$('#blade-pair')[0];
