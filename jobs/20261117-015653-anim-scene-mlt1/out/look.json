@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.25",
+  "4.50",
+  "6.76",
+  "9.01",
+  "11.11"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s113",
+   "text": "कटे नकली सिक्के नहीं / (currency department / mints से)",
+   "t": 11.11
+  }
+ ]
+}
