@@ -1,0 +1,70 @@
+<section class="vs-scene" id="s119" data-in="cut" data-section="PART 4 · SEALING" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="insurance-timeline">
+    <rect x="120" y="189" width="1680" height="113" rx="27" fill="#9e1b1b"/>
+    <text x="175" y="265" class="hi" font-size="61" font-weight="830" fill="#fff">पुराना और नया · Insurance limit</text>
+    <rect id="track" x="120" y="440" width="1680" height="12" rx="6" fill="#ead9a8"/>
+    <rect id="segment-2024" x="120" y="440" width="260" height="12" rx="6" fill="#9e1b1b"/>
+    <rect id="segment-2025" x="380" y="440" width="580" height="12" rx="6" fill="#9e1b1b"/>
+    <rect id="segment-2026" x="960" y="440" width="580" height="12" rx="6" fill="#f2b705"/>
+    <g id="timeline-markers" fill="#f3ead6" stroke="#cbb48a" stroke-width="3">
+      <circle cx="380" cy="446" r="11"/>
+      <circle cx="960" cy="446" r="11"/>
+      <circle cx="1540" cy="446" r="11"/>
+    </g>
+    <g id="event-2024">
+      <text x="380" y="402" text-anchor="middle" font-family="Inter,sans-serif" font-size="72" font-weight="850" fill="#9e1b1b">2024</text>
+      <circle cx="380" cy="446" r="21" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="7"/>
+    </g>
+    <g id="event-2024-card">
+      <rect id="event-2024-bg" x="122" y="507" width="516" height="315" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text id="original-regulation" x="155" y="584" font-family="Inter,sans-serif" font-size="42" font-weight="820" fill="#2b2622">Original regulation</text>
+      <text id="accountable-item" x="155" y="650" font-family="Inter,sans-serif" font-size="43" font-weight="740" fill="#6f6a63">Accountable item</text>
+      <g id="old-limit">
+        <rect x="155" y="687" width="450" height="99" rx="28" fill="#fde9a6"/>
+        <text x="380" y="754" text-anchor="middle" class="hi" font-size="58" font-weight="850" fill="#704b00">₹1 लाख तक</text>
+      </g>
+    </g>
+
+    <g id="event-2025">
+      <text x="960" y="398" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="820" fill="#9e1b1b">1 October 2025</text>
+      <circle cx="960" cy="446" r="21" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="7"/>
+    </g>
+    <g id="event-2025-card">
+      <rect id="event-2025-bg" x="702" y="507" width="516" height="315" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text id="speed-2025" x="735" y="584" font-family="Inter,sans-serif" font-size="48" font-weight="820" fill="#2b2622">Speed Post item</text>
+    </g>
+    <g id="event-2026">
+      <rect x="1290" y="323" width="500" height="95" rx="35" fill="#fde9a6"/>
+      <text x="1540" y="391" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="850" fill="#704b00">1 April 2026</text>
+      <circle cx="1540" cy="446" r="25" fill="#f2b705" stroke="#fbf7ee" stroke-width="7"/>
+    </g>
+    <g id="event-2026-card">
+      <rect id="event-2026-bg" x="1282" y="507" width="516" height="315" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text id="new-label" x="1315" y="584" font-family="Inter,sans-serif" font-size="45" font-weight="820" fill="#2b2622">Maximum</text>
+      <text id="insured-label" x="1315" y="642" font-family="Inter,sans-serif" font-size="45" font-weight="820" fill="#2b2622">insured value</text>
+      <g id="new-limit">
+        <rect x="1315" y="687" width="450" height="99" rx="28" fill="#fde9a6"/>
+        <text x="1540" y="754" text-anchor="middle" class="hi" font-size="60" font-weight="850" fill="#704b00">₹5 लाख</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+ on:[
+  [1.22,'reveal','#segment-2025',{from:'left',dur:.42}],
+  [1.22,'pop','#event-2025',{from:.93}],
+  [4.29,'fade','#event-2025-bg',{dur:.18}],
+  [5.00,'type','#speed-2025',{cps:20}],
+  [7.04,'reveal','#segment-2026',{from:'left',dur:.42}],
+  [7.04,'pop','#event-2026',{from:.93}],
+  [9.93,'fade','#event-2026-bg',{dur:.18}],
+  [10.00,'type','#new-label',{cps:20}],
+  [10.62,'type','#insured-label',{cps:20}],
+  [12.48,'stamp','#new-limit',{from:1.075,rot:-2,spring:'soft'}]
+ ]
+})
+</script>
+</section>
