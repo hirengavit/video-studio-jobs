@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s014" data-in="cut" data-section="PART 1 · PACKING &amp; STRONG COVER" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="chain">
+<rect x="160" y="205" width="10" height="69" rx="5" fill="#f2b705"/>
+<text x="193" y="265" class="hi" font-size="78" font-weight="790" fill="#9e1b1b">याद रखिए</text>
+<g id="weak">
+<rect x="160" y="360" width="500" height="400" rx="24" fill="white" stroke="#ead9a8" stroke-width="4"/>
+<text x="410" y="487" text-anchor="middle" font-size="62" font-weight="780" fill="#2b2622">Specification</text>
+<rect id="weak-mark" x="275" y="529" width="270" height="76" rx="37" fill="#fde9a6"/>
+<text x="410" y="580" text-anchor="middle" class="hi" font-size="60" font-weight="760" fill="#2b2622">से कमज़ोर</text>
+<text x="410" y="671" text-anchor="middle" font-size="66" font-weight="790" fill="#2b2622">packing</text>
+</g>
+<path id="arr-1" d="M665 560H694m-12-10 12 10-12 10" fill="none" stroke="#8a5d00" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="parcel-card">
+<rect x="700" y="360" width="500" height="400" rx="24" fill="white" stroke="#ead9a8" stroke-width="4"/>
+<use href="piece:parcel-with-tag" transform="translate(826 414) scale(.59)"/>
+<text x="950" y="694" text-anchor="middle" font-size="57" font-weight="780" fill="#2b2622">India Post Parcel</text>
+</g>
+<path id="arr-2" d="M1205 560H1234m-12-10 12 10-12 10" fill="none" stroke="#8a5d00" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="booking-card">
+<rect id="booking-bg" x="1240" y="360" width="520" height="400" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+<text x="1500" y="493" text-anchor="middle" font-size="72" font-weight="800" fill="#4b4f58">Booking</text>
+<g id="refuse">
+<rect x="1334" y="548" width="332" height="129" rx="20" fill="#4b4f58"/>
+<path d="M1388 591l41 41m0-41-41 41" stroke="white" stroke-width="11" stroke-linecap="round"/>
+<text x="1530" y="640" text-anchor="middle" class="hi" font-size="74" font-weight="810" fill="white">मना</text>
+</g>
+</g>
+</g>
+<g id="cover">
+<rect x="140" y="170" width="1640" height="820" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+<text x="194" y="250" font-size="69" font-weight="800" fill="#2b2622">Strong Cover</text>
+<text id="cover-hi" x="704" y="250" class="hi" font-size="57" font-weight="770" fill="#9e1b1b">· मज़बूत cover</text>
+<g id="four-pill">
+<rect x="1460" y="202" width="263" height="71" rx="35" fill="#fde9a6"/>
+<text x="1591" y="250" text-anchor="middle" class="hi" font-size="51" font-weight="780" fill="#4b3200">4 शर्तें</text>
+</g>
+<g id="row-1"><rect x="175" y="320" width="1570" height="150" rx="21" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/><g id="badge-1"><circle cx="255" cy="395" r="43" fill="#9e1b1b"/><text x="255" y="413" text-anchor="middle" font-size="54" font-weight="810" fill="white">1</text></g></g>
+<g id="row-2"><rect x="175" y="490" width="1570" height="150" rx="21" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/><g id="badge-2"><circle cx="255" cy="565" r="43" fill="#9e1b1b"/><text x="255" y="583" text-anchor="middle" font-size="54" font-weight="810" fill="white">2</text></g></g>
+<g id="row-3"><rect x="175" y="660" width="1570" height="150" rx="21" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/><g id="badge-3"><circle cx="255" cy="735" r="43" fill="#9e1b1b"/><text x="255" y="753" text-anchor="middle" font-size="54" font-weight="810" fill="white">3</text></g></g>
+<g id="row-4"><rect x="175" y="830" width="1570" height="150" rx="21" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/><g id="badge-4"><circle cx="255" cy="905" r="43" fill="#9e1b1b"/><text x="255" y="923" text-anchor="middle" font-size="54" font-weight="810" fill="white">4</text></g></g>
+</g></svg>
+<script type="text/scene">
+{shots:[[0,"#chain"],[8.70,"#cover"]],on:[
+[1.34,"pop","#weak",{from:.94,spring:"fast"}],
+[2.86,"fade","#weak-mark",{dur:.18}],
+[4.30,"draw","#arr-1",{dur:.2}],[4.30,"pop","#parcel-card",{from:.94,spring:"fast"}],
+[6.02,"draw","#arr-2",{dur:.2}],[6.02,"pop","#booking-card",{from:.94,spring:"fast"}],
+[7.30,"stamp","#refuse",{}],
+[7.30,"color","#booking-bg",{to:"#f0efef",dur:.12}],
+[7.30,"color","#booking-bg",{prop:"stroke",to:"#4b4f58",dur:.12}],
+[9.00,"fade","#cover-hi",{dur:.19}],
+[9.60,"pop","#four-pill,#badge-1,#badge-2,#badge-3,#badge-4",{from:.9,spring:"fast"}]
+]}
+</script></section>
