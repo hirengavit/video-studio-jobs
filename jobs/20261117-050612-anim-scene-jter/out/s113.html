@@ -68,13 +68,13 @@
    });
    $('#card-1')[0].setAttribute('height',287+13*p);
    $('#card-2')[0].setAttribute('height',287+13*p);
-   $('#g1-divider')[0].setAttribute('d','M161 '+(549+41*p)+'h738');
+   $('#g1-divider')[0].setAttribute('d','M161 '+(549+34*p)+'h738');
    $('#g2-divider')[0].setAttribute('d','M1021 '+(569+21*p)+'h738');
    $('#gold-silver-en')[0].setAttribute('transform','translate('+(-30*p)+' '+(-24*p)+')');
    $('#gold-silver-hi')[0].setAttribute('transform','translate('+(-30*p)+' '+(-36*p)+')');
-   $('#gold-silver-extent')[0].setAttribute('transform','translate(0 '+(18*p)+')');
-   const b=$('#gold-silver-extent')[0].getBBox(), h=$('#extent-highlight')[0];
-   h.setAttribute('x',b.x-3); h.setAttribute('y',b.y-3+18*p); h.setAttribute('width',b.width+6); h.setAttribute('height',b.height+6);
+   $('#gold-silver-extent')[0].setAttribute('transform','translate(0 '+(12*p)+')');
+   const h=$('#extent-highlight')[0];
+   h.setAttribute('x',177); h.setAttribute('y',565+22*p); h.setAttribute('width',381); h.setAttribute('height',66-10*p); h.setAttribute('rx',4);
  },
  on:[
    [.42,'fade','#coins-excluded',{dur:.20}],
