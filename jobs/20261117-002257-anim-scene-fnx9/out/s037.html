@@ -9,7 +9,7 @@
       <rect id="row-max" x="123" y="351" width="1674" height="108" fill="#fde9a6" opacity=".72"/>
       <rect id="row-tol" x="123" y="461" width="1674" height="108" fill="#fde9a6" opacity=".72"/>
       <rect id="row-thick" x="123" y="571" width="1674" height="108" fill="#fde9a6" opacity=".72"/>
-      <rect id="row-paper" x="123" y="681" width="1674" height="106" fill="#fde9a6" opacity=".72"/>
+      <path id="row-paper" d="M123 681H1797V765Q1797 787 1775 787H145Q123 787 123 765Z" fill="#fde9a6" opacity=".72"/>
       <path id="settled-size-underlines" d="M1100 336Q1149 340 1202 335 M1265 336Q1302 340 1340 335 M1274 446Q1327 450 1384 445" fill="none" stroke="#c9962b" stroke-width="6" stroke-linecap="round"/>
       <path id="grid" d="M120 350H1800M120 460H1800M120 570H1800M120 680H1800M1042 240V790" fill="none" stroke="#e3d6ba" stroke-width="3"/>
       <g id="size-row-1" class="size-data">
@@ -37,7 +37,7 @@
       <g id="size-row-5" class="size-data">
         <text x="160" y="728" font-family="Inter, sans-serif" font-size="44" font-weight="780" fill="#2b2622">PAPER</text>
         <text x="160" y="771" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="34" font-weight="630" fill="#6f6a63">कागज़</text>
-        <text x="1100" y="755" font-family="Inter, sans-serif" font-size="56" font-weight="780" fill="#2b2622">≥ 70 GSM</text>
+        <text id="val-paper" x="1100" y="755" font-family="Inter, sans-serif" font-size="56" font-weight="780" fill="#2b2622">≥ 70 GSM</text>
       </g>
     </g>
     <g id="scope">
@@ -78,8 +78,7 @@
         <text id="gsm-hi" x="550" y="630" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="58" font-weight="720" fill="#fff">ग्राम प्रति वर्ग मीटर</text>
       </g>
       <g id="meaning-card">
-        <rect x="980" y="200" width="780" height="740" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
-        <path d="M1040 390H1700" fill="none" stroke="#ead9a8" stroke-width="3"/>
+        <rect id="meaning-panel" x="980" y="200" width="780" height="204" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
         <text id="gsm-full" x="1035" y="347" font-family="Inter, sans-serif" font-size="56" font-weight="770" fill="#2b2622">grams per square metre</text>
       </g>
     </g>
@@ -90,6 +89,7 @@
     on: [
       [1.38,'fade','#row-paper',{dur:.25}],
       [2.52,'pulse','#val-paper',{amount:.085}],
+      [6.68,'fade','#meaning-panel',{dur:.13}],
       [6.72,'type','#gsm-full',{cps:16}],
       [7.38,'fade','#gsm-hi',{dur:.28}]
     ]
