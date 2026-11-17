@@ -1,0 +1,69 @@
+<section class="vs-scene" id="s082" data-in="cut" data-section="PART 3 · PACKING BY CONTENTS" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="new">
+ <rect x="120" y="180" width="1680" height="800" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+ <g id="regulations">
+  <use href="piece:regulations-book" transform="translate(289 236) scale(1.62)"/>
+  <text x="553" y="451" text-anchor="middle" font-size="51" font-weight="830" fill="#2b2622">Post Office</text>
+  <text x="553" y="516" text-anchor="middle" font-size="51" font-weight="830" fill="#2b2622">Regulations</text>
+  <text x="553" y="611" text-anchor="middle" font-size="82" font-weight="850" fill="#9e1b1b">2024</text>
+ </g>
+ <path d="M899 272V888" stroke="#ead9a8" stroke-width="4"/>
+ <text id="current-date" x="1012" y="368" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="65" font-weight="820" fill="#2b2622">16 December 2024 से</text>
+ <g id="regulation-25">
+  <rect x="1012" y="462" width="677" height="157" rx="28" fill="#9e1b1b"/>
+  <text x="1350" y="565" text-anchor="middle" font-size="79" font-weight="830" fill="#fff">Regulation 25</text>
+ </g>
+ <g id="bans">
+  <rect id="bans-chip" x="1012" y="665" width="677" height="145" rx="29" fill="#efedec" stroke="#ded6d2" stroke-width="3"/>
+  <path id="bans-cross" d="m1070 719 37 37m0-37-37 37" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+  <text id="bans-label" x="1140" y="759" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="75" font-weight="830" fill="#4b4f58">मनाहियाँ</text>
+ </g>
+
+ <g id="permission">
+  <rect x="1012" y="720" width="677" height="68" rx="23" fill="#e3f1e8" stroke="#b1cfbd" stroke-width="3"/>
+  <text x="1350" y="770" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="820" fill="#245d3c">लागू अनुमति</text>
+ </g>
+ <g id="old-and-permission">
+   <rect id="caution-band" x="160" y="820" width="1600" height="120" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+   <g id="legacy-book"><use href="piece:old-book-stack" transform="translate(176 800) scale(.37)"/></g>
+   <text id="historical-method" x="333" y="887" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="770" fill="#2b2622">पुराना packing तरीका</text>
+   <g id="no-authority">
+    <text id="not-equivalent" x="804" y="888" font-size="56" font-weight="800" fill="#4b4f58">≠</text>
+    <text id="dangerous-permission" x="874" y="887" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="770" fill="#2b2622">dangerous चीज़ भेजने का अधिकार</text>
+   </g>
+   <path id="not-equivalent-mark" d="M804 906H1579" fill="none" stroke="#4b4f58" stroke-width="4" stroke-linecap="round"/>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ on:[
+  [.42,"pop","#permission",{from:.90,spring:"fast"}],
+  [1.70,"fade","#caution-band",{dur:.18}],
+  [1.84,"fade","#legacy-book",{dur:.25}],
+  [2.30,"type","#historical-method",{cps:25}],
+  [5.04,"fade","#not-equivalent",{dur:.16}],
+  [5.04,"type","#dangerous-permission",{cps:41}],
+  [7.52,"draw","#not-equivalent-mark",{dur:.34}]
+ ],
+ update(t,section,$){
+  // Keep the outgoing scene's full slate chip at the cut; make room before the new chip lands.
+  const u=Math.max(0,Math.min(1,(t-.06)/.35));
+  const p=u*u*(3-2*u);
+  const chip=$('#bans-chip')[0], label=$('#bans-label')[0], cross=$('#bans-cross')[0];
+  chip.setAttribute('y',665-37*p);
+  chip.setAttribute('height',145-77*p);
+  chip.setAttribute('rx',29-6*p);
+  label.setAttribute('y',759-82*p);
+  label.setAttribute('font-size',75-27*p);
+  cross.setAttribute('transform','translate(1088.5 '+(737.5-75.5*p)+') scale('+(1-.36*p)+') translate(-1088.5 -737.5)');
+  if(t>=7.52){
+    const b=$('#dangerous-permission')[0].getBBox();
+    if(b.width>0) $('#not-equivalent-mark')[0].setAttribute('d','M804 906H'+(b.x+b.width));
+  }
+ }
+})
+</script>
+</section>
