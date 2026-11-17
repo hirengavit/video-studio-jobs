@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s189" data-in="cut" data-section="PART 7 · BOXES, TIMING &amp; BOOKING" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="airmail-shot">
+  <g id="old-guide">
+    <rect x="152" y="181" width="414" height="111" rx="26" fill="#eeeae3" stroke="#d9d1c4" stroke-width="3"/>
+    <use href="piece:old-book-stack" transform="translate(170 167) scale(.34)"/>
+    <text x="320" y="250" class="hi" font-size="46" font-weight="790" fill="#4b4f58">पुराना Guide</text>
+  </g>
+  <g id="mail-post-office">
+    <use id="mail-counter" href="piece:post-counter-icon" transform="translate(1140 325) scale(1.55)"/>
+    <text x="1450" y="917" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="805" fill="#2b2622">Post Office / Mail office</text>
+  </g>
+  <text id="high-value" x="760" y="381" text-anchor="middle" class="hi" font-size="48" font-weight="795" fill="#8a5d00">ऊँची value stamps</text>
+  <g id="forward-envelope">
+  <g id="airmail-envelope">
+    <use id="airmail-envelope-piece" href="piece:envelope-article" transform="translate(306 151) scale(2.27)"/>
+    <g id="high-value-stamps">
+      <g id="air-stamp-1"><use href="piece:postage-stamp" transform="translate(770 414) scale(.32)"/></g>
+      <g id="air-stamp-2"><use href="piece:postage-stamp" transform="translate(842 414) scale(.32)"/></g>
+      <g id="air-stamp-3"><use href="piece:postage-stamp" transform="translate(914 414) scale(.32)"/></g>
+    </g>
+    <text id="airmail-label" x="529" y="491" font-family="Inter,sans-serif" font-size="45" font-weight="835" fill="#9e1b1b">AIRMAIL</text>
+    <g id="date-impression"><use href="piece:postal-date-stamp" transform="translate(728 402) scale(.42)"/></g>
+    <g id="cancel-waves" fill="none" stroke="#2b2622" stroke-width="5" opacity=".88" stroke-linecap="round">
+      <path d="M799 438q16-12 32 0t32 0 32 0 32 0 32 0 32 0"/>
+      <path d="M799 455q16-12 32 0t32 0 32 0 32 0 32 0 32 0"/>
+      <path d="M799 472q16-12 32 0t32 0 32 0 32 0 32 0 32 0"/>
+    </g>
+  </g>
+  </g>
+  <g id="bringer">
+    <rect x="1260" y="190" width="475" height="63" rx="27" fill="#fde9a6"/>
+    <text x="1497.5" y="235" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="790" fill="#704b00">लाने वाले के सामने ही</text>
+  </g>
+  <g id="deface-term">
+    <rect x="1280" y="268" width="435" height="123" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="1498" y="325" text-anchor="middle" font-family="Inter,sans-serif" font-size="61" font-weight="850" fill="#9e1b1b">DEFACE</text>
+    <text x="1498" y="373" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="39" font-weight="750" fill="#2b2622">निशान लगाकर रद्द</text>
+  </g>
+  <path id="forward-arrow" d="M1169 981H1536m-29-19 29 19-29 19" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="forward-label" x="1570" y="996" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="800" fill="#23633e">आगे भेजा</text>
+</g>
+</svg>
+<script type="text/scene">
+({
+ update(t,section,$){
+   for(const flap of $('[id$="-airmail-envelope-piece"] [id$="-paper"] path')) flap.setAttribute('opacity','0');
+ },
+ on:[
+   [.84,'move','#airmail-envelope',{by:[520,40],spring:'soft'}],
+   [3.42,'pulse','#high-value-stamps',{amount:.08}],
+   [4.54,'fade','#bringer',{dur:.24}],
+   [5.92,'stamp','#date-impression',{from:1.22,rot:-8,spring:'fast'}],
+   [5.92,'draw','#cancel-waves',{dur:.33}],
+   [6.42,'fade','#deface-term',{dur:.24}],
+   [9.18,'draw','#forward-arrow',{dur:.36}],
+   [9.18,'fade','#forward-label',{dur:.23}],
+   [9.18,'move','#forward-envelope',{by:[260,0],spring:'soft'}]
+ ]
+})
+</script>
+</section>
