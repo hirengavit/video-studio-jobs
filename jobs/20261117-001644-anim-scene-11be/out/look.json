@@ -10,22 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s018",
-   "message": "highlight: \"जगह\" isn't in that <text> (it says \"\")",
-   "t": 0.3
-  },
-  {
    "kind": "text-overlap",
    "scene": "s018",
    "text": "खुला नुकीला किनारा / Staff · चोट",
    "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s018",
-   "text": "Postal labels / Official marks · सरकारी निशान",
-   "t": 5.57
   }
  ]
 }
