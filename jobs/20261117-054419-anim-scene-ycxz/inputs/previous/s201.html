@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s201" data-in="cut" data-section="PART 7 · BOXES, TIMING &amp; BOOKING" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="comparison">
+      <g id="before-accept">
+        <rect x="160" y="216" width="740" height="705" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M194 216H866q34 0 34 34v105H160V250q0-34 34-34Z" fill="#9e1b1b"/>
+        <text x="530" y="302" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="820" fill="#fff">Accept से पहले cancel</text>
+        <g id="accepted-envelope">
+          <circle cx="530" cy="610" r="181" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+          <use href="piece:envelope-article" transform="translate(290 367) scale(1.2)"/>
+          <path d="M594 507v210" stroke="#9e1b1b" stroke-width="9" stroke-linecap="round"/>
+          <path d="M574 510h41m-41 204h41" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+        </g>
+      </g>
+      <g id="in-transmission">
+        <rect x="1020" y="216" width="740" height="705" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M1054 216H1726q34 0 34 34v105H1020V250q0-34 34-34Z" fill="#9e1b1b"/>
+        <text x="1390" y="301" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="820" fill="#fff">Transmission में गया article</text>
+        <text x="1390" y="441" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="760" fill="#6f6a63">रास्ते में</text>
+        <g id="route-icon">
+          <path d="M1104 641q98-96 213-67m136 0q111-27 222 67" fill="none" stroke="#b9a784" stroke-width="7" stroke-dasharray="9 15" stroke-linecap="round"/>
+          <circle cx="1104" cy="641" r="14" fill="#9e1b1b"/><circle cx="1675" cy="641" r="14" fill="#9e1b1b"/>
+          <use href="piece:envelope-article" transform="translate(1210 407) scale(.9)"/>
+        </g>
+        <g id="recall">
+          <rect x="1132" y="753" width="516" height="89" rx="44" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+          <text x="1390" y="811" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="53" font-weight="790" fill="#2b2622">वापस मँगाना</text>
+        </g>
+      </g>
+    </g>
+    <g id="not-equal">
+      <circle cx="960" cy="570" r="49" fill="#4b4f58" stroke="#fbf7ee" stroke-width="5"/>
+      <text x="960" y="593" text-anchor="middle" font-family="Inter,sans-serif" font-size="73" font-weight="850" fill="#fff">≠</text>
+    </g>
+    <g id="not-the-same">
+      <rect x="880" y="633" width="160" height="54" rx="25" fill="#fbf7ee" stroke="#dad6cd" stroke-width="2"/>
+      <text x="960" y="671" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="34" font-weight="800" fill="#4b4f58">जैसा नहीं</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on:[
+      [.94,'stamp','#not-equal',{from:1.13,rot:-4,spring:'soft'}],
+      [.94,'fade','#not-the-same',{dur:.24}]
+    ]
+  }
+  </script>
+</section>
