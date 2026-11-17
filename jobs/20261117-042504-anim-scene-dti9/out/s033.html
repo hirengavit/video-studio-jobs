@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s033" data-section="PART 2 · LETTER ENVELOPE" data-series="PACKING &amp; POSTING" data-in="cut">
+  <svg viewBox="0 0 1920 1080" aria-label="An envelope bends into a U, followed by the five envelope size standards">
+    <g id="bend">
+      <g fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="260" y="410" width="600" height="300" rx="20" fill="#ffffff"/>
+        <path d="M265 420L544 585Q560 594 576 585L855 420" fill="#f3ead6"/>
+        <path d="M267 700L471 548M853 700L649 548" stroke="#a48f6e" stroke-width="4"/>
+        <path id="bend-arrow" d="M914 562Q963 501 1023 552m-34-2 34 2-6-32" stroke="#4b4f58" stroke-width="5"/>
+        <path id="u-env" d="M1079 418L1220 381L1250 520Q1281 664 1360 667Q1439 664 1470 520L1500 381L1641 418L1604 576Q1552 809 1360 817Q1168 809 1116 576Z" fill="#fff"/>
+        <path id="u-fold" d="M1151 399L1184 549Q1224 733 1360 742Q1496 733 1536 549L1569 399" stroke="#a48f6e" stroke-width="5"/>
+      </g>
+      <text id="flex" x="560" y="816" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="56" font-weight="760" fill="#2b2622">लचीला</text>
+      <text id="u-label" x="1360" y="886" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="830" fill="#2b2622">U SHAPE</text>
+      <text id="u-hi" x="1360" y="953" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="50" font-weight="650" fill="#4b4f58">मुड़ जाए</text>
+    </g>
+    <g id="table">
+      <rect x="120" y="170" width="1680" height="620" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M145 170H1775Q1800 170 1800 195V234H120V195Q120 170 145 170Z" fill="#9e1b1b"/>
+      <text x="160" y="215" font-size="42" font-weight="780" fill="#fff"><tspan font-family="Inter, sans-serif">ENVELOPE SIZE</tspan><tspan font-family="Noto Sans Devanagari, Inter, sans-serif"> · लिफ़ाफ़े के नाप</tspan></text>
+      <path id="grid" d="M120 345.2H1800M120 456.4H1800M120 567.6H1800M120 678.8H1800M1042 234V790" fill="none" stroke="#e3d6ba" stroke-width="3"/>
+      <g id="size-row-1" class="size-data">
+        <text x="160" y="280" font-family="Inter, sans-serif" font-size="40" font-weight="780" fill="#2b2622">MINIMUM</text>
+        <text x="160" y="330" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="630" fill="#6f6a63">कम से कम</text>
+        <text x="1100" y="309" font-family="Inter, sans-serif" font-size="56" font-weight="780" fill="#2b2622">140 × 90 mm</text>
+      </g>
+      <g id="size-row-2" class="size-data">
+        <text x="160" y="391.2" font-family="Inter, sans-serif" font-size="40" font-weight="780" fill="#2b2622">MAXIMUM</text>
+        <text x="160" y="441.2" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="630" fill="#6f6a63">अधिकतम</text>
+        <text x="1100" y="420.2" font-family="Inter, sans-serif" font-size="56" font-weight="780" fill="#2b2622">458 × 324 mm</text>
+      </g>
+      <g id="size-row-3" class="size-data">
+        <text x="160" y="502.4" font-family="Inter, sans-serif" font-size="40" font-weight="780" fill="#2b2622">TOLERANCE</text>
+        <text x="160" y="552.4" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="630" fill="#6f6a63">छूट</text>
+        <text x="1100" y="531.4" font-family="Inter, sans-serif" font-size="56" font-weight="780" fill="#2b2622">± 2 mm</text>
+      </g>
+      <g id="size-row-4" class="size-data">
+        <text x="160" y="613.6" font-family="Inter, sans-serif" font-size="40" font-weight="780" fill="#2b2622">THICKNESS</text>
+        <text x="160" y="663.6" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="630" fill="#6f6a63">मोटाई</text>
+        <text x="1100" y="642.6" font-family="Inter, sans-serif" font-size="56" font-weight="780" fill="#2b2622">0.15 – 0.5 mm</text>
+      </g>
+      <g id="size-row-5" class="size-data">
+        <text x="160" y="724.8" font-family="Inter, sans-serif" font-size="40" font-weight="780" fill="#2b2622">PAPER</text>
+        <text x="160" y="774.8" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="630" fill="#6f6a63">कागज़</text>
+        <text x="1100" y="753.8" font-family="Inter, sans-serif" font-size="56" font-weight="780" fill="#2b2622">≥ 70 GSM</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    shots:[[0,'#bend'],[4.57,'#table']],
+    on:[
+      [1.64,'fade','#flex',{dur:.28}],
+      [2.67,'draw','#u-env',{dur:.8}],
+      [2.67,'draw','#bend-arrow',{dur:.62}],
+      [2.91,'type','#u-label',{cps:19}],
+      [3.14,'draw','#u-fold',{dur:.38}],
+      [3.50,'fade','#u-hi',{dur:.25}],
+      [5.97,'draw','#grid',{dur:.53}],
+      [6.00,'fade','#size-row-1, #size-row-2, #size-row-3, #size-row-4, #size-row-5',{dur:.28,stagger:.15}]
+    ]
+  })
+  </script>
+</section>
