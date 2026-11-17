@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s184" data-in="cut" data-section="PART 7 · BOXES, TIMING &amp; BOOKING" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="old-rule-shot">
+ <g id="old-guide-book" class="closed-guide">
+  <style>.closed-guide [id$="open-book"] { display: none; }</style>
+  <use href="piece:old-book-stack" transform="translate(198.12 494.52) scale(1.03)"/>
+  <text x="400" y="875" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="810" fill="#4b4f58">Post Office Guide Part I</text>
+ </g>
+ <g id="old-rule-card">
+  <rect id="old-rule-back" x="800" y="212" width="1000" height="730" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M842 252h916" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+  <text x="852" y="364" class="hi" font-size="52" font-weight="830" fill="#9e1b1b">पुराना नियम · छोटे में</text>
+  <path d="M845 404H1755" stroke="#ead9a8" stroke-width="3"/>
+  <g id="guide-registration">
+    <rect x="844" y="434" width="440" height="120" rx="23" fill="#f3ead6"/>
+    <text x="1064" y="485" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="810" fill="#2b2622">Registration</text>
+    <text x="1064" y="532" text-anchor="middle" class="hi" font-size="34" font-weight="710" fill="#6f6a63">पंजीकरण</text>
+  </g>
+  <g id="guide-insurance">
+    <rect x="1317" y="434" width="440" height="120" rx="23" fill="#f3ead6"/>
+    <text x="1537" y="485" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="810" fill="#2b2622">Insurance</text>
+    <text x="1537" y="532" text-anchor="middle" class="hi" font-size="34" font-weight="710" fill="#6f6a63">बीमा</text>
+  </g>
+  <g id="guide-value-payable">
+    <rect x="844" y="568" width="440" height="120" rx="23" fill="#f3ead6"/>
+    <text x="1064" y="619" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="810" fill="#2b2622">Value-payable</text>
+    <text x="1064" y="666" text-anchor="middle" class="hi" font-size="34" font-weight="710" fill="#6f6a63">वी.पी.</text>
+  </g>
+  <g id="guide-certificate">
+    <rect x="1317" y="568" width="440" height="120" rx="23" fill="#f3ead6"/>
+    <text x="1537" y="602" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="810" fill="#2b2622">Certificate</text>
+    <text x="1537" y="639" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="810" fill="#2b2622">of posting</text>
+    <text x="1537" y="675" text-anchor="middle" class="hi" font-size="34" font-weight="710" fill="#6f6a63">पोस्टिंग प्रमाणपत्र</text>
+  </g>
+  <text id="specific-mail" x="868" y="735" class="hi" font-size="40" font-weight="760" fill="#2b2622">किसी खास mail से जाना हो</text>
+  <g id="rule30">
+    <rect x="820" y="760" width="960" height="200" rx="22" fill="#fde9a6" stroke="#d6a647" stroke-width="3"/>
+    <text x="851" y="810" class="hi" font-size="38" font-weight="780" fill="#553700">mail बंद होने से</text>
+    <g id="minimum-before" font-size="38" font-weight="780" fill="#553700"><text x="851" y="917" class="hi">कम से कम</text><text x="1738" y="917" class="hi" text-anchor="end">पहले</text></g>
+    <text id="minutes30" x="1355" y="923" text-anchor="middle" font-size="96" font-weight="870" fill="#8a5d00">30 minutes</text>
+  </g>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+  update(t, section, $) {
+    const u=Math.max(0,Math.min(1,(t-6.95)/.35)), e=u*u*(3-2*u);
+    $('#old-rule-back')[0]?.setAttribute('height',730+42*e);
+  },
+  camera: [[0,{zoom:1}],[9.76,{zoom:1}],[10.31,{on:'#rule30',zoom:1.06,x:-280,y:-304},'inOut'],[10.72,{on:'#rule30',zoom:1.06,x:-280,y:-304}],[11.08,{zoom:1},'inOut']],
+  on:[
+    [0,'pop','#guide-value-payable',{from:.94,spring:'fast'}],
+    [.86,'pop','#guide-certificate',{from:.94,spring:'fast'}],
+    [4.22,'fade','#specific-mail',{dur:.26}],
+    [7.28,'pop','#rule30',{from:.94,spring:'fast'}],
+    [9.76,'count','#minutes30',{from:0,to:30,dur:.46,suffix:' minutes'}],
+    [10.72,'fade','#minimum-before',{dur:.20}]
+  ]
+})
+</script>
+</section>
