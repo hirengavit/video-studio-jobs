@@ -1,0 +1,84 @@
+# Storyboard: Packing, sealing and posting (Postal Exams, Hindi)
+
+## Shared
+
+Series tag: PACKING & POSTING (top-right pill, the whole video). Section labels are given per scene (English caps, top left).
+No character and no sets: every scene is a lecture-deck screen on the cream canvas, using x 80–1840, y 150–1000 below the app's header. All pieces use kit colours with 3 px rounded ink outlines.
+
+Library pieces reused:
+- `parcel-with-tag`: brown-paper parcel with string and blank tag. Anchors base, top.
+- `envelope-article`: white envelope, red stripe, address rules. Anchors base, top.
+- `icon-envelope-letter`: small envelope icon. Anchors base, grip.
+- `registration-envelope`, `postcard-blank`: letter items for the letter-box scenes. Anchor base.
+- `postal-date-stamp`, `franking-impression`: impressions on covers. Anchor base.
+- `licence-certificate`: franking licence. Anchors base, top.
+- `post-counter-icon`: the post office counter (window). Anchors top, base.
+- `post-office-front`: a post office. Anchors base, top.
+- `old-book-stack`: always stands for the old Post Office Guide (grey). Anchors base, top.
+- `signature-slip`, `newspaper-bundle`, `icon-pin-tag`: delivery signature, registered newspaper, PIN.
+
+New pieces (made once for the library):
+- `regulations-book`: closed red hard-cover book, blank white title panel (scene letters "Post Office Regulations 2024"), 300×400. Anchors base, top. Always stands for today's rules.
+- `postage-stamp`: one perforated stamp, red frame, blank cream centre, 120×150. Anchor base.
+- `window-envelope`: white DL envelope 600×300 with a transparent window (address block + barcode) and dashed logo / postage / barcode zones; parts #paper #window #address-block #barcode #logo-zone #postage-zone #barcode-zone. Anchors base, top.
+- `wax-seal`: red sealing-wax blob with a blank device ring, 120×120. Anchor base.
+- `glass-bottle`: capped glass bottle, pale blue #liquid, 140×300. Anchors base, top, grip.
+- `protective-box`: cut-away box with a central cavity and sawdust-dot filling; parts #outer #filling #cavity, 420×360. Anchors base, mouth.
+- `airtight-tin` (220×240), `wooden-case` (360×240), `ceramic-cup` (180×160), `straight-pin` (200×30): small ink objects. Anchors base (+ top).
+- `letter-box-icon`: flat red pillar letter box with slot, blank plate, 220×420. Anchors base, mouth.
+- `booking-receipt` (260×380), `clock-face` (260×260, parts #hour-hand #minute-hand), `phone-app` (200×380), `booking-kiosk` (240×460). Anchor base.
+
+Photos: `india-post-letter-box-cutout` (s142) and `franking-machine-photo-cutout` (s157) from the library; new `wax-seal-letter` (s085; if it isn't found the scene uses the drawn `wax-seal`). Cut-outs get a white border, a 1–2° tilt and a small credit.
+
+## Continuity
+
+- No character, so there are no positions to carry. Scenes marked `Continues: sNNN` keep the previous scene's card exactly (same positions, same items) and cut; they only add items or move highlights.
+- Each part opens on its chapter-title stamp (s008, s029, s054, s083, s125, s142, s177, s202) with a wipe or fade; recaps (s050, s121, s171, s211) fade in; other fresh cards cut or fade.
+- The fixed header (section label, series tag) never moves; it changes only at section boundaries.
+- Colour meanings stay fixed: yellow = highlight/changed, green = allowed/correct, slate + strike = forbidden/wrong, red = brand cards only.
+- Old vs new is always the grey `old-book-stack` (old Guide) against the red `regulations-book` (today's Regulations).
+
+## s077
+Continues: s076
+Section label: PART 3 · PACKING BY CONTENTS
+Idea: corrosives = eating substances; a strong box doesn't lift the ban; tell two things apart. In: cut. Framing: wide; still.
+Layout: shot #box (2.62): `wooden-case` scale 1.6 centred base y 820, slate stamp "मनाही ✗ खत्म नहीं" over it. Shot #two (6.46): compare-cards, two empty white cards, header y 230 "फ़र्क़".
+| time | camera | character pose / face | actions |
+|---|---|---|---|
+| 0.00 | still | — | carry-over |
+| 0.86 | — | — | `fade` "गलाने वाले पदार्थ" under Corrosives |
+| 2.62 | — | — | shots [[0,'#dg'],[2.62,'#box'],[6.46,'#two']]; `draw` case; `type` "मज़बूत box" y 240 |
+| 5.16 | — | — | `stamp` slate "मनाही खत्म नहीं" |
+| 7.30 | — | — | `type` "दो बातें · फ़र्क़" |
+
+## s078
+Continues: s077
+Section label: PART 3 · PACKING BY CONTENTS
+Idea: banned by air only vs banned from post entirely; then old vs new, osmic acid. In: cut. Framing: wide; still.
+Layout: left card: drawn ink plane, slate cross; right card: `letter-box-icon` slate cross. Shot #on (7.94): `old-book-stack` x 560, `regulations-book` x 1360 ("Post Office Regulations 2024"). Shot #os (9.70): diagram card x 120–1800 y 180–980, tag top-left.
+| time | camera | character pose / face | actions |
+|---|---|---|---|
+| 0.00 | still | — | carry-over cards |
+| 0.92 | — | — | `draw` plane; `type` "सिर्फ़ हवाई रास्ते से मना" |
+| 2.40 | — | — | `draw` slate cross on plane |
+| 4.68 | — | — | `draw` letter box; `type` "डाक से पूरी तरह मना" |
+| 6.92 | — | — | `draw` slate cross |
+| 7.94 | — | — | shots [..,[7.94,'#on'],[9.70,'#os']]; `fade` books; "पुराना" 8.12, "नया" 9.12 |
+| 10.54 | — | — | `stamp` tag "पुराना Guide" |
+| 11.34 | — | — | `type` "Osmic acid" ; `fade` "खास packing" 12.14 |
+
+## s079
+Continues: s078
+Section label: PART 3 · PACKING BY CONTENTS
+Idea: osmic acid: airtight glass capsule inside a sand-filled tin, at least 4.3 cm of sand all round. In: cut. Framing: wide; still.
+Layout: labelled cut-away (drawn) at right x 1000–1760 y 240–960: outer wooden box (s080), inside it a cut-away tin, sand dots, small glass capsule centred. Labels left x 160–900 with leader lines, rows y 380/520/660/800.
+| time | camera | character pose / face | actions |
+|---|---|---|---|
+| 0.00 | still | — | carry-over card + tag |
+| 0.50 | — | — | `draw` capsule |
+| 1.70 | — | — | `type` "Airtight glass capsule"; `fade` "काँच का airtight capsule" |
+| 2.62 | — | — | `draw` tin cut-away round the capsule |
+| 3.22 | — | — | `draw` sand dots inside tin (dur 0.9) |
+| 4.42 | — | — | `type` "Tin case + रेत" |
+| 7.94 | — | — | `draw` dimension arrow capsule→tin; `type` "≥ 4.3 cm रेत" |
+
