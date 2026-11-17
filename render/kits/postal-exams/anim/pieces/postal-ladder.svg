@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 820" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="rail"><rect x="50" y="40" width="24" height="740" rx="12" fill="#9e1b1b" stroke="none"/></g>
+<g id="rung-1"><path d="M74 750H150" stroke="#9e1b1b" stroke-width="6"/><rect x="150" y="690" width="1300" height="120" rx="16" fill="#ffffff" stroke="#ead9a8"/><rect id="officer-slot-1" x="1070" y="712" width="350" height="76" rx="38" fill="#f3ead6" stroke="#ead9a8"/></g>
+<g id="rung-2"><path d="M74 590H150" stroke="#9e1b1b" stroke-width="6"/><rect x="150" y="530" width="1300" height="120" rx="16" fill="#ffffff" stroke="#ead9a8"/><rect id="officer-slot-2" x="1070" y="552" width="350" height="76" rx="38" fill="#f3ead6" stroke="#ead9a8"/></g>
+<g id="rung-3"><path d="M74 430H150" stroke="#9e1b1b" stroke-width="6"/><rect x="150" y="370" width="1300" height="120" rx="16" fill="#ffffff" stroke="#ead9a8"/><rect id="officer-slot-3" x="1070" y="392" width="350" height="76" rx="38" fill="#f3ead6" stroke="#ead9a8"/></g>
+<g id="rung-4"><path d="M74 270H150" stroke="#9e1b1b" stroke-width="6"/><rect x="150" y="210" width="1300" height="120" rx="16" fill="#ffffff" stroke="#ead9a8"/><rect id="officer-slot-4" x="1070" y="232" width="350" height="76" rx="38" fill="#f3ead6" stroke="#ead9a8"/></g>
+<g id="rung-5"><path d="M74 110H150" stroke="#9e1b1b" stroke-width="6"/><rect x="150" y="50" width="1300" height="120" rx="16" fill="#9e1b1b" stroke="#9e1b1b"/><rect id="officer-slot-5" x="1070" y="72" width="350" height="76" rx="38" fill="#7d1414" stroke="#b8403a"/></g>
+
+<circle data-anchor="base" cx="800" cy="810" r="0"/>
+<circle data-anchor="top" cx="800" cy="50" r="0"/>
+</svg>
