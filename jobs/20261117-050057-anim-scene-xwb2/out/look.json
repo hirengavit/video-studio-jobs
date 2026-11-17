@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.16",
+  "4.33",
+  "6.49",
+  "8.66",
+  "10.67"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s099",
+   "message": "move: option \"dur\" isn't used (it takes: by, spring)",
+   "t": 0.3
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s099",
+   "text": "हर जोड़, ढीले flap, डोरी के सिरे",
+   "t": 0.3
+  }
+ ]
+}
