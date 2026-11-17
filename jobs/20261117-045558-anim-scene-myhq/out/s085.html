@@ -20,17 +20,23 @@
       <text id="held-together" x="510" y="876" text-anchor="middle" class="hi" font-size="57" font-weight="810" fill="#2b2622">article एक साथ रहे</text>
     <text id="insurance" x="1410" y="369" text-anchor="middle" font-size="58" font-weight="810" fill="#2b2622">Insurance seal</text>
 <text id="insurance-hi" x="1410" y="492" text-anchor="middle" class="hi" font-size="47" font-weight="700" fill="#6f6a63">बीमा मुहर</text>
-<g id="advance"><rect x="844" y="635" width="232" height="62" rx="31" fill="#fde9a6" stroke="#ead9a8" stroke-width="3"/><text x="960" y="677" text-anchor="middle" class="hi" font-size="38" font-weight="810" fill="#4b3200">इससे आगे →</text></g>
-<g id="evidence"><text x="1382" y="592" text-anchor="end" class="hi" font-size="49" font-weight="770" fill="#2b2622">छेड़छाड़ का</text>
-<text x="1407" y="592" class="hi" font-size="49" font-weight="770" fill="#2b2622">दिखने वाला</text>
-<rect id="proof-highlight" x="1318" y="615" width="184" height="65" rx="29" fill="#fde9a6"/>
-<text x="1410" y="663" text-anchor="middle" class="hi" font-size="53" font-weight="810" fill="#2b2622">सबूत</text></g>
+<g id="advance">
+  <rect x="905" y="628" width="110" height="144" rx="34" fill="#fde9a6" stroke="#ead9a8" stroke-width="3"/>
+  <text x="960" y="670" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="38" font-weight="810" fill="#4b3200">इससे</text>
+  <text x="960" y="712" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="38" font-weight="810" fill="#4b3200">आगे</text>
+  <path d="M940 742h40m-12-10 12 10-12 10" fill="none" stroke="#4b3200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="evidence">
+  <text x="1410" y="587" text-anchor="middle" class="hi" font-size="44" font-weight="770" fill="#2b2622">छेड़छाड़ का</text>
+  <rect id="proof-highlight" x="1249" y="613" width="322" height="63" rx="29" fill="#fde9a6"/>
+  <text x="1410" y="658" text-anchor="middle" class="hi" font-size="44" font-weight="810" fill="#2b2622">दिखने वाला सबूत</text>
+</g>
 <g id="sealed-envelope">
-<rect x="1192" y="709" width="436" height="183" rx="17" fill="#fff9ed" stroke="#2b2622" stroke-width="6"/>
-<path d="M1197 886L1330 784M1623 886L1490 784" fill="none" stroke="#d7c7a5" stroke-width="4"/>
-<path d="M1198 715L1381 809Q1410 834 1439 809L1622 715Z" fill="#f3ead6" stroke="#8a5d00" stroke-width="4" stroke-linejoin="round"/>
-<use id="visible-seal" href="piece:wax-seal" transform="translate(1374 785) scale(.60)"/>
-<path id="crack" d="M1400 796l8 15-6 7 15 10-4 14" fill="none" stroke="#fff4d5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <use id="cover-paper" href="piece:envelope-article" transform="translate(1270 700.5) scale(.7)"/>
+  <path d="M1322 786L1398 836q12 8 24 0l76-50Z" fill="#f3ead6" stroke="#8a5d00" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M1321 895l56-47m122 47-56-47" fill="none" stroke="#d7c7a5" stroke-width="3"/>
+  <use id="visible-seal" href="piece:wax-seal" transform="translate(1362 775) scale(.8)"/>
+  <path id="crack" d="M1395 790l13 15-6 12 16 12-10 14 11 14" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <text id="cannot-open" x="1410" y="927" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="780" fill="#2b2622">खोला ही न जा सके</text>
 </g>
@@ -77,6 +83,9 @@
 </svg>
 <script type="text/scene">
 {
+update(t,section,$){
+  for(const part of $('#cover-paper [id$="-postal-stripe"], #cover-paper [id$="-address-lines"]')) part.setAttribute('opacity','0');
+},
 shots:[[0,'#purposes'],[1.90,'#wax-term-shot'],[4.60,'#advice-shot']],
 on:[
 [0,'type','#cannot-open',{cps:14}],
