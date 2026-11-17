@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s001" data-in="fade" data-in-dur="0.3" data-section="INTRODUCTION" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g fill="#2b2622" font-size="96" font-weight="780">
+      <text id="packing" x="140" y="327">Packing,</text>
+      <text id="sealing" x="575" y="327">Sealing</text>
+      <text x="140" y="444">&amp;</text>
+      <text id="posting" x="247" y="444">Posting</text>
+    </g>
+    <text x="140" y="531" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="690" fill="#9e1b1b">पैकिंग, सीलिंग और पोस्टिंग</text>
+    <g id="inland-pill">
+      <rect x="140" y="584" width="414" height="81" rx="40.5" fill="#9e1b1b"/>
+      <text x="347" y="641" text-anchor="middle" font-size="48" font-weight="760" fill="#fff">INLAND MAIL</text>
+    </g>
+    <text id="inland-hi" x="140" y="724" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="590" fill="#6f6a63">अंतर्देशीय डाक</text>
+    <g id="dated-stamp">
+      <g transform="translate(480 840) scale(1.8)">
+        <use href="piece:postal-date-stamp" transform="translate(-69 -69) scale(.46)"/>
+      </g>
+      <rect x="375" y="818" width="210" height="44" rx="8" fill="#fbf7ee"/>
+      <text x="480" y="852" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="820" fill="#2b2622">16 DEC 2024</text>
+    </g>
+    <text id="date-hi" x="631" y="860" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="680" fill="#2b2622">16 दिसंबर 2024 से</text>
+    <g id="ground">
+      <path d="M1160 900H1860" stroke="#6f6a63" stroke-width="3" stroke-linecap="round"/>
+      <circle data-anchor="top" cx="1510" cy="900" r="0"/>
+    </g>
+    <g id="right-objects" transform="translate(1500 900) scale(1.2) translate(-1500 -900)">
+      <g id="parcel">
+        <circle data-anchor="base" cx="1333.333" cy="900" r="0"/>
+        <use href="piece:parcel-with-tag" transform="translate(1198.933 720.16) scale(.64)"/>
+      </g>
+      <g id="wax-seal">
+        <circle data-anchor="base" cx="1516.667" cy="900" r="0"/>
+        <use href="piece:wax-seal" transform="translate(1447.667 770.625) scale(1.15)"/>
+      </g>
+      <g id="letter-box"><use href="piece:letter-box-icon" transform="translate(1573.333 498)"/></g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {on:[
+    [0,"place","#parcel",{on:"#ground"}],
+    [0,"place","#wax-seal",{on:"#ground"}],
+    [0.96,"highlight","#packing",{color:"#f2b705",opacity:.43,dur:.26,pad:6}],
+    [0.96,"pop","#parcel",{from:.88,spring:"soft"}],
+    [1.82,"highlight","#sealing",{color:"#f2b705",opacity:.43,dur:.26,pad:6}],
+    [1.82,"pop","#wax-seal",{from:.84,spring:"soft"}],
+    [2.82,"highlight","#posting",{color:"#f2b705",opacity:.43,dur:.26,pad:6}],
+    [2.82,"slide","#letter-box",{from:"down",dist:80,spring:"soft"}],
+    [4.08,"pop","#inland-pill",{from:.93,spring:"soft"}],
+    [4.68,"fade","#inland-hi",{dur:.22}],
+    [6.24,"stamp","#dated-stamp",{from:1.11,rot:-7,spring:"soft"}],
+    [6.74,"fade","#date-hi",{dur:.22}]
+  ]}
+  </script>
+</section>
