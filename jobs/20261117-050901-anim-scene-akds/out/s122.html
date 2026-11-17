@@ -33,14 +33,14 @@
 [5.68,"type","#r2",{cps:19}],
 [9,"fade","#loss-pill",{dur:.24}],
 [10.14,"pop","#tick-two",{from:.85,spring:"fast"}]
-],update(t, section) {
+],update(t, section, $) {
   // Begin with the shipped s121 geometry, then make room in the recap rows.
   const u = Math.min(1, Math.max(0, (t - .08) / .34));
   const mix = u * u * (3 - 2 * u);
   for (let i = 1; i <= 4; i++) {
-    section.querySelector('#row-' + i + ' rect').setAttribute('height', 116 + 12 * mix);
+    $('#row-' + i)[0]?.querySelector('rect').setAttribute('height', 116 + 12 * mix);
   }
-  section.querySelector('#r1-hi').setAttribute('font-size', 39 - 5 * mix);
+  $('#r1-hi')[0]?.setAttribute('font-size', 39 - 5 * mix);
 }}
 </script>
 </section>
