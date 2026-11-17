@@ -1,0 +1,73 @@
+<section class="vs-scene" id="s191" data-in="cut" data-section="PART 7 · BOXES, TIMING &amp; BOOKING" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="booking">
+      <text class="hi" x="960" y="221" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="70" font-weight="800" fill="#2b2622">India Post Parcel · booking पूरी करना</text>
+      <path d="M175 264H1745" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <g id="window">
+        <use href="piece:post-counter-icon" transform="translate(1200 465) scale(1.25)"/>
+        <g>
+          <rect x="1175" y="338" width="550" height="86" rx="43" fill="#f3ead6"/>
+          <text class="hi" x="1450" y="395" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="53" font-weight="760" fill="#2b2622">Window · खिड़की</text>
+        </g>
+      </g>
+      <g id="parcel">
+        <g id="parcel-stock"><use href="piece:parcel-with-tag" transform="translate(475 430) scale(1.6)"/></g>
+        <path d="M856 708Q824 672 793 687" fill="none" stroke="#f3ead6" stroke-width="7" stroke-linecap="round"/>
+        <g id="parcel-tag" transform="translate(821 699) rotate(9)">
+          <path d="M0 24L34 0H405Q416 0 416 11V81Q416 92 405 92H34L0 68Z" fill="#fff" stroke="#2b2622" stroke-width="3"/>
+          <circle cx="27" cy="46" r="5" fill="#e8d0a3" stroke="#8f744f" stroke-width="2"/>
+          <text id="parcel-mark" x="221" y="61" text-anchor="middle" font-family="Inter,sans-serif" font-size="34" font-weight="850" fill="#9e1b1b">INDIA POST PARCEL</text>
+        </g>
+      </g>
+      <text id="sender-choice" class="hi" x="383" y="971" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="740" fill="#6f6a63">sender की पसंद</text>
+      <g id="additions">
+        <rect x="620" y="914" width="775" height="84" rx="41" fill="#fde9a6"/>
+        <text class="hi" x="1007.5" y="969" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="780" fill="#2b2622">Value additions · अतिरिक्त सेवाएँ</text>
+        <rect x="1420" y="914" width="100" height="84" rx="39" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <rect x="1540" y="914" width="100" height="84" rx="39" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <path d="M1454 956h32m-16-16v32m104-16h32m-16-16v32" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+      </g>
+    </g>
+  
+<g id="declaration">
+<path d="M1025 260H1755Q1780 260 1780 285V875Q1780 900 1755 900H1025Q1000 900 1000 875V285Q1000 260 1025 260Z" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+<path d="M1025 260H1755Q1780 260 1780 285V417H1000V285Q1000 260 1025 260Z" fill="#9e1b1b"/>
+<text x="1045" y="327" font-family="Inter,sans-serif" font-size="38" font-weight="810" fill="#fff">DOMESTIC PARCEL DECLARATION</text>
+<text id="declaration-hi" x="1045" y="388" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="700" fill="#fde9a6">घरेलू parcel घोषणा</text>
+<g id="required">
+<rect x="1470" y="449" width="231" height="68" rx="32" fill="#fde9a6"/>
+<text x="1585" y="499" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="780" fill="#704b00">ज़रूरी</text>
+</g>
+<g id="letter-item">
+<rect x="1044" y="539" width="690" height="88" rx="19" fill="#f3ead6"/>
+<text x="1075" y="598" font-family="Inter,sans-serif" font-size="53" font-weight="750" fill="#4b4f58">Letter item</text>
+<path id="letter-cross" d="M1652 568l34 34m0-34l-34 34" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+</g>
+<g id="goods">
+<rect x="1044" y="648" width="690" height="119" rx="19" fill="#e9f3e9"/>
+<text x="1075" y="701" font-family="Inter,sans-serif" font-size="52" font-weight="820" fill="#2b2622">MERCHANDISE</text>
+<text x="1075" y="744" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="38" font-weight="690" fill="#2e7d4f">माल</text>
+<path id="goods-tick" d="M1643 698l15 16 31-37" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="form-note">
+<text x="1046" y="823" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="38" font-weight="735" fill="#2b2622"><tspan font-family="Inter,sans-serif">Administrative instructions</tspan><tspan x="1046" y="869">से तय form</tspan></text>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+{update(t,section,$){const stock=$('#parcel-stock')[0]?.querySelector('g[id$="-tag"],g[id="tag"]');if(stock)stock.setAttribute('visibility','hidden');},
+on:[
+[0,"out","#window",{dur:.15,scale:1}],
+[0,"move","#parcel",{by:[-300,0],spring:"fast"}],
+[0,"pop","#declaration",{from:.95,spring:"fast"}],
+[.50,"fade","#declaration-hi",{dur:.24}],
+[1.62,"stamp","#required",{from:1.12,rot:-3,spring:"fast"}],
+[3.28,"fade","#letter-item",{dur:.23}],
+[3.98,"draw","#letter-cross",{dur:.29}],
+[6.02,"fade","#goods",{dur:.24}],
+[6.42,"draw","#goods-tick",{dur:.30}],
+[9.68,"fade","#form-note",{dur:.25}]
+]}
+</script>
+</section>
