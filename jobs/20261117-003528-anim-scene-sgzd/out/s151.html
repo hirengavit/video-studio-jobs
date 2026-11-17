@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s151" data-in="cut" data-section="PART 6 · WHERE TO POST" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="parcel-box-shot">
+  <g id="parcel-title">
+    <text x="160" y="233" font-size="71" font-weight="820" fill="#9e1b1b"><tspan font-family="Noto Sans Devanagari,Inter,sans-serif">सभी </tspan><tspan font-family="Inter,sans-serif">India Post Parcels</tspan></text>
+  </g>
+  <path d="M160 266H1760" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M319 900H1659" fill="none" stroke="#d8c69e" stroke-width="4" stroke-linecap="round"/>
+  <g id="pillar-box">
+    <use href="piece:letter-box-icon" transform="translate(1184 256.8) scale(1.6)"/>
+  </g>
+  <g id="small-parcel" transform="translate(520 0)">
+    <use href="piece:parcel-with-tag" transform="translate(515 757) scale(.5)"/>
+    <g id="accountable-stamp">
+      <rect x="195" y="684" width="497" height="74" rx="22" fill="#9e1b1b"/>
+      <text x="443.5" y="732" text-anchor="middle" font-size="37" font-weight="820" fill="#fff"><tspan font-family="Inter,sans-serif">ACCOUNTABLE</tspan><tspan font-family="Noto Sans Devanagari,Inter,sans-serif"> · जवाबदेह</tspan></text>
+      <path d="M590 758L616 796" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g id="no-box">
+    <circle cx="1360" cy="454.4" r="75" fill="#fbf7ee" fill-opacity=".8" stroke="#4b4f58" stroke-width="5"/>
+    <path d="M1327 422l66 66m0-66-66 66" fill="none" stroke="#4b4f58" stroke-width="13" stroke-linecap="round"/>
+    <text x="1495" y="471" font-size="47" font-weight="820" fill="#4b4f58"><tspan font-family="Inter,sans-serif">box</tspan><tspan font-family="Noto Sans Devanagari,Inter,sans-serif"> में नहीं</tspan></text>
+  </g>
+</g>
+<g id="window-shot">
+  <rect x="160" y="212" width="1600" height="635" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M1013 255V803" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M257 794H950" stroke="#d8c69e" fill="none" stroke-width="4" stroke-linecap="round"/>
+  <use id="counter-window" href="piece:post-counter-icon" transform="translate(380 346) scale(1.2)"/>
+  <g id="ordinary-envelope">
+    <use href="piece:envelope-article" transform="translate(490 523) scale(.83)"/>
+  </g>
+  <text id="ordinary-title" x="1060" y="378" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="820" fill="#2b2622">बड़ा आम article</text>
+  <g id="window-ok">
+    <rect x="1060" y="441" width="635" height="94" rx="43" fill="#e5f1e7"/>
+    <text x="1093" y="503" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="770" fill="#23633e">window पर हाथ में</text>
+    <path d="M1623 482l13 13 25-28" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text id="accountable-ask" x="1060" y="663" font-family="Inter,sans-serif" font-size="64" font-weight="790" fill="#4b4f58">= accountable?</text>
+  <g id="accountable-no">
+    <circle cx="1654" cy="640" r="38" fill="#4b4f58"/>
+    <path d="M1639 625l30 30m0-30-30 30" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ shots:[[0,'#parcel-box-shot'],[.88,'#window-shot']],
+ on:[
+   [.88,'pop','#ordinary-envelope',{from:.92,spring:'soft'}],
+   [1.20,'type','#ordinary-title',{cps:22}],
+   [3.35,'fade','#window-ok',{dur:.25}],
+   [7.46,'type','#accountable-ask',{cps:24}],
+   [8.56,'strike','#accountable-ask',{words:'accountable',color:'#4b4f58',width:8,dur:.32,dim:.85}],
+   [8.56,'pop','#accountable-no',{from:.90,spring:'soft'}]
+ ]
+})
+</script>
+</section>
