@@ -10,10 +10,10 @@
       <rect x="161" y="399" width="142" height="142" rx="14" fill="#f3ead6"/>
       <rect x="161" y="399" width="142" height="142" rx="14" fill="none" stroke="#fff" stroke-width="7" stroke-dasharray="0 19" stroke-linecap="round"/>
       <g id="g1-ring" transform="translate(232 470)" stroke="#2b2622" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" fill="none"><circle cy="10" r="30" fill="none"/><path d="M-22-30l10-13h24l10 13L0-9Z" fill="#fde9a6"/><path d="M-22-30h44M-12-43l12 34 12-34"/></g>
-      <path d="M161 569h738" stroke="#f3ead6" stroke-width="3"/>
+      <path id="g1-divider" d="M161 569h738" stroke="#f3ead6" stroke-width="3"/>
       <text id="gold-silver-en" x="343" y="457" font-family="Inter,sans-serif" font-size="46" font-weight="820" fill="#2b2622">Articles of gold or silver</text>
       <text id="gold-silver-hi" x="343" y="523" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="740" fill="#6f6a63">सोने या चाँदी की चीज़ें</text>
-      <text id="gold-silver-extent" x="180" y="620" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="820" fill="#8a5d00">पूरी या कुछ हिस्से में</text>
+      <text id="gold-silver-extent" x="180" y="618" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="820" fill="#8a5d00">पूरी या कुछ हिस्से में</text>
     </g>
     <g class="gc" id="g2">
       <rect x="980" y="359" width="820" height="287" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
@@ -43,6 +43,7 @@
  on:[
    [1.61,'type','#gold-silver-en',{cps:27}],
    [2.11,'fade','#gold-silver-hi',{dur:.24}],
+   [5.40,'move','#g1-divider',{by:[0,-20],spring:'fast'}],
    [5.88,'words','#gold-silver-extent',{gap:.11,dist:8,from:'down',spring:'soft'}],
    [6.60,'highlight','#gold-silver-extent',{color:'#fde9a6',opacity:1,pad:3,dur:.36}],
    [8.00,'pulse','#g1-ring',{amount:.1}]
