@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s183" data-in="cut" data-section="PART 7 · BOXES, TIMING &amp; BOOKING" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="process-shot">
+  <g id="process-clock"><use href="piece:clock-face" transform="translate(824 205) scale(1.045)"/></g>
+  <g id="process-1"><rect x="110" y="489" width="300" height="142" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/><rect x="135" y="512" width="9" height="96" rx="4.5" fill="#9e1b1b"/><text x="268" y="581" text-anchor="middle" class="hi" font-size="49" font-weight="800" fill="#2b2622">जाँच</text></g>
+  <g id="process-2"><rect x="460" y="489" width="300" height="142" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/><rect x="485" y="512" width="9" height="96" rx="4.5" fill="#9e1b1b"/><text x="618" y="581" text-anchor="middle" class="hi" font-size="49" font-weight="800" fill="#2b2622">तौल</text></g>
+  <g id="process-3"><rect x="810" y="489" width="300" height="142" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/><rect x="835" y="512" width="9" height="96" rx="4.5" fill="#9e1b1b"/><text x="968" y="581" text-anchor="middle" class="hi" font-size="49" font-weight="800" fill="#2b2622">भुगतान</text></g>
+  <g id="process-4"><rect x="1160" y="489" width="300" height="142" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/><rect x="1185" y="512" width="9" height="96" rx="4.5" fill="#9e1b1b"/><text x="1318" y="551" text-anchor="middle" class="hi" font-size="49" font-weight="800" fill="#2b2622">Booking</text><text x="1318" y="600" text-anchor="middle" class="hi" font-size="41" font-weight="690" fill="#6f6a63">बुकिंग</text></g>
+  <g id="process-5"><rect x="1510" y="489" width="300" height="142" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/><rect x="1535" y="512" width="9" height="96" rx="4.5" fill="#9e1b1b"/><text x="1668" y="551" text-anchor="middle" class="hi" font-size="49" font-weight="800" fill="#2b2622">Dispatch</text><text x="1668" y="600" text-anchor="middle" class="hi" font-size="41" font-weight="690" fill="#6f6a63">की तैयारी</text></g>
+  <path id="process-bracket" d="M144 674v29h816v18m0-18h816v-29" fill="none" stroke="#a98232" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="time-needed">
+    <rect x="725" y="747" width="470" height="78" rx="39" fill="#fde9a6"/>
+    <text x="960" y="803" text-anchor="middle" class="hi" font-size="53" font-weight="810" fill="#704b00">समय चाहिए</text>
+  </g>
+
+ <g id="early-post">
+   <rect x="315" y="860" width="1290" height="95" rx="44" fill="#e1f0e3" stroke="#2e7d4f" stroke-width="3"/>
+   <text id="early-post-text" x="960" y="923" text-anchor="middle" class="hi" font-size="53" font-weight="810" fill="#23633e">डाक तैयार करके जल्दी दीजिए</text>
+ </g>
+</g>
+<g id="old-rule-shot">
+ <g id="old-guide-book">
+  <use href="piece:old-book-stack" transform="translate(149.12 415.52) scale(1.28)"/>
+  <text x="400" y="891" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#4b4f58">Post Office Guide Part I</text>
+ </g>
+ <g id="old-rule-card">
+  <rect x="800" y="212" width="1000" height="730" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M842 252h916" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+  <text x="852" y="364" class="hi" font-size="62" font-weight="830" fill="#9e1b1b">पुराना नियम · छोटे में</text>
+  <path d="M845 404H1755" stroke="#ead9a8" stroke-width="3"/>
+  <g id="guide-registration">
+    <rect x="844" y="434" width="439" height="132" rx="23" fill="#f3ead6"/>
+    <text x="1063.5" y="490" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">Registration</text>
+    <text x="1063.5" y="540" text-anchor="middle" class="hi" font-size="41" font-weight="710" fill="#6f6a63">पंजीकरण</text>
+  </g>
+  <g id="guide-insurance">
+    <rect x="1317" y="434" width="439" height="132" rx="23" fill="#f3ead6"/>
+    <text x="1536.5" y="490" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">Insurance</text>
+    <text x="1536.5" y="540" text-anchor="middle" class="hi" font-size="41" font-weight="710" fill="#6f6a63">बीमा</text>
+  </g>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+  shots:[[0,'#process-shot'],[2.78,'#old-rule-shot']],
+  on:[
+    [0,'fade','#early-post',{dur:.31}],
+    [1.76,'underline','#early-post-text',{words:'जल्दी',color:'#23633e',width:5,dur:.29,gap:4}],
+    [5.44,'pop','#guide-registration',{from:.94,spring:'fast'}],
+    [6.90,'pop','#guide-insurance',{from:.94,spring:'fast'}]
+  ]
+})
+</script>
+</section>
