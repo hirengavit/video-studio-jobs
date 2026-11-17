@@ -41,14 +41,14 @@
  </g>
  <g id="wax-seal">
   <use href="piece:wax-seal" transform="translate(284 797) scale(.60)"/>
-  <rect x="272" y="879" width="95" height="47" rx="18" fill="#fff" stroke="#d8c69e" stroke-width="3"/>
-  <text x="320" y="912" text-anchor="middle" font-family="Inter,sans-serif" font-size="38" font-weight="835" fill="#2b2622">wax</text>
+  <rect x="268" y="879" width="92" height="47" rx="18" fill="#fff" stroke="#d8c69e" stroke-width="3"/>
+  <text x="314" y="912" text-anchor="middle" font-family="Inter,sans-serif" font-size="38" font-weight="835" fill="#2b2622">wax</text>
  </g>
  <g id="lead-seal">
   <path d="M618 631q0-38 42-42 42-3 49 39t-36 47-55-44Z" transform="translate(-89 349) scale(.75)" fill="#bfc0c4" stroke="#4b4f58" stroke-width="4"/>
   <path d="M634 628q12-25 39-21t22 27q-5 26-27 27t-34-33Z" transform="translate(-89 349) scale(.75)" fill="#d9d9db" stroke="#777981" stroke-width="3"/>
-  <rect x="376" y="879" width="160" height="47" rx="18" fill="#fff" stroke="#d8c69e" stroke-width="3"/>
-  <text x="456" y="912" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="32" font-weight="835" fill="#2b2622">lead · सीसा</text>
+  <rect x="371" y="879" width="135" height="47" rx="18" fill="#fff" stroke="#d8c69e" stroke-width="3"/>
+  <text x="438.5" y="912" textLength="117" lengthAdjust="spacingAndGlyphs" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="32" font-weight="835" fill="#2b2622">lead · सीसा</text>
  </g>
  <g id="private-marks" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
   <g stroke="#fff7e8" transform="translate(-169.5 189)"><circle cx="489.5" cy="644" r="18"/><path d="m481 644 9-8 9 8-9 8Z"/></g>
@@ -57,12 +57,7 @@
 </g>
 </svg>
 <script type="text/scene">
-{update(t,section,$){
- const p=$('#insured-parcel')[0];
- if (!p) return;
- const b=p.getBBox();
- if(b.width>0&&b.height>0)p.setAttribute('transform','translate('+(530-b.x-b.width/2)+' '+(940-b.y-b.height)+')');
-},on:[
+{on:[
  [.06,"pop","#contents-chip",{from:.88,spring:"fast"}],
  [1.54,"pop","#journey-chip",{from:.88,spring:"fast"}],
  [4.06,"fade","#sealing-row",{dur:.22}],[4.06,"type","#seal-term",{cps:19}],
