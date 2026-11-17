@@ -77,8 +77,8 @@
     }
     // Give the two independently pulsing values room once their row lights up,
     // without shifting the inherited composition on the opening cut.
-    for(const el of $('#rule8-inherited'))el.setAttribute('opacity',t<6.48?1:0);
-    for(const el of $('#rule8-live'))el.setAttribute('opacity',t<6.48?0:1);
+    for(const el of $('#rule8-inherited'))el.style.display=t<6.48?'':'none';
+    for(const el of $('#rule8-live')){el.style.display=t<6.48?'none':'';el.setAttribute('opacity',1);}
     if(t>=2.60){
       for(const el of $('#no-match,#legend-text'))el.style.fill=blend(amber,ink,ramp(2.60,.3));
     }
