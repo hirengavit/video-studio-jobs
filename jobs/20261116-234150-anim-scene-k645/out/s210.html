@@ -31,13 +31,12 @@
   <text x="863" y="820" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="53" font-weight="830" fill="#9e1b1b">अब</text>
 </g>
 <g id="new-speed">
-  <rect x="862" y="854" width="322" height="77" rx="22" fill="#9e1b1b"/>
-  <text x="1023" y="906" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="820" fill="#fff">Speed Post</text>
+  <rect x="862" y="854" width="270" height="77" rx="22" fill="#9e1b1b"/>
+  <text x="997" y="906" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="820" fill="#fff">Speed Post</text>
 </g>
 <g id="add-on">
-  <rect x="1206" y="854" width="520" height="77" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
-  <rect id="addon-marker" x="1478" y="867" width="124" height="51" rx="10" fill="#fde9a6"/>
-  <text x="1224" y="905" font-family="Inter,sans-serif" font-size="34" font-weight="790" fill="#2b2622">+ Registration · <tspan x="1486">add-on</tspan><tspan x="1610" font-size="31">service</tspan></text>
+  <rect x="1151" y="854" width="575" height="77" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text id="addon-text" x="1171" y="905" font-family="Inter,sans-serif" font-size="37" font-weight="790" fill="#2b2622">+ Registration · add-on service</text>
 </g>
 </svg>
 <script type="text/scene">
@@ -52,7 +51,7 @@
    [8.16,'fade','#now-panel',{dur:.30}],
    [9.32,'pop','#new-speed',{from:.90,spring:'fast'}],
    [11.50,'slide','#add-on',{from:'right',dist:44,spring:'fast'}],
-   [11.69,'reveal','#addon-marker',{from:'left',dur:.25}]
+   [11.77,'highlight','#addon-text',{words:'add-on',color:'#f2b705',opacity:.36,dur:.25,pad:4}]
  ]
 })
 </script>
