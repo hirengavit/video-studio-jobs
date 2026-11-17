@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.34",
+  "2.68",
+  "4.03",
+  "5.37",
+  "6.56"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s053",
+   "text": "RECAP · दोहराव / LETTER ENVELOPE · नाप",
+   "t": 0.3
+  }
+ ]
+}
