@@ -8,12 +8,5 @@
   "11.59"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s021",
-   "text": "भेजने वाला डाकघर / पहुँचने वाला डाकघर",
-   "t": 4.7
-  }
- ]
+ "warnings": []
 }
