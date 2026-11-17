@@ -8,12 +8,5 @@
   "12.43"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s056",
-   "message": "draw: nothing found for \"#bottle use\"",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
