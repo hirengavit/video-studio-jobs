@@ -8,12 +8,5 @@
   "8.87"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s198",
-   "text": "खुद book किया item / Accept से पहले cancel ✓",
-   "t": 5.41
-  }
- ]
+ "warnings": []
 }
