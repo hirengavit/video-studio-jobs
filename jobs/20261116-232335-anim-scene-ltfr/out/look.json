@@ -8,12 +8,5 @@
   "9.19"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s092",
-   "text": "5 / सामान इजाज़त दे, तो",
-   "t": 3.74
-  }
- ]
+ "warnings": []
 }
