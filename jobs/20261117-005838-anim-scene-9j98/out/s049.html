@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s049" data-in="cut" data-section="PART 2 · LETTER ENVELOPE" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="calc">
+ <rect id="calc-paper" x="360" y="180" width="1200" height="780" rx="35" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+ <rect x="360" y="180" width="1200" height="9" rx="4.5" fill="#9e1b1b"/>
+ <text id="calc-title" x="422" y="263" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="66" font-weight="810" fill="#9e1b1b">उदाहरण</text>
+ <path d="M420 294h1080" stroke="#ead9a8" stroke-width="3"/>
+ <text id="l1" x="420" y="383" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="56" font-weight="755" fill="#2b2622">सही postage</text>
+ <text id="v1" x="1440" y="383" text-anchor="end" font-size="76" font-weight="850" fill="#2b2622">₹10</text>
+ <path d="M420 415h1080" stroke="#ead9a8" stroke-width="2"/>
+ <text id="l2" x="420" y="508" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="56" font-weight="755" fill="#2b2622">लगे stamps</text>
+ <text id="v2" x="1440" y="508" text-anchor="end" font-size="76" font-weight="850" fill="#2b2622">₹10</text>
+ <path d="M420 537h1080" stroke="#ead9a8" stroke-width="2"/>
+ <g id="example-stamp"><use href="piece:postage-stamp" transform="translate(1604 349) scale(.68)"/></g>
+ <text id="l3" x="420" y="626" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="755" fill="#2b2622">दोगुना</text>
+ <text id="v3" x="1440" y="626" text-anchor="end" font-size="76" font-weight="850" fill="#2b2622">₹20</text>
+ <text id="l4" x="420" y="732" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="755" fill="#2b2622">− पहले चुकाए</text>
+ <text id="v4" x="1440" y="732" text-anchor="end" font-size="76" font-weight="850" fill="#2b2622">₹10</text>
+ <path id="rule" d="M420 759H1500" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+ <rect id="result" x="402" y="778" width="1116" height="98" rx="24" fill="#fde9a6"/>
+ <text id="l5" x="420" y="843" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="790" fill="#4b3200">और लिए जाएँगे</text>
+ <text id="v5" x="1440" y="848" text-anchor="end" font-size="76" font-weight="850" fill="#4b3200">₹10</text>
+ <text id="wrong" x="420" y="931" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="760" fill="#4b4f58">चुकाए के ऊपर पूरे ₹20</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [0,'fade','#l3',{dur:.23}],
+    [.74,'pop','#v3',{from:.91,spring:'soft'}],
+    [1.98,'fade','#l4',{dur:.23}],
+    [2.84,'pop','#v4',{from:.91,spring:'soft'}],
+    [3.40,'draw','#rule',{dur:.37}],
+    [4.12,'reveal','#result',{from:'left',dur:.38}],
+    [4.12,'pop','#v5',{from:.92,spring:'soft'}],
+    [4.12,'fade','#l5',{dur:.23}],
+    [8.32,'fade','#wrong',{dur:.24}],
+    [9.56,'strike','#wrong',{color:'#4b4f58',width:6,dim:.66,dur:.29}]
+  ]
+}
+</script>
+</section>
