@@ -8,36 +8,5 @@
   "4.87"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s170",
-   "message": "highlight: \"insured packing\" isn't in that <text> (it says \"\")",
-   "t": 0.3
-  },
-  {
-   "kind": "text-off-frame",
-   "scene": "s170",
-   "text": "MYTH · भ्रम",
-   "t": 2.01
-  },
-  {
-   "kind": "off-frame",
-   "scene": "s170",
-   "message": "a card or panel (#s170-myth-surface) runs 54 px past the frame edge at 2.0 s (check the camera zoom and the layout)",
-   "t": 2.01
-  },
-  {
-   "kind": "off-frame",
-   "scene": "s170",
-   "message": "a card or panel (#s170-myth-surface) runs 60 px past the frame edge at 3.0 s (check the camera zoom and the layout)",
-   "t": 3.01
-  },
-  {
-   "kind": "off-frame",
-   "scene": "s170",
-   "message": "a card or panel (#s170-myth-surface) runs 60 px past the frame edge at 4.0 s (check the camera zoom and the layout)",
-   "t": 4.02
-  }
- ]
+ "warnings": []
 }
