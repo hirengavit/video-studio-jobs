@@ -36,7 +36,8 @@
   <text id="not-stamps-text" x="1398" y="845" text-anchor="middle" font-size="40" font-weight="790" fill="#fff"><tspan font-family="Noto Sans Devanagari,Inter,sans-serif">छूट </tspan><tspan font-family="Inter,sans-serif">stamps</tspan><tspan font-family="Noto Sans Devanagari,Inter,sans-serif"> के लिए नहीं</tspan></text>
 </g>
 <g id="postage-item"><use href="piece:postage-stamp" transform="translate(366 324) scale(.42)"/></g>
-<text id="postage-name" x="450" y="480" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="820" fill="#9e1b1b">Postage stamps</text>
+<text id="postage-name" x="450" y="488" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="820" fill="#9e1b1b">Postage stamps</text>
+<text id="postage-name-settled" x="450" y="488" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="820" fill="#9e1b1b">Postage stamps</text>
 <g id="article-only">
   <circle cx="493" cy="812" r="24" fill="#2e7d4f"/>
   <path d="M481 812l9 9 16-18" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -52,7 +53,9 @@
     [3.83,'fade','#not-stamps-text',{dur:.18}],
     [5.40,'pop','#postage-item',{from:.90,spring:'fast'}],
     [5.40,'type','#postage-name',{cps:24}],
+    [6.86,'out','#postage-name',{dur:.15,scale:false}],
     [7.02,'move','#postage-item',{by:[-42,404],spring:'soft'}],
+    [7.82,'fade','#postage-name-settled',{dur:.16}],
     [8.50,'pop','#article-only',{from:.89,spring:'fast'}]
   ]
 })
