@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s173" data-in="cut" data-section="RECAP · PARTS 5–6" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="env">
+      <rect x="160" y="196" width="1600" height="790" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M176 198 960 418 1744 198Z" fill="#f3ead6"/>
+      <path d="M176 198 960 418 1744 198" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <text x="960" y="270" text-anchor="middle" class="hi" font-size="41" font-weight="740" fill="#6f6a63">Part 6 · भाग 6</text>
+      <text x="960" y="339" text-anchor="middle" class="hi" font-size="51" font-weight="800" fill="#9e1b1b">Letter box में क्या जाता है?</text>
+      <g id="seal">
+        <circle cx="960" cy="418" r="45" fill="#9e1b1b"/>
+        <circle cx="960" cy="418" r="34" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="4 7"/>
+        <text x="960" y="434" text-anchor="middle" font-size="44" font-weight="810" fill="#fde9a6">6</text>
+      </g>
+      <path d="M240 632H1680M240 792H1680" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g id="row-1">
+      <text x="360" y="544" font-size="51" font-weight="805" fill="#2b2622">Postage-due categories</text>
+      <text x="362" y="597" class="hi" font-size="41" font-weight="650" fill="#6f6a63">देय postage वाली तय categories</text>
+    </g>
+    <g id="pill-1">
+      <rect x="1155" y="499" width="515" height="72" rx="36" fill="#fde9a6"/>
+      <text x="1412.5" y="548" text-anchor="middle" class="hi" font-size="41" font-weight="790" fill="#8a5d00">letter box में</text>
+    </g>
+    <circle id="cert-1" cx="292" cy="547" r="37" fill="#e3f1e8"/>
+    <path id="tick-1" d="m275 548 13 13 24-29" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="row-2">
+      <text x="360" y="704" font-size="51" font-weight="805" fill="#2b2622">Literature for the blind</text>
+      <text x="362" y="757" class="hi" font-size="41" font-weight="650" fill="#6f6a63">दृष्टिहीनों के लिए साहित्य</text>
+    </g>
+    <g id="pill-2">
+      <rect x="1155" y="659" width="515" height="72" rx="36" fill="#fde9a6"/>
+      <text x="1412.5" y="708" text-anchor="middle" class="hi" font-size="41" font-weight="790" fill="#8a5d00">छूट बनी है</text>
+    </g>
+    <circle id="cert-2" cx="292" cy="707" r="37" fill="#e3f1e8"/>
+    <path id="tick-2" d="m275 708 13 13 24-29" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="row-3">
+      <text x="360" y="864" font-size="51" font-weight="805" fill="#2b2622">Small packets</text>
+      <text x="362" y="917" class="hi" font-size="41" font-weight="650" fill="#6f6a63">छोटे पैकेट</text>
+    </g>
+    <g id="pill-3">
+      <rect x="1155" y="819" width="515" height="72" rx="36" fill="#fde9a6"/>
+      <text x="1412.5" y="868" text-anchor="middle" class="hi" font-size="41" font-weight="790" fill="#8a5d00">1 January 2026</text>
+    </g>
+    <circle id="cert-3" cx="292" cy="867" r="37" fill="#e3f1e8"/>
+    <path id="tick-3" d="m275 868 13 13 24-29" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text id="removed" x="1412.5" y="937" text-anchor="middle" class="hi" font-size="40" font-weight="730" fill="#4b4f58">list से हटे</text>
+  </svg>
+  <script type="text/scene">
+    {on:[
+      [0,'slide','#row-1',{from:'left',dist:40,spring:'soft'}],
+      [3.34,'pop','#pill-1',{from:.93,spring:'soft'}],
+      [3.34,'fade','#cert-1',{dur:.18}],
+      [3.34,'draw','#tick-1',{dur:.29}],
+      [5.44,'slide','#row-2',{from:'left',dist:40,spring:'soft'}],
+      [7.02,'pop','#pill-2',{from:.93,spring:'soft'}],
+      [7.02,'fade','#cert-2',{dur:.18}],
+      [7.02,'draw','#tick-2',{dur:.29}],
+      [8.02,'slide','#row-3',{from:'left',dist:40,spring:'soft'}],
+      [9.34,'pop','#pill-3',{from:.93,spring:'soft'}],
+      [12.20,'type','#removed',{cps:36}],
+      [12.20,'fade','#cert-3',{dur:.18}],
+      [12.20,'draw','#tick-3',{dur:.30}]
+    ]}
+  </script>
+</section>
