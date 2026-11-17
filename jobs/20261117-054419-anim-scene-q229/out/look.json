@@ -8,24 +8,5 @@
   "11.09"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s207",
-   "text": "22, 96 / 22",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s207",
-   "text": "22, 96 / ,",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s207",
-   "text": "22, 96 / 96",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
