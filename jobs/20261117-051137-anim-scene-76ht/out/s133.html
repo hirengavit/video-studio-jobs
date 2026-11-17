@@ -69,8 +69,8 @@
       <rect id="branch-three-action-surface" x="1260" y="729" width="520" height="228" rx="23" fill="#fff" stroke="#c68e13" stroke-width="5" filter="url(#vs-shadow)"/>
       <text x="1292" y="797" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="53" font-weight="850" fill="#2b2622">रोक लें</text>
       <path d="M1292 816H1749" fill="none" stroke="#ead9a8" stroke-width="3"/>
-      <text id="circle-orders" x="1292" y="867" class="hi" font-family="Inter,'Noto Sans Devanagari',sans-serif" font-size="36" font-weight="790" fill="#2b2622">Head of the Circle से orders</text>
-      <text id="circle-hi" x="1292" y="913" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="32" font-weight="720" fill="#6f6a63">सर्किल प्रमुख</text>
+      <text id="circle-orders" x="1286" letter-spacing="-.6" y="867" class="hi" font-family="Inter,'Noto Sans Devanagari',sans-serif" font-size="36" font-weight="790" fill="#2b2622">Head of the Circle से orders</text>
+      <text id="circle-hi" x="1286" y="913" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="32" font-weight="720" fill="#6f6a63">सर्किल प्रमुख</text>
     </g>
     <g id="three-three">
       <rect x="1096" y="351" width="147" height="64" rx="31" fill="#fde9a6"/>
@@ -83,24 +83,31 @@
  update(t,section,$) {
    const down = Math.max(0,Math.min(1,t/.4));
    const transfer = Math.max(0,Math.min(1,(t-3.92)/.4));
+   const normal = [234,217,168], carry = [198,142,19], focus = [242,183,5];
+   const lerp = (a,b,k) => a.map((v,j) => Math.round(v+(b[j]-v)*k));
    const weight=[1-transfer,1-down+transfer,1-down];
    for (const [i,id] of ['one','two','three'].entries()) for (const kind of ['condition','action']) {
      const el = $('#branch-'+id+'-'+kind)[0]?.querySelector('rect');
      if (!el) continue;
      const p = kind === 'condition' ? weight[i] : 1-down;
+     const first = kind === 'condition' && i === 0;
+     const second = kind === 'condition' && i === 1;
+     const start = lerp(carry,first ? focus : normal, down);
+     const color = first ? lerp(start,normal,transfer) : second ? lerp(start,focus,transfer) : start;
+     el.setAttribute('stroke', 'rgb('+color.join(',')+')');
      el.setAttribute('stroke-width', String(3 + 2*p));
    }
  },
  on:[
-   [0.00,'color','#branch-two-condition-surface',{to:'#ead9a8',prop:'stroke',dur:.4}],
-   [0.00,'color','#branch-three-condition-surface',{to:'#ead9a8',prop:'stroke',dur:.4}],
-   [0.00,'color','#branch-one-action-surface',{to:'#ead9a8',prop:'stroke',dur:.4}],
-   [0.00,'color','#branch-two-surface',{to:'#ead9a8',prop:'stroke',dur:.4}],
-   [0.00,'color','#branch-three-action-surface',{to:'#ead9a8',prop:'stroke',dur:.4}],
-   [0.00,'color','#branch-one-condition-surface',{to:'#f2b705',prop:'stroke',dur:.4}],
+
+
+
+
+
+
    [1.98,'draw','#sender-return-underline',{dur:.35}],
-   [3.92,'color','#branch-one-condition-surface',{to:'#ead9a8',prop:'stroke',dur:.4}],
-   [3.92,'color','#branch-two-condition-surface',{to:'#f2b705',prop:'stroke',dur:.4}],
+
+
    [5.02,'color','#sender-return-underline',{to:'#6f6a63',prop:'stroke',dur:.36}],
    [5.02,'draw','#pin-removal-underline',{dur:.36}],
    [6.72,'pulse','#rlo',{amount:.10}]
