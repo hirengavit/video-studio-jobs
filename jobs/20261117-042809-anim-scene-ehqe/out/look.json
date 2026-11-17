@@ -1,0 +1,26 @@
+{
+ "moments": [
+  "0.30",
+  "2.58",
+  "5.17",
+  "7.75",
+  "10.34",
+  "12.77"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s048",
+   "text": "तय शर्त (1.4:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s048",
+   "message": "a card (#s048-calc-paper) is mostly empty at 7.8 s: bring its items in sooner, or size it for what it holds now",
+   "t": 7.75
+  }
+ ]
+}
