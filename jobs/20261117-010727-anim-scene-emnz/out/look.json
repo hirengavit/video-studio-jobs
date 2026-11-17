@@ -1,0 +1,43 @@
+{
+ "moments": [
+  "0.30",
+  "3.13",
+  "6.26",
+  "9.38",
+  "12.51",
+  "15.49"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s152",
+   "message": "highlight: \"booking की service\" isn't in that <text> (it says \"Accou\")",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s152",
+   "message": "a card (#s152-tile-2) is mostly empty at 6.3 s: bring its items in sooner, or size it for what it holds now",
+   "t": 6.26
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s152",
+   "message": "a card (#s152-tile-3) is mostly empty at 9.4 s: bring its items in sooner, or size it for what it holds now",
+   "t": 9.38
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s152",
+   "message": "a card (#s152-tile-3) is mostly empty at 12.5 s: bring its items in sooner, or size it for what it holds now",
+   "t": 12.51
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s152",
+   "message": "a card (#s152-tile-3) is mostly empty at 15.5 s: bring its items in sooner, or size it for what it holds now",
+   "t": 15.49
+  }
+ ]
+}
