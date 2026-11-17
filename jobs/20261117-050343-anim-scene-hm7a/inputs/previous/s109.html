@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s109" data-in="cut" data-section="PART 4 · SEALING" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="booking-shot">
+    <rect x="368" y="193" width="1184" height="722" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text x="960" y="300" text-anchor="middle" class="hi" font-size="66" font-weight="810" fill="#2b2622">Booking के समय</text>
+    <g id="receipt">
+      <rect x="714" y="330" width="492" height="410" rx="30" fill="#f3ead6"/>
+      <use href="piece:booking-receipt" transform="translate(830 342) scale(1.0)"/>
+    </g>
+    <rect id="declare-band" x="414" y="774" width="1092" height="102" rx="26" fill="#fbf7ee"/>
+    <rect id="value-highlight" rx="7" fill="#f2b705" fill-opacity=".52" opacity="0"/>
+    <text id="declare" x="960" y="845" text-anchor="middle" class="hi" font-size="62" font-weight="820" fill="#9e1b1b">Declare: असली value</text>
+  </g>
+  <g id="guide-shot">
+    <g id="guide">
+      <rect x="160" y="222" width="650" height="705" rx="34" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+      <use href="piece:old-book-stack" transform="translate(222 295) scale(1.32)"/>
+      <text x="485" y="801" text-anchor="middle" class="hi" font-size="59" font-weight="820" fill="#4b4f58">पुराना Guide:</text>
+      <text x="485" y="870" text-anchor="middle" class="hi" font-size="56" font-weight="750" fill="#4b4f58">यही बात</text>
+    </g>
+    <g id="guide-list">
+      <g id="guide-coins">
+        <rect x="900" y="222" width="860" height="96" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <circle cx="958" cy="270" r="25" fill="#fde9a6" stroke="#8a5d00" stroke-width="3"/>
+        <circle cx="958" cy="270" r="16" fill="none" stroke="#8a5d00" stroke-width="2"/>
+        <text x="1011" y="290" class="hi" font-size="51" font-weight="810" fill="#2b2622">Coins · सिक्के</text>
+      </g>
+      <g id="guide-bullion">
+        <rect x="900" y="335" width="860" height="96" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <path d="M931 393l11-24h32l11 24v9h-54Z" fill="#fde9a6" stroke="#8a5d00" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M931 393h54" stroke="#8a5d00" stroke-width="2"/>
+        <text x="1011" y="403" class="hi" font-size="51" font-weight="810" fill="#2b2622">Bullion · सिल्लियाँ</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  shots:[[0,'#booking-shot'],[4.69,'#guide-shot']],
+  update(t,section,$){
+    const line=$('#declare')[0], mark=$('#value-highlight')[0], word='असली value', start=line.textContent.indexOf(word);
+    if(t<3.10 || start<0){mark.setAttribute('opacity','0');return}
+    let x0=Infinity,y0=Infinity,x1=-Infinity,y1=-Infinity;
+    for(let i=start;i<start+word.length;i++){const b=line.getExtentOfChar(i);x0=Math.min(x0,b.x);y0=Math.min(y0,b.y);x1=Math.max(x1,b.x+b.width);y1=Math.max(y1,b.y+b.height)}
+    mark.setAttribute('x',String(x0-8));mark.setAttribute('y',String(y0-2));mark.setAttribute('width',String(x1-x0+16));mark.setAttribute('height',String(y1-y0+4));mark.setAttribute('opacity',String(Math.min(1,(t-3.10)/.20)));
+  },
+  on:[
+    [0,'pop','#receipt',{from:.94,spring:'soft'}],
+    [2.36,'fade','#declare-band',{dur:.23}],
+    [2.36,'type','#declare',{cps:38}],
+    [7.29,'pop','#guide-coins',{from:.94,spring:'soft'}],
+    [8.13,'pop','#guide-bullion',{from:.94,spring:'soft'}]
+  ]
+}
+</script>
+</section>
