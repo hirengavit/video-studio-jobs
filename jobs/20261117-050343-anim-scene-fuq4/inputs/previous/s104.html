@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s104" data-in="cut" data-section="PART 4 · SEALING" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="space">
+      <text id="space-title" class="hi" x="960" y="236" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="800" fill="#2b2622">Labels की जगह · लेबल की जगह</text>
+      <path d="M168 278H1752" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <path d="M930 322V958" fill="none" stroke="#ead9a8" stroke-width="3"/>
+      <g id="tiny-parcel">
+        <path d="M424 656h222" fill="none" stroke="#d8c7a4" stroke-width="4" stroke-linecap="round"/>
+        <use href="piece:parcel-with-tag" transform="translate(469 570) scale(.3)"/>
+      </g>
+      <g id="labels" transform="translate(538 565)">
+        <g transform="rotate(-8)">
+          <rect x="-192" y="-77" width="382" height="104" rx="10" fill="#fde9a6" stroke="#8a5d00" stroke-width="3"/>
+          <path d="M-166 -47H-72m-94 25h72" fill="none" stroke="#a98a52" stroke-width="4" stroke-linecap="round"/>
+          <path d="M90 -55h72v51H90Z" fill="none" stroke="#8a5d00" stroke-width="3" stroke-dasharray="6 6"/>
+        </g>
+        <g transform="translate(12 21) rotate(8)">
+          <rect x="-152" y="-22" width="305" height="72" rx="9" fill="#fff" stroke="#6f6a63" stroke-width="3"/>
+          <path d="M-129 0h125m-125 18h97" fill="none" stroke="#a4a098" stroke-width="4" stroke-linecap="round"/>
+          <rect x="51" y="-6" width="78" height="36" rx="3" fill="none" stroke="#a4a098" stroke-width="3"/>
+        </g>
+      </g>
+      <text id="official" x="535" y="806" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="800" fill="#2b2622">Official labels</text>
+      <g id="address">
+        <use id="address-env" href="piece:envelope-article" transform="translate(800 50) scale(2.9)"/>
+        <rect x="1008" y="390" width="744" height="481" rx="12" fill="#fff"/>
+        <path d="M1033 425V833" fill="none" stroke="#9e1b1b" stroke-width="11" stroke-linecap="round"/>
+        <path d="M1290 628h339m-339 58h300m-300 58h333" fill="none" stroke="#a4a098" stroke-width="5" stroke-linecap="round"/>
+        <text id="address-label" class="hi" x="1380" y="356" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="730" fill="#2b2622">Address side · पता वाली तरफ़</text>
+      </g>
+      <g id="writing" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1070 469q24-28 45 3t48-2 49 0 61 2 52-3 51 2 59 1 60-2 67 6"/>
+        <path d="M1097 535q20-23 45 2t48 0 54 0 51 2 57-2 50-1 51 3 45-3 57 0"/>
+        <path d="M1070 601q24-27 45 0t48 0 61 0 55 1 50-1 50 2 59-2 62 0 47 4"/>
+        <path d="M1122 672q24-24 48 1t50-1 55 1 48-1 53 4 56-4 47 1 42 2"/>
+        <path d="M1079 745q25-27 52 1t53 0 45 1 56-2 57 0 46 2 39-2 44 2"/>
+        <path d="M1116 807q22-22 44 0t49 0 54 1 50-3 46 3 52-1"/>
+      </g>
+      <g id="wax-one"><use href="piece:wax-seal" transform="translate(1557 750) scale(.5)"/></g>
+      <g id="wax-two"><use href="piece:wax-seal" transform="translate(1645 793) scale(.5)"/></g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.12, 'pop', '#tiny-parcel', {from:.82,spring:'soft'}],
+      [3.76, 'pop', '#labels', {from:.89,spring:'soft'}],
+      [3.76, 'type', '#official', {cps:25}],
+      [6.02, 'pop', '#address', {from:.96,spring:'soft'}],
+      [6.86, 'draw', '#writing', {dur:.65}],
+      [8.02, 'pop', '#wax-one', {from:.81,spring:'soft'}],
+      [8.14, 'pop', '#wax-two', {from:.81,spring:'soft'}]
+    ]
+  }
+  </script>
+</section>
