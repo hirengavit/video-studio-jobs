@@ -26,6 +26,12 @@
    "scene": "s176",
    "text": "letter box में मिलें → / बिना भुगतान",
    "t": 1.13
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s176",
+   "text": "Unpaid / बिना भुगतान",
+   "t": 1.13
   }
  ]
 }
