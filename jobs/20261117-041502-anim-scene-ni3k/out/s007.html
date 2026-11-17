@@ -84,9 +84,9 @@
       </g>
     </g>
     <rect id="closing-band" x="300" y="900" width="1320" height="110" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
-    <g id="old-guide"><use href="piece:old-book-stack" transform="translate(337 858) scale(.45)"/></g>
+    <g id="old-guide"><use href="piece:old-book-stack" transform="translate(347 872) scale(.40)"/></g>
     <g id="old-label">
-      <text x="531" y="971" font-size="44" font-weight="760" fill="#2b2622"><tspan font-family="'Noto Sans Devanagari',Inter,sans-serif">पुराने </tspan><tspan font-family="Inter,sans-serif" font-weight="820">Guide clauses</tspan></text>
+      <text x="515" y="971" font-size="44" font-weight="760" fill="#2b2622"><tspan font-family="'Noto Sans Devanagari',Inter,sans-serif">पुराने </tspan><tspan font-family="Inter,sans-serif" font-weight="820">Guide clauses</tspan></text>
     </g>
     <path id="guide-arrow" d="M944 955h82m-17-14 17 14-17 14" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
     <g id="new-rules"><use href="piece:regulations-book" transform="translate(1060 906) scale(.24)"/></g>
@@ -94,6 +94,11 @@
   </svg>
   <script type="text/scene">
   ({
+    update(t,section,$){
+      const k=Math.min(1,Math.max(0,(t-3.48)/.64)), u=k*k*(3-2*k);
+      const xs=[470,890,1310];
+      xs.forEach((x,i)=>$('#tile-'+(i+5))[0]?.setAttribute('transform','translate('+x+' '+(604-31*u)+')'));
+    },
     on:[
       [0.03,'reveal','#band-5',{from:'left',dur:.23}],
       [2.06,'reveal','#band-6',{from:'left',dur:.23}],
