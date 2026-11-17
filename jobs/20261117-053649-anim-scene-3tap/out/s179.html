@@ -1,0 +1,77 @@
+<section class="vs-scene" id="s179" data-in="cut" data-section="PART 7 · BOXES, TIMING &amp; BOOKING" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="class-shot">
+  <text id="class-heading" x="960" y="258" text-anchor="middle" class="hi" font-size="65" font-weight="800" fill="#9e1b1b">One class only · सिर्फ़ एक class</text>
+  <path d="M368 865H1552" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+  <g id="airmail-box">
+    <use href="piece:letter-box-icon" transform="translate(502.5 355) scale(1.25)"/>
+    <rect id="airmail-plate" x="449" y="570" width="382" height="123" rx="17" fill="#fff9ef" stroke="#6e1616" stroke-width="5"/>
+    <text id="airmail-en" x="640" y="625" text-anchor="middle" font-size="32" font-weight="840" fill="#6e1616">AIRMAIL</text>
+    <text id="airmail-hi" x="640" y="672" text-anchor="middle" class="hi" font-size="37" font-weight="730" fill="#6e1616">हवाई डाक</text>
+  </g>
+<g id="quick-mail-box">
+    <use href="piece:letter-box-icon" transform="translate(1142.5 355) scale(1.25)"/>
+    <rect id="qms-plate" x="1089" y="570" width="382" height="123" rx="17" fill="#fff9ef" stroke="#6e1616" stroke-width="5"/>
+    <text id="quick-mail-en" x="1280" y="625" text-anchor="middle" font-size="32" font-weight="840" fill="#6e1616">QUICK MAIL SERVICE</text>
+    <text id="quick-mail-hi" x="1280" y="672" text-anchor="middle" class="hi" font-size="37" font-weight="730" fill="#6e1616">क्विक मेल सेवा</text>
+  </g>
+  <!-- The parcel base (210,281) meets the settled AIRMAIL mouth at (520,509.375). -->
+  <g id="wrong-parcel"><use href="piece:parcel-with-tag" transform="translate(425.5 382.925) scale(.45)"/></g>
+  <g id="same-class-band">
+    <rect x="362" y="907" width="1196" height="91" rx="35" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="878" y="921" width="242" height="70" rx="6" fill="#f2b705" opacity=".43"/>
+    <text id="same-class" x="960" y="969" text-anchor="middle" class="hi" font-size="53" font-weight="740" fill="#2b2622">उनमें सिर्फ़ वही class डालिए</text>
+  </g>
+  <g id="detention">
+    <rect x="1240" y="315" width="560" height="336" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="1240" y="315" width="560" height="15" rx="7" fill="#9e1b1b"/>
+    <text x="1520" y="406" text-anchor="middle" font-size="56" font-weight="820" fill="#2b2622">LIABLE TO</text>
+    <text x="1520" y="471" text-anchor="middle" font-size="58" font-weight="830" fill="#9e1b1b">DETENTION</text>
+    <text id="detention-hi" class="hi" x="1520" y="574" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">रोके जा सकते हैं</text>
+  </g>
+  <g id="seizure">
+    <rect x="1240" y="681" width="560" height="80" rx="26" fill="#eef0f1"/>
+    <text id="seizure-text" class="hi" x="1520" y="735" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="38" font-weight="740" fill="#2b2622">हर गलत article ज़ब्त</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  update(t, section, $) {
+    const clamp = n => Math.max(0,Math.min(1,n));
+    const ease = k => k*k*(3-2*k);
+    const v = ease(clamp((t-.08)/.70));
+    const put = (id, attr, val) => $(id)[0]?.setAttribute(attr, val);
+    put('#airmail-box','transform','translate('+(-120*v)+' 0)');
+    put('#quick-mail-box','transform','translate('+(-280*v)+' 0)');
+    put('#airmail-plate','x',449-18*v);
+    put('#qms-plate','x',1089-18*v);
+    put('#airmail-plate','width',382+36*v);
+    put('#qms-plate','width',382+36*v);
+    put('#airmail-en','font-size',32+8*v);
+    put('#quick-mail-en','font-size',32+4*v);
+    put('#airmail-hi','font-size',37+2*v);
+    put('#quick-mail-hi','font-size',37+2*v);
+    const parcel = $('#wrong-parcel')[0];
+    if (parcel && !parcel.hasAttribute('data-slate')) {
+      const fills = {'#c9a978':'#777c86','#e8d0a3':'#a6aab2','#b9976d':'#656b76'};
+      const strokes = {'#2b2622':'#4b4f58','#947755':'#4b4f58','#8f744f':'#4b4f58','#f3ead6':'#e3e6ea'};
+      parcel.querySelectorAll('[fill],[stroke]').forEach(el => {
+        if (fills[el.getAttribute('fill')]) el.setAttribute('fill',fills[el.getAttribute('fill')]);
+        if (strokes[el.getAttribute('stroke')]) el.setAttribute('stroke',strokes[el.getAttribute('stroke')]);
+      });
+      parcel.setAttribute('data-slate','');
+    }
+  },
+  on:[
+    [.80,'slide','#wrong-parcel',{from:'up',dist:160,spring:'soft'}],
+    [3.34,'pop','#detention',{from:.95,spring:'soft'}],
+    [3.84,'fade','#detention-hi',{dur:.24}],
+    [5.80,'underline','#detention-hi',{color:'#c9962b',width:6,gap:8,dur:.36}],
+    [6.72,'fade','#seizure',{dur:.25}],
+    [10.22,'strike','#seizure-text',{color:'#4b4f58',width:7,dur:.33,dim:1}]
+  ]
+}
+</script>
+</section>
