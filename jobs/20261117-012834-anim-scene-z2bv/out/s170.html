@@ -7,7 +7,8 @@
     <rect x="228" y="235" width="300" height="66" rx="33" fill="#e4e5e8"/>
     <text x="378" y="281" text-anchor="middle" class="hi" font-size="42" font-weight="840" fill="#4b4f58">MYTH · भ्रम</text>
   </g>
-  <text id="claim" x="228" y="390" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="810" fill="#4b4f58">लिख दिया = service मिली</text>
+  <text id="claim" opacity=".64" x="228" y="390" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="810" fill="#4b4f58">लिख दिया = service मिली</text>
+  <path d="M221 379Q558 384 890 378" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
   <path id="claim-cross" d="m986 342 45 45m0-45-45 45" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
   <g id="cover-envelope" transform="translate(1680 205) scale(.63) translate(-1680 -205)">
     <use href="piece:envelope-article" transform="translate(1388 192) scale(.6)"/>
@@ -46,19 +47,30 @@
   <g id="insured-rule">
     <rect id="insured-label-bg" x="228" y="907" width="366" height="66" rx="30" fill="#e5f1e8"/>
     <text id="insured-label" x="411" y="952" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="820" fill="#2e624c">Insured article</text>
+    <rect id="condition-sweep" rx="4" fill="#f2b705" fill-opacity=".46" opacity="0"/>
     <text id="insured-condition" x="641" y="952" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="785" fill="#2b2622">+ insured packing की शर्तें</text>
   </g>
 </g>
 </svg>
 <script type="text/scene">
 {
-  camera:[[0,{zoom:1}],[.54,{zoom:1}],[2.32,{on:'#fact',zoom:1.05},'inOut']],
+  camera:[[0,{zoom:1}],[.54,{zoom:1}],[2.32,{zoom:1.05,x:0,y:23},'inOut']],
+  update(t,section,$){
+    const label=$('#insured-condition')[0], mark=$('#condition-sweep')[0], term='insured packing';
+    const from=label.textContent.indexOf(term);
+    const p=Math.min(1,Math.max(0,(t-3.98)/.29));
+    if(from<0 || p===0){ mark.setAttribute('opacity',0); return; }
+    const first=label.getExtentOfChar(from), last=label.getExtentOfChar(from+term.length-1);
+    mark.setAttribute('x',first.x-6);
+    mark.setAttribute('y',Math.min(first.y,last.y)-3);
+    mark.setAttribute('width',(last.x+last.width-first.x+12)*p);
+    mark.setAttribute('height',Math.max(first.height,last.height)+6);
+    mark.setAttribute('opacity',1);
+  },
   on:[
-    [0,'strike','#claim',{color:'#4b4f58',width:6,dur:.001,dim:.64}],
     [0,'fade','#insured-label-bg',{dur:.24}],
     [0,'fade','#insured-label',{dur:.26}],
-    [2.34,'type','#insured-condition',{cps:28}],
-    [3.98,'highlight','#insured-condition',{words:'insured packing',color:'#f2b705',opacity:.46,pad:6,dur:.29}]
+    [2.34,'type','#insured-condition',{cps:28}]
   ]
 }
 </script>
