@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s116" data-in="cut" data-section="PART 4 · SEALING" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="insurance">
+    <g id="regulations">
+      <use href="piece:regulations-book" transform="translate(151 282) scale(1.41)"/>
+      <text x="381" y="472" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="830" fill="#2b2622">Post Office</text>
+      <text x="381" y="530" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="830" fill="#2b2622">Regulations</text>
+      <text x="381" y="615" text-anchor="middle" font-family="Inter,sans-serif" font-size="71" font-weight="850" fill="#9e1b1b">2024</text>
+    </g>
+    <rect id="limit-card" x="640" y="185" width="1160" height="760" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M669 185H1771Q1800 185 1800 214V337H640V214Q640 185 669 185Z" fill="#9e1b1b"/>
+    <text x="697" y="281" class="hi" font-family="Inter,Noto Sans Devanagari,sans-serif" font-size="63" font-weight="830" fill="#fff">Insurance limit · बीमा सीमा</text>
+
+    <g id="regulation-133">
+      <rect x="697" y="380" width="472" height="88" rx="27" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="933" y="438" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#9e1b1b">Regulation 133</text>
+    </g>
+    <g id="speed-items">
+      <text id="speed-en" x="701" y="578" font-family="Inter,sans-serif" font-size="71" font-weight="830" fill="#2b2622">Speed Post items</text>
+      <text id="speed-hi" x="706" y="649" class="hi" font-size="51" font-weight="710" fill="#6f6a63">स्पीड पोस्ट</text>
+    </g>
+    <g id="locations">
+      <g id="office">
+        <use href="piece:post-office-front" transform="translate(707 700) scale(.5)"/>
+      </g>
+      <text id="select-centres" x="960" y="774" class="hi" font-size="50" font-weight="780" fill="#2b2622">चुने हुए booking centres</text>
+      <text id="select-offices" x="960" y="842" class="hi" font-size="50" font-weight="780" fill="#2b2622">या post offices</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+ on:[
+  [0,'stamp','#regulation-133',{from:1.105,rot:-2,spring:'soft'}],
+  [3.38,'type','#speed-en',{cps:20}],
+  [3.88,'fade','#speed-hi',{dur:.23}],
+  [7.06,'pop','#office',{from:.9}],
+  [7.56,'words','#select-centres',{gap:.16,dist:5,spring:'fast'}],
+  [7.82,'words','#select-offices',{gap:.22,dist:5,spring:'fast'}]
+ ]
+})
+</script>
+</section>
