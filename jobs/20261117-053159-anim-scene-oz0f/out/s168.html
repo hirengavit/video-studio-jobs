@@ -82,6 +82,7 @@
   </g>
   <g id="cover-envelope">
     <use id="myth-envelope-art" href="piece:envelope-article" transform="translate(1030 250) scale(1.85)"/>
+    <rect x="1556" y="485" width="52" height="46" rx="6" fill="none" stroke="#ead9a8" stroke-width="3" stroke-dasharray="3 5"/>
     <text id="registered-written" x="1288" y="565" font-family="Caveat,cursive" font-size="56" font-weight="650" fill="#2b2622">Registered</text>
     <text id="insured-written" x="1288" y="627" font-family="Caveat,cursive" font-size="56" font-weight="650" fill="#2b2622">Insured</text>
     <text id="speed-written" x="1288" y="689" font-family="Caveat,cursive" font-size="56" font-weight="650" fill="#2b2622">Speed Post</text>
@@ -96,6 +97,8 @@
     $('#old-card')[0]?.setAttribute('transform','translate('+(26.5*k)+' '+(-30*k)+') scale('+(1-.05*k)+')');
     const art=$('#myth-envelope-art')[0];
     art?.querySelector('[id$="-address-lines"],[id="address-lines"]')?.setAttribute('opacity','0');
+    // Use the front face: keep its paper and postal stripe, not the reverse-side fold seams.
+    art?.querySelector('[id$="-paper"],[id="paper"]')?.querySelectorAll('path').forEach(path=>path.setAttribute('opacity','0'));
 
   },
   on:[
