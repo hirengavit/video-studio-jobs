@@ -73,11 +73,12 @@
 ({
  shots:[[0,'#initial'],[3.73,'#postage-shot']],
  update(t,section,$){
-   const n=Math.max(0,Math.min(1,(t-1.36)/.34)), p=n*n*(3-2*n), b=900+70*p;
+   const n=Math.max(0,Math.min(1,(t-1.12)/.37)), p=n*n*(3-2*n), scale=1-.38*p;
+   const f=Math.max(0,Math.min(1,(t-1.49)/.23)), b=900+70*f*f*(3-2*f);
    $('#declaration-bg')[0].setAttribute('d',`M1025 260H1755Q1780 260 1780 285V${b-25}Q1780 ${b} 1755 ${b}H1025Q1000 ${b} 1000 ${b-25}V285Q1000 260 1025 260Z`);
    $('#sender-choice')[0].setAttribute('x',383-226*p);
    $('#sender-choice')[0].setAttribute('font-size',47-11*p);
-   $('#additions')[0].setAttribute('transform','translate('+(320*p)+' '+(928*p)+') scale('+(1-.38*p)+') translate('+(-620*p)+' '+(-914*p)+')');
+   $('#additions')[0].setAttribute('transform','translate('+(620-300*p-620*scale)+' '+(914+14*p-914*scale)+') scale('+scale+')');
    const d=Math.max(0,Math.min(1,(t-7.55)/.35)), z=d*d*(3-2*d);
    $('#postage-bg')[0].setAttribute('height',343+244*z);
    const stock=$('#parcel-stock')[0]?.querySelector('g[id$="-tag"],g[id="tag"]');if(stock)stock.setAttribute('visibility','hidden');},
