@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s086" data-in="cut" data-section="PART 4 · SEALING" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif"><rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="advice-shot">
+  <rect x="120" y="207" width="1680" height="742" rx="35" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M155 207h349v742H155q-35 0-35-35V242q0-35 35-35Z" fill="#f3ead6"/>
+  <path d="M504 207v742" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <g id="guide">
+    <use href="piece:old-book-stack" transform="translate(112 302) scale(1.00)"/>
+    <text x="312" y="680" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="790" fill="#4b4f58">पुराना Guide</text>
+    <text x="312" y="739" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="690" fill="#6f6a63">सलाह</text>
+  </g>
+  <text id="public-advice" x="566" y="320" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="740" fill="#2b2622">public को सलाह</text>
+  <text id="unregistered" x="566" y="431" font-size="68" font-weight="810" fill="#2b2622">Unregistered letters &amp; packets</text>
+  <text id="unregistered-hi" x="566" y="502" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="680" fill="#6f6a63">बिना registration वाली चिट्ठियाँ और packets</text>
+  <path d="M566 543H1742" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <g id="outside-wax">
+    <text x="566" y="656" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="70" font-weight="780" fill="#2b2622">बाहर sealing wax</text>
+    <g id="outside-envelope" transform="translate(1215 573) scale(1.3) translate(-1266 -512)">
+      <rect x="1266" y="512" width="410" height="255" rx="17" fill="#fff9ed" stroke="#2b2622" stroke-width="5"/>
+      <path d="M1272 522l187 124q12 8 24 0l187-124M1272 758l139-125m258 125-140-125" fill="none" stroke="#8a5d00" stroke-width="4" stroke-linejoin="round"/>
+      <use href="piece:wax-seal" transform="translate(1411 595) scale(1)"/>
+      <path id="wax-cross" d="M1413 594l116 116m0-116-116 116" fill="none" stroke="#4b4f58" stroke-width="3.85" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g id="do-not-stamp">
+    <rect x="562" y="696" width="550" height="113" rx="26" fill="#f0eff1" stroke="#4b4f58" stroke-width="4"/>
+    <text x="837" y="773" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="65" font-weight="820" fill="#4b4f58">मत लगाइए</text>
+  </g>
+
+  <g id="exception">
+    <rect x="562" y="821" width="623" height="112" rx="29" fill="#fde9a6" stroke="#ead09a" stroke-width="3"/>
+    <text x="586" y="863" class="hi" font-size="40" font-weight="790" fill="#2b2622">छूट: article की सुरक्षा</text>
+    <text id="necessary" x="586" y="909" class="hi" font-size="40" font-weight="790" fill="#2b2622">के लिए ज़रूरी हो</text>
+  </g>
+  <g id="stuck-letters" transform="translate(0 -40)">
+    <use id="letter-back" href="piece:icon-envelope-letter" transform="translate(1203 463) scale(.93)"/>
+    <use id="letter-front" href="piece:icon-envelope-letter" transform="translate(1398 523) scale(.93)"/>
+    <use id="between-wax" href="piece:wax-seal" transform="translate(1430 651) scale(.65)"/>
+  </g>
+  <text id="sticks" x="1491" y="835" text-anchor="middle" class="hi" font-size="40" font-weight="790" fill="#2b2622">दूसरी चिट्ठियों से चिपकता</text>
+  <g id="both-damaged" transform="translate(0 -40)">
+    <g fill="#4b4f58" stroke="#fbf7ee" stroke-width="4">
+      <circle cx="1366" cy="645" r="37"/><circle cx="1625" cy="707" r="37"/>
+    </g>
+    <path d="M1352 631l28 28m0-28-28 28m259 34 28 28m0-28-28 28" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+    <text x="1491" y="917" text-anchor="middle" class="hi" font-size="44" font-weight="780" fill="#4b4f58">दोनों खराब</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [1.88,'pop','#exception',{from:.94,spring:'soft'}],
+    [3.12,'highlight','#necessary',{words:'ज़रूरी',color:'#f2b705',opacity:.5,pad:5,dur:.27}],
+    [4.56,'out','#outside-envelope',{dur:.18,scale:false}],
+    [4.56,'pop','#stuck-letters',{from:.93,spring:'soft'}],
+    [6.36,'words','#sticks',{gap:.12,dist:10,spring:'soft'}],
+    [8.04,'pop','#both-damaged',{from:.94,spring:'soft'}]
+  ]
+}
+</script>
+</section>
