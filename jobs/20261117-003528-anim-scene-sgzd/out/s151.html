@@ -39,6 +39,7 @@
     <path d="M1623 482l13 13 25-28" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <text id="accountable-ask" x="1060" y="663" font-family="Inter,sans-serif" font-size="64" font-weight="790" fill="#4b4f58">= accountable?</text>
+  <path id="accountable-strike" d="M1111 644H1510" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
   <g id="accountable-no">
     <circle cx="1654" cy="640" r="38" fill="#4b4f58"/>
     <path d="M1639 625l30 30m0-30-30 30" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
@@ -53,7 +54,7 @@
    [1.20,'type','#ordinary-title',{cps:22}],
    [3.35,'fade','#window-ok',{dur:.25}],
    [7.46,'type','#accountable-ask',{cps:24}],
-   [8.56,'strike','#accountable-ask',{words:'accountable',color:'#4b4f58',width:8,dur:.32,dim:.85}],
+   [8.56,'draw','#accountable-strike',{dur:.32}],
    [8.56,'pop','#accountable-no',{from:.90,spring:'soft'}]
  ]
 })
