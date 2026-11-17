@@ -1,0 +1,67 @@
+<section class="vs-scene" id="s068" data-in="cut" data-section="PART 3 · PACKING BY CONTENTS" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="ins">
+      <g id="insurance-card">
+        <rect x="120" y="247" width="640" height="420" rx="29" fill="#9e1b1b"/>
+        <rect x="135" y="262" width="610" height="390" rx="18" fill="none" stroke="#f3ead6" stroke-opacity=".65" stroke-width="4" stroke-dasharray="1 12" stroke-linecap="round"/>
+        <text id="insurance-en" x="440" y="435" text-anchor="middle" font-family="Inter, sans-serif" font-size="102" font-weight="820" fill="#fff">Insurance</text>
+        <text id="insurance-hi" x="440" y="544" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="73" font-weight="760" fill="#fde9a6">बीमा</text>
+      </g>
+      <g id="insurance-list">
+        <g id="liquids">
+          <rect x="820" y="248" width="980" height="140" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+          <circle cx="875" cy="319" r="11" fill="#9e1b1b"/>
+          <text x="913" y="307" font-family="Inter, sans-serif" font-size="53" font-weight="810" fill="#2b2622">Liquids</text>
+          <text x="913" y="359" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="43" font-weight="670" fill="#6f6a63">तरल</text>
+        </g>
+        <g id="meltables">
+          <rect x="820" y="412" width="980" height="140" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+          <circle cx="875" cy="482" r="11" fill="#9e1b1b"/>
+          <text x="913" y="500" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="54" font-weight="790" fill="#2b2622">आसानी से पिघलने वाली चीज़ें</text>
+        </g>
+        <g id="perishables">
+          <rect x="820" y="576" width="980" height="140" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+          <circle cx="875" cy="646" r="11" fill="#9e1b1b"/>
+          <text x="913" y="635" font-family="Inter, sans-serif" font-size="53" font-weight="810" fill="#2b2622">Perishables</text>
+          <text x="913" y="687" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="43" font-weight="670" fill="#6f6a63">जल्दी खराब होने वाली</text>
+        </g>
+        <g id="fragile-articles">
+          <rect x="820" y="740" width="980" height="140" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+          <circle cx="875" cy="810" r="11" fill="#9e1b1b"/>
+          <text x="913" y="799" font-family="Inter, sans-serif" font-size="53" font-weight="810" fill="#2b2622">Fragile articles</text>
+          <text x="913" y="851" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="43" font-weight="670" fill="#6f6a63">जल्दी टूटने वाली</text>
+        </g>
+      </g>
+    </g>
+    <g id="loss-card">
+      <rect x="120" y="200" width="640" height="340" rx="29" fill="#fff" stroke="#b4c9b7" stroke-width="3"/>
+      <circle cx="238" cy="322" r="53" fill="#e8f1e8"/>
+      <path id="loss-tick" d="M215 322l17 17 31-35" fill="none" stroke="#2e7d4f" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="loss-title" x="326" y="349" font-family="Inter,sans-serif" font-size="82" font-weight="810" fill="#2e7d4f">Loss</text>
+      <text x="326" y="414" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="45" font-weight="640" fill="#6f6a63">नुकसान:</text>
+      <text id="loss-definition" x="326" y="489" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="62" font-weight="780" fill="#2b2622">खो जाना</text>
+    </g>
+    <g id="damage-card">
+      <rect x="120" y="580" width="640" height="340" rx="29" fill="#fff" stroke="#cbc9c6" stroke-width="3"/>
+      <circle cx="238" cy="713" r="53" fill="#eeece7"/>
+      <path id="damage-cross" d="M216 691l44 44m0-44-44 44" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+      <text id="damage-title" x="326" y="743" font-family="Inter,sans-serif" font-size="74" font-weight="800" fill="#4b4f58">Damage</text>
+      <text id="damage-definition" x="177" y="857" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="60" font-weight="760" fill="#2b2622">टूट-फूट या खराबी</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    on:[
+      [1.07,'out','#insurance-card',{dur:.34,scale:.96}],
+      [1.55,'pop','#loss-card',{from:.97,spring:'soft'}],
+      [1.55,'draw','#loss-tick',{dur:.28}],
+      [3.25,'pop','#damage-card',{from:.97,spring:'soft'}],
+      [3.97,'draw','#damage-cross',{dur:.28}],
+      [3.97,'strike','#damage-title',{color:'#4b4f58',width:5,dur:.30,dim:.86}],
+      [5.99,'fade','#loss-definition',{dur:.26}],
+      [9.12,'fade','#damage-definition',{dur:.28}]
+    ]
+  })
+  </script>
+</section>
