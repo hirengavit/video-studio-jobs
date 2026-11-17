@@ -109,8 +109,8 @@
  update(t, section, $) {
    const h=Math.max(0,Math.min(1,(t-5.38)/.28));
    $('#step-card')[0].setAttribute('height', String(711+19*h*h*(3-2*h)));
-   const u=Math.max(0,Math.min(1,(t-4.78)/.50));
-   const k=2.5-1.5*u*u*(3-2*u);
+   const u=Math.max(0,Math.min(1,(t-4.74)/.50));
+   const k=1+1.5*(1-u)*(1-u)*(1-u);
    const v=Math.max(0, Math.min(1,(t-5.26)/.18));
    const up=Math.max(0, Math.min(1,(t-4.68)/.18));
    $('#bullion-label')[0].setAttribute('y',String(462-70*up*(1-v)));
