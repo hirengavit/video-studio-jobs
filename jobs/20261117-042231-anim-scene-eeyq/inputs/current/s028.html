@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s028" data-in="cut" data-section="PART 1 · PACKING &amp; STRONG COVER" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <defs><filter id="old-slate" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/></filter></defs>
+    <path d="M225 823H814M1118 823H1770" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+    <g id="old">
+      <use href="piece:old-book-stack" transform="translate(284.8 440.8) scale(1.2)"/>
+      <g id="old-muted" filter="url(#old-slate)"><use href="piece:old-book-stack" transform="translate(284.8 440.8) scale(1.2)"/></g>
+      <text id="old-label" x="520" y="897" text-anchor="middle" class="hi" font-size="52" font-weight="750" fill="#6f6a63">पुराने निर्देश</text>
+    </g>
+    <g id="new">
+      <g id="regulations">
+        <use href="piece:regulations-book" transform="translate(1155 392.65) scale(1.1)"/>
+        <text x="1335" y="545" text-anchor="middle" font-size="25" font-weight="795" fill="#9e1b1b">POST OFFICE</text>
+        <text x="1335" y="584" text-anchor="middle" font-size="24" font-weight="760" fill="#2b2622">REGULATIONS</text>
+        <text x="1335" y="637" text-anchor="middle" font-size="44" font-weight="820" fill="#9e1b1b">2024</text>
+      </g>
+      <text id="regs-label" x="1273" y="897" text-anchor="middle" class="hi" font-size="46" font-weight="760" fill="#9e1b1b">आज की Regulations</text>
+      <g id="orders">
+        <rect x="1530" y="520" width="218" height="300" rx="17" fill="#ffffff" stroke="#ead9a8" stroke-width="5"/>
+        <path d="M1550 553H1726" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+        <text x="1639" y="615" text-anchor="middle" font-size="39" font-weight="780" fill="#2b2622">Orders</text>
+        <text x="1639" y="660" text-anchor="middle" class="hi" font-size="35" font-weight="650" fill="#6f6a63">आदेश</text>
+        <path d="M1565 710h148m-148 33h148m-148 33h107" stroke="#a4a098" stroke-width="4" stroke-linecap="round"/>
+        <text x="1662" y="897" text-anchor="middle" class="hi" font-size="42" font-weight="740" fill="#2b2622">बाद के orders</text>
+      </g>
+      <g id="accepted">
+        <circle cx="1650" cy="365" r="113" fill="#eff6ee" stroke="#2e7d4f" stroke-width="7"/>
+        <circle cx="1650" cy="365" r="99" fill="none" stroke="#2e7d4f" stroke-width="2" stroke-dasharray="6 6"/>
+        <path d="m1625 327 18 18 35-38" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="1650" y="407" text-anchor="middle" class="hi" font-size="33" font-weight="790" fill="#2e7d4f">माने जाते हैं</text>
+      </g>
+    </g>
+    <g id="conflict-label">
+      <rect x="661" y="208" width="598" height="111" rx="55" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <text x="960" y="281" text-anchor="middle" class="hi" font-size="57" font-weight="800" fill="#9e1b1b">टकराव · Conflict</text>
+    </g>
+    <path id="lightning" d="m995 468-87 119h71l-65 123" fill="none" stroke="#9e1b1b" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <script type="text/scene">
+  {
+    on:[
+      [.74,'pop','#conflict-label',{from:.93,spring:'soft'}],
+      [.74,'draw','#lightning',{dur:.42}],
+      [2.70,'pulse','#regulations',{amount:.045}],
+      [2.70,'pop','#regs-label',{from:.93,spring:'soft'}],
+      [4.02,'pop','#orders',{from:.93,spring:'soft'}],
+      [5.20,'fade','#old-muted',{dur:.22}],
+      [5.20,'color','#old-label',{to:'#4b4f58',dur:.22}],
+      [5.20,'strike','#old-label',{color:'#4b4f58',dim:1,width:7,dur:.30}],
+      [5.62,'stamp','#accepted',{from:1.10,rot:-5,spring:'soft'}]
+    ]
+  }
+  </script>
+</section>
