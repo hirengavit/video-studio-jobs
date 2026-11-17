@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "1.87",
+  "3.74",
+  "5.60",
+  "7.47",
+  "9.19"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s092",
+   "text": "मज़बूत cover / अच्छी तरह बंद",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s092",
+   "text": "डोरी / tape के / बँधे सिरों पर seal",
+   "t": 0.3
+  }
+ ]
+}
