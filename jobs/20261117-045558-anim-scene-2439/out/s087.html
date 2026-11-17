@@ -1,0 +1,37 @@
+<section class="vs-scene" id="s087" data-in="cut" data-section="PART 4 · SEALING" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<text x="201" y="245" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="72" font-weight="800" fill="#9e1b1b">Wax लगाना ही हो, तो</text>
+<g id="envelope-back">
+<rect x="201" y="320" width="790" height="624" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="5"/>
+<use id="main-envelope" href="piece:envelope-article" transform="translate(316 352) scale(1.4)"/>
+<path d="M367 845h456" fill="none" stroke="#e2cf9f" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g id="wax"><use href="piece:wax-seal" transform="translate(524 560) scale(1.2)"/></g>
+<g id="tissue-paper">
+<path d="M484 557L702 535L727 720L504 745Z" fill="#fff" fill-opacity=".67" stroke="#8f8068" stroke-width="4" stroke-dasharray="9 7" stroke-linejoin="round"/>
+<path d="M664 539L702 535L707 574Z" fill="#f3ead6" fill-opacity=".86" stroke="#8f8068" stroke-width="3"/>
+</g>
+<path d="M1108 320H1752Q1780 320 1780 348V916Q1780 944 1752 944H1108Q1080 944 1080 916V348Q1080 320 1108 320Z" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<path d="M1130 378H1725" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+<text id="before-seal" x="1144" y="466" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="770" fill="#2b2622">seal लगाने से पहले</text>
+<text id="tissue" x="1144" y="584" font-family="Inter,sans-serif" font-size="72" font-weight="820" fill="#9e1b1b">Tissue</text>
+<text id="tissue-hi" x="1144" y="652" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="690" fill="#6f6a63">टिशू पेपर</text>
+<text id="thin-note" x="1144" y="753" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="700" fill="#2b2622">या कोई पतला कागज़ ऊपर</text>
+<g id="caution">
+<rect x="1144" y="808" width="328" height="90" rx="44" fill="#fde9a6"/>
+<text x="1308" y="873" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="780" fill="#704b00">सावधानी</text>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+[1.60,"type","#before-seal",{cps:25}],
+[2.08,"pulse","#wax",{amount:.09}],
+[4.20,"slide","#tissue-paper",{from:"up",dist:205,spring:"fast"}],
+[4.40,"type","#tissue",{cps:19}],
+[4.78,"fade","#tissue-hi",{dur:.23}],
+[5.26,"words","#thin-note",{gap:.13,from:"down",dist:12,spring:"fast"}],
+[7.50,"pop","#caution",{from:.88,spring:"fast"}]
+]}
+</script>
+</section>
