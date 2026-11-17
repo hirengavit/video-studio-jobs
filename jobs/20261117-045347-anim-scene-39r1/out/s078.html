@@ -3,8 +3,8 @@
 <rect width="1920" height="1080" fill="#fbf7ee"/>
 <g id="two">
   <text id="two-title" x="960" y="248" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi" font-size="75" font-weight="820" fill="#2b2622">दो बातें · फ़र्क़</text>
-  <g id="left"><rect x="160" y="324" width="740" height="540" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/></g>
-  <g id="right"><rect x="1020" y="324" width="740" height="540" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/></g>
+  <g id="left"><rect x="160" y="324" width="740" height="540" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/><text id="left-num" x="530" y="594" dominant-baseline="central" text-anchor="middle" font-size="120" font-weight="700" fill="#6f6a63">1</text></g>
+  <g id="right"><rect x="1020" y="324" width="740" height="540" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/><text id="right-num" x="1390" y="594" dominant-baseline="central" text-anchor="middle" font-size="120" font-weight="700" fill="#6f6a63">2</text></g>
 
 <g id="air-icon" transform="translate(530 545)">
  <path d="M-198 15-25-20 32-174l36-9-22 155 103-17q49-7 66 19 2 12-35 27L53 34 34 151l-33 12-15-114-109 23-34 41-34 5 16-65-38-21Z" fill="#f3ead6" stroke="#34383f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -38,9 +38,9 @@
 </svg>
 <script type="text/scene">
 {shots:[[0,"#two"],[7.94,"#on"],[9.95,"#os"]],on:[
- [.92,"draw","#air-icon",{dur:.55}],[.92,"type","#air-only",{cps:23}],
+ [.92,"out","#left-num",{dur:.14,scale:false}],[.92,"draw","#air-icon",{dur:.55}],[.92,"type","#air-only",{cps:23}],
  [2.40,"draw","#air-cross",{dur:.24}],
- [4.68,"draw","#postal-icon",{dur:.62}],[4.68,"type","#post-all",{cps:23}],
+ [4.68,"out","#right-num",{dur:.14,scale:false}],[4.68,"draw","#postal-icon",{dur:.62}],[4.68,"type","#post-all",{cps:23}],
  [6.92,"draw","#postal-cross",{dur:.24}],
  [7.94,"fade","#two-books",{dur:.22}],[7.95,"fade","#old-l",{dur:.15}],[8.75,"fade","#new-l",{dur:.15}],
  [10.00,"stamp","#legacy-tag",{rot:-2,from:1.04}],
