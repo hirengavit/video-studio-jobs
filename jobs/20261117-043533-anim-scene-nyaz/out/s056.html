@@ -8,7 +8,7 @@
 <path d="M983 960H1840" fill="none" stroke="#b9a784" stroke-width="4" stroke-linecap="round"/>
 <g id="box"><use href="piece:protective-box" transform="translate(1216.5 495) scale(1.35)"/></g>
 <g id="box-seat"><circle data-anchor="top" cx="1500" cy="853" r="0"/></g>
-<g id="bottle"><use href="piece:glass-bottle" transform="translate(1023 639.35) scale(1.1)"/><circle data-anchor="base" cx="1100" cy="960" r="0"/>
+<g id="bottle"><g id="bottle-drawing"><use href="piece:glass-bottle" transform="translate(1023 639.35) scale(1.1)"/></g><circle data-anchor="base" cx="1100" cy="960" r="0"/>
 <g id="inner-callout">
 <text x="1100" y="600" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="760" fill="#2b2622">अंदर का पात्र</text>
 <path id="inner-leader" d="M1100 612V645" fill="none" stroke="#6f6a63" stroke-width="3" stroke-dasharray="8 9"/>
@@ -24,7 +24,7 @@
 on:[
 [.90,"type","#term",{cps:22}],
 [3.86,"fade","#term-hi",{dur:.23}],
-[2.40,"draw","#bottle use",{dur:.34}],
+[2.40,"draw","#bottle-drawing",{dur:.34}],
 [2.40,"fade","#inner-callout",{dur:.26}],
 [9.46,"fade","#box",{dur:.29}],
 [9.46,"fade","#outer-callout",{dur:.26}],
