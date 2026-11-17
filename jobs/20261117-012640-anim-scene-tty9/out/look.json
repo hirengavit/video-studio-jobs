@@ -8,12 +8,5 @@
   "8.65"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s096",
-   "text": "सावधानी से और मज़बूती से pack",
-   "t": 7.04
-  }
- ]
+ "warnings": []
 }
