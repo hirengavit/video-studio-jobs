@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "mostly-empty",
-   "scene": "s082",
-   "message": "a card (#s082-caution-band) is mostly empty at 1.7 s: bring its items in sooner, or size it for what it holds now",
-   "t": 1.74
-  },
-  {
    "kind": "text-overlap",
    "scene": "s082",
    "text": "पुराना packing तरीका / ≠",
