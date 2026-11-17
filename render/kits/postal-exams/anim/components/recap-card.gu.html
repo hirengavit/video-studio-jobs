@@ -1,0 +1,67 @@
+<section class="vs-scene" id="recap-card-gu" data-in="fade" data-in-dur="0.4" data-section="ટપાલ જીવન વીમો">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="env">
+      <rect x="160" y="196" width="1600" height="790" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M176 198 L960 418 L1744 198 Z" fill="#f3ead6"/>
+      <path d="M176 198 L960 418 L1744 198" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    </g>
+    <g id="head">
+      <text x="960" y="262" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="700" fill="#6f6a63">પુનરાવર્તન</text>
+    </g>
+    <text id="title" x="960" y="332" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">PLI અને RPLI</text>
+    <g id="seal">
+      <circle cx="960" cy="418" r="46" fill="#9e1b1b"/>
+      <circle cx="960" cy="418" r="34" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="4 7" stroke-linecap="round"/>
+      <text x="960" y="432" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="800" fill="#fde9a6">3</text>
+    </g>
+    <g class="row" id="r1">
+      <text x="380" y="540" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#2b2622">PLI</text>
+      <text x="380" y="594" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">ટપાલ જીવન વીમો</text>
+      <rect x="1230" y="508" width="440" height="80" rx="40" fill="#fde9a6"/>
+      <text x="1450" y="560" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="36" font-weight="700" fill="#8a5d00">1 ફેબ્રુઆરી 1884 થી</text>
+    </g>
+    <path id="d1" d="M260 638 H1660" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <g class="row" id="r2">
+      <text x="380" y="704" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#2b2622">RPLI</text>
+      <text x="380" y="758" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">ગ્રામીણ ટપાલ જીવન વીમો</text>
+      <rect x="1230" y="672" width="440" height="80" rx="40" fill="#fde9a6"/>
+      <text x="1450" y="724" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="36" font-weight="700" fill="#8a5d00">24 માર્ચ 1995 થી</text>
+    </g>
+    <path id="d2" d="M260 802 H1660" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <g class="row" id="r3">
+      <text x="380" y="868" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#2b2622">Malhotra Committee</text>
+      <text x="380" y="922" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">મલ્હોત્રા સમિતિ</text>
+      <rect x="1230" y="836" width="440" height="80" rx="40" fill="#fde9a6"/>
+      <text x="1450" y="888" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="36" font-weight="700" fill="#8a5d00">RPLI ની ભલામણ</text>
+    </g>
+    <g class="tickc" id="k1"><circle cx="300" cy="556" r="42" fill="#e3f1e8"/></g>
+    <g class="tickc" id="k2"><circle cx="300" cy="720" r="42" fill="#e3f1e8"/></g>
+    <g class="tickc" id="k3"><circle cx="300" cy="884" r="42" fill="#e3f1e8"/></g>
+    <path id="t1" d="M280 557 L295 572 L322 541" stroke="#2e7d4f" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="t2" d="M280 721 L295 736 L322 705" stroke="#2e7d4f" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="t3" d="M280 885 L295 900 L322 869" stroke="#2e7d4f" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}], [8, {zoom: 1.02}]],
+    on: [
+      [0.05, 'reveal', '#env', {from: 'up', dur: 0.6}],
+      [0.4, 'fade', '#head', {dur: 0.5}],
+      [0.7, 'words', '#title', {gap: 0.12, dist: 20}],
+      [1.2, 'stamp', '#seal', {from: 2, rot: -8}],
+      [1.9, 'slide', '#r1', {from: 'left', dist: 40, spring: 'soft'}],
+      [2.0, 'pop', '#k1', {from: 0.4, spring: 'soft'}],
+      [2.5, 'draw', '#t1', {dur: 0.35}],
+      [3.1, 'draw', '#d1', {dur: 0.4}],
+      [3.4, 'slide', '#r2', {from: 'left', dist: 40, spring: 'soft'}],
+      [3.5, 'pop', '#k2', {from: 0.4, spring: 'soft'}],
+      [4.0, 'draw', '#t2', {dur: 0.35}],
+      [4.6, 'draw', '#d2', {dur: 0.4}],
+      [4.9, 'slide', '#r3', {from: 'left', dist: 40, spring: 'soft'}],
+      [5.0, 'pop', '#k3', {from: 0.4, spring: 'soft'}],
+      [5.5, 'draw', '#t3', {dur: 0.35}],
+    ],
+  }
+  </script>
+</section>
