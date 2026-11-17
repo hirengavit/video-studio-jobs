@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s177" data-in="wipe" data-in-dur=".44" data-section="PART 7 · BOXES, TIMING &amp; BOOKING" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="chapter">
+<rect x="150" y="242" width="10" height="48" rx="5" fill="#f2b705"/>
+<text x="182" y="280" class="hi" font-size="44" font-weight="800" fill="#9e1b1b">PART 7 · भाग 7</text>
+<text x="150" y="442" font-size="84" font-weight="800" fill="#2b2622">Special Letter Boxes,</text>
+<text x="150" y="560" font-size="84" font-weight="800" fill="#2b2622">Timing &amp; Booking</text>
+<text x="150" y="673" class="hi" font-size="46" font-weight="760" fill="#9e1b1b">Special letter boxes, समय और booking</text>
+<path id="uline" d="M151 708H1050" stroke="#f2b705" stroke-width="9" stroke-linecap="round"/>
+<g id="reg"><rect x="150" y="762" width="520" height="83" rx="40" fill="#fde9a6"/><text x="410" y="818" text-anchor="middle" font-size="49" font-weight="800" fill="#4b3200">Regulations 22–24</text></g>
+<text x="150" y="938" class="hi" font-size="39" font-weight="670" fill="#6f6a63">Part 7 of 7 · भाग 7 / 7</text>
+<rect x="1230" y="266" width="500" height="620" rx="28" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="17" stroke-dasharray="1 24" stroke-linecap="round"/>
+<rect x="1271" y="310" width="418" height="435" rx="17" fill="#fbf7ee"/>
+<use href="piece:letter-box-icon" transform="translate(1398 361) scale(.76)"/>
+<text x="1284" y="837" font-size="77" font-weight="820" fill="white">07</text>
+</g>
+<g id="box-shot">
+<rect x="320" y="232" width="760" height="726" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+<use href="piece:letter-box-icon" transform="translate(524 280) scale(1.6)"/>
+<g id="only-sign"><rect x="454" y="585" width="492" height="89" rx="15" fill="#fff9ef" stroke="#6e1616" stroke-width="5"/>
+<text id="plate" x="700" y="642" text-anchor="middle" font-size="48" font-weight="850" fill="#6e1616">FOR LETTERS ONLY</text></g>
+<g id="chip1">
+<rect x="1150" y="343" width="600" height="181" rx="27" fill="#fff" stroke="#a7c4ad" stroke-width="4"/>
+<g transform="translate(1183 379)"><use href="piece:icon-envelope-letter" transform="scale(.28)"/></g>
+<text x="1355" y="415" font-size="57" font-weight="800" fill="#2b2622">Letters</text><text x="1355" y="476" class="hi" font-size="47" font-weight="700" fill="#6f6a63">पत्र</text>
+<g id="tick1"><circle cx="1689" cy="433" r="31" fill="#e5f0e8"/><path d="M1675 433l10 10 18-23" stroke="#2e7d4f" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+<g id="chip2">
+<rect x="1150" y="605" width="600" height="181" rx="27" fill="#fff" stroke="#a7c4ad" stroke-width="4"/>
+<g transform="translate(1183 641)"><use href="piece:postcard-blank" transform="scale(.28)"/></g>
+<text x="1355" y="677" font-size="57" font-weight="800" fill="#2b2622">Postcards</text><text x="1355" y="738" class="hi" font-size="47" font-weight="700" fill="#6f6a63">पोस्टकार्ड</text>
+<g id="tick2"><circle cx="1689" cy="695" r="31" fill="#e5f0e8"/><path d="M1675 695l10 10 18-23" stroke="#2e7d4f" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g></g>
+</g></svg><script type="text/scene">
+{shots:[[0,"#chapter"],[4.66,"#box-shot"]],on:[
+[.50,"draw","#uline",{dur:.42}],[1.82,"pop","#reg",{from:.94,spring:"fast"}],
+[4.66,"type","#plate",{cps:21}],
+[7.70,"slide","#chip1",{from:"right",dist:58,spring:"fast"}],[7.92,"fade","#tick1",{dur:.16}],
+[8.68,"slide","#chip2",{from:"right",dist:58,spring:"fast"}],[9.32,"fade","#tick2",{dur:.16}]
+]}
+</script></section>
