@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s010" data-in="cut" data-section="PART 1 · PACKING &amp; STRONG COVER" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="'Noto Sans Devanagari',Inter,sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<path d="M283 422H1637Q1660 422 1660 445V716Q1660 740 1637 740H283Q260 740 260 716V445Q260 422 283 422Z" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+<path d="M307 710H1613" fill="none" stroke="#d9c293" stroke-width="3"/>
+<g id="left-letter"><use href="piece:icon-envelope-letter" transform="translate(305 440) scale(.84)"/></g>
+<g id="parcel"><use href="piece:parcel-with-tag" transform="translate(708 363) scale(1.20)"/></g>
+<g id="right-letter-back"><use href="piece:icon-envelope-letter" transform="translate(1268 432) rotate(5 132 132) scale(.68)"/></g>
+<g id="right-letter-front"><use href="piece:icon-envelope-letter" transform="translate(1297 503) scale(.68)"/></g>
+<g id="pressure">
+<text font-family="'Noto Sans Devanagari',Inter,sans-serif" x="472" y="245" text-anchor="middle" fill="#2b2622" font-size="64" font-weight="780">दबाव</text>
+<path id="arrows" d="M362 300v126m-18-22 18 22 18-22m92-104v126m-18-22 18 22 18-22m92-104v126m-18-22 18 22 18-22" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="friction">
+<text font-family="'Noto Sans Devanagari',Inter,sans-serif" x="960" y="245" text-anchor="middle" fill="#2b2622" font-size="64" font-weight="780">रगड़</text>
+<path id="zigzag" d="M1036 294l42 22-25 28 45 30-26 28 48 27-19 28" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M1142 419l18-8m-6 29 23-2m-26 25 20 8" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+</g>
+<g id="handling">
+<text font-family="'Noto Sans Devanagari',Inter,sans-serif" id="handling-label" x="1445" y="245" text-anchor="middle" fill="#2b2622" font-size="59" font-weight="780">बार-बार हाथों से</text>
+<defs><path id="hand-shape" d="M17 64L10 50Q8 41 16 41Q20 41 25 49V18Q25 10 32 10Q39 10 39 18V33Q44 26 51 32Q56 29 62 35Q69 33 73 42V58Q73 74 65 85H32Q26 74 17 64Z"/></defs>
+<g id="hands" fill="#fff" stroke="#2b2622" stroke-width="3" stroke-linejoin="round">
+<use id="hand1" href="#hand-shape" transform="translate(1283 302) rotate(-10 41 50)"/>
+<use id="hand2" href="#hand-shape" transform="translate(1404 300)"/>
+<use id="hand3" href="#hand-shape" transform="translate(1525 302) rotate(10 41 50)"/>
+</g>
+</g>
+<g id="packing-band">
+<rect x="260" y="822" width="1400" height="148" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+<text x="322" y="887" font-family="Inter,sans-serif" fill="#9e1b1b" font-size="62" font-weight="820">Packing =</text>
+<text font-family="'Noto Sans Devanagari',Inter,sans-serif" x="323" y="936" fill="#6f6a63" font-size="34">पैकिंग</text>
+<text font-family="'Noto Sans Devanagari',Inter,sans-serif" id="nature" x="760" y="886" fill="#2b2622" font-size="48" font-weight="780">सामान की प्रकृति</text>
+<text font-family="'Noto Sans Devanagari',Inter,sans-serif" id="journey" x="760" y="949" fill="#2b2622" font-size="48" font-weight="780">+ सफ़र की हालत</text>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+[0,"pop","#left-letter",{from:.95,spring:"fast"}],
+[.68,"pop","#parcel",{from:.86,spring:"fast"}],
+[1.14,"pop","#right-letter-back",{from:.88,spring:"fast"}],
+[1.24,"pop","#right-letter-front",{from:.88,spring:"fast"}],
+[4.14,"fade","#pressure",{dur:.22}],
+[4.14,"draw","#arrows",{dur:.45}],
+[5.34,"fade","#friction",{dur:.22}],
+[5.34,"draw","#zigzag",{dur:.40}],
+[7.76,"fade","#handling-label",{dur:.22}],
+[7.76,"pop","#hand1, #hand2, #hand3",{from:.80,spring:"fast",stagger:.2}],
+[9.86,"reveal","#packing-band",{from:"left",dur:.45}],
+[12.16,"type","#nature",{cps:36}],
+[13.7,"type","#journey",{cps:36}]
+]}
+</script>
+</section>
