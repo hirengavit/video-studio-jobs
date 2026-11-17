@@ -1,0 +1,68 @@
+<section class="vs-scene" id="s169" data-in="cut" data-section="PART 6 · WHERE TO POST" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="myth-shot">
+  <g id="mythcard">
+    <rect id="myth-surface" x="160" y="200" width="1600" height="570" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="228" y="235" width="300" height="66" rx="33" fill="#e4e5e8"/>
+    <text x="378" y="281" text-anchor="middle" class="hi" font-size="42" font-weight="840" fill="#4b4f58">MYTH · भ्रम</text>
+  </g>
+  <text id="claim" x="228" y="390" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="810" fill="#4b4f58">लिख दिया = service मिली</text>
+  <path id="claim-cross" d="m986 342 45 45m0-45-45 45" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+  <g id="cover-envelope">
+    <use href="piece:envelope-article" transform="translate(1388 192) scale(.6)"/>
+    <path d="M1510 358v28m0 0h-156v17" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="1510" cy="356" r="6" fill="#9e1b1b"/>
+    <g id="cover-detail">
+      <rect x="1054" y="404" width="600" height="310" rx="25" fill="#fffaf1" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M1101 439V680" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round"/>
+      <path d="M1120 671l139-55m349 55-140-55" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <text id="registered-written" x="1144" y="492" font-family="Inter,sans-serif" font-size="54" font-weight="790" fill="#9e1b1b">Registered</text>
+      <text id="insured-written" x="1144" y="573" font-family="Inter,sans-serif" font-size="54" font-weight="790" fill="#9e1b1b">Insured</text>
+      <text id="speed-written" x="1144" y="654" font-family="Inter,sans-serif" font-size="54" font-weight="790" fill="#9e1b1b">Speed Post</text>
+    </g>
+  </g>
+</g>
+<g id="fact">
+  <rect x="160" y="548" width="1600" height="447" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <rect x="228" y="572" width="303" height="61" rx="30" fill="#e5f1e8"/>
+  <text x="379.5" y="616" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="38" font-weight="840" fill="#2e624c">FACT · सही बात</text>
+  <text id="service-acceptance" x="228" y="714" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="72" font-weight="820" fill="#2b2622">service की acceptance</text>
+  <text id="acceptance-hi" x="1082" y="712" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="740" fill="#6f6a63">स्वीकृति</text>
+  <g id="charges">
+    <rect x="228" y="774" width="458" height="114" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+    <text x="457" y="852" text-anchor="middle" font-size="51" font-weight="810" fill="#2b2622">Charges</text>
+  </g>
+  <g id="declarations">
+    <rect x="730" y="774" width="458" height="114" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+    <text x="959" y="825" text-anchor="middle" font-size="47" font-weight="810" fill="#2b2622">Declarations</text>
+    <text x="959" y="871" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="39" font-weight="730" fill="#6f6a63">घोषणा</text>
+  </g>
+  <g id="booking-receipt">
+    <rect x="1232" y="774" width="460" height="114" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+    <text x="1462" y="825" text-anchor="middle" font-size="47" font-weight="810" fill="#2b2622">Booking receipt</text>
+    <text x="1462" y="871" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="39" font-weight="730" fill="#6f6a63">रसीद</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  update(t,section,$){
+    const q=Math.min(1,Math.max(0,(t-3.52)/.32)), p=q*q*(3-2*q);
+    for(const el of $('#myth-surface')) el.setAttribute('height',570-237*p);
+    for(const el of $('#cover-envelope')) el.setAttribute('transform','translate(1680 205) scale('+(1-.37*p)+') translate(-1680 -205)');
+  },
+  on:[
+    [0,'fade','#claim',{dur:.23}],
+    [.30,'strike','#claim',{color:'#4b4f58',width:6,dur:.32,dim:.64}],
+    [.30,'draw','#claim-cross',{dur:.29}],
+    [3.84,'fade','#fact',{dur:.22}],
+    [3.84,'type','#service-acceptance',{cps:22}],
+    [4.42,'fade','#acceptance-hi',{dur:.24}],
+    [6.50,'pop','#charges',{from:.95,spring:'soft'}],
+    [7.48,'pop','#declarations',{from:.95,spring:'soft'}],
+    [9.14,'pop','#booking-receipt',{from:.95,spring:'soft'}]
+  ]
+}
+</script>
+</section>
