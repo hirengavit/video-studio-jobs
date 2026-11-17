@@ -8,12 +8,5 @@
   "11.11"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s113",
-   "text": "कटे नकली सिक्के नहीं / (currency department / mints से)",
-   "t": 11.11
-  }
- ]
+ "warnings": []
 }
