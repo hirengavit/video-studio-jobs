@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s048" data-in="cut" data-section="PART 2 · LETTER ENVELOPE" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="charge">
+  <g id="b87">
+    <rect x="260" y="300" width="360" height="420" rx="25" fill="#9e1b1b"/>
+    <rect x="274" y="314" width="332" height="392" rx="15" fill="none" stroke="#fde9a6" stroke-width="4" stroke-dasharray="1 13" stroke-linecap="round"/>
+    <text x="440" y="422" text-anchor="middle" font-size="44" font-weight="790" fill="#fff">REGULATION</text>
+    <text x="440" y="618" text-anchor="middle" font-size="172" font-weight="825" fill="#fff">87</text>
+  </g>
+  <g id="b88">
+    <rect x="700" y="300" width="360" height="420" rx="25" fill="#9e1b1b"/>
+    <rect x="714" y="314" width="332" height="392" rx="15" fill="none" stroke="#fde9a6" stroke-width="4" stroke-dasharray="1 13" stroke-linecap="round"/>
+    <text x="880" y="422" text-anchor="middle" font-size="44" font-weight="790" fill="#fff">REGULATION</text>
+    <text x="880" y="618" text-anchor="middle" font-size="172" font-weight="825" fill="#fff">88</text>
+  </g>
+  <text id="cond" opacity=".62" x="660" y="794" text-anchor="middle" class="hi" font-size="53" font-weight="765" fill="#4b4f58">तय शर्त</text><path id="cond-held" d="M557 770H763" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+  <g id="charge-card">
+    <rect x="1180" y="300" width="580" height="520" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M1224 342h492" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+    <text x="1470" y="441" text-anchor="middle" class="hi" font-size="52" font-weight="815" fill="#2b2622">शर्त टूटे →</text>
+    <g id="charge-pill">
+      <rect x="1224" y="496" width="492" height="84" rx="42" fill="#fde9a6" stroke="#d7b559" stroke-width="2"/>
+      <text x="1470" y="554" text-anchor="middle" class="hi" font-size="48" font-weight="810" fill="#704b00">CHARGE · शुल्क</text>
+    </g>
+  </g>
+
+<g id="double">
+ <rect x="1216" y="613" width="508" height="96" rx="19" fill="#9e1b1b"/>
+ <rect x="1227" y="624" width="486" height="74" rx="12" fill="none" stroke="#fde9a6" stroke-width="2.5" stroke-dasharray="2 7"/>
+ <text x="1470" y="680" text-anchor="middle" font-size="47" font-weight="840" fill="#fff">DOUBLE POSTAGE</text>
+</g>
+<text id="double-hi" x="1470" y="772" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="53" font-weight="790" fill="#2b2622">दोगुना डाक शुल्क</text>
+<g id="paid-note">
+ <rect x="1180" y="842" width="580" height="160" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+ <text x="1216" y="906" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="44" font-weight="740" fill="#2b2622">पहले से चुकाया postage</text>
+ <text id="paid-counts" x="1216" y="963" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="44" font-weight="740" fill="#2b2622">गिना जाता है</text>
+</g>
+</g>
+<g id="calc">
+ <rect id="calc-paper" x="360" y="180" width="1200" height="780" rx="35" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+ <rect x="360" y="180" width="1200" height="9" rx="4.5" fill="#9e1b1b"/>
+ <text id="calc-title" x="422" y="263" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="66" font-weight="810" fill="#9e1b1b">उदाहरण</text>
+ <path d="M420 294h1080" stroke="#ead9a8" stroke-width="3"/>
+ <text id="l1" x="420" y="383" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="56" font-weight="755" fill="#2b2622">सही postage</text>
+ <text id="v1" x="1440" y="383" text-anchor="end" font-size="76" font-weight="850" fill="#2b2622">₹10</text>
+ <path d="M420 415h1080" stroke="#ead9a8" stroke-width="2"/>
+ <text id="l2" x="420" y="508" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="56" font-weight="755" fill="#2b2622">लगे stamps</text>
+ <text id="v2" x="1440" y="508" text-anchor="end" font-size="76" font-weight="850" fill="#2b2622">₹10</text>
+ <path d="M420 537h1080" stroke="#ead9a8" stroke-width="2"/>
+ <g id="example-stamp"><use href="piece:postage-stamp" transform="translate(1604 349) scale(.68)"/></g>
+</g>
+</svg>
+<script type="text/scene">
+{shots:[[0,"#charge"],[6.72,"#calc"]],on:[
+ [.46,"stamp","#double",{from:1.05,rot:-2}],[1.00,"fade","#double-hi",{dur:.24}],
+ [3.08,"fade","#paid-note",{dur:.23}],[5.38,"underline","#paid-counts",{words:"गिना",color:"#8a5d00",gap:4,width:4,dur:.29}],
+ [7.60,"fade","#l1",{dur:.23}],[8.56,"pop","#v1",{from:.84,spring:"fast"}],
+ [9.78,"fade","#l2",{dur:.23}],[10.12,"pop","#v2",{from:.84,spring:"fast"}],
+ [11.00,"pop","#example-stamp",{from:.88,spring:"fast"}]
+]}
+</script>
+</section>
