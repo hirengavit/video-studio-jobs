@@ -1,0 +1,67 @@
+<section class="vs-scene" id="s069" data-in="cut" data-section="PART 3 · PACKING BY CONTENTS" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="ins">
+      <g id="insurance-list">
+        <g id="liquids">
+          <rect x="820" y="248" width="980" height="140" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+          <circle cx="875" cy="319" r="11" fill="#9e1b1b"/>
+          <text x="913" y="307" font-family="Inter, sans-serif" font-size="53" font-weight="810" fill="#2b2622">Liquids</text>
+          <text x="913" y="359" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="43" font-weight="670" fill="#6f6a63">तरल</text>
+        </g>
+        <g id="meltables">
+          <rect x="820" y="412" width="980" height="140" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+          <circle cx="875" cy="482" r="11" fill="#9e1b1b"/>
+          <text x="913" y="500" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="54" font-weight="790" fill="#2b2622">आसानी से पिघलने वाली चीज़ें</text>
+        </g>
+        <g id="perishables">
+          <rect x="820" y="576" width="980" height="140" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+          <circle cx="875" cy="646" r="11" fill="#9e1b1b"/>
+          <text x="913" y="635" font-family="Inter, sans-serif" font-size="53" font-weight="810" fill="#2b2622">Perishables</text>
+          <text x="913" y="687" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="43" font-weight="670" fill="#6f6a63">जल्दी खराब होने वाली</text>
+        </g>
+        <g id="fragile-articles">
+          <rect x="820" y="740" width="980" height="140" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+          <circle cx="875" cy="810" r="11" fill="#9e1b1b"/>
+          <text x="913" y="799" font-family="Inter, sans-serif" font-size="53" font-weight="810" fill="#2b2622">Fragile articles</text>
+          <text x="913" y="851" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="43" font-weight="670" fill="#6f6a63">जल्दी टूटने वाली</text>
+        </g>
+      </g>
+    </g>
+    <g id="loss-card">
+      <rect x="120" y="200" width="640" height="340" rx="29" fill="#fff" stroke="#b4c9b7" stroke-width="3"/>
+      <circle cx="238" cy="322" r="53" fill="#e8f1e8"/>
+      <path id="loss-tick" d="M215 322l17 17 31-35" fill="none" stroke="#2e7d4f" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="loss-title" x="326" y="349" font-family="Inter,sans-serif" font-size="82" font-weight="810" fill="#2e7d4f">Loss</text>
+      <text x="326" y="414" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="45" font-weight="640" fill="#6f6a63">नुकसान:</text>
+      <text id="loss-definition" x="326" y="489" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="62" font-weight="780" fill="#2b2622">खो जाना</text>
+    </g>
+    <g id="damage-card">
+      <rect x="120" y="580" width="640" height="340" rx="29" fill="#fff" stroke="#cbc9c6" stroke-width="3"/>
+      <circle cx="238" cy="713" r="53" fill="#eeece7"/>
+      <path id="damage-cross" d="M216 691l44 44m0-44-44 44" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+      <text id="damage-title" x="326" y="743" font-family="Inter,sans-serif" font-size="74" font-weight="800" fill="#4b4f58" opacity=".86">Damage</text>
+      <path id="damage-strike" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+      <text id="damage-definition" x="177" y="857" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="60" font-weight="760" fill="#2b2622">टूट-फूट या खराबी</text>
+    </g>
+    <g id="fee-band">
+      <rect x="120" y="952" width="1680" height="78" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text id="fee-text" x="960" y="1006" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="780" fill="#2b2622">Insurance fee की दरें = बाकी insured items जैसी</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    update(t,section,$) {
+      const d = $('#damage-title')[0], strike = $('#damage-strike')[0];
+      const b = d.getBBox(), y = b.y + b.height*.55, w = b.height*.06;
+      strike.setAttribute('d','M'+(b.x-6)+' '+y+' Q'+(b.x+b.width/2)+' '+(y+w)+' '+(b.x+b.width+6)+' '+(y-w*.5));
+    },
+    on:[
+      [1.01,'reveal','#fee-band',{from:'left',dur:.48}],
+      [3.95,'highlight','#fee-text',{words:'बाकी insured items जैसी',color:'#f2b705',opacity:.42,pad:6,dur:.31}],
+      [8.17,'pulse','#damage-card',{amount:.045}],
+      [8.98,'pulse','#damage-cross',{amount:.14}]
+    ]
+  }
+  </script>
+</section>
