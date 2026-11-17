@@ -8,12 +8,5 @@
   "10.19"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s163",
-   "text": "sender / भेजने वाला",
-   "t": 8.27
-  }
- ]
+ "warnings": []
 }
