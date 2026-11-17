@@ -8,5 +8,18 @@
   "8.71"
  ],
  "problems": [],
- "warnings": []
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s061",
+   "message": "pulse: nothing found for \"#bottle-beat\"",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s061",
+   "text": "बुरादा · चोकर · / सोखने वाली चीज़",
+   "t": 0.3
+  }
+ ]
 }
