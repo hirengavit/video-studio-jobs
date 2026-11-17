@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s184" data-in="cut" data-section="PART 7 · BOXES, TIMING &amp; BOOKING" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="old-rule-shot">
+ <g id="old-guide-book">
+  <use href="piece:old-book-stack" transform="translate(149.12 415.52) scale(1.28)"/>
+  <text x="400" y="891" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#4b4f58">Post Office Guide Part I</text>
+ </g>
+ <g id="old-rule-card">
+  <rect x="800" y="212" width="1000" height="730" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M842 252h916" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+  <text x="852" y="364" class="hi" font-size="62" font-weight="830" fill="#9e1b1b">पुराना नियम · छोटे में</text>
+  <path d="M845 404H1755" stroke="#ead9a8" stroke-width="3"/>
+  <g id="guide-registration">
+    <rect x="844" y="434" width="439" height="132" rx="23" fill="#f3ead6"/>
+    <text x="1063.5" y="490" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">Registration</text>
+    <text x="1063.5" y="540" text-anchor="middle" class="hi" font-size="41" font-weight="710" fill="#6f6a63">पंजीकरण</text>
+  </g>
+  <g id="guide-insurance">
+    <rect x="1317" y="434" width="439" height="132" rx="23" fill="#f3ead6"/>
+    <text x="1536.5" y="490" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">Insurance</text>
+    <text x="1536.5" y="540" text-anchor="middle" class="hi" font-size="41" font-weight="710" fill="#6f6a63">बीमा</text>
+  </g>
+  <g id="guide-value-payable">
+    <rect x="844" y="585" width="439" height="132" rx="23" fill="#f3ead6"/>
+    <text x="1063.5" y="641" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">Value-payable</text>
+    <text x="1063.5" y="691" text-anchor="middle" class="hi" font-size="41" font-weight="710" fill="#6f6a63">वी.पी.</text>
+  </g>
+  <g id="guide-certificate">
+    <rect x="1317" y="585" width="439" height="132" rx="23" fill="#f3ead6"/>
+    <text x="1536.5" y="641" text-anchor="middle" font-family="Inter,sans-serif" font-size="38" font-weight="810" fill="#2b2622">Certificate of posting</text>
+    <text x="1536.5" y="691" text-anchor="middle" class="hi" font-size="41" font-weight="710" fill="#6f6a63">पोस्टिंग प्रमाणपत्र</text>
+  </g>
+  <text id="specific-mail" x="868" y="785" class="hi" font-size="49" font-weight="760" fill="#2b2622">किसी खास mail से जाना हो</text>
+  <g id="rule30">
+    <rect x="844" y="820" width="912" height="102" rx="22" fill="#fde9a6" stroke="#d6a647" stroke-width="3"/>
+    <text x="866" y="884" class="hi" font-size="42" font-weight="780" fill="#553700">mail बंद होने से</text>
+    <g id="minimum-before" font-size="42" font-weight="780" fill="#553700"><text x="1172" y="884" class="hi">कम से कम</text><text x="1732" y="884" class="hi" text-anchor="end">पहले</text></g>
+    <text id="minutes30" x="1498" y="886" text-anchor="middle" font-size="48" font-weight="870" fill="#704b00">30 minutes</text>
+  </g>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+  camera: [[0,{zoom:1}],[9.76,{zoom:1}],[10.31,{on:'#rule30',zoom:1.06,x:-289,y:-319},'inOut'],[10.72,{on:'#rule30',zoom:1.06,x:-289,y:-319}],[11.08,{zoom:1},'inOut']],
+  on:[
+    [0,'pop','#guide-value-payable',{from:.94,spring:'fast'}],
+    [.86,'pop','#guide-certificate',{from:.94,spring:'fast'}],
+    [4.22,'fade','#specific-mail',{dur:.26}],
+    [7.28,'pop','#rule30',{from:.94,spring:'fast'}],
+    [9.76,'count','#minutes30',{from:0,to:30,dur:.46,suffix:' minutes'}],
+    [10.72,'fade','#minimum-before',{dur:.20}]
+  ]
+})
+</script>
+</section>
