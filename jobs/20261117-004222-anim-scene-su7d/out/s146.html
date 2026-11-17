@@ -46,8 +46,8 @@
       <rect id="row5-back" x="149" y="804" width="1622" height="86" rx="19" fill="#f1efeb" stroke="#d7d4d0" stroke-width="2"/>
       <g id="row5">
         <g id="row5-terms">
-          <text id="small-en" x="204" y="841" font-size="49" font-weight="800" fill="#4b4f58">Small packets</text>
-          <text id="small-hi" x="207" y="877" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="680" fill="#6f6a63">छोटे पैकेट</text>
+          <text id="small-en" x="204" y="838" font-size="49" font-weight="800" fill="#4b4f58">Small packets</text>
+          <text id="small-hi" x="207" y="881" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="680" fill="#6f6a63">छोटे पैकेट</text>
         </g>
         <text id="first-list" x="800" y="861" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="740" fill="#6f6a63">पहली list</text>
         <g id="removal-date">
@@ -83,7 +83,8 @@
       [3.16,'type','#small-en',{cps:23}],
       [3.42,'fade','#small-hi',{dur:.22}],
       [4.36,'pop','#removal-date',{from:.95,spring:'soft'}],
-      [9.58,'strike','#row5-terms',{color:'#4b4f58',width:5,dur:.30,dim:.64}],
+      [9.58,'strike','#small-en',{color:'#4b4f58',width:5,dur:.30,dim:.64}],
+      [9.58,'color','#small-hi',{to:'#77747b',dur:.30}],
       [9.58,'fade','#row5-cross',{dur:.20}],
       [9.61,'draw','#row5-cross-mark',{dur:.28}]
     ]
