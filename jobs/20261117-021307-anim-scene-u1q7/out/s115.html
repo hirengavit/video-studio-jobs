@@ -62,7 +62,9 @@
       <g transform="translate(1092 784)" stroke="#2b2622" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" fill="none"><path d="m-17-33 4-24h26l4 24m-34 66 4 24h26l4-24" fill="#ead9a8"/><path d="M37-5h9v12h-9" fill="#ead9a8"/><circle r="36" fill="#fde9a6"/><path d="M0-19V1l13 9"/></g>
       <text id="jewellery-term" x="1203" y="766" font-family="Inter,sans-serif" font-size="54" font-weight="820" fill="#2b2622">Jewellery</text>
       <text id="jewellery-hi" x="1204" y="819" class="hi" font-size="47" font-weight="740" fill="#6f6a63">गहने</text>
-      <text id="watch-scope" x="1204" y="864" class="hi" font-size="34" font-weight="730" fill="#2b2622">घड़ियाँ भी: पूरा या ज़्यादातर case</text>
+      <text id="watch-scope" x="1204" y="864" class="hi" font-size="34" font-weight="730" fill="#2b2622">घड़ियाँ भी:</text>
+      <text id="watch-case" x="1395" y="864" class="hi" font-size="34" font-weight="730" fill="#2b2622">case</text>
+      <text id="watch-most" x="1497" y="864" class="hi" font-size="34" font-weight="730" fill="#2b2622">पूरा या ज़्यादातर</text>
       <path d="M1021 883h738" stroke="#f3ead6" stroke-width="3"/>
       <g id="watch-gold"><rect x="1025" y="895" width="174" height="48" rx="21" fill="#f3ead6"/><text x="1112" y="930" text-anchor="middle" class="hi" font-size="36" font-weight="780" fill="#2b2622">सोना</text></g>
       <g id="watch-silver"><rect x="1222" y="895" width="174" height="48" rx="21" fill="#f3ead6"/><text x="1309" y="930" text-anchor="middle" class="hi" font-size="36" font-weight="780" fill="#2b2622">चाँदी</text></g>
@@ -89,7 +91,9 @@
  on:[
   [.28,'type','#jewellery-term',{cps:25}],
   [.71,'fade','#jewellery-hi',{dur:.23}],
-  [1.22,'type','#watch-scope',{cps:13}],
+  [1.22,'fade','#watch-scope',{dur:.24}],
+  [3.08,'fade','#watch-case',{dur:.20}],
+  [3.48,'fade','#watch-most',{dur:.24}],
   [4.78,'pop','#watch-gold',{from:.94}],
   [5.44,'pop','#watch-silver',{from:.94}],
   [6.58,'pop','#watch-platinum',{from:.94}]
