@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.33",
+  "4.66",
+  "6.98",
+  "9.31",
+  "11.49"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s184",
+   "text": "mail बंद होने से / कम से कम",
+   "t": 11.49
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s184",
+   "text": "पहले / 30 minutes",
+   "t": 11.49
+  }
+ ]
+}
