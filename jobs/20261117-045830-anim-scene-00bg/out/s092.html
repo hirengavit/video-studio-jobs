@@ -48,7 +48,7 @@
     <rect id="row-2" x="1000" y="390" width="800" height="120" rx="21" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
     <rect id="row-3" x="1000" y="520" width="800" height="120" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="3" stroke-dasharray="8 8"/>
     <rect id="row-4" x="1000" y="650" width="800" height="120" rx="21" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3" stroke-dasharray="8 8"/>
-    <rect id="row-5" x="1000" y="780" width="800" height="140" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="3" stroke-dasharray="8 8"/>
+    <rect id="row-5" x="1000" y="780" width="800" height="120" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="3" stroke-dasharray="8 8"/>
     <g id="step-1"><circle cx="1070" cy="320" r="40" fill="#9e1b1b"/><text x="1070" y="337" text-anchor="middle" font-family="Inter,sans-serif" font-size="47" font-weight="800" fill="#fff">1</text></g>
     <text id="step-1a" x="1136" y="315" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="740" fill="#2b2622">मज़बूत cover</text>
     <text id="step-1b" x="1136" y="361" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="38" font-weight="630" fill="#6f6a63">अच्छी तरह बंद</text>
@@ -76,6 +76,8 @@
 <script type="text/scene">
   {
     update(t, section, $) {
+      const u = Math.max(0, Math.min(1, t / .30));
+      $('#row-5')[0].setAttribute('height', String(120 + 20 * u * u * (3 - 2 * u)));
       const p = $('#private-mark')[0].getBBox(), h = $('#private-mark-back')[0];
       h.setAttribute('x',String(p.x-4)); h.setAttribute('y',String(p.y-2));
       h.setAttribute('width',String(Math.round((p.width+8)*100)/100));
