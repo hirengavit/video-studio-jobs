@@ -64,17 +64,25 @@
   </g>
   <g id="chip-postal-label">
     <rect x="679" y="844" width="271" height="56" rx="17" fill="#f3ead6"/>
-    <text x="814.5" y="884" text-anchor="middle" font-size="43" font-weight="770" fill="#2b2622">Postal labels</text>
+    <text x="814.5" y="884" text-anchor="middle" font-size="43" font-weight="770" fill="#2b2622" textLength="233" lengthAdjust="spacingAndGlyphs">Postal labels</text>
   </g>
   <g id="chip-official">
     <rect x="960" y="844" width="513" height="56" rx="17" fill="#f3ead6"/>
-    <text x="1216.5" y="884" text-anchor="middle" class="hi" font-size="40" font-weight="770" fill="#2b2622">Official marks · सरकारी निशान</text>
+    <text x="1216.5" y="884" text-anchor="middle" class="hi" font-size="40" font-weight="770" fill="#2b2622" textLength="465" lengthAdjust="spacingAndGlyphs">Official marks · सरकारी निशान</text>
   </g>
+  <rect id="space-mark" rx="4" fill="#f2b705" fill-opacity=".46" opacity="0"/>
   <text id="space-line" x="356" y="956" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="790" fill="#2b2622">के लिए काम लायक जगह छूटी हो</text>
 </g>
 </svg>
 <script type="text/scene">
 {
+  update(t,section,$){
+    const line=$('#space-line')[0], mark=$('#space-mark')[0], word='जगह', start=line.textContent.indexOf(word);
+    if(t<7.64 || start<0){mark.setAttribute('opacity','0');return}
+    let x0=Infinity,y0=Infinity,x1=-Infinity,y1=-Infinity;
+    for(let i=start;i<start+word.length;i++){const b=line.getExtentOfChar(i);x0=Math.min(x0,b.x);y0=Math.min(y0,b.y);x1=Math.max(x1,b.x+b.width);y1=Math.max(y1,b.y+b.height)}
+    mark.setAttribute('x',String(x0-6));mark.setAttribute('y',String(y0-3));mark.setAttribute('width',String((x1-x0+12)*Math.min(1,(t-7.64)/.24)));mark.setAttribute('height',String(y1-y0+6));mark.setAttribute('opacity','1');
+  },
   on:[
     [0,'pulse','#badge-4',{amount:.14}],
     [0,'pop','#mini-envelope',{from:.94,spring:'soft'}],
@@ -87,7 +95,6 @@
     [4.62,'pop','#chip-official',{from:.94,spring:'soft'}],
     [4.62,'draw','#official-zone',{dur:.25}],
     [6.28,'type','#space-line',{cps:18}],
-    [7.64,'highlight','#space-line',{words:'जगह',color:'#f2b705',opacity:.46,dur:.24}],
     [7.64,'color','#badge-1 circle,#badge-2 circle,#badge-3 circle,#badge-4 circle',{to:'#2e7d4f',dur:.26,stagger:.10}]
   ]
 }
