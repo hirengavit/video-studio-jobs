@@ -1,0 +1,43 @@
+{
+ "moments": [
+  "0.30",
+  "2.27",
+  "4.54",
+  "6.80",
+  "9.07",
+  "11.19"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s204",
+   "text": "25, 96 · International: 121 / 25",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s204",
+   "text": "25, 96 · International: 121 / ,",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s204",
+   "text": "25, 96 · International: 121 / 96",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s204",
+   "text": "25, 96 · International: 121 / ·",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s204",
+   "text": "25, 96 · International: 121 / International:",
+   "t": 0.3
+  }
+ ]
+}
