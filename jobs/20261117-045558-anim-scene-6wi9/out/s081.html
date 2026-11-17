@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s081" data-in="cut" data-section="PART 3 · PACKING BY CONTENTS" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080" font-family="Inter,sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="legacy-warning">
+ <rect x="120" y="180" width="1680" height="800" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+ <g id="legacy-tag">
+  <rect x="177" y="239" width="425" height="91" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+  <text x="389" y="300" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="53" font-weight="790" fill="#4b4f58">पुराना Guide</text>
+ </g>
+ <text x="187" y="465" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="75" font-weight="825" fill="#2b2622">चेतावनी के labels</text>
+ <path d="M185 502h1500" stroke="#ead9a8" stroke-width="4"/>
+ <g id="generic-warning">
+  <rect x="352" y="518" width="1216" height="261" rx="32" fill="#fffaf0" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M408 554h1104m-1104 188h1104" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round"/>
+  <text x="960" y="701" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="160" font-weight="845" fill="#9e1b1b">चेतावनी</text>
+ </g>
+ <text id="red-letter" x="960" y="872" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="810" fill="#9e1b1b">Labels: लाल अक्षर</text>
+</g>
+<g id="new">
+ <rect x="120" y="180" width="1680" height="800" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+ <g id="regulations">
+  <use href="piece:regulations-book" transform="translate(289 236) scale(1.62)"/>
+  <text x="553" y="451" text-anchor="middle" font-size="51" font-weight="830" fill="#2b2622">Post Office</text>
+  <text x="553" y="516" text-anchor="middle" font-size="51" font-weight="830" fill="#2b2622">Regulations</text>
+  <text x="553" y="611" text-anchor="middle" font-size="82" font-weight="850" fill="#9e1b1b">2024</text>
+ </g>
+ <path d="M899 272V888" stroke="#ead9a8" stroke-width="4"/>
+ <text id="current-date" x="1350" y="330" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="65" font-weight="820" fill="#2b2622">16 December 2024 से</text>
+ <g id="regulation-25">
+  <rect x="961" y="385" width="778" height="180" rx="28" fill="#9e1b1b"/>
+  <text x="1350" y="502" text-anchor="middle" font-size="91" font-weight="830" fill="#fff">Regulation 25</text>
+ </g>
+ <g id="bans">
+  <rect x="961" y="608" width="778" height="167" rx="29" fill="#efedec" stroke="#ded6d2" stroke-width="3"/>
+  <path d="m1030 673 40 40m0-40-40 40" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+  <text x="1132" y="719" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="86" font-weight="830" fill="#4b4f58">मनाहियाँ</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{shots:[[0,"#legacy-warning"],[5.92,"#new"]],on:[
+ [.30,"pop","#generic-warning",{from:.92,spring:"fast"}],
+ [2.32,"type","#red-letter",{cps:17}],
+ [5.92,"fade","#regulations",{dur:.28}],
+ [6.42,"type","#current-date",{cps:20}],
+ [8.48,"pop","#regulation-25",{from:.94,spring:"fast"}],
+ [10.20,"pop","#bans",{from:.94,spring:"fast"}]
+]}
+</script>
+</section>
