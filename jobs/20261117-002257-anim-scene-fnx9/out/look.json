@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "1.84",
+  "3.69",
+  "5.53",
+  "7.38",
+  "9.07"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s037",
+   "message": "pulse: nothing found for \"#val-paper\"",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s037",
+   "message": "a card is mostly empty at 5.5 s: bring its items in sooner, or size it for what it holds now",
+   "t": 5.53
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s037",
+   "message": "a card is mostly empty at 7.4 s: bring its items in sooner, or size it for what it holds now",
+   "t": 7.38
+  }
+ ]
+}
