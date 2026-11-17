@@ -4,48 +4,50 @@
   <g id="decision">
     <rect x="120" y="170" width="1680" height="810" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
     <g id="root">
-      <rect x="660" y="200" width="600" height="130" rx="23" fill="#9e1b1b"/>
-      <text x="960" y="253" class="hi" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="810" fill="#fff">Pins वाला article</text>
-      <text x="960" y="309" class="hi" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="680" fill="#fde9a6">पिन वाली वस्तु</text>
+      <rect x="580" y="200" width="760" height="150" rx="23" fill="#9e1b1b"/>
+      <text x="960" y="265" class="hi" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="810" fill="#fff">Pins वाला article</text>
+      <text x="960" y="319" class="hi" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="680" fill="#fde9a6">पिन वाली वस्तु</text>
     </g>
-    <text id="question" x="960" y="411" class="hi" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="780" fill="#2b2622">क्या करें?</text>
+    <g id="condition-slots" fill="none" stroke="#ead9a8" stroke-width="3" stroke-dasharray="10 8">
+      <rect id="condition-slot-3" x="1260" y="470" width="520" height="120" rx="24"/>
+    </g>
     <g id="guide-procedure">
-      <rect x="1290" y="214" width="472" height="103" rx="20" fill="#eeebea" stroke="#ded8d1" stroke-width="2"/>
-      <text x="1526" y="256" text-anchor="middle" class="hi" font-size="36" font-weight="770" fill="#4b4f58">Guide की procedure</text>
-      <text x="1526" y="298" text-anchor="middle" class="hi" font-size="36" font-weight="720" fill="#4b4f58">आज भी लागू</text>
+      <rect x="1360" y="222" width="415" height="103" rx="20" fill="#eeebea" stroke="#ded8d1" stroke-width="2"/>
+      <text x="1567.5" y="260" text-anchor="middle" class="hi" font-size="32" font-weight="770" fill="#4b4f58">Guide की procedure</text>
+      <text x="1567.5" y="302" text-anchor="middle" class="hi" font-size="32" font-weight="720" fill="#4b4f58">आज भी लागू</text>
     </g>
-    <text id="fault-question" x="960" y="465" text-anchor="middle" class="hi" font-size="44" font-weight="800" fill="#4b4f58">गलती कहाँ पकड़ी गई?</text>
-    <path id="branch-one-line" d="M960 486v16H400v24" fill="none" stroke="#af9769" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+    <text id="fault-question" x="960" y="400" text-anchor="middle" class="hi" font-size="44" font-weight="700" fill="#2b2622">गलती कहाँ पकड़ी गई?</text>
+    <path id="branch-one-line" d="M960 419v24H400v27" fill="none" stroke="#af9769" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
     <g id="branch-one-condition">
-      <rect x="140" y="528" width="520" height="116" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
-      <path d="M163 553v66" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
-      <text x="400" y="576" text-anchor="middle" class="hi" font-size="47" font-weight="820" fill="#2b2622">Posting office में</text>
-      <text x="400" y="621" text-anchor="middle" class="hi" font-size="40" font-weight="700" fill="#6f6a63">बुकिंग डाकघर</text>
+      <rect x="140" y="470" width="520" height="120" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M163 492v76" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+      <text x="400" y="519" text-anchor="middle" class="hi" font-size="40" font-weight="820" fill="#2b2622">Posting office में</text>
+      <text x="400" y="564" text-anchor="middle" class="hi" font-size="32" font-weight="700" fill="#6f6a63">बुकिंग डाकघर</text>
     </g>
-    <path id="branch-one-arrow" d="M400 648v43m-12-13 12 13 12-13" fill="none" stroke="#af9769" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+    <path id="branch-one-arrow" d="M400 600v70m-12-13 12 13 12-13" fill="none" stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
     <g id="branch-one-action">
-      <rect x="140" y="696" width="520" height="204" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
-      <use href="piece:icon-envelope-letter" transform="translate(335 706) scale(.33)"/>
-      <text x="400" y="861" text-anchor="middle" class="hi" font-size="43" font-weight="790" fill="#2b2622">sender को तुरंत वापस</text>
+      <rect id="branch-one-action-bg" x="140" y="680" width="520" height="280" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <use href="piece:icon-envelope-letter" transform="translate(296 653) scale(.52)"/>
+      <text x="400" y="860" text-anchor="middle" class="hi" font-size="40" font-weight="790" fill="#2b2622">sender को <tspan fill="#2e7d4f" font-weight="700">तुरंत वापस</tspan></text>
     </g>
-  
-    <path id="branch-two-line" d="M960 502v24" fill="none" stroke="#af9769" stroke-width="5" stroke-linecap="round"/>
+
+    <path id="branch-two-line" d="M960 443v27" fill="none" stroke="#af9769" stroke-width="5" stroke-linecap="round"/>
     <g id="branch-two-condition">
-      <rect x="700" y="528" width="520" height="116" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
-      <path d="M723 553v66" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
-      <text x="960" y="603" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="53" font-weight="820" fill="#2b2622">बाद में पकड़ी गई</text>
+      <rect x="700" y="470" width="520" height="120" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M723 492v76" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+      <text x="960" y="547" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="53" font-weight="820" fill="#2b2622">बाद में पकड़ी गई</text>
     </g>
-    <path id="branch-two-arrow" d="M960 648v32m-12-13 12 13 12-13" fill="none" stroke="#af9769" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+    <path id="branch-two-arrow" d="M960 600v70m-12-13 12 13 12-13" fill="none" stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
     <g id="branch-two-action">
-      <rect id="branch-two-surface" x="700" y="685" width="520" height="249" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
-      <text id="remove-pins" x="727" y="744" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="43" font-weight="790" fill="#2b2622">1. pins निकालिए</text>
-      <path d="M728 768h463" stroke="#ead9a8" stroke-width="2.5"/>
-      <text id="return-rlo" x="727" y="814" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="36" font-weight="800" fill="#2b2622">2. Returned Letter Office</text>
-      <text id="return-rlo-hi" x="771" y="863" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="34" font-weight="720" fill="#6f6a63">वापसी पत्र कार्यालय</text>
-      <text id="back-rlo" x="771" y="910" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="38" font-weight="790" fill="#2b2622">से वापस</text>
+      <rect x="700" y="680" width="520" height="280" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text id="remove-pins" x="727" y="727" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="36" font-weight="790" fill="#2b2622">1. pins निकालिए</text>
+      <path d="M728 745h463" stroke="#ead9a8" stroke-width="2.5"/>
+      <text id="return-rlo" x="727" y="783" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="36" font-weight="800" fill="#2b2622">2. Returned Letter Office</text>
+      <text id="return-rlo-hi" x="770" y="824" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="34" font-weight="720" fill="#6f6a63">वापसी पत्र कार्यालय</text>
+      <text id="back-rlo" x="770" y="868" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="36" font-weight="790" fill="#2b2622">से वापस</text>
       <g id="rlo">
-       <rect id="rlo-box" x="1050" y="862" width="142" height="50" rx="23" fill="#9e1b1b"/>
-       <text id="rlo-label" x="1121" y="898" text-anchor="middle" font-family="Inter,sans-serif" font-size="38" font-weight="850" fill="#fff">RLO</text>
+       <rect x="1050" y="833" width="142" height="50" rx="23" fill="#9e1b1b"/>
+       <text x="1121" y="869" text-anchor="middle" font-family="Inter,sans-serif" font-size="38" font-weight="850" fill="#fff">RLO</text>
       </g>
       <g id="addressee-route">
         <text id="addressee-en" x="728" y="920" font-family="Inter,sans-serif" font-size="34" font-weight="800" fill="#4b4f58">→ addressee</text>
@@ -56,17 +58,6 @@
 </svg>
 <script type="text/scene">
 {
-  update(t,section,$) {
-    const u=Math.min(1,Math.max(0,(t-2.36)/.23));
-    const k=u*u*(3-2*u), box=$('#branch-two-surface')[0];
-    box.setAttribute('y',String(685-5*k));
-    box.setAttribute('height',String(249+31*k));
-    $('#return-rlo')[0].setAttribute('y',String(814-10*k));
-    $('#return-rlo-hi')[0].setAttribute('y',String(863-14*k));
-    $('#back-rlo')[0].setAttribute('y',String(910-23*k));
-    $('#rlo-box')[0].setAttribute('y',String(862-24*k));
-    $('#rlo-label')[0].setAttribute('y',String(898-24*k));
-  },
   on:[
     [2.54,'fade','#addressee-route',{dur:.24}],
     [4.40,'strike','#addressee-en',{color:'#4b4f58',width:3,dur:.25,dim:.66}],
