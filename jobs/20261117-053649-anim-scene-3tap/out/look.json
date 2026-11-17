@@ -8,5 +8,18 @@
   "10.97"
  ],
  "problems": [],
- "warnings": []
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s179",
+   "text": "QUICK MAIL / QUICK MAIL SERVICE",
+   "t": 2.22
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s179",
+   "text": "SERVICE / QUICK MAIL SERVICE",
+   "t": 2.22
+  }
+ ]
 }
