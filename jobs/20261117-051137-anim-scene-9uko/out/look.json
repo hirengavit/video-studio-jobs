@@ -8,12 +8,5 @@
   "8.48"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s130",
-   "text": "वापसी पत्र कार्यालय / RLO",
-   "t": 3.45
-  }
- ]
+ "warnings": []
 }
