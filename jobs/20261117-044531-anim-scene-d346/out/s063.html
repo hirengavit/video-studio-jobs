@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s063" data-in="cut" data-section="PART 3 · PACKING BY CONTENTS" data-series="PACKING &amp; POSTING">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="fp" font-family="Inter,sans-serif">
+  <g id="fragile-card">
+    <rect x="120" y="200" width="820" height="760" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M152 200H908Q940 200 940 232V291H120V232Q120 200 152 200Z" fill="#9e1b1b"/>
+    <text id="fragile" x="530" y="265" text-anchor="middle" font-size="66" font-weight="820" fill="#fff">Fragile</text>
+  </g>
+  <g id="perishable-card">
+    <rect x="980" y="200" width="820" height="760" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M1012 200H1768Q1800 200 1800 232V291H980V232Q980 200 1012 200Z" fill="#9e1b1b"/>
+    <text id="perishable" x="1390" y="265" text-anchor="middle" font-size="66" font-weight="820" fill="#fff">Perishable</text>
+  </g>
+
+<text id="fragile-meaning" x="530" y="381" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="65" font-weight="810" fill="#2b2622">जल्दी टूटने वाली चीज़</text>
+<text id="perishable-meaning" x="1390" y="380" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="61" font-weight="810" fill="#2b2622">समय के साथ खराब</text>
+<text id="perishable-meaning-two" x="1390" y="451" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="61" font-weight="810" fill="#2b2622">होने वाली चीज़</text>
+<g id="cup">
+ <use href="piece:ceramic-cup" transform="translate(219 493) scale(1.46)"/>
+ <path d="M231 765h252" stroke="#dfca98" stroke-width="4" stroke-linecap="round"/>
+</g>
+<text id="china-name" x="356" y="854" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="53" font-weight="795" fill="#2b2622">चीनी मिट्टी</text>
+<g id="glass">
+ <path d="M626 543h214l-30 209q-2 13-17 13H672q-14 0-16-13Z" fill="#e3f1f2" stroke="#33464f" stroke-width="6" stroke-linejoin="round"/>
+ <ellipse cx="733" cy="543" rx="107" ry="28" fill="#f5fbfa" stroke="#33464f" stroke-width="6"/>
+ <path d="M665 592l17 131m116-131-17 131" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+ <path d="M622 776h235" stroke="#dfca98" stroke-width="4" stroke-linecap="round"/>
+</g>
+<text id="glass-name" x="733" y="854" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi"  font-size="53" font-weight="795" fill="#2b2622">काँच के बर्तन</text>
+<g id="fruit">
+ <path d="M1094 781.5H1690" fill="none" stroke="#dfca98" stroke-width="3" stroke-linecap="round"/>
+ <path d="M1197 584q-46-28-84 14-44 46-9 129 29 62 77 47 15-6 29 0 46 15 74-43 37-83-7-131-37-43-80-16Z" fill="#bd5946" stroke="#4b3730" stroke-width="6" stroke-linejoin="round"/>
+ <path d="M1198 579q-9-32 11-55" fill="none" stroke="#4b3730" stroke-width="8" stroke-linecap="round"/>
+ <path d="M1207 553q27-39 73-27-10 36-73 27Z" fill="#869c61" stroke="#4b3730" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g id="clock"><use href="piece:clock-face" transform="translate(1432 543.9) scale(.96)"/></g>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+ [.86,"fade","#fragile-meaning",{dur:.25}],
+ [3.32,"draw","#cup",{dur:.42}],[3.32,"fade","#china-name",{dur:.24}],
+ [4.44,"draw","#glass",{dur:.45}],[4.44,"fade","#glass-name",{dur:.22}],
+ [7.20,"fade","#perishable-meaning,#perishable-meaning-two",{dur:.25}],
+ [8.36,"draw","#fruit",{dur:.44}],[8.36,"pop","#clock",{from:.89,spring:"fast"}]
+]}
+</script>
+</section>
