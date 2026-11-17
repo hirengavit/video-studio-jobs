@@ -3,24 +3,27 @@
 <rect width="1920" height="1080" fill="#fbf7ee"/>
 <g id="class-shot">
   <text id="class-heading" x="960" y="258" text-anchor="middle" class="hi" font-size="65" font-weight="800" fill="#9e1b1b">One class only · सिर्फ़ एक class</text>
-  <path d="M368 865H1552" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+  <path id="box-rule" d="M368 880H1552" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
   <g id="airmail-box">
-    <use href="piece:letter-box-icon" transform="translate(502.5 355) scale(1.25)"/>
+    <g id="airmail-icon"><use href="piece:letter-box-icon" transform="translate(502.5 355) scale(1.25)"/></g>
     <rect id="airmail-plate" x="449" y="570" width="382" height="123" rx="17" fill="#fff9ef" stroke="#6e1616" stroke-width="5"/>
     <text id="airmail-en" x="640" y="625" text-anchor="middle" font-size="32" font-weight="840" fill="#6e1616">AIRMAIL</text>
     <text id="airmail-hi" x="640" y="672" text-anchor="middle" class="hi" font-size="37" font-weight="730" fill="#6e1616">हवाई डाक</text>
   </g>
 <g id="quick-mail-box">
-    <use href="piece:letter-box-icon" transform="translate(1142.5 355) scale(1.25)"/>
+    <g id="qms-icon"><use href="piece:letter-box-icon" transform="translate(1142.5 355) scale(1.25)"/></g>
     <rect id="qms-plate" x="1089" y="570" width="382" height="123" rx="17" fill="#fff9ef" stroke="#6e1616" stroke-width="5"/>
+    <g id="qms-split" fill="#6e1616" font-size="36" font-weight="840" text-anchor="middle">
+      <text x="1280" y="575">QUICK MAIL</text><text x="1280" y="611">SERVICE</text>
+    </g>
     <text id="quick-mail-en" x="1280" y="625" text-anchor="middle" font-size="32" font-weight="840" fill="#6e1616">QUICK MAIL SERVICE</text>
     <text id="quick-mail-hi" x="1280" y="672" text-anchor="middle" class="hi" font-size="37" font-weight="730" fill="#6e1616">क्विक मेल सेवा</text>
   </g>
   <!-- The parcel base (210,281) meets the settled AIRMAIL mouth at (520,509.375). -->
   <g id="wrong-parcel"><use href="piece:parcel-with-tag" transform="translate(425.5 382.925) scale(.45)"/></g>
   <g id="same-class-band">
-    <rect x="362" y="907" width="1196" height="91" rx="35" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
-    <rect x="878" y="921" width="242" height="70" rx="6" fill="#f2b705" opacity=".43"/>
+    <rect id="band-bg" x="362" y="907" width="1196" height="91" rx="35" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <rect id="band-hit" x="878" y="921" width="242" height="70" rx="6" fill="#f2b705" opacity=".43"/>
     <text id="same-class" x="960" y="969" text-anchor="middle" class="hi" font-size="53" font-weight="740" fill="#2b2622">उनमें सिर्फ़ वही class डालिए</text>
   </g>
   <g id="detention">
@@ -45,14 +48,33 @@
     const put = (id, attr, val) => $(id)[0]?.setAttribute(attr, val);
     put('#airmail-box','transform','translate('+(-120*v)+' 0)');
     put('#quick-mail-box','transform','translate('+(-280*v)+' 0)');
-    put('#airmail-plate','x',449-18*v);
-    put('#qms-plate','x',1089-18*v);
-    put('#airmail-plate','width',382+36*v);
-    put('#qms-plate','width',382+36*v);
-    put('#airmail-en','font-size',32+8*v);
-    put('#quick-mail-en','font-size',32+4*v);
-    put('#airmail-hi','font-size',37+2*v);
-    put('#quick-mail-hi','font-size',37+2*v);
+    const mix = (a,b) => a+(b-a)*v;
+    for (const [id, cx] of [['airmail',640],['qms',1280]]) {
+      // Interpolate box scale around its settled base, preserving library proportions.
+      const scale = mix(1.2,1);
+      const dy = mix(880,857.5)-857.5*scale;
+      put('#'+id+'-icon','transform','translate('+(cx*(1-scale))+' '+dy+') scale('+scale+')');
+      put('#'+id+'-plate','x',cx-mix(170,209));
+      put('#'+id+'-plate','width',mix(340,418));
+      put('#'+id+'-plate','y',mix(538,570));
+      put('#'+id+'-plate','height',mix(130,123));
+    }
+    put('#airmail-en','y',mix(594,625));
+    put('#airmail-en','font-size',mix(36,40));
+    put('#airmail-hi','y',mix(638,672));
+    put('#airmail-hi','font-size',mix(34,39));
+    put('#quick-mail-hi','y',mix(650,672));
+    put('#quick-mail-hi','font-size',mix(34,39));
+    put('#qms-split','transform','translate(0 '+mix(0,24)+')');
+    put('#qms-split','opacity',1-clamp((v-.28)/.2));
+    put('#quick-mail-en','opacity',clamp((v-.52)/.24));
+    put('#box-rule','d','M368 '+mix(880,865)+'H1552');
+    put('#band-bg','y',mix(919,907));
+    put('#band-bg','height',mix(78,91));
+    put('#same-class','y',mix(977,969));
+    put('#same-class','font-size',mix(44,53));
+    for (const [attr,start,end] of [['x',892,878],['y',934,921],['width',202,242],['height',63,70],['rx',4,6]])
+      put('#band-hit',attr,mix(start,end));
     const parcel = $('#wrong-parcel')[0];
     if (parcel && !parcel.hasAttribute('data-slate')) {
       const fills = {'#c9a978':'#777c86','#e8d0a3':'#a6aab2','#b9976d':'#656b76'};
