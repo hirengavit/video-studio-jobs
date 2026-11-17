@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.16",
+  "4.33",
+  "6.49",
+  "8.66",
+  "10.67"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-off-frame",
+   "scene": "s099",
+   "text": "हर जोड़, ढीले flap, डोरी के सिरे",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s099",
+   "text": "मज़बूत लकड़ी / metal case / कपड़े या मोटे कागज़ का covering",
+   "t": 8.66
+  }
+ ]
+}
