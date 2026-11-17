@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s194" data-in="cut" data-section="PART 7 · BOXES, TIMING &amp; BOOKING" data-series="PACKING &amp; POSTING">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter,sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="conditions">
+      <text x="960" y="265" text-anchor="middle" class="hi" font-size="75" font-weight="800" fill="#9e1b1b">याद रखिए</text>
+      <g id="packing">
+        <rect x="200" y="380" width="420" height="380" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <use href="piece:parcel-with-tag" transform="translate(292 420) scale(.58)"/>
+        <text x="410" y="641" text-anchor="middle" font-size="56" font-weight="810" fill="#2b2622">Packing</text>
+        <text x="410" y="706" text-anchor="middle" class="hi" font-size="40" font-weight="650" fill="#6f6a63">पैकिंग</text>
+      </g>
+      <g id="declaration">
+        <rect x="760" y="380" width="420" height="380" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <use href="piece:invoice-sheet" transform="translate(895 390) scale(.5)"/>
+        <text x="970" y="641" text-anchor="middle" font-size="56" font-weight="810" fill="#2b2622">Declaration</text>
+        <text x="970" y="706" text-anchor="middle" class="hi" font-size="40" font-weight="650" fill="#6f6a63">घोषणा</text>
+      </g>
+      <g id="postage">
+        <rect x="1320" y="380" width="420" height="380" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <use href="piece:postage-stamp" transform="translate(1370 322) scale(.8)"/>
+        <text x="1530" y="641" text-anchor="middle" font-size="56" font-weight="810" fill="#2b2622">Postage</text>
+        <text x="1530" y="706" text-anchor="middle" class="hi" font-size="40" font-weight="650" fill="#6f6a63">डाक शुल्क</text>
+      </g>
+      <g id="separate">
+        <rect x="500" y="810" width="920" height="99" rx="49" fill="#fde9a6"/>
+        <text x="960" y="876" text-anchor="middle" class="hi" font-size="54" font-weight="800" fill="#2b2622">तीनों अलग शर्तें</text>
+      </g>
+    </g>
+    <g id="receipt-shot">
+      <rect x="160" y="300" width="1600" height="700" rx="38" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+      <use id="booking-receipt" href="piece:booking-receipt" transform="translate(350.8 301) scale(1.84)"/>
+      <text id="accountable-label" x="590" y="431" text-anchor="middle" font-size="34" font-weight="815" fill="#2b2622">Accountable item</text>
+      <path d="M960 356V944" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <text id="receipt-heading" x="1035" y="437" class="hi" font-size="64" font-weight="820" fill="#9e1b1b">Receipt · रसीद</text>
+      <g id="ownership">
+        <text x="1035" y="568" font-size="52" font-weight="770" fill="#2b2622">Ownership</text>
+        <text x="1037" y="633" class="hi" font-size="51" font-weight="700" fill="#6f6a63">मालिकाना हक़</text>
+      </g>
+      <g id="accountable-term">
+        <rect x="1020" y="695" width="660" height="190" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1062" y="774" font-size="48" font-weight="830" fill="#2b2622">Accountable item</text>
+        <text x="1062" y="838" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="700" fill="#6f6a63">जवाबदेह डाक वस्तु</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots:[[0,'#conditions'],[6.60,'#receipt-shot']],
+    on:[
+      [.94,'pop','#packing',{from:.92,spring:'soft'}],
+      [1.90,'pop','#declaration',{from:.92,spring:'soft'}],
+      [3.52,'pop','#postage',{from:.92,spring:'soft'}],
+      [5.12,'fade','#separate',{dur:.23}],
+      [5.12,'pulse','#packing',{amount:.035}],
+      [5.22,'pulse','#declaration',{amount:.035}],
+      [5.32,'pulse','#postage',{amount:.035}],
+      [7.72,'fade','#ownership',{dur:.24}],
+      [9.02,'type','#accountable-label',{cps:22}],
+      [9.02,'fade','#accountable-term',{dur:.23}]
+    ]
+  }
+  </script>
+</section>
