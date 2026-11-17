@@ -8,12 +8,5 @@
   "11.49"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s184",
-   "text": "Certificate / of posting",
-   "t": 2.33
-  }
- ]
+ "warnings": []
 }
