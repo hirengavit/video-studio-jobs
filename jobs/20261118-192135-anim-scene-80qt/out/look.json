@@ -1,0 +1,68 @@
+{
+ "moments": [
+  "0.30",
+  "2.59",
+  "5.18",
+  "7.77",
+  "10.36",
+  "12.80"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s202",
+   "text": "सबसे ज़रूरी बातें / 1/6",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s202",
+   "text": "सबसे ज़रूरी बातें / 2/6",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s202",
+   "text": "1/6 / 1/6",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s202",
+   "text": "2/6 / 2/6",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s202",
+   "text": "3/6 / 3/6",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s202",
+   "text": "4/6 / 4/6",
+   "t": 0.3
+  },
+  {
+   "kind": "low-contrast",
+   "scene": "s202",
+   "text": "1/6 (1.1:1) / 2/6 (1.1:1) / 3/6 (1.1:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s202",
+   "text": "5/6 / 5/6",
+   "t": 2.59
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s202",
+   "message": "a card is mostly empty at 7.8 s: bring its items in sooner, or size it for what it holds now",
+   "t": 7.77
+  }
+ ]
+}
