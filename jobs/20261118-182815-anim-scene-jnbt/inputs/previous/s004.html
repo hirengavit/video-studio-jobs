@@ -1,0 +1,74 @@
+<section class="vs-scene" id="s004" data-in="cut" data-section="OVERVIEW · TODAY'S TOPIC" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="structure">
+    <text id="heading" x="100" y="224" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="70" font-weight="830" fill="#9e1b1b">पूरा ढाँचा · दो लाइन में</text>
+    <g id="row-guide" fill="#f8f1e4" stroke="#ead9a8" stroke-width="3" stroke-dasharray="9 9">
+      <rect x="100" y="268" width="1720" height="291" rx="27"/>
+      <rect x="100" y="623" width="1720" height="196" rx="27"/>
+    </g>
+    <g id="row-numbers" font-family="Inter, sans-serif">
+      <circle cx="144" cy="311" r="28" fill="#ebe3d6"/>
+      <text x="144" y="326" text-anchor="middle" fill="#6f6a63" font-size="43" font-weight="820">1</text>
+      <circle cx="144" cy="667" r="28" fill="#ebe3d6"/>
+      <text x="144" y="682" text-anchor="middle" fill="#6f6a63" font-size="43" font-weight="820">2</text>
+    </g>
+    <g id="ministry">
+      <rect id="ministry-bg" x="188" y="282" width="512" height="263" rx="23" fill="#9e1b1b"/>
+      <text id="ministry-a" x="225" y="358" font-size="51" font-weight="850" fill="#fff">Ministry of</text>
+      <text id="ministry-b" x="225" y="429" font-size="51" font-weight="850" fill="#fff">Communications</text>
+      <text id="ministry-hi" x="225" y="498" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="750" fill="#fde9a6">संचार मंत्रालय</text>
+    </g>
+    <g id="dak">
+      <rect id="dak-bg" x="755" y="282" width="327" height="263" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:icon-dak-bhawan" transform="translate(835 286) scale(.42)"/>
+      <text id="dak-en" x="919" y="478" text-anchor="middle" fill="#9e1b1b" font-size="47" font-weight="850">Dak Bhawan</text>
+      <text id="dak-hi" x="919" y="528" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="44" font-weight="750">डाक भवन</text>
+    </g>
+
+  <g id="directorate">
+    <rect id="directorate-bg" x="1140" y="278" width="654" height="124" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text id="directorate-en" x="1467" y="330" text-anchor="middle" font-size="48" font-weight="820" fill="#9e1b1b">Postal Directorate</text>
+    <text id="directorate-hi" x="1467" y="381" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="680" fill="#6f6a63">डाक निदेशालय</text>
+  </g>
+  <g id="psb">
+    <rect id="psb-bg" x="1140" y="421" width="654" height="124" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text id="psb-en" x="1467" y="473" text-anchor="middle" font-size="48" font-weight="820" fill="#9e1b1b">Postal Services Board</text>
+    <text id="psb-hi" x="1467" y="524" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="680" fill="#6f6a63">डाक सेवा बोर्ड</text>
+  </g>
+  <path id="down-arrow" d="M375 566v51m-16-17 16 17 16-17" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="circles">
+    <rect id="circles-bg" x="188" y="645" width="375" height="155" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text id="circles-en" x="375.5" y="709" text-anchor="middle" font-size="45" font-weight="820" fill="#9e1b1b">23 civil Circles</text>
+    <text id="circles-hi" x="375.5" y="765" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="680" fill="#6f6a63">23 सिविल सर्कल</text>
+  </g>
+  <path id="regions-arrow" d="M569 721h30m-12-13 12 13-12 13" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="regions">
+    <rect id="regions-bg" x="606" y="645" width="375" height="155" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text id="regions-en" x="793.5" y="709" text-anchor="middle" font-size="50" font-weight="820" fill="#9e1b1b">Regions</text>
+    <text id="regions-hi" x="793.5" y="765" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="680" fill="#6f6a63">क्षेत्र</text>
+  </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.42,'pop','#directorate',{from:0.96,spring:'fast'}],
+    [0.90,'fade','#directorate-hi',{dur:0.27}],
+    [2.46,'pop','#psb',{from:0.96,spring:'fast'}],
+    [3.10,'fade','#psb-hi',{dur:0.27}],
+    [4.52,'color','#ministry-bg',{to:'#6f6a63',dur:0.38}],
+    [4.52,'color','#dak-bg, #directorate-bg, #psb-bg',{to:'#f0ece5',dur:0.38}],
+    [4.52,'color','#dak-bg, #directorate-bg, #psb-bg',{prop:'stroke',to:'#c5beb4',dur:0.38}],
+    [4.52,'color','#dak-en, #directorate-en, #psb-en',{to:'#6f6a63',dur:0.38}],
+    [4.52,'color','#ministry-hi',{to:'#f6f3ec',dur:0.38}],
+    [4.52,'draw','#down-arrow',{dur:0.34}],
+    [5.36,'pop','#circles',{from:0.96,spring:'fast'}],
+    [6.80,'fade','#circles-hi',{dur:0.24}],
+    [8.94,'draw','#regions-arrow',{dur:0.24}],
+    [8.94,'pop','#regions',{from:0.96,spring:'fast'}],
+    [9.40,'fade','#regions-hi',{dur:0.18}]
+  ]
+}
+</script>
+</section>
