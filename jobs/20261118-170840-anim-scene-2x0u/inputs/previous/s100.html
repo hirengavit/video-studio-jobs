@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s100" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect x="120" y="178" width="9" height="56" rx="4.5" fill="#f2b705"/>
+    <text class="hi" x="150" y="222" font-size="65" font-weight="760" fill="#9e1b1b">पूरे network के numbers</text>
+    <g id="kicker">
+      <rect x="120" y="258" width="467" height="59" rx="29.5" fill="#fde9a6"/>
+      <text class="hi" x="150" y="299" font-size="44" font-weight="700" fill="#514028">Exam के लिए तीन</text>
+    </g>
+    <g id="outlines" fill="none" stroke="#b8403a" stroke-width="5">
+      <rect id="outline1" x="120" y="340" width="520" height="440" rx="35"/>
+      <rect id="outline2" x="700" y="340" width="520" height="440" rx="35"/>
+      <rect id="outline3" x="1280" y="340" width="520" height="440" rx="35"/>
+    </g>
+    <g id="tile1" text-anchor="middle">
+      <rect id="fill1" x="120" y="340" width="520" height="440" rx="35" fill="#9e1b1b"/>
+      <rect id="edge1" x="137" y="357" width="486" height="406" rx="24" fill="none" stroke="#f0c49b" stroke-width="2.5" stroke-dasharray="3 12" stroke-linecap="round"/>
+      <text id="number1" x="380" y="548" font-size="154" font-weight="810" fill="#fffefa">54</text>
+      <text id="name1" x="380" y="650" font-size="54" font-weight="735" fill="#fffefa">Postal Regions</text>
+      <text class="hi" id="hindi1" x="380" y="717" font-size="46" font-weight="660" fill="#fde9a6">डाक क्षेत्र</text>
+    </g>
+    <g id="tile2" text-anchor="middle">
+      <rect id="fill2" x="700" y="340" width="520" height="440" rx="35" fill="#9e1b1b"/>
+      <rect id="edge2" x="717" y="357" width="486" height="406" rx="24" fill="none" stroke="#f0c49b" stroke-width="2.5" stroke-dasharray="3 12" stroke-linecap="round"/>
+      <text id="number2" x="960" y="548" font-size="154" font-weight="810" fill="#fffefa">469</text>
+      <text id="name2" x="960" y="650" font-size="54" font-weight="735" fill="#fffefa">Postal Divisions</text>
+      <text class="hi" id="hindi2" x="960" y="717" font-size="46" font-weight="660" fill="#fde9a6">डाक मंडल</text>
+    </g>
+    <g id="tile3" text-anchor="middle">
+      <rect id="fill3" x="1280" y="340" width="520" height="440" rx="35" fill="#9e1b1b"/>
+      <rect id="edge3" x="1297" y="357" width="486" height="406" rx="24" fill="none" stroke="#f0c49b" stroke-width="2.5" stroke-dasharray="3 12" stroke-linecap="round"/>
+      <text id="number3" x="1540" y="548" font-size="154" font-weight="810" fill="#fffefa">69</text>
+      <text id="name3" x="1540" y="650" font-size="54" font-weight="735" fill="#fffefa">RMS Divisions</text>
+      <text class="hi" id="hindi3" x="1540" y="717" font-size="46" font-weight="660" fill="#fde9a6">आरएमएस मंडल</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+    ({
+      dur: 13.58,
+      on: [
+        [4.02, "pop", "#kicker", {from:0.96}],
+        [4.02, "draw", "#outlines", {dur:0.45}],
+        [5.56, "fade", "#fill1", {dur:0.24}],
+        [5.56, "fade", "#edge1", {dur:0.24}],
+        [5.56, "count", "#number1", {from:0,to:54,dur:0.47,locale:"en-IN"}],
+        [5.96, "fade", "#name1", {dur:0.23}],
+        [5.96, "fade", "#hindi1", {dur:0.23}],
+        [7.42, "fade", "#fill2", {dur:0.24}],
+        [7.42, "fade", "#edge2", {dur:0.24}],
+        [7.42, "count", "#number2", {from:0,to:469,dur:0.87,locale:"en-IN"}],
+        [8.66, "fade", "#name2", {dur:0.23}],
+        [8.66, "fade", "#hindi2", {dur:0.23}],
+        [10.5, "fade", "#fill3", {dur:0.24}],
+        [10.5, "fade", "#edge3", {dur:0.24}],
+        [10.5, "count", "#number3", {from:0,to:69,dur:0.52,locale:"en-IN"}],
+        [10.98, "fade", "#name3", {dur:0.23}],
+        [10.98, "fade", "#hindi3", {dur:0.23}]
+      ]
+    })
+  </script>
+</section>
