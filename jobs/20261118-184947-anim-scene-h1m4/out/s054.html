@@ -1,0 +1,34 @@
+<section class="vs-scene" id="s054" data-in="cut" data-section="PART 2 · POSTAL SERVICES BOARD" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif"><rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="trap-shot">
+<g id="trap-banner"><rect x="100" y="170" width="1720" height="160" rx="29" fill="#9e1b1b"/><text id="exam-banner" x="960" y="270" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="middle" font-size="62" font-weight="800" fill="#fff">EXAM TRAP · परीक्षा का जाल</text></g>
+<g id="psb-post"><rect x="100" y="370" width="820" height="410" rx="31" fill="#fff" stroke="#ead9a8" stroke-width="4"/><use href="piece:icon-designation-plate" transform="translate(221 398) scale(1.445)"/><text id="psb-post-text" x="510" y="565" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="middle" font-size="52" font-weight="800" fill="#9e1b1b">Secretary (PSB)</text>
+  <text id="assist-role" x="510" y="704" text-anchor="middle" class="hi" font-size="45" font-weight="760" fill="#2b2622">Board के काम में सहायता</text>
+  <path id="assist-tick" d="m803 692 13 13 25-28" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g><g id="posts-post"><rect x="1000" y="370" width="820" height="410" rx="31" fill="#fff" stroke="#ead9a8" stroke-width="4"/><use href="piece:icon-designation-plate" transform="translate(1121 398) scale(1.445)"/><text id="posts-post-text" x="1410" y="565" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="middle" font-size="46" font-weight="800" fill="#9e1b1b">Secretary (Posts)</text>
+  <text id="dept-role" x="1410" y="680" text-anchor="middle" class="hi" font-size="45" font-weight="760" fill="#2b2622">Department के head</text>
+  <path id="dept-tick" d="m1703 668 13 13 25-28" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="chair-role" x="1410" y="742" text-anchor="middle" class="hi" font-size="45" font-weight="760" fill="#2b2622">Board के Chairperson</text>
+  <path id="chair-tick" d="m1703 730 13 13 25-28" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="remember"><rect x="100" y="820" width="1720" height="170" rx="32" fill="#f3ead6"/><text id="eq-left" x="431" y="922" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="middle" font-size="48" font-weight="800" fill="#2b2622">Secretary (PSB)</text><text opacity="0.6" id="eq" x="705" y="922" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="middle" font-size="62" font-weight="800" fill="#4b4f58">=</text><text id="eq-right" x="1008" y="922" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="middle" font-size="48" font-weight="800" fill="#2b2622">Secretary (Posts)</text>
+<path d="M682 907 Q706 910 729 905" fill="none" stroke="#4b4f58" stroke-width="5"/>
+<path id="cross" d="M680 881l50 53m0-53-50 53" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+<g id="different"><rect x="1395" y="860" width="350" height="95" rx="45" fill="#2e7d4f"/><text id="different-label" x="1570" y="925" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="middle" font-size="52" font-weight="800" fill="#fff">अलग posts</text></g></g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [0,'pulse','#posts-post',{amount:0.029}],
+  [1.52,'words','#dept-role',{gap:0.76,dist:9,spring:'fast'}],
+  [3.32,'draw','#dept-tick',{dur:0.23}],
+  [4.20,'words','#chair-role',{gap:0.31,dist:9,spring:'fast'}],
+  [4.82,'draw','#chair-tick',{dur:0.23}],
+  [5.86,'pulse','#psb-post',{amount:0.029}],
+  [7.40,'words','#assist-role',{gap:0.415,dist:9,spring:'fast'}],
+  [9.06,'draw','#assist-tick',{dur:0.23}]
+ ]
+}
+</script>
+</section>
