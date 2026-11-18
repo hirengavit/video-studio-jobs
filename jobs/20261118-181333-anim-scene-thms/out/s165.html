@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s165" data-in="cut" data-section="PART 6 · SPECIAL OFFICES &amp; BOARDS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+<rect id="postal-frame" x="100" y="200" width="1720" height="790" rx="40" fill="none" stroke="#9e1b1b" stroke-width="5"/>
+<g id="scope" text-anchor="middle">
+<text id="scope-heading" x="960" y="250" class="hi" font-size="62" font-weight="780" fill="#7d1414">इन कामों के लिए</text>
+<g id="establishment" text-anchor="middle"><rect id="establishment-back" x="160" y="300" width="500" height="220" rx="32" fill="#fffefa" stroke="#9e1b1b" stroke-width="4"/><text x="410" y="401" font-size="61" font-weight="790" fill="#2b2622">Establishment</text><text x="410" y="471" font-size="55" font-weight="690" class="hi" fill="#9e1b1b">स्थापना</text></g>
+<g id="budget" text-anchor="middle"><rect id="budget-back" x="710" y="300" width="500" height="220" rx="32" fill="#fffefa" stroke="#9e1b1b" stroke-width="4"/><text x="960" y="401" font-size="61" font-weight="790" fill="#2b2622">Budget</text><text x="960" y="471" font-size="55" font-weight="690" class="hi" fill="#9e1b1b">बजट</text></g>
+<g id="finance" text-anchor="middle"><rect id="finance-back" x="1260" y="300" width="500" height="220" rx="32" fill="#fffefa" stroke="#9e1b1b" stroke-width="4"/><text x="1510" y="401" font-size="61" font-weight="790" fill="#2b2622">Finance</text><text x="1510" y="471" font-size="55" font-weight="690" class="hi" fill="#9e1b1b">वित्त</text></g>
+<g id="establishment-compact"><rect x="200" y="222" width="490" height="76" rx="22" fill="#ece9e3" stroke="#d6d0c6" stroke-width="3"/><text x="445" y="273" font-size="42" font-weight="730" fill="#514941">Establishment<tspan class="hi"> / स्थापना</tspan></text></g>
+<g id="budget-compact"><rect x="715" y="222" width="490" height="76" rx="22" fill="#ece9e3" stroke="#d6d0c6" stroke-width="3"/><text x="960" y="273" font-size="42" font-weight="730" fill="#514941">Budget<tspan class="hi"> / बजट</tspan></text></g>
+<g id="finance-compact"><rect x="1230" y="222" width="490" height="76" rx="22" fill="#ece9e3" stroke="#d6d0c6" stroke-width="3"/><text x="1475" y="273" font-size="42" font-weight="730" fill="#514941">Finance<tspan class="hi"> / वित्त</tspan></text></g>
+<g id="scope-directorate">
+<rect x="460" y="640" width="1000" height="300" rx="40" fill="#9e1b1b"/>
+<rect x="486" y="666" width="948" height="248" rx="28" fill="none" stroke="#f0c49b" stroke-width="2.5" stroke-dasharray="3 11" stroke-linecap="round"/>
+<text x="960" y="817" font-size="69" font-weight="810" fill="#fffefa">CCS and RB Directorate</text>
+</g>
+</g>
+
+<g id="postal-title" text-anchor="middle">
+<text x="960" y="351" font-size="61" font-weight="830" fill="#9e1b1b">Postal Directorate</text>
+<text class="hi" x="960" y="403" font-size="42" font-weight="690" fill="#514941">डाक निदेशालय</text>
+</g>
+<g id="division-tag">
+<rect x="273" y="614" width="310" height="64" rx="23" fill="#fde9a6"/>
+<text class="hi" x="428" y="659" text-anchor="middle" font-size="45" font-weight="760" fill="#7d1414">एक division</text>
+</g>
+<g id="separate-budget" text-anchor="middle">
+<rect x="1260" y="440" width="500" height="98" rx="24" fill="#eeebe6" stroke="#d6d0c6" stroke-width="3"/>
+<text id="separate-budget-text" class="hi" x="1495" y="504" font-size="52" font-weight="760" fill="#4b4f58">अलग budget</text>
+<path id="budget-cross" d="M1683 476L1709 502M1709 476L1683 502" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+</g>
+<g id="actual-budget" text-anchor="middle">
+<rect x="1260" y="572" width="500" height="146" rx="28" fill="#9e1b1b"/>
+<text x="1510" y="634" font-size="47" font-weight="780" fill="#fffefa">Postal Directorate</text>
+<text class="hi" x="1510" y="688" font-size="46" font-weight="720" fill="#fffefa">का budget</text>
+</g>
+<path id="budget-arrow" d="M1510 728V775H1115V724 M1101 739L1115 724L1129 739" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<script type="text/scene">
+({dur:9.14,on:[
+[0,"draw","#postal-frame",{dur:.86}],
+[0,"out","#scope-heading",{dur:.26,scale:1}],
+[0,"color","#establishment-back, #budget-back, #finance-back",{to:"#ece9e3",dur:.28}],
+[.22,"out","#establishment, #budget, #finance",{dur:.32,scale:.50}],
+[.54,"pop","#establishment-compact, #budget-compact, #finance-compact",{from:.89}],
+[.83,"fade","#postal-title",{dur:.25}],
+[2.16,"move","#scope-directorate",{by:[-260,-220],spring:"snap"}],
+[2.50,"pop","#division-tag",{from:.96}],
+[3.62,"fade","#separate-budget",{dur:.26}],
+[4.92,"strike","#separate-budget-text",{color:"#4b4f58",width:6,dur:.30,dim:.7}],
+[4.92,"draw","#budget-cross",{dur:.28}],
+[6.66,"pop","#actual-budget",{from:.96}],
+[8.44,"draw","#budget-arrow",{dur:.42}]
+]})
+</script>
+</section>
