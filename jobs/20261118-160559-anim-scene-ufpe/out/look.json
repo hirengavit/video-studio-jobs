@@ -1,0 +1,43 @@
+{
+ "moments": [
+  "0.30",
+  "2.45",
+  "4.91",
+  "7.36",
+  "9.82",
+  "12.12"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "mostly-empty",
+   "scene": "s126",
+   "message": "a card is mostly empty at 2.5 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.45
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s126",
+   "text": "पूर्वोत्तर परिमंडल / 6",
+   "t": 4.91
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s126",
+   "message": "a card is mostly empty at 4.9 s: bring its items in sooner, or size it for what it holds now",
+   "t": 4.91
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s126",
+   "message": "a card is mostly empty at 7.4 s: bring its items in sooner, or size it for what it holds now",
+   "t": 7.36
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s126",
+   "message": "a card is mostly empty at 9.8 s: bring its items in sooner, or size it for what it holds now",
+   "t": 9.82
+  }
+ ]
+}
