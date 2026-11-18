@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "3.19",
+  "6.38",
+  "9.58",
+  "12.77",
+  "15.81"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s053",
+   "text": "Postal Services Board (1.9:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 3.19
+  }
+ ]
+}
