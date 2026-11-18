@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.47",
+  "4.93",
+  "7.40",
+  "9.86",
+  "12.18"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s115",
+   "message": "grow: option \"from\" isn't used (it takes: axis, origin, spring, to)",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s115",
+   "text": "Circle / Circle",
+   "t": 7.4
+  }
+ ]
+}
