@@ -1,0 +1,70 @@
+<section class="vs-scene" id="s094" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect x="122" y="228" width="444" height="552" rx="36" fill="#f3ead6"/>
+    <use id="notice" href="piece:icon-notice-document" transform="translate(173 261) scale(1.13)"/>
+    <g id="postmark" transform="translate(402 570) rotate(-7)" fill="none" stroke="#6f6a63">
+      <circle r="112" fill="#fbf7ee" stroke-width="4"/>
+      <circle r="100" stroke-width="2" stroke-dasharray="3 7"/>
+      <path d="M-70 23h140" stroke-width="2"/>
+      <text id="date17" y="-45" fill="#4c4841" stroke="none" text-anchor="middle" font-family="Inter, sans-serif" font-weight="750" font-size="47">17</text>
+      <text id="dateMonth" y="13" fill="#4c4841" stroke="none" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="38">February</text>
+      <text id="dateYear" y="71" fill="#4c4841" stroke="none" text-anchor="middle" font-family="Inter, sans-serif" font-weight="750" font-size="47">2025</text>
+    </g>
+    <g fill="#9e1b1b" font-family="Inter, sans-serif" font-weight="750">
+      <text id="heading" x="640" y="253" font-size="64">administrative powers</text>
+      <text id="headingHi" x="644" y="354" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="650" font-size="47">प्रशासनिक शक्तियाँ</text>
+    </g>
+    <g id="revise">
+      <rect x="1467" y="223" width="294" height="75" rx="37" fill="#fde9a6"/>
+      <text x="1614" y="275" text-anchor="middle" fill="#8a5d00" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="750" font-size="44">revise हुईं</text>
+    </g>
+    <g font-family="Inter, sans-serif" fill="#9e1b1b" font-weight="750" font-size="50">
+      <g id="appointments">
+        <rect x="640" y="389" width="684" height="130" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <rect x="671" y="420" width="8" height="66" rx="4" fill="#9e1b1b"/>
+        <text x="708" y="443">appointments</text>
+        <text x="710" y="492" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="600">नियुक्तियाँ</text>
+      </g>
+      <g id="penalties">
+        <rect x="640" y="530" width="684" height="130" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <rect x="671" y="561" width="8" height="66" rx="4" fill="#9e1b1b"/>
+        <text x="708" y="584">penalties</text>
+        <text x="710" y="633" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="600">दंड</text>
+      </g>
+      <g id="appeals">
+        <rect x="640" y="671" width="684" height="130" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <rect x="671" y="702" width="8" height="66" rx="4" fill="#9e1b1b"/>
+        <text x="708" y="725">appeals</text>
+        <text x="710" y="774" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="600">अपील</text>
+      </g>
+    </g>
+    <path id="bracket" d="M1358 408h24q31 0 31 31v115q0 40 38 41q-38 1-38 41v115q0 31-31 31h-24"
+          fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700" font-size="44">
+      <text id="scheduleEn" x="1505" y="542">relevant</text>
+      <text id="scheduleEn2" x="1505" y="599">schedules</text>
+      <text id="scheduleHi" x="1505" y="656" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" fill="#2b2622" font-weight="700">के अधीन</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0,'stamp','#postmark',{from:1.14,rot:-3,spring:'snap'}],
+      [0.00,'fade','#date17',{dur:0.12}],
+      [0.50,'fade','#dateMonth',{dur:0.16}],
+      [0.96,'fade','#dateYear',{dur:0.16}],
+      [2.78,'words','#heading',{gap:0.64,dist:14,from:'down',spring:'fast'}],
+      [3.42,'fade','#headingHi',{dur:0.30}],
+      [4.14,'pop','#revise',{from:0.94,spring:'snap'}],
+      [6.06,'pop','#appointments',{from:0.94,spring:'snap'}],
+      [7.44,'pop','#penalties',{from:0.94,spring:'snap'}],
+      [8.68,'pop','#appeals',{from:0.94,spring:'snap'}],
+      [10.38,'draw','#bracket',{dur:0.56}],
+      [10.38,'fade','#scheduleEn',{dur:0.25}],
+      [10.74,'fade','#scheduleEn2',{dur:0.25}],
+      [11.20,'fade','#scheduleHi',{dur:0.3}]
+    ]
+  }
+  </script>
+</section>
