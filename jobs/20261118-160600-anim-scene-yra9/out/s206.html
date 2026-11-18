@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s206" data-in="fade" data-in-dur="0.5" data-section="CLOSE" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <use id="postal-ladder" href="piece:step-ladder-diagram" transform="translate(300 290) scale(1.1666667)"/>
+    <g id="dak"><use href="piece:icon-dak-bhawan" transform="translate(1571 111) scale(0.76)"/></g>
+    <g id="village"><use href="piece:icon-village-post-office" transform="translate(48 722) scale(0.80)"/></g>
+    <text id="village-en" x="214" y="693" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" font-weight="760" fill="#9e1b1b">Village office</text>
+    <text id="village-hi" x="214" y="751" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">गाँव का डाकघर</text>
+    <text id="level-1" x="572.2" y="818.0" text-anchor="end" font-family="Inter, sans-serif" font-size="52" font-weight="760" fill="#2b2622">Sub-division</text>
+    <text id="hindi-1" x="451.1" y="895.0" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">उप-मंडल</text>
+    <text id="level-2" x="846.3" y="709.5" text-anchor="end" font-family="Inter, sans-serif" font-size="52" font-weight="760" fill="#2b2622">Division</text>
+    <text id="hindi-2" x="725.3" y="786.5" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">मंडल</text>
+    <text id="level-3" x="1120.5" y="601.0" text-anchor="end" font-family="Inter, sans-serif" font-size="52" font-weight="760" fill="#2b2622">Region</text>
+    <text id="hindi-3" x="999.4" y="678.0" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">क्षेत्र</text>
+    <text id="level-4" x="1394.7" y="492.5" text-anchor="end" font-family="Inter, sans-serif" font-size="52" font-weight="760" fill="#2b2622">Circle</text>
+    <text id="hindi-4" x="1273.6" y="569.5" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">सर्किल</text>
+    <text id="level-5" x="1560" y="384.0" text-anchor="end" font-family="Inter, sans-serif" font-size="52" font-weight="760" fill="#2b2622">Dak Bhawan</text>
+    <text id="hindi-5" x="1547.8" y="461.0" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">डाक भवन</text>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.00, 'draw', '#dak', {dur: 0.7}],
+      [1.12, 'draw', '#village', {dur: 0.6}],
+      [1.78, 'words', '#village-en', {gap: 0.14, dist: 12}],
+      [2.28, 'fade', '#village-hi', {dur: 0.25}],
+      [3.14, 'draw', '#step-1', {dur: 0.5}],
+      [3.40, 'words', '#level-1', {gap: 0.13, dist: 10}],
+      [3.90, 'fade', '#hindi-1', {dur: 0.26}],
+      [11.12, 'highlight', '#level-1', {color: '#f2b705', opacity: 0.38, dur: 0.37, pad: 8}],
+      [3.32, 'draw', '#step-2', {dur: 0.5}],
+      [3.58, 'words', '#level-2', {gap: 0.13, dist: 10}],
+      [4.08, 'fade', '#hindi-2', {dur: 0.26}],
+      [11.32, 'highlight', '#level-2', {color: '#f2b705', opacity: 0.38, dur: 0.37, pad: 8}],
+      [3.50, 'draw', '#step-3', {dur: 0.5}],
+      [3.76, 'words', '#level-3', {gap: 0.13, dist: 10}],
+      [4.26, 'fade', '#hindi-3', {dur: 0.26}],
+      [11.52, 'highlight', '#level-3', {color: '#f2b705', opacity: 0.38, dur: 0.37, pad: 8}],
+      [3.68, 'draw', '#step-4', {dur: 0.5}],
+      [3.94, 'words', '#level-4', {gap: 0.13, dist: 10}],
+      [4.44, 'fade', '#hindi-4', {dur: 0.26}],
+      [11.72, 'highlight', '#level-4', {color: '#f2b705', opacity: 0.38, dur: 0.37, pad: 8}],
+      [3.86, 'draw', '#step-5', {dur: 0.5}],
+      [4.12, 'words', '#level-5', {gap: 0.13, dist: 10}],
+      [4.62, 'fade', '#hindi-5', {dur: 0.26}],
+      [11.92, 'highlight', '#level-5', {color: '#f2b705', opacity: 0.38, dur: 0.37, pad: 8}],
+      [5.58, 'pulse', '#level-5', {amount: 0.08}],
+    ],
+  }
+  </script>
+</section>
