@@ -46,9 +46,16 @@ for (const [family, file, weight] of [
   fs.copyFileSync(src, path.join(out, "assets", path.basename(src)));
   fontFaces.push(`@font-face { font-family: "${family}"; src: url("assets/${path.basename(src)}") format("woff2"); font-weight: ${weight}; }`);
 }
+// Fonts a scene brings with it (plan.fonts, e.g. the shared outro's), by absolute path.
+for (const f of plan.fonts ?? []) {
+  if (!fs.existsSync(f.path)) continue;
+  fs.copyFileSync(f.path, path.join(out, "assets", path.basename(f.path)));
+  fontFaces.push(`@font-face { font-family: "${f.family}"; src: url("assets/${path.basename(f.path)}"); font-weight: ${f.weight ?? 400};${f.style ? ` font-style: ${f.style};` : ""}${f.unicodeRange ? ` unicode-range: ${f.unicodeRange};` : ""} }`);
+}
+// A kit font may be split by script (unicodeRange: the browser picks the file that covers each letter) and italic.
 for (const f of kit.fonts?.files ?? []) {
   fs.copyFileSync(path.join(fontDir, f.file), path.join(out, "assets", f.file));
-  fontFaces.push(`@font-face { font-family: "${f.family}"; src: url("assets/${f.file}"); font-weight: ${f.weight ?? 400}; }`);
+  fontFaces.push(`@font-face { font-family: "${f.family}"; src: url("assets/${f.file}"); font-weight: ${f.weight ?? 400};${f.style ? ` font-style: ${f.style};` : ""}${f.unicodeRange ? ` unicode-range: ${f.unicodeRange};` : ""} }`);
 }
 
 // ---------------------------------------------------------------- pieces and rigs
@@ -113,6 +120,7 @@ const rigKits = {};
 const scripts = [];
 const sections = [];
 const clips = [];
+let blinkCount = 0;
 for (const sc of plan.scenes) {
   let html = fs.readFileSync(sc.file, "utf8");
   // The scene's action list.
@@ -144,6 +152,18 @@ for (const sc of plan.scenes) {
     if (!m) problems.push(`${sc.id}: no photo "${id}" in the materials`);
     // A drawing's faces travel with it, so the engine can flag a camera move that pushes one out of the frame.
     return m ? `${head}${m.src}"${m.faces?.length ? ` data-faces="${m.faces.map((b) => b.join(",")).join(";")}"` : ""}` : `${head}"`;
+  });
+  // Blinks: a drawing with a blink twin next to its file (draw-X-blink.png: the same picture, eyes closed) gets the
+  // twin as a hidden copy; the engine shows it for a moment every few seconds, so a held drawing never looks frozen.
+  html = html.replace(/<image\b[^>]*?\bhref="assets\/m\/(draw-[\w-]+?)\.png"[^>]*?(?:\/>|>\s*<\/image>)/g, (tag, name) => {
+    const m = mats[name];
+    const twin = m && path.join(path.dirname(m.file), `${name}-blink.png`);
+    if (!twin || !fs.existsSync(twin)) return tag;
+    if (!fs.existsSync(path.join(out, "assets", "m", `${name}-blink.png`))) fs.copyFileSync(twin, path.join(out, "assets", "m", `${name}-blink.png`));
+    const k = String(++blinkCount);
+    const open = tag.replace(/^<image\b/, `<image data-blink-src="${k}"`);
+    const copy = tag.replace(/\bid="[^"]*"\s*/, "").replace(/\bhref="assets\/m\/[\w-]+\.png"/, `href="assets/m/${name}-blink.png"`).replace(/^<image\b/, `<image data-blink="${k}" style="opacity:0"`).replace(/\sdata-faces="[^"]*"/, "");
+    return open + copy;
   });
   // Clips: <foreignObject x y width height><video src="clip:id" data-at="1.2" data-trim="0"/></foreignObject>, times in
   // the scene's seconds. HyperFrames' render loses whatever follows a <video> inside a page, so the clip itself goes
