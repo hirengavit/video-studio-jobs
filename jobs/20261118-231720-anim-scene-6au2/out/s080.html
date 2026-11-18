@@ -1,0 +1,72 @@
+<section class="vs-scene" id="s080" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="exam-banner">
+      <rect x="100" y="170" width="1720" height="140" rx="24" fill="#9e1b1b"/>
+      <path d="M155 266 L180 214 L205 266 Z" fill="#f2b705" stroke="#f2b705" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M180 229v16m0 10v1" stroke="#7d1414" stroke-width="6" stroke-linecap="round"/>
+      <text x="246" y="259" fill="#fff" font-size="55" font-weight="800">EXAM TRAP <tspan fill="#fde9a6">·</tspan> <tspan font-family="'Noto Sans Devanagari', Inter, sans-serif">परीक्षा का जाल</tspan></text>
+    </g>
+    <g id="postal-card">
+      <rect x="100" y="340" width="820" height="460" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="170" y="423" width="232" height="136" rx="18" fill="#9e1b1b"/>
+      <rect x="177" y="430" width="218" height="122" rx="14" fill="none" stroke="#fbf7ee" stroke-width="8" stroke-dasharray="0 16" stroke-linecap="round"/>
+      <text x="286" y="514" text-anchor="middle" fill="#fff" font-size="66" font-weight="850">SPOs</text>
+      <g id="postal-second">
+        <text x="459" y="510" text-anchor="middle" fill="#6f6a63" font-size="60" font-weight="650">/</text>
+        <rect x="515" y="423" width="282" height="136" rx="18" fill="#9e1b1b"/>
+        <rect x="522" y="430" width="268" height="122" rx="14" fill="none" stroke="#fbf7ee" stroke-width="8" stroke-dasharray="0 16" stroke-linecap="round"/>
+        <text x="656" y="514" text-anchor="middle" fill="#fff" font-size="66" font-weight="850">SSPOs</text>
+      </g>
+      <path d="M170 605H850" stroke="#ead9a8" stroke-width="3"/>
+      <text id="postal-en" x="170" y="689" fill="#2b2622" font-size="65" font-weight="800">Postal Division</text>
+      <text id="postal-hi" x="172" y="754" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="650">डाक मंडल</text>
+      <g id="postal-tick">
+        <circle cx="814" cy="681" r="32" fill="#2e7d4f"/>
+        <path d="m800 681 10 9 18-19" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+    <g id="rms-card">
+      <rect x="1000" y="340" width="820" height="460" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="1070" y="423" width="232" height="136" rx="18" fill="#9e1b1b"/>
+      <rect x="1077" y="430" width="218" height="122" rx="14" fill="none" stroke="#fbf7ee" stroke-width="8" stroke-dasharray="0 16" stroke-linecap="round"/>
+      <text x="1186" y="514" text-anchor="middle" fill="#fff" font-size="66" font-weight="850">SRM</text>
+      <g id="rms-second">
+        <text x="1359" y="510" text-anchor="middle" fill="#6f6a63" font-size="60" font-weight="650">/</text>
+        <rect x="1415" y="423" width="282" height="136" rx="18" fill="#9e1b1b"/>
+        <rect x="1422" y="430" width="268" height="122" rx="14" fill="none" stroke="#fbf7ee" stroke-width="8" stroke-dasharray="0 16" stroke-linecap="round"/>
+        <text x="1556" y="514" text-anchor="middle" fill="#fff" font-size="66" font-weight="850">SSRM</text>
+      </g>
+      <path d="M1070 605H1750" stroke="#ead9a8" stroke-width="3"/>
+      <text id="rms-en" x="1070" y="689" fill="#2b2622" font-size="65" font-weight="800">RMS Division</text>
+      <text id="rms-hi" x="1072" y="754" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="650">रेल डाक सेवा मंडल</text>
+      <g id="rms-tick">
+        <circle cx="1714" cy="681" r="32" fill="#2e7d4f"/>
+        <path d="m1700 681 10 9 18-19" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+    <g id="remember-bar">
+      <rect x="100" y="830" width="1720" height="160" rx="24" fill="#f3ead6"/>
+      <text x="960" y="929" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="46" font-weight="750">सही जोड़ियाँ याद रखें</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}]],
+    on: [
+      [0.00, "slide", "#exam-banner", {from: "up", dist: 26}],
+      [0.94, "pop", "#postal-card", {spring: "soft"}],
+      [2.66, "fade", "#postal-second", {dur: 0.20}],
+      [4.14, "words", "#postal-en", {gap: 0.64, dist: 14}],
+      [4.78, "fade", "#postal-hi", {dur: 0.24}],
+      [5.38, "pop", "#postal-tick", {spring: "soft"}],
+      [6.60, "pop", "#rms-card", {spring: "soft"}],
+      [7.66, "fade", "#rms-second", {dur: 0.20}],
+      [9.02, "words", "#rms-en", {gap: 0.98, dist: 14}],
+      [10.00, "fade", "#rms-hi", {dur: 0.24}],
+      [10.90, "pop", "#rms-tick", {spring: "soft"}],
+      [11.44, "fade", "#remember-bar", {dur: 0.28}],
+    ],
+  }
+  </script>
+</section>
