@@ -1,0 +1,56 @@
+{
+ "moments": [
+  "0.30",
+  "1.74",
+  "3.49",
+  "5.23",
+  "6.98",
+  "8.57"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s201",
+   "text": "सबसे ज़रूरी बातें / 1/6",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s201",
+   "text": "सबसे ज़रूरी बातें / 2/6",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s201",
+   "text": "1/6 / 1/6",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s201",
+   "text": "2/6 / 2/6",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s201",
+   "text": "3/6 / 3/6",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s201",
+   "text": "4/6 / 4/6",
+   "t": 0.3
+  },
+  {
+   "kind": "low-contrast",
+   "scene": "s201",
+   "text": "1/6 (1.1:1) / 2/6 (1.1:1) / 3/6 (1.1:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  }
+ ]
+}
