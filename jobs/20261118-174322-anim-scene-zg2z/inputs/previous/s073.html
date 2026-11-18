@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s073" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="carry">
+    <rect x="120" y="180" width="1680" height="800" rx="38" fill="#f3ead6"/>
+    <path id="outer" d="M158 180h1604a38 38 0 0 1 38 38v724a38 38 0 0 1-38 38H158a38 38 0 0 1-38-38V218a38 38 0 0 1 38-38Z" fill="none" stroke="#9e1b1b" stroke-width="5"/>
+    <text id="term" x="198" y="326" fill="#9e1b1b" font-size="102" font-weight="750">Divisional Head</text>
+    <text id="term-hi" x="204" y="403" class="hi" fill="#6f6a63" font-size="56">मंडल प्रमुख</text>
+    <g id="inner">
+      <rect x="560" y="460" width="800" height="360" rx="36" fill="#fbf7ee" stroke="#b8403a" stroke-width="5"/>
+      <rect x="584" y="484" width="752" height="312" rx="24" fill="none" stroke="#ead9a8" stroke-width="3"/>
+      <rect id="ordinary-highlight" x="612" y="563" width="696" height="155" rx="27" fill="#fde9a6"/>
+      <text x="663" y="682" fill="#2b2622" font-size="92" font-weight="750">SPOs</text>
+      <text id="second-title" x="928" y="682" fill="#2b2622" font-size="92" font-weight="750">/ SSPOs</text>
+      <path id="ordinary-tick" d="M1231 769 l20 20 l40 -41" fill="none" stroke="#23704b" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text id="wider" x="1720" y="916" class="hi" text-anchor="end" fill="#6f6a63" font-size="57" font-weight="650">बड़ा शब्द</text>
+      <text id="ordinary" x="204" y="913" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="53" font-weight="700">साधारण Postal Division</text>
+    </g>
+    <g id="definitions">
+      <text id="definitions-title" x="960" y="260" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="80" font-weight="850" fill="#9e1b1b">तीन और definitions</text>
+      <path id="definitions-rule" d="M803 305 H1117" stroke="#f2b705" stroke-width="9" stroke-linecap="round"/>
+      <g id="tile1"><rect x="560" y="400" width="240" height="200" rx="30" fill="#9e1b1b" filter="url(#vs-shadow)"/><text x="680" y="540" text-anchor="middle" font-size="112" font-weight="850" fill="#fff">1</text></g>
+      <g id="tile2"><rect x="840" y="400" width="240" height="200" rx="30" fill="#9e1b1b" filter="url(#vs-shadow)"/><text x="960" y="540" text-anchor="middle" font-size="112" font-weight="850" fill="#fff">2</text></g>
+      <g id="tile3"><rect x="1120" y="400" width="240" height="200" rx="30" fill="#9e1b1b" filter="url(#vs-shadow)"/><text x="1240" y="540" text-anchor="middle" font-size="112" font-weight="850" fill="#fff">3</text></g>
+    </g>
+    <g id="postmaster">
+      <g id="term-card">
+        <rect x="100" y="170" width="1720" height="160" rx="29" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+        <path d="M137 198 V300" stroke="#f2b705" stroke-width="9" stroke-linecap="round"/>
+      </g>
+      <text id="pmg-title" x="170" y="235" fill="#fff" font-size="70" font-weight="850">Postmaster General</text>
+      <text id="pmg-hi" x="170" y="304" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#fde9a6" font-size="49" font-weight="750">पोस्टमास्टर जनरल</text>
+      <text id="includes" x="1760" y="276" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#f3ead6" font-size="47" font-weight="700">शब्द में आते हैं:</text>
+      <g id="pmg-row1">
+        <rect x="160" y="380" width="1600" height="140" rx="24" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+        <circle cx="237" cy="450" r="34" fill="#fde9a6"/>
+        <text x="237" y="465" text-anchor="middle" fill="#9e1b1b" font-size="43" font-weight="850">1</text>
+        <text x="302" y="443" fill="#2b2622" font-size="61" font-weight="850">Principal CPMG</text>
+        <text id="principal-hi" x="302" y="499" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="46" font-weight="720">प्रधान मुख्य पोस्टमास्टर जनरल</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#carry'], [2.87, '#definitions'], [5.47, '#postmaster']],
+    on: [
+      [0.11, 'fade', '#ordinary-highlight', {dur: 0.29}],
+      [0.28, 'fade', '#ordinary', {dur: 0.34}],
+      [2.02, 'draw', '#ordinary-tick', {dur: 0.31}],
+      [2.87, 'words', '#definitions-title', {gap: 0.42, dist: 16}],
+      [2.98, 'draw', '#definitions-rule', {dur: 0.34}],
+      [3.05, 'pop', '#tile1', {from: 0.88, spring: 'soft'}],
+      [3.20, 'pop', '#tile2', {from: 0.88, spring: 'soft'}],
+      [3.35, 'pop', '#tile3', {from: 0.88, spring: 'soft'}],
+      [5.47, 'words', '#pmg-title', {gap: 0.68, dist: 16}],
+      [6.00, 'fade', '#pmg-hi', {dur: 0.36}],
+      [6.69, 'fade', '#includes', {dur: 0.33}],
+      [7.53, 'pop', '#pmg-row1', {from: 0.94, spring: 'soft'}],
+      [8.00, 'fade', '#principal-hi', {dur: 0.34}],
+    ],
+  }
+  </script>
+</section>
