@@ -8,13 +8,5 @@
   "9.78"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "low-contrast",
-   "scene": "s187",
-   "text": "Chairperson / अध्यक्ष (1.0:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
