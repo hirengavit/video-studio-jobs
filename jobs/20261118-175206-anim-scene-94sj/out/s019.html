@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s019" data-in="cut" data-section="PART 1 · CENTRAL ADMINISTRATION" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="compare">
+  <g id="sec">
+    <rect x="100" y="200" width="780" height="580" rx="36" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M136 200h708q36 0 36 36v156H100V236q0-36 36-36Z" fill="#9e1b1b"/>
+    <text id="sec-en" x="490" y="297" text-anchor="middle" fill="#fff" font-size="76" font-weight="770">Secretary (Posts)</text>
+    <text id="sec-hi" x="490" y="366" text-anchor="middle" class="hi" fill="#fde9a6" font-size="54" font-weight="650">सचिव (डाक)</text>
+    <text id="dept-head" x="156" y="499" class="hi" fill="#2b2622" font-size="67" font-weight="750">Department के head</text>
+    <text id="policy" x="156" y="610" class="hi" fill="#2b2622" font-size="73" font-weight="750">नीति</text>
+    <text id="sec-work" x="156" y="718" class="hi" fill="#6f6a63" font-size="59" font-weight="670">+ अपने दिए गए काम</text>
+  </g>
+  <g id="dgps-compare">
+    <rect x="1040" y="200" width="780" height="580" rx="36" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M1076 200h708q36 0 36 36v156h-780V236q0-36 36-36Z" fill="#fde9a6"/>
+    <text x="1430" y="297" text-anchor="middle" fill="#2b2622" font-size="82" font-weight="790">DGPS</text>
+    <text x="1430" y="366" text-anchor="middle" class="hi" fill="#6f6a63" font-size="48" font-weight="650">महानिदेशक, डाक सेवाएँ</text>
+    <text id="operations" x="1095" y="499" class="hi" fill="#2b2622" font-size="51" font-weight="750">Department के operations</text>
+    <text id="implementation" x="1095" y="610" class="hi" fill="#2b2622" font-size="73" font-weight="750">क्रियान्वयन</text>
+    <text id="dgps-work" x="1095" y="718" class="hi" fill="#6f6a63" font-size="50" font-weight="670">+ दिए गए administrative काम</text>
+  </g>
+</g>
+<g id="summary-band">
+  <rect x="100" y="820" width="1720" height="190" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <text id="rough-guide" x="160" y="934" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="750" fill="#6f6a63">मोटी समझ: नीति ↔ क्रियान्वयन</text>
+  <text id="reallocation" x="160" y="934" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="750" fill="#2b2622">दोनों पदों के कर्तव्य फिर से बाँटे गए</text>
+  <g id="date" text-anchor="middle">
+    <circle cx="1700" cy="915" r="88" fill="#fbf7ee" stroke="#6f6a63" stroke-width="4"/>
+    <circle cx="1700" cy="915" r="75" fill="none" stroke="#6f6a63" stroke-width="2" stroke-dasharray="3 5"/>
+    <text x="1700" y="909" fill="#4b4f58" font-size="32" font-weight="800">27 March</text>
+    <text x="1700" y="950" fill="#4b4f58" font-size="36" font-weight="800">2026</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0,'highlight','#policy',{color:'#f2b705',opacity:0.42,dur:0.38}],
+    [1.92,'pop','#implementation',{from:0.96}],
+    [2.05,'highlight','#implementation',{color:'#f2b705',opacity:0.42,dur:0.38}],
+    [3.92,'fade','#summary-band',{dur:0.26}],
+    [6.56,'stamp','#date',{from:1.15,rot:-6}],
+    [9.94,'out','#rough-guide',{dur:0.11,scale:1}],
+    [10.06,'fade','#reallocation',{dur:0.20}],
+    [11.30,'highlight','#reallocation',{words:'फिर से बाँटे गए',color:'#f2b705',opacity:0.42,dur:0.34}],
+  ],
+}
+</script>
+</section>
