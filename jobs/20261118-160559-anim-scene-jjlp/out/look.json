@@ -8,12 +8,5 @@
   "9.61"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s083",
-   "text": "Head of Region / क्षेत्र प्रमुख",
-   "t": 3.9
-  }
- ]
+ "warnings": []
 }
