@@ -2,7 +2,7 @@
 <svg viewBox="0 0 1920 1080">
   <rect width="1920" height="1080" fill="#fbf7ee"/>
   <text id="headline" x="160" y="241" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="850" fill="#9e1b1b">सबसे ज़रूरी बातें</text>
-  <g class="progress"><circle cx="895" cy="220" r="35" fill="#fbf7ee" stroke="#aca194" stroke-width="3"/><text x="895" y="230" text-anchor="middle" font-family="Inter, sans-serif" font-size="27" font-weight="750" fill="#6f6a63">1/6</text></g>
+  <g class="progress" id="progress-one"><circle cx="895" cy="220" r="35" fill="#fbf7ee" stroke="#aca194" stroke-width="3"/><text x="895" y="230" text-anchor="middle" font-family="Inter, sans-serif" font-size="27" font-weight="750" fill="#6f6a63">1/6</text></g>
 <g class="progress"><circle cx="981" cy="220" r="35" fill="#fbf7ee" stroke="#aca194" stroke-width="3"/><text x="981" y="230" text-anchor="middle" font-family="Inter, sans-serif" font-size="27" font-weight="750" fill="#6f6a63">2/6</text></g>
 <g class="progress"><circle cx="1067" cy="220" r="35" fill="#fbf7ee" stroke="#aca194" stroke-width="3"/><text x="1067" y="230" text-anchor="middle" font-family="Inter, sans-serif" font-size="27" font-weight="750" fill="#6f6a63">3/6</text></g>
 <g class="progress"><circle cx="1153" cy="220" r="35" fill="#fbf7ee" stroke="#aca194" stroke-width="3"/><text x="1153" y="230" text-anchor="middle" font-family="Inter, sans-serif" font-size="27" font-weight="750" fill="#6f6a63">4/6</text></g>
@@ -36,9 +36,9 @@
 <script type="text/scene">
 {
   on: [
-    [0, 'fade', '.progress', {dur: 0.25, stagger: 0.1}],
-    [1.36, 'words', '#headline', {gap: 0.17}],
-    [3.14, 'out', '.progress:first-of-type', {dur: 0.12, scale: 1}],
+    [0, 'fade', '.progress', {dur: 0.12, stagger: 0.1}],
+    [1.36, 'fade', '#headline', {dur: 0.25}],
+    [3.00, 'out', '#progress-one', {dur: 0.12, scale: 1}],
     [3.14, 'stamp', '#progress-active', {from: 1.12, rot: -3, spring: 'soft'}],
     [3.14, 'slide', '#env1', {from: 'down', dist: 70, spring: 'soft'}],
     [3.38, 'pop', '#seal', {from: 0.85, spring: 'soft'}],
