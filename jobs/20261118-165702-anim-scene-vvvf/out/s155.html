@@ -19,22 +19,22 @@
     <text id="true-hi" x="372" y="648" class="hi" fill="#6f6a63" font-size="51" font-weight="650">केंद्रीय बेस डाकघर</text>
     <path id="good" d="m803 649 24 25 50-55" fill="none" stroke="#2e7d4f" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
     <text id="wrong-tag" x="1049" y="474" class="hi" fill="#4b4f58" font-size="52" font-weight="650">गलत निष्कर्ष</text>
-    <text id="wrong1" x="1049" y="573" class="hi" fill="#4b4f58" font-size="66" font-weight="740">Armed Forces के पास</text>
-    <text id="wrong2" x="1049" y="659" class="hi" fill="#4b4f58" font-size="66" font-weight="740">बस 2 post offices</text>
+    <text id="wrong1" x="1049" y="573" class="hi" fill="#4b4f58" font-size="66" font-weight="740" opacity="0.55">Armed Forces के पास</text>
+    <text id="wrong2" x="1049" y="659" class="hi" fill="#4b4f58" font-size="66" font-weight="740" opacity="0.55">बस 2 post offices</text>
+    <path d="M1043 559 Q1378 564 1714 557 M1043 645 Q1326 650 1610 643" fill="none" stroke="#4b4f58" stroke-width="7"/>
     <path id="cross" d="m1680 628 55 55m0-55-55 55" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
-    <text id="fpo-line" x="167" y="743" class="hi" fill="#2e7d4f" font-size="38" font-weight="730">Field Post Offices भी APS network में</text>
+    <text id="fpo-line" x="167" y="743" class="hi" fill="#2e7d4f" font-size="44" font-weight="730" textLength="680" lengthAdjust="spacingAndGlyphs">Field Post Offices भी APS network में</text>
     <text id="old-question" x="166" y="892" class="hi" fill="#2b2622" font-size="48" font-weight="710">पुराने questions:</text>
     <text id="old-quote" x="580" y="892" fill="#2b2622" font-size="48" font-weight="770">“2 Army Post Offices”</text>
     <text id="equals" x="164" y="959" fill="#2b2622" font-size="51" font-weight="760">=</text>
-    <g id="apo56"><rect x="224" y="909" width="220" height="62" rx="29" fill="#9e1b1b"/><text x="334" y="953" text-anchor="middle" fill="#fff" font-size="42" font-weight="780">56 APO</text></g>
+    <g id="apo56"><rect x="224" y="909" width="220" height="62" rx="29" fill="#9e1b1b"/><text x="334" y="953" text-anchor="middle" fill="#fff" font-size="44" font-weight="780">56 APO</text></g>
     <text id="plus" x="477" y="957" fill="#2b2622" font-size="52" font-weight="760">+</text>
-    <g id="apo99"><rect x="537" y="909" width="220" height="62" rx="29" fill="#9e1b1b"/><text x="647" y="953" text-anchor="middle" fill="#fff" font-size="42" font-weight="780">99 APO</text></g>
+    <g id="apo99"><rect x="537" y="909" width="220" height="62" rx="29" fill="#9e1b1b"/><text x="647" y="953" text-anchor="middle" fill="#fff" font-size="44" font-weight="780">99 APO</text></g>
     <text id="base-arrangement" x="803" y="956" class="hi" fill="#2b2622" font-size="47" font-weight="770">base व्यवस्था</text>
   </svg>
   <script type="text/scene">
   {
     on: [
-      [0, 'strike', '#wrong1, #wrong2', {color:'#4b4f58', width:7, dur:0, dim:0.55}],
       [0, 'fade', '#fpo-line', {dur:0.44}],
       [3.16, 'pulse', '#good', {amount:0.16}],
       [3.68, 'words', '#old-question', {gap:0.46, dist:10, spring:'fast'}],
