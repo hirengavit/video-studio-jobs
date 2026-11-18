@@ -1,0 +1,67 @@
+<section class="vs-scene" id="s092" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="dates">
+  <text x="120" y="225" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#9e1b1b" font-size="76" font-weight="750">2026 structure: तारीखें</text>
+  <rect id="track" x="160" y="513" width="1600" height="14" rx="7" fill="#ead9a8"/>
+  <rect id="first-fill" x="160" y="513" width="360" height="14" rx="7" fill="#9e1b1b"/>
+  <rect id="second-fill" x="520" y="513" width="880" height="14" fill="#9e1b1b"/>
+  <circle cx="520" cy="520" r="22" fill="#fbf7ee" stroke="#d9c597" stroke-width="4"/>
+  <circle cx="1400" cy="520" r="22" fill="#fbf7ee" stroke="#d9c597" stroke-width="4"/>
+  <circle id="first-node" cx="520" cy="520" r="22" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="6"/>
+  <g fill="#9e1b1b" font-size="72" font-weight="770"><text id="day" x="160" y="472">15</text><text id="month" x="269" y="472">September</text><text id="year" x="704" y="472">2026</text></g>
+  <rect id="event2-slot" x="1165" y="580" width="470" height="372" rx="32" fill="none" stroke="#ead9a8" stroke-width="4"/>
+  <g id="letter">
+    <rect x="285" y="580" width="470" height="372" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <use href="piece:icon-notice-document" transform="translate(455 599) scale(0.43)"/>
+    <text id="impl" x="520" y="815" text-anchor="middle" fill="#2b2622" font-size="55" font-weight="750">implementation</text>
+    <text id="letter-en" x="520" y="875" text-anchor="middle" fill="#2b2622" font-size="52" font-weight="750">letter</text>
+    <text id="letter-hi" x="520" y="929" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="43" font-weight="650">कार्यान्वयन पत्र</text>
+  </g>
+    <circle id="second-node" cx="1400" cy="520" r="22" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="6"/>
+    <text id="deadline" x="1400" y="472" text-anchor="middle" fill="#9e1b1b" font-size="70" font-weight="780">30 September 2026</text>
+    <g id="deadline-card">
+      <rect x="1165" y="580" width="470" height="372" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <g transform="translate(1400 708)" fill="none" stroke="#9e1b1b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><rect x="-63" y="-54" width="126" height="111" rx="17"/><path d="M-63 -22H63M-34 -70V-40M34 -70V-40M-27 16L-7 36L32 -3"/></g>
+      <text x="1400" y="855" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="750">तक लागू करना था</text>
+    </g>
+</g>
+<g id="comparison">
+  <text id="comparison-title" x="120" y="239" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="76" font-weight="850" fill="#9e1b1b">बारीक फर्क</text>
+  <g id="ctl">
+    <rect x="120" y="320" width="780" height="500" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <g id="ctl-band"><path d="M148 320 H872Q900 320 900 348 V490 H120 V348 Q120 320 148 320Z" fill="#9e1b1b"/>
+    <text x="172" y="391" font-size="64" font-weight="850" fill="#fff">Control</text>
+    <text x="172" y="454" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="750" fill="#fff">नियंत्रण</text></g>
+  </g>
+  <g id="app">
+    <rect x="1020" y="320" width="780" height="500" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <g id="app-band"><path d="M1048 320 H1772Q1800 320 1800 348 V490 H1020 V348 Q1020 320 1048 320Z" fill="#fde9a6"/>
+    <text x="1072" y="391" font-size="64" font-weight="850" fill="#2b2622">Appointment</text>
+    <text x="1072" y="454" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="750" fill="#2b2622">नियुक्ति</text></g>
+  </g>
+  <g id="vs"><circle cx="960" cy="534" r="42" fill="#2b2622"/><text x="960" y="548" text-anchor="middle" fill="#fff" font-size="39" font-weight="850">VS</text></g>
+  <g id="officer">
+    <text x="172" y="580" font-size="55" font-weight="850" fill="#2b2622">Controlling officer</text>
+    <text x="172" y="643" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#6f6a63">नियंत्रक अधिकारी</text>
+  </g>
+  <text id="supervises" x="172" y="748" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800" fill="#2b2622">काम की निगरानी करता है</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0, '#dates'], [4.19, '#comparison']],
+  on: [
+    [0.60, 'grow', '#second-fill', {axis:'x', origin:'left', spring:'fast'}],
+    [0.60, 'words', '#deadline', {gap: 0.37}],
+    [0.81, 'fade', '#second-node', {dur: 0.20}],
+    [2.52, 'fade', '#deadline-card', {dur: 0.25}],
+    [4.19, 'fade', '#comparison-title', {dur: 0.28}],
+    [5.93, 'fade', '#ctl-band', {dur: 0.23}],
+    [6.93, 'fade', '#app-band, #vs', {dur: 0.24}],
+    [7.93, 'fade', '#officer', {dur: 0.25}],
+    [9.53, 'words', '#supervises', {gap: 0.24}]
+  ]
+}
+</script>
+</section>
