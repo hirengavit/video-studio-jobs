@@ -14,24 +14,6 @@
    "scene": "s190",
    "text": "डाक सेवा कर्मचारी कल्याण बोर्ड / welfare activities",
    "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s190",
-   "text": "Welfare / Secretary (Posts)",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s190",
-   "text": "कल्याण / सचिव (डाक)",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s190",
-   "text": "employees की भलाई के उपाय / Secretary (Posts)",
-   "t": 0.3
   }
  ]
 }
