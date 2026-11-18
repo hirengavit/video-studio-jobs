@@ -43,7 +43,7 @@
       <rect x="1100" y="840" width="700" height="140" rx="29" fill="#f3ead6" stroke="#4b4f58" stroke-width="4" stroke-dasharray="14 13"/>
       <text x="1440" y="931" text-anchor="middle" class="hi" fill="#4b4f58" font-size="58" font-weight="720">हर GDS category</text>
     </g>
-    <path id="third-arrow" d="M761 707c92 0 82 198 199 198h131m-22-19 22 19-22 19" fill="none" stroke="#4b4f58" stroke-width="6" stroke-dasharray="13 11" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="third-arrow" d="M761 707c92 0 82 198 199 198h131m-22-19 22 19-22 19" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     <path id="third-strike" d="m926 944 62-82" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
     <path id="all-cross" d="m1704 889 43 43m0-43-43 43" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
 
@@ -102,6 +102,7 @@
     shots: [[0, '#previous'], [4.63, '#authority']],
     on: [
       [0.02, 'slide', '#appointment-band', {from: 'down', dist: 48, spring: 'soft'}],
+      [0.08, "out", "#allgds, #third-arrow, #third-strike, #all-cross", {dur: 0.24, scale: 1}],
       [2.20, 'words', '#schedule', {gap: 0.44, dist: 16}],
       [2.64, 'highlight', '#schedule', {color: '#f2b705', opacity: 0.60, dur: 0.43}],
       [4.63, 'stamp', '#cpmg', {from: 1.07, rot: -3, spring: 'soft'}],
