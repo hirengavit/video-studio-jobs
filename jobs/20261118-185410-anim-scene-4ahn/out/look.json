@@ -8,12 +8,5 @@
   "12.43"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s182",
-   "text": "नया केंद्र बन रहा है / 7 चल रहे",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
