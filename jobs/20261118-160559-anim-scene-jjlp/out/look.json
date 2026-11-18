@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.95",
+  "3.90",
+  "5.86",
+  "7.81",
+  "9.61"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s083",
+   "text": "Head of Region / क्षेत्र प्रमुख",
+   "t": 3.9
+  }
+ ]
+}
