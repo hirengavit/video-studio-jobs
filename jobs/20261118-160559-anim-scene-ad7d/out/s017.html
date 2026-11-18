@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s017" data-in="cut" data-section="PART 1 · CENTRAL ADMINISTRATION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text x="960" y="208" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="800" fill="#9e1b1b">दूसरी बड़ी post</text>
+    <rect x="100" y="260" width="1720" height="440" rx="30" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+    <g id="dgps-stamp">
+      <rect x="140" y="300" width="420" height="360" rx="27" fill="#9e1b1b" stroke="#9e1b1b" stroke-width="2"/>
+      <rect x="148" y="308" width="404" height="344" rx="22" fill="none" stroke="#fde9a6" stroke-width="5" stroke-dasharray="2 13" stroke-linecap="round"/>
+      <rect x="170" y="330" width="360" height="300" rx="18" fill="none" stroke="#de8e73" stroke-width="3"/>
+      <text id="dgps-lettering" x="350" y="517" text-anchor="middle" font-family="Inter, sans-serif" font-size="104" font-weight="850" fill="#fff">DGPS</text>
+    </g>
+    <g font-family="Inter, sans-serif" fill="#2b2622" font-size="86" font-weight="800">
+      <text id="dgps-line1" x="650" y="411">Director General</text>
+      <text id="dgps-line2" x="650" y="522">Postal Services</text>
+    </g>
+    <text id="dgps-hindi" x="650" y="615" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="650" fill="#6f6a63">महानिदेशक, डाक सेवाएँ</text>
+    <g id="duty-strip">
+      <rect x="100" y="760" width="1720" height="240" rx="30" fill="#fff5db" stroke="#d8b55f" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M101 790 L165 878 L101 966 M1819 790 L1755 878 L1819 966" fill="none" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M213 867 H1707" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+      <text id="duty" x="220" y="840" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="780" fill="#2b2622">ज़िम्मेदारी: Department के operations</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.54, 'words', '#dgps-line1', {gap: 0.66, dist: 18}],
+      [2.86, 'words', '#dgps-line2', {gap: 0.58, dist: 18}],
+      [3.90, 'fade', '#dgps-hindi', {dur: 0.35}],
+      [5.04, 'stamp', '#dgps-stamp', {from: 1.14, rot: -3, spring: 'soft'}],
+      [6.36, 'pulse', '#dgps-lettering', {amount: 0.06}],
+      [7.36, 'slide', '#duty-strip', {from: 'down', dist: 56, spring: 'soft'}],
+      [7.48, 'words', '#duty', {gap: 0.52, dist: 14}],
+      [9.16, 'highlight', '#duty', {words: 'operations', color: '#f2b705', opacity: 0.40, dur: 0.40, pad: 9}],
+    ],
+  }
+  </script>
+</section>
