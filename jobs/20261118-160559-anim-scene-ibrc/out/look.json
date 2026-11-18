@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.13",
+  "4.26",
+  "6.38",
+  "8.51",
+  "10.49"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s111",
+   "message": "strike: option \"gap\" isn't used (it takes: dur, color, width, dim, words)",
+   "t": 0.3
+  }
+ ]
+}
