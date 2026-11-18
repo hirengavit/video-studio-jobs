@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s093" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="comparison">
+  <text id="comparison-title" x="120" y="239" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="76" font-weight="850" fill="#9e1b1b">बारीक फर्क</text>
+  <g id="ctl">
+    <rect x="120" y="320" width="780" height="500" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <g id="ctl-band"><path d="M148 320 H872Q900 320 900 348 V490 H120 V348 Q120 320 148 320Z" fill="#9e1b1b"/>
+    <text x="172" y="391" font-size="64" font-weight="850" fill="#fff">Control</text>
+    <text x="172" y="454" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="750" fill="#fff">नियंत्रण</text></g>
+  </g>
+  <g id="app">
+    <rect x="1020" y="320" width="780" height="500" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <g id="app-band"><path d="M1048 320 H1772Q1800 320 1800 348 V490 H1020 V348 Q1020 320 1048 320Z" fill="#fde9a6"/>
+    <text x="1072" y="391" font-size="64" font-weight="850" fill="#2b2622">Appointment</text>
+    <text x="1072" y="454" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="750" fill="#2b2622">नियुक्ति</text></g>
+  </g>
+  <g id="vs"><circle cx="960" cy="534" r="42" fill="#2b2622"/><text x="960" y="548" text-anchor="middle" fill="#fff" font-size="39" font-weight="850">VS</text></g>
+  <g id="officer">
+    <text x="172" y="580" font-size="55" font-weight="850" fill="#2b2622">Controlling officer</text>
+    <text x="172" y="643" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#6f6a63">नियंत्रक अधिकारी</text>
+  </g>
+  <text id="supervises" x="172" y="748" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800" fill="#2b2622">काम की निगरानी करता है</text>
+</g>
+
+<text id="authority-en" x="1072" y="580" font-size="55" font-weight="850" fill="#2b2622">Appointing authority</text>
+<text id="authority-hi" x="1072" y="643" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#6f6a63">नियुक्ति प्राधिकारी</text>
+<text id="source" x="1072" y="708" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="800" fill="#2b2622">अनुसूची या नियम से</text>
+<text id="power" x="1072" y="768" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="800" fill="#2b2622">नियुक्ति की शक्ति</text>
+<g id="myth"><rect x="120" y="860" width="1680" height="130" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+<text x="170" y="941" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="800" fill="#2b2622">सिर्फ निगरानी</text>
+<text id="false-power" x="512" y="941" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="800" fill="#2b2622">→ हर नियुक्ति या अनुशासनात्मक शक्ति</text>
+<path id="false-cross" d="M1694 906l45 45m0-45-45 45" stroke="#4b4f58" fill="none" stroke-width="9" stroke-linecap="round"/>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+[0,'words','#authority-en',{gap:0.56,dist:10}],
+[0.50,'fade','#authority-hi',{dur:0.23}],
+[2.62,'words','#source',{gap:0.37,dist:10}],
+[3.62,'words','#power',{gap:0.42,dist:10}],
+[4.56,'highlight','#power',{color:'#f2b705',opacity:0.40,dur:0.34}],
+[5.92,'fade','#myth',{dur:0.22}],
+[6.84,'words','#false-power',{gap:0.48,dist:10}],
+[9.78,'strike','#false-power',{color:'#4b4f58',dur:0.29,dim:0.66}],
+[9.78,'draw','#false-cross',{dur:0.3}],
+]}
+</script></section>
