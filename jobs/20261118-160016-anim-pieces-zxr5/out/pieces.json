@@ -1,0 +1,253 @@
+[
+  {
+    "id": "icon-dak-bhawan",
+    "kind": "prop",
+    "description": "Generic multi-storey government office block, flat ink 3 px, cream walls, postal-red band and door, flat roof; no emblem, logo or lettering. 400 square, shown 260-420 px.",
+    "ideas": [
+      "central administration",
+      "headquarters"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "building",
+      "red-band",
+      "windows",
+      "entrance"
+    ]
+  },
+  {
+    "id": "icon-village-post-office",
+    "kind": "prop",
+    "description": "Small one-storey village post office, cream walls, red roof strip, a tiny red letter box beside the door, blank signboard. 400 square.",
+    "ideas": [
+      "village office",
+      "local postal access"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "walls",
+      "roof",
+      "sign",
+      "door",
+      "window",
+      "letter-box",
+      "threshold"
+    ]
+  },
+  {
+    "id": "step-ladder-diagram",
+    "kind": "symbol",
+    "description": "Five wide cream steps rising left to right with ink edges, each tread blank for a label the scene writes; bottom step at left. 1200x600.",
+    "ideas": [
+      "administrative hierarchy",
+      "five blank steps"
+    ],
+    "viewBox": "0 0 1200 600",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "step-1",
+      "step-2",
+      "step-3",
+      "step-4",
+      "step-5"
+    ]
+  },
+  {
+    "id": "icon-envelope",
+    "kind": "prop",
+    "description": "Cream envelope with a postal-red flap line, flat ink 3 px. 400 square.",
+    "ideas": [
+      "mail",
+      "postal service"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "body",
+      "folds",
+      "flap"
+    ]
+  },
+  {
+    "id": "icon-passbook-rupee",
+    "kind": "prop",
+    "description": "Postal-red passbook with a white rupee sign, flat ink 3 px. 400 square.",
+    "ideas": [
+      "passbook",
+      "savings"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "pages",
+      "cover",
+      "rupee-mark"
+    ]
+  },
+  {
+    "id": "icon-designation-plate",
+    "kind": "prop",
+    "description": "Desk name plate: ink outline, white blank face for the scene's lettering, postal-red base strip. 400x200.",
+    "ideas": [
+      "blank job title",
+      "desk plate"
+    ],
+    "viewBox": "0 0 400 200",
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "feet",
+      "face",
+      "red-base"
+    ]
+  },
+  {
+    "id": "icon-notice-document",
+    "kind": "prop",
+    "description": "White sheet with a sand header strip, grey placeholder lines and a folded corner; nothing official-looking, no emblem. 300x400.",
+    "ideas": [
+      "generic notice",
+      "order document"
+    ],
+    "viewBox": "0 0 300 400",
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "sheet",
+      "header",
+      "fold",
+      "placeholder-lines"
+    ]
+  },
+  {
+    "id": "icon-city-pin",
+    "kind": "symbol",
+    "description": "Postal-red map pin with a white centre dot, ink outline. 120x160, base at the tip.",
+    "ideas": [
+      "map location",
+      "headquarters pin"
+    ],
+    "viewBox": "0 0 120 160",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "pin-body",
+      "center-dot"
+    ]
+  },
+  {
+    "id": "icon-airplane",
+    "kind": "prop",
+    "description": "Flat ink mail plane, side view, cream body with a postal-red stripe. 400 square.",
+    "ideas": [
+      "air mail",
+      "flight transport"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "tail",
+      "far-wing",
+      "fuselage",
+      "stripe",
+      "near-wing",
+      "cockpit"
+    ]
+  },
+  {
+    "id": "icon-graduation-cap",
+    "kind": "prop",
+    "description": "Ink mortarboard with a postal-red tassel. 400 square.",
+    "ideas": [
+      "training",
+      "staff development"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "skull-cap",
+      "mortarboard",
+      "tassel"
+    ]
+  },
+  {
+    "id": "icon-tech-laptop",
+    "kind": "prop",
+    "description": "Open laptop, cream screen with ink code lines and a small gear. 400 square.",
+    "ideas": [
+      "postal software",
+      "technology support"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "display",
+      "code-lines",
+      "gear",
+      "keyboard-base"
+    ]
+  },
+  {
+    "id": "icon-forms-stack",
+    "kind": "prop",
+    "description": "Stack of cream forms with a pencil on top, flat ink 3 px. 400 square.",
+    "ideas": [
+      "forms",
+      "supplies"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "rear-sheets",
+      "top-sheet",
+      "pencil"
+    ]
+  },
+  {
+    "id": "icon-welfare-hands",
+    "kind": "prop",
+    "description": "Two cupped ink hands holding a small postal-red heart. 400 square.",
+    "ideas": [
+      "employee welfare",
+      "care and support"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "heart",
+      "left-hand",
+      "right-hand"
+    ]
+  }
+]
