@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s057" data-in="cut" data-section="RECAP · PARTS 1–2" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="envelope">
+<rect x="80" y="160" width="1420" height="840" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+<path d="M106 163H1474L790 330Z" fill="#f3ead6"/>
+<path d="M106 163L790 330L1474 163" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linejoin="round"/>
+<path d="M112 500H1468M112 660H1468M112 820H1468" fill="none" stroke="#ead9a8" stroke-width="2"/>
+<text id="recap" x="790" y="217" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="middle" font-size="39" font-weight="750" fill="#6f6a63">दोहराव</text>
+<text id="part" x="790" y="273" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="middle" font-size="55" font-weight="750" fill="#9e1b1b">भाग 1–2</text>
+</g>
+<g id="seal"><circle cx="1338" cy="250" r="52" fill="#9e1b1b"/><circle cx="1338" cy="250" r="41" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="4 7"/><text id="four" x="1338" y="269" font-family="Inter, sans-serif" text-anchor="middle" font-size="54" font-weight="750" fill="#fde9a6">4</text></g>
+<text id="department" x="245" y="398" font-family="Inter, sans-serif" text-anchor="start" font-size="51" font-weight="750" fill="#2b2622">Department of Posts</text>
+<text id="department-hi" x="245" y="452" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="start" font-size="39" font-weight="750" fill="#6f6a63">डाक विभाग</text>
+<g id="ministry"><rect x="780" y="353" width="670" height="62" rx="30" fill="#fde9a6"/><text id="ministry-en" x="1115" y="396" font-family="Inter, sans-serif" text-anchor="middle" font-size="41" font-weight="750" fill="#8a5d00">Ministry of Communications</text></g>
+<g id="headquarters"><rect x="780" y="424" width="670" height="62" rx="30" fill="#fde9a6"/><text id="hq-en" x="1115" y="467" font-family="Inter, sans-serif" text-anchor="middle" font-size="44" font-weight="750" fill="#8a5d00">Dak Bhawan, New Delhi</text></g>
+<path id="tick" d="M149 420l14 14 27-32" stroke="#2e7d4f" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="building"><use href="piece:icon-dak-bhawan" transform="translate(1520 660) scale(0.8)"/></g>
+
+<rect id="row1-mute" x="112" y="337" width="1356" height="159" fill="#f3ead6" fill-opacity="0.44"/>
+<g id="secretary">
+  <use href="piece:icon-designation-plate" transform="translate(230 485) scale(1.07)"/>
+  <text x="444" y="572" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="37" font-weight="750">Secretary (Posts)</text>
+  <text id="secretary-hi" x="444" y="616" text-anchor="middle" class="hi" fill="#6f6a63" font-size="38" font-weight="650">सचिव (डाक)</text>
+</g>
+<g id="sec-p1"><rect x="780" y="506" width="670" height="62" rx="30" fill="#fde9a6"/>
+  <text id="sec-t1" x="1115" y="549" text-anchor="middle" class="hi" fill="#8a5d00" font-size="43" font-weight="750">Department के head</text></g>
+<g id="sec-p2"><rect x="780" y="577" width="670" height="62" rx="30" fill="#fde9a6"/>
+  <text id="sec-t2" x="1115" y="620" text-anchor="middle" class="hi" fill="#8a5d00" font-size="43" font-weight="750">+ PSB के Chairperson</text></g>
+<path id="tick2" d="M149 578l14 14 27-32" stroke="#2e7d4f" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="dgps" x="245" y="725" fill="#2b2622" font-family="Inter, sans-serif" font-size="56" font-weight="750">DGPS</text>
+<text id="dgps-hi" x="245" y="779" class="hi" fill="#6f6a63" font-size="45" font-weight="700">महानिदेशक डाक सेवाएँ</text>
+<g id="dgps-p1"><rect x="780" y="670" width="670" height="62" rx="30" fill="#fde9a6"/>
+  <text x="1115" y="713" text-anchor="middle" fill="#8a5d00" font-family="Inter, sans-serif" font-size="43" font-weight="750">operations</text></g>
+<g id="dgps-p2"><rect x="780" y="741" width="670" height="62" rx="30" fill="#fde9a6"/>
+  <text id="appointment" x="1115" y="784" text-anchor="middle" fill="#8a5d00" font-family="Inter, sans-serif" font-size="38" font-weight="750">appointment: Central Government</text></g>
+<path id="tick3" d="M149 742l14 14 27-32" stroke="#2e7d4f" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.05,'fade','#row1-mute',{dur:0.32}],
+    [0.05,'pop','#secretary',{from:0.96,spring:'fast'}],
+    [0.50,'fade','#secretary-hi',{dur:0.23}],
+    [2.02,'fade','#sec-p1',{dur:0.21}],
+    [2.05,'words','#sec-t1',{gap:0.13,dist:11,spring:'fast'}],
+    [3.26,'fade','#sec-p2',{dur:0.21}],
+    [3.30,'words','#sec-t2',{gap:0.22,dist:11,spring:'fast'}],
+    [4.18,'draw','#tick2',{dur:0.31}],
+    [5.10,'words','#dgps',{dist:11,spring:'fast'}],
+    [5.60,'fade','#dgps-hi',{dur:0.23}],
+    [6.62,'fade','#dgps-p1',{dur:0.24}],
+    [9.42,'fade','#dgps-p2',{dur:0.20}],
+    [9.46,'words','#appointment',{gap:0.66,dist:11,spring:'fast'}],
+    [12.02,'draw','#tick3',{dur:0.27}]
+  ]
+}
+</script>
+</section>
