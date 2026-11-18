@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s144" data-in="cut" data-section="PART 5 · BASE CIRCLE &amp; APS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text id="other-ranks" x="960" y="233" text-anchor="middle" fill="#9e1b1b" font-size="89" font-weight="770">Other ranks</text>
+    <text x="960" y="302" text-anchor="middle" class="hi" fill="#6f6a63" font-size="53" font-weight="650">अन्य रैंक</text>
+    <path id="bracket" d="M160 427v-23h1600v23" fill="none" stroke="#cab99a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="160" y="460" width="1600" height="160" rx="31" fill="#fff" stroke="#d7c49e" stroke-width="4"/>
+    <defs><clipPath id="bar-clip"><rect x="160" y="460" width="1600" height="160" rx="31"/></clipPath></defs>
+    <g clip-path="url(#bar-clip)">
+      <rect id="post-segment" x="160" y="460" width="1200" height="160" fill="#9e1b1b"/>
+      <rect id="army-segment" x="1360" y="460" width="400" height="160" fill="#e4d0a8"/>
+    </g>
+    <text id="post-share" x="760" y="385" text-anchor="middle" class="hi" fill="#9e1b1b" font-size="76" font-weight="760">लगभग 75%</text>
+    <text id="army-share" x="1560" y="385" text-anchor="middle" class="hi" fill="#2b2622" font-size="76" font-weight="760">लगभग 25%</text>
+    <g id="post-label">
+      <path d="M760 620v48" fill="none" stroke="#9e1b1b" stroke-width="4"/>
+      <text x="760" y="746" text-anchor="middle" class="hi" fill="#2b2622" font-size="73" font-weight="740">Department of Posts से</text>
+      <text x="760" y="823" text-anchor="middle" class="hi" fill="#6f6a63" font-size="55" font-weight="640">डाक विभाग से</text>
+    </g>
+    <g id="army-label">
+      <path d="M1560 620v48" fill="none" stroke="#b19768" stroke-width="4"/>
+      <text x="1560" y="746" text-anchor="middle" class="hi" fill="#2b2622" font-size="56" font-weight="740">Army खुद</text>
+      <text x="1560" y="823" text-anchor="middle" class="hi" fill="#2b2622" font-size="56" font-weight="740">भर्ती करती है</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [2.32, 'grow', '#post-segment', {axis:'x', origin:'left', spring:'fast'}],
+      [2.32, 'fade', '#post-share', {dur:0.25}],
+      [2.32, 'count', '#post-share', {from:0, to:75, prefix:'लगभग ', suffix:'%', dur:0.42}],
+      [4.00, 'fade', '#post-label', {dur:0.32}],
+      [7.11, 'grow', '#army-segment', {axis:'x', origin:'left', spring:'fast'}],
+      [7.11, 'fade', '#army-share', {dur:0.25}],
+      [7.11, 'count', '#army-share', {from:0, to:25, prefix:'लगभग ', suffix:'%', dur:0.42}],
+      [8.32, 'fade', '#army-label', {dur:0.32}]
+    ]
+  }
+  </script>
+</section>
