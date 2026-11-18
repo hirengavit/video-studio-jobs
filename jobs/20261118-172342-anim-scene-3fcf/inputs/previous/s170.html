@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s170" data-in="cut" data-section="PART 6 · SPECIAL OFFICES &amp; BOARDS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="mms" text-anchor="middle">
+      <rect id="mms-frame" x="120" y="200" width="780" height="780" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect id="mms-icon-bg" x="329" y="244" width="362" height="250" rx="30" fill="#f3ead6"/>
+      <use id="mms-icon" href="piece:icon-mail-van" transform="translate(357 214) scale(0.75)"/>
+      <text id="mms-term" x="510" y="560" font-family="Inter, sans-serif" font-size="66" font-weight="800" fill="#9e1b1b">Mail Motor Service</text>
+      <text id="mms-hi" x="510" y="625" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="650" fill="#6f6a63">मेल मोटर सेवा</text>
+      <g id="mms-chip"><rect x="422" y="651" width="176" height="62" rx="31" fill="#fde9a6"/><text x="510" y="695" font-family="Inter, sans-serif" font-size="39" font-weight="800" fill="#8a5d00">MMS</text></g>
+      <path id="mms-divider" d="M180 748H840" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+      <text id="mms-work" x="510" y="838" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="700" fill="#2b2622">मोटर से डाक का परिवहन</text>
+    </g>
+    <g id="foreign" text-anchor="middle">
+      <rect id="foreign-frame" x="1020" y="200" width="780" height="780" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect id="foreign-icon-bg" x="1229" y="244" width="362" height="250" rx="30" fill="#f3ead6"/>
+      <use id="foreign-icon" href="piece:icon-globe-mail" transform="translate(1278 250) scale(0.61)"/>
+      <text id="foreign-term" x="1410" y="560" font-family="Inter, sans-serif" font-size="66" font-weight="800" fill="#9e1b1b">Foreign Post</text>
+      <text id="foreign-hi" x="1410" y="625" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="650" fill="#6f6a63">विदेश डाक</text>
+      
+      <path id="foreign-divider" d="M1080 748H1740" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+      <text id="foreign-work" x="1410" y="838" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="700" fill="#2b2622">अंतरराष्ट्रीय डाक का काम</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.00, 'words', '#mms-term', {gap: 0.59, dist: 12}],
+      [1.20, 'fade', '#mms-hi', {dur: 0.24}],
+      [2.48, 'stamp', '#mms-chip', {from: 1.14, rot: -2}],
+      [5.34, 'fade', '#mms-work', {dur: 0.28}],
+      [8.18, 'pop', '#foreign', {from: 0.97}],
+      [8.80, 'fade', '#foreign-hi', {dur: 0.24}],
+      [9.34, 'fade', '#foreign-work', {dur: 0.28}],
+    ],
+  }
+  </script>
+</section>
