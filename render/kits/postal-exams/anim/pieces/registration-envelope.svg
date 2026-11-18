@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <rect id="paper" x="22" y="87" width="356" height="226" fill="#ffffff" rx="6"/>
+  <g id="registration-band">
+    <rect x="41" y="99" width="69" height="202" fill="#fbf7ee" rx="2" stroke="#9e1b1b"/>
+    <path d="M48 107V293M103 107V293" stroke="#9e1b1b" stroke-width="1.5"/>
+  </g>
+  <g id="printed-stamp">
+    <rect x="311" y="108" width="43" height="48" fill="none" stroke="#9e1b1b" rx="2"/>
+    <path d="M318 116h29v32h-29Z" stroke="#9e1b1b" stroke-width="1.5"/>
+  </g>
+  <path id="address-rules" d="M167 226h158m-158 14h145m-145 14h131" stroke="#aaa39a" stroke-width="2.5"/>
+  <circle data-anchor="base" cx="200" cy="313" r="0"/>
+</svg>
