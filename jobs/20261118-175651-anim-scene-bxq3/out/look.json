@@ -8,12 +8,5 @@
   "11.55"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s129",
-   "message": "pop: nothing found for \"#remaining\"",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
