@@ -1,0 +1,50 @@
+{
+ "moments": [
+  "0.30",
+  "2.12",
+  "4.24",
+  "6.36",
+  "8.48",
+  "10.45"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s197",
+   "text": "सबसे ज़रूरी बातें / 1/6",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s197",
+   "text": "सबसे ज़रूरी बातें / 2/6",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s197",
+   "text": "1/6 / 1/6",
+   "t": 0.3
+  },
+  {
+   "kind": "low-contrast",
+   "scene": "s197",
+   "text": "1/6 (1.5:1) / 2/6 (1.5:1) / 1 (1.2:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s197",
+   "text": "Operations / नियुक्ति: केंद्र सरकार",
+   "t": 4.24
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s197",
+   "text": "2/6 / 2/6",
+   "t": 6.36
+  }
+ ]
+}
