@@ -8,18 +8,5 @@
   "9.86"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s175",
-   "text": "आपदा पुनर्प्राप्ति केंद्र / 15",
-   "t": 4
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s175",
-   "text": "आपदा पुनर्प्राप्ति केंद्र / May",
-   "t": 6.01
-  }
- ]
+ "warnings": []
 }
