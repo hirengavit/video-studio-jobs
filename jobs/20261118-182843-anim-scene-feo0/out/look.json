@@ -1,0 +1,26 @@
+{
+ "moments": [
+  "0.30",
+  "1.88",
+  "3.76",
+  "5.64",
+  "7.52",
+  "9.25"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s125",
+   "text": "6 (1.0:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s125",
+   "text": "Shillong / शिलांग",
+   "t": 1.88
+  }
+ ]
+}
