@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.46",
+  "4.91",
+  "7.37",
+  "9.82",
+  "12.13"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s080",
+   "message": "slide: option \"dur\" isn't used (it takes: from, dist, spring)",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s080",
+   "message": "pop: option \"dur\" isn't used (it takes: spring, from)",
+   "t": 0.3
+  }
+ ]
+}
