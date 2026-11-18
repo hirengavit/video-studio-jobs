@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s177" data-in="cut" data-section="PART 6 · SPECIAL OFFICES &amp; BOARDS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect x="120" y="178" width="1680" height="132" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+    <use href="piece:icon-graduation-cap" transform="translate(154 164) scale(0.43)"/>
+    <path d="M350 205v78" stroke="#d7c49e" stroke-width="4"/>
+    <text x="396" y="266" fill="#9e1b1b" font-size="66" font-weight="770">RAKNPA · Ghaziabad</text>
+    <text id="training" x="120" y="418" class="hi" fill="#2b2622" font-size="84" font-weight="750">officers की training</text>
+    <g id="probationers">
+      <rect x="120" y="470" width="1680" height="230" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M154 512v145" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round"/>
+      <text id="ips" x="205" y="566" fill="#2b2622" font-size="78" font-weight="760">Indian Postal Service</text>
+      <text id="ips-hi" x="209" y="642" class="hi" fill="#6f6a63" font-size="56" font-weight="620">भारतीय डाक सेवा</text>
+      <g id="probationers-line">
+        <path d="M1104 507v156" stroke="#ead9a8" stroke-width="4"/>
+        <text x="1153" y="569" class="hi" fill="#2b2622" font-size="65" font-weight="700">के probationers</text>
+        <text x="1157" y="640" class="hi" fill="#2b2622" font-size="61" font-weight="700">की training</text>
+      </g>
+    </g>
+    <g id="capacity">
+      <rect x="120" y="740" width="1680" height="230" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M154 782v145" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round"/>
+      <text x="205" y="839" fill="#2b2622" font-size="78" font-weight="760">capacity-building programmes</text>
+      <text id="capacity-hi" x="209" y="918" class="hi" fill="#6f6a63" font-size="58" font-weight="620">क्षमता-निर्माण कार्यक्रम</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.34, 'fade', '#training', {dur:0.34}],
+      [2.78, 'pop', '#probationers', {from:0.98, spring:'fast'}],
+      [2.82, 'words', '#ips', {gap:0.40, dist:14, spring:'fast'}],
+      [3.40, 'fade', '#ips-hi', {dur:0.27}],
+      [4.42, 'fade', '#probationers-line', {dur:0.30}],
+      [7.58, 'pop', '#capacity', {from:0.98, spring:'fast'}],
+      [8.30, 'fade', '#capacity-hi', {dur:0.26}]
+    ]
+  }
+  </script>
+</section>
