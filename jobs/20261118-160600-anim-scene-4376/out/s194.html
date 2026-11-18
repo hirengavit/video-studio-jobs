@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s194" data-in="cut" data-section="PART 6 · SPECIAL OFFICES &amp; BOARDS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g text-anchor="middle">
+      <rect x="120" y="200" width="840" height="220" rx="42" fill="#fff7df" stroke="#d6aa43" stroke-width="4" filter="url(#vs-shadow)"/>
+      <text x="540" y="290" font-size="48" font-weight="750" fill="#6f6a63">Postal Services</text>
+      <text id="welfare-name" x="540" y="365" font-size="63" font-weight="850" fill="#2b2622">Staff Welfare Board</text>
+      <rect x="120" y="520" width="840" height="200" rx="42" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="540" y="643" font-size="65" font-weight="820" fill="#2b2622">Postal Services Board</text>
+      <rect x="120" y="780" width="840" height="200" rx="42" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="540" y="903" font-size="65" font-weight="820" fill="#2b2622">Postal Sports Board</text>
+    </g>
+    <path id="minister-arrow" d="M985 310 H1058 M1038 292 L1058 310 L1038 328" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="other-bracket" d="M977 620 H1011 V880 H977 M1011 750 H1058 M1038 732 L1058 750 L1038 768" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="minister-card">
+      <rect x="1080" y="200" width="720" height="220" rx="36" fill="#fff" stroke="#e0ab21" stroke-width="6" filter="url(#vs-shadow)"/>
+      <use href="piece:icon-designation-plate" transform="translate(1137 270) scale(0.36)"/>
+      <path d="M1320 238 V382" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+      <text x="1537" y="311" text-anchor="middle" font-size="72" font-weight="850" fill="#9e1b1b">Minister</text>
+      <text x="1537" y="377" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#6f6a63">मंत्री</text>
+    </g>
+    <g id="secretary-card">
+      <rect x="1080" y="560" width="720" height="380" rx="36" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+      <use href="piece:icon-designation-plate" transform="translate(1365 599) scale(0.375)"/>
+      <text x="1440" y="773" text-anchor="middle" font-size="68" font-weight="850" fill="#2b2622">Secretary (Posts)</text>
+      <text id="secretary-hi" x="1440" y="854" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#6f6a63">सचिव (डाक)</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.04, 'highlight', '#welfare-name', {words: 'Staff Welfare Board', color: '#f2b705', opacity: 0.38, dur: 0.43, pad: 8}],
+      [1.68, 'draw', '#minister-arrow', {dur: 0.39}],
+      [2.24, 'pop', '#minister-card', {from: 0.94, spring: 'soft'}],
+      [4.12, 'draw', '#other-bracket', {dur: 0.70}],
+      [5.64, 'pop', '#secretary-card', {from: 0.94, spring: 'soft'}],
+      [6.10, 'fade', '#secretary-hi', {dur: 0.32}],
+    ],
+  }
+  </script>
+</section>
