@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s186" data-in="wipe" data-in-dur="0.4" data-in-opts='{"from":"right"}' data-section="PART 6 · SPECIAL OFFICES &amp; BOARDS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="warning">
+      <rect x="120" y="181" width="8" height="59" rx="4" fill="#f2b705"/>
+      <text class="hi" x="148" y="225" font-size="55" font-weight="760" fill="#9e1b1b">आखिरी हिस्सा</text>
+      <text class="hi" id="other-boards" x="148" y="298" font-size="57" font-weight="765" fill="#2b2622">दूसरे Boards</text>
+      <g id="board-word">
+        <rect x="120" y="329" width="399" height="111" rx="27" fill="#f3ead6"/>
+        <text x="319.5" y="404" text-anchor="middle" font-size="64" font-weight="790" fill="#9e1b1b">“Board”</text>
+      </g>
+      <path id="guess-arrow" d="M555 385 H741 M718 367 L741 385 L718 403" fill="none" stroke="#6f6a63" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="wrong-guess" x="792" y="405" font-size="62" font-weight="740" fill="#4b4f58">Postal Services Board</text>
+      <g id="wrong-x" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round">
+        <circle cx="1610" cy="385" r="38" stroke-width="4"/>
+        <path d="M1596 371 L1624 399 M1624 371 L1596 399"/>
+      </g>
+    </g>
+    <g id="table-header">
+      <g id="table-shell">
+        <rect x="80" y="520" width="1760" height="120" rx="26" fill="#9e1b1b"/>
+        <path d="M760 536 V624 M1260 536 V624" stroke="#d98170" stroke-width="3"/>
+      </g>
+      <g text-anchor="middle">
+        <text class="hi" id="full-name" x="420" y="596" font-size="58" font-weight="760" fill="#fffefa">पूरा नाम</text>
+        <text class="hi" id="work" x="1010" y="596" font-size="58" font-weight="760" fill="#fffefa">काम</text>
+        <text class="hi" id="chair" x="1540" y="597" font-size="49" font-weight="760" fill="#fffefa">Chairperson / अध्यक्ष</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    ({
+      dur: 13.48,
+      on: [
+        [1.82, "words", "#other-boards", {gap:0.59, dist:10}],
+        [3.52, "pop", "#board-word", {from:0.96}],
+        [4.96, "fade", "#guess-arrow", {dur:0.25}],
+        [4.96, "fade", "#wrong-guess", {dur:0.25}],
+        [6.64, "strike", "#wrong-guess", {color:"#4b4f58", width:8, dur:0.35, dim:0.65}],
+        [6.64, "draw", "#wrong-x", {dur:0.35}],
+        [7.86, "grow", "#table-shell", {axis:"x",origin:"left"}],
+        [9.42, "pop", "#full-name", {from:0.96}],
+        [11.10, "pop", "#work", {from:0.96}],
+        [12.22, "pop", "#chair", {from:0.96}]
+      ]
+    })
+  </script>
+</section>
