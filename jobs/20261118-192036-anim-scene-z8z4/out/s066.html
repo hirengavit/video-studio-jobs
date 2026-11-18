@@ -40,7 +40,7 @@
 <text id="heads-postal-subdivision" x="159" y="829" font-size="56" font-weight="820" fill="#2b2622">Postal Sub-division</text>
 <text id="heads-postal-subdivision-hi" x="159" y="870" class="hi" font-size="39" font-weight="670" fill="#6f6a63">डाक उप-मंडल</text>
 <text id="heads-asp-ip" x="820" y="829" font-size="57" font-weight="820" fill="#9e1b1b">ASP / IP</text>
-<text id="heads-asp-ip-hi" x="820" y="870" class="hi" font-size="39" font-weight="670" fill="#6f6a63">सहायक डाकघर अधीक्षक / डाक निरीक्षक</text>
+<path id="ip-underline" d="M985 835 Q1013 837 1038 834" fill="none" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/><text id="heads-asp-ip-hi" x="820" y="870" class="hi" font-size="39" font-weight="670" fill="#6f6a63">सहायक डाकघर अधीक्षक / डाक निरीक्षक</text>
 </g>
 </g>
 </svg>
@@ -56,7 +56,7 @@
   [5.20,'fade','#heads-postal-subdivision-hi',{dur:.23}],
   [6.94,'pop','#heads-asp-ip',{from:.95,spring:'fast'}],
   [7.44,'fade','#heads-asp-ip-hi',{dur:.24}],
-  [9.88,'underline','#heads-asp-ip',{words:'IP',color:'#f2b705',width:7,gap:3,dur:.30}]
+  [9.88,'draw','#ip-underline',{dur:.30}]
  ]
 }
 </script>
