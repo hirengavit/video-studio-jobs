@@ -16,12 +16,6 @@
    "t": 2.45
   },
   {
-   "kind": "text-overlap",
-   "scene": "s126",
-   "text": "पूर्वोत्तर परिमंडल / 6",
-   "t": 4.91
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s126",
    "message": "a card is mostly empty at 4.9 s: bring its items in sooner, or size it for what it holds now",
