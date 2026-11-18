@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s169" data-in="cut" data-section="PART 6 · SPECIAL OFFICES &amp; BOARDS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="officer-strip">
+      <rect x="120" y="180" width="1680" height="140" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect id="group-highlight" x="570" y="213" width="224" height="76" rx="13" fill="#fde9a6"/>
+      <text x="588" y="268" font-family="Inter, sans-serif" font-size="50" font-weight="800" fill="#2b2622">Group B</text>
+      <text x="810" y="268" font-family="Inter, sans-serif" font-size="50" font-weight="750" fill="#2b2622">officer</text>
+      <text id="officer-hi" x="1000" y="268" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="650" fill="#2b2622">के प्रभार में</text>
+    </g>
+    <g id="psd" text-anchor="middle">
+      <rect x="120" y="380" width="780" height="600" rx="28" fill="#9e1b1b"/>
+      <rect x="137" y="397" width="746" height="566" rx="14" fill="none" stroke="#fbf7ee" stroke-opacity=".6" stroke-width="4" stroke-dasharray="1 12" stroke-linecap="round"/>
+      <text x="510" y="493" font-family="Inter, sans-serif" font-size="60" font-weight="750" fill="#fff">Postal Stores Depots</text>
+      <text x="510" y="554" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="600" fill="#fff">डाक भंडार डिपो</text>
+      <path d="M200 604h620" stroke="#b8403a" stroke-width="3"/>
+      <text id="psd-count" x="510" y="852" font-family="Inter, sans-serif" font-size="208" font-weight="800" fill="#fff">26</text>
+    </g>
+    <g id="csd" text-anchor="middle">
+      <rect x="1020" y="380" width="780" height="600" rx="28" fill="#9e1b1b"/>
+      <rect x="1037" y="397" width="746" height="566" rx="14" fill="none" stroke="#fbf7ee" stroke-opacity=".6" stroke-width="4" stroke-dasharray="1 12" stroke-linecap="round"/>
+      <text x="1410" y="493" font-family="Inter, sans-serif" font-size="60" font-weight="750" fill="#fff">Circle Stamp Depot</text>
+      <text x="1410" y="554" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="600" fill="#fff">सर्कल स्टाम्प डिपो</text>
+      <path d="M1100 604h620" stroke="#b8403a" stroke-width="3"/>
+      <text id="csd-count" x="1410" y="852" font-family="Inter, sans-serif" font-size="208" font-weight="800" fill="#fff">1</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [2.76, 'pop', '#csd', {from: 0.97}],
+      [3.96, 'fade', '#officer-strip', {dur: 0.25}],
+      [5.20, 'fade', '#group-highlight', {dur: 0.22}],
+      [5.56, 'fade', '#officer-hi', {dur: 0.24}],
+      [7.96, 'count', '#psd-count', {from: 20, to: 26, dur: 0.35}],
+      [12.34, 'stamp', '#csd-count', {from: 1.18, rot: -2}],
+    ],
+  }
+  </script>
+</section>
