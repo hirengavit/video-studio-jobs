@@ -7,12 +7,13 @@
     <rect id="meaning-card" x="880" y="300" width="920" height="640" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
     <g id="state">
       <rect id="state-outline" x="1110" y="474" width="570" height="286" rx="24" fill="#f3ead6" stroke="#6f6a63" stroke-width="14"/>
-      <text id="state-label" x="1600" y="704" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#2b2622">राज्य</text>
+      <text id="state-label" x="1600" y="729" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#2b2622">राज्य</text>
     </g>
     <g id="circle">
       <rect id="circle-outline" x="1000" y="380" width="570" height="286" rx="24" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-dasharray="18 13"/>
-      <text id="circle-label" x="1048" y="478" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">Circle</text>
+      <text id="circle-label" x="1048" y="458" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">Circle</text>
     </g>
+    <text id="scope" x="190" y="420" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="750" fill="#fde9a6">ज़्यादातर Circles</text>
     <text id="term" x="190" y="513" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="#fff">co-terminus</text>
     <text id="qualifier" x="190" y="602" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="#fff">with a state</text>
     <g id="gloss">
@@ -23,6 +24,7 @@
   <script type="text/scene">
   {
     on: [
+      [0.18, 'fade', '#scope', {dur: 0.24}],
       [0.74, 'fade', '#circle-outline', {dur: 0.23}],
       [1.00, 'fade', '#circle-label', {dur: 0.24}],
       [2.85, 'draw', '#state-outline', {dur: 0.42}],
