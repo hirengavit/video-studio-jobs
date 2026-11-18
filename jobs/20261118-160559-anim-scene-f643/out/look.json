@@ -8,12 +8,5 @@
   "9.85"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s068",
-   "text": "संबंधित / CPMG",
-   "t": 4
-  }
- ]
+ "warnings": []
 }
