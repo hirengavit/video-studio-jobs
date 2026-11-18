@@ -1,0 +1,27 @@
+<section class="vs-scene" id="s037" data-in="cut" data-section="PART 1 · CENTRAL ADMINISTRATION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <defs><clipPath id="vision-card-cut"><rect x="160" y="190" width="1600" height="800" rx="42"/></clipPath></defs>
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect x="160" y="190" width="1600" height="800" rx="42" fill="#fff"/>
+    <rect x="160" y="190" width="1600" height="230" fill="#9e1b1b" clip-path="url(#vision-card-cut)"/>
+    <rect x="160" y="190" width="1600" height="800" rx="42" fill="none" stroke="#ead9a8" stroke-width="5"/>
+    <rect x="181" y="211" width="1558" height="758" rx="30" fill="none" stroke="#ead9a8" stroke-width="9" stroke-dasharray="0 29" stroke-linecap="round"/>
+    <text id="vision" x="960" y="307" text-anchor="middle" fill="#fff" font-size="97" font-weight="800">Vision</text>
+    <text id="vision-hi" x="960" y="382" text-anchor="middle" class="hi" fill="#fde9a6" font-size="51" font-weight="650">दृष्टि</text>
+    <text id="offer" x="960" y="580" text-anchor="middle" class="hi" fill="#2b2622" font-size="72" font-weight="680">Department के products और services</text>
+    <path id="vision-arrow" d="M960 645v79m-21-24 21 24 21-24" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text id="choice" x="960" y="858" text-anchor="middle" class="hi" fill="#2b2622" font-size="89" font-weight="740">customer की पहली पसंद</text>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.32, 'stamp', '#vision', {from:1.10, rot:0, spring:'fast'}],
+      [1.80, 'fade', '#vision-hi', {dur:0.29}],
+      [2.86, 'words', '#offer', {gap:0.21, dist:15, spring:'fast'}],
+      [4.30, 'draw', '#vision-arrow', {dur:0.45}],
+      [4.30, 'words', '#choice', {gap:0.59, dist:15, spring:'fast'}],
+      [5.82, 'highlight', '#choice', {words:'पहली पसंद', color:'#f2b705', opacity:0.34, dur:0.53}]
+    ]
+  }
+  </script>
+</section>
