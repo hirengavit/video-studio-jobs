@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s079" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text id="rms-name" x="120" y="247" fill="#9e1b1b" font-size="94" font-weight="750">Railway Mail Service</text>
+    <text x="124" y="302" class="hi" fill="#6f6a63" font-size="44">रेल डाक सेवा</text>
+    <g id="train-only"><text id="only-claim" x="124" y="378" class="hi" fill="#4b4f58" font-size="63" font-weight="650">सिर्फ train तक</text></g>
+    <g id="mail"><use href="piece:icon-envelope" transform="translate(1560 166) scale(0.55)"/></g>
+    <path d="M120 420H1800" stroke="#ead9a8" stroke-width="3"/>
+    <g id="rail-mode">
+      <rect x="102" y="458" width="376" height="466" rx="29" fill="#f3ead6"/>
+      <use href="piece:icon-train" transform="translate(140 478) scale(0.75)"/>
+      <path d="M185 805h210" stroke="#d8c5a6" stroke-width="3"/>
+      <text id="rail-label" x="290" y="879" class="hi" text-anchor="middle" fill="#2b2622" font-size="67" font-weight="700">रेल</text>
+    </g>
+    <g id="road-mode">
+      <rect x="522" y="458" width="376" height="466" rx="29" fill="#f3ead6"/>
+      <use href="piece:icon-mail-van" transform="translate(560 478) scale(0.75)"/>
+      <path d="M605 805h210" stroke="#d8c5a6" stroke-width="3"/>
+      <text id="road-label" x="710" y="879" class="hi" text-anchor="middle" fill="#2b2622" font-size="67" font-weight="700">सड़क</text>
+    </g>
+    <g id="river-mode">
+      <rect x="942" y="458" width="376" height="466" rx="29" fill="#f3ead6"/>
+      <use href="piece:icon-boat" transform="translate(980 478) scale(0.75)"/>
+      <path d="M1025 805h210" stroke="#d8c5a6" stroke-width="3"/>
+      <text id="river-label" x="1130" y="879" class="hi" text-anchor="middle" fill="#2b2622" font-size="67" font-weight="700">नदी</text>
+    </g>
+    <g id="air-mode">
+      <rect x="1362" y="458" width="376" height="466" rx="29" fill="#f3ead6"/>
+      <use href="piece:icon-airplane" transform="translate(1400 478) scale(0.75)"/>
+      <path d="M1445 805h210" stroke="#d8c5a6" stroke-width="3"/>
+      <text id="air-label" x="1550" y="879" class="hi" text-anchor="middle" fill="#2b2622" font-size="67" font-weight="700">हवाई</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.60, 'highlight', '#rms-name', {words:'Railway', color:'#f2b705', opacity:0.34, dur:0.38}],
+      [2.32, 'pop', '#rail-mode', {from:0.96, spring:'fast'}],
+      [2.32, 'fade', '#train-only', {dur:0.20}],
+      [2.90, 'strike', '#only-claim', {color:'#4b4f58', width:5, dur:0.25, dim:0.66}],
+      [4.68, 'fade', '#rail-label', {dur:0.18}],
+      [5.40, 'pop', '#road-mode', {from:0.96, spring:'fast'}],
+      [6.32, 'pop', '#river-mode', {from:0.96, spring:'fast'}],
+      [7.22, 'pop', '#air-mode', {from:0.96, spring:'fast'}],
+      [8.40, 'pop', '#mail', {from:0.87, spring:'fast'}]
+    ]
+  }
+  </script>
+</section>
