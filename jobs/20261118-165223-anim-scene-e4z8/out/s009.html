@@ -1,0 +1,76 @@
+<section class="vs-scene" id="s009" data-in="cut" data-section="PART 1 · CENTRAL ADMINISTRATION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="services">
+      <text id="services-title" x="100" y="213" fill="#9e1b1b" font-size="64" font-weight="850" font-family="'Noto Sans Devanagari', Inter, sans-serif">Department of Posts की services</text>
+      <g id="mail-tile">
+        <rect id="mail-bg" x="100" y="260" width="560" height="360" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <use href="piece:icon-envelope" transform="translate(278 273) scale(0.51)"/>
+        <text id="mail-en" x="380" y="498" text-anchor="middle" fill="#2b2622" font-size="62" font-weight="800">Mail</text>
+        <text id="mail-hi" x="380" y="558" text-anchor="middle" fill="#6f6a63" font-size="45" font-weight="650" font-family="'Noto Sans Devanagari', Inter, sans-serif">डाक</text>
+      </g>
+      <g id="money-tile">
+        <rect id="money-bg" x="680" y="260" width="560" height="360" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <circle id="money-disc" cx="960" cy="367" r="65" fill="#f3ead6" stroke="#9e1b1b" stroke-width="4"/>
+        <text id="money-symbol" x="960" y="392" text-anchor="middle" fill="#9e1b1b" font-size="73" font-weight="800">₹</text>
+        <text id="money-en" x="960" y="498" text-anchor="middle" fill="#2b2622" font-size="48" font-weight="800">Money remittance</text>
+        <text id="money-hi" x="960" y="558" text-anchor="middle" fill="#6f6a63" font-size="45" font-weight="650" font-family="'Noto Sans Devanagari', Inter, sans-serif">धन प्रेषण</text>
+      </g>
+      <g id="savings-tile">
+        <rect id="savings-bg" x="1260" y="260" width="560" height="360" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <use href="piece:icon-passbook-rupee" transform="translate(1440 269) scale(0.5)"/>
+        <text id="savings-en" x="1540" y="464" text-anchor="middle" fill="#2b2622" font-size="56" font-weight="800" >Savings</text>
+        <text id="financial-en" x="1540" y="521" text-anchor="middle" fill="#2b2622" font-size="44" font-weight="800" >&amp; financial services</text>
+        <text id="savings-hi" x="1540" y="581" text-anchor="middle" fill="#6f6a63" font-size="43" font-weight="650" font-family="'Noto Sans Devanagari', Inter, sans-serif">बचत और वित्तीय सेवाएँ</text>
+      </g>
+      <g id="pli-tile">
+        <rect id="pli-bg" x="100" y="650" width="560" height="360" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <use href="piece:icon-insurance-shield" transform="translate(285 660) scale(0.475)"/>
+        <text id="pli-en1" x="380" y="852" text-anchor="middle" fill="#2b2622" font-size="56" font-weight="800" >Postal Life</text>
+        <text id="pli-en2" x="380" y="914" text-anchor="middle" fill="#2b2622" font-size="56" font-weight="800" >Insurance</text>
+        <text id="pli-hi" x="380" y="974" text-anchor="middle" fill="#6f6a63" font-size="44" font-weight="650" font-family="'Noto Sans Devanagari', Inter, sans-serif">डाक जीवन बीमा</text>
+      </g>
+      <g id="rpli-tile">
+        <rect id="rpli-bg" x="680" y="650" width="560" height="360" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <use href="piece:icon-insurance-shield" transform="translate(865 660) scale(0.475)"/>
+        <text id="rpli-en1" x="960" y="852" text-anchor="middle" fill="#2b2622" font-size="55" font-weight="800" >Rural Postal</text>
+        <text id="rpli-en2" x="960" y="914" text-anchor="middle" fill="#2b2622" font-size="55" font-weight="800" >Life Insurance</text>
+        <text id="rpli-hi" x="960" y="974" text-anchor="middle" fill="#6f6a63" font-size="44" font-weight="650" font-family="'Noto Sans Devanagari', Inter, sans-serif">ग्रामीण डाक जीवन बीमा</text>
+      </g>
+      <g id="citizens-tile">
+        <rect id="citizens-bg" x="1260" y="650" width="560" height="360" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M1410 742h260" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/>
+        <text id="citizens-hi" x="1540" y="819" text-anchor="middle" fill="#9e1b1b" font-size="51" font-weight="650" font-family="'Noto Sans Devanagari', Inter, sans-serif">नागरिकों के लिए</text>
+        <text id="authorised-hi" x="1540" y="895" text-anchor="middle" fill="#2b2622" font-size="55" font-weight="650" font-family="'Noto Sans Devanagari', Inter, sans-serif">अधिकृत सेवाएँ</text>
+        <text id="authorised-en" x="1540" y="959" text-anchor="middle" fill="#2b2622" font-size="46" font-weight="800" >(authorised services)</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.00, 'pop', '#savings-tile', {from: 0.95, spring: 'soft'}],
+      [1.68, 'fade', '#financial-en', {dur: 0.24}],
+      [2.20, 'fade', '#savings-hi', {dur: 0.25}],
+      [3.82, 'pop', '#pli-tile', {from: 0.95, spring: 'soft'}],
+      [3.82, 'words', '#pli-en1', {gap: 0.26, dist: 10}],
+      [4.38, 'fade', '#pli-en2', {dur: 0.20}],
+      [4.60, 'fade', '#pli-hi', {dur: 0.25}],
+      [3.82, 'color', '#mail-bg, #money-bg', {to: '#f2efe9', dur: 0.36}],
+      [3.82, 'color', '#mail-bg, #money-bg', {prop: 'stroke', to: '#c7c0b3', dur: 0.36}],
+      [3.82, 'color', '#money-disc', {prop: 'stroke', to: '#76706a', dur: 0.36}],
+      [3.82, 'color', '#money-symbol, #mail-en, #money-en', {to: '#6f6a63', dur: 0.36}],
+      [5.54, 'pop', '#rpli-tile', {from: 0.95, spring: 'soft'}],
+      [5.54, 'words', '#rpli-en1', {gap: 0.64, dist: 10}],
+      [6.80, 'words', '#rpli-en2', {gap: 0.28, dist: 10}],
+      [7.10, 'fade', '#rpli-hi', {dur: 0.25}],
+      [8.62, 'pop', '#citizens-tile', {from: 0.95, spring: 'soft'}],
+      [8.62, 'color', '#savings-bg', {to: '#f2efe9', dur: 0.36}],
+      [8.62, 'color', '#savings-bg', {prop: 'stroke', to: '#c7c0b3', dur: 0.36}],
+      [8.62, 'color', '#savings-en, #financial-en', {to: '#6f6a63', dur: 0.36}],
+      [9.70, 'fade', '#authorised-hi', {dur: 0.28}],
+      [9.70, 'words', '#authorised-en', {gap: 0.88, dist: 10}],
+    ],
+  }
+  </script>
+</section>
