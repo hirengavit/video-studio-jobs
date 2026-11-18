@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s174" data-in="cut" data-section="PART 6 · SPECIAL OFFICES &amp; BOARDS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text x="120" y="260" class="hi" fill="#9e1b1b" font-size="86" font-weight="760">CEPT के offices</text>
+    <g id="mysuru"><rect x="120" y="330" width="540" height="390" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <circle cx="390" cy="454" r="84" fill="#f3ead6"/>
+      <use href="piece:icon-city-pin" transform="translate(328 376) scale(1.04)"/>
+      <text x="390" y="600" text-anchor="middle" fill="#2b2622" font-size="69" font-weight="750">Mysuru</text>
+      <text x="390" y="665" text-anchor="middle" class="hi" fill="#6f6a63" font-size="53" font-weight="645">मैसूरु</text>
+    </g>
+    <g id="hyd"><rect x="690" y="330" width="540" height="390" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <circle cx="960" cy="454" r="84" fill="#f3ead6"/>
+      <use href="piece:icon-city-pin" transform="translate(898 376) scale(1.04)"/>
+      <text x="960" y="600" text-anchor="middle" fill="#2b2622" font-size="69" font-weight="750">Hyderabad</text>
+      <text x="960" y="665" text-anchor="middle" class="hi" fill="#6f6a63" font-size="53" font-weight="645">हैदराबाद</text>
+    </g>
+    <g id="vizag"><rect x="1260" y="330" width="540" height="390" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <circle cx="1530" cy="454" r="84" fill="#f3ead6"/>
+      <use href="piece:icon-city-pin" transform="translate(1468 376) scale(1.04)"/>
+      <text x="1530" y="600" text-anchor="middle" fill="#2b2622" font-size="59" font-weight="750">Visakhapatnam</text>
+      <text x="1530" y="665" text-anchor="middle" class="hi" fill="#6f6a63" font-size="53" font-weight="645">विशाखापत्तनम</text>
+    </g>
+    <text id="examples" x="1800" y="779" text-anchor="end" class="hi" fill="#6f6a63" font-size="50" font-weight="650">जैसी जगहें</text>
+    <g id="misconception">
+      <rect x="300" y="824" width="1320" height="125" rx="32" fill="#f3ead6"/>
+      <text id="claim" x="935" y="914" text-anchor="middle" class="hi" fill="#4b4f58" font-size="80" font-weight="760">CEPT = एक ही शहर</text>
+      <path id="cross" d="m1420 865 49 49m0-49-49 49" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.74, 'pop', '#mysuru', {from:0.96, spring:'fast'}],
+      [3.44, 'pop', '#hyd', {from:0.96, spring:'fast'}],
+      [5.20, 'pop', '#vizag', {from:0.96, spring:'fast'}],
+      [5.70, 'fade', '#examples', {dur:0.26}],
+      [7.68, 'fade', '#misconception', {dur:0.28}],
+      [9.62, 'strike', '#claim', {color:'#4b4f58', width:7, dim:0.58, dur:0.31}],
+      [9.62, 'draw', '#cross', {dur:0.28}]
+    ]
+  }
+  </script>
+</section>
