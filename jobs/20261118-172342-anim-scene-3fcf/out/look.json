@@ -8,12 +8,5 @@
   "8.44"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s171",
-   "text": "दूसरी जगहों पर भी",
-   "t": 6.87
-  }
- ]
+ "warnings": []
 }
