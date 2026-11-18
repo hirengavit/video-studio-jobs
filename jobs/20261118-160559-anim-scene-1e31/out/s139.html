@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s139" data-in="cut" data-section="PART 5 · BASE CIRCLE &amp; APS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <path d="M120 235 H304" stroke="#f2b705" stroke-width="8" stroke-linecap="round"/>
+    <text id="heading" x="120" y="202" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#9e1b1b" font-size="66" font-weight="800">Circles की गिनती</text>
+    <g id="civil-stamp">
+      <rect x="120" y="280" width="740" height="440" rx="30" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+      <rect x="120" y="280" width="740" height="440" rx="30" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+      <path d="M192 552 H788" stroke="#d97b6e" stroke-width="3" stroke-linecap="round"/>
+      <text id="civil-number" x="490" y="490" text-anchor="middle" font-size="176" font-weight="850" fill="#ffffff">23</text>
+      <text id="civil-en" x="490" y="618" text-anchor="middle" font-size="56" font-weight="800" fill="#fff">civil postal circles</text>
+      <text id="civil-hi" x="490" y="679" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#fde9a6">सिविल डाक परिमंडल</text>
+    </g>
+    <text id="plus" x="950" y="540" text-anchor="middle" font-size="100" font-weight="800" fill="#9e1b1b">+</text>
+    <g id="base-stamp">
+      <rect x="1040" y="280" width="760" height="440" rx="30" fill="#fff3d4" stroke="#d4ad4d" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="1040" y="280" width="760" height="440" rx="30" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+      <path d="M1112 552 H1728" stroke="#e2c57d" stroke-width="3" stroke-linecap="round"/>
+      <text id="base-number" x="1301" y="487" text-anchor="middle" font-size="176" font-weight="850" fill="#9e1b1b">1</text>
+      <g id="mailbag"><use href="piece:icon-army-mailbag" transform="translate(1450 312) scale(0.52)"/></g>
+      <text id="base-en" x="1420" y="618" text-anchor="middle" font-size="56" font-weight="800" fill="#2b2622">Base Circle</text>
+      <text id="base-hi" x="1420" y="679" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#6f6a63">अतिरिक्त बेस सर्किल</text>
+    </g>
+    <g id="answer-bar">
+      <rect x="120" y="790" width="1680" height="200" rx="30" fill="#f4ead6" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M181 903 H1739" stroke="#dfcdb3" stroke-width="3" stroke-linecap="round"/>
+      <text id="question" x="181" y="870" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="800" fill="#2b2622">Question: civil postal circles की संख्या?</text>
+      <g id="answer-pill">
+        <rect x="1504" y="810" width="234" height="76" rx="38" fill="#23704b"/>
+        <text x="1621" y="866" text-anchor="middle" font-size="55" font-weight="850" fill="#fff">23</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.20, 'words', '#heading', {gap: 0.43, dist: 17}],
+      [3.22, 'count', '#civil-number', {from: 0, to: 23, dur: 1.0, locale: 'en-IN'}],
+      [3.98, 'fade', '#civil-en', {dur: 0.34}],
+      [4.23, 'fade', '#civil-hi', {dur: 0.33}],
+      [5.00, 'pop', '#plus', {from: 0.82, spring: 'soft'}],
+      [5.76, 'stamp', '#base-number', {from: 1.13, rot: -4, spring: 'soft'}],
+      [7.08, 'draw', '#mailbag', {dur: 0.47}],
+      [7.08, 'fade', '#base-en', {dur: 0.34}],
+      [7.34, 'fade', '#base-hi', {dur: 0.32}],
+      [8.10, 'words', '#question', {gap: 0.41, dist: 17}],
+      [11.82, 'pop', '#answer-pill', {from: 0.91, spring: 'soft'}],
+      [11.82, 'pulse', '#civil-number', {amount: 0.07}],
+    ],
+  }
+  </script>
+</section>
