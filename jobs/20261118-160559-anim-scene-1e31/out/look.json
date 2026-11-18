@@ -8,24 +8,5 @@
   "12.73"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "mostly-empty",
-   "scene": "s139",
-   "message": "a card is mostly empty at 2.6 s: bring its items in sooner, or size it for what it holds now",
-   "t": 2.58
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s139",
-   "message": "a card is mostly empty at 5.2 s: bring its items in sooner, or size it for what it holds now",
-   "t": 5.15
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s139",
-   "message": "a card is mostly empty at 7.7 s: bring its items in sooner, or size it for what it holds now",
-   "t": 7.73
-  }
- ]
+ "warnings": []
 }
