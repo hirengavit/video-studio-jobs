@@ -8,13 +8,5 @@
   "9.65"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "low-contrast",
-   "scene": "s025",
-   "text": "डाकघर अधिनियम 2023 (1.5:1) / DG (1.0:1) / महानिदेशक (1.5:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
