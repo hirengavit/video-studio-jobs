@@ -10,10 +10,9 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "low-contrast",
+   "kind": "mostly-empty",
    "scene": "s179",
-   "text": "EXAM TRAP · परीक्षा का जाल (1.1:1)",
-   "message": "text too close in colour to what's behind it",
+   "message": "a card is mostly empty at 5.8 s: bring its items in sooner, or size it for what it holds now",
    "t": 5.76
   }
  ]
