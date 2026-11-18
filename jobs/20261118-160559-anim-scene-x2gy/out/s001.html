@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s001" data-in="cut" data-section="OVERVIEW · TODAY'S TOPIC" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="title-card">
+      <rect x="100" y="190" width="1220" height="370" rx="36" fill="#fffefa" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="116" y="206" width="1188" height="338" rx="27" fill="none" stroke="#b8403a" stroke-width="2.5" stroke-dasharray="3 12" stroke-linecap="round"/>
+      <rect x="164" y="249" width="10" height="49" rx="5" fill="#f2b705"/>
+      <text class="hi" id="kicker" x="190" y="285" font-size="41" font-weight="650" fill="#6f6a63">आज का topic</text>
+      <text id="department-title" x="164" y="399" font-size="96" font-weight="790" fill="#2b2622">Department of Posts</text>
+      <text class="hi" x="170" y="490" font-size="56" font-weight="720" fill="#9e1b1b">डाक विभाग</text>
+    </g>
+    <g id="structure-chip" text-anchor="middle">
+      <rect x="100" y="620" width="384" height="180" rx="29" fill="#fffefa" stroke="#b8403a" stroke-width="4"/>
+      <text class="hi" x="292" y="735" font-size="63" font-weight="760" fill="#9e1b1b">ढाँचा</text>
+    </g>
+    <g id="circle-chip" text-anchor="middle">
+      <rect x="518" y="620" width="384" height="180" rx="29" fill="#fffefa" stroke="#b8403a" stroke-width="4"/>
+      <text x="710" y="694" font-size="56" font-weight="760" fill="#9e1b1b">Circles</text>
+      <text class="hi" id="circle-hi" x="710" y="758" font-size="47" font-weight="650" fill="#514941">सर्कल</text>
+    </g>
+    <g id="hq-chip" text-anchor="middle">
+      <rect x="936" y="620" width="384" height="180" rx="29" fill="#fffefa" stroke="#b8403a" stroke-width="4"/>
+      <text x="1128" y="694" font-size="48" font-weight="760" fill="#9e1b1b">Headquarters</text>
+      <text class="hi" id="hq-hi" x="1128" y="758" font-size="47" font-weight="650" fill="#514941">मुख्यालय</text>
+    </g>
+    <g id="india-post-band">
+      <rect x="100" y="846" width="1220" height="155" rx="32" fill="#f8edce"/>
+      <g id="envelope"><use href="piece:icon-envelope" transform="translate(137 835) scale(0.44)"/></g>
+      <text id="india-post" x="341" y="914" font-size="60" font-weight="790" fill="#9e1b1b">= India Post</text>
+      <text class="hi" id="india-post-hi" x="781" y="914" font-size="52" font-weight="700" fill="#514941">भारतीय डाक</text>
+    </g>
+    <g id="letter-box-photo">
+      <rect x="1390" y="190" width="410" height="811" rx="393" fill="#f2e8d6"/>
+      <ellipse cx="1595" cy="949" rx="135" ry="18" fill="#d9c7a8"/>
+      <image href="photo:india-post-letter-box-cutout" x="1430" y="188" width="330" height="765" preserveAspectRatio="xMidYMid meet" filter="url(#vs-cutout)" transform="rotate(1.5 1595 570)"/>
+      <text x="1595" y="990" text-anchor="middle" font-size="24" font-weight="570" fill="#5b544b">Suyash.dwivedi · CC BY-SA 4.0</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+    ({
+      dur: 12.8,
+      on: [
+        [0.20, "fade", "#kicker", {dur:0.27}],
+        [3.60, "pop", "#structure-chip", {from:0.96}],
+        [4.92, "pop", "#circle-chip", {from:0.96}],
+        [5.40, "fade", "#circle-hi", {dur:0.25}],
+        [6.52, "pop", "#hq-chip", {from:0.96}],
+        [7.00, "fade", "#hq-hi", {dur:0.25}],
+        [7.98, "pulse", "#department-title", {amount:0.022}],
+        [10.60, "slide", "#india-post-band", {from:"down", dist:28}],
+        [10.60, "pop", "#envelope", {from:0.96}],
+        [10.60, "words", "#india-post", {gap:0.19, dist:10}],
+        [11.10, "fade", "#india-post-hi", {dur:0.25}],
+        [11.52, "underline", "#india-post", {words:"India Post", color:"#f2b705", width:7, dur:0.34}]
+      ]
+    })
+  </script>
+</section>
