@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "2.55",
+  "5.10",
+  "7.65",
+  "10.20",
+  "12.60"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s084",
+   "message": "slide: option \"dur\" isn't used (it takes: from, dist, spring)",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s084",
+   "message": "stamp: option \"dur\" isn't used (it takes: from, spring, rot)",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s084",
+   "text": "Circle level / सर्कल स्तर",
+   "t": 10.2
+  }
+ ]
+}
