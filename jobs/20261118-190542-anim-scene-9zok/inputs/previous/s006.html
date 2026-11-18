@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s006" data-in="cut" data-section="OVERVIEW · TODAY'S TOPIC" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif"><rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="roadmap">
+    <text id="roadmap-a" x="100" y="223" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="70" font-weight="850" fill="#9e1b1b">इसके</text>
+    <text id="roadmap-six" x="277" y="223" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="76" font-weight="850" fill="#9e1b1b">6</text>
+    <text id="roadmap-b" x="348" y="223" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="70" font-weight="850" fill="#9e1b1b">भाग</text>
+    <path d="M100 246h342" stroke="#f2b705" stroke-width="7" stroke-linecap="round"/>
+    <g id="roadmap-guides" fill="#f8f1e4" stroke="#e4d5bb" stroke-width="3" stroke-dasharray="7 10">
+      <rect x="100" y="280" width="840" height="220" rx="30"/>
+      <rect x="100" y="530" width="840" height="220" rx="30"/>
+      <rect x="100" y="780" width="840" height="220" rx="30"/>
+      <rect x="980" y="280" width="840" height="220" rx="30"/>
+      <rect x="980" y="530" width="840" height="220" rx="30"/>
+      <rect x="980" y="780" width="840" height="220" rx="30"/>
+    </g>
+    <g id="part1">
+      <rect x="100" y="280" width="840" height="220" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle id="badge1" cx="181" cy="390" r="45" fill="#9e1b1b"/>
+      <text x="181" y="409" text-anchor="middle" font-size="54" font-weight="850" fill="#fff">1</text>
+      <text id="part1-en" x="255" y="375" font-size="56" font-weight="850" fill="#2b2622">Department</text>
+      <text id="part1-hi" x="255" y="439" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="750" fill="#6f6a63">विभाग और केंद्रीय प्रशासन</text>
+    </g>
+  
+<g id="part2">
+ <rect x="100" y="530" width="840" height="220" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+ <circle id="badge2" cx="181" cy="640" r="45" fill="#9e1b1b"/>
+ <text x="181" y="659" text-anchor="middle" font-size="54" font-weight="850" fill="#fff">2</text>
+ <text id="part2-en" x="255" y="625" font-size="56" font-weight="850" fill="#2b2622">Postal Services Board</text>
+ <text id="part2-hi" x="255" y="689" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="750" fill="#6f6a63">डाक सेवा बोर्ड</text>
+</g>
+<g id="part3">
+ <rect x="100" y="780" width="840" height="220" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+ <circle id="badge3" cx="181" cy="890" r="45" fill="#9e1b1b"/>
+ <text x="181" y="909" text-anchor="middle" font-size="54" font-weight="850" fill="#fff">3</text>
+ <text id="part3-en" x="255" y="875" font-size="56" font-weight="850" fill="#2b2622">Circle → Sub-division</text>
+ <text id="part3-hi" x="255" y="939" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="750" fill="#6f6a63">सर्कल से उप-मंडल तक की कड़ी</text>
+</g>
+<g id="part4">
+ <rect x="980" y="280" width="840" height="220" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+ <circle id="badge4" cx="1061" cy="390" r="45" fill="#9e1b1b"/>
+ <text x="1061" y="409" text-anchor="middle" font-size="54" font-weight="850" fill="#fff">4</text>
+ <text id="part4-en" x="1135" y="375" font-size="56" font-weight="850" fill="#2b2622">23 Circles</text>
+ <text id="part4-hi" x="1135" y="439" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="750" fill="#6f6a63">मुख्यालय और इलाके</text>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+ [0.04,'pop','#part2',{from:.96,spring:'soft'}],[1.32,'words','#part2-en',{gap:.46}],[2.40,'fade','#part2-hi',{dur:.25}],
+ [2.98,'pop','#part3',{from:.96,spring:'soft'}],[4.08,'words','#part3-en',{gap:.55}],[5.80,'fade','#part3-hi',{dur:.25}],
+ [7.00,'pop','#part4',{from:.96,spring:'soft'}],[7.00,'color','#badge1, #badge2, #badge3, #part1-en, #part2-en, #part3-en',{to:'#6f6a63',dur:.28}],
+ [8.02,'words','#part4-en',{gap:.28}],[9.76,'fade','#part4-hi',{dur:.27}]
+ ]
+}
+</script>
+</section>
