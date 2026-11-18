@@ -26,6 +26,30 @@
    "scene": "s007",
    "message": "a card is mostly empty at 5.0 s: bring its items in sooner, or size it for what it holds now",
    "t": 5
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "4 / 4",
+   "t": 12.34
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "23 Circles / 23 Circles",
+   "t": 12.34
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "5 / 5",
+   "t": 12.34
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s007",
+   "text": "Base Circle & APS / Base Circle & APS",
+   "t": 12.34
   }
  ]
 }
