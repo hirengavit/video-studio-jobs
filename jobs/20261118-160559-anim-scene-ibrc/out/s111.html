@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s111" data-in="wipe" data-in-dur="0.4" data-in-dir="right" data-section="PART 4 · CIRCLES &amp; HEADQUARTERS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" text-anchor="middle" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g font-family="'Noto Sans Devanagari', Inter, sans-serif">
+      <text id="title" x="960" y="205" fill="#9e1b1b" font-size="68" font-weight="800">पुराने नाम → नए नाम</text>
+      <text id="old-label" x="420" y="282" fill="#6f6a63" font-size="46" font-weight="750">पुराना</text>
+      <text id="new-label" x="1350" y="282" fill="#6f6a63" font-size="46" font-weight="750">नया</text>
+    </g>
+    <g id="row1">
+      <g id="old-card-1">
+        <rect x="120" y="340" width="600" height="160" rx="28" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+        <text id="old-name-1" x="420" y="439" fill="#2b2622" font-size="69" font-weight="800">Bangalore</text>
+      </g>
+      <path id="arrow-1" d="M760 420 H860 M838 398 L860 420 L838 442" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect id="new-card-1" x="900" y="340" width="900" height="160" rx="28" fill="#fff5db" stroke="#d8b55f" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text id="new-name-1" x="1350" y="412" fill="#2b2622" font-size="66" font-weight="800">Bengaluru</text>
+      <text id="hindi-name-1" x="1350" y="471" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="49" font-weight="650">बेंगलुरु</text>
+    </g>
+    <g id="row2">
+      <g id="old-card-2">
+        <rect x="120" y="540" width="600" height="160" rx="28" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+        <text id="old-name-2" x="420" y="639" fill="#2b2622" font-size="69" font-weight="800">Trivandrum</text>
+      </g>
+      <path id="arrow-2" d="M760 620 H860 M838 598 L860 620 L838 642" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect id="new-card-2" x="900" y="540" width="900" height="160" rx="28" fill="#fff5db" stroke="#d8b55f" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text id="new-name-2" x="1350" y="612" fill="#2b2622" font-size="66" font-weight="800">Thiruvananthapuram</text>
+      <text id="hindi-name-2" x="1350" y="671" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="49" font-weight="650">तिरुवनंतपुरम</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [3.60, 'pop', '#old-card-1', {from: 0.95, spring: 'soft'}],
+      [4.42, 'draw', '#arrow-1', {dur: 0.31}],
+      [4.42, 'fade', '#new-card-1', {dur: 0.26}],
+      [4.46, 'words', '#new-name-1', {dist: 16}],
+      [4.92, 'fade', '#hindi-name-1', {dur: 0.34}],
+      [5.80, 'strike', '#old-name-1', {color: '#6f6a63', width: 5, dur: 0.32, dim: 0.70, gap: 9}],
+      [6.74, 'pop', '#old-card-2', {from: 0.95, spring: 'soft'}],
+      [7.64, 'draw', '#arrow-2', {dur: 0.31}],
+      [7.64, 'fade', '#new-card-2', {dur: 0.26}],
+      [7.68, 'words', '#new-name-2', {dist: 16}],
+      [8.14, 'fade', '#hindi-name-2', {dur: 0.34}],
+      [9.46, 'strike', '#old-name-2', {color: '#6f6a63', width: 5, dur: 0.32, dim: 0.70, gap: 9}],
+    ],
+  }
+  </script>
+</section>
