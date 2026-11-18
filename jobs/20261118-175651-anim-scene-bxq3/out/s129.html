@@ -17,7 +17,7 @@
       <g id="split-wide" fill="none" stroke="#837971" stroke-width="4" stroke-linecap="round"><path d="M960 470 V507 H300 V540 M960 507 V540 M960 507 H1620 V540"/></g>
       <g id="tile1" transform="translate(-60 0)"><rect x="160" y="540" width="400" height="180" rx="26" fill="#fffefa" stroke="#b8403a" stroke-width="4"/><g id="yanam"><text x="360" y="628" fill="#2b2622" font-size="65" font-weight="750">Yanam</text><text x="360" y="686" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="49" font-weight="650">यानम</text></g></g>
       <g id="tile2"><rect x="760" y="540" width="400" height="180" rx="26" fill="#fffefa" stroke="#b8403a" stroke-width="4"/><g id="mahe"><text x="960" y="628" text-anchor="middle" font-size="65" font-weight="800" fill="#2b2622">Mahe</text><text x="960" y="686" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="700" fill="#6f6a63">माहे</text></g></g>
-      <g id="tile3" transform="translate(60 0)"><rect x="1360" y="540" width="400" height="180" rx="26" fill="#fffefa" stroke="#b8403a" stroke-width="4"/></g>
+      <g id="tile3" transform="translate(60 0)"><rect x="1360" y="540" width="400" height="180" rx="26" fill="#fffefa" stroke="#b8403a" stroke-width="4"/><g id="remaining"><text x="1560" y="615" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="700" fill="#6f6a63">बाकी</text><text x="1560" y="677" text-anchor="middle" font-size="57" font-weight="800" fill="#2b2622">Puducherry</text></g></g>
     </g>
 <text id="circles" x="960" y="781" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="45" font-weight="650">3 Circles</text>
 <g id="slot1"><rect x="100" y="824" width="400" height="166" rx="27" fill="#fffefa" stroke="#b8403a" stroke-width="4"/>
@@ -46,9 +46,9 @@
       <g id="compact-split-wide" fill="none" stroke="#837971" stroke-width="4" stroke-linecap="round"><path d="M960 470 V507 H300 V540 M960 507 V540 M960 507 H1620 V540"/></g>
       <g id="compact-tile1" transform="translate(-60 0)"><rect x="160" y="540" width="400" height="180" rx="26" fill="#fffefa" stroke="#b8403a" stroke-width="4"/><g id="compact-yanam"><text x="360" y="628" fill="#2b2622" font-size="65" font-weight="750">Yanam</text><text x="360" y="686" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="49" font-weight="650">यानम</text></g></g>
       <g id="compact-tile2"><rect x="760" y="540" width="400" height="180" rx="26" fill="#fffefa" stroke="#b8403a" stroke-width="4"/><g id="compact-mahe"><text x="960" y="628" text-anchor="middle" font-size="65" font-weight="800" fill="#2b2622">Mahe</text><text x="960" y="686" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="700" fill="#6f6a63">माहे</text></g></g>
-      <g id="compact-tile3" transform="translate(60 0)"><rect x="1360" y="540" width="400" height="180" rx="26" fill="#fffefa" stroke="#b8403a" stroke-width="4"/></g>
+      <g id="compact-tile3" transform="translate(60 0)"><rect x="1360" y="540" width="400" height="180" rx="26" fill="#fffefa" stroke="#b8403a" stroke-width="4"/><g id="compact-remaining"><text x="1560" y="615" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="700" fill="#6f6a63">बाकी</text><text x="1560" y="677" text-anchor="middle" font-size="57" font-weight="800" fill="#2b2622">Puducherry</text></g></g>
     </g>
-<text id="compact-circles" x="960" y="781" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="45" font-weight="650">3 Circles</text>
+<text id="compact-circles" x="1155" y="781" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="45" font-weight="650">3 Circles</text>
 <g id="compact-slot1"><rect x="100" y="824" width="400" height="166" rx="27" fill="#fffefa" stroke="#b8403a" stroke-width="4"/>
   <g id="compact-ap"><text x="300" y="875" text-anchor="middle" fill="#2b2622" font-size="42" font-weight="770">Andhra Pradesh</text>
   <text x="300" y="922" text-anchor="middle" fill="#2b2622" font-size="45" font-weight="750">Circle</text>
@@ -79,6 +79,7 @@
   shots: [[0, '#diagram'], [6.76, '#exam-shot']],
   on: [
     [0.04, 'pop', '#mahe', {from: 0.94, spring: 'fast'}],
+    [0.92, 'move', '#circles', {by: [195, 0], spring: 'fast'}],
     [1.32, 'draw', '#arrow2', {dur: 0.26}],
     [1.32, 'fade', '#kerala-circle', {dur: 0.25}],
     [3.36, 'pop', '#remaining', {from: 0.94, spring: 'fast'}],
