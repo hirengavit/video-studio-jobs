@@ -28,7 +28,9 @@
     <text id="member-hi" x="1042" y="372" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="650" fill="#6f6a63">सदस्य (प्रचालन)</text>
   </g>
   <g id="ctrl">
-    <rect id="ctrl-bg" x="1000" y="460" width="800" height="540" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <rect id="ctrl-head" x="1000" y="460" width="800" height="100" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <rect id="ctrl-first" x="1000" y="460" width="800" height="225" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <rect id="ctrl-bg" x="1000" y="460" width="800" height="345" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
     <text id="ctrl-title" x="1038" y="528" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="780" fill="#9e1b1b">इनके अधीन</text>
     <g id="rms">
     <rect x="1028" y="558" width="744" height="104" rx="19" fill="#f3ead6"/>
@@ -56,6 +58,10 @@
     [3.36,'color','#review-bg',{prop:'stroke',to:'#c9c3b9',dur:0.42}],
     [3.36,'color','#member-en',{to:'#6f6a63',dur:0.42}],
     [3.36,'reveal','#ctrl',{from:'left',dur:0.40}],
+    [4.90,'out','#ctrl-head',{dur:0.16}],
+    [4.90,'fade','#ctrl-first',{dur:0.16}],
+    [6.96,'out','#ctrl-first',{dur:0.16}],
+    [6.96,'fade','#ctrl-bg',{dur:0.16}],
     [4.90,'pop','#rms',{from:0.96,spring:'fast'}],
     [6.96,'pop','#foreign',{from:0.96,spring:'fast'}]
   ]
