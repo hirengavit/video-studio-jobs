@@ -8,12 +8,5 @@
   "10.49"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s111",
-   "message": "strike: option \"gap\" isn't used (it takes: dur, color, width, dim, words)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
