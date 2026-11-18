@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s010" data-in="cut" data-section="PART 1 · CENTRAL ADMINISTRATION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect x="460" y="190" width="1000" height="230" rx="39" fill="#9e1b1b"/>
+    <rect x="482" y="212" width="956" height="186" rx="26" fill="none" stroke="#b8403a" stroke-width="3"/>
+    <text x="960" y="297" text-anchor="middle" fill="#fff" font-size="62" font-weight="780">Ministry of Communications</text>
+    <text x="960" y="373" text-anchor="middle" class="hi" fill="#fde9a6" font-size="56" font-weight="650">संचार मंत्रालय</text>
+    <path id="left-link" d="M960 421v84H510v54" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="right-link" d="M960 505h450v54" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text id="lead" x="510" y="476" text-anchor="middle" class="hi" fill="#6f6a63" font-size="49" font-weight="640">नेतृत्व</text>
+    <g id="minister">
+      <rect x="120" y="560" width="780" height="400" rx="40" fill="#fff" stroke="#b8403a" stroke-width="4"/>
+      <path d="M163 588h694" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+      <text id="minister-one" x="510" y="700" text-anchor="middle" fill="#2b2622" font-size="73" font-weight="750">Minister of</text>
+      <text id="minister-two" x="510" y="797" text-anchor="middle" fill="#2b2622" font-size="73" font-weight="750">Communications</text>
+      <text id="minister-hi" x="510" y="903" text-anchor="middle" class="hi" fill="#6f6a63" font-size="61" font-weight="650">संचार मंत्री</text>
+    </g>
+    <g id="state">
+      <rect x="1020" y="560" width="780" height="400" rx="40" fill="#fff" stroke="#b8403a" stroke-width="4"/>
+      <path d="M1063 588h694" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+      <text id="state-one" x="1410" y="700" text-anchor="middle" fill="#2b2622" font-size="73" font-weight="750">Minister of State</text>
+      <text id="state-two" x="1410" y="797" text-anchor="middle" fill="#2b2622" font-size="73" font-weight="750">for Communications</text>
+      <text id="state-hi" x="1410" y="903" text-anchor="middle" class="hi" fill="#6f6a63" font-size="61" font-weight="650">संचार राज्य मंत्री</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.94, 'fade', '#lead', {dur:0.26}],
+      [0.94, 'draw', '#left-link', {dur:0.48}],
+      [1.32, 'pop', '#minister', {from:0.97, spring:'fast'}],
+      [1.36, 'words', '#minister-one', {gap:0.70, dist:13, spring:'fast'}],
+      [2.60, 'words', '#minister-two', {dist:13, spring:'fast'}],
+      [3.30, 'fade', '#minister-hi', {dur:0.25}],
+      [3.78, 'highlight', '#minister-one, #minister-two', {color:'#f2b705', opacity:0.33, dur:0.42}],
+      [5.96, 'draw', '#right-link', {dur:0.45}],
+      [5.96, 'pop', '#state', {from:0.97, spring:'fast'}],
+      [5.99, 'words', '#state-one', {gap:0.32, dist:13, spring:'fast'}],
+      [7.02, 'words', '#state-two', {gap:0.30, dist:13, spring:'fast'}],
+      [7.60, 'fade', '#state-hi', {dur:0.25}]
+    ]
+  }
+  </script>
+</section>
