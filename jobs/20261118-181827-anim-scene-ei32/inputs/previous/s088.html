@@ -1,0 +1,70 @@
+<section class="vs-scene" id="s088" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="chain">
+    <text x="160" y="210" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#9e1b1b" font-size="72" font-weight="750">Reporting की कड़ी</text>
+    <rect x="160" y="240" width="700" height="180" rx="31" fill="none" stroke="#ead9a8" stroke-width="4"/>
+    <rect x="160" y="600" width="700" height="180" rx="31" fill="none" stroke="#ead9a8" stroke-width="4"/>
+    <g id="hoc">
+      <rect x="160" y="240" width="700" height="180" rx="31" fill="#9e1b1b"/>
+      <text id="hoc-en" x="510" y="323" text-anchor="middle" fill="#fff" font-size="71" font-weight="770">Head of Circle</text>
+      <text id="hoc-hi" x="510" y="385" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#fde9a6" font-size="53" font-weight="650">सर्कल प्रमुख</text>
+    </g>
+    <g id="hol">
+      <rect x="160" y="600" width="700" height="180" rx="31" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <text id="hol-en" x="510" y="683" text-anchor="middle" fill="#2b2622" font-size="71" font-weight="770">Head of Logistics</text>
+      <text id="hol-hi" x="510" y="745" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="53" font-weight="650">लॉजिस्टिक्स प्रमुख</text>
+    </g>
+    <path id="report-up" d="M510 573V447m-28 28 28-28 28 28" fill="none" stroke="#2b2622" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text id="report" x="565" y="524" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="52" font-weight="650">report करते हैं</text>
+  </g>
+
+  <path id="review-link" d="M1000 333H924V636H871" stroke="#b0a084" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="11 12" fill="none"/>
+  <g id="review">
+    <rect id="review-bg" x="1000" y="200" width="800" height="200" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+    <text x="1040" y="252" font-size="34" font-weight="780" fill="#6f6a63">Reviewing authority</text>
+    <text x="1410" y="252" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="700" fill="#6f6a63">समीक्षा अधिकारी</text>
+    <text id="member-en" x="1040" y="319" font-size="56" font-weight="820" fill="#9e1b1b">Member (Operations)</text>
+    <text id="member-hi" x="1042" y="372" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="650" fill="#6f6a63">सदस्य (प्रचालन)</text>
+  </g>
+  <g id="ctrl">
+    <rect id="ctrl-head" x="1000" y="460" width="800" height="100" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <rect id="ctrl-first" x="1000" y="460" width="800" height="225" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <rect id="ctrl-bg" x="1000" y="460" width="800" height="345" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text id="ctrl-title" x="1038" y="528" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="780" fill="#9e1b1b">इनके अधीन</text>
+    <g id="rms">
+    <rect x="1028" y="558" width="744" height="104" rx="19" fill="#f3ead6"/>
+    <rect x="1046" y="573" width="7" height="75" rx="3.5" fill="#9e1b1b"/>
+    <text x="1074" y="606" font-size="51" font-weight="790" fill="#2b2622">RMS Divisions</text>
+    <text x="1076" y="647" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650" fill="#6f6a63">आरएमएस मंडल</text>
+  </g>
+  <g id="foreign">
+    <rect x="1028" y="676" width="744" height="104" rx="19" fill="#f3ead6"/>
+    <rect x="1046" y="691" width="7" height="75" rx="3.5" fill="#9e1b1b"/>
+    <text x="1074" y="724" font-size="51" font-weight="790" fill="#2b2622">Foreign Post Offices</text>
+    <text x="1076" y="765" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650" fill="#6f6a63">विदेश डाकघर</text>
+  </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0, 'slide', '#review', {from:'right',dist:43,spring:'fast'}],
+    [1.62,'words','#member-en',{gap:0.40,dist:10,spring:'fast'}],
+    [2.10,'fade','#member-hi',{dur:0.30}],
+    [2.10,'reveal','#review-link',{from:'right',dur:0.52}],
+    [3.36,'pulse','#hol',{amount:0.025}],
+    [3.36,'color','#review-bg',{to:'#eeebe6',dur:0.42}],
+    [3.36,'color','#review-bg',{prop:'stroke',to:'#c9c3b9',dur:0.42}],
+    [3.36,'color','#member-en',{to:'#6f6a63',dur:0.42}],
+    [3.36,'reveal','#ctrl',{from:'left',dur:0.40}],
+    [4.90,'out','#ctrl-head',{dur:0.16}],
+    [4.90,'fade','#ctrl-first',{dur:0.16}],
+    [6.96,'out','#ctrl-first',{dur:0.16}],
+    [6.96,'fade','#ctrl-bg',{dur:0.16}],
+    [4.90,'pop','#rms',{from:0.96,spring:'fast'}],
+    [6.96,'pop','#foreign',{from:0.96,spring:'fast'}]
+  ]
+}
+</script>
+</section>
