@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s065" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="heads-shot">
+ <text id="heads-title" x="100" y="221" class="hi" fill="#9e1b1b" font-size="66" font-weight="820">हर level के head</text>
+ <g id="heads-table">
+  <rect x="100" y="250" width="1720" height="750" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M126 250H1794Q1820 250 1820 276V324H100V276Q100 250 126 250Z" fill="#9e1b1b"/>
+  <text x="159" y="302" class="hi" font-size="47" font-weight="780" fill="#fff">स्तर</text>
+  <text x="820" y="302" class="hi" font-size="47" font-weight="780" fill="#fff">head (प्रमुख)</text>
+  <path d="M760 324V1000 M100 436H1820 M100 548H1820 M100 660H1820 M100 772H1820 M100 884H1820" fill="none" stroke="#ead9a8" stroke-width="3"/>
+ </g>
+ <g id="heads-row1">
+  <text id="heads-circle" x="159" y="381" font-size="56" font-weight="800" fill="#2b2622">Circle</text>
+  <text id="heads-circle-hi" x="159" y="422" class="hi" font-size="39" font-weight="670" fill="#6f6a63">परिमंडल</text>
+  <text id="heads-cpmg" x="820" y="381" font-size="59" font-weight="850" fill="#9e1b1b">CPMG</text>
+  <text id="heads-cpmg-hi" x="820" y="422" class="hi" font-size="39" font-weight="670" fill="#6f6a63">मुख्य पोस्टमास्टर जनरल</text>
+ </g>
+<g id="heads-row2">
+<text id="heads-region" x="159" y="493" font-size="56" font-weight="820" fill="#2b2622">Region</text>
+<text id="heads-region-hi" x="159" y="534" class="hi" font-size="39" font-weight="670" fill="#6f6a63">क्षेत्र</text>
+<text id="heads-pmg" x="820" y="493" font-size="50" font-weight="820" fill="#2b2622">Postmaster General</text>
+<text id="heads-pmg-hi" x="820" y="534" class="hi" font-size="39" font-weight="670" fill="#6f6a63">पोस्टमास्टर जनरल</text>
+<text id="heads-designated" x="1350" y="493" font-size="46" font-weight="820" fill="#2b2622">/ Head of Region</text>
+<text id="heads-designated-hi" x="1350" y="534" class="hi" font-size="37" font-weight="670" fill="#6f6a63">/ नामित क्षेत्र प्रमुख</text>
+</g>
+<g id="heads-row3">
+<text id="heads-postal-division" x="159" y="605" font-size="56" font-weight="820" fill="#2b2622">Postal Division</text>
+<text id="heads-postal-division-hi" x="159" y="646" class="hi" font-size="39" font-weight="670" fill="#6f6a63">डाक मंडल</text>
+<rect id="sspos-marker" x="812" y="555" width="187" height="61" rx="10" fill="#f2b705" opacity=".45"/><rect id="spos-marker" x="1030" y="555" width="166" height="61" rx="10" fill="#f2b705" opacity=".45"/><text id="heads-sspos" x="820" y="605" font-size="57" font-weight="820" fill="#9e1b1b">SSPOs / SPOs</text>
+<text id="heads-sspos-hi" x="820" y="646" class="hi" font-size="39" font-weight="670" fill="#6f6a63">वरिष्ठ डाकघर अधीक्षक / डाकघर अधीक्षक</text>
+</g>
+<g id="heads-row4">
+<text id="heads-rms-division" x="159" y="717" font-size="56" font-weight="820" fill="#2b2622">RMS Division</text>
+<text id="heads-rms-division-hi" x="159" y="758" class="hi" font-size="39" font-weight="670" fill="#6f6a63">रेल डाक सेवा मंडल</text>
+<text id="heads-ssrm" x="820" y="717" font-size="57" font-weight="820" fill="#9e1b1b">SSRM / SRM</text>
+<text id="heads-ssrm-hi" x="820" y="758" class="hi" font-size="39" font-weight="670" fill="#6f6a63">वरिष्ठ रेल डाक अधीक्षक / रेल डाक अधीक्षक</text>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [.78,'grow','#sspos-marker',{axis:'x',origin:'left',spring:'fast'}],
+  [2.94,'out','#sspos-marker',{dur:.16,scale:1}],
+  [3.12,'grow','#spos-marker',{axis:'x',origin:'left',spring:'fast'}],
+  [4.29,'out','#spos-marker',{dur:.15,scale:1}],
+  [4.44,'color','#heads-circle, #heads-cpmg',{to:'#6f6a63',dur:.28}],
+  [4.44,'words','#heads-rms-division',{gap:.66,dist:9}],
+  [5.00,'fade','#heads-rms-division-hi',{dur:.23}],
+  [6.38,'pop','#heads-ssrm',{from:.95,spring:'fast'}],
+  [6.90,'fade','#heads-ssrm-hi',{dur:.24}]
+ ]
+}
+</script>
+</section>
