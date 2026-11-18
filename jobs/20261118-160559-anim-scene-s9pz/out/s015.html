@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s015" data-in="cut" data-section="PART 1 · CENTRAL ADMINISTRATION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect x="100" y="175" width="1720" height="328" rx="39" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M112 199l181 117 174-117m-351 280 132-99m185 99-107-99" fill="none" stroke="#e8dbc2" stroke-width="4"/>
+    <use href="piece:icon-dak-bhawan" transform="translate(140 182) scale(0.75)"/>
+    <text x="290" y="466" text-anchor="middle" fill="#6f6a63" font-size="46" font-weight="650">Dak Bhawan</text>
+    <path d="M466 216v246" stroke="#ddccaa" stroke-width="3"/>
+    <text id="central" x="525" y="265" class="hi" fill="#6f6a63" font-size="54" font-weight="630">यहाँ का केंद्रीय प्रशासनिक कार्यालय</text>
+    <text id="directorate" x="524" y="376" fill="#9e1b1b" font-size="100" font-weight="770">Postal Directorate</text>
+    <text id="directorate-hi" x="529" y="452" class="hi" fill="#2b2622" font-size="55" font-weight="650">डाक निदेशालय</text>
+    <text id="work" x="104" y="573" class="hi" fill="#6f6a63" font-size="55" font-weight="690">Directorate का काम</text>
+    <g id="policy">
+      <rect x="100" y="600" width="840" height="177" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="125" y="642" width="10" height="93" rx="5" fill="#9e1b1b"/>
+      <text x="520" y="713" text-anchor="middle" class="hi" fill="#2b2622" font-size="76" font-weight="715">राष्ट्रीय नीति</text>
+    </g>
+    <g id="instructions">
+      <rect x="980" y="600" width="840" height="177" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="1005" y="642" width="10" height="93" rx="5" fill="#9e1b1b"/>
+      <text x="1400" y="713" text-anchor="middle" class="hi" fill="#2b2622" font-size="76" font-weight="715">निर्देश</text>
+    </g>
+    <g id="coordination">
+      <rect x="100" y="805" width="840" height="177" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="125" y="847" width="10" height="93" rx="5" fill="#9e1b1b"/>
+      <text x="520" y="918" text-anchor="middle" class="hi" fill="#2b2622" font-size="76" font-weight="715">समन्वय</text>
+    </g>
+    <g id="supervision">
+      <rect x="980" y="805" width="840" height="177" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="1005" y="847" width="10" height="93" rx="5" fill="#9e1b1b"/>
+      <text x="1400" y="918" text-anchor="middle" class="hi" fill="#2b2622" font-size="76" font-weight="715">पर्यवेक्षण</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.06, 'fade', '#central', {dur:0.30}],
+      [3.60, 'words', '#directorate', {gap:0.66, dist:16, spring:'fast'}],
+      [4.70, 'fade', '#directorate-hi', {dur:0.28}],
+      [6.36, 'fade', '#work', {dur:0.26}],
+      [6.36, 'pulse', '#directorate', {amount:0.035}],
+      [7.68, 'pop', '#policy', {from:0.96, spring:'fast'}],
+      [9.44, 'pop', '#instructions', {from:0.96, spring:'fast'}],
+      [10.98, 'pop', '#coordination', {from:0.96, spring:'fast'}],
+      [12.26, 'pop', '#supervision', {from:0.96, spring:'fast'}]
+    ]
+  }
+  </script>
+</section>
