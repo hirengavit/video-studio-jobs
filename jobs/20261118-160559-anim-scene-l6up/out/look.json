@@ -8,12 +8,5 @@
   "8.77"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s086",
-   "text": "international / mail",
-   "t": 5.35
-  }
- ]
+ "warnings": []
 }
