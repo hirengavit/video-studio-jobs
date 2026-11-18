@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<g id="cabin"><path d="M80 150H308V258H80Z" fill="#e3cfa3"/><path d="M96 166H135V211H96ZM251 166H290V211H251Z" fill="#fbf7ee"/><path id="door" d="M165 163H220V258H165Z" fill="#9e1b1b"/><path d="M173 170H212V205H173Z" fill="#fbf7ee"/></g>
+<path id="roof" d="M59 153L92 109H291L328 153Z" fill="#9e1b1b"/><path d="M86 119H297" stroke="#b8403a"/>
+<g id="rail" fill="#e3cfa3"><rect x="53" y="219" width="290" height="8"/><rect x="53" y="253" width="290" height="8"/>
+<path d="M62 228L55 240L62 252L69 240Z"/><path d="M92 228L85 240L92 252L99 240Z"/><path d="M122 228L115 240L122 252L129 240Z"/><path d="M152 228L145 240L152 252L159 240Z"/><path d="M182 228L175 240L182 252L189 240Z"/><path d="M212 228L205 240L212 252L219 240Z"/><path d="M242 228L235 240L242 252L249 240Z"/><path d="M272 228L265 240L272 252L279 240Z"/><path d="M302 228L295 240L302 252L309 240Z"/><path d="M332 228L325 240L332 252L339 240Z"/></g>
+<path id="hull" d="M25 261H375L343 294Q337 302 324 302H78Q54 302 41 284Z" fill="#e3cfa3"/>
+<g id="water"><path d="M29 322Q66 310 103 322T177 322T251 322T325 322H367M51 339H342M90 355H312"/></g>
+<circle data-anchor="base" cx="200" cy="302" r="0"/>
+</svg>
