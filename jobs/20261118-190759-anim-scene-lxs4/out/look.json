@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.75",
+  "5.49",
+  "8.24",
+  "10.98",
+  "13.58"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s078",
+   "text": "फर्क / अपने मंडल के डाकघरों के काम पर",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s078",
+   "text": "main field administrative unit / मुख्य फ़ील्ड प्रशासनिक इकाई",
+   "t": 2.75
+  }
+ ]
+}
