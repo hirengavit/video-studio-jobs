@@ -8,12 +8,5 @@
   "11.25"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s059",
-   "text": "बड़ी / territorial",
-   "t": 6.84
-  }
- ]
+ "warnings": []
 }
