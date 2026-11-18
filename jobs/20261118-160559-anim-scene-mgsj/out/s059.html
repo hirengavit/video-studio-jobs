@@ -1,0 +1,67 @@
+<section class="vs-scene" id="s059" data-in="fade" data-in-dur="0.5" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="chapter">
+      <rect x="150" y="276" width="10" height="53" rx="5" fill="#f2b705"/>
+      <text x="183" y="320" class="hi" fill="#9e1b1b" font-size="55" font-weight="700">PART 3 · भाग 3</text>
+      <text x="148" y="494" fill="#2b2622" font-size="110" font-weight="800">Circle to</text>
+      <text x="148" y="617" fill="#2b2622" font-size="110" font-weight="800">Sub-division</text>
+      <text id="chapter-hi" x="152" y="738" class="hi" fill="#9e1b1b" font-size="72" font-weight="700">परिमंडल से उप-मंडल तक</text>
+      <g id="dots">
+        <circle cx="162" cy="902" r="12" fill="#9e1b1b"/><circle cx="212" cy="902" r="12" fill="#9e1b1b"/><circle cx="262" cy="902" r="12" fill="#f2b705"/><circle cx="312" cy="902" r="12" fill="#e6dcc4"/><circle cx="362" cy="902" r="12" fill="#e6dcc4"/><circle cx="412" cy="902" r="12" fill="#e6dcc4"/>
+        <text x="460" y="918" class="hi" fill="#6f6a63" font-size="48" font-weight="600">6 में से भाग 3</text>
+      </g>
+      <g id="chapter-stamp">
+        <rect x="1260" y="258" width="460" height="580" rx="24" fill="#9e1b1b"/>
+        <rect x="1260" y="258" width="460" height="580" rx="24" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+        <rect x="1300" y="298" width="380" height="408" rx="13" fill="#fbf7ee"/>
+        <g fill="#f3ead6" stroke="#2b2622" stroke-width="5" stroke-linejoin="round">
+          <path d="M1342 615h296M1362 612V446h256v166M1345 445l145-70 145 70Z"/>
+          <path d="M1394 613V484h34v129m41 0V484h42v129m41 0V484h34v129" fill="#fbf7ee"/>
+          <path d="M1450 613v-57h80v57" fill="#9e1b1b"/>
+          <path d="M1355 462h269" stroke="#9e1b1b"/>
+        </g>
+        <text x="1300" y="797" fill="#fff" font-size="82" font-weight="800">03</text>
+        <text x="1680" y="787" text-anchor="end" class="hi" fill="#fde9a6" font-size="46" font-weight="700">भाग</text>
+      </g>
+    </g>
+    <g id="definition">
+      <rect x="100" y="200" width="660" height="760" rx="35" fill="#9e1b1b"/>
+      <rect x="112" y="212" width="636" height="736" rx="26" fill="none" stroke="#fbf7ee" stroke-width="12" stroke-dasharray="0 28" stroke-linecap="round"/>
+      <text id="postal-circle" x="430" y="527" text-anchor="middle" fill="#fff" font-size="92" font-weight="750">Postal circle</text>
+      <text id="postal-hi" x="430" y="638" text-anchor="middle" class="hi" fill="#fde9a6" font-size="62" font-weight="650">डाक परिमंडल</text>
+      <g id="meaning">
+        <rect x="820" y="200" width="1000" height="500" rx="35" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text id="department" x="883" y="360" class="hi" fill="#2b2622" font-size="76" font-weight="680">Department की</text>
+        <text id="big" x="885" y="474" class="hi" fill="#2b2622" font-size="74" font-weight="730">बड़ी</text>
+        <text id="territorial" x="1046" y="474" fill="#2b2622" font-size="72" font-weight="680">territorial</text>
+        <text id="admin" x="883" y="591" fill="#2b2622" font-size="76" font-weight="680">administrative unit</text>
+      </g>
+      <g id="number-chip">
+        <rect x="820" y="740" width="1000" height="220" rx="32" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="886" y="843" fill="#2b2622" font-size="65" font-weight="730">Civil postal circles</text>
+        <text x="889" y="912" class="hi" fill="#6f6a63" font-size="45" font-weight="550">सिविल डाक परिमंडल</text>
+        <text id="total" x="1738" y="909" text-anchor="end" fill="#9e1b1b" font-size="156" font-weight="800">23</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#chapter'], [2.44, '#definition']],
+    on: [
+      [0.50, 'underline', '#chapter-hi', {color:'#f2b705', width:8, gap:16, dur:0.55}],
+      [2.44, 'words', '#postal-circle', {gap:0.70, dist:13, spring:'fast'}],
+      [3.30, 'fade', '#postal-hi', {dur:0.28}],
+      [4.10, 'fade', '#meaning', {dur:0.23}],
+      [4.14, 'words', '#department', {gap:0.70, dist:13, spring:'fast'}],
+      [5.26, 'fade', '#big', {dur:0.18}],
+      [5.26, 'highlight', '#big', {color:'#f2b705', opacity:0.34, dur:0.30}],
+      [5.60, 'words', '#territorial', {dist:13, spring:'fast'}],
+      [6.10, 'words', '#admin', {gap:1.02, dist:13, spring:'fast'}],
+      [8.44, 'fade', '#number-chip', {dur:0.28}],
+      [9.80, 'fade', '#total', {dur:0.14}],
+      [9.80, 'count', '#total', {from:0, to:23, dur:0.32}]
+    ]
+  }
+  </script>
+</section>
