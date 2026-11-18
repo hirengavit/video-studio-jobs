@@ -8,12 +8,5 @@
   "14.44"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s097",
-   "text": "हर GDS category / अपना schedule",
-   "t": 2.92
-  }
- ]
+ "warnings": []
 }
