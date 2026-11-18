@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s172" data-in="wipe" data-in-dur="0.4" data-in-dir="right" data-section="PART 6 · SPECIAL OFFICES &amp; BOARDS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="tiles" text-anchor="middle">
+      <rect x="160" y="260" width="720" height="600" rx="32" fill="none" stroke="#c4a77f" stroke-width="4" stroke-dasharray="6 12"/>
+      <g id="tech-tile">
+        <rect x="160" y="260" width="720" height="600" rx="32" fill="#fff5dc" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+        <use href="piece:icon-tech-laptop" transform="translate(373 305) scale(0.735)"/>
+        <text x="520" y="680" font-size="78" font-weight="800" fill="#2b2622">technology</text>
+        <text x="520" y="779" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="750" fill="#6f6a63">प्रौद्योगिकी</text>
+      </g>
+      <rect x="1040" y="260" width="720" height="600" rx="32" fill="none" stroke="#c4a77f" stroke-width="4" stroke-dasharray="6 12"/>
+      <g id="training-tile">
+        <rect x="1040" y="260" width="720" height="600" rx="32" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+        <use href="piece:icon-graduation-cap" transform="translate(1253 305) scale(0.735)"/>
+        <text x="1400" y="680" font-size="78" font-weight="800" fill="#2b2622">training</text>
+        <text x="1400" y="779" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="750" fill="#6f6a63">प्रशिक्षण</text>
+      </g>
+      <path id="different" d="M913 522 H1007 M913 569 H1007 M979 496 L942 595" fill="none" stroke="#9e1b1b" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="different-hi" x="960" y="952" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="61" font-weight="800" fill="#9e1b1b">दो अलग काम</text>
+    </g>
+    <g id="cept">
+      <rect x="100" y="200" width="600" height="780" rx="35" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+      <rect x="100" y="200" width="600" height="780" rx="35" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+      <rect x="153" y="258" width="494" height="454" rx="24" fill="#fbf7ee"/>
+      <use href="piece:icon-tech-laptop" transform="translate(217 299) scale(0.915)"/>
+      <text id="cept-stamp" x="400" y="887" text-anchor="middle" font-size="122" font-weight="850" fill="#fff">CEPT</text>
+      <g id="meaning-card">
+      <rect x="760" y="200" width="1060" height="780" rx="35" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M816 236 H1764" stroke="#ead9a8" stroke-width="6" stroke-linecap="round"/>
+      </g>
+      <text id="full-a" x="816" y="321" fill="#2b2622" font-size="73" font-weight="800">Centre for Excellence</text>
+      <text id="full-b" x="816" y="408" fill="#2b2622" font-size="73" font-weight="800">in Postal Technology</text>
+      <text id="full-hi" x="816" y="469" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="44" font-weight="700">डाक प्रौद्योगिकी उत्कृष्टता केंद्र</text>
+      <text id="meaning" x="816" y="532" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="45" font-weight="750">postal technology और software का काम</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#tiles'], [4.24, '#cept']],
+    on: [
+      [0.16, 'pop', '#tech-tile', {from: 0.95, spring: 'soft'}],
+      [1.32, 'pop', '#training-tile', {from: 0.95, spring: 'soft'}],
+      [2.52, 'draw', '#different', {dur: 0.45}],
+      [2.52, 'words', '#different-hi', {gap: 0.35, dist: 14}],
+      [4.24, 'stamp', '#cept-stamp', {from: 1.15, rot: -3, spring: 'soft'}],
+      [5.02, 'fade', '#meaning-card', {dur: 0.28}],
+      [5.18, 'words', '#full-a', {gap: 0.29, dist: 16}],
+      [6.12, 'words', '#full-b', {gap: 0.41, dist: 16}],
+      [7.40, 'fade', '#full-hi', {dur: 0.34}],
+      [8.44, 'fade', '#meaning', {dur: 0.40}],
+      [10.06, 'highlight', '#meaning', {words: 'software', color: '#f2b705', opacity: 0.42, dur: 0.36, pad: 9}],
+    ],
+  }
+  </script>
+</section>
