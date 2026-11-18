@@ -8,12 +8,5 @@
   "8.45"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s095",
-   "message": "pop: option \"dur\" isn't used (it takes: spring, from)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
