@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s175" data-in="cut" data-section="PART 6 · SPECIAL OFFICES &amp; BOARDS" data-series="POSTAL ADMINISTRATION">
+ <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text x="120" y="260" font-family="Inter, sans-serif" font-size="82" font-weight="800" fill="#9e1b1b">CEPT Mysuru</text>
+  <g id="recovery">
+   <rect x="120" y="330" width="980" height="612" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <rect x="163" y="388" width="8" height="208" rx="4" fill="#9e1b1b"/>
+   <text id="name1" x="197" y="455" font-family="Inter, sans-serif" font-size="64" font-weight="800" fill="#2b2622">Disaster Recovery</text>
+   <text id="name2" x="197" y="533" font-family="Inter, sans-serif" font-size="64" font-weight="800" fill="#2b2622">Centre</text>
+   <text id="nameHi" x="201" y="611" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="650" fill="#6f6a63">आपदा पुनर्प्राप्ति केंद्र</text>
+   <rect x="197" y="673" width="420" height="208" rx="24" fill="#f3ead6"/>
+   <use href="piece:icon-tech-laptop" transform="translate(282 653) scale(.63)"/>
+   <g id="postmark">
+    <circle cx="895" cy="669" r="149" fill="#fbf7ee" stroke="#9e1b1b" stroke-width="5"/>
+    <circle cx="895" cy="669" r="135" fill="none" stroke="#9e1b1b" stroke-width="2.5" stroke-dasharray="4 8"/>
+    <text id="day" x="859" y="632" text-anchor="end" font-family="Inter, sans-serif" font-size="51" font-weight="800" fill="#9e1b1b">15</text>
+    <text id="month" x="872" y="632" font-family="Inter, sans-serif" font-size="51" font-weight="800" fill="#9e1b1b">May</text>
+    <text id="year" x="895" y="714" text-anchor="middle" font-family="Inter, sans-serif" font-size="68" font-weight="850" fill="#9e1b1b">2015</text>
+    <text id="since" x="895" y="765" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#9e1b1b">से</text>
+   </g>
+  </g>
+  <g id="appCard">
+   <rect x="1160" y="330" width="640" height="612" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <rect x="1370" y="397" width="220" height="220" rx="54" fill="#f3ead6"/>
+   <g id="appTile" stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="1416" y="451" width="128" height="108" rx="17" fill="#fff"/>
+    <path d="M1419 464l61 45 61-45" stroke="#9e1b1b" fill="none"/>
+    <path d="m1421 548 42-48m76 48-42-48" stroke="#ead9a8" fill="none"/>
+   </g>
+   <text id="postInfo" x="1480" y="710" text-anchor="middle" font-family="Inter, sans-serif" font-size="77" font-weight="800" fill="#2b2622">Post Info</text>
+   <text id="appLabel" x="1480" y="770" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="#6f6a63">app</text>
+   <g id="attribution">
+    <rect x="1253" y="810" width="454" height="89" rx="45" fill="#f3ead6"/>
+    <text x="1480" y="872" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">CEPT ने बनाया</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ {
+  on:[
+   [0.00,'fade','#recovery',{dur:0.29}],
+   [1.82,'words','#name1',{gap:0.56,dist:12,from:'down',spring:'fast'}],
+   [2.86,'fade','#name2',{dur:0.24}],
+   [2.90,'fade','#nameHi',{dur:0.24}],
+   [3.66,'stamp','#postmark',{from:1.12,rot:-5,spring:'fast'}],
+   [3.66,'fade','#day',{dur:0.23}],
+   [4.22,'fade','#month',{dur:0.25}],
+   [5.36,'fade','#year',{dur:0.24}],
+   [5.38,'fade','#since',{dur:0.25}],
+   [7.42,'pop','#appCard',{from:0.96,spring:'fast'}],
+   [7.42,'draw','#appTile',{dur:0.52}],
+   [7.42,'words','#postInfo',{gap:0.30,dist:12,from:'down',spring:'fast'}],
+   [8.42,'fade','#appLabel',{dur:0.24}],
+   [9.06,'fade','#attribution',{dur:0.26}]
+  ]
+ }
+ </script>
+</section>
