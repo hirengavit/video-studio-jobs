@@ -91,7 +91,8 @@
 <script type="text/scene">
 {
  on:[
-   [0.06,'swap','#welfare-note',{to:'#vice-note',dur:0.42,dist:22}],
+   [0.04,'out','#welfare-note',{dur:0.13,scale:1}],
+   [0.18,'slide','#vice-note',{from:'down',dist:18,spring:'soft'}],
    [0.42,'draw','#to-welfare',{dur:0.36}],
    [2.20,'words','#vice-en',{gap:1.12,dist:12}],
    [3.30,'fade','#vice-hi',{dur:0.27}],
