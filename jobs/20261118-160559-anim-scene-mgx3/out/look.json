@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-overlap",
-   "scene": "s154",
-   "text": "EXAM TRAP · परीक्षा का जाल / संख्या को सही पढ़िए",
-   "t": 0.3
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s154",
    "message": "a card is mostly empty at 2.0 s: bring its items in sooner, or size it for what it holds now",
