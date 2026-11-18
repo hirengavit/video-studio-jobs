@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s143" data-in="cut" data-section="PART 5 · BASE CIRCLE &amp; APS" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif"><rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="cadre">
+ <g id="minister"><rect x="120" y="180" width="1680" height="260" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/><path d="M895 215V404" stroke="#ead9a8" stroke-width="4"/><text id="minister-label" x="174" y="317" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="780" fill="#2b2622">APS के ज़िम्मेदार Minister</text>
+ <g id="defence"><text x="960" y="297" font-size="70" font-weight="850" fill="#9e1b1b">Defence Minister</text><text x="960" y="378" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#6f6a63">रक्षा मंत्री</text></g></g>
+ <g id="civil"><rect x="120" y="540" width="640" height="360" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/><text id="civil-title" x="440" y="705" text-anchor="middle" font-size="59" font-weight="850" fill="#9e1b1b">civil postal service</text><text x="440" y="792" text-anchor="middle" font-size="56" font-weight="750" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63">सिविल डाक सेवा</text></g>
+ <g id="officers"><rect x="1160" y="540" width="640" height="360" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/><text x="1480" y="705" text-anchor="middle" font-size="59" font-weight="850" fill="#9e1b1b">APS officer cadre</text><text x="1480" y="792" text-anchor="middle" font-size="56" font-weight="750" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63">अधिकारी संवर्ग</text></g>
+ <path id="deputation-arrow" d="M790 720H1130 M1108 700L1130 720L1108 740" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="deputation-en"><rect x="790" y="595" width="340" height="77" rx="19" fill="#fde9a6"/><text x="960" y="649" text-anchor="middle" font-size="49" font-weight="850" fill="#2b2622">deputation</text></g>
+ <text id="deputation-hi" x="960" y="810" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="750" fill="#6f6a63">प्रतिनियुक्ति</text>
+</g>
+<g id="definition">
+<g id="dep-term" text-anchor="middle">
+<rect x="120" y="180" width="700" height="280" rx="32" fill="#9e1b1b"/>
+<rect x="141" y="201" width="658" height="238" rx="22" fill="none" stroke="#f0c49b" stroke-width="3" stroke-dasharray="3 11" stroke-linecap="round"/>
+<text x="470" y="310" font-size="79" font-weight="850" fill="#fffefa">Deputation</text>
+<text x="470" y="400" class="hi" font-size="61" font-weight="750" fill="#fde9a6">प्रतिनियुक्ति</text>
+</g>
+<g id="dep-meaning">
+<rect x="880" y="180" width="920" height="280" rx="32" fill="#fffefa" stroke="#ead9a8" stroke-width="4"/>
+<text id="meaning-1" x="928" y="253" class="hi" font-size="52" font-weight="750" fill="#2b2622">कुछ समय के लिए दूसरे</text>
+<text id="meaning-2" x="928" y="324" class="hi" font-size="52" font-weight="750" fill="#2b2622">organisation में काम</text>
+<text id="meaning-parent" x="928" y="411" class="hi" font-size="49" font-weight="800" fill="#9e1b1b">पर parent service से जुड़े</text>
+</g>
+</g>
+<path id="parent-tie" d="M1170 858H754 M779 840L754 858L779 876" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-dasharray="14 10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<script type="text/scene">
+({dur:8.81,on:[
+[0,"out","#minister",{dur:.17,scale:.99}],
+[.17,"fade","#definition",{dur:.18}],
+[1.39,"words","#meaning-1",{gap:.41,dist:8}],
+[3.76,"words","#meaning-2",{gap:.53,dist:8}],
+[3.76,"pulse","#officers",{amount:.023}],
+[5.65,"words","#meaning-parent",{gap:.37,dist:8}],
+[7.56,"reveal","#parent-tie",{from:"right",dur:.35}],
+[7.56,"highlight","#civil-title",{color:"#f2b705",opacity:.44,dur:.36,pad:8}]
+]})
+</script>
+</section>
