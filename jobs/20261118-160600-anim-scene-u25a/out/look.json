@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.96",
+  "5.91",
+  "8.87",
+  "11.82",
+  "14.63"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s163",
+   "text": "19 August / 2026",
+   "t": 5.91
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s163",
+   "text": "2026 / से",
+   "t": 5.91
+  }
+ ]
+}
