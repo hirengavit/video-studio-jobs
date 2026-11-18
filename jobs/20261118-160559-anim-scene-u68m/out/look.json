@@ -8,12 +8,5 @@
   "11.84"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s039",
-   "text": "policy बनाने वाली सबसे ऊँची body",
-   "t": 4.8
-  }
- ]
+ "warnings": []
 }
