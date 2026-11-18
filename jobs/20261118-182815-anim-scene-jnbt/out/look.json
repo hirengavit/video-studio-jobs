@@ -1,0 +1,37 @@
+{
+ "moments": [
+  "0.30",
+  "2.44",
+  "4.88",
+  "7.32",
+  "9.76",
+  "12.05"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s005",
+   "text": "इसके / 6",
+   "t": 7.32
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s005",
+   "message": "a card is mostly empty at 7.3 s: bring its items in sooner, or size it for what it holds now",
+   "t": 7.32
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s005",
+   "message": "a card is mostly empty at 9.8 s: bring its items in sooner, or size it for what it holds now",
+   "t": 9.76
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s005",
+   "message": "a card is mostly empty at 12.1 s: bring its items in sooner, or size it for what it holds now",
+   "t": 12.05
+  }
+ ]
+}
