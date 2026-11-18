@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s152" data-in="cut" data-section="PART 5 · BASE CIRCLE &amp; APS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="left">
+      <rect x="120" y="180" width="500" height="810" rx="37" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+      <text id="left-code" x="370" y="294" text-anchor="middle" fill="#6f6a63" font-size="76" font-weight="780">56 APO</text>
+      <text id="left-city" x="370" y="361" text-anchor="middle" fill="#6f6a63" font-size="55" font-weight="640">New Delhi</text>
+      <path d="M158 405h424" stroke="#ddcfb4" stroke-width="4"/>
+    </g>
+    <rect x="680" y="180" width="1120" height="810" rx="37" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M715 321h1050" stroke="#ead9a8" stroke-width="4"/>
+    <text id="right-code" x="731" y="283" fill="#6f6a63" font-size="80" font-weight="780">99 APO</text>
+    <text x="1749" y="278" text-anchor="end" fill="#6f6a63" font-size="58" font-weight="650">Kolkata</text>
+    <text id="north-east" x="728" y="424" class="hi" fill="#2b2622" font-size="67" font-weight="720">पूर्वोत्तर के</text>
+    <text id="eight" x="1047" y="426" fill="#9e1b1b" font-size="83" font-weight="820">8</text>
+    <text id="states" x="1125" y="424" class="hi" fill="#2b2622" font-size="67" font-weight="720">राज्य</text>
+    <path id="eight-tick" d="m1304 392 17 17 35-38" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="circle">
+      <rect x="728" y="484" width="1024" height="122" rx="25" fill="#f3ead6"/>
+      <text id="circle-en" x="776" y="561" fill="#2b2622" font-size="61" font-weight="750">North East Circle</text>
+      <text id="circle-six" x="1675" y="562" text-anchor="end" class="hi" fill="#9e1b1b" font-size="68" font-weight="760">के 6</text>
+    </g>
+    <g id="assam">
+      <rect x="728" y="627" width="498" height="130" rx="25" fill="#f3ead6"/>
+      <text id="assam-en" x="977" y="684" text-anchor="middle" fill="#2b2622" font-size="55" font-weight="740">Assam</text>
+      <text x="977" y="735" text-anchor="middle" class="hi" fill="#6f6a63" font-size="47" font-weight="650">असम</text>
+    </g>
+    <g id="sikkim">
+      <rect x="1254" y="627" width="498" height="130" rx="25" fill="#f3ead6"/>
+      <text id="sikkim-en" x="1503" y="684" text-anchor="middle" fill="#2b2622" font-size="55" font-weight="740">Sikkim</text>
+      <text x="1503" y="735" text-anchor="middle" class="hi" fill="#6f6a63" font-size="47" font-weight="650">सिक्किम</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0, 'pulse', '#right-code', {amount:0.045}],
+      [1.84, 'words', '#north-east', {gap:0.76, dist:13, spring:'fast'}],
+      [2.98, 'stamp', '#eight', {from:1.18, rot:0, spring:'fast'}],
+      [3.40, 'fade', '#states', {dur:0.23}],
+      [6.00, 'pop', '#circle', {from:0.97, spring:'fast'}],
+      [7.54, 'fade', '#circle-six', {dur:0.22}],
+      [8.72, 'pop', '#assam', {from:0.96, spring:'fast'}],
+      [9.66, 'pop', '#sikkim', {from:0.96, spring:'fast'}],
+      [10.20, 'draw', '#eight-tick', {dur:0.24}]
+    ]
+  }
+  </script>
+</section>
