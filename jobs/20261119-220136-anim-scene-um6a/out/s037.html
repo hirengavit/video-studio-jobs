@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s037" data-in="cut" data-section="PART 2 · CASH, DIGITAL &amp; FRANKING" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="frank">
+  <g id="machine-photo">
+    <g transform="rotate(-1 520 511)">
+      <rect x="152" y="251" width="746" height="552" rx="24" fill="#2b2622" opacity=".12"/>
+      <rect x="145" y="238" width="746" height="552" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <image href="photo:franking-machine-photo-cutout" x="169" y="269" width="698" height="489" preserveAspectRatio="xMidYMid meet"/>
+    </g>
+    <!-- Photo: Sebleouf, CC BY-SA 4.0; background removed. Source: Wikimedia Commons, Machine à affranchir Pitney Bowes DM400c à Lyon, France.jpg. -->
+    <text x="520" y="837" text-anchor="middle" fill="#6f6a63" font-size="36">Sebleouf / CC BY-SA 4.0 · cut-out</text>
+  </g>
+  <text id="franking-term" x="1390" y="257" text-anchor="middle" fill="#9e1b1b" font-size="72" font-weight="800">Franking machine</text>
+  <text id="franking-term-hi" x="1390" y="329" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50">फ्रैंकिंग मशीन</text>
+  <g id="impression"><use href="piece:franking-impression" transform="translate(990 122) scale(2)"/></g>
+  <g id="impression-label" text-anchor="middle">
+    <text x="1390" y="721" fill="#9e1b1b" font-size="60" font-weight="760">authorised impression</text>
+    <text x="1390" y="784" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47">अधिकृत छाप</text>
+  </g>
+  <g id="proof-row">
+    <rect x="970" y="858" width="845" height="120" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text id="postage" x="995" y="932" font-size="40" font-weight="730" fill="#2b2622">Postage</text>
+    <text id="fee" class="hi" x="1164" y="932" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="730" fill="#2b2622">या postal fee</text>
+    <g id="paid">
+      <path d="M1430 919h43m-13-11 13 11-13 11" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="hi" x="1490" y="932" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="750" fill="#2e7d4f">भुगतान हो चुका</text>
+    </g>
+    <path id="paid-tick" d="M1756 922l13 14 24-30" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="valid">
+    <rect x="1260" y="372" width="180" height="61" rx="30.5" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text x="1350" y="414" text-anchor="middle" fill="#9e1b1b" font-size="40" font-weight="780">Valid</text>
+  </g>
+  <path id="value-ring" d="M1460 423H1706Q1717 423 1717 434V610Q1717 621 1706 621H1460Q1449 621 1449 610V434Q1449 423 1460 423Z" fill="none" stroke="#f2b705" stroke-width="8" stroke-linejoin="round"/>
+  <g id="no-stamps">
+    <rect x="145" y="858" width="746" height="120" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text class="hi" x="518" y="910" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="740" fill="#2b2622">जितनी value,</text>
+    <text class="hi" x="518" y="957" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="740" fill="#2b2622">उतने stamps की ज़रूरत नहीं</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+  shots:[[0,"#frank"]],
+  camera:[[0,{zoom:1}],[5.74,{zoom:1}],[7.60,{zoom:1.08,x:18,y:27},"soft"]],
+  on:[
+    [1.74,"fade","#proof-row",{dur:.28}],
+    [1.74,"fade","#postage",{dur:.26}],
+    [3.18,"fade","#fee",{dur:.26}],
+    [4.56,"fade","#paid",{dur:.26}],
+    [4.56,"draw","#paid-tick",{dur:.34}],
+    [5.74,"pop","#valid",{from:.95,spring:"snap"}],
+    [7.28,"draw","#value-ring",{dur:.46}],
+    [8.90,"fade","#no-stamps",{dur:.30}]
+  ]
+})
+</script>
+</section>
