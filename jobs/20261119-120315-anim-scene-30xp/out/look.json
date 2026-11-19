@@ -8,12 +8,5 @@
   "12.07"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s048",
-   "text": "delivery सिर्फ उसी / addressee",
-   "t": 4.89
-  }
- ]
+ "warnings": []
 }
