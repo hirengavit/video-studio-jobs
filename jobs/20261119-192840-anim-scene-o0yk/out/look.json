@@ -10,10 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
+   "kind": "text-overlap",
    "scene": "s057",
-   "message": "fade #r2-key-once: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
+   "text": "याद में / · एक बार",
+   "t": 11.07
   }
  ]
 }
