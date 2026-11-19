@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.13",
+  "4.26",
+  "6.38",
+  "8.51",
+  "10.49"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s240",
+   "text": "सामान्यतः / Refund",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s240",
+   "message": "a card (#s240-price-card) is mostly empty at 2.1 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.13
+  }
+ ]
+}
