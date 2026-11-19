@@ -19,7 +19,7 @@
     <path id="gap-outline" d="M1330 460h369q11 0 11 11v40q0 11-11 11h-369" stroke="#8a5d00" stroke-width="4" stroke-dasharray="13 9" stroke-linecap="round" fill="none"/>
     <path d="M1710 528v88" stroke="#8a5d00" stroke-width="2" stroke-dasharray="5 9" opacity=".68"/>
   </g>
-  <g id="adhesive-on-envelope"><use href="piece:adhesive-stamp" transform="translate(476 453) scale(.8)"/></g>
+  <g id="adhesive-on-envelope"><use href="piece:adhesive-stamp" transform="translate(425 438) scale(.8)"/></g>
   <path id="gap-fill" d="M1330 462H1698Q1708 462 1708 473V509Q1708 520 1698 520H1330Z" fill="#f2b705"/>
   <text id="gap-label" x="1519" y="434" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="760" fill="#8a5d00">extra stamps</text>
 </g>
@@ -49,7 +49,7 @@
     [2.34,'fade','#gap-label',{dur:.30}],
     [4.34,'place','#weighed-letter',{on:'#scale-pan-spot'}],
     [4.34,'fade','#weighed-letter',{dur:.23}],
-    [4.34,'type','#readout-weight',{dur:.34}],
+    [4.34,'type','#readout-weight',{cps:12}],
     [6.42,'pop','#letter-rate-card',{from:.95,spring:'soft'}],
     [6.92,'fade','#ordinary-hi',{dur:.27}]
   ]
