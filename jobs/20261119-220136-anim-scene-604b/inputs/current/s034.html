@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s034" data-in="cut" data-section="PART 2 · CASH, DIGITAL &amp; FRANKING" data-series="STAMPS &amp; STATIONERY">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="apt">
+      <text id="s033-apt-en" x="960" y="244" text-anchor="middle" font-family="Inter, sans-serif" font-size="78" font-weight="750" fill="#9e1b1b">Advanced Postal Technology</text>
+      <text id="s033-apt-hi" class="hi" x="960" y="319" text-anchor="middle" font-size="46" font-weight="550" fill="#6f6a63">उन्नत डाक प्रौद्योगिकी (APT)</text>
+      <g id="s033-booking">
+        <use href="piece:envelope-article" transform="translate(85 271) scale(1.50)"/>
+        <text id="s033-booking-label" class="hi" x="385" y="767" text-anchor="middle" font-size="46" font-weight="650" fill="#2b2622">article की booking</text>
+      </g>
+      <path id="s033-path" d="M623 566H780m-29-21 29 21-29 21" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="s033-qr-apt">
+        <use href="piece:qr-code-stand" transform="translate(700 281) scale(1.35)"/>
+        <rect x="851" y="590" width="238" height="68" rx="9" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+        <text id="s033-dynamic" x="970" y="636" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="700" fill="#2b2622">dynamic QR</text>
+      </g>
+    </g>
+<g id="scan-phone">
+  <use href="piece:smartphone-blank" transform="translate(1140 380) scale(1.45)"/>
+  <g id="scan-screen">
+    <path d="M1369 549h-31v31m155-31h31v31m-186 114v31h31m155-31v31h-31" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1431" y="654" text-anchor="middle" font-family="Inter, sans-serif" font-size="51" font-weight="830" fill="#2b2622">scan</text>
+  </g>
+</g>
+<g id="step-one">
+  <rect x="140" y="803" width="1000" height="68" rx="18" fill="#f3ead6"/>
+  <circle cx="179" cy="837" r="23" fill="#6f6a63"/>
+  <text x="179" y="850" text-anchor="middle" font-family="Inter, sans-serif" font-size="33" font-weight="850" fill="#fff">1</text>
+  <text id="scan-starts" x="224" y="851" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="730" fill="#4b4f58">QR scan → payment सिर्फ शुरू</text>
+</g>
+<g id="step-two">
+  <rect x="140" y="883" width="1000" height="106" rx="22" fill="#fff" stroke="#2e7d4f" stroke-width="4"/>
+  <circle cx="179" cy="936" r="23" fill="#2e7d4f"/>
+  <text x="179" y="948" text-anchor="middle" font-family="Inter, sans-serif" font-size="33" font-weight="850" fill="#fff">2</text>
+  <text id="postal-record" x="224" y="922" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="830" fill="#2b2622">Postal transaction में</text>
+  <text id="successful-payment" x="224" y="968" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="750" fill="#2b2622">successful payment दर्ज</text>
+  <path id="payment-tick" d="M1045 935l16 16 27-33" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg><script type="text/scene">
+{on:[
+ [1.22,'slide','#scan-phone',{from:'right',dist:44}],[1.46,'fade','#scan-screen',{dur:0.31}],
+ [2.72,'fade','#step-one',{dur:0.28}],[3.52,'underline','#scan-starts',{words:'सिर्फ शुरू',color:'#6f6a63',dur:0.35}],
+ [4.86,'slide','#step-two',{from:'down',dist:25}],[6.22,'fade','#successful-payment',{dur:0.23}],[6.22,'highlight','#successful-payment',{words:'successful payment',color:'#f2b705',opacity:.44,pad:4,dur:.40}],
+ [7.24,'draw','#payment-tick',{dur:0.30}]
+]}
+</script></section>
