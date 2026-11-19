@@ -62,8 +62,9 @@
 <script type="text/scene">
 ({shots:[[0,"#counter"],[8.20,"#frank"]],on:[
  [0.12,"move","#counter-row",{by:[0,80],spring:"soft"}],
- [0.18,"morph","#counter-to-envelope",{to:"#counter-to-envelope-short",dur:0.30}],
- [0.18,"swap","#counter-envelope",{to:"#counter-envelope-large",dist:1,dur:0.30}],
+ [0.38,"morph","#counter-to-envelope",{to:"#counter-to-envelope-short",dur:0.001}],
+ [0.38,"out","#counter-envelope",{dur:0.001,scale:false}],
+ [0.38,"fade","#counter-envelope-large",{dur:0.001}],
  [1.10,"fade","#ghost-stamp",{dur:0.36}],
  [2.74,"draw","#stamp-strike",{dur:0.33}],[2.74,"fade","#stamps-not-needed",{dur:0.38}],
  [3.44,"fade","#payment-method",{dur:0.33}],
