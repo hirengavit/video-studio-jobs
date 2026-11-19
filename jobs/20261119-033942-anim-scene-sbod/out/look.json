@@ -8,12 +8,5 @@
   "12.43"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s182",
-   "text": "Foundation stone / आधारशिला",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
