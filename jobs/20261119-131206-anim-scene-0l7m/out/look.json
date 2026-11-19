@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "0.83",
+  "1.67",
+  "2.50",
+  "3.34",
+  "4.02"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s143",
+   "text": "उभरे टिकट वाला लिफ़ाफ़ा / ₹5",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s143",
+   "text": "Embossed stationery से कटा stamp / →",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s143",
+   "text": "दूसरे item पर / नहीं",
+   "t": 0.3
+  }
+ ]
+}
