@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s082" data-in="cut" data-section="PART 4 · VALID STAMPS &amp; AFFIXING" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="example">
+  <text id="example-kicker" x="140" y="220" fill="#9e1b1b" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800">उदाहरण</text>
+  <use id="unused-envelope" href="piece:embossed-envelope" transform="translate(200 280) scale(1.6)"/>
+  <g id="unused-tag">
+    <rect x="395" y="275" width="250" height="77" rx="38.5" fill="#f3ead6"/>
+    <text x="520" y="328" text-anchor="middle" fill="#6f6a63" font-size="46" font-weight="750">unused</text>
+  </g>
+  <g id="cut-annotation">
+    <circle id="embossed-target-ring" cx="705.6" cy="512" r="57" fill="none" stroke="#f2b705" stroke-width="6"/>
+    <circle id="cut-ring" cx="705.6" cy="512" r="75" fill="none" stroke="#4b4f58" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 9"/>
+    <g id="scissors" transform="translate(801 549) rotate(-15)" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M42 22L0 4l28 37m14 15L0 76l28-39" fill="none"/>
+      <circle cx="56" cy="19" r="14" fill="#f3ead6"/><circle cx="56" cy="59" r="14" fill="#f3ead6"/><circle cx="29" cy="39" r="4" fill="#9e1b1b"/>
+    </g>
+  </g>
+
+  <g id="cut-hole">
+    <circle cx="705.6" cy="512" r="64" fill="#fbf7ee" stroke="#4b4f58" stroke-width="4" stroke-dasharray="9 7"/>
+    <path d="M653 529q12 28 40 38" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g id="new-envelope"><use href="piece:address-envelope" transform="translate(1060 380) scale(1.1)"/></g>
+  <g id="cut-disc">
+    <circle cx="705.6" cy="512" r="55" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+    <circle cx="705.6" cy="512" r="43.2" fill="none" stroke="#aaa39a" stroke-width="2.4"/>
+    <circle cx="705.6" cy="512" r="38" fill="none" stroke="#ead9a8" stroke-width="1.8"/>
+  </g>
+  <g id="value-label">
+    <text x="1530" y="338" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="740" fill="#6f6a63">छपी value</text>
+    <path d="M1648 344q34 13 33 61m-12-13 12 13 12-13" fill="none" stroke="#6f6a63" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <path id="disc-cross" d="m1638 436 73 77m0-77-73 77" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+  <g id="cutout-verdict">
+    <ellipse cx="960" cy="921" rx="355" ry="80" fill="#ece7df" stroke="#4b4f58" stroke-width="5"/>
+    <ellipse cx="960" cy="921" rx="343" ry="67" fill="none" stroke="#4b4f58" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round"/>
+    <text x="960" y="936" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="790" fill="#4b4f58">cut-out · prepayment नहीं</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({on:[
+ [.52,"slide","#new-envelope",{from:"right",dist:177,spring:"soft"}],
+ [1.20,"move","#cut-disc",{by:[970,-37],spring:"soft"}],
+ [1.20,"out","#cut-annotation",{dur:.35}],[1.36,"fade","#cut-hole",{dur:.35}],
+ [3.40,"fade","#value-label",{dur:.34}],
+ [6.66,"draw","#disc-cross",{dur:.38}],
+ [8.44,"stamp","#cutout-verdict",{from:1.12,rot:-6,spring:"snap"}]
+]})
+</script></section>
