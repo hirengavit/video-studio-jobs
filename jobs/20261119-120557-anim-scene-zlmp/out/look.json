@@ -8,24 +8,5 @@
   "9.17"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s040",
-   "text": "India Post Parcel / India Post Parcel",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s040",
-   "text": "India Post Parcel / इंडिया पोस्ट पार्सल",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s040",
-   "text": "इंडिया पोस्ट पार्सल / इंडिया पोस्ट पार्सल",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
