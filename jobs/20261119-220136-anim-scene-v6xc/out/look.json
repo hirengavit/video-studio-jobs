@@ -10,10 +10,17 @@
  "problems": [],
  "warnings": [
   {
+   "kind": "low-contrast",
+   "scene": "s069",
+   "text": "Proposal (3.0:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  },
+  {
    "kind": "text-overlap",
    "scene": "s069",
    "text": "Proposal / प्रस्ताव",
-   "t": 0.3
+   "t": 1.98
   },
   {
    "kind": "text-overlap",
