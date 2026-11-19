@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s164" data-in="cut" data-section="PART 7 · LETTER CARD" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="exam">
+  <rect x="120" y="170" width="1680" height="120" rx="27" fill="#9e1b1b"/>
+  <text x="960" y="245" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="800" fill="#fff">Exam angle · परीक्षा दृष्टि</text>
+  <rect x="120" y="310" width="1680" height="680" rx="31" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M178 443h1564M178 563h1564M178 683h1564M178 803h1564" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+  <g id="exam-row-1"><rect x="193" y="340" width="59" height="59" rx="12" fill="#9e1b1b"/><rect x="198" y="345" width="49" height="49" rx="8" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="1 6" stroke-linecap="round"/><text x="222" y="382" text-anchor="middle" font-family="Inter, sans-serif" font-size="34" font-weight="800" fill="#fff">1</text><rect x="609" y="342" width="204" height="69" rx="4" fill="#f2b705" opacity=".40"/><text id="exam-text-1" x="284" y="389" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="720" fill="#6f6a63">Letter card: ≤ 5 grams</text></g>
+  <g id="exam-row-2"><rect x="193" y="460" width="59" height="59" rx="12" fill="#9e1b1b"/><rect x="198" y="465" width="49" height="49" rx="8" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="1 6" stroke-linecap="round"/><text x="222" y="502" text-anchor="middle" font-family="Inter, sans-serif" font-size="34" font-weight="800" fill="#fff">2</text><rect x="456" y="462" width="72" height="69" rx="4" fill="#f2b705" opacity=".40"/><text id="exam-text-2" x="284" y="509" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="720" fill="#2b2622">कागज़ ≥ 70 g/m²</text></g>
+  <g id="exam-row-3">
+    <rect x="193" y="580" width="59" height="59" rx="12" fill="#9e1b1b"/>
+    <rect x="198" y="585" width="49" height="49" rx="8" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="1 6" stroke-linecap="round"/>
+    <text x="222" y="622" text-anchor="middle" font-family="Inter, sans-serif" font-size="34" font-weight="800" fill="#fff">3</text>
+    <text id="no-enclosure-position" x="284" y="629" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="720" fill="#2b2622">अंदर या ऊपर कुछ नहीं</text>
+  </g>
+  <g id="exam-row-4">
+    <rect x="193" y="700" width="59" height="59" rx="12" fill="#9e1b1b"/>
+    <rect x="198" y="705" width="49" height="49" rx="8" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="1 6" stroke-linecap="round"/>
+    <text x="222" y="742" text-anchor="middle" font-family="Inter, sans-serif" font-size="34" font-weight="800" fill="#fff">4</text>
+    <text id="letter-on-breach" x="284" y="749" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="720" fill="#2b2622">शर्त टूटी → Letter माना</text>
+    <text id="double-the-shortfall" x="1100" y="749" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="750" fill="#2b2622">कमी × 2</text>
+  </g>
+  <g id="exam-row-5">
+    <rect x="193" y="838" width="59" height="59" rx="12" fill="#9e1b1b"/>
+    <rect x="198" y="843" width="49" height="49" rx="8" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="1 6" stroke-linecap="round"/>
+    <text x="222" y="880" text-anchor="middle" font-family="Inter, sans-serif" font-size="34" font-weight="800" fill="#fff">5</text>
+    <text id="extra-stamps-no-enclosure" x="284" y="887" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="720" fill="#2b2622">Extra stamps से enclosure allowed नहीं</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots:[[0,'#exam']],
+  camera:[[0,{zoom:1}]],
+  on:[
+    [0,'color','#exam-text-2',{to:'#6f6a63',dur:0.32}],
+    [0,'fade','#exam-row-3',{dur:0.32}],
+    [2.10,'color','#no-enclosure-position',{to:'#6f6a63',dur:0.32}],
+    [2.10,'fade','#exam-row-4',{dur:0.35}],
+    [5.22,'fade','#double-the-shortfall',{dur:0.34}],
+    [5.88,'highlight','#double-the-shortfall',{words:'× 2',color:'#f2b705',opacity:0.40,pad:7,dur:0.34}],
+    [6.78,'color','#letter-on-breach, #double-the-shortfall',{to:'#6f6a63',dur:0.31}],
+    [6.78,'fade','#exam-row-5',{dur:0.34}],
+    [8.28,'strike','#extra-stamps-no-enclosure',{words:'allowed',color:'#4b4f58',width:6,dur:0.36,dim:0.65}]
+  ]
+}
+</script>
+</section>
