@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 240" width="220" height="240">
+  <defs>
+    <clipPath id="week-day-tile-clip"><rect x="1.5" y="1.5" width="217" height="237" rx="12"/></clipPath>
+  </defs>
+  <g id="tile">
+    <rect x="1.5" y="1.5" width="217" height="237" rx="12" fill="#ffffff"/>
+  </g>
+  <g id="header" clip-path="url(#week-day-tile-clip)">
+    <rect x="0" y="0" width="220" height="60" fill="#9e1b1b"/>
+    <path d="M1.5 60 H218.5" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g id="body">
+    <rect x="12" y="72" width="196" height="154" rx="6" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+  </g>
+  <rect x="1.5" y="1.5" width="217" height="237" rx="12" fill="none" stroke="#2b2622" stroke-width="3"/>
+  <circle data-anchor="base" cx="110" cy="238.5" r="0"/>
+  <circle data-anchor="top" cx="110" cy="1.5" r="0"/>
+</svg>
