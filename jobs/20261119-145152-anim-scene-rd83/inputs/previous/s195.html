@@ -1,0 +1,71 @@
+<section class="vs-scene" id="s195" data-in="cut" data-section="PART 9 · UNPAID &amp; SHORT-PAID ITEMS" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+<g id="sum1">
+  <g id="worked-scale">
+    <rect x="140" y="345" width="600" height="577" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <use id="worked-scale-prop" href="piece:letter-scale" transform="translate(160 416.6) scale(1.4)"/>
+    <g id="worked-scale-pan"><circle data-anchor="top" cx="440" cy="542.6" r="0"/></g>
+    <g id="worked-envelope">
+      <use href="piece:envelope-article" transform="translate(300 343.1) scale(.70)"/>
+      <circle data-anchor="base" cx="440" cy="542.6" r="0"/>
+    </g>
+    <text id="ordinary-letter-readout" x="440" y="755" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="800" fill="#2b2622">20 g तक</text>
+    <g id="ordinary-letter-label">
+      <text x="440" y="952" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="820" fill="#2b2622">ORDINARY LETTER</text>
+      <text x="440" y="998" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650" fill="#6f6a63">साधारण पत्र</text>
+    </g>
+    <g id="unpaid-envelope-tag">
+      <rect x="152" y="482" width="187" height="55" rx="14" fill="#4b4f58"/>
+      <text x="246" y="518" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="29" font-weight="800" fill="#fff">बिना postage</text>
+    </g>
+  </g>
+  <g id="sum-sheet">
+    <rect x="820" y="200" width="1000" height="760" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M848 200H1792Q1820 200 1820 228V216H820V228Q820 200 848 200Z" fill="#9e1b1b"/>
+    <text id="worked-examples-kicker" x="890" y="253" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="700" fill="#6f6a63">तीन हिसाब</text>
+    <text id="worked-example-title" x="890" y="321" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="59" font-weight="830" fill="#9e1b1b">हिसाब 1 · UNPAID LETTER</text>
+    <text id="worked-example-hi" x="891" y="369" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#6f6a63">बिना भुगतान letter</text>
+    <path d="M890 396H1750" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <text id="ordinary-letter-rate" x="890" y="486" font-family="Georgia,serif" font-size="68" font-weight="700" fill="#2b2622">Rate = ₹5</text>
+    <text id="ordinary-unpaid-collection" x="890" y="610" class="hi" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="68" font-weight="700" fill="#2b2622">वसूली = 2 × ₹5</text>
+    <g id="unpaid-letter-total">
+      <rect x="890" y="665" width="310" height="105" rx="25" fill="#2e7d4f"/>
+      <text x="1045" y="737" text-anchor="middle" font-family="Georgia,serif" font-size="66" font-weight="700" fill="#fff">= ₹10</text>
+    </g>
+  </g>
+</g>
+<g id="sum2">
+  <g id="shortpaid-letter">
+    <use href="piece:address-envelope" transform="translate(120 360) scale(1)"/>
+    <g id="valid-three-rupee-stamp">
+      <use href="piece:postage-stamp" transform="translate(602 369) scale(.386)"/>
+      <text x="679" y="455" text-anchor="middle" font-family="Inter, sans-serif" font-size="42" font-weight="830" fill="#9e1b1b">₹3</text>
+    </g>
+  </g>
+  <g id="shortpaid-worksheet">
+    <rect x="820" y="200" width="1000" height="760" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M848 200H1792Q1820 200 1820 228V216H820V228Q820 200 848 200Z" fill="#9e1b1b"/>
+    <text x="890" y="253" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="700" fill="#6f6a63">तीन हिसाब</text>
+    <text id="shortpaid-example-title" x="890" y="321" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="59" font-weight="830" fill="#9e1b1b">हिसाब 2 · कम postage</text>
+    <path d="M890 396H1750" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <text id="shortpaid-ordinary-rate" x="890" y="486" font-family="Georgia,serif" font-size="68" font-weight="700" fill="#2b2622">Rate = ₹5</text>
+    <text id="shortpaid-valid-credit" x="890" y="610" font-family="Georgia,serif" font-size="68" font-weight="700" fill="#2b2622">Valid postage = ₹3</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots:[[0,'#sum1'],[1.80,'#sum2']],
+  camera:[[0,{zoom:1}]],
+  on:[
+    [0,'place','#worked-envelope',{on:'#worked-scale-pan'}],
+    [0.64,'pop','#unpaid-letter-total',{from:0.93,spring:'soft'}],
+    [1.83,'words','#shortpaid-example-title',{gap:0.30,dist:12,spring:'soft'}],
+    [4.69,'type','#shortpaid-ordinary-rate',{cps:12}],
+    [6.57,'pop','#valid-three-rupee-stamp',{from:0.91,spring:'soft'}],
+    [7.85,'type','#shortpaid-valid-credit',{cps:16}]
+  ]
+}
+</script>
+</section>
