@@ -18,10 +18,10 @@
       
       <text id="letter-label" x="440" y="860" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="850" fill="#9e1b1b">Letter · पत्र</text>
 <g id="new-stamps">
-<rect id="stamp-seat-a" x="423" y="570" width="2" height="1" fill="transparent"/>
-<rect id="stamp-seat-b" x="549" y="570" width="2" height="1" fill="transparent"/>
-<g id="added-a-show"><g id="added-a"><use href="piece:adhesive-stamp" transform="translate(366 436) rotate(-3 56 66) scale(.7)"/></g></g>
-<g id="added-b-show"><g id="added-b"><use href="piece:adhesive-stamp" transform="translate(492 436) rotate(2 56 66) scale(.7)"/></g></g>
+<rect id="stamp-seat-a" x="391" y="594" width="2" height="1" fill="transparent"/>
+<rect id="stamp-seat-b" x="517" y="594" width="2" height="1" fill="transparent"/>
+<g id="added-a-show"><g id="added-a"><use href="piece:adhesive-stamp" transform="translate(334 460) rotate(-3 56 66) scale(.7)"/></g></g>
+<g id="added-b-show"><g id="added-b"><use href="piece:adhesive-stamp" transform="translate(460 460) rotate(2 56 66) scale(.7)"/></g></g>
 </g>
 <g id="enclosure-note">
 <rect x="120" y="870" width="660" height="120" rx="17" fill="#f3ead6"/>
@@ -41,11 +41,12 @@
 <g id="answer">
 <rect x="950" y="740" width="740" height="100" rx="26" fill="#9e1b1b"/>
 <g id="answer-text">
-<text x="1283" y="811" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="810" fill="#fff">Delivery पर</text>
-<text x="1341" y="811" text-anchor="middle" font-family="Inter, sans-serif" font-size="55" font-weight="810" fill="#fff">₹5</text>
-<text x="1410" y="811" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="810" fill="#fff">वसूले</text>
+<rect id="answer-value-mark" x="1361" y="752" width="88" height="76" rx="11" fill="#fde9a6"/>
+<text x="1347" y="811" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="810" fill="#fff">Delivery पर</text>
+<text id="answer-value" x="1405" y="811" text-anchor="middle" font-family="Inter, sans-serif" font-size="55" font-weight="810" fill="#fff">₹5</text>
+<text x="1474" y="811" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="810" fill="#fff">वसूले</text>
 </g>
-<g id="answer-value-mark"><rect x="1297" y="752" width="88" height="76" rx="11" fill="#fde9a6"/><text x="1341" y="811" text-anchor="middle" font-family="Inter, sans-serif" font-size="55" font-weight="810" fill="#8a5d00">₹5</text></g>
+
 </g>
 </g></g>
 </svg><script type="text/scene">
@@ -53,7 +54,7 @@
 on:[
  [0,'highlight','#letter-postage-value',{color:'#f2b705',opacity:.42,dur:.01}],
  [.38,'fade','#work-2',{dur:.30}],[2.10,'fade','#work-3',{dur:.30}],[3.86,'pop','#answer',{from:.94}],
- [4.80,'fade','#answer-value-mark',{dur:.25}],
+ [4.80,'fade','#answer-value-mark',{dur:.25}],[4.80,'color','#answer-value',{to:'#8a5d00',dur:.20}],
  [7.14,'place','#added-a',{on:'#stamp-seat-a'}],[7.40,'place','#added-b',{on:'#stamp-seat-b'}],
  [7.14,'fade','#added-a-show',{dur:.13}],[7.40,'fade','#added-b-show',{dur:.13}],[9.64,'fade','#enclosure-note',{dur:.29}],
  [11.76,'strike','#enclosure-text',{words:'allowed',color:'#4b4f58',dur:.25}]
