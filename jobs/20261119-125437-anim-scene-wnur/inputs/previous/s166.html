@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s166" data-in="fade" data-in-dur="0.5" data-section="PART 8 · POSTCARD" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="postcard-rules">
+  <rect x="120" y="176" width="10" height="56" rx="5" fill="#9e1b1b"/>
+  <text x="154" y="221" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="67" font-weight="850" fill="#9e1b1b">Postcard की 6 शर्तें</text>
+  <g id="left-panel">
+    <rect x="120" y="280" width="820" height="710" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <g id="left-head">
+      <text x="172" y="346" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="830" fill="#2b2622">Payment · वज़न · Size</text>
+      <text x="174" y="401" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="670" fill="#6f6a63">भुगतान · वज़न · आकार</text>
+      <path d="M171 420H889" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g id="size-row">
+      <rect x="170" y="452" width="720" height="220" rx="20" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+      <use id="sample-card" href="piece:postcard-blank" transform="translate(190 455) scale(.53)"/>
+      <path d="M204 644h183m-174-8-9 8 9 8m165-16 9 8-9 8M404 507v115m-8-105 8-10 8 10m-16 94 8 11 8-11" fill="none" stroke="#6f6a63" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="445" y="518" font-family="Inter, sans-serif" font-size="52" font-weight="840" fill="#2b2622">Size</text>
+      <text id="size-hi" x="447" y="570" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="690" fill="#6f6a63">आकार</text>
+      <text id="size-strict" x="447" y="631" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="750" fill="#2b2622">ठीक</text>
+      <text id="size-val" x="558" y="631" font-family="Inter, sans-serif" font-size="47" font-weight="850" fill="#2b2622">140 × 90 mm</text>
+      <path id="strict-underline" d="M447 644q39 5 82-1" fill="none" stroke="#8a5d00" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g id="weight-row">
+      <rect x="170" y="707" width="720" height="230" rx="20" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+      <use id="letter-scale" href="piece:letter-scale" transform="translate(183 701) scale(.56)"/>
+      <text x="445" y="784" font-family="Inter, sans-serif" font-size="52" font-weight="840" fill="#2b2622">Weight</text>
+      <text x="447" y="834" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="690" fill="#6f6a63">वज़न</text>
+      <text id="weight-val" x="445" y="902" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="840" fill="#2b2622">अधिकतम 5 grams</text>
+    </g>
+  </g>
+  <g id="right-panel">
+    <rect x="1000" y="280" width="820" height="710" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <g id="right-head"><text x="1052" y="375" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="830" fill="#2b2622">card की बनावट</text><path d="M1051 420H1769" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/></g>
+  </g>
+</g>
+</svg><script type="text/scene">
+{on:[
+ [2.94,'fade','#left-head',{dur:0.32}],[6.18,'fade','#right-head',{dur:0.31}],
+ [8.46,'fade','#size-row',{dur:0.27}],[8.46,'pop','#sample-card',{from:0.94}],[8.96,'fade','#size-hi',{dur:0.24}],
+ [9.28,'fade','#size-strict',{dur:0.24}],[9.28,'words','#size-val',{gap:0.48,dist:7}],[10.84,'draw','#strict-underline',{dur:0.33}],
+ [12.30,'fade','#weight-row',{dur:0.27}],[12.30,'pop','#letter-scale',{from:0.94}],[13.62,'pop','#weight-val',{from:0.94}]
+]}
+</script></section>
