@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "1.74",
+  "3.48",
+  "5.22",
+  "6.96",
+  "8.55"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s029",
+   "message": "color: nothing found for \"#mode-disc-1, #mode-disc-2, #mode-disc-3, #mode-en-1, #mode-en-2, #mode-en-3\"",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s029",
+   "text": "डाक सेवाएँ · भुगतान के 5 तरीके / Post Office Rules 2024",
+   "t": 0.3
+  }
+ ]
+}
