@@ -8,12 +8,5 @@
   "13.41"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s140",
-   "text": "कीमत तय करते हैं: / Circle Head",
-   "t": 5.42
-  }
- ]
+ "warnings": []
 }
