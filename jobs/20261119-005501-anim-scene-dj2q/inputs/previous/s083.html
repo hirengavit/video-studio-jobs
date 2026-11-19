@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s083" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g text-anchor="middle" font-family="Inter, 'Noto Sans Devanagari', sans-serif">
+      <text x="960" y="200" font-size="64" font-weight="800" fill="#9e1b1b">2026 common organisational structure</text>
+      <text x="960" y="262" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#6f6a63">2026 का साझा संगठनात्मक ढाँचा</text>
+      <g id="region">
+        <rect x="120" y="340" width="780" height="620" rx="28" fill="#f7eee0" stroke="#ba6760" stroke-width="3"/>
+        <path id="region-band" d="M148 340 H872 Q900 340 900 368 V438 H120 V368 Q120 340 148 340 Z" fill="#9e1b1b" stroke="#9e1b1b" stroke-width="3"/>
+        <g id="region-label" fill="#ffffff">
+          <text x="510" y="389" font-size="51" font-weight="800">Region</text>
+          <text x="510" y="426" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="35" font-weight="650" fill="#fde9a6">क्षेत्र</text>
+        </g>
+        <g id="one">
+          <circle cx="182" cy="387" r="30" fill="#b02928" stroke="#fde9a6" stroke-width="3"/>
+          <text x="182" y="404" font-size="45" font-weight="800" fill="#ffffff">1</text>
+        </g>
+        <rect id="head-card" x="150" y="454" width="720" height="207" rx="22" fill="#ffffff" stroke="#dfcdb3" stroke-width="3"/>
+        <text id="head-en" x="510" y="513" font-size="60" font-weight="800" fill="#2b2622">Head of Region</text>
+        <text id="head-hi" x="510" y="570" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#6f6a63">क्षेत्र प्रमुख</text>
+        <g id="pmg">
+          <rect x="174" y="583" width="286" height="62" rx="31" fill="#fde9a6" stroke="#d7a940" stroke-width="2"/>
+          <text x="317" y="626" font-size="42" font-weight="800" fill="#2b2622">PMG level</text>
+        </g>
+        <text id="or" x="510" y="627" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="700" fill="#6f6a63">या</text>
+        <g id="director">
+          <rect x="560" y="583" width="286" height="62" rx="31" fill="#fde9a6" stroke="#d7a940" stroke-width="2"/>
+          <text x="703" y="626" font-size="37" font-weight="800" fill="#2b2622">Director level</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.00, 'draw', '#region-band', {dur: 0.36}],
+      [0.18, 'fade', '#region-label', {dur: 0.30}],
+      [2.06, 'pop', '#one', {from: 0.82, spring: 'soft'}],
+      [2.83, 'fade', '#head-card', {dur: 0.30}],
+      [3.00, 'words', '#head-en', {gap: 0.12, dist: 16}],
+      [3.50, 'fade', '#head-hi', {dur: 0.36}],
+      [5.14, 'pop', '#pmg', {from: 0.84, spring: 'soft'}],
+      [8.12, 'fade', '#or', {dur: 0.24}],
+      [8.24, 'pop', '#director', {from: 0.84, spring: 'soft'}],
+    ],
+  }
+  </script>
+</section>
