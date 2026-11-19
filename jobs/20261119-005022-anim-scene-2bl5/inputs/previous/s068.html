@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s068" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+ <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <rect x="120" y="222" width="580" height="668" rx="30" fill="#9e1b1b"/>
+  <rect x="120" y="222" width="580" height="668" rx="30" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 25" stroke-linecap="round"/>
+  <text x="190" y="386" font-size="44" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="650" fill="#f3ead6">मुख्य शब्द</text>
+  <path d="M190 420h94" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/>
+  <text id="term" x="187" y="545" fill="#fff" font-family="Inter, sans-serif" font-size="76" font-weight="800">Circle Head</text>
+  <text id="termHi" x="190" y="628" fill="#f3ead6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="650">परिमंडल प्रमुख</text>
+  <rect id="meaning" x="760" y="222" width="1040" height="668" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <g id="first">
+   <rect x="813" y="269" width="934" height="145" rx="20" fill="#fbf7ee"/>
+   <rect x="833" y="298" width="6" height="88" rx="3" fill="#9e1b1b"/>
+   <text id="firstHi" x="873" y="365" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="68" font-weight="650" fill="#2b2622">संबंधित</text>
+   <text id="firstEn" x="1208" y="365" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="#9e1b1b">CPMG</text>
+  </g>
+  <g id="orLabel">
+   <path d="M842 487h343m192 0h342" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+   <text x="1280" y="506" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="650" fill="#6f6a63">या</text>
+  </g>
+  <g id="second">
+   <rect x="813" y="559" width="934" height="284" rx="20" fill="#fbf7ee"/>
+   <rect x="833" y="592" width="6" height="217" rx="3" fill="#9e1b1b"/>
+   <text id="officer" x="873" y="672" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="650" fill="#2b2622">वो officer जो</text>
+   <text id="circle" x="1254" y="672" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="650" fill="#2b2622">Circle में</text>
+   <rect id="powerMark" x="861" y="708" width="559" height="87" rx="17" fill="#fde9a6"/>
+   <text id="authority" x="873" y="773" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="750" fill="#2b2622">CPMG की powers</text>
+   <text id="exercise" x="1454" y="773" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="650" fill="#2b2622">चलाता है</text>
+  </g>
+  <text x="765" y="960" font-family="Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">Post Office Rules 2024</text>
+ </svg>
+ <script type="text/scene">
+ {
+   on: [
+    [0, 'words', '#term', {gap:0.36, dist:12, from:'down', spring:'fast'}],
+    [0.54, 'fade', '#termHi', {dur:0.24}],
+    [1.74, 'fade', '#meaning', {dur:0.29}],
+    [1.86, 'fade', '#first', {dur:0.23}],
+    [1.94, 'fade', '#firstHi', {dur:0.22}],
+    [2.68, 'fade', '#firstEn', {dur:0.23}],
+    [4.10, 'fade', '#orLabel', {dur:0.25}],
+    [4.70, 'fade', '#second', {dur:0.23}],
+    [4.78, 'words', '#officer', {gap:0.50, dist:12, from:'down', spring:'fast'}],
+    [6.60, 'words', '#circle', {gap:0.42, dist:12, from:'down', spring:'fast'}],
+    [7.38, 'reveal', '#powerMark', {dur:1.02, from:'left'}],
+    [7.38, 'words', '#authority', {gap:0.50, dist:12, from:'down', spring:'fast'}],
+    [8.64, 'words', '#exercise', {gap:0.64, dist:12, from:'down', spring:'fast'}]
+   ]
+ }
+ </script>
+</section>
