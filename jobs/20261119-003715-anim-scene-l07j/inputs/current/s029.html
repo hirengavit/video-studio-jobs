@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s029" data-in="cut" data-section="PART 1 · CENTRAL ADMINISTRATION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" text-anchor="middle" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="secretary">
+      <rect x="100" y="200" width="760" height="800" rx="32" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M132 200 H828 A32 32 0 0 1 860 232 V400 H100 V232 A32 32 0 0 1 132 200 Z" fill="#9e1b1b"/>
+      <text x="480" y="306" fill="#fff" font-size="76" font-weight="800">Secretary (Posts)</text>
+      <text x="480" y="367" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#fde9a6" font-size="48" font-weight="700">सचिव (डाक)</text>
+    </g>
+    <g id="dgps">
+      <rect x="1060" y="200" width="760" height="800" rx="32" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M1092 200 H1788 A32 32 0 0 1 1820 232 V400 H1060 V232 A32 32 0 0 1 1092 200 Z" fill="#f2b705"/>
+      <text x="1440" y="306" fill="#2b2622" font-size="84" font-weight="800">DGPS</text>
+    </g>
+    <text id="dgps-hi" x="1440" y="367" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="48" font-weight="700">महानिदेशक डाक सेवाएँ</text>
+    <g id="not-equal">
+      <circle cx="960" cy="520" r="80" fill="#9e1b1b"/>
+      <text x="960" y="554" fill="#fff" font-size="105" font-weight="800">≠</text>
+    </g>
+    <text id="separate" x="960" y="669" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="42" font-weight="750">दो अलग</text>
+    <text id="posts" x="960" y="719" fill="#6f6a63" font-size="42" font-weight="750">posts</text>
+    <rect id="department-panel" x="138" y="503" width="684" height="384" rx="26" fill="#fbf2e0" stroke="#ead9a8" stroke-width="2"/>
+    <text id="department-line" x="480" y="719" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="64" font-weight="800">Department चलाते हैं</text>
+    <rect id="operations-panel" x="1098" y="503" width="684" height="384" rx="26" fill="#fbf2e0" stroke="#ead9a8" stroke-width="2"/>
+    <text id="operations-line" x="1440" y="719" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="64" font-weight="800">operations चलाते हैं</text>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [2.18, 'pop', '#dgps', {from: 0.95, spring: 'soft'}],
+      [2.70, 'fade', '#dgps-hi', {dur: 0.35}],
+      [3.68, 'stamp', '#not-equal', {from: 1.13, rot: -4, spring: 'soft'}],
+      [4.48, 'fade', '#separate', {dur: 0.28}],
+      [4.74, 'highlight', '#separate', {words: 'अलग', color: '#f2b705', opacity: 0.42, dur: 0.35, pad: 5}],
+      [4.92, 'fade', '#posts', {dur: 0.30}],
+      [6.48, 'fade', '#department-panel', {dur: 0.32}],
+      [6.62, 'words', '#department-line', {gap: 0.57, dist: 16}],
+      [9.50, 'fade', '#operations-panel', {dur: 0.28}],
+      [9.62, 'words', '#operations-line', {gap: 0.21, dist: 16}],
+      [9.93, 'highlight', '#operations-line', {words: 'operations', color: '#f2b705', opacity: 0.42, dur: 0.35, pad: 12}],
+    ],
+  }
+  </script>
+</section>
