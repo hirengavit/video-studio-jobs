@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s128" data-in="cut" data-section="PART 4 · CIRCLES &amp; HEADQUARTERS" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="diagram">
+<g id="pdy" text-anchor="middle">
+      <text id="group-kicker" class="hi" x="960" y="213" font-size="47" font-weight="690" fill="#6f6a63">चौथा group</text>
+      <g id="pdy-card">
+        <rect x="560" y="240" width="800" height="230" rx="35" fill="#9e1b1b"/>
+        <text x="960" y="328" font-size="72" font-weight="790" fill="#fffefa">Puducherry</text>
+        <text id="pdy-hi" class="hi" x="960" y="385" font-size="47" font-weight="650" fill="#fde9a6">पुडुचेरी</text>
+        <g id="ut-chip">
+          <rect x="622" y="400" width="676" height="58" rx="29" fill="#fde9a6"/>
+          <text x="960" y="441" class="hi" font-size="36" font-weight="720" fill="#514028">Union Territory · केंद्र शासित प्रदेश</text>
+        </g>
+      </g>
+      <g id="split-guides" fill="none" stroke="#837971" stroke-width="4" stroke-linecap="round">
+        <path d="M960 470 V540 M360 507 H1560"/>
+      </g>
+      <g id="tile1"><path d="M448 507 H360 V540" fill="none" stroke="#837971" stroke-width="4" stroke-linecap="round"/><rect x="160" y="540" width="400" height="180" rx="26" fill="#fffefa" stroke="#938981" stroke-width="2"/><g id="yanam"><text x="360" y="628" fill="#2b2622" font-size="65" font-weight="750">Yanam</text><text x="360" y="686" class="hi" fill="#6f6a63" font-size="49" font-weight="650">यानम</text></g></g>
+      <g id="tile2"><rect x="760" y="540" width="400" height="180" rx="26" fill="#fffefa" stroke="#938981" stroke-width="2"/></g>
+      <g id="tile3"><path d="M1472 507 H1560 V540" fill="none" stroke="#837971" stroke-width="4" stroke-linecap="round"/><rect x="1360" y="540" width="400" height="180" rx="26" fill="#fffefa" stroke="#938981" stroke-width="2"/></g>
+    </g>
+<g id="circles" text-anchor="middle" fill="#6f6a63">
+  <text x="630" y="752" font-size="40" font-weight="720">3 Circles</text>
+  <text x="630" y="787" class="hi" font-size="32" font-weight="650">3 परिमंडल</text>
+</g>
+<g id="slot1"><rect x="90" y="800" width="420" height="190" rx="27" fill="#f3ead6" stroke="#9e1b1b" stroke-width="3"/>
+  <g id="ap" text-anchor="middle"><text x="300" y="883" fill="#2b2622" font-size="36" font-weight="770">Andhra Pradesh Circle</text>
+  <text x="300" y="931" class="hi" fill="#6f6a63" font-size="32" font-weight="650">आंध्र प्रदेश परिमंडल</text></g>
+</g>
+<g id="slot2"><rect x="750" y="800" width="420" height="190" rx="27" fill="#f3ead6" stroke="#9e1b1b" stroke-width="3"/></g>
+<g id="slot3"><rect x="1410" y="800" width="420" height="190" rx="27" fill="#f3ead6" stroke="#9e1b1b" stroke-width="3"/></g>
+<path id="arrow1" d="M300 729v62m-18-21 18 21 18-21" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [0.02,'move','#tile1',{by:[-60,0],spring:'soft'}],
+    [0.02,'move','#tile3',{by:[60,0],spring:'soft'}],
+    [3.10,'pop','#slot1, #slot2, #slot3',{from:0.96,spring:'fast',stagger:0.13}],
+    [3.74,'fade','#circles',{dur:0.24}],
+    [5.68,'pop','#yanam',{from:0.96,spring:'fast'}],
+    [6.10,'draw','#arrow1',{dur:0.36}],
+    [6.10,'fade','#ap',{dur:0.30}]
+  ]
+}
+</script>
+</section>
