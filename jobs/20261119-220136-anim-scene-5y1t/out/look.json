@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.52",
+  "5.04",
+  "7.55",
+  "10.07",
+  "12.44"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "mostly-empty",
+   "scene": "s015",
+   "message": "a card is mostly empty at 12.4 s: bring its items in sooner, or size it for what it holds now",
+   "t": 12.44
+  }
+ ]
+}
