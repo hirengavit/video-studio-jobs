@@ -1,0 +1,26 @@
+{
+ "moments": [
+  "0.30",
+  "1.88",
+  "3.76",
+  "5.65",
+  "7.53",
+  "9.26"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s150",
+   "text": "3 (1.0:1) / 4 (1.0:1) / 5 (1.0:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 3.76
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s150",
+   "message": "a card is mostly empty at 3.8 s: bring its items in sooner, or size it for what it holds now",
+   "t": 3.76
+  }
+ ]
+}
