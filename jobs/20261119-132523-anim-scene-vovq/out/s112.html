@@ -67,8 +67,8 @@
     <text id="inside-label" x="490" y="484" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="780" fill="#2b2622">ज़्यादातर stock: अंदर</text>
     <use id="day-safe" href="piece:office-safe" transform="translate(423 627)"/>
     <g id="inside-stock">
-      <use href="piece:stamp-sheet" transform="translate(513 789) scale(.17)"/>
-      <use href="piece:stamp-sheet" transform="translate(522 791) scale(.17)"/>
+      <use href="piece:stamp-sheet" transform="translate(499 781) scale(.17)"/>
+      <use href="piece:stamp-sheet" transform="translate(515 787) scale(.17)"/>
       <use href="piece:stamp-sheet" transform="translate(531 793) scale(.17)"/>
     </g>
     <path id="stock-arrow" d="M887 765H1060m-38-31 38 31-38 31" fill="none" stroke="#2b2622" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -88,7 +88,7 @@
   on:[
     [0,'place','#storage-tin',{on:'#box-shelf',x:1422}],
     [0,'highlight','#blotting-label',{words:'blotting paper',color:'#f2b705',opacity:.38,dur:.01,pad:6}],
-    [1.68,'type','#inside-label',{cps:90}],
+    [1.68,'words','#inside-label',{gap:.08,dist:8,from:'down',spring:'soft'}],
     [1.80,'highlight','#inside-label',{words:'ज़्यादातर',color:'#f2b705',opacity:.40,dur:.32}],
     [4.52,'draw','#stock-arrow',{dur:.38}],
     [4.52,'pop','#outside-counter',{from:.96,spring:'soft'}],
