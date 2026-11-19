@@ -1,0 +1,37 @@
+{
+ "moments": [
+  "0.30",
+  "2.62",
+  "5.25",
+  "7.87",
+  "10.50",
+  "12.97"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-off-frame",
+   "scene": "s083",
+   "text": "Stamps में initials या पहचान के निशान",
+   "t": 2.62
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s083",
+   "text": "बहुत छोटे छेदों से",
+   "t": 7.87
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s083",
+   "text": "Identifying perforation",
+   "t": 10.5
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s083",
+   "text": "पहचान के लिए छिद्रण",
+   "t": 10.5
+  }
+ ]
+}
