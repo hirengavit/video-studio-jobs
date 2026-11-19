@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.42",
+  "4.85",
+  "7.27",
+  "9.70",
+  "11.97"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s116",
+   "text": "गलत denomination खरीदा, तब भी / cash वापसी या बदलने",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s116",
+   "text": "cash वापसी या बदलने / का आम",
+   "t": 0.3
+  }
+ ]
+}
