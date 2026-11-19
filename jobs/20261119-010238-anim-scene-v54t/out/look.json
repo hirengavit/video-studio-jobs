@@ -10,15 +10,9 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s110",
-   "message": "words: option \"dur\" isn't used (it takes: gap, dist, from, spring)",
-   "t": 0.3
-  },
-  {
    "kind": "low-contrast",
    "scene": "s110",
-   "text": "Circle directory और matching questions (1.7:1)",
+   "text": "Circle directory और matching questions (1.1:1)",
    "message": "text too close in colour to what's behind it",
    "t": 0.3
   }
