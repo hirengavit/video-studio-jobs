@@ -1,0 +1,70 @@
+<section class="vs-scene" id="s069" data-in="cut" data-section="PART 3 · TYPES OF STAMPS &amp; PHILATELY" data-series="STAMPS &amp; STATIONERY">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="proposal">
+      <rect x="100" y="180" width="1720" height="120" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text id="proposal-heading" x="960" y="254" text-anchor="middle" class="hi" font-size="52" font-weight="800" fill="#9e1b1b">Commemorative stamp का proposal कौन दे सकता है?</text>
+      <g id="c1">
+        <rect x="100" y="360" width="540" height="580" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <g id="proposal-doc-opening">
+          <path d="M255 414 H433 L480 462 V638 H255Z" fill="#fbf7ee" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M433 414 V462 H480" fill="#f3ead6" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M279 508 H341 M279 533 H341 M279 558 H341 M279 583 H400" stroke="#aaa39a" stroke-width="4" stroke-linecap="round"/>
+          <use id="proposal-stamp-opening" href="piece:postage-stamp" transform="translate(319 462) scale(.43)"/>
+        </g>
+        <g id="proposal-doc" transform="translate(74 37) scale(.8)">
+          <path d="M255 414 H433 L480 462 V638 H255Z" fill="#fbf7ee" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M433 414 V462 H480" fill="#f3ead6" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M279 508 H341 M279 533 H341 M279 558 H341 M279 583 H400" stroke="#aaa39a" stroke-width="4" stroke-linecap="round"/>
+          <use id="proposal-stamp" href="piece:postage-stamp" transform="translate(319 462) scale(.43)"/>
+        </g>
+        <text id="proposal-en" x="370" y="720" text-anchor="middle" font-family="Inter, sans-serif" font-size="63" font-weight="800" fill="#2b2622">Proposal</text>
+        <text id="proposal-hi" x="370" y="778" text-anchor="middle" class="hi" font-size="44" font-weight="650" fill="#6f6a63">प्रस्ताव</text>
+        <g id="citizen">
+          <rect x="124" y="690" width="492" height="60" rx="30" fill="#2e7d4f"/>
+          <text class="hi" x="370" y="733" text-anchor="middle" font-size="36" font-weight="750" fill="#ffffff">भारत का कोई भी citizen</text>
+        </g>
+        <text id="admin" class="hi" x="370" y="800" text-anchor="middle" font-size="34" font-weight="580" fill="#6f6a63"><tspan x="370">administrative instructions</tspan><tspan x="370" dy="50">के हिसाब से</tspan></text>
+      </g>
+      <path id="arrow1" d="M648 650h34m-13-12 13 12-13 12" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="c2">
+        <rect x="690" y="360" width="540" height="580" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+        <g id="review-art" transform="translate(190 38) scale(.8)">
+          <path d="M858 419h151l40 41v176H858z" fill="#fbf7ee" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M1009 419v41h40" fill="#f3ead6" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M883 489h95m-95 32h129m-129 32h115m-115 32h62" fill="none" stroke="#aaa39a" stroke-width="4" stroke-linecap="round"/>
+          <path d="M1034 554l52 52" fill="none" stroke="#9e1b1b" stroke-width="17" stroke-linecap="round"/>
+          <circle cx="997" cy="518" r="49" fill="#fbf7ee" fill-opacity=".53" stroke="#2b2622" stroke-width="7"/>
+        </g>
+        <text id="review-title" class="hi" x="960" y="647" text-anchor="middle" font-size="48" font-weight="800" fill="#2b2622">Proposals की जाँच</text>
+        <g id="government">
+          <rect x="716" y="690" width="488" height="70" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+          <text x="879" y="738" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" textLength="290" lengthAdjust="spacingAndGlyphs" font-weight="800" fill="#9e1b1b">Central Government</text>
+          <text id="government-hi" class="hi" x="1120" y="738" text-anchor="middle" font-size="34" font-weight="650" fill="#6f6a63">केंद्र सरकार</text>
+        </g>
+        <text id="gov-instructions" class="hi" x="960" y="820" text-anchor="middle" font-size="34" font-weight="620" fill="#6f6a63">के instructions से</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots:[[0,'#proposal']],
+    camera:[[0,{zoom:1}]],
+    on:[
+      [.12,'move','#proposal-doc-opening',{by:[0,-68],spring:'snap'}],
+      [.12,'out','#proposal-doc-opening',{dur:.36,scale:.80}],
+      [.29,'fade','#proposal-doc',{dur:.19}],
+      [.12,'move','#proposal-en',{by:[0,-112],spring:'snap'}],
+      [.12,'move','#proposal-hi',{by:[0,-126],spring:'snap'}],
+      [1.26,'pop','#citizen',{from:.96,spring:'snap'}],
+      [2.18,'fade','#admin',{dur:.28}],
+      [5.02,'draw','#arrow1',{dur:.38}],
+      [5.02,'pop','#c2',{from:.96,spring:'snap'}],
+      [5.02,'fade','#review-title',{dur:.27}],
+      [6.82,'pop','#government',{from:.96,spring:'snap'}],
+      [7.32,'fade','#government-hi',{dur:.23}],
+      [8.28,'fade','#gov-instructions',{dur:.25}]
+    ]
+  }
+  </script>
+</section>
