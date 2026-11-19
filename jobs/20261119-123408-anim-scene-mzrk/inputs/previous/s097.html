@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s097" data-in="fade" data-in-dur="0.5" data-section="PART 4 · VALID STAMPS &amp; AFFIXING" data-series="STAMPS &amp; STATIONERY">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text class="hi" x="960" y="217" text-anchor="middle" font-size="57" font-weight="760" fill="#9e1b1b">एक फर्क</text>
+    <g id="s097-invalid">
+      <rect x="140" y="280" width="760" height="700" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <g id="s097-invalid-band">
+        <path d="M168 280H872Q900 280 900 308V450H140V308Q140 280 168 280Z" fill="#9e1b1b"/>
+        <text x="520" y="356" font-family="Inter, sans-serif" text-anchor="middle" font-size="70" font-weight="760" fill="#ffffff">Invalid payment</text>
+        <text class="hi" x="520" y="418" text-anchor="middle" font-size="45" font-weight="650" fill="#fde9a6">अमान्य भुगतान</text>
+      </g>
+      <g id="s097-damaged">
+        <rect x="432" y="486" width="176" height="217" rx="14" fill="#9e1b1b" stroke="#ffffff" stroke-width="11" stroke-dasharray="0 21" stroke-linecap="round"/>
+        <path d="M449 504H591V648l-20 9 9 12-22 17H449Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+        <path d="M475 530l32 9m-43 18 74 23m-22 22 48 9m-89 16 42 16" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+        <path d="M542 647h33v24h-39v-16z" fill="none" stroke="#9e1b1b" stroke-width="3"/>
+      </g>
+      <text id="s097-unpaid" class="hi" x="520" y="774" text-anchor="middle" font-size="49" font-weight="700" fill="#4b4f58">postage नहीं चुकता</text>
+      <path id="s097-cross" d="M247 739l31 31m0-31-31 31" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+      <text id="s097-not-proof" class="hi" x="520" y="859" text-anchor="middle" font-size="49" font-weight="650" fill="#2b2622">fraud साबित नहीं</text>
+    </g>
+    <g id="s097-fraud">
+      <rect x="1020" y="280" width="760" height="700" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <g id="s097-fraud-band">
+        <path d="M1048 280H1752Q1780 280 1780 308V450H1020V308Q1020 280 1048 280Z" fill="#f2b705"/>
+        <text class="hi" x="1400" y="356" text-anchor="middle" font-size="70" font-weight="760" fill="#2b2622">Fraud का शक</text>
+        <text class="hi" x="1400" y="418" text-anchor="middle" font-size="45" font-weight="650" fill="#2b2622">धोखाधड़ी का शक</text>
+      </g>
+      <g id="s097-reuse"><use href="piece:cancelled-stamp" transform="translate(1230 415) scale(0.85)"/></g>
+      <g id="s097-fraud-explanation">
+        <text class="hi" x="1400" y="741" text-anchor="middle" font-size="46" font-weight="650" fill="#2b2622">पहले इस्तेमाल हुआ stamp,</text>
+        <text id="s097-fraud-phrase" class="hi" x="1400" y="800" text-anchor="middle" font-size="49" font-weight="700" fill="#2b2622">धोखे से दोबारा</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.30,'fade','#s097-invalid-band',{dur:0.33}],
+      [2.78,'fade','#s097-fraud-band',{dur:0.33}],
+      [5.16,'pop','#s097-damaged',{from:0.92,spring:'snap'}],
+      [6.22,'fade','#s097-unpaid',{dur:0.33}],
+      [6.94,'draw','#s097-cross',{dur:0.28}],
+      [8.26,'fade','#s097-not-proof',{dur:0.32}],
+      [10.00,'pop','#s097-reuse',{from:0.92,spring:'snap'}],
+      [11.24,'fade','#s097-fraud-explanation',{dur:0.30}],
+      [11.58,'highlight','#s097-fraud-phrase',{words:'धोखे से',color:'#fde9a6',opacity:1,pad:8,dur:0.40}]
+    ]
+  }
+  </script>
+</section>
