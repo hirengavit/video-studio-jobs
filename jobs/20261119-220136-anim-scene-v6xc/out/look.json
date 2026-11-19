@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "1.98",
+  "3.97",
+  "5.95",
+  "7.94",
+  "9.77"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s069",
+   "text": "Proposal / प्रस्ताव",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s069",
+   "text": "Central Government / केंद्र सरकार",
+   "t": 7.94
+  }
+ ]
+}
