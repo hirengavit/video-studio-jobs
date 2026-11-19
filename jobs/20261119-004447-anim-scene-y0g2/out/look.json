@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "1.95",
+  "3.90",
+  "5.86",
+  "7.81",
+  "9.61"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s051",
+   "text": "एक ही post (1.0:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 3.9
+  }
+ ]
+}
