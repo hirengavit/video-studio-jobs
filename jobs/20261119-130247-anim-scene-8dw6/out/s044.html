@@ -21,7 +21,7 @@
         <rect x="543" y="684" width="160" height="58" rx="10" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="4" stroke-dasharray="1 9" stroke-linecap="round"/>
         <text x="564" y="727" font-size="37" font-weight="800" fill="#fff">≥</text>
         <text id="large-city-count" x="645" y="728" text-anchor="middle" font-size="45" font-weight="860" fill="#fff">500</text>
-        <text x="728" y="725" font-size="38" font-weight="800" fill="#2b2622">packets</text>
+        <text id="large-city-unit" x="728" y="725" font-size="38" font-weight="800" fill="#2b2622">packets</text>
       </g>
     </g>
     <g id="small-city-row">
@@ -33,7 +33,7 @@
       <rect x="543" y="776" width="160" height="41" rx="9" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="3" stroke-dasharray="1 9" stroke-linecap="round"/>
       <text x="564" y="808" font-size="33" font-weight="800" fill="#fff">≥</text>
       <text id="small-city-count" x="645" y="809" text-anchor="middle" font-size="39" font-weight="860" fill="#fff">250</text>
-      <text x="728" y="809" font-size="37" font-weight="800" fill="#2b2622">packets</text>
+      <text id="small-city-unit" x="728" y="809" font-size="37" font-weight="800" fill="#2b2622">packets</text>
     </g>
   </g>
   <rect id="second-facility-frame" x="980" y="260" width="840" height="580" rx="34" fill="none" stroke="#ead9a8" stroke-width="4"/>
@@ -45,7 +45,7 @@
     <text id="gazetted-term" x="1110" y="320" font-size="54" font-weight="850" fill="#fff">Gazetted</text>
     <text id="hsg-term" x="1110" y="371" font-size="35" font-weight="820" fill="#fff">&amp; Higher Selection Grade post offices</text>
     <text id="gazetted-hi" x="1112" y="420" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="760" fill="#fde9a6">राजपत्रित</text>
-    <text id="hsg-hi" x="1312" y="420" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="760" fill="#fde9a6">और उच्च चयन ग्रेड डाकघर</text>
+    <text id="hsg-hi" x="1112" y="420" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="760" fill="#fde9a6">राजपत्रित और उच्च चयन ग्रेड डाकघर</text>
     <text id="chosen-offices-gist" x="1029" y="492" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="750" fill="#6f6a63">कुछ चुने हुए</text>
   </g>
 </g>
@@ -64,9 +64,10 @@
     [4.65,'pop','#gazetted-term',{from:0.94,spring:'soft'}],
     [5.15,'fade','#gazetted-hi',{dur:0.28}],
     [6,'pop','#hsg-term',{from:0.96,spring:'soft'}],
-    [6.50,'fade','#hsg-hi',{dur:0.28}],
+    [6.48,'out','#gazetted-hi',{dur:0.08}],
+    [6.56,'fade','#hsg-hi',{dur:0.25}],
     [7.90,'color','#facility-one-header, #large-city-stamp-bg, #small-city-stamp-bg',{to:'#6f6a63',dur:0.53}],
-    [7.90,'color','#bulk-posting, #large-city-label, #small-city-row text, #large-city-threshold text:last-child, #small-city-threshold text:last-child',{to:'#6f6a63',dur:0.53}],
+    [7.90,'color','#bulk-posting, #large-city-label, #small-city-row text, #large-city-unit, #small-city-unit',{to:'#6f6a63',dur:0.53}],
     [7.90,'color','#left-card-bg',{to:'#f7f3ea',dur:0.53}]
   ]
 }
