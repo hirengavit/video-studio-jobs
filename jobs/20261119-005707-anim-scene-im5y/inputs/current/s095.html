@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s095" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION" data-in="wipe" data-in-dur="0.4" data-in-opts='{"from":"right"}'>
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g font-family="Inter, sans-serif" text-anchor="middle" font-weight="700">
+      <g id="example">
+        <rect x="120" y="177" width="226" height="68" rx="34" fill="#f8e4ad"/>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="233" y="224" font-size="44" fill="#711d24">उदाहरण</text>
+      </g>
+
+      <g id="hsd">
+        <rect id="hsd-card" x="120" y="340" width="640" height="380" rx="35" fill="#a82530"/>
+        <text id="hsd-en" x="440" y="510" font-size="55" fill="#fffaf0">Head of Sub-division</text>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="hsd-hi" x="440" y="600" font-size="53" fill="#fffaf0">उप-मंडल प्रमुख</text>
+      </g>
+
+      <g id="abpm">
+        <rect id="abpm-card" x="1100" y="300" width="700" height="200" rx="30" fill="#fffefa" stroke="#a82530" stroke-width="4"/>
+        <text id="abpm-en" x="1450" y="389" font-size="60" fill="#78202a">GDS ABPM</text>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="abpm-hi" x="1450" y="455" font-size="48" fill="#312924">सहायक शाखा डाकपाल</text>
+      </g>
+      <g id="ds">
+        <rect id="ds-card" x="1100" y="580" width="700" height="200" rx="30" fill="#fffefa" stroke="#a82530" stroke-width="4"/>
+        <text id="ds-en" x="1450" y="669" font-size="60" fill="#78202a">Dak Sevak</text>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="ds-hi" x="1450" y="735" font-size="48" fill="#312924">डाक सेवक</text>
+      </g>
+
+      <g id="arrows" fill="none" stroke="#a82530" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M760 423 C857 423 895 366 979 366 H1091 M1070 350 L1091 366 L1070 382"/>
+        <path d="M760 640 C857 640 895 704 979 704 H1091 M1070 688 L1091 704 L1070 720"/>
+      </g>
+      <g id="engaging" fill="#78202a">
+        <text x="929" y="462" font-size="44">engaging</text>
+        <text x="929" y="511" font-size="44">authority</text>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="929" y="575" font-size="44" fill="#312924">नियुक्त करने</text>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="929" y="626" font-size="44" fill="#312924">वाला प्राधिकारी</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    ({
+      dur: 8.6,
+      on: [
+        [1.16, "fade", "#hsd-card", {dur:0.23}],
+        [1.16, "words", "#hsd-en", {gap:0.17, dist:12}],
+        [1.66, "words", "#hsd-hi", {gap:0.10, dist:10}],
+        [2.86, "pop", "#abpm-card", {from:0.96}],
+        [2.86, "words", "#abpm-en", {gap:0.25, dist:12}],
+        [3.40, "words", "#abpm-hi", {gap:0.13, dist:10}],
+        [5.54, "pop", "#ds-card", {from:0.96}],
+        [5.54, "words", "#ds-en", {gap:0.2, dist:12}],
+        [6.00, "words", "#ds-hi", {gap:0.11, dist:10}],
+        [7.56, "draw", "#arrows", {dur:0.4}],
+        [7.56, "pop", "#engaging", {from:0.96}]
+      ]
+    })
+  </script>
+</section>
