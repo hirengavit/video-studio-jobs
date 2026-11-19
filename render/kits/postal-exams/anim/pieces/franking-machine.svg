@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g id="feet">
+    <rect x="59" y="285" width="66" height="18" fill="#363942" rx="4"/>
+    <rect x="274" y="285" width="62" height="18" fill="#363942" rx="4"/>
+  </g>
+  <path id="chassis" d="M39 256V218Q39 208 50 205L114 186 197 123Q207 114 223 114H318Q343 114 350 139L366 224V275Q366 290 351 290H51Q34 290 34 274V266Q34 261 39 256Z" fill="#4b4f58"/>
+  <g id="feed-plate">
+    <path d="M47 170L185 101H285L156 173Q151 177 144 177H49Q38 177 47 170Z" fill="#fbf7ee"/>
+    <path d="M47 177H143Q151 177 156 173L285 101V116L158 190Q151 194 143 194H48Q42 194 42 187V176" fill="#f3ead6"/>
+  </g>
+  <path id="feed-slot" d="M51 207H150Q156 207 160 203L278 135V149L163 219Q157 223 150 223H52Q47 223 47 218V212Q47 207 51 207Z" fill="#363942"/>
+  <g id="roller">
+    <circle cx="178" cy="209" r="20" fill="#a6a9ad"/>
+    <path d="M170 198L186 220M168 218L187 201"/>
+  </g>
+  <path id="trim" d="M36 252H364V266H35V258Z" fill="#9e1b1b"/>
+  <g id="control-panel">
+    <rect x="281" y="167" width="56" height="47" fill="#363942" rx="5"/>
+    <rect x="289" y="173" width="40" height="15" fill="#fbf7ee" rx="2"/>
+    <circle cx="299" cy="201" r="4" fill="#9e1b1b"/>
+    <circle cx="318" cy="201" r="4" fill="#a6a9ad"/>
+  </g>
+  <circle data-anchor="top" cx="235" cy="101" r="0"/>
+  <circle data-anchor="base" cx="200" cy="303" r="0"/>
+</svg>
