@@ -1,0 +1,26 @@
+{
+ "moments": [
+  "0.30",
+  "2.76",
+  "5.53",
+  "8.29",
+  "11.06",
+  "13.67"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s072",
+   "text": "सलाह देती है: (2.1:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 8.29
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s072",
+   "message": "a card (#s072-chair) is mostly empty at 13.7 s: bring its items in sooner, or size it for what it holds now",
+   "t": 13.67
+  }
+ ]
+}
