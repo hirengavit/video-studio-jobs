@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.05",
+  "4.10",
+  "6.16",
+  "8.21",
+  "10.11"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s128",
+   "text": "पूरा tariff / नहीं · stationery के कुछ examples",
+   "t": 4.1
+  }
+ ]
+}
