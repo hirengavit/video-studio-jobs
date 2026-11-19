@@ -1,0 +1,65 @@
+<section class="vs-scene" id="s117" data-in="cut" data-section="PART 4 · CIRCLES &amp; HEADQUARTERS" data-series="POSTAL ADMINISTRATION">
+ <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text x="120" y="220" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="750" fill="#6f6a63">पहला group</text>
+  <g>
+   <rect x="120" y="260" width="640" height="380" rx="34" fill="#9e1b1b"/>
+   <rect x="120" y="260" width="640" height="380" rx="34" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 25" stroke-linecap="round"/>
+   <text x="440" y="442" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="#fff">Gujarat Circle</text>
+   <text id="circleHi" x="440" y="531" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="650" fill="#f3ead6">गुजरात परिमंडल</text>
+  </g>
+  <rect id="territoryShell" x="820" y="260" width="980" height="700" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="883" y="335" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="750" fill="#9e1b1b">इलाके</text>
+  <g id="gujaratRow">
+   <rect x="871" y="370" width="878" height="160" rx="23" fill="#f3ead6"/>
+   <rect x="897" y="401" width="7" height="97" rx="3" fill="#9e1b1b"/>
+   <text x="927" y="437" font-family="Inter, sans-serif" font-size="58" font-weight="800" fill="#2b2622">Gujarat</text>
+   <text id="gujaratHi" x="928" y="493" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="650" fill="#6f6a63">गुजरात</text>
+  </g>
+  <g id="territoryRow">
+   <rect id="territorySurface" x="871" y="556" width="878" height="348" rx="23" fill="#f3ead6"/>
+   <rect id="territoryAccent" x="897" y="595" width="7" height="268" rx="3" fill="#9e1b1b"/>
+   <text id="dadra" x="929" y="666" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#2b2622">Dadra</text>
+   <text id="haveli" x="1130" y="666" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#2b2622">and Nagar Haveli</text>
+   <text id="daman" x="929" y="739" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#2b2622">and Daman and Diu</text>
+   <text id="territoryHi" x="930" y="842" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="650" fill="#6f6a63">दादरा और नगर हवेली और दमन और दीव</text>
+  </g>
+  <g id="hq">
+   <rect x="120" y="688" width="640" height="272" rx="36" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <circle cx="220" cy="822" r="66" fill="#f3ead6"/>
+   <use id="pin" href="piece:icon-city-pin" transform="translate(177 763) scale(0.72)"/>
+   <text x="321" y="758" font-family="Inter, sans-serif" font-size="47" font-weight="750" fill="#2b2622">Headquarters</text>
+   <text x="321" y="811" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="41" font-weight="650" fill="#6f6a63">मुख्यालय</text>
+   <text id="ahmedabad" x="320" y="886" font-family="Inter, sans-serif" font-size="58" font-weight="800" fill="#9e1b1b">Ahmedabad</text>
+   <text id="ahmedabadHi" x="322" y="936" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="41" font-weight="650" fill="#6f6a63">अहमदाबाद</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ {
+  on:[
+    [0.50,'fade','#circleHi',{dur:0.25}],
+    [1.84,'pop','#gujaratRow',{from:0.97,spring:'fast'}],
+    [2.34,'fade','#gujaratHi',{dur:0.24}],
+    [3.42,'fade','#territoryRow',{dur:0.24}],
+    [3.48,'fade','#dadra',{dur:0.24}],
+    [4.62,'words','#haveli',{gap:0.34,dist:12,from:'down',spring:'fast'}],
+    [5.82,'words','#daman',{gap:0.37,dist:12,from:'down',spring:'fast'}],
+    [7.40,'fade','#territoryHi',{dur:0.26}],
+    [8.02,'slide','#hq',{from:'down',dist:42,spring:'fast'}],
+    [8.06,'draw','#pin',{dur:0.33}],
+    [9.58,'stamp','#ahmedabad',{from:1.03,rot:-2,spring:'fast'}],
+    [10.08,'fade','#ahmedabadHi',{dur:0.21}]
+  ],
+  update(t, section, $) {
+    const ramp = (a, b) => { const p = Math.max(0, Math.min(1, (t - a)/(b-a))); return p*p*(3-2*p); };
+    const size = (id, attr, n) => { const node = $(id)[0]; if (node) node.setAttribute(attr, n); };
+    const rowHeight = 148 + 78*ramp(5.50, 5.82) + 122*ramp(7.05, 7.40);
+    size('#territorySurface', 'height', rowHeight);
+    size('#territorySurface', 'width', 272 + 606*ramp(4.30, 4.62));
+    size('#territoryAccent', 'height', rowHeight - 80);
+    const shellHeight = 110 + 214*ramp(1.48, 1.84) + 176*ramp(3.10, 3.48) + 78*ramp(5.50, 5.82) + 122*ramp(7.05, 7.40);
+    size('#territoryShell', 'height', shellHeight);
+  }
+ }
+ </script>
+</section>
