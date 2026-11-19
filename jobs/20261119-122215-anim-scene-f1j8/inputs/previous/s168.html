@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s168" data-in="fade" data-in-dur="0.5" data-section="PART 8 · POSTCARD" data-series="STAMPS &amp; STATIONERY">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <defs>
+      <clipPath id="postcard-paper-mask"><rect x="121" y="251" width="1116" height="719" rx="13"/></clipPath>
+    </defs>
+    <g id="postcard">
+      <use href="piece:postcard-blank" transform="translate(51 -17) scale(3.14)"/>
+    </g>
+    <text id="title" x="120" y="218" class="hi" font-size="60" font-weight="800" fill="#9e1b1b">जगह का बँटवारा</text>
+    <g id="right-half" clip-path="url(#postcard-paper-mask)">
+      <rect x="682" y="253" width="553" height="714" fill="#fde9a6"/>
+      <g stroke="#9e1b1b" fill="none">
+        <rect x="1028" y="300" width="141" height="151" rx="6" stroke-width="7"/>
+        <path d="M1050 325 H1147 V426 H1050 Z" stroke-width="4.7"/>
+      </g>
+      <path id="address-lines" d="M745 633 H1166 M745 677 H1125 M745 721 H1081" fill="none" stroke="#aaa39a" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <path id="divider" d="M682 344 V890" fill="none" stroke="#8a5d00" stroke-width="9" stroke-linecap="round"/>
+    <g id="right-column">
+      <text id="side-en" x="1290" y="329" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">Address side</text>
+      <text id="side-hi" x="1292" y="397" class="hi" font-size="46" font-weight="600" fill="#6f6a63">पते वाली ओर</text>
+      <g id="summary">
+        <rect x="1290" y="446" width="530" height="80" rx="16" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1315" y="500" class="hi" font-size="43" font-weight="800" fill="#2b2622">Right-hand half: 3 काम</text>
+      </g>
+      <g id="row1">
+        <circle cx="1322" cy="579" r="29" fill="#9e1b1b"/>
+        <text x="1322" y="592" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="800" fill="#fff">1</text>
+        <text x="1370" y="593" class="hi" font-size="43" font-weight="700" fill="#2b2622">पाने वाले का address</text>
+      </g>
+    </g>
+    <g id="map-badge-one">
+      <circle cx="711" cy="677" r="29" fill="#9e1b1b"/>
+      <text x="711" y="690" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="800" fill="#fff">1</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}]],
+    on: [
+      [0, 'draw', '#postcard', {dur: 0.42}],
+      [0.90, 'type', '#title', {cps: 36}],
+      [2.44, 'fade', '#side-en', {dur: 0.27}],
+      [2.90, 'fade', '#side-hi', {dur: 0.27}],
+      [3.72, 'fade', '#right-half', {dur: 0.33}],
+      [3.72, 'draw', '#divider', {dur: 0.37}],
+      [4.64, 'fade', '#summary', {dur: 0.31}],
+      [6.88, 'fade', '#row1', {dur: 0.28}],
+      [6.88, 'pop', '#map-badge-one', {spring: 'soft', from: 0.94}],
+      [7.80, 'color', '#address-lines', {prop: 'stroke', to: '#8a5d00', dur: 0.25}],
+    ],
+  }
+  </script>
+</section>
