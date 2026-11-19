@@ -6,16 +6,13 @@
       <text id="proposal-heading" x="960" y="254" text-anchor="middle" class="hi" font-size="52" font-weight="800" fill="#9e1b1b">Commemorative stamp का proposal कौन दे सकता है?</text>
       <g id="c1">
         <rect x="100" y="360" width="540" height="580" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
-        <g id="proposal-doc-opening">
-          <path d="M255 414 H433 L480 462 V638 H255Z" fill="#fbf7ee" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
-          <path d="M433 414 V462 H480" fill="#f3ead6" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
-          <path d="M279 508 H341 M279 533 H341 M279 558 H341 M279 583 H400" stroke="#aaa39a" stroke-width="4" stroke-linecap="round"/>
-          <use id="proposal-stamp-opening" href="piece:postage-stamp" transform="translate(319 462) scale(.43)"/>
-        </g>
-        <g id="proposal-doc" transform="translate(74 37) scale(.8)">
-          <path d="M255 414 H433 L480 462 V638 H255Z" fill="#fbf7ee" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
-          <path d="M433 414 V462 H480" fill="#f3ead6" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
-          <path d="M279 508 H341 M279 533 H341 M279 558 H341 M279 583 H400" stroke="#aaa39a" stroke-width="4" stroke-linecap="round"/>
+        <g id="proposal-doc">
+          <path id="proposal-page" d="M255 414 H433 L480 462 V638 H255Z" fill="#fbf7ee" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+          <path id="proposal-fold" d="M433 414 V462 H480" fill="#f3ead6" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+          <path id="proposal-rules" d="M279 508 H341 M279 533 H341 M279 558 H341 M279 583 H400" fill="none" stroke="#aaa39a" stroke-width="4" stroke-linecap="round"/>
+          <path id="proposal-page-small" d="M278 368.2 H420.4 L458 406.6 V547.4 H278Z" visibility="hidden"/>
+          <path id="proposal-fold-small" d="M420.4 368.2 V406.6 H458" visibility="hidden"/>
+          <path id="proposal-rules-small" d="M297.2 443.4 H346.8 M297.2 463.4 H346.8 M297.2 483.4 H346.8 M297.2 503.4 H394" visibility="hidden"/>
           <use id="proposal-stamp" href="piece:postage-stamp" transform="translate(319 462) scale(.43)"/>
         </g>
         <text id="proposal-en" x="370" y="720" text-anchor="middle" font-family="Inter, sans-serif" font-size="63" font-weight="800" fill="#2b2622">Proposal</text>
@@ -51,11 +48,12 @@
     shots:[[0,'#proposal']],
     camera:[[0,{zoom:1}]],
     on:[
-      [.12,'move','#proposal-doc-opening',{by:[0,-68],spring:'snap'}],
-      [.12,'out','#proposal-doc-opening',{dur:.36,scale:.80}],
-      [.29,'fade','#proposal-doc',{dur:.19}],
-      [.12,'move','#proposal-en',{by:[0,-112],spring:'snap'}],
-      [.12,'move','#proposal-hi',{by:[0,-126],spring:'snap'}],
+      [.12,'morph','#proposal-page',{to:'#proposal-page-small',dur:.40,ease:'inOut'}],
+      [.12,'morph','#proposal-fold',{to:'#proposal-fold-small',dur:.40,ease:'inOut'}],
+      [.12,'morph','#proposal-rules',{to:'#proposal-rules-small',dur:.40,ease:'inOut'}],
+      [.22,'move','#proposal-stamp',{by:[-7,-73],spring:'snap'}],
+      [.30,'move','#proposal-en',{by:[0,-112],spring:'snap'}],
+      [.30,'move','#proposal-hi',{by:[0,-126],spring:'snap'}],
       [1.26,'pop','#citizen',{from:.96,spring:'snap'}],
       [2.18,'fade','#admin',{dur:.28}],
       [5.02,'draw','#arrow1',{dur:.38}],
