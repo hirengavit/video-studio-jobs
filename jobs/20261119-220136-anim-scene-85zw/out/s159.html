@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s159" data-in="fade" data-in-dur="0.5" data-section="PART 7 · LETTER CARD" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="worked-example">
+    <g id="article">
+      <g id="inserted-slip">
+        <rect x="329" y="339" width="116" height="133" rx="6" fill="#fff" stroke="#4b4f58" stroke-width="5"/>
+        <path d="M349 367h77m-77 21h54" fill="none" stroke="#aaa39a" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <use id="example-card" href="piece:letter-card" transform="translate(160 280) scale(1.4)"/>
+      <g id="imprinted-price">
+        <text x="621" y="492" text-anchor="middle" font-size="18" font-weight="850" fill="#9e1b1b">₹2.50</text>
+        <path d="M623 451v-76l41-32" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="532" y="257" width="190" height="86" rx="20" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="627" y="315" text-anchor="middle" font-size="53" font-weight="840" fill="#9e1b1b">₹2.50</text>
+      </g>
+      <ellipse id="slip-ring" cx="387" cy="385" rx="78" ry="66" fill="none" stroke="#4b4f58" stroke-width="6"/>
+      <g id="letter-card-label">
+        <text x="440" y="860" text-anchor="middle" font-size="58" font-weight="850" fill="#9e1b1b">Letter Card</text>
+        <text x="440" y="925" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="730" fill="#6f6a63">पत्र कार्ड</text>
+      </g>
+      <text id="letter-label" x="440" y="860" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="850" fill="#9e1b1b">Letter · पत्र</text>
+    </g>
+    <g id="working-card">
+      <rect id="working-bg" x="840" y="200" width="960" height="780" rx="36" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <path id="working-rules" d="M900 371h840M900 511h840M900 651h840" stroke="#ead9a8" stroke-width="3" opacity=".6"/>
+      <g id="work-1">
+        <text id="letter-postage-text" x="1250" y="320" text-anchor="end" font-size="56" font-family="Georgia, 'Noto Sans Devanagari', serif" fill="#2b2622">Letter का postage</text>
+        <text id="equals-1" x="1300" y="320" text-anchor="middle" font-size="56" font-family="Georgia, serif" fill="#2b2622">=</text>
+        <text id="letter-postage-value" x="1354" y="320" font-size="56" font-family="Georgia, 'Noto Sans Devanagari', serif" font-weight="750" fill="#2b2622">₹5</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{on:[
+  [3.32,'pop','#imprinted-price'],
+  [3.72,'pulse','#imprinted-price',{amount:0.04}],
+  [5.36,'slide','#inserted-slip',{from:'up',dist:64}],
+  [6.08,'draw','#slip-ring',{dur:0.34}],
+  [7.62,'swap','#letter-card-label',{to:'#letter-label',dur:0.38}],
+  [9.00,'slide','#working-card',{from:'right',dist:64}],
+  [9.38,'words','#letter-postage-text',{gap:0.14}],
+  [9.82,'fade','#equals-1',{dur:0.14}],
+  [10,'fade','#letter-postage-value',{dur:0.18}],
+  [10,'highlight','#letter-postage-value',{color:'#f2b705',opacity:0.42,dur:0.35}]
+]}
+</script></section>
