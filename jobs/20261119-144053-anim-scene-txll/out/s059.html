@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s059" data-in="cut" data-section="PART 3 · TYPES OF STAMPS &amp; PHILATELY" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<g id="trap">
+  <rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+  <g id="trap-banner">
+    <rect x="100" y="180" width="1720" height="90" rx="20" fill="#9e1b1b"/>
+    <text class="hi" x="147" y="241" font-size="57" font-weight="810" fill="#fde9a6">परीक्षा का जाल</text>
+  </g>
+  <g id="trap-myth-card">
+    <rect x="100" y="290" width="1720" height="210" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M1118 319v153" fill="none" stroke="#ead9a8" stroke-width="3"/>
+    <g id="trap-stamp">
+      <use href="piece:postage-stamp" transform="translate(128 305) scale(.45)"/>
+      <path d="M186 367q20-23 45-2-15 6-16 19-19-10-29-17zm18 16-10 28 12-6 7 10 13-31" fill="#f3ead6" stroke="#9e1b1b" stroke-width="3" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <text id="trap-term" x="370" y="386" font-family="Inter,sans-serif" font-size="60" font-weight="800" fill="#2b2622">Commemorative stamp</text>
+  <text id="trap-term-hi" class="hi" x="372" y="451" font-size="42" font-weight="650" fill="#6f6a63">स्मारक डाक टिकट</text>
+  <text id="trap-myth-line" opacity=".54" class="hi" x="1152" y="411" font-size="48" font-weight="790" fill="#4b4f58">सिर्फ collection के लिए?</text>
+  <path d="M1146 410q245 4 520-1" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+  <rect id="trap-fact-plate" x="100" y="520" width="1720" height="470" rx="27" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+  <g id="fact-sign">
+    <rect x="140" y="544" width="148" height="57" rx="28" fill="#2e7d4f"/>
+    <text class="hi" x="214" y="585" text-anchor="middle" font-size="39" font-weight="800" fill="#fff">सही</text>
+  </g>
+  <g id="fact-regs">
+    <use href="piece:regulations-book" transform="translate(170 599) scale(.6)"/>
+    <text x="269" y="698" text-anchor="middle" font-family="Inter,sans-serif" font-size="18" font-weight="820" fill="#9e1b1b">Regulations</text>
+  </g>
+  <text id="postage-permission" class="hi" x="383" y="721" font-size="46" font-weight="790" fill="#2b2622">इससे postage दे सकते हैं</text>
+  <path id="permission-tick" d="M922 708l14 14 27-33" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="collection-book" stroke="#2b2622" stroke-width="3.5" stroke-linejoin="round">
+    <rect x="1102" y="611" width="209" height="174" rx="14" fill="#fff"/>
+    <path d="M1134 612v172" stroke="#9e1b1b" stroke-width="7"/>
+    <rect x="1160" y="647" width="50" height="67" rx="4" fill="#f3ead6" stroke="#9e1b1b" stroke-dasharray="3 5"/>
+    <rect x="1233" y="647" width="50" height="67" rx="4" fill="#fde9a6" stroke="#9e1b1b" stroke-dasharray="3 5"/>
+    <path d="M1163 745h116" stroke="#ead9a8" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text id="collection-copy" class="hi" x="1206.5" y="848" text-anchor="middle" font-size="44" font-weight="740" fill="#2b2622">संभालकर रखें</text>
+  <g id="letter-destination">
+    <use href="piece:address-envelope" transform="translate(1424 587) scale(.55)"/>
+  </g>
+  <g id="apply-adhesive"><use href="piece:adhesive-stamp" transform="translate(1711 608) scale(.27)"/></g>
+  <text id="letter-copy" class="hi" x="1600" y="848" text-anchor="middle" font-size="44" font-weight="740" fill="#2b2622">letter पर लगाएँ</text>
+</g>
+</svg>
+<script type="text/scene">
+({on:[
+ [0,'fade','#fact-sign',{dur:.26}],
+ [0,'pop','#fact-regs',{from:.94,spring:'soft'}],
+ [1.42,'words','#postage-permission',{gap:.31,dist:8}],
+ [3.14,'highlight','#postage-permission',{words:'postage दे सकते',color:'#f2b705',opacity:.42,dur:.34,pad:6}],
+ [3.14,'draw','#permission-tick',{dur:.36}],
+ [4.94,'draw','#collection-book',{dur:.53}],
+ [5.22,'fade','#collection-copy',{dur:.28}],
+ [7.08,'pop','#letter-destination',{from:.93,spring:'soft'}],
+ [7.74,'stamp','#apply-adhesive',{from:1.32,rot:-5,spring:'soft'}],
+ [7.74,'fade','#letter-copy',{dur:.28}]
+]})
+</script>
+</section>
