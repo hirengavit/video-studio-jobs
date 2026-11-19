@@ -10,6 +10,12 @@
  "problems": [],
  "warnings": [
   {
+   "kind": "text-overlap",
+   "scene": "s144",
+   "text": "RECAP · दोहराव / Part 5 और Part 6",
+   "t": 0.3
+  },
+  {
    "kind": "mostly-empty",
    "scene": "s144",
    "message": "a card (#s144-row-bg-2) is mostly empty at 2.0 s: bring its items in sooner, or size it for what it holds now",
