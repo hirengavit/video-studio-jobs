@@ -8,24 +8,5 @@
   "9.79"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "error",
-   "scene": "s205",
-   "message": "Failed to execute 'querySelectorAll' on 'Element': 'M220 450H1104Q1124 450 1124 470V540Q1124 560 1104 560H220Q200 560 200 540V470Q200 450 220 450Z' is not a valid selector.",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s205",
-   "message": "move: option \"dur\" isn't used (it takes: by, spring)",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s205",
-   "text": "डाक खेल बोर्ड / Postal Services Staff Welfare Board",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
