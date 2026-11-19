@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s042" data-in="fade" data-in-dur="0.5" data-section="PART 2 · CASH, DIGITAL &amp; FRANKING" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="bulk">
+  <rect x="140" y="260" width="760" height="500" rx="36" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <circle cx="365" cy="510" r="112" fill="#f3ead6"/>
+  <use id="bulk-cash-icon" href="piece:rupee-cash" transform="translate(242 389) scale(.615)"/>
+  <text id="bulk-term" x="517" y="432" font-size="72" font-weight="850" fill="#9e1b1b"><tspan x="517">Bulk cash</tspan><tspan x="517" dy="86">facilities</tspan></text>
+  <text id="bulk-hi" x="517" y="594" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="730" fill="#6f6a63">थोक नकद सुविधाएँ</text>
+  <g id="special"><rect x="517" y="635" width="152" height="72" rx="36" fill="#fde9a6"/><text x="593" y="685" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="810" fill="#654400">खास</text></g>
+  <g id="ordinary-list">
+    <rect x="1000" y="260" width="780" height="500" rx="36" fill="#eeebe6" stroke="#ddd6cd" stroke-width="4"/>
+    <text x="1060" y="360" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="780" fill="#4b4f58">आम payment के तरीके</text>
+    <path d="M1060 405H1720" stroke="#c4bbb0" stroke-width="3"/>
+    <g font-size="59" font-weight="720" fill="#6f6a63">
+      <text x="1080" y="518">Cash</text><text x="1430" y="518">Digital</text>
+      <text x="1080" y="650">Stamps</text><text x="1430" y="650">Franking</text>
+    </g>
+    <path d="M1384 455V684M1060 565H1720" stroke="#d8d2c8" stroke-width="3"/>
+  </g>
+  <g id="not-in-list"><rect x="1000" y="790" width="780" height="114" rx="26" fill="#4b4f58"/><text id="not-in-list-text" x="1390" y="862" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="750" fill="#fff">bulk facilities इस list में नहीं</text></g>
+</g>
+<g id="auth">
+  <g id="head-of-circle">
+    <rect x="100" y="360" width="520" height="360" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text x="360" y="535" text-anchor="middle" font-size="65" font-weight="840" fill="#9e1b1b">Head of Circle</text>
+    <text id="head-hi" x="360" y="612" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="730" fill="#6f6a63">सर्किल प्रमुख</text>
+  </g>
+  <path id="auth-arrow-1" d="M636 540h48m-15-14 15 14-15 14" stroke="#9e1b1b" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="selected-offices">
+    <rect x="700" y="360" width="520" height="360" rx="34" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+    <text x="960" y="562" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="61" font-weight="800" fill="#2b2622">कुछ तय offices</text>
+  </g>
+  <path id="auth-arrow-2" d="M1236 540h48m-15-14 15 14-15 14" stroke="#9e1b1b" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="cash-permission">
+    <rect x="1300" y="360" width="520" height="360" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text id="postage-in-cash" x="1560" y="510" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="800" fill="#2b2622">cash में postage लेने का</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{shots:[[0,'#bulk'],[7.70,'#auth']],on:[
+  [0,'fade','#bulk-term',{dur:0.30}],
+  [0.66,'fade','#bulk-hi',{dur:0.28}],
+  [2.39,'pop','#special'],
+  [4.16,'fade','#ordinary-list',{dur:0.33}],
+  [5.20,'fade','#not-in-list',{dur:0.25}],
+  [6.10,'underline','#not-in-list-text',{words:'नहीं',color:'#fde9a6',dur:0.35}],
+  [7.80,'pop','#head-of-circle'],
+  [8.30,'fade','#head-hi',{dur:0.28}],
+  [9.27,'draw','#auth-arrow-1',{dur:0.32}],
+  [9.27,'pop','#selected-offices'],
+  [11.88,'draw','#auth-arrow-2',{dur:0.32}],
+  [11.88,'pop','#cash-permission']
+]}
+</script></section>
