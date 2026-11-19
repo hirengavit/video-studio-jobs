@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s099" data-in="cut" data-section="PART 4 · VALID STAMPS &amp; AFFIXING" data-series="STAMPS &amp; STATIONERY">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="exam">
+      <text id="exam-heading" x="140" y="210" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="65" font-weight="800" fill="#9e1b1b">परीक्षा के लिए</text>
+      <rect x="120" y="260" width="1680" height="730" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect id="stamp-selection-band" x="151" y="279" width="1618" height="167" rx="20" fill="#f3ead6"/>
+      <rect id="service-row-band" x="151" y="454" width="1618" height="167" rx="20" fill="#f3ead6"/>
+      <rect id="perforation-row-band" x="151" y="629" width="1618" height="167" rx="20" fill="#f3ead6"/>
+      <path d="M158 450H1762 M158 625H1762 M158 800H1762" fill="none" stroke="#ead9a8" stroke-width="3"/>
+      <g id="stamp-selection">
+        <use href="piece:postage-stamp" transform="translate(170 284) scale(.43)"/>
+        <text id="stamp-selection-phrase" x="370" y="380" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="700" fill="#2b2622">Postage के लिए सही प्रकार का valid stamp</text>
+      </g>
+      <path id="stamp-selection-check" d="m1664 366 16 16 32-35" fill="none" stroke="#2e7d4f" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="service-postage-row">
+        <g id="service-postage-stamp">
+          <rect x="209" y="477" width="111" height="120" rx="10" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="6" stroke-dasharray="0 11" stroke-linecap="round"/>
+          <rect x="222" y="491" width="85" height="93" rx="4" fill="#fff" stroke="#2b2622" stroke-width="2.5"/>
+          <text x="264.5" y="541" text-anchor="middle" font-family="Inter, sans-serif" font-size="17" font-weight="900" fill="#9e1b1b">SERVICE</text>
+          <path d="M239 553H290" stroke="#9e1b1b" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+        <text id="service-authorisation" x="370" y="555" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="700" fill="#2b2622">Service stamp: सिर्फ authorised सरकारी डाक</text>
+      </g>
+      <g id="perforation-icon">
+        <rect x="209" y="652" width="111" height="120" rx="10" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="6" stroke-dasharray="0 11" stroke-linecap="round"/>
+        <rect x="222" y="666" width="85" height="93" rx="4" fill="#ead9a8" stroke="#2b2622" stroke-width="2.5"/>
+        <use href="piece:perforated-initials-stamp" transform="translate(183 632) scale(.43)"/>
+      </g>
+      <text id="perforation-permission" x="370" y="700" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="700" fill="#2b2622">पहचान के छोटे छेद मंज़ूर</text>
+      <text id="perforation-condition" x="370" y="754" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="650" fill="#6f6a63">अगर देश और value पढ़े जा सकें</text>
+      <path id="perforation-allowed-mark" d="m1664 716 16 16 32-35" fill="none" stroke="#2e7d4f" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots:[[0,'#exam']],
+    camera:[[0,{zoom:1}]],
+    on:[
+      [0,'highlight','#stamp-selection-phrase',{words:'सही प्रकार',color:'#fde9a6',opacity:1,pad:8,dur:0.001}],
+      [0,'out','#stamp-selection-band',{dur:0.28,scale:1}],
+      [0,'fade','#service-row-band',{dur:0.28}],
+      [0,'fade','#service-postage-row',{dur:0.33}],
+      [2.02,'underline','#service-authorisation',{words:'सिर्फ authorised',color:'#8a5d00',width:5,dur:0.40}],
+      [4.32,'out','#service-row-band',{dur:0.28,scale:1}],
+      [4.32,'fade','#perforation-row-band',{dur:0.28}],
+      [4.32,'fade','#perforation-icon, #perforation-permission',{dur:0.34}],
+      [6.54,'draw','#perforation-allowed-mark',{dur:0.34}],
+      [7.60,'fade','#perforation-condition',{dur:0.34}]
+    ]
+  }
+  </script>
+</section>
