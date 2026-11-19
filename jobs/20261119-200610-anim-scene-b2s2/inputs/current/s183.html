@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s183" data-in="fade" data-in-dur="0.5" data-section="PART 8 · POSTCARD" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="postcard-price">
+<rect x="120" y="220" width="640" height="760" rx="31" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="15" stroke-dasharray="0 27" stroke-linecap="round"/>
+<rect x="152" y="252" width="576" height="696" rx="16" fill="none" stroke="#b8403a" stroke-width="3"/>
+<text x="440" y="399" text-anchor="middle" font-family="Inter, sans-serif" font-size="76" font-weight="850" fill="#fff">Postage</text>
+<text x="440" y="470" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="700" fill="#fff">डाक शुल्क</text>
+<path d="M319 525h242" stroke="#b8403a" stroke-width="4" stroke-linecap="round"/>
+<text id="amount-num" x="440" y="735" text-anchor="middle" font-family="Inter, sans-serif" font-size="191" font-weight="850" fill="#fff">50</text>
+<text id="amount-unit" x="440" y="844" text-anchor="middle" font-family="Inter, sans-serif" font-size="87" font-weight="800" fill="#fff">paise</text>
+</g>
+<g id="postcard-types">
+<rect x="820" y="220" width="1000" height="760" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<g id="name-1"><rect x="870" y="288" width="210" height="80" rx="40" fill="#f3ead6"/><text x="975" y="339" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="820" fill="#2b2622">Single</text></g>
+<g id="name-2"><rect x="1100" y="288" width="210" height="80" rx="40" fill="#f3ead6"/><text x="1205" y="339" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="820" fill="#2b2622">Reply</text></g>
+<g id="name-3"><rect x="1330" y="288" width="210" height="80" rx="40" fill="#f3ead6"/><text x="1435" y="339" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="820" fill="#2b2622">Printed</text></g>
+<g id="name-4"><rect x="1560" y="288" width="210" height="80" rx="40" fill="#f3ead6"/><text x="1665" y="339" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="820" fill="#2b2622">Meghdoot</text></g>
+<g id="distinction-1">
+<rect x="870" y="430" width="900" height="118" rx="20" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+<text x="922" y="501" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="750" fill="#4b4f58">अलग tariff</text>
+<path id="strike-1" d="M916 481H1186" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+<path id="cross-1" d="M1658 464l35 35m0-35-35 35" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+</g>
+<g id="distinction-2">
+<rect x="870" y="590" width="900" height="118" rx="20" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+<text x="922" y="661" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="750" fill="#4b4f58">अलग availability</text>
+<path id="strike-2" d="M916 641H1346" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+<path id="cross-2" d="M1658 624l35 35m0-35-35 35" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+</g>
+<g id="ad-row"><rect x="870" y="750" width="900" height="180" rx="23" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+<text x="922" y="817" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="740" fill="#2b2622">तय जगह में</text>
+<text id="printed-ad" x="922" y="878" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="740" fill="#2b2622">छपा advertisement</text>
+<g id="allowed"><rect x="1449" y="790" width="264" height="109" rx="22" fill="#fff" stroke="#2e7d4f" stroke-width="4"/><path d="m1481 840 13 13 24-27" stroke="#2e7d4f" fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><text x="1610" y="835" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="850" fill="#2e7d4f">allowed</text><text x="1610" y="878" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="740" fill="#2e7d4f">मंज़ूर</text></g>
+</g>
+</g>
+</svg><script type="text/scene">
+{on:[
+ [1.04,'fade','#distinction-1',{dur:.28}],[1.78,'draw','#strike-1',{dur:.33}],[1.78,'draw','#cross-1',{dur:.29}],
+ [3.08,'fade','#distinction-2',{dur:.28}],[3.56,'draw','#strike-2',{dur:.33}],[3.56,'draw','#cross-2',{dur:.29}],
+ [5.46,'slide','#postcard-price',{from:'left',dist:43}],[6.70,'pop','#amount-num',{from:.92}],[7.48,'fade','#amount-unit',{dur:.22}],
+ [10.14,'fade','#ad-row',{dur:.32}],[11.56,'words','#printed-ad',{gap:.35,dist:7}],[13.28,'stamp','#allowed',{from:1.08,rot:-1.8}]
+]}
+</script></section>
