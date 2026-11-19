@@ -1,0 +1,42 @@
+<section class="vs-scene" id="s216" data-in="fade" data-in-dur="0.5" data-section="PART 10 · REUSE &amp; FICTITIOUS STAMPS" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="faint">
+   <text x="960" y="230" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="850" fill="#9e1b1b">Cancellation</text>
+   <text x="960" y="292" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#6f6a63">रद्द करने का निशान</text>
+   <g id="example-1">
+ <rect x="145" y="358" width="750" height="469" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <use id="stamp-1" href="piece:postage-stamp" transform="translate(340 340) scale(.9)"/>
+ <g id="cancel-1" fill="none" stroke="#4b4f58" stroke-width="5" opacity=".30" stroke-linecap="round"><circle cx="493" cy="505" r="61"/><circle cx="493" cy="505" r="50" stroke-width="2"/><path d="M555 487q12-10 24 0t24 0m-48 20q12-10 24 0t24 0m-48 20q12-10 24 0t24 0"/></g>
+ 
+ <text id="caption-1" x="520" y="780" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="780">Cancellation हल्की</text></g>
+   <g id="example-2">
+ <rect x="1025" y="358" width="750" height="469" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <use id="stamp-2" href="piece:postage-stamp" transform="translate(1220 340) scale(.9)"/>
+ <g id="cancel-2" fill="none" stroke="#4b4f58" stroke-width="5" opacity=".54" stroke-linecap="round"><circle cx="1373" cy="505" r="61"/><circle cx="1373" cy="505" r="50" stroke-width="2"/><path d="M1435 487q12-10 24 0t24 0m-48 20q12-10 24 0t24 0m-48 20q12-10 24 0t24 0"/></g>
+ <path id="rubbed-patch" d="M1313 473q20-22 40-19l25 11 28-6 33 25-17 21 10 31-26 19-40-12-15 13-28-25-2-31z" fill="#fbf7ee"/>
+ <text id="caption-2" x="1400" y="780" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="780">Cancellation मिटाई गई</text></g>
+   <g id="outcome">
+     <rect x="145" y="865" width="1630" height="111" rx="22" fill="#f0eeee" stroke="#4b4f58" stroke-width="3"/>
+     <path id="outcome-cross" d="m437 907 32 32m0-32-32 32" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+     <text x="1000" y="945" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="790" fill="#4b4f58">तब भी stamp दोबारा नहीं चलता</text>
+   </g>
+ </g>
+ <g id="caught">
+   <g id="posted-envelope">
+     <use id="envelope" href="piece:address-envelope" transform="translate(544 300) scale(1.3)"/>
+     <use id="reused-stamp" href="piece:cancelled-stamp" transform="translate(1212 352) scale(.30)"/>
+     <path id="stamp-target" d="M1331 414c1 36-24 58-60 58-36 0-60-23-60-57 0-35 28-58 63-57 34 1 57 23 57 56z" fill="none" stroke="#f2b705" stroke-width="8" stroke-linecap="round"/>
+   </g>
+   <text id="posted-label" x="960" y="238" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="790" fill="#2b2622">पहले से post हुआ item</text>
+ </g>
+</svg><script type="text/scene">
+{shots:[[0,'#faint'],[6.78,'#caught']],
+ camera:[[0,{zoom:1}],[9.90,{zoom:1}],[10.67,{on:'#stamp-target',zoom:1.25},'inOut']],
+ on:[
+ [0.96,'fade','#cancel-1',{dur:0.29}],[0.96,'fade','#caption-1',{dur:0.29}],
+ [2.74,'fade','#rubbed-patch',{dur:0.27}],[2.74,'fade','#caption-2',{dur:0.28}],
+ [4.88,'reveal','#outcome',{from:'left',dur:0.44}],[4.92,'draw','#outcome-cross',{dur:0.30}],
+ [8.42,'words','#posted-label',{gap:0.11,dist:6}],[9.90,'draw','#stamp-target',{dur:0.51}]
+]}
+</script></section>
