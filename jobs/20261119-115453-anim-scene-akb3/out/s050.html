@@ -22,7 +22,8 @@
       <g id="pill">
         <rect x="825" y="373" width="865" height="106" rx="30" fill="#fde9a6"/>
         <text x="860" y="438" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#664701">छूट सिर्फ <tspan font-family="Inter, sans-serif">Regulations</tspan> से</text>
-        <text id="pill-example" x="1264" y="438" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#664701">· जैसे <tspan id="bnpl" font-family="Inter, sans-serif" font-weight="800">authorised BNPL</tspan></text>
+        <rect id="bnpl-highlight" x="1316" y="397" width="350" height="57" rx="15" fill="#f2b705" fill-opacity="0.47"/>
+        <text id="pill-example" x="1220" y="438" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#664701">· जैसे <tspan x="1327" font-family="Inter, sans-serif" font-weight="800">authorised BNPL</tspan></text>
       </g>
     </g>
   </svg>
@@ -37,7 +38,7 @@
       [3.00, 'draw', '#tick', {dur: 0.32}],
       [4.43, 'fade', '#pill', {dur: 0.26}],
       [7.11, 'fade', '#pill-example', {dur: 0.24}],
-      [7.11, 'highlight', '#bnpl', {color: '#f2b705', opacity: 0.53, dur: 0.28, pad: 5}],
+      [7.11, 'fade', '#bnpl-highlight', {dur: 0.29}],
     ],
   }
   </script>
