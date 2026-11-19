@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s140" data-in="fade" data-in-dur="0.5" data-section="PART 6 · POSTAL STATIONERY" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+  <g id="rakhi-envelope">
+    <rect x="140" y="265" width="620" height="490" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="190" y="362" width="520" height="292" rx="18" fill="#ffffff"/>
+      <path d="M199 370L433 550Q451 564 469 550L700 370M200 640L373 516M700 640L527 516" fill="none" stroke="#b7a984"/>
+      <path d="M177 524C233 494 277 554 337 524S398 526 450 526S509 489 568 524S663 523 735 507" fill="none" stroke="#9e1b1b" stroke-width="12"/>
+      <path d="M177 524C233 494 277 554 337 524S398 526 450 526S509 489 568 524S663 523 735 507" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="3 10"/>
+      <path d="M450 475C466 459 489 470 491 491C513 496 517 522 500 535C511 556 493 575 472 569C465 590 437 590 429 569C407 576 390 558 400 535C381 521 388 498 410 492C411 472 432 461 450 475Z" fill="#9e1b1b"/>
+      <circle cx="450" cy="525" r="33" fill="#f2b705"/>
+      <circle cx="450" cy="525" r="14" fill="#fde9a6"/>
+    </g>
+  </g>
+  <text x="450" y="823" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="800" fill="#9e1b1b">Rakhi Envelope</text>
+  <text id="rakhi-hi" class="hi" x="450" y="884" text-anchor="middle" font-size="44" font-weight="540" fill="#6f6a63">राखी लिफ़ाफ़ा</text>
+  <g id="authority">
+    <rect x="860" y="230" width="920" height="170" rx="22" fill="#ffffff" stroke="#2e7d4f" stroke-width="4"/>
+    <path d="M881 244V385" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round"/>
+    <text class="hi" x="930" y="318" font-size="45" font-weight="670" fill="#2b2622">कीमत तय करते हैं:</text>
+    <text id="head-en" x="1380" y="318" font-family="Inter, sans-serif" font-size="54" font-weight="790" fill="#2b2622">Circle Head</text>
+    <text id="head-hi" class="hi" x="1380" y="371" font-size="40" font-weight="550" fill="#6f6a63">सर्किल प्रमुख</text>
+  </g>
+  <g id="ordinary-row">
+    <rect x="860" y="470" width="920" height="170" rx="22" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="928" y="557" font-family="Inter, sans-serif" font-size="53" font-weight="720" fill="#4b4f58">=</text>
+    <text id="ordinary-name" x="995" y="539" font-family="Inter, sans-serif" font-size="47" font-weight="710" fill="#4b4f58">ordinary embossed envelope</text>
+    <text id="ordinary-price" class="hi" x="995" y="596" font-size="42" font-weight="570" fill="#4b4f58">की कीमत</text>
+    <path id="ordinary-x" d="M1693 539L1723 569M1723 539L1693 569" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g id="prepaid-row">
+    <rect x="860" y="700" width="920" height="170" rx="22" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="928" y="806" font-family="Inter, sans-serif" font-size="53" font-weight="720" fill="#4b4f58">=</text>
+    <text id="prepaid-value" class="hi" x="995" y="807" font-size="49" font-weight="710" fill="#4b4f58">उतनी prepaid value</text>
+    <path id="prepaid-x" d="M1693 770L1723 800M1723 770L1693 800" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  on: [
+    [.58, 'fade', '#rakhi-hi', {dur:.28}],
+    [2.30, 'pop', '#authority', {from:.97, spring:'soft'}],
+    [3.62, 'fade', '#head-en', {dur:.24}],
+    [4.12, 'fade', '#head-hi', {dur:.25}],
+    [6.60, 'fade', '#ordinary-row', {dur:.22}],
+    [6.60, 'words', '#ordinary-name', {gap:.19, dist:8}],
+    [8.25, 'fade', '#ordinary-price', {dur:.25}],
+    [9.20, 'strike', '#ordinary-name', {color:'#4b4f58', width:5, dim:.8}],
+    [9.20, 'strike', '#ordinary-price', {color:'#4b4f58', width:5, dim:.8}],
+    [9.20, 'draw', '#ordinary-x', {dur:.30}],
+    [10.32, 'fade', '#prepaid-row', {dur:.22}],
+    [10.32, 'words', '#prepaid-value', {gap:.22, dist:8}],
+    [12.36, 'strike', '#prepaid-value', {color:'#4b4f58', width:5, dim:.8}],
+    [12.36, 'draw', '#prepaid-x', {dur:.30}]
+  ]
+})
+</script>
+</section>
