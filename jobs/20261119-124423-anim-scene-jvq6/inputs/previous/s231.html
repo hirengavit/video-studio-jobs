@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s231" data-in="fade" data-in-dur="0.5" data-section="PART 10 · REUSE &amp; FICTITIOUS STAMPS" data-series="STAMPS &amp; STATIONERY">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="exam">
+      <text x="140" y="221" class="hi" font-size="59" font-weight="800" fill="#9e1b1b">Exam angle · परीक्षा की नज़र से</text>
+      <rect x="100" y="290" width="1720" height="690" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M145 460 H1775 M145 630 H1775 M145 800 H1775" fill="none" stroke="#ead9a8" stroke-opacity=".8" stroke-width="3" stroke-linecap="round"/>
+      <g id="row1">
+        <g id="icon1">
+          <rect x="148" y="314" width="140" height="120" rx="18" fill="#f3ead6"/>
+          <rect x="181" y="327" width="75" height="96" rx="9" fill="#fff" stroke="#4b4f58" stroke-width="5" stroke-dasharray="6 8" stroke-linecap="round"/>
+          <path d="M198 351 H240 M198 370 H234" stroke="#aaa39a" stroke-width="4" stroke-linecap="round"/>
+          <path d="M201 389 L232 411 M232 389 L201 411" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+        </g>
+        <text id="line1" x="320" y="394" class="hi" font-size="54" font-weight="760" fill="#2b2622">BNS: fictitious stamps मना</text>
+      </g>
+      <g id="row2">
+        <g id="icon2">
+          <rect x="148" y="484" width="140" height="120" rx="18" fill="#f3ead6"/>
+          <use href="piece:cancelled-stamp" transform="translate(137 462) scale(0.405)"/>
+        </g>
+        <text id="line2" x="320" y="530" class="hi" font-size="51" font-weight="760" fill="#2b2622">पहले इस्तेमाल हुए stamp का धोखे से इस्तेमाल</text>
+        <g id="offence">
+          <rect id="offence-highlight" x="381" y="545" width="346" height="58" rx="14" fill="#fde9a6"/>
+          <text id="offence-equals" x="320" y="589" font-family="Inter, sans-serif" font-size="48" font-weight="760" fill="#8a5d00">=</text>
+          <text id="offence-word" x="399" y="589" class="hi" font-size="47" font-weight="800" fill="#2b2622">अलग</text>
+          <text id="offence-tail" x="535" y="589" font-family="Inter, sans-serif" font-size="47" font-weight="800" fill="#2b2622">offence</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0,{zoom:1}]],
+    on: [
+      [1.14,'pop','#icon1',{from:0.94,spring:'soft'}],
+      [2.32,'words','#line1',{gap:0.29,dist:12,spring:'soft'}],
+      [5.02,'pop','#icon2',{from:0.94,spring:'soft'}],
+      [5.02,'words','#line2',{gap:0.32,dist:12,spring:'soft'}],
+      [8.68,'fade','#offence-highlight, #offence-equals, #offence-word',{dur:0.25}],
+      [9.20,'fade','#offence-tail',{dur:0.24}],
+    ],
+  }
+  </script>
+</section>
