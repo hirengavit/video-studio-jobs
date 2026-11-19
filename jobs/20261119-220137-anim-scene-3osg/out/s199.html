@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s199" data-in="cut" data-section="PART 9 · UNPAID &amp; SHORT-PAID ITEMS" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+<g id="trap">
+  <g id="flag">
+    <rect x="160" y="200" width="1600" height="186" rx="28" fill="#9e1b1b"/>
+    <path d="M250 334L290 258L330 334Z" fill="#f2b705" stroke="#f2b705" stroke-width="10" stroke-linejoin="round"/>
+    <rect x="286" y="280" width="8" height="30" rx="4" fill="#9e1b1b"/><circle cx="290" cy="322" r="5" fill="#9e1b1b"/>
+    <text x="380" y="269" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="820" fill="#fde9a6">EXAM TRAP · परीक्षा का जाल</text>
+    <text id="trap-item" x="380" y="341" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="800" fill="#fff">कम postage वाले item पर</text>
+  </g>
+  <g id="left">
+    <rect x="160" y="418" width="780" height="512" rx="28" fill="#fff" stroke="#4b4f58" stroke-width="4"/>
+    <rect x="214" y="466" width="177" height="78" rx="34" fill="#4b4f58"/>
+    <text x="302.5" y="520" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="780" fill="#fff">गलत</text>
+
+    <text id="trap-wrong-credit" x="220" y="650" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="760" fill="#2b2622">valid postage भूलकर</text>
+    <text id="trap-wrong-rate" x="220" y="779" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="79" font-weight="830" fill="#4b4f58">पूरे rate × 2</text>
+    <g id="wrong-cross">
+      <circle cx="817" cy="750" r="45" fill="#fff" stroke="#4b4f58" stroke-width="4"/>
+      <path d="M797 730l40 40m0-40-40 40" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g id="right">
+    <rect x="980" y="418" width="780" height="512" rx="28" fill="#fff" stroke="#f2b705" stroke-width="4"/>
+    <rect x="1034" y="466" width="177" height="78" rx="34" fill="#fde9a6"/>
+    <text x="1122.5" y="520" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="780" fill="#684800">सही</text>
+
+    <text id="trap-right-shortfall" x="1040" y="650" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="760" fill="#2b2622">पहले कमी</text>
+    <text id="trap-right-double" x="1040" y="779" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="79" font-weight="830" fill="#2b2622">फिर कमी × 2</text>
+    <path id="right-tick" d="M1603 750l20 20 45-53" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</g>
+
+<g id="held">
+  <text id="held-question" x="960" y="245" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="77" font-weight="820" fill="#9e1b1b">ऐसे items कहाँ रखे जाते हैं?</text>
+  <g id="held-term">
+    <rect x="460" y="400" width="1000" height="360" rx="30" fill="#9e1b1b"/>
+    <rect x="476" y="416" width="968" height="328" rx="22" fill="none" stroke="#fbf7ee" stroke-width="11" stroke-dasharray="0 24" stroke-linecap="round"/>
+    <text id="held-en" x="960" y="568" text-anchor="middle" font-family="Inter,sans-serif" font-size="95" font-weight="860" fill="#fff">POSTAGE DUE</text>
+    <text id="held-hi" x="960" y="666" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="760" fill="#fde9a6">देय डाक शुल्क</text>
+  </g>
+  <g id="held-chip">
+    <rect x="600" y="797" width="720" height="94" rx="46" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+    <text x="960" y="861" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="760" fill="#2b2622">वसूली के लिए hold पर</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({shots:[[0,'#trap'],[8.15,'#held']],camera:[[0,{zoom:1}]],on:[
+ [1.22,'fade','#trap-wrong-credit',{dur:.30}],
+ [2.30,'type','#trap-wrong-rate',{cps:12}],
+ [4.02,'strike','#trap-wrong-rate',{color:'#4b4f58',width:7,dim:.70,dur:.30}],
+ [4.02,'draw','#wrong-cross',{dur:.35}],
+ [4.90,'fade','#trap-right-shortfall',{dur:.30}],
+ [6.00,'fade','#trap-right-double',{dur:.30}],
+ [6.50,'draw','#right-tick',{dur:.29}],
+ [8.20,'words','#held-question',{gap:.22,dist:12,spring:'soft'}],
+ [10.34,'pop','#held-term',{from:.96,spring:'soft'}],
+ [10.84,'fade','#held-hi',{dur:.30}],
+ [12.86,'pop','#held-chip',{from:.94,spring:'snap'}]
+]})
+</script>
+</section>
