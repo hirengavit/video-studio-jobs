@@ -8,12 +8,5 @@
   "9.04"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s123",
-   "text": "दूसरा समूह / पश्चिम और उत्तर",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
