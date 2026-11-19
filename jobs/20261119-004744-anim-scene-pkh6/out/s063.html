@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s063" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="route">
+<g id="ladder"><use href="piece:step-ladder-diagram" transform="translate(400 290) scale(1.2)"/></g>
+<g id="dak-bhawan"><use href="piece:icon-dak-bhawan" transform="translate(1523.4 134) scale(.8)"/></g>
+<text id="dak-en" x="1438" y="302" text-anchor="end" font-size="61" font-weight="820" fill="#9e1b1b">Dak Bhawan</text>
+<text id="dak-hi" x="1438" y="360" text-anchor="end" font-size="45" font-weight="660" class="hi" fill="#6f6a63">डाक भवन</text>
+
+  <g id="village"><path d="M78 994H425" stroke="#d9c597" stroke-width="3" stroke-linecap="round"/><use href="piece:icon-village-post-office" transform="translate(33 725.4) scale(.85)"/></g>
+  <text id="village-label" x="203" y="776" text-anchor="middle" class="hi" font-size="45" font-weight="760" fill="#9e1b1b">गाँव का डाकघर</text>
+<g id="order">
+  <g id="order-paper"><use href="piece:icon-notice-document" transform="translate(1426 367) scale(.40)"/></g>
+  <g id="order-tag">
+    <rect x="1120" y="427" width="306" height="62" rx="21" fill="#9e1b1b"/>
+    <text x="1273" y="469" text-anchor="middle" font-size="44" font-weight="780" fill="#fffefa">order<tspan class="hi"> · आदेश</tspan></text>
+  </g>
+</g>
+</g>
+<g id="heads-shot">
+ <text id="heads-title" x="100" y="221" class="hi" fill="#9e1b1b" font-size="66" font-weight="820">हर level के head</text>
+ <g id="heads-table">
+  <rect x="100" y="250" width="1720" height="750" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M126 250H1794Q1820 250 1820 276V324H100V276Q100 250 126 250Z" fill="#9e1b1b"/>
+  <text x="159" y="302" class="hi" font-size="47" font-weight="780" fill="#fff">स्तर</text>
+  <text x="820" y="302" class="hi" font-size="47" font-weight="780" fill="#fff">head (प्रमुख)</text>
+  <path d="M760 324V1000 M100 436H1820 M100 548H1820 M100 660H1820 M100 772H1820 M100 884H1820" fill="none" stroke="#ead9a8" stroke-width="3"/>
+ </g>
+ <g id="heads-row1">
+  <text id="heads-circle" x="159" y="378" font-size="56" font-weight="800" fill="#2b2622">Circle</text>
+  <text id="heads-circle-hi" x="159" y="417" class="hi" font-size="36" font-weight="670" fill="#6f6a63">परिमंडल</text>
+  <text id="heads-cpmg" x="820" y="378" font-size="56" font-weight="850" fill="#9e1b1b">CPMG</text>
+  <text id="heads-cpmg-hi" x="820" y="417" class="hi" font-size="36" font-weight="670" fill="#6f6a63">मुख्य पोस्टमास्टर जनरल</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,"#route"],[4.65,"#heads-shot"]],
+ on:[
+  [0,"move","#order-paper",{by:[-282,112],spring:"fast"}],
+  [0.02,"out","#order-tag",{dur:0.28,scale:1}],
+  [0.96,"move","#order-paper",{by:[-282,112],spring:"fast"}],
+  [1.20,"move","#order-paper",{by:[-282,112],spring:"fast"}],
+  [1.50,"move","#order-paper",{by:[-106,0],spring:"fast"}],
+  [1.72,"pop","#village",{from:0.90,spring:"fast"}],
+  [2.82,"fade","#village-label",{dur:0.24}],
+  [3.44,"move","#order-paper",{by:[-154,141.4],spring:"soft"}],
+  [3.70,"pulse","#order-paper",{amount:0.12}],
+  [4.65,"words","#heads-title",{gap:0.26,dist:10,spring:"fast"}],
+  [6.37,"reveal","#heads-table",{from:"top",dur:0.32}],
+  [7.63,"words","#heads-circle",{dist:9,spring:"fast"}],
+  [8.10,"fade","#heads-circle-hi",{dur:0.23}],
+  [9.17,"pop","#heads-cpmg",{from:0.86,spring:"fast"}],
+  [9.70,"fade","#heads-cpmg-hi",{dur:0.23}]
+ ]
+}
+</script>
+</section>
