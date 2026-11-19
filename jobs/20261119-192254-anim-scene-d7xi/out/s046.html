@@ -46,9 +46,9 @@
     <g id="business-source">
       <rect x="1005" y="452" width="790" height="80" rx="20" fill="#f3ead6" />
       <text id="firm" x="1032" y="505" font-family="Inter,sans-serif" font-size="40" font-weight="830" fill="#2b2622">firms</text>
-      <text id="firm-or" x="1140" y="505" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="700" fill="#2b2622">या</text>
-      <text id="business" x="1204" y="505" font-family="Inter,sans-serif" font-size="40" font-weight="830" fill="#2b2622">business establishments</text>
-      <text id="business-from" x="1728" y="505" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="700" fill="#2b2622">से</text>
+      <text id="firm-or" x="1154" y="505" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="700" fill="#2b2622">या</text>
+      <text id="business" x="1214" y="505" font-family="Inter,sans-serif" font-size="40" font-weight="830" fill="#2b2622">business establishments</text>
+      <text id="business-from" x="1737" y="505" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="700" fill="#2b2622">से</text>
     </g>
     <g id="facility-two-limit">
       <rect x="1005" y="549" width="790" height="79" rx="20" fill="#f3ead6" stroke="#ead9a8" stroke-width="3" />
@@ -68,17 +68,17 @@
     </g>
     <g id="inland-cards">
       <rect x="1272" y="645" width="256" height="172" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="3" />
-      <use href="piece:letter-card" transform="translate(1273 612) scale(.377)" />
-      <text x="1467" y="704" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="790" fill="#2b2622">Inland</text>
+      <use href="piece:letter-card" transform="translate(1270 612) scale(.377)" />
+      <text x="1468" y="704" textLength="96" lengthAdjust="spacing" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="790" fill="#2b2622">Inland</text>
       <text x="1400" y="752" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="790" fill="#2b2622">letter cards</text>
       <text id="inland-hi" x="1400" y="796" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="34" font-weight="700" fill="#6f6a63">अंतर्देशीय पत्र कार्ड</text>
     </g>
   
     <g id="postcards-chip">
       <rect x="1539" y="661" width="256" height="140" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
-      <use href="piece:postcard-blank" transform="translate(1532 654) scale(.33)"/>
-      <text id="postcards-en" x="1719" y="713" text-anchor="middle" textLength="135" lengthAdjust="spacingAndGlyphs" font-family="Inter, sans-serif" font-size="40" font-weight="800" fill="#2b2622">Postcards</text>
-      <text id="postcards-hi" x="1719" y="757" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="35" font-weight="690" fill="#6f6a63">पोस्टकार्ड</text>
+      <use href="piece:postcard-blank" transform="translate(1535 658) scale(.30)"/>
+      <text id="postcards-en" x="1722" y="713" text-anchor="middle" textLength="127" lengthAdjust="spacingAndGlyphs" font-family="Inter, sans-serif" font-size="40" font-weight="800" fill="#2b2622">Postcards</text>
+      <text id="postcards-hi" x="1722" y="757" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="35" font-weight="690" fill="#6f6a63">पोस्टकार्ड</text>
     </g>
   </g>
   <rect id="large-city-lit" x="533" y="674" width="180" height="78" rx="17" fill="none" stroke="#f2b705" stroke-width="5"/>
@@ -90,9 +90,11 @@
   </g>
   <g id="bulk-only-note">
     <text id="only-minimum" x="138" y="940" textLength="778" lengthAdjust="spacingAndGlyphs" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="780" fill="#2b2622">ये minimum सिर्फ तय bulk facilities के लिए</text>
+    <path id="only-mark" d="M370 952Q410 955 450 952" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round"/>
   </g>
   <g id="ordinary-counter-note">
     <text id="counter-condition" x="1004" y="940" textLength="729" lengthAdjust="spacingAndGlyphs" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="780" fill="#2b2622">आम counter payment: ये शर्त नहीं</text>
+    <path id="counter-strike" d="M1578 925h73" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
   </g>
 </g>
 </svg>
@@ -114,10 +116,10 @@
     [4.90,'pulse','#facility-two-stamp',{amount:0.045}],
     [4.64,'slide','#minimum-exam-band',{from:'down',dist:42,spring:'soft'}],
     [4.64,'fade','#bulk-only-note',{dur:0.32}],
-    [4.64,'underline','#only-minimum',{words:'सिर्फ',color:'#8a5d00',width:3,gap:3,dur:0.37}],
+    [4.64,'draw','#only-mark',{dur:0.37}],
     [6.26,'highlight','#only-minimum',{words:'bulk facilities',color:'#fde9a6',opacity:1,pad:7,dur:0.35}],
     [8.36,'fade','#ordinary-counter-note',{dur:0.35}],
-    [10.22,'strike','#counter-condition',{words:'शर्त',color:'#4b4f58',width:5,dim:.90,dur:.35}]
+    [10.22,'draw','#counter-strike',{dur:.35}]
   ]
 }
 </script>
