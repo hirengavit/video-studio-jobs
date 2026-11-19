@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" width="360" height="240">
+ <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g id="case-planks">
+   <rect x="20" y="31" width="320" height="179" rx="9" fill="#c89f73"/>
+   <path d="M22 81h316v46H22zM22 172h316v36H22z" fill="#b78a5c" stroke="none"/>
+   <path d="M22 81h316M22 127h316M22 172h316" fill="none"/>
+   <path d="M80 59h78m45 47h66M94 148h84m29 43h66" fill="none" stroke="#ead9a8"/>
+  </g>
+  <g id="metal-corners" fill="#6f6a63">
+   <path d="M20 40q0-9 9-9h39v15H36v27H20zM340 40q0-9-9-9h-39v15h32v27h16zM20 201q0 9 9 9h39v-15H36v-27H20zM340 201q0 9-9 9h-39v-15h32v-27h16z"/>
+   <path d="M53 39h1m252 0h1M53 202h1m252 0h1" stroke="#f3ead6"/>
+  </g>
+ </g>
+ <circle data-anchor="base" cx="180" cy="210" r="0"/>
+ <circle data-anchor="top" cx="180" cy="31" r="0"/>
+</svg>
