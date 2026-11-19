@@ -8,12 +8,5 @@
   "9.45"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s148",
-   "text": "अंदर कुछ नहीं / ·  ऊपर कुछ नहीं",
-   "t": 5.76
-  }
- ]
+ "warnings": []
 }
