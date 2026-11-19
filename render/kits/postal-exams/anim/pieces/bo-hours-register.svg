@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420">
+  <g id="cover">
+    <rect x="6" y="12" width="628" height="400" rx="12" fill="#9e1b1b" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="306" y="12" width="28" height="400" fill="#7d1414"/>
+    <path d="M306 12 V412 M334 12 V412" fill="none" stroke="#2b2622" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g id="page-left">
+    <path d="M316 34 Q172 14 22 26 L22 394 Q172 382 316 400 Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M302 40 Q300 220 302 392" fill="none" stroke="#ead9a8" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  </g>
+  <g id="page-right">
+    <path d="M324 34 Q468 14 618 26 L618 394 Q468 382 324 400 Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M338 40 Q340 220 338 392" fill="none" stroke="#ead9a8" stroke-width="6" stroke-linecap="round" opacity="0.8"/>
+  </g>
+  <g id="header-row">
+    <path d="M350 44 Q470 32 600 40 L600 88 Q470 82 350 90 Z" fill="#ead9a8" opacity="0.75"/>
+    <path d="M350 90 Q470 82 600 88" fill="none" stroke="#2b2622" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <g id="rows" fill="none" stroke="#c8b78f" stroke-width="1.5" stroke-linecap="round">
+    <path d="M350 136 H600"/>
+    <path d="M350 182 H600"/>
+    <path d="M350 228 H600"/>
+    <path d="M350 274 H600"/>
+    <path d="M350 320 H600"/>
+    <path d="M350 366 H600"/>
+  </g>
+  <g id="col-rule">
+    <path d="M462 38 V378" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <circle data-anchor="base" cx="320" cy="412" r="0"/>
+  <circle data-anchor="top" cx="320" cy="12" r="0"/>
+</svg>
