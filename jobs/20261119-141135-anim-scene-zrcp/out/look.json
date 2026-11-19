@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.50",
+  "5.00",
+  "7.50",
+  "10.00",
+  "12.35"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-off-frame",
+   "scene": "s219",
+   "text": "जो खुद को सरकारी postage stamp बताए",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s219",
+   "text": "ऐसे stamps गैर-कानूनी तरीके से बनाना या  / दंडनीय",
+   "t": 12.35
+  }
+ ]
+}
