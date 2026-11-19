@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s020" data-in="fade" data-in-dur="0.5" data-section="PART 1 · POSTAGE &amp; PREPAYMENT" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+  <text class="hi" x="960" y="228" text-anchor="middle" font-size="66" font-weight="800" fill="#2b2622">एक बात अलग रखिए</text>
+  <g id="sale">
+    <rect x="100" y="310" width="800" height="590" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M130 310H870Q900 310 900 340V385H100V340Q100 310 130 310Z" fill="#f2b705"/>
+    <g id="counter"><use href="piece:post-counter-icon" transform="translate(330 414) scale(.85)"/></g>
+    <path d="M310 716H690" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <text id="sale-word" class="hi" x="500" y="811" text-anchor="middle" font-size="53" font-weight="750" fill="#2b2622">Stamp बेचने की permission</text>
+  </g>
+  <g id="issue">
+    <rect x="1020" y="310" width="800" height="590" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M1050 310H1790Q1820 310 1820 340V385H1020V340Q1020 310 1050 310Z" fill="#9e1b1b"/>
+    <g id="seal">
+      <rect x="1210" y="484" width="420" height="210" rx="24" fill="#9e1b1b"/>
+      <rect x="1225" y="499" width="390" height="180" rx="13" fill="none" stroke="#ffffff" stroke-width="5" stroke-dasharray="1 13" stroke-linecap="round"/>
+      <text x="1420" y="612" text-anchor="middle" font-family="Inter, sans-serif" font-size="62" font-weight="800" fill="#ffffff">Post Office</text>
+    </g>
+    <g id="issue-words">
+      <text class="hi" x="1420" y="786" text-anchor="middle" font-size="52" font-weight="750" fill="#2b2622">Stamp जारी करने का अधिकार</text>
+      <text x="1420" y="852" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="580" fill="#6f6a63">Exclusive privilege</text>
+    </g>
+  </g>
+  <g id="not-equal">
+    <circle cx="960" cy="592" r="54" fill="#2b2622" stroke="#fbf7ee" stroke-width="8"/>
+    <path d="M939 586H981M939 600H981M973 573L947 613" stroke="#ffffff" stroke-width="6" stroke-linecap="round" fill="none"/>
+  </g>
+  <text id="takeaway" class="hi" x="960" y="972" text-anchor="middle" font-size="49" font-weight="750" fill="#2b2622">दो अलग चीज़ें</text>
+</svg>
+<script type="text/scene">
+({
+  on: [
+    [2.68, 'slide', '#sale', {from:'left', dist:90, spring:'soft'}],
+    [3.74, 'fade', '#sale-word', {dur:.28}],
+    [5.02, 'slide', '#issue', {from:'right', dist:90, spring:'soft'}],
+    [6.50, 'fade', '#issue-words', {dur:.26}],
+    [7.04, 'pop', '#not-equal', {from:.86, spring:'soft'}],
+    [8.02, 'fade', '#takeaway', {dur:.25}],
+    [8.13, 'underline', '#takeaway', {words:'अलग', color:'#f2b705', width:5, dur:.29}]
+  ]
+})
+</script>
+</section>
