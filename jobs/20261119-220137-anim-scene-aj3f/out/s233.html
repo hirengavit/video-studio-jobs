@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s233" data-in="wipe" data-in-dur="0.6" data-in-opts='{"from":"right"}' data-section="KEY POINTS" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+  <g id="key-progress">
+    <rect x="100" y="200" width="360" height="420" rx="25" fill="#9e1b1b"/>
+    <rect x="100" y="200" width="360" height="420" rx="25" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 25" stroke-linecap="round"/>
+    <text id="number-7" x="280" y="431" text-anchor="middle" font-family="Inter,sans-serif" font-size="190" font-weight="820" fill="#ffffff">7</text>
+    <text id="number-1" x="280" y="431" text-anchor="middle" font-family="Inter,sans-serif" font-size="190" font-weight="820" fill="#ffffff">1</text>
+    <text id="ordinal-intro" class="hi" x="280" y="540" text-anchor="middle" font-size="51" font-weight="760" fill="#ffffff">ज़रूरी बातें</text>
+    <text id="ordinal-first" class="hi" x="280" y="540" text-anchor="middle" font-size="51" font-weight="760" fill="#ffffff">पहली</text>
+    <circle id="key-dot-1" cx="140.00" cy="700" r="11" fill="#e6dcc4"/><circle id="key-dot-2" cx="186.67" cy="700" r="11" fill="#e6dcc4"/><circle id="key-dot-3" cx="233.33" cy="700" r="11" fill="#e6dcc4"/><circle id="key-dot-4" cx="280.00" cy="700" r="11" fill="#e6dcc4"/><circle id="key-dot-5" cx="326.67" cy="700" r="11" fill="#e6dcc4"/><circle id="key-dot-6" cx="373.33" cy="700" r="11" fill="#e6dcc4"/><circle id="key-dot-7" cx="420.00" cy="700" r="11" fill="#e6dcc4"/>
+  </g>
+  <g id="summary-card">
+    <rect x="520" y="200" width="1300" height="780" rx="27" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text id="summary-heading" class="hi" x="606" y="265" font-size="64" font-weight="800" fill="#9e1b1b">याद रखने वाली बातें</text>
+    <path d="M606 292H1734" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text id="issue-action" class="hi" x="606" y="350" font-size="52" font-weight="730" fill="#2b2622">Postage stamps जारी करना</text>
+  <text id="issue-office" class="hi" x="1270" y="350" font-size="52" font-weight="750" fill="#2b2622">→ सिर्फ़ Post Office</text>
+  <text id="privilege-en" x="606" y="470" font-family="Inter,sans-serif" font-size="64" font-weight="780" fill="#2b2622">Exclusive privilege</text>
+  <text id="privilege-hi" class="hi" x="606" y="525" font-size="44" font-weight="650" fill="#6f6a63">अनन्य विशेषाधिकार</text>
+  <text id="stamp-physical" x="606" y="650" font-family="Inter,sans-serif" font-size="52" font-weight="750" fill="#2b2622">Stamp: physical</text>
+</svg>
+<script type="text/scene">
+({
+  on: [
+    [3.20,'swap','#number-7',{to:'#number-1',dur:.30,dist:15}],
+    [3.20,'swap','#ordinal-intro',{to:'#ordinal-first',dur:.30,dist:12}],
+    [3.20,'color','#key-dot-1',{to:'#f2b705',dur:.23}],
+    [3.90,'words','#issue-action',{gap:.17,dist:10}],
+    [6.42,'fade','#privilege-en',{dur:.29}],
+    [6.92,'fade','#privilege-hi',{dur:.29}],
+    [8.04,'fade','#issue-office',{dur:.30}],
+    [10.52,'words','#stamp-physical',{gap:.13,dist:10}]
+  ]
+})
+</script>
+</section>
