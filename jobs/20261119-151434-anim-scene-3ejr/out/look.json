@@ -1,0 +1,37 @@
+{
+ "moments": [
+  "0.30",
+  "2.33",
+  "4.65",
+  "6.98",
+  "9.30",
+  "11.48"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s198",
+   "message": "highlight: \"50 paise\" isn't in that <text> (it says \"\")",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s198",
+   "text": "दोगुनी = 2 × 25 paise / = 50 paise",
+   "t": 2.33
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s198",
+   "message": "a card is mostly empty at 9.3 s: bring its items in sooner, or size it for what it holds now",
+   "t": 9.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s198",
+   "message": "a card is mostly empty at 11.5 s: bring its items in sooner, or size it for what it holds now",
+   "t": 11.48
+  }
+ ]
+}
