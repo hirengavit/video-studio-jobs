@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s179" data-in="fade" data-in-dur="0.5" data-section="PART 8 · POSTCARD" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+  <g id="formula-plate">
+    <rect x="100" y="190" width="660" height="810" rx="28" fill="#9e1b1b"/>
+    <rect x="100" y="190" width="660" height="810" rx="28" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+    <rect x="157" y="277" width="10" height="56" rx="5" fill="#f2b705"/>
+    <text class="hi" x="185" y="323" font-size="54" font-weight="800" fill="#ffffff">हिसाब · कमी का दोगुना</text>
+    <rect x="153" y="410" width="554" height="318" rx="22" fill="#ffffff"/>
+    <g text-anchor="middle" font-family="Georgia,'Noto Sans Devanagari',serif" fill="#2b2622" font-size="50" font-weight="700">
+      <text x="430" y="505">वसूली = 2 ×</text>
+      <text x="430" y="593">(letter postage</text>
+      <text x="430" y="667">− valid postage)</text>
+    </g>
+    <text x="430" y="813" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="740" fill="#ffffff">Minimum ₹1</text>
+    <text class="hi" x="430" y="881" text-anchor="middle" font-size="42" font-weight="740" fill="#ffffff">paise → पूरा रुपया</text>
+  </g>
+  <g id="worked-card">
+    <rect x="810" y="190" width="1010" height="810" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M865 547H1765" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g id="postcard-item">
+    <use href="piece:postcard-blank" transform="translate(900 174) scale(.81)"/>
+    <text x="1062" y="490" text-anchor="middle" font-family="Georgia,serif" font-size="58" font-weight="700" fill="#2b2622">50 paise</text>
+  </g>
+  <path id="as-letter" d="M1235 346H1395M1371 322L1395 346L1371 370" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="letter-item">
+    <use href="piece:envelope-article" transform="translate(1406 147.5) scale(.99)"/>
+    <text x="1575" y="490" text-anchor="end" font-family="Inter,sans-serif" font-size="54" font-weight="740" fill="#2b2622">Letter:</text>
+    <text id="letter-price" x="1608" y="490" font-family="Georgia,serif" font-size="61" font-weight="700" fill="#9e1b1b">₹5</text>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  on: [
+    [1.36,'fade','#worked-card',{dur:.31}],
+    [3.08,'pop','#postcard-item',{from:.93,spring:'soft'}],
+    [5.06,'draw','#as-letter',{dur:.36}],
+    [5.42,'fade','#letter-item',{dur:.29}],
+    [7.56,'pop','#letter-price',{from:.87,spring:'soft'}]
+  ]
+})
+</script>
+</section>
