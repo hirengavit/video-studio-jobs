@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s105" data-in="fade" data-in-dur="0.5" data-section="PART 5 · SALE, STOCK, REFUND, CANCELLATION" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+  <text class="hi" x="120" y="196" font-size="44" font-weight="690" fill="#6f6a63">अनुमति के बिना?</text>
+  <g id="without">
+    <rect x="120" y="220" width="780" height="280" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="150" y="274" width="9" height="172" rx="4.5" fill="#4b4f58"/>
+    <text class="hi" x="204" y="365" font-size="65" font-weight="760" fill="#2b2622">बिना permission</text>
+    <text class="hi" x="205" y="435" font-size="42" font-weight="540" fill="#6f6a63">permission / अनुमति</text>
+    <path id="without-x" d="M781 325L844 388M844 325L781 388" fill="none" stroke="#4b4f58" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g id="broken">
+    <rect x="120" y="560" width="780" height="280" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="150" y="614" width="9" height="172" rx="4.5" fill="#4b4f58"/>
+    <text class="hi" x="204" y="681" font-size="55" font-weight="760" fill="#2b2622">permission की शर्त तोड़ी</text>
+    <rect x="207" y="730" width="547" height="58" rx="14" fill="#f3ead6"/>
+    <path d="M235 759H382M404 759H528M550 759H718" fill="none" stroke="#6f6a63" stroke-width="4" stroke-linecap="round"/>
+    <path id="condition-strike" d="M223 778L730 740" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g id="routes" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M924 360C1035 361 1081 431 1190 466M1158 442L1190 466L1151 471"/>
+    <path d="M924 700C1035 698 1083 578 1190 552M1157 576L1190 552L1152 545"/>
+  </g>
+  <g id="book-outline" opacity=".42" stroke="#6f6a63" fill="none" stroke-width="3">
+    <rect x="1221" y="241" width="376" height="516" rx="24" stroke-dasharray="8 12"/>
+    <path d="M1266 242V727" opacity=".7"/>
+  </g>
+  <g id="book"><use href="piece:regulations-book" transform="translate(1200 222) scale(1.38)"/></g>
+  <text id="law" class="hi" x="1426" y="458" text-anchor="middle" font-size="48" font-weight="780" fill="#2b2622">लागू कानून</text>
+  <g id="verdict">
+    <circle cx="1417" cy="894" r="82" fill="#fbf7ee" stroke="#4b4f58" stroke-width="7"/>
+    <circle cx="1417" cy="894" r="68" fill="none" stroke="#4b4f58" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+    <text class="hi" x="1417" y="916" text-anchor="middle" font-size="54" font-weight="820" fill="#4b4f58">सज़ा</text>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  camera: [[0,{zoom:1}],[6.48,{zoom:1}],[8.35,{zoom:1.05,x:12},'inOut']],
+  on: [
+    [.96,'pop','#without',{from:.96,spring:'soft'}],
+    [1.30,'draw','#without-x',{dur:.32}],
+    [3.46,'pop','#broken',{from:.96,spring:'soft'}],
+    [3.98,'draw','#condition-strike',{dur:.36}],
+    [5.34,'draw','#routes',{dur:.58}],
+    [6.48,'out','#book-outline',{dur:.25,scale:1}],
+    [6.48,'fade','#book',{dur:.34}],
+    [6.92,'fade','#law',{dur:.24}],
+    [7.74,'stamp','#verdict',{from:1.13,rot:-4,spring:'soft'}]
+  ]
+})
+</script>
+</section>
