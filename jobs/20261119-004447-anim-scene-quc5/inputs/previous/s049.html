@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s049" data-in="cut" data-section="PART 2 · POSTAL SERVICES BOARD" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" text-anchor="middle">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="invitee-shot">
+ <g id="psb"><rect x="100" y="260" width="660" height="600" rx="36" fill="#9e1b1b"/>
+ <text x="430" y="449" font-size="112" font-weight="850" fill="#fff">PSB</text>
+ <text x="430" y="525" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="700" fill="#fde9a6">डाक सेवा बोर्ड</text>
+ <path d="M182 579h496" stroke="#b8403a" stroke-width="4"/>
+ <text x="430" y="665" font-size="43" font-weight="780" fill="#fff">1 Chairperson + 7 Members</text>
+ <text x="430" y="739" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="700" fill="#fde9a6">1 अध्यक्ष + 7 सदस्य</text></g>
+ <path id="invitee-link" d="M771 462h275" stroke="#9e1b1b" stroke-width="6" stroke-dasharray="11 12" stroke-linecap="round"/>
+ <g id="invitee-pill"><rect x="775" y="493" width="277" height="119" rx="22" fill="#fde9a6"/>
+ <text x="913.5" y="540" font-size="29" font-weight="820" fill="#2b2622">permanent invitee</text>
+ <text x="913.5" y="585" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="32" font-weight="750" fill="#6f4c00">स्थायी आमंत्रित</text></g>
+ <g id="invitee-card"><rect x="1060" y="260" width="760" height="380" rx="34" fill="#fff" stroke="#b8403a" stroke-width="5" stroke-dasharray="13 9"/>
+ <text id="financial" x="1440" y="443" font-size="70" font-weight="850" fill="#9e1b1b">Financial Adviser</text>
+ <text id="financial-hi" x="1440" y="525" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="700" fill="#6f6a63">वित्तीय सलाहकार</text></g>
+</g>
+<path id="ifw-link" d="M1440 646V685" stroke="#2b2622" stroke-width="6" stroke-linecap="round"/>
+<text id="ifw-head" x="1479" y="678" text-anchor="start" class="hi" font-size="41" font-weight="760" fill="#514941">head भी</text>
+<g id="ifw-card">
+ <rect x="1060" y="690" width="760" height="290" rx="34" fill="#fffefa" stroke="#ead9a8" stroke-width="4"/>
+ <path d="M1099 728H1781" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+ <text id="ifw-en" x="1105" y="827" text-anchor="start" font-size="49" font-weight="830" fill="#2b2622">Internal Finance Wing</text>
+ <text id="ifw-hi" x="1107" y="903" text-anchor="start" class="hi" font-size="43" font-weight="730" fill="#6f6a63">आंतरिक वित्त स्कंध</text>
+ <g id="ifw-stamp">
+  <rect x="1660" y="770" width="130" height="140" rx="21" fill="#9e1b1b"/>
+  <rect x="1671" y="781" width="108" height="118" rx="14" fill="none" stroke="#f0c49b" stroke-width="2.5" stroke-dasharray="2 8" stroke-linecap="round"/>
+  <text x="1725" y="861" font-size="54" font-weight="830" fill="#fffefa">IFW</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({dur:9.96,on:[
+[1.08,"pulse","#invitee-pill",{amount:.045}],
+[3.18,"highlight","#financial",{color:"#f2b705",opacity:.43,pad:10,dur:.41}],
+[5.26,"pop","#ifw-card",{from:.97}],
+[5.26,"words","#ifw-en",{gap:.45,dist:8}],
+[6.40,"fade","#ifw-hi",{dur:.24}],
+[7.16,"stamp","#ifw-stamp",{from:1.05,rot:-1.5}],
+[8.64,"draw","#ifw-link",{dur:.26}],
+[8.64,"fade","#ifw-head",{dur:.22}]
+]})
+</script>
+</section>
