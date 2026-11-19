@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s148" data-in="fade" data-in-dur="0.5" data-section="PART 7 · LETTER CARD" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <path d="M960 246v691" stroke="#ded6c8" stroke-width="3"/>
+  <g id="restrictions">
+    <g id="slip">
+      <path d="M562 458V344h113v114z" fill="#fff" stroke="#4b4f58" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M581 370h73m-73 20h52" fill="none" stroke="#b7b1a8" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <use id="folded-card" href="piece:letter-card" transform="translate(240 280) scale(1.4)"/>
+    <g id="tag">
+      <path d="M775 606h45l51 33-51 33h-45z" fill="#f3ead6" stroke="#4b4f58" stroke-width="5" stroke-linejoin="round"/>
+      <circle cx="796" cy="638" r="6" fill="#fbf7ee" stroke="#4b4f58" stroke-width="3"/>
+      <path d="M746 628q5-22 26-20 16 3 20 23l2 6" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <path id="cross-slip" d="m584 351 68 64m0-64-68 64" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+    <path id="cross-tag" d="m795 609 57 60m0-60-57 60" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+    <g font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="790" fill="#4b4f58">
+      <text id="nothing-inside" x="315" y="880" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="790" text-anchor="middle" fill="#4b4f58">अंदर कुछ नहीं</text>
+      <text id="nothing-on-top" x="703" y="880" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="790" text-anchor="middle" fill="#4b4f58">ऊपर कुछ नहीं</text><circle id="caption-divider" cx="508" cy="863" r="4.5" fill="#4b4f58"/>
+    </g>
+  </g>
+  <g id="private-panel">
+    <rect x="1040" y="300" width="740" height="560" rx="36" fill="#fff" stroke="#2e7d4f" stroke-width="5"/>
+    <path d="M1112 556h596" fill="none" stroke="#e0f0e4" stroke-width="4"/>
+    <text id="private-term" x="1410" y="436" text-anchor="middle" font-size="72" font-weight="850" fill="#9e1b1b">Private letter card</text>
+    <text id="private-hi" x="1410" y="511" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="760" fill="#6f6a63">निजी पत्र कार्ड</text>
+    <use id="private-folded-card" href="piece:letter-card" transform="translate(1250 530) scale(.8)"/>
+    <g id="private-tick">
+      <circle cx="1716" cy="349" r="30" fill="#e0f0e4"/>
+      <path d="M1703 349l9 9 17-19" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{on:[
+  [0.38,'pop','#slip'],
+  [1.24,'draw','#cross-slip',{dur:0.33}],
+  [1.24,'fade','#nothing-inside',{dur:0.27}],
+  [3.64,'pop','#tag'],
+  [4.40,'draw','#cross-tag',{dur:0.33}],
+  [4.40,'fade','#nothing-on-top, #caption-divider',{dur:0.27}],
+  [5.74,'pop','#private-panel'],
+  [5.74,'type','#private-term',{cps:32}],
+  [6.30,'fade','#private-hi',{dur:0.27}],
+  [7.92,'pop','#private-folded-card'],
+  [7.92,'draw','#private-tick',{dur:0.34}]
+]}
+</script></section>
