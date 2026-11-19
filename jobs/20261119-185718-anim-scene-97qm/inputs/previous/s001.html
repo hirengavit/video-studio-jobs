@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s001" data-in="cut" data-section="INTRODUCTION" data-series="STAMPS &amp; STATIONERY">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text id="s001-title" x="960" y="250" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="760" fill="#2b2622">Payment of Postage, Stamps &amp; Postal Stationery</text>
+    <text class="hi" x="960" y="330" text-anchor="middle" font-size="48" font-weight="670" fill="#9e1b1b">डाक महसूल का भुगतान, डाक टिकट और डाक लेखन-सामग्री</text>
+    <g id="s001-stamp-tile">
+      <rect x="182" y="420" width="476" height="326" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <g id="s001-stamp"><use href="piece:postage-stamp" transform="translate(193 354) scale(1.135)"/></g>
+      <text x="420" y="801" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">Postage Stamp</text>
+      <text class="hi" x="420" y="851" text-anchor="middle" font-size="42" font-weight="550" fill="#6f6a63">डाक टिकट</text>
+    </g>
+    <g id="s001-frank-tile">
+      <rect x="722" y="420" width="476" height="326" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:franking-impression" transform="translate(700 323) scale(1.30)"/>
+      <text x="960" y="801" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">Franking Impression</text>
+      <text class="hi" x="960" y="851" text-anchor="middle" font-size="42" font-weight="550" fill="#6f6a63">फ्रैंकिंग की छाप</text>
+    </g>
+    <g id="s001-postcard-tile">
+      <rect x="1262" y="420" width="476" height="326" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <g id="s001-postcard"><use href="piece:postcard-blank" transform="translate(1272 355) scale(1.14)"/></g>
+      <text x="1500" y="801" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">Postcard</text>
+      <text class="hi" x="1500" y="851" text-anchor="middle" font-size="42" font-weight="550" fill="#6f6a63">पोस्टकार्ड</text>
+    </g>
+    <text id="s001-rule-label" class="hi" x="710" y="945" text-anchor="end" font-size="42" font-weight="600" fill="#6f6a63">इसके नियम:</text>
+    <g id="s001-act">
+      <rect x="750" y="883" width="665" height="105" rx="22" fill="#ffffff" stroke="#9e1b1b" stroke-width="4"/>
+      <text x="1082.5" y="929" text-anchor="middle" font-family="Inter, sans-serif" font-size="49" font-weight="750" fill="#9e1b1b">Post Office Act 2023</text>
+      <text id="s001-act-hi" class="hi" x="1082.5" y="972" text-anchor="middle" font-size="38" font-weight="550" fill="#6f6a63">डाकघर अधिनियम 2023</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.04, 'highlight', '#s001-title', {words: 'Payment of Postage', color: '#fde9a6', opacity: 1, dur: 0.50, pad: 13}],
+      [2.72, 'pulse', '#s001-stamp', {amount: 0.07}],
+      [3.98, 'pulse', '#s001-postcard', {amount: 0.07}],
+      [5.74, 'fade', '#s001-rule-label', {dur: 0.30}],
+      [6.64, 'pop', '#s001-act', {from: 0.96, spring: 'snap'}],
+      [7.10, 'fade', '#s001-act-hi', {dur: 0.30}]
+    ]
+  }
+  </script>
+</section>
