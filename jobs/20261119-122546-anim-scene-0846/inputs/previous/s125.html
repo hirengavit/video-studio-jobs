@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s125" data-in="fade" data-in-dur="0.5" data-section="PART 6 · POSTAL STATIONERY" data-series="STAMPS &amp; STATIONERY">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="plain">
+      <g id="s125-envelope"><use href="piece:address-envelope" transform="translate(220 300) scale(1.50)"/></g>
+      <text id="s125-envelope-title" class="hi" x="700" y="253" text-anchor="middle" font-size="52" font-weight="700" fill="#2b2622">बाज़ार से खरीदा सादा envelope</text>
+      <rect id="s125-empty" x="981" y="338" width="158" height="182" rx="12" stroke="#f2b705" stroke-width="7" fill="none"/>
+      <g id="s125-prepaid">
+        <rect x="1240" y="439" width="520" height="287" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+        <text id="s125-prepaid-en" x="1500" y="557" text-anchor="middle" font-family="Inter, sans-serif" font-size="83" font-weight="750" fill="#2b2622">Prepaid</text>
+        <text id="s125-prepaid-hi" class="hi" x="1500" y="630" text-anchor="middle" font-size="48" font-weight="600" fill="#6f6a63">पहले से भुगतान</text>
+      </g>
+    </g>
+    <g id="four">
+      <text id="s125-heading" class="hi" x="960" y="202" text-anchor="middle" font-size="55" font-weight="750" fill="#9e1b1b">चार चीज़ें पहचानिए</text>
+      <g class="s125-num"><circle cx="320" cy="236" r="24" fill="#9e1b1b"/><text x="320" y="247" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="750" fill="#ffffff">1</text></g>
+      <g class="s125-num"><circle cx="747" cy="236" r="24" fill="#9e1b1b"/><text x="747" y="247" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="750" fill="#ffffff">2</text></g>
+      <g class="s125-num"><circle cx="1173" cy="236" r="24" fill="#9e1b1b"/><text x="1173" y="247" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="750" fill="#ffffff">3</text></g>
+      <g class="s125-num"><circle cx="1600" cy="236" r="24" fill="#9e1b1b"/><text x="1600" y="247" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="750" fill="#ffffff">4</text></g>
+      <g id="s125-card1">
+        <rect x="120" y="266" width="400" height="564" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+        <g id="s125-postcard"><use href="piece:postcard-blank" transform="translate(180 289) scale(0.70)"/></g>
+        <text x="320" y="610" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="750" fill="#2b2622">Postcard</text>
+        <text class="hi" x="320" y="661" text-anchor="middle" font-size="40" font-weight="550" fill="#6f6a63">पोस्टकार्ड</text>
+        <g id="s125-meaning" class="hi" font-size="42" font-weight="650" fill="#2b2622" text-anchor="middle">
+          <text class="hi" x="320" y="734" font-family="'Noto Sans Devanagari', Inter, sans-serif">एक card पर</text>
+          <text class="hi" x="320" y="785" font-family="'Noto Sans Devanagari', Inter, sans-serif">खुला संदेश</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#plain'], [6.87, '#four']],
+    on: [
+      [0, 'words', '#s125-envelope-title', {gap: 0.40, dist: 9}],
+      [2.68, 'fade', '#s125-empty', {dur: 0.18}],
+      [2.68, 'pulse', '#s125-empty', {amount: 0.12}],
+      [4.82, 'fade', '#s125-prepaid', {dur: 0.32}],
+      [5.32, 'fade', '#s125-prepaid-hi', {dur: 0.23}],
+      [5.38, 'strike', '#s125-prepaid-en', {color: '#4b4f58', width: 8, dim: 0.76, dur: 0.32}],
+      [6.87, 'pop', '#s125-heading', {from: 0.96, spring: 'snap'}],
+      [6.87, 'pop', '.s125-num', {from: 0.90, spring: 'snap', stagger: 0.10}],
+      [8.41, 'pop', '#s125-card1', {from: 0.96, spring: 'snap'}],
+      [8.41, 'draw', '#s125-postcard', {dur: 0.52}],
+      [10.47, 'fade', '#s125-meaning', {dur: 0.30}]
+    ]
+  }
+  </script>
+</section>
