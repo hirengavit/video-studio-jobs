@@ -1,0 +1,49 @@
+{
+ "moments": [
+  "0.30",
+  "2.22",
+  "4.43",
+  "6.65",
+  "8.86",
+  "10.93"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "mostly-empty",
+   "scene": "s073",
+   "message": "a card (#s073-members) is mostly empty at 2.2 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.22
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s073",
+   "text": "संचार मंत्रालय के प्रभारी केंद्रीय मंत्र",
+   "t": 4.43
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s073",
+   "message": "a card (#s073-members) is mostly empty at 4.4 s: bring its items in sooner, or size it for what it holds now",
+   "t": 4.43
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s073",
+   "message": "a card (#s073-members) is mostly empty at 6.7 s: bring its items in sooner, or size it for what it holds now",
+   "t": 6.65
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s073",
+   "message": "a card (#s073-members) is mostly empty at 8.9 s: bring its items in sooner, or size it for what it holds now",
+   "t": 8.86
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s073",
+   "message": "a card (#s073-members) is mostly empty at 10.9 s: bring its items in sooner, or size it for what it holds now",
+   "t": 10.93
+  }
+ ]
+}
