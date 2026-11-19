@@ -8,13 +8,5 @@
   "9.61"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "low-contrast",
-   "scene": "s051",
-   "text": "एक ही post (1.0:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 3.9
-  }
- ]
+ "warnings": []
 }
