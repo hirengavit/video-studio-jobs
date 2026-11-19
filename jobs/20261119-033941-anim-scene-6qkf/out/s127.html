@@ -1,0 +1,70 @@
+<section class="vs-scene" id="s127" data-in="cut" data-section="PART 4 · CIRCLES &amp; HEADQUARTERS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="wb" text-anchor="middle">
+      <rect x="120" y="260" width="640" height="700" rx="38" fill="#9e1b1b"/>
+      <rect x="145" y="285" width="590" height="650" rx="26" fill="none" stroke="#f0c49b" stroke-width="2.5" stroke-dasharray="3 11" stroke-linecap="round"/>
+      <text x="440" y="528" font-size="77" font-weight="790" fill="#fffefa">West Bengal</text>
+      <text x="440" y="624" font-size="77" font-weight="790" fill="#fffefa">Circle</text>
+      <text class="hi" x="440" y="727" font-size="53" font-weight="670" fill="#fde9a6">पश्चिम बंगाल परिमंडल</text>
+      <g id="bengal">
+        <rect x="820" y="280" width="980" height="190" rx="30" fill="#fffefa" stroke="#ead9a8" stroke-width="4"/>
+        <text x="1310" y="365" font-size="65" font-weight="770" fill="#2b2622">West Bengal</text>
+        <text x="1310" y="426" class="hi" font-size="47" font-weight="630" fill="#6f6a63">पश्चिम बंगाल</text>
+      </g>
+      <g id="sikkim">
+        <rect x="820" y="500" width="980" height="190" rx="30" fill="#fffefa" stroke="#ead9a8" stroke-width="4"/>
+        <text id="sikkim-text" x="1310" y="585" font-size="65" font-weight="770" fill="#2b2622">Sikkim</text>
+        <text x="1310" y="646" class="hi" font-size="47" font-weight="630" fill="#6f6a63">सिक्किम</text>
+      </g>
+      <g id="islands">
+        <rect x="820" y="720" width="980" height="216" rx="30" fill="#fffefa" stroke="#ead9a8" stroke-width="4"/>
+        <text x="1310" y="814" font-size="56" font-weight="770" fill="#2b2622">Andaman and Nicobar Islands</text>
+        <text x="1310" y="883" class="hi" font-size="47" font-weight="630" fill="#6f6a63">अंडमान और निकोबार द्वीपसमूह</text>
+      </g>
+    </g>
+    <g id="pdy" text-anchor="middle">
+      <g id="group-kicker" text-anchor="start" fill="#9e1b1b">
+        <rect x="120" y="154" width="8" height="45" rx="4"/>
+        <text class="hi" x="148" y="190" font-size="46" font-weight="800">चौथा group</text>
+      </g>
+      <g id="pdy-card">
+        <rect x="560" y="240" width="800" height="280" rx="35" fill="#9e1b1b"/>
+        <text x="960" y="328" font-size="72" font-weight="790" fill="#fffefa">Puducherry</text>
+        <text id="pdy-hi" class="hi" x="960" y="385" font-size="47" font-weight="650" fill="#fde9a6">पुडुचेरी</text>
+        <g id="ut-chip">
+          <rect x="622" y="423" width="676" height="81" rx="29" fill="#fde9a6"/>
+          <text x="960" y="475" font-size="30" font-weight="720" fill="#514028">Union Territory · <tspan font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="32">केंद्र शासित प्रदेश</tspan></text>
+        </g>
+      </g>
+      <g id="split-guides" fill="none" stroke="#837971" stroke-width="4" stroke-linecap="round">
+        <path d="M960 520 V551 H360 V580"/>
+        <path d="M960 551 V580"/>
+        <path d="M960 551 H1560 V580"/>
+      </g>
+      <g id="tile1"><rect x="160" y="580" width="400" height="180" rx="26" fill="#fffefa" stroke="#b8403a" stroke-width="4"/></g>
+      <g id="tile2"><rect x="760" y="580" width="400" height="180" rx="26" fill="#fffefa" stroke="#b8403a" stroke-width="4"/></g>
+      <g id="tile3"><rect x="1360" y="580" width="400" height="180" rx="26" fill="#fffefa" stroke="#b8403a" stroke-width="4"/></g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    ({
+      dur: 13.36,
+      shots: [[0, "#wb"], [6.48, "#pdy"]],
+      on: [
+        [1.58, "pop", "#bengal", {from:0.96}],
+        [2.60, "pop", "#sikkim", {from:0.96}],
+        [2.83, "highlight", "#sikkim-text", {color:"#f2b705", opacity:0.42, dur:0.33}],
+        [4.16, "pop", "#islands", {from:0.96}],
+        [6.48, "fade", "#group-kicker", {dur:0.26}],
+        [7.22, "pop", "#pdy-card", {from:0.96}],
+        [7.70, "fade", "#pdy-hi", {dur:0.26}],
+        [9.98, "pop", "#ut-chip", {from:0.96}],
+        [9.98, "draw", "#split-guides", {dur:0.36}],
+        [9.98, "pop", "#tile1", {from:0.96}],
+        [10.07, "pop", "#tile2", {from:0.96}],
+        [10.16, "pop", "#tile3", {from:0.96}]
+      ]
+    })
+  </script>
+</section>
