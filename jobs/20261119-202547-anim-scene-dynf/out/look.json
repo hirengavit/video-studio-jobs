@@ -8,12 +8,5 @@
   "6.93"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s244",
-   "text": "Non-delivery / डिलीवरी नहीं",
-   "t": 5.66
-  }
- ]
+ "warnings": []
 }
