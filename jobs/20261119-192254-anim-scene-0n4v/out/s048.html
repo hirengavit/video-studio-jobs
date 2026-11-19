@@ -49,7 +49,9 @@
     <rect id="delivery-plate" x="120" y="840" width="1680" height="140" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
     <g id="delivery-envelope"><use href="piece:envelope-article" transform="translate(141 823) scale(.44)"/></g>
     <path id="delivery-arrow" d="M300 906H363M346 891L363 906L346 921" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <text id="delivery-line" class="hi" x="388" y="913" font-size="45" font-weight="730" fill="#2b2622" xml:space="preserve"><tspan id="delivery-prefix">delivery सिर्फ उसी</tspan><tspan id="addressee" font-family="Inter,sans-serif" font-weight="780"> addressee</tspan><tspan id="named-only" font-weight="650"> को, जिसके नाम item है</tspan></text>
+    <text id="delivery-line" class="hi" x="388" y="913" font-size="45" font-weight="730" fill="#2b2622" xml:space="preserve"><tspan>delivery सिर्फ उसी</tspan><tspan font-family="Inter,sans-serif" font-weight="780" fill-opacity="0"> addressee</tspan><tspan font-weight="650" fill-opacity="0"> को, जिसके नाम item है</tspan></text>
+    <text id="addressee" class="hi" x="388" y="913" font-size="45" font-weight="730" fill="#2b2622" xml:space="preserve"><tspan fill-opacity="0">delivery सिर्फ उसी</tspan><tspan font-family="Inter,sans-serif" font-weight="780"> addressee</tspan><tspan font-weight="650" fill-opacity="0"> को, जिसके नाम item है</tspan></text>
+    <text id="named-only" class="hi" x="388" y="913" font-size="45" font-weight="730" fill="#2b2622" xml:space="preserve"><tspan fill-opacity="0">delivery सिर्फ उसी</tspan><tspan font-family="Inter,sans-serif" font-weight="780" fill-opacity="0"> addressee</tspan><tspan font-weight="650"> को, जिसके नाम item है</tspan></text>
     <text id="addressee-hi" class="hi" x="897" y="956" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="560" fill="#6f6a63">(पाने वाले)</text>
   </g>
 </g>
@@ -75,7 +77,7 @@
     [.98,'fade','#delivery-plate',{dur:.28}],
     [.98,'pop','#delivery-envelope',{from:.95,spring:'soft'}],
     [.98,'draw','#delivery-arrow',{dur:.43}],
-    [1.36,'fade','#delivery-prefix',{dur:.24}],
+    [1.36,'fade','#delivery-line',{dur:.24}],
     [2.20,'underline','#delivery-line',{words:'उसी',color:'#f2b705',width:5,dur:.31}],
     [2.66,'fade','#addressee',{dur:.28}],
     [3.16,'fade','#addressee-hi',{dur:.24}],
