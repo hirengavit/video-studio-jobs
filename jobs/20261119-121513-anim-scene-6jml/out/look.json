@@ -10,9 +10,9 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-overlap",
+   "kind": "text-off-frame",
    "scene": "s022",
-   "text": "सिर्फ / जहाँ Regulations खुद दें",
+   "text": "छूट: सिर्फ जहाँ Regulations खुद दें",
    "t": 0.3
   }
  ]
