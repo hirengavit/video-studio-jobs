@@ -85,8 +85,8 @@
   <g id="one-circle">
     <rect id="one-circle-outline" x="962" y="560" width="876" height="239" rx="33" fill="none" stroke="#9e1b1b" stroke-width="4"/>
     <g id="one-circle-label">
-      <rect x="1110" y="794" width="580" height="49" rx="25" fill="#9e1b1b"/>
-      <text x="1400" y="831" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="720" fill="#fff">एक ही Circle · दो offices</text>
+      <rect x="1110" y="794" width="580" height="46" rx="25" fill="#9e1b1b"/>
+      <text x="1400" y="830" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="720" fill="#fff">एक ही Circle · दो offices</text>
     </g>
   </g>
   <g id="wrong-reading">
@@ -100,11 +100,12 @@
  on:[
   [0,'color','#r1-bg, #r1-hq',{to:'#eeebe6',dur:0.42}],
   [0,'color','#r1-bg, #r1-hq, #r1-arrow',{prop:'stroke',to:'#c3bcb3',dur:0.42}],
-  [0,'color','#kerala-en, #kerala-hi, #en1, #hi1, #note',{to:'#7b746d',dur:0.42}],
+  [0,'color','#kerala-en, #kerala-hi, #en1, #hi1',{to:'#7b746d',dur:0.42}],
+  [0,'color','#note',{to:'#5f5751',dur:0.42}],
   [2.10,'out','#r2-hq, #r2-pin, #srinagarMark, #en2, #hi2',{dur:0.21}],
   [2.10,'fade','#compact-hq',{dur:0.21}],
   [2.10,'pop','#jammu-card',{from:0.95,spring:'soft'}],
-  [2.86,'words','#jammu-caption',{dur:0.30}],
+  [2.86,'words','#jammu-caption',{gap:0.08,spring:'fast'}],
   [4.60,'out','#note',{dur:0.30}],
   [4.80,'draw','#one-circle-outline',{dur:0.40}],
   [4.80,'pop','#one-circle-label',{from:0.90,spring:'fast'}],
