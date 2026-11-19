@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.88",
+  "3.75",
+  "5.63",
+  "7.50",
+  "9.23"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s051",
+   "text": "जैसे / authorised BNPL",
+   "t": 0.3
+  }
+ ]
+}
