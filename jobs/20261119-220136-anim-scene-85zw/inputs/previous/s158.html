@@ -1,0 +1,65 @@
+<section class="vs-scene" id="s158" data-in="cut" data-section="PART 7 · LETTER CARD" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="breach">
+    <text id="breach-question" class="hi" x="140" y="230" font-size="56" font-weight="830" fill="#9e1b1b">शर्त टूटी, तो?</text>
+    <g id="breach-card">
+      <path d="M350 299h142l18 18v74H350z" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M492 299v18h18M373 329h89" fill="none" stroke="#6f6a63" stroke-width="3" stroke-linecap="round"/>
+      <use href="piece:letter-card" transform="translate(240 250) scale(.9)"/>
+    </g>
+    <path id="breach-arrow" d="M700 430H1100m-29-24 29 24-29 24" fill="none" stroke="#2b2622" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+    <g id="breach-letter">
+      <use href="piece:envelope-article" transform="translate(1200 250) scale(.9)"/>
+      <text class="hi" x="1380" y="551" text-anchor="middle" font-size="47" font-weight="780" fill="#2b2622">Letter · पत्र</text>
+    </g>
+    <g id="breach-mark" transform="rotate(-9 1510 405)" stroke="#9e1b1b">
+      <circle cx="1510" cy="405" r="98" stroke-width="6" fill="#fff" fill-opacity=".90"/>
+      <circle cx="1510" cy="405" r="87" fill="none" stroke-width="2" stroke-dasharray="4 4"/>
+      <text x="1510" y="391" text-anchor="middle" font-family="Inter,sans-serif" font-size="39" font-weight="820" stroke="none" fill="#9e1b1b">Letter</text>
+      <text class="hi" x="1510" y="446" text-anchor="middle" font-size="34" textLength="142" lengthAdjust="spacingAndGlyphs" font-weight="790" stroke="none" fill="#9e1b1b">माना जाता है</text>
+    </g>
+  </g>
+  <g id="delivery-formula">
+    <g id="formula-plate">
+      <rect x="100" y="600" width="1720" height="390" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="156" y="641" width="9" height="53" rx="4.5" fill="#f2b705"/>
+      <path d="M156 722H1764" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <text id="delivery-kicker" class="hi" x="186" y="682" font-size="48" font-weight="810" fill="#9e1b1b">Delivery पर charge</text>
+    <g id="formula-brackets" stroke="#2b2622" stroke-width="5" fill="none" stroke-linecap="round">
+      <path d="M389 768q-25 17-25 47t25 47M1677 768q25 17 25 47t-25 47M921 822h38"/>
+    </g>
+    <g id="formula-difference">
+      <path d="M410 877v10q0 9 11 9h1217q11 0 11-9v-10" fill="none" stroke="#ead9a8" stroke-width="3.5" stroke-linecap="round"/>
+      <text class="hi" x="1029.5" y="952" text-anchor="middle" font-size="43" font-weight="710" fill="#6f6a63">फर्क</text>
+    </g>
+    <g id="formula-double">
+      <rect x="198" y="767" width="143" height="104" rx="19" fill="#fde9a6"/>
+      <text x="269.5" y="840" text-anchor="middle" font-family="Georgia,serif" font-size="66" font-weight="730" fill="#2b2622">2 ×</text>
+    </g>
+    <text id="formula-letter" x="421" y="839" font-family="Georgia,serif" font-size="60" font-weight="730" fill="#2b2622">Letter</text>
+    <text id="formula-letter-hi" class="hi" x="598" y="839" font-size="55" font-weight="680" fill="#2b2622">का</text>
+    <text id="formula-letter-postage" x="671" y="839" font-family="Georgia,serif" font-size="60" font-weight="730" fill="#2b2622">postage</text>
+    <text id="formula-card-word" x="1002" y="839" font-family="Georgia,serif" font-size="60" font-weight="730" fill="#2b2622">card</text>
+    <text id="formula-card-hi" class="hi" x="1138" y="839" font-size="55" font-weight="680" fill="#2b2622">पर लगा</text>
+    <text id="formula-valid" x="1326" y="839" font-family="Georgia,serif" font-size="60" font-weight="730" fill="#2b2622">valid postage</text>
+  </g>
+</svg>
+<script type="text/scene">
+({on:[
+ [0,'slide','#formula-plate',{from:'down',dist:28,spring:'soft'}],
+ [.40,'fade','#delivery-kicker',{dur:.27}],
+ [1.94,'draw','#formula-brackets',{dur:.45}],
+ [2.86,'fade','#formula-difference',{dur:.25}],
+ [3.38,'stamp','#formula-double',{from:1.14,rot:-4,spring:'soft'}],
+ [4.66,'fade','#formula-letter',{dur:.24}],
+ [4.82,'fade','#formula-letter-hi',{dur:.20}],
+ [4.98,'fade','#formula-letter-postage',{dur:.24}],
+ [6.44,'fade','#formula-card-word',{dur:.26}],
+ [7.12,'words','#formula-card-hi',{gap:.34,dist:8}],
+ [8.18,'words','#formula-valid',{gap:.31,dist:8}],
+ [8.40,'underline','#formula-valid',{words:'valid',color:'#f2b705',width:6,dur:.35,gap:2}]
+]})
+</script>
+</section>
