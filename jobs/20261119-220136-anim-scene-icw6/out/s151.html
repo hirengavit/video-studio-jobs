@@ -21,7 +21,7 @@
     </g>
     <g id="row2">
       <rect x="125" y="411" width="1652" height="118" rx="20" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
-      <rect id="weight-mark" x="432" y="433" width="224" height="72" rx="6" fill="#f2b705" opacity=".34"/>
+      <rect id="weight-mark" x="423" y="435" width="230" height="76" rx="6" fill="#f2b705" opacity=".34"/>
       <text id="weight-label" class="hi" x="264" y="488" font-size="54" font-weight="770" fill="#2b2622">वज़न ≤ 5 grams</text>
       <use id="weight-icon" href="piece:letter-scale" transform="translate(1590 406) scale(.30)"/>
     </g>
@@ -31,6 +31,7 @@
       <text id="paper-unit" x="791" y="603" font-family="Inter,sans-serif" font-size="52" font-weight="790" fill="#2b2622">≥ 70 g/m²</text>
       <text id="paper-hi" class="hi" x="266" y="654" font-size="40" font-weight="570" fill="#6f6a63">कागज़ का भार</text>
       <text id="paper-gist" class="hi" x="700" y="666" font-size="40" font-weight="700" fill="#2b2622">1 square metre कागज़ ≥ 70 grams</text>
+      <path id="grams-underline" d="M1136 675Q1232 677 1327 675" fill="none" stroke="#f2b705" stroke-width="5" stroke-linecap="round"/>
       <g id="sheet-icon">
         <path d="M1603 564h89l11 12v79h-100z" fill="#f3ead6" stroke="#9e1b1b" stroke-width="3.5" stroke-linejoin="round"/>
         <path d="M1692 564v12h11" fill="none" stroke="#9e1b1b" stroke-width="3"/>
@@ -41,25 +42,25 @@
       <g id="condition-badge-1">
         <circle cx="170" cy="330" r="35" fill="#6f6a63" fill-opacity=".40"/>
         <circle id="condition-active-1" cx="170" cy="330" r="35" fill="#9e1b1b"/>
-        <text x="170" y="345" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">1</text>
+        <text id="condition-digit-1" x="170" y="345" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">1</text>
       </g>
       <g id="condition-badge-2">
         <circle cx="170" cy="470" r="35" fill="#6f6a63" fill-opacity=".40"/>
         <circle id="condition-active-2" cx="170" cy="470" r="35" fill="#9e1b1b"/>
-        <text x="170" y="485" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">2</text>
+        <text id="condition-digit-2" x="170" y="485" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">2</text>
       </g>
       <g id="condition-badge-3">
         <circle cx="170" cy="610" r="35" fill="#6f6a63" fill-opacity=".40"/>
         <circle id="condition-active-3" cx="170" cy="610" r="35" fill="#9e1b1b"/>
-        <text x="170" y="625" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">3</text>
+        <text id="condition-digit-3" x="170" y="625" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#2b2622">3</text>
       </g>
       <g id="condition-badge-4">
         <circle cx="170" cy="750" r="35" fill="#6f6a63" fill-opacity=".40"/>
-        <text x="170" y="765" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">4</text>
+        <text id="condition-digit-4" x="170" y="765" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#2b2622">4</text>
       </g>
       <g id="condition-badge-5">
         <circle cx="170" cy="890" r="35" fill="#6f6a63" fill-opacity=".40"/>
-        <text x="170" y="905" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">5</text>
+        <text id="condition-digit-5" x="170" y="905" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#2b2622">5</text>
       </g>
     </g>
     </g>
@@ -70,13 +71,14 @@ on:[
  [.68,'color','#weight-label',{to:'#6f6a63',dur:.28}],
  [.68,'out','#weight-mark',{dur:.27}],
  [.68,'fade','#condition-active-3',{dur:.25}],
+ [.68,'color','#condition-digit-3',{to:'#fff',dur:.25}],
  [.68,'slide','#row3',{from:'down',dist:21,spring:'soft'}],
  [1.18,'fade','#paper-hi',{dur:.25}],
  [2.06,'fade','#paper-unit',{dur:.25}],
  [2.06,'highlight','#paper-unit',{words:'70 g/m²',color:'#f2b705',opacity:.40,dur:.36,pad:6}],
  [7,'draw','#sheet-icon',{dur:.44}],
  [7.90,'words','#paper-gist',{gap:.24,dist:8}],
- [9.62,'underline','#paper-gist',{words:'70 grams',color:'#f2b705',width:5,dur:.34}]
+ [9.62,'draw','#grams-underline',{dur:.34}]
 ]})
 </script>
 </section>
