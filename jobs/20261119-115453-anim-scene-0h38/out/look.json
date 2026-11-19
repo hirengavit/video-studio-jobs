@@ -8,12 +8,5 @@
   "12.49"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s002",
-   "text": "16 December / 2024",
-   "t": 10.11
-  }
- ]
+ "warnings": []
 }
