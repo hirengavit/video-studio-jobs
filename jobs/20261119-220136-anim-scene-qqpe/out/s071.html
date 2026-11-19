@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s071" data-in="fade" data-in-dur="0.5" data-section="PART 3 · TYPES OF STAMPS &amp; PHILATELY" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="buy">
+  <g id="subjects">
+    <text id="issue" x="100" y="248" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="760" fill="#6f6a63">issue किस पर?</text>
+    <g id="institution"><rect x="100" y="300" width="520" height="112" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/><text x="140" y="375" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="760" fill="#2b2622">संस्था</text></g>
+    <g id="event"><rect x="100" y="434" width="520" height="112" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/><text x="140" y="507" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="760" fill="#2b2622">आयोजन <tspan font-family="Inter, sans-serif" font-size="45">(event)</tspan></text></g>
+    <g id="organisation"><rect x="100" y="568" width="520" height="132" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/><text x="140" y="626" font-size="52" font-weight="780" fill="#2b2622">Organisation</text><text x="140" y="674" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="690" fill="#6f6a63">संगठन</text></g>
+  </g>
+  <path id="to-proponent" d="M632 530H668m-13-13 13 13-13 13" stroke="#9e1b1b" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="proponent">
+    <rect x="680" y="360" width="420" height="340" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text x="890" y="521" text-anchor="middle" font-size="64" font-weight="830" fill="#9e1b1b">Proponent</text>
+    <text x="890" y="600" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="720" fill="#6f6a63">प्रस्तावक</text>
+  </g>
+  <path id="to-purchase" d="M1112 530H1148m-13-13 13 13-13 13" stroke="#9e1b1b" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="mandatory-card">
+    <g id="purchase-face">
+      <rect x="1160" y="200" width="660" height="520" rx="32" fill="#9e1b1b"/>
+      <rect x="1180" y="220" width="620" height="480" rx="23" fill="none" stroke="#f3ead6" stroke-opacity=".86" stroke-width="5" stroke-dasharray="2 14" stroke-linecap="round"/>
+    </g>
+    <text id="mandatory" x="1490" y="366" text-anchor="middle" font-size="88" font-weight="860" fill="#fff">Mandatory</text>
+    <text id="purchase" x="1490" y="462" text-anchor="middle" font-size="88" font-weight="860" fill="#fff">purchase</text>
+    <text id="mandatory-hi" x="1490" y="540" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#fff">अनिवार्य खरीद</text>
+    <g id="fixed"><rect x="1397" y="584" width="186" height="84" rx="42" fill="#fde9a6"/><text x="1490" y="643" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="810" fill="#654400">तय</text></g>
+  </g>
+  <g id="purchase-props">
+    <rect id="prop-tray" x="1160" y="740" width="660" height="250" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <path id="tray-divider" d="M1489 787v156" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+    <use id="stamps" href="piece:stamp-sheet" transform="translate(1235 772) scale(.45)"/>
+    <use id="cash" href="piece:rupee-cash" transform="translate(1528 747) scale(.6)"/>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+  [0.36,'pop','#institution'],
+  [1.38,'pop','#event'],
+  [2.58,'pop','#organisation'],
+  [4.34,'draw','#to-proponent',{dur:0.35}],
+  [4.34,'pop','#proponent'],
+  [5.50,'draw','#to-purchase',{dur:0.35}],
+  [5.50,'pop','#purchase-face'],
+  [5.70,'pop','#fixed'],
+  [5.90,'words','#mandatory'],
+  [7.14,'words','#purchase'],
+  [7.40,'fade','#mandatory-hi',{dur:0.23}],
+  [7.50,'fade','#prop-tray, #tray-divider',{dur:0.25}],
+  [7.50,'pop','#stamps'],
+  [7.70,'pop','#cash']
+]}
+</script></section>
