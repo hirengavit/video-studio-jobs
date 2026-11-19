@@ -1,8 +1,8 @@
 <section class="vs-scene" id="s155" data-in="fade" data-in-dur="0.5" data-section="PART 7 · LETTER CARD" data-series="STAMPS &amp; STATIONERY">
 <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
   <style>
-    #open-card [id$="folded"] { opacity:0; }
-    #open-card [id$="open"] { opacity:1; }
+    .open-card-display [id$="folded"] { opacity:0; }
+    .open-card-display [id$="open"] { opacity:1; }
   </style>
   <rect width="1920" height="1080" fill="#fbf7ee"/>
   <g id="flaps">
@@ -33,7 +33,7 @@
       </g>
       <rect id="table-outline" x="100" y="200" width="840" height="760" rx="34" fill="none" stroke="#f2b705" stroke-width="5"/>
     </g>
-    <g id="open-card">
+    <g id="open-card" class="open-card-display">
       <use id="flap-piece" href="piece:letter-card" transform="translate(980 200) scale(2)"/>
     </g>
     <g id="flap-highlights" transform="translate(980 200) scale(2)" fill="#fde9a6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
