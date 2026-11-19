@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g id="open" opacity="0">
+    <rect id="open-sheet" x="63" y="101" width="274" height="195" fill="#dce3e9"/>
+    <g id="flaps">
+    <path id="flap-top" d="M63 101L83 65Q86 60 93 60H307Q314 60 317 65L337 101Z" fill="#e4eaf0"/>
+    <path id="flap-left" d="M63 101L28 122Q23 124 23 131V267Q23 274 28 277L63 296Z" fill="#e4eaf0"/>
+    <path id="flap-right" d="M337 101L372 122Q377 124 377 131V267Q377 274 372 277L337 296Z" fill="#e4eaf0"/>
+  </g>
+    <path d="M64 101H336M63 103V294M337 103V294" stroke="#aaa39a" stroke-width="1.7" stroke-dasharray="5 7"/>
+  </g>
+  <g id="folded">
+    <rect id="folded-paper" x="24" y="107" width="352" height="186" fill="#dce3e9" rx="3"/>
+    <g id="printed-stamp">
+    <rect x="309" y="123" width="42" height="49" fill="none" stroke="#9e1b1b" rx="2"/>
+    <path d="M316 131h28v33h-28Z" stroke="#9e1b1b" stroke-width="1.5"/>
+  </g>
+    <rect id="sender-box" x="46" y="126" width="96" height="42" fill="none" rx="2" stroke="#aaa39a" stroke-width="2"/>
+    <path id="letter-address-rules" d="M183 211h155m-155 14h142m-142 14h128" stroke="#aaa39a" stroke-width="2.5"/>
+  </g>
+  <circle data-anchor="base" cx="200" cy="293" r="0"/>
+</svg>
