@@ -29,6 +29,7 @@
   <g id="unregistered-card">
     <rect id="left-card-bg" x="100" y="260" width="840" height="580" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
     <path id="facility-one-header" d="M134 260H906q34 0 34 34v141H100V294q0-34 34-34Z" fill="#9e1b1b"/>
+    <path id="facility-header-rule" d="M124 430h794" fill="none" stroke="#fde9a6" stroke-width="2" stroke-linecap="round"/>
     <text id="facility-one-number" x="154" y="344" font-size="67" font-weight="850" fill="#fff">1</text>
     <text id="facility-one-term" x="230" y="344" font-size="53" font-weight="850" fill="#fff">Unregistered packets</text>
     <text id="facility-one-hi" x="231" y="404" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="760" fill="#fde9a6">बिना रजिस्ट्री के packets</text>
@@ -36,7 +37,7 @@
     <text id="bulk-posting" x="439" y="544" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="800" fill="#9e1b1b">बड़ी posting</text>
     <g id="large-city">
       <rect x="138" y="669" width="764" height="88" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
-      <text id="large-city-label" x="163" y="725" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="780" fill="#2b2622">बड़े शहर: एक बार में</text>
+      <text id="large-city-label" x="163" y="707" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="780" fill="#2b2622">बड़े शहर:<tspan x="163" dy="37">एक बार में</tspan></text>
       <g id="large-city-threshold">
         <rect x="537" y="678" width="172" height="70" rx="14" fill="#9e1b1b"/>
         <rect x="543" y="684" width="160" height="58" rx="10" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="4" stroke-dasharray="1 9" stroke-linecap="round"/>
@@ -53,7 +54,7 @@
 {shots:[[0,'#auth'],[1.89,'#two']],on:[
   [0.27,'fade','#authority',{dur:0.20}],
   [0.27,'highlight','#authority',{color:'#f2b705',opacity:0.40,dur:0.35}],
-  [1.89,'draw','#facility-one-header',{dur:0.30}],
+  [1.89,'draw','#facility-header-rule',{dur:0.30}],
   [1.89,'fade','#facility-one-number',{dur:0.26}],
   [2.74,'pop','#facility-one-term'],
   [3.24,'fade','#facility-one-hi',{dur:0.27}],
