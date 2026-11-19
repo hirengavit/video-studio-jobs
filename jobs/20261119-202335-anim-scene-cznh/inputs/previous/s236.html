@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s236" data-in="fade" data-in-dur="0.5" data-section="KEY POINTS" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+  <g id="key-progress">
+    <rect x="120" y="262" width="340" height="234" rx="25" fill="#9e1b1b"/>
+    <rect x="120" y="262" width="340" height="234" rx="25" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 25" stroke-linecap="round"/>
+    <text class="hi" x="290" y="400" text-anchor="middle" font-size="69" font-weight="820" fill="#ffffff">2 · दूसरी</text>
+    <circle cx="146" cy="557" r="11" fill="#9e1b1b"/><circle cx="194" cy="557" r="11" fill="#f2b705"/><circle cx="242" cy="557" r="11" fill="#e6dcc4"/><circle cx="290" cy="557" r="11" fill="#e6dcc4"/><circle cx="338" cy="557" r="11" fill="#e6dcc4"/><circle cx="386" cy="557" r="11" fill="#e6dcc4"/><circle cx="434" cy="557" r="11" fill="#e6dcc4"/>
+  </g>
+  <g id="summary-card">
+    <rect x="510" y="208" width="1310" height="780" rx="27" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M558 610H1772" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g id="qr-stand">
+    <use href="piece:qr-code-stand" transform="translate(530 276) scale(.75)"/>
+    <path d="M591 537H769" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text id="qr-payment" x="943" y="395" font-family="Inter,sans-serif" font-size="61" font-weight="780" fill="#2b2622">QR code payment</text>
+  <path id="arrow" d="M801 463H908M882 443L908 463L882 483" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="digital-payment" x="943" y="481" font-family="Inter,sans-serif" font-size="61" font-weight="780" fill="#2e7d4f">= Digital payment</text>
+  <g id="packet-count-icon">
+    <use href="piece:packet-stack" transform="translate(560 676) scale(.60)"/>
+    <path d="M565 871H795" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <text id="count-500" x="943" y="770" font-family="Inter,sans-serif" font-size="65" font-weight="800" fill="#2b2622">500</text>
+  <text id="count-rest" x="1084" y="770" font-family="Inter,sans-serif" font-size="62" font-weight="750" fill="#2b2622">/ 250 packets</text>
+  <text id="only-condition" class="hi" x="943" y="874" font-size="45" font-weight="650" fill="#2b2622">→ सिर्फ़ bulk cash facilities की शर्तें</text>
+</svg>
+<script type="text/scene">
+({
+  on: [
+    [.36,'fade','#qr-payment',{dur:.27}],
+    [1.46,'draw','#arrow',{dur:.42}],
+    [2.52,'fade','#digital-payment',{dur:.29}],
+    [4.24,'pop','#packet-count-icon',{from:.93,spring:'soft'}],
+    [4.24,'fade','#count-500',{dur:.21}],
+    [5.68,'fade','#count-rest',{dur:.24}],
+    [6.88,'words','#only-condition',{gap:.105,dist:9}],
+    [7.44,'highlight','#only-condition',{words:'सिर्फ़',color:'#f2b705',opacity:.34,dur:.4}]
+  ]
+})
+</script>
+</section>
