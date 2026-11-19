@@ -3,7 +3,9 @@
 <rect width="1920" height="1080" fill="#fbf7ee"/>
 <g id="note">
   <text x="960" y="420" text-anchor="middle" fill="#9e1b1b" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="88" font-weight="800">कुछ कीमतें</text>
-  <text id="caveat" x="960" y="540" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48"><tspan id="not-full">पूरा tariff</tspan><tspan> नहीं · stationery के </tspan><tspan id="examples">कुछ examples</tspan></text>
+  <rect id="examples" x="1120" y="492" width="292" height="61" rx="12" fill="#fde9a6"/>
+  <text id="caveat" x="960" y="540" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48">पूरा tariff नहीं · stationery के कुछ examples</text>
+  <path id="not-full" d="M520 524H736" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
 </g>
 <g id="prices">
   <g id="col-1">
@@ -23,8 +25,8 @@
 <script type="text/scene">
 ({shots:[[0,"#note"],[6.98,"#prices"]],on:[
  [2.05,"words","#caveat",{gap:0.085,dist:12,spring:"soft"}],
- [2.92,"strike","#not-full",{color:"#4b4f58",width:5,dur:0.31,dim:0.72}],
- [5.68,"highlight","#examples",{color:"#f2b705",opacity:0.36,pad:6,dur:0.42}],
+ [2.92,"draw","#not-full",{dur:0.31}],
+ [5.68,"reveal","#examples",{from:"left",dur:0.42}],
  [6.98,"draw","#postcard",{dur:0.4}],
  [7.40,"fade","#postcard-hi",{dur:0.36}],
  [8.85,"stamp","#price-postcard",{from:1.11,rot:-4,spring:"snap"}]
