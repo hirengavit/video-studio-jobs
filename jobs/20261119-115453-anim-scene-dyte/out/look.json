@@ -8,12 +8,5 @@
   "13.09"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s023",
-   "text": "जल्दी से जल्दी वाली mail",
-   "t": 13.09
-  }
- ]
+ "warnings": []
 }
