@@ -62,24 +62,24 @@
       <g id="condition-badge-1">
         <circle cx="170" cy="330" r="35" fill="#6f6a63" fill-opacity=".40"/>
         <circle id="condition-active-1" cx="170" cy="330" r="35" fill="#9e1b1b"/>
-        <text x="170" y="345" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">1</text>
+        <text id="condition-digit-1" x="170" y="345" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#2b2622">1</text>
       </g>
       <g id="condition-badge-2">
         <circle cx="170" cy="470" r="35" fill="#6f6a63" fill-opacity=".40"/>
         <circle id="condition-active-2" cx="170" cy="470" r="35" fill="#9e1b1b"/>
-        <text x="170" y="485" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">2</text>
+        <text id="condition-digit-2" x="170" y="485" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#2b2622">2</text>
       </g>
       <g id="condition-badge-3">
         <circle cx="170" cy="610" r="35" fill="#6f6a63" fill-opacity=".40"/>
-        <text x="170" y="625" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">3</text>
+        <text id="condition-digit-3" x="170" y="625" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#2b2622">3</text>
       </g>
       <g id="condition-badge-4">
         <circle cx="170" cy="750" r="35" fill="#6f6a63" fill-opacity=".40"/>
-        <text x="170" y="765" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">4</text>
+        <text id="condition-digit-4" x="170" y="765" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#2b2622">4</text>
       </g>
       <g id="condition-badge-5">
         <circle cx="170" cy="890" r="35" fill="#6f6a63" fill-opacity=".40"/>
-        <text x="170" y="905" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">5</text>
+        <text id="condition-digit-5" x="170" y="905" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#2b2622">5</text>
       </g>
     </g>
   </g>
@@ -93,9 +93,11 @@
     [3.03,'pulse','#five-count',{amount:.10}],
     [4.15,'fade','#row1',{dur:.29}],
     [4.15,'fade','#condition-active-1',{dur:.22}],
+    [4.15,'color','#condition-digit-1',{to:'#fff',dur:.22}],
     [6.41,'color','#prepaid-label-main',{to:'#6f6a63',dur:.30}],
     [6.41,'fade','#row2',{dur:.28}],
     [6.41,'fade','#condition-active-2',{dur:.22}],
+    [6.41,'color','#condition-digit-2',{to:'#fff',dur:.22}],
     [6.41,'pop','#weight-icon',{from:.91,spring:'soft'}],
     [7.03,'highlight','#weight-label',{words:'5 grams',color:'#f2b705',opacity:.34,dur:.40}]
   ]
