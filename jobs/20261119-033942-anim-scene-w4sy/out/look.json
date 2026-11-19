@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-overlap",
-   "scene": "s171",
-   "text": "Controller of / Foreign Mails",
-   "t": 0.3
-  },
-  {
    "kind": "text-off-frame",
    "scene": "s171",
    "text": "दूसरी जगहों पर भी",
