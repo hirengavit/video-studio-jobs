@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s025" data-in="cut" data-section="PART 1 · POSTAGE &amp; PREPAYMENT" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+<g id="bnpl">
+  <text class="hi" x="100" y="214" font-size="48" font-weight="730" fill="#6f6a63">छूट का एक उदाहरण</text>
+  <rect x="100" y="260" width="660" height="720" rx="28" fill="#9e1b1b"/>
+  <rect x="100" y="260" width="660" height="720" rx="28" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 25" stroke-linecap="round"/>
+  <text id="bnpl-initials" x="430" y="538" text-anchor="middle" font-family="Inter,sans-serif" font-size="150" font-weight="830" fill="#ffffff">BNPL</text>
+  <path d="M160 616H699" stroke="#b8403a" stroke-width="3" stroke-linecap="round"/>
+  <text id="bnpl-full" x="430" y="710" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="780" fill="#ffffff">Book Now Pay Later</text>
+  <g id="bnpl-hi" text-anchor="middle" fill="#fde9a6" font-size="44" font-weight="670">
+    <text class="hi" x="430" y="807">अभी book करें,</text>
+    <text class="hi" x="430" y="875">बाद में भुगतान</text>
+  </g>
+</g>
+
+<g id="authorised">
+  <rect x="820" y="260" width="1000" height="119" rx="45" fill="#2e7d4f"/>
+  <text x="874" y="337" font-family="Inter,sans-serif" font-size="57" font-weight="780" fill="#fff">Authorised</text>
+  <path d="M1250 292v54" stroke="#fff" opacity=".5" stroke-width="3" stroke-linecap="round"/>
+  <text id="authorised-hi" class="hi" x="1300" y="337" font-size="49" font-weight="680" fill="#fff">अधिकृत व्यवस्था</text>
+</g>
+<g id="eligible">
+  <rect x="820" y="410" width="1000" height="166" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <circle cx="900" cy="493" r="38" fill="#9e1b1b"/>
+  <text x="900" y="508" text-anchor="middle" font-size="44" font-weight="800" fill="#fff">1</text>
+  <text x="974" y="482" font-size="56" font-weight="780" fill="#2b2622">Eligible customer</text>
+  <text class="hi" x="974" y="540" font-size="46" font-weight="630" fill="#6f6a63">योग्य ग्राहक</text>
+</g>
+<g id="booking">
+  <rect x="820" y="610" width="1000" height="166" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <circle cx="900" cy="693" r="38" fill="#9e1b1b"/>
+  <text x="900" y="708" text-anchor="middle" font-size="44" font-weight="800" fill="#fff">2</text>
+  <text class="hi" x="974" y="715" font-size="56" font-weight="750" fill="#2b2622">तय शर्तों पर items book</text>
+</g>
+<g id="payment">
+  <rect x="820" y="810" width="1000" height="170" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+  <circle cx="900" cy="895" r="38" fill="#9e1b1b"/>
+  <text x="900" y="910" text-anchor="middle" font-size="44" font-weight="800" fill="#fff">3</text>
+  <text id="pay-later" class="hi" x="974" y="916" font-size="56" font-weight="750" fill="#2b2622">Postal charges बाद में</text>
+  <circle cx="1738" cy="895" r="34" fill="#2e7d4f"/>
+  <path d="M1723 895l10 10 21-24" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+<script type="text/scene">
+({
+  on:[
+    [.70,'pop','#authorised',{from:.96,spring:'soft'}],
+    [1.20,'fade','#authorised-hi',{dur:.24}],
+    [3.16,'slide','#eligible',{from:'right',dist:50,spring:'soft'}],
+    [5.30,'slide','#booking',{from:'right',dist:50,spring:'soft'}],
+    [7.36,'slide','#payment',{from:'right',dist:50,spring:'soft'}],
+    [8.26,'highlight','#pay-later',{words:'बाद में',color:'#f2b705',opacity:.44}]
+  ]
+})
+</script>
+</section>
