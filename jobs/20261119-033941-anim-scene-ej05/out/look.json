@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "2.60",
+  "5.21",
+  "7.81",
+  "10.42",
+  "12.87"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s159",
+   "text": "RPLI (1.0:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  }
+ ]
+}
