@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s211" data-in="fade" data-in-dur="0.5" data-section="PART 9 · UNPAID &amp; SHORT-PAID ITEMS" data-series="STAMPS &amp; STATIONERY">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="scope">
+      <g id="domestic">
+        <rect x="100" y="260" width="840" height="614" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <path d="M130 260 H910 Q940 260 940 290 V316 H100 V290 Q100 260 130 260Z" fill="#9e1b1b"/>
+        <text x="520" y="486" text-anchor="middle" font-family="Inter, sans-serif" font-size="78" font-weight="800" fill="#2b2622">DOMESTIC</text>
+        <text x="520" y="562" text-anchor="middle" class="hi" font-size="52" font-weight="650" fill="#6f6a63">देशी</text>
+        <rect x="228" y="681" width="584" height="111" rx="25" fill="#e3f1e8" stroke="#b7d6c2" stroke-width="3"/>
+        <circle cx="301" cy="737" r="30" fill="#fff"/>
+        <path d="M287 736 L298 748 L319 725" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="364" y="756" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#2e7d4f">Regulation 71</text>
+      </g>
+      <g id="international">
+        <rect x="980" y="260" width="840" height="614" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <path d="M1010 260 H1790 Q1820 260 1820 290 V316 H980 V290 Q980 260 1010 260Z" fill="#9e1b1b"/>
+        <text x="1400" y="486" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="#2b2622">INTERNATIONAL</text>
+        <text id="international-hi" x="1400" y="562" text-anchor="middle" class="hi" font-size="52" font-weight="650" fill="#6f6a63">अंतरराष्ट्रीय</text>
+        <g id="international-verdict">
+          <rect x="1110" y="681" width="580" height="111" rx="25" fill="#e7e8eb"/>
+          <circle cx="1185" cy="737" r="30" fill="#fff"/>
+          <path d="M1174 726 L1196 748 M1196 726 L1174 748" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+          <text id="international-line" x="1244" y="756" class="hi" font-size="56" font-weight="800" fill="#4b4f58">हर item पर नहीं</text>
+        </g>
+      </g>
+    </g>
+    <g id="foreign">
+      <rect x="140" y="300" width="440" height="445" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:envelope-article" transform="translate(88 250) scale(1.36)"/>
+      <g id="foreign-tag">
+        <rect x="151" y="644" width="418" height="82" rx="20" fill="#fde9a6"/>
+        <text x="360" y="700" text-anchor="middle" class="hi" font-size="38" font-weight="790" fill="#664701">unpaid / कम postage</text>
+      </g>
+      <text id="foreign-label" x="965" y="432" text-anchor="middle" class="hi" font-size="59" font-weight="800" fill="#9e1b1b">विदेश जाने वाला</text>
+      <path id="foreign-arrow" d="M620 550 H1350 M1304 508 L1350 550 L1304 592" fill="none" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1400 300 V745" fill="none" stroke="#aaa39a" stroke-width="5" stroke-linecap="round" stroke-dasharray="11 17"/>
+      <rect x="1457" y="479" width="315" height="143" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1615" y="575" text-anchor="middle" class="hi" font-size="69" font-weight="800" fill="#2b2622">विदेश</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots:[[0,'#scope'],[4.90,'#foreign']],
+    camera:[[0,{zoom:1}]],
+    on:[
+      [2.14,'pop','#international',{from:0.96,spring:'soft'}],
+      [2.64,'fade','#international-hi',{dur:0.28}],
+      [3.68,'fade','#international-verdict',{dur:0.20}],
+      [3.68,'words','#international-line',{gap:0.15,dist:8,spring:'soft'}],
+      [5.00,'fade','#foreign-label',{dur:0.26}],
+      [6.30,'pop','#foreign-tag',{from:0.96,spring:'soft'}],
+      [8.28,'draw','#foreign-arrow',{dur:0.44}],
+    ],
+  }
+  </script>
+</section>
