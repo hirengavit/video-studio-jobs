@@ -41,14 +41,14 @@
     <text id="hi3" x="367" y="786" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">पोस्टकार्ड</text>
     <g id="pill3">
       <rect x="905" y="679" width="785" height="116" rx="28" fill="#fde9a6"/>
-      <text id="postcard-size" x="945" y="727" font-family="Inter, sans-serif" font-size="43" font-weight="800" fill="#664701">140 × 90 mm</text>
+      <text id="postcard-size-0" x="945" y="727" font-family="Inter, sans-serif" font-size="43" font-weight="800" fill="#664701">140</text><text id="postcard-size-1" x="1038" y="727" font-family="Inter, sans-serif" font-size="43" font-weight="800" fill="#664701">×</text><text id="postcard-size-2" x="1084" y="727" font-family="Inter, sans-serif" font-size="43" font-weight="800" fill="#664701">90</text><text id="postcard-size-3" x="1152" y="727" font-family="Inter, sans-serif" font-size="43" font-weight="800" fill="#664701">mm</text>
       <text id="postcard-address" x="945" y="777" font-family="Inter, sans-serif" font-size="40" font-weight="750" fill="#664701">right-hand half: address, postage</text>
     </g>
     <circle id="disc3" cx="285" cy="737" r="35" fill="#e3f1e8"/><path id="tick3" d="M267 738 L280 750 L304 725" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <g id="row4">
     <text id="en4" x="365" y="921" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="800" fill="#2b2622">शर्त टूटी</text>
-    <text id="convert-letter" x="575" y="921" font-family="Inter, sans-serif" font-size="50" font-weight="800" fill="#2b2622">→ Letter</text>
+    <text id="convert-letter" x="620" y="921" font-family="Inter, sans-serif" font-size="50" font-weight="800" fill="#2b2622">→ Letter</text>
     <g id="pill4">
       <rect x="905" y="837" width="785" height="106" rx="28" fill="#fde9a6"/>
       <text x="1297" y="907" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="800" fill="#664701">कमी का दोगुना</text>
@@ -60,7 +60,7 @@
 <script type="text/scene">
 ({camera:[[0,{zoom:1}]],on:[
  [0,"fade","#en3",{dur:.28}],[.42,"fade","#hi3",{dur:.30}],
- [1.22,"fade","#pill3",{dur:.28}],[2.98,"fade","#postcard-size",{dur:.25}],
+ [1.22,"fade","#pill3",{dur:.28}],[1.22,"fade","#postcard-size-0",{dur:.2}],[1.66,"fade","#postcard-size-1",{dur:.2}],[2.52,"fade","#postcard-size-2",{dur:.2}],[2.98,"fade","#postcard-size-3",{dur:.2}],
  [4.02,"words","#postcard-address",{gap:.64,dist:10,spring:"soft"}],
  [7.14,"fade","#disc3",{dur:.16}],[7.14,"draw","#tick3",{dur:.31}],
  [7.86,"fade","#en4",{dur:.26}],[9.64,"fade","#convert-letter",{dur:.28}],
