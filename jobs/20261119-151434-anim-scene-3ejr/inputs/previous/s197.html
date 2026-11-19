@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s197" data-in="cut" data-section="PART 9 · UNPAID &amp; SHORT-PAID ITEMS" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+<g id="sum2">
+  <g id="shortpaid-letter">
+    <use href="piece:address-envelope" transform="translate(120 360) scale(1)"/>
+    <g id="valid-three-rupee-stamp">
+      <use href="piece:postage-stamp" transform="translate(602 369) scale(.386)"/>
+      <text x="679" y="455" text-anchor="middle" font-family="Inter, sans-serif" font-size="42" font-weight="830" fill="#9e1b1b">₹3</text>
+    </g>
+    <g id="delivery-charge-tag">
+      <rect x="150" y="626" width="250" height="65" rx="15" fill="#2b2622"/>
+      <text x="275" y="670" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="35" font-weight="750" fill="#fff">Delivery पर ₹4</text>
+    </g>
+  </g>
+  <g id="shortpaid-worksheet">
+    <rect x="820" y="200" width="1000" height="760" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M848 200H1792Q1820 200 1820 228V216H820V228Q820 200 848 200Z" fill="#9e1b1b"/>
+    <text x="890" y="253" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="700" fill="#6f6a63">तीन हिसाब</text>
+    <text id="shortpaid-example-title" x="890" y="321" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="59" font-weight="830" fill="#9e1b1b">हिसाब 2 · कम postage</text>
+    <path d="M890 396H1750" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <text id="shortpaid-ordinary-rate" x="890" y="486" font-family="Georgia,serif" font-size="68" font-weight="700" fill="#2b2622">Rate = ₹5</text>
+    <text id="shortpaid-valid-credit" x="890" y="610" font-family="Georgia,serif" font-size="68" font-weight="700" fill="#2b2622">Valid postage = ₹3</text>
+    <text id="already-paid-note" x="895" y="665" transform="rotate(-1 895 665)" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-style="italic" font-weight="690" fill="#9e1b1b">पहले दिए ₹3 छोड़े नहीं जाते</text>
+    <text id="shortfall-operation" x="890" y="734" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="68" font-weight="700" fill="#2b2622">कमी = ₹5 − ₹3</text>
+    <text id="shortfall-two-rupees" x="1380" y="734" font-family="Georgia,serif" font-size="68" font-weight="700" fill="#2b2622">= ₹2</text>
+    <text id="shortpaid-double-collection" x="890" y="858" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="68" font-weight="700" fill="#2b2622">वसूली = 2 × ₹2</text>
+    <g id="shortpaid-four-rupee-result">
+      <rect x="1373" y="786" width="290" height="106" rx="25" fill="#2e7d4f"/>
+      <text x="1518" y="860" text-anchor="middle" font-family="Georgia,serif" font-size="68" font-weight="700" fill="#fff">= ₹4</text>
+    </g>
+  </g>
+</g>
+
+<g id="sum3">
+  <g id="minimum-letter">
+    <use href="piece:address-envelope" transform="translate(120 360)"/>
+    <use href="piece:postage-stamp" transform="translate(602 369) scale(.386)"/>
+  </g>
+  <g id="minimum-worksheet">
+    <rect x="820" y="200" width="1000" height="760" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M848 200H1792Q1820 200 1820 228V216H820V228Q820 200 848 200Z" fill="#9e1b1b"/>
+    <text x="890" y="253" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="39" font-weight="700" fill="#6f6a63">तीन हिसाब</text>
+    <text id="minimum-title" x="890" y="321" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="830" fill="#9e1b1b">हिसाब 3 · MINIMUM</text>
+    <text id="minimum-hi" x="892" y="375" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="700" fill="#6f6a63">न्यूनतम</text>
+    <path d="M890 396H1750" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <text id="minimum-shortfall" x="890" y="486" font-family="Georgia,'Noto Sans Devanagari',serif" font-size="68" font-weight="700" fill="#2b2622">कमी = 25 paise</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({shots:[[0,'#sum2'],[3.20,'#sum3']],camera:[[0,{zoom:1}]],on:[
+ [0,'highlight','#shortfall-two-rupees',{words:'₹2',color:'#fde9a6',opacity:1,pad:8,dur:.01}],
+ [.76,'highlight','#shortpaid-valid-credit',{words:'Valid postage = ₹3',color:'#f2b705',opacity:.33,pad:6,dur:.33}],
+ [.76,'underline','#shortpaid-valid-credit',{words:'₹3',color:'#9e1b1b',width:5,dur:.30}],
+ [1.42,'fade','#already-paid-note',{dur:.26}],
+ [3.21,'words','#minimum-title',{gap:.15,dist:9,spring:'soft'}],
+ [4.75,'fade','#minimum-hi',{dur:.27}],
+ [7.61,'type','#minimum-shortfall',{cps:11}]
+]})
+</script>
+</section>
