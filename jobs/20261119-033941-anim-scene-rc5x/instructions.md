@@ -1,0 +1,42 @@
+# Fix animated scene s146
+
+Read `inputs/CRAFT.md` (rules every scene follows), `inputs/storyboard.md` (the parts for this scene: "Shared",
+"Continuity", its section "## s146" and its neighbours'; follow its section closely), `inputs/SCENES.md` (the narration and word times for
+s146), `inputs/SCENE-API.md` (how to write a scene file on the engine), `inputs/kit.json` (the channel
+kit) and `inputs/pieces.md` (library pieces:
+place them with `<use href="piece:<id>" transform="..."/>` and animate their parts by id; and sets: places with
+named spots and framings, pictured in `inputs/sets/<id>.jpg` with the spots marked). If the storyboard puts
+this scene in a set, build it on the set (see SCENE-API.md, "Sets"): the character and props on its spots, the
+camera on its framings.
+
+**The header is drawn by the app.** A fixed frame (section, series) sits above every scene: never draw a section label, a series tag or anything in the top band (y < 150). Instead put the words on your <section>: `data-section="…"` and `data-series="…"` (from the storyboard).
+
+**Continuity.** The scene before this one, as finally written, is `inputs/previous/s145.html`. Where the storyboard continues its layout, keep the same positions, sizes and colours, and start from the camera framing it ended on (a zoom that is held at its end continues here, or it returns before the cut). Reuse its element ids and pieces rather than redrawing them differently.
+
+**Components.** The storyboard asks for `glossary-list` (Glossary list): their code is in `inputs/components/`. It is a starting point, never a template to fill in: mould it to this moment. Change anything (layout, size, number of items, wording, motion, timing to the words, how it combines with the rest of the scene), remove every part that doesn't serve the idea, add what's missing, and improve it wherever you can see how. Use only the parts that help; if it doesn't fit once you're writing, build something better instead. Easiest to change: glossary-list: the four terms, their Hindi and meanings (about 4 words; Hindi line under the English); the icons (envelope, rupee note, seal, parcel; draw new simple ink icons for other terms); 3 terms in a row or 4 in the grid..
+
+## What to change
+
+The current file is `inputs/current/s146.html`. Change it as follows, and keep everything else that works. Fix crowding by moving or resizing things, never by deleting what the storyboard planned to show:
+
+The director asked for these fixes:
+
+The wipe to a new screen is right. The three terms stamp on their spoken words (CBPO 2.76, APO 3.78, FPO 6.40), and the tiles and names read clearly.
+
+1. The empty envelope band (120–1800 × 760–990) sits blank under the cards for the whole 10 s, which reads like a missing panel. Start it at opacity 0 and `fade` it in at 9.2 (0.4 s), so it is there for s147's first frame and the seam doesn't change.
+2. The card content ends about y 470, which leaves the lower ~40% of each card (180–700) empty. Move each card's tile + name + Hindi block down by ~60 px so it sits centred in the card, and set the Hindi line to 38 px (now ~33) with 1.3 line height.
+
+The scene lasts 9.64 s: every time in it is between 0 and 9.64.
+
+**No character.** This channel has NO recurring character: never place the host rig (no data-rig, no rigs block) and plan no person on screen. Present ideas the way a great lecture deck would, but animated: exact-word document cards (highlighted phrase by phrase), points that build one at a time, timelines, side-by-side compare cards, one key term in focus, icons and small drawn objects, quick checks and recap cards, in the kit's colours and fonts, with the fixed places the channel's rules name. Every element lands on the word it belongs to, then holds long enough to read. Clarity first: big readable text and elements that use the frame (even margins, never a small card in a big empty canvas), nothing cramped or cut off at the frame edge.
+
+Write `out/s146.html`: one `<section class="vs-scene" id="s146" …>` with the SVG and a
+`<script type="text/scene">` block. Use the engine's
+physical actions (hold, pour, fall, place, level) instead of building them yourself.
+
+**Look at your own frames before you finish.** Run `node look.mjs`: it renders your scene with the real engine
+and writes `out/look.jpg`, six moments across the scene, plus `out/look.json` with the engine's warnings.
+Open the picture and check it like a viewer on a phone would: is every word readable, on its own background,
+inside its card, inside the frame? Does each thing arrive on its word and hold? Nothing missing, nothing
+doubled, nothing squashed? Fix what you see, run `node look.mjs` again, and only then run `node check.mjs`
+and fix what it reports.
