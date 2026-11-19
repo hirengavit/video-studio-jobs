@@ -8,5 +8,12 @@
   "9.55"
  ],
  "problems": [],
- "warnings": []
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s155",
+   "text": "3 flaps · तीन flaps / top",
+   "t": 9.55
+  }
+ ]
 }
