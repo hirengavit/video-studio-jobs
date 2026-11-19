@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s132" data-in="cut" data-section="PART 4 · CIRCLES &amp; HEADQUARTERS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text x="120" y="226" class="hi" fill="#9e1b1b" font-size="77" font-weight="750">आखिरी बात</text>
+    <rect x="120" y="280" width="700" height="680" rx="41" fill="#9e1b1b"/>
+    <rect x="143" y="303" width="654" height="634" rx="27" fill="none" stroke="#f3ead6" stroke-width="9" stroke-linecap="round" stroke-dasharray="0 25"/>
+    <text id="postal" x="470" y="525" text-anchor="middle" fill="#fff" font-size="82" font-weight="770">postal</text>
+    <text id="admin" x="470" y="618" text-anchor="middle" fill="#fff" font-size="82" font-weight="770">administration</text>
+    <text id="admin-hi" x="470" y="710" text-anchor="middle" class="hi" fill="#fde9a6" font-size="60" font-weight="650">डाक प्रशासन</text>
+    <text id="arrangement" x="470" y="805" text-anchor="middle" class="hi" fill="#fff" font-size="61" font-weight="700">की व्यवस्था</text>
+    <rect x="880" y="280" width="920" height="680" rx="41" fill="#fff" stroke="#ead9a8" stroke-width="5"/>
+    <g id="state">
+      <rect x="916" y="332" width="231" height="162" rx="24" fill="#f3ead6"/>
+      <text x="1031" y="428" text-anchor="middle" class="hi" fill="#2b2622" font-size="59" font-weight="720">राज्य</text>
+    </g>
+    <g id="territory">
+      <rect x="1161" y="332" width="361" height="162" rx="24" fill="#f3ead6"/>
+      <text x="1325" y="400" text-anchor="middle" fill="#2b2622" font-size="41" font-weight="750">Union Territory</text>
+      <text x="1325" y="460" text-anchor="middle" class="hi" fill="#6f6a63" font-size="40" font-weight="630">केंद्र शासित प्रदेश</text>
+    </g>
+    <g id="district">
+      <rect x="1536" y="332" width="230" height="162" rx="24" fill="#f3ead6"/>
+      <text x="1670" y="400" text-anchor="middle" fill="#2b2622" font-size="47" font-weight="750">district</text>
+      <text x="1670" y="460" text-anchor="middle" class="hi" fill="#6f6a63" font-size="48" font-weight="630">ज़िला</text>
+    </g>
+    <text id="status" x="1340" y="631" text-anchor="middle" fill="#2b2622" font-size="67" font-weight="740">constitutional status</text>
+    <text id="status-hi" x="1340" y="704" text-anchor="middle" class="hi" fill="#6f6a63" font-size="56" font-weight="640">संवैधानिक स्थिति</text>
+    <text id="verdict" x="1340" y="875" text-anchor="middle" class="hi" fill="#2b2622" font-size="101" font-weight="790">नहीं बदलता</text>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.88, 'words', '#postal', {dist:14, spring:'fast'}],
+      [2.32, 'words', '#admin', {dist:14, spring:'fast'}],
+      [2.90, 'fade', '#admin-hi', {dur:0.28}],
+      [3.52, 'fade', '#arrangement', {dur:0.28}],
+      [5.36, 'pop', '#state', {from:0.96, spring:'fast'}],
+      [6.26, 'pop', '#territory', {from:0.96, spring:'fast'}],
+      [8.24, 'pop', '#district', {from:0.96, spring:'fast'}],
+      [9.22, 'fade', '#status', {dur:0.24}],
+      [9.74, 'fade', '#status-hi', {dur:0.24}],
+      [10.40, 'stamp', '#verdict', {from:1.1, rot:0, spring:'fast'}],
+      [11.08, 'underline', '#verdict', {words:'नहीं', color:'#f2b705', width:9, gap:13, dur:0.33}]
+    ]
+  }
+  </script>
+</section>
