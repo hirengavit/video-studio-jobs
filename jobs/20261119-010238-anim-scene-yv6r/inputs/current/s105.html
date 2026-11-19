@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s105" data-in="cut" data-section="PART 4 · CIRCLES &amp; HEADQUARTERS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect x="80" y="173" width="1760" height="813" rx="37" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text x="182" y="272" class="hi" fill="#6f6a63" font-size="48" font-weight="650">डाक सर्किल</text>
+    <text x="1090" y="272" class="hi" fill="#6f6a63" font-size="48" font-weight="650">मुख्यालय</text>
+    <g id="r1">
+      <rect x="116" y="310" width="1688" height="228" rx="25" fill="#fbf7ee" stroke="#d8c5a6" stroke-width="3"/>
+      <path d="M809 338v172" stroke="#dfcfb6" stroke-width="3"/>
+      <g id="circle1"><text x="182" y="411" fill="#9e1b1b" font-size="77" font-weight="750">Haryana</text><text x="184" y="483" class="hi" fill="#6f6a63" font-size="49">हरियाणा</text></g>
+      <g id="arrow1" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M865 424h72m-16-16 16 16-16 16"/></g>
+      <g id="pin1"><use href="piece:icon-city-pin" transform="translate(988 383) scale(0.54)"/></g>
+      <text id="ambala" x="1090" y="411" fill="#2b2622" font-size="72" font-weight="750">Ambala</text><text id="cantt" x="1395" y="411" fill="#2b2622" font-size="72" font-weight="750">Cantt</text>
+      <text id="hi1" x="1090" y="483" class="hi" fill="#6f6a63" font-size="49">अंबाला छावनी</text>
+    </g>
+    <g id="r2">
+      <rect x="116" y="567" width="1688" height="228" rx="25" fill="#fbf7ee" stroke="#d8c5a6" stroke-width="3"/>
+      <path d="M809 595v172" stroke="#dfcfb6" stroke-width="3"/>
+      <g id="circle2"><text x="182" y="668" fill="#9e1b1b" font-size="77" font-weight="750">Punjab</text><text x="184" y="740" class="hi" fill="#6f6a63" font-size="49">पंजाब</text></g>
+      <g id="arrow2" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M865 681h72m-16-16 16 16-16 16"/></g>
+      <g id="pin2"><use href="piece:icon-city-pin" transform="translate(988 640) scale(0.54)"/></g>
+      <text id="chandigarh" x="1090" y="668" fill="#2b2622" font-size="72" font-weight="750">Chandigarh</text>
+      <text id="hi2" x="1090" y="740" class="hi" fill="#6f6a63" font-size="49">चंडीगढ़</text>
+    </g>
+    <g id="strip">
+      <rect x="116" y="839" width="1688" height="116" rx="24" fill="#fbf7ee" stroke="#d8c5a6" stroke-width="3"/>
+      <path d="M750 909h420" stroke="#e4d5bb" stroke-width="3"/>
+      <path d="M750 935c-8-8-16-17-16-26a16 16 0 0 1 32 0c0 9-8 18-16 26Z" fill="#9e1b1b"/><circle cx="750" cy="909" r="5" fill="white"/><path d="M770 919l8 8 16-18" fill="none" stroke="#2e7d4f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M834 935c-8-8-16-17-16-26a16 16 0 0 1 32 0c0 9-8 18-16 26Z" fill="#fbf7ee" stroke="#bfae95" stroke-width="3"/><path d="M918 935c-8-8-16-17-16-26a16 16 0 0 1 32 0c0 9-8 18-16 26Z" fill="#fbf7ee" stroke="#bfae95" stroke-width="3"/><path d="M1002 935c-8-8-16-17-16-26a16 16 0 0 1 32 0c0 9-8 18-16 26Z" fill="#fbf7ee" stroke="#bfae95" stroke-width="3"/><path d="M1086 935c-8-8-16-17-16-26a16 16 0 0 1 32 0c0 9-8 18-16 26Z" fill="#fbf7ee" stroke="#bfae95" stroke-width="3"/><path d="M1170 935c-8-8-16-17-16-26a16 16 0 0 1 32 0c0 9-8 18-16 26Z" fill="#fbf7ee" stroke="#bfae95" stroke-width="3"/>
+      <g id="progress2"><path d="M834 935c-8-8-16-17-16-26a16 16 0 0 1 32 0c0 9-8 18-16 26Z" fill="#9e1b1b"/><circle cx="834" cy="909" r="5" fill="white"/><path d="M854 919l8 8 16-18" fill="none" stroke="#2e7d4f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g><g id="progress3"><path d="M918 935c-8-8-16-17-16-26a16 16 0 0 1 32 0c0 9-8 18-16 26Z" fill="#9e1b1b"/><circle cx="918" cy="909" r="5" fill="white"/><path d="M938 919l8 8 16-18" fill="none" stroke="#2e7d4f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.26, 'pop', '#circle1', {spring:'fast', from:0.97}],
+      [1.24, 'pop', '#circle2', {spring:'fast', from:0.97}],
+      [3.96, 'draw', '#arrow1', {dur:0.28}],
+      [3.96, 'pop', '#pin1', {spring:'fast', from:0.86}],
+      [3.96, 'words', '#ambala', {dist:14, spring:'fast'}],
+      [5.06, 'words', '#cantt', {dist:14, spring:'fast'}],
+      [5.30, 'fade', '#hi1, #progress2', {dur:0.22}],
+      [7.20, 'draw', '#arrow2', {dur:0.28}],
+      [7.20, 'pop', '#pin2', {spring:'fast', from:0.86}],
+      [7.70, 'words', '#chandigarh', {dist:14, spring:'fast'}],
+      [8.20, 'fade', '#hi2, #progress3', {dur:0.22}]
+    ]
+  }
+  </script>
+</section>
