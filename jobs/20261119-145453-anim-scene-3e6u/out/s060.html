@@ -45,7 +45,7 @@
   <text id="letter-copy" class="hi" x="1600" y="848" text-anchor="middle" font-size="44" font-weight="740" fill="#2b2622">letter पर लगाएँ</text>
   <g id="not-other-strip">
     <rect x="139" y="862" width="1641" height="111" rx="20" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
-    <g id="non-postal-prop"><use href="piece:non-postage-labels" transform="translate(150 837) scale(.40)"/></g>
+    <g id="non-postal-prop"><use href="piece:non-postage-labels" transform="translate(150 871) scale(.40)"/></g>
     <g id="rev-term"><text id="rev-en" x="430" y="914" font-family="Inter,sans-serif" font-weight="780" font-size="41" fill="#4b4f58">Revenue stamp</text><text x="432" y="955" class="hi" font-weight="650" font-size="36" fill="#6f6a63">राजस्व टिकट</text></g>
     <path d="M963 881v70" stroke="#ead9a8" stroke-width="3"/>
     <g id="charity-term"><text id="charity-en" x="1020" y="914" font-family="Inter,sans-serif" font-weight="780" font-size="41" fill="#4b4f58">Charity label</text><text x="1022" y="955" class="hi" font-weight="650" font-size="36" fill="#6f6a63">चैरिटी लेबल</text></g>
@@ -126,7 +126,8 @@
 </svg>
 <script type="text/scene">
 ({shots:[[0,"#trap"],[6.37,"#tableb"]],camera:[[0,{zoom:1}]],on:[
- [1.14,"color","#postage-permission, #fact-sign rect",{to:"#6f6a63",dur:.35}],
+ [1.14,"color","#postage-permission, #fact-sign rect, #fact-regs text",{to:"#6f6a63",dur:.35}],
+ [1.14,"color","#permission-tick",{to:"#6f6a63",prop:"stroke",dur:.35}],
  [1.14,"out","#permission-ink",{dur:.33}],
  [2.98,"fade","#not-other-strip",{dur:.30}],
  [2.98,"pop","#non-postal-prop",{from:.95,spring:"snap"}],
