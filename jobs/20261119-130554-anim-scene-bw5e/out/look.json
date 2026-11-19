@@ -7,15 +7,6 @@
   "9.17",
   "11.31"
  ],
- "problems": [
-  "s037: no photo \"franking-machine-photo-cutout\" in the materials"
- ],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s037",
-   "text": "जितनी value, उतने stamps की ज़रूरत नहीं",
-   "t": 9.17
-  }
- ]
+ "problems": [],
+ "warnings": []
 }
