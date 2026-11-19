@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s149" data-in="fade" data-in-dur="0.5" data-section="PART 7 · LETTER CARD" data-series="STAMPS &amp; STATIONERY">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text class="hi" x="140" y="230" font-size="58" font-weight="760" fill="#9e1b1b">Private letter card · शर्तें</text>
+    <g id="s149-row1">
+      <rect x="140" y="317" width="828" height="126" rx="22" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="204" cy="380" r="32" fill="#9e1b1b"/>
+      <text x="204" y="393" font-family="Inter, sans-serif" font-size="38" font-weight="760" fill="#ffffff" text-anchor="middle">1</text>
+      <text class="hi" x="272" y="395" font-size="50" font-weight="660" fill="#2b2622">तय size + बाकी शर्तें</text>
+    </g>
+    <g id="s149-row2">
+      <rect x="140" y="497" width="828" height="126" rx="22" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="204" cy="560" r="32" fill="#9e1b1b"/>
+      <text x="204" y="573" font-family="Inter, sans-serif" font-size="38" font-weight="760" fill="#ffffff" text-anchor="middle">2</text>
+      <text class="hi" x="272" y="575" font-size="50" font-weight="660" fill="#2b2622">ठीक से मुड़ा</text>
+    </g>
+    <g id="s149-row3">
+      <rect x="140" y="677" width="828" height="126" rx="22" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="204" cy="740" r="32" fill="#9e1b1b"/>
+      <text x="204" y="753" font-family="Inter, sans-serif" font-size="38" font-weight="760" fill="#ffffff" text-anchor="middle">3</text>
+      <text class="hi" x="272" y="734" font-size="50" font-weight="660" fill="#2b2622">तीन sides पर लगातार</text>
+      <text class="hi" x="272" y="786" font-size="46" font-weight="660" fill="#2b2622">गोंद / adhesive</text>
+    </g>
+    <g id="card">
+      <use href="piece:letter-card" transform="translate(1040 240) scale(1.80)"/>
+      <path id="s149-glue-l" d="M1094 753V444" fill="none" stroke="#f2b705" stroke-width="13" stroke-linecap="round"/>
+      <path id="s149-glue-r" d="M1706 753V444" fill="none" stroke="#f2b705" stroke-width="13" stroke-linecap="round"/>
+      <path id="s149-glue-t" d="M1094 444H1706" fill="none" stroke="#f2b705" stroke-width="13" stroke-linecap="round"/>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0,{zoom:1,x:0,y:0}],[7.08,{zoom:1,x:0,y:0}],[11.20,{zoom:1.06,x:22,y:10},'inOut']],
+    on: [
+      [1.94, 'slide', '#s149-row1', {from:'left', dist:45, spring:'soft'}],
+      [6.02, 'fade', '#s149-row2', {dur:0.34}],
+      [7.54, 'fade', '#s149-row3', {dur:0.34}],
+      [8.88, 'draw', '#s149-glue-l', {dur:0.44}],
+      [9.23, 'draw', '#s149-glue-r', {dur:0.44}],
+      [9.58, 'draw', '#s149-glue-t', {dur:0.55}]
+    ]
+  }
+  </script>
+</section>
