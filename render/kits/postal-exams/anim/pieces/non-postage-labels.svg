@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" width="360" height="200">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="revenue">
+      <path d="M47 36 q8 -8 16 0 q8 -8 16 0 q8 -8 16 0 q8 -8 16 0 q8 -8 16 0 q8 -8 16 0 q8 -8 16 0 Q173 35 173 46 q8 8 0 16 q8 8 0 16 q8 8 0 16 q8 8 0 16 q8 8 0 16 q8 8 0 16 Q175 159 163 159 q-8 8 -16 0 q-8 8 -16 0 q-8 8 -16 0 q-8 8 -16 0 q-8 8 -16 0 q-8 8 -16 0 q-8 8 -16 0 Q37 163 37 151 q-8 -8 0 -16 q-8 -8 0 -16 q-8 -8 0 -16 q-8 -8 0 -16 q-8 -8 0 -16 q-8 -8 0 -16 Q33 38 47 36Z" fill="#b8c2ac"/>
+      <rect x="52" y="50" width="106" height="95" rx="5" fill="#e7ebdf" stroke="#6f7967" stroke-width="2"/>
+    </g>
+    <g id="charity">
+      <circle cx="257" cy="99" r="67" fill="#fde9a6"/>
+      <circle cx="257" cy="99" r="57" fill="none" stroke="#b28d40" stroke-width="2"/>
+      <path d="M257 125C244 113 225 102 225 88C225 77 233 70 244 71C251 72 255 77 257 82C260 76 265 72 272 71C282 70 289 78 289 88C289 102 271 113 257 125Z" fill="none"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="180" cy="166" r="0"/>
+</svg>
