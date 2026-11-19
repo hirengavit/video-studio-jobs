@@ -1,0 +1,65 @@
+<section class="vs-scene" id="s156" data-in="fade" data-in-dur="0.5" data-section="PART 6 · SPECIAL OFFICES &amp; BOARDS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="title">
+      <rect x="200" y="300" width="10" height="44" rx="5" fill="#f2b705"/>
+      <text x="230" y="335" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="750" fill="#9e1b1b">PART 6 · भाग 6</text>
+      <g font-family="Inter, sans-serif" font-size="104" font-weight="800" fill="#2b2622">
+        <text x="200" y="480">Special Offices</text>
+        <text x="200" y="595">&amp; Boards</text>
+      </g>
+      <text x="200" y="715" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="67" font-weight="750" fill="#9e1b1b">विशेष कार्यालय और Boards</text>
+      <path id="title-underline" d="M204 752 C 356 747, 500 761, 646 753 S 905 747, 1039 753" stroke="#f2b705" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <g id="stamp">
+        <rect x="1260" y="290" width="460" height="580" rx="22" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+        <rect x="1260" y="290" width="460" height="580" rx="22" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+        <rect x="1300" y="330" width="380" height="410" rx="12" fill="#fbf7ee"/>
+        <use href="piece:icon-dak-bhawan" transform="translate(1330 374) scale(0.8)"/>
+        <text x="1300" y="826" font-family="Inter, sans-serif" font-size="76" font-weight="800" fill="#fff">06</text>
+      </g>
+      <circle cx="212" cy="948" r="12" fill="#9e1b1b"/><circle cx="256" cy="948" r="12" fill="#9e1b1b"/><circle cx="300" cy="948" r="12" fill="#9e1b1b"/><circle cx="344" cy="948" r="12" fill="#9e1b1b"/><circle cx="388" cy="948" r="12" fill="#9e1b1b"/><circle cx="432" cy="948" r="12" fill="#f2b705"/>
+      <text x="474" y="960" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="650" fill="#6f6a63">Part 6 of 6 · भाग 6 / 6</text>
+    </g>
+    <g id="pair" text-anchor="middle" font-family="Inter, sans-serif">
+      <g id="left-card">
+        <rect x="120" y="220" width="780" height="630" rx="30" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+        <path d="M150 220 H870 A30 30 0 0 1 900 250 V440 H120 V250 A30 30 0 0 1 150 220 Z" fill="#9e1b1b"/>
+        <text x="510" y="330" font-size="70" font-weight="800" fill="#fff">Territorial unit</text>
+        <text x="510" y="410" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#fbf7ee">क्षेत्रीय इकाई</text>
+        <use href="piece:icon-dak-bhawan" transform="translate(430 449) scale(0.4)"/>
+      </g>
+      <g id="left-meaning">
+        <rect x="156" y="614" width="708" height="134" rx="25" fill="#f8eee2" stroke="#ead9a8" stroke-width="3"/>
+        <text x="510" y="699" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">एक इलाके का प्रशासन</text>
+      </g>
+      <g id="right-card">
+        <rect x="1020" y="220" width="780" height="630" rx="30" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+        <path d="M1050 220 H1770 A30 30 0 0 1 1800 250 V440 H1020 V250 A30 30 0 0 1 1050 220 Z" fill="#9e1b1b"/>
+        <text x="1410" y="330" font-size="68" font-weight="800" fill="#fff">Specialised office</text>
+        <use href="piece:icon-dak-bhawan" transform="translate(1330 449) scale(0.4)"/>
+        <g transform="translate(1476 568)" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linejoin="round">
+          <path d="M-6-24H6l2 7 5 3 7-2 6 10-5 5v5l5 5-6 10-7-2-5 3-2 7H-6l-2-7-5-3-7 2-6-10 5-5v-5l-5-5 6-10 7 2 5-3z"/>
+          <circle cy="1" r="8" fill="#fff"/>
+        </g>
+      </g>
+      <text id="right-hindi" x="1410" y="410" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#fbf7ee">विशेष कार्यालय</text>
+      <g id="right-meaning">
+        <rect x="1056" y="614" width="708" height="134" rx="25" fill="#f8eee2" stroke="#ead9a8" stroke-width="3"/>
+        <text id="right-meaning-text" x="1410" y="699" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">एक खास तरह का काम</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#title'], [1.80, '#pair']],
+    on: [
+      [0.60, 'draw', '#title-underline', {dur: 0.42}],
+      [1.95, 'fade', '#left-meaning', {dur: 0.32}],
+      [4.56, 'pop', '#right-card', {from: 0.95, spring: 'soft'}],
+      [5.06, 'fade', '#right-hindi', {dur: 0.30}],
+      [6.54, 'fade', '#right-meaning', {dur: 0.34}],
+      [7.42, 'highlight', '#right-meaning-text', {words: 'खास तरह का काम', color: '#f2b705', opacity: 0.42, dur: 0.32, pad: 10}],
+    ],
+  }
+  </script>
+</section>
