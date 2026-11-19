@@ -31,7 +31,7 @@
       <text id="paper-unit" x="791" y="603" font-family="Inter,sans-serif" font-size="52" font-weight="790" fill="#2b2622">≥ 70 g/m²</text>
       <text id="paper-hi" class="hi" x="266" y="654" font-size="40" font-weight="570" fill="#6f6a63">कागज़ का भार</text>
       <text id="paper-gist" class="hi" x="700" y="666" font-size="40" font-weight="700" fill="#2b2622">1 square metre कागज़ ≥ 70 grams</text>
-      <path id="old-gist-line" d="M1136 675H1327" fill="none" stroke="#f2b705" stroke-width="5" stroke-linecap="round"/>
+      <path id="old-gist-line" d="M1136 675Q1232 677 1327 675" fill="none" stroke="#f2b705" stroke-width="5" stroke-linecap="round"/>
       <g id="sheet-icon">
         <path d="M1603 564h89l11 12v79h-100z" fill="#f3ead6" stroke="#9e1b1b" stroke-width="3.5" stroke-linejoin="round"/>
         <path d="M1692 564v12h11" fill="none" stroke="#9e1b1b" stroke-width="3"/>
@@ -50,26 +50,26 @@
       <g id="condition-badge-1">
         <circle cx="170" cy="330" r="35" fill="#6f6a63" fill-opacity=".40"/>
         <circle id="condition-active-1" cx="170" cy="330" r="35" fill="#9e1b1b"/>
-        <text x="170" y="345" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">1</text>
+        <text id="condition-digit-1" x="170" y="345" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">1</text>
       </g>
       <g id="condition-badge-2">
         <circle cx="170" cy="470" r="35" fill="#6f6a63" fill-opacity=".40"/>
         <circle id="condition-active-2" cx="170" cy="470" r="35" fill="#9e1b1b"/>
-        <text x="170" y="485" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">2</text>
+        <text id="condition-digit-2" x="170" y="485" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">2</text>
       </g>
       <g id="condition-badge-3">
         <circle cx="170" cy="610" r="35" fill="#6f6a63" fill-opacity=".40"/>
         <circle id="condition-active-3" cx="170" cy="610" r="35" fill="#9e1b1b"/>
-        <text x="170" y="625" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">3</text>
+        <text id="condition-digit-3" x="170" y="625" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">3</text>
       </g>
       <g id="condition-badge-4">
         <circle cx="170" cy="750" r="35" fill="#6f6a63" fill-opacity=".40"/>
         <circle id="condition-active-4" cx="170" cy="750" r="35" fill="#9e1b1b"/>
-        <text x="170" y="765" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">4</text>
+        <text id="condition-digit-4" x="170" y="765" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#2b2622">4</text>
       </g>
       <g id="condition-badge-5">
         <circle cx="170" cy="890" r="35" fill="#6f6a63" fill-opacity=".40"/>
-        <text x="170" y="905" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">5</text>
+        <text id="condition-digit-5" x="170" y="905" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#2b2622">5</text>
       </g>
     </g>
     
@@ -84,6 +84,7 @@
 <script type="text/scene">
 ({on:[
  [0,'fade','#condition-active-4',{dur:.25}],
+ [0,'color','#condition-digit-4',{to:'#fff',dur:.25}],
  [0,'out','#old-paper-mark, #old-gist-line',{dur:.28}],
  [0,'color','#paper-main, #paper-unit, #paper-gist',{to:'#6f6a63',dur:.29}],
  [0,'slide','#row4',{from:'down',dist:20,spring:'soft'}],
