@@ -8,12 +8,5 @@
   "9.11"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s050",
-   "text": "छूट सिर्फ Regulations से / · जैसे authorised BNPL",
-   "t": 7.41
-  }
- ]
+ "warnings": []
 }
