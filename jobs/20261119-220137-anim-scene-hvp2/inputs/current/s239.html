@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s239" data-in="cut" data-section="KEY POINTS" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect y="150" width="1920" height="930" fill="#fbf7ee"/>
+<g id="kp4">
+  <g id="kp4-progress">
+    <rect x="120" y="262" width="340" height="234" rx="25" fill="#9e1b1b"/>
+    <rect x="120" y="262" width="340" height="234" rx="25" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 25" stroke-linecap="round"/>
+    <text id="kp4-number" class="hi" x="290" y="400" text-anchor="middle" font-size="69" font-weight="820" fill="#ffffff">4 · चौथी</text>
+    <circle cx="146" cy="557" r="11" fill="#9e1b1b"/><circle cx="194" cy="557" r="11" fill="#9e1b1b"/><circle cx="242" cy="557" r="11" fill="#9e1b1b"/><circle id="kp4-current" cx="290" cy="557" r="11" fill="#f2b705"/><circle cx="338" cy="557" r="11" fill="#e6dcc4"/><circle cx="386" cy="557" r="11" fill="#e6dcc4"/><circle cx="434" cy="557" r="11" fill="#e6dcc4"/>
+  </g>
+  <rect id="placement-card" x="510" y="208" width="1310" height="780" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <use id="address-side" href="piece:address-envelope" transform="translate(600 320)"/>
+  <g id="stamp-moving"><use id="postage-stamp" href="piece:postage-stamp" transform="translate(1116 362) scale(.22)"/></g>
+  <path id="corner-ring" d="M1124 341H1195Q1219 341 1219 364V448Q1219 473 1196 473H1124Q1102 473 1102 448V364Q1102 341 1124 341Z" fill="none" stroke="#b47700" stroke-width="6" stroke-linecap="round"/>
+  <g id="corner-label" fill="#9e1b1b" font-size="51" font-weight="800">
+    <text x="1300" y="365">Top right-hand</text>
+    <text x="1300" y="425">corner</text>
+    <text x="1300" y="484" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="600" fill="#6f6a63">ऊपर दायाँ कोना</text>
+  </g>
+
+  <g id="fully-affixed">
+    <text x="1300" y="563" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2e7d4f">पूरा चिपका हुआ</text>
+    <path id="affixed-tick" d="M1690 539l14 14 29-34" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="sale-permission">
+    <rect x="560" y="752" width="620" height="218" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text id="sale-stamps" x="590" y="814" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="780" fill="#9e1b1b">Stamps बेचना →</text>
+    <text id="director-general" x="590" y="876" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="720" fill="#2b2622">Director General की</text>
+    <text id="prior-permission" x="590" y="935" font-family="Inter,sans-serif" font-size="45" font-weight="760" fill="#2b2622">prior permission</text>
+  </g>
+  <g id="unused">
+    <rect x="1200" y="752" width="600" height="218" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text id="unused-stationery" x="1230" y="814" font-family="Inter,sans-serif" font-size="40" font-weight="760" fill="#2b2622">Unused stamps / stationery</text>
+    <g id="refund-pill">
+      <rect x="1230" y="852" width="221" height="82" rx="39" fill="#fff" stroke="#4b4f58" stroke-width="3"/>
+      <text id="refund-label" x="1340.5" y="908" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="780" fill="#4b4f58">Refund</text>
+    </g>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({on:[
+ [.70,'fade','#fully-affixed',{dur:.24}],
+ [.70,'draw','#affixed-tick',{dur:.36}],
+ [1.82,'fade','#sale-permission',{dur:.24}],
+ [1.82,'words','#sale-stamps',{gap:.13,dist:8,spring:'soft'}],
+ [3.34,'words','#director-general',{gap:.20,dist:8,spring:'soft'}],
+ [4.80,'words','#prior-permission',{gap:.10,dist:8,spring:'soft'}],
+ [4.80,'highlight','#prior-permission',{words:'prior permission',color:'#f2b705',opacity:.42,dur:.42}],
+ [6.50,'fade','#unused',{dur:.26}],
+ [6.50,'words','#unused-stationery',{gap:.22,dist:8,spring:'soft'}],
+ [10.12,'pop','#refund-pill',{from:.96,spring:'soft'}],
+ [10.33,'strike','#refund-label',{words:'Refund',color:'#4b4f58',width:6,dim:.83,dur:.26}]
+]})
+</script>
+</section>
