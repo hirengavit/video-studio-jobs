@@ -1,0 +1,29 @@
+<section class="vs-scene" id="s072" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect x="120" y="180" width="1680" height="800" rx="38" fill="#f3ead6"/>
+    <path id="outer" d="M158 180h1604a38 38 0 0 1 38 38v724a38 38 0 0 1-38 38H158a38 38 0 0 1-38-38V218a38 38 0 0 1 38-38Z" fill="none" stroke="#9e1b1b" stroke-width="5"/>
+    <text id="term" x="198" y="326" fill="#9e1b1b" font-size="102" font-weight="750">Divisional Head</text>
+    <text id="term-hi" x="204" y="403" class="hi" fill="#6f6a63" font-size="56">मंडल प्रमुख</text>
+    <g id="inner">
+      <rect x="560" y="460" width="800" height="360" rx="36" fill="#fbf7ee" stroke="#b8403a" stroke-width="5"/>
+      <rect x="584" y="484" width="752" height="312" rx="24" fill="none" stroke="#ead9a8" stroke-width="3"/>
+      <text x="663" y="682" fill="#2b2622" font-size="92" font-weight="750">SPOs</text>
+      <text id="second-title" x="928" y="682" fill="#2b2622" font-size="92" font-weight="750">/ SSPOs</text>
+    </g>
+    <text id="wider" x="1720" y="916" class="hi" text-anchor="end" fill="#6f6a63" font-size="57" font-weight="650">बड़ा शब्द</text>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0, 'draw', '#outer', {dur:0.70}],
+      [0.24, 'words', '#term', {gap:0.56, dist:16, spring:'fast'}],
+      [0.80, 'fade', '#term-hi', {dur:0.32}],
+      [3.54, 'pop', '#inner', {from:0.94, spring:'fast'}],
+      [4.20, 'words', '#second-title', {gap:0.04, dist:15, spring:'fast'}],
+      [5.50, 'pulse', '#outer', {amount:0.024}],
+      [5.50, 'fade', '#wider', {dur:0.3}]
+    ]
+  }
+  </script>
+</section>
