@@ -12,13 +12,13 @@
   {
    "kind": "mostly-empty",
    "scene": "s108",
-   "message": "a card (#s108-row2-outline) is mostly empty at 4.6 s: bring its items in sooner, or size it for what it holds now",
+   "message": "a card is mostly empty at 4.6 s: bring its items in sooner, or size it for what it holds now",
    "t": 4.56
   },
   {
    "kind": "mostly-empty",
    "scene": "s108",
-   "message": "a card (#s108-row2-outline) is mostly empty at 6.8 s: bring its items in sooner, or size it for what it holds now",
+   "message": "a card is mostly empty at 6.8 s: bring its items in sooner, or size it for what it holds now",
    "t": 6.85
   }
  ]
