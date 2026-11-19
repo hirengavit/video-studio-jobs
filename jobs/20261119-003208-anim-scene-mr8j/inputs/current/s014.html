@@ -1,0 +1,72 @@
+<section class="vs-scene" id="s014" data-in="cut" data-section="PART 1 · CENTRAL ADMINISTRATION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif" text-anchor="middle">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="roles-shot">
+    <text class="hi" id="roles-heading" x="960" y="223" font-size="61" font-weight="760" fill="#9e1b1b">एक व्यक्ति · दो भूमिकाएँ</text>
+    <g id="secretary-plate">
+      <use href="piece:icon-designation-plate" transform="translate(610 230) scale(1.75)"/>
+      <text x="960" y="378" font-size="57" font-weight="790" fill="#2b2622">Secretary (Posts)</text>
+      <text class="hi" x="960" y="451" font-size="51" font-weight="650" fill="#7d1414">सचिव (डाक)</text>
+    </g>
+    <g fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+      <path id="board-arrow" d="M977 520 V611 H1410 V687 M1395 667 L1410 687 L1425 667"/>
+      <path id="department-arrow" d="M943 520 V611 H510 V687 M495 667 L510 687 L525 667"/>
+    </g>
+    <g id="department-role">
+      <rect id="department-card" x="120" y="700" width="780" height="290" rx="32" fill="#fffefa" stroke="#b8403a" stroke-width="4"/>
+      <text id="head" x="510" y="792" font-size="67" font-weight="790" fill="#9e1b1b">Head</text>
+      <text id="department" x="510" y="863" font-size="50" font-weight="690" fill="#2b2622">Department of Posts</text>
+      <text class="hi" id="department-hi" x="510" y="932" font-size="47" font-weight="650" fill="#6f6a63">विभाग प्रमुख</text>
+    </g>
+    <g id="board-role">
+      <rect id="board-card" x="1020" y="700" width="780" height="290" rx="32" fill="#fffefa" stroke="#b8403a" stroke-width="4"/>
+      <text id="chairperson" x="1410" y="792" font-size="67" font-weight="790" fill="#9e1b1b">Chairperson</text>
+      <text id="board" x="1410" y="863" font-size="50" font-weight="690" fill="#2b2622">Postal Services Board</text>
+      <text class="hi" id="board-hi" x="1410" y="932" font-size="47" font-weight="650" fill="#6f6a63">अध्यक्ष, डाक सेवा बोर्ड</text>
+    </g>
+      </g>
+    <g id="hq">
+      <rect x="100" y="190" width="800" height="810" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="161" y="330" width="678" height="480" rx="24" fill="#fbf7ee" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M178 788 L500 560 L822 788 M178 351 L463 553 Q500 579 537 553 L822 351" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <rect x="289" y="382" width="422" height="374" rx="20" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <use href="piece:icon-dak-bhawan" transform="translate(271 331) scale(1.145)"/>
+      <rect x="980" y="190" width="840" height="810" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <g text-anchor="start">
+        <text id="hq-en" x="1050" y="269" font-size="46" font-weight="780" fill="#6f6a63">Headquarters</text>
+        <text id="hq-hi" x="1050" y="321" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="600" fill="#6f6a63">मुख्यालय</text>
+        <text id="dak-en" x="1050" y="423" font-size="83" font-weight="790" fill="#9e1b1b">Dak Bhawan</text>
+        <text id="dak-hi" x="1050" y="484" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="650" fill="#6f6a63">डाक भवन</text>
+        <text id="marg-en" x="1050" y="574" font-size="58" font-weight="750" fill="#2b2622">Sansad Marg</text>
+        <text id="marg-hi" x="1050" y="629" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="650" fill="#6f6a63">संसद मार्ग</text>
+        <text id="delhi-en" x="1050" y="716" font-size="58" font-weight="750" fill="#2b2622">New Delhi</text>
+        <text id="delhi-hi" x="1050" y="771" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="650" fill="#6f6a63">नई दिल्ली</text>
+      </g>
+      <g id="pin-stamp">
+        <rect x="1100" y="824" width="600" height="143" rx="15" fill="#f3ead6"/>
+        <rect x="1115" y="839" width="570" height="113" rx="8" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round"/>
+        <text x="1203" y="911" font-size="43" font-weight="750" fill="#9e1b1b">PIN</text>
+        <text id="pin" x="1453" y="922" font-size="80" font-weight="800" fill="#2b2622">110001</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#roles-shot'], [2.75, '#hq']],
+    on: [
+      [0, 'highlight', '#roles-heading', {words:'दो भूमिकाएँ', color:'#f2b705', opacity:0.48, dur:0.001}],
+      [0.82, 'highlight', '#chairperson', {color:'#f2b705', opacity:0.42, dur:0.33}],
+      [3.83, 'words', '#hq-en', {dist:10}],
+      [4.30, 'fade', '#hq-hi', {dur:0.22}],
+      [5.31, 'words', '#dak-en', {gap:0.26, dist:12}],
+      [5.90, 'fade', '#dak-hi', {dur:0.22}],
+      [6.61, 'words', '#marg-en', {gap:0.74, dist:12}],
+      [7.20, 'fade', '#marg-hi', {dur:0.22}],
+      [8.49, 'words', '#delhi-en', {gap:0.14, dist:12}],
+      [9.00, 'fade', '#delhi-hi', {dur:0.22}],
+      [10.11, 'stamp', '#pin-stamp', {from:1.12, rot:-2}],
+      [10.60, 'highlight', '#pin', {color:'#f2b705', opacity:0.42, dur:0.35}],
+    ],
+  }
+  </script>
+</section>
