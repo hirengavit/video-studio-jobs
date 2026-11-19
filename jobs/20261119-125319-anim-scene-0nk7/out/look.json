@@ -10,10 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-overlap",
+   "kind": "misuse",
    "scene": "s222",
-   "text": "अधिकतम / 2 साल",
-   "t": 2.03
+   "message": "color #s221-row1a, #s221-row1b, #s222-penalty-1 text, #s222-penalty-1 tspan, #s222-penalty-options: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
   },
   {
    "kind": "mostly-empty",
