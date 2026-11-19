@@ -1,5 +1,12 @@
 <section class="vs-scene" id="s039" data-in="fade" data-in-dur="0.5" data-section="PART 2 · CASH, DIGITAL &amp; FRANKING" data-series="STAMPS &amp; STATIONERY">
 <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <filter id="ink-frank" x="-12%" y="-40%" width="124%" height="180%" color-interpolation-filters="sRGB">
+    <feMorphology in="SourceAlpha" operator="dilate" radius="1.25" result="weight"/>
+    <feFlood flood-color="#9e1b1b" result="postal-ink"/>
+    <feComposite in="postal-ink" in2="weight" operator="in"/>
+  </filter>
+</defs>
 <rect width="1920" height="1080" fill="#fbf7ee"/>
 <g id="same">
   <use href="piece:address-envelope" transform="translate(200 300) scale(0.75)"/>
@@ -13,7 +20,7 @@
     <use href="piece:address-envelope" transform="translate(1240 300) scale(0.75)"/>
   </g>
   <g id="franked">
-    <use href="piece:franking-impression" transform="translate(1624 326) scale(0.175)"/>
+    <g filter="url(#ink-frank)"><use href="piece:franking-impression" transform="translate(1624 326) scale(0.175)"/></g>
   </g>
   <text id="where" x="960" y="820" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', sans-serif" font-size="48">कहाँ और कैसे लगें</text>
 </g>
