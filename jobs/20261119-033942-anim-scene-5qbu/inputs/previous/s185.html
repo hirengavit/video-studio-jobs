@@ -1,0 +1,65 @@
+<section class="vs-scene" id="s185" data-in="cut" data-section="PART 6 · SPECIAL OFFICES &amp; BOARDS" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="guide">
+    <rect x="100" y="260" width="405" height="580" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <use href="piece:regulations-book" transform="translate(158 304) scale(.96)"/>
+    <text x="302" y="744" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#9e1b1b" text-anchor="middle">Post Office</text>
+    <text x="302" y="796" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#9e1b1b" text-anchor="middle">Guide</text>
+  </g>
+  <g id="manual">
+    <rect x="530" y="260" width="340" height="580" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <use href="piece:icon-notice-document" transform="translate(568 307) scale(.88)"/>
+    <text x="700" y="742" font-family="Inter, sans-serif" font-size="43" font-weight="800" fill="#9e1b1b" text-anchor="middle">Postal Manual</text>
+    <text x="700" y="795" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="800" fill="#6f6a63" text-anchor="middle">डाक नियमावली</text>
+  </g>
+  <g id="scope">
+    <rect x="100" y="892" width="770" height="108" rx="20" fill="#f3ead6"/>
+    <text x="132" y="957" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="800" fill="#2b2622" text-anchor="start">निर्देश तभी लागू होते हैं…</text>
+  </g>
+  <g id="authority-1">
+    <rect x="1000" y="216" width="820" height="150" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="1000" y="236" width="10" height="110" rx="5" fill="#9e1b1b"/>
+    <text x="1042" y="279" font-family="Inter, sans-serif" font-size="57" font-weight="800" fill="#2b2622" text-anchor="start">Act</text>
+    <text x="1042" y="333" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="800" fill="#6f6a63" text-anchor="start">अधिनियम</text>
+  </g>
+  <g id="authority-2">
+    <rect x="1000" y="383" width="820" height="150" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="1000" y="403" width="10" height="110" rx="5" fill="#9e1b1b"/>
+    <text x="1042" y="446" font-family="Inter, sans-serif" font-size="57" font-weight="800" fill="#2b2622" text-anchor="start">Rules</text>
+    <text x="1042" y="500" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="800" fill="#6f6a63" text-anchor="start">नियम</text>
+  </g>
+  <g id="authority-3">
+    <rect x="1000" y="550" width="820" height="150" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="1000" y="570" width="10" height="110" rx="5" fill="#9e1b1b"/>
+    <text x="1042" y="613" font-family="Inter, sans-serif" font-size="57" font-weight="800" fill="#2b2622" text-anchor="start">Regulations</text>
+    <text x="1042" y="667" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="800" fill="#6f6a63" text-anchor="start">विनियम</text>
+  </g>
+  <g id="authority-4">
+    <rect x="1000" y="717" width="820" height="150" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="1000" y="737" width="10" height="110" rx="5" fill="#9e1b1b"/>
+    <text x="1042" y="780" font-family="Inter, sans-serif" font-size="57" font-weight="800" fill="#2b2622" text-anchor="start">Later orders</text>
+    <text x="1042" y="834" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="800" fill="#6f6a63" text-anchor="start">बाद के orders</text>
+  </g>
+  <path id="towards" d="M897 542 H974 M953 521 L974 542 L953 563" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="match">
+    <rect x="1000" y="892" width="820" height="108" rx="20" fill="#e3f1e8"/>
+    <path d="M1035 943 L1050 960 L1077 928" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1110" y="957" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="800" fill="#235b3e" text-anchor="start">जब इनसे मेल खाते हों</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [1.10, 'pop', '#manual', {from: 0.92, spring: 'soft'}],
+    [3.04, 'fade', '#scope', {dur: 0.35}],
+    [5.42, 'pop', '#authority-1', {from: 0.94, spring: 'soft'}],
+    [6.30, 'pop', '#authority-2', {from: 0.94, spring: 'soft'}],
+    [7.06, 'pop', '#authority-3', {from: 0.94, spring: 'soft'}],
+    [9.14, 'pop', '#authority-4', {from: 0.94, spring: 'soft'}],
+    [9.90, 'draw', '#towards', {dur: 0.25}],
+    [10.04, 'fade', '#match', {dur: 0.25}]
+  ]
+}
+</script>
+</section>
