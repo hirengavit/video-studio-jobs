@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<g stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g id="walls"><rect x="65" y="135" width="270" height="177" rx="4" fill="#fbf7ee"/></g>
+<g id="roof"><rect x="51" y="112" width="298" height="24" rx="4" fill="#9e1b1b"/></g>
+<g id="sign"><rect x="143" y="153" width="114" height="33" rx="4" fill="#ffffff"/></g>
+<g id="door"><rect x="171" y="203" width="59" height="109" rx="4" fill="#9e1b1b"/><circle cx="218" cy="260" r="3" fill="#f3ead6"/></g>
+<g id="window"><rect x="96" y="209" width="47" height="53" rx="4" fill="#f3ead6"/><path d="M119 209v53m-23-26h47" fill="none" /></g>
+<g id="letter-box"><rect x="268" y="249" width="38" height="50" rx="6" fill="#9e1b1b"/><path d="M276 263h22" fill="none" stroke="#fbf7ee"/><path d="M287 299v13" fill="none" /></g>
+<g id="threshold"><rect x="56" y="308" width="288" height="8" rx="2" fill="#f3ead6"/></g>
+</g>
+<circle data-anchor="top" cx="200" cy="112" r="0"/>
+<circle data-anchor="base" cx="200" cy="316" r="0"/>
+</svg>
