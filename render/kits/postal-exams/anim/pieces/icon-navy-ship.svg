@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<g id="superstructure" fill="#f3ead6"><path d="M102 216V160H207V137H264V216Z"/><path d="M208 137V124H258V137"/><path d="M260 184H303V217H260Z"/>
+<g id="bridge-windows" fill="#4b4f58"><rect x="214" y="145" width="15" height="13"/><rect x="237" y="145" width="15" height="13"/><rect x="115" y="174" width="20" height="15"/><rect x="146" y="174" width="20" height="15"/><rect x="177" y="174" width="20" height="15"/></g></g>
+<g id="mast"><path d="M230 122V61M204 82H256M210 103H250M230 61L248 115M230 61L212 115"/><path id="radar" d="M261 98H280V106H261Z" fill="#4b4f58"/><path d="M269 107V139"/></g>
+<g id="deck"><path d="M43 220H356V232H43Z" fill="#fbf7ee"/><path d="M59 202V220M81 202V220M55 202H92M307 202V220M332 202V220M302 202H346"/></g>
+<path id="hull" d="M27 232H378L343 287Q337 296 322 296H92Q76 296 65 283Z" fill="#4b4f58"/>
+<g id="portholes" fill="#fbf7ee"><circle cx="113" cy="254" r="5"/><circle cx="138" cy="254" r="5"/><circle cx="163" cy="254" r="5"/><circle cx="293" cy="254" r="5"/><circle cx="318" cy="254" r="5"/></g>
+<circle data-anchor="base" cx="207" cy="296" r="0"/>
+</svg>
