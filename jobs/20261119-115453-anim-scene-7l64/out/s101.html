@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s101" data-in="wipe" data-in-dur="0.6" data-in-opts='{"from":"right"}' data-section="RECAP · PARTS 3–4" data-series="STAMPS &amp; STATIONERY">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="recap">
+      <rect x="260" y="170" width="1400" height="820" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M288 171 H1632 Q1659 171 1659 198 L960 330 L261 198 Q261 171 288 171Z" fill="#f3ead6"/>
+      <path d="M261 198 L960 330 L1659 198" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linejoin="round"/>
+      <text x="960" y="225" text-anchor="middle" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="700" fill="#6f6a63">RECAP · दोहराव</text>
+      <text x="960" y="293" text-anchor="middle" font-family="Inter, sans-serif" font-size="62" font-weight="800" fill="#9e1b1b">Part 3 + 4</text>
+      <g id="seal">
+        <circle cx="960" cy="330" r="31" fill="#9e1b1b"/>
+        <circle cx="960" cy="330" r="24" fill="none" stroke="#fde9a6" stroke-width="2.5" stroke-dasharray="3 5"/>
+        <text x="960" y="344" text-anchor="middle" font-family="Inter, sans-serif" font-size="41" font-weight="800" fill="#fff">4</text>
+      </g>
+      <path d="M323 505 H1597 M323 660 H1597 M323 815 H1597" fill="none" stroke="#ead9a8" opacity="0.7" stroke-width="3" stroke-linecap="round"/>
+      <g id="row1">
+        <text id="term1" x="420" y="419" font-family="Inter, sans-serif" font-size="52" font-weight="800" fill="#2b2622">Definitive stamps</text>
+        <text id="hi1" x="422" y="471" class="hi" font-size="40" font-weight="600" fill="#6f6a63">रोज़ की डाक के टिकट</text>
+        <g id="pill1">
+          <rect x="1085" y="372" width="510" height="105" rx="28" fill="#fde9a6"/>
+          <text x="1340" y="442" text-anchor="middle" class="hi" font-size="48" font-weight="750" fill="#664701">25 paise से</text>
+        </g>
+        <g id="disc1"><circle cx="365" cy="423" r="30" fill="#e3f1e8"/></g>
+        <path id="tick1" d="M349 423 L360 435 L382 411" fill="none" stroke="#2e7d4f" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g id="row2">
+        <text id="term2" x="420" y="574" font-family="Inter, sans-serif" font-size="52" font-weight="800" fill="#2b2622">Commemorative stamps</text>
+        <text id="hi2" x="422" y="626" class="hi" font-size="40" font-weight="600" fill="#6f6a63">स्मारक डाक टिकट</text>
+        <g id="pill2">
+          <rect x="1085" y="527" width="510" height="105" rx="28" fill="#fde9a6"/>
+          <text x="1120" y="569" font-family="Inter, sans-serif" font-size="40" font-weight="750" fill="#664701">postage</text>
+          <path d="M1284 553 L1295 564 L1317 541" fill="none" stroke="#2e7d4f" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <text id="pill2-second" x="1120" y="611" class="hi" font-size="38" font-weight="750" fill="#664701">· जीवित व्यक्ति नहीं</text>
+        </g>
+        <g id="disc2"><circle cx="365" cy="578" r="30" fill="#e3f1e8"/></g>
+        <path id="tick2" d="M349 578 L360 590 L382 566" fill="none" stroke="#2e7d4f" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0,{zoom:1}]],
+    on: [
+      [1.40,'fade','#term1',{dur:0.29}],
+      [2.50,'fade','#hi1',{dur:0.27}],
+      [4.68,'pop','#pill1',{from:0.96,spring:'soft'}],
+      [5.84,'fade','#disc1',{dur:0.16}],
+      [5.84,'draw','#tick1',{dur:0.31}],
+      [6.58,'fade','#term2',{dur:0.30}],
+      [7.09,'fade','#hi2',{dur:0.25}],
+      [7.78,'fade','#pill2',{dur:0.28}],
+      [9.42,'fade','#pill2-second',{dur:0.28}],
+      [11.38,'fade','#disc2',{dur:0.16}],
+      [11.38,'draw','#tick2',{dur:0.31}],
+    ],
+  }
+  </script>
+</section>
