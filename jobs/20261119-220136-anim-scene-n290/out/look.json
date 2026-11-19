@@ -14,12 +14,6 @@
    "scene": "s109",
    "text": "डाक-टिकट संग्रह के टिकट और सामग्री / छपी value",
    "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s109",
-   "text": "छपी value / छपी value",
-   "t": 0.3
   }
  ]
 }
