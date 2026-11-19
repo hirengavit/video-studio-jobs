@@ -1,0 +1,104 @@
+# Storyboard: Department of Posts — structure, Circles and headquarters (Postal Exams, Hindi)
+
+## Shared
+
+Series tag: POSTAL ADMINISTRATION (red pill, top right, the same on every scene; never animated).
+
+No character in this channel: no sets, no rigs, no spots. Every scene is an animated lecture slide on the cream
+canvas #fbf7ee; the app's frame draws the section label (top left) and series pill (top right), so content lives
+in the area x 80–1840, y 150–1010. Recurring props, each made once for the library (flat ink, 3 px rounded
+outlines, kit palette, no lettering unless noted; scenes letter them):
+
+| id | looks like | size | anchors | scenes |
+|---|---|---|---|---|
+| icon-dak-bhawan (new) | generic multi-storey government office block, cream walls, postal-red band and door, flat roof, no emblem or logo | 400 sq, shown 260–420 px | base, top | s003, s014, s015, s016, s056, s062, s063, s196, s206 |
+| icon-village-post-office (new) | small one-storey village office, cream walls, red roof strip, a tiny red letter box beside the door, blank signboard | 400 sq | base, top | s062, s063, s206 |
+| step-ladder-diagram (new) | five wide cream steps rising left-to-right with ink edges, each tread blank for a label; bottom step at left | 1200×600 | base, top | s062, s063, s206 |
+| icon-envelope (new) | cream envelope, red flap line | 400 sq | base, top | s001, s008, s079, s086, s170 |
+| icon-parcel (new) | sand parcel box tied with ink string | 400 sq | base, top | s086, s088, s160 |
+| icon-passbook-rupee (new) | postal-red passbook with white rupee sign | 400 sq | base | s009 |
+| icon-insurance-shield (new) | cream shield with a red umbrella inside | 400 sq | base | s009, s158, s159 |
+| icon-designation-plate (new) | wooden-ink desk name plate, white blank face, red base strip; the scene letters the post | 400×200 | base, top | s012, s013, s014, s044, s053, s054, s057 |
+| icon-notice-document (new) | white sheet with a sand header strip and grey placeholder lines, folded corner, nothing official-looking | 300×400 | base, top | s021, s022, s042, s047, s091, s094 |
+| icon-city-pin (new) | postal-red map pin with white centre dot | 120×160 | base (tip) | s102–s112, s117, s120 |
+| icon-airplane (new) | flat ink mail plane side view, cream body, red stripe | 400 sq | base | s079 |
+| icon-globe-mail (new) | cream globe with ink meridians and a small envelope in front | 400 sq | base | s157, s170, s171 |
+| icon-graduation-cap (new) | ink mortarboard with red tassel | 400 sq | base | s157, s176, s177, s178 |
+| icon-tech-laptop (new) | open laptop, cream screen with ink code lines, a small gear | 400 sq | base | s157, s172–s175 |
+| icon-stamp-sheet (new) | sheet of 3×3 blank perforated red/cream stamps | 400 sq | base | s035, s167, s168, s169 |
+| icon-forms-stack (new) | stack of cream forms with a pencil on top | 400 sq | base | s166, s167, s168 |
+| icon-welfare-hands (new) | two cupped ink hands holding a small red heart | 400 sq | base | s188, s189, s192 |
+| icon-army-mailbag (library) | khaki mail bag, red tag, ink star | ~220 px | base | s005, s007, s138–s155, s199 |
+| icon-common-seal (library) | round red seal, blank centre | 260 px | base, top | s040, s041 |
+| icon-mail-van (library) | red mail van | 400 sq | base | s079, s086, s170 |
+| icon-train (library) | mail train engine + coach | 400 sq | base | s036, s078, s079 |
+| icon-boat (library) | river boat with mail bag | 400 sq | base | s079 |
+| regulations-book (library) | red hard-cover book, blank title panel | 300×400 | base, top | s024, s025, s030, s031, s034, s067, s182–s185 |
+| icon-foundation-stone (library) | stone block, blank plaque, trowel | 260 px | base | s180, s181 |
+| icon-sports-medal (library) | yellow medal on red ribbon | 200 px | base | s190, s191, s193 |
+
+Real photos (all optional: each scene also works with the drawn version): `photo:india-post-letter-box-cutout`
+(library) in s001; new `dak-bhawan-new-delhi` (s014), `rafi-ahmed-kidwai-portrait` (s011, s176),
+`lord-dalhousie-portrait` (s035), `india-1854-lithograph-stamp` (s035). Never a photo of a post holder or a staged
+official.
+
+Section labels (English, uppercase, change only at these scenes):
+s001–s007 OVERVIEW · TODAY'S TOPIC; s008–s037 PART 1 · CENTRAL ADMINISTRATION; s038–s055 PART 2 · POSTAL SERVICES
+BOARD; s056–s058 RECAP · PARTS 1–2; s059–s101 PART 3 · CIRCLE TO SUB-DIVISION; s102–s133 PART 4 · CIRCLES &
+HEADQUARTERS; s134–s137 RECAP · PARTS 3–4; s138–s155 PART 5 · BASE CIRCLE & APS; s156–s194 PART 6 · SPECIAL
+OFFICES & BOARDS; s195–s205 KEY POINTS; s206 CLOSE.
+
+## Continuity
+
+- No character anywhere; nothing about where "he" stands applies. What carries across a boundary is the card on
+  screen: a scene marked `Continues: sNNN` opens on exactly the last frame of that scene and cuts (no fade).
+- Fresh scenes inside a part arrive with `cut` (or `wipe` from the right for a new sub-topic); a new Part opens
+  with `fade` 0.5 on a chapter-title stamp. Only cut, fade and wipe are used.
+- Fixed screen directions for the whole video: hierarchies run top (senior) to bottom (field); time runs left to
+  right; "compare" cards put the first-named item on the left; the Dak Bhawan → village ladder rises left to
+  right from the village (bottom left) to Dak Bhawan (top right) in every scene that uses it (s062, s063, s206).
+- Recurring colour meanings: postal red = cards/headings; yellow band = the phrase being said; green tick =
+  recap point done / correct pairing; slate strike + cross = the wrong reading of a trap.
+- The camera is still by default; where a scene pushes in (max 1.12) it returns to wide before its cut unless the
+  next scene says it continues from the push.
+## s087
+Continues: s086
+Section label: PART 3 · CIRCLE TO SUB-DIVISION
+In: cut · Framing: wide (static)
+Idea: Plus logistics establishments; then the reporting chain: Head of Logistics reports to Head of Circle.
+Layout: shot A = s086 + envelope band 100–1820 × 860–980. Shot B (sub-shot cut 3.39): vertical chain left column 160–860: #hoc 240–420, #hol 600–780, arrow up between; right half reserved for s088.
+| time | camera | character pose / face | actions |
+|---|---|---|---|
+| 0.00 | wide | — | s086 last frame; five cards fade to grey; envelope band slides up: "logistics से जुड़े establishments भी" |
+| 3.39 | — | — | sub-shot cut: title Hindi "Reporting की कड़ी" y 190; empty chain outline draws |
+| 5.41 | — | — | lower card #hol `words` "Head of Logistics" + "लॉजिस्टिक्स प्रमुख" |
+| 6.77 | — | — | top red card #hoc `words` "Head of Circle" + "सर्कल प्रमुख" |
+| 8.13 | — | — | ink arrow `draw` from #hol up to #hoc, label "report" pops beside it |
+
+## s088
+Continues: s087
+Section label: PART 3 · CIRCLE TO SUB-DIVISION
+In: cut · Framing: wide (static)
+Idea: Reviewing authority is Member (Operations); Head of Logistics looks after RMS Divisions and Foreign Post Offices.
+Layout: chain as s087; envelope card #review 1000–1800 × 200–400 with dashed line to #hol; white list card #ctrl 1000–1800 × 460–1000, header Hindi "इनके अधीन".
+| time | camera | character pose / face | actions |
+|---|---|---|---|
+| 0.00 | wide | — | s087 last frame; #review slides in: grey Hindi label "समीक्षा अधिकारी" + "Reviewing authority" |
+| 1.62 | — | — | `words` "Member (Operations)" EN 56 px; 2.10 Hindi "सदस्य (प्रचालन)"; dashed line draws to #hol |
+| 3.36 | — | — | #hol `pulse`; #review fades to grey; #ctrl card grows from #hol's right |
+| 4.90 | — | — | row "RMS Divisions / आरएमएस मंडल" pops |
+| 6.96 | — | — | row "Foreign Post Offices / विदेश डाकघर" pops |
+
+## s089
+Continues: s088
+Section label: PART 3 · CIRCLE TO SUB-DIVISION
+In: cut · Framing: wide (static)
+Idea: Also MMS units, processing hubs, related logistics units; all by rules and delegated powers.
+Layout: #ctrl grows to five rows (each ~100 px, EN 48–56 px, Hindi 36 px); band 120–1800 × 920–1000 under everything (#ctrl ends 880).
+| time | camera | character pose / face | actions |
+|---|---|---|---|
+| 0.00 | wide | — | s088 last frame; row "MMS units / एमएमएस इकाइयाँ" pops |
+| 1.70 | — | — | row "processing hubs / प्रोसेसिंग हब" pops |
+| 3.44 | — | — | row "logistics units / लॉजिस्टिक्स इकाइयाँ" pops; 5.28 Hindi header "control में" `highlight` (yellow band) |
+| 6.50 | — | — | band slides up: "rules" (6.50) and "delegated powers" (7.30) pop in; Hindi "के हिसाब से" fades at 8.64 |
+
