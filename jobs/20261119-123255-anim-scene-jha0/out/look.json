@@ -8,12 +8,5 @@
   "10.75"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s090",
-   "text": "कर्मचारी की personal चिट्ठी / = private letter",
-   "t": 2.18
-  }
- ]
+ "warnings": []
 }
