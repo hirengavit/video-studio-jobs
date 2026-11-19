@@ -1,0 +1,67 @@
+<section class="vs-scene" id="s122" data-in="wipe" data-in-dur="0.4" data-in-opts='{"from":"right"}' data-section="PART 4 · CIRCLES &amp; HEADQUARTERS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect x="120" y="161" width="8" height="45" rx="4" fill="#9e1b1b"/>
+    <text id="kicker-group" x="148" y="197" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#9e1b1b">दूसरा group</text>
+    <text id="kicker-region" x="485" y="197" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#2b2622">पश्चिम और उत्तर</text>
+    <g id="mh-column" class="circle-column">
+      <rect id="mh-frame" x="120" y="260" width="540" height="730" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path id="mh-cap" d="M148 260H632Q660 260 660 288V440H120V288Q120 260 148 260Z" fill="#9e1b1b"/>
+      <g id="mh-title" text-anchor="middle">
+        <text x="390" y="338" font-family="Inter, sans-serif" font-size="46" font-weight="750" fill="#fff">Maharashtra Circle</text>
+        <text x="390" y="394" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="600" fill="#fff">महाराष्ट्र परिमंडल</text>
+      </g>
+      <g id="maharashtra-row">
+        <rect x="152" y="480" width="476" height="130" rx="18" fill="#f3ead6"/>
+        <text x="182" y="534" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Maharashtra</text>
+      </g>
+      <text id="maharashtra-hindi" x="182" y="587" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="600" fill="#6f6a63">महाराष्ट्र</text>
+      <g id="goa-row">
+        <rect x="152" y="640" width="476" height="130" rx="18" fill="#f3ead6"/>
+        <text x="182" y="694" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Goa</text>
+      </g>
+      <text id="goa-hindi" x="182" y="747" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="600" fill="#6f6a63">गोवा</text>
+    </g>
+    <g id="pb-column" class="circle-column">
+      <rect id="pb-frame" x="690" y="260" width="540" height="730" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path id="pb-cap" d="M718 260H1202Q1230 260 1230 288V440H690V288Q690 260 718 260Z" fill="#9e1b1b"/>
+      <g id="pb-title" text-anchor="middle">
+        <text x="960" y="338" font-family="Inter, sans-serif" font-size="46" font-weight="750" fill="#fff">Punjab Circle</text>
+        <text x="960" y="394" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="600" fill="#fff">पंजाब परिमंडल</text>
+      </g>
+      <g id="punjab-row">
+        <rect x="722" y="480" width="476" height="130" rx="18" fill="#f3ead6"/>
+        <text x="752" y="534" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Punjab</text>
+      </g>
+      <text id="punjab-hindi" x="752" y="587" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="600" fill="#6f6a63">पंजाब</text>
+      <g id="chandigarh-row">
+        <rect x="722" y="640" width="476" height="130" rx="18" fill="#f3ead6"/>
+        <text x="752" y="694" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Chandigarh</text>
+      </g>
+      <text id="chandigarh-hindi" x="752" y="747" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="600" fill="#6f6a63">चंडीगढ़</text>
+    </g>
+    <g id="jk-column" class="circle-column">
+      <rect id="jk-frame" x="1260" y="260" width="540" height="730" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path id="jk-cap" d="M1288 260H1772Q1800 260 1800 288V440H1260V288Q1260 260 1288 260Z" fill="#9e1b1b"/>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0, 'words', '#kicker-group', {gap: 0.12, dist: 10}],
+      [0.86, 'words', '#kicker-region', {gap: 0.52, dist: 10}],
+      [2.40, 'pop', '.circle-column', {stagger: 0.12, from: 0.97}],
+      [3.80, 'fade', '#mh-title', {dur: 0.22}],
+      [5.19, 'pop', '#maharashtra-row', {from: 0.97}],
+      [5.69, 'fade', '#maharashtra-hindi', {dur: 0.2}],
+      [6.04, 'pop', '#goa-row', {from: 0.97}],
+      [6.54, 'fade', '#goa-hindi', {dur: 0.2}],
+      [6.84, 'fade', '#pb-title', {dur: 0.22}],
+      [8.00, 'pop', '#punjab-row', {from: 0.97}],
+      [8.50, 'fade', '#punjab-hindi', {dur: 0.2}],
+      [8.67, 'pop', '#chandigarh-row', {from: 0.97}],
+      [9.17, 'fade', '#chandigarh-hindi', {dur: 0.2}],
+    ],
+  }
+  </script>
+</section>
