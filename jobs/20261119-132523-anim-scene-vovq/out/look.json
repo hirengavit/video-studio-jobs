@@ -8,12 +8,5 @@
   "8.57"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s112",
-   "message": "highlight: \"ज़्यादातर\" isn't in that <text> (it says \"\")",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
