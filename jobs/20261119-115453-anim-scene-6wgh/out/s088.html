@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s088" data-in="cut" data-section="PART 4 · VALID STAMPS &amp; AFFIXING" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="left-envelope">
+  <use href="piece:address-envelope" transform="translate(140 270) scale(1.25)"/>
+  <rect x="763" y="298" width="150" height="161" fill="#fff"/>
+  <rect x="750" y="308" width="158" height="162" rx="8" fill="none" stroke="#6f6a63" stroke-width="2.5" stroke-dasharray="7 7"/>
+  <g id="revenue-only"><g transform="translate(734 299) scale(0.91)"><g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M47 36 q8 -8 16 0 q8 -8 16 0 q8 -8 16 0 q8 -8 16 0 q8 -8 16 0 q8 -8 16 0 q8 -8 16 0 Q173 35 173 46 q8 8 0 16 q8 8 0 16 q8 8 0 16 q8 8 0 16 q8 8 0 16 q8 8 0 16 Q175 159 163 159 q-8 8 -16 0 q-8 8 -16 0 q-8 8 -16 0 q-8 8 -16 0 q-8 8 -16 0 q-8 8 -16 0 q-8 8 -16 0 Q37 163 37 151 q-8 -8 0 -16 q-8 -8 0 -16 q-8 -8 0 -16 q-8 -8 0 -16 q-8 -8 0 -16 q-8 -8 0 -16 Q33 38 47 36Z" fill="#b8c2ac"/>
+      <rect x="52" y="50" width="106" height="95" rx="5" fill="#e7ebdf" stroke="#6f7967" stroke-width="2"/>
+    </g></g></g>
+</g>
+<text id="no-credit" x="560" y="866" text-anchor="middle" fill="#4b4f58" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="700">postage credit: कुछ नहीं</text>
+<path id="no-credit-cross" d="M232 834l28 28m-28 0 28-28" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+<g id="right-envelope">
+  <use href="piece:address-envelope" transform="translate(980 270) scale(1.25)"/>
+  <rect x="1600" y="298" width="152" height="161" fill="#fff"/>
+  <rect x="1430" y="307" width="322" height="180" rx="8" fill="none" stroke="#6f6a63" stroke-width="2.5" stroke-dasharray="7 7"/>
+  <g id="revenue-with-postage"><g transform="translate(1424 306) scale(0.91)"><g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M47 36 q8 -8 16 0 q8 -8 16 0 q8 -8 16 0 q8 -8 16 0 q8 -8 16 0 q8 -8 16 0 q8 -8 16 0 Q173 35 173 46 q8 8 0 16 q8 8 0 16 q8 8 0 16 q8 8 0 16 q8 8 0 16 q8 8 0 16 Q175 159 163 159 q-8 8 -16 0 q-8 8 -16 0 q-8 8 -16 0 q-8 8 -16 0 q-8 8 -16 0 q-8 8 -16 0 q-8 8 -16 0 Q37 163 37 151 q-8 -8 0 -16 q-8 -8 0 -16 q-8 -8 0 -16 q-8 -8 0 -16 q-8 -8 0 -16 q-8 -8 0 -16 Q33 38 47 36Z" fill="#b8c2ac"/>
+      <rect x="52" y="50" width="106" height="95" rx="5" fill="#e7ebdf" stroke="#6f7967" stroke-width="2"/>
+    </g></g></g>
+</g>
+<g id="valid-postage"><use href="piece:postage-stamp" transform="translate(1536 269) scale(0.64)"/></g>
+<path id="valid-ring" d="M1739 398c0 53-27 83-75 83s-75-31-75-83c0-50 29-84 75-84s75 34 75 84z" fill="none" stroke="#2e7d4f" stroke-width="5.5" stroke-linecap="round"/>
+<rect id="deemphasize-revenue" x="1451" y="330" width="140" height="130" fill="#fff" fill-opacity="0.55"/>
+<text id="postage-only" x="1380" y="866" text-anchor="middle" fill="#2e7d4f" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="700">सिर्फ valid postage गिना</text>
+</svg>
+<script type="text/scene">
+({on:[
+ [1.06,"pop","#revenue-only",{from:0.89}],
+ [3.20,"fade","#no-credit",{dur:0.38}],
+ [4.50,"draw","#no-credit-cross",{dur:0.33}],
+ [5.42,"fade","#right-envelope",{dur:0.43}],
+ [6.44,"pop","#valid-postage",{from:0.9}],
+ [8.74,"draw","#valid-ring",{dur:0.5}],
+ [8.74,"fade","#deemphasize-revenue",{dur:0.36}],
+ [9.56,"fade","#postage-only",{dur:0.36}]
+]})
+</script>
+</section>
