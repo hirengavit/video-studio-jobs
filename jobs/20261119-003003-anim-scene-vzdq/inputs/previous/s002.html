@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s002" data-in="cut" data-section="OVERVIEW · TODAY'S TOPIC" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text x="113" y="212" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="62" font-weight="750" fill="#6f6a63">इसकी शुरुआत</text>
+    <g id="postmark">
+      <circle cx="430" cy="505" r="259" fill="#fffaf1" stroke="#9e1b1b" stroke-width="7"/>
+      <circle cx="430" cy="505" r="235" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-dasharray="4 11"/>
+      <path d="M676 451q18-13 36 0t36 0m-66 51q18-13 36 0t36 0m-78 51q18-13 36 0t36 0" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g id="date">
+      <text x="430" y="472" text-anchor="middle" font-family="Inter, sans-serif" font-size="76" font-weight="750" fill="#9e1b1b">1 October</text>
+      <rect id="yearHighlight" x="292" y="509" width="276" height="105" rx="19" fill="#fde9a6"/>
+      <text id="year" x="430" y="598" text-anchor="middle" font-family="Inter, sans-serif" font-size="104" font-weight="800" fill="#9e1b1b">1854</text>
+    </g>
+    <g id="unified">
+      <rect x="100" y="811" width="950" height="174" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="131" y="846" width="8" height="105" rx="4" fill="#9e1b1b"/>
+      <text id="unifiedEn" x="575" y="888" text-anchor="middle" font-family="Inter, sans-serif" font-size="55" font-weight="750" fill="#2b2622">Unified postal administration</text>
+      <text id="unifiedHi" x="575" y="950" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="650" fill="#6f6a63">एकीकृत डाक प्रशासन</text>
+    </g>
+    <path id="timelineArrow" d="M784 505H1437m-35-28 35 28-35 28" fill="none" stroke="#2b2622" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="today">
+      <circle cx="1560" cy="505" r="101" fill="#f3ead6" stroke="#9e1b1b" stroke-width="5"/>
+      <text x="1560" y="529" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="66" font-weight="750" fill="#9e1b1b">आज</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.88,'stamp','#date',{from:1.12,rot:-4,spring:'fast'}],
+      [1.42,'fade','#year',{dur:0.20}],
+      [1.42,'reveal','#yearHighlight',{from:'left',dur:0.27}],
+      [4.80,'slide','#unified',{from:'down',dist:46,spring:'fast'}],
+      [5.22,'words','#unifiedEn',{gap:0.42,dist:11,from:'down',spring:'fast'}],
+      [6.70,'fade','#unifiedHi',{dur:0.28}],
+      [7.90,'draw','#timelineArrow',{dur:0.60}],
+      [8.62,'pop','#today',{from:0.82,spring:'fast'}]
+    ]
+  }
+  </script>
+</section>
