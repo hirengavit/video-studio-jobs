@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s151" data-in="cut" data-section="PART 7 · LETTER CARD" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+  <g id="five">
+    <g id="five-base">
+      <rect x="100" y="170" width="1720" height="830" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text class="hi" x="171" y="240" font-size="56" font-weight="800" fill="#9e1b1b">Letter card की</text>
+      <text id="five-count" x="566" y="240" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#9e1b1b">5</text>
+      <text class="hi" x="619" y="240" font-size="56" font-weight="800" fill="#9e1b1b">शर्तें</text>
+    </g>
+    <g id="row1">
+      <rect x="143" y="271" width="1634" height="118" rx="20" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="202" cy="330" r="35" fill="#9e1b1b"/>
+      <text x="202" y="345" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#ffffff">1</text>
+      <text id="prepaid-label-main" class="hi" x="264" y="326" font-size="52" font-weight="780" fill="#6f6a63">Postage पूरा Prepaid</text>
+      <text id="prepaid-label-hi" class="hi" x="266" y="371" font-size="40" font-weight="570" fill="#6f6a63">पहले से चुकाया</text>
+      <g fill="none" stroke="#9e1b1b">
+        <rect x="1612" y="281" width="76" height="97" rx="9" stroke-width="4"/>
+        <rect x="1620" y="289" width="60" height="81" rx="6" stroke-width="2" stroke-dasharray="2 6"/>
+        <path d="M1636 332h28m-21 15h21" stroke-width="3" stroke-linecap="round"/>
+      </g>
+    </g>
+    <g id="row2">
+      <rect x="143" y="411" width="1634" height="118" rx="20" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="202" cy="470" r="35" fill="#9e1b1b"/>
+      <text x="202" y="485" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#ffffff">2</text>
+      <rect id="weight-mark" x="432" y="433" width="224" height="72" rx="6" fill="#f2b705" opacity=".34"/>
+      <text id="weight-label" class="hi" x="264" y="488" font-size="54" font-weight="770" fill="#2b2622">वज़न ≤ 5 grams</text>
+      <use id="weight-icon" href="piece:letter-scale" transform="translate(1590 406) scale(.30)"/>
+    </g>
+    <g id="row3">
+      <rect x="143" y="551" width="1634" height="118" rx="20" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="202" cy="610" r="35" fill="#9e1b1b"/>
+      <text x="202" y="625" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#fff">3</text>
+      <text id="paper-main" class="hi" x="264" y="603" font-size="52" font-weight="780" fill="#2b2622">कागज़ की substance</text>
+      <text id="paper-unit" x="791" y="603" font-family="Inter,sans-serif" font-size="52" font-weight="790" fill="#2b2622">≥ 70 g/m²</text>
+      <text id="paper-hi" class="hi" x="266" y="651" font-size="40" font-weight="570" fill="#6f6a63">कागज़ का भार</text>
+      <text id="paper-gist" class="hi" x="700" y="651" font-size="40" font-weight="660" fill="#6f6a63">1 square metre कागज़ ≥ 70 grams</text>
+      <g id="sheet-icon">
+        <path d="M1603 564h89l11 12v79h-100z" fill="#f3ead6" stroke="#9e1b1b" stroke-width="3.5" stroke-linejoin="round"/>
+        <path d="M1692 564v12h11" fill="none" stroke="#9e1b1b" stroke-width="3"/>
+        <text x="1652" y="622" text-anchor="middle" font-family="Inter,sans-serif" font-size="34" font-weight="790" fill="#9e1b1b">1 m²</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({camera:[[0,{zoom:1,x:0,y:0}],[4.74,{zoom:1,x:0,y:0}],[5.62,{zoom:1.11,x:0,y:-36},'inOut'],[10.00,{zoom:1.11,x:0,y:-36}],[10.60,{zoom:1,x:0,y:0},'inOut']],
+on:[
+ [.68,'color','#weight-label',{to:'#6f6a63',dur:.28}],
+ [.68,'out','#weight-mark',{dur:.27}],
+ [.68,'slide','#row3',{from:'down',dist:21,spring:'soft'}],
+ [1.18,'fade','#paper-hi',{dur:.25}],
+ [2.06,'fade','#paper-unit',{dur:.25}],
+ [2.06,'highlight','#paper-unit',{words:'70 g/m²',color:'#f2b705',opacity:.40,dur:.36,pad:6}],
+ [7,'draw','#sheet-icon',{dur:.44}],
+ [7.90,'words','#paper-gist',{gap:.24,dist:8}],
+ [9.62,'underline','#paper-gist',{words:'70 grams',color:'#f2b705',width:5,dur:.34}]
+]})
+</script>
+</section>
