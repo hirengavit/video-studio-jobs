@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s051" data-in="cut" data-section="PART 2 · POSTAL SERVICES BOARD" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="full-name">
+      <text id="asfa-title" x="960" y="243" text-anchor="middle" font-size="56" font-weight="800" fill="#9e1b1b">Additional Secretary and Financial Adviser</text>
+      <text id="asfa-title-hi" x="960" y="309" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#6f6a63">अपर सचिव और वित्तीय सलाहकार</text>
+    </g>
+    <g id="asfa-plate">
+      <use href="piece:icon-designation-plate" transform="translate(560 380) scale(2)"/>
+      <text id="asfa-stamp" x="960" y="602" text-anchor="middle" font-size="80" font-weight="850" fill="#9e1b1b">AS and FA</text>
+      <g id="single-post">
+        <rect x="1180" y="335" width="220" height="90" rx="35" fill="#9e1b1b"/>
+        <rect x="1190" y="345" width="200" height="70" rx="27" fill="none" stroke="#fde9a6" stroke-width="2" stroke-dasharray="4 6"/>
+        <text x="1290" y="393" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="800" fill="#fffefa">एक ही post</text>
+      </g>
+    </g>
+    <g id="combined-pill">
+      <rect x="1400" y="530" width="420" height="143" rx="28" fill="#fde9a6"/>
+      <text x="1610" y="589" text-anchor="middle" font-size="31" font-weight="800" fill="#8a5d00">combined designation</text>
+      <text x="1610" y="638" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="700" fill="#8a5d00">संयुक्त पदनाम</text>
+    </g>
+    <g id="invitee-envelope">
+      <rect x="120" y="830" width="1700" height="160" rx="26" fill="#f3ead6"/>
+      <path d="M120 889l50-32 50 32v44H120z" transform="translate(30 0)" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M150 890l50 28 50-28" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="invitee-intro" x="280" y="928" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#2b2622">इस पद पर:</text>
+      <text id="invitee-fa" x="487" y="928" font-size="44" font-weight="800" fill="#2b2622">Financial Adviser =</text>
+      <text id="invitee-role" x="938" y="928" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">Board के permanent invitee</text>
+    </g>
+  <rect id="listed-sheet" x="1000" y="300" width="820" height="460" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path id="sheet-accent" d="M1038 342H1776" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+  <text id="js-line1" x="1048" y="411" fill="#2b2622" font-size="55" font-weight="850">Joint Secretary and</text>
+  <text id="js-line2" x="1048" y="480" fill="#2b2622" font-size="55" font-weight="850">Financial Adviser</text>
+  <text id="js-hi" x="1048" y="560" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="750">संयुक्त सचिव और वित्तीय सलाहकार</text>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0, {zoom: 1}]],
+  on: [
+    [0, 'words', '#invitee-role', {gap: 0.32}],
+    [2.60, 'stamp', '#single-post', {from: 1.10, rot: -4, spring: 'soft'}],
+    [3.84, 'out', '#combined-pill', {dur: 0.30, scale: 1}],
+    [4.16, 'color', '#asfa-title', {to: '#6f6a63', dur: 0.35}],
+    [4.16, 'move', '#asfa-plate', {by: [-420, 0], spring: 'soft'}],
+    [4.50, 'fade', '#listed-sheet, #sheet-accent', {dur: 0.35}],
+    [5.80, 'words', '#js-line1', {gap: 0.62}],
+    [7.66, 'words', '#js-line2', {gap: 0.70}],
+    [8.40, 'fade', '#js-hi', {dur: 0.28}]
+  ]
+}
+</script>
+</section>
+
