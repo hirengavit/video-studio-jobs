@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "1.95",
+  "3.90",
+  "5.84",
+  "7.79",
+  "9.59"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s039",
+   "text": "= / वही नियम",
+   "t": 3.9
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s039",
+   "message": "a card (#s039-envelope) is mostly empty at 3.9 s: bring its items in sooner, or size it for what it holds now",
+   "t": 3.9
+  }
+ ]
+}
