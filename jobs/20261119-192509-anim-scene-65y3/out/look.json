@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.24",
+  "2.48",
+  "3.71",
+  "4.95",
+  "6.04"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s052",
+   "text": "Machine-franked / article",
+   "t": 0.3
+  }
+ ]
+}
