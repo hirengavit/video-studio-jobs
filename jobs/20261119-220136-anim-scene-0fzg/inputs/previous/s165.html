@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s165" data-in="wipe" data-in-dur="0.6" data-in-opts='{"from":"right"}' data-section="PART 8 · POSTCARD" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+<g id="title">
+  <rect x="200" y="300" width="10" height="44" rx="5" fill="#f2b705"/>
+  <text class="hi" x="230" y="336" font-size="38" font-weight="750" fill="#9e1b1b">PART 8 · भाग 8</text>
+  <text x="200" y="515" font-family="Inter, sans-serif" font-size="104" font-weight="800" fill="#2b2622">Postcard</text>
+  <text id="postcard-hi" class="hi" x="200" y="640" font-size="74" font-weight="700" fill="#9e1b1b">पोस्टकार्ड</text>
+  <path id="title-underline" d="M204 681C278 670 386 690 518 679" stroke="#f2b705" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <text id="subtitle" class="hi" x="200" y="779" font-size="47" font-weight="600" fill="#6f6a63">तय size का आयताकार card · खुला संदेश</text>
+  <rect x="1260" y="290" width="460" height="580" rx="20" fill="#9e1b1b"/>
+  <rect x="1260" y="290" width="460" height="580" rx="20" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+  <rect x="1300" y="330" width="380" height="410" rx="12" fill="#fbf7ee"/>
+  <g stroke="#2b2622" stroke-width="4" stroke-linecap="round">
+    <rect x="1327" y="429" width="326" height="212" rx="6" fill="#f3ead6"/>
+    <path d="M1488 453V617M1520 560H1627M1520 578H1627M1520 598H1604" fill="none" stroke="#b8ae9a"/>
+    <rect x="1584" y="449" width="49" height="43" rx="4" fill="none" stroke="#9e1b1b"/>
+  </g>
+  <text x="1300" y="826" font-family="Inter, sans-serif" font-size="76" font-weight="800" fill="#ffffff">08</text>
+  <circle cx="212" cy="948" r="12" fill="#9e1b1b"/><circle cx="256" cy="948" r="12" fill="#9e1b1b"/><circle cx="300" cy="948" r="12" fill="#9e1b1b"/><circle cx="344" cy="948" r="12" fill="#9e1b1b"/><circle cx="388" cy="948" r="12" fill="#9e1b1b"/><circle cx="432" cy="948" r="12" fill="#9e1b1b"/><circle cx="476" cy="948" r="12" fill="#9e1b1b"/><circle cx="520" cy="948" r="12" fill="#f2b705"/><circle cx="564" cy="948" r="12" fill="#e6dcc4"/><circle cx="608" cy="948" r="12" fill="#e6dcc4"/>
+  <text class="hi" x="670" y="960" font-size="36" font-weight="600" fill="#6f6a63">Part 8 of 10 · भाग 8 / 10</text>
+</g>
+<g id="def">
+  <g id="big-postcard"><use href="piece:postcard-blank" transform="translate(84.34 85) scale(2.53)"/></g>
+  <circle id="printed-ring" cx="928" cy="402" r="87" fill="none" stroke="#f2b705" stroke-width="9"/>
+  <g id="postage-callout">
+    <rect x="1130" y="314" width="660" height="166" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text class="hi" x="1460" y="413" text-anchor="middle" font-size="55" font-weight="750" fill="#2b2622">छपा postage · तय value</text>
+    <path d="M1118 400H1025M1051 380L1025 400L1051 420" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="not-an-envelope">
+    <use href="piece:envelope-article" transform="translate(1248 490) scale(1.3)"/>
+    <text id="envelope-caption" class="hi" x="1508" y="934" text-anchor="middle" font-size="43" font-weight="650" fill="#4b4f58">envelope में रखा छोटा letter</text>
+    <path id="cross" d="M1710 702L1774 766M1774 702L1710 766" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+  shots: [[0,'#title'],[5.10,'#def']],
+  on: [
+    [.88,'fade','#postcard-hi',{dur:.28}],
+    [1.05,'draw','#title-underline',{dur:.55}],
+    [.88,'words','#subtitle',{gap:.43,dist:10}],
+    [5.10,'draw','#big-postcard',{dur:.83}],
+    [6.72,'draw','#printed-ring',{dur:.39}],
+    [7.16,'fade','#postage-callout',{dur:.30}],
+    [8.70,'fade','#not-an-envelope',{dur:.32}],
+    [10.72,'strike','#envelope-caption',{color:'#4b4f58',width:5,dim:.8}],
+    [10.72,'draw','#cross',{dur:.33}]
+  ]
+})
+</script>
+</section>
