@@ -1,0 +1,68 @@
+<section class="vs-scene" id="s235" data-in="cut" data-section="KEY POINTS" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+<g id="kp2">
+  <g id="key-progress-2">
+    <rect x="100" y="200" width="360" height="420" rx="25" fill="#9e1b1b"/>
+    <rect x="100" y="200" width="360" height="420" rx="25" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 25" stroke-linecap="round"/>
+    <text id="number-2" x="280" y="431" text-anchor="middle" font-family="Inter,sans-serif" font-size="190" font-weight="820" fill="#ffffff">2</text>
+    <text id="ordinal-second" class="hi" x="280" y="540" text-anchor="middle" font-size="51" font-weight="760" fill="#ffffff">दूसरी</text>
+    <circle id="point-2-dot-1" cx="140.00" cy="700" r="11" fill="#e6dcc4"/><circle id="point-2-dot-2" cx="186.67" cy="700" r="11" fill="#f2b705"/><circle id="point-2-dot-3" cx="233.33" cy="700" r="11" fill="#e6dcc4"/><circle id="point-2-dot-4" cx="280.00" cy="700" r="11" fill="#e6dcc4"/><circle id="point-2-dot-5" cx="326.67" cy="700" r="11" fill="#e6dcc4"/><circle id="point-2-dot-6" cx="373.33" cy="700" r="11" fill="#e6dcc4"/><circle id="point-2-dot-7" cx="420.00" cy="700" r="11" fill="#e6dcc4"/>
+  </g>
+
+  <g id="mail-card">
+    <rect x="520" y="200" width="1300" height="780" rx="27" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text id="mail-heading" class="hi" x="606" y="296" font-size="64" font-weight="800" fill="#9e1b1b">Mail services · डाक सेवाएँ:</text>
+    <text id="mail-four" class="hi" x="606" y="358" font-size="46" font-weight="700" fill="#2b2622">भुगतान के चार तरीके</text>
+  </g>
+  <path d="M798 381.5q34 3.5 71 0" fill="none" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/>
+<g id="payment-1">
+    <rect x="556" y="403" width="290" height="328" rx="23" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+    <use href="piece:rupee-cash" transform="translate(570.35 376) scale(0.67)"/>
+    
+    <text x="701" y="649" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="800" fill="#2b2622">Cash</text>
+    
+    <text class="hi" x="701" y="706" text-anchor="middle" font-size="41" font-weight="670" fill="#6f6a63">नकद</text>
+  </g>
+<g id="payment-2">
+    <rect x="869" y="403" width="290" height="328" rx="23" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+    <use href="piece:smartphone-blank" transform="translate(920 416) scale(0.47)"/>
+    <path d="M998 510l11 12 22-26" fill="none" stroke="#2e7d4f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1014" y="649" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="800" fill="#2b2622">Digital</text>
+    
+    <text class="hi" x="1014" y="706" text-anchor="middle" font-size="41" font-weight="670" fill="#6f6a63">डिजिटल</text>
+  </g>
+<g id="payment-3">
+    <rect x="1182" y="403" width="290" height="328" rx="23" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+    <use href="piece:postage-stamp" transform="translate(1195 378) scale(0.66)"/>
+    
+    <text x="1327" y="649" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="800" fill="#2b2622">Stamps</text>
+    
+    <text class="hi" x="1327" y="706" text-anchor="middle" font-size="41" font-weight="670" fill="#6f6a63">डाक-टिकट</text>
+  </g>
+<g id="payment-4">
+    <rect x="1495" y="403" width="290" height="328" rx="23" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+    <use href="piece:franking-impression" transform="translate(1506 376) scale(0.67)"/>
+    
+    <text x="1640" y="613" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#2b2622">Authorised</text>
+    <text x="1640" y="656" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#2b2622">franking</text>
+    <text class="hi" x="1640" y="706" text-anchor="middle" font-size="36" font-weight="670" fill="#6f6a63">अधिकृत franking</text>
+  </g>
+  <g id="approved-route">
+    <rect x="556" y="770" width="1229" height="123" rx="25" fill="#f3ead6"/>
+    <text id="approved-copy" class="hi" x="606" y="845" font-size="48" font-weight="750" fill="#2b2622">+ Regulations में बताया दूसरा तरीका भी मान्य</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({on:[
+ [0,'pop','#payment-1',{from:.94,spring:'soft'}],
+ [.72,'pop','#payment-2',{from:.94,spring:'soft'}],
+ [1.68,'pop','#payment-3',{from:.94,spring:'soft'}],
+ [3.06,'pop','#payment-4',{from:.94,spring:'soft'}],
+ [4.98,'fade','#approved-route',{dur:.3}],
+ [4.98,'words','#approved-copy',{gap:.35,dist:9}],
+ [7.60,'highlight','#approved-copy',{words:'मान्य',color:'#f2b705',opacity:.48,dur:.34,pad:5}]
+]})
+</script>
+</section>
