@@ -1,0 +1,50 @@
+{
+ "moments": [
+  "0.30",
+  "2.89",
+  "5.78",
+  "8.67",
+  "11.56",
+  "14.30"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s063",
+   "text": "मिलकर जारी / Customer",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s063",
+   "text": "मिलकर जारी / ग्राहक",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s063",
+   "text": "मिलकर जारी / Proponent",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s063",
+   "text": "मिलकर जारी / प्रस्तावक",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s063",
+   "text": "आपसी तय शर्तों पर / Personalised printing",
+   "t": 0.3
+  },
+  {
+   "kind": "low-contrast",
+   "scene": "s063",
+   "text": "India (1.9:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  }
+ ]
+}
