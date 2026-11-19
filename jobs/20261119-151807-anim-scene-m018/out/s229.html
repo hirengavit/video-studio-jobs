@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s229" data-in="cut" data-section="PART 10 · REUSE &amp; FICTITIOUS STAMPS" data-series="STAMPS &amp; STATIONERY">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="repro">
+      <text id="repro-title" x="140" y="262" font-family="Inter,sans-serif" font-size="80" font-weight="830" fill="#9e1b1b">Reproduction</text>
+      <text id="repro-hi" class="hi" x="143" y="321" font-size="45" font-weight="650" fill="#6f6a63">पुनरुत्पादन (stamp की तस्वीर छापना)</text>
+      <g id="illustrated-magazine">
+        <path d="M141 407q143-52 250-12 104-42 249 12v542q-132-33-249-2-112-31-250 2z" fill="#fff" stroke="#ead9a8" stroke-width="4" stroke-linejoin="round"/>
+        <path d="M391 396v551" fill="none" stroke="#ead9a8" stroke-width="5"/>
+        <path d="M170 441h191M421 441h189" fill="none" stroke="#6f6a63" stroke-width="7" stroke-linecap="round"/>
+        <path d="M171 491h181M171 530h181M171 569h181M171 608h154M171 647h181M171 686h181M171 725h181M171 764h154M171 803h181M171 842h181M171 881h181M421 491h181M421 530h181M421 803h181M421 842h181M421 881h181" fill="none" stroke="#6f6a63" stroke-opacity=".45" stroke-width="4" stroke-linecap="round"/>
+        <g id="print-stamp" fill="none" stroke="#2b2622" stroke-linejoin="round" stroke-linecap="round">
+          <rect x="443" y="554" width="139" height="200" rx="9" stroke-width="5"/>
+          <rect x="453" y="565" width="119" height="178" rx="4" stroke-width="3" stroke-dasharray="3 5"/>
+          <path d="M468 686l31-44 20 22 15-13 22 35zm63-79a13 13 0 1 0 0 26 13 13 0 1 0 0-26z" stroke-width="4"/>
+        </g>
+      </g>
+      <text id="for-illustration" class="hi" x="743" y="430" font-size="60" font-weight="790" fill="#2b2622">Illustration के लिए</text>
+      <g id="repro-allowed">
+        <rect x="742" y="458" width="436" height="84" rx="35" fill="#2e7d4f"/>
+        <text class="hi" x="960" y="514" text-anchor="middle" font-size="46" font-weight="780" fill="#fff">Allowed · अनुमति</text>
+      </g>
+      <g id="first-publication">
+        <circle cx="769" cy="605" r="26" fill="#9e1b1b"/>
+        <text x="769" y="618" text-anchor="middle" font-family="Inter,sans-serif" font-size="34" font-weight="820" fill="#fff">1</text>
+        <text x="823" y="614" font-family="Inter,sans-serif" font-size="56" font-weight="810" fill="#2b2622">Philatelic publication</text>
+      </g>
+      <text id="first-publication-hi" class="hi" x="825" y="674" font-size="43" font-weight="650" fill="#6f6a63">डाक-टिकट संग्रह की पत्रिका</text>
+      <path id="publication-divider" d="M744 708h1025" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+      <g id="publication-number-two">
+        <circle cx="769" cy="781" r="26" fill="#9e1b1b"/>
+        <text x="769" y="794" text-anchor="middle" font-family="Inter,sans-serif" font-size="34" font-weight="820" fill="#fff">2</text>
+      </g>
+      <text id="second-publication" class="hi" x="823" y="795" font-size="47" font-weight="780" fill="#2b2622">आम publication का article या section</text>
+      <text id="publication-limits" class="hi" x="825" y="862" font-size="47" font-weight="700" fill="#2b2622">जो पूरा postage stamps के बारे में हो</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+({on:[
+ [.42,'fade','#first-publication',{dur:.31}],
+ [.92,'fade','#first-publication-hi',{dur:.28}],
+ [2.76,'draw','#publication-divider',{dur:.38}],
+ [2.76,'pop','#publication-number-two',{from:.94,spring:'soft'}],
+ [2.76,'words','#second-publication',{gap:.53,dist:9}],
+ [8.16,'words','#publication-limits',{gap:.27,dist:8}],
+ [8.82,'highlight','#publication-limits',{words:'पूरा',color:'#f2b705',opacity:.46,dur:.34,pad:6}]
+]})
+</script></section>
