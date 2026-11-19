@@ -46,13 +46,13 @@
     </g>
   </g>
   <g id="delivery-strip">
-    <rect x="120" y="840" width="1680" height="140" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <rect id="delivery-plate" x="120" y="840" width="1680" height="140" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
     <g id="delivery-envelope"><use href="piece:envelope-article" transform="translate(141 823) scale(.44)"/></g>
     <path id="delivery-arrow" d="M300 906H363M346 891L363 906L346 921" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <text id="delivery-prefix" class="hi" x="396" y="916" font-size="47" font-weight="730" fill="#2b2622">delivery सिर्फ उसी</text>
-    <text id="addressee" x="835" y="912" font-family="Inter,sans-serif" font-size="47" font-weight="780" fill="#2b2622">addressee</text>
-    <text id="addressee-hi" class="hi" x="838" y="956" font-size="35" font-weight="560" fill="#6f6a63">(पाने वाले)</text>
-    <text id="named-only" class="hi" x="1124" y="916" font-size="46" font-weight="650" fill="#2b2622">को, जिसके नाम item है</text>
+    <text id="delivery-prefix" class="hi" x="388" y="916" font-size="45" font-weight="730" fill="#2b2622">delivery सिर्फ उसी</text>
+    <text id="addressee" x="866" y="912" font-family="Inter,sans-serif" font-size="47" font-weight="780" fill="#2b2622">addressee</text>
+    <text id="addressee-hi" class="hi" x="869" y="956" font-size="35" font-weight="560" fill="#6f6a63">(पाने वाले)</text>
+    <text id="named-only" class="hi" x="1170" y="916" font-size="46" font-weight="650" fill="#2b2622">को, जिसके नाम item है</text>
   </g>
 </g>
 <g id="exam">
@@ -65,7 +65,7 @@
   <g id="exam-qr-row">
     <g id="qr-icon"><use href="piece:qr-code-stand" transform="translate(221 336) scale(.54)"/></g>
     <text id="qr-amount" x="506" y="453" font-family="Inter,sans-serif" font-size="62" font-weight="760" fill="#2b2622">QR code payment</text>
-    <rect id="digital-highlight" x="1108" y="390" width="550" height="93" rx="18" fill="#fde9a6"/>
+    <rect id="digital-highlight" x="1108" y="390" width="581" height="93" rx="18" fill="#fde9a6"/>
     <text id="qr-digital" x="1132" y="453" font-family="Inter,sans-serif" font-size="62" font-weight="790" fill="#2b2622">= digital payment</text>
   </g>
 </g>
@@ -74,6 +74,7 @@
 ({
   shots: [[0,'#parcel-registration'],[6.62,'#exam']],
   on:[
+    [.98,'fade','#delivery-plate',{dur:.28}],
     [.98,'pop','#delivery-envelope',{from:.95,spring:'soft'}],
     [.98,'draw','#delivery-arrow',{dur:.43}],
     [1.36,'fade','#delivery-prefix',{dur:.24}],
