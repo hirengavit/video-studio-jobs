@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s107" data-in="cut" data-section="PART 5 · SALE, STOCK, REFUND, CANCELLATION" data-series="STAMPS &amp; STATIONERY">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="items">
+  <rect x="140" y="177" width="10" height="49" rx="5" fill="#9e1b1b"/>
+  <text id="price-heading" x="176" y="218" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="66" font-weight="850" fill="#9e1b1b">बिक्री की कीमत</text>
+  <path d="M140 701H1780" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+<g id="item-1"><use id="prop-1" href="piece:postage-stamp" transform="translate(70.00000000000003 332) scale(1.15)"/><g id="label-1"><text x="300" y="764" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="820" fill="#2b2622">Postage stamp</text><text x="300" y="808" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="670" fill="#6f6a63">डाक टिकट</text></g></g>
+<g id="item-2"><use id="prop-2" href="piece:postcard-blank" transform="translate(520 385) scale(1)"/><g id="label-2"><text x="720" y="764" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="820" fill="#2b2622">Postcard</text><text x="720" y="808" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="670" fill="#6f6a63">पोस्टकार्ड</text></g></g>
+<g id="item-3"><use id="prop-3" href="piece:letter-card" transform="translate(946 415.79) scale(0.97)"/><g id="label-3"><text x="1140" y="764" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="820" fill="#2b2622">Letter card</text><text x="1140" y="808" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="670" fill="#6f6a63">अंतर्देशीय पत्र</text></g></g>
+<g id="item-4"><use id="prop-4" href="piece:aerogramme" transform="translate(1360 394) scale(1)"/><g id="label-4"><text x="1560" y="764" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="820" fill="#2b2622">Aerogramme</text><text x="1560" y="808" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="670" fill="#6f6a63">एयरोग्राम</text></g></g>
+<g id="face-value">
+    <rect x="460" y="834" width="1000" height="89" rx="23" fill="#e3f1e8" stroke="#2e7d4f" stroke-width="3"/>
+    <text id="face-value-text" x="960" y="894" text-anchor="middle" class="hi" font-size="52" font-weight="800" fill="#2e7d4f">छपे stamp की value पर</text>
+  </g>
+</g>
+    <g id="table">
+      <text x="140" y="219" class="hi" font-size="62" font-weight="800" fill="#9e1b1b">बिक्री की कीमत — कौन तय करता है?</text>
+      <rect x="100" y="260" width="1720" height="730" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M130 442 H1790 M130 624 H1790 M130 806 H1790 M1120 274 V974" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+      <g id="row1">
+        <use href="piece:postage-stamp" transform="translate(142 250) scale(0.50)"/>
+        <use href="piece:postcard-blank" transform="translate(350 250) scale(0.50)"/>
+        <use href="piece:letter-card" transform="translate(564 250) scale(0.50)"/>
+        <use href="piece:aerogramme" transform="translate(780 250) scale(0.50)"/>
+        <g id="p1">
+          <rect x="1150" y="294" width="640" height="115" rx="24" fill="#fde9a6"/>
+          <text x="1470" y="369" text-anchor="middle" class="hi" font-size="58" font-weight="800" fill="#664701">छपी value</text>
+        </g>
+      </g>
+      <g id="row2">
+        <g id="embossed">
+          <use href="piece:embossed-envelope" transform="translate(122 440) scale(0.47)"/>
+          <text x="475" y="494" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#2b2622">Embossed envelopes</text>
+        </g>
+        <g id="registration">
+          <use href="piece:registration-envelope" transform="translate(300 440) scale(0.47)"/>
+          <text x="475" y="546" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#2b2622">Registration envelopes</text>
+        </g>
+        <text id="r2-hi" x="477" y="596" class="hi" font-size="38" font-weight="650" fill="#6f6a63">उभरे टिकट वाले / रजिस्ट्री लिफ़ाफ़े</text>
+        <g id="p2">
+          <rect x="1150" y="476" width="640" height="115" rx="24" fill="#fde9a6"/>
+          <use href="piece:regulations-book" transform="translate(1160 482) scale(.27)"/>
+          <text id="schedule" x="1282" y="550" class="hi" font-size="45" font-weight="800" fill="#664701">Regulations की schedule</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots:[[0,'#items'],[3.12,'#table']],
+    camera:[[0,{zoom:1}]],
+    on:[
+      [1.08,'pop','#face-value',{from:0.95,spring:'soft'}],
+      [1.68,'highlight','#face-value-text',{words:'value',color:'#f2b705',opacity:.36,dur:.28,pad:6}],
+      [3.12,'pop','#embossed',{from:.96,spring:'soft'}],
+      [5.20,'pop','#registration',{from:.96,spring:'soft'}],
+      [5.70,'fade','#r2-hi',{dur:.27}],
+      [7.40,'fade','#p2',{dur:.29}],
+      [8.82,'highlight','#schedule',{words:'schedule',color:'#f2b705',opacity:.47,dur:.27,pad:7}],
+    ],
+  }
+  </script>
+</section>
