@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s219" data-in="cut" data-section="PART 10 · REUSE &amp; FICTITIOUS STAMPS" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="fict">
+  <g id="fict-stamp">
+    <use href="piece:postage-stamp" transform="translate(260 340) scale(1.1)"/>
+    <rect x="327" y="389" width="306" height="339" rx="30" fill="none" stroke="#4b4f58" stroke-width="7" stroke-dasharray="14 11" stroke-linecap="round"/>
+    <g id="fake-tag"><rect x="365" y="758" width="230" height="92" rx="46" fill="#4b4f58"/><text x="480" y="818" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="760" fill="#fff">नकली</text></g>
+  </g>
+  <text id="fict-en" x="860" y="332" font-size="88" font-weight="800" fill="#9e1b1b">Fictitious stamp</text>
+  <text id="fict-hi" x="860" y="404" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="650" fill="#6f6a63">नकली stamp</text>
+  <g id="definition-card">
+    <rect x="860" y="470" width="940" height="394" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <rect x="912" y="508" width="110" height="68" rx="34" fill="#f3ead6"/>
+    <text x="967" y="553" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="750" fill="#6f6a63">सार</text>
+    <path d="M912 592h833" fill="none" stroke="#ead9a8" stroke-width="3"/>
+    <text id="definition-one" x="912" y="655" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="700" fill="#2b2622">जो खुद को सरकारी postage stamp बताए</text>
+    <text id="definition-two" x="912" y="733" class="hi" font-size="49" font-weight="700" fill="#2b2622">या उसकी नकल करे</text>
+    <text id="definition-three" x="912" y="811" class="hi" font-size="49" font-weight="700" fill="#2b2622">या उसे दर्शाए</text>
+  </g>
+  <g id="penalty-band">
+    <rect x="100" y="894" width="1720" height="110" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+    <text id="unlawful" x="146" y="965" class="hi" font-size="47" font-weight="750" fill="#2b2622">ऐसे stamps गैर-कानूनी तरीके से बनाना या इस्तेमाल करना</text>
+  </g>
+  <g id="punishable">
+    <g transform="rotate(-5 1650 949)">
+      <rect x="1511" y="908" width="278" height="82" rx="41" fill="#fbf7ee" stroke="#4b4f58" stroke-width="5"/>
+      <rect x="1521" y="917" width="258" height="64" rx="32" fill="none" stroke="#4b4f58" stroke-width="2.5" stroke-dasharray="3 6"/>
+      <text x="1650" y="970" text-anchor="middle" class="hi" font-size="51" font-weight="820" fill="#4b4f58">दंडनीय</text>
+    </g>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots:[[0,'#fict']],
+  camera:[[0,{zoom:1}]],
+  on:[
+    [1.80,'words','#definition-two',{gap:.13,dist:6}],
+    [3.40,'words','#definition-three',{gap:.15,dist:6}],
+    [5.00,'reveal','#penalty-band',{from:'left',dur:.58}],
+    [6.58,'highlight','#unlawful',{words:'गैर-कानूनी',color:'#f2b705',opacity:.55,dur:.33}],
+    [10.60,'stamp','#punishable',{from:1.10,rot:5,spring:'snap'}]
+  ]
+}
+</script>
+</section>
