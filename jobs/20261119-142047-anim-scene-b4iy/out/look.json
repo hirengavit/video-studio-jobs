@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "2.31",
+  "4.61",
+  "6.92",
+  "9.22",
+  "11.38"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s046",
+   "message": "pulse: option \"dur\" isn't used (it takes: amount)",
+   "t": 0.3
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s046",
+   "text": "राजपत्रित और उच्च चयन ग्रेड डाकघर",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s046",
+   "text": "अंतर्देशीय पत्र कार्ड / पोस्टकार्ड",
+   "t": 2.31
+  }
+ ]
+}
