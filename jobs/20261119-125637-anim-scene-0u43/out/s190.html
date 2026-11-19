@@ -34,7 +34,7 @@
   <rect x="100" y="200" width="1720" height="760" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
   <text id="def-term" x="960" y="344" text-anchor="middle" font-family="Inter, sans-serif" font-size="88" font-weight="850" fill="#9e1b1b">DEFICIENCY</text>
   <text id="def-hi" x="960" y="419" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="690" fill="#6f6a63">कमी</text>
-  <rect x="226" y="501" width="1468" height="216" rx="28" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+  <rect id="formula-surface" x="226" y="501" width="1468" height="216" rx="28" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
   <text id="gist" x="276" y="560" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="37" font-weight="740" fill="#6f6a63">सार</text>
   <g id="charge-due">
     <text x="650" y="641" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="62" font-weight="730" fill="#2b2622">लगने वाला</text>
@@ -43,9 +43,9 @@
   <g id="amount-paid">
     <text x="960" y="641" text-anchor="middle" font-family="Georgia, serif" font-size="65" font-weight="750" fill="#9e1b1b">−</text>
     <text x="1018" y="641" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="62" font-weight="730" fill="#2b2622">पहले दिया</text>
-    <text x="1262" y="641" font-family="Georgia, serif" font-size="62" font-weight="710" fill="#2b2622">valid amount</text>
+    <text x="1305" y="641" font-family="Georgia, serif" font-size="62" font-weight="710" fill="#2b2622">valid amount</text>
   </g>
-  <path id="difference-underline" d="M390 669q570 12 1140 0" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+  <path id="difference-underline" d="M390 669q625 12 1250 0" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
   <g id="valid-payment">
     <rect x="513" y="788" width="894" height="107" rx="28" fill="#fff" stroke="#2e7d4f" stroke-width="4"/>
     <path d="m577 837 16 15 28-32" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -56,7 +56,7 @@
 {shots:[[0,'#terms'],[2.20,'#def']],on:[
  [.60,'words','#s189-short-b',{gap:.25,dist:5}],[1.40,'highlight','#s189-short-b',{words:'कम',color:'#f2b705',opacity:.45,pad:4,dur:.32}],
  [2.26,'pop','#def-term',{from:.96}],[2.76,'fade','#def-hi',{dur:.25}],
- [3.90,'fade','#charge-due',{dur:.32}],[6.60,'fade','#amount-paid',{dur:.34}],[6.60,'fade','#gist',{dur:.27}],
+ [3.90,'fade','#formula-surface',{dur:.30}],[3.90,'fade','#charge-due',{dur:.32}],[6.60,'fade','#amount-paid',{dur:.34}],[6.60,'fade','#gist',{dur:.27}],
  [8.94,'draw','#difference-underline',{dur:.40}],[9.60,'pop','#valid-payment',{from:.95}],
  [10.10,'highlight','#valid-payment-text',{words:'valid',color:'#f2b705',opacity:.43,pad:5,dur:.34}]
 ]}
