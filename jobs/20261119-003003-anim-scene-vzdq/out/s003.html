@@ -1,0 +1,78 @@
+<section class="vs-scene" id="s003" data-in="cut" data-section="OVERVIEW · TODAY'S TOPIC" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="timeline">
+    <text x="113" y="212" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="62" font-weight="750" fill="#6f6a63">इसकी शुरुआत</text>
+    <g id="postmark">
+      <circle cx="430" cy="505" r="259" fill="#fffaf1" stroke="#9e1b1b" stroke-width="7"/>
+      <circle cx="430" cy="505" r="235" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-dasharray="4 11"/>
+      <path d="M676 451q18-13 36 0t36 0m-66 51q18-13 36 0t36 0m-78 51q18-13 36 0t36 0" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g id="date">
+      <text x="430" y="472" text-anchor="middle" font-family="Inter, sans-serif" font-size="76" font-weight="750" fill="#9e1b1b">1 October</text>
+      <rect id="yearHighlight" x="292" y="509" width="276" height="105" rx="19" fill="#fde9a6"/>
+      <text id="year" x="430" y="598" text-anchor="middle" font-family="Inter, sans-serif" font-size="104" font-weight="800" fill="#9e1b1b">1854</text>
+    </g>
+    <g id="unified">
+      <rect x="100" y="811" width="950" height="174" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="131" y="846" width="8" height="105" rx="4" fill="#9e1b1b"/>
+      <text id="unifiedEn" x="575" y="888" text-anchor="middle" font-family="Inter, sans-serif" font-size="55" font-weight="750" fill="#2b2622">Unified postal administration</text>
+      <text id="unifiedHi" x="575" y="950" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="650" fill="#6f6a63">एकीकृत डाक प्रशासन</text>
+    </g>
+    <path id="timelineArrow" d="M784 505H1437m-35-28 35 28-35 28" fill="none" stroke="#2b2622" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="today">
+      <circle cx="1560" cy="505" r="101" fill="#f3ead6" stroke="#9e1b1b" stroke-width="5"/>
+      <text x="1560" y="529" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="66" font-weight="750" fill="#9e1b1b">आज</text>
+    </g>
+  
+    <g id="department">
+      <rect x="1215" y="641" width="595" height="153" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1512.5" y="704" text-anchor="middle" fill="#9e1b1b" font-size="51" font-weight="820">Department of Posts</text>
+      <text id="department-hi" x="1512.5" y="761" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="48" font-weight="700">डाक विभाग</text>
+    </g>
+  </g>
+  <g id="structure">
+    <text id="heading" x="100" y="224" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="70" font-weight="830" fill="#9e1b1b">पूरा ढाँचा · दो लाइन में</text>
+    <g id="row-guide" fill="#f8f1e4" stroke="#ead9a8" stroke-width="3" stroke-dasharray="9 9">
+      <rect x="100" y="268" width="1720" height="291" rx="27"/>
+      <rect x="100" y="623" width="1720" height="196" rx="27"/>
+    </g>
+    <g id="ministry">
+      <rect x="100" y="270" width="600" height="280" rx="23" fill="#9e1b1b"/>
+      <text id="ministry-a" x="206" y="358" font-size="56" font-weight="850" fill="#fff">Ministry of</text>
+      <text id="ministry-b" x="206" y="429" font-size="56" font-weight="850" fill="#fff">Communications</text>
+      <text id="ministry-hi" x="206" y="498" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#f3ead6">संचार मंत्रालय</text>
+    </g>
+    <g id="row-numbers" font-family="Inter, sans-serif">
+      <circle cx="144" cy="311" r="28" fill="#ebe3d6"/>
+      <text x="144" y="326" text-anchor="middle" fill="#6f6a63" font-size="43" font-weight="820">1</text>
+      <circle cx="144" cy="667" r="28" fill="#ebe3d6"/>
+      <text x="144" y="682" text-anchor="middle" fill="#6f6a63" font-size="43" font-weight="820">2</text>
+    </g>
+    <g id="dak">
+      <use href="piece:icon-dak-bhawan" transform="translate(725 189) scale(.975)"/>
+      <text id="dak-en" x="920" y="565" text-anchor="middle" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="48" font-weight="850">Dak Bhawan</text>
+      <text id="dak-hi" x="920" y="610" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="40" font-weight="750">डाक भवन</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0, '#timeline'], [2.92, '#structure']],
+  on: [
+    [0.26, 'pop', '#department', {from: 0.94, spring: 'soft'}],
+    [0.80, 'fade', '#department-hi', {dur: 0.23}],
+    [1.96, 'color', '#timelineArrow', {prop: 'stroke', to: '#9e1b1b', dur: 0.30}],
+    [2.92, 'fade', '#heading', {dur: 0.32}],
+    [3.86, 'fade', '#row-numbers', {dur: 0.26}],
+    [6.76, 'pop', '#ministry', {from: 0.94, spring: 'soft'}],
+    [6.76, 'words', '#ministry-a', {gap: 0.40}],
+    [7.54, 'fade', '#ministry-b', {dur: 0.23}],
+    [7.75, 'fade', '#ministry-hi', {dur: 0.24}],
+    [9.46, 'pop', '#dak', {from: 0.96, spring: 'fast'}],
+    [9.46, 'words', '#dak-en', {gap: 0.36}],
+    [9.96, 'fade', '#dak-hi', {dur: 0.16}]
+  ]
+}
+</script>
+</section>
