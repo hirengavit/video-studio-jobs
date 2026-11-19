@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s139" data-in="fade" data-in-dur="0.5" data-section="PART 6 · POSTAL STATIONERY" data-series="STAMPS &amp; STATIONERY">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="working">
+      <rect x="240" y="200" width="1440" height="760" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:registration-envelope" transform="translate(1450 220) scale(0.5)"/>
+      <g font-family="Georgia, 'Noto Sans Devanagari', serif" font-weight="650" font-size="56" fill="#2b2622">
+        <text class="hi" style="font-family: Georgia, 'Noto Sans Devanagari', serif" id="first" x="340" y="333">असली booking का postage</text>
+        <text class="hi" style="font-family: Georgia, 'Noto Sans Devanagari', serif" id="second" x="340" y="460">+ चुनी services का charge</text>
+        <path id="rule1" d="M340 540 H1570" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+        <g id="third">
+          <rect id="amount-highlight" x="700" y="586" width="150" height="71" rx="17" fill="#fde9a6"/>
+          <text class="hi" style="font-family: Georgia, 'Noto Sans Devanagari', serif" x="340" y="641">− envelope के</text>
+          <text class="hi" style="font-family: Georgia, 'Noto Sans Devanagari', serif" id="credit-amount" x="723" y="641" font-weight="750">₹22</text>
+        </g>
+        <g id="credit">
+          <rect x="1310" y="573" width="260" height="110" rx="25" fill="#e3f1e8" stroke="#b7d6c2" stroke-width="3"/>
+          <text x="1440" y="619" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" font-weight="800" fill="#2e7d4f">Credit</text>
+          <text x="1440" y="663" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="650" fill="#2e7d4f">जमा</text>
+        </g>
+        <path id="rule2" d="M340 720 H1570" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+        <g id="result">
+          <rect x="318" y="756" width="1252" height="109" rx="19" fill="#fff1bd"/>
+          <text class="hi" style="font-family: Georgia, 'Noto Sans Devanagari', serif" x="340" y="823" font-weight="750" fill="#8a5d00">= बाकी रकम (stamps से)</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0,{zoom:1}]],
+    on: [
+      [1.70,'words','#first',{gap:0.25,dist:9}],
+      [4.00,'words','#second',{gap:0.23,dist:9}],
+      [5.60,'draw','#rule1',{dur:0.5}],
+      [6.42,'fade','#third',{dur:0.28}],
+      [8.02,'fade','#amount-highlight, #credit-amount',{dur:0.22}],
+      [8.66,'pop','#credit',{from:0.96,spring:'soft'}],
+      [9.02,'fade','#rule2, #result',{dur:0.28}],
+    ],
+  }
+  </script>
+</section>
