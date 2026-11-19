@@ -33,6 +33,7 @@
       </g>
       <rect id="table-outline" x="100" y="200" width="840" height="760" rx="34" fill="none" stroke="#f2b705" stroke-width="5"/>
     </g>
+    <g id="flap-diagram">
     <g id="open-card" class="open-card-display">
       <use id="flap-piece" href="piece:letter-card" transform="translate(980 200) scale(2)"/>
     </g>
@@ -41,13 +42,14 @@
       <path id="right-flap-fill" d="M337 101L372 122Q377 124 377 131V267Q377 274 372 277L337 296Z"/>
       <path id="top-flap-fill" d="M63 101L83 65Q86 60 93 60H307Q314 60 317 65L337 101Z"/>
     </g>
+    </g>
     <text id="flap-kicker" x="1380" y="219" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="850" fill="#9e1b1b">3 flaps · तीन flaps</text>
-    <g id="left-label" transform="translate(0 -32)">
+    <g id="left-label">
       <path d="M1068 724v65" fill="none" stroke="#9e1b1b" stroke-width="4"/>
       <text x="1108" y="828" text-anchor="middle" font-size="48" font-weight="820" fill="#9e1b1b">left</text>
       <text x="1108" y="870" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="740" fill="#6f6a63">बायाँ</text>
     </g>
-    <g id="right-label" transform="translate(0 -32)">
+    <g id="right-label">
       <path d="M1693 724v65" fill="none" stroke="#9e1b1b" stroke-width="4"/>
       <text x="1652" y="828" text-anchor="middle" font-size="48" font-weight="820" fill="#9e1b1b">right</text>
       <text x="1652" y="870" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="740" fill="#6f6a63">दायाँ</text>
@@ -94,6 +96,8 @@
 </svg>
 <script type="text/scene">
 {shots:[[0,'#flaps'],[5.80,'#mix']],on:[
+ [1.25,'move','#flap-diagram',{by:[0,-30],spring:'soft'}],
+ [1.25,'move','#left-label, #right-label',{by:[0,-23],spring:'soft'}],
  [1.42,'pop','#closure-chip',{from:.96}],
  [1.42,'words','#closure-method',{gap:.25,dist:8}],
  [2.98,'words','#closure-result',{gap:.22,dist:8}],
