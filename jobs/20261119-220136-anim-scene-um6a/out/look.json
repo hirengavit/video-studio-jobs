@@ -1,0 +1,21 @@
+{
+ "moments": [
+  "0.30",
+  "2.29",
+  "4.58",
+  "6.88",
+  "9.17",
+  "11.31"
+ ],
+ "problems": [
+  "s037: no photo \"franking-machine-photo-cutout\" in the materials"
+ ],
+ "warnings": [
+  {
+   "kind": "text-off-frame",
+   "scene": "s037",
+   "text": "भुगतान हो चुका",
+   "t": 9.17
+  }
+ ]
+}
