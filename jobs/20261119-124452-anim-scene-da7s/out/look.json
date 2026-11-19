@@ -8,24 +8,5 @@
   "10.94"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s207",
-   "message": "fade #flow-refused: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s207",
-   "message": "fade #flow-unclaimed: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s207",
-   "message": "a card is mostly empty at 2.2 s: bring its items in sooner, or size it for what it holds now",
-   "t": 2.22
-  }
- ]
+ "warnings": []
 }
