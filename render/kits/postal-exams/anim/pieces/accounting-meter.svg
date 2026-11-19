@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="190" y="104" width="20" height="20" fill="#6f6a63" stroke="#2b2622" stroke-width="3"/>
+  <rect id="arrow-plate" x="156" y="60" width="88" height="48" rx="8" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+  <rect id="meter-body" x="22" y="120" width="356" height="216" rx="16" fill="#4b4f58" stroke="#2b2622" stroke-width="3"/>
+  <rect id="digit-window" x="52" y="152" width="296" height="104" rx="10" fill="#fbf7ee" stroke="#2b2622" stroke-width="3"/>
+  <circle cx="72" cy="298" r="10" fill="#6f6a63" stroke="#2b2622" stroke-width="2.5"/>
+  <circle cx="108" cy="298" r="10" fill="#6f6a63" stroke="#2b2622" stroke-width="2.5"/>
+  <path d="M232 298H348" stroke="#2b2622" stroke-width="6"/>
+  <circle data-anchor="base" cx="200" cy="336" r="0"/>
+  <circle data-anchor="top" cx="200" cy="60" r="0"/>
+</svg>
