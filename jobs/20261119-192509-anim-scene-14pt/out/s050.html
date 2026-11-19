@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s050" data-in="wipe" data-in-dur="0.6" data-in-opts='{"from":"right"}' data-section="RECAP · PARTS 1–2" data-series="STAMPS &amp; STATIONERY">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="envelope">
+      <rect x="160" y="170" width="1600" height="820" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M188 171 H1732 Q1759 171 1759 198 L960 330 L161 198 Q161 171 188 171Z" fill="#f3ead6"/>
+      <path d="M162 198 L960 330 L1758 198" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linejoin="round"/>
+      <text x="960" y="225" text-anchor="middle" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="700" fill="#6f6a63">RECAP · दोहराव</text>
+      <text x="960" y="293" text-anchor="middle" font-family="Inter, sans-serif" font-size="62" font-weight="800" fill="#9e1b1b">Part 1–2</text>
+    </g>
+    <g id="seal">
+      <circle cx="960" cy="330" r="31" fill="#9e1b1b"/>
+      <circle cx="960" cy="330" r="24" fill="none" stroke="#fde9a6" stroke-width="2.5" stroke-dasharray="3 5"/>
+      <text x="960" y="344" text-anchor="middle" font-family="Inter, sans-serif" font-size="41" font-weight="800" fill="#fff">4</text>
+    </g>
+    <g id="row1">
+      <path d="M230 510 H1690" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+      <text id="term" x="365" y="422" font-family="Inter, sans-serif" font-size="62" font-weight="800" fill="#2b2622">Prepayment</text>
+      <text id="term-hi" x="367" y="478" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">पूर्व भुगतान</text>
+      <circle id="tick-disc" cx="285" cy="427" r="35" fill="#e3f1e8"/>
+      <path id="tick" d="M267 428 L280 440 L304 415" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="pill">
+        <rect x="825" y="355" width="865" height="120" rx="30" fill="#fde9a6"/>
+        <text x="860" y="401" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#664701">छूट सिर्फ <tspan font-family="Inter, sans-serif">Regulations</tspan> से</text>
+        <text id="pill-example" x="860" y="453" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#664701">जैसे</text>
+        <text id="bnpl-term" x="940" y="453" font-family="Inter, sans-serif" font-size="40" font-weight="800" fill="#8a5d00">authorised BNPL</text>
+        <path id="bnpl-underline" d="M940 460Q1101 458 1260 460" fill="none" stroke="#f2b705" stroke-width="3" stroke-linecap="round"/>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}]],
+    on: [
+      [0.35, 'stamp', '#seal', {from: 1.45, rot: -5}],
+      [2.23, 'fade', '#term', {dur: 0.24}],
+      [2.73, 'fade', '#term-hi', {dur: 0.23}],
+      [3.00, 'fade', '#tick-disc', {dur: 0.19}],
+      [3.00, 'draw', '#tick', {dur: 0.32}],
+      [4.43, 'fade', '#pill', {dur: 0.26}],
+      [6.38, 'fade', '#pill-example', {dur: 0.24}],
+      [7.11, 'fade', '#bnpl-term', {dur: 0.24}],
+      [7.11, 'draw', '#bnpl-underline', {dur: 0.40}],
+    ],
+  }
+  </script>
+</section>
