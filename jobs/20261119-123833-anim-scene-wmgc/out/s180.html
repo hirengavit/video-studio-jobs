@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s180" data-in="cut" data-section="PART 8 · POSTCARD" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+  <g id="formula-plate">
+    <rect x="100" y="190" width="660" height="810" rx="28" fill="#9e1b1b"/>
+    <rect x="100" y="190" width="660" height="810" rx="28" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+    <rect x="157" y="277" width="10" height="56" rx="5" fill="#f2b705"/>
+    <text class="hi" x="185" y="323" font-size="54" font-weight="800" fill="#ffffff">हिसाब · कमी का दोगुना</text>
+    <rect x="153" y="410" width="554" height="318" rx="22" fill="#ffffff"/>
+    <g text-anchor="middle" font-family="Georgia,'Noto Sans Devanagari',serif" fill="#2b2622" font-size="50" font-weight="700">
+      <text x="430" y="505"><tspan class="hi">वसूली</tspan><tspan font-family="Georgia,serif"> = 2 ×</tspan></text>
+      <text x="430" y="593" font-family="Georgia,serif">(letter postage</text>
+      <text x="430" y="667" font-family="Georgia,serif">− valid postage)</text>
+    </g>
+    <text x="430" y="813" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="740" fill="#ffffff">Minimum ₹1</text>
+    <text class="hi" x="430" y="881" text-anchor="middle" font-size="42" font-weight="740" fill="#ffffff">paise → पूरा रुपया</text>
+  </g>
+  <g id="worked-card">
+    <rect x="810" y="190" width="1010" height="810" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M865 547H1765" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g id="postcard-item">
+    <use href="piece:postcard-blank" transform="translate(900 174) scale(.81)"/>
+    <text x="1062" y="490" text-anchor="middle" font-family="Georgia,serif" font-size="58" font-weight="700" fill="#2b2622">50 paise</text>
+  </g>
+  <path id="as-letter" d="M1235 346H1395M1371 322L1395 346L1371 370" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="letter-item">
+    <use href="piece:envelope-article" transform="translate(1406 147.5) scale(.99)"/>
+    <text x="1575" y="490" text-anchor="end" font-family="Inter,sans-serif" font-size="54" font-weight="740" fill="#2b2622">Letter:</text>
+    <text id="letter-price" x="1608" y="490" font-family="Georgia,serif" font-size="61" font-weight="700" fill="#9e1b1b">₹5</text>
+  </g>
+<g id="deficiency" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="56" fill="#2b2622">
+  <text x="1035" y="628" text-anchor="end">कमी</text><text x="1080" y="628" text-anchor="middle">=</text><text x="1128" y="628">₹5 − 50 paise = ₹4.50</text>
+</g>
+<g id="double-deficiency" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="56" fill="#2b2622">
+  <text x="1035" y="718" text-anchor="end">× 2</text><g id="doubled-answer"><text x="1080" y="718" text-anchor="middle">=</text><text x="1128" y="718" font-weight="750">₹9</text></g>
+</g>
+<g id="delivery">
+  <rect x="866" y="757" width="898" height="86" rx="22" fill="#2e7d4f"/>
+  <text x="1210" y="815" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#fff">Delivery पर</text>
+  <text id="delivery-number" x="1238" y="815" font-family="Inter, sans-serif" font-size="55" font-weight="850" fill="#fff">₹9</text>
+</g>
+<g id="credit">
+  <rect x="866" y="865" width="898" height="86" rx="20" fill="#f3ead6"/>
+  <text id="credit-note" x="1315" y="922" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="750" fill="#2b2622">पहले दिया postage: credit</text>
+</g>
+</svg><script type="text/scene">
+{on:[
+ [.32,'reveal','#deficiency',{from:'left',dur:.70}],
+ [2.18,'fade','#double-deficiency',{dur:.29}],[2.88,'pop','#doubled-answer',{from:.94}],
+ [4.16,'pop','#delivery',{from:.95}],[4.92,'fade','#delivery-number',{dur:.24}],
+ [6.60,'fade','#credit',{dur:.30}],
+ [7.94,'highlight','#credit-note',{words:'credit',color:'#f2b705',opacity:.45,pad:6,dur:.36}]
+]}
+</script></section>
