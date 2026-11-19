@@ -8,21 +8,22 @@
   </g>
   <g id="loss-chip">
     <rect x="120" y="312" width="378" height="208" rx="21" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
-    <g fill="none" stroke="#4b4f58" stroke-width="3.5" stroke-linecap="round">
+    <g transform="translate(309 386) scale(1.16) translate(-309 -386)" fill="none" stroke="#4b4f58" stroke-width="3.5" stroke-linecap="round">
       <rect x="265" y="337" width="88" height="98" rx="7" stroke-dasharray="6 7"/>
       <path d="M281 358H338M281 377H338M281 396H338M300 354V411M320 354V411" opacity=".7"/>
     </g>
-    <text class="hi" id="loss-text" x="309" y="491" text-anchor="middle" font-size="44" font-weight="700" fill="#6f6a63">गुम होने से</text>
+    <text class="hi" x="309" y="491" text-anchor="middle" font-size="44" font-weight="700" fill="#6f6a63">गुम होने से</text>
   </g>
   <g id="damage-chip">
     <rect x="522" y="312" width="378" height="208" rx="21" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
-    <g stroke="#4b4f58" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <g transform="translate(711 386) scale(1.16) translate(-711 -386)" stroke="#4b4f58" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
       <path d="M669 337H737L755 358V435H669Z" fill="#ffffff"/>
-      <path d="M737 337V358H755M686 361H725M686 378H739M686 395H739M687 412H738M705 356V420M723 373V420" fill="none" opacity=".75"/>
-      <path d="M709 388Q716 378 728 386T736 411Q728 426 712 415T709 388Z" fill="#4b4f58" stroke="none" opacity=".28"/>
+      <path d="M737 337Q737 352 731 365L755 358M686 361H725M686 378H739M686 395H739M687 412H738M705 356V420M723 373V420" fill="none" opacity=".75"/>
+      <path d="M704 382Q715 369 724 380Q735 376 738 390Q749 399 739 408Q738 425 721 420Q710 430 703 416Q687 413 697 400Q690 390 704 382Z" fill="#4b4f58" stroke="none" opacity=".68"/>
     </g>
-    <text class="hi" id="damage-text" x="711" y="491" text-anchor="middle" font-size="44" font-weight="700" fill="#6f6a63">खराब होने से</text>
+    <text class="hi" x="711" y="491" text-anchor="middle" font-size="44" font-weight="700" fill="#6f6a63">खराब होने से</text>
   </g>
+  <path id="stock-rest" d="M653 790H807" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
   <g id="safe-panel">
     <rect x="1010" y="225" width="795" height="790" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
     <g id="safe"><use href="piece:office-safe" transform="translate(1046 326.6) scale(1.8)"/></g>
@@ -32,7 +33,7 @@
   <g id="safe-box">
     <use id="storage-tin" href="piece:stamp-tin-box" transform="translate(1163 538.72) scale(.66)"/>
   </g>
-  <text id="box-label" x="1060" y="432" class="hi" font-size="44" font-weight="700" fill="#2b2622">लकड़ी या टीन का box</text>
+  <text id="box-label" x="1390" y="352" class="hi" font-size="40" font-weight="700" fill="#2b2622">लकड़ी या टीन का box</text>
   <g id="protective-card">
     <rect x="120" y="570" width="780" height="409" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
     <text id="case-title" x="510" y="639" text-anchor="middle" class="hi" font-size="49" font-weight="800" fill="#9e1b1b">Box ठीक न बैठे तो</text>
@@ -56,6 +57,7 @@
   </g>
   </g>
 
+
   <g id="day">
     <g id="sun">
       <circle cx="160" cy="233" r="21" fill="#fde9a6" stroke="#8a5d00" stroke-width="3"/>
@@ -77,11 +79,8 @@
     </g>
     <rect id="desk-top" x="1486" y="835" width="8" height="1" fill="none"/>
     <g id="counter-sheet"><use href="piece:stamp-sheet" transform="translate(1450 761) scale(.198)"/></g>
-    <g id="outside-label" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="780" fill="#2b2622">
-      <text id="outside-start" x="1112" y="260">बाहर: एक दिन /</text>
-      <text id="half-day" x="1432" y="260">आधे दिन</text>
-      <text id="outside-end" x="1614" y="260">की बिक्री</text>
-    </g>
+    <rect id="half-day-band" x="1420" y="221" width="181" height="50" rx="5" fill="#f2b705" opacity=".40"/>
+    <text id="outside-label" x="1112" y="260" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="780" fill="#2b2622">बाहर: एक दिन / आधे दिन की बिक्री</text>
   </g>
 </svg>
 <script type="text/scene">
@@ -96,10 +95,8 @@
     [4.52,'pop','#outside-counter',{from:.96,spring:'soft'}],
     [5.34,'place','#counter-sheet',{on:'#desk-top',x:1490}],
     [5.34,'fade','#counter-sheet',{dur:.21}],
-    [5.72,'words','#outside-start',{gap:.085,dist:10,from:'down',spring:'soft'}],
-    [6.58,'fade','#half-day',{dur:.22}],
-    [6.58,'highlight','#half-day',{color:'#f2b705',opacity:.40,dur:.34}],
-    [6.91,'fade','#outside-end',{dur:.24}]
+    [5.72,'words','#outside-label',{gap:.085,dist:10,from:'down',spring:'soft'}],
+    [6.58,'reveal','#half-day-band',{from:'left',dur:.34}]
   ]
 })
 </script>
