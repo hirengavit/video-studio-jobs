@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "1.72",
+  "3.44",
+  "5.15",
+  "6.87",
+  "8.44"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s171",
+   "text": "Controller of / Foreign Mails",
+   "t": 0.3
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s171",
+   "text": "दूसरी जगहों पर भी",
+   "t": 6.87
+  }
+ ]
+}
