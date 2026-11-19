@@ -51,7 +51,7 @@
       <text id="cancel-entry" x="840" y="851" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="790" fill="#2b2622">Data entry गलत</text>
       <g id="cancel-entry-pill">
         <rect x="1194" y="808" width="586" height="64" rx="24" fill="#e2f0e6" stroke="#bed7c6" stroke-width="2"/>
-        <rect id="cancel-entry-held" x="1485" y="807" width="160" height="57" rx="4" fill="#f2b705" opacity=".44"/>
+        <rect id="cancel-entry-held" x="1479" y="813" width="172" height="50" rx="4" fill="#f2b705" opacity=".44"/>
         <text id="cancel-entry-result" x="1487" y="851" text-anchor="middle" textLength="540" lengthAdjust="spacingAndGlyphs" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="790" fill="#215c39">Post Office खुद, उसी दिन cancel</text>
       </g>
     </g>
@@ -61,6 +61,7 @@
         <path d="M720 920h62v40h-62zM720 920l31 21 31-21" fill="none" stroke="#9e1b1b" stroke-width="3.5" stroke-linejoin="round"/>
       </g>
       <text id="cancel-refund-prefix" x="810" y="945" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="800" fill="#9e1b1b">Cancellation के बाद postage का refund →</text>
+      <rect id="cancel-refund-marker" x="1067" y="958" width="498" height="55" rx="4" fill="#f2b705" opacity=".42"/>
       <text id="cancel-refund-completion" x="810" y="997" textLength="930" lengthAdjust="spacingAndGlyphs" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="790" fill="#2b2622">Department के administrative instructions के हिसाब से</text>
     </g>
   </g>
@@ -84,7 +85,7 @@
 <script type="text/scene">
 {shots:[[0,'#reg'],[5.33,'#trap']],on:[
   [.40,'fade','#cancel-refund-completion',{dur:.32}],
-  [1.76,'highlight','#cancel-refund-completion',{words:'administrative instructions',color:'#f2b705',opacity:.42,dur:.48}],
+  [1.76,'grow','#cancel-refund-marker',{axis:'x',origin:'left',spring:'snap'}],
   [5.71,'pop','#trap-triangle',{from:.92,spring:'soft'}],
   [6.75,'pop','#trap-unreturned',{from:.97,spring:'soft'}],
   [6.75,'type','#trap-return-label',{cps:16}],
