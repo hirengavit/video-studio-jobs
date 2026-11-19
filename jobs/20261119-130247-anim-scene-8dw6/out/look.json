@@ -10,17 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-overlap",
+   "kind": "text-off-frame",
    "scene": "s044",
-   "text": "राजपत्रित / और उच्च चयन ग्रेड डाकघर",
+   "text": "राजपत्रित और उच्च चयन ग्रेड डाकघर",
    "t": 7.13
-  },
-  {
-   "kind": "low-contrast",
-   "scene": "s044",
-   "text": "250 (1.0:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 8.76
   }
  ]
 }
