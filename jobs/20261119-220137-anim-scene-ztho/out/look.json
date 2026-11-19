@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.18",
+  "4.36",
+  "6.54",
+  "8.72",
+  "10.75"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s196",
+   "message": "highlight: \"₹2\" isn't in that <text> (it says \"\")",
+   "t": 0.3
+  }
+ ]
+}
