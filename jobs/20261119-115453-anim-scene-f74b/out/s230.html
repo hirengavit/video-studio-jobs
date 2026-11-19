@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s230" data-in="fade" data-in-dur="0.5" data-section="PART 10 · REUSE &amp; FICTITIOUS STAMPS" data-series="STAMPS &amp; STATIONERY">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text class="hi" x="960" y="226" text-anchor="middle" font-size="65" font-weight="760" fill="#9e1b1b">Illustration की शर्तें</text>
+    <g id="s230-black-card">
+      <rect x="100" y="300" width="840" height="660" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <g id="s230-stamp" stroke="#2b2622" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M381 408H659V688H381V408Z" stroke-width="9" stroke-dasharray="0 19"/>
+        <rect x="398" y="425" width="244" height="246" rx="11" stroke-width="6"/>
+        <path d="M456 589l53-58 38 44 24-27 27 42z" stroke-width="6"/>
+        <circle cx="554" cy="500" r="19" stroke-width="6"/>
+        <path d="M456 617H598" stroke-width="5"/>
+      </g>
+      <text id="s230-black" class="hi" x="520" y="802" text-anchor="middle" font-size="58" font-weight="750" fill="#2b2622">सिर्फ़ काले रंग में</text>
+    </g>
+    <g id="s230-instructions-card">
+      <rect x="980" y="300" width="840" height="660" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <g id="s230-sheet" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1299 382H1446l62 62v173H1299Z" fill="#fbf7ee" stroke="#2b2622" stroke-width="6"/>
+        <path d="M1446 382v62h62" fill="#f3ead6" stroke="#2b2622" stroke-width="5"/>
+        <path d="M1330 474h138" fill="none" stroke="#9e1b1b" stroke-width="8"/>
+        <path d="M1330 508h138m-138 34h138m-138 34h92" fill="none" stroke="#6f6a63" stroke-width="5"/>
+      </g>
+      <text id="s230-term" x="1400" y="710" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="750" fill="#9e1b1b">Administrative instructions</text>
+      <text id="s230-term-hi" class="hi" x="1400" y="767" text-anchor="middle" font-size="44" font-weight="600" fill="#6f6a63">प्रशासनिक निर्देश</text>
+      <text id="s230-how" class="hi" x="1400" y="873" text-anchor="middle" font-size="46" font-weight="650" fill="#2b2622">किस रूप में छापें, ये तय करती हैं</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.72,'draw','#s230-stamp',{dur:0.72}],
+      [1.36,'fade','#s230-black',{dur:0.34}],
+      [2.56,'pop','#s230-sheet',{from:0.91,spring:'snap'}],
+      [5.30,'fade','#s230-term',{dur:0.34}],
+      [5.80,'fade','#s230-term-hi',{dur:0.32}],
+      [7.26,'words','#s230-how',{gap:0.11,dist:4}]
+    ]
+  }
+  </script>
+</section>
