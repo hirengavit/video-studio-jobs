@@ -10,22 +10,16 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "error",
-   "scene": "s141",
-   "message": "the scene's script didn't run (a syntax error in its scene block?)",
-   "t": 0.3
-  },
-  {
    "kind": "text-overlap",
-   "scene": "s141",
+   "scene": "s142",
    "text": "Embossed stationery से कटा stamp / →",
-   "t": 0.3
+   "t": 4.3
   },
   {
    "kind": "text-overlap",
-   "scene": "s141",
+   "scene": "s142",
    "text": "दूसरे item पर / नहीं",
-   "t": 0.3
+   "t": 4.3
   }
  ]
 }
