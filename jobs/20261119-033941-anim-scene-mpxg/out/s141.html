@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s141" data-in="cut" data-section="PART 5 · BASE CIRCLE &amp; APS" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="head">
+      <rect x="120" y="200" width="580" height="420" rx="30" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+      <rect x="120" y="200" width="580" height="420" rx="30" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+      <use href="piece:icon-army-mailbag" transform="translate(296 226) scale(.57)"/>
+      <path d="M213 465 H607" stroke="#d97b6e" stroke-width="3" stroke-linecap="round"/>
+      <text x="410" y="532" text-anchor="middle" font-size="64" font-weight="850" fill="#fff">Base Circle</text>
+      <text x="410" y="585" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#fde9a6">बेस सर्किल</text>
+      <rect x="760" y="200" width="1040" height="420" rx="30" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text id="head-label" x="800" y="252" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="700" fill="#6f6a63">head · प्रमुख</text>
+      <text id="head-additional" x="800" y="310" font-size="56" font-weight="850" fill="#2b2622">Additional Director General,</text>
+      <text id="head-hi" x="800" y="430" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="700" fill="#6f6a63">अतिरिक्त महानिदेशक</text>
+    
+<text id="army-title" x="800" y="370" font-size="56" font-weight="850" fill="#2b2622">Army Postal Service</text>
+<text id="army-hi" x="800" y="430" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="700" fill="#6f6a63">अपर महानिदेशक, सेना डाक सेवा</text>
+<g id="rank">
+<rect x="800" y="470" width="940" height="70" rx="18" fill="#fde9a6"/>
+<text x="830" y="523" font-size="56" font-weight="800" fill="#2b2622">Major General</text>
+<text id="rank-hi" x="1280" y="520" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="650" fill="#6f6a63">मेजर जनरल · सैन्य पद</text>
+</g>
+<g id="directorate">
+<rect x="120" y="680" width="1680" height="310" rx="30" fill="#f4ead6" stroke="#dfcdb3" stroke-width="3"/>
+<text x="175" y="808" font-size="60" font-weight="800" fill="#9e1b1b">APS Directorate</text>
+<text x="177" y="874" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="650" fill="#6f6a63">एपीएस निदेशालय</text>
+</g>
+<g id="location">
+<rect x="960" y="710" width="790" height="250" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<g id="delhi-pin"><use href="piece:icon-city-pin" transform="translate(1010 761) scale(.72)"/></g>
+<text id="delhi" x="1130" y="784" font-size="50" font-weight="800" fill="#9e1b1b">New Delhi</text>
+<text id="sena" x="1130" y="861" font-size="60" font-weight="800" fill="#2b2622">Sena Dak Bhawan</text>
+<text id="sena-hi" x="1130" y="921" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="650" fill="#6f6a63">सेना डाक भवन</text>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+ [0,'words','#army-title',{gap:0.55,dist:10}],
+ [1.28,'out','#head-hi',{dur:0.28,scale:1}],
+ [1.60,'fade','#army-hi',{dur:0.24}],
+ [3.52,'stamp','#rank',{from:1.08,rot:-1}],
+ [4.46,'fade','#rank-hi',{dur:0.24}],
+ [6.16,'pop','#directorate',{from:0.97}],
+ [7.54,'fade','#location',{dur:0.18}],
+ [7.54,'draw','#delhi-pin',{dur:0.39}],
+ [7.54,'pop','#delhi',{from:0.97}],
+ [8.74,'words','#sena',{gap:0.31,dist:10}],
+ [9.60,'fade','#sena-hi',{dur:0.22}],
+ ]
+}
+</script>
+</section>
