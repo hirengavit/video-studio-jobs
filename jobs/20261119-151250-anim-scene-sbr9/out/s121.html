@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s121" data-in="cut" data-section="PART 5 · SALE, STOCK, REFUND, CANCELLATION" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="trap">
+  <g id="trap-banner">
+    <rect x="140" y="180" width="1640" height="165" rx="29" fill="#9e1b1b"/>
+    <g id="trap-triangle">
+      <path d="M222 305l44-87 44 87Z" fill="#fde9a6" stroke="#fde9a6" stroke-width="7" stroke-linejoin="round"/>
+      <rect x="261" y="247" width="10" height="31" rx="5" fill="#9e1b1b"/><circle cx="266" cy="292" r="5" fill="#9e1b1b"/>
+    </g>
+    <text x="355" y="247" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="800" fill="#fde9a6">EXAM TRAP · परीक्षा का जाल</text>
+    <text id="trap-distinction" x="355" y="316" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="61" font-weight="820" fill="#fff">दो अलग transactions</text>
+  </g>
+  <g id="trap-unreturned">
+    <rect x="140" y="380" width="760" height="480" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text id="trap-return-label" x="520" y="487" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">Unused stamps की sheet लौटाना</text>
+    <g id="trap-unused-sheet"><use href="piece:stamp-sheet" transform="translate(360 511) scale(.80)"/></g>
+  </g>
+  <g id="trap-cancelled">
+    <rect x="1020" y="380" width="760" height="480" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text id="trap-cancel-label" x="1400" y="487" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">Booking cancel करना</text>
+    <use href="piece:envelope-article" transform="translate(1160 448) scale(1.20)"/>
+  </g>
+  <g id="trap-remember">
+    <rect x="140" y="889" width="1640" height="96" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text x="960" y="951" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="810" fill="#654400">Cancellation पर refund की अपनी शर्तें</text>
+  </g>
+</g>
+<g id="exam">
+  <rect id="exam-shell" x="100" y="180" width="1720" height="810" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path id="exam-header" d="M134 180h1652q34 0 34 34v66H100v-66q0-34 34-34Z" fill="#9e1b1b"/>
+  <text id="exam-heading" x="155" y="248" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="810" fill="#fff">Exam angle · परीक्षा की नज़र से</text>
+  <path id="exam-rules" d="M152 460h1616M152 630h1616M152 800h1616" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <g id="exam-row-1">
+    <text id="exam-term-1" x="164" y="359" font-family="Inter, sans-serif" font-size="52" font-weight="820" fill="#2b2622">Director General</text>
+    <text id="exam-hi-1" x="164" y="414" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="750" fill="#6f6a63">महानिदेशक</text>
+    <g id="exam-fact-1">
+      <path id="exam-arrow-1" d="M804 375h80m-19-16 19 16-19 16" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect id="exam-pill-1" x="935" y="316" width="815" height="114" rx="28" fill="#fde9a6"/>
+      <text id="exam-fact-1-text" x="1342.5" y="363" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="800" fill="#654400">stamps के कारोबार की prior permission</text>
+    </g>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{shots:[[0,'#trap'],[8.24,'#exam']],on:[
+  [.73,'pop','#trap-cancelled',{from:.97,spring:'soft'}],
+  [.73,'type','#trap-cancel-label',{cps:22}],
+  [2.39,'highlight','#trap-distinction',{words:'दो अलग',color:'#f2b705',opacity:.49,dur:.42,pad:5}],
+  [5.03,'slide','#trap-remember',{from:'down',dist:36,spring:'soft'}],
+  [9.62,'fade','#exam-fact-1',{dur:.32}],
+  [11.54,'type','#exam-term-1',{cps:23}],
+  [12,'fade','#exam-hi-1',{dur:.30}]
+]}
+</script>
+</section>
