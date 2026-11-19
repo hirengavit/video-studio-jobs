@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="building"><path d="M76 146H324V302H76Z" fill="#fbf7ee"/><path id="roof" d="M52 142L200 66L348 142Z" fill="#f3ead6"/><path d="M61 142H339" stroke="#9e1b1b" stroke-width="10"/>
+<rect id="sign-plate" x="138" y="157" width="124" height="33" rx="4" fill="#ffffff"/>
+<g id="columns" fill="#f3ead6"><path d="M91 196H113V294H91Z M139 196H161V294H139Z M239 196H261V294H239Z M287 196H309V294H287Z"/></g>
+<path id="entrance" d="M177 302V227A23 23 0 0 1 223 227V302" fill="#ffffff"/>
+<g id="steps" fill="#f3ead6"><path d="M65 302H335V315H65Z M48 315H352V330H48Z"/></g></g>
+<circle data-anchor="base" cx="200" cy="330" r="0"/>
+<circle data-anchor="top" cx="200" cy="66" r="0"/>
+</svg>
