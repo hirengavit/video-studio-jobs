@@ -8,18 +8,5 @@
   "10.94"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s210",
-   "text": "POSTAGE / माफ",
-   "t": 2.22
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s210",
-   "text": "माफी = competent authority का फैसला / सही",
-   "t": 8.87
-  }
- ]
+ "warnings": []
 }
