@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 260" width="320" height="260">
+<defs>
+  <rect id="win" width="10" height="12" rx="1.5" fill="#ead9a8" stroke="#2b2622" stroke-width="1.5"/>
+</defs>
+<path d="M137 26 L137 6" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round"/>
+<g id="block1">
+  <rect x="30" y="96" width="66" height="154" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <use href="#win" x="47" y="112"/><use href="#win" x="69" y="112"/>
+  <use href="#win" x="47" y="138"/><use href="#win" x="69" y="138"/>
+  <use href="#win" x="47" y="164"/><use href="#win" x="69" y="164"/>
+  <use href="#win" x="47" y="190"/><use href="#win" x="69" y="190"/>
+  <use href="#win" x="47" y="216"/><use href="#win" x="69" y="216"/>
+</g>
+<g id="block2">
+  <rect x="96" y="26" width="82" height="224" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <use href="#win" x="111.5" y="42"/><use href="#win" x="132" y="42"/><use href="#win" x="152.5" y="42"/>
+  <use href="#win" x="111.5" y="68"/><use href="#win" x="132" y="68"/><use href="#win" x="152.5" y="68"/>
+  <use href="#win" x="111.5" y="94"/><use href="#win" x="132" y="94"/><use href="#win" x="152.5" y="94"/>
+  <use href="#win" x="111.5" y="120"/><use href="#win" x="132" y="120"/><use href="#win" x="152.5" y="120"/>
+  <use href="#win" x="111.5" y="146"/><use href="#win" x="132" y="146"/><use href="#win" x="152.5" y="146"/>
+  <use href="#win" x="111.5" y="172"/><use href="#win" x="132" y="172"/><use href="#win" x="152.5" y="172"/>
+  <use href="#win" x="111.5" y="198"/><use href="#win" x="132" y="198"/><use href="#win" x="152.5" y="198"/>
+</g>
+<g id="block3">
+  <rect x="178" y="72" width="62" height="178" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <use href="#win" x="193.7" y="88"/><use href="#win" x="214.3" y="88"/>
+  <use href="#win" x="193.7" y="114"/><use href="#win" x="214.3" y="114"/>
+  <use href="#win" x="193.7" y="140"/><use href="#win" x="214.3" y="140"/>
+  <use href="#win" x="193.7" y="166"/><use href="#win" x="214.3" y="166"/>
+  <use href="#win" x="193.7" y="192"/><use href="#win" x="214.3" y="192"/>
+  <use href="#win" x="193.7" y="218"/><use href="#win" x="214.3" y="218"/>
+</g>
+<g id="block4">
+  <rect x="240" y="132" width="52" height="118" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <use href="#win" x="252.3" y="148"/><use href="#win" x="269.7" y="148"/>
+  <use href="#win" x="252.3" y="174"/><use href="#win" x="269.7" y="174"/>
+  <use href="#win" x="252.3" y="200"/><use href="#win" x="269.7" y="200"/>
+</g>
+<path d="M12 250 L308 250" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round"/>
+<circle data-anchor="base" cx="160" cy="250" r="0"/>
+</svg>
