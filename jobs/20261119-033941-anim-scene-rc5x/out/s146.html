@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s146" data-in="wipe" data-in-dur="0.4" data-in-opts='{"from":"right"}' data-section="PART 5 · BASE CIRCLE &amp; APS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect id="bridge-frame" x="120" y="760" width="1680" height="230" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <g id="cbpo-card">
+      <rect id="cbpo-frame" x="120" y="180" width="540" height="520" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <g id="cbpo-stamp">
+        <rect x="230" y="260" width="320" height="160" rx="16" fill="#9e1b1b"/>
+        <rect x="243" y="273" width="294" height="134" rx="8" fill="none" stroke="#ffffff" opacity=".63" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+        <text x="390" y="366" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="#ffffff">CBPO</text>
+      </g>
+      <g id="cbpo-english">
+        <text id="cbpo-name" x="390" y="491" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Central Base</text>
+        <text id="cbpo-office" x="390" y="548" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Post Office</text>
+      </g>
+      <text id="cbpo-hindi" x="390" y="623" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="600" fill="#6f6a63">केंद्रीय बेस डाकघर</text>
+    </g>
+    <g id="apo-card">
+      <rect id="apo-frame" x="690" y="180" width="540" height="520" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <g id="apo-stamp">
+        <rect x="800" y="260" width="320" height="160" rx="16" fill="#9e1b1b"/>
+        <rect x="813" y="273" width="294" height="134" rx="8" fill="none" stroke="#ffffff" opacity=".63" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+        <text x="960" y="366" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="#ffffff">APO</text>
+      </g>
+      <g id="apo-english">
+        <text id="apo-name" x="960" y="491" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Army</text>
+        <text id="apo-office" x="960" y="548" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Post Office</text>
+      </g>
+      <text id="apo-hindi" x="960" y="623" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="600" fill="#6f6a63">सेना डाकघर</text>
+    </g>
+    <g id="fpo-card">
+      <rect id="fpo-frame" x="1260" y="180" width="540" height="520" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <g id="fpo-stamp">
+        <rect x="1370" y="260" width="320" height="160" rx="16" fill="#9e1b1b"/>
+        <rect x="1383" y="273" width="294" height="134" rx="8" fill="none" stroke="#ffffff" opacity=".63" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+        <text x="1530" y="366" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="#ffffff">FPO</text>
+      </g>
+      <g id="fpo-english">
+        <text id="fpo-name" x="1530" y="491" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Field</text>
+        <text id="fpo-office" x="1530" y="548" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Post Office</text>
+      </g>
+      <text id="fpo-hindi" x="1530" y="623" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="600" fill="#6f6a63">फ़ील्ड डाकघर</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.18, 'words', '#cbpo-name', {gap: 0.38, dist: 12}],
+      [0.96, 'words', '#cbpo-office', {gap: 0.36, dist: 12}],
+      [1.60, 'fade', '#cbpo-hindi', {dur: 0.22}],
+      [2.76, 'stamp', '#cbpo-stamp', {from: 1.10, rot: -2}],
+      [3.78, 'stamp', '#apo-stamp', {from: 1.10, rot: -2}],
+      [4.76, 'words', '#apo-name', {gap: 0.37, dist: 12}],
+      [5.16, 'words', '#apo-office', {gap: 0.34, dist: 12}],
+      [5.80, 'fade', '#apo-hindi', {dur: 0.22}],
+      [6.40, 'stamp', '#fpo-stamp', {from: 1.10, rot: -2}],
+      [8.02, 'words', '#fpo-name', {gap: 0.37, dist: 12}],
+      [8.36, 'words', '#fpo-office', {gap: 0.40, dist: 12}],
+      [9.00, 'fade', '#fpo-hindi', {dur: 0.18}],
+      [9.20, 'fade', '#bridge-frame', {dur: 0.40}],
+    ],
+  }
+  </script>
+</section>
