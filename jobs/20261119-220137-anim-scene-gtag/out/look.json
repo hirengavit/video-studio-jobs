@@ -1,0 +1,43 @@
+{
+ "moments": [
+  "0.30",
+  "2.13",
+  "4.26",
+  "6.40",
+  "8.53",
+  "10.51"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s213",
+   "text": "आगे नहीं भेजा जाता / INSUFFICIENTLY PAID",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s213",
+   "text": "आगे नहीं भेजा जाता / कमी × 2",
+   "t": 2.13
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s213",
+   "text": "unpaid / कम postage / न्यूनतम वसूली",
+   "t": 4.26
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s213",
+   "text": "SENDER / गलत charging",
+   "t": 6.4
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s213",
+   "text": "बिना charge / Postmaster",
+   "t": 8.53
+  }
+ ]
+}
