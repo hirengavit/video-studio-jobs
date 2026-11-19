@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400">
+  <rect id="envelope" x="4" y="4" width="632" height="392" rx="8" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+  <rect x="16" y="16" width="608" height="368" rx="4" fill="none" stroke="#ead9a8" stroke-width="2"/>
+  <!-- blank stamp box -->
+  <rect id="stamp-box" x="516" y="34" width="88" height="104" rx="4" fill="none" stroke="#6f6a63" stroke-width="2" stroke-dasharray="6 6" stroke-linecap="round"/>
+  <!-- four blank address rule lines; the scene letters just above each line -->
+  <g id="address-lines" stroke="#6f6a63" stroke-opacity="0.55" stroke-width="2" stroke-linecap="round">
+    <path id="line-1" d="M290,222 L604,222"/>
+    <path id="line-2" d="M290,264 L604,264"/>
+    <path id="line-3" d="M290,306 L604,306"/>
+    <path id="line-4" d="M290,348 L604,348"/>
+  </g>
+  <circle data-anchor="top" cx="320" cy="4" r="0"/>
+  <circle data-anchor="base" cx="320" cy="396" r="0"/>
+</svg>
