@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "3.08",
+  "6.16",
+  "9.25",
+  "12.33",
+  "15.26"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s124",
+   "text": "दूसरा समूह / पश्चिम और उत्तर",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s124",
+   "message": "a card is mostly empty at 6.2 s: bring its items in sooner, or size it for what it holds now",
+   "t": 6.16
+  }
+ ]
+}
