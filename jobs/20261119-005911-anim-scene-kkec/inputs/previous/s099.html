@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s099" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="n23" text-anchor="middle">
+      <rect x="120" y="240" width="640" height="660" rx="38" fill="#9e1b1b"/>
+      <rect x="145" y="265" width="590" height="610" rx="27" fill="none" stroke="#f0c49b" stroke-width="2.5" stroke-dasharray="3 11" stroke-linecap="round"/>
+      <text id="count23" x="440" y="644" font-size="205" font-weight="810" fill="#fffefa">23</text>
+    </g>
+    <g id="accounts-heading">
+      <text id="accounts-en" x="860" y="319" font-size="66" font-weight="790" fill="#9e1b1b">Postal Accounts Offices</text>
+      <text id="accounts-hi" class="hi" x="862" y="405" font-size="55" font-weight="670" fill="#514941">डाक लेखा कार्यालय</text>
+    </g>
+    <g id="heads">
+      <text id="heads-caption" class="hi" x="860" y="545" font-size="52" font-weight="720" fill="#2b2622">प्रमुख:</text>
+      <g id="sag"><rect x="1067" y="477" width="228" height="97" rx="48.5" fill="#f2e7d6"/><text x="1181" y="542" text-anchor="middle" font-size="54" font-weight="770" fill="#7d1414">SAG</text></g>
+      <text id="or" class="hi" x="1361" y="543" text-anchor="middle" font-size="48" font-weight="630" fill="#615c55">या</text>
+      <g id="jag"><rect x="1428" y="477" width="228" height="97" rx="48.5" fill="#f2e7d6"/><text x="1542" y="542" text-anchor="middle" font-size="54" font-weight="770" fill="#7d1414">JAG</text></g>
+    </g>
+    <path id="answer-arrow" d="M770 762 H849 M827 743 L849 762 L827 781" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="answer">
+      <rect id="answer-box" x="860" y="640" width="940" height="300" rx="31" fill="#fffefa" stroke="#ead9a8" stroke-width="4"/>
+      <text id="cpmg" class="hi" x="906" y="715" font-size="47" font-weight="700" fill="#514941">CPMG के</text>
+      <text id="ifa-en" x="906" y="792" font-size="57" font-weight="780" fill="#9e1b1b">Internal Finance Adviser</text>
+      <text id="ifa-hi" class="hi" x="909" y="856" font-size="48" font-weight="670" fill="#514941">आंतरिक वित्त सलाहकार</text>
+      <text id="also" class="hi" x="909" y="916" font-size="42" font-weight="650" fill="#514941">का काम भी</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+    ({
+      dur: 15.37,
+      camera: [[0,{zoom:1}], [1.06,{zoom:1}], [2.65,{on:"#n23",zoom:1.08,x:500,y:-30}], [4.9,{on:"#n23",zoom:1.08,x:500,y:-30}], [7.9,{zoom:1,x:0,y:0}]],
+      on: [
+        [1.06, "count", "#count23", {from:0,to:23,dur:0.60,locale:"en-IN"}],
+        [1.54, "words", "#accounts-en", {gap:0.57, dist:12}],
+        [2.04, "fade", "#accounts-hi", {dur:0.28}],
+        [4.76, "fade", "#heads-caption", {dur:0.28}],
+        [5.06, "pop", "#sag", {from:0.96}],
+        [6.16, "fade", "#or", {dur:0.27}],
+        [6.50, "pop", "#jag", {from:0.96}],
+        [9.07, "draw", "#answer-arrow", {dur:0.35}],
+        [9.35, "fade", "#answer-box", {dur:0.25}],
+        [9.47, "words", "#cpmg", {gap:0.21, dist:9}],
+        [11.61, "words", "#ifa-en", {gap:0.52, dist:10}],
+        [12.10, "fade", "#ifa-hi", {dur:0.3}],
+        [13.65, "fade", "#also", {dur:0.27}]
+      ]
+    })
+  </script>
+</section>
