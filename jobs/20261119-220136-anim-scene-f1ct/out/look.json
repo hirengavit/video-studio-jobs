@@ -20,13 +20,6 @@
    "scene": "s013",
    "message": "a card (#s013-face) is mostly empty at 4.5 s: bring its items in sooner, or size it for what it holds now",
    "t": 4.48
-  },
-  {
-   "kind": "low-contrast",
-   "scene": "s013",
-   "text": "SECTION · धारा (1.2:1) / Post Office (1.0:1) / Act 2023 (1.0:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 6.72
   }
  ]
 }
