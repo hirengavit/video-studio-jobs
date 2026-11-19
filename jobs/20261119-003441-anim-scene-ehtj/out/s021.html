@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s021" data-in="cut" data-section="PART 1 · CENTRAL ADMINISTRATION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text x="100" y="205" fill="#9e1b1b" font-size="78" font-weight="780">Appointment</text>
+    <text x="104" y="280" class="hi" fill="#6f6a63" font-size="49" font-weight="640">नियुक्ति</text>
+    <text id="different" x="568" y="280" class="hi" fill="#6f6a63" font-size="51" font-weight="650">दोनों की अलग</text>
+    <g id="secretary"><rect x="100" y="320" width="600" height="150" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/><rect x="100" y="353" width="9" height="84" rx="5" fill="#9e1b1b"/><text x="141" y="383" fill="#2b2622" font-size="52" font-weight="750">Secretary (Posts)</text><text x="145" y="437" fill="#6f6a63" class="hi" font-size="34" font-weight="600">सचिव (डाक)</text></g>
+    <g id="chair"><rect x="100" y="490" width="600" height="150" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/><rect x="100" y="523" width="9" height="84" rx="5" fill="#9e1b1b"/><text x="141" y="553" fill="#2b2622" font-size="52" font-weight="750">PSB Chairperson</text><text x="145" y="607" fill="#6f6a63" class="hi" font-size="34" font-weight="600">डाक सेवा बोर्ड के अध्यक्ष</text></g>
+    <path id="arrow" d="M718 395h46q38 0 38 38v47 M718 565h46q38 0 38-38v-47h192m-31-23 31 23-31 23" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="president">
+      <rect x="1020" y="320" width="800" height="320" rx="37" fill="#9e1b1b"/>
+      <rect x="1043" y="343" width="754" height="274" rx="26" fill="none" stroke="#b8403a" stroke-width="3"/>
+      <text id="president-en" x="1420" y="479" text-anchor="middle" fill="#fff" font-size="94" font-weight="780">President</text>
+      <text id="president-hi" x="1420" y="558" text-anchor="middle" fill="#fde9a6" class="hi" font-size="61" font-weight="650">राष्ट्रपति</text>
+    </g>
+    <g id="notice">
+      <rect x="100" y="660" width="1720" height="312" rx="34" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+      <g id="paper"><use href="piece:icon-notice-document" transform="translate(204 697) scale(0.61)"/></g>
+      <text id="government" x="469" y="814" fill="#2b2622" font-size="83" font-weight="750">Government notification</text>
+      <text id="government-hi" x="473" y="898" fill="#6f6a63" class="hi" font-size="59" font-weight="650">सरकारी अधिसूचना से</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.58, 'fade', '#different', {dur:0.27}],
+      [2.64, 'pop', '#secretary', {from:0.96, spring:'fast'}],
+      [4.20, 'pop', '#chair', {from:0.96, spring:'fast'}],
+      [6.14, 'draw', '#arrow', {dur:0.49}],
+      [6.14, 'pop', '#president', {from:0.96, spring:'fast'}],
+      [6.16, 'words', '#president-en', {dist:14, spring:'fast'}],
+      [6.80, 'fade', '#president-hi', {dur:0.27}],
+      [8.70, 'slide', '#notice', {from:'down', dist:62, spring:'fast'}],
+      [8.82, 'pop', '#paper', {from:0.9, spring:'fast'}],
+      [8.76, 'words', '#government', {gap:0.36, dist:14, spring:'fast'}],
+      [9.86, 'fade', '#government-hi', {dur:0.27}]
+    ]
+  }
+  </script>
+</section>
+
