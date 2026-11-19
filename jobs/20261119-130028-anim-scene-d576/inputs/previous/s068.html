@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s068" data-in="cut" data-section="PART 3 · TYPES OF STAMPS &amp; PHILATELY" data-series="STAMPS &amp; STATIONERY">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="items">
+      <g id="items-art" fill="#2b2622" text-anchor="middle">
+ <g id="brochure">
+  <rect x="100" y="220" width="544" height="480" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M230 367l92-35 94 36 95-36v174l-95 35-94-35-92 35z" fill="#f3ead6" stroke="#2b2622" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M322 332v174m94-138v173 M253 397l46-17m-46 55 46-17m47-35 48 18m-48 20 48 18m47-46 48-17m-48 55 48-17" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round"/>
+  <text x="372" y="620" class="hi" font-size="56" font-weight="820">ब्रोशर</text>
+ </g>
+ <g id="album">
+  <rect x="688" y="220" width="544" height="480" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <rect x="850" y="321" width="218" height="225" rx="14" fill="#9e1b1b" stroke="#2b2622" stroke-width="7"/>
+  <path d="M878 329v208m12-6h167" stroke="#f3ead6" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <rect x="919" y="374" width="100" height="82" rx="6" fill="#f3ead6"/>
+  <path d="M930 439l22-30 16 16 14-22 26 36z" fill="#9e1b1b"/>
+  <text x="960" y="620" class="hi" font-size="56" font-weight="820">एल्बम</text>
+ </g>
+ <g id="accessory">
+  <rect x="1276" y="220" width="544" height="480" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <circle cx="1496" cy="409" r="69" fill="#f3ead6" stroke="#2b2622" stroke-width="9"/>
+  <circle cx="1496" cy="409" r="51" fill="#fff7df" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M1547 458l63 67" stroke="#9e1b1b" stroke-width="26" stroke-linecap="round"/>
+  <path d="M1660 342l-26 152-19 30m45-182 5 150-32 30" stroke="#2b2622" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1548" y="612" font-size="56" font-weight="820">accessory</text>
+  <text x="1548" y="666" class="hi" font-size="40" font-weight="700" fill="#6f6a63">सहायक सामान</text>
+ </g>
+</g>
+      <text id="not-proof" x="960" y="821" text-anchor="middle" class="hi" font-size="52" font-weight="750" fill="#4b4f58">postage के payment का सबूत</text>
+    </g>
+    <g id="proposal">
+      <rect x="100" y="180" width="1720" height="120" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text id="proposal-heading" x="960" y="254" text-anchor="middle" class="hi" font-size="52" font-weight="800" fill="#9e1b1b">Commemorative stamp का proposal कौन दे सकता है?</text>
+      <g id="c1">
+        <rect x="100" y="360" width="540" height="580" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <g id="proposal-doc">
+          <path d="M255 414 H433 L480 462 V638 H255Z" fill="#fbf7ee" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M433 414 V462 H480" fill="#f3ead6" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+          <path d="M279 508 H341 M279 533 H341 M279 558 H341 M279 583 H400" stroke="#aaa39a" stroke-width="4" stroke-linecap="round"/>
+          <use id="proposal-stamp" href="piece:postage-stamp" transform="translate(319 462) scale(.43)"/>
+        </g>
+        <text id="proposal-en" x="370" y="720" text-anchor="middle" font-family="Inter, sans-serif" font-size="63" font-weight="800" fill="#2b2622">Proposal</text>
+        <text id="proposal-hi" x="370" y="778" text-anchor="middle" class="hi" font-size="44" font-weight="650" fill="#6f6a63">प्रस्ताव</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots:[[0,'#items'],[2.90,'#proposal']],
+    camera:[[0,{zoom:1}]],
+    on:[
+      [0.54,'fade','#not-proof',{dur:0.27}],
+      [1.92,'strike','#not-proof',{color:'#4b4f58',dur:0.31}],
+      [2.90,'words','#proposal-heading',{gap:0.33,dist:10,spring:'soft'}],
+      [4.26,'pop','#c1',{from:0.96,spring:'soft'}],
+      [4.26,'pop','#proposal-stamp',{from:0.90,spring:'soft'}],
+      [4.26,'words','#proposal-en',{gap:0.25,dist:10,spring:'soft'}],
+      [4.62,'fade','#proposal-hi',{dur:0.26}],
+    ],
+  }
+  </script>
+</section>
