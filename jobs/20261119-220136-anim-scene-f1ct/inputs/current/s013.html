@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s013" data-in="cut" data-section="PART 1 · POSTAGE &amp; PREPAYMENT" data-series="STAMPS &amp; STATIONERY">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="proof">
+      <g id="proof-stamp"><use href="piece:postage-stamp" transform="translate(-95 48) scale(2.68)"/></g>
+      <text id="proof-en" x="800" y="359" font-family="Inter, sans-serif" font-size="80" font-weight="800" fill="#9e1b1b">Postage Stamp</text>
+      <text id="proof-hi" x="803" y="432" class="hi" font-size="46" font-weight="600" fill="#6f6a63">डाक टिकट</text>
+      <g id="proof-card">
+        <rect x="800" y="492" width="1020" height="304" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="865" y="596" class="hi" font-size="56" font-weight="800" fill="#9e1b1b">सबूत</text>
+        <text id="proof-line" x="865" y="706" class="hi" font-size="49" font-weight="650" fill="#2b2622">postal service का पैसा</text>
+      </g>
+      <text id="paid-tail" x="1385" y="706" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="650" fill="#2b2622">दिया जा चुका है</text>
+      <path id="paid-proof-mark" d="m1701 686 14 14 26 -29" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="picture-myth">
+        <rect x="800" y="830" width="489" height="122" rx="27" fill="#e9e6df" stroke="#d6d1c8" stroke-width="2"/>
+        <text id="picture-words" x="1044" y="905" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="700" fill="#4b4f58">सिर्फ एक तस्वीर</text>
+      </g>
+      <g id="label-myth">
+        <rect x="1331" y="830" width="489" height="122" rx="27" fill="#e9e6df" stroke="#d6d1c8" stroke-width="2"/>
+        <text id="label-words" x="1575" y="905" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="700" fill="#4b4f58">सिर्फ एक label</text>
+      </g>
+    </g>
+    <g id="sec4">
+      <g id="act-badge">
+        <rect x="100" y="180" width="460" height="820" rx="30" fill="#9e1b1b"/>
+        <rect x="114" y="194" width="432" height="792" rx="24" fill="none" stroke="#fbf7ee" stroke-width="10" stroke-dasharray="0 24" stroke-linecap="round"/>
+        <text x="330" y="316" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="800" fill="#fde9a6">SECTION · धारा</text>
+        <rect x="250" y="629" width="160" height="7" rx="3.5" fill="#f2b705"/>
+        <text x="330" y="746" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="800" fill="#fff">Post Office</text>
+        <text x="330" y="816" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="800" fill="#fff">Act 2023</text>
+        <text x="330" y="899" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="35" font-weight="700" fill="#fde9a6">डाकघर अधिनियम 2023</text>
+      </g>
+      <text id="act-four" x="330" y="578" text-anchor="middle" font-family="Inter, sans-serif" font-size="238" font-weight="850" fill="#fff">4</text>
+      <g id="section-body">
+        <rect x="620" y="180" width="1200" height="820" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <path d="M620 210 Q620 180 650 180 H1790 Q1820 180 1820 210 H620Z" fill="#9e1b1b"/>
+        <text x="665" y="267" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="800" fill="#9e1b1b">Postage stamp क्या हो सकता है · सार</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#proof'], [6.66, '#sec4']],
+    camera: [[0, {zoom: 1}]],
+    on: [
+      [0, 'fade', '#paid-tail', {dur: 0.36}],
+      [0.66, 'draw', '#paid-proof-mark', {dur: 0.32}],
+      [3.96, 'pop', '#picture-myth', {from: 0.95, spring: 'soft'}],
+      [5.46, 'pop', '#label-myth', {from: 0.95, spring: 'soft'}],
+      [5.80, 'strike', '#picture-words', {color: '#4b4f58', width: 6, dur: 0.28, dim: 0.63}],
+      [5.80, 'strike', '#label-words', {color: '#4b4f58', width: 6, dur: 0.28, dim: 0.63}],
+      [9.66, 'pop', '#act-four', {from: 0.88, spring: 'soft'}],
+      [10.06, 'fade', '#section-body', {dur: 0.34}]
+    ]
+  }
+  </script>
+</section>

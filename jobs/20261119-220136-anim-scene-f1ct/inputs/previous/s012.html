@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s012" data-in="fade" data-in-dur="0.5" data-section="PART 1 · POSTAGE &amp; PREPAYMENT" data-series="STAMPS &amp; STATIONERY">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="prepay">
+      <text x="960" y="270" text-anchor="middle" font-family="Inter, sans-serif" font-size="88" font-weight="800" fill="#9e1b1b">Prepayment</text>
+      <text x="960" y="333" text-anchor="middle" class="hi" font-size="46" font-weight="600" fill="#6f6a63">पूर्व भुगतान</text>
+      <g id="left-step">
+        <rect x="100" y="450" width="700" height="450" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="450" y="548" text-anchor="middle" class="hi" font-size="53" fill="#9e1b1b" font-weight="800">1 · पहले</text>
+      </g>
+      <g id="cash">
+        <use href="piece:rupee-cash" transform="translate(240 481) scale(1.05)"/>
+        <text x="450" y="844" text-anchor="middle" class="hi" font-size="53" font-weight="750" fill="#2b2622">charge दिया</text>
+      </g>
+      <path id="arrow" d="M847 688 H1070 M1036 654 L1070 688 L1036 722" fill="none" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="right-step">
+        <rect x="1120" y="450" width="700" height="450" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1470" y="548" text-anchor="middle" class="hi" font-size="53" fill="#9e1b1b" font-weight="800">2 · फिर</text>
+        <use href="piece:envelope-article" transform="translate(1260 481) scale(1.05)"/>
+        <text x="1470" y="844" text-anchor="middle" class="hi" font-size="53" font-weight="750" fill="#2b2622">item भेजा</text>
+      </g>
+    </g>
+    <g id="proof">
+      <g id="proof-stamp"><use href="piece:postage-stamp" transform="translate(-95 48) scale(2.68)"/></g>
+      <text id="proof-en" x="800" y="359" font-family="Inter, sans-serif" font-size="80" font-weight="800" fill="#9e1b1b">Postage Stamp</text>
+      <text id="proof-hi" x="803" y="432" class="hi" font-size="46" font-weight="600" fill="#6f6a63">डाक टिकट</text>
+      <g id="proof-card">
+        <rect x="800" y="492" width="1020" height="304" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="865" y="596" class="hi" font-size="56" font-weight="800" fill="#9e1b1b">सबूत</text>
+        <text id="proof-line" x="865" y="706" class="hi" font-size="49" font-weight="650" fill="#2b2622">postal service का पैसा</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#prepay'], [5.25, '#proof']],
+    camera: [[0, {zoom: 1}]],
+    on: [
+      [1.34, 'pop', '#right-step', {from: 0.96, spring: 'soft'}],
+      [2.82, 'draw', '#arrow', {dur: 0.4}],
+      [2.82, 'fade', '#left-step', {dur: 0.27}],
+      [3.48, 'pop', '#cash', {from: 0.92, spring: 'soft'}],
+      [5.25, 'draw', '#proof-stamp', {dur: 0.55}],
+      [5.91, 'fade', '#proof-en', {dur: 0.3}],
+      [6.41, 'fade', '#proof-hi', {dur: 0.3}],
+      [8.25, 'slide', '#proof-card', {from: 'down', dist: 48, spring: 'soft'}],
+      [9.11, 'fade', '#proof-line', {dur: 0.33}],
+    ],
+  }
+  </script>
+</section>
