@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s141" data-in="fade" data-in-dur="0.5" data-section="PART 6 · POSTAL STATIONERY" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="exam-card">
+  <rect id="exam-card-bg" x="140" y="170" width="1640" height="820" rx="36" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <text id="exam-kicker" x="200" y="238" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="840" fill="#9e1b1b">Exam angle · परीक्षा के लिए</text>
+  <path id="exam-rows" d="M200 510h1540" fill="none" stroke="#ead9a8" stroke-width="2"/>
+  <g id="price-row">
+    <g id="chip-postcard">
+      <rect id="chip-bg-postcard" x="200" y="280" width="500" height="210" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text id="term-postcard" x="450" y="330" text-anchor="middle" font-size="46" font-weight="830" fill="#2b2622">Postcard</text>
+      <text id="hi-postcard" x="450" y="380" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="730" fill="#6f6a63">पोस्टकार्ड</text>
+      <text id="price-postcard" x="450" y="455" text-anchor="middle" font-size="56" font-weight="850" fill="#9e1b1b">50 paise</text>
+    </g>
+    <g id="chip-letter-card">
+      <rect id="chip-bg-letter-card" x="720" y="280" width="500" height="210" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text id="term-letter-card" x="970" y="330" text-anchor="middle" font-size="46" font-weight="830" fill="#2b2622">Letter card</text>
+      <text id="hi-letter-card" x="970" y="380" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="730" fill="#6f6a63">पत्र कार्ड</text>
+      <text id="price-letter-card" x="970" y="455" text-anchor="middle" font-size="56" font-weight="850" fill="#9e1b1b">₹2.50</text>
+    </g>
+    <g id="chip-embossed-envelope">
+      <rect id="chip-bg-embossed-envelope" x="1240" y="280" width="500" height="210" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text id="term-embossed-envelope" x="1490" y="330" text-anchor="middle" font-size="46" font-weight="830" fill="#2b2622">Embossed envelope</text>
+      <text id="hi-embossed-envelope" x="1490" y="380" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="730" fill="#6f6a63">उभरे टिकट वाला लिफ़ाफ़ा</text>
+      <text id="price-embossed-envelope" x="1490" y="455" text-anchor="middle" font-size="56" font-weight="850" fill="#9e1b1b">₹5</text>
+    </g>
+  </g>
+  <g id="shortfall-row">
+    <circle id="shortfall-dot" cx="233" cy="560" r="13" fill="#9e1b1b"/>
+    <text id="shortfall-text" x="268" y="578" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="790" fill="#2b2622">छपे postage में कमी → extra stamps</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+  [1.20,'pop','#chip-postcard'],
+  [2.04,'pop','#price-postcard',{from:0.92,spring:'soft'}],
+  [3.84,'pop','#chip-letter-card'],
+  [4.74,'pop','#price-letter-card',{from:0.92,spring:'soft'}],
+  [5.52,'pop','#chip-embossed-envelope'],
+  [6.96,'pop','#price-embossed-envelope',{from:0.92,spring:'soft'}],
+  [8.90,'fade','#shortfall-dot',{dur:0.18}],
+  [8.90,'words','#shortfall-text',{gap:0.44}],
+  [11.06,'highlight','#shortfall-text',{words:'extra stamps',color:'#f2b705',opacity:0.40,dur:0.35}]
+]}
+</script></section>
