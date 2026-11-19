@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.01",
+  "4.03",
+  "6.04",
+  "8.06",
+  "9.92"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "mostly-empty",
+   "scene": "s238",
+   "message": "a card (#s238-envelope) is mostly empty at 6.0 s: bring its items in sooner, or size it for what it holds now",
+   "t": 6.04
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s238",
+   "message": "a card (#s238-envelope) is mostly empty at 8.1 s: bring its items in sooner, or size it for what it holds now",
+   "t": 8.06
+  }
+ ]
+}
