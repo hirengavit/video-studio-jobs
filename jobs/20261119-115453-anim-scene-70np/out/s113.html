@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s113" data-in="fade" data-in-dur="0.5" data-section="PART 5 · SALE, STOCK, REFUND, CANCELLATION" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="supply">
+  <text id="denomination" x="960" y="255" text-anchor="middle" fill="#9e1b1b" font-family="Inter,sans-serif" font-size="72" font-weight="800">Denomination</text>
+  <text id="denomination-hi" x="960" y="322" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari',sans-serif" font-size="44">मूल्यवर्ग</text>
+  <text id="separate" x="960" y="447" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari',sans-serif" font-size="43" font-weight="600">अलग रखिए</text>
+  <path id="divider" d="M960 481v118m0 133v142" stroke="#6f6a63" stroke-width="4" stroke-dasharray="10 14" stroke-linecap="round" fill="none"/>
+  <g id="older-stack">
+    <use href="piece:stamp-sheet" transform="translate(354 426) scale(1.15)"/>
+    <use href="piece:stamp-sheet" transform="translate(342 438) scale(1.15)"/>
+    <use href="piece:stamp-sheet" transform="translate(330 450) scale(1.15)"/>
+  </g>
+  <g id="newer-stack">
+    <use href="piece:stamp-sheet" transform="translate(1154 426) scale(1.15)"/>
+    <use href="piece:stamp-sheet" transform="translate(1142 438) scale(1.15)"/>
+    <use href="piece:stamp-sheet" transform="translate(1130 450) scale(1.15)"/>
+  </g>
+  <g id="transfer" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M850 665h206m-24-24 24 24-24 24"/>
+  </g>
+  <text id="older-label" x="560" y="425" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="53" font-weight="700">पहले वाली supply</text>
+  <text id="newer-label" x="1360" y="425" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="53" font-weight="700">नई supply</text>
+  <g id="older-step">
+    <rect x="367" y="901" width="386" height="95" rx="47.5" fill="#2e7d4f"/>
+    <text x="560" y="962" text-anchor="middle" fill="#fff" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="700">1 · पहले बेचिए</text>
+  </g>
+  <g id="newer-step">
+    <rect x="1167" y="901" width="386" height="95" rx="47.5" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text id="next-words" x="1360" y="962" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="700">2 · फिर शुरू</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({on:[
+ [0.32,"draw","#divider",{dur:0.42}],
+ [0.86,"fade","#separate",{dur:0.38}],
+ [2.40,"type","#denomination",{dur:0.58}],
+ [2.90,"fade","#denomination-hi",{dur:0.34}],
+ [3.40,"fade","#older-label",{dur:0.35}],
+ [4.58,"stamp","#older-step",{from:1.08,rot:-3,spring:"snap"}],
+ [6.94,"draw","#transfer",{dur:0.53}],
+ [8.46,"fade","#newer-label",{dur:0.35}],
+ [9.62,"pop","#newer-step",{from:0.91}],
+ [9.62,"color","#next-words",{to:"#6f6a63",dur:0.01}],
+ [9.86,"color","#next-words",{to:"#2b2622",dur:0.42}]
+]})
+</script>
+</section>
