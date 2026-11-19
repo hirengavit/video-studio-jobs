@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s206" data-in="fade" data-in-dur="0.5" data-section="PART 9 · UNPAID &amp; SHORT-PAID ITEMS" data-series="STAMPS &amp; STATIONERY">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="branch">
+      <text class="hi" x="388" y="311" text-anchor="middle" font-size="59" font-weight="750" fill="#9e1b1b">Delivery के समय</text>
+      <g id="s206-envelope">
+        <use href="piece:address-envelope" transform="translate(100 380) scale(.9)"/>
+        <use href="piece:postage-stamp" transform="translate(534 388) scale(.35)"/>
+        <use href="piece:postage-due-mark" transform="translate(163 476) scale(.46)"/>
+      </g>
+      <path id="s206-route-yes" d="M689 553C736 553 750 383 803 383m-23-17 23 17-23 17" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="s206-route-no" d="M689 565C736 565 750 779 803 779m-23-17 23 17-23 17" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="s206-yes">
+        <rect x="820" y="240" width="1000" height="280" rx="27" fill="#ffffff" stroke="#2e7d4f" stroke-width="4"/>
+        <text class="hi" x="890" y="352" font-size="62" font-weight="750" fill="#2e7d4f">Delivery ली</text>
+        <g id="s206-marked">
+          <path d="M1260 329h60m-18-15 18 15-18 15" fill="none" stroke="#2e7d4f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="1556" y="333" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="750" fill="#2b2622">MARKED DUE</text>
+          <text class="hi" x="1556" y="392" text-anchor="middle" font-size="43" font-weight="600" fill="#6f6a63">अंकित देय</text>
+        </g>
+        <text id="s206-paid" class="hi" x="1556" y="472" text-anchor="middle" font-size="52" font-weight="700" fill="#2e7d4f">रकम दी</text>
+      </g>
+      <g id="s206-refuse">
+        <rect x="820" y="600" width="1000" height="360" rx="27" fill="#ffffff" stroke="#4b4f58" stroke-width="4"/>
+        <text x="890" y="692" font-family="Inter, sans-serif" font-size="55" font-weight="760" fill="#4b4f58">ADDRESSEE</text>
+        <text class="hi" x="892" y="747" font-size="45" font-weight="600" fill="#6f6a63">पाने वाला</text>
+        <text id="s206-declined" class="hi" x="890" y="856" font-size="50" font-weight="700" fill="#4b4f58">मना किया</text>
+        <g id="s206-no-due">
+          <path d="M1118 835h84m-21-15 21 15-21 15" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+          <text id="s206-no-pay" class="hi" x="1240" y="856" font-size="48" font-weight="700" fill="#2b2622">पैसा देना ज़रूरी नहीं</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.38,'draw','#s206-route-yes',{dur:0.46}],
+      [1.38,'pop','#s206-yes',{from:0.95,spring:'snap'}],
+      [3.78,'fade','#s206-marked',{dur:0.33}],
+      [4.92,'words','#s206-paid',{gap:0.12,dist:5}],
+      [5.92,'draw','#s206-route-no',{dur:0.46}],
+      [5.92,'pop','#s206-refuse',{from:0.95,spring:'snap'}],
+      [7.59,'words','#s206-declined',{gap:0.12,dist:5}],
+      [8.84,'fade','#s206-no-due',{dur:0.18}],
+      [8.84,'words','#s206-no-pay',{gap:0.36,dist:5}],
+      [10.32,'underline','#s206-no-pay',{words:'नहीं',dur:0.38,color:'#4b4f58',width:6,gap:7}]
+    ]
+  }
+  </script>
+</section>
