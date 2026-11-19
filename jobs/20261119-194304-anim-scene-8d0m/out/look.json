@@ -8,12 +8,5 @@
   "10.35"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s111",
-   "message": "color: nothing found for \"#loss-text, #damage-text\"",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
