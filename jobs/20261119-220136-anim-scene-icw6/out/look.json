@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "2.22",
+  "4.45",
+  "6.67",
+  "8.90",
+  "10.97"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s151",
+   "text": "4 (1.0:1) / 5 (1.0:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  }
+ ]
+}
