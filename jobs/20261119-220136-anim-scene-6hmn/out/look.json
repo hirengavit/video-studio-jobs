@@ -8,19 +8,5 @@
   "12.21"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s160",
-   "text": "₹5 / ₹5",
-   "t": 4.94
-  },
-  {
-   "kind": "low-contrast",
-   "scene": "s160",
-   "text": "₹5 (1.2:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 4.94
-  }
- ]
+ "warnings": []
 }
