@@ -1,0 +1,212 @@
+[
+  {
+    "id": "qr-code-stand",
+    "kind": "prop",
+    "description": "White counter standee on a postal-red foot holding a generic square QR pattern (ink modules, no logo), blank caption strip below; 300x420.",
+    "ideas": [
+      "non-functional QR stand",
+      "counter payment"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "stand-body",
+      "qr-panel",
+      "qr-pattern",
+      "caption-strip",
+      "stand-foot"
+    ]
+  },
+  {
+    "id": "smartphone-blank",
+    "kind": "prop",
+    "description": "Ink-outlined phone, slate frame, blank white screen for the scene to letter; 260x500.",
+    "ideas": [
+      "blank phone screen",
+      "mobile payment"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base",
+      "grip"
+    ],
+    "parts": [
+      "phone-shell",
+      "screen",
+      "speaker",
+      "home-bar",
+      "side-button"
+    ]
+  },
+  {
+    "id": "stamp-tin-box",
+    "kind": "prop",
+    "description": "Open wooden/tin box with its lid hinged back and stamp sheets inside; 360x240.",
+    "ideas": [
+      "stamp storage",
+      "protected stock"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "hinged-lid",
+      "box-cavity",
+      "stamp-sheets",
+      "front-wall",
+      "front-seam",
+      "latch"
+    ]
+  },
+  {
+    "id": "stamp-sheet",
+    "kind": "prop",
+    "description": "Sheet of 4x5 blank perforated stamps with red borders and cream faces, white margin; 400x480.",
+    "ideas": [
+      "twenty blank stamps",
+      "supply sheet"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "parts": [
+      "sheet-margin",
+      "stamp-grid",
+      "stamp-1",
+      "stamp-2",
+      "stamp-3",
+      "stamp-4",
+      "stamp-5",
+      "stamp-6",
+      "stamp-7",
+      "stamp-8",
+      "stamp-9",
+      "stamp-10",
+      "stamp-11",
+      "stamp-12",
+      "stamp-13",
+      "stamp-14",
+      "stamp-15",
+      "stamp-16",
+      "stamp-17",
+      "stamp-18",
+      "stamp-19",
+      "stamp-20",
+      "perforations"
+    ]
+  },
+  {
+    "id": "cancelled-stamp",
+    "kind": "prop",
+    "description": "The postage-stamp look with a grey part-postmark ring and wavy cancel lines across it; 400x400.",
+    "ideas": [
+      "cancel mark",
+      "generic used stamp"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "perforated-frame",
+      "face",
+      "value-box",
+      "cancel-mark",
+      "postmark-ring",
+      "cancel-lines"
+    ]
+  },
+  {
+    "id": "perforated-initials-stamp",
+    "kind": "prop",
+    "description": "Stamp with small punched holes forming two letters across its centre, value box still clear; 400x400.",
+    "ideas": [
+      "identifying perforation",
+      "clear value box"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "punched-mask",
+      "initial-holes",
+      "perforated-stamp",
+      "perforated-frame",
+      "face",
+      "value-box",
+      "hole-rims"
+    ]
+  },
+  {
+    "id": "letter-scale",
+    "kind": "prop",
+    "description": "Small postal letter scale: flat cream pan (top) on a slate body with a blank white readout window; 420x360.",
+    "ideas": [
+      "letter weighing",
+      "blank scale display"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "scale-body",
+      "front-panel",
+      "left-foot",
+      "right-foot",
+      "readout",
+      "readout-window",
+      "pan",
+      "pan-surface"
+    ]
+  },
+  {
+    "id": "packet-stack",
+    "kind": "prop",
+    "description": "Neat stack of brown-paper packets tied with string, front view; 420x360.",
+    "ideas": [
+      "stack of bulk packets",
+      "tied paper packets"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "packet-bottom",
+      "packet-middle",
+      "packet-top"
+    ]
+  },
+  {
+    "id": "counter-receipt",
+    "kind": "prop",
+    "description": "Narrow white till receipt with blank grey lines and a torn zigzag bottom edge; 220x420.",
+    "ideas": [
+      "counter proof of payment",
+      "blank till receipt"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "receipt-paper",
+      "receipt-header-rule",
+      "receipt-placeholder-lines",
+      "receipt-divider",
+      "receipt-footer-rule"
+    ]
+  }
+]
