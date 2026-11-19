@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s115" data-in="cut" data-section="PART 4 · CIRCLES &amp; HEADQUARTERS" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<text x="120" y="232" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="800" fill="#2b2622">Circle का इलाका</text>
+    <rect id="term-card" x="120" y="300" width="700" height="640" rx="30" fill="#9e1b1b"/>
+    <rect x="120" y="300" width="700" height="640" rx="30" fill="none" stroke="#fbf7ee" stroke-width="15" stroke-dasharray="0 25" stroke-linecap="round"/>
+    <rect id="meaning-card" x="880" y="300" width="920" height="640" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <g id="state">
+      <rect id="state-outline" x="1110" y="474" width="570" height="286" rx="24" fill="#f3ead6" stroke="#6f6a63" stroke-width="14"/>
+      <text id="state-label" x="1600" y="729" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#2b2622">राज्य</text>
+    </g>
+    <g id="circle" transform="translate(110 94)">
+      <rect id="circle-outline" x="1000" y="380" width="570" height="286" rx="24" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-dasharray="18 13"/>
+      <text id="circle-label" x="1048" y="458" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">Circle</text>
+    </g>
+    <text id="scope" x="190" y="420" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="750" fill="#fde9a6">ज़्यादातर Circles</text>
+    <text id="term" x="190" y="513" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="#fff">co-terminus</text>
+    <text id="qualifier" x="190" y="602" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="#fff">with a state</text>
+    <g id="gloss">
+      <rect x="190" y="686" width="560" height="96" rx="18" fill="#fde9a6"/>
+      <text x="221" y="748" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#7d1414">राज्य के साथ एक-सीमा</text>
+    </g>
+  
+<rect id="shared" x="1110" y="474" width="570" height="286" rx="24" fill="none" stroke="#fde9a6" stroke-width="20" opacity="0.85"/>
+<g id="equal"><rect x="924" y="819" width="714" height="76" rx="36" fill="#fde9a6"/><text x="1281" y="871" text-anchor="middle" class="hi" fill="#2b2622" font-size="46" font-weight="720">Circle की सीमा = राज्य की सीमा</text></g>
+<g id="usual"><rect x="924" y="819" width="323" height="76" rx="36" fill="#fde9a6"/><text x="1085" y="871" text-anchor="middle" class="hi" fill="#2b2622" font-size="48" font-weight="750">आम बात है</text></g>
+<g id="no-rule"><rect x="1273" y="819" width="355" height="76" rx="36" fill="#f3ead6"/><text id="no-rule-label" x="1450" y="871" text-anchor="middle" class="hi" fill="#2b2622" font-size="48" font-weight="750">नियम नहीं</text></g>
+<g id="expanded">
+  <rect id="expanded-outline" x="1110" y="474" width="660" height="286" rx="24" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-dasharray="18 13"/>
+  <rect x="1130" y="550" width="249" height="185" rx="22" fill="#f3ead6" stroke="#6f6a63" stroke-width="5"/>
+  <text x="1144" y="532" fill="#9e1b1b" font-size="54" font-weight="800">Circle</text>
+  <text x="1254" y="628" text-anchor="middle" class="hi" fill="#2b2622" font-size="53" font-weight="750">राज्य</text>
+  <g id="another"><rect x="1400" y="494" width="348" height="94" rx="20" fill="#f3ead6" stroke="#6f6a63" stroke-width="4"/>
+    <text x="1574" y="558" text-anchor="middle" class="hi" fill="#2b2622" font-size="53" font-weight="750">दूसरा राज्य</text></g>
+  <g id="union"><rect x="1400" y="600" width="348" height="135" rx="20" fill="#f3ead6" stroke="#6f6a63" stroke-width="4"/>
+    <text x="1574" y="655" text-anchor="middle" fill="#2b2622" font-size="44" font-weight="750">Union Territory</text>
+    <text id="union-hi" x="1574" y="707" text-anchor="middle" class="hi" fill="#6f6a63" font-size="41" font-weight="650">केंद्र शासित प्रदेश</text></g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+   [1.12,'fade','#shared',{dur:0.27}],
+   [1.87,'pop','#equal',{from:0.97,spring:'fast'}],
+   [4.74,'swap','#equal',{to:'#usual',dur:0.35}],
+   [6.33,'pop','#no-rule',{from:0.96,spring:'fast'}],
+   [6.78,'underline','#no-rule-label',{words:'नहीं',color:'#f2b705',width:7,gap:5,dur:0.24}],
+   [7.22,'color','#term-card',{to:'#6f6a63',dur:0.4}],
+   [7.22,'out','#state, #circle, #shared',{dur:0.17,scale:1}],
+   [7.42,'fade','#expanded',{dur:0.31}],
+   [7.42,'grow','#expanded-outline',{axis:'x',origin:'left',spring:'soft'}],
+   [9.28,'pop','#another',{from:0.96,spring:'fast'}],
+   [11.06,'pop','#union',{from:0.96,spring:'fast'}],
+   [11.66,'fade','#union-hi',{dur:0.26}]
+ ]
+}
+</script>
+</section>
