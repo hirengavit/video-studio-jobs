@@ -5,7 +5,7 @@
   <text id="denomination" x="960" y="255" text-anchor="middle" fill="#9e1b1b" font-family="Inter,sans-serif" font-size="72" font-weight="800">Denomination</text>
   <text id="denomination-hi" x="960" y="322" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari',sans-serif" font-size="44">मूल्यवर्ग</text>
   <text id="separate" x="960" y="447" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari',sans-serif" font-size="43" font-weight="600">अलग रखिए</text>
-  <path id="divider" d="M960 481v118m0 133v142" stroke="#6f6a63" stroke-width="4" stroke-dasharray="10 14" stroke-linecap="round" fill="none"/>
+  <g id="divider"><path d="M960 481v118m0 133v142" stroke="#6f6a63" stroke-width="4" stroke-dasharray="10 14" stroke-linecap="round" fill="none"/></g>
   <g id="older-stack">
     <use href="piece:stamp-sheet" transform="translate(354 426) scale(1.15)"/>
     <use href="piece:stamp-sheet" transform="translate(342 438) scale(1.15)"/>
@@ -33,9 +33,9 @@
 </svg>
 <script type="text/scene">
 ({on:[
- [0.32,"draw","#divider",{dur:0.42}],
+ [0.32,"reveal","#divider",{from:"top",dur:0.42}],
  [0.86,"fade","#separate",{dur:0.38}],
- [2.40,"type","#denomination",{dur:0.58}],
+ [2.40,"type","#denomination",{cps:22}],
  [2.90,"fade","#denomination-hi",{dur:0.34}],
  [3.40,"fade","#older-label",{dur:0.35}],
  [4.58,"stamp","#older-step",{from:1.08,rot:-3,spring:"snap"}],
