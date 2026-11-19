@@ -10,15 +10,9 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-overlap",
+   "kind": "text-off-frame",
    "scene": "s112",
-   "text": "बाहर: एक दिन / / आधे दिन",
-   "t": 6.98
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s112",
-   "text": "आधे दिन / की बिक्री",
+   "text": "बाहर: एक दिन / आधे दिन की बिक्री",
    "t": 6.98
   }
  ]
