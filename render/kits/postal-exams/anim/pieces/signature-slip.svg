@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g id="slip">
+    <path d="M40 100H337L360 123V300H40Z" fill="#ffffff"/>
+    <path d="M337 100V123H360" fill="#f3ead6"/>
+    <path d="M64 129H153M64 151H209" stroke="#b9b4ad"/>
+    <path d="M64 257H272" stroke="#b9b4ad"/>
+  </g>
+  <path id="signature" d="M70 237C84 225 109 187 101 183C88 177 86 249 107 240C121 234 128 211 123 211C114 212 114 245 132 235L146 219Q139 241 155 236L172 224Q165 242 181 233Q194 223 206 234L231 226"/>
+  <g id="pen" transform="rotate(-27 272 230)">
+    <path d="M217 222H327V238H217L195 230Z" fill="#9e1b1b"/>
+    <path d="M217 222V238L195 230Z" fill="#f3ead6"/>
+    <path d="M195 230H202"/>
+    <path d="M304 222V238M327 224H337V236H327" fill="#4b4f58"/>
+    <path d="M312 218H336V229"/>
+  </g>
+  <circle data-anchor="base" cx="200" cy="300" r="0"/>
+</svg>
