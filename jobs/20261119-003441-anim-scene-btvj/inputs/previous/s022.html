@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s022" data-in="cut" data-section="PART 1 · CENTRAL ADMINISTRATION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="top-strip">
+      <g id="prior-summary">
+        <rect x="100" y="180" width="800" height="240" rx="30" fill="#f0eee8"/>
+        <text x="150" y="269" font-size="40" font-weight="680" fill="#5e5a55">Secretary (Posts) · PSB Chairperson</text>
+        <text x="150" y="346" font-size="52" font-weight="730" fill="#4d4b49">→ President</text>
+      </g>
+      <g id="dgps">
+        <rect x="1000" y="218" width="286" height="163" rx="31" fill="#9e1b1b"/>
+        <text x="1143" y="323" text-anchor="middle" font-size="68" font-weight="780" fill="#fffefa">DGPS</text>
+      </g>
+      <path id="appointer-arrow" d="M1307 299 H1413 L1394 283 M1413 299 L1394 315" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+      <g id="appointer">
+        <rect id="appointer-box" x="1435" y="180" width="385" height="240" rx="31" fill="#fffefa" stroke="#b8403a" stroke-width="4"/>
+        <text id="gov-a" x="1627" y="249" text-anchor="middle" font-size="51" font-weight="750" fill="#9e1b1b">Central</text>
+        <text id="gov-b" x="1627" y="308" text-anchor="middle" font-size="51" font-weight="750" fill="#9e1b1b">Government</text>
+        <text id="gov-hi" class="hi" x="1627" y="371" text-anchor="middle" font-size="43" font-weight="650" fill="#514941">केंद्र सरकार</text>
+      </g>
+    </g>
+    <g id="document-card">
+      <rect x="100" y="480" width="1720" height="520" rx="36" fill="#ffffff" stroke="#e1cbb6" stroke-width="4"/>
+      <line x1="923" y1="524" x2="923" y2="952" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:icon-notice-document" transform="translate(165 590) scale(0.46)"/>
+      <text id="act-en" x="337" y="620" font-family="Georgia, serif" font-size="56" font-weight="740" fill="#2b2622">Post Office Act</text>
+      <text id="act-year" x="337" y="686" font-family="Georgia, serif" font-size="59" font-weight="740" fill="#9e1b1b">2023</text>
+      <text id="act-hi" class="hi" x="339" y="753" font-size="44" font-weight="660" fill="#5a534b">डाकघर अधिनियम 2023</text>
+      <g id="section-stamp">
+        <rect x="337" y="815" width="512" height="112" rx="23" fill="#f4eada" stroke="#b8403a" stroke-width="3" stroke-dasharray="3 8" stroke-linecap="round"/>
+        <text class="hi" x="593" y="889" text-anchor="middle" font-size="53" font-weight="740" fill="#9e1b1b">Section 2 · धारा 2</text>
+      </g>
+      <g id="definition">
+        <text class="hi" x="974" y="592" font-size="45" font-weight="660" fill="#605b55">परिभाषा में</text>
+        <rect x="972" y="625" width="804" height="140" rx="22" fill="#f8edce"/>
+        <g fill="#2b2622" font-size="51" font-weight="730">
+          <text x="1006" y="686">Central Government</text>
+          <text class="hi" x="1006" y="740">द्वारा नियुक्त DGPS</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    ({
+      dur: 9.28,
+      on: [
+        [0, "pop", "#dgps", {from:0.96}],
+        [1.80, "draw", "#appointer-arrow", {dur:0.37}],
+        [1.80, "fade", "#appointer-box", {dur:0.22}],
+        [1.80, "words", "#gov-a", {dist:10}],
+        [2.42, "words", "#gov-b", {dist:10}],
+        [2.40, "fade", "#gov-hi", {dur:0.28}],
+        [4.10, "slide", "#document-card", {from:"down", dist:42}],
+        [4.10, "words", "#act-en", {gap:0.34, dist:10}],
+        [5.32, "pop", "#act-year", {from:0.96}],
+        [6.00, "fade", "#act-hi", {dur:0.28}],
+        [6.82, "stamp", "#section-stamp", {from:1.1, rot:-2}],
+        [7.78, "fade", "#definition", {dur:0.32}]
+      ]
+    })
+  </script>
+</section>
