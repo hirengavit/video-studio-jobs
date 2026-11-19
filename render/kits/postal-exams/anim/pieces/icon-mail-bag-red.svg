@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<path id="strap" d="M79 205V136C79 59 321 59 321 136V205H302V140C302 89 98 89 98 140V205Z" fill="#9e1b1b"/>
+<g id="body"><rect x="65" y="165" width="270" height="177" rx="26" fill="#9e1b1b"/><path d="M80 232V316Q80 328 96 328H304Q320 328 320 316V232" stroke="#b8403a"/></g>
+<path id="flap" d="M64 160H336V204Q336 225 315 231L214 259Q200 263 186 259L85 231Q64 225 64 204Z" fill="#9e1b1b"/>
+<g id="buckle"><path d="M186 230H214V290H186Z" fill="#7d1414"/><rect x="182" y="247" width="36" height="29" rx="4" fill="#e3cfa3"/><path d="M190 254H210V269H190Z" fill="#9e1b1b"/><path d="M200 251V264"/></g>
+<circle data-anchor="base" cx="200" cy="342" r="0"/>
+</svg>
