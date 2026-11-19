@@ -8,12 +8,5 @@
   "10.58"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s157",
-   "text": "Letter / माना जाता है",
-   "t": 10.58
-  }
- ]
+ "warnings": []
 }
