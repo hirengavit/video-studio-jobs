@@ -1,0 +1,65 @@
+<section class="vs-scene" id="s124" data-in="wipe" data-in-dur="0.6" data-in-opts='{"from":"right"}' data-section="PART 6 · POSTAL STATIONERY" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+<g id="title">
+  <rect x="200" y="300" width="10" height="44" rx="5" fill="#f2b705"/>
+  <text class="hi" x="230" y="336" font-size="38" font-weight="750" fill="#9e1b1b">PART 6 · भाग 6</text>
+  <text x="200" y="515" font-family="Inter, sans-serif" font-size="104" font-weight="800" fill="#2b2622">Postal Stationery</text>
+  <text class="hi" x="200" y="640" font-size="74" font-weight="700" fill="#9e1b1b">डाक स्टेशनरी</text>
+  <path id="title-underline" d="M204 681C323 670 460 690 633 679" stroke="#f2b705" stroke-width="11" fill="none" stroke-linecap="round"/>
+  <rect x="1260" y="290" width="460" height="580" rx="20" fill="#9e1b1b"/>
+  <rect x="1260" y="290" width="460" height="580" rx="20" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+  <rect x="1300" y="330" width="380" height="410" rx="12" fill="#fbf7ee"/>
+  <use href="piece:postcard-blank" transform="translate(1300 345) scale(.95)"/>
+  <text x="1300" y="826" font-family="Inter, sans-serif" font-size="76" font-weight="800" fill="#ffffff">06</text>
+  <circle cx="212" cy="948" r="12" fill="#9e1b1b"/><circle cx="256" cy="948" r="12" fill="#9e1b1b"/><circle cx="300" cy="948" r="12" fill="#9e1b1b"/><circle cx="344" cy="948" r="12" fill="#9e1b1b"/><circle cx="388" cy="948" r="12" fill="#9e1b1b"/><circle cx="432" cy="948" r="12" fill="#f2b705"/><circle cx="476" cy="948" r="12" fill="#e6dcc4"/><circle cx="520" cy="948" r="12" fill="#e6dcc4"/><circle cx="564" cy="948" r="12" fill="#e6dcc4"/><circle cx="608" cy="948" r="12" fill="#e6dcc4"/>
+  <text class="hi" x="670" y="960" font-size="36" font-weight="600" fill="#6f6a63">Part 6 of 10 · भाग 6 / 10</text>
+</g>
+<g id="items">
+  <g id="item-a">
+    <use href="piece:postcard-blank" transform="translate(150 206.25) scale(1.25)"/>
+    <text x="400" y="690" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="770" fill="#2b2622">Postcard</text>
+    <text class="hi" x="400" y="750" text-anchor="middle" font-size="42" font-weight="550" font-family="'Noto Sans Devanagari',Inter,sans-serif" fill="#6f6a63">पोस्टकार्ड</text>
+  </g>
+  <g id="item-b">
+    <use href="piece:letter-card" transform="translate(710 233.75) scale(1.25)"/>
+    <text x="960" y="690" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="770" fill="#2b2622">Letter card</text>
+    <text class="hi" x="960" y="750" text-anchor="middle" font-size="42" font-weight="550" font-family="'Noto Sans Devanagari',Inter,sans-serif" fill="#6f6a63">अंतर्देशीय पत्र</text>
+  </g>
+  <g id="item-c">
+    <use href="piece:embossed-envelope" transform="translate(1270 215) scale(1.25)"/>
+    <g id="item-c-text">
+      <text x="1520" y="690" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="770" fill="#2b2622">Embossed envelope</text>
+      <text class="hi" x="1520" y="750" text-anchor="middle" font-size="42" font-weight="550" font-family="'Noto Sans Devanagari',Inter,sans-serif" fill="#6f6a63">छपे टिकट वाला लिफ़ाफ़ा</text>
+    </g>
+  </g>
+  <g fill="none" stroke="#f2b705" stroke-width="7" stroke-linecap="round">
+    <circle id="ring-a" cx="567.1" cy="362.5" r="49"/>
+    <circle id="ring-b" cx="1122.5" cy="418.1" r="46"/>
+    <circle id="ring-c" cx="1665" cy="396.25" r="49"/>
+  </g>
+  <g id="credit">
+    <rect x="260" y="880" width="1400" height="100" rx="20" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text id="credit-text" class="hi" x="960" y="945" text-anchor="middle" font-size="48" font-weight="720" fill="#2b2622">छपा stamp या लिखावट = पहले से दी हुई value</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+  shots: [[0,'#title'],[3.40,'#items']],
+  on: [
+    [.40,'draw','#title-underline',{dur:.55}],
+    [3.40,'pop','#item-a',{from:.92,spring:'soft'}],
+    [3.52,'pop','#item-b',{from:.92,spring:'soft'}],
+    [3.56,'pop','#item-c',{from:.92,spring:'soft'}],
+    [4.06,'fade','#item-c-text',{dur:.26}],
+    [5.52,'draw','#ring-a',{dur:.45}],
+    [5.67,'draw','#ring-b',{dur:.45}],
+    [5.82,'draw','#ring-c',{dur:.45}],
+    [8.36,'fade','#credit',{dur:.30}],
+    [8.36,'words','#credit-text',{gap:.095,dist:10}],
+    [11.16,'highlight','#credit-text',{words:'पहले से दी हुई value',color:'#f2b705',opacity:.35,dur:.42}]
+  ]
+})
+</script>
+</section>
