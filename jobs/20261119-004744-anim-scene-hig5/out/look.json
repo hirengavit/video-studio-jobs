@@ -1,0 +1,49 @@
+{
+ "moments": [
+  "0.30",
+  "1.72",
+  "3.44",
+  "5.16",
+  "6.88",
+  "8.45"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s062",
+   "text": "राष्ट्रीय निर्देश / नीचे तक",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s062",
+   "text": "राष्ट्रीय निर्देश / लागू",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s062",
+   "text": "नीचे तक / लागू",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s062",
+   "message": "a card is mostly empty at 5.2 s: bring its items in sooner, or size it for what it holds now",
+   "t": 5.16
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s062",
+   "message": "a card is mostly empty at 6.9 s: bring its items in sooner, or size it for what it holds now",
+   "t": 6.88
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s062",
+   "message": "a card is mostly empty at 8.4 s: bring its items in sooner, or size it for what it holds now",
+   "t": 8.45
+  }
+ ]
+}
