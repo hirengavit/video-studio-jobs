@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s158" data-in="wipe" data-in-dur="0.4" data-in-opts='{"from":"right"}' data-section="PART 6 · SPECIAL OFFICES &amp; BOARDS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text x="100" y="248" class="hi" fill="#9e1b1b" font-size="67" font-weight="740">पहले:</text>
+    <g id="insurance"><rect x="350" y="174" width="520" height="113" rx="23" fill="#f3ead6"/><use href="piece:icon-insurance-shield" transform="translate(363 162) scale(0.34)"/><text x="510" y="220" fill="#2b2622" font-size="52" font-weight="740">insurance</text><text x="513" y="270" class="hi" fill="#6f6a63" font-size="44" font-weight="650">बीमा</text></g>
+    <g id="parcels"><rect x="916" y="174" width="520" height="113" rx="23" fill="#f3ead6"/><use href="piece:icon-parcel" transform="translate(929 162) scale(0.34)"/><text x="1076" y="220" fill="#2b2622" font-size="52" font-weight="740">parcels</text><text x="1079" y="270" class="hi" fill="#6f6a63" font-size="44" font-weight="650">पार्सल</text></g>
+    <g id="directorate">
+      <rect x="100" y="320" width="660" height="660" rx="39" fill="#9e1b1b"/>
+      <rect x="121" y="341" width="618" height="618" rx="28" fill="none" stroke="#fbf7ee" stroke-width="10" stroke-dasharray="0 25" stroke-linecap="round"/>
+      <text id="title-line1" x="430" y="488" text-anchor="middle" fill="#fff" font-size="82" font-weight="780">Postal Life</text>
+      <text id="title-line2" x="430" y="586" text-anchor="middle" fill="#fff" font-size="82" font-weight="780">Insurance</text>
+      <text id="title-line3" x="430" y="684" text-anchor="middle" fill="#fff" font-size="82" font-weight="780">Directorate</text>
+      <text id="directorate-hi" x="430" y="808" text-anchor="middle" class="hi" fill="#fde9a6" font-size="55" font-weight="630">डाक जीवन बीमा निदेशालय</text>
+    </g>
+    <g id="place">
+      <rect x="820" y="320" width="1000" height="660" rx="39" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <g id="city">
+        <use href="piece:icon-city-pin" transform="translate(876 399) scale(0.74)"/>
+        <text x="998" y="484" fill="#2b2622" font-size="83" font-weight="760">New Delhi</text>
+      </g>
+      <text id="locality" x="998" y="592" fill="#2b2622" font-size="77" font-weight="740">Chanakyapuri</text>
+      <g id="pli"><rect x="866" y="714" width="425" height="150" rx="25" fill="#f3ead6"/><text x="1078" y="777" text-anchor="middle" fill="#9e1b1b" font-size="66" font-weight="760">PLI</text><text x="1078" y="829" text-anchor="middle" class="hi" fill="#6f6a63" font-size="43" font-weight="630">डाक जीवन बीमा</text></g>
+      <g id="rpli"><rect x="1350" y="714" width="425" height="150" rx="25" fill="#f3ead6"/><text x="1562" y="777" text-anchor="middle" fill="#9e1b1b" font-size="66" font-weight="760">RPLI</text><text x="1562" y="829" text-anchor="middle" class="hi" fill="#6f6a63" font-size="43" font-weight="630">ग्रामीण डाक जीवन बीमा</text></g>
+      <text id="handles" x="1320" y="940" text-anchor="middle" class="hi" fill="#6f6a63" font-size="53" font-weight="650">का काम देखता है</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.32, 'pop', '#insurance', {from:0.96, spring:'fast'}],
+      [1.48, 'pop', '#parcels', {from:0.96, spring:'fast'}],
+      [2.42, 'slide', '#directorate', {from:'left', dist:50, spring:'fast'}],
+      [2.44, 'words', '#title-line1', {gap:0.46, dist:13, spring:'fast'}],
+      [3.16, 'words', '#title-line2', {dist:13, spring:'fast'}],
+      [3.58, 'words', '#title-line3', {dist:13, spring:'fast'}],
+      [3.90, 'fade', '#directorate-hi', {dur:0.28}],
+      [4.74, 'fade', '#place', {dur:0.24}],
+      [4.76, 'pop', '#city', {from:0.97, spring:'fast'}],
+      [6.30, 'words', '#locality', {dist:13, spring:'fast'}],
+      [6.46, 'highlight', '#locality', {color:'#f2b705', opacity:0.34, dur:0.42}],
+      [8.12, 'pop', '#pli', {from:0.96, spring:'fast'}],
+      [9.84, 'pop', '#rpli', {from:0.96, spring:'fast'}],
+      [11.00, 'fade', '#handles', {dur:0.28}]
+    ]
+  }
+  </script>
+</section>
