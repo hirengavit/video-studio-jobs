@@ -1,0 +1,61 @@
+{
+ "moments": [
+  "0.30",
+  "1.47",
+  "2.94",
+  "4.42",
+  "5.89",
+  "7.21"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s214",
+   "text": "unpaid / कम postage / न्यूनतम वसूली",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s214",
+   "text": "आगे नहीं भेजा जाता / INSUFFICIENTLY PAID",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s214",
+   "text": "आगे नहीं भेजा जाता / कमी × 2",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s214",
+   "text": "SENDER / गलत charging",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s214",
+   "text": "बिना charge / Postmaster",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s214",
+   "text": "प्रेषक / MARKED DUE",
+   "t": 2.94
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s214",
+   "text": "दें / · मना करें तो",
+   "t": 4.42
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s214",
+   "text": "· मना करें तो / Refused",
+   "t": 7.21
+  }
+ ]
+}
