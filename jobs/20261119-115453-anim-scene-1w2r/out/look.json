@@ -8,18 +8,5 @@
   "10.11"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s128",
-   "message": "strike: nothing found for \"#not-full\"",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s128",
-   "message": "highlight: nothing found for \"#examples\"",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
