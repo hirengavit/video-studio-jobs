@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s069" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="regional-head">
+      <rect id="head-meaning" x="608" y="180" width="1212" height="380" rx="34" fill="#fffefa" stroke="#e2cbb6" stroke-width="4"/>
+      <rect id="head-tile" x="100" y="180" width="540" height="380" rx="34" fill="#9e1b1b"/>
+      <text id="head-en" x="370" y="348" fill="#fffefa" font-size="63" font-weight="760" text-anchor="middle">Regional Head</text>
+      <text class="hi" id="head-hi" x="370" y="437" fill="#fff5d2" font-size="55" font-weight="650" text-anchor="middle">क्षेत्रीय प्रमुख</text>
+      <text id="pmg" x="712" y="316" fill="#7d1414" font-size="77" font-weight="760">PMG</text>
+      <text class="hi" id="head-alt-a" x="712" y="416" fill="#2b2622" font-size="51" font-weight="580">या वो officer जो Region में</text>
+      <text class="hi" id="head-alt-b" x="712" y="488" fill="#2b2622" font-size="51" font-weight="580">PMG की powers चलाता है</text>
+    </g>
+    <g id="regional-director">
+      <rect id="director-meaning" x="608" y="600" width="1212" height="380" rx="34" fill="#fffefa" stroke="#e2cbb6" stroke-width="4"/>
+      <rect id="director-tile" x="100" y="600" width="540" height="380" rx="34" fill="#9e1b1b"/>
+      <text id="director-en" x="370" y="768" fill="#fffefa" font-size="56" font-weight="760" text-anchor="middle">Regional Director</text>
+      <text class="hi" id="director-hi" x="370" y="857" fill="#fff5d2" font-size="55" font-weight="650" text-anchor="middle">क्षेत्रीय निदेशक</text>
+      <text class="hi" id="region-director" x="712" y="738" fill="#7d1414" font-size="69" font-weight="740">Region के Director</text>
+      <text class="hi" id="director-alt-a" x="712" y="839" fill="#2b2622" font-size="51" font-weight="580">या Director की powers</text>
+      <text class="hi" id="director-alt-b" x="712" y="911" fill="#2b2622" font-size="51" font-weight="580">चलाने वाला officer</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+    ({
+      dur: 15.84,
+      on: [
+        [0, "words", "#head-en", {gap:0.46, dist:12}],
+        [0.50, "words", "#head-hi", {gap:0.12, dist:10}],
+        [1.75, "fade", "#head-meaning", {dur:0.3}],
+        [1.86, "words", "#pmg", {dist:12}],
+        [3.32, "words", "#head-alt-a", {gap:0.28, dist:10}],
+        [5.50, "words", "#head-alt-b", {gap:0.28, dist:10}],
+        [7.64, "color", "#head-tile", {to:"#5f6065", dur:0.35}],
+        [7.64, "color", "#head-meaning", {to:"#f0ede8", dur:0.35}],
+        [7.64, "fade", "#director-tile", {dur:0.25}],
+        [7.64, "words", "#director-en", {gap:0.54, dist:12}],
+        [8.20, "words", "#director-hi", {gap:0.12, dist:10}],
+        [9.58, "fade", "#director-meaning", {dur:0.3}],
+        [9.74, "words", "#region-director", {gap:0.44, dist:12}],
+        [11.74, "words", "#director-alt-a", {gap:0.34, dist:10}],
+        [13.16, "highlight", "#director-alt-a", {words:"powers", color:"#f2b705", opacity:0.45, dur:0.38}],
+        [13.60, "words", "#director-alt-b", {gap:0.25, dist:10}]
+      ]
+    })
+  </script>
+</section>
