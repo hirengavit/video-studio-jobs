@@ -1,0 +1,68 @@
+<section class="vs-scene" id="s157" data-in="cut" data-section="PART 7 · LETTER CARD" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="mix">
+    <text class="hi" x="960" y="280" text-anchor="middle" font-size="70" font-weight="830" fill="#9e1b1b">Option में सही numbers, गलत हालत</text>
+    <g id="mix-tile-1" transform="translate(0 40)">
+ <rect x="140" y="380" width="520" height="380" rx="26" fill="#fff" stroke="#2e7d4f" stroke-width="4"/>
+ <rect x="155" y="395" width="490" height="350" rx="18" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-dasharray="0 19" stroke-linecap="round"/>
+ <text id="mix-state-1" class="hi" x="400" y="510" text-anchor="middle" font-size="62" font-weight="810" fill="#2b2622">खुला</text>
+ <text x="400" y="607" text-anchor="middle" font-size="68" font-weight="830" fill="#2b2622">300 × 210</text>
+ <path d="M374 681l17 17 34-39" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+    <g id="mix-tile-2" transform="translate(0 40)">
+ <rect x="700" y="380" width="520" height="380" rx="26" fill="#fff" stroke="#2e7d4f" stroke-width="4"/>
+ <rect x="715" y="395" width="490" height="350" rx="18" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-dasharray="0 19" stroke-linecap="round"/>
+ <text id="mix-state-2" class="hi" x="960" y="510" text-anchor="middle" font-size="62" font-weight="810" fill="#2b2622">मुड़ा</text>
+ <text x="960" y="607" text-anchor="middle" font-size="68" font-weight="830" fill="#2b2622">210 × 100</text>
+ <path d="M934 681l17 17 34-39" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+    <g id="mix-tile-3" transform="translate(0 40)">
+ <rect x="1260" y="380" width="520" height="380" rx="26" fill="#fff" stroke="#4b4f58" stroke-width="4"/>
+ <rect x="1275" y="395" width="490" height="350" rx="18" fill="none" stroke="#4b4f58" stroke-width="7" stroke-dasharray="0 19" stroke-linecap="round"/>
+ <text id="mix-state-3" class="hi" x="1520" y="510" text-anchor="middle" font-size="62" font-weight="810" fill="#2b2622" opacity=".55">खुला</text>
+ <path d="M1451 490Q1515 484 1588 490" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+ <text x="1520" y="607" text-anchor="middle" font-size="68" font-weight="830" fill="#2b2622">210 × 100</text>
+ 
+</g>
+    <g id="mix-cross" transform="translate(0 40)" fill="none" stroke="#4b4f58">
+      <circle cx="1520" cy="683" r="35" stroke-width="6"/>
+      <path d="M1504 667l32 32m0-32-32 32" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <g id="recall-bar">
+      <rect x="140" y="840" width="1640" height="120" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text id="recall-reminder" class="hi" x="960" y="917" text-anchor="middle" font-size="61" font-weight="780" fill="#2b2622">खुला ≠ मुड़ा · हमेशा अलग याद रखिए</text>
+    </g>
+  </g>
+  <g id="breach">
+    <text id="breach-question" class="hi" x="140" y="230" font-size="56" font-weight="830" fill="#9e1b1b">शर्त टूटी, तो?</text>
+    <g id="breach-card">
+      <path d="M350 299h142l18 18v74H350z" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M492 299v18h18M373 329h89" fill="none" stroke="#6f6a63" stroke-width="3" stroke-linecap="round"/>
+      <use href="piece:letter-card" transform="translate(240 250) scale(.9)"/>
+    </g>
+    <path id="breach-arrow" d="M700 430H1100m-29-24 29 24-29 24" fill="none" stroke="#2b2622" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+    <g id="breach-letter">
+      <use href="piece:envelope-article" transform="translate(1180 200) scale(1.1)"/>
+      <text class="hi" x="1400" y="554" text-anchor="middle" font-size="40" font-weight="780" fill="#2b2622">Letter · पत्र</text>
+    </g>
+    <g id="breach-mark" transform="rotate(-8 1508 376)" stroke="#9e1b1b">
+      <circle cx="1508" cy="376" r="106" stroke-width="6" fill="#fff" fill-opacity=".90"/>
+      <circle cx="1508" cy="376" r="95" fill="none" stroke-width="2" stroke-dasharray="4 4"/>
+      <text x="1508" y="367" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="820" stroke="none" fill="#9e1b1b">Letter</text>
+      <text class="hi" x="1508" y="410" text-anchor="middle" font-size="32" font-weight="790" stroke="none" fill="#9e1b1b">माना जाता है</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({shots:[[0,'#mix'],[5,'#breach']],on:[
+ [2.06,'slide','#recall-bar',{from:'down',dist:24,spring:'soft'}],
+ [2.06,'words','#recall-reminder',{gap:.19,dist:8}],
+ [3.22,'underline','#recall-reminder',{words:'हमेशा अलग',color:'#f2b705',width:6,dur:.32}],
+ [5,'type','#breach-question',{cps:15}],
+ [5.60,'pop','#breach-card',{from:.94,spring:'soft'}],
+ [8.85,'draw','#breach-arrow',{dur:.40}],
+ [8.85,'pop','#breach-letter',{from:.94,spring:'soft'}],
+ [9.73,'stamp','#breach-mark',{from:1.18,rot:-6,spring:'soft'}]
+]})
+</script></section>
