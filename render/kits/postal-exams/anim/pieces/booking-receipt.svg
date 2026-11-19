@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 380" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path id="paper" d="M25 30Q25 23 32 23H228Q235 23 235 30V352L220 365L205 352L190 365L175 352L160 365L145 352L130 365L115 352L100 365L85 352L70 365L55 352L40 365L25 352Z" fill="#fff"/>
+  <rect id="header-band" x="44" y="45" width="172" height="36" rx="6" fill="#f3ead6" stroke="#ead9a8"/>
+  <path id="blank-rules" d="M46 108H214M46 133H195M46 158H214M46 183H177M46 326H154" fill="none" stroke="#d9cdb5"/>
+  <g id="barcode" fill="#2b2622" stroke="none">
+    <path d="M47 214h3v49h-3z M53 214h5v49h-5z M62 214h2v49h-2z M68 214h7v49h-7z M80 214h3v49h-3z M86 214h4v49h-4z M95 214h2v49h-2z M102 214h8v49h-8z M114 214h4v49h-4z M123 214h3v49h-3z M130 214h7v49h-7z M141 214h2v49h-2z M147 214h5v49h-5z M156 214h3v49h-3z M163 214h7v49h-7z M175 214h2v49h-2z M182 214h5v49h-5z M191 214h2v49h-2z M197 214h8v49h-8z M210 214h3v49h-3z"/>
+  </g>
+  <rect id="tracking-line" x="43" y="280" width="174" height="26" rx="4" fill="#fbf7ee" stroke="#ead9a8"/>
+  <circle data-anchor="base" cx="130" cy="365" r="0" stroke="none"/>
+</svg>
