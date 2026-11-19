@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s095" data-in="fade" data-in-dur="0.5" data-section="PART 4 · VALID STAMPS &amp; AFFIXING" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<defs>
+  <clipPath id="revenue-clip" clipPathUnits="userSpaceOnUse"><rect x="21" y="21" width="161" height="152"/></clipPath>
+  <clipPath id="charity-clip" clipPathUnits="userSpaceOnUse"><rect x="186" y="25" width="142" height="146"/></clipPath>
+</defs>
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="labels">
+  <g id="envelope-demo">
+    <use id="demo-envelope" href="piece:address-envelope" transform="translate(140 300) scale(1.4)"/>
+    <use id="valid-postage" href="piece:postage-stamp" transform="translate(865 346) scale(.28)"/>
+    <g id="revenue-graphic" transform="translate(205 373)">
+      <g clip-path="url(#revenue-clip)"><use href="piece:non-postage-labels"/></g>
+    </g>
+    <g id="charity-graphic" transform="translate(225 397)">
+      <g clip-path="url(#charity-clip)"><use href="piece:non-postage-labels"/></g>
+    </g>
+    <g id="seal-graphic">
+      <path d="M321 598q20-6 35 4 16-2 23 9 12 5 10 19 11 10 5 24 0 20-18 25-10 15-31 13-12 11-29 1-22 1-30-15-16-7-14-24-7-12 3-28 0-14 15-19 11-11 31-9Z" fill="#c1c0bd" stroke="#4b4f58" stroke-width="5"/>
+      <circle cx="334" cy="646" r="37" fill="none" stroke="#6f6a63" stroke-width="4"/>
+      <path d="m319 648 10 10 19-24" fill="none" stroke="#6f6a63" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="misleading-impression" transform="translate(748 652) rotate(-12)">
+      <circle r="82" fill="#eeebe6" fill-opacity=".91" stroke="#4b4f58" stroke-width="7"/>
+      <circle r="66" fill="none" stroke="#4b4f58" stroke-width="2.5" stroke-dasharray="3 8" stroke-linecap="round"/>
+      <path d="M-41-14q22-14 43 0t43 0M-41 8q22-14 43 0t43 0M-41 30q22-14 43 0t43 0" fill="none" stroke="#4b4f58" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <ellipse id="address-overlap-ring" cx="750" cy="658" rx="108" ry="106" fill="none" stroke="#9e1b1b" stroke-width="7"/>
+  </g>
+  <g id="label-header">
+    <text x="1100" y="218" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="850" fill="#4b4f58">address side पर नहीं</text>
+    <path id="no-address-side-cross" d="m1729 176 42 42m0-42-42 42" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <g id="listed-items">
+    <g id="revenue-name"><text x="1100" y="319" font-size="48" font-weight="820" fill="#2b2622">Non-postal stamps</text><text x="1100" y="369" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="730" fill="#6f6a63">गैर-डाक टिकट</text></g>
+    <g id="charity-name"><text x="1100" y="439" font-size="48" font-weight="820" fill="#2b2622">Charity labels</text><text x="1100" y="489" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="730" fill="#6f6a63">धर्मार्थ लेबल</text></g>
+    <g id="seal-name"><text x="1100" y="559" font-size="48" font-weight="820" fill="#2b2622">Seals</text><text x="1100" y="609" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="730" fill="#6f6a63">सील</text></g>
+    <g id="impression-name">
+      <text x="1100" y="679" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="820" fill="#2b2622">गुमराह करने वाली</text>
+      <text x="1100" y="731" font-size="48" font-weight="820" fill="#2b2622">impressions</text>
+    </g>
+  </g>
+  <g id="keep-address-clear">
+    <rect x="140" y="900" width="1640" height="90" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text id="keep-address-clear-text" x="200" y="960" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="810" fill="#4b4f58">address न छिपाएँ</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+  [0,'fade','#revenue-graphic, #revenue-name',{dur:0.28}],
+  [1.40,'fade','#charity-graphic, #charity-name',{dur:0.27}],
+  [3.48,'pop','#seal-graphic, #seal-name'],
+  [4.76,'pop','#misleading-impression, #impression-name'],
+  [7.04,'fade','#label-header',{dur:0.27}],
+  [8.50,'draw','#no-address-side-cross',{dur:0.33}],
+  [9.66,'fade','#keep-address-clear',{dur:0.31}],
+  [10.12,'draw','#address-overlap-ring',{dur:0.39}]
+]}
+</script></section>
