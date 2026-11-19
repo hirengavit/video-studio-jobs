@@ -1,0 +1,26 @@
+{
+ "moments": [
+  "0.30",
+  "1.78",
+  "3.56",
+  "5.35",
+  "7.13",
+  "8.76"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s044",
+   "text": "1 (1.1:1) / Unregistered packets (1.1:1) / बिना रजिस्ट्री के packets (1.1:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s044",
+   "text": "राजपत्रित / और उच्च चयन ग्रेड डाकघर",
+   "t": 7.13
+  }
+ ]
+}
