@@ -10,22 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
+   "kind": "text-overlap",
    "scene": "s048",
-   "message": "fade #delivery-prefix: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s048",
-   "message": "fade #addressee: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s048",
-   "message": "fade #named-only: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
+   "text": "delivery सिर्फ उसी addressee को, जिसके न / delivery सिर्फ उसी addressee को, जिसके न",
+   "t": 4.89
   }
  ]
 }
