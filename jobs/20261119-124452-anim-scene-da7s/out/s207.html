@@ -28,13 +28,13 @@
         <g id="s206-no-due">
           <path d="M1118 835h84m-21-15 21 15-21 15" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
           <text id="s206-no-pay" class="hi" x="1240" y="856" font-size="48" font-weight="700" fill="#2b2622">पैसा देना ज़रूरी नहीं</text>
-          <path d="M1584 866h78" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+          <path d="M1539 866h77" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
         </g>
       </g>
     </g>
     <g id="refused">
       <use href="piece:address-envelope" transform="translate(448 260) scale(1.6)"/>
-      <rect x="866" y="501" width="512" height="328" fill="#ffffff"/>
+      <rect id="write-clearance" x="888" y="599" width="536" height="124" fill="#ffffff"/>
       <text id="postman" class="hi" x="960" y="219" text-anchor="middle" font-size="56" font-weight="750" fill="#9e1b1b">POSTMAN / डाकिया लिखता है</text>
       <path id="cover-width" d="M480 483H1440M506 462L480 483L506 504M1414 462L1440 483L1414 504" fill="none" stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
       <text id="refused-mark" x="960" y="711" text-anchor="middle" font-size="180" font-weight="700" font-family="Caveat" fill="#4b4f58">Refused</text>
@@ -42,9 +42,10 @@
     <g id="flow">
       <g id="stop1">
         <rect x="100" y="272" width="570" height="416" rx="31" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
-        <use href="piece:envelope-article" transform="translate(175 181) scale(1.05)"/>
-        <text x="385" y="545" text-anchor="middle" font-size="50" font-weight="800" fill="#4b4f58"><tspan id="flow-refused">REFUSED</tspan><tspan id="flow-unclaimed"> · UNCLAIMED</tspan></text>
-        <text id="flow-hi" class="hi" x="385" y="613" text-anchor="middle" font-size="44" font-weight="600" fill="#6f6a63">अस्वीकृत · बिना लिए</text>
+        <use href="piece:envelope-article" transform="translate(185 181) scale(1)"/>
+        <text id="flow-refused" x="385" y="527" text-anchor="middle" font-size="50" font-weight="800" fill="#4b4f58">REFUSED</text>
+        <text id="flow-unclaimed" x="385" y="587" text-anchor="middle" font-size="50" font-weight="800" fill="#4b4f58">UNCLAIMED</text>
+        <text id="flow-hi" class="hi" x="385" y="648" text-anchor="middle" font-size="44" font-weight="600" fill="#6f6a63">अस्वीकृत · बिना लिए</text>
       </g>
       <g id="domestic">
         <rect x="240" y="719" width="290" height="72" rx="36" fill="#f3ead6"/>
@@ -69,6 +70,7 @@
     on:[
       [0.28,'fade','#postman',{dur:0.25}],
       [1.96,'draw','#cover-width',{dur:0.4}],
+      [2.72,'fade','#write-clearance',{dur:0.15}],
       [2.72,'reveal','#refused-mark',{from:'left',dur:0.57}],
       [4.36,'fade','#flow-refused',{dur:0.20}],
       [5.38,'fade','#flow-unclaimed',{dur:0.20}],
