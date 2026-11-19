@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s035" data-in="fade" data-in-dur="0.5" data-section="PART 2 · CASH, DIGITAL &amp; FRANKING" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="ways">
+  <g id="cash-tile">
+    <rect x="140" y="260" width="506" height="520" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <circle cx="393" cy="452" r="118" fill="#f3ead6"/>
+    <use href="piece:rupee-cash" transform="translate(263 321) scale(.65)"/>
+    <text x="393" y="655" text-anchor="middle" font-size="68" font-weight="840" fill="#9e1b1b">Cash</text>
+    <text x="393" y="726" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#6f6a63">नकद</text>
+  </g>
+  <g id="digital-tile">
+    <rect x="707" y="260" width="506" height="520" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <circle cx="960" cy="452" r="118" fill="#f3ead6"/>
+    <use href="piece:smartphone-blank" transform="translate(818 309) scale(.71)"/>
+    <text x="960" y="655" text-anchor="middle" font-size="58" font-weight="840" fill="#9e1b1b">Digital payment</text>
+    <text x="960" y="726" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#6f6a63">डिजिटल भुगतान</text>
+  </g>
+  <g id="stamp-tile">
+    <rect x="1274" y="260" width="506" height="520" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <circle cx="1527" cy="452" r="118" fill="#f3ead6"/>
+    <use href="piece:postage-stamp" transform="translate(1417 342) scale(.55)"/>
+    <text x="1527" y="655" text-anchor="middle" font-size="68" font-weight="840" fill="#9e1b1b">Stamps</text>
+    <text x="1527" y="726" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#6f6a63">डाक टिकट</text>
+  </g>
+  <path id="way-dividers" d="M677 321v397M1243 321v397" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+  <text id="ways-caption" x="960" y="880" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#4b4f58">charge देने के अलग-अलग तरीके</text>
+</g>
+<g id="counter">
+  <g id="counter-prop">
+    <use id="postal-counter" href="piece:post-counter-icon" transform="translate(109 184) scale(1.34)"/>
+    <text x="377" y="718" text-anchor="middle" font-size="60" font-weight="840" fill="#9e1b1b">Counter</text>
+  </g>
+  <g id="counter-receipt">
+    <use id="receipt-prop" href="piece:counter-receipt" transform="translate(744 269) scale(.93)"/>
+    <g id="transaction-label" text-anchor="middle" fill="#2b2622" font-size="53" font-weight="790">
+      <text x="930" y="673">authorised</text><text x="930" y="732">transaction</text>
+    </g>
+  </g>
+  <path id="counter-to-envelope" d="M646 450h131m-19-16 19 16-19 16M1085 450h146m-19-16 19 16-19 16" stroke="#9e1b1b" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <use id="counter-envelope" href="piece:address-envelope" transform="translate(1260 300) scale(.75)"/>
+</g>
+</svg>
+<script type="text/scene">
+{shots:[[0,'#ways'],[6.44,'#counter']],on:[
+  [0,'pop','#cash-tile'],
+  [0.62,'pop','#digital-tile'],
+  [2.46,'pop','#stamp-tile'],
+  [4.88,'fade','#ways-caption',{dur:0.27}],
+  [4.88,'draw','#way-dividers',{dur:0.38}],
+  [6.44,'draw','#postal-counter',{dur:0.38}],
+  [6.44,'fade','#counter-prop text',{dur:0.28}],
+  [7.60,'slide','#receipt-prop',{from:'down',dist:58}],
+  [7.72,'fade','#transaction-label',{dur:0.28}],
+  [8.70,'draw','#counter-to-envelope',{dur:0.38}],
+  [8.70,'pop','#counter-envelope']
+]}
+</script></section>
