@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s023" data-in="fade" data-in-dur="0.5" data-section="PART 1 · POSTAGE &amp; PREPAYMENT" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="trap">
+  <g id="flag">
+    <rect x="160" y="180" width="1600" height="200" rx="28" fill="#9e1b1b"/>
+    <path d="M244 325 L287 240 L330 325 Z" fill="#fde9a6" stroke="#fde9a6" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="282" y="265" width="10" height="33" rx="5" fill="#9e1b1b"/><circle cx="287" cy="312" r="5" fill="#9e1b1b"/>
+    <text x="380" y="257" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="790" fill="#fde9a6">EXAM TRAP · परीक्षा का जाल</text>
+    <text x="380" y="338" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="65" font-weight="830" fill="#fff">फर्क याद रखिए</text>
+  </g>
+  <g id="recovery-rule">
+    <rect x="160" y="420" width="780" height="540" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M225 500h58" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+    <text x="225" y="610" font-size="83" font-weight="850" fill="#9e1b1b">Postage due</text>
+    <text x="225" y="706" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="68" font-weight="790" fill="#2b2622">वसूली का नियम</text>
+    <path d="M225 760H875" stroke="#ead9a8" stroke-width="3"/>
+    <text x="225" y="855" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="760" fill="#6f6a63">unpaid item मिले तो वसूली</text>
+  </g>
+  <g id="general-exemption">
+    <rect id="exemption-border" x="980" y="420" width="780" height="540" rx="30" fill="#fff" stroke="#f2b705" stroke-width="5"/>
+    <path id="exemption-accent" d="M1045 500h58" stroke="#f2b705" stroke-width="7" stroke-linecap="round"/>
+    <text id="exemption-en" x="1045" y="610" font-size="76" font-weight="850" fill="#4b4f58">Unpaid posting</text>
+    <text id="exemption-hi" x="1045" y="706" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="68" font-weight="790" fill="#4b4f58">की आम छूट</text>
+    <path id="trap-cross" d="M1599 470l90 90m0-90-90 90" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</g>
+<g id="prepaid">
+  <g id="prepaid-article">
+    <rect x="140" y="300" width="560" height="500" rx="36" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <use id="prepaid-envelope" href="piece:envelope-article" transform="translate(130 150) scale(1.45)"/>
+    <use id="prepaid-stamp" href="piece:postage-stamp" transform="translate(508 340) scale(.245)"/>
+    <g id="prepaid-tick"><circle cx="420" cy="620" r="36" fill="#e0f0e4"/><path d="M405 620l11 11 21-25" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <text id="prepaid-label" x="420" y="742" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="810" fill="#2b2622">पूरा prepaid article</text>
+  </g>
+  <g id="earliest-mail">
+    <rect x="1240" y="402" width="580" height="164" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+    <text x="1530" y="506" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="810" fill="#9e1b1b">जल्दी से जल्दी वाली mail</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{shots:[[0,'#trap'],[7.60,'#prepaid']],on:[
+  [1.94,'slide','#recovery-rule',{from:'down',dist:46}],
+  [3.50,'slide','#general-exemption',{from:'down',dist:46}],
+  [5.70,'strike','#exemption-en, #exemption-hi',{color:'#4b4f58',width:5,dim:0.62,dur:0.28}],
+  [5.70,'color','#exemption-border, #exemption-accent',{to:'#4b4f58',prop:'stroke',dur:0.30}],
+  [5.95,'draw','#trap-cross',{dur:0.40}],
+  [8.60,'draw','#prepaid-tick',{dur:0.34}],
+  [8.60,'fade','#prepaid-label',{dur:0.32}],
+  [11.28,'pop','#earliest-mail']
+]}
+</script></section>
