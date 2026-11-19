@@ -8,12 +8,5 @@
   "9.15"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s130",
-   "text": "पहले से चुकाया डाक शुल्क / +",
-   "t": 3.72
-  }
- ]
+ "warnings": []
 }
