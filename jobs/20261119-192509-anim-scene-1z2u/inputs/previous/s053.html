@@ -1,0 +1,67 @@
+<section class="vs-scene" id="s053" data-in="wipe" data-in-dur="0.6" data-section="PART 3 · TYPES OF STAMPS &amp; PHILATELY" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="title">
+    <rect x="160" y="291" width="9" height="45" rx="4.5" fill="#f2b705"/>
+    <text id="part-kicker" x="189" y="326" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="820" fill="#9e1b1b">PART 3 · भाग 3</text>
+    <text id="title-first" x="160" y="471" font-size="93" font-weight="850" fill="#2b2622">Types of Stamps</text>
+    <text id="title-second" x="160" y="580" font-size="93" font-weight="850" fill="#2b2622">&amp; Philately</text>
+    <text id="title-hi" x="160" y="698" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="760" fill="#9e1b1b">डाक टिकटों के प्रकार और philately</text>
+    <path id="title-underline" d="M162 750Q340 742 550 750t407-1" fill="none" stroke="#f2b705" stroke-width="9" stroke-linecap="round"/>
+    <text x="160" y="837" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="720" fill="#6f6a63">Part 3 of 10 · भाग 3 / 10</text>
+    <g id="chapter-stamp">
+      <rect x="1260" y="285" width="460" height="578" rx="26" fill="#9e1b1b"/>
+      <rect x="1260" y="285" width="460" height="578" rx="26" fill="none" stroke="#fbf7ee" stroke-width="15" stroke-dasharray="1 25" stroke-linecap="round"/>
+      <rect x="1303" y="327" width="374" height="396" rx="14" fill="#fbf7ee"/>
+      <g id="chapter-stamp-icon" fill="#f3ead6" stroke="#9e1b1b" stroke-width="6" stroke-dasharray="1 11" stroke-linecap="round">
+        <rect x="1340" y="436" width="100" height="137" rx="7" transform="rotate(-10 1390 505)"/>
+        <rect x="1539" y="436" width="100" height="137" rx="7" transform="rotate(10 1589 505)"/>
+        <rect x="1430" y="417" width="120" height="177" rx="8"/>
+        <rect x="1498" y="544" width="28" height="30" rx="3" fill="none" stroke-width="3" stroke-dasharray="none"/>
+        <path d="M1456 503q59 10 69-54-59-8-69 54Zm0 0-11 16m11-16 41-36" fill="none" stroke-width="4" stroke-dasharray="none"/>
+      </g>
+      <text id="chapter-value" x="1304" y="820" font-size="82" font-weight="860" fill="#fff">03</text>
+    </g>
+  </g>
+  <g id="three">
+    <g id="stamp-leaf">
+      <rect x="260" y="230" width="340" height="340" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:postage-stamp" transform="translate(260 230) scale(.85)"/>
+      <path d="M394 428q77 7 84-87-73-9-84 87Z" fill="#e0e4d9" stroke="#6f6a63" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M380 443l76-77m-48 50 3-34m9 21 27-5" fill="none" stroke="#6f6a63" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <g id="stamp-dome">
+      <rect x="790" y="230" width="340" height="340" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:postage-stamp" transform="translate(790 230) scale(.85)"/>
+      <path d="M908 432v-38h103v38zm7-39q2-32 45-49 42 17 44 49zm45-50v-14m-63 104h127m-91-3v-20m27 20v-20m27 20v-20" fill="#f3ead6" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="stamp-plain">
+      <rect x="1320" y="230" width="340" height="340" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:postage-stamp" transform="translate(1320 230) scale(.85)"/>
+    </g>
+    <text id="design-purpose" x="960" y="672" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="750" fill="#6f6a63">अलग design · अलग मकसद</text>
+    <g id="postage-paid">
+      <rect x="560" y="800" width="800" height="100" rx="50" fill="#e0f0e4" stroke="#2e7d4f" stroke-width="4"/>
+      <text x="930" y="870" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="830" fill="#235f3d">postage का payment</text>
+      <path d="m1270 850 18 18 35-42" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linejoin="round" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{shots:[[0,'#title'],[3.50,'#three']],on:[
+  [0,'words','#title-first',{gap:0.12}],
+  [0.28,'words','#title-second',{gap:0.12}],
+  [0.80,'fade','#title-hi',{dur:0.28}],
+  [0.80,'draw','#title-underline',{dur:0.52}],
+  [1.40,'draw','#chapter-stamp-icon',{dur:0.45}],
+  [1.40,'pop','#chapter-value'],
+  [3.50,'pop','#stamp-leaf'],
+  [3.75,'pop','#stamp-dome'],
+  [4.00,'pop','#stamp-plain'],
+  [4.44,'fade','#design-purpose',{dur:0.30}],
+  [6.94,'pulse','#stamp-leaf',{amount:0.065}],
+  [7.09,'pulse','#stamp-dome',{amount:0.065}],
+  [7.24,'pulse','#stamp-plain',{amount:0.065}],
+  [10.48,'pop','#postage-paid']
+]}
+</script></section>
