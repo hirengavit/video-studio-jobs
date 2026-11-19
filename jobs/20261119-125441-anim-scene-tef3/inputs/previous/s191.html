@@ -1,0 +1,69 @@
+<section class="vs-scene" id="s191" data-in="fade" data-in-dur="0.5" data-section="PART 9 · UNPAID &amp; SHORT-PAID ITEMS" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+  <defs>
+    <clipPath id="s191-revenue-crop"><rect x="220" y="325" width="294" height="325"/></clipPath>
+    <clipPath id="s191-charity-crop"><rect x="1411" y="325" width="285" height="325"/></clipPath>
+  </defs>
+  <g id="invalid">
+    <g id="revenue-tile">
+      <rect x="100" y="240" width="546" height="560" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <g clip-path="url(#s191-revenue-crop)"><use href="piece:non-postage-labels" transform="translate(165 314) scale(1.96)"/></g>
+      <text id="revenue-text" x="373" y="694" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="780" fill="#2b2622">Revenue stamps</text>
+      <text class="hi" x="373" y="755" text-anchor="middle" font-size="43" font-weight="570" fill="#6f6a63">राजस्व टिकट</text>
+    </g>
+    <g id="cutout-tile">
+      <rect x="687" y="240" width="546" height="560" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M838 392L871 360L906 382L951 347L992 363L1019 351L1056 385L1096 394L1076 434L1100 467L1078 506L1092 549L1054 574L1027 608L990 593L949 617L914 591L882 602L856 564L819 552L834 504L811 477L839 445Z" fill="#ffffff" stroke="#2b2622" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="958" cy="484" r="77" fill="#fbf7ee" stroke="#ead9a8" stroke-width="5"/>
+      <circle cx="958" cy="484" r="64" fill="none" stroke="#6f6a63" stroke-width="3"/>
+      <text id="cutout-text" x="960" y="694" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="780" fill="#2b2622">Invalid cut-outs</text>
+      <text class="hi" x="960" y="755" text-anchor="middle" font-size="43" font-weight="570" fill="#6f6a63">अमान्य कटे टिकट</text>
+    </g>
+    <g id="charity-tile">
+      <rect x="1274" y="240" width="546" height="560" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <g clip-path="url(#s191-charity-crop)"><use href="piece:non-postage-labels" transform="translate(1060 302) scale(1.90)"/></g>
+      <text id="charity-text" x="1547" y="694" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="780" fill="#2b2622">Non-postal labels</text>
+      <text class="hi" x="1547" y="755" text-anchor="middle" font-size="43" font-weight="570" fill="#6f6a63">गैर-डाक लेबल</text>
+    </g>
+    <text id="no-credit" class="hi" x="960" y="915" text-anchor="middle" font-size="62" font-weight="790" fill="#4b4f58">इनसे कमी नहीं घटती</text>
+  </g>
+  <g id="rule">
+    <g id="rule-badge">
+      <rect x="100" y="200" width="600" height="780" rx="28" fill="#9e1b1b"/>
+      <rect x="100" y="200" width="600" height="780" rx="28" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+      <text class="hi" x="400" y="336" text-anchor="middle" font-size="50" font-weight="760" fill="#ffffff">REGULATION · विनियम</text>
+    </g>
+    <text id="rule-number" x="400" y="653" text-anchor="middle" font-family="Inter,sans-serif" font-size="262" font-weight="820" fill="#ffffff">71</text>
+    <g id="domestic">
+      <rect x="153" y="768" width="494" height="143" rx="20" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="400" y="831" text-anchor="middle" font-family="Inter,sans-serif" font-size="51" font-weight="770" fill="#2b2622">Domestic items</text>
+      <text class="hi" x="400" y="884" text-anchor="middle" font-size="41" font-weight="580" fill="#6f6a63">देशी items</text>
+    </g>
+    <g id="rule-document">
+      <rect x="760" y="200" width="1060" height="780" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M788 200H1792Q1820 200 1820 228V216H760V228Q760 200 788 200Z" fill="#9e1b1b"/>
+      <text class="hi" x="827" y="310" font-size="61" font-weight="800" fill="#9e1b1b">नियम (सार)</text>
+      <path d="M827 350H1754" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  shots: [[0,'#invalid'],[7.30,'#rule']],
+  on: [
+    [0,'pop','#revenue-tile',{from:.95,spring:'soft'}],
+    [1.86,'pop','#cutout-tile',{from:.95,spring:'soft'}],
+    [4.38,'pop','#charity-tile',{from:.95,spring:'soft'}],
+    [5.70,'words','#no-credit',{gap:.11,dist:10}],
+    [6.06,'strike','#revenue-text',{color:'#4b4f58',width:7,dim:.72}],
+    [6.16,'strike','#cutout-text',{color:'#4b4f58',width:7,dim:.72}],
+    [6.26,'strike','#charity-text',{color:'#4b4f58',width:7,dim:.72}],
+    [7.30,'fade','#rule-document',{dur:.33}],
+    [7.56,'fade','#domestic',{dur:.28}],
+    [9.58,'pop','#rule-badge',{from:.95,spring:'soft'}],
+    [10.52,'stamp','#rule-number',{from:1.12,rot:-3,spring:'soft'}]
+  ]
+})
+</script>
+</section>
