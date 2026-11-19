@@ -1,0 +1,76 @@
+<section class="vs-scene" id="s208" data-in="cut" data-section="PART 9 · UNPAID &amp; SHORT-PAID ITEMS" data-series="STAMPS &amp; STATIONERY">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="flow">
+      <g id="stop1">
+        <rect x="100" y="272" width="570" height="416" rx="31" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <use href="piece:envelope-article" transform="translate(185 181) scale(1)"/>
+        <text id="flow-refused" x="385" y="527" text-anchor="middle" font-size="50" font-weight="800" fill="#2b2622">REFUSED</text>
+        <text id="flow-unclaimed" x="385" y="587" text-anchor="middle" font-size="50" font-weight="800" fill="#2b2622">UNCLAIMED</text>
+        <text id="flow-hi" class="hi" x="385" y="648" text-anchor="middle" font-size="44" font-weight="600" fill="#6f6a63">अस्वीकृत · बिना लिए</text>
+      </g>
+      <g id="domestic">
+        <rect x="240" y="719" width="290" height="72" rx="36" fill="#f3ead6"/>
+        <text class="hi" x="385" y="767" text-anchor="middle" font-size="37" font-weight="650" fill="#2b2622">domestic · घरेलू</text>
+      </g>
+      <path id="arrow1" d="M686 465H831M809 446l22 19-22 19" fill="none" stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="direct" class="hi" x="759" y="416" text-anchor="middle" font-size="38" font-weight="700" fill="#2b2622">तुरंत सीधे</text>
+      <g id="stop2">
+        <rect x="848" y="272" width="470" height="416" rx="31" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <use href="piece:post-counter-icon" transform="translate(943 258) scale(.70)"/>
+        <g id="posting-label">
+          <text x="1083" y="545" text-anchor="middle" font-size="48" font-weight="800" fill="#9e1b1b">POSTING OFFICE</text>
+          <text class="hi" x="1083" y="613" text-anchor="middle" font-size="44" font-weight="600" fill="#6f6a63">बुकिंग डाकघर</text>
+        </g>
+      </g>
+      <path id="arrow2" d="M1339 465H1425M1404 446l21 19-21 19" fill="none" stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="stop3">
+        <rect x="1447" y="272" width="373" height="416" rx="31" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <g id="sender-home" stroke="#2b2622" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M1563 415v74h141v-74" fill="#f3ead6"/>
+          <path d="M1546 421l88-72 88 72z" fill="#9e1b1b"/>
+          <path d="M1615 488v-45h37v45" fill="#ffffff"/>
+          <path d="M1548 491h173" fill="none"/>
+        </g>
+        <text x="1634" y="561" text-anchor="middle" font-size="53" font-weight="800" fill="#9e1b1b">SENDER</text>
+        <text class="hi" x="1634" y="622" text-anchor="middle" font-size="44" font-weight="600" fill="#6f6a63">प्रेषक</text>
+      </g>
+      <rect id="sender-highlight" x="1447" y="272" width="373" height="416" rx="31" fill="none" stroke="#f2b705" stroke-width="8"/>
+      <g id="sender-not-found">
+        <rect x="1480" y="705" width="308" height="64" rx="32" fill="#4b4f58"/>
+        <text class="hi" x="1634" y="750" text-anchor="middle" font-size="40" font-weight="750" fill="#ffffff">Sender न मिले</text>
+      </g>
+      <path id="branch-down" d="M1634 781v62m-16-19 16 19 16-19" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="stop4">
+        <rect x="1040" y="860" width="780" height="140" rx="27" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+        <g transform="translate(-151 15)" stroke="#4b4f58" stroke-width="4" stroke-linejoin="round">
+          <path d="M1235 898l43-24 43 24z" fill="#f3ead6"/>
+          <path d="M1242 900v52h72v-52M1235 952h86M1258 909v36m20-36v36m20-36v36" fill="none" stroke-linecap="round"/>
+        </g>
+        <text id="rlo-en" x="1200" y="922" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#2b2622">RETURNED LETTER OFFICE</text>
+        <text id="rlo-hi" class="hi" x="1200" y="968" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="620" fill="#6f6a63">वापसी पत्र कार्यालय</text>
+      </g>
+      <g id="due-note">
+        <rect x="1408" y="237" width="451" height="70" rx="35" fill="#fde9a6"/>
+        <text class="hi" x="1633.5" y="286" text-anchor="middle" font-size="40" font-weight="780" fill="#8a5d00">due postage sender से</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots:[[0,'#flow']],
+    camera:[[0,{zoom:1}]],
+    on:[
+      [0,'draw','#arrow2',{dur:.34}],
+      [0,'pop','#stop3',{from:.95,spring:'snap'}],
+      [1.50,'fade','#sender-not-found',{dur:.26}],
+      [3.36,'draw','#branch-down',{dur:.32}],
+      [3.36,'pop','#stop4',{from:.95,spring:'snap'}],
+      [3.74,'fade','#rlo-en',{dur:.26}],
+      [4.24,'fade','#rlo-hi',{dur:.26}],
+      [6.82,'fade','#sender-highlight',{dur:.26}],
+      [10.20,'pop','#due-note',{from:.95,spring:'snap'}]
+    ]
+  }
+  </script>
+</section>
