@@ -1,0 +1,165 @@
+[
+  {
+    "id": "qr-code-stand",
+    "description": "White counter standee on a postal-red foot holding a generic square QR pattern (ink modules, no logo), blank caption strip below; 300x420.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s033",
+      "s034",
+      "s048",
+      "s236"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "smartphone-blank",
+    "description": "Ink-outlined phone, slate frame, blank white screen for the scene to letter; 260x500.",
+    "anchors": [
+      "base",
+      "grip"
+    ],
+    "scenes": [
+      "s003",
+      "s004",
+      "s027",
+      "s032",
+      "s034",
+      "s035",
+      "s104",
+      "s118",
+      "s235"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "stamp-tin-box",
+    "description": "Open wooden/tin box with its lid hinged back and stamp sheets inside; 360x240.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s111"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "stamp-sheet",
+    "description": "Sheet of 4x5 blank perforated stamps with red borders and cream faces, white margin; 400x480.",
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "scenes": [
+      "s054",
+      "s055",
+      "s056",
+      "s071",
+      "s072",
+      "s104",
+      "s110",
+      "s111",
+      "s112",
+      "s113",
+      "s114",
+      "s120"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "cancelled-stamp",
+    "description": "The postage-stamp look with a grey part-postmark ring and wavy cancel lines across it; 400x400.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s063",
+      "s064",
+      "s066",
+      "s096",
+      "s097",
+      "s098",
+      "s215",
+      "s216",
+      "s217",
+      "s231",
+      "s243",
+      "s244"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "perforated-initials-stamp",
+    "description": "Stamp with small punched holes forming two letters across its centre, value box still clear; 400x400.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s083",
+      "s084",
+      "s085",
+      "s098",
+      "s099",
+      "s100",
+      "s167"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "letter-scale",
+    "description": "Small postal letter scale: flat cream pan (top) on a slate body with a blank white readout window; 420x360.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s134",
+      "s135",
+      "s150",
+      "s151",
+      "s152",
+      "s153",
+      "s166",
+      "s167",
+      "s193",
+      "s194",
+      "s195"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "packet-stack",
+    "description": "Neat stack of brown-paper packets tied with string, front view; 420x360.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s043",
+      "s044",
+      "s045",
+      "s046",
+      "s236"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "counter-receipt",
+    "description": "Narrow white till receipt with blank grey lines and a torn zigzag bottom edge; 220x420.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s035",
+      "s036",
+      "s080",
+      "s081",
+      "s119"
+    ],
+    "reuse": false
+  }
+]
