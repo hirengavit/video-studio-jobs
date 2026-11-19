@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s014" data-in="cut" data-section="PART 1 · POSTAGE &amp; PREPAYMENT" data-series="STAMPS &amp; STATIONERY">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="sec4">
+      <g id="act-badge">
+        <rect x="100" y="180" width="460" height="820" rx="30" fill="#9e1b1b"/>
+        <rect x="114" y="194" width="432" height="792" rx="24" fill="none" stroke="#fbf7ee" stroke-width="10" stroke-dasharray="0 24" stroke-linecap="round"/>
+        <text x="330" y="316" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="800" fill="#fde9a6">SECTION · धारा</text>
+        <rect x="250" y="629" width="160" height="7" rx="3.5" fill="#f2b705"/>
+        <text x="330" y="746" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="800" fill="#fff">Post Office</text>
+        <text x="330" y="816" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="800" fill="#fff">Act 2023</text>
+        <text x="330" y="899" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="35" font-weight="700" fill="#fde9a6">डाकघर अधिनियम 2023</text>
+      </g>
+      <text id="act-four" x="330" y="578" text-anchor="middle" font-family="Inter, sans-serif" font-size="238" font-weight="850" fill="#fff">4</text>
+      <g id="section-body">
+        <rect x="620" y="180" width="1200" height="820" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <path d="M620 210 Q620 180 650 180 H1790 Q1820 180 1820 210 H620Z" fill="#9e1b1b"/>
+        <text x="665" y="267" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="800" fill="#9e1b1b">Postage stamp क्या हो सकता है · सार</text>
+      </g>
+      <g id="formats">
+        <g id="physical">
+          <rect x="665" y="303" width="350" height="151" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+          <text x="840" y="365" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" font-weight="780" fill="#2b2622">Physical</text>
+          <text id="physical-hi" x="840" y="423" text-anchor="middle" class="hi" font-size="43" font-weight="650" fill="#6f6a63">भौतिक</text>
+        </g>
+        <g id="digital">
+          <rect x="1044" y="303" width="350" height="151" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+          <text x="1219" y="365" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" font-weight="780" fill="#2b2622">Digital</text>
+          <text id="digital-hi" x="1219" y="423" text-anchor="middle" class="hi" font-size="43" font-weight="650" fill="#6f6a63">डिजिटल</text>
+        </g>
+      </g>
+      <g id="forms-row">
+        <g id="affixed">
+          <rect x="665" y="489" width="352" height="231" rx="24" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+          <use href="piece:adhesive-stamp" transform="translate(798 505) scale(.54)"/>
+          <text x="841" y="678" text-anchor="middle" class="hi" font-size="51" font-weight="730" fill="#2b2622">चिपका हुआ</text>
+        </g>
+        <g id="printed">
+          <rect x="1044" y="489" width="352" height="231" rx="24" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+          <use href="piece:postcard-blank" transform="translate(1140 487) scale(.4)"/>
+          <text x="1220" y="678" text-anchor="middle" class="hi" font-size="51" font-weight="730" fill="#2b2622">छपा हुआ</text>
+        </g>
+        <g id="embossed">
+          <rect x="1423" y="489" width="352" height="231" rx="24" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+          <use href="piece:embossed-envelope" transform="translate(1519 487) scale(.4)"/>
+          <text x="1599" y="678" text-anchor="middle" class="hi" font-size="51" font-weight="730" fill="#2b2622">उभरा हुआ</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots:[[0,'#sec4']],
+    camera:[[0,{zoom:1}]],
+    on:[
+      [1.02,'pop','#physical',{from:.96,spring:'snap'}],
+      [1.52,'fade','#physical-hi',{dur:.24}],
+      [3.14,'pop','#digital',{from:.96,spring:'snap'}],
+      [3.64,'fade','#digital-hi',{dur:.24}],
+      [4.66,'pop','#affixed',{from:.95,spring:'snap'}],
+      [6.12,'pop','#printed',{from:.95,spring:'snap'}],
+      [8.08,'pop','#embossed',{from:.95,spring:'snap'}]
+    ]
+  }
+  </script>
+</section>
