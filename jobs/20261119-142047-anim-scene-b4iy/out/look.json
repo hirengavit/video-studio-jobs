@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s046",
-   "message": "pulse: option \"dur\" isn't used (it takes: amount)",
-   "t": 0.3
-  },
-  {
    "kind": "text-off-frame",
    "scene": "s046",
    "text": "राजपत्रित और उच्च चयन ग्रेड डाकघर",
