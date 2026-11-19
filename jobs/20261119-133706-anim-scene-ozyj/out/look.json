@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "2.71",
+  "5.41",
+  "8.12",
+  "10.82",
+  "13.38"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s218",
+   "text": "Non-delivery / डिलीवरी नहीं",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s218",
+   "message": "a card is mostly empty at 8.1 s: bring its items in sooner, or size it for what it holds now",
+   "t": 8.12
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s218",
+   "text": "जो खुद को सरकारी postage stamp बताए",
+   "t": 10.82
+  }
+ ]
+}
