@@ -1,0 +1,71 @@
+<section class="vs-scene" id="s036" data-in="cut" data-section="PART 1 · CENTRAL ADMINISTRATION" data-series="POSTAL ADMINISTRATION">
+ <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text x="160" y="254" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="70" font-weight="750" fill="#9e1b1b">शुरुआती पड़ाव</text>
+  <path d="M200 520H1720" stroke="#ead9a8" stroke-width="12" stroke-linecap="round"/>
+  <rect x="200" y="514" width="200" height="12" rx="6" fill="#9e1b1b"/>
+  <rect id="firstSegment" x="400" y="514" width="560" height="12" rx="6" fill="#9e1b1b"/>
+  <rect id="secondSegment" x="960" y="514" width="560" height="12" rx="6" fill="#9e1b1b"/>
+  <circle cx="400" cy="520" r="23" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="8"/>
+  <circle id="node2" cx="960" cy="520" r="23" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="8"/>
+  <circle id="node3" cx="1520" cy="520" r="23" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="8"/>
+  <text id="year1854" x="400" y="447" text-anchor="middle" font-family="Inter, sans-serif" font-size="87" font-weight="800" fill="#9e1b1b">1854</text>
+  <text id="year1856" x="960" y="447" text-anchor="middle" font-family="Inter, sans-serif" font-size="87" font-weight="800" fill="#9e1b1b">1856</text>
+  <text id="year1860" x="1520" y="447" text-anchor="middle" font-family="Inter, sans-serif" font-size="87" font-weight="800" fill="#9e1b1b">1860</text>
+  <g id="rms">
+    <rect x="161" y="572" width="478" height="413" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="274" y="602" width="252" height="147" rx="22" fill="#f3ead6"/>
+    <use href="piece:icon-train" transform="translate(285 587) scale(0.575)"/>
+    <path d="M225 774h350" stroke="#ead9a8" stroke-width="3"/>
+    <text id="rmsEn" x="400" y="833" text-anchor="middle" font-family="Inter, sans-serif" font-size="53" font-weight="800" fill="#2b2622">Railway Mail</text>
+    <text id="rmsEn2" x="400" y="892" text-anchor="middle" font-family="Inter, sans-serif" font-size="53" font-weight="800" fill="#2b2622">Service</text>
+    <text id="rmsHi" x="400" y="949" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#6f6a63">रेल डाक सेवा</text>
+    
+   </g>
+   <g id="aps">
+    <rect x="721" y="572" width="478" height="413" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="834" y="602" width="252" height="147" rx="22" fill="#f3ead6"/>
+    <use href="piece:icon-army-mailbag" transform="translate(841 559) scale(0.595)"/>
+    <path d="M785 774h350" stroke="#ead9a8" stroke-width="3"/>
+    <text id="apsEn" x="960" y="833" text-anchor="middle" font-family="Inter, sans-serif" font-size="53" font-weight="800" fill="#2b2622">Army Postal</text>
+    <text id="apsEn2" x="960" y="892" text-anchor="middle" font-family="Inter, sans-serif" font-size="53" font-weight="800" fill="#2b2622">Service</text>
+    <text id="apsHi" x="960" y="949" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#6f6a63">सेना डाक सेवा</text>
+    
+   </g>
+   <g id="manual">
+    <rect x="1281" y="572" width="478" height="413" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="1394" y="602" width="252" height="147" rx="22" fill="#f3ead6"/>
+    <use href="piece:regulations-book" transform="translate(1456 595) scale(0.425)"/>
+    <path d="M1345 774h350" stroke="#ead9a8" stroke-width="3"/>
+    <text id="manualEn" x="1520" y="862" text-anchor="middle" font-family="Inter, sans-serif" font-size="53" font-weight="800" fill="#2b2622">Postal Manual</text>
+    
+    <text id="manualHi" x="1520" y="922" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#6f6a63">डाक नियमावली</text>
+    <text id="printed" x="1520" y="967" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="35" font-weight="650" fill="#6f6a63">पहली बार छपा</text>
+   </g>
+ </svg>
+ <script type="text/scene">
+ {
+  on: [
+   [0.00, 'pop', '#rms', {from:0.95,spring:'fast'}],
+   [0.00, 'words', '#rmsEn', {gap:0.46,dist:12,from:'down',spring:'fast'}],
+   [0.70, 'fade', '#rmsEn2', {dur:0.18}],
+   [0.90, 'fade', '#rmsHi', {dur:0.22}],
+   [1.20, 'pop', '#year1854', {from:0.84,spring:'fast'}],
+   [3.64, 'grow', '#firstSegment', {axis:'x',origin:'left',spring:'fast'}],
+   [3.64, 'pop', '#aps', {from:0.95,spring:'fast'}],
+   [3.64, 'words', '#apsEn', {gap:0.40,dist:12,from:'down',spring:'fast'}],
+   [3.90, 'pop', '#node2', {from:0.85,spring:'fast'}],
+   [4.40, 'fade', '#apsHi', {dur:0.22}],
+   [4.66, 'fade', '#apsEn2', {dur:0.18}],
+   [5.12, 'pop', '#year1856', {from:0.84,spring:'fast'}],
+   [7.68, 'grow', '#secondSegment', {axis:'x',origin:'left',spring:'fast'}],
+   [7.68, 'pop', '#manual', {from:0.95,spring:'fast'}],
+   [7.68, 'words', '#manualEn', {gap:0.66,dist:12,from:'down',spring:'fast'}],
+   [7.94, 'pop', '#node3', {from:0.85,spring:'fast'}],
+   [8.40, 'fade', '#manualHi', {dur:0.22}],
+   [9.66, 'pop', '#year1860', {from:0.84,spring:'fast'}],
+   [10.82, 'fade', '#printed', {dur:0.25}]
+  ]
+ }
+ </script>
+</section>
