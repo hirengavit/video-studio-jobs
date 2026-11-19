@@ -1,0 +1,35 @@
+<section class="vs-scene" id="s131" data-in="cut" data-section="PART 4 · CIRCLES &amp; HEADQUARTERS" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif"><rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="kerala">
+  <g id="kerala-card" text-anchor="middle">
+    <rect x="120" y="260" width="640" height="700" rx="35" fill="#9e1b1b"/>
+    <rect x="138" y="278" width="604" height="664" rx="26" fill="none" stroke="#fbf7ee" stroke-width="11" stroke-dasharray="0 24" stroke-linecap="round"/>
+    <text x="440" y="565" fill="#fff" font-size="76" font-weight="830">Kerala Circle</text>
+    <text x="440" y="661" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#fde9a6" font-size="56" font-weight="710">केरल परिमंडल</text>
+  </g>
+  <g id="state"><rect x="820" y="280" width="980" height="198" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="4"/><text x="890" y="371" font-size="66" font-weight="820" fill="#2b2622">Kerala</text><text x="892" y="433" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="670" fill="#6f6a63">केरल</text></g>
+  <g id="islands"><rect x="820" y="500" width="980" height="198" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="4"/><text x="890" y="591" font-size="66" font-weight="820" fill="#2b2622">Lakshadweep</text><text x="892" y="653" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="670" fill="#6f6a63">लक्षद्वीप</text></g>
+  <g id="mahe-kerala"><rect x="820" y="720" width="980" height="198" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="4"/><text x="890" y="811" font-size="66" font-weight="820" fill="#2b2622">Mahe (Puducherry)</text><text x="892" y="873" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="670" fill="#6f6a63">माहे (पुडुचेरी)</text></g>
+
+<g id="old"><rect x="1391" y="526" width="385" height="146" rx="21" fill="#f0eee8"/><text x="1583.5" y="586" text-anchor="middle" font-size="40" font-weight="850" fill="#2b2622">Laccadive Islands</text><text x="1583.5" y="638" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="32" font-weight="750" fill="#6f6a63">पुराना नाम</text></g>
+</g>
+<g id="pair"><text id="pair-title" x="120" y="238" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#9e1b1b" font-size="76" font-weight="850">islands की जोड़ी</text><circle cx="960" cy="619" r="10" fill="#9e9489"/>
+<rect x="120" y="300" width="780" height="660" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<g id="name1"><text x="510" y="488" text-anchor="middle" font-size="63" font-weight="850" fill="#2b2622">Andaman and Nicobar</text><text x="510" y="575" text-anchor="middle" font-size="55" font-weight="750" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63">अंडमान और निकोबार</text></g>
+<g id="circle1"><path d="M510 624v82m-20-18 20 18 20-18" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><rect x="165" y="735" width="690" height="147" rx="23" fill="#9e1b1b"/><text x="205" y="822" text-anchor="start" font-size="40" font-weight="850" fill="#fff">West Bengal Circle</text></g>
+<path class="confirm" d="M793.5 808l11 13 24-29" fill="none" stroke="#b6edc7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1020" y="300" width="780" height="660" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<g id="name2"><text x="1410" y="488" text-anchor="middle" font-size="63" font-weight="850" fill="#2b2622">Lakshadweep</text><text x="1410" y="575" text-anchor="middle" font-size="55" font-weight="750" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63">लक्षद्वीप</text></g>
+<g id="circle2"><path d="M1410 624v82m-20-18 20 18 20-18" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><rect x="1065" y="735" width="690" height="147" rx="23" fill="#9e1b1b"/><text x="1105" y="822" text-anchor="start" font-size="40" font-weight="850" fill="#fff">Kerala Circle</text></g>
+<path class="confirm" d="M1693.5 808l11 13 24-29" fill="none" stroke="#b6edc7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,'#kerala'],[3.44,'#pair']],
+ on:[[0,'pulse','#islands',{amount:.024}],[1.76,'pop','#old',{from:.96}],[3.44,'words','#pair-title',{gap:.25}],
+ [5.78,'pop','#name1',{from:.96}],[7.24,'slide','#circle1',{from:'down',dist:26}],
+ [9.18,'pop','#name2',{from:.96}],[10.44,'slide','#circle2',{from:'down',dist:26}],[11.16,'draw','.confirm',{dur:.26}]]
+}
+</script>
+</section>
