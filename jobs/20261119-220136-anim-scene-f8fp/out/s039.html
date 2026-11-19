@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s039" data-in="fade" data-in-dur="0.5" data-section="PART 2 · CASH, DIGITAL &amp; FRANKING" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="same">
+  <use href="piece:address-envelope" transform="translate(160 280) scale(1)"/>
+  <use href="piece:postage-stamp" transform="translate(636 282) scale(.42)"/>
+  <g id="rule">
+    <rect x="816" y="425" width="288" height="110" rx="55" fill="#fde9a6"/>
+    <text x="860" y="500" text-anchor="middle" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="66" font-weight="700">=</text>
+    <text x="995" y="498" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', sans-serif" font-size="48" font-weight="700">वही नियम</text>
+  </g>
+  <g id="right-envelope">
+    <use href="piece:address-envelope" transform="translate(1120 280) scale(1)"/>
+  </g>
+  <g id="franked">
+    <g fill="none" stroke="#9e1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="1641" y="319" width="78" height="94" rx="4"/>
+      <circle cx="1680" cy="343" r="17"/><circle cx="1680" cy="343" r="12" stroke-width="1.8"/>
+      <path d="M1654 368q7-5 13 0t13 0t13 0t13 0M1654 376q7-5 13 0t13 0t13 0t13 0" stroke-width="2.4"/>
+      <rect x="1654" y="383" width="52" height="23" rx="2"/><rect x="1659" y="388" width="42" height="13" rx="1" stroke-width="1.5"/>
+    </g>
+  </g>
+  <text id="where" x="960" y="760" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', sans-serif" font-size="48">कहाँ और कैसे लगें</text>
+</g>
+<g id="parcel">
+  <g id="parcel-card">
+    <rect x="460" y="300" width="1000" height="400" rx="34" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+    <g id="parcel-icon" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M560 466l98-58 125 34-97 62z" fill="#f3ead6"/>
+      <path d="M560 466l126 38v122l-126-39z" fill="#d2a674"/>
+      <path d="M686 504l97-62v121l-97 63z" fill="#bc8856"/>
+      <path d="M619 431l130 33v120M610 481l98-60M619 432l-9 49v122" fill="none" stroke-width="5"/>
+      <path d="M676 451c-19-14-20-23-12-28 8-5 17 1 19 25 6-20 16-25 24-20 9 7-2 16-26 25m-4-3-7 12m12-10 12 8" fill="none" stroke-width="4"/>
+    </g>
+    <text id="parcel-en" x="1094" y="502" text-anchor="middle" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="62" font-weight="700">India Post Parcel</text>
+    <text id="parcel-hi" x="1094" y="580" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', sans-serif" font-size="46">इंडिया पोस्ट पार्सल</text>
+  </g>
+  <text id="parcel-note" x="960" y="820" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', sans-serif" font-size="46">एक बात साफ लिखी है</text>
+</g>
+</svg>
+<script type="text/scene">
+({shots:[[0,"#same"],[5.94,"#parcel"]],on:[
+ [0.66,"fade","#where",{dur:0.35}],
+ [2.66,"pop","#rule",{from:0.86}],
+ [3.60,"pop","#right-envelope",{from:0.91}],
+ [3.92,"pop","#franked",{from:0.83}],
+ [5.94,"draw","#parcel-icon",{dur:0.46}],
+ [5.94,"pop","#parcel-en",{from:0.88}],
+ [6.20,"fade","#parcel-hi",{dur:0.36}],
+ [8.12,"fade","#parcel-note",{dur:0.40}]
+]})
+</script>
+</section>
