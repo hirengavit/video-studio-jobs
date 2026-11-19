@@ -10,9 +10,9 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-off-frame",
+   "kind": "text-overlap",
    "scene": "s089",
-   "text": "लॉजिस्टिक्स इकाइयाँ",
+   "text": "logistics units / लॉजिस्टिक्स इकाइयाँ",
    "t": 4.02
   }
  ]
