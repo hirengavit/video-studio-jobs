@@ -1,0 +1,37 @@
+{
+ "moments": [
+  "0.30",
+  "2.15",
+  "4.31",
+  "6.46",
+  "8.62",
+  "10.62"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s113",
+   "text": "= Circle का मुख्य कार्यालय जिस शहर में ह / → वही",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s113",
+   "message": "a card is mostly empty at 2.1 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.15
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s113",
+   "message": "a card is mostly empty at 4.3 s: bring its items in sooner, or size it for what it holds now",
+   "t": 4.31
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s113",
+   "message": "a card is mostly empty at 6.5 s: bring its items in sooner, or size it for what it holds now",
+   "t": 6.46
+  }
+ ]
+}
