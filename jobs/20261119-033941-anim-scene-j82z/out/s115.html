@@ -11,6 +11,7 @@
     </g>
     <g id="circle">
       <rect id="circle-outline" x="1110" y="474" width="570" height="286" rx="24" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-dasharray="18 13"/>
+      <rect id="circle-label-clearance" x="1150" y="505" width="174" height="63" rx="8" fill="#fff" opacity="0"/>
       <text id="circle-label" x="1158" y="552" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">Circle</text>
     </g>
     <text id="scope" x="190" y="420" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="750" fill="#fde9a6">ज़्यादातर Circles</text>
@@ -58,7 +59,12 @@
      if (element) for (const [name, value] of Object.entries(values)) element.setAttribute(name, String(value));
    };
    attr('#circle-outline', { x: lerp(1110, 940), y: lerp(474, 360), width: lerp(570, 800), height: lerp(286, 420) });
-   attr('#circle-label', { x: lerp(1158, 962), y: lerp(552, 420) });
+   const labelX = lerp(1158, 962), labelY = lerp(552, 420);
+   const stateTop = lerp(474, 448);
+   attr('#circle-label', { x: labelX, y: labelY });
+   const distance = labelY - stateTop;
+   const bridge = Math.max(0, Math.min(1, (distance + 12) / 9, (52 - distance) / 9));
+   attr('#circle-label-clearance', { x: labelX - 8, y: labelY - 48, opacity: bridge });
    attr('#state-outline', { x: lerp(1110, 958), y: lerp(474, 448), width: lerp(570, 302), height: lerp(286, 312), 'stroke-width': lerp(14, 5) });
    // Align the existing right-anchored state label while maintaining the seam and preserving its size.
    attr('#state-label', { x: lerp(1600, 1160), y: lerp(729, 620) });
