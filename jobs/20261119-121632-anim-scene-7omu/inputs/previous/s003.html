@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s003" data-in="fade" data-in-dur="0.5" data-section="INTRODUCTION" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="ways">
+  <text id="intro-heading" x="100" y="229" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="68" font-weight="850" fill="#9e1b1b">पूरी तस्वीर, छोटे में</text>
+  <g id="prepay-card">
+    <rect x="100" y="290" width="760" height="690" rx="36" fill="#9e1b1b"/>
+    <rect x="122" y="312" width="716" height="646" rx="25" fill="none" stroke="#f3ead6" stroke-opacity=".9" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 15"/>
+    <text x="480" y="473" text-anchor="middle" font-size="88" font-weight="860" fill="#fff">Prepayment</text>
+    <text id="prepay-hi" x="480" y="558" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="760" fill="#fde9a6">पूर्व भुगतान</text>
+    <path d="M221 610H739" stroke="#f3ead6" stroke-opacity=".48" stroke-width="3"/>
+    <text id="postage-first" x="480" y="708" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="790" fill="#fff">Postage पहले देना ज़रूरी</text>
+    <g id="prepay-exception"><rect x="159" y="788" width="642" height="113" rx="24" fill="#f3ead6"/><text id="prepay-exception-text" x="480" y="861" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="780" fill="#2b2622">जब तक तय छूट न हो</text></g>
+  </g>
+  <g id="payment-ways">
+    <g id="payment-card-face">
+      <rect x="920" y="290" width="900" height="690" rx="36" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <text x="1370" y="386" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="820" fill="#9e1b1b">भुगतान के मुख्य तरीके</text>
+    </g>
+    <g id="cash-tile">
+      <rect x="952" y="421" width="410" height="250" rx="25" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:rupee-cash" transform="translate(1060 395) scale(.485)"/>
+      <text x="1157" y="600" text-anchor="middle" font-size="52" font-weight="830" fill="#2b2622">Cash</text>
+      <text x="1157" y="647" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="740" fill="#6f6a63">नकद</text>
+    </g>
+    <g id="digital-tile">
+      <rect x="1378" y="421" width="410" height="250" rx="25" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:smartphone-blank" transform="translate(1513 417) scale(.35)"/>
+      <text x="1583" y="499" text-anchor="middle" font-size="37" font-weight="850" fill="#9e1b1b">₹</text>
+      <text x="1583" y="600" text-anchor="middle" font-size="47" font-weight="830" fill="#2b2622">Digital Payment</text>
+      <text x="1583" y="647" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="740" fill="#6f6a63">डिजिटल भुगतान</text>
+    </g>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+  [1.78,'pop','#prepay-card'],
+  [2.30,'fade','#prepay-hi',{dur:0.28}],
+  [3.16,'fade','#postage-first',{dur:0.32}],
+  [4.46,'fade','#prepay-exception',{dur:0.32}],
+  [5.52,'highlight','#prepay-exception-text',{words:'छूट',color:'#f2b705',opacity:0.45,dur:0.36}],
+  [6.40,'fade','#payment-card-face',{dur:0.24}],
+  [6.70,'pop','#cash-tile'],
+  [7.44,'pop','#digital-tile']
+]}
+</script></section>
