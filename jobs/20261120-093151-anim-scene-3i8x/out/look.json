@@ -8,12 +8,5 @@
   "11.05"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s131",
-   "text": "बिना seal तोड़े / बिना कागज़ फाड़े",
-   "t": 2.24
-  }
- ]
+ "warnings": []
 }
