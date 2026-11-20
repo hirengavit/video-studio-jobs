@@ -8,12 +8,5 @@
   "8.88"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s135",
-   "text": "LETTER ENVELOPE: सभी तरफ़ लगातार बंद",
-   "t": 5.42
-  }
- ]
+ "warnings": []
 }
