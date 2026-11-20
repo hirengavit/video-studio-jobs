@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s014" data-in="cut" data-section="PART 1 · PACKING &amp; STRONG COVER" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="strong-cover-list">
+ <g id="strong-title">
+  <rect x="100" y="170" width="600" height="147" rx="25" fill="#9e1b1b"/>
+  <rect x="113" y="183" width="574" height="121" rx="17" fill="none" stroke="#d67e73" stroke-width="2" stroke-dasharray="3 8"/>
+  <text id="term-en" x="147" y="237" font-family="Inter, sans-serif" font-size="56" font-weight="820" fill="#fff">Strong Cover</text>
+  <text id="term-hi" x="148" y="289" class="hi" font-size="39" font-weight="680" fill="#fde9a6">मज़बूत आवरण</text>
+  <text id="count-title" x="730" y="270" class="hi" font-size="52" font-weight="800" fill="#2b2622">की 4 शर्तें</text>
+  <use href="piece:parcel-box" transform="translate(1580 169) scale(0.45)"/>
+ </g>
+ <g id="condition1">
+  <rect x="100" y="350" width="1720" height="120" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <circle cx="167" cy="410" r="35" fill="#9e1b1b"/>
+  <text x="167" y="424" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="800" fill="#fff">1</text>
+  <rect x="646" y="382" width="215" height="68" rx="4" fill="#f2b705" fill-opacity=".32"/>
+  <text id="condition1-text" x="231" y="427" class="hi" font-size="48" font-weight="730" fill="#2b2622">इतना मज़बूत कि आम handling और दबाव सह सके</text>
+ </g>
+ <g id="condition2">
+  <rect x="100" y="500" width="1720" height="148" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <circle cx="167" cy="560" r="35" fill="#9e1b1b"/>
+  <text x="167" y="574" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="800" fill="#fff">2</text>
+  <text id="condition2-text" x="231" y="577" class="hi" font-size="48" font-weight="730" fill="#2b2622">अच्छे से बंद करें</text>
+  <text id="condition2-sub-a" x="231" y="616" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="660" fill="#6f6a63">सामान न गिरे,</text>
+  <text id="condition2-sub-b" x="448" y="616" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="660" fill="#6f6a63">छेड़छाड़ का साफ़ निशान छोड़े बिना निकाला न जा सके</text>
+ </g>
+ <g id="condition3">
+  <rect x="100" y="670" width="1720" height="148" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <circle cx="167" cy="720" r="35" fill="#9e1b1b"/>
+  <text x="167" y="734" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="800" fill="#fff">3</text>
+  <text id="condition3-text" x="231" y="737" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#2b2622">बाहर कोई नुकीला किनारा नहीं</text>
+  <text id="condition3-sub" x="231" y="780" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="660" fill="#6f6a63">बिना ढका धारदार औज़ार नहीं</text>
+  <g id="tool-icon" stroke="#4b4f58" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1650 718l41 49 12 7-4-14-39-49z" fill="#a4a6a9"/>
+    <path d="M1643 719l22-18" fill="none"/>
+    <path d="M1725 752l44-45 8 7-30 41-16 11z" fill="#e1e2e5"/>
+    <path d="M1726 754l-13 18 14 12 16-19z" fill="#a4a6a9"/>
+  </g>
+  <path id="tool-cross" d="M1668 700l85 92m0-92-85 92" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0, {zoom: 1}]],
+  on: [
+    [1.08,'fade','#condition2-sub-a',{dur:0.28}],
+    [2.86,'fade','#condition2-sub-b',{dur:0.30}],
+    [3.42,'highlight','#condition2-sub-b',{words:'साफ़ निशान',color:'#f2b705',opacity:0.40,pad:5}],
+    [6.90,'color','#condition1-text',{to:'#6f6a63',dur:0.30}],
+    [6.90,'slide','#condition3',{from:'right',dist:43,spring:'fast'}],
+    [10.66,'fade','#condition3-sub',{dur:0.50}],
+    [12.32,'draw','#tool-icon',{dur:0.38}],
+    [12.92,'draw','#tool-cross',{dur:0.33}]
+  ]
+}
+</script>
+</section>
