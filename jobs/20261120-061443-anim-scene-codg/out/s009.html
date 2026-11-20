@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s009" data-in="cut" data-section="PART 1 · PACKING &amp; STRONG COVER" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="Cover के 3 काम: सामान बचाना और बाहर निकलने से रोकना, तथा staff, दूसरे articles और equipment की रक्षा।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="cover">
+    <rect x="100" y="200" width="460" height="220" rx="28" fill="#9e1b1b"/>
+    <rect x="117" y="217" width="426" height="186" rx="18" fill="none" stroke="#b8403a" stroke-width="3"/>
+    <text x="330" y="310" text-anchor="middle" font-family="Inter, sans-serif" font-size="76" font-weight="800" fill="#ffffff">Cover</text>
+    <text class="hi" id="cover-hi" x="330" y="375" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="550" fill="#ffffff">आवरण</text>
+  </g>
+  <g id="parcel">
+    <rect x="100" y="497" width="460" height="432" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <use href="piece:parcel-box" transform="translate(186 593) scale(.9)"/>
+  </g>
+  <text class="hi" id="title" x="640" y="240" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800" fill="#9e1b1b">Cover के 3 काम</text>
+  <g id="point-1">
+    <rect x="640" y="313" width="1160" height="142" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <circle cx="706" cy="384" r="35" fill="#9e1b1b"/><text x="706" y="398" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="42" font-weight="750">1</text>
+    <text class="hi" x="780" y="398" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="650" fill="#2b2622">अंदर का सामान बचाना</text>
+  </g>
+  <g id="point-2">
+    <rect x="640" y="485" width="1160" height="142" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <circle cx="706" cy="556" r="35" fill="#9e1b1b"/><text x="706" y="570" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="42" font-weight="750">2</text>
+    <text class="hi" x="780" y="570" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="650" fill="#2b2622">सामान को बाहर निकलने से रोकना</text>
+  </g>
+  <g id="point-3">
+    <rect x="640" y="657" width="1160" height="272" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <circle cx="706" cy="752" r="35" fill="#9e1b1b"/><text x="706" y="766" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="42" font-weight="750">3</text>
+    <text class="hi" id="staff-articles" x="780" y="766" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="650" fill="#2b2622">postal staff, दूसरे articles और</text>
+    <text class="hi" id="equipment" x="780" y="840" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="650" fill="#2b2622">postal equipment को चोट/नुकसान से बचाना</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.50,'fade','#cover-hi',{dur:0.28}],
+    [0.54,'fade','#title',{dur:0.35}],
+    [1.76,'slide','#point-1',{from:'right',dist:88,spring:'soft'}],
+    [3.58,'slide','#point-2',{from:'right',dist:88,spring:'soft'}],
+    [6.70,'slide','#point-3',{from:'right',dist:88,spring:'soft'}],
+    [7.44,'highlight','#staff-articles',{words:'staff',color:'#f2b705',opacity:0.34,dur:0.45}],
+    [9.16,'highlight','#staff-articles',{words:'articles',color:'#f2b705',opacity:0.34,dur:0.45}],
+    [11.00,'highlight','#equipment',{words:'equipment',color:'#f2b705',opacity:0.34,dur:0.45}],
+  ]
+}
+</script>
+</section>
