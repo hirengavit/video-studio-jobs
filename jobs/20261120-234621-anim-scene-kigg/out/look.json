@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "1.80",
+  "3.60",
+  "5.40",
+  "7.20",
+  "8.85"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s090",
+   "text": "GPS (1.0:1) / GPRS (1.0:1) / MIS (1.0:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  }
+ ]
+}
