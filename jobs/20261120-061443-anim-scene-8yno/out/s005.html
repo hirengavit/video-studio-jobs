@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s005" data-in="cut" data-section="PACKING, SEALING &amp; POSTING" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Pack to protect, then post by the service’s route">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="remember-panel">
+  <rect x="100" y="200" width="1720" height="760" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+  <rect x="100" y="230" width="12" height="700" rx="6" fill="#f2b705"/>
+  <path d="M179 598h1562" stroke="#d6c5a7" stroke-width="3"/>
+  <g id="first-badge">
+    <circle cx="201" cy="315" r="38" fill="#9e1b1b"/>
+    <text x="201" y="330" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="800" fill="#fff">1</text>
+  </g>
+  <text id="pack-rule" class="hi" x="260" y="333" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="52" font-weight="770">Article ऐसे pack हो कि ये बचें:</text>
+  <ellipse cx="1616" cy="421" rx="106" ry="10" fill="#dec79b"/>
+  <use href="piece:parcel-box" transform="translate(1520 280) scale(.6)"/>
+  <g id="chip-1"><rect x="260" y="421" width="245" height="98" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/><text class="hi" x="382.5" y="486" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="44" font-weight="740">खुद</text></g>
+<g id="chip-2"><rect x="547" y="421" width="245" height="98" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/><text class="hi" x="669.5" y="486" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="44" font-weight="740">staff</text></g>
+<g id="chip-3"><rect x="834" y="421" width="245" height="98" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/><text class="hi" x="956.5" y="486" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="44" font-weight="740">दूसरी डाक</text></g>
+<g id="chip-4"><rect x="1121" y="421" width="245" height="98" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/><text class="hi" x="1243.5" y="486" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="44" font-weight="740">machines</text></g>
+  <g id="second-badge">
+    <circle cx="201" cy="695" r="38" fill="#9e1b1b"/>
+    <text x="201" y="710" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="800" fill="#fff">2</text>
+  </g>
+  <text id="route-rule" class="hi" x="260" y="710" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="52" font-weight="770">उसी रास्ते से post हो,</text>
+  <text id="service-rule" class="hi" x="260" y="791" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="52" font-weight="770">जो उसकी service माँगती है</text>
+  <path id="route-arrow" d="M264 853h377q36 0 58-23t58-23h111m-17-16 17 16-17 16" fill="none" stroke="#6f6a63" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on: [
+  [.26, 'words', '#pack-rule', {gap: .20, dist: 10}],
+  [2.78, 'pop', '#chip-1', {from: .92}],
+  [4.28, 'pop', '#chip-2', {from: .92}],
+  [5.08, 'pop', '#chip-3', {from: .92}],
+  [6.70, 'pop', '#chip-4', {from: .92}],
+  [7.88, 'fade', '#second-badge', {dur: .20}],
+  [7.88, 'words', '#route-rule', {gap: .19, dist: 10}],
+  [8.66, 'draw', '#route-arrow', {dur: .50}],
+  [10.20, 'words', '#service-rule', {gap: .27, dist: 10}],
+  [11.20, 'highlight', '#service-rule', {words: 'service', color: '#f2b705', opacity: .40, dur: .30, pad: 7}]
+ ]
+}
+</script>
+</section>
