@@ -30,6 +30,7 @@
     <g id="wrong-option">
       <rect x="390" y="879" width="1140" height="103" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
       <text id="option-label" x="456" y="947" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="750" fill="#2b2622">Option: दोनों एक ही चीज़</text>
+      <path id="option-strike" d="M449 926Q744 933 1048 923" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
       <g id="option-cross">
         <circle cx="1444" cy="930" r="31" fill="#4b4f58"/>
         <path d="M1431 917l26 26m0-26-26 26" fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="round"/>
@@ -53,7 +54,7 @@
     [1.22,'pulse','#vs'],
     [3.24,'fade','#wrong-option',{dur:.24}],
     [3.24,'words','#option-label',{gap:.28}],
-    [6.40,'strike','#option-label',{color:'#4b4f58',width:8,dur:.25,dim:.66}],
+    [6.40,'draw','#option-strike',{dur:.25}],
     [6.66,'stamp','#option-cross'],
     [7.79,'fade','#notice-label',{dur:.29}],
     [10.19,'pulse','#plate-border']
