@@ -60,6 +60,10 @@
  update(t,section,$) {
   const p=Math.min(1,t/.60);
   $('#cod-flow')[0].setAttribute('opacity',1-.93*p);
+  for (const el of $('#cod-flow text')) {
+   el.setAttribute('opacity',Math.max(0,1-t/.24));
+   el.setAttribute('display',t>=.24?'none':'inline');
+  }
  },
  on:[
   [.12,'fade','#agreement',{dur:.55}],
