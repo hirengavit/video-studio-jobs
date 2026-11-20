@@ -1,0 +1,72 @@
+<section class="vs-scene" id="s108" data-in="cut" data-section="PART 6 · VALUABLES &amp; INSURANCE" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Four exam terms: things made wholly or partly of gold or silver">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text id="terms-heading" class="hi" x="120" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="780" fill="#9e1b1b">चार terms · दायरा याद रखें</text>
+  <g id="slots">
+    <g id="slot-1">
+      <rect x="120" y="300" width="620" height="140" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <g class="slot-badge" id="slot-badge-1">
+        <circle cx="191" cy="370" r="35" fill="#9e1b1b"/>
+        <text x="191" y="385" text-anchor="middle" fill="#fff" font-family="Inter, sans-serif" font-weight="800" font-size="40">1</text>
+      </g>
+      <path id="slot-placeholder-1" d="M260 370h339" fill="none" stroke="#dfdcd5" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <g id="slot-2">
+      <rect x="120" y="470" width="620" height="140" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <g class="slot-badge" id="slot-badge-2">
+        <circle cx="191" cy="540" r="35" fill="#9e1b1b"/>
+        <text x="191" y="555" text-anchor="middle" fill="#fff" font-family="Inter, sans-serif" font-weight="800" font-size="40">2</text>
+      </g>
+      <path id="slot-placeholder-2" d="M260 540h339" fill="none" stroke="#dfdcd5" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <g id="slot-3">
+      <rect x="120" y="640" width="620" height="140" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <g class="slot-badge" id="slot-badge-3">
+        <circle cx="191" cy="710" r="35" fill="#9e1b1b"/>
+        <text x="191" y="725" text-anchor="middle" fill="#fff" font-family="Inter, sans-serif" font-weight="800" font-size="40">3</text>
+      </g>
+      <path id="slot-placeholder-3" d="M260 710h339" fill="none" stroke="#dfdcd5" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <g id="slot-4">
+      <rect x="120" y="810" width="620" height="140" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <g class="slot-badge" id="slot-badge-4">
+        <circle cx="191" cy="880" r="35" fill="#9e1b1b"/>
+        <text x="191" y="895" text-anchor="middle" fill="#fff" font-family="Inter, sans-serif" font-weight="800" font-size="40">4</text>
+      </g>
+      <path id="slot-placeholder-4" d="M260 880h339" fill="none" stroke="#dfdcd5" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g id="d1">
+    <rect x="820" y="300" width="980" height="650" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <g id="gold-bangle" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-99 2C-99 29-54 51 0 51S99 29 99 2v17c0 26-44 48-99 48s-99-22-99-48Z" fill="#d5b97c" transform="translate(1156 429) rotate(-13)"/>
+      <path d="M-99 2a99 49 0 1 0 198 0 99 49 0 1 0-198 0Zm28 0a71 24 0 1 1 142 0 71 24 0 1 1-142 0Z" fill="#e6cf9a" fill-rule="evenodd" transform="translate(1156 429) rotate(-13)"/>
+      <path d="M-80 31c14 8 29 13 46 16m54 1c19-2 40-9 56-18" fill="none" stroke="#aa8b54" transform="translate(1156 429) rotate(-13)"/>
+    </g>
+    <g id="silver-spoon" transform="translate(1453 435) rotate(31)" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-29-91C-49-79-55-49-46-25c7 20 23 30 34 37 5 4 5 17 4 28l-4 57c-1 16 25 17 25 0l-5-57c-1-11-1-24 4-28 11-7 27-17 34-37 9-24 3-54-17-66-16-10-42-10-58 0Z" fill="#c9ccd1"/>
+      <path d="M-28-71c-11 12-13 31-5 46 4 8 11 14 19 18" fill="none" stroke="#f3f4f6" stroke-width="7"/>
+      <path d="M-2 33-4 90" fill="none" stroke="#969ca5"/>
+    </g>
+    <text id="metal-line" class="hi" x="1310" y="593" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="740" font-size="48" fill="#2b2622">सोने या चाँदी की बनी चीज़</text>
+    <text id="part-line" class="hi" x="1310" y="665" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="740" font-size="48" fill="#2b2622">पूरी हो या कुछ हिस्सा</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.00, 'pop', '#slot-1', {from: .96}],
+    [0.10, 'pop', '#slot-2', {from: .96}],
+    [0.20, 'pop', '#slot-3', {from: .96}],
+    [0.30, 'pop', '#slot-4', {from: .96}],
+    [0.66, 'pulse', '.slot-badge', {amount: .08}],
+    [3.64, 'fade', '#d1', {dur: .2}],
+    [3.64, 'draw', '#gold-bangle', {dur: .48}],
+    [4.90, 'draw', '#silver-spoon', {dur: .40}],
+    [5.62, 'words', '#metal-line', {gap: .075, dist: 10}],
+    [6.66, 'words', '#part-line', {gap: .42, dist: 10}],
+    [8.80, 'highlight', '#part-line', {words: 'कुछ हिस्सा', dur: .28, color: '#f2b705', opacity: .38, pad: 7}]
+  ]
+}
+</script>
+</section>
