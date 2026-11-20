@@ -8,12 +8,5 @@
   "13.45"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s190",
-   "text": "postage बाद में लेने की व्यवस्था",
-   "t": 8.16
-  }
- ]
+ "warnings": []
 }
