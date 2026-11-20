@@ -73,8 +73,8 @@
       <text x="1570" y="623" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#2b2622">platinum</text>
     </g>
     <g id="insurance-question">
-      <rect x="860" y="850" width="900" height="80" rx="23" fill="#9e1b1b"/>
-      <text x="1310" y="905" text-anchor="middle" class="hi" font-size="46" font-weight="800" fill="#fff">अब: insurance कहाँ और कितना?</text>
+      <rect x="860" y="840" width="900" height="96" rx="23" fill="#9e1b1b"/>
+      <text id="insurance-question-text" x="1310" y="899" text-anchor="middle" class="hi" font-size="46" font-weight="800" fill="#fff">अब: insurance कहाँ और कितना?</text>
     </g>
   </g>
   <g id="d3">
@@ -118,7 +118,8 @@
   [4.62,'type','#slot4-title',{cps:30}],
   [4.62,'draw','#case-highlight',{dur:.44}],
   [5.12,'fade','#slot4-hi',{dur:.24}],
-  [6.50,'slide','#insurance-question',{from:'down',dist:16,spring:'soft'}]
+  [6.50,'slide','#insurance-question',{from:'down',dist:14,spring:'soft'}],
+  [6.76,'fade','#insurance-question-text',{dur:.21}]
  ]
 }
 </script>
