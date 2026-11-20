@@ -40,7 +40,8 @@
 </g>
 <g id="trap">
   <g id="flag">
-    <rect x="100" y="170" width="1720" height="210" rx="28" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+    <rect x="100" y="170" width="190" height="210" rx="28" fill="#9e1b1b"/>
+    <rect id="trap-banner" x="100" y="170" width="1720" height="210" rx="28" fill="#9e1b1b" filter="url(#vs-shadow)"/>
     <path d="M171 312l47-86 47 86Z" fill="#f2b705" stroke="#f2b705" stroke-width="10" stroke-linejoin="round"/>
     <path d="M218 256v26" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
     <circle cx="218" cy="297" r="5" fill="#9e1b1b"/>
@@ -66,6 +67,7 @@
   shots: [[0, '#bees'], [1.50, '#trap']],
   on: [
     [0.16,'draw','#safety-ticks',{dur:.33}],
+    [2.18,'reveal','#trap-banner',{from:'left',dur:.30}],
     [2.22,'fade','#trap-heading',{dur:.26}],
     [2.92,'fade','#trap-line',{dur:.32}],
     [4.26,'fade','#parcel-card',{dur:.32}],
