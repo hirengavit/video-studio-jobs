@@ -8,36 +8,5 @@
   "10.63"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "mostly-empty",
-   "scene": "s202",
-   "message": "a card (#s202-recap-band) is mostly empty at 2.2 s: bring its items in sooner, or size it for what it holds now",
-   "t": 2.16
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s202",
-   "message": "a card (#s202-recap-band) is mostly empty at 4.3 s: bring its items in sooner, or size it for what it holds now",
-   "t": 4.31
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s202",
-   "message": "a card (#s202-recap-band) is mostly empty at 6.5 s: bring its items in sooner, or size it for what it holds now",
-   "t": 6.47
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s202",
-   "message": "a card (#s202-recap-band) is mostly empty at 8.6 s: bring its items in sooner, or size it for what it holds now",
-   "t": 8.62
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s202",
-   "message": "a card (#s202-recap-band) is mostly empty at 10.6 s: bring its items in sooner, or size it for what it holds now",
-   "t": 10.63
-  }
- ]
+ "warnings": []
 }
