@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s192" data-in="cut" data-section="PART 10 · SPECIAL BOXES &amp; BOOKING" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <path d="M300 600H1620" fill="none" stroke="#ead9a8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M950 579l25 21-25 21" fill="none" stroke="#6f6a63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="sender">
+    <rect x="140" y="520" width="300" height="160" rx="22" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+    <text x="290" y="587" text-anchor="middle" font-size="47" font-weight="800" fill="#2b2622">Sender</text>
+    <text class="hi" x="290" y="641" text-anchor="middle" font-size="36" fill="#6f6a63">भेजने वाला</text>
+  </g>
+  <g id="addressee">
+    <rect x="1480" y="520" width="300" height="160" rx="22" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+    <text x="1630" y="587" text-anchor="middle" font-size="44" font-weight="800" fill="#2b2622">Addressee</text>
+    <text class="hi" x="1630" y="641" text-anchor="middle" font-size="36" fill="#6f6a63">पाने वाला</text>
+  </g>
+  <text id="term" x="140" y="232" font-size="64" font-weight="800" fill="#9e1b1b">Domestic item</text>
+  <text id="term-hi" class="hi" x="142" y="293" font-size="42" fill="#2b2622">घरेलू वस्तु</text>
+  <g id="property">
+    <rect x="514" y="398" width="892" height="101" rx="20" fill="#fde9a6"/>
+    <text class="hi" x="960" y="464" text-anchor="middle" font-size="46" font-weight="700" fill="#8a5d00">sender की property</text>
+  </g>
+  <g id="envelope">
+    <use href="piece:envelope-article" transform="translate(395 420) scale(.9)"/>
+  </g>
+  <g id="tick">
+    <circle cx="1760" cy="522" r="32" fill="#2e7d4f"/>
+    <path d="M1746 523l9 9 19-21" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="exception">
+    <rect x="960" y="840" width="820" height="140" rx="22" fill="#4b4f58"/>
+    <text class="hi" x="1002" y="900" font-size="46" font-weight="800" fill="#ffffff">Seizure (ज़ब्ती)</text>
+    <text class="hi" x="1002" y="948" font-size="37" fill="#ffffff">कानून के तहत अपवाद</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [.40, 'fade', '#term', {dur:.28}],
+    [.40, 'pop', '#envelope'],
+    [.90, 'fade', '#term-hi', {dur:.28}],
+    [2.54, 'reveal', '#property', {from:'left', dur:.56}],
+    [3.92, 'move', '#envelope', {by:[770,0], spring:'soft'}],
+    [6.24, 'pop', '#tick'],
+    [8.62, 'fade', '#exception', {dur:.38}]
+  ]
+}
+</script>
+</section>
