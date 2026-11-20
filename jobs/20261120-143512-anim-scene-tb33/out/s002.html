@@ -1,0 +1,33 @@
+<section class="vs-scene" id="s002" data-in="cut" data-section="PACKING, SEALING &amp; POSTING" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="books">
+ <g id="questions-panel">
+  <rect x="100" y="220" width="780" height="640" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+  <text x="142" y="311" class="hi" font-size="48" font-weight="840" fill="#9e1b1b">आज के 3 सवाल</text>
+  <g id="question1"><rect x="134" y="342" width="712" height="113" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="2.5"/><circle cx="194" cy="400" r="33" fill="#9e1b1b"/><text x="194" y="413" text-anchor="middle" font-family="Inter, sans-serif" font-size="37" font-weight="800" fill="#fff">1</text><text x="251" y="417" class="hi" font-size="48" font-weight="730" fill="#2b2622">कैसे pack करें?</text></g>
+  <g id="question2"><rect x="134" y="502" width="712" height="113" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="2.5"/><circle cx="194" cy="560" r="33" fill="#9e1b1b"/><text x="194" y="573" text-anchor="middle" font-family="Inter, sans-serif" font-size="37" font-weight="800" fill="#fff">2</text><text x="251" y="577" class="hi" font-size="48" font-weight="730" fill="#2b2622">कैसे बंद (seal) करें?</text></g>
+  <g id="question3"><rect x="134" y="662" width="712" height="113" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="2.5"/><circle cx="194" cy="720" r="33" fill="#9e1b1b"/><text x="194" y="733" text-anchor="middle" font-family="Inter, sans-serif" font-size="37" font-weight="800" fill="#fff">3</text><text x="251" y="737" class="hi" font-size="48" font-weight="730" fill="#2b2622">कहाँ और कैसे post करें?</text></g>
+ </g>
+ <g id="rules-book"><use href="piece:regulations-book" transform="translate(980 230) scale(1.15)"/><g id="rules-book-title" fill="#9e1b1b" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="800"><text x="1169" y="399">Post Office</text><text x="1169" y="444">Rules</text></g></g><text id="rules-hi" x="1153" y="750" text-anchor="middle" class="hi" font-size="40" font-weight="700" fill="#2b2622">डाकघर नियम</text>
+ <g id="regulations-book"><use href="piece:regulations-book" transform="translate(1420 230) scale(1.15)"/><g id="regulations-book-title" fill="#9e1b1b" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="800"><text x="1609" y="399">Post Office</text><text x="1609" y="444">Regulations</text></g></g><text id="regulations-hi" x="1593" y="750" text-anchor="middle" class="hi" font-size="40" font-weight="700" fill="#2b2622">डाकघर विनियम</text>
+ <path id="both-bracket" d="M980 782v8q0 10 12 10h761q12 0 12-10v-8" fill="none" stroke="#9e1b1b" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+ <text id="both-label" x="1373" y="850" text-anchor="middle" class="hi" font-size="44" font-weight="800" fill="#9e1b1b">दोनों</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [2.24,'slide','#question2',{from:'down',dist:42,spring:'fast'}],
+  [4.02,'slide','#question3',{from:'down',dist:42,spring:'fast'}],
+  [6.88,'slide','#rules-book',{from:'right',dist:58,spring:'fast'}],
+  [7.38,'fade','#rules-hi',{dur:0.32}],
+  [8.60,'slide','#regulations-book',{from:'right',dist:58,spring:'fast'}],
+  [9.10,'fade','#regulations-hi',{dur:0.32}],
+  [9.24,'draw','#both-bracket',{dur:0.45}],
+  [9.24,'fade','#both-label',{dur:0.34}]
+ ]
+}
+</script>
+</section>
