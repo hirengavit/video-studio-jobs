@@ -8,12 +8,5 @@
   "13.59"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s049",
-   "text": "दोगुना postage / − दिया हुआ postage",
-   "t": 13.59
-  }
- ]
+ "warnings": []
 }
