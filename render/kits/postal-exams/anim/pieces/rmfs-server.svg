@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g id="signal-arcs" stroke="#2b2622" stroke-width="3">
+    <path d="M184.4 98.4A22 22 0 0 1 215.6 98.4"/>
+    <path d="M168.9 82.9A44 44 0 0 1 231.1 82.9"/>
+    <path d="M153.3 67.3A66 66 0 0 1 246.7 67.3"/>
+    <circle cx="200" cy="114" r="5" fill="#2b2622" stroke="none"/>
+  </g>
+  <rect id="tower" x="130" y="130" width="140" height="220" rx="12" fill="#4b4f58" stroke="#2b2622" stroke-width="3"/>
+  <g id="drive-slots">
+    <rect x="152" y="160" width="96" height="22" rx="5" fill="#2b2622"/><path d="M164 171H200" stroke="#6f6a63" stroke-width="3"/>
+    <rect x="152" y="200" width="96" height="22" rx="5" fill="#2b2622"/><path d="M164 211H200" stroke="#6f6a63" stroke-width="3"/>
+    <rect x="152" y="240" width="96" height="22" rx="5" fill="#2b2622"/><path d="M164 251H200" stroke="#6f6a63" stroke-width="3"/>
+  </g>
+  <path d="M152 300H210M152 316H210" stroke="#2b2622" stroke-width="3"/>
+  <circle id="status-dot" cx="244" cy="324" r="8" fill="#2e7d4f" stroke="#2b2622" stroke-width="2"/>
+  <circle data-anchor="base" cx="200" cy="350" r="0"/>
+  <circle data-anchor="top" cx="200" cy="130" r="0"/>
+</svg>
