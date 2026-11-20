@@ -1,0 +1,34 @@
+<section class="vs-scene" id="s191" data-in="cut" data-section="PART 10 · SPECIAL BOXES &amp; BOOKING" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="packing" text-anchor="middle"><rect x="140" y="180" width="500" height="420" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/><rect x="189" y="214" width="402" height="211" rx="21" fill="#f3ead6"/><use href="piece:parcel-box" transform="translate(296 235) scale(0.45)"/><text x="390" y="498" font-family="Inter, sans-serif" font-size="52" font-weight="830" fill="#9e1b1b">Packing</text><text id="packing-hi" x="390" y="558" class="hi" font-size="38" font-weight="670" fill="#6f6a63">पैकिंग</text></g>
+<g id="declaration" text-anchor="middle"><rect x="710" y="180" width="500" height="420" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/><rect x="759" y="214" width="402" height="211" rx="21" fill="#f3ead6"/><g transform="translate(960 319)" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M-51-73h72l30 30v114H-51Z" fill="#fff"/><path d="M21-73v30h30" fill="#ead9a8"/><path d="M-29-26h57m-57 21h57m-57 21h39m-39 30h22l9-8 10 7h17" fill="none" stroke="#6f6a63"/></g><text x="960" y="498" font-family="Inter, sans-serif" font-size="52" font-weight="830" fill="#9e1b1b">Declaration</text><text id="declaration-hi" x="960" y="558" class="hi" font-size="38" font-weight="670" fill="#6f6a63">घोषणा</text></g>
+<g id="postage" text-anchor="middle"><rect x="1280" y="180" width="500" height="420" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/><rect x="1329" y="214" width="402" height="211" rx="21" fill="#f3ead6"/><g transform="translate(1530 319)" stroke="#2b2622" stroke-width="4"><rect x="-56" y="-70" width="112" height="140" rx="8" fill="#fff"/><rect x="-45" y="-59" width="90" height="118" rx="4" fill="#9e1b1b" stroke="#ead9a8" stroke-dasharray="3 7"/><rect x="-30" y="-40" width="60" height="54" rx="2" fill="#f3ead6"/><path d="M-29 34h57" stroke="#fff"/></g><text x="1530" y="498" font-family="Inter, sans-serif" font-size="52" font-weight="830" fill="#9e1b1b">Postage</text><text id="postage-hi" x="1530" y="558" class="hi" font-size="38" font-weight="670" fill="#6f6a63">डाक शुल्क</text></g>
+<text id="three-conditions" x="960" y="692" class="hi" text-anchor="middle" font-size="48" font-weight="800" fill="#2b2622">तीनों अलग शर्तें</text>
+<g id="receipt-band">
+ <rect x="140" y="760" width="1640" height="220" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+ <use href="piece:booking-receipt" transform="translate(220 766) scale(0.55)"/>
+ <text x="420" y="855" font-family="Inter, sans-serif" font-size="48" font-weight="820" fill="#9e1b1b">Booking receipt</text>
+ <text id="receipt-hi" x="420" y="915" class="hi" font-size="38" font-weight="670" fill="#6f6a63">बुकिंग रसीद</text>
+ <path d="M917 802v132" stroke="#e1d0aa" stroke-width="3"/>
+ <text id="receipt-person" x="981" y="886" class="hi" font-size="44" font-weight="760" fill="#8a5d00">लाने वाले व्यक्ति को</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0.50,'fade','#packing-hi',{dur:0.28}],
+  [0.84,'pop','#declaration',{from:0.97,spring:'fast'}],
+  [1.34,'fade','#declaration-hi',{dur:0.28}],
+  [2.54,'pop','#postage',{from:0.97,spring:'fast'}],
+  [3.04,'fade','#postage-hi',{dur:0.28}],
+  [3.16,'fade','#three-conditions',{dur:0.30}],
+  [4.38,'underline','#three-conditions',{words:'अलग',color:'#9e1b1b',width:4,gap:6,dur:0.43}],
+  [6.90,'fade','#receipt-band',{dur:0.31}],
+  [7.40,'fade','#receipt-hi',{dur:0.28}],
+  [7.88,'fade','#receipt-person',{dur:0.30}]
+ ]
+}
+</script>
+</section>
