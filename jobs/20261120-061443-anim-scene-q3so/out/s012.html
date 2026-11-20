@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s012" data-in="cut" data-section="PART 1 · PACKING &amp; STRONG COVER" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="bundle" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M182 628H678" fill="none" stroke="#d5c29f" stroke-width="3"/>
+    <path d="M221 432l96-85 282 1 73 85-45 162-80 32H280l-66-74Z" fill="#c8a06a"/>
+    <path d="M221 432l87-25 253 8 111 18-45 162-80 32H280l-66-74Z" fill="#d9b584"/>
+    <path d="M308 407l55 36 198-28m110 18-106 23-18 170M221 523l56 59 80 13" fill="none" stroke="#936b43"/>
+  </g>
+  <g id="loose-flaps" fill="#e2c496" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M309 408l23-61 63 14 37 50-65 32Z"/>
+    <path d="M221 434l-47 20 27 42 56 13 31-51Z"/>
+    <path d="M565 456l80-36 55-56-8 100-42 77-52-32Z"/>
+    <path d="M565 456l33 53 52 32-72-9-23-42Z" fill="#98724d"/>
+    <path d="M394 407c-15-39 34-63 47-32 8 19-10 45-17 49 15-35 58-57 78-31 12 16-21 43-68 37m-11 1c-9 49-42 81-75 94-15 6-22 10-26 20m105-116c38 30 57 75 108 72 19-1 36 3 47 22" fill="none" stroke="#5f4b38" stroke-width="5"/>
+  </g>
+  <g id="loose-chip">
+    <rect x="230" y="741" width="366" height="103" rx="51.5" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text class="hi" x="413" y="808" text-anchor="middle" font-size="44" font-weight="730" fill="#2b2622">ढीला लपेटा</text>
+  </g>
+  <g id="mythcard">
+    <rect x="800" y="220" width="1000" height="300" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="852" y="268" width="157" height="66" rx="33" fill="#e4e5e8"/>
+    <text class="hi" x="930" y="315" text-anchor="middle" font-size="37" font-weight="770" fill="#4b4f58">भ्रम</text>
+    <text class="hi" id="myth" x="852" y="417" font-size="48" font-weight="730" fill="#2b2622">सामान नहीं दिखता, तो packing ठीक?</text>
+    <g id="myth-cross" fill="none" stroke="#4b4f58" stroke-linecap="round">
+      <circle cx="1715" cy="401" r="40" stroke-width="4"/>
+      <path d="m1699 385 32 32m0-32-32 32" stroke-width="6"/>
+    </g>
+  </g>
+  <g id="factcard">
+    <rect x="800" y="580" width="1000" height="360" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="852" y="628" width="157" height="65" rx="32.5" fill="#2e7d4f"/>
+    <text class="hi" x="930" y="674" text-anchor="middle" font-size="37" font-weight="770" fill="#fff">तथ्य</text>
+    <text class="hi" id="fact-copy" x="852" y="796" font-size="50" font-weight="740" fill="#2b2622">ढीला लपेटा = ठीक से pack नहीं</text>
+    <g id="postmark" fill="none" stroke="#2e7d4f">
+      <circle cx="1692" cy="783" r="77" stroke-width="5"/>
+      <circle cx="1692" cy="783" r="64" stroke-width="2.5"/>
+      <text class="hi" x="1692" y="801" text-anchor="middle" font-size="46" font-weight="800" fill="#2e7d4f" stroke="none">सही</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0, {zoom: 1}]],
+  on: [
+    [0.96, "draw", "#loose-flaps", {dur: 0.55}],
+    [0.96, "pop", "#loose-chip", {from: 0.96, spring: "soft"}],
+    [3.08, "slide", "#mythcard", {from:"right", dist: 78, spring:"soft"}],
+    [6.68, "strike", "#myth", {color: "#4b4f58", width: 5, dim: 0.70, dur: 0.4}],
+    [6.68, "pop", "#myth-cross", {from: 0.95, spring: "soft"}],
+    [8.34, "slide", "#factcard", {from:"down", dist: 72, spring:"soft"}],
+    [8.61, "highlight", "#fact-copy", {words: "ढीला", color: "#f2b705", opacity: 0.44, dur: 0.38, pad: 6}],
+    [9.24, "stamp", "#postmark", {from: 1.13, rot: -2, spring: "soft"}]
+  ]
+}
+</script>
+</section>
