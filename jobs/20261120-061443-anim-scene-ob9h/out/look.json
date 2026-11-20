@@ -10,18 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s163",
-   "message": "pulse: option \"scale\" isn't used (it takes: amount)",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s163",
-   "message": "pulse: option \"dur\" isn't used (it takes: amount)",
-   "t": 0.3
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s163",
    "message": "a card is mostly empty at 3.8 s: bring its items in sooner, or size it for what it holds now",
