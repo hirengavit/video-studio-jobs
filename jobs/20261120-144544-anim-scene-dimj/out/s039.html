@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s039" data-in="cut" data-section="PART 3 · WINDOW ENVELOPE &amp; CHARGE" data-series="POST OFFICE RULES" lang="hi">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="dims">
+      <text class="hi" x="140" y="207" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="790" fill="#9e1b1b">Window का size</text>
+      <use id="dims-envelope" href="piece:window-envelope" transform="translate(140 220) scale(2.4)"/>
+      <path id="vertical-dim" d="M1212 484h46m-46 261h46m-22-261v261m-10-247 10-14 10 14m-20 233 10 14 10-14" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="vertical-label">
+        <text class="hi" x="1280" y="586" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#2b2622">चौड़ाई</text>
+        <text x="1280" y="645" font-family="Inter, sans-serif" font-size="44" font-weight="770" fill="#9e1b1b">35–50 mm</text>
+      </g>
+      <path id="horizontal-dim" d="M517 752v47m684-47v47m-684-21h684m-669-10-15 10 15 10m654-20 15 10-15 10" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="hi" id="horizontal-label" x="859" y="846" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#2b2622">लंबाई 80–125 mm</text>
+      <path id="window-left-edge" d="M526 518V713" fill="none" stroke="#f2b705" stroke-width="10" stroke-linecap="round"/>
+      <path id="envelope-left-edge" d="M147 491V759" fill="none" stroke="#f2b705" stroke-width="10" stroke-linecap="round"/>
+      <path id="left-gap" d="M149 617H524m-356-13-16 13 16 13m337-26 16 13-16 13" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="left-gap-label">
+        <rect x="228" y="652" width="222" height="72" rx="36" fill="#fde9a6" stroke="#f2b705" stroke-width="2"/>
+        <text x="339" y="702" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="850" fill="#2b2622">≥ 15 mm</text>
+      </g>
+      <path id="bottom-gap" d="M580 740v26m0 25v140m-11-177 11-13 11 13m-22 164 11 13 11-13" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="bottom-gap-label">
+        <rect x="330" y="820" width="174" height="48" rx="24" fill="#fde9a6" stroke="#f2b705" stroke-width="2"/>
+        <text x="417" y="856" text-anchor="middle" font-family="Inter, sans-serif" font-size="37" font-weight="850" fill="#2b2622">≥ 15 mm</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}]],
+    on: [
+      [0.40, 'draw', '#window-left-edge', {dur: 0.46}],
+      [2.22, 'draw', '#envelope-left-edge', {dur: 0.46}],
+      [4.02, 'grow', '#left-gap', {axis: 'x', origin: 'left', spring: 'soft'}],
+      [4.02, 'pop', '#left-gap-label', {from: 0.93, spring: 'soft'}],
+      [6.56, 'grow', '#bottom-gap', {axis: 'y', origin: 'top', spring: 'soft'}],
+      [8.12, 'pop', '#bottom-gap-label', {from: 0.93, spring: 'soft'}]
+    ]
+  }
+  </script>
+</section>
