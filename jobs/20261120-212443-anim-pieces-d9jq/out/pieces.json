@@ -1,0 +1,215 @@
+[
+  {
+    "id": "hour-plate",
+    "kind": "prop",
+    "description": "Small white enamel hour plate 180x80 with a postal-red rim, two screw dots and a blank time area the scene letters (10:00, 14:00); sits on the pillar box's collection plate.",
+    "ideas": [
+      "clearance time",
+      "changeable enamel plate"
+    ],
+    "viewBox": "0 0 180 80",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "enamel-rim",
+      "time-area",
+      "screws"
+    ]
+  },
+  {
+    "id": "box-key",
+    "kind": "prop",
+    "description": "Flat ink letter-box key, brass #f2b705 fill with a 3 px ink outline, 160x60.",
+    "ideas": [
+      "collection key",
+      "custody",
+      "unlock"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "grip"
+    ],
+    "parts": [
+      "key",
+      "ridge"
+    ]
+  },
+  {
+    "id": "padlock",
+    "kind": "prop",
+    "description": "Ink padlock with a slate #4b4f58 body, 90x120; its #shackle part can show open or closed.",
+    "ideas": [
+      "secure closure",
+      "open or closed shackle"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "shackle",
+      "shackle-closed",
+      "shackle-open",
+      "lock-body",
+      "keyhole"
+    ]
+  },
+  {
+    "id": "collection-bag",
+    "kind": "prop",
+    "description": "Open-mouthed sand canvas collection bag with an ink drawstring, 260x300, no seal.",
+    "ideas": [
+      "collect letters",
+      "canvas mail bag",
+      "open loading mouth"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base",
+      "mouth",
+      "grip"
+    ],
+    "parts": [
+      "canvas",
+      "mouth",
+      "interior",
+      "lip",
+      "canvas-seams",
+      "drawstring"
+    ]
+  },
+  {
+    "id": "letter-box-door-open",
+    "kind": "prop",
+    "description": "The same red pillar letter box, front view, its door swung open to the right with letters stacked inside and a small white barcode label (#barcode) on the inside of the door; 360x420.",
+    "ideas": [
+      "opened pillar box",
+      "retrieve letters",
+      "door barcode"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "base-plinth",
+      "body",
+      "cap",
+      "slot",
+      "collection-plate",
+      "opening",
+      "letters",
+      "door",
+      "hinges",
+      "barcode"
+    ]
+  },
+  {
+    "id": "rented-post-box",
+    "kind": "prop",
+    "description": "A cream wall panel of four small numbered brass-door post boxes (rented lockers), one door ajar with a letter inside; 360x300.",
+    "ideas": [
+      "rented post-box lockers",
+      "office collection",
+      "numbered brass doors"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "wall-panel",
+      "locker-1",
+      "locker-2",
+      "locker-3",
+      "locker-4",
+      "locker-letter",
+      "ajar-door"
+    ]
+  },
+  {
+    "id": "key-cabinet",
+    "kind": "prop",
+    "description": "Small wall key cabinet: postal-red frame, glass door, three hooks inside; 240x300.",
+    "ideas": [
+      "key custody",
+      "glass cabinet",
+      "three storage hooks"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base",
+      "mouth"
+    ],
+    "parts": [
+      "cabinet-frame",
+      "cabinet-interior",
+      "hooks",
+      "glass-door"
+    ]
+  },
+  {
+    "id": "attendant-badge",
+    "kind": "symbol",
+    "description": "Round postal-red badge 200x200 with a white letter-box symbol; stands for the letter-box attendant (no person is drawn).",
+    "ideas": [
+      "letter-box attendant",
+      "staff responsibility"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "badge",
+      "rim",
+      "letter-box-symbol"
+    ]
+  },
+  {
+    "id": "gps-pin",
+    "kind": "symbol",
+    "description": "Ink map pin in postal red with a white centre dot, 120x160.",
+    "ideas": [
+      "GPS location",
+      "scan location",
+      "map marker"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "pin",
+      "center-dot"
+    ]
+  },
+  {
+    "id": "mis-sheet",
+    "kind": "prop",
+    "description": "White report sheet 240x300 with three grey relative bars and a small blank table; no numbers.",
+    "ideas": [
+      "MIS report",
+      "relative volumes",
+      "blank table"
+    ],
+    "viewBox": "0 0 240 300",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "paper",
+      "paper-fold",
+      "heading-rules",
+      "relative-bars",
+      "bar-one",
+      "bar-two",
+      "bar-three",
+      "chart-baseline",
+      "empty-table"
+    ]
+  }
+]
