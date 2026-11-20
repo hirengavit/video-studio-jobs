@@ -8,12 +8,5 @@
   "6.18"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s077",
-   "text": "बिना देर लौटना / defect report → Postmaster",
-   "t": 3.8
-  }
- ]
+ "warnings": []
 }
