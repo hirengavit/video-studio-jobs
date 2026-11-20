@@ -1,0 +1,72 @@
+<section class="vs-scene" id="s030" data-in="cut" data-section="PART 2 · COUNTER, NOT THE BOX" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="date">
+  <use id="regulation-parcel" href="piece:parcel-box" transform="translate(230 355) scale(1.5)"/>
+  <g id="regulation-date-postmark">
+   <circle cx="1330" cy="550" r="242" fill="#fff" stroke="#9e1b1b" stroke-width="11"/>
+   <circle cx="1330" cy="550" r="222" fill="none" stroke="#b8403a" stroke-width="4" stroke-dasharray="5 10"/>
+   <path d="M1158 482H1502M1158 621H1502" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round"/>
+   <text x="1330" y="572" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="830" fill="#9e1b1b">16 Dec 2024</text>
+  </g>
+  <text id="regulation-label" x="1330" y="862" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="770" fill="#2b2622">Regulations लागू</text>
+  <g id="parcel-rule">
+   <g id="parcel-words" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="800" fill="#2b2622">
+    <text id="every" x="170" y="258">हर</text>
+    <text id="india" x="259" y="258">India</text>
+    <text id="post" x="437" y="258">Post</text>
+    <text id="parcel" x="598" y="258">Parcel</text>
+   </g>
+   <g id="accountable">
+    <rect x="910" y="185" width="389" height="93" rx="46" fill="#9e1b1b"/>
+    <text x="1104" y="246" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="800" fill="#fff">Accountable</text>
+   </g>
+  </g>
+  <g id="counter">
+   <use id="counter-piece" href="piece:posting-counter" transform="translate(830 339)"/>
+   <text x="1280" y="425" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="770" fill="#2b2622">Booking counter</text>
+  </g>
+  <g id="counter-ok">
+   <circle cx="1645" cy="477" r="40" fill="#edf4e9" stroke="#315c3d" stroke-width="4"/>
+   <path d="m1624 477 14 14 28-32" fill="none" stroke="#315c3d" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="never-box">
+   <rect x="1020" y="796" width="562" height="191" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <use href="piece:letter-box-pillar" transform="translate(1081 812) scale(.37)"/>
+   <circle cx="1227" cy="892" r="35" fill="#f3f1ed" stroke="#4b4f58" stroke-width="3"/>
+   <path d="m1214 879 26 26m0-26-26 26" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+   <text class="hi" x="1290" y="911" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="790" fill="#4b4f58">कभी नहीं</text>
+  </g>
+ </g>
+ <g id="table">
+  <rect x="160" y="276" width="1600" height="600" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M188 276H1732A28 28 0 0 1 1760 304V416H160V304A28 28 0 0 1 188 276Z" fill="#9e1b1b"/>
+  <rect x="162" y="417" width="1596" height="152" fill="#fbf7ee"/>
+  <path d="M162 722H1758V848Q1758 874 1732 874H188Q162 874 162 848Z" fill="#fbf7ee"/>
+  <path d="M160 569H1760M160 722H1760M862 416V875M1311 416V875" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M862 276V416M1311 276V416" fill="none" stroke="#bd5550" stroke-width="3"/>
+  <rect x="211" y="324" width="10" height="46" rx="5" fill="#f2b705"/>
+  <text x="243" y="364" font-family="Inter,sans-serif" font-size="51" font-weight="800" fill="#fff">Article</text>
+  <text class="hi" x="1086" y="363" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="790" fill="#fff">Letter box में?</text>
+  <text class="hi" x="1535" y="363" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="790" fill="#fff">डाल दिया तो</text>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ camera: [[0,{zoom:1}]],
+ shots: [[0,'#date'],[9.51,'#table']],
+ on: [
+  [0,'fade','#every',{dur:.16}],
+  [.44,'fade','#india',{dur:.16}],
+  [.66,'fade','#post',{dur:.16}],
+  [1.10,'fade','#parcel',{dur:.18}],
+  [1.72,'fade','#accountable',{dur:.27}],
+  [2.94,'out','#regulation-date-postmark',{dur:.27,scale:.97}],
+  [2.94,'out','#regulation-label',{dur:.27,scale:1}],
+  [3.24,'slide','#counter',{from:'right',dist:140,spring:'soft'}],
+  [4.92,'fade','#counter-ok',{dur:.22}],
+  [7.80,'fade','#never-box',{dur:.22}]
+ ]
+}
+</script>
+</section>
