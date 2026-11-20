@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s048" data-in="cut" data-section="PART 3 · WINDOW ENVELOPE &amp; CHARGE" data-series="POST OFFICE RULES" lang="hi">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="tile-1">
+      <rect x="100" y="260" width="540" height="640" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="128" y="310" width="484" height="292" rx="24" fill="#f8f2e5"/>
+      <use href="piece:domestic-envelope" transform="translate(142 336) scale(0.6)"/>
+      <path d="M170 630h400" fill="none" stroke="#ead9a8" stroke-width="2"/>
+      <text id="title-1" x="370" y="699" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="820" fill="#9e1b1b">Letter</text>
+      <text id="hindi-1" x="370" y="755" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="660" fill="#6f6a63">पत्र</text>
+      <g id="calculation"><rect x="246" y="797" width="248" height="62" rx="31" fill="#fde9a6"/><text x="370" y="838" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="740" fill="#694700">यही हिसाब</text></g>
+    </g>
+    <g id="tile-2">
+      <rect x="690" y="260" width="540" height="640" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="718" y="310" width="484" height="292" rx="24" fill="#f8f2e5"/>
+      <g transform="translate(784 348)" stroke="#2b2622" stroke-width="3" stroke-linejoin="round">
+        <path d="M19 1h326l12 18v189l-21 15H19Q5 222 3 207V16Q5 3 19 1Z" fill="#e1eaee"/>
+        <rect x="9" y="12" width="338" height="203" rx="5" fill="#cfdde3"/>
+        <path d="M9 12 33 31h290l24-19" fill="#e7f0f3"/>
+        <path d="M33 31v164h290V31" fill="none" stroke="#6f8290" stroke-width="2" stroke-dasharray="3 6"/>
+        <rect x="266" y="49" width="53" height="52" rx="4" fill="#e7f0f3" stroke="#9e1b1b" stroke-width="2"/>
+        <path d="M88 137h159m-159 23h145m-145 23h121" fill="none" stroke="#81919a" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <path d="M760 630h400" fill="none" stroke="#ead9a8" stroke-width="2"/>
+      <text id="title-2" x="960" y="699" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="820" fill="#9e1b1b">Letter Card</text>
+      <text id="hindi-2" x="960" y="755" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="660" fill="#6f6a63">पत्र कार्ड</text>
+      
+    </g>
+    <g id="tile-3">
+      <rect x="1280" y="260" width="540" height="640" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="1308" y="310" width="484" height="292" rx="24" fill="#f8f2e5"/>
+      <use href="piece:postcard-blank" transform="translate(1370 275) scale(0.9)"/>
+      <path d="M1350 630h400" fill="none" stroke="#ead9a8" stroke-width="2"/>
+      <text id="title-3" x="1550" y="699" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="820" fill="#9e1b1b">Postcard</text>
+      <text id="hindi-3" x="1550" y="755" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="660" fill="#6f6a63">पोस्टकार्ड</text>
+      
+    </g>
+    <path id="other-bracket" d="M718 243v-13H1792v13" fill="none" stroke="#6f6a63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text id="other-label" x="1255" y="206" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="760" fill="#6f6a63">अपनी अलग conditions</text>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.42,'fade','#title-1',{dur:.25}],
+      [0.62,'fade','#hindi-1',{dur:.26}],
+      [2.82,'pop','#calculation',{from:.92,spring:'soft'}],
+      [4.56,'pop','#tile-2',{from:.95,spring:'soft'}],
+      [4.56,'fade','#title-2',{dur:.29}],
+      [5.06,'fade','#hindi-2',{dur:.28}],
+      [5.88,'pop','#tile-3',{from:.95,spring:'soft'}],
+      [5.88,'fade','#title-3',{dur:.29}],
+      [6.38,'fade','#hindi-3',{dur:.28}],
+      [7.54,'draw','#other-bracket',{dur:.38}],
+      [7.54,'words','#other-label',{gap:.17,dist:12,spring:'soft'}]
+    ]
+  }
+  </script>
+</section>
