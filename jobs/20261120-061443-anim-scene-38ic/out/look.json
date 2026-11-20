@@ -8,12 +8,5 @@
   "11.23"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s188",
-   "message": "type: option \"dur\" isn't used (it takes: cps)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
