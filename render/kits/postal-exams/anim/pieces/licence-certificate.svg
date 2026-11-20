@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <rect id="sheet" x="4" y="4" width="352" height="452" rx="8" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+  <path id="band" d="M12 4H348A8 8 0 0 1 356 12V88H4V12A8 8 0 0 1 12 4Z" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/>
+  <g id="rules" stroke="#b9b2a6" stroke-width="3">
+    <path d="M44 138H316"/>
+    <path d="M44 184H316"/>
+    <path d="M44 230H316"/>
+    <path d="M44 276H316"/>
+    <path d="M44 322H210"/>
+  </g>
+  <g id="seal">
+    <circle cx="286" cy="390" r="40" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/>
+    <circle cx="286" cy="390" r="29" stroke="#fbf7ee" stroke-width="2.5" stroke-dasharray="4 6"/>
+  </g>
+  <circle data-anchor="base" cx="180" cy="456" r="0"/>
+  <circle data-anchor="top" cx="180" cy="4" r="0"/>
+</svg>
