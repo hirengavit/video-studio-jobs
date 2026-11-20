@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s132" data-in="cut" data-section="PART 7 · PINS, OPEN ARTICLES &amp; BOOK POST" data-series="POST OFFICE RULES" lang="hi">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g font-family="'Noto Sans Devanagari', Inter, sans-serif">
+      <g id="mythcard">
+        <rect x="120" y="190" width="1680" height="280" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+        <rect x="196" y="230" width="156" height="64" rx="32" fill="#e4e5e8"/>
+        <text font-family="'Noto Sans Devanagari', Inter, sans-serif" x="274" y="274" text-anchor="middle" font-size="36" font-weight="800" fill="#4b4f58">भ्रम</text>
+        <text font-family="'Noto Sans Devanagari', Inter, sans-serif" id="myth" x="196" y="394" font-size="68" font-weight="800" fill="#2b2622">सुरक्षित packing = हमेशा seal</text>
+        <path id="myth-strike" d="M760 370 Q905 375 1090 370" pathLength="1" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+        <g id="cross" stroke="#4b4f58" fill="none">
+          <circle cx="1631" cy="345" r="51" stroke-width="4"/>
+          <path d="M1611 325l40 40m0-40-40 40" stroke-width="8" stroke-linecap="round"/>
+        </g>
+      </g>
+      <g id="factcard">
+        <rect x="120" y="520" width="1680" height="440" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <rect x="196" y="558" width="156" height="64" rx="32" fill="#2e7d4f"/>
+        <text font-family="'Noto Sans Devanagari', Inter, sans-serif" x="274" y="602" text-anchor="middle" font-size="36" font-weight="800" fill="#fff">सही</text>
+        <text id="factterm" x="196" y="719" font-family="Inter, sans-serif" font-size="80" font-weight="800" fill="#2b2622">BOOK POST cover</text>
+        <text font-family="'Noto Sans Devanagari', Inter, sans-serif" id="factfirst" x="196" y="813" font-size="58" font-weight="700" fill="#2b2622">सामान बचाए,</text>
+        <text font-family="'Noto Sans Devanagari', Inter, sans-serif" id="factsecond" x="196" y="901" font-size="58" font-weight="700" fill="#2b2622">और जाँच का रास्ता खुला रखे</text>
+        <g id="postmark" stroke="#2e7d4f" fill="none">
+          <circle cx="1579" cy="747" r="119" stroke-width="5"/>
+          <circle cx="1579" cy="747" r="101" stroke-width="2"/>
+          <path d="M1531 695h96m-96 105h96" stroke-width="2.5" stroke-linecap="round"/>
+          <text font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1579" y="767" text-anchor="middle" font-size="62" font-weight="800" fill="#2e7d4f" stroke="none">सही</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.10,'words','#myth',{gap:0.43,dist:18,spring:'soft'}],
+      [2.98,'draw','#myth-strike',{dur:0.34}],
+      [2.98,'pop','#cross',{from:0.8,spring:'soft'}],
+      [3.90,'slide','#factcard',{from:'down',dist:48,spring:'soft'}],
+      [3.90,'type','#factterm',{cps:20}],
+      [5.16,'words','#factfirst',{gap:0.31,dist:15,spring:'soft'}],
+      [6.54,'words','#factsecond',{gap:0.20,dist:14,spring:'soft'}],
+      [7.16,'highlight','#factsecond',{words:'जाँच का रास्ता',color:'#f2b705',opacity:0.47,dur:0.48,pad:8}],
+      [8.24,'stamp','#postmark',{from:1.28,rot:-7,spring:'soft'}]
+    ]
+  }
+  </script>
+</section>
