@@ -1,0 +1,26 @@
+{
+ "moments": [
+  "0.30",
+  "1.92",
+  "3.85",
+  "5.77",
+  "7.70",
+  "9.47"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s030",
+   "text": "roll (2.6:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 5.77
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s030",
+   "text": "ये envelope केspecifications हैं / 140",
+   "t": 7.7
+  }
+ ]
+}
