@@ -8,18 +8,5 @@
   "11.05"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s131",
-   "text": "बिना seal तोड़े / बिना कागज़ फाड़े",
-   "t": 2.24
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s131",
-   "text": "बिना कागज़ फाड़े / बिना चिपकी सतहें अलग किए",
-   "t": 4.48
-  }
- ]
+ "warnings": []
 }
