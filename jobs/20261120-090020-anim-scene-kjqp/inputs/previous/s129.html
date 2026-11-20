@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s129" data-in="cut" data-section="PART 7 · PINS, OPEN ARTICLES &amp; BOOK POST" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="जाँच के लिए सामान खुला; पुस्तक डाक के तीन रास्ते।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="open">
+    <text class="hi" x="120" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">खुला article?</text>
+    <use id="envelope" href="piece:domestic-envelope" transform="translate(140 330) scale(1)"/>
+    <path id="closed-edge" d="M145 335 H895 V725 H145 Z" fill="none" stroke="#f2b705" stroke-width="9" stroke-linejoin="round"/>
+    <g id="letter-term">
+      <rect x="1000" y="300" width="800" height="180" rx="24" fill="#9e1b1b"/>
+      <rect x="1013" y="313" width="774" height="154" rx="15" fill="none" stroke="#b8403a" stroke-width="3"/>
+      <text x="1400" y="386" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="800" fill="#ffffff">LETTER ENVELOPE</text>
+      <text class="hi" id="letter-hi" x="1400" y="444" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="610" fill="#fde9a6">पत्र लिफ़ाफ़ा</text>
+    </g>
+    <rect x="1238" y="528" width="236" height="71" rx="4" fill="#f2b705" fill-opacity=".38"/>
+    <text class="hi" id="closed-rule" x="1032" y="565" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="720" fill="#2b2622">सभी तरफ़ लगातार बंद</text>
+    <path id="seen-tick" d="M1526 554l16 16 30-34" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+  <g id="bookpost">
+    <rect id="open-heading-band" x="120" y="164" width="1680" height="98" rx="22" fill="#f3ead6"/>
+    <rect x="120" y="164" width="12" height="98" rx="6" fill="#f2b705"/>
+    <text class="hi" id="open-heading" x="960" y="229" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="730" fill="#2b2622">कुछ products: जाँच के लिए सामान खुला</text>
+    <g id="bookpost-term">
+      <rect x="660" y="300" width="600" height="200" rx="23" fill="#9e1b1b"/>
+      <rect x="673" y="313" width="574" height="174" rx="14" fill="none" stroke="#fde9a6" stroke-width="6" stroke-linecap="round" stroke-opacity=".70" stroke-dasharray="0 18"/>
+      <text x="960" y="388" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="#fff">BOOK POST</text>
+      <text class="hi" id="bookpost-hi" x="960" y="454" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="640" fill="#fde9a6">पुस्तक डाक</text>
+    </g>
+    <g id="book-slot-1" class="book-slot">
+      <rect x="120" y="560" width="520" height="340" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="182" cy="622" r="36" fill="#9e1b1b"/>
+      <text x="182" y="637" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#fff">1</text>
+    </g>
+    <g id="book-slot-2" class="book-slot">
+      <rect x="700" y="560" width="520" height="340" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="762" cy="622" r="36" fill="#9e1b1b"/>
+      <text x="762" y="637" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#fff">2</text>
+    </g>
+    <g id="book-slot-3" class="book-slot">
+      <rect x="1280" y="560" width="520" height="340" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="1342" cy="622" r="36" fill="#9e1b1b"/>
+      <text x="1342" y="637" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#fff">3</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0,'#open'],[1.30,'#bookpost']],
+  on: [
+    [0.40,'draw','#seen-tick',{dur:0.38}],
+    [1.56,'words','#open-heading',{gap:0.40,dist:10}],
+    [4.32,'highlight','#open-heading',{words:'खुला',color:'#f2b705',opacity:0.38,pad:6,dur:0.42}],
+    [6.37,'stamp','#bookpost-term',{from:1.06,rot:-1,spring:'soft'}],
+    [6.87,'fade','#bookpost-hi',{dur:0.26}],
+    [7.05,'pop','.book-slot',{from:0.96,stagger:0.15,spring:'soft'}]
+  ]
+}
+</script>
+</section>
