@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s084" data-in="cut" data-section="PART 5 · SEALING" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Sealing wax on ordinary unregistered letters and packets">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="env">
+    <text id="ordinary-title" class="hi" x="140" y="240" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="790" fill="#9e1b1b">Ordinary डाक · sealing wax</text>
+    <use href="piece:domestic-envelope" transform="translate(120 380) scale(1.15)"/>
+    <g id="unregistered">
+      <rect x="1000" y="200" width="780" height="220" rx="26" fill="#9e1b1b"/>
+      <rect x="1010" y="210" width="760" height="200" rx="19" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="8" stroke-linecap="round" stroke-dasharray="0 21"/>
+      <text x="1390" y="277" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="800" fill="#fff">Unregistered letters</text>
+      <text x="1390" y="334" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="800" fill="#fff">&amp; packets</text>
+      <text id="unregistered-hi" class="hi" x="1390" y="388" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="700" fill="#fde9a6">बिना रजिस्ट्री पत्र · पैकेट</text>
+    </g>
+    <g id="wax-term">
+      <rect x="1000" y="473" width="780" height="181" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1051" y="545" font-family="Inter,sans-serif" font-size="56" font-weight="800" fill="#2b2622">Public sealing wax</text>
+      <text id="wax-hi" class="hi" x="1051" y="607" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="650" fill="#6f6a63">आम सीलिंग मोम</text>
+    </g>
+    <g id="wax-piece"><use href="piece:wax-seal" transform="translate(854 740) scale(1)"/></g>
+    <g id="wax-cross" fill="none" stroke-linecap="round">
+      <path d="M865 751l98 98m0-98-98 98" stroke="#fbf7ee" stroke-width="20"/>
+      <path d="M865 751l98 98m0-98-98 98" stroke="#4b4f58" stroke-width="11"/>
+    </g>
+    <g id="no-wax-tag">
+      <rect x="1000" y="848" width="780" height="92" rx="20" fill="#4b4f58"/>
+      <text class="hi" x="1390" y="907" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="770" fill="#fff">बाहर न लगाएँ</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0, 'fade', '#ordinary-title', {dur: .28}],
+    [2.88, 'pop', '#unregistered', {from: .96}],
+    [3.38, 'fade', '#unregistered-hi', {dur: .22}],
+    [6.28, 'fade', '#wax-term', {dur: .22}],
+    [6.78, 'fade', '#wax-hi', {dur: .22}],
+    [6.88, 'pop', '#wax-piece', {from: .86}],
+    [7.94, 'draw', '#wax-cross', {dur: .34}],
+    [8.36, 'fade', '#no-wax-tag', {dur: .20}]
+  ]
+}
+</script>
+</section>
