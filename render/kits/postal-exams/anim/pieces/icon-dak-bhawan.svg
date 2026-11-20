@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<g stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g id="building"><rect x="56" y="91" width="288" height="238" rx="4" fill="#fbf7ee"/><rect x="46" y="73" width="308" height="23" rx="4" fill="#f3ead6"/></g>
+<g id="red-band"><rect x="56" y="112" width="288" height="20" rx="0" fill="#9e1b1b"/></g>
+<g id="windows"><rect x="85" y="153" width="32" height="38" rx="3" fill="#f3ead6"/><path d="M101 153v38" fill="none" /><rect x="85" y="211" width="32" height="38" rx="3" fill="#f3ead6"/><path d="M101 211v38" fill="none" /><rect x="151" y="153" width="32" height="38" rx="3" fill="#f3ead6"/><path d="M167 153v38" fill="none" /><rect x="151" y="211" width="32" height="38" rx="3" fill="#f3ead6"/><path d="M167 211v38" fill="none" /><rect x="217" y="153" width="32" height="38" rx="3" fill="#f3ead6"/><path d="M233 153v38" fill="none" /><rect x="217" y="211" width="32" height="38" rx="3" fill="#f3ead6"/><path d="M233 211v38" fill="none" /><rect x="283" y="153" width="32" height="38" rx="3" fill="#f3ead6"/><path d="M299 153v38" fill="none" /><rect x="283" y="211" width="32" height="38" rx="3" fill="#f3ead6"/><path d="M299 211v38" fill="none" /></g>
+<g id="entrance"><rect x="169" y="264" width="62" height="65" rx="4" fill="#9e1b1b"/><path d="M200 272v56" fill="none" stroke="#f3ead6"/><rect x="63" y="329" width="274" height="10" rx="3" fill="#f3ead6"/></g>
+</g>
+<circle data-anchor="top" cx="200" cy="73" r="0"/>
+<circle data-anchor="base" cx="200" cy="339" r="0"/>
+</svg>
