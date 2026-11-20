@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s138" data-in="fade" data-in-dur="0.4" data-section="CLOSE" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="photo-cutout" transform="rotate(-1.5 440 560)">
+  <image href="photo:india-post-letter-box-cutout" x="305" y="208" width="270" height="715" preserveAspectRatio="xMidYMid meet" filter="url(#vs-cutout)" aria-label="India Post letter box in Bhopal"/>
+ </g>
+ <g id="credit" font-size="29" fill="#6f6a63" text-anchor="middle">
+  <text x="440" y="958">Suyash.dwivedi · Wikimedia Commons</text>
+  <text x="440" y="988">CC BY-SA 4.0 · Cutout</text>
+ </g>
+ <text id="next" x="1250" y="245" text-anchor="middle" class="hi" font-size="52" font-weight="750" fill="#6f6a63">अगली बार hour plate दिखे…</text>
+ <g id="hour">
+  <use href="piece:hour-plate" transform="translate(1052 332) scale(2.2)"/>
+  <text id="time" x="1250" y="447" text-anchor="middle" font-size="78" font-weight="810" fill="#2b2622">14:00</text>
+ </g>
+ <g id="time-chip">
+  <rect x="820" y="565" width="406" height="102" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1023" y="633" text-anchor="middle" class="hi" font-size="53" font-weight="760" fill="#2b2622">समय</text>
+ </g>
+ <g id="key-chip">
+  <rect x="1274" y="565" width="406" height="102" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1477" y="633" text-anchor="middle" class="hi" font-size="53" font-weight="760" fill="#2b2622">चाबी</text>
+ </g>
+ <g id="record-chip">
+  <rect x="820" y="705" width="406" height="102" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1023" y="773" text-anchor="middle" font-size="53" font-weight="760" fill="#2b2622">Record</text>
+ </g>
+ <g id="check-chip">
+  <rect x="1274" y="705" width="406" height="102" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1477" y="773" text-anchor="middle" class="hi" font-size="53" font-weight="760" fill="#2b2622">जाँच</text>
+ </g>
+ <text id="closing" x="1250" y="927" text-anchor="middle" class="hi" font-size="58" font-weight="790" fill="#9e1b1b">सोची-समझी duty</text>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}],[4.68,{zoom:1}],[8.4,{zoom:1.05},'inOut']],
+ on:[
+  [2.06,'pop','#hour',{from:.95,spring:'soft'}],
+  [2.48,'highlight','#time',{color:'#fde9a6',opacity:.7,dur:.42,pad:10}],
+  [4.68,'fade','#time-chip',{dur:.28}],
+  [4.98,'fade','#key-chip',{dur:.28}],
+  [5.28,'fade','#record-chip',{dur:.28}],
+  [5.58,'fade','#check-chip',{dur:.28}],
+  [6.88,'fade','#closing',{dur:.26}],
+  [6.88,'underline','#closing',{color:'#8a5d00',width:5,dur:.47,gap:8}]
+ ]
+}
+</script>
+</section>
