@@ -1,0 +1,30 @@
+<section class="vs-scene" id="s105" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}' data-section="REMEMBER · INSURANCE SEAL" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="याद रखें: Insurance seal पर खोलने का निशान दिखे। Insured bullion और coins के लिए लकड़ी या metal का मज़बूत case चाहिए।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="remember">
+    <rect x="140" y="200" width="1640" height="760" rx="38" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M180 247 V913" stroke="#f2b705" stroke-width="9" stroke-linecap="round"/>
+    <text class="hi" x="236" y="280" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#9e1b1b">याद रखें</text>
+    <path d="M235 546 H1690" stroke="#ded1b4" stroke-width="3"/>
+    <g id="first-line">
+      <text x="236" y="412" font-family="Inter, sans-serif" font-size="55" font-weight="800" fill="#2b2622">Insurance seal</text>
+      <text class="hi" id="mark" x="236" y="488" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="550" fill="#2b2622">खोलने का निशान दिखे</text>
+    </g>
+    <text id="bullion" x="236" y="635" font-family="Inter, sans-serif" font-size="55" font-weight="800" fill="#2b2622">Insured bullion · coins</text>
+    <text class="hi" id="case-line" x="236" y="711" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="550" fill="#2b2622">लकड़ी या metal का मज़बूत case</text>
+    <use id="wax" href="piece:wax-seal" transform="translate(1510 378) scale(1)"/>
+    <use id="case" href="piece:valuables-case" transform="translate(1444 720) scale(0.6)"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0, 'fade', '#first-line', {dur:0.28}],
+    [3.46, 'highlight', '#mark', {words:'निशान दिखे',color:'#f2b705',opacity:0.34,dur:0.48}],
+    [4.76, 'fade', '#bullion', {dur:0.32}],
+    [7.44, 'fade', '#case-line', {dur:0.36}],
+    [8.84, 'underline', '#case-line', {words:'मज़बूत case',color:'#8a5d00',width:4,dur:0.52,gap:10}],
+  ]
+}
+</script>
+</section>
