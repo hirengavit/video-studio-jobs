@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s142" data-in="cut" data-section="PART 8 · LETTER BOX OR COUNTER" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="places">
+ <text id="places-title" x="140" y="200" class="hi" font-size="56" font-weight="820" fill="#9e1b1b">Letter boxes कहाँ?</text>
+ <use href="piece:letter-box-icon" transform="translate(140 360)"/>
+ <g id="office-card" transform="translate(0 40)" text-anchor="middle">
+  <rect x="520" y="230" width="620" height="300" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <g transform="translate(830 318)" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+   <path d="M-65-24 0-62 65-24Z" fill="#9e1b1b"/><rect x="-55" y="-24" width="110" height="77" fill="#f3ead6"/>
+   <rect x="-19" y="0" width="38" height="53" fill="#fff"/><rect x="-45" y="-8" width="15" height="22" fill="#fff"/><rect x="30" y="-8" width="15" height="22" fill="#fff"/>
+   <path d="M-70 54H70" fill="none"/>
+  </g>
+  <text id="office-en-1" x="830" y="410" font-family="Inter, sans-serif" font-size="40" font-weight="820" fill="#9e1b1b">POST OFFICES</text>
+  <text id="office-en-2" x="830" y="455" font-family="Inter, sans-serif" font-size="40" font-weight="820" fill="#9e1b1b">MAIL OFFICES</text>
+  <text id="office-hi" x="830" y="504" class="hi" font-size="34" font-weight="650" fill="#6f6a63" opacity="1">डाकघर · mail दफ्तर</text>
+ </g>
+ <g id="public-card" transform="translate(0 40)" text-anchor="middle">
+  <rect x="1180" y="230" width="620" height="300" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <g transform="translate(1490 345)" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+   <path d="M-94 78H98M69-58V77M-73 34v43m92-43v43" fill="none"/>
+   <path d="M48-57h32l17 16-17 16H48Z" fill="#f3ead6"/>
+   <path d="M-87-1H34v23H-87zm-7 47H41v13H-94Z" fill="#c8a06a"/>
+   <path d="M-76 23v23m103-23v23" fill="none"/>
+  </g>
+  <text x="1490" y="490" class="hi" font-size="46" font-weight="780" fill="#2b2622">public जगहें</text>
+ </g>
+ <g id="mobile-card" transform="translate(0 40)" text-anchor="middle">
+  <rect x="520" y="590" width="620" height="300" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <use href="piece:mobile-post-van" transform="translate(702 607) scale(0.4)"/>
+  <text id="mobile-en" x="830" y="801" font-family="Inter, sans-serif" font-size="40" font-weight="820" fill="#9e1b1b">MOBILE POST OFFICES</text>
+  <text id="mobile-hi" x="830" y="848" class="hi" font-size="34" font-weight="650" fill="#6f6a63" opacity="1">चलते-फिरते डाकघर</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [2.02,'pop','#office-card',{from:0.97,spring:'fast'}],
+  [2.05,'type','#office-en-1',{cps:32}],
+  [3.05,'type','#office-en-2',{cps:33}],
+  [3.60,'fade','#office-hi',{dur:0.29}],
+  [4.60,'pop','#public-card',{from:0.97,spring:'fast'}],
+  [6.80,'pop','#mobile-card',{from:0.97,spring:'fast'}],
+  [6.84,'type','#mobile-en',{cps:37}],
+  [7.62,'fade','#mobile-hi',{dur:0.3}]
+ ]
+}
+</script>
+</section>
