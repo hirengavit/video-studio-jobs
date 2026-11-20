@@ -48,6 +48,11 @@
   </svg>
   <script type="text/scene">
   {
+    update(t, section, get) {
+      const p = S.clamp((t-1.13)/0.38);
+      const e = p*p*(3-2*p);
+      get("#seal-icon")[0].setAttribute("transform", `translate(1400 ${520-12*e}) scale(${1-.44*e}) translate(-1400 -520)`);
+    },
     on: [
       [1.51,'fade','#seal-job',{dur:.30}],
       [2.84,'highlight','#seal-job-text',{words:'सबूत',color:'#f2b705',opacity:.36,dur:.36}],
