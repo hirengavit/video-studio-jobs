@@ -74,15 +74,16 @@
   <g id="send">
     <use id="sender-phone" href="piece:phone-screen" transform="translate(60 396) scale(1.2)"/>
     <text x="300" y="885" text-anchor="middle" font-family="Inter,sans-serif" font-size="51" font-weight="800" fill="#2b2622">Android app</text>
-    <g id="send-route">
+    <defs><clipPath id="route-window"><rect id="route-reveal" x="423" y="424" width="0" height="260"/></clipPath></defs>
+    <g id="send-route" clip-path="url(#route-window)">
       <path d="M430 660Q900 338 1358 651" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-dasharray="12 14"/>
       <path d="M1324 644l34 7-15-32" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
     <use id="data-server" href="piece:rmfs-server" transform="translate(1240 344) scale(1.30)"/>
     <g id="location-check">
       <rect x="1286" y="314" width="428" height="104" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
-      <use href="piece:gps-pin" transform="translate(1266 269) scale(.49)"/>
-      <text x="1535" y="380" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="790" fill="#2b2622">Location check</text>
+      <use href="piece:gps-pin" transform="translate(1246 269) scale(.49)"/>
+      <text x="1538" y="380" text-anchor="middle" font-family="Inter,sans-serif" font-size="41" font-weight="790" fill="#2b2622">Location check</text>
     </g>
   </g>
 </svg>
@@ -103,12 +104,12 @@
     [7.51,'color','#key-8',{to:'#f3ead6',dur:.11}],
     [8.38,'color','#step-fill-4',{to:'#9e1b1b',dur:.15}],
     [8.38,'color','#step-num-4',{to:'#ffffff',dur:.15}],
-    [8.92,'draw','#send-route',{dur:.74}],
     [10.88,'color','#step-fill-5',{to:'#9e1b1b',dur:.15}],
     [10.88,'color','#step-num-5',{to:'#ffffff',dur:.15}],
     [10.88,'pop','#location-check',{from:.94,spring:'soft'}]
   ],
   update(t,section,$) {
+    $('#route-reveal').forEach(n=>n.setAttribute('width',String(945*S.clamp((t-8.92)/.74,0,1))));
     const x=t<7.10?885:t<7.37?912:940;
     $('#caret').forEach(n=>{n.setAttribute('d','M'+x+' 422V461');n.setAttribute('opacity',Math.floor(t*4)%2?'.35':'1')});
   }
