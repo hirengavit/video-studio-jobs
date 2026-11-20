@@ -37,7 +37,7 @@
     <path id="sender-arrow" d="M1202 716H1306m-20-18 20 18-20 18" fill="none" stroke="#6f6a63" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     <g id="cod-sender" text-anchor="middle">
       <rect x="1332" y="496" width="443" height="447" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
-      <use href="piece:envelope-article" transform="translate(1317 470) scale(1.18)"/>
+      <use href="piece:envelope-article" transform="translate(1317 449) scale(1.18)"/>
       <text x="1553.5" y="849" font-family="Inter,sans-serif" font-size="54" font-weight="810" fill="#2b2622">Sender</text>
       <text x="1553.5" y="903" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="680" fill="#6f6a63">भेजने वाला</text>
     </g>
@@ -47,7 +47,7 @@
 {
  camera: [[0,{zoom:1}]],
  on: [
-  [0,'pop','#cod-term',{from:.97,spring:'soft'}],
+  [0,'pulse','#cod-term',{amount:.025}],
   [1.80,'pop','#cod-chip',{from:.92,spring:'soft'}],
   [4.60,'fade','#addressee-house',{dur:.26}],
   [5.84,'fade','#addressee-label',{dur:.25}],
