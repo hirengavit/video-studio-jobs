@@ -8,12 +8,5 @@
   "10.96"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s134",
-   "text": "आगे भेजने से पहले बंद करता है",
-   "t": 8.89
-  }
- ]
+ "warnings": []
 }
