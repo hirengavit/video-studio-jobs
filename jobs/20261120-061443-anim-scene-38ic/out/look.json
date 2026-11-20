@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.28",
+  "4.55",
+  "6.83",
+  "9.10",
+  "11.23"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s188",
+   "message": "type: option \"dur\" isn't used (it takes: cps)",
+   "t": 0.3
+  }
+ ]
+}
