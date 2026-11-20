@@ -8,12 +8,5 @@
   "9.75"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s108",
-   "message": "pulse: option \"dur\" isn't used (it takes: amount)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
