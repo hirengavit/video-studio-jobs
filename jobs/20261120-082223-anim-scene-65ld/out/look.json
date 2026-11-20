@@ -10,21 +10,9 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-off-frame",
-   "scene": "s089",
-   "text": "अच्छे से बंद",
-   "t": 7.79
-  },
-  {
-   "kind": "text-off-frame",
-   "scene": "s089",
-   "text": "खोलते ही पता चले",
-   "t": 7.79
-  },
-  {
    "kind": "off-frame",
    "scene": "s089",
-   "message": "a card or panel runs 404 px past the frame edge at 7.8 s (check the camera zoom and the layout)",
+   "message": "a card or panel runs 406 px past the frame edge at 7.8 s (check the camera zoom and the layout)",
    "t": 7.79
   }
  ]
