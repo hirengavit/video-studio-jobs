@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 30" width="200" height="30">
+ <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path id="shaft" d="M25 12h145l24 3-24 3H25z" fill="#e5e4df"/>
+  <circle id="head" cx="17" cy="15" r="10" fill="#9e1b1b"/>
+  <path d="M12 12q1-3 4-3" fill="none" stroke="#f3ead6"/>
+ </g>
+ <circle data-anchor="base" cx="100" cy="18" r="0"/>
+</svg>
