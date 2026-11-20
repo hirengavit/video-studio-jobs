@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s181" data-in="cut" data-section="PART 10 · SPECIAL BOXES &amp; BOOKING" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect width="1920" height="1080" fill="#fbf7ee"/>
+<style>#s181 [id$="clock"] [id$="hour-hand"],#s181 [id$="clock"] [id$="minute-hand"] {visibility:hidden}</style>
+<g id="mail-time">
+ <rect x="140" y="285" width="680" height="629" rx="31" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+ <use id="clock" href="piece:clock-face" transform="translate(246 414.5) scale(1.8)"/>
+ <g id="clock-hands" stroke-linecap="round">
+  <path d="M480 648.5l59.4 102.9" stroke="#2b2622" stroke-width="14.4"/>
+  <path d="M480 648.5v-144" stroke="#9e1b1b" stroke-width="10.8"/>
+  <circle cx="480" cy="648.5" r="10.8" fill="#2b2622"/>
+ </g>
+ <text id="focus-heading" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="920" y="245" font-size="48" font-weight="800" fill="#9e1b1b">इन्हें किसी खास mail से भेजना है</text>
+ <g id="closing">
+  <rect x="1320" y="359" width="460" height="152" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <rect x="1400" y="370" width="300" height="65" rx="7" fill="#f2b705" opacity=".40"/>
+  <text id="closing-term" x="1550" y="420" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="810" fill="#9e1b1b">Mail closing</text>
+  <text id="closing-hi" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1550" y="472" text-anchor="middle" font-size="38" font-weight="680" fill="#6f6a63">डाक बंद होने का समय</text>
+  <path d="M1660 511V600" fill="none" stroke="#9e1b1b" stroke-width="4"/>
+  <circle cx="1660" cy="600" r="13" fill="#9e1b1b" stroke="#fff" stroke-width="3"/>
+ </g>
+ <path id="time-strip" d="M940 600h800m-17-16 17 16-17 16" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+ <path id="before-bracket" d="M1200 618v22h460v-22" fill="none" stroke="#8a5d00" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+ <text id="minutes" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1430" y="787" text-anchor="middle" font-size="96" font-weight="850" fill="#9e1b1b">30 मिनट</text>
+ <text id="at-least" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1430" y="847" text-anchor="middle" font-size="46" font-weight="720" fill="#2b2622">कम से कम इतने पहले</text>
+ <g id="office-no">
+  <rect x="940" y="867" width="800" height="93" rx="21" fill="#4b4f58"/>
+  <text class="hi" x="990" y="928" font-size="45" font-weight="700" fill="#ffffff">post office बंद होने से</text>
+  <g id="office-cross">
+   <circle cx="1682" cy="913" r="28" fill="#fbf7ee"/>
+   <path d="M1670 901l24 24m0-24-24 24" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+  </g>
+ </g>
+ <text id="closing-time" x="1675" y="650" text-anchor="start" font-size="52" font-weight="810" fill="#2b2622">17:00</text>
+ <g id="handover-time">
+  <circle cx="1200" cy="600" r="13" fill="#2e7d4f" stroke="#fff" stroke-width="3"/>
+  <text id="handover-label" x="1200" y="575" text-anchor="middle" font-size="56" font-weight="810" fill="#2e7d4f">16:30</text>
+ </g>
+</g>
+</svg><script type="text/scene">
+{
+  on: [
+    [.98, 'fade', '#office-no', {dur:.27}],
+    [1.72, 'pop', '#office-cross', {from:.92, spring:'soft'}],
+    [3.54, 'fade', '#clock-hands', {dur:.30}],
+    [3.54, 'pop', '#closing-time', {from:.90, spring:'soft'}],
+    [5.88, 'pop', '#handover-time', {from:.92, spring:'soft'}],
+    [7.60, 'underline', '#handover-label', {color:'#2e7d4f',width:5,dur:.38,gap:6}]
+  ]
+}
+</script></section>
