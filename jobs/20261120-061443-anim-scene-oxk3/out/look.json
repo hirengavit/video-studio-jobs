@@ -8,18 +8,5 @@
   "10.16"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s082",
-   "text": "दो / अलग",
-   "t": 4.12
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s082",
-   "text": "अलग / काम",
-   "t": 4.12
-  }
- ]
+ "warnings": []
 }
