@@ -1,0 +1,104 @@
+[
+  {
+    "id": "double-receptacle",
+    "kind": "prop",
+    "description": "Cut-away liquid parcel: outer steel-grey metal / strong wood box, glass bottle with tight cap inside, sand-coloured sawdust/bran filling the gap all round. 520x460. Parts #outer-box #absorbent #bottle #cap #liquid.",
+    "ideas": [
+      "double receptacle cutaway",
+      "absorbent packing",
+      "secure glass closure"
+    ],
+    "viewBox": "0 0 520 460",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "outer-box",
+      "absorbent",
+      "bottle",
+      "liquid",
+      "cap"
+    ]
+  },
+  {
+    "id": "sealed-insured-cover",
+    "kind": "prop",
+    "description": "Back of a brown-paper insured packet: four flaps, side seams, crosswise string with a centre knot, dashed circles where seals go. 640x420.",
+    "ideas": [
+      "insured cover rear view",
+      "crossed tie",
+      "seal placement"
+    ],
+    "viewBox": "0 0 640 420",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "paper",
+      "flaps",
+      "seams",
+      "string",
+      "knot",
+      "seal-spots"
+    ]
+  },
+  {
+    "id": "valuables-case",
+    "kind": "prop",
+    "description": "Strong wooden case with steel corner plates and a hasp, lid closed, for insured bullion and coins. 420x300.",
+    "ideas": [
+      "insured valuables packing",
+      "bullion and coin case"
+    ],
+    "viewBox": "0 0 420 300",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "case",
+      "corners",
+      "hasp"
+    ]
+  },
+  {
+    "id": "counter-window",
+    "kind": "prop",
+    "description": "Post office counter window: sand wall, white frame with grille top half, open lower half, cream ledge in front. 680x460.",
+    "ideas": [
+      "counter booking",
+      "receipt on ledge",
+      "posting route"
+    ],
+    "viewBox": "0 0 680 460",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "wall",
+      "frame",
+      "grille",
+      "ledge"
+    ]
+  },
+  {
+    "id": "pin-icon",
+    "kind": "prop",
+    "description": "Steel straight pin, grey shaft with round red head. 40x220.",
+    "ideas": [
+      "pinned article",
+      "straight pin removal"
+    ],
+    "viewBox": "0 0 40 220",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "shaft",
+      "head"
+    ]
+  }
+]
