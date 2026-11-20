@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s149" data-in="cut" data-section="PART 8 · LETTER BOX OR COUNTER" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="The booking service, not counter handover, determines whether the article is accountable">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="reverse-case">
+    <text class="hi" x="120" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="790" fill="#9e1b1b">उल्टा case</text>
+    <ellipse cx="270" cy="805" rx="109" ry="13" fill="#ead9a8" opacity=".48"/>
+    <use id="pillar-box" href="piece:letter-box-icon" transform="translate(160 400)"/>
+    <g id="ordinary">
+      <rect x="480" y="200" width="620" height="140" rx="22" fill="#9e1b1b"/>
+      <rect x="490" y="210" width="600" height="120" rx="16" fill="none" stroke="#fff" stroke-opacity=".74" stroke-width="7" stroke-linecap="round" stroke-dasharray="0 19"/>
+      <text x="790" y="259" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="800" fill="#fff">ORDINARY ARTICLE</text>
+      <text id="ordinary-hi" class="hi" x="790" y="308" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="700" fill="#fde9a6">साधारण article</text>
+    </g>
+    <g id="too-large">
+      <path d="M529 781v19m0-9h262m0-10v19" fill="none" stroke="#6f6a63" stroke-width="4" stroke-linecap="round"/>
+      <text class="hi" x="660" y="846" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="780" fill="#4b4f58">बहुत बड़ा</text>
+    </g>
+    <g id="counter"><use href="piece:counter-window" transform="translate(1120 300)"/></g>
+    <g id="article"><use href="piece:envelope-article" transform="translate(1260 388)"/></g>
+    <path id="window-glow" d="M1195 350h530v335h-530z" fill="none" stroke="#f2b705" stroke-width="8" stroke-linejoin="round"/>
+    <g id="verdict">
+      <rect x="120" y="860" width="1680" height="130" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M958 878v94" stroke="#d8c8aa" stroke-width="3"/>
+      <text class="hi" id="counter-copy" x="530" y="907" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="680" fill="#4b4f58">window पर देना ≠</text>
+      <text id="no-term" x="530" y="963" text-anchor="middle" font-family="Inter, sans-serif" font-size="42" font-weight="780" fill="#4b4f58">ACCOUNTABLE</text>
+      <path id="no-cross" d="M834 905l48 43m0-43-48 43" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+      <text id="yes-term" x="1350" y="907" text-anchor="middle" font-family="Inter, sans-serif" font-size="42" font-weight="790" fill="#2e7d4f">ACCOUNTABLE =</text>
+      <text class="hi" id="service-copy" x="1350" y="963" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="720" fill="#2e7d4f">जिस service में book हुआ</text>
+      <path id="yes-tick" d="M1668 926l15 15 28-36" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.22,'draw','#window-glow',{dur:.50}],
+    [0.82,'slide','#verdict',{from:'down',dist:45,spring:'soft'}],
+    [0.82,'words','#counter-copy',{gap:.18,dist:10}],
+    [1.85,'fade','#no-term',{dur:.27}],
+    [2.58,'draw','#no-cross',{dur:.33}],
+    [2.58,'strike','#no-term',{color:'#4b4f58',width:5,dur:.36,dim:.67}],
+    [3.96,'words','#yes-term',{gap:.21,dist:10}],
+    [4.96,'words','#service-copy',{gap:.49,dist:10}],
+    [5.48,'highlight','#service-copy',{words:'service',color:'#f2b705',opacity:.36,dur:.42,pad:6}],
+    [7.82,'draw','#yes-tick',{dur:.37}]
+  ]
+}
+</script>
+</section>
