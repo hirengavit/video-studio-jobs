@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s037" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}' data-section="PART 3 · WINDOW ENVELOPE &amp; CHARGE" data-series="POST OFFICE RULES" lang="hi">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="window-view">
+      <g id="window-term">
+        <rect x="100" y="170" width="900" height="160" rx="23" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+        <rect x="114" y="184" width="872" height="132" rx="16" fill="none" stroke="#fde9a6" stroke-width="2" stroke-dasharray="2 8" stroke-opacity=".7"/>
+        <text x="154" y="238" font-family="Inter, sans-serif" font-size="58" font-weight="820" fill="#fff">Window Envelope</text>
+        <text id="window-hi" x="156" y="293" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#fde9a6">खिड़की वाला लिफ़ाफ़ा</text>
+      </g>
+      <use id="envelope" href="piece:window-envelope" transform="translate(100 380) scale(1.8)"/>
+      <rect id="barcode-hold" x="429" y="707" width="360" height="42" fill="#e7f1f4"/>
+      <g id="address-highlight">
+        <rect x="419" y="612" width="399" height="91" rx="8" fill="#f2b705" fill-opacity=".27"/>
+      </g>
+      <path id="window-outline" d="M405 578H875Q896 578 896 599V756Q896 774 877 774H402Q383 774 383 755V600Q383 578 405 578Z" fill="none" stroke="#f2b705" stroke-width="7" stroke-linejoin="round"/>
+      <text id="window-caption" x="640" y="846" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#2b2622">पारदर्शी हिस्सा</text>
+      <g id="inner-document">
+        <rect x="1290" y="393" width="499" height="293" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+        <path d="M1335 437h248m-248 30h194" stroke="#cbc0ab" stroke-width="5" stroke-linecap="round"/>
+        <rect x="1334" y="509" width="400" height="105" rx="8" fill="#e7f1f4" stroke="#83949a" stroke-width="2"/>
+        <path d="M1370 544h204m-204 18h247m-247 18h166" stroke="#535e64" stroke-width="4" stroke-linecap="round"/>
+        <path d="M1335 647h235" stroke="#cbc0ab" stroke-width="4" stroke-linecap="round"/>
+        <text x="1540" y="741" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="740" fill="#2b2622">अंदर रखा document</text>
+      </g>
+      <path id="read-arrow" d="M1324 554C1172 552 1174 658 910 658m26-18-26 18 26 18" fill="none" stroke="#6f6a63" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="read-caption" x="1540" y="817" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">address पढ़ा जाता है</text>
+      <g id="only-address">
+        <rect x="1284" y="864" width="512" height="84" rx="42" fill="#fde9a6"/>
+        <text x="1540" y="919" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="800" fill="#694700">सिर्फ address block</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.50,'fade','#window-hi',{dur:.30}],
+      [1.56,'draw','#window-outline',{dur:.58}],
+      [1.56,'fade','#window-caption',{dur:.35}],
+      [4.34,'slide','#inner-document',{from:'right',dist:45,spring:'soft'}],
+      [6.02,'draw','#read-arrow',{dur:.60}],
+      [6.02,'fade','#read-caption',{dur:.35}],
+      [10.36,'reveal','#address-highlight',{from:'left',dur:.48}],
+      [10.36,'pop','#only-address',{from:.94,spring:'soft'}]
+    ]
+  }
+  </script>
+</section>
