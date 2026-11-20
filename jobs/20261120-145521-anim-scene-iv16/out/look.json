@@ -8,12 +8,5 @@
   "11.39"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s069",
-   "text": "Insured bullion · coins: नियम / अलग",
-   "t": 6.92
-  }
- ]
+ "warnings": []
 }
