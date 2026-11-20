@@ -8,13 +8,5 @@
   "9.31"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "low-contrast",
-   "scene": "s028",
-   "text": "Speed Post (1.0:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
