@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s025" data-in="cut" data-section="PART 2 · COUNTER, NOT THE BOX" data-series="LETTER BOXES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Counter receipt, then two apparent shortcuts">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="rule">
+    <g id="letter-box">
+      <use href="piece:letter-box-pillar" transform="translate(328 220) scale(1.54)"/>
+    </g>
+    <g id="box-cross" transform="translate(592 506)">
+      <circle r="60" fill="#4b4f58" stroke="#fbf7ee" stroke-width="8"/>
+      <path id="cross-strokes" d="M-21-21 21 21m0-42-42 42" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <path id="counter-arrow" d="M708 558h166m-25-25 25 25-25 25" fill="none" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="counter">
+      <use href="piece:posting-counter" transform="translate(910 491) scale(.9)"/>
+      <text x="1315" y="572" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="800" fill="#2b2622">Counter</text>
+      <g id="counter-tick" transform="translate(1588 561)">
+        <circle r="51" fill="#2e7d4f" stroke="#fbf7ee" stroke-width="7"/>
+        <path id="tick-stroke" d="m-22 1 15 15 31-35" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+    <defs><clipPath id="receipt-surface"><rect x="930" y="365" width="310" height="280"/></clipPath></defs>
+    <g clip-path="url(#receipt-surface)"><g transform="translate(0 225)"><g id="receipt-rise"><use href="piece:booking-receipt" transform="translate(1002 424) scale(.56)"/></g></g></g>
+    <text id="receipt-caption" x="1075" y="395" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#2b2622">Receipt</text>
+  </g>
+  <g id="wrong">
+    <g id="shortcut-panels" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)">
+      <rect x="160" y="300" width="500" height="520" rx="27"/>
+      <rect x="710" y="300" width="500" height="520" rx="27"/>
+      <rect x="1260" y="300" width="500" height="520" rx="27"/>
+    </g>
+    <g id="registered-card">
+      <use href="piece:domestic-envelope" transform="translate(194 476) scale(.57)"/>
+      <text id="handwritten" x="235" y="554" font-family="Caveat,cursive" font-size="60" font-weight="700" fill="#2b2622">Registered</text>
+    </g>
+    <g id="extra-card">
+      <use href="piece:domestic-envelope" transform="translate(744 476) scale(.57)"/>
+      <g id="extra-stamps">
+        <g id="extra-stamp-1"><use href="piece:postage-stamp" transform="translate(1015 476) scale(.13)"/></g>
+        <g id="extra-stamp-2"><use href="piece:postage-stamp" transform="translate(1058 476) scale(.13)"/></g>
+        <g id="extra-stamp-3"><use href="piece:postage-stamp" transform="translate(1101 476) scale(.13)"/></g>
+        <g id="extra-stamp-4"><use href="piece:postage-stamp" transform="translate(1029 529) scale(.13)"/></g>
+        <g id="extra-stamp-5"><use href="piece:postage-stamp" transform="translate(1083 529) scale(.13)"/></g>
+      </g>
+      <text x="960" y="766" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="790" fill="#2b2622">ज़्यादा stamps</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  shots:[[0,'#rule'],[4.26,'#wrong']],
+  on:[
+    [2.58,'fade','#receipt-caption',{dur:.22}],
+    [2.58,'move','#receipt-rise',{by:[0,-225],spring:'soft'}],
+    [5.14,'write','#handwritten',{dur:.50}],
+    [7.04,'fade','#extra-card',{dur:.23}],
+    [7.04,'pop','#extra-stamp-1',{from:.84,spring:'fast'}],
+    [7.12,'pop','#extra-stamp-2',{from:.84,spring:'fast'}],
+    [7.20,'pop','#extra-stamp-3',{from:.84,spring:'fast'}],
+    [7.28,'pop','#extra-stamp-4',{from:.84,spring:'fast'}],
+    [7.36,'pop','#extra-stamp-5',{from:.84,spring:'fast'}]
+  ]
+}
+</script>
+</section>
