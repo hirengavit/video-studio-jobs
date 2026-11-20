@@ -8,6 +8,7 @@
       <rect x="881" y="361" width="838" height="194" rx="15" fill="none" stroke="#b8403a" stroke-width="3" stroke-dasharray="5 10"/>
       <text x="1300" y="456" text-anchor="middle" font-family="Inter" font-size="96" font-weight="800" fill="#fff">Letter box</text>
       <text id="gloss" x="1300" y="532" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="52" font-weight="700" fill="#fde9a6">पत्र पेटी</text>
+      <rect x="1070" y="644" width="336" height="44" rx="4" fill="#fde9a6" opacity=".72"/>
       <text id="prepaid" x="1300" y="672" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="56" font-weight="700" fill="#2b2622">fully prepaid डाक</text>
       <text id="definition-tail" x="1300" y="762" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="52" font-weight="700" fill="#2b2622">भेजने के लिए डाली जाती है</text>
     </g>
@@ -52,7 +53,7 @@
     <text id="posting-label" x="1115" y="422" font-family="Noto Sans Devanagari, Inter" font-size="70" font-weight="800" fill="#2b2622">Public डाक डालती है</text>
     <g id="employee">
       <use href="piece:attendant-badge" transform="translate(1180 530) scale(1.35)"/>
-      <text x="1450" y="888" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="61" font-weight="800" fill="#2b2622">postal कर्मचारी</text>
+      <text x="1450" y="989" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="61" font-weight="800" fill="#2b2622">postal कर्मचारी</text>
     </g>
   </g>
 </svg>
@@ -60,13 +61,12 @@
 {
   shots:[[0,'#def'],[2.18,'#where'],[8.34,'#post']],
   on:[
-    [0,'highlight','#prepaid',{words:'fully prepaid',color:'#fde9a6',opacity:.72,dur:0,pad:4}],
     [.20,'words','#definition-tail',{gap:.235}],
     [2.54,'pop','#post-office'],
     [4.02,'pop','#mail-office'],
     [6.00,'pop','#public-place'],
     [8.34,'words','#posting-label',{gap:.40}],
-    [9.68,'fall','#letter-drop',{dy:260,dur:.62}],
+    [9.68,'fall','#letter-drop',{by:260,bounce:0}],
     [11.26,'pop','#employee']
   ]
 }
