@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s080" data-in="cut" data-section="PART 4 · LIQUIDS &amp; SPECIAL ITEMS" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="sum">
+    <path d="M140 376H1780 M140 566H1780 M140 756H1780 M140 946H1780" fill="none" stroke="#ead9a8" stroke-width="3" opacity=".65"/>
+    <g id="liquid-term">
+      <circle cx="206" cy="224" r="43" fill="#9e1b1b"/>
+      <text x="206" y="241" text-anchor="middle" font-family="Inter, sans-serif" font-size="50" font-weight="800" fill="#fff">1</text>
+      <text x="290" y="239" font-family="Inter, sans-serif" font-size="58" font-weight="800" fill="#9e1b1b">Liquid:</text>
+    </g>
+    <text class="hi" id="inner-container" x="290" y="302" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">अंदर container</text>
+    <text class="hi" id="outer-box" x="670" y="302" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">बाहर metal या मज़बूत लकड़ी का box</text>
+    <use id="receptacle" href="piece:double-receptacle" transform="translate(1596 190) scale(.35)"/>
+    <rect id="absorbent-all-mark" x="560" y="319" width="60" height="54" rx="4" fill="#f2b705" fill-opacity=".38"/>
+    <text class="hi" id="absorbent-note" x="290" y="355" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650" fill="#6f6a63">सोखने वाली चीज़: पूरा liquid सोख ले</text>
+    <g id="hing-term">
+      <circle cx="206" cy="414" r="43" fill="#9e1b1b"/>
+      <text x="206" y="431" text-anchor="middle" font-family="Inter, sans-serif" font-size="50" font-weight="800" fill="#fff">2</text>
+      <text class="hi" id="hing-label" x="290" y="429" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">हींग जैसी गंध:</text>
+    </g>
+    <text class="hi" id="hing-case" x="290" y="492" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">airtight tin या metal case</text>
+    <use id="hing-tin" href="piece:airtight-tin" transform="translate(1620 391) scale(.6)"/>
+
+    <g id="insurance-term">
+      <circle cx="206" cy="604" r="43" fill="#9e1b1b"/>
+      <text x="206" y="621" text-anchor="middle" font-family="Inter, sans-serif" font-size="50" font-weight="800" fill="#fff">3</text>
+      <text x="290" y="619" font-family="Inter, sans-serif" font-size="54" font-weight="800" fill="#9e1b1b">Liquids · perishables · fragile:</text>
+    </g>
+    <text id="insurance-loss-detail" class="hi" x="290" y="682" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">insurance सिर्फ loss का</text>
+    <g id="loss-chip">
+      <rect x="1518" y="610" width="238" height="82" rx="23" fill="#2e7d4f"/>
+      <text x="1637" y="665" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="790" fill="#fff">loss</text>
+    </g>
+    <g id="good-packing-term">
+      <circle cx="206" cy="794" r="43" fill="#9e1b1b"/>
+      <text x="206" y="811" text-anchor="middle" font-family="Inter, sans-serif" font-size="50" font-weight="800" fill="#fff">4</text>
+      <text class="hi" x="290" y="809" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="800" fill="#9e1b1b">अच्छी packing</text>
+    </g>
+    <text id="prohibition-detail" class="hi" x="290" y="872" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="710" fill="#4b4f58">prohibition नहीं हटाती</text>
+    <path id="prohibition-cross" d="M1615 813l49 49m0-49-49 49" fill="none" stroke="#4b4f58" stroke-width="11" stroke-linecap="round"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0, 'fade', '#insurance-term', {dur:.29}],
+    [3.22, 'fade', '#insurance-loss-detail', {dur:.29}],
+    [4.40, 'pop', '#loss-chip', {from:.95,spring:'soft'}],
+    [5.38, 'color', '#liquid-term circle,#liquid-term text:last-of-type,#inner-container,#outer-box,#hing-term circle,#hing-label,#hing-case', {to:'#6f6a63',dur:.38}],
+    [5.38, 'fade', '#good-packing-term', {dur:.30}],
+    [6.50, 'fade', '#prohibition-detail', {dur:.28}],
+    [7.12, 'draw', '#prohibition-cross', {dur:.32}]
+  ]
+}
+</script>
+</section>
