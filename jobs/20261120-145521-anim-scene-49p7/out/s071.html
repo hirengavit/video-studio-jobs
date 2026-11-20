@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s071" data-in="cut" data-section="PART 4 · LIQUIDS &amp; SPECIAL ITEMS" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Hermetically sealed means airtight: air does not pass through the seam, and the smell stays inside">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="hing">
+    <g id="hing-tin">
+      <ellipse cx="560" cy="898" rx="228" ry="16" fill="#ead9a8" opacity=".55"/>
+      <use id="tin" href="piece:airtight-tin" transform="translate(318 390.7) scale(2.2)"/>
+    </g>
+    <text id="hing-heading" x="1000" y="260" class="hi" font-size="58" font-weight="800" fill="#9e1b1b">तेज़ गंध वाली चीज़ें</text>
+    <text id="hing-example" x="1000" y="340" class="hi" font-size="46" font-weight="690" fill="#6f6a63">जैसे हींग</text>
+    <g id="hermetic-term">
+      <rect x="1000" y="460" width="780" height="240" rx="26" fill="#9e1b1b"/>
+      <rect x="1014" y="474" width="752" height="212" rx="18" fill="none" stroke="#fff" stroke-opacity=".67" stroke-width="4" stroke-dasharray="0 15" stroke-linecap="round"/>
+      <text x="1390" y="567" text-anchor="middle" font-family="Inter,sans-serif" font-size="60" font-weight="820" fill="#fff">Hermetically sealed</text>
+      <text id="hermetic-hi" x="1390" y="636" text-anchor="middle" class="hi" font-size="43" font-weight="700" fill="#fde9a6">वायुरोधी बंद</text>
+    </g>
+    <text id="tin-rule" x="1000" y="800" class="hi" font-size="48" font-weight="750" fill="#2b2622">tin या metal case</text>
+    <g id="airtight-chip">
+      <rect x="1000" y="820" width="304" height="110" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1152" y="867" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">airtight</text>
+      <text class="hi" x="1152" y="910" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="730" fill="#6f6a63">हवा-बंद</text>
+    </g>
+    <g id="air-rule">
+      <rect x="1000" y="947" width="780" height="76" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M1038 964v43" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round"/>
+      <text class="hi" x="1073" y="1001" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="790" fill="#2b2622">हवा न आए-जाए</text>
+    </g>
+    <g transform="translate(318 390.7) scale(2.2)">
+      <path id="seam-accent" d="M18 66c4 17 45 30 92 30s88-13 92-30" fill="none" stroke="#f2b705" stroke-width="2.8" stroke-linecap="round"/>
+      <path id="sealed-seam-repeat" d="M18 66c4 17 45 30 92 30s88-13 92-30" fill="none" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <g id="scent-curls" transform="translate(224 272) scale(.6)" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round">
+      <path d="M494 726c-19-19 21-29 14-47-3-8-11-12-13-24"/>
+      <path d="M559 729c-22-18 20-29 14-49-3-10-13-13-13-27"/>
+      <path d="M625 726c-18-19 20-29 13-48-3-8-11-13-12-24"/>
+    </g>
+    <text id="scent-caption" class="hi" x="560" y="968" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="770" fill="#2b2622">खुशबू डिब्बे में ही</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [1.95, 'pop', '#airtight-chip', {from:.96}],
+    [4.24, 'fade', '#air-rule', {dur:.28}],
+    [4.24, 'draw', '#seam-accent', {dur:.39}],
+    [7.41, 'draw', '#scent-curls', {dur:.40}],
+    [7.90, 'draw', '#sealed-seam-repeat', {dur:.22}],
+    [8.38, 'out', '#sealed-seam-repeat', {dur:.25}],
+    [8.93, 'fade', '#scent-caption', {dur:.29}]
+  ]
+}
+</script>
+</section>
+
