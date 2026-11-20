@@ -31,11 +31,11 @@
     <text id="cardboard-case-detail" class="hi" x="303" y="730" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">या मोटे cardboard का case</text>
     <g id="valuables-case-icon"><use href="piece:valuables-case" transform="translate(1536 548) scale(.4)"/></g>
     <g id="bullion-note">
-      <rect id="bullion-note-bg" x="300" y="740" width="690" height="80" rx="19" fill="#f3ead6"/>
+      <rect id="bullion-note-bg" x="300" y="740" width="684" height="80" rx="19" fill="#f3ead6"/>
       <text class="hi" x="316" y="794" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="700" fill="#2b2622">Insured bullion · coins: नियम</text>
       <g id="strict-rule">
-        <text class="hi" x="906" y="794" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="700" fill="#2b2622">अलग</text>
-        <text id="stricter-rule" class="hi" x="1002" y="794" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="700" fill="#2b2622">और सख्त</text>
+        <text class="hi" x="873" y="794" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="700" fill="#2b2622">अलग</text>
+        <text id="stricter-rule" class="hi" x="969" y="794" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="700" fill="#2b2622">और सख्त</text>
       </g>
     </g>
   </g>
@@ -52,8 +52,8 @@
   ],
   update(t, section, $) {
     const chip = $('#bullion-note-bg')[0];
-    const p = Math.max(0, Math.min(1, (t - 9.60) / 0.22));
-    chip.setAttribute('width', String(690 + 173 * p));
+    const p = Math.max(0, Math.min(1, (t - 9.56) / 0.08));
+    chip.setAttribute('width', String(684 + 164 * p));
   }
 }
 </script>
