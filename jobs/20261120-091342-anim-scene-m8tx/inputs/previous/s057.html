@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s057" data-in="cut" data-section="PART 4 · LIQUIDS &amp; SPECIAL ITEMS" data-series="POST OFFICE RULES">
+  <svg viewBox="0 0 1920 1080">
+    <style>
+      #s057 [id$="absorbent"] { display: none; }
+    </style>
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="steps">
+      <text class="hi" x="120" y="233" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="820" fill="#9e1b1b">तरीका · 4 steps</text>
+      <path d="M120 251H900" stroke="#ead9a8" stroke-width="3"/>
+      <g id="step-1" class="packing-step">
+        <rect x="120" y="280" width="780" height="165" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <circle cx="194" cy="341" r="34" fill="#9e1b1b"/>
+        <text x="194" y="355" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="810" fill="#fff">1</text>
+        <text id="step-1-copy" class="hi" x="255" y="358" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="760" fill="#2b2622">liquid पहले receptacle में</text>
+        <text id="example-bottle" x="180" y="414" class="hi" font-size="38" font-weight="650" fill="#6f6a63">बोतल</text>
+        <text id="example-flask" x="306" y="414" class="hi" font-size="38" font-weight="650" fill="#6f6a63">· फ़्लास्क</text>
+        <text id="example-container" x="514" y="414" class="hi" font-size="38" font-weight="650" fill="#6f6a63">· कोई ठीक container</text>
+      </g>
+      <g id="step-2" class="packing-step">
+        <rect x="120" y="460" width="780" height="165" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <circle id="step-2-badge" cx="194" cy="521" r="34" fill="#6f6a63"/>
+        <text x="194" y="535" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="810" fill="#fff">2</text>
+        <text id="step-2-copy" x="255" y="538" class="hi" font-size="44" font-weight="760" fill="#2b2622">दूसरे receptacle में रखें</text>
+        <text id="step-2-detail" x="255" y="594" class="hi" font-size="38" font-weight="650" fill="#6f6a63">metal या मज़बूत लकड़ी का box</text>
+      </g>
+      <g id="step-3" class="packing-step">
+        <rect x="120" y="640" width="780" height="165" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <circle cx="194" cy="701" r="34" fill="#6f6a63"/>
+        <text x="194" y="715" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="810" fill="#fff">3</text>
+      </g>
+      <g id="step-4" class="packing-step">
+        <rect x="120" y="820" width="780" height="165" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <circle cx="194" cy="881" r="34" fill="#6f6a63"/>
+        <text x="194" y="895" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="810" fill="#fff">4</text>
+      </g>
+    </g>
+    <use id="liquid-diagram" href="piece:double-receptacle" transform="translate(1021.2 296.6) scale(1.4)"/>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0,'highlight','#bottle',{color:'#f2b705',opacity:.32,dur:.01,pad:7}],
+      [.54,'fade','#example-bottle',{dur:.22}],
+      [1.46,'fade','#example-flask',{dur:.22}],
+      [3.14,'fade','#example-container',{dur:.22}],
+      [4.34,'fade','#step-2-copy',{dur:.26}],
+      [4.34,'color','#step-2-badge',{to:'#9e1b1b',dur:.26}],
+      [6.96,'fade','#step-2-detail',{dur:.27}],
+      [9.30,'highlight','#outer-box',{color:'#f2b705',opacity:.28,dur:.40,pad:11}]
+    ]
+  }
+  </script>
+</section>
