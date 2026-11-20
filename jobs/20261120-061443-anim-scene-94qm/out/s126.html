@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s126" data-in="cut" data-section="PART 7 · PINS, OPEN ARTICLES &amp; BOOK POST" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="suspect-article">
+    <rect x="120" y="272" width="548" height="542" rx="34" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <ellipse cx="389" cy="685" rx="191" ry="11" fill="#d8c69f" opacity=".65"/>
+    <use href="piece:parcel-box" transform="translate(220 424) scale(1.1)"/>
+    <g id="question-tag">
+      <path d="M324 543q-6-30 28-26 23 4 27 33" fill="none" stroke="#4b4f58" stroke-width="4" stroke-linecap="round"/>
+      <path d="M363 538h46l29 28v61h-75l-18-18v-49Z" fill="#4b4f58" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="375" cy="551" r="5" fill="#f3ead6"/>
+      <text x="405" y="607" text-anchor="middle" font-size="56" font-weight="750" fill="#fff">?</text>
+    </g>
+  </g>
+  <text class="hi" id="case-heading" x="760" y="237" font-size="52" font-weight="750" fill="#9e1b1b">इससे बड़ा case</text>
+  <g id="risk-point">
+    <rect x="760" y="380" width="1040" height="180" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="760" y="411" width="6" height="118" rx="3" fill="#4b4f58"/>
+    <text class="hi" id="risk-copy" x="816" y="493" font-size="50" font-weight="620" fill="#2b2622">डाक या staff को नुकसान का शक</text>
+  </g>
+  <g id="detain">
+    <rect x="899" y="640" width="760" height="220" rx="24" fill="#9e1b1b"/>
+    <rect x="920" y="661" width="718" height="178" rx="17" fill="none" stroke="#b8403a" stroke-width="2.5"/>
+    <g fill="#fbf7ee"><circle cx="948" cy="640" r="6"/><circle cx="948" cy="860" r="6"/><circle cx="999" cy="640" r="6"/><circle cx="999" cy="860" r="6"/><circle cx="1050" cy="640" r="6"/><circle cx="1050" cy="860" r="6"/><circle cx="1101" cy="640" r="6"/><circle cx="1101" cy="860" r="6"/><circle cx="1152" cy="640" r="6"/><circle cx="1152" cy="860" r="6"/><circle cx="1203" cy="640" r="6"/><circle cx="1203" cy="860" r="6"/><circle cx="1254" cy="640" r="6"/><circle cx="1254" cy="860" r="6"/><circle cx="1305" cy="640" r="6"/><circle cx="1305" cy="860" r="6"/><circle cx="1356" cy="640" r="6"/><circle cx="1356" cy="860" r="6"/><circle cx="1407" cy="640" r="6"/><circle cx="1407" cy="860" r="6"/><circle cx="1458" cy="640" r="6"/><circle cx="1458" cy="860" r="6"/><circle cx="1509" cy="640" r="6"/><circle cx="1509" cy="860" r="6"/><circle cx="1560" cy="640" r="6"/><circle cx="1560" cy="860" r="6"/><circle cx="1611" cy="640" r="6"/><circle cx="1611" cy="860" r="6"/></g>
+    <text x="1279" y="742" text-anchor="middle" font-size="80" font-weight="760" fill="#fff">DETAIN</text>
+    <text class="hi" id="detain-hindi" x="1279" y="807" text-anchor="middle" font-size="40" font-weight="580" fill="#fde9a6">रोकना</text>
+  </g>
+  <g id="where-pill">
+    <rect x="760" y="716" width="173" height="67" rx="33.5" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text class="hi" x="846.5" y="761" text-anchor="middle" font-size="42" font-weight="700" fill="#2b2622">वहीं</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0, {zoom: 1}]],
+  on: [
+    [0.18, "words", "#case-heading", {gap: 0.39, from: "none", dist: 0}],
+    [4.28, "pop", "#question-tag", {from: 0.92, spring: "soft"}],
+    [4.28, "fade", "#risk-point", {dur: 0.24}],
+    [4.31, "words", "#risk-copy", {gap: 0.27, from: "none", dist: 0}],
+    [6.80, "highlight", "#risk-copy", {words: "नुकसान", color: "#f2b705", opacity: 0.42, dur: 0.47, pad: 7}],
+    [10.38, "pop", "#where-pill", {from: 0.95, spring: "soft"}],
+    [12.02, "stamp", "#detain", {from: 1.08, rot: -1.1, spring: "soft"}],
+    [12.52, "fade", "#detain-hindi", {dur: 0.27}],
+  ]
+}
+</script>
+</section>
