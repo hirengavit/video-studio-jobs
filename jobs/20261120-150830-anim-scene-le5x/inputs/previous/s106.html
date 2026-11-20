@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s106" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}' data-section="PART 6 · VALUABLES &amp; INSURANCE" data-series="POST OFFICE RULES" lang="hi">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text id="title" x="120" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800" fill="#2b2622">Inland post में कुछ कीमती चीज़ें</text>
+    <g id="case"><use href="piece:valuables-case" transform="translate(160 430) scale(1)"/></g>
+    <g id="insured">
+      <rect x="180" y="760" width="560" height="200" rx="24" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+      <rect x="193" y="773" width="534" height="174" rx="17" fill="none" stroke="#fde9a6" stroke-opacity=".65" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/>
+      <text x="460" y="855" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="850" letter-spacing="3" fill="#fff">INSURED</text>
+      <text id="insured-hi" x="460" y="916" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="660" fill="#fde9a6">बीमा सहित</text>
+    </g>
+    <g id="groups">
+      <rect id="groups-bg" x="900" y="330" width="900" height="630" rx="29" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+      <text x="945" y="410" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="800" fill="#9e1b1b">कौन-सी चीज़ें?</text>
+    </g>
+    <g id="chip-money">
+      <rect x="940" y="450" width="820" height="150" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+      <rect x="970" y="478" width="105" height="94" rx="15" fill="#fbf7ee"/>
+      <g transform="translate(978 487)"><rect x="0" y="10" width="88" height="56" rx="8" fill="#e8d7aa" stroke="#2b2622" stroke-width="3"/><rect x="7" y="17" width="74" height="42" rx="5" fill="none" stroke="#9c845e" stroke-width="2"/><text x="44" y="52" text-anchor="middle" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="31" font-weight="800" fill="#2b2622">₹</text></g>
+      <text x="1112" y="531" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="750" fill="#2b2622">पैसे</text>
+    </g>
+    <g id="chip-metal">
+      <rect x="940" y="620" width="820" height="150" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+      <rect x="970" y="648" width="105" height="94" rx="15" fill="#fbf7ee"/>
+      <g transform="translate(978 657)"><path d="M9 46L23 20h47l12 26-16 14H19Z" fill="#e9cc83" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/><path d="M10 46h72M22 27h43" fill="none" stroke="#8a621c" stroke-width="2.5" stroke-linecap="round"/></g>
+      <text x="1112" y="716" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="750" fill="#2b2622">धातु</text>
+    </g>
+    <g id="chip-other">
+      <rect x="940" y="790" width="820" height="150" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+      <rect x="970" y="818" width="105" height="94" rx="15" fill="#fbf7ee"/>
+      <g transform="translate(978 827)"><path d="M12 31L27 14h34l16 17-32 40Z" fill="#cfe3e8" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/><path d="M12 31h65M27 14l7 17 11 40 12-40 4-17M34 31l11-17 12 17" fill="none" stroke="#42636b" stroke-width="2" stroke-linejoin="round"/></g>
+      <text x="1112" y="886" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="750" fill="#2b2622">दूसरी कीमती चीज़ें</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    update(t, section, $) {
+      const panel = $('#groups-bg')[0];
+      const ramp = (start) => Math.max(0, Math.min(1, (t - start) / 0.26));
+      if (panel) panel.setAttribute('height', 104 + 186 * ramp(7.25) + 170 * ramp(8.12) + 170 * ramp(9.38));
+    },
+    on: [
+      [0,'words','#title',{gap:0.12,dist:16,spring:'soft'}],
+      [1.26,'pop','#case',{from:0.94,spring:'soft'}],
+      [2.82,'stamp','#insured',{from:1.12,rot:-3,spring:'soft'}],
+      [3.32,'fade','#insured-hi',{dur:0.30}],
+      [6.02,'fade','#groups',{dur:0.36}],
+      [7.44,'slide','#chip-money',{from:'down',dist:22,spring:'soft'}],
+      [8.30,'slide','#chip-metal',{from:'down',dist:22,spring:'soft'}],
+      [9.56,'slide','#chip-other',{from:'down',dist:22,spring:'soft'}]
+    ]
+  }
+  </script>
+</section>
