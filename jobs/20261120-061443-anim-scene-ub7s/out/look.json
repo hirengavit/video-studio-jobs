@@ -8,12 +8,5 @@
   "13.17"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s045",
-   "text": "letters की तय शर्तें / या envelope की शर्तें तोड़े",
-   "t": 5.33
-  }
- ]
+ "warnings": []
 }
