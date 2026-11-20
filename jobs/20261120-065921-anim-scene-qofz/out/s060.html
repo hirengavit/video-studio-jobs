@@ -1,0 +1,36 @@
+<section class="vs-scene" id="s060" data-in="cut" data-section="PART 4 · LIQUIDS &amp; SPECIAL ITEMS" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="काँच की बोतल का ढक्कन कसकर बंद है, फिर भी बाहर का बचाने वाला डिब्बा चाहिए।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="example">
+    <text class="hi" x="1000" y="260" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800" fill="#9e1b1b">उदाहरण</text>
+    <use id="example-bottle" href="piece:glass-bottle" transform="translate(408 453.6) scale(1.6)"/>
+    <g id="can-send">
+      <rect x="1000" y="348" width="638" height="104" rx="52" fill="#2e7d4f"/>
+      <text class="hi" x="1080" y="417" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#ffffff">भेजा जा सकता है</text>
+      <path d="M1536 402 l14 14 29 -33" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text class="hi" id="glass-line" x="1000" y="520" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#2b2622">काँच की bottle</text>
+    <text class="hi" id="cap-line" x="1000" y="620" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#2b2622">ढक्कन कसकर बंद</text>
+    <rect id="cap-glow" x="471" y="471" width="98" height="81" rx="14" fill="none" stroke="#f2b705" stroke-width="7"/>
+    <g id="packing-incomplete">
+      <rect x="1000" y="708" width="638" height="104" rx="52" fill="#eeeded" stroke="#d0ced0" stroke-width="3"/>
+      <text class="hi" x="1080" y="777" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#4b4f58">packing पूरी नहीं</text>
+      <path d="M1537 742 L1571 778 M1571 742 L1537 778" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <rect id="outer-box" x="300" y="380" width="440" height="556" rx="16" fill="none" stroke="#737984" stroke-width="8"/>
+    <text class="hi" id="outer-label" x="520" y="982" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="740" fill="#4b4f58">बाहर का box</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.00,'fade','#glass-line',{dur:0.36}],
+    [2.58,'fade','#cap-line',{dur:0.30}],
+    [3.42,'draw','#cap-glow',{dur:0.38}],
+    [6.10,'pop','#packing-incomplete',{from:0.94,spring:'soft'}],
+    [6.66,'draw','#outer-box',{dur:0.72}],
+    [8.12,'fade','#outer-label',{dur:0.34}]
+  ]
+}
+</script>
+</section>
