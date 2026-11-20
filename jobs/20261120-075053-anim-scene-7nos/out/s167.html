@@ -1,0 +1,35 @@
+<section class="vs-scene" id="s167" data-in="cut" data-section="PART 9 · KEPT OUT OF LETTER BOX" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="Writing a service name on a cover does not give the service; the article needs the acceptance procedure">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="cover">
+    <use id="registration-envelope" href="piece:registration-envelope" transform="translate(160 300) scale(1.5)"/>
+    <text id="registered" x="359" y="482" font-family="Caveat, cursive" font-size="64" font-weight="700" fill="#2b2622">Registered</text>
+    <text class="hi" id="cover-heading" x="900" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800" fill="#9e1b1b">cover पर लिखे शब्द</text>
+    <text id="insured" x="359" y="560" font-family="Caveat, cursive" font-size="64" font-weight="700" fill="#2b2622">Insured</text>
+    <text id="speed-post" x="359" y="660" font-family="Caveat, cursive" font-size="64" font-weight="700" fill="#2b2622">Speed Post</text>
+    <g id="not-by-writing">
+      <rect x="900" y="400" width="880" height="140" rx="30" fill="#4b4f58"/>
+      <text class="hi" x="1340" y="487" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="760" fill="#fff">लिखने से service नहीं मिलती</text>
+    </g>
+    <g id="acceptance">
+      <rect x="900" y="620" width="880" height="240" rx="30" fill="#fff" stroke="#2e7d4f" stroke-width="4"/>
+      <text x="951" y="726" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#2b2622">Acceptance procedure</text>
+      <text class="hi" id="acceptance-hi" x="951" y="798" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="700" fill="#6f6a63">स्वीकृति प्रक्रिया</text>
+      <path id="acceptance-check" d="M1652 749l22 22 40-49" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0, 'type', '#insured', {cps: 17}],
+    [1.68, 'type', '#speed-post', {cps: 18}],
+    [4.40, 'fade', '#not-by-writing', {dur: .27}],
+    [4.74, 'strike', '#registered, #insured, #speed-post', {color: '#4b4f58', dim: .70, width: 6, dur: .37}],
+    [7.04, 'fade', '#acceptance', {dur: .29}],
+    [7.54, 'fade', '#acceptance-hi', {dur: .25}],
+    [9.32, 'draw', '#acceptance-check', {dur: .32}]
+  ]
+}
+</script>
+</section>
