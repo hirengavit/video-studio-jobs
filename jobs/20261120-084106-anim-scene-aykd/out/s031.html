@@ -1,0 +1,75 @@
+<section class="vs-scene" id="s031" data-in="cut" data-section="PART 2 · LETTER ENVELOPE" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Maximum envelope size, tolerance, and paper thickness">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="size">
+    <g id="size-grid" fill="none">
+      <path d="M180 440H913M180 520H913M180 600H913M180 680H913M180 760H913M180 840H913M180 920H913M260 400V960M340 400V960M420 400V960M500 400V960M580 400V960M660 400V960M740 400V960M820 400V960M900 400V960" stroke="#ddd7ca" stroke-width="2"/>
+      <path d="M180 400V960H955" stroke="#8f8980" stroke-width="3"/>
+    </g>
+    <rect id="max-outline" x="180" y="442" width="733" height="518" fill="#f3ead6" fill-opacity=".25" stroke="#4b4f58" stroke-width="5"/>
+    <g id="maximum">
+      <rect x="180" y="181" width="570" height="140" rx="26" fill="#9e1b1b"/>
+      <text x="227" y="245" font-family="Inter,sans-serif" font-size="53" font-weight="820" fill="#fff">Maximum Size</text>
+      <text class="hi" x="227" y="291" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="710" fill="#fde9a6">अधिकतम नाप</text>
+    </g>
+    <g id="max-width">
+      <path d="M180 422V400m733 22v-22M180 411H913" fill="none" stroke="#4b4f58" stroke-width="2.5"/>
+      <text x="546.5" y="389" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="810" fill="#2b2622">458</text>
+    </g>
+    <g id="max-height">
+      <path d="M924 442h34m-34 518h34m-17-518v518" fill="none" stroke="#4b4f58" stroke-width="2.5"/>
+      <rect x="644" y="605" width="247" height="77" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+      <text x="767.5" y="657" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">× 324 mm</text>
+    </g>
+    <circle id="size-origin" cx="180" cy="960" r="8" fill="#4b4f58"/>
+    <rect id="min-outline" x="180" y="816" width="224" height="144" fill="#fde9a6" fill-opacity=".3" stroke="#9e1b1b" stroke-width="6"/>
+    <g id="width-label">
+      <path d="M180 804V784m224 20v-20M180 795H404" fill="none" stroke="#4b4f58" stroke-width="2"/>
+      <text x="292" y="777" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="#2b2622">140</text>
+    </g>
+    <g id="height-label">
+      <path d="M413 816h24m-24 144h24m-12-144v144" fill="none" stroke="#4b4f58" stroke-width="2"/>
+      <text x="450" y="945" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="#2b2622">× 90 mm</text>
+    </g>
+    <g id="minimum">
+      <rect x="460" y="797" width="460" height="106" rx="19" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="485" y="841" font-family="Inter,sans-serif" font-size="46" font-weight="820" fill="#9e1b1b">Minimum Size</text>
+      <text id="minimum-hi" x="485" y="883" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="37" font-weight="700" fill="#6f6a63">न्यूनतम नाप</text>
+    </g>
+  </g>
+  <g id="tolerance">
+    <rect x="1060" y="453" width="740" height="134" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="1084" y="474" width="10" height="92" rx="5" fill="#9e1b1b"/>
+    <text class="hi" x="1122" y="540" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="790" fill="#2b2622">दोनों में ± 2 mm छूट</text>
+  </g>
+  <g id="thickness">
+    <rect x="1060" y="690" width="740" height="270" rx="28" fill="#f3ead6"/>
+    <g transform="translate(1123 744)" stroke="#4b4f58" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 51 66 24 116 35 50 62Z" fill="#fff"/>
+      <path d="M0 51v20l50 11 66-27V35M50 62v20" fill="none"/>
+      <path d="M132 40v36m-8-27 8-9 8 9m-16 18 8 9 8-9" fill="none"/>
+    </g>
+    <text class="hi" x="1304" y="795" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="780" fill="#2b2622">कागज़ की मोटाई</text>
+    <g id="paper-range">
+      <rect id="paper-range-highlight" x="1290" y="839" width="353" height="80" rx="13" fill="#fde9a6"/>
+      <text id="thick-min" x="1304" y="896" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#2b2622">0.15</text>
+      <text id="thick-max" x="1446" y="896" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#2b2622">– 0.5 mm</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [.34, 'draw', '#max-outline', {dur: .60}],
+    [.34, 'fade', '#maximum', {dur: .30}],
+    [.64, 'fade', '#max-width', {dur: .27}],
+    [1.88, 'fade', '#max-height', {dur: .28}],
+    [5.04, 'pop', '#tolerance', {from: .96}],
+    [7.60, 'slide', '#thickness', {from: 'down', dist: 40}],
+    [8.94, 'fade', '#thick-min', {dur: .27}],
+    [11.22, 'fade', '#thick-max', {dur: .27}],
+    [12.36, 'fade', '#paper-range-highlight', {dur: .32}]
+  ]
+}
+</script>
+</section>
