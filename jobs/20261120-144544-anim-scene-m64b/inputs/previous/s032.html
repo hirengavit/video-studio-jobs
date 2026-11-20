@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s032" data-in="cut" data-section="PART 2 · LETTER ENVELOPE" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="paper-min">
+    <rect x="100" y="200" width="600" height="420" rx="30" fill="#9e1b1b"/>
+    <rect x="123" y="223" width="554" height="374" rx="19" fill="none" stroke="#b8403a" stroke-width="3"/>
+    <g fill="#fbf7ee"><circle cx="175" cy="200" r="7"/><circle cx="175" cy="620" r="7"/><circle cx="225" cy="200" r="7"/><circle cx="225" cy="620" r="7"/><circle cx="275" cy="200" r="7"/><circle cx="275" cy="620" r="7"/><circle cx="325" cy="200" r="7"/><circle cx="325" cy="620" r="7"/><circle cx="375" cy="200" r="7"/><circle cx="375" cy="620" r="7"/><circle cx="425" cy="200" r="7"/><circle cx="425" cy="620" r="7"/><circle cx="475" cy="200" r="7"/><circle cx="475" cy="620" r="7"/><circle cx="525" cy="200" r="7"/><circle cx="525" cy="620" r="7"/><circle cx="575" cy="200" r="7"/><circle cx="575" cy="620" r="7"/><circle cx="625" cy="200" r="7"/><circle cx="625" cy="620" r="7"/></g>
+    <text class="hi" x="400" y="316" text-anchor="middle" font-size="48" font-weight="715" fill="#fff">कागज़</text>
+    <text class="hi" id="minimum-copy" x="400" y="415" text-anchor="middle" font-size="40" font-weight="620" fill="#fde9a6">कम से कम</text>
+    <g id="gsm-number"><text x="400" y="543" text-anchor="middle" font-size="120" font-weight="780" fill="#fff">70 GSM</text></g>
+  </g>
+  <text id="minimum-source" x="100" y="666" font-size="28" font-weight="500" fill="#6f6a63">Post Office Regulations, 2024</text>
+  <g id="gsm-definition">
+    <rect x="800" y="200" width="1000" height="220" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="1300" y="283" text-anchor="middle" font-size="67" font-weight="760" fill="#9e1b1b">GSM</text>
+    <text id="gsm-en" x="1300" y="346" text-anchor="middle" font-size="44" font-weight="710" fill="#2b2622">Grams per Square Metre</text>
+    <text class="hi" id="gsm-hi" x="1300" y="398" text-anchor="middle" font-size="39" font-weight="600" fill="#6f6a63">ग्राम प्रति वर्ग मीटर</text>
+  </g>
+  <g id="sheet-diagram">
+    <g id="square-sheet" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M1128 700 1211 552H1517l-83 148Z" fill="#fff" stroke="#2b2622"/>
+      <path d="M1128 700H1434l83-148v10l-82 149h-307Z" fill="#f3ead6"/>
+      <path d="M1141 682 1215 568h277" fill="none" stroke="#ead9a8" stroke-width="3"/>
+    </g>
+    <text id="sheet-size" x="1321" y="643" text-anchor="middle" font-size="54" font-weight="760" fill="#2b2622">1 m²</text>
+    <g id="pan-edge" fill="none" stroke="#6f6a63" stroke-width="5" stroke-linecap="round">
+      <path d="M1086 711h437"/>
+    </g>
+    <g id="scale-diagram" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M1086 711h437l-19 33h-399Z" fill="#f3ead6"/>
+      <path d="M1136 744h337l44 105h-425Z" fill="#dfc79c"/>
+      <rect x="1068" y="846" width="474" height="23" rx="8" fill="#ebd7b1"/>
+      <rect x="1230" y="771" width="150" height="55" rx="12" fill="#fff"/>
+      <path d="M1254 800h25m13 0h25m13 0h25" fill="none" stroke="#9e1b1b" stroke-width="4"/>
+    </g>
+    <text class="hi" id="weight-label" x="1300" y="954" text-anchor="middle" font-size="46" font-weight="710" fill="#2b2622">1 m² कागज़ का वज़न, grams में</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0, {zoom: 1}]],
+  on: [
+    [1.44, "fade", "#minimum-copy", {dur: 0.24}],
+    [1.68, "pop", "#gsm-number", {from: 0.96, spring: "soft"}],
+    [1.80, "fade", "#minimum-source", {dur: 0.30}],
+    [3.81, "slide", "#gsm-definition", {from:"right", dist: 70, spring:"soft"}],
+    [5.21, "words", "#gsm-en", {gap: 0.48, from:"none", dist: 0}],
+    [7.21, "fade", "#gsm-hi", {dur: 0.30}],
+    [8.85, "draw", "#square-sheet", {dur: 0.52}],
+    [8.85, "fade", "#pan-edge", {dur: 0.20}],
+    [9.13, "fade", "#sheet-size", {dur: 0.30}],
+    [10.51, "draw", "#scale-diagram", {dur: 0.53}],
+    [10.55, "words", "#weight-label", {gap: 0.14, from:"none", dist: 0}]
+  ]
+}
+</script>
+</section>
