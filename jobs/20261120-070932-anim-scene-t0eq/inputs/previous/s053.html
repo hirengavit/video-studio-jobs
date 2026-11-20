@@ -1,0 +1,65 @@
+<section class="vs-scene" id="s053" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}' data-section="PART 4 · LIQUIDS &amp; SPECIAL ITEMS" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="cover-three-jobs">
+    <g id="shelf">
+      <path d="M140 700H900v22H140Z" fill="#e2c99a" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M153 713H887" fill="none" stroke="#bd9b65" stroke-width="2"/>
+      <use href="piece:glass-bottle" transform="translate(204 466.8) scale(0.8)"/>
+      <use href="piece:ceramic-cup" transform="translate(419.9 506.8) scale(1.4)"/>
+      <use href="piece:airtight-tin" transform="translate(650 468.5) scale(1.0)"/>
+      <text class="hi" id="same-packing" x="520" y="820" text-anchor="middle" font-size="52" font-weight="710" fill="#2b2622">एक जैसी packing</text>
+    </g>
+    <g id="cover-rules">
+      <rect x="980" y="180" width="800" height="780" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M1030 455H1730" fill="none" stroke="#ead9a8" stroke-width="2.5"/>
+      <g id="box-term">
+        <text x="1120" y="313" text-anchor="middle" font-size="56" font-weight="750" fill="#2b2622">Box</text>
+        <text class="hi" id="box-hi" x="1120" y="379" text-anchor="middle" font-size="40" font-weight="620" fill="#6f6a63">डिब्बा</text>
+      </g>
+      <g id="wrapper-term">
+        <text x="1380" y="313" text-anchor="middle" font-size="56" font-weight="750" fill="#2b2622">Wrapper</text>
+        <text class="hi" id="wrapper-hi" x="1380" y="379" text-anchor="middle" font-size="40" font-weight="620" fill="#6f6a63">रैपर</text>
+      </g>
+      <g id="cover-term">
+        <text x="1640" y="313" text-anchor="middle" font-size="56" font-weight="750" fill="#2b2622">Cover</text>
+        <text class="hi" id="cover-hi" x="1640" y="379" text-anchor="middle" font-size="40" font-weight="620" fill="#6f6a63">कवर</text>
+      </g>
+      <path id="strength-underline" d="M1052 412Q1387 402 1711 412" fill="none" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/>
+      <text class="hi" id="jobs-title" x="1030" y="522" font-size="52" font-weight="750" fill="#9e1b1b">तीन काम</text>
+      <g id="job-badge-1">
+        <circle cx="1034" cy="600" r="31" fill="#9e1b1b"/>
+        <text x="1034" y="614" text-anchor="middle" font-size="40" font-weight="740" fill="#fff">1</text>
+      </g>
+      <g id="job-badge-2">
+        <circle cx="1034" cy="720" r="31" fill="#9e1b1b"/>
+        <text x="1034" y="734" text-anchor="middle" font-size="40" font-weight="740" fill="#fff">2</text>
+      </g>
+      <g id="job-badge-3">
+        <circle cx="1034" cy="840" r="31" fill="#9e1b1b"/>
+        <text x="1034" y="854" text-anchor="middle" font-size="40" font-weight="740" fill="#fff">3</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0, {zoom: 1}]],
+  on: [
+    [2.52, "strike", "#same-packing", {color: "#4b4f58", dim: 0.68, width: 5, dur: 0.35}],
+    [4.02, "fade", "#cover-rules", {dur: 0.27}],
+    [4.03, "pop", "#box-term", {from: 0.95, spring: "soft"}],
+    [4.52, "fade", "#box-hi", {dur: 0.25}],
+    [4.84, "pop", "#wrapper-term", {from: 0.95, spring: "soft"}],
+    [5.34, "fade", "#wrapper-hi", {dur: 0.25}],
+    [6.38, "pop", "#cover-term", {from: 0.95, spring: "soft"}],
+    [6.88, "fade", "#cover-hi", {dur: 0.25}],
+    [7.84, "draw", "#strength-underline", {dur: 0.55}],
+    [9.46, "fade", "#jobs-title", {dur: 0.25}],
+    [9.48, "pop", "#job-badge-1", {from: 0.92, spring: "soft"}],
+    [9.60, "pop", "#job-badge-2", {from: 0.92, spring: "soft"}],
+    [9.72, "pop", "#job-badge-3", {from: 0.92, spring: "soft"}]
+  ]
+}
+</script>
+</section>
