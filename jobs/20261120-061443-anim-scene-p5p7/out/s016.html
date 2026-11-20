@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s016" data-in="cut" data-section="PART 1 · PACKING &amp; STRONG COVER" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="parcel-rule">
+ <g id="parcel-term">
+   <rect x="100" y="180" width="660" height="240" rx="31" fill="#9e1b1b"/>
+   <rect x="124" y="202" width="612" height="196" rx="25" fill="none" stroke="#b8403a" stroke-width="3" stroke-dasharray="3 14" stroke-linecap="round"/>
+   <text x="430" y="292" text-anchor="middle" font-family="Inter, sans-serif" font-size="68" font-weight="840" fill="#fff">India Post Parcel</text>
+   <text id="parcel-hi" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="430" y="354" text-anchor="middle" font-size="41" font-weight="690" fill="#fde9a6">इंडिया पोस्ट पार्सल</text>
+ </g>
+ <g id="strict-pill">
+   <rect x="800" y="249" width="241" height="86" rx="21" fill="#e9e6df"/>
+   <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="920.5" y="305" text-anchor="middle" font-size="43" font-weight="760" fill="#4b4f58">नियम सख्त</text>
+ </g>
+ <g id="rule-card">
+   <rect x="100" y="480" width="940" height="236" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <text id="rule-a" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="156" y="573" font-size="50" font-weight="730" fill="#2b2622">जिसकी packing</text>
+   <text id="rule-spec" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="548" y="573" font-size="50" font-weight="750" fill="#2b2622">तय specifications</text>
+   <text id="rule-b" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="156" y="653" font-size="50" font-weight="700" fill="#2b2622">के हिसाब से नहीं,</text>
+ </g>
+ <g id="parcel-display">
+   <rect x="1120" y="345" width="700" height="396" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+   <use href="piece:parcel-box" transform="translate(1310 420) scale(1)"/>
+ </g>
+ <g id="specifications-chip">
+   <rect x="1247" y="774" width="446" height="96" rx="21" fill="#4b4f58"/>
+   <text x="1298" y="835" font-family="Inter, sans-serif" font-size="45" font-weight="780" fill="#fff">specifications</text>
+   <path d="m1632 811 25 25m-25 0 25-25" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+ [0.50,'fade','#parcel-hi',{dur:0.25}],
+ [2.06,'pop','#strict-pill',{from:0.97}],
+ [3.08,'fade','#rule-card',{dur:0.25}],
+ [3.10,'words','#rule-a',{gap:0.62,dist:11}],
+ [5.76,'words','#rule-spec',{gap:0.66,dist:11}],
+ [6.42,'highlight','#rule-spec',{color:'#f2b705',opacity:0.43,pad:5,dur:0.35}],
+ [6.42,'pop','#specifications-chip',{from:0.97}],
+ [7.40,'words','#rule-b',{gap:0.26,dist:11}]
+]}
+</script>
+</section>
