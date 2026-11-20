@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s072" data-in="cut" data-section="PART 4 · KEYS, BAG AND ROUND" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Acceptance is not permission to use the ordinary letter box. Machine-franked articles go to their authorised counter.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="acceptance">
+    <rect x="120" y="242" width="790" height="680" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <rect x="155" y="274" width="720" height="150" rx="24" fill="#9e1b1b"/>
+    <rect x="169" y="288" width="692" height="122" rx="14" fill="none" stroke="#fde9a6" stroke-opacity=".72" stroke-width="6" stroke-dasharray="0 18" stroke-linecap="round"/>
+    <text class="hi" x="515" y="368" text-anchor="middle" font-size="64" font-weight="820" fill="#fff">Acceptance की सुविधा</text>
+  </g>
+  <g id="box-rule">
+    <g id="not-equal">
+      <circle cx="515" cy="524" r="60" fill="#4b4f58"/>
+      <text x="515" y="553" text-anchor="middle" font-family="Inter,sans-serif" font-size="87" font-weight="800" fill="#fff">≠</text>
+    </g>
+    <rect x="155" y="625" width="720" height="252" rx="24" fill="#f3ead6"/>
+    <use href="piece:letter-box-pillar" transform="translate(208 636) scale(.53)"/>
+    <text class="hi" x="393" y="733" font-size="49" font-weight="780" fill="#2b2622">आम letter box</text>
+    <text class="hi" id="permission" x="393" y="806" font-size="47" font-weight="700" fill="#4b4f58">छूट</text>
+    <g id="refused">
+      <circle cx="777" cy="753" r="43" fill="#4b4f58"/>
+      <path d="M760 736l34 34m0-34-34 34" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g id="machine-route">
+    <rect x="970" y="242" width="830" height="680" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <text x="1385" y="346" text-anchor="middle" font-family="Inter,sans-serif" font-size="70" font-weight="820" fill="#9e1b1b">Machine-franked</text>
+    <text class="hi" id="machine-hi" x="1385" y="419" text-anchor="middle" font-size="45" font-weight="670" fill="#6f6a63">मशीन से फ़्रैंक की गई डाक</text>
+    <path d="M1010 468H1760" stroke="#ead9a8" stroke-width="3"/>
+    <g id="franked-envelope">
+      <rect x="1014" y="559" width="294" height="177" rx="13" fill="#fff" stroke="#2b2622" stroke-width="4"/>
+      <path d="M1017 566l135 99q10 7 20 0l133-99M1017 728l102-88m185 88-99-88" fill="none" stroke="#c8bdad" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="1137" y="574" width="155" height="62" rx="6" fill="#fff"/>
+      <use href="piece:franking-impression" transform="translate(1126 521) scale(.47)"/>
+    </g>
+    <g id="authorised">
+      <use href="piece:posting-counter" transform="translate(1390 494) scale(.42)"/>
+      <text x="1579" y="784" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="810" fill="#2b2622">Authorised counter</text>
+      <text class="hi" id="counter-hi" x="1579" y="841" text-anchor="middle" font-size="42" font-weight="680" fill="#6f6a63">अधिकृत काउंटर</text>
+    </g>
+    <path id="counter-arrow" d="M1328 646H1385m-17-15 17 15-17 15" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="allowed">
+      <circle cx="1723" cy="676" r="35" fill="#2e7d4f" stroke="#fff" stroke-width="3"/>
+      <path d="M1708 676l10 10 20-24" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [2.36,'fade','#box-rule',{dur:.30}],
+    [4.30,'fade','#permission',{dur:.22}],
+    [4.64,'pop','#refused',{spring:'fast',from:.9}],
+    [5.88,'fade','#machine-route',{dur:.28}],
+    [6.36,'fade','#machine-hi',{dur:.25}],
+    [7.38,'fade','#authorised',{dur:.24}],
+    [7.38,'draw','#counter-arrow',{dur:.28}],
+    [8.24,'fade','#counter-hi',{dur:.23}],
+    [8.98,'pop','#allowed',{spring:'fast',from:.9}]
+  ]
+}
+</script>
+</section>
