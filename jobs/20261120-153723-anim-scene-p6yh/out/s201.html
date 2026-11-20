@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s201" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}' data-section="KEY POINTS" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Key point one: packing protects the article, postal staff, other mail and equipment">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="recap">
+    <g id="badge-rail">
+      <path d="M170 230V930" stroke="#ded7cb" stroke-width="4"/>
+      <g id="badge-1"><circle id="badge-dot-1" cx="170" cy="230" r="48" fill="#6f6a63"/><text x="170" y="246" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="810" fill="#fff">1</text></g>
+      <g id="badge-2"><circle id="badge-dot-2" cx="170" cy="370" r="48" fill="#6f6a63"/><text x="170" y="386" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="810" fill="#fff">2</text></g>
+      <g id="badge-3"><circle id="badge-dot-3" cx="170" cy="510" r="48" fill="#6f6a63"/><text x="170" y="526" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="810" fill="#fff">3</text></g>
+      <g id="badge-4"><circle id="badge-dot-4" cx="170" cy="650" r="48" fill="#6f6a63"/><text x="170" y="666" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="810" fill="#fff">4</text></g>
+      <g id="badge-5"><circle id="badge-dot-5" cx="170" cy="790" r="48" fill="#6f6a63"/><text x="170" y="806" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="810" fill="#fff">5</text></g>
+      <g id="badge-6"><circle id="badge-dot-6" cx="170" cy="930" r="48" fill="#6f6a63"/><text x="170" y="946" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="810" fill="#fff">6</text></g>
+    </g>
+    <g id="recap-envelope">
+      <rect x="300" y="160" width="1500" height="670" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M329 162H1771Q1798 162 1798 190V233L1050 300L302 233V190Q302 162 329 162Z" fill="#f3ead6"/>
+      <path d="M302 233L1050 300L1798 233" fill="none" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M340 439H1760M340 569H1760M340 699H1760" fill="none" stroke="#eee5d4" stroke-width="3"/>
+      <text id="recap-title" class="hi" x="1050" y="230" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="820" fill="#9e1b1b">सबसे ज़रूरी बातें</text>
+      <g id="active-point">
+        <text class="hi" x="346" y="216" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="740" fill="#6f6a63">पहली बात</text>
+        <g id="recap-seal">
+          <circle cx="1050" cy="289" r="35" fill="#9e1b1b"/>
+          <circle cx="1050" cy="289" r="27" fill="none" stroke="#fde9a6" stroke-width="2.5" stroke-dasharray="3 5"/>
+          <text x="1050" y="302" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#fff">1</text>
+        </g>
+      </g>
+      <g id="row1">
+        <text id="packing-en" x="340" y="370" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">Packing</text>
+        <text id="packing-hi" class="hi" x="340" y="415" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="650" fill="#6f6a63">पैकिंग</text>
+        <g id="protects-pill">
+          <rect x="940" y="338" width="760" height="80" rx="40" fill="#f3ead6"/>
+          <path id="protects-divider-staff" d="M1105 363V394" stroke="#dacaab" stroke-width="3"/>
+          <path id="protects-divider-mail" d="M1240 363V394" stroke="#dacaab" stroke-width="3"/>
+          <path id="protects-divider-equipment" d="M1465 363V394" stroke="#dacaab" stroke-width="3"/>
+          <text class="hi" id="p-article" x="1024" y="393" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="730" fill="#2b2622">सामान</text>
+          <text id="p-staff" x="1173" y="393" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="730" fill="#2b2622">staff</text>
+          <text class="hi" id="p-mail" x="1353" y="393" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="730" fill="#2b2622">दूसरी डाक</text>
+          <text id="p-equipment" x="1582" y="393" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="730" fill="#2b2622">equipment</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0, 'fade', '#recap-title', {dur: .3}],
+    [3.39, 'color', '#badge-dot-1', {to: '#9e1b1b', dur: .20}],
+    [3.39, 'pulse', '#badge-1', {amount: .12}],
+    [3.39, 'pop', '#active-point'],
+    [4.01, 'fade', '#packing-en'],
+    [4.51, 'fade', '#packing-hi'],
+    [5.05, 'fade', '#protects-pill', {dur: .15}],
+    [5.05, 'fade', '#p-article', {dur: .24}],
+    [5.83, 'fade', '#p-staff,#protects-divider-staff', {dur: .24}],
+    [6.87, 'fade', '#p-mail,#protects-divider-mail', {dur: .24}],
+    [8.49, 'fade', '#p-equipment,#protects-divider-equipment', {dur: .24}]
+  ]
+}
+</script>
+</section>
