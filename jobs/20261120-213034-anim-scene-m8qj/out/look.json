@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "empty-start",
-   "scene": "s096",
-   "message": "nothing on screen at 0.3 s: the first thing should land within about 0.4 s of the scene's start",
-   "t": 0.3
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s096",
    "message": "a card is mostly empty at 1.8 s: bring its items in sooner, or size it for what it holds now",
