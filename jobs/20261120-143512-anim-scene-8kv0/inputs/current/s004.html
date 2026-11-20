@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s004" data-in="cut" data-section="PACKING, SEALING &amp; POSTING" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="tiers">
+ <g id="tier1">
+  <rect x="260" y="200" width="1400" height="280" rx="30" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+  <rect x="274" y="214" width="1372" height="252" rx="22" fill="none" stroke="#e2a19e" stroke-width="2" stroke-dasharray="6 9"/>
+  <circle cx="365" cy="311" r="56" fill="#7d1414" stroke="#f3ead6" stroke-width="3"/>
+  <text x="365" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="850" fill="#fff">1</text>
+  <text id="regulation-tier" x="460" y="293" font-family="Inter, sans-serif" font-size="56" font-weight="840" fill="#fff">Post Office Regulations 2024</text>
+  <text id="orders-en" x="460" y="368" font-family="Inter, sans-serif" font-size="44" font-weight="770" fill="#fff">+ Later Orders</text>
+  <text id="orders-hi" x="460" y="422" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="730" fill="#fde9a6">बाद के आदेश</text>
+  <g id="priority">
+   <rect x="1290" y="340" width="299" height="85" rx="42" fill="#f2b705"/>
+   <text x="1439.5" y="397" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="850" fill="#2b2622">प्राथमिकता</text>
+  </g>
+ </g>
+ <path id="tier-arrow" d="M960 491v65m-19-20 19 20 19-20" fill="none" stroke="#6f6a63" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="tier2">
+  <rect x="260" y="580" width="1400" height="380" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <circle cx="365" cy="681" r="56" fill="#9e1b1b"/>
+  <text x="365" y="700" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="850" fill="#fff">2</text>
+  <text x="460" y="659" font-family="Inter, sans-serif" font-size="52" font-weight="840" fill="#9e1b1b">Other Instructions</text>
+  <text id="other-hi" x="460" y="710" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="700" fill="#6f6a63">बाकी निर्देश</text>
+  <text id="condition" x="460" y="768" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="800" fill="#2b2622">तभी लागू, जब:</text>
+  <g id="consistent">
+   <path d="m462 823 13 13 27-32" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+   <text x="531" y="835" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="760" fill="#2b2622">इनसे मेल खाते हों</text>
+  </g>
+  <g id="unchanged">
+   <path d="m462 903 13 13 27-32" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+   <text x="531" y="915" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="760" fill="#2b2622">बदले न गए हों</text>
+  </g>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ camera: [[0,{zoom:1}]],
+ on: [
+  [0.44, 'draw', '#tier-arrow', {dur: 0.40}],
+  [0.44, 'slide', '#tier2', {from: 'down', dist: 32, spring: 'soft'}],
+  [0.94, 'fade', '#other-hi', {dur: 0.26}],
+  [0.94, 'fade', '#condition', {dur: 0.26}],
+  [3.74, 'pop', '#consistent', {from: 0.94, spring: 'soft'}],
+  [5.46, 'pop', '#unchanged', {from: 0.94, spring: 'soft'}]
+ ]
+}
+</script>
+</section>
