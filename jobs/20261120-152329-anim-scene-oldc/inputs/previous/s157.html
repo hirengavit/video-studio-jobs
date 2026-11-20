@@ -1,0 +1,28 @@
+<section class="vs-scene" id="s157" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}' data-section="REMEMBER · POSTING ROUTE" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="remember-posting">
+ <rect x="120" y="220" width="1200" height="680" rx="34" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+ <path d="M145 270v580" fill="none" stroke="#f2b705" stroke-width="16" stroke-linecap="round"/>
+ <text x="208" y="321" class="hi" font-size="48" font-weight="850" fill="#9e1b1b">याद रखें</text>
+ <text id="choose-route" x="208" y="434" class="hi" font-size="52" font-weight="760" fill="#2b2622">SERVICE देखकर posting का रास्ता चुनिए</text>
+ <path d="M210 530h1010" stroke="#e1d0aa" stroke-width="3"/>
+ <text id="receipt-rule" x="208" y="638" class="hi" font-size="52" font-weight="760" fill="#2b2622">ACCOUNTABLE ITEM की receipt:</text>
+ <text id="who-receives" x="208" y="742" class="hi" font-size="52" font-weight="770" fill="#2b2622">लाने वाले को</text>
+</g>
+<g id="receipt-prop"><use href="piece:booking-receipt" transform="translate(1420 300) scale(1.2)"/></g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,'words','#choose-route',{gap:0.12,dist:13}],
+  [1.82,'highlight','#choose-route',{words:'रास्ता चुनिए',color:'#f2b705',opacity:0.33,pad:5}],
+  [3.18,'words','#receipt-rule',{gap:0.28,dist:13}],
+  [4.46,'pop','#receipt-prop',{from:0.96,spring:'fast'}],
+  [5.12,'words','#who-receives',{gap:0.15,dist:12}],
+  [5.68,'underline','#who-receives',{words:'लाने वाले को',color:'#9e1b1b',width:4.5,dur:0.53,gap:7}]
+ ]
+}
+</script>
+</section>
