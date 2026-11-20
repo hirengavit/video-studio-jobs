@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s162" data-in="cut" data-section="PART 9 · KEPT OUT OF LETTER BOX" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="उसी दिन Statement of mailing के साथ दें; खास हालात में अगला working day या लाइसेंस प्राधिकारी की लिखित वजह से बढ़ा समय।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="licence" transform="translate(140 270) scale(.9)">
+    <use href="piece:licence-certificate"/>
+    <text x="180" y="61" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="800" fill="#ffffff">LICENCE</text>
+  </g>
+  <g id="same-day-row">
+    <rect x="560" y="190" width="1220" height="220" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <g id="same-day">
+      <rect x="623" y="248" width="279" height="101" rx="50" fill="#fde9a6"/>
+      <text class="hi" x="762.5" y="315" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#8a5d00">उसी दिन</text>
+    </g>
+    <g id="statement">
+      <text x="974" y="287" font-family="Inter, sans-serif" font-size="52" font-weight="800" fill="#2b2622">Statement of mailing</text>
+      <text class="hi" id="statement-hi" x="974" y="347" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="550" fill="#6f6a63">मेलिंग विवरण</text>
+    </g>
+  </g>
+  <g id="exception-row">
+    <rect x="560" y="440" width="1220" height="200" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text class="hi" x="630" y="519" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="650" fill="#6f6a63">खास हालात में:</text>
+    <text class="hi" id="working-day" x="630" y="595" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="750" fill="#2b2622">अगला working day</text>
+  </g>
+  <g id="authority-row">
+    <rect x="560" y="670" width="1220" height="290" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="630" y="751" font-family="Inter, sans-serif" font-size="52" font-weight="800" fill="#2b2622">Licensing authority</text>
+    <text class="hi" id="authority-hi" x="630" y="806" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="550" fill="#6f6a63">लाइसेंस प्राधिकारी</text>
+    <path d="M630 835 H1698" stroke="#efe5cb" stroke-width="3"/>
+    <text class="hi" id="extension" x="630" y="906" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">कारण लिखकर समय बढ़ा सकती है</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0,'pop','#same-day',{from:0.93,spring:'soft'}],
+    [0.58,'fade','#statement',{dur:0.30}],
+    [1.08,'fade','#statement-hi',{dur:0.25}],
+    [3.02,'fade','#exception-row',{dur:0.34}],
+    [4.70,'fade','#working-day',{dur:0.30}],
+    [5.24,'highlight','#working-day',{words:'अगला working day',color:'#f2b705',opacity:0.34,dur:0.43}],
+    [6.44,'fade','#authority-row',{dur:0.34}],
+    [6.94,'fade','#authority-hi',{dur:0.26}],
+    [8.30,'fade','#extension',{dur:0.32}],
+    [9.14,'highlight','#extension',{words:'समय बढ़ा',color:'#f2b705',opacity:0.34,dur:0.42}],
+  ]
+}
+</script>
+</section>
