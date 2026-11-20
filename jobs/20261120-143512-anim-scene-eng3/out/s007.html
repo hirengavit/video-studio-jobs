@@ -108,10 +108,17 @@
     [3.65,"color","#part-10-bg",{"prop":"fill","to":"#9e1b1b","dur":0.30}],
     [3.65,"color","#part-10-bg",{"prop":"stroke","to":"#9e1b1b","dur":0.30}],
     [3.65,"color","#part-10-badge, #part-10-en, #part-10-hi",{"prop":"fill","to":"#ffffff","dur":0.30}],
-    [3.65,"color","#part-10-num",{"prop":"fill","to":"#9e1b1b","dur":0.30}],
-
-    [3.95,"pulse","#part-grid",{"amount":0.06,"dur":0.50}]
-  ]
+    [3.65,"color","#part-10-num",{"prop":"fill","to":"#9e1b1b","dur":0.30}]
+  ],
+  update(t, section, $) {
+    // The built-in pulse is fixed at 0.6 s. Keep this bump on the grid only.
+    const grid = $('#part-grid')[0];
+    const x = (t - 3.95) / 0.50;
+    const k = x > 0 && x < 1 ? 1 + 0.06 * Math.sin(Math.PI * x) : 1;
+    grid.style.transformBox = 'fill-box';
+    grid.style.transformOrigin = 'center';
+    grid.style.transform = 'scale(' + k + ')';
+  }
 }
 </script>
 </section>
