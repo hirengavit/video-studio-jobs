@@ -8,24 +8,5 @@
   "11.31"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s180",
-   "message": "grow: option \"from\" isn't used (it takes: axis, origin, spring, to)",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s180",
-   "message": "grow: option \"dur\" isn't used (it takes: axis, origin, spring, to)",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s180",
-   "message": "pulse: option \"dur\" isn't used (it takes: amount)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
