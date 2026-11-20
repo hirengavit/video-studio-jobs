@@ -1,0 +1,32 @@
+<section class="vs-scene" id="s081" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}' data-section="REMEMBER · SPECIAL ITEMS" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <rect x="140" y="200" width="1640" height="760" rx="32" fill="#f3ead6"/>
+  <rect x="140" y="237" width="12" height="686" rx="6" fill="#f2b705"/>
+  <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="224" y="289" font-size="51" font-weight="820" fill="#9e1b1b">याद रखें</text>
+  <path d="M224 343H1696" fill="none" stroke="#ded0ad" stroke-width="2"/>
+  <g id="liquid-rule">
+    <rect x="224" y="380" width="1028" height="181" rx="23" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+    <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="273" y="451" font-size="50" font-weight="760" fill="#2b2622">Liquids: बाहर का box</text>
+    <text id="absorbent-need" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="273" y="518" font-size="50" font-weight="680" fill="#2b2622">+ पूरी मात्रा सोखने की जगह</text>
+  </g>
+  <g id="ban-rule">
+    <rect x="224" y="612" width="1028" height="194" rx="23" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+    <rect x="246" y="650" width="4" height="116" rx="2" fill="#4b4f58"/>
+    <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="273" y="686" font-size="50" font-weight="740" fill="#2b2622">Packing से prohibited सामान</text>
+    <text id="permission" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="273" y="753" font-size="50" font-weight="680" fill="#2b2622">की अनुमति नहीं</text>
+  </g>
+  <use id="receptacle" href="piece:double-receptacle" transform="translate(1358.4 575.2) scale(0.8)"/>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [0,'fade','#liquid-rule',{dur:0.28}],
+    [2.02,'fade','#absorbent-need',{dur:0.24}],
+    [2.50,'highlight','#absorbent-need',{words:'पूरी मात्रा',color:'#f2b705',opacity:0.47,dur:0.34,pad:6}],
+    [4.82,'fade','#ban-rule',{dur:0.30}],
+    [7.64,'underline','#permission',{words:'नहीं',color:'#4b4f58',width:5,dur:0.37}]
+  ]
+}
+</script>
+</section>
