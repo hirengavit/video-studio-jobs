@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 90" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<path id="stand" d="M12 10H288L298 78H2Z" fill="#9e1b1b"/>
+<rect id="plate" x="20" y="17" width="260" height="53" rx="3" fill="#ffffff" stroke="#ead9a8"/>
+<path id="base" d="M2 78H298V88H2Z" fill="#9e1b1b"/>
+<circle data-anchor="base" cx="150" cy="88" r="0"/>
+</svg>
