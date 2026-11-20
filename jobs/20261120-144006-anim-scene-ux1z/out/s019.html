@@ -48,15 +48,19 @@
     </g>
     <g transform="matrix(1 -.82 0 1 925 502)">
       <rect width="90" height="110" rx="4" fill="#fbf7ee" stroke="#2b2622" stroke-width="3" stroke-dasharray="5 4"/>
-      <rect x="11" y="11" width="68" height="88" rx="3" fill="#2e7d4f"/>
+      <rect x="11" y="11" width="68" height="88" rx="3" fill="#7d1414"/>
       <path d="M27 43h36v27H27Zm0 0 18 14 18-14M22 88h44" fill="none" stroke="#f3ead6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
   </g>
-  <style>
-    #date-mark g[opacity="0.85"] { opacity: 1; stroke: #2b2622; stroke-width: 6; }
-    #date-mark circle[stroke-width="2"] { stroke-width: 4; }
-  </style>
-  <g id="date-mark"><use href="piece:postal-date-stamp" transform="translate(801 446) scale(.8) rotate(-12 150 150)"/></g>
+  <defs>
+    <filter id="date-ink" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+      <feMorphology in="SourceAlpha" operator="dilate" radius="1.55" result="expanded"/>
+      <feComponentTransfer in="expanded" result="solid"><feFuncA type="linear" slope="1.18"/></feComponentTransfer>
+      <feFlood flood-color="#2b2622" result="ink"/>
+      <feComposite in="ink" in2="solid" operator="in"/>
+    </filter>
+  </defs>
+  <g id="date-mark" filter="url(#date-ink)"><use href="piece:postal-date-stamp" transform="translate(801 446) scale(.8) rotate(-12 150 150)"/></g>
   <g id="clear-card">
     <path d="M1017 614l55 45v62m0 20v59l42 43h65" fill="none" stroke="#6f6a63" stroke-width="3" stroke-linejoin="round"/>
     <circle cx="1017" cy="614" r="6" fill="#2b2622"/>
