@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s073" data-section="PART 4 · KEYS, BAG AND ROUND" data-series="LETTER BOXES" data-in="cut">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect x="150" y="254" width="800" height="588" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <g transform="translate(195 300) scale(1.13)">
+      <use href="piece:calendar-sheet"/>
+      <text x="130" y="165" text-anchor="middle" font-family="Inter" font-size="44" font-weight="800" fill="#9e1b1b">Sunday</text>
+      <text x="130" y="225" text-anchor="middle" font-family="Inter" font-size="44" font-weight="800" fill="#9e1b1b">/ Holiday</text>
+    </g>
+    <g id="office">
+      <use href="piece:post-office-front" transform="translate(530 329) scale(.90)"/>
+      <text x="718" y="693" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="54" font-weight="750" fill="#2b2622">office खोलना</text>
+    </g>
+    <text id="transactions" x="550" y="785" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="57" font-weight="750" fill="#9e1b1b">उस दिन के transactions</text>
+
+    <g id="circle-head">
+      <rect x="1020" y="254" width="750" height="220" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="1045" y="277" width="182" height="174" rx="20" fill="#9e1b1b"/>
+      <use href="piece:icon-circle-office" transform="translate(1058 304) scale(.39)"/>
+      <text x="1261" y="387" font-family="Inter" font-size="64" font-weight="800" fill="#2b2622">Circle Head</text>
+      <g id="circle-tick"><circle cx="1700" cy="364" r="29" fill="#2e7d4f"/><path d="M1686 364l9 9 18-20" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
+    </g>
+    <text id="or" x="1395" y="552" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="55" font-weight="800" fill="#6f6a63">या</text>
+    <g id="regional-head">
+      <rect x="1020" y="586" width="750" height="220" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="1045" y="609" width="182" height="174" rx="20" fill="#9e1b1b"/>
+      <use href="piece:icon-circle-office" transform="translate(1058 636) scale(.39)"/>
+      <text x="1261" y="719" font-family="Inter" font-size="60" font-weight="800" fill="#2b2622">Regional Head</text>
+      <g id="regional-tick"><circle cx="1700" cy="696" r="29" fill="#2e7d4f"/><path d="M1686 696l9 9 18-20" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/></g>
+    </g>
+    <text id="decide" x="1395" y="941" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="68" font-weight="800" fill="#9e1b1b">तय कर सकते हैं</text>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.94, 'fade', '#office', {dur:0.30}],
+      [3.64, 'words', '#transactions', {gap:0.24}],
+      [5.42, 'pop', '#circle-head'],
+      [6.48, 'stamp', '#circle-tick'],
+      [6.84, 'fade', '#or', {dur:0.22}],
+      [7.60, 'pop', '#regional-head'],
+      [8.16, 'stamp', '#regional-tick'],
+      [8.42, 'words', '#decide', {gap:0.24}]
+    ]
+  }
+  </script>
+</section>
