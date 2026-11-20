@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s165" data-in="cut" data-section="PART 9 · KEPT OUT OF LETTER BOX" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <use href="piece:parcel-box" transform="translate(304 585.6) scale(1.6)"/>
+  <text id="term" x="140" y="246" font-size="64" font-weight="800" fill="#9e1b1b">India Post Parcels</text>
+  <text id="term-hi" class="hi" x="142" y="306" font-size="44" fill="#2b2622">इंडिया पोस्ट पार्सल</text>
+  <g id="service">
+    <rect x="140" y="330" width="510" height="97" rx="20" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+    <text class="hi" x="176" y="394" font-size="46" fill="#2b2622"><tspan font-weight="750">service parcels</tspan> भी</text>
+  </g>
+  <path id="tag-string" d="M518 627 C530 608 547 577 574 574" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round"/>
+  <path id="lid-knot" d="M518 627c-8-6-17-8-17-2s10 7 17 2c6-9 14-12 16-6s-8 9-16 6" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="tag">
+    <g transform="rotate(-4 701 519)">
+    <rect x="514" y="448" width="374" height="142" rx="13" fill="#9e1b1b"/>
+    <g fill="#fbf7ee"><circle cx="538" cy="448" r="5"/><circle cx="538" cy="590" r="5"/><circle cx="562" cy="448" r="5"/><circle cx="562" cy="590" r="5"/><circle cx="586" cy="448" r="5"/><circle cx="586" cy="590" r="5"/><circle cx="610" cy="448" r="5"/><circle cx="610" cy="590" r="5"/><circle cx="634" cy="448" r="5"/><circle cx="634" cy="590" r="5"/><circle cx="658" cy="448" r="5"/><circle cx="658" cy="590" r="5"/><circle cx="682" cy="448" r="5"/><circle cx="682" cy="590" r="5"/><circle cx="706" cy="448" r="5"/><circle cx="706" cy="590" r="5"/><circle cx="730" cy="448" r="5"/><circle cx="730" cy="590" r="5"/><circle cx="754" cy="448" r="5"/><circle cx="754" cy="590" r="5"/><circle cx="778" cy="448" r="5"/><circle cx="778" cy="590" r="5"/><circle cx="802" cy="448" r="5"/><circle cx="802" cy="590" r="5"/><circle cx="826" cy="448" r="5"/><circle cx="826" cy="590" r="5"/><circle cx="850" cy="448" r="5"/><circle cx="850" cy="590" r="5"/><circle cx="514" cy="478" r="5"/><circle cx="514" cy="501" r="5"/><circle cx="514" cy="524" r="5"/><circle cx="514" cy="547" r="5"/><circle cx="514" cy="570" r="5"/><circle cx="888" cy="478" r="5"/><circle cx="888" cy="501" r="5"/><circle cx="888" cy="524" r="5"/><circle cx="888" cy="547" r="5"/><circle cx="888" cy="570" r="5"/></g>
+    <circle cx="571" cy="565" r="6" fill="#fbf7ee"/>
+    <text x="701" y="510" text-anchor="middle" font-size="44" font-weight="800" fill="#ffffff">Accountable</text>
+    <text id="tag-hi" class="hi" x="701" y="558" text-anchor="middle" font-size="34" fill="#fde9a6">जवाबदेह</text>
+    </g>
+  </g>
+  <g id="post-box">
+    <use href="piece:letter-box-icon" transform="translate(1391.5 417.3) scale(1.35)"/>
+  </g>
+  <path id="route" d="M960 700h17 M989 700h17 M1018 700h17 M1047 700h17 M1076 700h17 M1105 700h17 M1134 700h17 M1163 700h17 M1192 700h17 M1221 700h17 M1250 700h17 M1279 700h17 M1308 700h17 M1320 683l20 17-20 17" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="no-entry">
+    <circle cx="1150" cy="700" r="50" fill="#fbf7ee" stroke="#4b4f58" stroke-width="5"/>
+    <path d="M1129 679l42 42m0-42-42 42" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.30, 'fade', '#term', {dur:.28}],
+    [0.80, 'fade', '#term-hi', {dur:.28}],
+    [2.70, 'pop', '#service'],
+    [4.13, 'draw', '#tag-string', {dur:.24}],
+    [4.38, 'stamp', '#tag', {from:1.2, rot:-4}],
+    [4.88, 'fade', '#tag-hi', {dur:.28}],
+    [6.84, 'fade', '#post-box', {dur:.28}],
+    [7.24, 'draw', '#route', {dur:.52}],
+    [7.94, 'pop', '#no-entry']
+  ]
+}
+</script>
+</section>
