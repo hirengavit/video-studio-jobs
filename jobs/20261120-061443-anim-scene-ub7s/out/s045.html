@@ -1,0 +1,39 @@
+<section class="vs-scene" id="s045" data-in="cut" data-section="PART 3 · WINDOW ENVELOPE &amp; CHARGE" data-series="POST OFFICE RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="postage-rule">
+      <rect x="100" y="200" width="1720" height="710" rx="32" fill="#f3ead6"/>
+      <rect x="100" y="190" width="1720" height="710" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="166" y="222" width="228" height="52" rx="26" fill="#f3ead6"/>
+      <text x="280" y="258" text-anchor="middle" class="hi" font-size="34" font-weight="700" fill="#6f6a63">सार (gist)</text>
+      <path d="M166 399H1754M166 605H1754M166 805H1754" fill="none" stroke="#ead9a8" stroke-width="2"/>
+      <text id="first-letter" x="166" y="330" font-family="Georgia, serif" font-size="50" font-weight="700" fill="#9e1b1b">Letter:</text>
+      <text id="letter-conditions" x="335" y="330" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="50" font-weight="700" fill="#2b2622">letters की तय शर्तें</text>
+      <text id="envelope-conditions" x="780" y="330" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="50" font-weight="700" fill="#2b2622">या envelope की शर्तें तोड़े</text>
+      <g id="double-row">
+        <rect x="166" y="448" width="1588" height="101" rx="22" fill="#fbf7ee"/>
+        <text x="196" y="517" font-family="Inter, sans-serif" font-size="50" font-weight="850" fill="#9e1b1b">→</text>
+        <text id="twice-postage" x="278" y="517" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="50" font-weight="750" fill="#2b2622">postage का दोगुना</text>
+      </g>
+      <text id="prepaid" x="166" y="715" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="50" font-weight="700" fill="#2b2622">पहले से दिया postage</text>
+      <text id="included" x="727" y="715" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="50" font-weight="700" fill="#2b2622">इसी दोगुने में गिना जाता है</text>
+      <text x="100" y="956" font-family="Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">Post Office Regulations, 2024</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}]],
+    on: [
+      [0, 'fade', '#first-letter', {dur: 0.30}],
+      [0.52, 'words', '#letter-conditions', {gap: 0.15, dist: 12}],
+      [2.74, 'words', '#envelope-conditions', {gap: 0.14, dist: 12}],
+      [5.56, 'fade', '#double-row', {dur: 0.25}],
+      [5.56, 'words', '#twice-postage', {gap: 0.16, dist: 12}],
+      [6.44, 'highlight', '#twice-postage', {words: 'दोगुना', color: '#f2b705', opacity: 0.36, pad: 5}],
+      [8.32, 'words', '#prepaid', {gap: 0.16, dist: 12}],
+      [10.94, 'words', '#included', {gap: 0.14, dist: 12}],
+      [11.94, 'underline', '#included', {words: 'गिना जाता', color: '#2e7d4f', width: 4, gap: 6, dur: 0.45}]
+    ]
+  }
+  </script>
+</section>
