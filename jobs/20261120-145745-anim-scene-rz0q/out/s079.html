@@ -1,0 +1,35 @@
+<section class="vs-scene" id="s079" data-in="cut" data-section="PART 4 · LIQUIDS &amp; SPECIAL ITEMS" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="sum">
+    <path d="M140 360H1780 M140 550H1780 M140 740H1780 M140 930H1780" fill="none" stroke="#ead9a8" stroke-width="3" opacity=".65"/>
+    <g id="liquid-term">
+      <circle cx="206" cy="197" r="39" fill="#9e1b1b"/>
+      <text x="206" y="214" text-anchor="middle" font-family="Inter, sans-serif" font-size="50" font-weight="800" fill="#fff">1</text>
+      <text x="290" y="205" font-family="Inter, sans-serif" font-size="58" font-weight="800" fill="#9e1b1b">Liquid:</text>
+    </g>
+    <text class="hi" id="inner-container" x="290" y="262" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">अंदर container</text>
+    <text class="hi" id="outer-box" x="670" y="262" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">बाहर metal या मज़बूत लकड़ी का box</text>
+    <use id="receptacle" href="piece:double-receptacle" transform="translate(1596 177) scale(.35)"/>
+    <text class="hi" id="absorbent-note" x="290" y="320" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650" fill="#6f6a63">सोखने वाली चीज़: पूरा liquid सोख ले</text>
+    <g id="hing-term">
+      <circle cx="206" cy="402" r="39" fill="#9e1b1b"/>
+      <text x="206" y="419" text-anchor="middle" font-family="Inter, sans-serif" font-size="50" font-weight="800" fill="#fff">2</text>
+      <text class="hi" id="hing-label" x="290" y="405" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">हींग जैसी गंध:</text>
+    </g>
+    <text class="hi" id="hing-case" x="290" y="465" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">airtight tin या metal case</text>
+    <use id="hing-tin" href="piece:airtight-tin" transform="translate(1620 383) scale(.6)"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.00,'fade','#absorbent-note',{dur:.36}],
+    [2.70,'highlight','#absorbent-note',{words:'पूरा',color:'#f2b705',opacity:.38,pad:5,dur:.40}],
+    [5.06,'fade','#hing-term',{dur:.32}],
+    [6.60,'fade','#hing-case',{dur:.29}],
+    [7.32,'pop','#hing-tin',{from:.90,spring:'soft'}]
+  ]
+}
+</script>
+</section>
