@@ -8,12 +8,5 @@
   "10.25"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s068",
-   "text": "मज़बूत wrapper + / मोटे cardboard या कपड़े का cover",
-   "t": 4.16
-  }
- ]
+ "warnings": []
 }
