@@ -1,0 +1,80 @@
+<section class="vs-scene" id="s089" data-in="cut" data-section="PART 5 · SEALING" data-series="POST OFFICE RULES">
+<style>
+  #cover-shot [data-piece="sealed-insured-cover"] :is([id="string"],[id$="-string"],[id="knot"],[id$="-knot"],[id="seal-spots"],[id$="-seal-spots"]) { display: none; }
+  [id$="-cover-shot"] [data-piece="sealed-insured-cover"] :is([id="string"],[id$="-string"],[id="knot"],[id$="-knot"],[id="seal-spots"],[id$="-seal-spots"]) { display: none; }
+</style>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <defs><clipPath id="s089-packet-clip"><path id="packet-viewport" d="M0 150H1920V1080H0Z"/></clipPath></defs>
+  <g id="cover-shot">
+    <g clip-path="url(#s089-packet-clip)">
+    <use href="piece:sealed-insured-cover" id="insured-packet" transform="translate(220 220) scale(1.8)"/>
+    <g id="seal-top" transform="translate(760.00 509.80) scale(.6)">
+      <use href="piece:wax-seal"/>
+      <path d="M47 45v28m26-28v28M47 59h26m-31-14h10m16 0h10m-36 28h10m16 0h10" stroke="#fde9a6" stroke-width="4" stroke-linecap="round" fill="none"/>
+    </g>
+    <g id="seal-left" transform="translate(684.40 562.00) scale(.6)">
+      <use href="piece:wax-seal"/>
+      <path d="M47 45v28m26-28v28M47 59h26m-31-14h10m16 0h10m-36 28h10m16 0h10" stroke="#fde9a6" stroke-width="4" stroke-linecap="round" fill="none"/>
+    </g>
+    <g id="seal-bottom" transform="translate(760.00 614.20) scale(.6)">
+      <use href="piece:wax-seal"/>
+      <path d="M47 45v28m26-28v28M47 59h26m-31-14h10m16 0h10m-36 28h10m16 0h10" stroke="#fde9a6" stroke-width="4" stroke-linecap="round" fill="none"/>
+    </g>
+    <g id="seal-right" transform="translate(835.60 562.00) scale(.6)">
+      <use href="piece:wax-seal"/>
+      <path id="private-emblem" d="M47 45v28m26-28v28M47 59h26m-31-14h10m16 0h10m-36 28h10m16 0h10" stroke="#fde9a6" stroke-width="4" stroke-linecap="round" fill="none"/>
+    </g>
+    </g>
+    <g id="seal-notes">
+    <g id="insured-letter-term">
+      <rect x="1440" y="280" width="340" height="162" rx="24" fill="#9e1b1b"/>
+      <rect x="1454" y="294" width="312" height="134" rx="14" fill="none" stroke="#b8403a" stroke-width="3"/>
+      <g fill="#fbf7ee">
+        <circle cx="1472" cy="280" r="5"/><circle cx="1472" cy="442" r="5"/>
+        <circle cx="1518" cy="280" r="5"/><circle cx="1518" cy="442" r="5"/>
+        <circle cx="1564" cy="280" r="5"/><circle cx="1564" cy="442" r="5"/>
+        <circle cx="1610" cy="280" r="5"/><circle cx="1610" cy="442" r="5"/>
+        <circle cx="1656" cy="280" r="5"/><circle cx="1656" cy="442" r="5"/>
+        <circle cx="1702" cy="280" r="5"/><circle cx="1702" cy="442" r="5"/>
+        <circle cx="1748" cy="280" r="5"/><circle cx="1748" cy="442" r="5"/>
+      </g>
+      <text x="1610" y="350" text-anchor="middle" font-size="46" font-weight="770" fill="#ffffff">Insured letter</text>
+      <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="insured-letter-hi" x="1610" y="407" text-anchor="middle" font-size="41" font-weight="620" fill="#fde9a6">बीमित पत्र</text>
+    </g>
+    <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="strong-cover" x="1462" y="521" font-size="44" font-weight="620" fill="#6f6a63">मज़बूत cover</text>
+    <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="well-closed" x="1462" y="621" font-size="44" font-weight="620" fill="#6f6a63">अच्छे से बंद</text>
+    <text id="fine-wax-step" x="1462" y="713" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#9e1b1b">Fine wax</text>
+    <text id="opening-step" x="1462" y="815" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="720" fill="#6f6a63">खोलते ही पता चले</text>
+    <g id="private-term">
+      <rect x="1440" y="850" width="340" height="122" rx="20" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1610" y="901" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="830" fill="#9e1b1b">Private mark</text>
+      <text id="private-hi" x="1610" y="950" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="720" fill="#6f6a63">निजी निशान</text>
+    </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera: [[0,{zoom:1}], [6.72,{zoom:1}], [7.72,{zoom:1.5, x:210, y:96},'inOut']],
+ update(t, section, get) {
+  const cam = S.kf(t, [[0,[1,0,0]], [6.72,[1,0,0]], [7.72,[1.5,210,96],'inOut']]);
+  const [zoom, dx, dy] = cam;
+  get('#seal-notes')[0].setAttribute('transform', `translate(${960+dx} ${540+dy}) scale(${1/zoom}) translate(-960 -540)`);
+  const top = 540+dy+(152-540)/zoom;
+  get('#packet-viewport')[0].setAttribute('d', `M0 ${top}H1920V1080H0Z`);
+ },
+ on: [
+  [0, 'fade', '#fine-wax-step', {dur: 0.30}],
+  [3.16, 'pop', '#seal-top', {from: 0.87, spring: 'soft'}],
+  [3.28, 'pop', '#seal-left', {from: 0.87, spring: 'soft'}],
+  [3.40, 'pop', '#seal-bottom', {from: 0.87, spring: 'soft'}],
+  [3.52, 'pop', '#seal-right', {from: 0.87, spring: 'soft'}],
+  [4.40, 'fade', '#opening-step', {dur: 0.29}],
+  [7.72, 'highlight', '#private-emblem', {color: '#f2b705', opacity: 0.43, pad: 7, dur: 0.40}],
+  [8.42, 'fade', '#private-term', {dur: 0.27}],
+  [8.92, 'fade', '#private-hi', {dur: 0.24}]
+ ]
+}
+</script>
+</section>
