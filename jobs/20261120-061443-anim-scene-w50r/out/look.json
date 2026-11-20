@@ -8,12 +8,5 @@
   "11.41"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "mostly-empty",
-   "scene": "s106",
-   "message": "a card is mostly empty at 6.9 s: bring its items in sooner, or size it for what it holds now",
-   "t": 6.94
-  }
- ]
+ "warnings": []
 }
