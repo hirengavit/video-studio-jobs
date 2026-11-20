@@ -1,0 +1,32 @@
+{
+ "moments": [
+  "0.30",
+  "2.66",
+  "5.32",
+  "7.99",
+  "10.65",
+  "13.16"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s030",
+   "text": "16 Dec 2024 (1.0:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s030",
+   "message": "a card is mostly empty at 10.7 s: bring its items in sooner, or size it for what it holds now",
+   "t": 10.65
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s030",
+   "message": "a card is mostly empty at 13.2 s: bring its items in sooner, or size it for what it holds now",
+   "t": 13.16
+  }
+ ]
+}
