@@ -1,0 +1,74 @@
+<section class="vs-scene" id="s002" data-section="INTRODUCTION" data-series="LETTER BOXES" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="def">
+      <use href="piece:letter-box-pillar" transform="translate(310 252.8) scale(1.7)"/>
+      <rect x="820" y="300" width="960" height="520" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="866" y="346" width="868" height="224" rx="22" fill="#9e1b1b"/>
+      <rect x="881" y="361" width="838" height="194" rx="15" fill="none" stroke="#b8403a" stroke-width="3" stroke-dasharray="5 10"/>
+      <text x="1300" y="456" text-anchor="middle" font-family="Inter" font-size="96" font-weight="800" fill="#fff">Letter box</text>
+      <text id="gloss" x="1300" y="532" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="52" font-weight="700" fill="#fde9a6">पत्र पेटी</text>
+      <text id="prepaid" x="1300" y="672" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="56" font-weight="700" fill="#2b2622">fully prepaid डाक</text>
+      <text id="definition-tail" x="1300" y="762" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="52" font-weight="700" fill="#2b2622">भेजने के लिए डाली जाती है</text>
+    </g>
+
+  <g id="where">
+    <g id="post-office">
+      <rect x="180" y="330" width="490" height="430" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:post-office-front" transform="translate(282 350) scale(.68)"/>
+      <text x="425" y="644" text-anchor="middle" font-family="Inter,sans-serif" font-size="61" font-weight="800" fill="#2b2622">Post office</text>
+      <text x="425" y="712" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="49" font-weight="700" fill="#6f6a63">डाकघर</text>
+    </g>
+    <g id="mail-office">
+      <rect x="715" y="330" width="490" height="430" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <g stroke="#2b2622" stroke-width="5" stroke-linejoin="round">
+        <path d="M806 567V439L877 397L954 439L1032 397L1114 439V567Z" fill="#fff"/>
+        <path d="M809 454H1111" stroke="#9e1b1b" stroke-width="11"/>
+        <path d="M824 568H1097" stroke-width="7" stroke-linecap="round"/>
+        <rect x="832" y="482" width="76" height="83" rx="4" fill="#ead9a8"/>
+        <rect x="922" y="482" width="76" height="83" rx="4" fill="#ead9a8"/>
+        <rect x="1012" y="482" width="76" height="83" rx="4" fill="#ead9a8"/>
+        <path d="M837 511H903M927 511H993M1017 511H1083" stroke="#6f6a63"/>
+      </g>
+      <text x="960" y="644" text-anchor="middle" font-family="Inter,sans-serif" font-size="61" font-weight="800" fill="#2b2622">Mail office</text>
+      <text x="960" y="712" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="49" font-weight="700" fill="#6f6a63">डाक छँटाई केंद्र</text>
+    </g>
+    <g id="public-place">
+      <rect x="1250" y="330" width="490" height="430" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <g stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1358 567h274l-48-30h-179z" fill="#ead9a8"/>
+        <path d="M1486 535V418q0-35 35-35h46v23" fill="none" stroke-width="10"/>
+        <path d="M1541 430q0-25 26-25t26 25z" fill="#fde9a6"/>
+        <path d="M1548 448l-10 17m29-11v18m19-24 11 17" stroke="#8a5d00"/>
+      </g>
+      <text x="1495" y="644" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="61" font-weight="800" fill="#2b2622">Public जगह</text>
+      <text x="1495" y="712" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="49" font-weight="700" fill="#6f6a63">सार्वजनिक स्थान</text>
+    </g>
+  </g>
+  <defs><clipPath id="to-slot"><rect x="559" y="176" width="282" height="150"/><path d="M559 325H841L761 498H639Z"/></clipPath></defs>
+  <g id="post">
+    <use id="posting-pillar" href="piece:letter-box-pillar" transform="translate(540 294.4) scale(1.6)"/>
+    <g clip-path="url(#to-slot)"><g id="letter-drop"><use href="piece:domestic-envelope" transform="translate(567 238) scale(.35)"/></g></g>
+    <text id="posting-label" x="1115" y="422" font-family="Noto Sans Devanagari, Inter" font-size="70" font-weight="800" fill="#2b2622">Public डाक डालती है</text>
+    <g id="employee">
+      <use href="piece:attendant-badge" transform="translate(1180 530) scale(1.35)"/>
+      <text x="1450" y="888" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="61" font-weight="800" fill="#2b2622">postal कर्मचारी</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  shots:[[0,'#def'],[2.18,'#where'],[8.34,'#post']],
+  on:[
+    [0,'highlight','#prepaid',{words:'fully prepaid',color:'#fde9a6',opacity:.72,dur:0,pad:4}],
+    [.20,'words','#definition-tail',{gap:.235}],
+    [2.54,'pop','#post-office'],
+    [4.02,'pop','#mail-office'],
+    [6.00,'pop','#public-place'],
+    [8.34,'words','#posting-label',{gap:.40}],
+    [9.68,'fall','#letter-drop',{dy:260,dur:.62}],
+    [11.26,'pop','#employee']
+  ]
+}
+</script>
+</section>
