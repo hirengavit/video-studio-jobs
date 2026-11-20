@@ -1,0 +1,42 @@
+<section class="vs-scene" id="s001" data-section="INTRODUCTION" data-series="LETTER BOXES" data-in="fade" data-in-dur="0.3">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="topic">
+      <g transform="rotate(-1.5 440 560)">
+        <image href="photo:india-post-letter-box-cutout" x="305" y="208" width="270" height="715" preserveAspectRatio="xMidYMid meet" filter="url(#vs-cutout)"/>
+        <text x="440" y="973" text-anchor="middle" font-family="Inter" font-size="30" fill="#6f6a63">India Post letter box in Bhopal</text>
+      </g>
+      <text x="1240" y="430" text-anchor="middle" font-family="Inter" font-size="110" font-weight="800" fill="#2b2622">Letter boxes</text>
+      <g id="peon-chip">
+        <rect x="880" y="504" width="720" height="120" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text id="peon-words" x="1240" y="580" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="56" font-weight="700" fill="#9e1b1b">और letter-box peon</text>
+      </g>
+      <text id="duties" x="1240" y="710" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="56" font-weight="700" fill="#9e1b1b">के कर्तव्य</text>
+    </g>
+    <g id="def" visibility="hidden">
+      <use href="piece:letter-box-pillar" transform="translate(310 252.8) scale(1.7)"/>
+      <rect x="820" y="300" width="960" height="520" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="866" y="346" width="868" height="224" rx="22" fill="#9e1b1b"/>
+      <rect x="881" y="361" width="838" height="194" rx="15" fill="none" stroke="#b8403a" stroke-width="3" stroke-dasharray="5 10"/>
+      <text x="1300" y="456" text-anchor="middle" font-family="Inter" font-size="96" font-weight="800" fill="#fff">Letter box</text>
+      <text id="gloss" x="1300" y="532" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="52" font-weight="700" fill="#fde9a6">पत्र पेटी</text>
+      <text id="prepaid" x="1300" y="672" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="56" font-weight="700" fill="#2b2622">fully prepaid डाक</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [2.76, 'pop', '#peon-chip', {dur:0.35}],
+      [3.52, 'highlight', '#peon-words', {words:'peon', color:'#fde9a6', opacity:0.72, dur:0.25, pad:4}],
+      [4.34, 'words', '#duties', {dur:0.36}],
+      [5.70, 'fade', '#gloss', {dur:0.34}],
+      [8.36, 'words', '#prepaid', {dur:1.04}],
+      [8.68, 'highlight', '#prepaid', {words:'fully prepaid', color:'#fde9a6', opacity:0.72, dur:0.48, pad:4}]
+    ],
+    update(t, section, $) {
+      $('#topic').forEach(n => n.setAttribute('visibility', t < 5.22 ? 'visible' : 'hidden'));
+      $('#def').forEach(n => n.setAttribute('visibility', t >= 5.22 ? 'visible' : 'hidden'));
+    }
+  }
+  </script>
+</section>
