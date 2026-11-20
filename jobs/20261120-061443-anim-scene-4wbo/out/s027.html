@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s027" data-in="cut" data-section="PART 2 · LETTER ENVELOPE" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="लिफ़ाफ़ा बंद करने के लिए metal clips और staples मना हैं। पीछे लंबी तरफ़ के ऊपर flap हो सकता है।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="flap">
+    <rect x="100" y="220" width="700" height="680" rx="34" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text class="hi" x="165" y="307" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="800" fill="#2b2622">बंद करने के लिए</text>
+    <path d="M164 586 H737" stroke="#eee3c7" stroke-width="3"/>
+    <g id="clip" fill="none" stroke="#4b4f58" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M246 487 216 517 C197 536 169 507 187 489 L263 412 C282 394 310 421 291 440 L224 506 C216 514 204 502 212 494 L273 433"/>
+    </g>
+    <g id="clip-label" fill="#4b4f58">
+      <text x="355" y="463" font-family="Inter, sans-serif" font-size="49" font-weight="750">Metal Clips</text>
+      <text class="hi" x="355" y="523" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="550">धातु की clip</text>
+    </g>
+    <g id="staple" fill="none" stroke="#4b4f58" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M184 727 L184 674 Q184 653 205 653 L282 653 Q302 653 302 674 V727" stroke-width="14"/>
+      <path d="M197 712 V677 Q197 667 207 667 H280 Q290 667 290 677 V712" stroke="#ada9a2" stroke-width="3"/>
+    </g>
+    <g id="staple-label" fill="#4b4f58">
+      <text x="355" y="683" font-family="Inter, sans-serif" font-size="49" font-weight="750">Staples</text>
+      <text class="hi" x="355" y="743" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="550">स्टेपल</text>
+    </g>
+    <g id="reject-crosses" fill="none" stroke-linecap="round">
+      <path d="M197 422 L285 497 M285 422 L197 497 M198 656 L287 726 M287 656 L198 726" stroke="#ffffff" stroke-width="17"/>
+      <path d="M197 422 L285 497 M285 422 L197 497 M198 656 L287 726 M287 656 L198 726" stroke="#4b4f58" stroke-width="8"/>
+    </g>
+    <path id="reject-strikes" d="M350 447 H627 M350 668 H532" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+    <g id="forbidden">
+      <rect x="166" y="799" width="234" height="72" rx="36" fill="#4b4f58"/>
+      <text class="hi" x="283" y="849" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="750" fill="#ffffff">मना</text>
+    </g>
+    <text class="hi" id="back-label" x="1340" y="260" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="650" fill="#6f6a63">पीछे की तरफ़</text>
+    <g id="envelope-back">
+      <rect x="920" y="300" width="840" height="460" rx="20" fill="#ffffff" stroke="#2b2622" stroke-width="5"/>
+      <path d="M934 744 1340 486 1746 744" fill="none" stroke="#9a8e79" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <path id="flap-top" d="M934 307 H1746 L1371 546 Q1340 568 1309 546 Z" fill="#e5f0e7" stroke="#2e7d4f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="flap-term">
+      <text x="920" y="855" font-family="Inter, sans-serif" font-size="58" font-weight="800" fill="#9e1b1b">Flap</text>
+      <text class="hi" x="920" y="914" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="600" fill="#6f6a63">लिफ़ाफ़े का ढक्कन</text>
+    </g>
+    <text class="hi" id="long-side" x="1745" y="854" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="750" fill="#2e7d4f">लंबी side के ऊपर</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [1.78,'draw','#clip',{dur:0.46}],
+    [2.28,'fade','#clip-label',{dur:0.27}],
+    [3.28,'draw','#staple',{dur:0.37}],
+    [3.78,'fade','#staple-label',{dur:0.16}],
+    [3.90,'fade','#reject-crosses',{dur:0.22}],
+    [3.90,'draw','#reject-strikes',{dur:0.27}],
+    [3.90,'pop','#forbidden',{from:0.93,spring:'soft'}],
+    [5.11,'draw','#envelope-back',{dur:0.72}],
+    [5.11,'fade','#flap-term',{dur:0.35}],
+    [7.03,'fade','#back-label',{dur:0.28}],
+    [8.49,'draw','#flap-top',{dur:0.65}],
+    [8.49,'fade','#long-side',{dur:0.34}],
+  ]
+}
+</script>
+</section>
