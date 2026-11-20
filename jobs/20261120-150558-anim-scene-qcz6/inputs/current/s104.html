@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s104" data-in="cut" data-section="PART 5 · SEALING" data-series="POST OFFICE RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="seal">
+      <use id="insurance-cover" href="piece:sealed-insured-cover" transform="translate(140 260) scale(1.6)"/>
+      <g id="flap-seals">
+        <use href="piece:wax-seal" transform="translate(626.20 523.80) scale(.43)"/>
+        <use href="piece:wax-seal" transform="translate(626.20 616.60) scale(.43)"/>
+        <use href="piece:wax-seal" transform="translate(559.00 570.20) scale(.43)"/>
+        <use href="piece:wax-seal" transform="translate(693.40 570.20) scale(.43)"/>
+      </g>
+      <g id="seam-seals">
+        <use href="piece:wax-seal" transform="translate(203.80 570.20) scale(.43)"/>
+        <use href="piece:wax-seal" transform="translate(1048.60 570.20) scale(.43)"/>
+      </g>
+      <g id="string-seals">
+        <use href="piece:wax-seal" transform="translate(626.20 570.20) scale(.43)"/>
+        <use href="piece:wax-seal" transform="translate(511.00 653.40) scale(.43)"/>
+        <use href="piece:wax-seal" transform="translate(763.80 634.20) scale(.43)"/>
+      </g>
+      <g id="insurance-seal-term">
+        <rect x="1220" y="174" width="560" height="170" rx="28" fill="#9e1b1b"/>
+        <rect x="1233" y="187" width="534" height="144" rx="18" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="3 10" stroke-linecap="round" opacity=".68"/>
+        <text x="1500" y="248" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="810" fill="#fff">Insurance seal</text>
+        <text id="insurance-seal-hi" class="hi" x="1500" y="302" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="740" fill="#fde9a6">बीमा सील</text>
+      </g>
+      <g id="evidence">
+        <text class="hi" x="1220" y="420" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="720" fill="#2b2622">खोलने / छेड़छाड़ का</text>
+        <rect x="1213" y="432" width="107" height="68" fill="#f2b705" opacity=".40"/>
+        <text class="hi" id="evidence-word" x="1220" y="477" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="780" fill="#2b2622">सबूत</text>
+      </g>
+      <g id="one-device-card">
+        <rect x="1220" y="520" width="560" height="177" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text class="hi" x="1258" y="585" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="760" fill="#2b2622">एक ही wax</text>
+        <text id="private-device-rule" class="hi" x="1258" y="654" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="760" fill="#2b2622">एक ही private device</text>
+      </g>
+      <g id="closed-case">
+        <use href="piece:valuables-case" transform="translate(1460 711) scale(.8)"/>
+      </g>
+      <g id="case-label">
+        <text x="1220" y="760" font-family="Inter,sans-serif" font-size="39" font-weight="800" fill="#2b2622">Insured</text>
+        <text x="1220" y="808" font-family="Inter,sans-serif" font-size="39" font-weight="800" fill="#2b2622">bullion ·</text>
+        <text x="1220" y="852" font-family="Inter,sans-serif" font-size="39" font-weight="800" fill="#2b2622">coins</text>
+        <text class="hi" x="1220" y="891" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="680" fill="#6f6a63">बीमित बुलियन</text>
+        <text class="hi" x="1220" y="929" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="680" fill="#6f6a63">और सिक्के</text>
+      </g>
+      <text id="material-rule" class="hi" x="1220" y="986" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="740" fill="#6f6a63">मज़बूत लकड़ी / metal case</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0, 'fade', '#one-device-card', {dur: .26}],
+      [1.30, 'fade', '#private-device-rule', {dur: .28}],
+      [3.50, 'pop', '#closed-case', {from: .94}],
+      [4.08, 'fade', '#case-label', {dur: .27}],
+      [6.24, 'fade', '#material-rule', {dur: .27}]
+    ]
+  }
+  </script>
+</section>
