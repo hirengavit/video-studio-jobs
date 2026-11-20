@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.30",
+  "4.59",
+  "6.89",
+  "9.18",
+  "11.33"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s070",
+   "text": "Insured bullion · coins: नियम / अलग",
+   "t": 0.3
+  }
+ ]
+}
