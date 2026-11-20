@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s196" data-in="cut" data-section="PART 10 · SPECIAL BOXES &amp; BOOKING" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="prior-card" text-anchor="middle">
+ <rect x="140" y="220" width="720" height="500" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <text id="prior-condition" x="500" y="374" class="hi" font-size="48" font-weight="760" fill="#2b2622">accept होने से पहले</text>
+ <g id="cancel-term">
+  <rect x="272" y="441" width="456" height="124" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+  <text x="500" y="521" font-family="Inter, sans-serif" font-size="60" font-weight="850" fill="#9e1b1b">cancel</text>
+ </g>
+</g>
+<g id="transit-card" text-anchor="middle">
+ <rect x="1060" y="220" width="720" height="500" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <text x="1420" y="353" class="hi" font-size="48" font-weight="760" fill="#2b2622">रास्ते में निकल चुका article</text>
+ <g id="transit-article"><use href="piece:envelope-article" transform="translate(1310 354) scale(0.6)"/></g>
+ <path id="return-arrow" d="M1550 457c61 44 34 120-28 130-56 10-129 12-196-9m21 22-23-23 31-3" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+ <text id="recall-text" x="1420" y="665" class="hi" font-size="48" font-weight="820" fill="#9e1b1b">वापस मँगाना</text>
+</g>
+<text id="not-equal" x="960" y="497" text-anchor="middle" font-family="Inter, sans-serif" font-size="140" font-weight="850" fill="#9e1b1b">≠</text>
+<g id="next-line" text-anchor="middle">
+ <rect x="470" y="800" width="980" height="111" rx="54" fill="#f3ead6"/>
+ <text x="960" y="878" class="hi" font-size="52" font-weight="770" fill="#2b2622">पूरा क्रम, एक line में</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0.42,'fade','#prior-condition',{dur:0.32}],
+  [1.96,'pop','#cancel-term',{from:0.97,spring:'fast'}],
+  [3.12,'fade','#transit-card',{dur:0.37}],
+  [4.56,'pop','#transit-article',{from:0.97,spring:'fast'}],
+  [5.44,'draw','#return-arrow',{dur:0.72}],
+  [6.36,'fade','#recall-text',{dur:0.31}],
+  [7.16,'stamp','#not-equal',{from:1.25,spring:'snap',rot:-4}],
+  [8.35,'fade','#next-line',{dur:0.34}]
+ ]
+}
+</script>
+</section>
