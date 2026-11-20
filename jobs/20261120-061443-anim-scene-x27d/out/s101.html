@@ -7,7 +7,8 @@
         <rect x="140" y="260" width="860" height="640" rx="26" fill="#fff" stroke="#2b2622" stroke-width="4"/>
         <path d="M177 326h154m-154 28h119M527 470h304m-304 37h268m-268 37h226" fill="none" stroke="#cec5b5" stroke-width="5" stroke-linecap="round"/>
         <g id="official-space">
-          <rect id="official-outline" x="196" y="614" width="575" height="228" rx="23" fill="#fffaf0" stroke="#b88604" stroke-width="4" stroke-dasharray="14 11"/>
+          <rect id="official-fill" x="196" y="614" width="575" height="228" rx="23" fill="#fffaf0"/>
+          <path id="official-outline" d="M223 614h14 M223 842h14 M248 614h14 M248 842h14 M273 614h14 M273 842h14 M298 614h14 M298 842h14 M323 614h14 M323 842h14 M348 614h14 M348 842h14 M373 614h14 M373 842h14 M398 614h14 M398 842h14 M423 614h14 M423 842h14 M448 614h14 M448 842h14 M473 614h14 M473 842h14 M498 614h14 M498 842h14 M523 614h14 M523 842h14 M548 614h14 M548 842h14 M573 614h14 M573 842h14 M598 614h14 M598 842h14 M623 614h14 M623 842h14 M648 614h14 M648 842h14 M673 614h14 M673 842h14 M698 614h14 M698 842h14 M723 614h14 M723 842h14 M196 643v14 M771 643v14 M196 668v14 M771 668v14 M196 693v14 M771 693v14 M196 718v14 M771 718v14 M196 743v14 M771 743v14 M196 768v14 M771 768v14 M196 793v14 M771 793v14 M196 637q0-14 13-19 M755 617q16 5 16 20 M196 819q0 15 14 20 M756 839q15-5 15-20" fill="none" stroke="#b88604" stroke-width="4" stroke-linecap="round"/>
           <g id="official-wording" text-anchor="middle">
             <text x="483" y="698" font-family="Inter, sans-serif" font-size="53" font-weight="820" fill="#9e1b1b">Official labels</text>
             <text x="483" y="754" class="hi" font-size="39" font-weight="700" fill="#2b2622">आधिकारिक labels</text>
@@ -46,6 +47,7 @@
     on: [
       [0, 'fade', '#space-heading', {dur: 0.35}],
       [2.02, 'draw', '#official-outline', {dur: 0.65}],
+      [2.05, 'fade', '#official-fill', {dur: 0.37}],
       [2.28, 'fade', '#official-wording', {dur: 0.26}],
       [4.54, 'pop', '#small-cover-chip', {from: 0.97, spring: 'fast'}],
       [5.78, 'pop', '#writing-chip', {from: 0.97, spring: 'fast'}],
