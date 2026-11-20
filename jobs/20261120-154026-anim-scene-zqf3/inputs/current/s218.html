@@ -1,0 +1,34 @@
+<section class="vs-scene" id="s218" data-in="fade" data-in-dur="0.6" data-section="CLOSE" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <use href="piece:counter-window" transform="translate(250 303) scale(1.5)"/>
+  <g id="parcel">
+    <use href="piece:parcel-box" transform="translate(600 628.5) scale(1)"/>
+  </g>
+  <path id="packing" d="M923 648C889 612 822 596 755 598C656 599 580 630 564 700C544 782 580 862 659 889C729 913 832 903 900 868C964 835 983 758 955 691C946 668 931 651 912 638"
+    fill="none" stroke="#f2b705" stroke-width="10" stroke-linecap="round"/>
+  <path id="first-route" d="M967 734C1033 725 1067 635 1154 620m-24-16 24 16-23 16"
+    fill="none" stroke="#9e1b1b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="route" fill="none" stroke="#2b2622" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M1180 620H1544" stroke-width="7" stroke-dasharray="15 16"/>
+    <g stroke-width="7">
+      <path d="M1563 620V536Q1563 524 1576 524H1687V548H1717Q1727 548 1736 561L1760 593V620H1740M1708 620H1611M1577 620H1563" fill="#fbf7ee"/>
+      <path d="M1687 549V620M1701 562H1721L1740 590H1701Z" fill="#f3ead6"/>
+      <path d="M1589 548H1661M1589 566H1640" stroke-width="5"/>
+      <circle cx="1594" cy="620" r="16" fill="#fbf7ee"/>
+      <circle cx="1724" cy="620" r="16" fill="#fbf7ee"/>
+      <path d="M1576 649H1741" stroke="#6f6a63" stroke-width="4"/>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [1.58, 'fade', '#parcel', {dur:.32}],
+    [4.52, 'draw', '#packing', {dur:.50}],
+    [6.42, 'draw', '#first-route', {dur:.38}],
+    [6.76, 'reveal', '#route', {from:'left', dur:.40}]
+  ]
+}
+</script>
+</section>
