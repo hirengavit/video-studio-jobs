@@ -58,12 +58,12 @@
   <g id="recap-row-5">
     <text id="last-box" x="266" y="944" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="810" fill="#2b2622">आखिरी box के बाद</text>
     <g id="last-box-pill">
-      <rect id="last-box-pill-shape" x="744" y="887" width="325" height="79" rx="39.5" fill="#f3ead6"/>
+      <rect id="last-box-pill-shape" x="744" y="887" width="837" height="79" rx="35" fill="#f3ead6"/>
       <text id="return-prompt" x="771" y="943" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="750" fill="#2b2622">बिना देर लौटना</text>
-      <text id="defect-report" x="1082" y="940" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#2b2622">defect report<tspan id="report-postmaster"> → Postmaster</tspan></text>
+      <text id="defect-report" x="956" y="966" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#2b2622">defect report<tspan id="report-postmaster"> → Postmaster</tspan></text>
     </g>
-    <path id="recap-tick-5" d="m1629 914 13 13 26-28" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-    <path id="recap-tick-5-report" d="m1629 948 13 13 26-28" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="recap-tick-5" d="m1629 909 13 13 26-28" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="recap-tick-5-report" d="m1629 951 13 13 26-28" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
 </svg>
 <script type="text/scene">
@@ -74,12 +74,14 @@
   [1.41,'fade','#last-box-pill',{dur:.24}],
   [1.41,'fade','#return-prompt',{dur:.24}],
   [2.13,'draw','#recap-tick-5',{dur:.27}],
-  [3.60,'fade','#defect-report',{dur:.25}],
+  [3.58,'fade','#defect-report',{dur:.24}],
   [4.59,'draw','#recap-tick-5-report',{dur:.27}]
  ],
  update(t,section,$) {
-  const a=Math.min(1,Math.max(0,(t-3.55)/.25));
-  $('#last-box-pill-shape')[0].setAttribute('width',325+512*a);
+  const a=Math.min(1,Math.max(0,(t-3.55)/.09));
+  $('#last-box-pill-shape')[0].setAttribute('y',887-16*a);
+  $('#last-box-pill-shape')[0].setAttribute('height',79+31*a);
+  $('#return-prompt')[0].setAttribute('y',943-39*a);
   $('#report-postmaster')[0].setAttribute('opacity',Math.min(1,Math.max(0,(t-4.59)/.22)));
  }
 }
