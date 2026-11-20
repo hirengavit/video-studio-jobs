@@ -1,8 +1,11 @@
 <section class="vs-scene" id="s107" data-in="cut" data-section="PART 6 · VALUABLES &amp; INSURANCE" data-series="POST OFFICE RULES" lang="hi">
   <svg viewBox="0 0 1920 1080">
     <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <defs><clipPath id="s107-title-safe"><rect x="0" y="150" width="1920" height="170"/></clipPath></defs>
+    <g clip-path="url(#s107-title-safe)">
     <text class="hi" id="title" x="120" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800" fill="#2b2622">Inland post में कुछ कीमती चीज़ें</text>
     <text class="hi" id="title-risk" x="120" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800" fill="#2b2622">बिना insurance: खोने का जोखिम</text>
+    </g>
     <g id="case"><use href="piece:valuables-case" transform="translate(160 430) scale(1)"/></g>
     <g id="insured">
       <rect x="180" y="760" width="560" height="200" rx="24" fill="#9e1b1b" filter="url(#vs-shadow)"/>
@@ -51,7 +54,7 @@
     on: [
       [0.00, 'type', '#coins', {cps: 24}],
       [1.50, 'type', '#notes', {cps: 34}],
-      [3.92, 'swap', '#title', {to: '#title-risk', dur: 0.41, dist: 22}],
+      [3.92, 'swap', '#title', {to: '#title-risk', dur: 0.35, dist: 63}],
       [4.36, 'pulse', '#insured', {amount: 0.08}],
       [7.34, 'draw', '#value-tag-drawing', {dur: 0.71}],
       [8.50, 'fade', '#true-value', {dur: 0.24}],
