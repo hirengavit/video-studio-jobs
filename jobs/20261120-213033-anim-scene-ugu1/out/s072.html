@@ -2,7 +2,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Acceptance is not permission to use the ordinary letter box. Machine-franked articles go to their authorised counter.">
   <rect width="1920" height="1080" fill="#fbf7ee"/>
   <g id="acceptance">
-    <rect x="120" y="242" width="790" height="680" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <rect id="acceptance-shell" x="120" y="242" width="790" height="220" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
     <rect x="155" y="274" width="720" height="150" rx="24" fill="#9e1b1b"/>
     <rect x="169" y="288" width="692" height="122" rx="14" fill="none" stroke="#fde9a6" stroke-opacity=".72" stroke-width="6" stroke-dasharray="0 18" stroke-linecap="round"/>
     <text class="hi" x="515" y="368" text-anchor="middle" font-size="64" font-weight="820" fill="#fff">Acceptance की सुविधा</text>
@@ -34,8 +34,8 @@
     </g>
     <g id="authorised">
       <use href="piece:posting-counter" transform="translate(1390 494) scale(.42)"/>
-      <text x="1579" y="784" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="810" fill="#2b2622">Authorised counter</text>
-      <text class="hi" id="counter-hi" x="1579" y="841" text-anchor="middle" font-size="42" font-weight="680" fill="#6f6a63">अधिकृत काउंटर</text>
+      <text x="1545" y="784" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="810" fill="#2b2622">Authorised counter</text>
+      <text class="hi" id="counter-hi" x="1545" y="841" text-anchor="middle" font-size="42" font-weight="680" fill="#6f6a63">अधिकृत काउंटर</text>
     </g>
     <path id="counter-arrow" d="M1328 646H1385m-17-15 17 15-17 15" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     <g id="allowed">
@@ -56,7 +56,11 @@
     [7.38,'draw','#counter-arrow',{dur:.28}],
     [8.24,'fade','#counter-hi',{dur:.23}],
     [8.98,'pop','#allowed',{spring:'fast',from:.9}]
-  ]
+  ],
+  update(t, section, $) {
+    const u = S.clamp((t - 2.15) / .23);
+    $('#acceptance-shell')[0].setAttribute('height',220 + 460 * u * u * (3 - 2 * u));
+  }
 }
 </script>
 </section>
