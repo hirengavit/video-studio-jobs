@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s063" data-in="cut" data-section="PART 4 · KEYS, BAG AND ROUND" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Return to the post office without delay; hand back the key, plates and bag">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="steps2">
+    <text id="steps2-title" x="160" y="277" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="800" fill="#9e1b1b">Round का क्रम</text>
+    <path id="step2-links" d="M224 501V578M224 701V778" fill="none" stroke="#d6c5a5" stroke-width="7" stroke-linecap="round"/>
+    <g id="step-4">
+      <rect x="320" y="359" width="1440" height="159" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle cx="224" cy="438.5" r="52" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="8"/>
+      <text x="224" y="457" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="810" fill="#fff">4</text>
+      <text id="step-plate-text" x="390" y="460" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="760" fill="#2b2622">Hour plate बदलना</text>
+      <g id="step-plate"><use href="piece:hour-plate" transform="translate(1498.5 392.5) scale(1.15)"/></g>
+    </g>
+    <g id="step-5">
+      <rect x="320" y="559" width="1440" height="159" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle cx="224" cy="638.5" r="52" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="8"/>
+      <text x="224" y="657" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="810" fill="#fff">5</text>
+      <text id="step-lock-text" x="390" y="660" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="760" fill="#2b2622">ठीक से ताला</text>
+      <g id="step-lock"><use href="piece:padlock" transform="translate(1397 426.5) scale(1.05)"/></g>
+    </g>
+    <g id="step-6">
+      <rect x="320" y="759" width="1440" height="159" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle cx="224" cy="838.5" r="52" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="8"/>
+      <text x="224" y="857" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="810" fill="#fff">6</text>
+      <text id="step-return" x="390" y="860" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="760" fill="#2b2622">आखिरी box के बाद बिना देर लौटना</text>
+      <g id="step-office"><use href="piece:post-office-front" transform="translate(1367 780) scale(.34)"/></g>
+      <g id="step-return-tick">
+        <rect x="1530" y="806" width="193" height="65" rx="32.5" fill="#e6f2e8" stroke="#2e7d4f" stroke-width="2"/>
+        <path id="step-return-check" d="m1551 838 9 9 17-20" fill="none" stroke="#2e7d4f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="1590" y="854" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="760" fill="#2e7d4f">वापस</text>
+      </g>
+    </g>
+  </g>
+  <g id="return-tray">
+    <rect x="320" y="933" width="1440" height="65" rx="19" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <g id="tray-key"><use href="piece:box-key" transform="translate(670 865) scale(.5)"/></g>
+    <g id="tray-plate"><use href="piece:hour-plate" transform="translate(982 941) scale(.60)"/></g>
+    <g id="tray-bag"><use href="piece:collection-bag" transform="translate(1342 927) scale(.19)"/></g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.62,'words','#step-return',{gap:.36,dist:7,dur:.19}],
+  [3.66,'fade','#step-office',{dur:.25}],
+  [5.80,'fade','#return-tray',{dur:.25}],
+  [5.80,'pop','#tray-key',{dur:.28}],
+  [7.04,'pop','#tray-plate',{dur:.28}],
+  [7.85,'pop','#tray-bag',{dur:.28}],
+  [8.42,'fade','#step-return-tick',{dur:.24}],
+  [8.42,'draw','#step-return-check',{dur:.28}]
+ ]
+}
+</script>
+</section>
