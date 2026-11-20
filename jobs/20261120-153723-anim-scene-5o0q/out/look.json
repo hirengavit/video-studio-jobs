@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "1.86",
+  "3.72",
+  "5.58",
+  "7.44",
+  "9.15"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s207",
+   "message": "fade #good-packing: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s207",
+   "message": "fade #barred-item: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s207",
+   "message": "fade #not-sendable: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
+  }
+ ]
+}
