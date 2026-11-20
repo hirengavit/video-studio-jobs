@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s061" data-in="cut" data-section="PART 4 · KEYS, BAG AND ROUND" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Round steps: arrive at scheduled clearance, then open the box and put mail in the collection bag">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="steps">
+    <text id="steps-title" x="160" y="277" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="800" fill="#9e1b1b">Round का क्रम</text>
+    <path id="step-links" d="M224 501V578M224 701V778" fill="none" stroke="#d6c5a5" stroke-width="7" stroke-linecap="round"/>
+    <g id="step-1">
+      <rect x="320" y="359" width="1440" height="159" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle cx="224" cy="438.5" r="52" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="8"/>
+      <text x="224" y="457" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="810" fill="#fff">1</text>
+      <text id="step-clearance" x="390" y="460" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="760" fill="#2b2622">हर box पर<tspan id="step-clearance-late"> तय clearance समय पर</tspan></text>
+      <g id="step-clock"><use href="piece:clock-face" transform="translate(1548 372.2) scale(.51)"/></g>
+    </g>
+    <g id="step-2">
+      <rect x="320" y="559" width="1440" height="159" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle cx="224" cy="638.5" r="52" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="8"/>
+      <text x="224" y="657" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="810" fill="#fff">2</text>
+      <text id="step-bag-text" x="390" y="660" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="760" fill="#2b2622">Box खोलना<tspan id="step-bag-text-late"> → डाक collection bag में</tspan></text>
+      <g id="step-bag"><use href="piece:collection-bag" transform="translate(1515 548.5) scale(.50)"/></g>
+    </g>
+    <g id="step-3">
+      <rect x="320" y="759" width="1440" height="159" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle cx="224" cy="838.5" r="52" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="8"/>
+      <text x="224" y="857" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="810" fill="#fff">3</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera: [[0,{zoom:1}]],
+ on: [
+   [0,'fade','#step-clearance',{dur:.21}],
+   [2.71,'fade','#step-clock',{dur:.23}],
+   [5.47,'fade','#step-bag-text',{dur:.22}],
+   [7.35,'fade','#step-bag',{dur:.24}]
+ ],
+ update(t,section,$) {
+   $('#step-clearance-late')[0].setAttribute('opacity',Math.min(1,Math.max(0,(t-2.71)/.24)));
+   $('#step-bag-text-late')[0].setAttribute('opacity',Math.min(1,Math.max(0,(t-6.53)/.24)));
+ }
+}
+</script>
+</section>
