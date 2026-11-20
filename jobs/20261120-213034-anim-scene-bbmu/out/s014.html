@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s014" data-in="cut" data-section="PART 1 · WHAT GOES IN THE LETTER BOX" data-series="LETTER BOXES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Five articles to keep out of the letter box">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text x="960" y="217" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="820" fill="#9e1b1b">Letter box में नहीं</text>
+  <g id="article-1">
+    <rect x="420" y="260" width="1080" height="130" rx="24" fill="#fff" stroke="#4b4f58" stroke-width="3"/>
+    <text x="479" y="315" font-family="Inter,sans-serif" font-size="49" font-weight="800" fill="#2b2622">Accountable</text>
+    <text x="480" y="364" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="670" fill="#6f6a63">जवाबदेह डाक</text>
+    <circle class="cross-badge" cx="1423" cy="325" r="36" fill="#4b4f58"/>
+    <path class="cross-mark" d="M1409 311l28 28m0-28-28 28" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g id="article-2">
+    <rect x="420" y="406" width="1080" height="130" rx="24" fill="#fff" stroke="#4b4f58" stroke-width="3"/>
+    <text x="479" y="461" font-family="Inter,sans-serif" font-size="49" font-weight="800" fill="#2b2622">Franked</text>
+    <text x="480" y="510" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="670" fill="#6f6a63">फ्रैंक की गई डाक</text>
+    <circle class="cross-badge" cx="1423" cy="471" r="36" fill="#4b4f58"/>
+    <path class="cross-mark" d="M1409 457l28 28m0-28-28 28" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g id="article-3">
+    <rect x="420" y="552" width="1080" height="130" rx="24" fill="#fff" stroke="#4b4f58" stroke-width="3"/>
+    <text x="479" y="607" font-family="Inter,sans-serif" font-size="49" font-weight="800" fill="#2b2622">Registered newspaper</text>
+    <text x="480" y="656" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="670" fill="#6f6a63">पंजीकृत समाचार-पत्र</text>
+    <circle class="cross-badge" cx="1423" cy="617" r="36" fill="#4b4f58"/>
+    <path class="cross-mark" d="M1409 603l28 28m0-28-28 28" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g id="article-4">
+    <rect x="420" y="698" width="1080" height="130" rx="24" fill="#fff" stroke="#4b4f58" stroke-width="3"/>
+    <text x="479" y="753" font-family="Inter,sans-serif" font-size="49" font-weight="800" fill="#2b2622">Periodical post</text>
+    <text x="480" y="802" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="670" fill="#6f6a63">आवधिक डाक</text>
+    <g id="separate-rule">
+      <rect x="1101" y="732" width="233" height="62" rx="31" fill="#fde9a6"/>
+      <text x="1217.5" y="775" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="770" fill="#69502b">अपनी रोक</text>
+    </g>
+    <circle class="cross-badge" cx="1423" cy="763" r="36" fill="#4b4f58"/>
+    <path class="cross-mark" d="M1409 749l28 28m0-28-28 28" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g id="article-5">
+    <rect x="420" y="844" width="1080" height="130" rx="24" fill="#fff" stroke="#4b4f58" stroke-width="3"/>
+    <text x="479" y="899" font-family="Inter,sans-serif" font-size="49" font-weight="800" fill="#2b2622">Small packets</text>
+    <text x="480" y="948" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="670" fill="#6f6a63">छोटे पैकेट</text>
+    <circle class="cross-badge" cx="1423" cy="909" r="36" fill="#4b4f58"/>
+    <path class="cross-mark" d="M1409 895l28 28m0-28-28 28" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera:[[0,{zoom:1}]],
+  on:[
+    [.60,'fade','#article-2',{dur:.23}],
+    [1.60,'fade','#article-3',{dur:.24}],
+    [3.76,'fade','#article-4',{dur:.24}],
+    [5.92,'pop','#separate-rule',{from:.96,spring:'fast'}],
+    [8.00,'fade','#article-5',{dur:.23}],
+    [10.02,'fade','.cross-badge',{dur:.19,stagger:.10}],
+    [10.02,'draw','.cross-mark',{dur:.22,stagger:.10}]
+  ]
+}
+</script>
+</section>
