@@ -8,12 +8,5 @@
   "8.78"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s109",
-   "text": "GOLD OR SILVER / सोने या चाँदी की वस्तुएँ",
-   "t": 3.57
-  }
- ]
+ "warnings": []
 }
