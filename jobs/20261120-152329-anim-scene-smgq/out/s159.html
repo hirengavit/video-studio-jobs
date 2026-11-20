@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s159" data-in="cut" data-section="PART 9 · KEPT OUT OF LETTER BOX" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="लेटर बॉक्स में न डाली जाने वाली पाँच वस्तुओं की तुलना; पहली दो पंक्तियों में बुकिंग नियम।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="table">
+    <rect x="140" y="170" width="1640" height="810" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <g id="table-head">
+      <path d="M166 170 H1754 Q1780 170 1780 196 V250 H140 V196 Q140 170 166 170Z" fill="#9e1b1b"/>
+      <text class="hi" x="260" y="225" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="750" fill="#ffffff">ARTICLE · वस्तु</text>
+      <text class="hi" x="980" y="225" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="750" fill="#ffffff">क्या होता है</text>
+    </g>
+    <g id="rows-background">
+      <path d="M143 250 H1777 V390 H143Z M143 530 H1777 V670 H143Z M143 810 H1777 V950 H143Z" fill="#fbf7ee"/>
+      <path d="M143 390 H1777 M143 530 H1777 M143 670 H1777 M143 810 H1777 M143 950 H1777 M948 250 V950" fill="none" stroke="#ead9a8" stroke-width="3"/>
+    </g>
+    <g id="badges">
+      <g class="badge" id="badge-1"><circle cx="200" cy="320" r="32" fill="#9e1b1b"/><text x="200" y="333" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="800" fill="#ffffff">1</text></g>
+      <g class="badge" id="badge-2"><circle cx="200" cy="460" r="32" fill="#9e1b1b"/><text x="200" y="473" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="800" fill="#ffffff">2</text></g>
+      <g class="badge" id="badge-3"><circle cx="200" cy="600" r="32" fill="#9e1b1b"/><text x="200" y="613" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="800" fill="#ffffff">3</text></g>
+      <g class="badge" id="badge-4"><circle cx="200" cy="740" r="32" fill="#9e1b1b"/><text x="200" y="753" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="800" fill="#ffffff">4</text></g>
+      <g class="badge" id="badge-5"><circle cx="200" cy="880" r="32" fill="#9e1b1b"/><text x="200" y="893" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="800" fill="#ffffff">5</text></g>
+    </g>
+    <g id="row1-item">
+      <text x="260" y="307" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#2b2622">Accountable item</text>
+      <text class="hi" id="row1-hi" x="260" y="358" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="580" fill="#6f6a63">जवाबदेह वस्तु</text>
+    </g>
+    <g id="row1-no" transform="translate(0 -4)">
+      <path d="M984 283 L1012 311 M1012 283 L984 311" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+      <text class="hi" id="row1-no-label" x="1040" y="313" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#4b4f58">letter box में नहीं</text>
+    </g>
+    <g id="row1-ok" transform="translate(0 -4)">
+      <path d="M982 349 l10 10 22 -27" fill="none" stroke="#2e7d4f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="hi" id="row1-ok-label" x="1040" y="367" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#2e7d4f">अपने booking channel से</text>
+    </g>
+    <g id="row2-item">
+      <text x="260" y="447" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#2b2622">India Post Parcel</text>
+      <text class="hi" id="row2-hi" x="260" y="498" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="580" fill="#6f6a63">इंडिया पोस्ट पार्सल</text>
+    </g>
+    <text class="hi" id="row2-result" x="980" y="476" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#2b2622" xml:space="preserve">सब accountable<tspan id="row2-booking" opacity="0"> · booking ज़रूरी</tspan></text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.46,'pop','.badge',{from:0.90,spring:'soft',stagger:0.12}],
+    [1.74,'pulse','#table-head',{amount:0.011}],
+    [2.86,'fade','#row1-item',{dur:0.32}],
+    [3.36,'fade','#row1-hi',{dur:0.28}],
+    [5.54,'fade','#row1-no',{dur:0.32}],
+    [6.82,'fade','#row1-ok',{dur:0.32}],
+    [8.50,'fade','#row2-item',{dur:0.32}],
+    [9.00,'fade','#row2-hi',{dur:0.28}],
+    [11.02,'fade','#row2-result',{dur:0.32}],
+  ],
+  update(t, section, $) {
+    const u = S.clamp((t - 12.32) / .32);
+    $('#row2-booking')[0].setAttribute('opacity',u * u * (3 - 2 * u));
+  }
+}
+</script>
+</section>
