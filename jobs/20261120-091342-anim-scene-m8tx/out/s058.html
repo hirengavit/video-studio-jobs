@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s058" data-in="cut" data-section="PART 4 · LIQUIDS &amp; SPECIAL ITEMS" data-series="POST OFFICE RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="steps">
+      <text class="hi" x="120" y="233" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="820" fill="#9e1b1b">तरीका · 4 steps</text>
+      <path d="M120 251H900" stroke="#ead9a8" stroke-width="3"/>
+      <g id="step-1" class="packing-step">
+        <rect x="120" y="280" width="780" height="165" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <circle cx="194" cy="341" r="34" fill="#9e1b1b"/>
+        <text x="194" y="355" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="810" fill="#fff">1</text>
+        <text id="step-1-copy" class="hi" x="255" y="358" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="760" fill="#2b2622">liquid पहले receptacle में</text>
+        <text id="step-1-examples" x="180" y="414" class="hi" font-size="38" font-weight="650" fill="#6f6a63"><tspan id="example-bottle" x="180">बोतल</tspan><tspan id="example-flask" x="306">· फ़्लास्क</tspan><tspan id="example-container" x="514">· कोई ठीक container</tspan></text>
+      </g>
+      <g id="step-2" class="packing-step">
+        <rect x="120" y="460" width="780" height="165" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <circle id="step-2-badge" cx="194" cy="521" r="34" fill="#9e1b1b"/>
+        <text x="194" y="535" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="810" fill="#fff">2</text>
+        <text id="step-2-copy" x="255" y="538" class="hi" font-size="44" font-weight="760" fill="#2b2622">दूसरे receptacle में रखें</text>
+        <text id="step-2-detail" x="255" y="594" class="hi" font-size="38" font-weight="650" fill="#6f6a63">metal या मज़बूत लकड़ी का box</text>
+      </g>
+      <g id="step-3" class="packing-step">
+        <rect x="120" y="640" width="780" height="165" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <circle id="step-3-badge" cx="194" cy="701" r="34" fill="#6f6a63"/>
+        <text x="194" y="715" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="810" fill="#fff">3</text>
+        <text id="step-3-copy" x="255" y="718" class="hi" font-size="44" font-weight="760" fill="#2b2622">बीच में जगह छोड़ें</text>
+        <text id="sawdust" x="180" y="774" class="hi" font-size="38" font-weight="650" fill="#6f6a63">बुरादा</text>
+        <text id="bran" x="330" y="774" class="hi" font-size="38" font-weight="650" fill="#6f6a63">· चोकर</text>
+        <text id="other-absorbent" x="515" y="774" class="hi" font-size="38" font-weight="650" fill="#6f6a63">· सोखने वाली चीज़</text>
+      </g>
+      <g id="step-4" class="packing-step">
+        <rect x="120" y="820" width="780" height="165" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <circle id="step-4-badge" cx="194" cy="881" r="34" fill="#6f6a63"/>
+        <text x="194" y="895" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="810" fill="#fff">4</text>
+        <text id="step-4-copy" x="255" y="899" class="hi" font-size="44" font-weight="760" fill="#2b2622">इतनी कि पूरा liquid सोख ले</text>
+      </g>
+    </g>
+    <use id="liquid-diagram" href="piece:double-receptacle" transform="translate(1021.2 296.6) scale(1.4)"/>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0,'highlight','#bottle',{color:'#f2b705',opacity:.32,dur:.01,pad:7}],
+      [0,'highlight','#outer-box',{color:'#f2b705',opacity:.28,dur:.01,pad:11}],
+      [1.02,'fade','#step-3-copy',{dur:.25}],
+      [1.02,'color','#step-3-badge',{to:'#9e1b1b',dur:.24}],
+      [3.32,'draw','#absorbent',{dur:.60}],
+      [3.32,'fade','#sawdust',{dur:.23}],
+      [4.40,'fade','#bran',{dur:.23}],
+      [6.00,'fade','#other-absorbent',{dur:.23}],
+      [7.86,'color','#step-1-copy, #step-2-copy',{to:'#6f6a63',dur:.29}],
+      [7.86,'color','#step-1 circle, #step-2-badge',{to:'#6f6a63',dur:.29}],
+      [7.86,'color','#step-4-badge',{to:'#9e1b1b',dur:.25}],
+      [7.86,'fade','#step-4-copy',{dur:.28}],
+      [12.42,'highlight','#step-4-copy',{words:'पूरा',color:'#f2b705',opacity:.40,pad:6,dur:.38}]
+    ]
+  }
+  </script>
+</section>
