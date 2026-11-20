@@ -14,13 +14,7 @@
    "scene": "s030",
    "text": "roll (2.6:1)",
    "message": "text too close in colour to what's behind it",
-   "t": 5.77
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s030",
-   "text": "ये envelope केspecifications हैं / 140",
-   "t": 7.7
+   "t": 0.3
   }
  ]
 }
