@@ -48,6 +48,11 @@
 <script type="text/scene">
 {
  camera:[[0,{zoom:1}]],
+ update(t, section, $) {
+   $('#recipient-card')[0].setAttribute('visibility',t < 1.91 ? 'hidden' : 'visible');
+   $('#parcels-card')[0].setAttribute('visibility',t >= 1.87 ? 'hidden' : 'visible');
+   $('#accountable-carried')[0].setAttribute('visibility',t < 6.34 ? 'hidden' : 'visible');
+ },
  on:[
   [1.42,'draw','#delivery-arrow',{dur:.65}],
   [1.62,'out','#parcels-card',{dur:.25,scale:1}],
