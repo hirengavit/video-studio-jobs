@@ -23,9 +23,9 @@
         <circle id="step-3-badge" cx="194" cy="701" r="34" fill="#6f6a63"/>
         <text x="194" y="715" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="810" fill="#fff">3</text>
         <text id="step-3-copy" x="255" y="718" class="hi" font-size="44" font-weight="760" fill="#2b2622">बीच में जगह छोड़ें</text>
-        <text id="sawdust" x="180" y="774" class="hi" font-size="38" font-weight="650" fill="#6f6a63">बुरादा</text>
-        <text id="bran" x="330" y="774" class="hi" font-size="38" font-weight="650" fill="#6f6a63">· चोकर</text>
-        <text id="other-absorbent" x="515" y="774" class="hi" font-size="38" font-weight="650" fill="#6f6a63">· सोखने वाली चीज़</text>
+        <text id="absorbent-1" x="180" y="774" class="hi" font-size="38" font-weight="650" fill="#6f6a63"><tspan x="180">बुरादा</tspan></text>
+        <text id="absorbent-2" x="180" y="774" class="hi" font-size="38" font-weight="650" fill="#6f6a63"><tspan x="180">बुरादा</tspan><tspan x="330">· चोकर</tspan></text>
+        <text id="absorbent-3" x="180" y="774" class="hi" font-size="38" font-weight="650" fill="#6f6a63"><tspan x="180">बुरादा</tspan><tspan x="330">· चोकर</tspan><tspan x="515">· सोखने वाली चीज़</tspan></text>
       </g>
       <g id="step-4" class="packing-step">
         <rect x="120" y="820" width="780" height="165" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
@@ -44,9 +44,11 @@
       [1.02,'fade','#step-3-copy',{dur:.25}],
       [1.02,'color','#step-3-badge',{to:'#9e1b1b',dur:.24}],
       [3.32,'draw','#absorbent',{dur:.60}],
-      [3.32,'fade','#sawdust',{dur:.23}],
-      [4.40,'fade','#bran',{dur:.23}],
-      [6.00,'fade','#other-absorbent',{dur:.23}],
+      [3.32,'fade','#absorbent-1',{dur:.23}],
+      [4.385,'out','#absorbent-1',{dur:.01}],
+      [4.40,'fade','#absorbent-2',{dur:.02}],
+      [5.985,'out','#absorbent-2',{dur:.01}],
+      [6.00,'fade','#absorbent-3',{dur:.02}],
       [7.86,'color','#step-1-copy, #step-2-copy',{to:'#6f6a63',dur:.29}],
       [7.86,'color','#step-1 circle, #step-2-badge',{to:'#6f6a63',dur:.29}],
       [7.86,'color','#step-4-badge',{to:'#9e1b1b',dur:.25}],
