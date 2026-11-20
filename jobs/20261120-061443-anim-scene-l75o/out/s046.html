@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s046" data-in="cut" data-section="PART 3 · WINDOW ENVELOPE &amp; CHARGE" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="मान ली गई रकम का उदाहरण: Letter का postage दस रुपये और लगे stamps दस रुपये।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="charge-example">
+    <g id="example-tag">
+      <rect x="100" y="180" width="520" height="80" rx="26" fill="#ffffff" stroke="#f2b705" stroke-width="4"/>
+      <text class="hi" x="360" y="233" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="700" fill="#9e1b1b">मान लीजिए (example)</text>
+    </g>
+    <text class="hi" id="assumed-note" x="100" y="317" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="550" fill="#6f6a63">रकम सिर्फ समझने के लिए</text>
+    <use id="envelope" href="piece:domestic-envelope" transform="translate(100 380)"/>
+    <g id="stamps">
+      <g transform="translate(627 421)">
+        <rect width="76" height="100" rx="6" fill="#fffdf8" stroke="#9e1b1b" stroke-width="4" stroke-dasharray="4 5"/>
+        <rect x="9" y="10" width="58" height="80" rx="5" fill="#9e1b1b"/>
+        <path d="M20 70 34 49 43 58 53 45 61 70Z" fill="#f3ead6"/>
+        <circle cx="30" cy="32" r="6" fill="#f3ead6"/>
+      </g>
+      <g transform="translate(720 421)">
+        <rect width="76" height="100" rx="6" fill="#fffdf8" stroke="#9e1b1b" stroke-width="4" stroke-dasharray="4 5"/>
+        <rect x="9" y="10" width="58" height="80" rx="5" fill="#9e1b1b"/>
+        <path d="M20 70 34 49 43 58 53 45 61 70Z" fill="#f3ead6"/>
+        <circle cx="30" cy="32" r="6" fill="#f3ead6"/>
+      </g>
+    </g>
+    <g id="ledger">
+      <rect x="960" y="200" width="860" height="760" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M1000 370 H1780 M1000 510 H1780 M1000 650 H1780 M1000 790 H1780" fill="none" stroke="#eee3c7" stroke-width="2"/>
+      <g id="line1" fill="#2b2622">
+        <text id="label-1" class="hi" x="1020" y="300" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="650">Letter का postage</text>
+        <text id="amount-1" x="1760" y="300" text-anchor="end" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="58" font-weight="700">₹10</text>
+      </g>
+      <g id="line2" fill="#2b2622">
+        <text id="label-2" class="hi" x="1020" y="440" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="650">लगे stamps</text>
+        <text id="amount-2" x="1760" y="440" text-anchor="end" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="58" font-weight="700">₹10</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.22,'stamp','#example-tag',{from:1.07,rot:-1,spring:'soft'}],
+    [1.46,'fade','#assumed-note',{dur:0.32}],
+    [4.64,'fade','#label-1',{dur:0.32}],
+    [5.78,'pop','#amount-1',{from:0.94,spring:'soft'}],
+    [7.62,'pop','#stamps',{from:0.90,spring:'soft'}],
+    [7.62,'fade','#label-2',{dur:0.32}],
+    [7.62,'pop','#amount-2',{from:0.94,spring:'soft'}],
+  ]
+}
+</script>
+</section>
