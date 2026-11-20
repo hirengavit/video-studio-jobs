@@ -1,0 +1,32 @@
+{
+ "moments": [
+  "0.30",
+  "2.04",
+  "4.09",
+  "6.13",
+  "8.18",
+  "10.07"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s121",
+   "text": "रकम (1.9:1) / भेजने वाला (1.5:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s121",
+   "text": "रकम / COD = Accountable",
+   "t": 10.07
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s121",
+   "text": "भेजने वाला / COD = Accountable",
+   "t": 10.07
+  }
+ ]
+}
