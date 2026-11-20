@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s172" data-in="cut" data-section="RECAP · PARTS 7–9" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="recap-b">
+ <g id="recap-shell-b">
+  <rect x="200" y="160" width="1520" height="830" rx="33" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M202 320V193q0-31 31-31H1687q31 0 31 31v127H202Z" fill="#f3ead6"/>
+  <path d="M211 176 874 321M1708 176 1046 321M202 322H1718" fill="none" stroke="#d9c7a6" stroke-width="3"/>
+  <rect x="240" y="183" width="624" height="114" rx="15" fill="#f3ead6"/>
+  <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="260" y="235" font-size="47" font-weight="800" fill="#2b2622">RECAP · दोहराव</text>
+  <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="260" y="286" font-size="43" font-weight="830" fill="#9e1b1b">भाग 7–9</text>
+  <circle cx="1580" cy="241" r="55" fill="#9e1b1b"/>
+  <circle cx="1580" cy="241" r="44" fill="none" stroke="#b8403a" stroke-width="3"/>
+  <text id="recap-count-b" x="1580" y="261" text-anchor="middle" font-family="Inter, sans-serif" font-size="59" font-weight="820" fill="#fff">3</text>
+ </g>
+ <path id="recap-b-divider" d="M241 550H1679M241 750H1679" fill="none" stroke="#ead9a8" stroke-width="2"/>
+ <g id="receipt-row">
+  <text id="receipt-term" x="260" y="443" font-family="Inter, sans-serif" font-size="48" font-weight="830" fill="#9e1b1b">Receipt</text>
+  <text id="receipt-hi" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="260" y="496" font-size="37" font-weight="660" fill="#6f6a63">रसीद</text>
+  <use href="piece:booking-receipt" transform="translate(675 369) scale(.40)"/>
+  <g id="receipt-in-hand">
+   <rect x="860" y="398" width="740" height="102" rx="21" fill="#f3ead6"/>
+   <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="892" y="464" font-size="42" font-weight="710" fill="#2b2622">लाने वाले के हाथ में</text>
+  </g>
+ </g>
+ <path id="receipt-tick" d="m1639 449 16 17 31-36" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="named-post">
+  <text id="paper-en" x="260" y="602" font-size="43" font-weight="830" fill="#9e1b1b">Registered newspaper</text>
+  <text id="paper-hi" class="hi" x="260" y="645" font-size="36" font-weight="660" fill="#6f6a63">पंजीकृत समाचार-पत्र</text>
+  <text id="periodical-en" x="260" y="697" font-size="43" font-weight="830" fill="#9e1b1b">· Periodical Post</text>
+  <text id="periodical-hi" class="hi" x="260" y="737" font-size="36" font-weight="660" fill="#6f6a63">आवधिक डाक</text>
+ </g>
+ <g id="franked-row">
+  <text id="franked-en" x="260" y="836" font-size="48" font-weight="830" fill="#9e1b1b">Franked items</text>
+  <text id="franked-hi" class="hi" x="260" y="888" font-size="37" font-weight="660" fill="#6f6a63">फ्रैंक की गई वस्तुएँ</text>
+ </g>
+ <g id="shared-verdict">
+  <rect x="860" y="565" width="740" height="370" rx="24" fill="#f3ead6"/>
+  <text class="hi" x="1230" y="712" text-anchor="middle" font-size="52" font-weight="750" fill="#2b2622">letter box में →</text>
+  <g id="unpaid">
+   <rect x="1070" y="754" width="320" height="106" rx="16" fill="#f2b705" opacity=".39"/>
+   <text x="1230" y="829" text-anchor="middle" font-size="73" font-weight="830" fill="#2b2622">unpaid</text>
+  </g>
+ </g>
+ <path id="paper-tick" d="m1639 657 16 17 31-36" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+ <path id="franked-tick" d="m1639 857 16 17 31-36" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [1.50,'draw','#receipt-tick',{dur:.35}],
+    [2.50,'fade','#paper-en',{dur:.25}],
+    [3.00,'fade','#paper-hi',{dur:.25}],
+    [4.44,'fade','#periodical-en',{dur:.25}],
+    [4.94,'fade','#periodical-hi',{dur:.25}],
+    [6.70,'fade','#franked-en',{dur:.25}],
+    [7.20,'fade','#franked-hi',{dur:.25}],
+    [7.86,'pop','#shared-verdict',{from:.98}],
+    [9.76,'pop','#unpaid',{from:.89}],
+    [9.76,'draw','#paper-tick',{dur:.32}],
+    [9.88,'draw','#franked-tick',{dur:.32}]
+  ]
+}
+</script></section>
