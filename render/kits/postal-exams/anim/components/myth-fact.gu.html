@@ -1,0 +1,47 @@
+<section class="vs-scene" id="myth-fact-gu" data-in="fade" data-in-dur="0.4" data-section="અંગ્રેજી વ્યાકરણ">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="mythcard">
+      <rect x="160" y="200" width="1600" height="300" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="236" y="238" width="150" height="62" rx="31" fill="#e4e5e8"/>
+      <text x="311" y="281" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="800" fill="#4b4f58">ભ્રમ</text>
+    </g>
+    <text id="myth" x="236" y="390" font-family="Inter, sans-serif" font-size="60" font-weight="800" fill="#2b2622">“Each of the students have a book.”</text>
+    <text id="mythhi" x="236" y="458" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="38" font-weight="600" fill="#6f6a63">students બહુવચન છે, તો verb પણ બહુવચન?</text>
+    <g id="cross">
+      <circle cx="1620" cy="350" r="60" fill="none" stroke="#4b4f58" stroke-width="6"/>
+      <path d="M1596 326 L1644 374 M1644 326 L1596 374" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <g id="factcard">
+      <rect x="160" y="540" width="1600" height="420" rx="28" fill="#f3ead6"/>
+      <rect x="236" y="580" width="170" height="62" rx="31" fill="#2e7d4f"/>
+      <text x="321" y="623" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="800" fill="#ffffff">હકીકત</text>
+    </g>
+    <text id="fact1" x="236" y="740" font-family="Inter, sans-serif" font-size="64" font-weight="800" fill="#2b2622">Each of the students has a book.</text>
+    <text id="fact2" x="236" y="822" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="42" font-weight="700" fill="#2b2622">કર્તા (subject) ‘Each’ છે, અને તે એકવચન છે</text>
+    <text id="fact3" x="236" y="892" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="38" font-weight="600" fill="#6f6a63">એટલે verb પણ એકવચન: has</text>
+    <g id="postmark">
+      <circle cx="1590" cy="750" r="128" fill="none" stroke="#2e7d4f" stroke-width="6"/>
+      <circle cx="1590" cy="750" r="106" fill="none" stroke="#2e7d4f" stroke-width="3"/>
+      <text x="1590" y="772" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="56" font-weight="800" fill="#2e7d4f">સાચું</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}], [8, {zoom: 1.02, y: 10}]],
+    on: [
+      [0.05, 'slide', '#mythcard', {from: 'down', dist: 40, spring: 'soft'}],
+      [0.4, 'fade', '#myth', {dur: 0.5}],
+      [1.3, 'fade', '#mythhi', {dur: 0.5}],
+      [2.2, 'strike', '#myth', {words: 'have', color: '#4b4f58', width: 8, dur: 0.45, dim: 0.45}],
+      [2.5, 'pop', '#cross', {from: 0.6, spring: 'soft'}],
+      [3.2, 'reveal', '#factcard', {from: 'up', dur: 0.6}],
+      [3.5, 'words', '#fact1', {gap: 0.1, dist: 18}],
+      [4.4, 'highlight', '#fact1', {words: 'has', color: '#f2b705', opacity: 0.45}],
+      [5.0, 'fade', '#fact2', {dur: 0.5}],
+      [5.6, 'fade', '#fact3', {dur: 0.5}],
+      [6.4, 'stamp', '#postmark', {from: 1.4, rot: -8, spring: 'soft'}],
+    ],
+  }
+  </script>
+</section>
