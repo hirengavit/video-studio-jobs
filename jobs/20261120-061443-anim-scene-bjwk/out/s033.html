@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s033" data-in="cut" data-section="PART 2 · LETTER ENVELOPE" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="measures">
+ <g id="measure-gsm">
+  <rect x="100" y="218" width="1720" height="174" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="154" y="321" font-family="Inter, sans-serif" font-size="57" font-weight="840" fill="#9e1b1b">GSM</text>
+  <path d="M627 305h97m-17-17 17 17-17 17" fill="none" stroke="#6f6a63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="790" y="321" font-size="52" font-weight="710" fill="#2b2622">कागज़ का वज़न (प्रति m²)</text>
+ </g>
+ <g id="measure-thickness">
+  <rect x="100" y="438" width="1720" height="174" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="154" y="542" font-size="54" font-weight="800" fill="#9e1b1b">मोटाई</text>
+  <path d="M627 525h97m-17-17 17 17-17 17" fill="none" stroke="#6f6a63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="790" y="542" font-size="52" font-weight="710" fill="#2b2622">mm में</text>
+ </g>
+ <g id="measure-total">
+  <rect x="100" y="658" width="1720" height="174" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="154" y="762" font-size="54" font-weight="800" fill="#9e1b1b">Letter का कुल वज़न</text>
+  <path d="M627 745h97m-17-17 17 17-17 17" fill="none" stroke="#6f6a63" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="separate" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="790" y="762" font-size="52" font-weight="710" fill="#2b2622">अलग</text>
+ </g>
+</g>
+<g id="check">
+ <rect x="100" y="266" width="608" height="455" rx="29" fill="#f3ead6"/>
+ <use id="check-envelope" href="piece:domestic-envelope" transform="translate(100 330) scale(0.8)"/>
+ <g id="check-row1">
+  <rect x="800" y="250" width="1020" height="165" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <circle cx="867" cy="321" r="28" fill="#e5f0e8"/>
+  <path d="m855 321 9 9 17-22" fill="none" stroke="#2e7d4f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="923" y="336" font-family="Inter, sans-serif" font-size="48" font-weight="790" fill="#9e1b1b">1</text>
+  <text id="continuous" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="974" y="336" font-size="46" font-weight="760" fill="#2b2622">सभी तरफ़ लगातार बंद</text>
+  <g id="without-fasteners" fill="#2b2622">
+    <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="974" y="388" font-size="42" font-weight="620">बिना</text>
+    <text id="clip-word" x="1067" y="388" font-family="Inter, sans-serif" font-size="42" font-weight="650">clip</text>
+    <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1158" y="388" font-size="42" font-weight="620">और</text>
+    <text id="staple-word" x="1243" y="388" font-family="Inter, sans-serif" font-size="42" font-weight="650">staple</text>
+  </g>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,'#measures'],[4.72,'#check']],
+ on:[
+ [0.68,'slide','#measure-thickness',{from:'right',dist:58}],
+ [2.32,'slide','#measure-total',{from:'right',dist:58}],
+ [3.54,'highlight','#separate',{color:'#f2b705',opacity:0.42,pad:7,dur:0.31}],
+ [4.72,'slide','#check-row1',{from:'right',dist:54}],
+ [6.92,'fade','#without-fasteners',{dur:0.20}],
+ [7.66,'strike','#clip-word',{color:'#4b4f58',width:4,dur:0.30,dim:0.72}],
+ [8.54,'strike','#staple-word',{color:'#4b4f58',width:4,dur:0.30,dim:0.72}]
+ ]
+}
+</script>
+</section>
