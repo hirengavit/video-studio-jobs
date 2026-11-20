@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s158" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}' data-section="PART 9 · KEPT OUT OF LETTER BOX" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Some articles are barred from the letter box even when they fit and show enough postage">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <rect x="120" y="200" width="1680" height="790" rx="38" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <rect x="138" y="218" width="880" height="754" rx="26" fill="#f3ead6"/>
+  <path d="M1047 252V938" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M215 970H941" stroke="#d4bea0" stroke-width="3" stroke-linecap="round"/>
+  <use id="letter-box" href="piece:letter-box-icon" transform="translate(320.5 387) scale(1.45)"/>
+  <defs><clipPath id="envelope-at-mouth"><path d="M554 430H1000V690H554Z"/></clipPath></defs>
+  <g clip-path="url(#envelope-at-mouth)">
+    <g id="article"><use href="piece:envelope-article" transform="rotate(-8 537 566) translate(467 366)"/></g>
+  </g>
+  <g id="prohibition">
+    <circle cx="666" cy="548" r="55" fill="#4b4f58" stroke="#fff" stroke-width="6"/>
+    <path d="M647 529L685 567M685 529L647 567" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <text id="title" class="hi" x="1095" y="300" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800" fill="#2b2622">letter box में डालना मना</text>
+  <g id="condition-fit">
+    <circle cx="1106" cy="543" r="7" fill="#6f6a63"/>
+    <text class="hi" x="1138" y="560" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="680" fill="#2b2622">चाहे box में समा जाएँ</text>
+  </g>
+  <g id="condition-postage">
+    <circle cx="1106" cy="703" r="7" fill="#6f6a63"/>
+    <text class="hi" x="1138" y="720" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="680" fill="#2b2622">चाहे काफ़ी postage दिखे</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.50, 'pulse', '#article', {amount: 0.06}],
+    [3.60, 'fade', '#title'],
+    [3.96, 'pop', '#prohibition'],
+    [4.90, 'fade', '#condition-fit'],
+    [6.30, 'fade', '#condition-postage']
+  ]
+}
+</script>
+</section>
