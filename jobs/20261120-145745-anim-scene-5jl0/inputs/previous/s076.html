@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s076" data-in="cut" data-section="PART 4 · LIQUIDS &amp; SPECIAL ITEMS" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="कुछ चीज़ें सिर्फ हवाई रास्ते से मना हैं, और कुछ डाक से पूरी तरह मना हैं।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="air-card">
+    <rect x="140" y="200" width="800" height="760" rx="32" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text class="hi" id="air-label" x="540" y="325" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650">कुछ चीज़ें</text>
+    <path id="plane" d="M385 502 H439 L482 466 L458 420 H488 L555 466 H627 C660 466 686 480 692 501 C686 522 660 536 627 536 H555 L488 582 H458 L482 536 L439 506 H385 L406 526 H366 L343 502 L366 478 H405 Z" transform="translate(18 0) translate(525 501) scale(.86) translate(-525 -501)" fill="#f3ead6" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="air-no" fill="none" stroke-linecap="round">
+      <path d="M493 438 L587 564 M587 438 L493 564" stroke="#ffffff" stroke-width="19"/>
+      <path d="M493 438 L587 564 M587 438 L493 564" stroke="#4b4f58" stroke-width="10"/>
+    </g>
+    <g id="air-text" text-anchor="middle" fill="#4b4f58">
+      <text class="hi" x="540" y="750" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750">सिर्फ हवाई रास्ते</text>
+      <text class="hi" x="540" y="822" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750">से मना</text>
+    </g>
+  </g>
+  <g id="post-card">
+    <rect x="1000" y="200" width="780" height="760" rx="32" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text class="hi" id="post-label" x="1390" y="325" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650">कुछ चीज़ें</text>
+    <g id="envelope"><use href="piece:envelope-article" transform="translate(1150 261) scale(1.2)"/></g>
+    <g id="post-no" fill="none" stroke-linecap="round">
+      <path d="M1343 438 L1437 564 M1437 438 L1343 564" stroke="#ffffff" stroke-width="19"/>
+      <path d="M1343 438 L1437 564 M1437 438 L1343 564" stroke="#4b4f58" stroke-width="10"/>
+    </g>
+    <g id="post-text" text-anchor="middle" fill="#4b4f58">
+      <text class="hi" x="1390" y="750" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750">डाक से पूरी</text>
+      <text class="hi" x="1390" y="822" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750">तरह मना</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [1.48, 'fade', '#air-label', {dur:0.32}],
+    [2.94, 'draw', '#plane', {dur:0.55}],
+    [3.88, 'fade', '#air-text', {dur:0.32}],
+    [4.38, 'fade', '#air-no', {dur:0.22}],
+    [5.12, 'fade', '#post-label', {dur:0.32}],
+    [5.54, 'pop', '#envelope', {from:0.92,spring:'soft'}],
+    [7.28, 'fade', '#post-text', {dur:0.32}],
+    [8.24, 'fade', '#post-no', {dur:0.22}],
+  ]
+}
+</script>
+</section>

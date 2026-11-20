@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s077" data-in="cut" data-section="PART 4 · LIQUIDS &amp; SPECIAL ITEMS" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="osmic">
+    <g id="osmic-term">
+      <rect x="140" y="180" width="720" height="200" rx="24" fill="#9e1b1b"/>
+      <rect x="160" y="201" width="680" height="158" rx="15" fill="none" stroke="#b8403a" stroke-width="3"/>
+      <g fill="#fbf7ee"><circle cx="200" cy="180" r="6"/><circle cx="200" cy="380" r="6"/><circle cx="250" cy="180" r="6"/><circle cx="250" cy="380" r="6"/><circle cx="300" cy="180" r="6"/><circle cx="300" cy="380" r="6"/><circle cx="350" cy="180" r="6"/><circle cx="350" cy="380" r="6"/><circle cx="400" cy="180" r="6"/><circle cx="400" cy="380" r="6"/><circle cx="450" cy="180" r="6"/><circle cx="450" cy="380" r="6"/><circle cx="500" cy="180" r="6"/><circle cx="500" cy="380" r="6"/><circle cx="550" cy="180" r="6"/><circle cx="550" cy="380" r="6"/><circle cx="600" cy="180" r="6"/><circle cx="600" cy="380" r="6"/><circle cx="650" cy="180" r="6"/><circle cx="650" cy="380" r="6"/><circle cx="700" cy="180" r="6"/><circle cx="700" cy="380" r="6"/><circle cx="750" cy="180" r="6"/><circle cx="750" cy="380" r="6"/><circle cx="800" cy="180" r="6"/><circle cx="800" cy="380" r="6"/></g>
+      <text x="500" y="266" text-anchor="middle" font-size="76" font-weight="750" fill="#fff">Osmic acid</text>
+      <text class="hi" id="osmic-hi" x="500" y="334" text-anchor="middle" font-size="44" font-weight="610" fill="#fde9a6">ऑस्मिक अम्ल</text>
+    </g>
+    <g id="osmic-vial" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M351 866H649" stroke="#d8c8aa" stroke-width="3"/>
+      <path d="M429 525h142v46c0 14 13 26 24 35q27 21 27 52v166q0 24-24 24H402q-24 0-24-24V658q0-31 27-52c11-9 24-21 24-35Z" fill="#dce8ea"/>
+      <path d="M390 724q59-11 110-2t110 0v99q0 15-18 15H408q-18 0-18-15Z" fill="#b2c9ce" stroke="#72949c" stroke-width="3"/>
+      <path d="M403 666v132m4-147q7-14 23-24" stroke="#fff" stroke-width="5" fill="none"/>
+      <rect x="419" y="496" width="162" height="48" rx="9" fill="#4b4f58"/>
+      <path d="M441 507v25m19-25v25m20-25v25m20-25v25m20-25v25m20-25v25m19-25v25" fill="none" stroke="#c7c7c8" stroke-width="3"/>
+    </g>
+    <g id="warning-diamond" stroke="#4b4f58" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M500 647l64 64-64 64-64-64Z" fill="#fff"/>
+      <path d="M500 684v32m0 14v2" fill="none" stroke-width="6"/>
+    </g>
+    <g id="rule-side">
+      <rect x="1000" y="180" width="780" height="800" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <g id="packing-chip">
+        <rect x="1060" y="240" width="660" height="97" rx="48.5" fill="#eeeded" stroke="#c7c6c7" stroke-width="2"/>
+        <text class="hi" id="packing-chip-copy" x="1390" y="301" text-anchor="middle" font-size="45" font-weight="660" fill="#4b4f58">खास packing</text>
+      </g>
+      <g id="warning-chip">
+        <rect x="1060" y="360" width="660" height="97" rx="48.5" fill="#eeeded" stroke="#c7c6c7" stroke-width="2"/>
+        <text id="warning-chip-copy" x="1390" y="422" text-anchor="middle" font-size="45" font-weight="660" fill="#4b4f58">warning labels</text>
+      </g>
+      <g id="rule-check">
+        <rect x="1040" y="520" width="700" height="380" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <rect x="1081" y="628" width="56" height="56" rx="9" fill="#fbf7ee" stroke="#2b2622" stroke-width="4"/>
+        <text class="hi" id="rules-line-one" x="1168" y="651" font-size="46" font-weight="720" fill="#2b2622">पहले: dangerous और</text>
+        <text class="hi" id="rules-line-two" x="1168" y="722" font-size="46" font-weight="720" fill="#2b2622">toxic सामान के नियम</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0, {zoom: 1}]],
+  on: [
+    [0.00, "pop", "#osmic-term", {from: 0.97, spring: "soft"}],
+    [0.50, "fade", "#osmic-hi", {dur: 0.28}],
+    [1.04, "draw", "#osmic-vial", {dur: 0.72}],
+    [2.80, "pop", "#packing-chip", {from: 0.97, spring: "soft"}],
+    [3.78, "pop", "#warning-chip", {from: 0.97, spring: "soft"}],
+    [3.78, "draw", "#warning-diamond", {dur: 0.43}],
+    [6.42, "strike", "#packing-chip-copy", {color: "#4b4f58", dim: 0.66, width: 4.5, dur: 0.37}],
+    [6.42, "strike", "#warning-chip-copy", {color: "#4b4f58", dim: 0.66, width: 4.5, dur: 0.37}],
+    [7.80, "fade", "#rule-check", {dur: 0.30}],
+    [9.86, "fade", "#rules-line-two", {dur: 0.30}],
+    [12.02, "highlight", "#rules-line-two", {words: "नियम", color: "#f2b705", opacity: 0.44, dur: 0.42, pad: 6}]
+  ]
+}
+</script>
+</section>
