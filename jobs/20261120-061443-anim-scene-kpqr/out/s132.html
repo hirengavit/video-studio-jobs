@@ -7,6 +7,7 @@
         <rect x="196" y="230" width="156" height="64" rx="32" fill="#e4e5e8"/>
         <text font-family="'Noto Sans Devanagari', Inter, sans-serif" x="274" y="274" text-anchor="middle" font-size="36" font-weight="800" fill="#4b4f58">भ्रम</text>
         <text font-family="'Noto Sans Devanagari', Inter, sans-serif" id="myth" x="196" y="394" font-size="68" font-weight="800" fill="#2b2622">सुरक्षित packing = हमेशा seal</text>
+        <path id="myth-strike" d="M760 370 Q905 375 1090 370" pathLength="1" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
         <g id="cross" stroke="#4b4f58" fill="none">
           <circle cx="1631" cy="345" r="51" stroke-width="4"/>
           <path d="M1611 325l40 40m0-40-40 40" stroke-width="8" stroke-linecap="round"/>
@@ -32,7 +33,7 @@
   {
     on: [
       [0.10,'words','#myth',{gap:0.43,dist:18,spring:'soft'}],
-      [2.98,'strike','#myth',{words:'हमेशा seal',color:'#4b4f58',width:6,dur:0.34,dim:0.50}],
+      [2.98,'draw','#myth-strike',{dur:0.34}],
       [2.98,'pop','#cross',{from:0.8,spring:'soft'}],
       [3.90,'slide','#factcard',{from:'down',dist:48,spring:'soft'}],
       [3.90,'type','#factterm',{cps:20}],
