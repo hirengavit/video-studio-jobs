@@ -10,7 +10,7 @@
       <text id="insured-hi" x="460" y="916" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="660" fill="#fde9a6">बीमा सहित</text>
     </g>
     <g id="groups">
-      <rect x="900" y="330" width="900" height="630" rx="29" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+      <rect id="groups-bg" x="900" y="330" width="900" height="630" rx="29" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
       <text x="945" y="410" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="800" fill="#9e1b1b">कौन-सी चीज़ें?</text>
     </g>
     <g id="chip-money">
@@ -34,6 +34,11 @@
   </svg>
   <script type="text/scene">
   {
+    update(t, section, $) {
+      const panel = $('#groups-bg')[0];
+      const ramp = (start) => Math.max(0, Math.min(1, (t - start) / 0.26));
+      if (panel) panel.setAttribute('height', 104 + 186 * ramp(7.25) + 170 * ramp(8.12) + 170 * ramp(9.38));
+    },
     on: [
       [0,'words','#title',{gap:0.12,dist:16,spring:'soft'}],
       [1.26,'pop','#case',{from:0.94,spring:'soft'}],
