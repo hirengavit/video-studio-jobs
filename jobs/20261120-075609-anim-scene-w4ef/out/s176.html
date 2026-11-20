@@ -39,7 +39,7 @@
  <text x="960" y="240" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="830" fill="#fff">Quick Mail Service</text>
  <text id="qms-hi" x="960" y="296" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="760" fill="#fde9a6">त्वरित डाक सेवा</text>
  <g id="address">
-  <rect x="400" y="380" width="1120" height="540" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <rect id="address-bg" x="400" y="380" width="1120" height="540" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
   <text x="960" y="520" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#6f6a63">शहर का नाम</text>
   <path id="below-arrow" d="M960 548v49m-14-14 14 14 14-14" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
   <g id="pins">
@@ -68,7 +68,7 @@
     <path d="M1250 707h60" fill="none" stroke="#ad8f64" stroke-width="2" stroke-dasharray="4 6" stroke-linecap="round"/>
    </g>
   </g>
-  <text id="pin-en" x="459" y="697" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="850" fill="#2b2622">PIN</text>
+  <text id="pin-en" x="457" y="697" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="850" fill="#2b2622">PIN</text>
   <text id="pin-hi" x="459" y="784" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="720" fill="#6f6a63">पिन कोड</text>
   <g id="six-digits">
    <rect x="1370" y="639" width="126" height="76" rx="35" fill="#9e1b1b"/>
@@ -82,6 +82,8 @@
  update(t, section, get) {
   get('#detain')[0].setAttribute('display', t < 2.27 ? 'inline' : 'none');
   get('#qms')[0].setAttribute('display', t < 2.27 ? 'none' : 'inline');
+  const ramp = (start, dur) => Math.max(0, Math.min(1, (t-start)/dur));
+  get('#address-bg')[0].setAttribute('height', 202 + 46*ramp(6.05, 0.30) + 292*ramp(7.13, 0.35));
  },
  on: [
   [0.36, 'fade', '#return', {dur: 0.24}],
@@ -99,7 +101,7 @@
   [7.69, 'pop', '#pin-slot-6', {from: 0.91, spring: 'soft'}],
   [7.79, 'fade', '#pin-hi', {dur: 0.24}],
   [8.71, 'pop', '#six-digits', {from: 0.91, spring: 'soft'}],
-  [8.71, 'pulse', '#pins', {amount: 0.045}]
+  [8.71, 'pulse', '#pins', {amount: 0.030}]
  ]
 }
 </script>
