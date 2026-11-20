@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="key" fill="#f2b705" fill-rule="evenodd" d="M151 170a30 30 0 1 0 27 43h39v12h14v-12h12v-8h17l20-13-12-11h-90a30 30 0 0 0-27-11Zm-1 16a14 14 0 1 1 0 28 14 14 0 1 1 0-28Z"/>
+<path id="ridge" d="M185 192h72" stroke="#8a5d00" stroke-width="2" fill="none"/>
+<circle data-anchor="grip" cx="150" cy="200" r="0" fill="none" stroke="none"/>
+</svg>
