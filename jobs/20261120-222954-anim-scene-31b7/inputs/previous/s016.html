@@ -1,0 +1,68 @@
+<section class="vs-scene" id="s016" data-in="cut" data-section="PART 1 · WHAT GOES IN THE LETTER BOX" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Two different postal facilities, then the notice on the letter box.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="compare">
+    <text id="compare-title" class="hi" x="960" y="250" text-anchor="middle" font-size="70" font-weight="820" fill="#2b2622">दो नामों का फ़र्क</text>
+    <g id="letter-card">
+      <rect x="160" y="302" width="740" height="553" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M188 302H872A28 28 0 0 1 900 330V427H160V330A28 28 0 0 1 188 302Z" fill="#9e1b1b"/>
+      <text id="letter-term" x="530" y="383" text-anchor="middle" font-family="Inter,sans-serif" font-size="66" font-weight="820" fill="#fff">Letter box</text>
+      <g id="outgoing-icon">
+        <use href="piece:letter-box-pillar" transform="translate(464 435) scale(.66)"/>
+      </g>
+      <text id="outgoing" class="hi" x="530" y="767" text-anchor="middle" font-size="53" font-weight="780" fill="#2b2622">बाहर जाने वाली डाक</text>
+      <text id="collection" class="hi" x="530" y="825" text-anchor="middle" font-size="45" font-weight="660" fill="#6f6a63">collection के लिए</text>
+    </g>
+    <g id="post-card">
+      <rect x="1020" y="302" width="740" height="553" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M1048 302H1732A28 28 0 0 1 1760 330V427H1020V330A28 28 0 0 1 1048 302Z" fill="#f2b705"/>
+      <text id="post-term" x="1390" y="383" text-anchor="middle" font-family="Inter,sans-serif" font-size="66" font-weight="820" fill="#2b2622">Post box (rented)</text>
+      <g id="incoming-icon">
+        <use href="piece:rented-post-box" transform="translate(1224 416) scale(.83)"/>
+      </g>
+      <text id="incoming" class="hi" x="1390" y="767" text-anchor="middle" font-size="53" font-weight="780" fill="#2b2622">renter के नाम आई डाक</text>
+      <text id="pickup" class="hi" x="1390" y="825" text-anchor="middle" font-size="45" font-weight="660" fill="#6f6a63">लेने के लिए</text>
+    </g>
+    <g id="vs">
+      <circle cx="960" cy="572" r="53" fill="#2b2622" stroke="#fbf7ee" stroke-width="8"/>
+      <text x="960" y="588" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="820" fill="#fff">VS</text>
+    </g>
+    <g id="wrong-option">
+      <rect x="390" y="879" width="1140" height="103" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text id="option-label" x="456" y="947" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="750" fill="#2b2622">Option: दोनों एक ही चीज़</text>
+      <path id="option-strike" d="M449 926Q744 933 1048 923" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+      <g id="option-cross">
+        <circle cx="1444" cy="930" r="31" fill="#4b4f58"/>
+        <path d="M1431 917l26 26m0-26-26 26" fill="none" stroke="#fff" stroke-width="6.5" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+  <g id="notice">
+    <use href="piece:letter-box-pillar" transform="translate(340 241.2) scale(1.8)"/>
+    <rect id="plate-border" x="446" y="520" width="148" height="130" rx="13" fill="none" stroke="#f2b705" stroke-width="7"/>
+    <g id="notice-label">
+      <rect x="816" y="390" width="900" height="262" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M875 441h782" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+      <text x="1266" y="550" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="76" font-weight="820" fill="#2b2622">Box पर लिखा निर्देश</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0,{zoom:1}], [10.19,{zoom:1}], [11.33,{zoom:1.12,x:35,y:0},'easeInOut']],
+  on: [
+    [1.22,'pulse','#vs'],
+    [3.24,'fade','#wrong-option',{dur:.24}],
+    [3.24,'words','#option-label',{gap:.28}],
+    [6.40,'draw','#option-strike',{dur:.25}],
+    [6.66,'stamp','#option-cross'],
+    [7.79,'fade','#notice-label',{dur:.29}],
+    [10.19,'pulse','#plate-border']
+  ],
+  update(t, section, $) {
+    $('#compare').forEach(n => n.setAttribute('display',t<7.63?'inline':'none'));
+    $('#notice').forEach(n => n.setAttribute('display',t<7.63?'none':'inline'));
+  }
+}
+</script>
+</section>
