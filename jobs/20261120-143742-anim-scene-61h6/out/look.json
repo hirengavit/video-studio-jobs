@@ -10,10 +10,16 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-overlap",
+   "kind": "misuse",
    "scene": "s014",
-   "text": "सामान न गिरे, / छेड़छाड़ का साफ़ निशान छोड़े बिना निकाला",
-   "t": 5.41
+   "message": "fade #condition2-sub-a: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s014",
+   "message": "fade #condition2-sub-b: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
   }
  ]
 }
