@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s049" data-in="cut" data-section="PART 3 · TIMES AND HOUR PLATE" data-series="LETTER BOXES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Mail reaches dispatch on time when letter boxes are cleared punctually">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="flow">
+    <path id="flow-floor" d="M145 828H1777" fill="none" stroke="#d8c6a8" stroke-width="3" stroke-linecap="round"/>
+    <g id="flow-box">
+      <use href="piece:letter-box-pillar" transform="translate(196 407) scale(1.01)"/>
+    </g>
+    <g id="flow-bag">
+      <use href="piece:collection-bag" transform="translate(570 520) scale(.88)"/>
+    </g>
+    <g id="flow-arrows" fill="none" stroke="#8a5d00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M423 634H596m-20-16 20 16-20 16"/>
+      <path d="M920 634H1083m-20-16 20 16-20 16"/>
+    </g>
+    <g id="on-time-chip">
+      <rect x="911" y="681" width="170" height="75" rx="33" fill="#fde9a6"/>
+      <text x="996" y="730" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="790" fill="#6b4700">समय पर</text>
+    </g>
+    <g id="flow-clock">
+      <use href="piece:clock-face" transform="translate(1198 209) scale(.80)"/>
+    </g>
+    <g id="flow-office">
+      <use href="piece:post-office-front" transform="translate(1092 490) scale(1.0)"/>
+      <text x="1302" y="634" text-anchor="middle" font-family="Inter,sans-serif" font-size="34" font-weight="790" fill="#2b2622">Post Office</text>
+    </g>
+
+    <g id="dispatch-van">
+      <use href="piece:mail-van" transform="translate(1520 693.4) scale(.44)"/>
+    </g>
+    <text id="dispatch-label" x="1643" y="662" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="790" fill="#2b2622">Dispatch</text>
+    <g id="not-left-behind">
+      <rect x="1504" y="512" width="266" height="79" rx="26" fill="#f0efed" stroke="#b4b3b1" stroke-width="2"/>
+      <text x="1637" y="564" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="740" fill="#4b4f58">पीछे न रहे</text>
+    </g>
+    <g id="punctually">
+      <rect x="480" y="846" width="960" height="154" rx="27" fill="#9e1b1b"/>
+      <rect x="494" y="860" width="932" height="126" rx="18" fill="none" stroke="#f3ead6" stroke-opacity=".84" stroke-width="3.5" stroke-dasharray="1 11" stroke-linecap="round"/>
+      <text x="960" y="932" text-anchor="middle" font-family="Inter,sans-serif" font-size="85" font-weight="820" fill="#fff">Punctually</text>
+      <text id="punctually-gloss" x="960" y="979" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="770" fill="#fde9a6">बिल्कुल ठीक समय पर</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ shots:[[0,'#flow']],
+ on:[
+  [0,'slide','#dispatch-van',{from:'right',dist:36,spring:'soft'}],
+  [1.89,'fade','#dispatch-label',{dur:.23}],
+  [4.06,'fade','#not-left-behind',{dur:.26}],
+  [7.04,'pop','#punctually',{from:.94,spring:'soft'}],
+  [9.69,'fade','#punctually-gloss',{dur:.27}]
+ ]
+}
+</script>
+</section>
