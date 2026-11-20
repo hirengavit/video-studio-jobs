@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s188" data-in="cut" data-section="PART 10 · SPECIAL BOXES &amp; BOOKING" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="A domestic parcel declaration is required on the form set by administrative instructions; the rule itself does not give a form number">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="decl">
+    <rect x="140" y="180" width="560" height="780" rx="30" fill="#f3ead6"/>
+    <path d="M190 899H650" stroke="#d4bea0" stroke-width="3" stroke-linecap="round"/>
+    <g id="support-sheet" transform="rotate(-9 403 565)">
+      <rect x="276" y="344" width="254" height="414" rx="14" fill="#fff" stroke="#ddcba6" stroke-width="3"/>
+      <path d="M313 415H479M313 449H448M313 483H475M313 517H456M313 551H480M313 585H423" stroke="#cebea4" stroke-width="6" stroke-linecap="round"/>
+    </g>
+    <use href="piece:parcel-box" transform="translate(260 676)"/>
+    <rect x="760" y="180" width="1020" height="780" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text id="decl-title" x="823" y="260" fill="#9e1b1b" font-family="Inter,sans-serif" font-size="52" font-weight="810">Domestic parcel declaration</text>
+    <text id="decl-hi" class="hi" x="823" y="323" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="690">घरेलू पार्सल घोषणा</text>
+    <path d="M823 366H1717" stroke="#ead9a8" stroke-width="3"/>
+    <g id="admin">
+      <rect id="form-marker" x="820" y="467" width="176" height="60" rx="11" fill="#fde9a6"/>
+      <text class="hi" x="823" y="440" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="680">Administrative instructions में</text>
+      <text class="hi" x="833" y="511" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740">तय form</text>
+      <text class="hi" x="1008" y="511" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="680">में</text>
+    </g>
+    <g id="no-number">
+      <rect x="820" y="577" width="898" height="107" rx="16" fill="#f2f1f1" stroke="#d7d4d2" stroke-width="2"/>
+      <text class="hi" x="850" y="648" fill="#4b4f58" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="730">Form number: नियम में नहीं</text>
+      <g id="slate-cross">
+        <circle cx="1654" cy="630" r="27" fill="#4b4f58"/>
+        <path d="M1645 621l18 18m0-18-18 18" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0, 'type', '#decl-title', {dur: 1.17}],
+    [0.50, 'fade', '#decl-hi'],
+    [4.66, 'fade', '#admin'],
+    [7.12, 'fade', '#form-marker'],
+    [9.64, 'fade', '#no-number'],
+    [10.30, 'pop', '#slate-cross']
+  ]
+}
+</script>
+</section>
