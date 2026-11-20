@@ -1,0 +1,29 @@
+<section class="vs-scene" id="s183" data-in="cut" data-section="PART 10 · SPECIAL BOXES &amp; BOOKING" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="mark">
+ <use id="mark-envelope" href="piece:domestic-envelope" transform="translate(352 290) scale(1.6)"/>
+ <text id="mark-heading" x="352" y="213" class="hi" font-size="56" font-weight="830" fill="#9e1b1b">Service का निशान</text>
+ <g id="mark-address-side">
+  <rect x="416" y="347" width="262" height="64" rx="17" fill="#f3ead6"/>
+  <text x="547" y="390" text-anchor="middle" font-family="Inter,sans-serif" font-size="35" font-weight="730" fill="#6f6a63">address side</text>
+ </g>
+ <rect id="mark-band" x="624" y="514" width="512" height="112" rx="10" fill="#fde9a6" fill-opacity=".75"/>
+ <g id="service-marks" fill="#2b2622" font-weight="700">
+  <text id="registered-mark" x="648" y="559" font-family="Caveat, cursive" font-size="64">Registered</text>
+  <text id="insured-mark" x="648" y="610" font-family="Caveat, cursive" font-size="64">Insured for</text>
+  <text id="rupee-mark" x="931" y="610" font-family="Caveat, cursive" font-size="64">Rs.</text>
+  <path id="amount-blank" d="M1005 610h96" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round"/>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [.56,'type','#registered-mark',{cps:18}],
+  [2.72,'type','#insured-mark',{cps:13}],
+  [4.30,'type','#rupee-mark',{cps:23}],
+  [4.47,'draw','#amount-blank',{dur:.25}]
+ ]
+}
+</script>
+</section>
