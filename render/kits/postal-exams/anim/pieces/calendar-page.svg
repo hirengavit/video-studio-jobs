@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <rect id="page" x="4" y="24" width="252" height="272" rx="10" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+  <path id="top-strip" d="M14 24H246A10 10 0 0 1 256 34V82H4V34A10 10 0 0 1 14 24Z" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/>
+  <g id="rings" fill="#d9d4cb" stroke="#2b2622" stroke-width="3">
+    <rect x="63" y="8" width="14" height="40" rx="7"/>
+    <rect x="123" y="8" width="14" height="40" rx="7"/>
+    <rect x="183" y="8" width="14" height="40" rx="7"/>
+  </g>
+  <rect id="day-box" x="30" y="102" width="200" height="160" rx="6" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M16 280H244" stroke="#b9b2a6" stroke-width="2.5" stroke-dasharray="2 8"/>
+  <circle data-anchor="base" cx="130" cy="296" r="0"/>
+</svg>
