@@ -8,12 +8,5 @@
   "8.32"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s080",
-   "message": "color: option \"opacity\" isn't used (it takes: to, dur, prop)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
