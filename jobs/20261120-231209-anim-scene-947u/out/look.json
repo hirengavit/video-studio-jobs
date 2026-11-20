@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.48",
+  "4.96",
+  "7.43",
+  "9.91",
+  "12.24"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s113",
+   "message": "words: option \"dur\" isn't used (it takes: gap, dist, from, spring)",
+   "t": 0.3
+  }
+ ]
+}
