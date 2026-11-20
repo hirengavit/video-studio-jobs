@@ -1,0 +1,68 @@
+<section class="vs-scene" id="s140" data-in="cut" data-section="PART 8 · LETTER BOX OR COUNTER" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="list">
+    <use id="general-box" href="piece:letter-box-icon" transform="translate(140 380)"/>
+    <g id="general-term">
+      <rect x="500" y="190" width="800" height="140" rx="24" fill="#9e1b1b"/>
+      <rect x="513" y="203" width="774" height="114" rx="16" fill="none" stroke="#fff" stroke-opacity=".68" stroke-width="6" stroke-linecap="round" stroke-dasharray="0 18"/>
+      <text x="900" y="256" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="800" fill="#fff">GENERAL LETTER BOX</text>
+      <text class="hi" x="900" y="303" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="700" fill="#fde9a6">सामान्य पत्र पेटी</text>
+    </g>
+    <g id="eight">
+      <rect x="1400" y="210" width="380" height="100" rx="50" fill="#9e1b1b"/>
+      <text class="hi" x="1590" y="274" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="760" fill="#fff">आठ categories</text>
+    </g>
+    <g id="chip-outlines" fill="#fff" stroke="#ead9a8" stroke-width="3">
+      <rect id="category-1" x="520" y="380" width="620" height="140" rx="24"/>
+      <rect id="category-2" x="1180" y="380" width="620" height="140" rx="24"/>
+      <rect id="category-3" x="520" y="540" width="620" height="140" rx="24"/>
+      <rect id="category-4" x="1180" y="540" width="620" height="140" rx="24"/>
+    </g>
+    <g id="category-label-1">
+      <text id="category-en-1" x="830" y="441" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="820" fill="#9e1b1b">LETTERS</text>
+      <text id="category-hi-1" x="830" y="488" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="700" fill="#6f6a63">पत्र</text>
+    </g>
+    <g id="category-label-2">
+      <text id="category-en-2" x="1490" y="441" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="820" fill="#9e1b1b">STATIONERY</text>
+      <text id="category-hi-2" x="1490" y="488" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="700" fill="#6f6a63">स्टेशनरी</text>
+    </g>
+    <g id="category-label-3">
+      <text id="category-en-3" x="830" y="601" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="820" fill="#9e1b1b">PRINTED MATERIAL</text>
+      <text id="category-hi-3" x="830" y="648" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="700" fill="#6f6a63">मुद्रित सामग्री</text>
+    </g>
+    <g id="category-label-4">
+      <text id="category-en-4" x="1490" y="601" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="820" fill="#9e1b1b">LITERATURE FOR THE BLIND</text>
+      <text id="category-hi-4" x="1490" y="648" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="700" fill="#6f6a63">नेत्रहीनों के लिए साहित्य</text>
+    </g>
+    <g id="prepaid">
+      <rect x="520" y="820" width="1280" height="170" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text id="full-postage" x="580" y="891" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="810" fill="#2b2622">पूरा postage</text>
+      <g id="prepaid-stamp">
+        <rect x="1330" y="838" width="433" height="135" rx="19" fill="#9e1b1b"/>
+        <rect x="1342" y="850" width="409" height="111" rx="13" fill="none" stroke="#e5a9a6" stroke-width="2" stroke-dasharray="5 8"/>
+        <text x="1546.5" y="905" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="850" fill="#fff">PREPAID</text>
+        <text id="prepaid-hi" x="1546.5" y="947" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="720" fill="#fde9a6">पहले से भुगतान</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera: [[0,{zoom:1}]],
+ on: [
+  [0.38, 'type', '#category-en-1', {cps: 34}],
+  [0.88, 'fade', '#category-hi-1', {dur: 0.25}],
+  [1.22, 'type', '#category-en-2', {cps: 34}],
+  [1.72, 'fade', '#category-hi-2', {dur: 0.25}],
+  [2.5, 'type', '#category-en-3', {cps: 34}],
+  [3, 'fade', '#category-hi-3', {dur: 0.25}],
+  [4.3, 'type', '#category-en-4', {cps: 32}],
+  [4.8, 'fade', '#category-hi-4', {dur: 0.25}],
+  [6.74, 'slide', '#prepaid', {from:'down',dist:34,spring:'soft'}],
+  [9.08, 'stamp', '#prepaid-stamp', {from:1.10,rot:-2,spring:'soft'}],
+  [9.58, 'fade', '#prepaid-hi', {dur:0.24}]
+ ]
+}
+</script>
+</section>
