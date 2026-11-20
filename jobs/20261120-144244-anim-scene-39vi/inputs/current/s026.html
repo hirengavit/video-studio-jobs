@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s026" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}' data-section="PART 2 · LETTER ENVELOPE" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="term">
+  <rect x="100" y="170" width="800" height="157" rx="28" fill="#9e1b1b"/>
+  <rect x="113" y="183" width="774" height="131" rx="19" fill="none" stroke="#d67e73" stroke-width="2" stroke-dasharray="3 8" stroke-linecap="round"/>
+  <text x="146" y="240" font-family="Inter, sans-serif" font-size="62" font-weight="820" fill="#fff">Letter Envelope</text>
+  <text id="term-hi" x="147" y="294" class="hi" font-size="41" font-weight="690" fill="#fde9a6">पत्र का लिफ़ाफ़ा</text>
+</g>
+<g id="front-envelope">
+  <use href="piece:domestic-envelope" transform="translate(100 380) scale(1.2)"/>
+  <rect id="edge-ring" x="107" y="387" width="898" height="466" rx="12" fill="none" stroke="#f2b705" stroke-width="8"/>
+  <path id="glue" d="M565 857c38-3 77-3 114-1 18 2 29 12 20 21-11 12-33-1-57 6-11 3-23 13-35 8-6-3-3-10-10-13-12-5-27 2-38-4-9-5-5-13 6-17Z" fill="#d9e9e8" stroke="#658284" stroke-width="4" stroke-linejoin="round"/>
+  <path id="glue-cross" d="M616 852l41 39m0-39-41 39" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+</g>
+<g id="p1">
+  <rect x="1100" y="356" width="720" height="128" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <circle cx="1159" cy="420" r="31" fill="#2e7d4f"/><path d="m1145 419 10 10 17-21" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1211" y="437" class="hi" font-size="46" font-weight="730" fill="#2b2622">सभी तरफ़ से लगातार बंद</text>
+</g>
+<g id="p2">
+  <rect x="1100" y="536" width="720" height="128" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <circle cx="1159" cy="600" r="31" fill="#2e7d4f"/><path d="m1145 599 10 10 17-21" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1211" y="589" class="hi" font-size="46" font-weight="730" fill="#2b2622">कहीं कोई हिस्सा</text>
+  <text x="1211" y="638" class="hi" font-size="46" font-weight="730" fill="#2b2622">खुला नहीं</text>
+</g>
+<g id="p3">
+  <rect x="1100" y="716" width="720" height="128" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <circle cx="1159" cy="780" r="31" fill="#9e1b1b"/>
+  <text x="1159" y="793" font-family="Inter, sans-serif" font-size="36" font-weight="800" text-anchor="middle" fill="#fff">3</text>
+  <text x="1211" y="797" class="hi" font-size="46" font-weight="730" fill="#2b2622">बाहर बचा गोंद नहीं</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0, {zoom: 1}]],
+  on: [
+    [0.50, 'fade', '#term-hi', {dur: 0.28}],
+    [1.54, 'draw', '#edge-ring', {dur: 1.4}],
+    [2.78, 'slide', '#p1', {from: 'right', dist: 44, spring: 'fast'}],
+    [5.04, 'slide', '#p2', {from: 'right', dist: 44, spring: 'fast'}],
+    [7.52, 'draw', '#glue', {dur: 0.54}],
+    [7.52, 'slide', '#p3', {from: 'right', dist: 44, spring: 'fast'}],
+    [9.96, 'draw', '#glue-cross', {dur: 0.39}]
+  ]
+}
+</script>
+</section>
