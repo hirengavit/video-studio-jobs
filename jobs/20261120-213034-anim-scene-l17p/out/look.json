@@ -1,0 +1,50 @@
+{
+ "moments": [
+  "0.30",
+  "1.98",
+  "3.95",
+  "5.93",
+  "7.90",
+  "9.73"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s001",
+   "message": "pop: option \"dur\" isn't used (it takes: spring, from)",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s001",
+   "message": "words: option \"dur\" isn't used (it takes: gap, dist, from, spring)",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s001",
+   "text": "Letter boxes / Letter box",
+   "t": 0.3
+  },
+  {
+   "kind": "low-contrast",
+   "scene": "s001",
+   "text": "Letter box (1.1:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s001",
+   "text": "और letter-box peon / पत्र पेटी",
+   "t": 5.93
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s001",
+   "text": "के कर्तव्य / fully prepaid डाक",
+   "t": 9.73
+  }
+ ]
+}
