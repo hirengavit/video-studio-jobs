@@ -29,8 +29,8 @@
     <text x="735" y="549" text-anchor="middle" class="hi" font-size="46" font-weight="760" fill="#6f6a63">पुरानी</text>
   </g>
   <g id="next-label">
-    <rect x="618" y="510" width="216" height="77" rx="35" fill="#fde9a6"/>
-    <text x="726" y="563" text-anchor="middle" class="hi" font-size="36" font-weight="790" fill="#2b2622">अगली clearance</text>
+    <rect x="611" y="510" width="246" height="77" rx="35" fill="#fde9a6"/>
+    <text x="734" y="560" text-anchor="middle" class="hi" font-size="33" font-weight="790" fill="#2b2622">अगली clearance</text>
   </g>
   <g id="public-note">
     <rect x="914" y="671" width="792" height="216" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
@@ -43,6 +43,7 @@
  camera:[[0,{zoom:1}],[1.05,{zoom:1.08,x:-26},'inOut'],[8.16,{zoom:1.08,x:-26}],[9.03,{zoom:1},'inOut']],
  update(t,section,$) {
   const p = Math.min(1, t / .55);
+  for (const id of ['#change','#timing']) $(id)[0].setAttribute('display', t >= 8.40 ? 'none' : 'inline');
   for (const id of ['#explanation','#plate-arrow']) $(id)[0].setAttribute('opacity', 1 - .50*p);
  },
  on:[
