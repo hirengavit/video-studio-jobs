@@ -1,0 +1,103 @@
+[
+  {
+    "id": "double-receptacle",
+    "description": "Cut-away liquid parcel: outer steel-grey metal / strong wood box, glass bottle with tight cap inside, sand-coloured sawdust/bran filling the gap all round. 520x460. Parts #outer-box #absorbent #bottle #cap #liquid.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s055",
+      "s056",
+      "s057",
+      "s058",
+      "s059",
+      "s060",
+      "s061",
+      "s078",
+      "s079",
+      "s081",
+      "s118",
+      "s205"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "sealed-insured-cover",
+    "description": "Back of a brown-paper insured packet: four flaps, side seams, crosswise string with a centre knot, dashed circles where seals go. 640x420.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s088",
+      "s089",
+      "s090",
+      "s091",
+      "s092",
+      "s095",
+      "s096",
+      "s097",
+      "s103",
+      "s104"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "valuables-case",
+    "description": "Strong wooden case with steel corner plates and a hasp, lid closed, for insured bullion and coins. 420x300.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s069",
+      "s097",
+      "s098",
+      "s104",
+      "s105",
+      "s119",
+      "s209"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "counter-window",
+    "description": "Post office counter window: sand wall, white frame with grille top half, open lower half, cream ledge in front. 680x460.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s145",
+      "s146",
+      "s147",
+      "s148",
+      "s149",
+      "s156",
+      "s186",
+      "s187",
+      "s218"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "pin-icon",
+    "description": "Steel straight pin, grey shaft with round red head. 40x220.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s120",
+      "s121",
+      "s122",
+      "s123",
+      "s124",
+      "s125",
+      "s136",
+      "s170",
+      "s210"
+    ],
+    "reuse": false
+  }
+]
