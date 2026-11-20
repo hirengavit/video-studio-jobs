@@ -8,12 +8,5 @@
   "12.24"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s113",
-   "message": "words: option \"dur\" isn't used (it takes: gap, dist, from, spring)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
