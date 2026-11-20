@@ -11,7 +11,10 @@
     <text class="hi" id="inner-container" x="290" y="262" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">अंदर container</text>
     <text class="hi" id="outer-box" x="670" y="262" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">बाहर metal या मज़बूत लकड़ी का box</text>
     <g id="receptacle-dimmer"><use id="receptacle" href="piece:double-receptacle" transform="translate(1596 177) scale(.35)"/></g>
-    <text class="hi" id="absorbent-note" x="290" y="320" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650" fill="#6f6a63">सोखने वाली चीज़: पूरा liquid सोख ले</text>
+    <g id="absorbent-dimmer">
+      <rect x="560" y="284" width="60" height="54" rx="4" fill="#f2b705" fill-opacity=".38"/>
+      <text class="hi" id="absorbent-note" x="290" y="320" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650" fill="#6f6a63">सोखने वाली चीज़: पूरा liquid सोख ले</text>
+    </g>
     <g id="hing-term">
       <circle cx="206" cy="402" r="39" fill="#9e1b1b"/>
       <text x="206" y="419" text-anchor="middle" font-family="Inter, sans-serif" font-size="50" font-weight="800" fill="#fff">2</text>
@@ -43,14 +46,12 @@
 {
   update(t, section, $) {
     const fade = Math.max(0, Math.min(1, (t - 5.38) / .38));
-    for (const id of ['#receptacle-dimmer', '#hing-tin-dimmer']) {
+    for (const id of ['#receptacle-dimmer', '#hing-tin-dimmer', '#absorbent-dimmer']) {
       const icon = $(id)[0];
       if (icon) icon.setAttribute('opacity', 1 - .5 * fade);
     }
   },
   on: [
-    [0, 'highlight', '#absorbent-note', {words:'पूरा',color:'#f2b705',opacity:.38,pad:5,dur:.001}],
-    [5.38, 'color', '#absorbent-note', {opacity:.5,dur:.38}],
     [0, 'fade', '#insurance-term', {dur:.29}],
     [3.22, 'fade', '#insurance-loss-detail', {dur:.29}],
     [4.40, 'pop', '#loss-chip', {from:.95,spring:'soft'}],
