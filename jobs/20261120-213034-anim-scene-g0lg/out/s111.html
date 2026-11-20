@@ -4,10 +4,10 @@
  <defs><clipPath id="slot-opening"><rect x="419" y="380" width="122" height="139"/></clipPath></defs>
  <g id="test-box"><use href="piece:letter-box-pillar" transform="translate(320 314.4) scale(1.6)"/></g>
  <text id="test-heading" x="900" y="260" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="71" font-weight="810" fill="#2b2622">बाहर का box परखना</text>
- <g id="test-letter-display">
+ <g id="test-letter-flight"><g id="test-letter-display">
   <use href="piece:domestic-envelope" transform="translate(970 347) scale(.9)"/>
   <text x="1209" y="531" font-family="Inter,sans-serif" font-size="48" font-weight="790" fill="#2b2622">Postmaster</text>
- </g>
+ </g></g>
  <g id="test-letter-chip">
   <rect x="972" y="765" width="364" height="98" rx="22" fill="#f3ead6"/>
   <text x="1154" y="828" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="800" fill="#2b2622">Test letter</text>
@@ -31,8 +31,9 @@
  on:[
   [3.52,'pop','#test-letter-display',{from:.94,spring:'soft'}],
   [5.58,'pop','#test-letter-chip',{from:.94,spring:'soft'}],
-  [6.32,'move','#test-letter-display',{by:[-831,-185],spring:'fast'}],
-  [6.58,'out','#test-letter-display',{dur:.30,scale:.18}],
+  [6.32,'move','#test-letter-flight',{by:[-831,0],spring:'fast'}],
+  [6.52,'move','#test-letter-display',{by:[0,-185],spring:'fast'}],
+  [6.62,'out','#test-letter-display',{dur:.30,scale:.18}],
   [6.56,'out','#test-letter-chip',{dur:.25,scale:1}],
   [6.85,'fade','#slot-letter-art',{dur:.07}],
   [6.88,'fall','#slot-letter',{by:220,bounce:0}],
