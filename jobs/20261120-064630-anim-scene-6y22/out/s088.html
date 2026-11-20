@@ -1,7 +1,7 @@
 <section class="vs-scene" id="s088" data-in="cut" data-section="PART 5 · SEALING" data-series="POST OFFICE RULES">
 <style>
-  #cover [data-piece="sealed-insured-cover"] :is([id="string"],[id$="-string"],[id="knot"],[id$="-knot"],[id="seal-spots"],[id$="-seal-spots"]) { display: none; }
-  [id$="-cover"] [data-piece="sealed-insured-cover"] :is([id="string"],[id$="-string"],[id="knot"],[id$="-knot"],[id="seal-spots"],[id$="-seal-spots"]) { display: none; }
+  #cover-shot [data-piece="sealed-insured-cover"] :is([id="string"],[id$="-string"],[id="knot"],[id$="-knot"],[id="seal-spots"],[id$="-seal-spots"]) { display: none; }
+  [id$="-cover-shot"] [data-piece="sealed-insured-cover"] :is([id="string"],[id$="-string"],[id="knot"],[id$="-knot"],[id="seal-spots"],[id$="-seal-spots"]) { display: none; }
 </style>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
   <rect width="1920" height="1080" fill="#fbf7ee"/>
@@ -31,7 +31,7 @@
     <path id="wax-arrow" d="M1084 720Q1111 676 1172 655m-16-6 16 6-9 15" fill="none" stroke="#6f6a63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
     <text class="hi" id="wax-only" x="1300" y="922" text-anchor="middle" font-size="47" font-weight="640" fill="#4b4f58">wax = अकेला authorised तरीका</text>
   </g>
-  <g id="cover">
+  <g id="cover-shot">
     <use href="piece:sealed-insured-cover" id="insured-packet" transform="translate(220 220) scale(1.8)"/>
     <g id="insured-letter-term">
       <rect x="1440" y="280" width="340" height="162" rx="24" fill="#9e1b1b"/>
@@ -55,9 +55,9 @@
 <script type="text/scene">
 {
   camera: [[0, {zoom: 1}]],
-  shots: [[0, "#insurance-refs"], [6.28, "#cover"]],
+  shots: [[0, "#insurance-refs"], [6.28, "#cover-shot"]],
   on: [
-    [0, "highlight", "#title-panel", {dur: 0.50, color: "#f2b705", opacity: 0.30, pad: 2}],
+    [0, "highlight", "#book-title", {dur: 0.50, color: "#f2b705", opacity: 0.30, pad: 3}],
     [2.96, "fade", "#wax-only", {dur: 0.32}],
     [4.78, "strike", "#wax-only", {dur: 0.35, color: "#4b4f58", width: 5, dim: 0.68}],
     [6.28, "pop", "#insured-letter-term", {from: 0.96, spring: "soft"}],
