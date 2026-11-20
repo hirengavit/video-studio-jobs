@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s200" data-in="cut" data-section="PART 10 · SPECIAL BOXES &amp; BOOKING" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Cancellation deadlines for self-booked and counter-booked items">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="top-panels">
+    <rect x="140" y="170" width="790" height="530" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="990" y="170" width="790" height="530" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <g id="special-box">
+      <rect x="185" y="222" width="270" height="116" rx="20" fill="#9e1b1b"/>
+      <text x="320" y="271" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#fff">Special box</text>
+      <text class="hi" x="320" y="315" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="650" fill="#fff">विशेष बॉक्स</text>
+      <use href="piece:letter-box-icon" transform="translate(232 357.6) scale(.8)"/>
+    </g>
+    <g id="other-class">
+      <use href="piece:envelope-article" transform="translate(555 384) scale(.5)"/>
+      <circle cx="717" cy="452" r="25" fill="#4b4f58" stroke="#fff" stroke-width="4"/>
+      <path d="M708 443l18 18m0-18-18 18" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+      <text class="hi" x="655" y="581" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="720" fill="#4b4f58">दूसरी class</text>
+    </g>
+    <text id="detention-en" x="540" y="300" font-family="Inter,sans-serif" font-size="52" font-weight="810" fill="#4b4f58">Detention</text>
+    <text id="detention-hi" class="hi" x="540" y="359" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="680" fill="#4b4f58">रोक के लायक</text>
+    <use id="mail-clock" href="piece:clock-face" transform="translate(1033 256) scale(.9)"/>
+    <text id="thirty-minutes" class="hi" x="1320" y="417" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="96" font-weight="820" fill="#9e1b1b">30 मिनट</text>
+    <g id="mail-closing">
+      <path d="M1045 534H1725" stroke="#ead9a8" stroke-width="3"/>
+      <text class="hi" x="1385" y="600" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#2b2622">उस mail के closing से पहले</text>
+    </g>
+  </g>
+  <g id="booking-cancellation">
+    <g id="self-booking">
+      <rect x="140" y="740" width="790" height="240" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="192" y="820" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">Self-booked item</text>
+      <text id="self-booking-hi" class="hi" x="192" y="873" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="670" fill="#6f6a63">खुद बुक की गई वस्तु</text>
+      <text id="before-acceptance" class="hi" x="192" y="943" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#8a5d00">accept से पहले cancel</text>
+    </g>
+    <g id="counter-booking">
+      <rect x="990" y="740" width="790" height="240" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1042" y="820" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">Counter booking</text>
+      <text id="counter-booking-hi" class="hi" x="1042" y="873" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="670" fill="#6f6a63">काउंटर बुकिंग</text>
+
+      <g id="same-day-chip">
+        <rect x="1400" y="870" width="340" height="80" rx="22" fill="#fde9a6" stroke="#ead9a8" stroke-width="2"/>
+        <text id="same-day" class="hi" x="1570" y="925" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="820" fill="#8a5d00">उसी दिन</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0, 'pop', '#same-day-chip', {from:.93,spring:'soft'}],
+    [.60, 'highlight', '#same-day', {words:'दिन',color:'#f2b705',opacity:.49,pad:7,dur:.31}]
+  ]
+}
+</script>
+</section>
