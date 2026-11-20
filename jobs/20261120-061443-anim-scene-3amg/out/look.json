@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "2.57",
+  "5.14",
+  "7.70",
+  "10.27",
+  "12.69"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s173",
+   "text": "postcards मना (2.6:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 12.69
+  }
+ ]
+}
