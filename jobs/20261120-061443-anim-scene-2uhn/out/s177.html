@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s177" data-in="cut" data-section="PART 10 · SPECIAL BOXES &amp; BOOKING" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="विशेष डाक बक्से में भी जवाबदेह वस्तुओं पर रोक है; रवानगी के ठीक वक्त भीड़ हो सकती है।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="ban">
+    <use href="piece:letter-box-icon" transform="translate(328 487.6) scale(1.2)"/>
+    <g id="special-tag">
+      <rect x="193" y="271" width="534" height="165" rx="27" fill="#9e1b1b"/>
+      <text x="460" y="345" text-anchor="middle" font-family="Inter, sans-serif" font-size="58" font-weight="800" fill="#ffffff">Special box</text>
+      <text class="hi" x="460" y="403" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="600" fill="#fde9a6">विशेष डाक बक्सा</text>
+    </g>
+    <g id="accountable">
+      <rect x="900" y="200" width="880" height="200" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1340" y="286" text-anchor="middle" font-family="Inter, sans-serif" font-size="68" font-weight="800" fill="#2b2622">Accountable items</text>
+      <text class="hi" id="accountable-hi" x="1340" y="352" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">जवाबदेह वस्तुएँ</text>
+    </g>
+    <use id="blocked-envelope" href="piece:registration-envelope" transform="translate(990 503) scale(.6)"/>
+    <path id="blocked-arrow" d="M982 626 H596 M622 606 L596 626 622 646" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="blocked-cross">
+      <circle cx="786" cy="626" r="56" fill="#fbf7ee" stroke="#4b4f58" stroke-width="5"/>
+      <path d="M760 600 812 652 M812 600 760 652" stroke="#4b4f58" fill="none" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <text class="hi" id="ban-line" x="1340" y="865" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#4b4f58">रोक बनी रहती है</text>
+  </g>
+  <g id="time">
+    <text class="hi" id="time-title" x="192" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="800" fill="#9e1b1b">समय</text>
+    <g id="track" fill="none" stroke-linecap="round">
+      <path d="M200 620 H1720" stroke="#2b2622" stroke-width="7"/>
+      <path d="M200 600 V640 M460 607 V633 M720 607 V633 M980 607 V633 M1240 607 V633 M1720 600 V640" stroke="#2b2622" stroke-width="5"/>
+    </g>
+    <g id="dispatch">
+      <path d="M1600 620 V410 h103 l-21 28 21 28 h-103" fill="#9e1b1b" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="1600" cy="620" r="16" fill="#9e1b1b" stroke="#ffffff" stroke-width="5"/>
+      <text x="1600" y="306" text-anchor="middle" font-family="Inter, sans-serif" font-size="61" font-weight="800" fill="#2b2622">Dispatch</text>
+      <text class="hi" id="dispatch-hi" x="1600" y="361" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="620" fill="#6f6a63">रवानगी</text>
+    </g>
+    <use id="posted-envelope" href="piece:envelope-article" transform="translate(1480 645) scale(.6)"/>
+    <g id="crowd">
+      <rect x="1110" y="330" width="305" height="88" rx="44" fill="#4b4f58"/>
+      <text class="hi" x="1262.5" y="389" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="750" fill="#ffffff">भीड़</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0,'#ban'],[4.34,'#time']],
+  on: [
+    [0,'fade','#accountable',{dur:0.30}],
+    [0.50,'fade','#accountable-hi',{dur:0.25}],
+    [1.30,'pop','#blocked-envelope',{from:0.91,spring:'soft'}],
+    [1.88,'draw','#blocked-arrow',{dur:0.56}],
+    [3.04,'pop','#blocked-cross',{from:0.92,spring:'soft'}],
+    [3.32,'fade','#ban-line',{dur:0.30}],
+    [4.54,'fade','#time-title',{dur:0.30}],
+    [5.76,'pop','#dispatch',{from:0.94,spring:'soft'}],
+    [6.26,'fade','#dispatch-hi',{dur:0.25}],
+    [6.74,'pop','#posted-envelope',{from:0.92,spring:'soft'}],
+    [7.84,'pop','#crowd',{from:0.94,spring:'soft'}],
+  ]
+}
+</script>
+</section>
