@@ -8,12 +8,5 @@
   "15.81"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s203",
-   "text": "चारों तरफ़ लगातार बंद / · U shape में मोड़",
-   "t": 15.81
-  }
- ]
+ "warnings": []
 }
