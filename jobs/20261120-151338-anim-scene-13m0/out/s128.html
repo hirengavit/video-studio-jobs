@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s128" data-in="cut" data-section="PART 7 · PINS, OPEN ARTICLES &amp; BOOK POST" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="आगे की कार्रवाई उनके निर्देश पर; पत्र लिफ़ाफ़ा सभी तरफ़ से लगातार बंद।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="notify">
+    <g id="oic">
+      <rect x="120" y="360" width="640" height="240" rx="26" fill="#9e1b1b"/>
+      <rect x="135" y="375" width="610" height="210" rx="17" fill="none" stroke="#b8403a" stroke-width="3"/>
+      <text x="440" y="468" fill="#ffffff" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="800">OFFICER-IN-CHARGE</text>
+      <text class="hi" id="oic-hi" x="440" y="535" fill="#ffffff" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="500">प्रभारी अधिकारी</text>
+    </g>
+    <text class="hi" id="notify-now" x="440" y="677" fill="#2b2622" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700">तुरंत खबर</text>
+    <g fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path id="route-police" d="M766 430 C848 430 850 300 958 300 M946 289 L958 300 946 311"/>
+      <path id="route-postal" d="M766 480 C868 480 865 520 958 520 M946 509 L958 520 946 531"/>
+      <path id="route-other" d="M766 530 C862 530 857 740 958 740 M946 729 L958 740 946 751"/>
+    </g>
+    <g id="police">
+      <rect x="980" y="220" width="820" height="160" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1390" y="285" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="48" font-weight="800">POLICE AUTHORITIES</text>
+      <text class="hi" id="police-hi" x="1390" y="344" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="500">पुलिस अधिकारी</text>
+    </g>
+    <g id="postal">
+      <rect x="980" y="440" width="820" height="160" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1390" y="505" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="48" font-weight="800">POSTAL AUTHORITIES</text>
+      <text class="hi" id="postal-hi" x="1390" y="564" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="500">डाक अधिकारी</text>
+    </g>
+    <g id="other">
+      <rect x="980" y="660" width="820" height="160" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text class="hi" x="1390" y="757" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700">दूसरी तय authorities</text>
+    </g>
+    <g id="next-step">
+      <rect x="120" y="880" width="1680" height="100" rx="20" fill="#f3ead6"/>
+      <rect x="120" y="880" width="12" height="100" rx="6" fill="#f2b705"/>
+      <text class="hi" x="960" y="944" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="720" fill="#2b2622">आगे की कार्रवाई: उनके निर्देश पर</text>
+    </g>
+  </g>
+  <g id="open">
+    <text class="hi" x="120" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">खुला article?</text>
+    <use id="envelope" href="piece:domestic-envelope" transform="translate(140 330) scale(1)"/>
+    <path id="closed-edge" d="M145 335 H895 V725 H145 Z" fill="none" stroke="#f2b705" stroke-width="9" stroke-linejoin="round"/>
+    <g id="letter-term">
+      <rect x="1000" y="300" width="800" height="180" rx="24" fill="#9e1b1b"/>
+      <rect x="1013" y="313" width="774" height="154" rx="15" fill="none" stroke="#b8403a" stroke-width="3"/>
+      <text x="1400" y="386" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="800" fill="#ffffff">LETTER ENVELOPE</text>
+      <text class="hi" id="letter-hi" x="1400" y="435" style="line-height:1.3" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="610" fill="#fde9a6">पत्र लिफ़ाफ़ा</text>
+    </g>
+    <text class="hi" id="closed-rule" x="1032" y="565" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="720" fill="#2b2622">सभी तरफ़ लगातार बंद</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0, '#notify'], [3.44, '#open']],
+  on: [
+    [0.15, 'slide', '#next-step', {from:'down',dist:34,spring:'soft'}],
+    [3.44, 'draw', '#envelope', {dur:0.60}],
+    [5.16, 'stamp', '#letter-term', {from:1.05,rot:-1,spring:'soft'}],
+    [5.66, 'fade', '#letter-hi', {dur:0.25}],
+    [6.24, 'words', '#closed-rule', {gap:0.40,dist:10,spring:'soft'}],
+    [7.26, 'draw', '#closed-edge', {dur:0.61}],
+    [7.88, 'highlight', '#closed-rule', {words:'लगातार बंद',color:'#f2b705',opacity:0.38,dur:0.42,pad:6}]
+  ]
+}
+</script>
+</section>
