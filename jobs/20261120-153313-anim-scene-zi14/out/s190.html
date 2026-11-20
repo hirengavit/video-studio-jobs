@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s190" data-in="cut" data-section="PART 10 · SPECIAL BOXES &amp; BOOKING" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Postage is generally prepaid; the Director General may permit a postage-later arrangement, not a general right for every sender">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="postage">
+    <rect x="140" y="400" width="820" height="540" rx="32" fill="#f3ead6"/>
+    <path d="M200 901H900" stroke="#d4bea0" stroke-width="3" stroke-linecap="round"/>
+    <use id="prepaid-parcel" href="piece:parcel-box" transform="translate(262 479) scale(1.8)"/>
+    <g id="prepaid-stamps" fill="#fff" stroke="#9e1b1b" stroke-linejoin="round">
+      <g transform="translate(472 594)">
+        <rect width="66" height="62" rx="7" stroke-width="2.5"/>
+        <rect x="6" y="6" width="54" height="50" rx="4" fill="#fde9a6" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6"/>
+        <path d="M16 22H50M16 31H45M16 40H36" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(555 594)">
+        <rect width="66" height="62" rx="7" stroke-width="2.5"/>
+        <rect x="6" y="6" width="54" height="50" rx="4" fill="#fde9a6" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6"/>
+        <path d="M16 22H50M16 31H45M16 40H36" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+      <g transform="translate(638 594)">
+        <rect width="66" height="62" rx="7" stroke-width="2.5"/>
+        <rect x="6" y="6" width="54" height="50" rx="4" fill="#fde9a6" stroke-width="3" stroke-linecap="round" stroke-dasharray="0 6"/>
+        <path d="M16 22H50M16 31H45M16 40H36" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+      </g>
+    </g>
+    <g id="prepaid-chip">
+      <rect x="1000" y="210" width="780" height="128" rx="27" fill="#2e7d4f"/>
+      <path d="M1041 272l12 12 23-29" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="hi" x="1100" y="265" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="780" fill="#fff">Postage आम तौर पर</text>
+      <text class="hi" x="1100" y="316" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="780" fill="#fff">पूरा prepaid</text>
+    </g>
+
+    <g id="director-general">
+      <rect x="1000" y="400" width="780" height="140" rx="27" fill="#9e1b1b"/>
+      <rect x="1014" y="414" width="752" height="112" rx="18" fill="none" stroke="#fde9a6" stroke-opacity=".68" stroke-width="2" stroke-dasharray="3 8" stroke-linecap="round"/>
+      <text x="1051" y="465" font-family="Inter,sans-serif" font-size="52" font-weight="820" fill="#fff">Director General</text>
+      <text id="director-general-hi" class="hi" x="1051" y="512" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="680" fill="#fde9a6">महानिदेशक</text>
+    </g>
+    <g id="postage-later">
+      <rect x="1000" y="620" width="780" height="100" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+      <text class="hi" x="1051" y="685" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="730" fill="#2b2622">postage बाद में लेने की व्यवस्था</text>
+    </g>
+    <g id="general-right">
+      <rect x="1000" y="820" width="780" height="100" rx="24" fill="#f1efeb" stroke="#dedad3" stroke-width="2"/>
+      <text id="general-right-line1" class="hi" x="1051" y="858" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740" fill="#4b4f58">हर sender को बिना postage</text>
+      <text id="general-right-line2" class="hi" x="1051" y="907" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740" fill="#4b4f58">parcel का हक</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0, 'fade', '#director-general', {dur:.28}],
+    [.50, 'fade', '#director-general-hi', {dur:.25}],
+    [5.92, 'pop', '#postage-later', {from:.97,spring:'soft'}],
+    [8.52, 'fade', '#general-right', {dur:.30}],
+    [12.30, 'strike', '#general-right-line1,#general-right-line2', {color:'#4b4f58',width:5,dur:.32,dim:.82}]
+  ]
+}
+</script>
+</section>
