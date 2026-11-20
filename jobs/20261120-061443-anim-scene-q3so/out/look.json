@@ -8,12 +8,5 @@
   "10.61"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s012",
-   "text": "ढीला लपेटा = ठीक से pack नहीं / सही",
-   "t": 10.61
-  }
- ]
+ "warnings": []
 }
