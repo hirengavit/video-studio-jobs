@@ -10,9 +10,9 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-off-frame",
+   "kind": "text-overlap",
    "scene": "s085",
-   "text": "article बचाने को ज़रूरी हो — ठीक",
+   "text": "article बचाने को ज़रूरी हो / — ठीक",
    "t": 4.24
   }
  ]
