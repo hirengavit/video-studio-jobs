@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.08",
+  "4.16",
+  "6.24",
+  "8.32",
+  "10.25"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s068",
+   "message": "fade #cloth-wrapper: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s068",
+   "message": "fade #cloth-cover: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
+  }
+ ]
+}
