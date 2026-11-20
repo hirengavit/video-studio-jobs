@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s087" data-in="cut" data-section="PART 5 · SEALING" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="insurance-refs">
+    <g id="book">
+      <use href="piece:regulations-book" transform="translate(160 300) scale(1.4)"/>
+      <text id="book-title" x="390" y="477" text-anchor="middle" font-family="Georgia,serif" font-size="37" font-weight="700" fill="#2b2622"><tspan x="390">Post Office</tspan><tspan x="390" dy="48">Regulations,</tspan><tspan x="390" dy="48">2024</tspan></text>
+    </g>
+    <g id="insured-heading">
+      <text x="820" y="265" font-size="69" font-weight="770" fill="#9e1b1b">Insured articles</text>
+      <text class="hi" id="insured-hi" x="823" y="326" font-size="43" font-weight="600" fill="#6f6a63">बीमित वस्तुएँ</text>
+    </g>
+    <text class="hi" id="details-copy" x="715" y="505" text-anchor="middle" font-size="36" fill="#6f6a63" font-weight="610">detailed शर्तें</text>
+    <path id="book-arrow" d="M620 533H810m-16-13 16 13-16 13" fill="none" stroke="#6f6a63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="instructions-term">
+      <rect x="820" y="420" width="960" height="220" rx="27" fill="#9e1b1b"/>
+      <rect x="841" y="441" width="918" height="178" rx="16" fill="none" stroke="#b8403a" stroke-width="3"/>
+      <g fill="#fbf7ee"><circle cx="884" cy="420" r="6"/><circle cx="884" cy="640" r="6"/><circle cx="936" cy="420" r="6"/><circle cx="936" cy="640" r="6"/><circle cx="988" cy="420" r="6"/><circle cx="988" cy="640" r="6"/><circle cx="1040" cy="420" r="6"/><circle cx="1040" cy="640" r="6"/><circle cx="1092" cy="420" r="6"/><circle cx="1092" cy="640" r="6"/><circle cx="1144" cy="420" r="6"/><circle cx="1144" cy="640" r="6"/><circle cx="1196" cy="420" r="6"/><circle cx="1196" cy="640" r="6"/><circle cx="1248" cy="420" r="6"/><circle cx="1248" cy="640" r="6"/><circle cx="1300" cy="420" r="6"/><circle cx="1300" cy="640" r="6"/><circle cx="1352" cy="420" r="6"/><circle cx="1352" cy="640" r="6"/><circle cx="1404" cy="420" r="6"/><circle cx="1404" cy="640" r="6"/><circle cx="1456" cy="420" r="6"/><circle cx="1456" cy="640" r="6"/><circle cx="1508" cy="420" r="6"/><circle cx="1508" cy="640" r="6"/><circle cx="1560" cy="420" r="6"/><circle cx="1560" cy="640" r="6"/><circle cx="1612" cy="420" r="6"/><circle cx="1612" cy="640" r="6"/><circle cx="1664" cy="420" r="6"/><circle cx="1664" cy="640" r="6"/><circle cx="1716" cy="420" r="6"/><circle cx="1716" cy="640" r="6"/></g>
+      <text x="1300" y="520" text-anchor="middle" font-size="66" font-weight="760" fill="#fff">Administrative instructions</text>
+      <text class="hi" id="instructions-hi" x="1300" y="587" text-anchor="middle" font-size="43" font-weight="600" fill="#fde9a6">प्रशासनिक निर्देश</text>
+    </g>
+    <g id="fine-wax-chip">
+      <rect x="1060" y="727" width="480" height="106" rx="53" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:wax-seal" transform="translate(1117 755) scale(0.35)"/>
+      <text class="hi" x="1189" y="796" font-size="44" font-weight="670" fill="#2b2622">fine wax तरीका</text>
+    </g>
+    <path id="wax-arrow" d="M1282 717Q1301 679 1342 655m-17-3 17 3-8 15" fill="none" stroke="#6f6a63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0, {zoom: 1}]],
+  on: [
+    [0.20, "pop", "#insured-heading", {from: 0.96, spring: "soft"}],
+    [0.70, "fade", "#insured-hi", {dur: 0.26}],
+    [3.42, "fade", "#details-copy", {dur: 0.30}],
+    [3.84, "draw", "#book-arrow", {dur: 0.62}],
+    [4.82, "pop", "#instructions-term", {from: 0.96, spring: "soft"}],
+    [5.32, "fade", "#instructions-hi", {dur: 0.26}],
+    [8.72, "pop", "#fine-wax-chip", {from: 0.96, spring: "soft"}],
+    [10.48, "draw", "#wax-arrow", {dur: 0.55}]
+  ]
+}
+</script>
+</section>
