@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s127" data-in="cut" data-section="PART 7 · PINS, OPEN ARTICLES &amp; BOOK POST" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="प्रभारी अधिकारी तुरंत पुलिस अधिकारियों, डाक अधिकारियों और दूसरी तय authorities को खबर देता है।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="notify">
+    <g id="oic">
+      <rect x="120" y="360" width="640" height="240" rx="26" fill="#9e1b1b"/>
+      <rect x="135" y="375" width="610" height="210" rx="17" fill="none" stroke="#b8403a" stroke-width="3"/>
+      <text x="440" y="468" fill="#ffffff" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="800">OFFICER-IN-CHARGE</text>
+      <text class="hi" id="oic-hi" x="440" y="535" fill="#ffffff" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="500">प्रभारी अधिकारी</text>
+    </g>
+    <text class="hi" id="notify-now" x="440" y="677" fill="#2b2622" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700">तुरंत खबर</text>
+    <g fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path id="route-police" d="M766 430 C848 430 850 300 958 300 M946 289 L958 300 946 311"/>
+      <path id="route-postal" d="M766 480 C868 480 865 520 958 520 M946 509 L958 520 946 531"/>
+      <path id="route-other" d="M766 530 C862 530 857 740 958 740 M946 729 L958 740 946 751"/>
+    </g>
+    <g id="police">
+      <rect x="980" y="220" width="820" height="160" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1390" y="285" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="48" font-weight="800">POLICE AUTHORITIES</text>
+      <text class="hi" id="police-hi" x="1390" y="344" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="500">पुलिस अधिकारी</text>
+    </g>
+    <g id="postal">
+      <rect x="980" y="440" width="820" height="160" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1390" y="505" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="48" font-weight="800">POSTAL AUTHORITIES</text>
+      <text class="hi" id="postal-hi" x="1390" y="564" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="500">डाक अधिकारी</text>
+    </g>
+    <g id="other">
+      <rect x="980" y="660" width="820" height="160" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text class="hi" x="1390" y="757" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700">दूसरी तय authorities</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0, 'stamp', '#oic', {from:1.04, rot:-1, spring:'soft'}],
+    [0.50, 'fade', '#oic-hi', {dur:0.30}],
+    [2.10, 'fade', '#notify-now', {dur:0.28}],
+    [3.18, 'draw', '#route-police', {dur:0.42}],
+    [3.18, 'pop', '#police', {from:0.97, spring:'soft'}],
+    [3.68, 'fade', '#police-hi', {dur:0.25}],
+    [4.92, 'draw', '#route-postal', {dur:0.42}],
+    [4.92, 'pop', '#postal', {from:0.97, spring:'soft'}],
+    [5.42, 'fade', '#postal-hi', {dur:0.25}],
+    [7.34, 'draw', '#route-other', {dur:0.42}],
+    [7.34, 'pop', '#other', {from:0.97, spring:'soft'}],
+  ]
+}
+</script>
+</section>
