@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s086" data-in="cut" data-section="PART 5 · SEALING" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <rect x="120" y="225" width="878" height="735" rx="30" fill="#f3ead6"/>
+  <g id="envelope-flap" stroke="#2b2622" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="158" y="290" width="804" height="591" rx="25" fill="#fff"/>
+    <path d="M163 343 505 678q53 49 107 0l345-335M165 838l241-223m550 223L714 615" fill="none" stroke="#ead9a8" stroke-width="3.5"/>
+    <path d="M163 343 512 664q47 42 94 0l351-321" fill="none"/>
+  </g>
+  <g id="tissue" fill="#f3ead6" fill-opacity="0.68" stroke="#aa9b7c" stroke-width="3.2" stroke-linejoin="round">
+    <path d="m325 485 424-14 61 57 7 226-486 16Z"/>
+    <path d="m749 471 4 58 57-1" fill="none"/>
+    <path d="m355 739 431-13m-434-212 367-12" fill="none" stroke="#cdbb92" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="7 9"/>
+  </g>
+  <g id="wax">
+    <use href="piece:wax-seal" transform="translate(464 524) scale(1.6)"/>
+  </g>
+  <g id="text-heading">
+    <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1080" y="270" font-size="50" font-weight="790" fill="#9e1b1b">Wax लगाना ही है, तो</text>
+  </g>
+  <g id="first-step">
+    <rect x="1080" y="350" width="700" height="118" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <circle cx="1142" cy="409" r="31" fill="#9e1b1b"/>
+    <text x="1142" y="422" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="790" fill="#fff">1</text>
+    <text id="tissue-label" x="1195" y="426" font-family="Inter, sans-serif" font-size="46" font-weight="760" fill="#2b2622">tissue</text>
+    <text id="paper-label" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1342" y="426" font-size="46" font-weight="690" fill="#2b2622">/ पतला कागज़</text>
+  </g>
+  <g id="second-step">
+    <rect x="1080" y="489" width="700" height="118" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <circle cx="1142" cy="548" r="31" fill="#9e1b1b"/>
+    <text x="1142" y="561" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="790" fill="#fff">2</text>
+    <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1195" y="565" font-size="46" font-weight="690" fill="#2b2622">फिर seal</text>
+  </g>
+  <g id="sun" fill="none" stroke="#8a5d00" stroke-width="6" stroke-linecap="round">
+    <circle cx="1134" cy="797" r="29" fill="#fde9a6"/>
+    <path d="M1134 750v-11m0 116v-11m-47-47h-11m116 0h-11m-80-33-8-8m82 82-8-8m0-66 8-8m-82 82 8-8"/>
+  </g>
+  <g id="heat">
+    <rect x="1212" y="738" width="568" height="118" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+    <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1496" y="814" text-anchor="middle" font-size="46" font-weight="760" fill="#2b2622">बहुत गर्म इलाके · कई दिन</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [0,'fade','#text-heading',{dur:0.22}],
+    [4.48,'draw','#tissue',{dur:0.67}],
+    [4.48,'fade','#first-step',{dur:0.25}],
+    [4.51,'fade','#tissue-label',{dur:0.20}],
+    [5.62,'fade','#paper-label',{dur:0.21}],
+    [6.72,'stamp','#wax',{from:1.33,rot:-6}],
+    [6.72,'fade','#second-step',{dur:0.25}],
+    [8.42,'underline','#tissue-label',{color:'#f2b705',width:5,dur:0.43}],
+    [10.62,'draw','#sun',{dur:0.49}],
+    [11.44,'fade','#heat',{dur:0.28}]
+  ]
+}
+</script>
+</section>
