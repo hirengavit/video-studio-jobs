@@ -1,0 +1,70 @@
+<section class="vs-scene" id="s123" lang="hi" data-in="cut" data-section="PART 7 · PINS, OPEN ARTICLES &amp; BOOK POST" data-series="POST OFFICE RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="pin-decision">
+      <g id="pinned-article">
+        <rect x="706" y="152" width="174" height="145" rx="21" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+        <use href="piece:envelope-article" transform="translate(693 125) scale(0.5)"/>
+        <use href="piece:pin-icon" transform="translate(739 259) rotate(-117) scale(0.6)"/>
+        <text id="pinned-label" x="910" y="246" class="hi" font-size="46" font-weight="740" fill="#2b2622">Pin लगा article मिला</text>
+      </g>
+      <g id="where-pill">
+        <rect x="741" y="326" width="438" height="88" rx="44" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text id="where-label" x="960" y="387" class="hi" font-size="48" font-weight="750" text-anchor="middle" fill="#2b2622">कहाँ पकड़ा गया?</text>
+      </g>
+      <g id="branch-arrows" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path id="posting-arrow" d="M862 414V422Q862 431 850 431H492Q480 431 480 441V447M466 433L480 447L494 433"/>
+        <path id="later-arrow" d="M1058 414V422Q1058 431 1070 431H1368Q1380 431 1380 441V447M1366 433L1380 447L1394 433"/>
+      </g>
+      <g id="posting-office" text-anchor="middle">
+        <rect x="140" y="450" width="680" height="110" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="480" y="499" class="hi" font-size="48" font-weight="800" fill="#9e1b1b">POSTING OFFICE पर</text>
+        <text id="posting-hi" x="480" y="544" class="hi" font-size="34" font-weight="600" fill="#6f6a63">जहाँ डाक दी गई</text>
+      </g>
+      <g id="left-result">
+        <rect x="140" y="600" width="680" height="120" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <rect x="169" y="625" width="70" height="70" rx="18" fill="#fff"/>
+        <path d="M224 679v-10q0-12-13-12h-25m14-14-14 14 14 14" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="267" y="677" class="hi" font-size="46" font-weight="750" fill="#2b2622">तुरंत sender को वापस</text>
+      </g>
+      <g id="later-found">
+        <rect x="960" y="450" width="840" height="110" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1380" y="520" class="hi" text-anchor="middle" font-size="48" font-weight="800" fill="#9e1b1b">बाद में पकड़ा गया</text>
+      </g>
+      <g id="pin-step">
+        <rect x="960" y="580" width="840" height="68" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+        <circle cx="1005" cy="614" r="23" fill="#9e1b1b"/>
+        <text x="1005" y="625" text-anchor="middle" font-family="Inter, sans-serif" font-size="33" font-weight="800" fill="#fff">1</text>
+        <text x="1050" y="629" class="hi" font-size="44" font-weight="750" fill="#2b2622">pins निकालें</text>
+        <g id="step-pin"><use href="piece:pin-icon" transform="translate(1398 604) rotate(90) scale(.5)"/></g>
+      </g>
+      <g id="rlo-step">
+        <path id="step-arrow-12" d="M1005 650V658M999 653L1005 658L1011 653" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="960" y="660" width="840" height="130" rx="19" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+        <circle cx="1005" cy="724" r="23" fill="#9e1b1b"/>
+        <text x="1005" y="735" text-anchor="middle" font-family="Inter, sans-serif" font-size="33" font-weight="800" fill="#fff">2</text>
+        <text id="rlo-term" x="1050" y="716" font-family="Inter, sans-serif" font-size="44" font-weight="820" fill="#2b2622">RETURNED LETTER OFFICE</text>
+        <text id="rlo-hi" x="1050" y="759" class="hi" font-size="34" font-weight="650" fill="#6f6a63">लौटाए पत्रों का दफ्तर</text>
+      </g>
+      <g id="return-step">
+        <path id="step-arrow-23" d="M1005 793V812M999 806L1005 812L1011 806" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="960" y="815" width="840" height="60" rx="17" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+        <circle cx="1005" cy="845" r="23" fill="#9e1b1b"/>
+        <text x="1005" y="856" text-anchor="middle" font-family="Inter, sans-serif" font-size="33" font-weight="800" fill="#fff">3</text>
+        <text id="return-term" x="1050" y="860" class="hi" font-size="44" font-weight="750" fill="#2b2622">sender को वापस</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {camera:[[0,{zoom:1}]],on:[
+    [.18,'pop','#left-result',{from:.97}],
+    [2.48,'pop','#later-found',{from:.97}],
+    [4.24,'fade','#pin-step',{dur:.3}],
+    [4.90,'move','#step-pin',{by:[60,0],spring:'soft'}],
+    [7.02,'fade','#rlo-step',{dur:.23}],
+    [7.02,'type','#rlo-term',{cps:45}],
+    [7.52,'fade','#rlo-hi',{dur:.28}],
+    [8.50,'fade','#return-step',{dur:.3}]
+  ]}
+  </script>
+</section>
