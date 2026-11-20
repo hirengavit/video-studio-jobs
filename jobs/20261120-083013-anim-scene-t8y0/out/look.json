@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.26",
+  "4.51",
+  "6.77",
+  "9.02",
+  "11.13"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "error",
+   "scene": "s061-s061",
+   "message": "the scene's script didn't run (a syntax error in its scene block?)",
+   "t": 0.3
+  },
+  {
+   "kind": "empty-start",
+   "scene": "s061-s061",
+   "message": "nothing on screen at 0.3 s: the first thing should land within about 0.4 s of the scene's start",
+   "t": 0.3
+  }
+ ]
+}
