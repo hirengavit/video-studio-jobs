@@ -8,12 +8,5 @@
   "10.69"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s026",
-   "text": "कहीं कोई हिस्सा खुला नहीं",
-   "t": 6.5
-  }
- ]
+ "warnings": []
 }
