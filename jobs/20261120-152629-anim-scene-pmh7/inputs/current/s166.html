@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s166" data-in="cut" data-section="PART 9 · KEPT OUT OF LETTER BOX" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="Registration, Speed Post की addressee-specific value-added service, और cover पर लिखा Registered।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="reg">
+    <g id="registration-card">
+      <rect x="460" y="180" width="1000" height="280" rx="31" fill="#9e1b1b"/>
+      <rect x="460" y="180" width="1000" height="280" rx="31" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 25" stroke-linecap="round"/>
+      <rect x="489" y="208" width="942" height="224" rx="19" fill="none" stroke="#b8403a" stroke-width="3"/>
+      <text id="registration" x="960" y="317" text-anchor="middle" font-family="Inter, sans-serif" font-size="80" font-weight="800" fill="#ffffff">Registration</text>
+      <text class="hi" id="registration-hi" x="960" y="389" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#fde9a6">पंजीकरण</text>
+    </g>
+    <g id="service-chip">
+      <rect x="260" y="540" width="680" height="220" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text class="hi" x="600" y="602" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="700" fill="#9e1b1b">Speed Post की</text>
+      <text x="600" y="661" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="800" fill="#2b2622">Value-added service</text>
+      <text class="hi" id="service-hi" x="600" y="719" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="41" font-weight="570" fill="#6f6a63">मूल्य-वर्धित सेवा</text>
+    </g>
+    <g id="addressee-chip">
+      <rect x="980" y="540" width="680" height="220" rx="26" fill="#ffffff" stroke="#f2b705" stroke-width="4"/>
+      <text x="1320" y="642" text-anchor="middle" font-family="Inter, sans-serif" font-size="54" font-weight="800" fill="#2b2622">addressee-specific</text>
+      <text class="hi" id="addressee-hi" x="1320" y="704" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="41" font-weight="570" fill="#6f6a63">पाने वाले के लिए विशेष</text>
+    </g>
+  </g>
+  <g id="cover">
+    <use id="registration-envelope" href="piece:registration-envelope" transform="translate(160 300) scale(1.5)"/>
+    <text id="registered" x="359" y="482" font-family="Caveat, cursive" font-size="64" font-weight="700" fill="#2b2622">Registered</text>
+    <text class="hi" id="cover-heading" x="900" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800" fill="#9e1b1b">cover पर लिखे शब्द</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0,'#reg'],[7.96,'#cover']],
+  on: [
+    [0.24,'type','#registration',{cps:22}],
+    [0.74,'fade','#registration-hi',{dur:0.27}],
+    [2.40,'pop','#service-chip',{from:0.94,spring:'soft'}],
+    [2.90,'fade','#service-hi',{dur:0.26}],
+    [5.46,'pop','#addressee-chip',{from:0.94,spring:'soft'}],
+    [5.96,'fade','#addressee-hi',{dur:0.26}],
+    [8.56,'fade','#cover-heading',{dur:0.32}],
+    [10.40,'type','#registered',{cps:23}],
+  ]
+}
+</script>
+</section>
