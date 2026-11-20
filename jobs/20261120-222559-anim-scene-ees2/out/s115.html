@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s115" data-in="cut" data-section="PART 7 · CHECKS AND EXTRA DUTIES" data-series="POST OFFICE RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="परिचर का डाक लाना-ले जाना और पैकर का काम: डाक पर मुहर लगाना">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="office-shot">
+  <text id="extra-heading" class="hi" x="120" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="61" font-weight="820" fill="#9e1b1b">Attendant के extra काम</text>
+  <g id="linked-offices">
+    <g id="main-office">
+      <rect x="168" y="312" width="660" height="577" rx="32" fill="#f3ead6"/>
+      <use href="piece:post-office-front" transform="translate(236.5 359) scale(1.35)"/>
+      <text x="520" y="557" text-anchor="middle" font-family="Inter, sans-serif" font-size="54" font-weight="810" fill="#2b2622">Office</text>
+    </g>
+    <g id="town-office">
+      <rect x="1120" y="281" width="540" height="280" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <use href="piece:post-office-front" transform="translate(1247.2 286) scale(.68)"/>
+      <text x="1390" y="549" text-anchor="middle" font-family="Inter, sans-serif" font-size="41" font-weight="790" fill="#2b2622">Town sub office</text>
+    </g>
+    <g id="branch-office">
+      <rect x="1120" y="623" width="540" height="280" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <use href="piece:post-office-front" transform="translate(1247.2 628) scale(.68)"/>
+      <text x="1390" y="891" text-anchor="middle" font-family="Inter, sans-serif" font-size="41" font-weight="790" fill="#2b2622">Branch office</text>
+    </g>
+    <path id="town-link" d="M828 548L1120 390" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round"/>
+    <path id="branch-link" d="M828 652L1120 738" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round"/>
+    <g id="office-attendant"><use href="piece:attendant-badge" transform="translate(649 610) scale(.7)"/></g>
+  </g>
+    <g id="bag-outbound"><g id="bag-return"><g id="route-bag">
+      <use href="piece:special-mail-bag" transform="translate(779.4 478.9) scale(.27)"/>
+    </g></g></g>
+  </g>
+  <g id="packer">
+    <rect x="160" y="208" width="1600" height="762" rx="32" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <text id="packer-heading" x="225" y="310" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="820" fill="#9e1b1b">Packer का काम</text>
+    <g id="packer-term">
+      <rect x="1276" y="243" width="420" height="90" rx="16" fill="#9e1b1b"/>
+      <rect x="1290" y="253" width="392" height="70" rx="12" fill="none" stroke="#b8403a" stroke-width="3" stroke-dasharray="3 6"/>
+      <text x="1486" y="305" text-anchor="middle" font-family="Inter,sans-serif" font-size="61" font-weight="820" fill="#ffffff">Packer</text>
+    </g>
+    <g id="packer-stamping">
+      <rect x="223" y="360" width="1474" height="136" rx="23" fill="#f3ead6"/>
+      <text id="stamping-label" x="274" y="446" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="780" fill="#2b2622">Articles पर stamping</text>
+      <g id="stamping-tool"><use href="piece:rubber-date-stamp" transform="translate(1525 371) scale(.41)"/></g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ shots: [[0,'#office-shot'],[5.26,'#packer']],
+ on: [
+   [1.52,'fade','#route-bag',{dur:.18}],
+   [1.52,'move','#bag-outbound',{by:[292,-158],spring:'soft'}],
+   [3.24,'move','#bag-return',{by:[-292,158],spring:'soft'}],
+   [5.72,'pop','#packer-term',{from:.95,spring:'soft'}],
+   [8.02,'fade','#packer-stamping',{dur:.24}],
+   [9.24,'words','#stamping-label',{gap:.46,dist:11}],
+   [10.16,'pop','#stamping-tool',{from:.93,spring:'soft'}]
+ ]
+}
+</script>
+</section>
