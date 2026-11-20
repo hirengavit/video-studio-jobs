@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s133" data-in="cut" data-section="PART 7 · PINS, OPEN ARTICLES &amp; BOOK POST" data-series="POST OFFICE RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="compare" text-anchor="middle">
+      <g id="letter-card">
+        <rect x="120" y="220" width="740" height="720" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <rect x="160" y="256" width="660" height="329" rx="20" fill="#f3ead6"/>
+        <use href="piece:domestic-envelope" transform="translate(224 280) scale(0.7)"/>
+        <text id="letter-name" x="490" y="657" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">LETTER ENVELOPE</text>
+        <text id="letter-hi" x="490" y="716" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="600" fill="#6f6a63">पत्र लिफ़ाफ़ा</text>
+        <path d="M180 773H800" fill="none" stroke="#ead9a8" stroke-width="2"/>
+        <text id="letter-condition" x="490" y="870" class="hi" font-size="46" font-weight="750" fill="#2b2622">लगातार बंद होने की शर्त</text>
+      </g>
+      <g id="book-card">
+        <rect x="1060" y="220" width="740" height="720" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <rect x="1100" y="256" width="660" height="329" rx="20" fill="#f3ead6"/>
+        <g id="open-book-post" transform="translate(1310 344) scale(0.6)" stroke="#2b2622" stroke-width="4" stroke-linejoin="round">
+          <path d="M72 119L186 24Q200 12 214 24L328 119Z" fill="#ead9a8"/>
+          <path d="M101 114L198 49L299 114" fill="none" stroke="#b49e68" stroke-width="3"/>
+          <use href="piece:envelope-article"/>
+          <path d="M72 127Q72 120 80 120H320Q328 120 328 127V194H72Z" fill="#f3ead6" stroke="none"/>
+          <path d="M76 127L138 176H262L324 127" fill="#e7d2a1" stroke="none"/>
+          <path d="M150 157V103Q150 97 156 97H244Q250 97 250 103V157L207 193Q200 198 193 193Z" fill="#fff" stroke-width="3"/>
+          <path d="M169 120H231M169 135H220" fill="none" stroke="#a69c8b" stroke-width="3" stroke-linecap="round"/>
+          <path d="M74 122L191 198Q200 204 209 198L326 122" fill="none" stroke-width="3"/>
+          <path d="M83 132V267" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+        </g>
+        <text id="book-name" x="1430" y="657" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">BOOK POST</text>
+        <text id="book-hi" x="1430" y="716" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="600" fill="#6f6a63">पुस्तक डाक</text>
+        <path d="M1120 773H1740" fill="none" stroke="#ead9a8" stroke-width="2"/>
+        <text id="book-purpose" x="1430" y="870" class="hi" font-size="46" font-weight="750" fill="#2b2622">उद्देश्य: आसान जाँच</text>
+      </g>
+      <g id="contrast-badge">
+        <circle cx="960" cy="560" r="61" fill="#9e1b1b"/>
+        <text x="960" y="588" font-family="Inter, sans-serif" font-weight="800" font-size="90" fill="#fff">≠</text>
+      </g>
+      <g id="contrast-label" fill="#6f6a63" font-weight="650" font-size="32">
+        <text x="960" y="640" class="hi">परीक्षा का</text>
+        <text x="960" y="684" font-family="Inter, sans-serif">confusion</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}]],
+    on: [
+      [0, 'type', '#letter-name', {cps: 38}],
+      [0.5, 'fade', '#letter-hi', {dur: 0.32}],
+      [1.18, 'words', '#letter-condition', {gap: 0.11, dist: 14}],
+      [4.72, 'pop', '#contrast-badge', {spring: 'snap', from: 0.9}],
+      [5.60, 'fade', '#contrast-label', {dur: 0.28}],
+      [7.95, 'pop', '#book-card', {spring: 'fast', from: 0.98}],
+      [8.05, 'type', '#book-name', {cps: 33}],
+      [8.50, 'fade', '#book-hi', {dur: 0.26}],
+      [8.60, 'words', '#book-purpose', {gap: 0.16, dist: 14}],
+      [9.60, 'highlight', '#book-purpose', {words: 'आसान जाँच', color: '#f2b705', opacity: 0.32, dur: 0.35, pad: 5}]
+    ]
+  }
+  </script>
+</section>
