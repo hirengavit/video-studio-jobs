@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s113" data-in="cut" data-section="PART 6 · VALUABLES &amp; INSURANCE" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="sp">
+    <rect x="120" y="200" width="700" height="220" rx="26" fill="#9e1b1b"/>
+    <rect x="140" y="220" width="660" height="180" rx="16" fill="none" stroke="#b8403a" stroke-width="3"/>
+    <g fill="#fbf7ee"><circle cx="168" cy="200" r="6"/><circle cx="168" cy="420" r="6"/><circle cx="218" cy="200" r="6"/><circle cx="218" cy="420" r="6"/><circle cx="268" cy="200" r="6"/><circle cx="268" cy="420" r="6"/><circle cx="318" cy="200" r="6"/><circle cx="318" cy="420" r="6"/><circle cx="368" cy="200" r="6"/><circle cx="368" cy="420" r="6"/><circle cx="418" cy="200" r="6"/><circle cx="418" cy="420" r="6"/><circle cx="468" cy="200" r="6"/><circle cx="468" cy="420" r="6"/><circle cx="518" cy="200" r="6"/><circle cx="518" cy="420" r="6"/><circle cx="568" cy="200" r="6"/><circle cx="568" cy="420" r="6"/><circle cx="618" cy="200" r="6"/><circle cx="618" cy="420" r="6"/><circle cx="668" cy="200" r="6"/><circle cx="668" cy="420" r="6"/><circle cx="718" cy="200" r="6"/><circle cx="718" cy="420" r="6"/><circle cx="768" cy="200" r="6"/><circle cx="768" cy="420" r="6"/></g>
+    <text x="470" y="295" text-anchor="middle" font-size="72" font-weight="780" fill="#fff">SPEED POST</text>
+    <text class="hi" id="sp-hi" x="470" y="365" text-anchor="middle" font-size="40" font-weight="580" fill="#fde9a6">स्पीड पोस्ट</text>
+  </g>
+  <g id="insurance-chip">
+    <rect x="120" y="440" width="520" height="102" rx="51" fill="#2e7d4f"/>
+    <path d="m164 492 13 13 25-29" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="hi" x="229" y="506" font-size="44" font-weight="680" fill="#fff">insurance मिलता है</text>
+  </g>
+  <g id="where">
+    <rect x="120" y="580" width="700" height="140" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <g fill="none" stroke="#2b2622" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M195 640c0-17-11-27-26-27s-26 10-26 27c0 16 26 41 26 41s26-25 26-41Z" fill="#f3ead6"/>
+      <circle cx="169" cy="638" r="8" fill="#9e1b1b" stroke="#9e1b1b"/>
+    </g>
+    <text class="hi" id="where-line1" x="226" y="633" font-size="44" font-weight="660" fill="#2b2622">तय booking centres</text>
+    <text class="hi" id="where-line2" x="226" y="691" font-size="44" font-weight="660" fill="#2b2622">या post offices</text>
+  </g>
+  <text class="hi" id="max-label" x="980" y="250" font-size="48" font-weight="720" fill="#2b2622">अधिकतम insured value</text>
+  <g id="max">
+    <rect x="980" y="300" width="820" height="220" rx="26" fill="#9e1b1b"/>
+    <rect x="1000" y="320" width="780" height="180" rx="16" fill="none" stroke="#b8403a" stroke-width="3"/>
+    <g fill="#fbf7ee"><circle cx="1040" cy="300" r="6"/><circle cx="1040" cy="520" r="6"/><circle cx="1090" cy="300" r="6"/><circle cx="1090" cy="520" r="6"/><circle cx="1140" cy="300" r="6"/><circle cx="1140" cy="520" r="6"/><circle cx="1190" cy="300" r="6"/><circle cx="1190" cy="520" r="6"/><circle cx="1240" cy="300" r="6"/><circle cx="1240" cy="520" r="6"/><circle cx="1290" cy="300" r="6"/><circle cx="1290" cy="520" r="6"/><circle cx="1340" cy="300" r="6"/><circle cx="1340" cy="520" r="6"/><circle cx="1390" cy="300" r="6"/><circle cx="1390" cy="520" r="6"/><circle cx="1440" cy="300" r="6"/><circle cx="1440" cy="520" r="6"/><circle cx="1490" cy="300" r="6"/><circle cx="1490" cy="520" r="6"/><circle cx="1540" cy="300" r="6"/><circle cx="1540" cy="520" r="6"/><circle cx="1590" cy="300" r="6"/><circle cx="1590" cy="520" r="6"/><circle cx="1640" cy="300" r="6"/><circle cx="1640" cy="520" r="6"/><circle cx="1690" cy="300" r="6"/><circle cx="1690" cy="520" r="6"/><circle cx="1740" cy="300" r="6"/><circle cx="1740" cy="520" r="6"/></g>
+    <text x="1390" y="450" text-anchor="middle" font-size="110" font-weight="790" fill="#fff">₹5,00,000</text>
+    <text id="max-source" x="980" y="561" font-size="28" font-weight="500" fill="#6f6a63">Post Office Regulations, 2024</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0, {zoom: 1}]],
+  on: [
+    [0.00, "stamp", "#sp", {from: 1.05, rot: -0.7, spring: "soft"}],
+    [0.50, "fade", "#sp-hi", {dur: 0.26}],
+    [1.56, "pop", "#insurance-chip", {from: 0.97, spring: "soft"}],
+    [4.00, "fade", "#where", {dur: 0.24}],
+    [4.30, "highlight", "#where-line1", {words: "तय", color: "#f2b705", opacity: 0.44, dur: 0.42, pad: 5}],
+    [4.78, "fade", "#where-line2", {dur: 0.24}],
+    [6.72, "fade", "#max-label", {dur: 0.27}],
+    [9.08, "stamp", "#max", {from: 1.04, rot: -0.6, spring: "soft"}]
+  ]
+}
+</script>
+</section>
