@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s112" data-in="cut" data-section="PART 7 · CHECKS AND EXTRA DUTIES" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="result">
+ <g id="test-box"><use href="piece:letter-box-pillar" transform="translate(320 314.4) scale(1.6)"/></g>
+ <text id="test-heading" x="900" y="260" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="71" font-weight="810" fill="#2b2622">बाहर का box परखना</text>
+ <g id="addressee-card">
+  <rect x="900" y="522" width="880" height="228" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <rect x="1032" y="593" width="342" height="83" rx="6" fill="#fde9a6" opacity=".83"/>
+  <text id="test-addressee" x="942" y="648" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="800" fill="#2b2622">खुद Postmaster के नाम</text>
+ </g>
+  <g id="result-chip">
+   <rect x="673" y="818" width="240" height="91" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+   <text x="793" y="878" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="800" fill="#2b2622">नतीजा</text>
+  </g>
+  <g id="postmaster-order">
+   <rect x="900" y="315" width="880" height="169" rx="24" fill="#f3ead6"/>
+   <use href="piece:record-book" transform="translate(946 329) scale(.35)"/>
+   <text x="1105" y="416" font-family="Inter,sans-serif" font-size="48" font-weight="790" fill="#2b2622">Postmaster’s Order Book</text>
+  </g>
+ </g>
+ <g id="books">
+  <g id="trap-banner">
+   <rect x="160" y="192" width="1600" height="119" rx="23" fill="#9e1b1b"/>
+   <path d="M233 215l39 70h-78z" fill="#f2b705" stroke="#fde9a6" stroke-width="2"/>
+   <path d="M233 239v19m0 11v2" stroke="#2b2622" stroke-width="5" stroke-linecap="round"/>
+   <text x="313" y="271" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="810" fill="#fff">Exam में यहीं confusion</text>
+  </g>
+  <g id="order-book">
+   <use href="piece:record-book" transform="translate(429 372) scale(1.12)"/>
+   <text x="616" y="563" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="800" fill="#2b2622">Order Book</text>
+   <text id="order-book-label" x="600" y="864" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="810" fill="#2b2622">Order Book</text>
+  </g>
+  <g id="error-book">
+   <use href="piece:record-book" transform="translate(1139 372) scale(1.12)"/>
+   <text x="1326" y="563" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="800" fill="#2b2622">Error Book</text>
+   <text id="error-book-label" x="1310" y="864" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="810" fill="#2b2622">Error Book</text>
+  </g>
+  <g id="irregular-posting">
+   <rect x="1010" y="900" width="600" height="73" rx="21" fill="#f3ead6"/>
+   <text x="1310" y="950" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="740" fill="#4b4f58">Irregular posting</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ shots:[[0,'#result'],[6.22,'#books']],
+ on:[
+  [.62,'fade','#result-chip',{dur:.24}],
+  [2.92,'slide','#postmaster-order',{from:'right',dist:112,spring:'soft'}],
+  [8.72,'highlight','#error-book-label',{color:'#fde9a6',opacity:.84,pad:12,dur:.36}],
+  [9.58,'fade','#irregular-posting',{dur:.24}]
+ ]
+}
+</script>
+</section>
