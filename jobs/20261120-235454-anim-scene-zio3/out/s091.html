@@ -55,7 +55,7 @@
  </g>
  <g id="match">
   <text x="960" y="270" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="800" fill="#9e1b1b">Coordinates का मिलान</text>
-  <rect x="160" y="330" width="1600" height="443" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <rect id="match-card" x="160" y="330" width="1600" height="443" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
   <g id="handset-label">
    <text x="540" y="722" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="810" fill="#2b2622">Handset</text>
   </g>
@@ -87,6 +87,7 @@
  shots:[[0,'#comparison'],[2.42,'#match']],
  on:[
   [0,'fade','#trap-gprs',{dur:.23}],
+  [3.23,'fade','#match-card',{dur:.23}],
   [3.30,'pop','#handset-pin',{from:.94,spring:'soft'}],
   [3.30,'fade','#handset-label',{dur:.23}],
   [5.08,'pop','#saved-pin',{from:.96,spring:'soft'}],
