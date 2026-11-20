@@ -1,0 +1,70 @@
+<section class="vs-scene" id="s117" data-in="cut" data-section="PART 7 · CHECKS AND EXTRA DUTIES" data-series="LETTER BOXES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Packer duties include packing and sealing mail, but punctual letter box clearance remains the priority">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="packer">
+    <rect x="160" y="208" width="1600" height="762" rx="32" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <text id="packer-heading" x="225" y="310" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="820" fill="#9e1b1b">Packer का काम</text>
+    <g id="packer-term">
+      <rect x="1276" y="243" width="420" height="90" rx="16" fill="#9e1b1b"/>
+      <rect x="1290" y="253" width="392" height="70" rx="12" fill="none" stroke="#b8403a" stroke-width="3" stroke-dasharray="3 6"/>
+      <text x="1486" y="305" text-anchor="middle" font-family="Inter,sans-serif" font-size="61" font-weight="820" fill="#ffffff">Packer</text>
+    </g>
+    <g id="packer-stamping">
+      <rect x="223" y="360" width="1474" height="136" rx="23" fill="#f3ead6"/>
+      <text id="stamping-label" x="274" y="446" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="780" fill="#2b2622">Articles पर stamping</text>
+      <g id="stamping-tool"><use href="piece:rubber-date-stamp" transform="translate(1525 371) scale(.41)"/></g>
+    </g>
+    <g id="packer-facing">
+      <rect x="223" y="511" width="1474" height="136" rx="23" fill="#f3ead6"/>
+      <text id="packer-facing-label" x="274" y="597" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="780" fill="#2b2622">Sorting और जाँच के लिए facing</text>
+      <use href="piece:domestic-envelope" transform="translate(1510 539) scale(.20)"/>
+    </g>
+    <g id="packer-packing">
+      <rect x="223" y="662" width="1474" height="136" rx="23" fill="#f3ead6"/>
+      <text x="274" y="748" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="780" fill="#2b2622">Mails की packing</text>
+      <use href="piece:parcel-box" transform="translate(1511 679) scale(.43)"/>
+    </g>
+    <g id="packer-bags">
+      <rect x="223" y="813" width="1474" height="136" rx="23" fill="#f3ead6"/>
+      <text id="packer-bags-label" x="274" y="899" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="780" fill="#2b2622">bags<tspan id="bags-close"> बंद</tspan><tspan id="bags-seal"> और seal</tspan></text>
+      <use id="packer-mini-bag" href="piece:special-mail-bag" transform="translate(1543 818) scale(.27)"/>
+    </g>
+  </g>
+  <g id="duty">
+    <g id="clearance-priority">
+      <rect x="538" y="216" width="844" height="609" rx="38" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle cx="845" cy="467" r="187" fill="#f3ead6"/>
+      <use href="piece:clock-face" transform="translate(696 318) scale(1.14)"/>
+      <use href="piece:letter-box-pillar" transform="translate(1022 298) scale(.78)"/>
+      <text id="clearance-focus" x="960" y="750" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="70" font-weight="840" fill="#9e1b1b">समय पर clearance</text>
+    </g>
+    <g id="extra-duty-chips" fill="#4b4f58" font-weight="760">
+      <g><rect x="139" y="338" width="340" height="92" rx="46" fill="#eae9e7"/><text x="309" y="399" text-anchor="middle" font-family="Inter,sans-serif" font-size="46">Stamping</text></g>
+      <g><rect x="139" y="511" width="340" height="92" rx="46" fill="#eae9e7"/><text x="309" y="572" text-anchor="middle" font-family="Inter,sans-serif" font-size="46">Facing</text></g>
+      <g><rect x="1441" y="338" width="340" height="92" rx="46" fill="#eae9e7"/><text x="1611" y="399" text-anchor="middle" font-family="Inter,sans-serif" font-size="46">Packing</text></g>
+      <g><rect x="1441" y="511" width="340" height="92" rx="46" fill="#eae9e7"/><text x="1611" y="572" text-anchor="middle" font-family="Inter,sans-serif" font-size="46">Bag seal</text></g>
+    </g>
+    <text id="clearance-still-required" x="960" y="939" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="820" fill="#2b2622">ज़िम्मेदारी नहीं हटती</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ shots:[[0,'#packer'],[6.02,'#duty']],
+ on:[
+  [.82,'fade','#packer-packing',{dur:.24}],
+  [2.60,'fade','#packer-bags',{dur:.24}],
+  [4.48,'pulse','#seal',{amount:.18}],
+  [6.86,'fade','#extra-duty-chips',{dur:.25}],
+  [9.22,'fade','#clearance-still-required',{dur:.25}],
+  [10.02,'highlight','#clearance-still-required',{color:'#fde9a6',opacity:.78,dur:.35,pad:10}]
+ ],
+ update(t,section,$){
+  $('#packer')[0].setAttribute('visibility',t<6.02?'visible':'hidden');
+  $('#duty')[0].setAttribute('visibility',t>=6.02?'visible':'hidden');
+  $('#bags-close')[0].setAttribute('opacity',Math.max(0,Math.min(1,(t-3.42)/.18)));
+  $('#bags-seal')[0].setAttribute('opacity',Math.max(0,Math.min(1,(t-4.48)/.18)));
+ }
+}
+</script>
+</section>
