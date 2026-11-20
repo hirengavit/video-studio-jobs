@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s093" data-in="cut" data-section="PART 5 · ELECTRONIC RECORD" data-series="POST OFFICE RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="पत्र पेटी की निकासी का रिकॉर्ड: पेटी खुले, डाक निकले, सही गिनती और सही पेटी दर्ज हो।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text class="hi" x="260" y="235" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="820" fill="#9e1b1b">Electronic record: चार जाँचें</text>
+  <rect x="260" y="281" width="1400" height="675" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <path d="M318 457H1602M318 617H1602M318 777H1602" fill="none" stroke="#eee5d4" stroke-width="3"/>
+  <g id="check-row-1">
+    <circle cx="382" cy="377" r="37" fill="#9e1b1b"/>
+    <text x="382" y="391" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="810" fill="#fff">1</text>
+    <text class="hi" x="469" y="396" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="800" fill="#2b2622">Box खुले</text>
+    <circle cx="1518" cy="377" r="43" fill="#e3f1e8"/>
+    <path id="tick-1" d="M1496 377l15 16 30-33" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="check-row-2">
+    <circle cx="382" cy="537" r="37" fill="#9e1b1b"/>
+    <text x="382" y="551" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="810" fill="#fff">2</text>
+    <text class="hi" x="469" y="556" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="800" fill="#2b2622">डाक निकले</text>
+    <circle cx="1518" cy="537" r="43" fill="#e3f1e8"/>
+    <path id="tick-2" d="M1496 537l15 16 30-33" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="check-row-3">
+    <circle cx="382" cy="697" r="37" fill="#9e1b1b"/>
+    <text x="382" y="711" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="810" fill="#fff">3</text>
+    <text class="hi" x="469" y="716" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="800" fill="#2b2622">सही गिनती दर्ज</text>
+    <circle cx="1518" cy="697" r="43" fill="#e3f1e8"/>
+    <path id="tick-3" d="M1496 697l15 16 30-33" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="check-row-4">
+    <circle cx="382" cy="857" r="37" fill="#9e1b1b"/>
+    <text x="382" y="871" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="810" fill="#fff">4</text>
+    <text class="hi" x="469" y="876" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="800" fill="#2b2622">सही box के नाम पर</text>
+    <circle cx="1518" cy="857" r="43" fill="#e3f1e8"/>
+    <path id="tick-4" d="M1496 857l15 16 30-33" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.38,'draw','#tick-1',{dur:.22}],
+    [1.20,'fade','#check-row-2',{dur:.23}],
+    [1.62,'draw','#tick-2',{dur:.22}],
+    [2.40,'fade','#check-row-3',{dur:.23}],
+    [3.42,'draw','#tick-3',{dur:.25}],
+    [4.66,'fade','#check-row-4',{dur:.26}],
+    [7.26,'draw','#tick-4',{dur:.28}]
+  ]
+}
+</script>
+</section>
