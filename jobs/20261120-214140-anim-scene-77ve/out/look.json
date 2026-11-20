@@ -10,16 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-overlap",
+   "kind": "mostly-empty",
    "scene": "s051",
-   "text": "बदलने वाली पट्टी / डाक डालने वाले को पता:",
-   "t": 11.26
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s051",
-   "text": "clearance का समय / अगली बार डाक कब निकलेगी",
-   "t": 11.26
+   "message": "a card is mostly empty at 8.4 s: bring its items in sooner, or size it for what it holds now",
+   "t": 8.45
   }
  ]
 }
