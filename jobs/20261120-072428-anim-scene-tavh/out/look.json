@@ -8,12 +8,5 @@
   "9.99"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s021",
-   "text": "पूरा stamp article पर ही",
-   "t": 8.11
-  }
- ]
+ "warnings": []
 }
