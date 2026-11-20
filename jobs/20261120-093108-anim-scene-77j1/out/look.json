@@ -8,24 +8,5 @@
   "4.77"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s183",
-   "text": "Registered / In",
-   "t": 2.95
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s183",
-   "text": "Registered / Insured for",
-   "t": 3.94
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s183",
-   "text": "Insured for / Rs.",
-   "t": 4.77
-  }
- ]
+ "warnings": []
 }
