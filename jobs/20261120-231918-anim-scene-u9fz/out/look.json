@@ -8,12 +8,5 @@
   "11.76"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s049",
-   "text": "Punctually / बिल्कुल ठीक समय पर",
-   "t": 11.76
-  }
- ]
+ "warnings": []
 }
