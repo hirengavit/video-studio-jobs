@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s095" data-in="cut" data-section="PART 5 · SEALING" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Packing and sealing an insured parcel">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="parcel-term">
+    <rect x="140" y="180" width="720" height="200" rx="24" fill="#9e1b1b"/>
+    <rect x="150" y="190" width="700" height="180" rx="19" fill="none" stroke="#fff" stroke-opacity=".77" stroke-width="8" stroke-linecap="round" stroke-dasharray="0 20"/>
+    <text x="500" y="272" text-anchor="middle" font-family="Inter,sans-serif" font-size="70" font-weight="800" fill="#fff">Insured parcel</text>
+    <text id="parcel-hi" class="hi" x="500" y="330" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="41" font-weight="700" fill="#fde9a6">बीमित पार्सल</text>
+  </g>
+  <g id="packing-point">
+    <rect x="140" y="448" width="720" height="162" rx="20" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <circle cx="197" cy="503" r="31" fill="#9e1b1b"/>
+    <text x="197" y="516" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#fff">1</text>
+    <text id="packing-main" class="hi" x="252" y="522" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#2b2622">ध्यान और मज़बूती से pack</text>
+    <text id="packing-reason" class="hi" x="252" y="583" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="650" fill="#6f6a63">सामान + सफ़र की लंबाई</text>
+  </g>
+  <g id="seal-point">
+    <rect x="140" y="640" width="720" height="158" rx="20" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <circle cx="197" cy="694" r="31" fill="#9e1b1b"/>
+    <text x="197" y="707" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#fff">2</text>
+    <text class="hi" x="252" y="714" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#2b2622">Seal: wax या lead</text>
+    <text id="private-mark" x="252" y="773" font-family="Inter,sans-serif" font-size="42" font-weight="740" fill="#2b2622">+ private mark</text>
+  </g>
+  <g id="parcel-display">
+    <ellipse cx="1360" cy="947" rx="325" ry="15" fill="#ead9a8" opacity=".56"/>
+    <use href="piece:parcel-box" transform="translate(1040 472) scale(2)"/>
+    <g id="knot-seal">
+      <use href="piece:wax-seal" transform="translate(1190 646) scale(.7)"/>
+    </g>
+    <path id="seal-device" d="M1221 693l11-15 11 15m-18 0h14" stroke="#fde9a6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [.50, 'fade', '#parcel-hi', {dur: .23}],
+    [1.26, 'fade', '#packing-point', {dur: .24}],
+    [3.30, 'fade', '#packing-reason', {dur: .24}],
+    [4.74, 'fade', '#seal-point', {dur: .24}],
+    [5.32, 'pop', '#knot-seal', {from: .86}],
+    [7.62, 'fade', '#private-mark', {dur: .22}],
+    [7.62, 'fade', '#seal-device', {dur: .22}],
+    [7.90, 'highlight', '#private-mark', {words: 'private mark', dur: .32, color: '#f2b705', opacity: .39, pad: 7}]
+  ]
+}
+</script>
+</section>
