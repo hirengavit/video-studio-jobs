@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s099" data-in="cut" data-section="PART 5 · SEALING" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="निजी मुहर: बीमाकृत वस्तु की सभी मोहरों पर एक ही तरह का wax और एक ही निजी मुहर की छाप।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="private-device">
+    <g id="device-card">
+      <rect x="140" y="180" width="760" height="220" rx="27" fill="#9e1b1b"/>
+      <rect x="155" y="195" width="730" height="190" rx="18" fill="none" stroke="#b8403a" stroke-width="3"/>
+      <text id="device-en" x="520" y="277" font-family="Inter, sans-serif" font-size="72" font-weight="800" text-anchor="middle" fill="#ffffff">Private device</text>
+      <text class="hi" id="device-hi" x="520" y="347" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="500" text-anchor="middle" fill="#ffffff">निजी मुहर</text>
+    </g>
+    <g id="seal-1" class="seal">
+      <use href="piece:wax-seal" transform="translate(1000 200) scale(1.333333333)"/>
+      <g transform="translate(1080 278.667) scale(1.333333333)">
+        <path id="mark-1" class="seal-mark" fill="#651617" fill-rule="evenodd" d="M0 -24 C4 -14 9 -10 21 -12 C15 -4 15 4 21 12 C9 10 4 14 0 24 C-4 14 -9 10 -21 12 C-15 4 -15 -4 -21 -12 C-9 -10 -4 -14 0 -24 Z M0 -5.5 A5.5 5.5 0 1 0 0 5.5 A5.5 5.5 0 1 0 0 -5.5 Z"/>
+      </g>
+    </g>
+    <g id="seal-2" class="seal">
+      <use href="piece:wax-seal" transform="translate(1200 200) scale(1.333333333)"/>
+      <g transform="translate(1280 278.667) scale(1.333333333)">
+        <path id="mark-2" class="seal-mark" fill="#651617" fill-rule="evenodd" d="M0 -24 C4 -14 9 -10 21 -12 C15 -4 15 4 21 12 C9 10 4 14 0 24 C-4 14 -9 10 -21 12 C-15 4 -15 -4 -21 -12 C-9 -10 -4 -14 0 -24 Z M0 -5.5 A5.5 5.5 0 1 0 0 5.5 A5.5 5.5 0 1 0 0 -5.5 Z"/>
+      </g>
+    </g>
+    <g id="seal-3" class="seal">
+      <use href="piece:wax-seal" transform="translate(1400 200) scale(1.333333333)"/>
+      <g transform="translate(1480 278.667) scale(1.333333333)">
+        <path id="mark-3" class="seal-mark" fill="#651617" fill-rule="evenodd" d="M0 -24 C4 -14 9 -10 21 -12 C15 -4 15 4 21 12 C9 10 4 14 0 24 C-4 14 -9 10 -21 12 C-15 4 -15 -4 -21 -12 C-9 -10 -4 -14 0 -24 Z M0 -5.5 A5.5 5.5 0 1 0 0 5.5 A5.5 5.5 0 1 0 0 -5.5 Z"/>
+      </g>
+    </g>
+    <g id="seal-4" class="seal">
+      <use href="piece:wax-seal" transform="translate(1600 200) scale(1.333333333)"/>
+      <g transform="translate(1680 278.667) scale(1.333333333)">
+        <path id="mark-4" class="seal-mark" fill="#651617" fill-rule="evenodd" d="M0 -24 C4 -14 9 -10 21 -12 C15 -4 15 4 21 12 C9 10 4 14 0 24 C-4 14 -9 10 -21 12 C-15 4 -15 -4 -21 -12 C-9 -10 -4 -14 0 -24 Z M0 -5.5 A5.5 5.5 0 1 0 0 5.5 A5.5 5.5 0 1 0 0 -5.5 Z"/>
+      </g>
+    </g>
+    <g id="same-wax">
+      <rect x="1148" y="390" width="464" height="100" rx="50" fill="#2e7d4f"/>
+      <path d="M1214 441 l12 12 23 -26" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="hi" x="1280" y="457" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="650" fill="#ffffff">एक ही wax</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.20, 'pop', '#device-en', {from:0.93,spring:'soft'}],
+    [0.70, 'fade', '#device-hi', {dur:0.30}],
+    [3.52, 'pop', '.seal', {from:0.88,spring:'soft',stagger:0.10}],
+    [4.48, 'pop', '#same-wax', {from:0.94,spring:'soft'}],
+    [7.88, 'color', '.seal-mark', {to:'#f2b705',dur:0.34,stagger:0.10}],
+  ]
+}
+</script>
+</section>
+
