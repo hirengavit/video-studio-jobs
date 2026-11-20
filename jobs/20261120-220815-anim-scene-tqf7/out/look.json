@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.33",
+  "4.66",
+  "6.99",
+  "9.32",
+  "11.50"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s110",
+   "text": "Office का letter box / ठीक समय पर",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s110",
+   "text": "बाहर के boxes / अपने तय समय पर",
+   "t": 0.3
+  }
+ ]
+}
