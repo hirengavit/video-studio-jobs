@@ -1,0 +1,34 @@
+<section class="vs-scene" id="s022" data-in="cut" data-section="PART 1 · WHAT GOES IN THE LETTER BOX" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="केवल सूची वाली पूरी prepaid डाक आम box में, और लिखी हुई श्रेणी की डाक Special box में जाती है।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="ordinary">
+    <rect x="140" y="320" width="1640" height="260" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <rect x="167" y="341" width="335" height="218" rx="20" fill="#f3ead6"/>
+    <use href="piece:letter-box-pillar" transform="translate(280 350) scale(.48)"/>
+    <text class="hi" x="565" y="416" font-size="54" font-weight="810" fill="#9e1b1b">आम box</text>
+    <text class="hi" id="prepaid-rule" x="565" y="519" font-size="72" font-weight="770" fill="#2b2622">list वाली, पूरी prepaid डाक</text>
+  </g>
+  <g id="special">
+    <rect x="140" y="640" width="1640" height="260" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <rect x="167" y="661" width="335" height="218" rx="20" fill="#f3ead6"/>
+    <use href="piece:letter-box-pillar" transform="translate(207 665) scale(.36)"/>
+    <use href="piece:letter-box-pillar" transform="translate(385 665) scale(.36)"/>
+    <rect x="177" y="818" width="132" height="49" rx="10" fill="#fff" stroke="#9e1b1b" stroke-width="2.5"/>
+    <rect x="355" y="818" width="132" height="49" rx="10" fill="#fff" stroke="#9e1b1b" stroke-width="2.5"/>
+    <text x="243" y="854" text-anchor="middle" font-family="Inter,sans-serif" font-size="31" font-weight="810" fill="#2b2622">AIRMAIL</text>
+    <text x="421" y="854" text-anchor="middle" font-family="Inter,sans-serif" font-size="31" font-weight="810" fill="#2b2622">QMS</text>
+    <text x="565" y="736" font-family="Inter,sans-serif" font-size="54" font-weight="810" fill="#9e1b1b">Special box</text>
+    <text class="hi" id="class-rule" x="565" y="839" font-size="72" font-weight="770" fill="#2b2622">सिर्फ लिखी हुई class</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [1.08,'words','#prepaid-rule',{gap:.18,dist:12}],
+    [3.72,'fade','#special',{dur:.29}],
+    [4.84,'words','#class-rule',{gap:.19,dist:12}],
+    [7.10,'highlight','#class-rule',{words:'लिखी',color:'#f2b705',opacity:.36,pad:7,dur:.38}]
+  ]
+}
+</script>
+</section>
