@@ -1,0 +1,69 @@
+<section class="vs-scene" id="s096" data-in="cut" data-section="PART 6 · MONEY, STAMPS, VALUABLES" data-series="LETTER BOXES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Four cases start with loose ordinary stamps and the search for the article">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="grid" data-shot-box="0 0 1920 1080">
+    <g id="case-one">
+      <rect x="200" y="240" width="740" height="350" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle cx="272" cy="311" r="39" fill="#9e1b1b"/>
+      <text x="272" y="327" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="820" fill="#fff">1</text>
+      <g id="loose-stamps">
+        <use href="piece:postage-stamp" transform="translate(303 332) scale(.57) rotate(-12 200 200)"/>
+        <use href="piece:postage-stamp" transform="translate(384 348) scale(.60) rotate(13 200 200)"/>
+      </g>
+      <g id="loose-label">
+        <text x="614" y="419" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="790" fill="#2b2622">ढीले ordinary</text>
+        <text x="614" y="474" font-family="Inter,sans-serif" font-size="47" font-weight="790" fill="#2b2622">stamps</text>
+      </g>
+      <g id="came-loose">
+        <rect x="610" y="499" width="224" height="62" rx="31" fill="#fde9a6"/>
+        <text x="722" y="541" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="37" font-weight="760" fill="#694700">उखड़ गए</text>
+      </g>
+    </g>
+    <g id="case-two">
+      <rect x="980" y="240" width="740" height="350" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle cx="1052" cy="311" r="39" fill="#9e1b1b"/>
+      <text x="1052" y="327" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="820" fill="#fff">2</text>
+    </g>
+    <g id="case-three">
+      <rect x="200" y="630" width="740" height="350" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle cx="272" cy="701" r="39" fill="#9e1b1b"/>
+      <text x="272" y="717" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="820" fill="#fff">3</text>
+    </g>
+    <g id="case-four">
+      <rect x="980" y="630" width="740" height="350" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle cx="1052" cy="701" r="39" fill="#9e1b1b"/>
+      <text x="1052" y="717" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="820" fill="#fff">4</text>
+    </g>
+  </g>
+  <g id="c1" data-shot-box="0 0 1920 1080">
+    <g id="flow-base">
+      <rect x="140" y="351" width="1640" height="424" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M514 565h1214" fill="none" stroke="#d9c9ad" stroke-width="3" stroke-dasharray="8 13" stroke-linecap="round"/>
+    </g>
+    <g id="flow-step-1">
+      <rect x="166" y="377" width="348" height="372" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:postage-stamp" transform="translate(193 420) scale(.53) rotate(-10 200 200)"/>
+      <path d="M363 527h44m-14-13 14 13-14 13" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <use href="piece:magnifier-icon" transform="translate(402 482) scale(.24)"/>
+      <path d="M200 607h280" stroke="#ead9a8" stroke-width="2"/>
+      <g id="search-copy">
+        <text x="340" y="655" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="800" fill="#2b2622">किस article के?</text>
+        <text x="340" y="704" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="35" font-weight="700" fill="#6f6a63">पहले: article ढूँढना</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ shots:[[0,'#grid'],[7.30,'#c1']],
+ on:[
+  [.36,'pop','#case-one,#case-two,#case-three,#case-four',{from:.97,spring:'fast',stagger:.10}],
+  [2.14,'pop','#loose-stamps',{from:.90,spring:'fast'}],
+  [2.80,'fade','#loose-label',{dur:.24}],
+  [6.44,'fade','#came-loose',{dur:.20}],
+  [7.74,'fade','#search-copy',{dur:.18}]
+ ]
+}
+</script>
+</section>
