@@ -3,18 +3,18 @@
 <rect width="1920" height="1080" fill="#fbf7ee"/>
 <g id="compare" text-anchor="middle">
       <g id="letter-card">
-        <rect x="120" y="220" width="760" height="720" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
-        <rect x="160" y="256" width="680" height="329" rx="20" fill="#f3ead6"/>
-        <use href="piece:domestic-envelope" transform="translate(234 280) scale(0.7)"/>
-        <text id="letter-name" x="500" y="657" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">LETTER ENVELOPE</text>
-        <text id="letter-hi" x="500" y="711" class="hi" font-size="36" font-weight="600" fill="#6f6a63">पत्र लिफ़ाफ़ा</text>
-        <path d="M180 759H820" fill="none" stroke="#ead9a8" stroke-width="2"/>
-        <text id="letter-condition" x="500" y="856" class="hi" font-size="46" font-weight="750" fill="#2b2622">लगातार बंद होने की शर्त</text>
+        <rect x="120" y="220" width="740" height="720" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <rect x="160" y="256" width="660" height="329" rx="20" fill="#f3ead6"/>
+        <use href="piece:domestic-envelope" transform="translate(224 280) scale(0.7)"/>
+        <text id="letter-name" x="490" y="657" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">LETTER ENVELOPE</text>
+        <text id="letter-hi" x="490" y="716" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="600" fill="#6f6a63">पत्र लिफ़ाफ़ा</text>
+        <path d="M180 773H800" fill="none" stroke="#ead9a8" stroke-width="2"/>
+        <text id="letter-condition" x="490" y="870" class="hi" font-size="46" font-weight="750" fill="#2b2622">लगातार बंद होने की शर्त</text>
       </g>
       <g id="book-card">
-        <rect x="1040" y="220" width="760" height="720" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
-        <rect x="1080" y="256" width="680" height="329" rx="20" fill="#f3ead6"/>
-        <g id="open-book-post" transform="translate(1300 344) scale(0.6)" stroke="#2b2622" stroke-width="4" stroke-linejoin="round">
+        <rect x="1060" y="220" width="740" height="720" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <rect x="1100" y="256" width="660" height="329" rx="20" fill="#f3ead6"/>
+        <g id="open-book-post" transform="translate(1310 344) scale(0.6)" stroke="#2b2622" stroke-width="4" stroke-linejoin="round">
           <path d="M72 119L186 24Q200 12 214 24L328 119Z" fill="#ead9a8"/>
           <path d="M101 114L198 49L299 114" fill="none" stroke="#b49e68" stroke-width="3"/>
           <use href="piece:envelope-article"/>
@@ -25,18 +25,19 @@
           <path d="M74 122L191 198Q200 204 209 198L326 122" fill="none" stroke-width="3"/>
           <path d="M83 132V267" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
         </g>
-        <text id="book-name" x="1420" y="657" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">BOOK POST</text>
-        <text id="book-hi" x="1420" y="711" class="hi" font-size="36" font-weight="600" fill="#6f6a63">पुस्तक डाक</text>
-        <path d="M1100 759H1740" fill="none" stroke="#ead9a8" stroke-width="2"/>
-        <text id="book-purpose" x="1420" y="856" class="hi" font-size="46" font-weight="750" fill="#2b2622">उद्देश्य: आसान जाँच</text>
+        <text id="book-name" x="1430" y="657" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">BOOK POST</text>
+        <text id="book-hi" x="1430" y="716" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="600" fill="#6f6a63">पुस्तक डाक</text>
+        <path d="M1120 773H1740" fill="none" stroke="#ead9a8" stroke-width="2"/>
+        <rect x="1378" y="840" width="234" height="64" rx="3" fill="#f2b705" opacity=".32"/>
+        <text id="book-purpose" x="1430" y="870" class="hi" font-size="46" font-weight="750" fill="#2b2622">उद्देश्य: आसान जाँच</text>
       </g>
       <g id="contrast-badge">
         <circle cx="960" cy="560" r="61" fill="#9e1b1b"/>
         <text x="960" y="588" font-family="Inter, sans-serif" font-weight="800" font-size="90" fill="#fff">≠</text>
       </g>
-      <g id="contrast-label" fill="#6f6a63" font-weight="650" font-size="36">
-        <text x="960" y="676" class="hi">परीक्षा का</text>
-        <text x="960" y="720" font-family="Inter, sans-serif" textLength="148" lengthAdjust="spacingAndGlyphs">confusion</text>
+      <g id="contrast-label" fill="#6f6a63" font-weight="650" font-size="32">
+        <text x="960" y="640" class="hi">परीक्षा का</text>
+        <text x="960" y="684" font-family="Inter, sans-serif">confusion</text>
       </g>
     </g>
 <g id="unpaid">
@@ -72,7 +73,6 @@
  camera:[[0,{zoom:1}]],
  shots:[[0,'#compare'],[3.03,'#unpaid']],
  on:[
-  [0,'highlight','#book-purpose',{words:'आसान जाँच',color:'#f2b705',opacity:0.32,dur:0.01,pad:5}],
   [0.90,'highlight','#letter-condition',{words:'लगातार बंद',color:'#f2b705',opacity:0.34,dur:0.43,pad:5}],
   [4.39,'stamp','#unpaid-term',{from:1.1,spring:'fast',rot:-3}],
   [4.89,'fade','#unpaid-hi',{dur:0.3}],
