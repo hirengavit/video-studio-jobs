@@ -10,22 +10,24 @@
       <use id="case" href="piece:valuables-case" transform="translate(224 337) scale(2.2)"/>
     </g>
     <g id="bullion-items" stroke="#2b2622" stroke-width="4" stroke-linejoin="round">
-      <g id="bullion-bars">
+      <g id="bullion-bars" transform="translate(0 0) scale(.83)">
         <circle data-anchor="base" cx="490" cy="351" r="0"/>
         <path d="M327 320l40-34h203l-28 34H327z" fill="#ead9a8"/>
         <path d="M327 320h215v31H327z" fill="#e6cf9a"/>
         <path d="M542 320l28-34v31l-28 34z" fill="#c6a773"/>
+        <g transform="translate(-29 32)">
         <path d="M423 268l40-34h203l-28 34H423z" fill="#ead9a8"/>
         <path d="M423 268h215v31H423z" fill="#e6cf9a"/>
         <path d="M638 268l28-34v31l-28 34z" fill="#c6a773"/>
+        </g>
       </g>
       <g id="bullion-coins">
         <circle data-anchor="base" cx="846" cy="355" r="0"/>
         <path d="M743 320c0-26 120-26 120 0v17c0 24-120 24-120 0z" fill="#c6a773"/>
         <ellipse cx="803" cy="319" rx="60" ry="18" fill="#e6cf9a"/>
-        <path d="M859 287c0-26 116-26 116 0v28c0 24-116 24-116 0z" fill="#c6a773"/>
-        <ellipse cx="917" cy="286" rx="58" ry="18" fill="#e6cf9a"/>
-        <path d="M885 286c13-10 52-10 65 0m-178 33c13-10 52-10 65 0" fill="none" stroke="#9b805e" stroke-width="3"/>
+        <path d="M835 300c0-26 116-26 116 0v28c0 24-116 24-116 0z" fill="#c6a773"/>
+        <ellipse cx="893" cy="299" rx="58" ry="18" fill="#e6cf9a"/>
+        <path d="M861 299c13-10 52-10 65 0m-178 33c13-10 52-10 65 0" fill="none" stroke="#9b805e" stroke-width="3"/>
       </g>
     </g>
     <g id="bullion-term">
@@ -56,8 +58,8 @@
 <script type="text/scene">
 {
   on: [
-    [0, 'place', '#bullion-bars', {on:'#case',x:470,dy:-39}],
-    [0, 'place', '#bullion-coins', {on:'#case',x:800,dy:-39}],
+    [0, 'place', '#bullion-bars', {on:'#case',x:485,dy:-18}],
+    [0, 'place', '#bullion-coins', {on:'#case',x:800,dy:-20}],
     [.70, 'draw', '#case-cover-outline', {dur:.66}],
     [1.44, 'fade', '#cover-material', {dur:.28}],
     [3.40, 'fade', '#general-packing-note', {dur:.31}],
