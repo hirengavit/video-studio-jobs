@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s147" data-in="cut" data-section="PART 8 · LETTER BOX OR COUNTER" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="big-parcel">
+ <rect x="120" y="190" width="780" height="167" rx="26" fill="#9e1b1b"/>
+ <rect x="142" y="209" width="736" height="129" rx="20" fill="none" stroke="#b8403a" stroke-width="3" stroke-dasharray="2 13" stroke-linecap="round"/>
+ <text id="parcel-name" x="510" y="271" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="840" fill="#fff">INDIA POST PARCEL</text>
+ <text id="parcel-hi" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="510" y="321" text-anchor="middle" font-size="38" font-weight="690" fill="#fde9a6">इंडिया पोस्ट पार्सल</text>
+ <rect x="120" y="400" width="780" height="500" rx="30" fill="#f3ead6"/>
+ <use href="piece:parcel-box" transform="translate(350 510) scale(1)"/>
+ <g id="accountable">
+  <rect x="348" y="641" width="364" height="80" rx="9" fill="#fff" stroke="#9e1b1b" stroke-width="5"/>
+  <rect x="360" y="650" width="340" height="62" rx="4" fill="none" stroke="#b8403a" stroke-width="2"/>
+  <text x="530" y="697" text-anchor="middle" font-family="Inter, sans-serif" font-size="43" font-weight="850" fill="#9e1b1b">ACCOUNTABLE</text>
+ </g>
+</g>
+<g id="service-parcels">
+ <rect x="1000" y="227" width="800" height="196" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <text x="1060" y="311" font-family="Inter, sans-serif" font-size="50" font-weight="820" fill="#9e1b1b">SERVICE PARCELS</text>
+ <text id="service-hi" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1060" y="371" font-size="40" font-weight="680" fill="#6f6a63">सेवा पार्सल भी</text>
+ <g id="service-ok">
+  <circle cx="1714" cy="323" r="35" fill="#e5f0e8"/>
+  <path d="m1697 324 12 12 24-26" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+</g>
+<g id="small-parcel">
+ <rect x="1000" y="506" width="800" height="394" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <rect x="1060" y="550" width="207" height="151" rx="19" fill="#f3ead6"/>
+ <use href="piece:parcel-box" transform="translate(1092 572) scale(0.45)"/>
+ <text id="small-line1" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1060" y="780" font-size="46" font-weight="760" fill="#2b2622">छोटा parcel भी:</text>
+ <text id="small-line2" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1060" y="844" font-size="46" font-weight="720" fill="#2b2622">अपनी तय service से ही book</text>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+ [0.22,'type','#parcel-name',{cps:29}],
+ [0.72,'fade','#parcel-hi',{dur:0.24}],
+ [1.98,'stamp','#accountable',{from:1.26,rot:-5}],
+ [3.66,'pop','#service-parcels',{from:0.97}],
+ [4.16,'fade','#service-hi',{dur:0.22}],
+ [4.70,'draw','#service-ok',{dur:0.38}],
+ [5.22,'pop','#small-parcel',{from:0.97}],
+ [6.02,'words','#small-line1',{gap:0.16,dist:11}],
+ [6.80,'words','#small-line2',{gap:0.24,dist:11}],
+ [7.46,'highlight','#small-line2',{words:'तय service',color:'#f2b705',opacity:0.43,pad:5,dur:0.35}]
+]}
+</script></section>
