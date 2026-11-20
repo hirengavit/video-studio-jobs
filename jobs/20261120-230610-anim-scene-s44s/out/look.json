@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "2.55",
+  "5.11",
+  "7.66",
+  "10.22",
+  "12.62"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s102",
+   "text": "चालू coin (1.9:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  }
+ ]
+}
