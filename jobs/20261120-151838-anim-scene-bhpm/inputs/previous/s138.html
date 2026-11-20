@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s138" data-in="wipe" data-in-dir="right" data-in-dur="0.5" data-section="PART 8 · LETTER BOX OR COUNTER" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Service and category determine the posting route; ordinary letters may go in the letter box">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="route">
+    <text id="route-heading" class="hi" x="120" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="790" fill="#2b2622">Posting का रास्ता तय करते हैं:</text>
+    <g id="service-chip">
+      <rect x="120" y="286" width="360" height="96" rx="20" fill="#fff" stroke="#9e1b1b" stroke-width="3"/>
+      <text x="300" y="349" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="770" fill="#2b2622">service</text>
+    </g>
+    <g id="category-chip">
+      <rect x="512" y="286" width="636" height="96" rx="20" fill="#fff" stroke="#9e1b1b" stroke-width="3"/>
+      <text class="hi" x="830" y="349" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="770" fill="#2b2622">article की category</text>
+    </g>
+    <g id="ordinary">
+      <rect x="120" y="520" width="1180" height="281" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="158" y="576" width="646" height="169" rx="24" fill="#9e1b1b"/>
+      <rect x="167" y="585" width="628" height="151" rx="18" fill="none" stroke="#fff" stroke-opacity=".73" stroke-width="8" stroke-linecap="round" stroke-dasharray="0 21"/>
+      <text x="481" y="648" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="800" fill="#fff">ORDINARY LETTER</text>
+      <text id="ordinary-hi" class="hi" x="481" y="708" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="720" fill="#fde9a6">साधारण पत्र</text>
+    </g>
+    <g id="box-photo">
+      <desc>India Post letter box in Bhopal -1, Suyash.dwivedi, Wikimedia Commons, CC BY-SA 4.0. Supplied background-removed adaptation. Source: https://commons.wikimedia.org/wiki/File:India_Post_letter_box_in_Bhopal_-1.jpg ; license: https://creativecommons.org/licenses/by-sa/4.0/</desc>
+      <image href="photo:india-post-letter-box-cutout" x="1400" y="300" width="360" height="480" preserveAspectRatio="xMidYMid meet" transform="rotate(1.5 1580 540)" filter="url(#vs-cutout)"/>
+      <text x="1580" y="825" text-anchor="middle" fill="#6f6a63" font-family="Inter,sans-serif" font-size="32" font-weight="700">India Post letter box</text>
+      <text x="1580" y="862" text-anchor="middle" fill="#6f6a63" font-family="Inter,sans-serif" font-size="22">Suyash.dwivedi · Wikimedia Commons</text>
+      <text x="1580" y="891" text-anchor="middle" fill="#6f6a63" font-family="Inter,sans-serif" font-size="22">CC BY-SA 4.0 · cut-out</text>
+    </g>
+    <g id="letter-travel"><use href="piece:envelope-article" transform="translate(1080 500) scale(.5)"/></g>
+    <g id="letter-tick">
+      <circle cx="1740" cy="665" r="39" fill="#2e7d4f"/>
+      <path d="m1721 665 13 12 24-30" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0, 'words', '#route-heading', {gap: .15, dist: 10}],
+    [1.44, 'pop', '#service-chip', {from: .92}],
+    [2.60, 'pop', '#category-chip', {from: .92}],
+    [6.70, 'stamp', '#ordinary', {from: 1.03, rot: -1}],
+    [6.70, 'pop', '#letter-travel', {from: .93}],
+    [7.20, 'fade', '#ordinary-hi', {dur: .24}],
+    [8.08, 'slide', '#box-photo', {from: 'right', dist: 130}],
+    [9.44, 'move', '#letter-travel', {by: [300,-145], spring: 'soft'}],
+    [10.36, 'pop', '#letter-tick', {from: .85}]
+  ]
+}
+</script>
+</section>
