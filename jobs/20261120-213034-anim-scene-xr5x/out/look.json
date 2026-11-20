@@ -14,6 +14,18 @@
    "scene": "s004",
    "message": "a card is mostly empty at 2.3 s: bring its items in sooner, or size it for what it holds now",
    "t": 2.28
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s004",
+   "message": "a card is mostly empty at 6.8 s: bring its items in sooner, or size it for what it holds now",
+   "t": 6.83
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s004",
+   "message": "a card is mostly empty at 9.1 s: bring its items in sooner, or size it for what it holds now",
+   "t": 9.11
   }
  ]
 }
