@@ -8,12 +8,5 @@
   "10.45"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s085",
-   "text": "article बचाने को ज़रूरी हो / — ठीक",
-   "t": 4.24
-  }
- ]
+ "warnings": []
 }
