@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s137" data-in="cut" data-section="PART 7 · PINS, OPEN ARTICLES &amp; BOOK POST" data-series="POST OFFICE RULES">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="detain-card" font-family="'Noto Sans Devanagari', Inter, sans-serif">
+      <rect x="120" y="200" width="940" height="760" rx="32" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M170 454H1010M170 690H1010" fill="none" stroke="#ead9a8" stroke-width="2"/>
+      <g id="suspect-parcel">
+        <use href="piece:parcel-box" transform="translate(467 227) scale(0.6)"/>
+        <path d="M630 296l28-13" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round"/>
+        <rect x="651" y="255" width="52" height="59" rx="9" fill="#f3ead6" stroke="#9e1b1b" stroke-width="3"/>
+        <text x="677" y="298" text-anchor="middle" font-family="Inter, sans-serif" font-size="41" font-weight="800" fill="#9e1b1b">?</text>
+      </g>
+      <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="suspect" x="590" y="424" text-anchor="middle" font-size="48" font-weight="720" fill="#2b2622">नुकसान वाली डाक का शक</text>
+      <g id="detain-mark">
+        <rect x="421" y="487" width="338" height="110" rx="13" fill="#fff" stroke="#9e1b1b" stroke-width="5"/>
+        <rect x="431" y="497" width="318" height="90" rx="8" fill="none" stroke="#b8403a" stroke-width="2"/>
+        <text x="590" y="565" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="850" letter-spacing="3" fill="#9e1b1b">DETAIN</text>
+      </g>
+      <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="local-stop" x="590" y="654" text-anchor="middle" font-size="40" font-weight="650" fill="#6f6a63">वहीं · रोकना</text>
+      <g id="authorities" fill="#2b2622">
+        <text id="police" x="195" y="783" font-family="Inter, sans-serif" font-size="42" font-weight="790">POLICE</text>
+        <text id="postal" x="382" y="783" font-family="Inter, sans-serif" font-size="42" font-weight="790">+ POSTAL AUTHORITIES</text>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="urgent" x="195" y="874" font-size="46" font-weight="650">को तुरंत खबर</text>
+      </g>
+    </g>
+    <g id="book-post-card" font-family="'Noto Sans Devanagari', Inter, sans-serif">
+      <rect x="1120" y="200" width="680" height="760" rx="32" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M1170 690H1750" fill="none" stroke="#ead9a8" stroke-width="2"/>
+      <g id="book-envelope">
+        <rect x="1332" y="263" width="256" height="193" rx="25" fill="#f3ead6"/>
+        <path d="M1397 352 L1453 303 Q1460 297 1467 303 L1523 352 Z" fill="#ffffff" stroke="#2b2622" stroke-width="2.5" stroke-linejoin="round"/>
+        <path d="M1401 351 H1519" stroke="#b8403a" stroke-width="2"/>
+        <use href="piece:envelope-article" transform="translate(1360 294.5) scale(0.5)"/>
+      </g>
+      <text id="book-term" x="1460" y="556" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="850" fill="#9e1b1b">BOOK POST</text>
+      <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="book-hindi" x="1460" y="621" text-anchor="middle" font-size="40" font-weight="650" fill="#6f6a63">पुस्तक डाक</text>
+      <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="inspect" x="1460" y="829" text-anchor="middle" font-size="46" font-weight="740" fill="#2b2622">आसानी से जाँच हो सके</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0,'words','#suspect',{gap:0.12,dist:12}],
+      [2.56,'stamp','#detain-mark',{from:1.35,rot:-4}],
+      [3.06,'fade','#local-stop',{dur:0.22}],
+      [3.72,'words','#police',{gap:0.10,dist:12}],
+      [4.88,'words','#postal',{gap:0.13,dist:12}],
+      [5.74,'words','#urgent',{gap:0.57,dist:10}],
+      [6.92,'highlight','#urgent',{words:'तुरंत खबर',color:'#f2b705',opacity:0.43,dur:0.30,pad:6}],
+      [7.70,'pop','#book-post-card',{from:0.97}],
+      [7.76,'type','#book-term',{cps:30}],
+      [8.20,'fade','#book-hindi',{dur:0.2}],
+      [8.48,'words','#inspect',{gap:0.16,dist:12}]
+    ]
+  }
+  </script>
+</section>
