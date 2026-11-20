@@ -12,9 +12,9 @@
   {
    "kind": "low-contrast",
    "scene": "s033",
-   "text": "Franking (1.2:1) / impression (1.2:1) / फ़्रैंकिंग छाप (1.0:1)",
+   "text": "Authorised (1.0:1) / acceptance (1.0:1)",
    "message": "text too close in colour to what's behind it",
-   "t": 0.3
+   "t": 2.07
   }
  ]
 }
