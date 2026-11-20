@@ -8,12 +8,5 @@
   "8.83"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s011",
-   "text": "सामान की प्रकृति / +",
-   "t": 5.39
-  }
- ]
+ "warnings": []
 }
