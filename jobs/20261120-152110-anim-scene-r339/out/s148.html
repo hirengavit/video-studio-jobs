@@ -39,8 +39,10 @@
     slot.setAttribute('transform', 'translate(270 523.5) scale(' + (1 + .15 * slotPulse) + ') translate(-270 -523.5)');
     const u = cap((t - 8.16) / .40);
     const e = u * u * (3 - 2 * u);
-    $('#article-scale')[0].setAttribute('transform','translate(640 802) scale(' + (1.70 - .70 * e) + ') translate(-640 -802)');
-    $('#large-label')[0].setAttribute('transform','translate(' + (820 * e) + ' ' + (-115 * e) + ')');
+    const dx = t < 8.16 ? 0 : -820 * (1 - e);
+    const dy = t < 8.16 ? 0 : 129 * (1 - e);
+    $('#article-scale')[0].setAttribute('transform','translate(' + dx + ' ' + dy + ') translate(640 802) scale(' + (1.70 - .70 * e) + ') translate(-640 -802)');
+    $('#large-label')[0].setAttribute('transform','translate(' + (820 * e) + ' ' + (-94 * e) + ')');
   }
 }
 </script>
