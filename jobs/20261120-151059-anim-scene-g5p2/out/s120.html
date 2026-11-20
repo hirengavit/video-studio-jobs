@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s120" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}' data-section="PART 7 · PINS, OPEN ARTICLES &amp; BOOK POST" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <rect x="120" y="263" width="608" height="610" rx="30" fill="#f3ead6"/>
+  <use href="piece:envelope-article" transform="translate(44 180) scale(1.9)"/>
+  <g id="pin-travel">
+    <use href="piece:pin-icon" transform="translate(492 429) rotate(-83) scale(.46)"/>
+  </g>
+  <path id="tear" d="M670 412l-15 16 10 13-19 17 8 13-18 10" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="point-one">
+    <rect x="760" y="242" width="1040" height="135" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <circle cx="836" cy="309.5" r="31" fill="#9e1b1b"/>
+    <text x="836" y="323.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="790" fill="#fff">1</text>
+    <text id="one-inscription" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="900" y="327" font-size="48" font-weight="690" fill="#2b2622">उठाने वाले को चुभ सकती है</text>
+  </g>
+  <g id="point-two">
+    <rect x="760" y="402" width="1040" height="135" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <circle cx="836" cy="469.5" r="31" fill="#9e1b1b"/>
+    <text x="836" y="483.5" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="790" fill="#fff">2</text>
+    <text id="two-inscription" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="900" y="487" font-size="48" font-weight="690" fill="#2b2622">पास की डाक फाड़ सकती है</text>
+  </g>
+  <g id="ban">
+    <rect x="760" y="620" width="1040" height="340" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text id="letter" x="812" y="710" font-family="Inter, sans-serif" font-size="52" font-weight="820" fill="#9e1b1b">LETTER ENVELOPE</text>
+    <text id="letter-hi" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="812" y="761" font-size="38" font-weight="640" fill="#6f6a63">पत्र लिफ़ाफ़ा</text>
+    <g id="clip-item">
+      <rect x="812" y="804" width="282" height="117" rx="21" fill="#f3ead6"/>
+      <path id="clip-draw" d="M859 882l30-36c5-6 14 1 9 7l-29 35c-8 9-19 0-12-8l27-33c3-4 9 0 6 4l-24 29" fill="none" stroke="#2b2622" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="clip-chip" x="922" y="877" font-family="Inter, sans-serif" font-size="46" font-weight="760" fill="#2b2622">clips</text>
+    </g>
+    <g id="staple-item">
+      <rect x="1119" y="804" width="315" height="117" rx="21" fill="#f3ead6"/>
+      <path id="staple-draw" d="M1163 880v-29q0-6 6-6h40q6 0 6 6v29m-47-5v-22h42v22" fill="none" stroke="#2b2622" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="staple-chip" x="1243" y="877" font-family="Inter, sans-serif" font-size="46" font-weight="760" fill="#2b2622">staples</text>
+    </g>
+    <g id="ban-cross">
+      <rect x="1492" y="804" width="255" height="117" rx="21" fill="#4b4f58"/>
+      <path d="M1524 847l27 29m-27 0 27-29" stroke="#ffffff" stroke-width="5.5" stroke-linecap="round"/>
+      <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1570" y="879" font-size="46" font-weight="760" fill="#fff">मना</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0,'pop','#pin-travel',{from:0.88}],
+    [1.14,'move','#pin-travel',{by:[140,-20],spring:'soft'}],
+    [2.80,'fade','#point-one',{dur:0.18}],
+    [2.85,'words','#one-inscription',{gap:0.12,dist:11}],
+    [5.54,'fade','#point-two',{dur:0.18}],
+    [5.59,'words','#two-inscription',{gap:0.12,dist:11}],
+    [6.68,'draw','#tear',{dur:0.32}],
+    [8.68,'fade','#ban',{dur:0.25}],
+    [8.72,'type','#letter',{cps:32}],
+    [9.18,'fade','#letter-hi',{dur:0.21}],
+    [9.98,'fade','#clip-item',{dur:0.19}],
+    [9.98,'draw','#clip-draw',{dur:0.48}],
+    [11.14,'fade','#staple-item',{dur:0.19}],
+    [11.14,'draw','#staple-draw',{dur:0.44}],
+    [11.68,'pop','#ban-cross',{from:0.94}],
+    [11.68,'strike','#clip-chip',{color:'#4b4f58',width:4,dur:0.28,dim:0.74}],
+    [11.68,'strike','#staple-chip',{color:'#4b4f58',width:4,dur:0.28,dim:0.74}]
+  ]
+}
+</script>
+</section>
