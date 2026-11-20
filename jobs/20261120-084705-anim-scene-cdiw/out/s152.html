@@ -5,7 +5,7 @@
   <text id="routes-title" x="120" y="225" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="810" fill="#9e1b1b">Letter box और counter के अलावा: तीन और AUTHORISED रास्ते</text>
   <g id="route-1"><rect x="120" y="300" width="540" height="520" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/><circle cx="176" cy="355" r="29" fill="#9e1b1b"/><text x="176" y="369" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="800" fill="#fff">1</text></g>
 <g id="route-2"><rect x="690" y="300" width="540" height="520" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/><circle cx="746" cy="355" r="29" fill="#9e1b1b"/><text x="746" y="369" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="800" fill="#fff">2</text></g>
-<g id="route-3"><rect x="1260" y="300" width="540" height="520" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/><circle cx="1316" cy="355" r="29" fill="#9e1b1b"/><text x="1316" y="369" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="800" fill="#fff">3</text></g>
+<g id="route-3"><rect id="route-three-surface" x="1260" y="300" width="540" height="520" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/><circle cx="1316" cy="355" r="29" fill="#9e1b1b"/><text x="1316" y="369" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="800" fill="#fff">3</text></g>
   <g id="route-one-info">
     <g id="outlet"><use href="piece:franchisee-outlet" transform="translate(300 330) scale(.5)"/></g>
     <text id="outlet-en" x="390" y="526" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#2b2622">FRANCHISEE OUTLET</text>
@@ -40,6 +40,7 @@
   [0,'pop','#self-kiosk',{from:.94}],
   [0,'type','#kiosk-en',{cps:27}],
   [0,'color','#outlet-note text',{to:'#6f6a63',dur:.28}],
+  [.50,'out','#route-three-surface',{dur:.36}],
   [.50,'fade','#kiosk-hi, #route-two-rule',{dur:.27}],
   [1.42,'words','#kiosk-note-1',{gap:.51,dist:8}],
   [3.78,'words','#kiosk-note-2',{gap:.25,dist:8}],
