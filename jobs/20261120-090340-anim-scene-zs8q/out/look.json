@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.41",
+  "4.82",
+  "7.24",
+  "9.65",
+  "11.91"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s111",
+   "text": "plated सामान / यहाँ currency note नहीं",
+   "t": 9.65
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s111",
+   "text": "सामान / यहाँ currency note नहीं",
+   "t": 9.65
+  }
+ ]
+}
