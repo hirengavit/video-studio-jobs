@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s010" data-in="cut" data-section="PART 1 · PACKING &amp; STRONG COVER" data-series="POST OFFICE RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Mail travels together and experiences pressure and rubbing">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="mail-travel">
+    <ellipse cx="667" cy="937" rx="394" ry="16" fill="#ead9a8" opacity=".55"/>
+    <text id="not-alone" class="hi" x="680" y="345" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="780" fill="#9e1b1b">अकेला नहीं</text>
+    <g id="postal-stack">
+      <g id="incoming-box"><use href="piece:parcel-box" transform="translate(778 749) scale(.8)"/></g>
+      <g id="incoming-left"><use href="piece:envelope-article" transform="translate(285 692) rotate(-10 160 160) scale(.8)"/></g>
+      <use href="piece:parcel-box" transform="translate(488 749) scale(.8)"/>
+      <use href="piece:envelope-article" transform="translate(508 704) rotate(7 160 160) scale(.8)"/>
+      <g id="incoming-right"><use href="piece:envelope-article" transform="translate(779 612) rotate(12 160 160) scale(.8)"/></g>
+      <g id="incoming-top"><use href="piece:envelope-article" transform="translate(552 524) rotate(-5 160 160) scale(.8)"/></g>
+    </g>
+    <g id="pressure-arrows" fill="none" stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M611 472v102m-17-17 17 17 17-17M763 474v91m-17-17 17 17 17-17"/>
+    </g>
+    <g id="rubbing-arrows" fill="none" stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M285 783h114m-18-16 18 16-18 16M1144 754h-94m18-16-18 16 18 16M1045 798h102m-17-16 17 16-17 16"/>
+    </g>
+    <g id="pressure-chip">
+      <rect x="1250" y="300" width="550" height="147" rx="24" fill="#fff" stroke="#2b2622" stroke-width="3"/>
+      <path d="M1323 341v56m-15-15 15 15 15-15" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="hi" x="1392" y="393" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="780" fill="#2b2622">दबाव</text>
+    </g>
+    <g id="rubbing-chip">
+      <rect x="1250" y="520" width="550" height="147" rx="24" fill="#fff" stroke="#2b2622" stroke-width="3"/>
+      <path d="M1296 579h55m-13-12 13 12-13 12M1348 611h-55m13-12-13 12 13 12" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text class="hi" x="1392" y="613" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="780" fill="#2b2622">रगड़</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [.92, 'fade', '#not-alone', {dur: .26}],
+    [2.54, 'slide', '#incoming-left', {from: 'left', dist: 177}],
+    [2.69, 'slide', '#incoming-box', {from: 'right', dist: 155}],
+    [2.84, 'slide', '#incoming-right', {from: 'right', dist: 190}],
+    [2.99, 'slide', '#incoming-top', {from: 'up', dist: 111}],
+    [6.28, 'draw', '#pressure-arrows', {dur: .37}],
+    [6.28, 'pop', '#pressure-chip', {from: .93}],
+    [7.74, 'draw', '#rubbing-arrows', {dur: .38}],
+    [7.74, 'pop', '#rubbing-chip', {from: .93}]
+  ]
+}
+</script>
+</section>
