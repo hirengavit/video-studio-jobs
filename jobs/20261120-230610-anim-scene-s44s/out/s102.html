@@ -44,7 +44,7 @@
     <text id="receipts-gloss" x="1387.5" y="973" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="730" fill="#fde9a6">अवर्गीकृत प्राप्तियाँ</text>
   </g>
   <g id="stationery-route">
-    <path id="postcard-route" d="M688 554v25q0 24 26 24h230" fill="none" stroke="#8a5d00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="postcard-route" d="M688 554v25q0 24 26 24h250" fill="none" stroke="#8a5d00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     <path id="envelope-route" d="M1224 554v25q0 24-26 24H964v29m-13-13 13 13 13-13" fill="none" stroke="#8a5d00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     <g id="error-book">
       <use href="piece:record-book" transform="translate(820 643) scale(.88)"/>
@@ -82,6 +82,7 @@
   [10.18,'pop','#treasurer',{from:.96,spring:'fast'}]
  ],
  update(t,section,$){
+  $('#currency-focus')[0].setAttribute('visibility',t>=.62&&t<5.45?'visible':'hidden');
   $('#postmaster-route')[0].setAttribute('visibility',t<.94?'visible':'hidden');
   $('#additional-items')[0].setAttribute('visibility',t<5.45?'visible':'hidden');
   $('#receipt-term')[0].setAttribute('visibility',t>=1.08&&t<5.45?'visible':'hidden');
