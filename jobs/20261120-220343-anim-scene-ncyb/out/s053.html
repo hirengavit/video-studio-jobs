@@ -39,7 +39,7 @@
   [1.00,'highlight','#time-fourteen',{color:'#fde9a6',opacity:.7,dur:.32,pad:10}],
   [3.76,'fade','#plate-meaning',{dur:.22}],
   [3.76,'words','#plate-meaning-text',{gap:.55,dist:12}],
-  [8.70,'pop','#door-lock',{dur:.29,from:.94,spring:'soft'}]
+  [8.70,'pop','#door-lock',{from:.94,spring:'soft'}]
  ],
  update(t, section, $) {
    for (const part of $('#shackle-open')) part.style.opacity = t < 9.22 ? '1' : '0';
