@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g id="feet">
+    <rect x="63" y="337" width="48" height="26" fill="#363942" rx="3"/>
+    <rect x="167" y="337" width="46" height="26" fill="#363942" rx="3"/>
+  </g>
+  <g id="cabinet">
+    <path d="M39 65L59 39H219L240 61 219 79H39Z" fill="#a6a9ad"/>
+    <rect x="40" y="59" width="193" height="286" fill="#4b4f58" rx="10"/>
+    <rect x="57" y="79" width="159" height="246" fill="#363942" rx="5"/>
+  </g>
+  <g id="compartments">
+    <path d="M76 94H202V302H76Z" fill="#70747d"/>
+    <path d="M57 83L76 94V302L57 322Z" fill="#4b4f58"/>
+    <path d="M76 302H202L216 324H57Z" fill="#a6a9ad"/>
+  </g>
+  <path id="shelf-top" d="M76 155H201L213 172H61Z" fill="#a6a9ad"/>
+  <path id="shelf-bottom" d="M76 221H201L213 238H61Z" fill="#a6a9ad"/>
+  <g id="hinges">
+    <rect x="224" y="89" width="29" height="30" fill="#a6a9ad" rx="4"/>
+    <rect x="224" y="268" width="29" height="31" fill="#a6a9ad" rx="4"/>
+  </g>
+  <g id="door">
+    <path id="door-panel" d="M244 76L348 94Q363 97 363 110V297Q363 309 349 313L244 338Z" fill="#4b4f58"/>
+    <path d="M258 96L346 113V292L258 314Z" fill="#a6a9ad"/>
+    <g id="dial">
+    <circle cx="310" cy="201" r="22" fill="#363942"/>
+    <circle cx="310" cy="201" r="13" fill="#4b4f58"/>
+    <path d="M310 188V194" stroke="#ffffff"/>
+  </g>
+    <g id="boltwork">
+    <rect x="336" y="137" width="14" height="21" fill="#363942" rx="2"/>
+    <rect x="336" y="244" width="14" height="21" fill="#363942" rx="2"/>
+  </g>
+  </g>
+  <circle data-anchor="top" cx="134" cy="39" r="0"/>
+  <circle data-anchor="base" cx="137" cy="363" r="0"/>
+</svg>
