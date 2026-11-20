@@ -8,18 +8,5 @@
   "11.91"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s111",
-   "text": "plated सामान / यहाँ currency note नहीं",
-   "t": 9.65
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s111",
-   "text": "सामान / यहाँ currency note नहीं",
-   "t": 9.65
-  }
- ]
+ "warnings": []
 }
