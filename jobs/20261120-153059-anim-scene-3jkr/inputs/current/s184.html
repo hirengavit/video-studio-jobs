@@ -1,0 +1,78 @@
+<section class="vs-scene" id="s184" data-in="cut" data-section="PART 10 · SPECIAL BOXES &amp; BOOKING" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="mark">
+ <use id="mark-envelope" href="piece:domestic-envelope" transform="translate(352 290) scale(1.6)"/>
+ <text id="mark-heading" x="352" y="213" class="hi" font-size="56" font-weight="830" fill="#9e1b1b">Service का निशान</text>
+ <g id="mark-address-side">
+  <rect x="416" y="347" width="262" height="64" rx="17" fill="#f3ead6"/>
+  <text x="547" y="390" text-anchor="middle" font-family="Inter,sans-serif" font-size="35" font-weight="730" fill="#6f6a63">address side</text>
+ </g>
+ <rect id="mark-band" x="784" y="514" width="544" height="112" rx="10" fill="#fde9a6" fill-opacity=".75"/>
+ <rect id="amount-mark" x="1160" y="576" width="155" height="47" rx="8" fill="#f2b705" fill-opacity=".48"/>
+ <g id="service-marks" fill="#2b2622" font-weight="700">
+  <text id="registered-mark" x="805" y="559" font-family="Caveat, cursive" font-size="56">Registered</text>
+  <text id="insured-mark" x="805" y="613" font-family="Caveat, cursive" font-size="56">Insured for</text>
+  <text id="rupee-mark" x="1090" y="613" font-family="Caveat, cursive" font-size="56">Rs.</text>
+  <path id="amount-blank" d="M1170 612q62 3 137 0" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round"/>
+ </g>
+ <g id="amount-chip">
+  <rect x="1364" y="586" width="163" height="71" rx="35.5" fill="#fde9a6" stroke="#f2b705" stroke-width="3"/>
+  <text class="hi" x="1445.5" y="636" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="750" fill="#694700">रकम</text>
+ </g>
+</g>
+<g id="help">
+ <text class="hi" id="mark-help" x="140" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="790" fill="#9e1b1b">ये निशान</text>
+ <g id="helps-booking">
+  <rect x="140" y="340" width="790" height="420" rx="28" fill="#fff" stroke="#2e7d4f" stroke-width="5"/>
+  <circle cx="535" cy="465" r="61" fill="#e3f1e8"/>
+  <path id="helps-tick" d="M509 463l17 20 36-44" fill="none" stroke="#2e7d4f" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="hi" x="535" y="627" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="770" fill="#2e7d4f">booking में मदद</text>
+ </g>
+ <g id="replaces-booking">
+  <rect x="990" y="340" width="790" height="420" rx="28" fill="#eeeded" stroke="#4b4f58" stroke-width="4"/>
+  <g id="no-booking">
+   <circle cx="1385" cy="465" r="61" fill="#fff"/>
+   <path id="replaces-cross" d="M1361 441l48 48m0-48-48 48" fill="none" stroke="#4b4f58" stroke-width="11" stroke-linecap="round"/>
+  </g>
+  <text class="hi" x="1385" y="627" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="770" fill="#4b4f58">booking की जगह</text>
+ </g>
+</g>
+<g id="cod">
+ <g id="cod-term">
+  <rect x="140" y="170" width="960" height="160" rx="24" fill="#9e1b1b"/>
+  <rect x="154" y="184" width="932" height="132" rx="15" fill="none" stroke="#fde9a6" stroke-width="5" stroke-linecap="round" stroke-opacity=".72" stroke-dasharray="0 18"/>
+  <text x="190" y="242" font-family="Inter, sans-serif" font-size="60" font-weight="810" fill="#fff">Cash on delivery</text>
+  <text class="hi" id="cod-hi" x="190" y="295" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="650" fill="#fde9a6">डिलीवरी पर भुगतान</text>
+ </g>
+ <g id="agreement-doc">
+  <rect x="160" y="380" width="600" height="560" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+  <path d="M193 541H727" stroke="#ead9a8" stroke-width="3"/>
+  <g id="agreement-title">
+   <text x="214" y="467" font-family="Inter, sans-serif" font-size="49" font-weight="810" fill="#9e1b1b">Agreement</text>
+   <text class="hi" id="ag-hi" x="214" y="515" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="690" fill="#6f6a63">करार</text>
+  </g>
+  <text class="hi" x="214" y="623" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="41" font-weight="680" fill="#2b2622">संबंधित postal authority से</text>
+  <path d="M214 681H706 M214 738H670 M214 795H698 M214 851H490" fill="none" stroke="#6f6a63" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots: [[0,'#mark'],[1.82,'#help'],[6.88,'#cod']],
+ on:[
+  [0.70,'reveal','#amount-mark',{from:'left',dur:.30}],
+  [1.02,'pop','#amount-chip',{from:.94,spring:'soft'}],
+  [1.82,'fade','#mark-help',{dur:.26}],
+  [2.66,'pop','#helps-booking',{from:.96,spring:'soft'}],
+  [3.72,'draw','#helps-tick',{dur:.36}],
+  [5.06,'pop','#replaces-booking',{from:.96,spring:'soft'}],
+  [6.00,'fade','#no-booking',{dur:.16}],
+  [6.00,'draw','#replaces-cross',{dur:.35}],
+  [7.38,'fade','#cod-hi',{dur:.25}],
+  [8.66,'fade','#agreement-doc',{dur:.31}],
+  [10.78,'pop','#agreement-title',{from:.94,spring:'soft'}],
+  [11.28,'fade','#ag-hi',{dur:.24}]
+ ]
+}
+</script>
+</section>
