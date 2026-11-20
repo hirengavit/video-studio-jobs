@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.27",
+  "2.53",
+  "3.80",
+  "5.06",
+  "6.18"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s077",
+   "text": "बिना देर लौटना / defect report → Postmaster",
+   "t": 3.8
+  }
+ ]
+}
