@@ -8,18 +8,5 @@
   "12.29"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s164",
-   "text": "देता है / पाने वाला",
-   "t": 7.46
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s164",
-   "text": "देता है / भेजने वाला",
-   "t": 9.95
-  }
- ]
+ "warnings": []
 }
