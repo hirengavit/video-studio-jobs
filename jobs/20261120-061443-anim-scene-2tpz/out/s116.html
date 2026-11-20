@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s116" data-in="cut" data-section="PART 6 · VALUABLES &amp; INSURANCE" data-series="POST OFFICE RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="valuables-and-points">
+      <g id="insured-case">
+        <use href="piece:valuables-case" transform="translate(140 380)"/>
+        <g id="insured-stamp">
+          <g transform="rotate(-5 376 420)">
+            <rect x="251" y="392" width="250" height="56" rx="10" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="3"/>
+            <rect x="259" y="399" width="234" height="42" rx="6" fill="none" stroke="#d78380" stroke-width="1.6" stroke-dasharray="3 5"/>
+            <text x="376" y="432" text-anchor="middle" font-family="Inter, sans-serif" font-size="34" font-weight="850" fill="#fff">INSURED</text>
+          </g>
+        </g>
+      </g>
+      <g id="coin-rule">
+        <rect x="700" y="260" width="1100" height="160" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <circle cx="767" cy="340" r="37" fill="#9e1b1b"/>
+        <text x="767" y="355" text-anchor="middle" font-family="Inter, sans-serif" font-size="42" font-weight="800" fill="#fff">1</text>
+        <text id="coin-line" x="827" y="358" class="hi" font-size="50" font-weight="750" fill="#2b2622">Coins और currency notes</text>
+        <g id="insured-only">
+          <rect x="1474" y="303" width="286" height="74" rx="37" fill="#9e1b1b"/>
+          <text x="1617" y="354" text-anchor="middle" class="hi" font-size="41" font-weight="750" fill="#fff">सिर्फ insured</text>
+        </g>
+      </g>
+      <g id="jewellery-rule">
+        <rect x="700" y="470" width="1100" height="230" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <circle cx="767" cy="547" r="37" fill="#9e1b1b"/>
+        <text x="767" y="562" text-anchor="middle" font-family="Inter, sans-serif" font-size="42" font-weight="800" fill="#fff">2</text>
+        <text id="jewellery-en" x="827" y="550" font-family="Inter, sans-serif" font-size="56" font-weight="840" fill="#9e1b1b">JEWELLERY</text>
+        <text id="jewellery-hi" x="827" y="597" class="hi" font-size="40" font-weight="600" fill="#6f6a63">आभूषण</text>
+        <text id="watch-metals" x="827" y="666" class="hi" font-size="44" font-weight="720" fill="#2b2622">सोना · चाँदी · platinum</text>
+        <text id="watch-meaning" x="1280" y="666" class="hi" font-size="44" font-weight="720" fill="#2b2622">case वाली घड़ियाँ</text>
+        <g id="watch-icon" transform="translate(1690 577)" fill="none" stroke="#2b2622" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M-21-36l7-29h28l7 29m-42 72 7 29h28l7-29" fill="#f3ead6"/>
+          <path d="M-13-57h26m-26 114h26" stroke="#8c8f94"/>
+          <circle r="40" fill="#c8a06a"/>
+          <circle r="32" fill="#fff"/>
+          <path d="M0-23v6m0 34v6m-23-23h6m34 0h6m-23 0v-12m0 12 11 7m30-12h8v10h-8"/>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}]],
+    on: [
+      [0, 'words', '#coin-line', {gap: 0.39, dist: 14}],
+      [1.90, 'stamp', '#insured-stamp', {from: 1.36, spring: 'snap', rot: -4}],
+      [2.56, 'pop', '#insured-only', {from: 0.95, spring: 'snap'}],
+      [3.90, 'fade', '#jewellery-rule', {dur: 0.19}],
+      [3.90, 'type', '#jewellery-en', {cps: 33}],
+      [4.40, 'fade', '#jewellery-hi', {dur: 0.29}],
+      [4.70, 'words', '#watch-metals', {gap: 0.6, dist: 13}],
+      [7.10, 'fade', '#watch-meaning', {dur: 0.32}],
+      [7.86, 'draw', '#watch-icon', {dur: 0.52}]
+    ]
+  }
+  </script>
+</section>
