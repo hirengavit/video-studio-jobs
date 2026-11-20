@@ -8,12 +8,5 @@
   "8.91"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s116",
-   "text": "सोना · चाँदी · platinum / case वाली घड़ियाँ",
-   "t": 7.25
-  }
- ]
+ "warnings": []
 }
