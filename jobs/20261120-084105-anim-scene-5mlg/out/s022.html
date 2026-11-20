@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s022" data-in="cut" data-section="PART 1 · PACKING &amp; STRONG COVER" data-series="POST OFFICE RULES" lang="hi">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="env">
+      <use id="envelope-piece" href="piece:domestic-envelope" transform="translate(120 300) scale(1.4)"/>
+      <g id="adhesive-stamp">
+        <rect x="1004" y="361" width="112" height="142" rx="6" fill="#f3ead6" stroke="#9e1b1b" stroke-width="4" stroke-dasharray="2 8" stroke-linecap="round"/>
+        <rect x="1014" y="371" width="92" height="122" rx="3" fill="#9e1b1b"/>
+        <rect x="1025" y="383" width="70" height="91" rx="2" fill="none" stroke="#fde9a6" stroke-width="3"/>
+        <path d="M1036 445l15-22 12 14 11-15 10 23z" fill="#fde9a6"/>
+        <circle cx="1069" cy="408" r="8" fill="#fde9a6"/>
+      </g>
+      <g id="stamp-correct">
+        <path d="M1258 386l17 18 37-45" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <text id="stamp-rule-text" class="hi" x="1326" y="399" font-size="44" font-weight="740" fill="#2b2622">पूरा stamp article पर ही</text>
+      </g>
+      <g id="wrong-contents">
+        <path d="M1261 461l39 39m0-39-39 39" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+        <text class="hi" x="1326" y="496" font-size="41" font-weight="680" fill="#4b4f58">अंदर के सामान पर नहीं</text>
+      </g>
+      <g id="wrong-label">
+        <path d="M1261 584l39 39m0-39-39 39" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+        <text class="hi" x="1326" y="619" font-size="41" font-weight="680" fill="#4b4f58">अलग बँधे label पर नहीं</text>
+      </g>
+      <g id="tied-tag" stroke="#2b2622" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1137 705q50-30 74 27q-20-12-48 20" fill="none" stroke-width="4"/>
+        <path d="M1120 760l39-33 56 19 7 123-105 5z" fill="#e6cf9a" stroke-width="4"/>
+        <circle cx="1171" cy="755" r="7" fill="#fbf7ee" stroke-width="3"/>
+        <rect x="1143" y="782" width="51" height="66" rx="4" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="5" stroke-dasharray="2 6"/>
+        <path d="M1155 828l12-16 13 16" fill="none" stroke="#fde9a6" stroke-width="3"/>
+      </g>
+      <g id="tag-strike" stroke-linecap="round">
+        <path d="M1116 842l108-90" stroke="#fbf7ee" stroke-width="14"/>
+        <path d="M1116 842l108-90" stroke="#4b4f58" stroke-width="7.5"/>
+      </g>
+      <g id="address-place">
+        <rect x="1256" y="703" width="544" height="201" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1285" y="762" font-size="40" font-weight="800" fill="#9e1b1b">Address Side</text>
+        <text x="1285" y="816" font-size="40" font-weight="800" fill="#9e1b1b">Top Right-hand Corner</text>
+        <text id="place-hi" class="hi" x="1286" y="872" font-size="35" font-weight="670" fill="#2b2622">पता वाली तरफ़ · ऊपर दायाँ कोना</text>
+      </g>
+      <rect id="frank-zone" x="830" y="333" width="318" height="213" rx="13" fill="none" stroke="#f2b705" stroke-width="9"/>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0,{zoom:1}], [8.50,{zoom:1}], [9.60,{on:'#frank-zone',zoom:1.08}], [10.36,{zoom:1}]],
+    on: [
+      [.74,'slide','#wrong-contents',{from:'right',dist:17,spring:'soft'}],
+      [2.46,'draw','#tied-tag',{dur:.55}],
+      [4.60,'draw','#tag-strike',{dur:.34}],
+      [4.60,'slide','#wrong-label',{from:'right',dist:17,spring:'soft'}],
+      [6.94,'fade','#address-place',{dur:.30}],
+      [7.44,'fade','#place-hi',{dur:.27}],
+      [8.50,'draw','#frank-zone',{dur:.51}]
+    ]
+  }
+  </script>
+</section>
