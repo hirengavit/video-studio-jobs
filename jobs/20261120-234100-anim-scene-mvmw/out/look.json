@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.30",
+  "4.61",
+  "6.91",
+  "9.22",
+  "11.37"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "error",
+   "scene": "s123-s123",
+   "message": "the scene's script didn't run (a syntax error in its scene block?)",
+   "t": 0.3
+  }
+ ]
+}
