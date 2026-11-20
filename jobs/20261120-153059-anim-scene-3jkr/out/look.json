@@ -8,18 +8,5 @@
   "12.11"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s184",
-   "text": "Registered / Insured for",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s184",
-   "text": "Insured for / Rs.",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
