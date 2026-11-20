@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s118" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}' data-section="RECAP · PARTS 4–6" data-series="POST OFFICE RULES" lang="hi">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="envelope">
+      <rect x="160" y="170" width="1600" height="820" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M188 173H1732L960 327Z" fill="#f3ead6"/>
+      <path d="M188 173L960 327L1732 173" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linejoin="round"/>
+      <text x="960" y="262" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="800" fill="#9e1b1b">Part 4 से Part 6</text>
+      <circle cx="960" cy="327" r="40" fill="#9e1b1b"/>
+      <circle cx="960" cy="327" r="29" fill="none" stroke="#fde9a6" stroke-width="2.5" stroke-dasharray="4 6" stroke-linecap="round"/>
+      <text x="960" y="341" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="800" fill="#fde9a6">4</text>
+      <path d="M210 515H1710 M210 665H1710 M210 815H1710" fill="none" stroke="#ead9a8" stroke-width="2" opacity=".58"/>
+    </g>
+    <g id="r1-icon">
+      <rect x="210" y="375" width="180" height="136" rx="16" fill="#fbf7ee"/>
+      <use href="piece:double-receptacle" transform="translate(222 374) scale(0.30)"/>
+    </g>
+    <text id="r1-en" x="402" y="432" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#2b2622">DOUBLE RECEPTACLE</text>
+    <text id="r1-hi" x="402" y="478" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">दोहरा पात्र</text>
+    <g id="r1-pill">
+      <rect x="1120" y="409" width="540" height="68" rx="34" fill="#fde9a6"/>
+      <text x="1390" y="454" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="700" fill="#694700">पूरा liquid सोखने लायक चीज़</text>
+    </g>
+    <g id="r1-tick">
+      <circle cx="1694" cy="443" r="30" fill="#e3f1e8"/>
+      <path id="r1-mark" d="M1672 443l15 14 29-31" fill="none" stroke="#2e7d4f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="r2-icon">
+      <rect x="210" y="525" width="180" height="136" rx="16" fill="#fbf7ee"/>
+      <use href="piece:icon-insurance-shield" transform="translate(202 494.5) scale(0.49)"/>
+    </g>
+    <text id="r2-en" x="402" y="582" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#2b2622">LIQUIDS · PERISHABLES · FRAGILE</text>
+    <text id="r2-hi" x="402" y="628" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">द्रव · जल्द खराब · नाज़ुक</text>
+    <g id="r2-pill">
+      <rect x="1190" y="559" width="470" height="68" rx="34" fill="#fde9a6"/>
+      <text x="1425" y="604" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="700" fill="#694700">insurance सिर्फ loss का</text>
+    </g>
+    <g id="r2-tick">
+      <circle cx="1694" cy="593" r="30" fill="#e3f1e8"/>
+      <path id="r2-mark" d="M1672 593l15 14 29-31" fill="none" stroke="#2e7d4f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [2.62,'pop','#r1-icon',{from:0.85,spring:'soft'}],
+      [2.62,'type','#r1-en',{cps:30}],
+      [3.24,'fade','#r1-hi',{dur:0.27}],
+      [5.40,'pop','#r1-pill',{from:0.94,spring:'soft'}],
+      [6.66,'fade','#r1-tick',{dur:0.14}],
+      [6.66,'draw','#r1-mark',{dur:0.33}],
+      [7.44,'pop','#r2-icon',{from:0.85,spring:'soft'}],
+      [7.44,'type','#r2-en',{cps:12}],
+      [10.28,'fade','#r2-hi',{dur:0.27}],
+      [11.74,'pop','#r2-pill',{from:0.94,spring:'soft'}],
+      [12.60,'fade','#r2-tick',{dur:0.14}],
+      [12.60,'draw','#r2-mark',{dur:0.33}]
+    ]
+  }
+  </script>
+</section>
