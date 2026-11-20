@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g id="pins" fill="#c9962b" stroke="#2b2622" stroke-width="2.5">
+    <rect x="124" y="80" width="12" height="32" rx="3"/><rect x="159" y="80" width="12" height="32" rx="3"/><rect x="194" y="80" width="12" height="32" rx="3"/><rect x="229" y="80" width="12" height="32" rx="3"/><rect x="264" y="80" width="12" height="32" rx="3"/>
+    <rect x="124" y="288" width="12" height="32" rx="3"/><rect x="159" y="288" width="12" height="32" rx="3"/><rect x="194" y="288" width="12" height="32" rx="3"/><rect x="229" y="288" width="12" height="32" rx="3"/><rect x="264" y="288" width="12" height="32" rx="3"/>
+    <rect x="80" y="124" width="32" height="12" rx="3"/><rect x="80" y="159" width="32" height="12" rx="3"/><rect x="80" y="194" width="32" height="12" rx="3"/><rect x="80" y="229" width="32" height="12" rx="3"/><rect x="80" y="264" width="32" height="12" rx="3"/>
+    <rect x="288" y="124" width="32" height="12" rx="3"/><rect x="288" y="159" width="32" height="12" rx="3"/><rect x="288" y="194" width="32" height="12" rx="3"/><rect x="288" y="229" width="32" height="12" rx="3"/><rect x="288" y="264" width="32" height="12" rx="3"/>
+  </g>
+  <rect id="chip-body" x="108" y="108" width="184" height="184" rx="14" fill="#33363d" stroke="#2b2622" stroke-width="3"/>
+  <circle cx="130" cy="130" r="6" fill="#6f6a63"/>
+  <path id="shield" d="M200 146C222 158 238 160 252 158V202C252 230 230 246 200 258C170 246 148 230 148 202V158C162 160 178 158 200 146Z" stroke="#c9962b" stroke-width="5"/>
+  <circle data-anchor="base" cx="200" cy="320" r="0"/>
+</svg>
