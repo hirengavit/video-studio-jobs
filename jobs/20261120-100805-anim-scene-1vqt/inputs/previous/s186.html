@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s186" data-in="cut" data-section="PART 10 · SPECIAL BOXES &amp; BOOKING" data-series="POST OFFICE RULES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="air">
+ <g id="air-term">
+  <rect x="140" y="170" width="820" height="167" rx="23" fill="#9e1b1b"/>
+  <rect x="154" y="184" width="792" height="139" rx="16" fill="none" stroke="#fde9a6" stroke-width="5" stroke-linecap="round" stroke-opacity=".72" stroke-dasharray="0 18"/>
+  <text x="190" y="241" font-family="Inter, sans-serif" font-size="60" font-weight="800" fill="#fff">Airmail article</text>
+  <text class="hi" id="air-hi" x="190" y="297" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="660" fill="#fde9a6">हवाई डाक वस्तु</text>
+ </g>
+ <use id="air-envelope" href="piece:envelope-article" transform="translate(240 300) scale(1.6)"/>
+ <g id="air-stamps">
+  <g id="air-stamp-1" class="air-stamp" transform="translate(605 500)">
+   <rect width="44" height="57" rx="4" fill="#fff" stroke="#9e1b1b" stroke-width="2.5" stroke-dasharray="1 4" stroke-linecap="round"/>
+   <rect x="5" y="6" width="34" height="45" rx="2" fill="#fde9a6"/><circle cx="22" cy="24" r="9" fill="#f2b705" stroke="#9e1b1b" stroke-width="2"/>
+  </g>
+  <g id="air-stamp-2" class="air-stamp" transform="translate(655 500)">
+   <rect width="44" height="57" rx="4" fill="#fff" stroke="#9e1b1b" stroke-width="2.5" stroke-dasharray="1 4" stroke-linecap="round"/>
+   <rect x="5" y="6" width="34" height="45" rx="2" fill="#e7f1e8"/><path d="M13 33l9-17 9 17z" fill="#2e7d4f"/>
+  </g>
+  <g id="air-stamp-3" class="air-stamp" transform="translate(705 500)">
+   <rect width="44" height="57" rx="4" fill="#fff" stroke="#9e1b1b" stroke-width="2.5" stroke-dasharray="1 4" stroke-linecap="round"/>
+   <rect x="5" y="6" width="34" height="45" rx="2" fill="#f7e4dd"/><path d="M22 14l10 11-10 12-10-12z" fill="#9e1b1b"/>
+  </g>
+ </g>
+ <use id="air-counter" href="piece:counter-window" transform="translate(1080 502)"/>
+ <path id="handover-arrow" d="M896 620H1077m-24-19 24 19-24 19" fill="none" stroke="#6f6a63" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="air-office">
+  <rect x="1080" y="290" width="700" height="120" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1430" y="337" text-anchor="middle" font-family="Inter, sans-serif" font-size="45" font-weight="790" fill="#2b2622">Post office</text>
+  <text class="hi" id="mail-office" x="1430" y="389" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="690" fill="#2b2622">या mail office का counter</text>
+ </g>
+ <path id="ink-cancel" d="M595 518q11-7 22 0t22 0t22 0t22 0t22 0t22 0t22 0l8-1 M595 533q11-7 22 0t22 0t22 0t22 0t22 0t22 0t22 0l8-1 M595 548q11-7 22 0t22 0t22 0t22 0t22 0t22 0t22 0l8-1" fill="none" stroke="#2b2622" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="deface">
+  <rect x="300" y="824" width="520" height="138" rx="22" fill="#9e1b1b"/>
+  <rect x="312" y="836" width="496" height="114" rx="15" fill="none" stroke="#b8403a" stroke-width="3"/>
+  <text x="560" y="886" text-anchor="middle" font-family="Inter, sans-serif" font-size="50" font-weight="800" fill="#fff">Deface</text>
+  <text class="hi" id="deface-hi" x="560" y="932" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="690" fill="#fde9a6">रद्द करना</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [.73,'fade','#air-counter',{dur:.33}],
+  [1.39,'draw','#handover-arrow',{dur:.49}],
+  [2.21,'fade','#air-office',{dur:.32}],
+  [3.88,'fade','#mail-office',{dur:.27}],
+  [7.47,'pulse','#air-counter',{amount:.044}],
+  [8.65,'draw','#ink-cancel',{dur:.43}],
+  [8.65,'pop','#deface',{from:.94,spring:'soft'}],
+  [9.15,'fade','#deface-hi',{dur:.24}]
+ ]
+}
+</script>
+</section>
