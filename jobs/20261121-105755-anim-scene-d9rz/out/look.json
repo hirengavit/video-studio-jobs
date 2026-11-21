@@ -8,12 +8,5 @@
   "12.15"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "error",
-   "scene": "s023",
-   "message": "update(): $ is not defined",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
