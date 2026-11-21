@@ -8,5 +8,12 @@
   "10.99"
  ],
  "problems": [],
- "warnings": []
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s093",
+   "message": "pulse: option \"dur\" isn't used (it takes: amount)",
+   "t": 0.3
+  }
+ ]
 }
