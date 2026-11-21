@@ -2,7 +2,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Perforated initials are allowed in the printed stamp, but an enclosed postcard is not an open postcard">
 <rect width="1920" height="1080" fill="#fbf7ee"/>
 <g id="banned">
-  <text id="ban-intro" x="960" y="247" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="820" fill="#4b4f58">Postcard पर क्या मना है?</text>
   <g id="ban-1">
     <rect x="115" y="323" width="400" height="458" rx="27" fill="#eeece7" stroke="#b5afb0" stroke-width="3"/>
     <g transform="translate(315 508)" stroke="#4b4f58" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M-90-61H38l52 51v73H-90Z" fill="#fff"/><path d="M38-61v51h52M-64 4 43 47M-50-26l71 29" fill="none"/></g>
@@ -32,8 +31,8 @@
     <text x="960" y="915" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="63" font-weight="820" fill="#fff">मना</text>
   </g>
   <g id="exception">
-    <rect x="1419" y="190" width="383" height="86" rx="43" fill="#fde9a6"/>
-    <text x="1610.5" y="247" text-anchor="middle" font-family="'Noto Sans Devanagari',sans-serif" font-size="47" font-weight="770" fill="#694700">बस एक छूट</text>
+    <rect x="768.5" y="190" width="383" height="86" rx="43" fill="#fde9a6"/>
+    <text x="960" y="247" text-anchor="middle" font-family="'Noto Sans Devanagari',sans-serif" font-size="47" font-weight="770" fill="#694700">बस एक छूट</text>
   </g>
 </g>
 <g id="perf">
@@ -79,7 +78,7 @@
     <use href="piece:service-postcard" transform="translate(660 290)"/>
     <text x="980" y="356" font-family="Inter,sans-serif" font-size="22" font-weight="790" fill="#2b2622">POST CARD</text>
     <rect x="1130" y="378" width="84" height="22" fill="#9e1b1b"/>
-    <text x="1172" y="395" text-anchor="middle" font-family="Inter,sans-serif" font-size="18" font-weight="790" fill="#fff">50 p</text>
+    <text id="slide-denom" x="1172" y="395" text-anchor="middle" font-family="Inter,sans-serif" font-size="18" font-weight="790" fill="#fff">50 p</text>
   </g>
   <use href="piece:domestic-envelope" transform="translate(580 476)"/>
   <g id="not-postcard">
@@ -120,6 +119,7 @@
     [4.09,"pop","#dot-19",{from:0.75,spring:"fast"}],
     [4.54,"pop","#allowed-perf",{from:0.93,spring:"fast"}],
     [7.58,"move","#sliding-card",{by:[0,160],spring:"fast"}],
+    [7.83,"out","#slide-denom",{dur:0.12,scale:1}],
     [8.74,"fade","#not-postcard",{dur:0.28}],
     [10.14,"pop","#envelope-cross",{from:0.87,spring:"fast"}]
   ]
