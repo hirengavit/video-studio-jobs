@@ -1,0 +1,37 @@
+<section class="vs-scene" id="s202" data-in="cut" data-section="KEY POINTS" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="recap-b">
+      <rect id="env" x="126" y="181" width="1668" height="806" rx="36" fill="#fffdf8" stroke="#e5d1a5" stroke-width="4"/>
+      <path d="M145 184 960 388 1775 184" fill="#f3ead6" stroke="#e6d3a4" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M232 537H1688M232 664H1688M232 791H1688" stroke="#ead9b9" stroke-width="3" stroke-linecap="round"/>
+      <use id="window-mini" href="piece:window-envelope" transform="translate(828 201) scale(.44)"/>
+      <g id="seal">
+        <circle cx="960" cy="386" r="47" fill="#9e1b1b"/>
+        <circle cx="960" cy="386" r="36" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="5 6"/>
+        <rect x="937" y="373" width="46" height="26" rx="4" fill="none" stroke="#fff6d9" stroke-width="3"/>
+        <path d="M939 375l21 15 21-15" fill="none" stroke="#fff6d9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text id="r1" x="342" y="500" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="60" font-weight="810" fill="#2b2622">सिर्फ address block + barcode</text>
+      <g id="k1">
+        <circle cx="273" cy="480" r="31" fill="#e3f1e8"/>
+        <path d="M256 481l11 12 22-25" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <text id="r2" x="342" y="627" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="58" font-weight="810" fill="#2b2622">Window size ≠ barcode जगह: अलग जाँच</text>
+      <g id="k2">
+        <circle cx="273" cy="607" r="31" fill="#e3f1e8"/>
+        <path d="M256 608l11 12 22-25" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    on: [
+      [0,'fade','#r1',{dur:0.35}],
+      [3.54,'pop','#k1',{from:0.75,spring:'soft'}],
+      [4.06,'fade','#r2',{dur:0.40}],
+      [9.30,'pop','#k2',{from:0.75,spring:'soft'}]
+    ]
+  })
+  </script>
+</section>
