@@ -8,5 +8,12 @@
   "9.38"
  ],
  "problems": [],
- "warnings": []
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s076",
+   "text": "चाबी / · plates",
+   "t": 0.3
+  }
+ ]
 }
