@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s159" data-in="cut" data-section="PART 8 · MAIL CLASSES &amp; AIRMAIL" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Ordinary mail goes by rail for long distances and by road in town. Second-class airmail needs a mark and surcharge.">
+  <defs><clipPath id="s159-rail-road"><rect x="495" y="267" width="1260" height="153"/></clipPath></defs>
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <rect x="125" y="190" width="1670" height="360" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <text x="183" y="287" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="67" font-weight="810" fill="#2b2622">Ordinary डाक</text>
+  <g clip-path="url(#s159-rail-road)">
+   <use href="piece:transport-icons" transform="translate(594 205) scale(1.13)"/>
+  </g>
+  <g id="far-rail">
+   <rect x="610" y="443" width="445" height="76" rx="37" fill="#f3ead6"/>
+   <text x="832.5" y="495" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="740" fill="#2b2622">लंबी दूरी: rail</text>
+  </g>
+  <g id="town-road">
+   <rect x="1060" y="443" width="417" height="76" rx="37" fill="#f3ead6"/>
+   <text x="1268.5" y="495" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="740" fill="#2b2622">शहर: road</text>
+  </g>
+  <g id="air-conditions">
+   <rect x="125" y="580" width="1670" height="411" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <text x="184" y="666" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="820" fill="#9e1b1b">Second-class हवा से</text>
+   <g transform="translate(244 711)">
+    <path d="m0 46 73-45h590l-73 45z" fill="#ecddc1" stroke="#574335" stroke-width="4" stroke-linejoin="round"/>
+    <path d="m590 46 73-45v154l-73 67z" fill="#c8ab84" stroke="#574335" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="0" y="46" width="590" height="176" rx="4" fill="#f3ead6" stroke="#574335" stroke-width="4"/>
+    <g id="air-mark-detail" transform="translate(80 74) scale(.72)">
+     <use href="piece:airmail-label"/>
+     <text x="180" y="100" text-anchor="middle" font-family="Inter,sans-serif" font-size="70" font-weight="850" fill="#fff">AIR MAIL</text>
+    </g>
+    <g id="air-fee-detail" transform="translate(425 63) scale(.72)">
+     <use href="piece:adhesive-stamp"/>
+     <path d="M80 63v65m-30-33h60" fill="none" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round"/>
+    </g>
+   </g>
+   <g id="check-air-mark">
+    <rect x="1040" y="698" width="677" height="106" rx="23" fill="#edf5ec" stroke="#c2d9c3" stroke-width="3"/>
+    <circle cx="1095" cy="751" r="30" fill="#2e7d4f"/>
+    <path d="m1081 751 10 10 19-22" fill="none" stroke="#fff" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="1150" y="771" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="750" fill="#244432">निशान</text>
+   </g>
+   <g id="check-air-fee">
+    <rect x="1040" y="832" width="677" height="106" rx="23" fill="#edf5ec" stroke="#c2d9c3" stroke-width="3"/>
+    <circle cx="1095" cy="885" r="30" fill="#2e7d4f"/>
+    <path d="m1081 885 10 10 19-22" fill="none" stroke="#fff" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="1150" y="905" font-family="Inter,sans-serif" font-size="57" font-weight="750" fill="#244432">surcharge</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+   on: [
+     [1.36,"fade","#far-rail",{dur:.34}],
+     [3.06,"fade","#town-road",{dur:.34}],
+     [4.66,"slide","#air-conditions",{from:"down",dist:57,spring:"soft"}],
+     [6.70,"fade","#air-mark-detail, #check-air-mark",{dur:.27}],
+     [8.16,"fade","#air-fee-detail, #check-air-fee",{dur:.27}]
+   ]
+ })
+ </script>
+</section>
