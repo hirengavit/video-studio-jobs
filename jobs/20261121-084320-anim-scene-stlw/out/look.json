@@ -8,12 +8,5 @@
   "10.13"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s020",
-   "message": "highlight: \"accountable\" isn't in that <text> (it says \"\")",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
