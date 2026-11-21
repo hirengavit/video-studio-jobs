@@ -12,7 +12,7 @@
       <text id="dim-d-value" x="1515" y="456" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#2b2622">125 mm</text>
     </g>
     <g id="working">
-      <rect x="260" y="560" width="1400" height="420" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect id="working-surface" x="260" y="560" width="1400" height="420" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
       <g id="eq1">
         <text x="566" y="697" text-anchor="end" font-family="'Noto Sans Devanagari', sans-serif" font-size="58" font-weight="720" fill="#9e1b1b">जोड़</text>
         <text x="610" y="697" font-family="Georgia, serif" font-size="64" font-weight="700" fill="#2b2622">=</text>
@@ -33,6 +33,7 @@
       [2.28,"count","#dim-l-value",{to:750,dur:0.64,suffix:" mm"}],
       [6.18,"draw","#dim-d",{dur:0.48}],
       [6.18,"count","#dim-d-value",{to:125,dur:0.62,suffix:" mm"}],
+      [8.38,"fade","#working-surface",{dur:0.26}],
       [8.38,"fade","#eq1",{dur:0.26}],
       [9.58,"type","#eq1-length",{cps:15}],
       [11.38,"type","#eq1-times",{cps:16}],
