@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="coach"><rect x="28" y="158" width="148" height="106" rx="10" fill="#fbf7ee"/><path d="M28 222H176V237H28Z" fill="#9e1b1b" stroke="none"/><g id="coach-windows" fill="#f3ead6"><rect x="42" y="174" width="32" height="31" rx="3"/><rect x="86" y="174" width="32" height="31" rx="3"/><rect x="130" y="174" width="32" height="31" rx="3"/></g></g>
+<path id="coupler" d="M176 250H194" stroke-width="6"/>
+<g id="engine"><path d="M194 260V166Q194 150 210 150H343L373 181V260Z" fill="#fbf7ee"/><path d="M194 222H373V237H194Z" fill="#9e1b1b" stroke="none"/><path id="cab-window" d="M317 164H337L358 186V203H317Z" fill="#f3ead6"/><g id="grille"><path d="M211 178H284M211 188H284M211 198H284M211 208H284"/></g><path id="pantograph" d="M232 149L252 127L281 144L301 126M241 121H311"/><path d="M371 211H380V224H373" fill="#f3ead6"/><path d="M362 259L380 276H355" fill="#f3ead6"/></g>
+<g id="bogies" fill="#f3ead6"><rect x="42" y="255" width="51" height="22" rx="5"/><rect x="118" y="255" width="44" height="22" rx="5"/><rect x="211" y="255" width="50" height="22" rx="5"/><rect x="299" y="255" width="50" height="22" rx="5"/></g>
+<g id="wheels" fill="#2b2622"><circle cx="53" cy="278" r="10"/><circle cx="82" cy="278" r="10"/><circle cx="128" cy="278" r="10"/><circle cx="152" cy="278" r="10"/><circle cx="222" cy="278" r="10"/><circle cx="250" cy="278" r="10"/><circle cx="310" cy="278" r="10"/><circle cx="338" cy="278" r="10"/></g>
+<g id="wheel-hubs" fill="#f3ead6" stroke="none"><circle cx="53" cy="278" r="4"/><circle cx="82" cy="278" r="4"/><circle cx="128" cy="278" r="4"/><circle cx="152" cy="278" r="4"/><circle cx="222" cy="278" r="4"/><circle cx="250" cy="278" r="4"/><circle cx="310" cy="278" r="4"/><circle cx="338" cy="278" r="4"/></g>
+<path id="rail" d="M20 290H385" stroke-width="4"/>
+<circle data-anchor="base" cx="204" cy="290" r="0"/>
+</svg>
