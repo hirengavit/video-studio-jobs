@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 190" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <mask id="adhesive-stamp-ink-holes" maskUnits="userSpaceOnUse" x="0" y="0" width="160" height="190">
+      <rect x="0" y="0" width="160" height="190" fill="#fff"/>
+      <rect x="10" y="11" width="140" height="168" stroke="#000" stroke-width="4" stroke-dasharray="0 14" stroke-dashoffset="7"/>
+    </mask>
+    <mask id="adhesive-stamp-paper-holes" maskUnits="userSpaceOnUse" x="0" y="0" width="160" height="190">
+      <rect x="0" y="0" width="160" height="190" fill="#fff"/>
+      <rect x="10" y="11" width="140" height="168" stroke="#000" stroke-width="9" stroke-dasharray="0 14" stroke-dashoffset="7"/>
+    </mask>
+  </defs>
+  <g id="paper">
+    <rect x="7.5" y="8.5" width="145" height="173" fill="#2b2622" mask="url(#adhesive-stamp-ink-holes)"/>
+    <rect x="10" y="11" width="140" height="168" fill="#ffffff" mask="url(#adhesive-stamp-paper-holes)"/>
+  </g>
+  <rect id="border" x="20" y="21" width="120" height="148" rx="2" fill="#9e1b1b"/>
+  <rect id="centre" x="32" y="33" width="96" height="124" rx="2" fill="#ffffff"/>
+  <circle data-anchor="base" cx="80" cy="179" r="0"/>
+</svg>
