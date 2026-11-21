@@ -8,30 +8,5 @@
   "13.01"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s174",
-   "text": "क्या माना जाता है / Letter",
-   "t": 2.63
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s174",
-   "text": "− दिया postage (credit) / − दिया postage, फिर × 2",
-   "t": 2.63
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s174",
-   "text": "− दिया postage, फिर × 2 / − दिया postage, फिर × 2",
-   "t": 2.63
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s174",
-   "text": "शर्त नहीं दी गई / पैसे हों तो अगला रुपया",
-   "t": 2.63
-  }
- ]
+ "warnings": []
 }
