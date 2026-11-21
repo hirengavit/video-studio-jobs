@@ -1,0 +1,74 @@
+<section class="vs-scene" id="s006" data-duration="12.40" data-in="fade" data-in-dur="0.5" data-section="PART 1 · THREE FORMS, PRODUCT &amp; SERVICE" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="opener">
+  <rect x="187" y="301" width="11" height="43" rx="5" fill="#f2b705"/>
+  <text x="217" y="336" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="45" font-weight="800" fill="#9e1b1b">PART 1 · भाग 1</text>
+  <text x="187" y="486" font-family="Inter,sans-serif" font-size="100" font-weight="820" fill="#2b2622">Three forms,</text>
+  <text x="187" y="601" font-family="Inter,sans-serif" font-size="100" font-weight="820" fill="#2b2622">product &amp; service</text>
+  <text x="187" y="725" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="62" font-weight="790" fill="#9e1b1b">तीन रूप, product और service</text>
+  <path id="opener-underline" d="M192 758C397 744 610 773 1017 752" fill="none" stroke="#f2b705" stroke-width="9" stroke-linecap="round"/>
+  <g id="opener-stamp">
+    <rect x="1260" y="242" width="460" height="604" rx="24" fill="#9e1b1b"/>
+    <rect x="1260" y="242" width="460" height="604" rx="24" fill="none" stroke="#fbf7ee" stroke-width="15" stroke-dasharray="0 25" stroke-linecap="round"/>
+    <rect x="1302" y="284" width="376" height="405" rx="15" fill="#fbf7ee"/>
+    <g stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="1345" y="400" width="290" height="172" rx="16" fill="#f3ead6"/>
+      <path d="M1354 411L1490 506L1626 411M1354 562L1434 484M1626 562L1546 484" fill="none"/>
+    </g>
+    <text x="1490" y="802" text-anchor="middle" font-family="Inter,sans-serif" font-size="101" font-weight="820" fill="#fff">01</text>
+  </g>
+  <text id="opener-term" x="1490" y="941" text-anchor="middle" font-family="Inter,sans-serif" font-size="79" font-weight="820" fill="#2b2622">Letter</text>
+  <g id="part-progress">
+    <circle cx="198" cy="927" r="9" fill="#9e1b1b"/><circle cx="235" cy="927" r="9" fill="#e6dcc4"/><circle cx="272" cy="927" r="9" fill="#e6dcc4"/><circle cx="309" cy="927" r="9" fill="#e6dcc4"/><circle cx="346" cy="927" r="9" fill="#e6dcc4"/><circle cx="383" cy="927" r="9" fill="#e6dcc4"/><circle cx="420" cy="927" r="9" fill="#e6dcc4"/><circle cx="457" cy="927" r="9" fill="#e6dcc4"/><circle cx="494" cy="927" r="9" fill="#e6dcc4"/><circle cx="531" cy="927" r="9" fill="#e6dcc4"/>
+    <text x="576" y="945" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="44" font-weight="660" fill="#6f6a63">Part 1 of 10 · भाग 1 / 10</text>
+  </g>
+</g>
+<g id="letter">
+  <use id="letter-icons" href="piece:three-forms-icons" transform="translate(560 170) scale(.57)"/>
+  <rect x="160" y="450" width="1600" height="500" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <rect id="marker-current" x="429" y="537" width="204" height="71" rx="6" fill="#fde9a6"/>
+  <rect id="marker-personal" x="776" y="537" width="705" height="71" rx="6" fill="#fde9a6"/>
+  <text id="letter-quote" x="960" y="591" text-anchor="middle" font-family="Georgia,serif" font-size="69" fill="#2b2622">current and personal correspondence</text>
+  <text id="letter-gloss" x="960" y="695" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="55" font-weight="680" fill="#6f6a63">किसी व्यक्ति के नाम, अभी का और निजी पत्र-व्यवहार</text>
+  <text x="960" y="769" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="650" fill="#6f6a63">Post Office Regulations 2024, Reg. 2</text>
+  <g id="chip-secure">
+    <rect x="352" y="821" width="432" height="89" rx="44" fill="#f3ead6"/>
+    <text x="568" y="883" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="51" font-weight="760" fill="#2b2622">सुरक्षित बंद</text>
+  </g>
+  <g id="chip-postage">
+    <rect x="830" y="821" width="282" height="89" rx="44" fill="#f3ead6"/>
+    <text x="971" y="881" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="780" fill="#2b2622">postage</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0, '#opener'], [3.50, '#letter']],
+  on: [
+    [0.00,'type','#opener-term',{cps:22}],
+    [.68,'draw','#opener-underline',{dur:.52}],
+    [3.50,'fade','#marker-current',{dur:.18}],
+    [4.00,'fade','#marker-personal',{dur:.23}],
+    [5.18,'fade','#letter-gloss',{dur:.29}],
+    [9.10,'fade','#chip-secure',{dur:.24}],
+    [11.78,'fade','#chip-postage',{dur:.26}],
+  ],
+  update(t, section, $) {
+    $('#fill-letter').forEach(el => el.setAttribute('fill', '#f3ead6'));
+    for (const id of ['#icon-ilc','#icon-postcard']) $(id).forEach(el => el.setAttribute('opacity', '.40'));
+    const q = $('#letter-quote')[0];
+    if (t < 3.50 || !q) return;
+    const full = q.getComputedTextLength();
+    const left = 960 - full / 2;
+    for (const [id, start, count] of [['#marker-current',0,7],['#marker-personal',12,23]]) {
+      const band = $(id)[0];
+      if (!band || !full) continue;
+      const lead = start ? q.getSubStringLength(0, start) : 0;
+      band.setAttribute('x', left + lead - 10);
+      band.setAttribute('width', q.getSubStringLength(start, count) + 20);
+    }
+  }
+}
+</script>
+</section>
