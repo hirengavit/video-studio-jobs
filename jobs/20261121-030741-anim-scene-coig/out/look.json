@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "2.21",
+  "4.42",
+  "6.62",
+  "8.83",
+  "10.89"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s119",
+   "text": "Counter booking (1.9:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  }
+ ]
+}
