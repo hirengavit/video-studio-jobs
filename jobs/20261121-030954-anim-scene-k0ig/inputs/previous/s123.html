@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s123" data-in="cut" data-section="PART 7 · CHECKS AND EXTRA DUTIES" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Letter-box duty map: posting rules, attendant duties and the clearance process">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="map">
+    <g id="duty-branches" fill="none" stroke="#d4bd95" stroke-width="6" stroke-linecap="round">
+      <path d="M960 592L705 386M960 592L1215 386M960 592L705 811M960 592L1215 811"/>
+    </g>
+    <g id="core">
+      <circle cx="960" cy="592" r="207" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+      <circle cx="960" cy="592" r="197" fill="none" stroke="#fbf7ee" stroke-width="10" stroke-dasharray="0 24" stroke-linecap="round"/>
+      <text x="960" y="571" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="830" fill="#ffffff">Letter-box duty</text>
+      <text x="960" y="634" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="770" fill="#fde9a6">लेटर-बॉक्स ड्यूटी</text>
+    </g>
+    <g id="map-cards">
+      <g id="b1">
+        <rect x="115" y="252" width="620" height="218" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+        <g id="b1-title"><rect x="153" y="296" width="8" height="47" rx="4" fill="#9e1b1b"/>
+        <text x="184" y="338" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="820" fill="#2b2622">Posting के नियम</text></g>
+        <text id="b1-detail" x="184" y="411" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="710" fill="#6f6a63">box में क्या</text>
+      </g>
+      <g id="b2"><rect x="1185" y="252" width="620" height="218" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+        <g id="b2-title"><rect x="1223" y="296" width="8" height="47" rx="4" fill="#9e1b1b"/><text id="b2-title-text" x="1254" y="338" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="820" fill="#2b2622">Attendant duties</text></g>
+        <text id="b2-time" x="1254" y="392" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="710" fill="#6f6a63">समय</text>
+        <text id="b2-punctuality" x="1384" y="392" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="710" fill="#6f6a63">· punctuality</text>
+        <text id="b2-defect" x="1254" y="443" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="710" fill="#6f6a63">· defect report</text>
+      </g>
+      <g id="b3"><rect id="b3-shell" x="115" y="714" width="620" height="264" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/><rect id="b3-incoming-shell" x="115" y="714" width="620" height="218" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+        <g id="b3-title"><rect x="153" y="736" width="8" height="47" rx="4" fill="#9e1b1b"/><text id="b3-title-text" x="184" y="778" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="820" fill="#2b2622">Clearance की प्रक्रिया</text></g>
+        <text id="b3-equipment" x="184" y="838" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="710" fill="#6f6a63">सामान लेना</text>
+        <text id="b3-electronic" x="184" y="897" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="710" fill="#6f6a63">· electronic record</text>
+      </g>
+      <g id="b4"><rect x="1185" y="714" width="620" height="218" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/></g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0,'fade','#b2-title',{dur:.24}],
+    [1.78,'fade','#b2-time',{dur:.24}],
+    [3.16,'fade','#b2-punctuality',{dur:.24}],
+    [4.74,'words','#b2-defect',{gap:.38,dist:8}],
+    [6.46,'fade','#b3-shell',{dur:.20}],
+    [6.46,'out','#b3-incoming-shell',{dur:.15,scale:1}],
+    [6.46,'fade','#b3-title',{dur:.24}],
+    [8.24,'words','#b3-equipment',{gap:.45,from:'none',dist:0}],
+    [9.74,'words','#b3-electronic',{gap:.18,from:'none',dist:0}]
+  ]
+}
+</script>
+</section>
