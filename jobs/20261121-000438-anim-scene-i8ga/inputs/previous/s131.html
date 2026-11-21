@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s131" data-in="cut" data-section="KEY POINTS" data-series="LETTER BOXES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Key point three: know clearance, dispatch and arrival times; the hour plate shows the next clearance time">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text id="key-heading" x="140" y="216" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="61" font-weight="820" fill="#9e1b1b">सबसे ज़रूरी बातें</text>
+  <g id="p3">
+    <g id="p3-shell">
+      <rect x="680" y="271" width="1100" height="700" rx="32" fill="#f3ead6"/>
+      <rect x="680" y="260" width="1100" height="700" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M726 435h1008m-1008 175h1008m-1008 175h1008" stroke="#eee4d3" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g id="p3-stamp">
+      <rect x="140" y="271" width="460" height="700" rx="29" fill="#e4bc96"/>
+      <rect x="140" y="260" width="460" height="700" rx="29" fill="#9e1b1b"/>
+      <rect x="158" y="278" width="424" height="664" rx="19" fill="none" stroke="#fde9a6" stroke-opacity=".82" stroke-width="9" stroke-linecap="round" stroke-dasharray="0 22"/>
+      <circle cx="370" cy="493" r="120" fill="#821515" stroke="#d9786e" stroke-width="2.5"/>
+      <text id="p3-number" x="370" y="562" text-anchor="middle" font-family="Inter,sans-serif" font-size="185" font-weight="820" fill="#fff">3</text>
+      <path d="M213 646h314" stroke="#e5a39a" stroke-width="2"/>
+      <text id="p3-title" x="370" y="727" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="820" fill="#fff">समय और</text>
+      <text id="p3-hour-plate" x="370" y="790" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="820" fill="#fff">hour plate</text>
+    </g>
+    <g id="p3-row-1">
+      <g id="timing-clearance">
+        <use href="piece:clock-face" transform="translate(736 279) scale(.25)"/>
+        <text x="815" y="326" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="#2b2622">Clearance</text>
+      </g>
+      <g id="timing-dispatch">
+        <use href="piece:clock-face" transform="translate(1085 279) scale(.25)"/>
+        <text x="1164" y="326" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="#2b2622">Dispatch</text>
+      </g>
+      <g id="timing-arrival">
+        <use href="piece:clock-face" transform="translate(1391 279) scale(.25)"/>
+        <text x="1470" y="326" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="800" fill="#2b2622">आना</text>
+      </g>
+      <g id="punctual-fact">
+        <text x="738" y="401" font-family="Inter,sans-serif" font-size="45" font-weight="760" fill="#2b2622">Clearance:</text>
+        <text id="punctual" x="1002" y="401" font-family="Inter,sans-serif" font-size="46" font-weight="810" fill="#2b2622">punctual</text>
+      </g>
+      <path id="p3-row-1-tick" d="m1678 350 17 17 33-40" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="p3-row-2">
+      <g id="next-hour-plate"><use href="piece:hour-plate" transform="translate(740 484) scale(1.04)"/></g>
+      <text id="next-time" x="970" y="543" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="770" fill="#2b2622">अगली clearance का समय</text>
+      <path id="p3-row-2-tick" d="m1678 525 17 17 33-40" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,'fade','#timing-clearance',{dur:.22}],
+  [1.22,'fade','#timing-dispatch',{dur:.22}],
+  [2.78,'fade','#timing-arrival',{dur:.22}],
+  [4.66,'draw','#p3-row-1-tick',{dur:.29}],
+  [5.62,'fade','#punctual-fact',{dur:.23}],
+  [6.08,'fade','#punctual',{dur:.20}],
+  [6.08,'highlight','#punctual',{color:'#fde9a6',opacity:.75,dur:.32,pad:9}],
+  [7.36,'fade','#next-hour-plate',{dur:.23}],
+  [8.18,'fade','#next-time',{dur:.23}],
+  [10.14,'draw','#p3-row-2-tick',{dur:.29}]
+ ]
+}
+</script>
+</section>
