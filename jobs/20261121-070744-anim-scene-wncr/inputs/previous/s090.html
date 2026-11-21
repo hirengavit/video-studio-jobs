@@ -1,0 +1,73 @@
+<section class="vs-scene" id="s090" data-in="cut" data-section="PART 3 · CIRCLE TO SUB-DIVISION" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="hierarchy-a">
+      <text x="160" y="188" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#9e1b1b">Circle स्तर</text>
+      <g id="hol">
+        <rect x="560" y="220" width="800" height="180" rx="24" fill="#fbf7ee" stroke="#9e1b1b" stroke-width="3"/>
+        <rect id="hol-fill" x="560" y="220" width="800" height="180" rx="24" fill="#9e1b1b"/>
+        <g id="hol-labels" text-anchor="middle">
+          <text id="hol-en" x="960" y="300" font-family="Inter, sans-serif" font-size="52" font-weight="750" fill="#fff">Head of Logistics</text>
+          <text id="hol-hi" x="960" y="356" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="600" fill="#fff">लॉजिस्टिक्स प्रमुख</text>
+        </g>
+      </g>
+      <g id="sales">
+        <rect x="160" y="620" width="700" height="180" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <g id="sales-labels" text-anchor="middle">
+          <text id="sales-en" x="510" y="700" font-family="Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">Head of Sales</text>
+          <text id="sales-hi" x="510" y="756" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">बिक्री प्रमुख</text>
+        </g>
+      </g>
+      <g id="trans">
+        <rect x="1060" y="620" width="700" height="180" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <g id="trans-labels" text-anchor="middle">
+          <text id="trans-en" x="1410" y="700" font-family="Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">Head of Transportation</text>
+          <text id="trans-hi" x="1410" y="756" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">परिवहन प्रमुख</text>
+        </g>
+      </g>
+      <path id="sales-to-hol" d="M510 609V509Q510 488 531 488H760Q785 488 785 463V415M770 430L785 415L800 430" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="trans-to-hol" d="M1410 609V509Q1410 488 1389 488H1160Q1135 488 1135 463V415M1120 430L1135 415L1150 430" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="report-label" x="960" y="545" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650">रिपोर्ट करते हैं</text>
+    </g>
+    <g id="hierarchy-b">
+      <g id="pd">
+        <rect x="460" y="260" width="1000" height="200" rx="24" fill="#9e1b1b" stroke="#9e1b1b" stroke-width="3"/>
+        <g id="pd-labels" text-anchor="middle">
+          <text id="pd-en" x="960" y="340" font-family="Inter, sans-serif" font-size="52" font-weight="750" fill="#fff">Postal Divisions</text>
+          <text id="pd-hi" x="960" y="396" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="600" fill="#fff">डाक मंडल</text>
+        </g>
+      </g>
+      <g id="po">
+        <rect x="460" y="640" width="1000" height="200" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <g id="po-labels" text-anchor="middle">
+          <text id="po-en" x="960" y="720" font-family="Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">Post Offices</text>
+          <text id="po-hi" x="960" y="776" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">डाकघर</text>
+        </g>
+      </g>
+      <path id="oversight-arrow" d="M960 473V624M943 607L960 624L977 607" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="oversight-label" x="995" y="561" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="650">निगरानी</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0.00, '#hierarchy-a'], [6.36, '#hierarchy-b']],
+    on: [
+      [0.84, 'fade', '#sales', {dur: 0.2}],
+      [0.84, 'words', '#sales-en', {gap: 0.2, dist: 12}],
+      [1.25, 'fade', '#sales-hi', {dur: 0.2}],
+      [1.92, 'fade', '#trans', {dur: 0.2}],
+      [1.92, 'words', '#trans-en', {gap: 0.28, dist: 12}],
+      [2.45, 'fade', '#trans-hi', {dur: 0.2}],
+      [2.94, 'fade', '#hol-fill', {dur: 0.30}],
+      [2.94, 'words', '#hol-en', {gap: 0.48, dist: 12}],
+      [3.41, 'fade', '#hol-hi', {dur: 0.2}],
+      [5.22, 'draw', '#sales-to-hol, #trans-to-hol', {dur: 0.5}],
+      [5.39, 'fade', '#report-label', {dur: 0.2}],
+      [6.36, 'pop', '#po', {from: 0.97}],
+      [8.68, 'pop', '#pd', {from: 0.97}],
+      [8.82, 'draw', '#oversight-arrow', {dur: 0.44}],
+      [9.07, 'fade', '#oversight-label', {dur: 0.2}],
+    ],
+  }
+  </script>
+</section>
