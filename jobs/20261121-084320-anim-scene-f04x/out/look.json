@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.22",
+  "4.43",
+  "6.65",
+  "8.86",
+  "10.93"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "error",
+   "scene": "s054",
+   "message": "update(): $(...).setAttribute is not a function",
+   "t": 0.3
+  }
+ ]
+}
