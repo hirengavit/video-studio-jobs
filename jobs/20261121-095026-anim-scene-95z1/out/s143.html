@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s143" data-in="cut" data-section="PART 8 · MAIL CLASSES &amp; AIRMAIL" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif" fill="#2b2622">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="book-packet">
+      <g id="env">
+        <use href="piece:domestic-envelope" transform="translate(390 220) scale(1.5)"/>
+        <text id="packet-marking" x="875" y="357" text-anchor="middle" font-size="69" font-weight="820">BOOK PACKET</text>
+        <text id="mark-greetings" x="632" y="453" text-anchor="middle" font-family="Georgia, serif" font-size="56" font-weight="700" fill="#2b2622">Greetings</text>
+        <text id="mark-or" x="801" y="453" text-anchor="middle" font-family="Georgia, serif" font-size="45" font-weight="660" fill="#6f6a63">or</text>
+        <text id="mark-invitations" x="976" y="453" text-anchor="middle" font-family="Georgia, serif" font-size="56" font-weight="700" fill="#2b2622">Invitations</text>
+      </g>
+      <g id="greeting-card" transform="translate(109 408)" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="241" height="242" rx="20" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M55 51l124-9 10 146-124 9z" fill="#f3ead6" stroke="#2b2622" stroke-width="4"/>
+        <path d="M68 61l101-7 9 124-101 8z" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+        <path d="M119 92c-12-24-43-7-23 14l29 25 24-29c14-24-18-37-30-10z" fill="#9e1b1b" stroke="none"/>
+        <path d="M104 157l48-4M109 168l39-3" stroke="#6f6a63" stroke-width="4"/>
+      </g>
+      <g id="printed-invitation" transform="translate(1570 408)" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="241" height="242" rx="20" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <rect x="63" y="42" width="115" height="158" rx="8" fill="#f3ead6" stroke="#2b2622" stroke-width="4"/>
+        <rect x="73" y="53" width="95" height="136" rx="5" fill="#fbf7ee" stroke="#e0caa5" stroke-width="3"/>
+        <path d="M121 68l12 16-12 15-12-15z" fill="#9e1b1b" stroke="none"/>
+        <path d="M92 121h59m-52 17h45m-47 17h49m-40 16h32" stroke="#6f6a63" stroke-width="4"/>
+      </g>
+      <g id="only-these">
+        <rect x="663" y="694" width="600" height="84" rx="18" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="963" y="751" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750">सिर्फ ये हों</text>
+      </g>
+      <g id="route-chip">
+        <rect x="164" y="869" width="1592" height="106" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+        <text id="route-copy" x="960" y="937" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="745">First-class mail + registered newspapers के साथ</text>
+        <g id="surface-addon">
+          <rect x="1430" y="888" width="296" height="68" rx="34" fill="#fde9a6"/>
+          <g id="road" transform="translate(1449 903)" fill="none" stroke="#695440" stroke-width="4" stroke-linecap="round">
+            <path d="M3 6H66 M3 30H66"/><path d="M4 18H65" stroke-dasharray="9 8"/>
+          </g>
+          <text x="1542" y="937" font-family="Inter,sans-serif" font-size="42" font-weight="780" fill="#694700">→ surface</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur:10.30,
+    camera:[[0,{zoom:1}],[1.74,{zoom:1}],[2.56,{on:"#env",zoom:1.30},"inOut"]],
+    on:[
+      [0.00,"move","#route-copy",{by:[-110,0],spring:"fast"}],
+      [0.18,"pop","#surface-addon",{from:.94,spring:"fast"}],
+      [1.74,"out","#route-chip, #only-these, #greeting-card, #printed-invitation",{dur:.32,scale:1}],
+      [3.52,"highlight","#packet-marking",{color:"#fde9a6",opacity:.92,pad:10,dur:.40}],
+      [7.32,"type","#mark-greetings",{cps:24}],
+      [7.80,"fade","#mark-or",{dur:.24}],
+      [8.72,"type","#mark-invitations",{cps:23}]
+    ]
+  })
+  </script>
+</section>
