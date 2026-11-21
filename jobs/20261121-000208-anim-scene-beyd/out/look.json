@@ -8,12 +8,5 @@
   "8.77"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s092",
-   "text": "= / electronic record",
-   "t": 7.14
-  }
- ]
+ "warnings": []
 }
