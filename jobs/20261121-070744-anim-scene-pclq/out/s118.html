@@ -1,0 +1,27 @@
+<section class="vs-scene" id="s118" data-in="cut" data-section="PART 4 · CIRCLES &amp; HEADQUARTERS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" text-anchor="middle" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="goa">
+      <g id="goa-pill">
+        <rect x="160" y="400" width="600" height="280" rx="46" fill="#fde9a6" stroke="#dfa61c" stroke-width="3" filter="url(#vs-shadow)"/>
+        <text x="460" y="536" font-size="80" font-weight="800" fill="#2b2622">Goa</text>
+        <text x="460" y="615" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="59" font-weight="700" fill="#6f6a63">गोवा</text>
+      </g>
+      <path id="goa-arrow" d="M792 540 H930 M907 517 L930 540 L907 563" fill="none" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="maharashtra">
+        <rect x="960" y="360" width="800" height="360" rx="35" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+        <text x="1360" y="535" font-size="66" font-weight="800" fill="#fff">Maharashtra Circle</text>
+        <text x="1360" y="620" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="700" fill="#fde9a6">महाराष्ट्र परिमंडल</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.00, 'pop', '#goa-pill', {from: 0.88, spring: 'soft'}],
+      [1.18, 'draw', '#goa-arrow', {dur: 0.44}],
+      [1.18, 'slide', '#maharashtra', {from: 'right', dist: 105, spring: 'soft'}],
+    ],
+  }
+  </script>
+</section>
