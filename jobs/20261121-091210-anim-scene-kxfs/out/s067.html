@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s067" data-in="cut" data-section="PART 4 · WINDOW ENVELOPE" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="panel-rules">
+      <use id="panel-envelope" href="piece:window-envelope" transform="translate(120 300) scale(1.5)"/>
+      <rect id="settled-address-highlight" x="388" y="502" width="320" height="58" rx="5" fill="#f2b705" opacity=".35"/>
+      <path id="settled-address-lines" d="M399 507h241.5m-241.5 24h298.5m-298.5 24h195" fill="none" stroke="#535e64" stroke-width="3.9" stroke-linecap="round"/>
+      <g id="parallel-arrow" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M142 271H998M142 271l21-15m-21 15 21 15m835-15-21-15m21 15-21 15"/>
+      </g>
+      <text id="panel-heading" class="hi" x="1081" y="260" font-size="71" font-weight="800" fill="#9e1b1b">Panel की 3 बातें</text>
+      <g id="rows">
+        <rect x="1080" y="323" width="724" height="169" rx="26" fill="#fffdf7" stroke="#e0cbb7" stroke-width="3"/>
+        <rect x="1080" y="523" width="724" height="169" rx="26" fill="#fffdf7" stroke="#e0cbb7" stroke-width="3"/>
+        <rect x="1080" y="723" width="724" height="169" rx="26" fill="#fffdf7" stroke="#e0cbb7" stroke-width="3"/>
+        <g fill="#9e1b1b">
+          <circle cx="1155" cy="408" r="33"/><circle cx="1155" cy="608" r="33"/><circle cx="1155" cy="808" r="33"/>
+        </g>
+        <g fill="#fffdf7" font-size="39" font-weight="800" text-anchor="middle">
+          <text x="1155" y="422">1</text><text x="1155" y="622">2</text><text x="1155" y="822">3</text>
+        </g>
+        <g id="point1" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="735" fill="#2c2421">
+          <text class="hi" x="1225" y="402" font-size="55">सबसे लंबी side</text>
+          <text class="hi" x="1225" y="461" font-size="51">के parallel</text>
+        </g>
+        <g id="point2" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="735" fill="#2c2421">
+          <text class="hi" x="1225" y="602" font-size="55">address साफ़</text>
+          <text class="hi" x="1225" y="661" font-size="51">पढ़ा जाए</text>
+        </g>
+        <g id="point3" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="735" fill="#2c2421">
+          <text class="hi" x="1225" y="802" font-size="55">date stamp में</text>
+          <text class="hi" x="1225" y="861" font-size="51">रुकावट नहीं</text>
+        </g>
+      </g>
+      <g id="panel-postmark">
+        <use href="piece:round-postmark" transform="translate(813 561) scale(.39)"/>
+      </g>
+      <path id="sheet-edge" d="M375 584v-88q0-7 7-7h255" stroke="#a8894b" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+      <g id="fold-tip">
+        <rect x="120" y="792" width="900" height="212" rx="31" fill="#fde9a6"/>
+        <rect x="157" y="828" width="8" height="134" rx="4" fill="#f2b705"/>
+        <text id="fold-tip-a" x="196" y="872" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="760" fill="#2c2421">अंदर का कागज़ ऐसे मोड़ें</text>
+        <text id="fold-tip-b" x="196" y="942" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="700" fill="#2c2421">कि address न छिपे</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur:9.06,
+    on:[
+      [0.50,"fade","#point3",{dur:.29}],
+      [0.50,"pop","#panel-postmark",{from:.90,spring:"fast"}],
+      [3.41,"fade","#fold-tip",{dur:.27}],
+      [3.41,"words","#fold-tip-a",{gap:.40,dist:9,from:"down"}],
+      [3.41,"fade","#sheet-edge",{dur:.20}],
+      [5.38,"move","#sheet-edge",{by:[0,-8],spring:"fast"}],
+      [6.07,"words","#fold-tip-b",{gap:.48,dist:9,from:"down"}]
+    ]
+  })
+  </script>
+</section>
