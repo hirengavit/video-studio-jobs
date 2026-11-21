@@ -22,12 +22,12 @@
 
   <g id="right-half-chip">
    <rect x="957" y="573" width="811" height="124" rx="24" fill="#faebbc" stroke="#e4c56d" stroke-width="3"/>
-   <text x="990" y="626" font-family="Inter,sans-serif" font-size="46" font-weight="820" fill="#762d1b">Right-hand half: address, postage</text>
+   <text x="990" y="626" font-family="Inter,sans-serif" font-size="42" font-weight="820" fill="#762d1b">Right-hand half: address, postage</text>
    <text id="postal-directions" x="990" y="677" font-family="Inter,sans-serif" font-size="40" font-weight="780" fill="#762d1b">+ postal directions</text>
   </g>
   <g id="photo-copy" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" fill="#2b2622">
-   <text x="960" y="800" font-size="53" font-weight="800">बहुत पतली photo: तभी ठीक,</text>
-   <text x="960" y="884" font-size="53" font-weight="800">जब पूरी चिपकी</text>
+   <text id="photo-line-one" class="hi" x="960" y="800" font-size="53" font-weight="800">बहुत पतली photo: तभी ठीक,</text>
+   <text id="photo-line-two" class="hi" x="960" y="884" font-size="53" font-weight="800">जब पूरी चिपकी</text>
   </g>
   <rect id="photo-bed" x="167" y="624" width="266" height="1" opacity="0"/>
   <g id="photo-visible">
@@ -47,7 +47,8 @@
   [0,"fade","#right-half-tint",{dur:.25}],
   [.62,"pulse","#right-half-tint",{amount:.021}],
   [3.62,"fade","#postal-directions",{dur:.22}],
-  [5.22,"words","#photo-copy text",{gap:.36,dist:8}],
+  [5.22,"fade","#photo-line-one",{dur:.32}],
+  [7.88,"fade","#photo-line-two",{dur:.32}],
   [6.12,"place","#photo-prop",{on:"#photo-bed",x:299}],
   [6.12,"fade","#photo-visible",{dur:.28}]
  ]
