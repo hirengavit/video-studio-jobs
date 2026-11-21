@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s105" data-in="cut" data-section="PART 6 · POSTCARD CONDITIONS" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="Inter, sans-serif" fill="#2b2622">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="back">
+      <g id="small-address-side">
+        <text x="512.5" y="283" text-anchor="middle" font-size="59" font-weight="810" fill="#9e1b1b">Address side</text>
+        <use href="piece:service-postcard" transform="translate(167 325) scale(1.15)"/>
+        <rect x="174" y="334" width="335" height="419" rx="8" fill="#fde9a6" opacity=".60" style="mix-blend-mode:multiply"/>
+        <text x="536" y="398" font-size="25" font-weight="780">POST CARD</text>
+        <rect x="708" y="426" width="95" height="25" fill="#9e1b1b"/>
+        <text x="755.5" y="447" text-anchor="middle" font-size="21" font-weight="800" fill="#fff">50 p</text>
+        <path id="front-message" d="M210 471q32-9 67 0t66 0 107 0m-240 43q35-11 71 0t60 0 112 0m-243 44q33-9 73 0t64 0 68 0m-205 45q38-10 75 0t85 0" fill="none" stroke="#725637" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <g id="postcard-back">
+        <rect x="1063" y="325" width="690" height="437" rx="13" fill="#f3ead6" stroke="#2b2622" stroke-width="4"/>
+        <rect x="1071" y="334" width="674" height="419" rx="8" fill="#fde9a6" opacity=".60" style="mix-blend-mode:multiply"/>
+        <text id="back-side-label" x="1408" y="283" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="810" fill="#9e1b1b">पीछे की side</text>
+        <g id="sender-corner">
+          <rect x="1093" y="352" width="302" height="134" rx="12" fill="#fffaf0" stroke="#b8771d" stroke-width="4" stroke-dasharray="9 7"/>
+          <text id="sender-address-label" x="1111" y="399" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="34" font-weight="800" fill="#694700">Sender का address</text>
+          <path id="sender-address-lines" d="M1113 426h230m-230 26h169" fill="none" stroke="#8e6f3c" stroke-width="4" stroke-linecap="round"/>
+        </g>
+        <path id="back-message" d="M1116 506q33-9 68 0t79 0 97 0m-244 45q36-10 72 0t72 0 104 0m-248 45q33-9 78 0t87 0 73 0m-238 45q26-9 64 0t90 0" fill="none" stroke="#725637" stroke-width="5" stroke-linecap="round"/>
+        <g id="one-colour-ad">
+          <rect x="1420" y="433" width="260" height="100" rx="9" fill="#fffaf0" stroke="#9e1b1b" stroke-width="3"/>
+          <circle cx="1464" cy="483" r="22" fill="#9e1b1b"/>
+          <path d="M1507 466h130m-130 34h95" stroke="#9e1b1b" stroke-linecap="round" stroke-width="9"/>
+        </g>
+        <g id="multi-colour-ad">
+          <rect x="1420" y="573" width="260" height="100" rx="9" fill="#fffaf0" stroke="#2456a6" stroke-width="3"/>
+          <path d="M1441 648l33-50 36 50z" fill="#2e7d4f"/>
+          <circle cx="1515" cy="601" r="12" fill="#f2b705"/>
+          <path d="M1550 604h96" stroke="#2456a6" stroke-width="8" stroke-linecap="round"/>
+          <path d="M1550 636h78" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+        </g>
+      </g>
+      <g id="message-use">
+        <rect x="167" y="802" width="690" height="92" rx="45" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="512" y="865" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="55" font-weight="800">संदेश के लिए</text>
+      </g>
+      <g id="advertisement-tag">
+        <rect x="1063" y="802" width="690" height="92" rx="45" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1408" y="865" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="55" font-weight="800">छपा advertisement</text>
+      </g>
+    </g>
+    <g id="four-attachments-banner">
+      <rect x="167" y="927" width="1586" height="95" rx="27" fill="#9e1b1b"/>
+      <text id="four-attachments-text" x="960" y="994" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="790" fill="#fff">Postcard पर सिर्फ 4 चीज़ें जुड़ सकती हैं</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    on:[
+      [1.14,"fade","#sender-corner",{dur:.34}],
+      [1.14,"draw","#sender-address-lines",{dur:.63}],
+      [1.34,"highlight","#sender-address-label",{color:"#fde9a6",opacity:.95,pad:5,dur:.38}],
+      [6.93,"fade","#four-attachments-banner",{dur:.38}],
+      [6.93,"words","#four-attachments-text",{gap:.36,dist:12,from:"down"}]
+    ]
+  })
+  </script>
+</section>
