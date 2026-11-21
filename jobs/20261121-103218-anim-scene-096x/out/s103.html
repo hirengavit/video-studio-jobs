@@ -60,7 +60,8 @@
     [10.85,{zoom:1}],
   ],
   on:[
-    [2.74,'pulse','#service-postcard-stamp',{amount:.06,dur:.43}],
+    [.02,'out','#right-half-keyword',{dur:.28}],
+    [2.74,'pulse','#service-postcard-stamp',{amount:.06}],
     [2.74,'fade','#corner-cue',{dur:.25}],
     [5.52,'fade','#stamp-guide',{dur:.35}],
     [5.52,'fade','#guide-cue',{dur:.25}],
@@ -70,9 +71,8 @@
   ],
   update(t, section, $) {
     const fade = Math.max(0, Math.min(1, t / .45));
-    for (const id of ['#tag-address','#tag-postage','#tag-directions','#three-badge','#address-emphasis','#extra-stamp','#franking-mark','#right-half-keyword']) {
-      const node = $(id);
-      if (node) node.setAttribute('opacity', 1 - .76 * fade);
+    for (const id of ['#tag-address','#tag-postage','#tag-directions','#three-badge','#address-emphasis','#extra-stamp','#franking-mark']) {
+      for (const node of $(id)) node.setAttribute('opacity', 1 - .76 * fade);
     }
   },
 }
