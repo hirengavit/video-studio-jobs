@@ -1,0 +1,35 @@
+<section class="vs-scene" id="s115" data-duration="12.76" data-section="PART 6 · POSTCARD CONDITIONS" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="dir">
+  <text x="960" y="264" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="72" font-weight="820" fill="#2b2622">लिखे जा सकते हैं</text>
+  <g id="dir-postcard" transform="translate(535 316) scale(1.42)">
+    <use href="piece:service-postcard"/>
+    <text x="317" y="63" font-family="Inter,sans-serif" font-size="22" font-weight="820" fill="#2b2622">POST CARD</text>
+    <text x="512" y="104" text-anchor="middle" font-family="Inter,sans-serif" font-size="16" font-weight="800" fill="#fff">50 p</text>
+    <text id="air-mail-direction" x="35" y="135" font-family="Caveat,cursive" font-size="56" font-weight="700" fill="#2456a6">Air Mail</text>
+    <text id="late-fee-direction" x="35" y="221" font-family="Caveat,cursive" font-size="48" font-weight="700" fill="#2b2622">Late Fee Paid</text>
+    <text id="await-arrival" x="35" y="302" font-family="Caveat,cursive" font-size="48" font-weight="700" fill="#2b2622">To await arrival</text>
+  </g>
+  <g id="restante-term">
+    <rect x="1420" y="448" width="389" height="191" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text x="1614.5" y="526" text-anchor="middle" font-family="Inter, sans-serif" font-size="47" font-weight="810" fill="#9e1b1b">Poste restante</text>
+    <text id="restante-gloss" x="1614.5" y="592" text-anchor="middle" font-family="Noto Sans Devanagari, sans-serif" font-size="41" font-weight="700" fill="#6f6a63">डाकघर में रुकी डाक</text>
+  </g>
+  <g id="restante-allowed">
+    <rect x="326" y="898" width="1268" height="101" rx="50.5" fill="#e3f1e8" stroke="#2e7d4f" stroke-width="4"/>
+    <text x="960" y="968" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="58" font-weight="790" fill="#215b3e">postcard poste restante जा सकता है</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+  on:[
+    [1.04,'fade','#restante-term',{dur:0.35}],
+    [1.54,'fade','#restante-gloss',{dur:0.34}],
+    [3.64,'reveal','#await-arrival',{from:'left',dur:1.10}],
+    [5.66,'pop','#restante-allowed',{from:0.94,spring:'soft'}]
+  ]
+})
+</script>
+</section>
