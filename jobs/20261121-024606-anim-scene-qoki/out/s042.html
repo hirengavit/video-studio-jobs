@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s042" data-in="cut" data-section="RECAP · PARTS 1 AND 2" data-series="LETTER BOXES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="भाग 1 और 2 का दोहराव: सूची की पूरी प्रीपेड डाक पत्र पेटी में, छोटे पैकेट नहीं।">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="recap-envelope">
+    <rect x="260" y="220" width="1400" height="780" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <path d="M288 222H1632Q1658 222 1658 248V260L960 374 262 260V248Q262 222 288 222Z" fill="#f3ead6"/>
+    <path d="M262 260L960 374 1658 260" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linejoin="round"/>
+    <text id="recap-title" class="hi" x="960" y="304" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="820" fill="#9e1b1b">Part 1 और 2</text>
+    <g id="recap-seal">
+      <circle cx="960" cy="371" r="34" fill="#9e1b1b"/>
+      <circle cx="960" cy="371" r="26" fill="none" stroke="#fde9a6" stroke-width="2.5" stroke-dasharray="3 5" stroke-linecap="round"/>
+      <text x="960" y="383" text-anchor="middle" font-family="Inter, sans-serif" font-size="34" font-weight="800" fill="#fff">5</text>
+    </g>
+    <path id="row-rules" d="M307 539H1613M307 634H1613M307 754H1613M307 874H1613" fill="none" stroke="#eee5d4" stroke-width="3"/>
+    <g id="recap-row-1">
+      <text x="350" y="457" font-family="Inter,sans-serif" font-size="50" font-weight="810" fill="#2b2622">Letter box</text>
+      <g id="prepaid-pill">
+        <rect x="900" y="409" width="603" height="64" rx="32" fill="#f3ead6"/>
+        <text class="hi" x="1201.5" y="454" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="730" fill="#2b2622">list वाली prepaid डाक</text>
+      </g>
+      <g id="small-packets">
+        <rect x="900" y="480" width="347" height="50" rx="25" fill="#eae9e7" stroke="#b7b9bf" stroke-width="2"/>
+        <text x="923" y="518" font-family="Inter,sans-serif" font-size="36" font-weight="750" fill="#4b4f58">small packets</text>
+        <path d="M1207 496l18 18m0-18-18 18" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <path id="recap-tick-1" d="M1540 444l13 13 25-28" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="recap-row-2">
+      <text x="350" y="590" font-family="Inter,sans-serif" font-size="50" font-weight="810" fill="#2b2622">For letters only</text>
+      <g id="letters-postcards">
+        <rect x="900" y="545" width="603" height="64" rx="32" fill="#f3ead6"/>
+        <text x="1201.5" y="591" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="740" fill="#2b2622">letters + postcards</text>
+      </g>
+      <path id="recap-tick-2" d="M1540 575l13 13 25-28" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.00, 'fade', '#recap-envelope', {dur:.32}],
+    [2.16, 'fade', '#recap-row-1', {dur:.23}],
+    [3.28, 'fade', '#prepaid-pill', {dur:.26}],
+    [5.70, 'draw', '#recap-tick-1', {dur:.28}],
+    [6.42, 'fade', '#small-packets', {dur:.23}],
+    [8.32, 'fade', '#recap-row-2', {dur:.23}],
+    [10.12, 'fade', '#letters-postcards', {dur:.25}],
+    [11.22, 'draw', '#recap-tick-2', {dur:.28}]
+  ]
+}
+</script>
+</section>
