@@ -1,0 +1,83 @@
+<section class="vs-scene" id="s007" data-duration="10.06" data-section="PART 1 · THREE FORMS, PRODUCT &amp; SERVICE" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="letter">
+  <use id="letter-icons" href="piece:three-forms-icons" transform="translate(560 170) scale(.57)"/>
+  <rect x="160" y="450" width="1600" height="500" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <rect id="marker-current" x="429" y="537" width="204" height="71" rx="6" fill="#fde9a6"/>
+  <rect id="marker-personal" x="776" y="537" width="705" height="71" rx="6" fill="#fde9a6"/>
+  <text id="letter-quote" x="960" y="591" text-anchor="middle" font-family="Georgia,serif" font-size="69" fill="#2b2622">current and personal correspondence</text>
+  <text id="letter-gloss" x="960" y="695" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="55" font-weight="680" fill="#6f6a63">किसी व्यक्ति के नाम, अभी का और निजी पत्र-व्यवहार</text>
+  <text x="960" y="769" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="650" fill="#6f6a63">Post Office Regulations 2024, Reg. 2</text>
+  <g id="chip-secure">
+    <rect x="352" y="821" width="432" height="89" rx="44" fill="#f3ead6"/>
+    <text x="568" y="883" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="51" font-weight="760" fill="#2b2622">सुरक्षित बंद</text>
+  </g>
+  <g id="chip-postage">
+    <rect x="830" y="821" width="282" height="89" rx="44" fill="#f3ead6"/>
+    <text x="971" y="881" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="780" fill="#2b2622">postage</text>
+  </g>
+  <g id="prepaid-completion">
+    <rect x="1158" y="821" width="414" height="89" rx="44" fill="#fde9a6"/>
+    <text x="1365" y="883" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="49" font-weight="770" fill="#2b2622">पहले से चुका</text>
+  </g>
+</g>
+<g id="ilc">
+  <use href="piece:three-forms-icons" transform="translate(560 170) scale(.57)"/>
+  <text id="ilc-name" x="160" y="280" font-family="Inter,sans-serif" font-size="72" font-weight="820" fill="#9e1b1b">Letter Card</text>
+  <text id="ilc-name-hi" x="160" y="347" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="48" font-weight="680" fill="#6f6a63">पत्र कार्ड</text>
+  <g id="ilc-open">
+    <use href="piece:letter-card-open" transform="translate(420 331) scale(1.2)"/>
+    <g id="gum-bands" transform="translate(420 331) scale(1.2)" fill="none" stroke="#f2b705" stroke-width="9" stroke-linecap="round" stroke-dasharray="4 7">
+      <path d="M105 357v166M795 357v166M172 56h556"/>
+    </g>
+  </g>
+  <g id="sheet-label">
+    <rect x="153" y="482" width="287" height="88" rx="44" fill="#f3ead6"/>
+    <text x="296.5" y="540" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="49" font-weight="800" fill="#2b2622">एक sheet</text>
+    <path d="M454 527H568m-18-15 18 15-18 15" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="fold-label">
+    <rect x="1493" y="578" width="288" height="88" rx="44" fill="#f3ead6"/>
+    <text x="1637" y="635" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="51" font-weight="800" fill="#2b2622">मोड़ा</text>
+    <path d="M1470 622h-144m20-16-20 16 20 16" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="gum-label">
+    <rect x="1493" y="785" width="288" height="88" rx="44" fill="#fde9a6"/>
+    <text x="1637" y="842" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="51" font-weight="800" fill="#2b2622">गोंद</text>
+    <path d="M1470 829h-84m20-16-20 16 20 16" fill="none" stroke="#a9874c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0,'#letter'],[1.84,'#ilc']],
+  on:[
+    [0,'pop','#prepaid-completion',{spring:'fast'}],
+    [1.84,'type','#ilc-name',{cps:24}],
+    [2.34,'fade','#ilc-name-hi',{dur:.23}],
+    [2.86,'reveal','#ilc-open',{from:'top',dur:.64}],
+    [4.76,'pop','#sheet-label',{spring:'fast'}],
+    [6.72,'reveal','#ilc-fold-lines',{from:'left',dur:.52}],
+    [6.72,'fade','#fold-label',{dur:.27}],
+    [8.24,'fade','#gum-bands',{dur:.26}],
+    [8.24,'fade','#gum-label',{dur:.26}]
+  ],
+  update(t,section,$) {
+    for(const name of ['letter','ilc','postcard']) {
+      const active=name===(t<1.84?'letter':'ilc');
+      $('#icon-'+name).forEach(el=>el.setAttribute('opacity',active?'1':'.40'));
+      $('#fill-'+name).forEach(el=>el.setAttribute('fill',active?'#f3ead6':'#fff'));
+    }
+    const q=$('#letter-quote')[0];
+    if(t>=1.84||!q)return;
+    const full=q.getComputedTextLength(), left=960-full/2;
+    for(const [id,start,count] of [['#marker-current',0,7],['#marker-personal',12,23]]){
+      const b=$(id)[0];if(!b||!full)continue;
+      b.setAttribute('x',left+(start?q.getSubStringLength(0,start):0)-10);
+      b.setAttribute('width',q.getSubStringLength(start,count)+20);
+    }
+  }
+}
+</script>
+</section>
