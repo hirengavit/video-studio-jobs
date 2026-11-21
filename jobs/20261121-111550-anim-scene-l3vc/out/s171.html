@@ -40,8 +40,8 @@
   </g>
   <g id="who">
    <text x="960" y="256" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="74" font-weight="810" fill="#9e1b1b">वसूली किससे?</text>
-   <rect x="144" y="319" width="785" height="598" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
-   <rect x="991" y="319" width="785" height="598" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <rect id="delivery-card-bg" x="144" y="319" width="785" height="598" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <rect id="return-card-bg" x="991" y="319" width="785" height="598" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
    <g id="delivery-cue">
     <rect x="219" y="372" width="635" height="98" rx="47" fill="#e5f1e7"/>
     <text x="536.5" y="437" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="770" fill="#245338">delivery पर</text>
@@ -75,10 +75,10 @@
    shots:[[0,"#rule"],[1.62,"#who"]],
    on:[
      [.03,"pulse","#dues-airmail-footer",{amount:.035}],
-     [2.26,"fade","#delivery-cue",{dur:.30}],
+     [2.26,"fade","#delivery-card-bg, #delivery-cue",{dur:.30}],
      [2.26,"draw","#delivery-arrow, #address-house",{dur:.58}],
      [3.08,"fade","#addressee-label",{dur:.36}],
-     [4.72,"fade","#not-delivered",{dur:.43}],
+     [4.72,"fade","#return-card-bg, #not-delivered",{dur:.43}],
      [5.74,"pop","#delivery-cross",{from:.84}],
      [6.94,"fade","#return-route",{dur:.31}],
      [6.94,"draw","#return-arrow",{dur:.53}],
