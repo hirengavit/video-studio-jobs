@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s055" data-in="cut" data-section="PART 3 · TIMES AND HOUR PLATE" data-series="LETTER BOXES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="डाक निकालना, जहाँ हो वहाँ घंटे की प्लेट बदलना, और पत्र पेटी सुरक्षित करना">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="cards" fill="#fff" stroke="#ead9a8" stroke-width="3">
+    <rect x="120" y="235" width="540" height="680" rx="30" filter="url(#vs-shadow)"/>
+    <rect x="690" y="235" width="540" height="680" rx="30" filter="url(#vs-shadow)"/>
+    <rect x="1260" y="235" width="540" height="680" rx="30" filter="url(#vs-shadow)"/>
+  </g>
+  <g fill="#f3ead6">
+    <rect x="159" y="282" width="462" height="362" rx="24"/>
+    <rect x="729" y="282" width="462" height="362" rx="24"/>
+    <rect x="1299" y="282" width="462" height="362" rx="24"/>
+  </g>
+  <use id="open-box" href="piece:letter-box-door-open" transform="translate(228 301) scale(.80)"/>
+  <g id="plate">
+    <use href="piece:hour-plate" transform="translate(816 399) scale(1.6)"/>
+    <text x="960" y="481" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#2b2622">14:00</text>
+  </g>
+  <g id="closed-lock"><use href="piece:padlock" transform="translate(1090 21) scale(2.2)"/></g>
+  <g fill="#2b2622" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="800">
+    <text id="collect-label" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="390" y="741">डाक निकालना</text>
+    <text id="plate-label" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="960" y="741">plate बदलना</text>
+    <text id="secure-label" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1530" y="741">box सुरक्षित</text>
+  </g>
+  <g fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path id="collect-tick" d="m358 827 22 22 42-48"/>
+    <path id="plate-tick" d="m928 827 22 22 42-48"/>
+    <path id="secure-tick" d="m1498 827 22 22 42-48"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [1.02, 'draw', '#collect-tick', {dur:0.27}],
+    [2.02, 'fade', '#plate-label', {dur:0.23}],
+    [3.42, 'draw', '#plate-tick', {dur:0.27}],
+    [4.26, 'fade', '#secure-label', {dur:0.23}],
+    [5.48, 'draw', '#secure-tick', {dur:0.27}]
+  ],
+  update(t,section,$) {
+    for (const e of $('#closed-lock [id="shackle-open"], #closed-lock [id$="-shackle-open"]')) {
+      e.setAttribute('display','none');
+      e.style.opacity='0';
+    }
+    for (const e of $('#closed-lock [id="shackle-closed"], #closed-lock [id$="-shackle-closed"]')) {
+      e.setAttribute('display','inline');
+      e.style.opacity='1';
+    }
+  }
+}
+</script>
+</section>
