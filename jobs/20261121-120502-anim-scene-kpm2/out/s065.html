@@ -71,8 +71,8 @@
    </g>
    <g id="three-checks">
      <g id="check-1">
-       <rect x="140" y="956" width="525" height="65" rx="32" fill="#fffefa" stroke="#ead9a8" stroke-width="3"/>
-       <text x="402.5" y="1002" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="46" font-weight="780" fill="#2b2622">Window size</text>
+       <rect id="window-check-surface" x="140" y="956" width="525" height="65" rx="32" fill="#fffefa" stroke="#ead9a8" stroke-width="3"/>
+       <text id="window-check-label" x="402.5" y="1002" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="46" font-weight="780" fill="#2b2622">Window size</text>
      </g>
      <g id="check-2">
        <rect x="697.5" y="956" width="525" height="65" rx="32" fill="#fffefa" stroke="#ead9a8" stroke-width="3"/>
@@ -83,9 +83,7 @@
        <text x="1517.5" y="1002" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="46" font-weight="780" fill="#2b2622">Code की जगह</text>
      </g>
      <g id="first-check-passed">
-       <rect x="140" y="956" width="525" height="65" rx="32" fill="#e3f1e8" stroke="#69a783" stroke-width="3"/>
        <path d="M227 989l10 10 20-24" fill="none" stroke="#2e7d4f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-       <text x="421" y="1002" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="790" fill="#215c3b">Window size</text>
      </g>
      <g id="code-questions" font-family="Inter,sans-serif" font-size="39" font-weight="820" fill="#4b4f58">
        <circle cx="766" cy="988" r="24" fill="#ebe8e2"/>
@@ -107,6 +105,7 @@
   on:[
     [0,'out','#prior-code-detail',{dur:.44}],
     [.50,'words','#three-independent',{gap:.27,dist:12}],
+    [2.50,'fade','#first-check-passed',{dur:.25}],
     [4.56,'pop','#code-questions',{from:.95}],
     [5.78,'fade','#not-automatic',{dur:.29}],
     [5.92,'words','#not-automatic-label',{gap:.45,dist:12}]
@@ -114,8 +113,12 @@
   update(t,section,$) {
     const q=$('#qr-illustration')[0]?.querySelector('[id$="quiet-zone"]');
     if(q)q.setAttribute('visibility','hidden');
-    for(const g of $('#check-1')) g.setAttribute('visibility',t<2.50?'visible':'hidden');
-    for(const g of $('#first-check-passed')) g.setAttribute('visibility',t<2.50?'hidden':'visible');
+    const pass=t>=2.50;
+    for(const g of $('#window-check-surface')) {
+      g.setAttribute('fill',pass?'#e3f1e8':'#fffefa');
+      g.setAttribute('stroke',pass?'#69a783':'#ead9a8');
+    }
+    for(const g of $('#window-check-label')) g.setAttribute('fill',pass?'#215c3b':'#2b2622');
     const p=Math.max(0,Math.min(1,(t-.25)/.53));
     for(const g of $('#three-checks')) g.setAttribute('transform','translate(0 '+(-410*p*p*(3-2*p))+')');
   }
