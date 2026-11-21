@@ -1,0 +1,65 @@
+<section class="vs-scene" id="s065" data-in="cut" data-section="PART 4 · KEYS, BAG AND ROUND" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Report letter-box defects to the Postmaster, because damage puts mail at risk">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="check">
+    <ellipse cx="540" cy="938" rx="194" ry="32" fill="#f3ead6"/>
+    <g id="inspect-box"><use href="piece:letter-box-pillar" transform="translate(360 182) scale(1.8)"/></g>
+    <g id="box-condition">
+      <rect x="892" y="270" width="850" height="113" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="917" y="291" width="8" height="70" rx="4" fill="#f2b705"/>
+      <text x="957" y="347" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="800" fill="#9e1b1b">box की हालत</text>
+    </g>
+    <g id="magnifier">
+      <path id="magnifier-rim" d="M646 722c0 62-46 108-106 108s-106-47-106-107c0-59 47-107 106-107s106 46 106 105Z" fill="none" stroke="#2b2622" stroke-width="12" stroke-linecap="round"/>
+      <path id="magnifier-handle" d="m615 802 93 93" fill="none" stroke="#2b2622" stroke-width="21" stroke-linecap="round"/>
+    </g>
+    <g id="damage-card">
+      <rect x="892" y="412" width="410" height="112" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="1097" y="482" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="810" fill="#2b2622">Damage / defect</text>
+    </g>
+    <path id="report-arrow" d="M1317 468h51m-17-15 17 15-17 15" fill="none" stroke="#8a5d00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="report-chip">
+      <rect x="1384" y="412" width="358" height="112" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+      <text x="1563" y="458" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="750" fill="#2b2622">Postmaster<tspan x="1563" dy="49">को report</tspan></text>
+    </g>
+    <g id="broken-door">
+      <rect x="892" y="551" width="850" height="82" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+      <circle cx="941" cy="592" r="22" fill="#f3ead6"/>
+      <g transform="translate(941 592)" fill="none" stroke="#4b4f58" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M-11 14v-28h22v28zm6-12 6-5-3-5 5-6"/></g>
+      <text x="991" y="609" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="740" fill="#2b2622">टूटा दरवाज़ा</text>
+    </g>
+    <g id="bad-lock">
+      <rect x="892" y="651" width="850" height="82" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+      <circle cx="941" cy="692" r="22" fill="#f3ead6"/>
+      <g transform="translate(941 692)" fill="none" stroke="#4b4f58" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M-7-2v-5a7 7 0 0 1 14 0v5m-18 0h22v14h-22zm11 5v3"/></g>
+      <text x="991" y="709" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="740" fill="#2b2622">खराब ताला</text>
+    </g>
+    <g id="loose-fitting">
+      <rect x="892" y="751" width="850" height="82" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+      <circle cx="941" cy="792" r="22" fill="#f3ead6"/>
+      <g transform="translate(941 792)" fill="none" stroke="#4b4f58" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m-12 8 14-14m-9 18 14-14m-8-9 12 12m-22-13h8m-8 0v8"/></g>
+      <text x="991" y="809" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="740" fill="#2b2622">ढीली fitting</text>
+    </g>
+    <g id="mail-risk">
+      <rect x="892" y="871" width="850" height="100" rx="24" fill="#fde9a6" stroke="#e2b94a" stroke-width="2"/>
+      <path d="m943 893 25 45h-50z" fill="none" stroke="#8a5d00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M943 907v13m0 8v1" stroke="#8a5d00" stroke-width="4" stroke-linecap="round"/>
+      <text x="991" y="937" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="55" font-weight="810" fill="#714b00">डाक खतरे में</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [1.26,'fade','#damage-card',{dur:.25}],
+  [3.38,'draw','#report-arrow',{dur:.33}],
+  [4.04,'fade','#report-chip',{dur:.26}],
+  [6.16,'fade','#broken-door',{dur:.24}],
+  [7.42,'fade','#bad-lock',{dur:.24}],
+  [8.82,'fade','#loose-fitting',{dur:.24}],
+  [9.92,'fade','#mail-risk',{dur:.27}]
+ ]
+}
+</script>
+</section>
