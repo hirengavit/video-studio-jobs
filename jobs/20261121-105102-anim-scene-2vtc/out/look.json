@@ -8,12 +8,5 @@
   "11.23"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s019",
-   "text": "या पहले से छपे barcodes चिपकाएँ",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
