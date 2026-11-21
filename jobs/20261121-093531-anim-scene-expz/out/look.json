@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.54",
+  "5.08",
+  "7.62",
+  "10.16",
+  "12.55"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s022",
+   "text": "Prepayment / फ़र्क कैसे भरें?",
+   "t": 5.08
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s022",
+   "text": "पूर्व भुगतान / ज़रूरी − छपी value",
+   "t": 5.08
+  }
+ ]
+}
