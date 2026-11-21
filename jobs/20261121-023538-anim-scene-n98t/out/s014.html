@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s014" data-in="cut" data-section="PART 1 · WHAT GOES IN THE LETTER BOX" data-series="LETTER BOXES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Five articles to keep out of the letter box">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text x="960" y="217" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="820" fill="#9e1b1b">Letter box में नहीं</text>
+  <g id="article-1">
+    <rect x="420" y="250" width="1080" height="140" rx="24" fill="#fff" stroke="#4b4f58" stroke-width="3"/>
+    <text x="479" y="306" font-family="Inter,sans-serif" font-size="49" font-weight="800" fill="#2b2622">Accountable</text>
+    <text x="480" y="361" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="670" fill="#6f6a63">जवाबदेह डाक</text>
+    <circle class="cross-badge" cx="1423" cy="320" r="36" fill="#4b4f58"/>
+    <path class="cross-mark" d="M1409 306l28 28m0-28-28 28" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g id="article-2">
+    <rect x="420" y="400" width="1080" height="140" rx="24" fill="#fff" stroke="#4b4f58" stroke-width="3"/>
+    <text x="479" y="456" font-family="Inter,sans-serif" font-size="49" font-weight="800" fill="#2b2622">Franked</text>
+    <text x="480" y="511" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="670" fill="#6f6a63">फ्रैंक की गई डाक</text>
+    <circle class="cross-badge" cx="1423" cy="470" r="36" fill="#4b4f58"/>
+    <path class="cross-mark" d="M1409 456l28 28m0-28-28 28" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g id="article-3">
+    <rect x="420" y="550" width="1080" height="140" rx="24" fill="#fff" stroke="#4b4f58" stroke-width="3"/>
+    <text x="479" y="606" font-family="Inter,sans-serif" font-size="49" font-weight="800" fill="#2b2622">Registered newspaper</text>
+    <text x="480" y="661" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="670" fill="#6f6a63">पंजीकृत समाचार-पत्र</text>
+    <circle class="cross-badge" cx="1423" cy="620" r="36" fill="#4b4f58"/>
+    <path class="cross-mark" d="M1409 606l28 28m0-28-28 28" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g id="article-4">
+    <rect x="420" y="700" width="1080" height="140" rx="24" fill="#fff" stroke="#4b4f58" stroke-width="3"/>
+    <text x="479" y="756" font-family="Inter,sans-serif" font-size="49" font-weight="800" fill="#2b2622">Periodical post</text>
+    <text x="480" y="811" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="670" fill="#6f6a63">आवधिक डाक</text>
+    <circle class="cross-badge" cx="1423" cy="770" r="36" fill="#4b4f58"/>
+    <path class="cross-mark" d="M1409 756l28 28m0-28-28 28" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g id="article-5">
+    <rect x="420" y="850" width="1080" height="140" rx="24" fill="#fff" stroke="#4b4f58" stroke-width="3"/>
+    <text x="479" y="906" font-family="Inter,sans-serif" font-size="49" font-weight="800" fill="#2b2622">Small packets</text>
+    <text x="480" y="961" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="670" fill="#6f6a63">छोटे पैकेट</text>
+    <circle class="cross-badge" cx="1423" cy="920" r="36" fill="#4b4f58"/>
+    <path class="cross-mark" d="M1409 906l28 28m0-28-28 28" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <path id="four-bracket" d="M1515 251H1539V839H1515" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="separate-rule">
+    <rect x="1550" y="512" width="229" height="66" rx="30" fill="#fde9a6"/>
+    <text x="1664.5" y="557" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="770" fill="#69502b">अपनी रोक</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera:[[0,{zoom:1}]],
+  on:[
+    [.60,'fade','#article-2',{dur:.23}],
+    [2.00,'fade','#article-3',{dur:.24}],
+    [3.76,'fade','#article-4',{dur:.24}],
+    [6.50,'draw','#four-bracket',{dur:.28}],
+    [6.50,'fade','#separate-rule',{dur:.24}],
+    [8.00,'fade','#article-5',{dur:.23}],
+    [10.02,'fade','.cross-badge',{dur:.19,stagger:.10}],
+    [10.02,'draw','.cross-mark',{dur:.22,stagger:.10}]
+  ]
+}
+</script>
+</section>
