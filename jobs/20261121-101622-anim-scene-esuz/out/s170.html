@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s170" data-in="cut" data-section="PART 9 · COUNTER CHECKS &amp; DUES" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Domestic postage dues rules for unpaid and short-paid items, with a one rupee minimum">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="rule">
+  <text x="150" y="283" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="74" font-weight="820" fill="#9e1b1b">आम नियम · domestic</text>
+  <g id="dues-first">
+   <rect x="150" y="350" width="1620" height="221" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <g id="dues-artwork">
+    <use href="piece:domestic-envelope" transform="translate(217 402) scale(.32)"/>
+    <use href="piece:postage-due-mark" transform="translate(478 404) scale(.30)"/>
+    <path d="M632 388v145" stroke="#ead9a8" stroke-width="3"/>
+   </g>
+   <g id="dues-unpaid">
+    <text x="693" y="483" font-family="Inter,sans-serif" font-size="64" font-weight="820" fill="#2b2622">Unpaid item</text>
+   </g>
+   <rect id="dues-multiplier-mark" x="1545" y="422" width="114" height="80" rx="5" fill="#fde9a6" fill-opacity=".95"/>
+   <text id="dues-unpaid-formula" x="1130" y="483" font-family="Inter,sans-serif" font-size="60" font-weight="820" fill="#2b2622">= prepaid rate × 2</text>
+  </g>
+  <g id="dues-second-shell">
+   <rect x="150" y="632" width="1620" height="221" rx="28" fill="#fffdf7" stroke="#e3d5b8" stroke-width="3" stroke-dasharray="12 12"/>
+  </g>
+  <g id="dues-second">
+   <rect x="150" y="632" width="1620" height="221" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <g id="dues-artwork-short">
+    <use href="piece:domestic-envelope" transform="translate(217 684) scale(.32)"/>
+    <use href="piece:postage-due-mark" transform="translate(478 686) scale(.30)"/>
+    <path d="M632 670v145" stroke="#ead9a8" stroke-width="3"/>
+   </g>
+   <text id="dues-short-label" x="693" y="765" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="820" fill="#2b2622">कम postage</text>
+   <text id="dues-short-formula" x="1130" y="765" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="820" fill="#2b2622">= कमी × 2</text>
+  </g>
+  <g id="dues-minimum">
+   <rect x="150" y="886" width="470" height="105" rx="26" fill="#fde9a6"/>
+   <text x="385" y="956" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" font-weight="820" fill="#2b2622">minimum ₹1</text>
+  </g>
+  <g id="dues-airmail-footer">
+   <rect x="650" y="886" width="1120" height="105" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+   <text x="1210" y="956" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="790" fill="#2b2622">Unpaid / कम airmail fee: यही नियम</text>
+  </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+   on: [
+     [0,"fade","#dues-second",{dur:.32}],
+     [2.08,"type","#dues-short-formula",{cps:24}],
+     [3.86,"pop","#dues-minimum",{from:.94}],
+     [6.50,"fade","#dues-airmail-footer",{dur:.38}]
+   ]
+ })
+ </script>
+</section>
+
