@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s039" data-in="cut" data-section="PART 2 · COUNTER, NOT THE BOX" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <text id="heading" class="heading hi" x="160" y="239" font-size="64" font-weight="810" fill="#9e1b1b">Posting के तीन और रास्ते</text>
+ <g id="previous-modes">
+   <use href="piece:letter-box-pillar" transform="translate(1460 168) scale(.205)"/>
+   <text class="hi" x="1520" y="227" font-size="46" font-weight="720" fill="#6f6a63">और</text>
+   <use href="piece:post-counter-icon" transform="translate(1600 159) scale(.285)"/>
+ </g>
+ <g id="ways">
+  <g id="way-1">
+   <rect x="160" y="280" width="510" height="680" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <circle cx="238" cy="359" r="40" fill="#9e1b1b"/>
+   <text x="238" y="376" text-anchor="middle" font-size="51" font-weight="830" fill="#fff">1</text>
+   <use id="outlet" href="piece:franchisee-outlet" transform="translate(244 408) scale(.95)"/>
+   <text id="outlet-label" x="415" y="776" text-anchor="middle" font-size="49" font-weight="820" fill="#9e1b1b">Franchisee outlet</text>
+   <text id="conditions-en" x="415" y="827" text-anchor="middle" font-size="45" font-weight="700" fill="#6f6a63">administrative</text>
+   <text id="conditions" class="hi" x="415" y="876" text-anchor="middle" font-size="45" font-weight="700" fill="#6f6a63">instructions में</text>
+   <text id="items" class="hi" x="415" y="924" text-anchor="middle" font-size="45" font-weight="700" fill="#6f6a63">तय items</text>
+  </g>
+  <g id="way-2">
+   <rect x="705" y="280" width="510" height="680" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <circle cx="783" cy="359" r="40" fill="#9e1b1b"/>
+   <text x="783" y="376" text-anchor="middle" font-size="51" font-weight="830" fill="#fff">2</text>
+  </g>
+  <g id="way-3">
+   <rect x="1250" y="280" width="510" height="680" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <circle cx="1328" cy="359" r="40" fill="#9e1b1b"/>
+   <text x="1328" y="376" text-anchor="middle" font-size="51" font-weight="830" fill="#fff">3</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [2.34,'words','#heading',{gap:.17,dist:12,from:'down'}],
+  [3.52,'pop','#ways',{from:.98,spring:'soft'}],
+  [5.54,'pulse','#way-1',{amount:.015}],
+  [6.38,'draw','#outlet',{dur:.54}],
+  [7.06,'fade','#outlet-label',{dur:.26}],
+  [9.68,'fade','#conditions-en',{dur:.27}],
+  [10.36,'words','#conditions',{gap:.34,dist:10,from:'down'}],
+  [11.82,'fade','#items',{dur:.28}]
+ ]
+}
+</script>
+</section>
