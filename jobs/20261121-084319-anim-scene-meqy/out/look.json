@@ -8,12 +8,5 @@
   "9.43"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s113",
-   "message": "type: option \"dur\" isn't used (it takes: cps)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
