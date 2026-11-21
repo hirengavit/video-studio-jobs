@@ -16,21 +16,10 @@
    "t": 2.3
   },
   {
-   "kind": "text-overlap",
+   "kind": "low-contrast",
    "scene": "s041",
-   "text": "World / Post Day",
-   "t": 4.6
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s041",
-   "text": "Post Day / 9 Oct",
-   "t": 4.6
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s041",
-   "text": "9 Oct / 2023",
+   "text": "WorldPost Day9 Oct2023 (2.6:1)",
+   "message": "text too close in colour to what's behind it",
    "t": 4.6
   },
   {
