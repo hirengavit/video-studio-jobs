@@ -8,18 +8,5 @@
   "4.13"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s045",
-   "text": "· Reg. newspaper / · Periodical",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s045",
-   "text": "· Periodical / unpaid",
-   "t": 2.57
-  }
- ]
+ "warnings": []
 }
