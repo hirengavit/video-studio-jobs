@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s198" data-in="cut" data-section="PART 10 · OTHER RULES" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Biological specimens: check permission and packing under applicable rules. Do not accept them like ordinary letters.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="specimen-overview">
+   <rect x="125" y="225" width="820" height="594" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <text id="specimen-term" x="184" y="338" font-family="Inter,sans-serif" font-size="65" font-weight="820" fill="#2b2622">Biological specimens</text>
+   <text id="specimen-hindi" x="186" y="414" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="53" font-weight="680" fill="#6f6a63">जैविक नमूने</text>
+   <ellipse cx="537" cy="776" rx="225" ry="16" fill="#dfcfb1" opacity=".55"/>
+   <use href="piece:specimen-box" transform="translate(281 406) scale(1.4)"/>
+  </g>
+  <g id="check-permission">
+   <rect x="1010" y="225" width="785" height="165" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <circle cx="1100" cy="307.5" r="38" fill="#2e7d4f"/>
+   <path d="m1082 308 12 12 24-28" fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+   <text x="1174" y="331" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="63" font-weight="760" fill="#263c31">अनुमति</text>
+  </g>
+  <g id="check-packing">
+   <rect x="1010" y="428" width="785" height="165" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <circle cx="1100" cy="510.5" r="38" fill="#2e7d4f"/>
+   <path d="m1082 511 12 12 24-28" fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+   <text x="1174" y="533" font-family="Inter,sans-serif" font-size="63" font-weight="760" fill="#263c31">packing</text>
+  </g>
+  <g id="not-ordinary-letter">
+   <rect x="1010" y="631" width="785" height="188" rx="25" fill="#efeeeb" stroke="#c7c3bf" stroke-width="3"/>
+   <use href="piece:domestic-envelope" transform="translate(1061 681) scale(.225)" opacity=".9"/>
+   <text x="1282" y="747" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="760" fill="#4b4f58">आम letter</text>
+   <g id="ordinary-cross">
+    <circle cx="1697" cy="726" r="42" fill="#4b4f58"/>
+    <path d="m1680 709 34 34m0-34-34 34" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+   on: [
+     [0,"type","#specimen-term",{cps:35}],
+     [.68,"fade","#specimen-hindi",{dur:.38}],
+     [3.44,"fade","#check-permission",{dur:.39}],
+     [4.80,"fade","#check-packing",{dur:.39}],
+     [7.52,"fade","#not-ordinary-letter",{dur:.40}],
+     [7.68,"pop","#ordinary-cross",{from:.78}]
+   ]
+ })
+ </script>
+</section>
