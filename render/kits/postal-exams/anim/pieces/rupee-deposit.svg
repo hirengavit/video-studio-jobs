@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" width="240" height="160">
+  <g id="notes" stroke="#2b2622" stroke-width="3" stroke-linejoin="round">
+    <rect x="34" y="42" width="170" height="84" rx="5" fill="#e9dcbc" transform="rotate(-4 119 84)"/>
+    <rect x="26" y="32" width="170" height="84" rx="5" fill="#efe3c6" transform="rotate(3 111 74)"/>
+    <g id="top-note">
+      <rect x="16" y="20" width="170" height="84" rx="5" fill="#f3ead6"/>
+      <rect x="26" y="30" width="150" height="64" rx="3" fill="none" stroke="#d8c9a3" stroke-width="2"/>
+      <circle cx="101" cy="62" r="24" fill="#ffffff" stroke="#9e1b1b" stroke-width="3"/>
+      <path d="M 91 50 H 111 M 91 58 H 111 M 91 50 H 97 A 8 8 0 0 1 97 66 H 92 L 108 76" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+  <g id="coins" stroke="#2b2622" stroke-width="3">
+    <circle cx="168" cy="122" r="26" fill="#c9cdd3"/>
+    <circle cx="168" cy="122" r="18" fill="none" stroke="#a7adb5" stroke-width="2"/>
+    <circle cx="210" cy="126" r="22" fill="#d6d9dd"/>
+    <circle cx="210" cy="126" r="15" fill="none" stroke="#a7adb5" stroke-width="2"/>
+  </g>
+  <circle data-anchor="base" cx="120" cy="150" r="0"/>
+  <circle data-anchor="top" cx="120" cy="18" r="0"/>
+</svg>
