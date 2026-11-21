@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s092" data-in="cut" data-section="PART 5 · ELECTRONIC RECORD" data-series="LETTER BOXES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Match actual clearance time to scheduled clearance time; the real work and the electronic record should agree">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="time">
+  <g id="actual-time">
+   <rect x="160" y="224" width="646" height="496" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <text x="483" y="329" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="65" font-weight="810" fill="#9e1b1b">असल समय</text>
+   <path d="M216 372h534" stroke="#ead9a8" stroke-width="3" fill="none"/>
+   <g id="actual-clock"><use href="piece:clock-face" transform="translate(324.4 385) scale(1.22)"/></g>
+  </g>
+  <g id="scheduled-time">
+   <rect x="1114" y="224" width="646" height="496" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <text x="1437" y="329" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="65" font-weight="810" fill="#9e1b1b">तय समय</text>
+   <path d="M1170 372h534" stroke="#ead9a8" stroke-width="3" fill="none"/>
+   <g id="schedule-clock"><use href="piece:clock-face" transform="translate(1278.4 385) scale(1.22)"/></g>
+  </g>
+  <g id="time-equals">
+   <circle cx="960" cy="484" r="86" fill="#fde9a6" stroke="#ead9a8" stroke-width="3"/>
+   <path d="M923 468H997M923 500H997" stroke="#8a5d00" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <g id="record-band">
+   <rect x="160" y="767" width="1600" height="197" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+   <text id="actual-work" x="461" y="881" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="800" fill="#2b2622">असली काम</text>
+   <text id="record-equals" x="780" y="884" text-anchor="middle" font-family="Inter,sans-serif" font-size="69" font-weight="810" fill="#8a5d00">=</text>
+   <text id="electronic-record" x="1074" y="881" text-anchor="middle" font-family="Inter,sans-serif" font-size="61" font-weight="810" fill="#2b2622">electronic record</text>
+   <g id="agreement">
+    <rect x="1390" y="812" width="319" height="102" rx="25" fill="#fde9a6" stroke="#ead9a8" stroke-width="2"/>
+    <text x="1549.5" y="880" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="55" font-weight="800" fill="#8a5d00">मेल खाएँ</text>
+   </g>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ shots:[[0,'#time']],
+ on:[
+  [.64,'reveal','#actual-clock',{from:'up',dur:.41}],
+  [1.40,'reveal','#schedule-clock',{from:'up',dur:.41}],
+  [2.42,'pop','#time-equals',{from:.92,spring:'soft'}],
+  [4.08,'fade','#record-band',{dur:.27}],
+  [4.52,'words','#actual-work',{gap:.52,from:'none',dist:0}],
+  [5.50,'fade','#record-equals',{dur:.24}],
+  [5.80,'words','#electronic-record',{gap:.38,from:'none',dist:0}],
+  [7.90,'fade','#agreement',{dur:.24}]
+ ]
+}
+</script>
+</section>
