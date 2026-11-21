@@ -1,0 +1,39 @@
+<section class="vs-scene" id="s050" data-in="cut" data-section="PART 3 · TIMES AND HOUR PLATE" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="box">
+    <use href="piece:letter-box-pillar" transform="translate(330 209.6) scale(1.9)"/>
+    <g id="plate"><use href="piece:hour-plate" transform="translate(446.2 539.7) scale(.82)"/></g>
+  </g>
+  <g id="explanation">
+    <rect x="870" y="245" width="880" height="665" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="935" y="343" font-size="66" font-weight="800" fill="#9e1b1b">Hour plate</text>
+    <g id="term">
+      <rect x="922" y="396" width="776" height="210" rx="24" fill="#9e1b1b"/>
+      <rect x="936" y="410" width="748" height="182" rx="16" fill="none" stroke="#b8403a" stroke-width="3" stroke-dasharray="6 7"/>
+      <text id="en" x="974" y="484" font-size="59" font-weight="820" fill="#fff">Changeable hour plate</text>
+      <text id="hi" x="974" y="554" class="hi" font-size="52" font-weight="670" fill="#fde9a6">बदलने योग्य समय-पट्टिका</text>
+    </g>
+    <line x1="935" x2="1685" y1="654" y2="654" stroke="#ead9a8" stroke-width="3"/>
+    <text id="change" x="922" y="752" class="hi" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">बदलने वाली पट्टी</text>
+    <text id="timing" x="922" y="820" class="hi" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">clearance का समय</text>
+  </g>
+  <g id="plate-arrow" fill="none" stroke="#8a5d00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M908 817C803 817 744 817 708 763C669 701 676 614 601 571"/>
+    <path d="M611 591L600 570L625 571"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [1.02,'pop','#plate',{from:.88,spring:'soft'}],
+  [1.40,'pop','#term',{from:.96,spring:'soft'}],
+  [1.50,'words','#en',{gap:.27,dist:12,from:'down'}],
+  [2.40,'fade','#hi',{dur:.29}],
+  [5.40,'words','#change',{gap:.18,dist:10,from:'down'}],
+  [7.82,'words','#timing',{gap:.20,dist:10,from:'down'}],
+  [8.00,'draw','#plate-arrow',{dur:.60}]
+ ]
+}
+</script>
+</section>
