@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s126" data-duration="11.47" data-section="PART 7 · ONE POSTCARD CATEGORY" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="brs">
+  <g id="postcard-card">
+    <rect x="145" y="265" width="759" height="687" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M173 265H876Q904 265 904 293V419H145V293Q145 265 173 265Z" fill="#f2b705"/>
+    <text x="524" y="360" text-anchor="middle" font-family="Inter,sans-serif" font-size="74" font-weight="820" fill="#2b2622">Postcard</text>
+    <g fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round">
+      <rect x="264" y="516" width="520" height="333" rx="18" fill="#f3ead6"/>
+      <path d="M520 548V812M558 669H735M558 716H735M558 763H712" stroke="#8f8171"/>
+      <rect x="659" y="548" width="85" height="87" rx="7" fill="#fff" stroke="#9e1b1b"/>
+    </g>
+    <text x="701" y="604" text-anchor="middle" font-family="Inter,sans-serif" font-size="37" font-weight="800" fill="#9e1b1b">50 p</text>
+  </g>
+  <g id="brs-card">
+    <rect x="1016" y="265" width="759" height="687" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M1044 265H1747Q1775 265 1775 293V419H1016V293Q1016 265 1044 265Z" fill="#9e1b1b"/>
+    <text x="1396" y="358" text-anchor="middle" font-family="Inter,sans-serif" font-size="61" font-weight="820" fill="#fff">Business Reply Service</text>
+    <g id="business-reply-preview" opacity=".40"><use href="piece:business-reply-card" transform="translate(1169 534) scale(.81)"/></g>
+    <g id="authorised-business">
+      <rect x="1125" y="444" width="542" height="68" rx="34" fill="#f3ead6"/>
+      <text x="1396" y="490" text-anchor="middle" font-size="44" font-weight="790" font-family="Inter, sans-serif" fill="#2b2622">Authorised business</text>
+    </g>
+    <text id="reply-stationery" x="1396" y="586" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="40" font-weight="750" fill="#2b2622">खास reply stationery</text>
+    <g id="brs-charges">
+      <text x="1396" y="871" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="760" fill="#2b2622">जवाब मिलने पर charges:</text>
+      <text id="business-pays" x="1396" y="925" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="45" font-weight="820" fill="#2b2622">वही business</text>
+    </g>
+  </g>
+  <g id="not-equal">
+    <circle cx="960" cy="602" r="58" fill="#2b2622" stroke="#fbf7ee" stroke-width="8"/>
+    <text x="960" y="630" text-anchor="middle" font-family="Inter,sans-serif" font-size="79" font-weight="810" fill="#fde9a6">≠</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+  on:[
+    [0.58,'fade','#authorised-business',{dur:0.35}],
+    [2.58,'pop','#reply-stationery',{from:0.95,spring:'soft'}],
+    [6.38,'fade','#brs-charges',{dur:0.42}],
+    [8.34,'highlight','#business-pays',{color:'#f2b705',opacity:0.42,dur:0.48}]
+  ],
+  update(t,section){
+    const el=section.querySelector('#business-reply-preview');
+    if(el) el.setAttribute('opacity',String(0.4+0.6*Math.max(0,Math.min(1,(t-2.58)/0.27))));
+  }
+})
+</script>
+</section>
