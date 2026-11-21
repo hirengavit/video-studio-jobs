@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s080" data-in="cut" data-section="PART 5 · ELECTRONIC RECORD" data-series="LETTER BOXES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Nanyatha: बारकोड, स्थान और पत्रों की संख्या की जाँच करने वाला सॉफ़्टवेयर">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text x="120" y="225" font-family="Inter,sans-serif" font-size="57" font-weight="820" fill="#9e1b1b">Regular letter box clearance</text>
+  <g id="regular-phone">
+    <rect x="120" y="292" width="612" height="663" rx="33" fill="#f3ead6"/>
+    <use id="app-phone" href="piece:phone-screen" transform="translate(76 271) scale(1.75)"/>
+    <g id="app-screen-lines" fill="none" stroke="#dfd4bf" stroke-width="5" stroke-linecap="round">
+      <rect x="317" y="539" width="218" height="220" rx="18" fill="#fff" stroke="#e9dec7" stroke-width="3"/>
+      <path d="M349 590h154M349 639h154M349 688h119"/>
+    </g>
+    <g id="app-name">
+      <rect x="311" y="392" width="230" height="123" rx="17" fill="#9e1b1b"/>
+      <rect id="app-name-highlight" x="327" y="408" width="198" height="91" rx="11" fill="#fde9a6" fill-opacity=".20"/>
+      <text x="426" y="443" text-anchor="middle" font-family="Inter,sans-serif" font-size="38" font-weight="810" fill="#fff">Doorstep</text>
+      <text x="426" y="486" text-anchor="middle" font-family="Inter,sans-serif" font-size="38" font-weight="810" fill="#fff">Service</text>
+    </g>
+  </g>
+  <g id="manual-card">
+    <rect id="manual-shell" x="785" y="292" width="1030" height="663" rx="33" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <path id="manual-spine" d="M851 325V914" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+    <text x="903" y="410" font-family="Georgia, serif" font-size="70" font-weight="700" fill="#9e1b1b">Postal Manual</text>
+    <path d="M903 450H1736" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <g id="software-description" font-family="Inter,sans-serif" font-size="49" font-weight="770" fill="#2b2622">
+      <text id="summary-clearance" x="903" y="533">Electronic clearance</text>
+      <text id="summary-monitoring" x="903" y="600">+ monitoring software</text>
+    </g>
+    <rect id="software-name-plate" x="875" y="648" width="850" height="210" rx="27" fill="#f3ead6" stroke="#ddcba6" stroke-width="3"/>
+    <text id="name-label" x="925" y="711" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="700" fill="#6f6a63">software का नाम</text>
+    <text id="nanyatha" x="925" y="813" font-family="Inter,sans-serif" font-size="96" font-weight="830" fill="#2b2622">Nanyatha</text>
+    <g id="check-barcode">
+      <rect x="875" y="874" width="247" height="63" rx="17" fill="#fff6df" stroke="#ead9a8" stroke-width="2"/>
+      <text x="998.5" y="920" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="730" fill="#2b2622">Barcode</text>
+    </g>
+    <g id="check-location">
+      <rect x="1138" y="874" width="247" height="63" rx="17" fill="#fff6df" stroke="#ead9a8" stroke-width="2"/>
+      <text x="1261.5" y="920" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="730" fill="#2b2622">Location</text>
+    </g>
+    <g id="check-letter-count">
+      <rect x="1401" y="874" width="324" height="63" rx="17" fill="#fff6df" stroke="#ead9a8" stroke-width="2"/>
+      <text x="1563" y="920" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="730" fill="#2b2622">Letter count</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  update(t, section, $) {
+    const p=Math.max(0,Math.min(1,(t-1.70)/.35));
+    const extra=64*p*(2-p);
+    $('#manual-shell')[0].setAttribute('height',663+extra);
+    $('#manual-spine')[0].setAttribute('d','M851 325V'+(914+extra));
+  },
+  on: [
+    [0.00, 'tracking', '#nanyatha', {from:22,dur:.72}],
+    [.60, 'fade', '#name-label', {dur:.16}],
+    [2.10, 'pop', '#check-barcode', {from:.94,spring:'soft'}],
+    [3.12, 'pop', '#check-location', {from:.94,spring:'soft'}],
+    [4.90, 'pop', '#check-letter-count', {from:.94,spring:'soft'}],
+    [6.28, 'highlight', '#nanyatha', {color:'#fde9a6',opacity:.68,dur:.35,pad:8}]
+  ]
+}
+</script>
+</section>
