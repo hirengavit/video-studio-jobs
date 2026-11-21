@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s032" data-in="cut" data-section="PART 2 · COUNTER, NOT THE BOX" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="A franking impression shows postage paid but is not permission to use the ordinary letter box.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <style>#frank circle, #frank path, #frank rect {stroke:#9e1b1b;stroke-width:4.5}</style>
+  <g id="franked-mail">
+    <use id="envelope" href="piece:domestic-envelope" transform="translate(160 345) scale(1.275)"/>
+    <g id="frank"><use href="piece:franking-impression" transform="translate(770 291) scale(.9)"/></g>
+    <ellipse id="frank-ring" cx="950" cy="471" rx="151" ry="65" fill="none" stroke="#2b2622" stroke-width="5"/>
+  </g>
+  <g id="frank-term">
+    <rect x="1290" y="202" width="420" height="205" rx="24" fill="#9e1b1b"/>
+    <rect x="1303" y="215" width="394" height="179" rx="15" fill="none" stroke="#fde9a6" stroke-width="6" stroke-opacity=".75" stroke-linecap="round" stroke-dasharray="0 18"/>
+    <text x="1500" y="264" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="820" fill="#fff">Franking</text>
+    <text x="1500" y="322" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="820" fill="#fff">impression</text>
+    <text class="hi" id="frank-hi" x="1500" y="376" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="710" fill="#fde9a6">फ़्रैंकिंग छाप</text>
+  </g>
+  <g id="paid">
+    <rect x="1240" y="429" width="520" height="129" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text class="hi" id="paid-text" x="1500" y="510" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">postage चुका है</text>
+  </g>
+  <g id="box-restriction">
+    <rect x="1240" y="588" width="520" height="342" rx="24" fill="#f3ead6"/>
+    <use href="piece:letter-box-pillar" transform="translate(1272 605) scale(.72)"/>
+    <text class="hi" x="1448" y="670" font-size="48" font-weight="790" fill="#2b2622">आम</text>
+    <text x="1448" y="724" font-family="Inter,sans-serif" font-size="48" font-weight="790" fill="#2b2622">letter box</text>
+    <g id="no-permission">
+      <text class="hi" x="1448" y="790" font-size="48" font-weight="810" fill="#4b4f58">छूट नहीं</text>
+      <circle cx="1344" cy="742.5" r="32" fill="#4b4f58"/>
+      <path d="M1332 730.5l24 24m0-24-24 24" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [1.30,'stamp','#frank',{from:1.17,rot:-3,spring:'fast'}],
+    [1.80,'draw','#frank-ring',{dur:.46}],
+    [1.80,'pop','#frank-term',{from:.97,spring:'fast'}],
+    [2.30,'fade','#frank-hi',{dur:.25}],
+    [3.48,'fade','#paid',{dur:.29}],
+    [3.52,'words','#paid-text',{gap:.38,dist:12}],
+    [9.20,'pop','#box-restriction',{from:.96,spring:'fast'}],
+    [10.32,'stamp','#no-permission',{from:1.08,rot:0,spring:'fast'}]
+  ]
+}
+</script>
+</section>
