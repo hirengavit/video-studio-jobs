@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s003" data-section="INTRODUCTION" data-series="LETTER BOXES" data-in="cut" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="post">
+    <path id="flow-ground" opacity="0" d="M180 966H1715" fill="none" stroke="#d8c6a8" stroke-width="3" stroke-linecap="round"/>
+    <use id="posting-pillar" href="piece:letter-box-pillar" transform="translate(540 294.4) scale(1.6)"/>
+    <text id="posting-label" x="1115" y="422" font-family="Noto Sans Devanagari, Inter" font-size="70" font-weight="800" fill="#2b2622">Public डाक डालती है</text>
+    <g id="employee">
+      <use id="badge-art" href="piece:attendant-badge" transform="translate(1180 530) scale(1.35)"/>
+      <text id="employee-caption" x="1450" y="989" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="61" font-weight="800" fill="#2b2622">postal कर्मचारी</text>
+    </g>
+    <g id="clear-bag">
+      <use href="piece:collection-bag" transform="translate(660 546) scale(1.2)"/>
+      <path d="M552 620H734m-21-16 21 16-21 16" fill="none" stroke="#8a5d00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <path id="to-office" d="M1055 620H1234m-21-16 21 16-21 16" fill="none" stroke="#8a5d00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="postal-system">
+      <use href="piece:post-office-front" transform="translate(1271.5 425) scale(.85)"/>
+      <text id="postal-caption" x="1450" y="787" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="800" fill="#2b2622">डाक व्यवस्था</text>
+    </g>
+  </g>
+  <g id="term">
+    <rect x="560" y="380" width="800" height="320" rx="30" fill="#9e1b1b"/>
+    <rect x="560" y="380" width="800" height="320" rx="30" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 27" stroke-linecap="round"/>
+    <rect x="586" y="406" width="748" height="268" rx="20" fill="none" stroke="#b8403a" stroke-width="3"/>
+    <text id="clearance" x="960" y="575" text-anchor="middle" font-family="Inter,sans-serif" font-size="106" font-weight="820" fill="#fff">Clearance</text>
+    <text id="clearance-gloss" x="960" y="654" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="800" fill="#fde9a6">निकासी</text>
+    <g id="definition-line">
+      <rect x="420" y="754" width="1080" height="125" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text id="definition-start" x="655" y="834" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="63" font-weight="795" fill="#2b2622">Box खोलकर</text>
+      <text id="definition-end" x="1010" y="834" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="63" font-weight="795" fill="#2b2622">डाक निकालना</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ shots:[[0,'#post'],[5.42,'#term']],
+ on:[
+  [.44,'draw','#clear-bag',{dur:.53}],
+  [1.82,'draw','#to-office',{dur:.40}],
+  [3.42,'pop','#postal-system',{from:.94,spring:'soft'}],
+  [3.42,'words','#postal-caption',{gap:.24,from:'none',dist:0}],
+  [5.96,'fade','#definition-line',{dur:.18}],
+  [5.96,'words','#definition-start',{gap:.22,from:'none',dist:0}],
+  [7.34,'words','#definition-end',{gap:.38,from:'none',dist:0}],
+  [7.90,'write','#clearance',{dur:.44}],
+  [8.40,'fade','#clearance-gloss',{dur:.24}]
+ ],
+ update(t,section,$) {
+  const a=S.clamp(t/.40,0,1), p=a*a*(3-2*a);
+  $('#posting-pillar').forEach(n=>n.setAttribute('transform','translate('+(540-320*p)+' 294.4) scale(1.6)'));
+  $('#posting-label').forEach(n=>n.setAttribute('opacity',String(1-p)));
+  $('#flow-ground').forEach(n=>n.setAttribute('opacity',String(p)));
+  $('#badge-art').forEach(n=>n.setAttribute('transform','translate('+(1180-440*p)+' '+(530-324*p)+') scale('+(1.35-.55*p)+')'));
+  $('#employee-caption').forEach(n=>{n.setAttribute('x',String(1450-550*p));n.setAttribute('y',String(989-469*p));n.setAttribute('font-size',String(61-8*p))});
+ }
+}
+</script>
+</section>
