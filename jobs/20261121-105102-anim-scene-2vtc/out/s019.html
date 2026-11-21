@@ -1,0 +1,67 @@
+<section class="vs-scene" id="s019" data-duration="9.60" data-section="PART 1 · THREE FORMS, PRODUCT &amp; SERVICE" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="bulk">
+  <text id="bulk-term" x="160" y="257" font-family="Inter,sans-serif" font-size="76" font-weight="820" fill="#9e1b1b">Bulk mailers</text>
+  <text id="bulk-hi" x="160" y="329" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="53" font-weight="690" fill="#6f6a63">थोक डाक भेजने वाले</text>
+  <g id="bulk-stack">
+    <g id="bulk-envelope-1" transform="translate(170 391) scale(.68)">
+      <use href="piece:domestic-envelope"/>
+      <g id="bulk-barcode-1"><use href="piece:linear-barcode" transform="translate(78 72) scale(.73)"/></g>
+    </g>
+    <g id="bulk-envelope-2" transform="translate(280 510) scale(.68)">
+      <use href="piece:domestic-envelope"/>
+      <g id="bulk-barcode-2"><use href="piece:linear-barcode" transform="translate(78 72) scale(.73)"/></g>
+    </g>
+    <g id="bulk-envelope-3" transform="translate(390 629) scale(.68)">
+      <use href="piece:domestic-envelope"/>
+      <g id="bulk-barcode-3"><use href="piece:linear-barcode" transform="translate(78 72) scale(.73)"/></g>
+    </g>
+  </g>
+  <g id="bulk-steps">
+    <rect x="925" y="225" width="846" height="630" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M952 225H1744Q1771 225 1771 252V366H925V252Q925 225 952 225Z" fill="#9e1b1b"/>
+    <text x="985" y="315" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="63" font-weight="780" fill="#fff">Barcode के 3 कदम</text>
+    <g id="bulk-step-1">
+      <rect x="954" y="396" width="788" height="122" rx="16" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+      <circle cx="1007" cy="457" r="29" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+      <text x="1007" y="470" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="820" fill="#6f6a63">1</text>
+      <text id="print-series" x="1065" y="474" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="49" font-weight="760" fill="#2b2622">दी गई barcode series छापें</text>
+    </g>
+    <g id="bulk-step-2">
+      <rect x="954" y="544" width="788" height="122" rx="16" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+      <circle cx="1007" cy="605" r="29" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+      <text x="1007" y="618" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="820" fill="#6f6a63">2</text>
+      <text id="paste-series" x="1065" y="622" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="47" font-weight="760" fill="#2b2622">या पहले से छपे barcodes चिपकाएँ</text>
+    </g>
+    <g id="bulk-step-3">
+      <rect x="954" y="692" width="788" height="122" rx="16" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+      <circle cx="1007" cy="753" r="29" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+      <text x="1007" y="766" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="820" fill="#6f6a63">3</text>
+      <text id="excel-data" x="1065" y="770" font-family="Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">booking data → Excel file</text>
+      <g id="excel-icon"><use href="piece:excel-sheet-icon" transform="translate(1632 713) scale(.22)"/></g>
+    </g>
+  </g>
+  <g id="unaccountable-verdict">
+    <rect x="403" y="918" width="1114" height="106" rx="52" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text id="final-verdict" x="960" y="989" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="57" font-weight="810" fill="#2b2622">फिर भी: Unaccountable mail</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+  on:[
+    [0,'fade','#paste-series',{dur:0.32}],
+    [3.70,'fade','#excel-data',{dur:0.40}],
+    [5.36,'pop','#excel-icon',{spring:'soft'}],
+    [8.02,'fade','#unaccountable-verdict',{dur:0.32}],
+    [8.14,'words','#final-verdict',{gap:0.32,dist:14}],
+    [9.66,'highlight','#final-verdict',{words:'Unaccountable mail',color:'#f2b705',opacity:0.42,dur:0.42}]
+  ],
+  update(t,section,$){
+    const k=Math.max(0,Math.min(1,(t-7.02)/0.45));
+    for(const el of $('#bulk-step-1,#bulk-step-2,#bulk-step-3')) el.setAttribute('opacity',String(1-0.40*k));
+  }
+})
+</script>
+</section>
