@@ -1,0 +1,71 @@
+<section class="vs-scene" id="s026" data-in="cut" data-section="PART 2 · COUNTER, NOT THE BOX" data-series="LETTER BOXES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="The three shortcuts are not counter acceptance; full postage does not replace proper booking.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="wrong">
+    <g id="registered-card">
+      <rect x="160" y="300" width="500" height="520" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <use href="piece:domestic-envelope" transform="translate(186 430) scale(.59)"/>
+      <text id="handwritten" x="224" y="517" font-family="Caveat,cursive" font-size="60" font-weight="700" fill="#2b2622">Registered</text>
+    </g>
+    <g id="extra-card">
+      <rect x="710" y="300" width="500" height="520" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <use href="piece:domestic-envelope" transform="translate(736 430) scale(.59)"/>
+      <g id="extra-stamps">
+        <g id="extra-stamp-1"><use href="piece:postage-stamp" transform="translate(1016 430) scale(.13)"/></g>
+        <g id="extra-stamp-2"><use href="piece:postage-stamp" transform="translate(1061 430) scale(.13)"/></g>
+        <g id="extra-stamp-3"><use href="piece:postage-stamp" transform="translate(1105 430) scale(.13)"/></g>
+        <g id="extra-stamp-4"><use href="piece:postage-stamp" transform="translate(1031 485) scale(.13)"/></g>
+        <g id="extra-stamp-5"><use href="piece:postage-stamp" transform="translate(1087 485) scale(.13)"/></g>
+      </g>
+      <text id="extra-stamps-label" x="960" y="746" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="790" fill="#2b2622">ज़्यादा stamps</text>
+    </g>
+    <g id="box-shortcut">
+      <rect x="1260" y="300" width="500" height="520" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <use href="piece:letter-box-pillar" transform="translate(1421 296) scale(.89)"/>
+      <defs><clipPath id="mouth-edge"><rect x="1474" y="359" width="72" height="50.0"/></clipPath></defs>
+      <g clip-path="url(#mouth-edge)">
+        <g id="letter-at-mouth"><use href="piece:domestic-envelope" transform="translate(1478 392) scale(.084)"/></g>
+      </g>
+    </g>
+    <g id="shortcut-cross-1">
+      <circle cx="410" cy="385" r="47" fill="#4b4f58"/>
+      <path d="M393 368l34 34m0-34-34 34" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <g id="shortcut-cross-2">
+      <circle cx="960" cy="385" r="47" fill="#4b4f58"/>
+      <path d="M943 368l34 34m0-34-34 34" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <g id="shortcut-cross-3">
+      <circle cx="1677" cy="385" r="47" fill="#4b4f58"/>
+      <path d="M1660 368l34 34m0-34-34 34" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+  <text id="acceptance" x="960" y="943" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="67" font-weight="810" fill="#4b4f58">counter acceptance पूरी नहीं</text>
+  <g id="trap-wrap" transform="translate(0 -8)"><g id="trap">
+    <rect x="160" y="182" width="1600" height="92" rx="23" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+    <path d="M233 202l26 48h-52z" fill="#f2b705" stroke="#7d1414" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M233 218v12m0 8v1" stroke="#2b2622" stroke-width="5" stroke-linecap="round"/>
+    <text x="287" y="241" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="37" font-weight="810" fill="#fde9a6">EXAM TRAP · परीक्षा का जाल</text>
+    <path d="M795 205v47" stroke="#eab0a7" stroke-width="3"/>
+    <text x="842" y="244" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#fff">पूरा postage <tspan fill="#f2b705">≠</tspan></text>
+    <rect id="booking-highlight" x="1243" y="198" width="397" height="58" rx="10" fill="#fde9a6"/>
+    <text id="proper-booking" x="1255" y="244" font-family="Inter,sans-serif" font-size="52" font-weight="820" fill="#fff">proper booking</text>
+  </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [0,'pop','#box-shortcut',{from:.97,spring:'fast'}],
+    [.46,'slide','#letter-at-mouth',{from:'up',dist:30,spring:'soft'}],
+    [1.80,'stamp','#shortcut-cross-1'],
+    [2.10,'stamp','#shortcut-cross-2'],
+    [2.40,'stamp','#shortcut-cross-3'],
+    [3.80,'words','#acceptance',{gap:.39}],
+    [6.70,'slide','#trap',{from:'up',dist:38,spring:'soft'}],
+    [9.92,'fade','#booking-highlight',{dur:.18}],
+    [9.92,'color','#proper-booking',{to:'#694700',dur:.18}]
+  ]
+}
+</script>
+</section>
