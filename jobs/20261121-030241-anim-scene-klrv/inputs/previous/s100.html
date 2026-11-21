@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s100" data-in="cut" data-section="PART 6 · MONEY, STAMPS, VALUABLES" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Case 3: unused departmental postcard or blank unused embossed envelope">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="case-3">
+    <rect x="120" y="192" width="275" height="92" rx="46" fill="#9e1b1b"/>
+    <text x="257.5" y="253" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="820" fill="#fff">Case 3</text>
+  </g>
+  <g id="case-items">
+    <g id="departmental-postcard">
+      <g id="postcard-body" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="237" y="388" width="545" height="304" rx="12" fill="#f3ead6"/>
+        <rect x="257" y="408" width="505" height="264" rx="6" fill="none" stroke="#c3ab89" stroke-width="2"/>
+        <path d="M509 472V644M551 548H713M551 584H699M551 620H675" fill="none" stroke="#9b9385" stroke-width="3"/>
+        <rect x="655" y="435" width="69" height="79" rx="6" fill="#fbf7ee" stroke="#9e1b1b" stroke-width="2.5"/>
+        <path d="M672 487v-25h35v25zm0-25 17.5 13 17.5-13" stroke="#9e1b1b" stroke-width="2" fill="none"/>
+      </g>
+      <text id="postcard-label" x="510" y="756" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="810" fill="#2b2622">Departmental postcard</text>
+    </g>
+    <g id="unused-envelope">
+      <g id="envelope-body"><use href="piece:embossed-envelope" transform="translate(1120 259) scale(1.4)"/></g>
+      <circle id="embossing-ring" cx="1562.4" cy="462" r="66" fill="none" stroke="#f2b705" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g id="embossed-term">
+    <rect x="520" y="805" width="880" height="185" rx="26" fill="#9e1b1b"/>
+    <rect x="536" y="821" width="848" height="153" rx="17" stroke="#f3ead6" stroke-width="6" stroke-opacity=".73" stroke-dasharray="0 17" stroke-linecap="round" fill="none"/>
+    <text x="960" y="885" text-anchor="middle" font-family="Inter,sans-serif" font-size="68" font-weight="830" fill="#fff">Embossed envelope</text>
+    <text id="embossed-hi" x="960" y="950" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="720" fill="#fde9a6">उभरे मुद्रांक वाला लिफ़ाफ़ा</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera: [[0,{zoom:1}]],
+ on: [
+  [1.94,'draw','#postcard-body',{dur:.64}],
+  [1.94,'fade','#postcard-label',{dur:.28}],
+  [4.34,'draw','#envelope-body',{dur:.64}],
+  [5.80,'pop','#embossed-term',{from:.96,spring:'soft'}],
+  [9.80,'fade','#embossed-hi',{dur:.30}],
+  [10.72,'draw','#embossing-ring',{dur:.52}]
+ ]
+}
+</script>
+</section>
