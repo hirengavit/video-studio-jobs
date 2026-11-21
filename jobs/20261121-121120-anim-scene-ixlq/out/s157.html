@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s157" data-in="cut" data-section="PART 8 · MAIL CLASSES &amp; AIRMAIL" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="qms">
+  <use id="qms-box" href="piece:qms-letter-box" transform="translate(260 300) scale(1.2)"/>
+  <g id="qms-title">
+  <text id="qms-name" x="806" y="266" font-family="Inter,sans-serif" font-size="80" font-weight="825" fill="#2b2622">Quick Mail Service</text>
+  <text id="qms-hindi" x="809" y="345" font-family="Noto Sans Devanagari, sans-serif" font-size="55" font-weight="680" fill="#6f6a63">त्वरित डाक सेवा</text>
+  </g>
+</g>
+<g id="perks">
+  <g id="quick-processing">
+    <rect x="806" y="394" width="994" height="117" rx="22" fill="#fffefa" stroke="#ead9a8" stroke-width="3"/>
+    <circle cx="872" cy="452" r="36" fill="#f3ead6"/>
+    <path d="M849 435l24 17-24 17v-34zm24 0 24 17-24 17v-34z" fill="#9e1b1b"/>
+    <text x="936" y="472" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="57" font-weight="790" fill="#2b2622">जल्दी निपटान</text>
+  </g>
+  <g id="conditional-airlift">
+    <rect x="806" y="541" width="994" height="226" rx="22" fill="#fffefa" stroke="#d5a228" stroke-width="4"/>
+    <circle cx="872" cy="616" r="36" fill="#fde9a6"/>
+    <path d="M873 582l4 17 23 15v7l-23-6v17l9 8v4l-14-4-14 4v-4l9-8v-17l-23 6v-7l23-15 4-17z" fill="#8a5d00"/>
+    <text x="936" y="631" font-family="Inter,sans-serif" font-size="62" font-weight="800" fill="#2b2622">Airlift</text>
+    <rect id="airlift-allow-highlight" x="1566" y="672" width="118" height="60" rx="4" fill="#f2b705" opacity=".36"/>
+    <text id="airlift-condition" x="936" y="713" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="43" font-weight="730" fill="#2b2622">जहाँ transmission instructions allow करें</text>
+    <g id="not-automatic">
+      <rect x="1158" y="580" width="610" height="86" rx="43" fill="#edece9" stroke="#888a8e" stroke-width="3"/>
+      <text id="not-automatic-text" class="hi" x="1463" y="635" text-anchor="middle" font-size="46" font-weight="780" fill="#4b4f58">अपने आप का हक नहीं</text>
+    </g>
+  </g>
+  <g id="no-extra-qms">
+    <rect x="806" y="794" width="994" height="93" rx="46" fill="#e3f1e6" stroke="#a5caad" stroke-width="3"/>
+    <path d="M839 838l18 15 28-30" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text id="no-extra-qms-text" x="930" y="857" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="54" font-weight="790" fill="#245e3c">Extra QMS charge: नहीं</text>
+    <path id="qms-no-underline" d="M1445 885Q1486 890 1527 885" fill="none" stroke="#2e7d4f" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</g>
+
+<g id="destination">
+  <rect x="118" y="171" width="624" height="136" rx="26" fill="#fffefa" stroke="#ead9a8" stroke-width="3"/>
+  <text x="430" y="226" class="hi" text-anchor="middle" font-size="47" font-weight="790" fill="#2b2622">Destination पर delivery</text>
+  <text x="430" y="282" class="hi" text-anchor="middle" font-size="47" font-weight="750" fill="#6f6a63">आम डाक के साथ</text>
+</g>
+</svg>
+<script type="text/scene">
+({
+  dur:8.70,
+  on:[
+    [.36,"fade","#destination",{dur:.26}],
+    [4.58,"pulse","#conditional-airlift",{amount:.018}],
+    [6.94,"fade","#not-automatic",{dur:.24}],
+    [7.56,"strike","#not-automatic-text",{words:"हक",color:"#4b4f58",width:5,dur:.25,dim:1}]
+  ]
+})
+</script>
+</section>
