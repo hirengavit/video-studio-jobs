@@ -1,0 +1,42 @@
+<section class="vs-scene" id="s066" data-in="cut" data-section="PART 4 · WINDOW ENVELOPE" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="panel-rules">
+      <use id="panel-envelope" href="piece:window-envelope" transform="translate(120 300) scale(1.5)"/>
+      <g id="parallel-arrow" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M142 271H998M142 271l21-15m-21 15 21 15m835-15-21-15m21 15-21 15"/>
+      </g>
+      <text id="panel-heading" class="hi" x="1081" y="260" font-size="71" font-weight="800" fill="#9e1b1b">Panel की 3 बातें</text>
+      <g id="rows">
+        <rect x="1080" y="323" width="724" height="169" rx="26" fill="#fffdf7" stroke="#e0cbb7" stroke-width="3"/>
+        <rect x="1080" y="523" width="724" height="169" rx="26" fill="#fffdf7" stroke="#e0cbb7" stroke-width="3"/>
+        <rect x="1080" y="723" width="724" height="169" rx="26" fill="#fffdf7" stroke="#e0cbb7" stroke-width="3"/>
+        <g fill="#9e1b1b">
+          <circle cx="1155" cy="408" r="33"/><circle cx="1155" cy="608" r="33"/><circle cx="1155" cy="808" r="33"/>
+        </g>
+        <g fill="#fffdf7" font-size="39" font-weight="800" text-anchor="middle">
+          <text x="1155" y="422">1</text><text x="1155" y="622">2</text><text x="1155" y="822">3</text>
+        </g>
+        <g id="point1" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="735" fill="#2c2421">
+          <text x="1225" y="402" font-size="55">सबसे लंबी side</text>
+          <text x="1225" y="461" font-size="51">के parallel</text>
+        </g>
+        <g id="point2" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="735" fill="#2c2421">
+          <text x="1225" y="602" font-size="55">address साफ़</text>
+          <text x="1225" y="661" font-size="51">पढ़ा जाए</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur:10.95,
+    on:[
+      [3.33,"fade","#point1",{dur:.3}],
+      [3.33,"draw","#parallel-arrow",{dur:.86}],
+      [8.07,"fade","#point2",{dur:.32}],
+      [8.65,"highlight","#address-block",{color:"#f2b705",opacity:.35,dur:.48,pad:7}]
+    ]
+  })
+  </script>
+</section>
