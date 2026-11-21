@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s195" data-in="fade" data-in-dur="0.5" data-section="PART 10 · OTHER RULES" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="opener">
+      <rect x="156" y="315" width="10" height="48" rx="5" fill="#f2b705"/>
+      <text x="192" y="351" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="740" fill="#9e1b1b">PART 10 · भाग 10</text>
+      <text x="154" y="530" font-family="Inter, sans-serif" font-size="112" font-weight="800" fill="#2b2622">Other rules</text>
+      <text x="158" y="662" font-family="'Noto Sans Devanagari', sans-serif" font-size="74" font-weight="700" fill="#9e1b1b">कुछ और नियम</text>
+      <path d="M160 717 H682" fill="none" stroke="#f2b705" stroke-width="12" stroke-linecap="round"/>
+      <g id="stamp">
+        <rect x="1260" y="266" width="500" height="560" rx="28" fill="#9e1b1b"/>
+        <rect x="1260" y="266" width="500" height="560" rx="28" fill="none" stroke="#fbf7ee" stroke-width="15" stroke-dasharray="0 26" stroke-linecap="round"/>
+        <rect x="1292" y="300" width="436" height="360" rx="20" fill="#fbf7ee"/>
+        <g transform="translate(1372 354)" stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M27 15H238Q255 15 255 31V246H45Q22 246 22 223V40Q22 19 45 19H254" fill="#f3ead6"/>
+          <path d="M63 18V210 M22 220Q22 207 44 207H255" fill="none"/>
+          <path d="M96 84H215 M96 111H190" fill="none" stroke="#9e1b1b"/>
+          <path d="M64 226H218" fill="none" stroke="#a89a80"/>
+        </g>
+        <text x="1312" y="782" font-family="Inter, sans-serif" font-size="99" font-weight="820" fill="#fff">10</text>
+      </g>
+    </g>
+    <g id="guide">
+      <text id="guide-title" x="960" y="272" text-anchor="middle" font-family="Inter, sans-serif" font-size="75" font-weight="790" fill="#9e1b1b">Post Office Guide · Part I</text>
+      <g id="guide-cards">
+        <g id="general-card">
+          <rect x="123" y="363" width="808" height="530" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+          <rect x="178" y="430" width="327" height="88" rx="44" fill="#fde9a6"/>
+          <text x="341.5" y="491" text-anchor="middle" font-family="Inter, sans-serif" font-size="53" font-weight="780" fill="#2b2622">Section I</text>
+          <g id="general-detail">
+            <text id="general-topic" x="180" y="658" font-family="Georgia, serif" font-size="67" font-weight="700" fill="#2b2622">General matters</text>
+            <path d="M181 698 H864" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+            <text x="182" y="798" font-family="Inter, sans-serif" font-size="51" font-weight="680" fill="#6f6a63">clauses 1–95</text>
+          </g>
+        </g>
+        <g id="letter-card">
+          <rect x="989" y="363" width="808" height="530" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+          <rect x="1044" y="430" width="327" height="88" rx="44" fill="#fde9a6"/>
+          <text x="1207.5" y="491" text-anchor="middle" font-family="Inter, sans-serif" font-size="53" font-weight="780" fill="#2b2622">Section II</text>
+          <g id="letter-detail">
+            <text id="letter-topic" x="1046" y="658" font-family="Georgia, serif" font-size="58" font-weight="700" fill="#2b2622">Letter and Parcel Post</text>
+            <path d="M1047 698 H1730" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+            <text x="1048" y="798" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="680" fill="#6f6a63">clause 96 से</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur: 11.92,
+    shots: [[0,"#opener"],[1.00,"#guide"]],
+    on: [
+      [1.00,"type","#guide-title",{cps:42}],
+      [2.78,"pop","#guide-cards",{from:0.96,spring:"fast"}],
+      [5.56,"fade","#general-detail",{dur:0.24}],
+      [5.56,"type","#general-topic",{cps:18}],
+      [9.32,"fade","#letter-detail",{dur:0.24}],
+      [9.32,"type","#letter-topic",{cps:16}]
+    ]
+  })
+  </script>
+</section>
