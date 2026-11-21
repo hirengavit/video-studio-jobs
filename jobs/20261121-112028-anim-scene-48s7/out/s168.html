@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s168" data-in="cut" data-section="PART 9 · COUNTER CHECKS &amp; DUES" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif" fill="#2b2622">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="why">
+      <text id="why-heading" x="960" y="274" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="78" font-weight="780" fill="#9e1b1b">charge की दो वजहें</text>
+      <g id="reason-1">
+        <rect x="133" y="355" width="794" height="465" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M167 355H893Q927 355 927 389V506H133V389Q133 355 167 355Z" fill="#9e1b1b"/>
+        <text x="530" y="455" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="72" font-weight="790" fill="#fff">वजह 1</text>
+        <g id="postage-short">
+          <g transform="translate(441 560)">
+            <rect x="0" y="0" width="178" height="84" rx="12" fill="#f3ead6" stroke="#aa997b" stroke-width="4" stroke-dasharray="5 6"/>
+            <path d="M51 42H127" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+          </g>
+          <text x="530" y="742" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="750">Postage कम लगा</text>
+        </g>
+      </g>
+      <g id="reason-2">
+        <rect x="993" y="355" width="794" height="465" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M1027 355H1753Q1787 355 1787 389V506H993V389Q993 355 1027 355Z" fill="#f2b705"/>
+        <text x="1390" y="455" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="72" font-weight="790">वजह 2</text>
+        <g id="condition-breach">
+          <g transform="translate(1301 560)">
+            <rect x="0" y="0" width="178" height="84" rx="12" fill="#f3ead6" stroke="#aa997b" stroke-width="4" stroke-dasharray="5 6"/>
+            <path d="M58 25h62M58 43h37M58 61h49M108 37l-8 14h17l-7 13" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <text x="1390" y="742" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="61" font-weight="750">Product की शर्त टूटी</text>
+        </g>
+      </g>
+      <g id="check-reason">
+        <rect x="434" y="857" width="1052" height="110" rx="55" fill="#f3ead6"/>
+        <text id="check-reason-line" x="960" y="927" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="56" font-weight="790">पहले: charge किस वजह से?</text>
+      </g>
+    </g>
+    <g id="def">
+      <g id="def-term-card">
+        <rect x="151" y="218" width="1618" height="447" rx="31" fill="#9e1b1b"/>
+        <rect x="151" y="218" width="1618" height="447" rx="31" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 26" stroke-linecap="round"/>
+        <rect x="177" y="244" width="1566" height="395" rx="18" fill="none" stroke="#b8403a" stroke-width="3"/>
+        <text id="def-name" x="960" y="444" text-anchor="middle" font-size="124" font-weight="830" fill="#fff">Deficiency</text>
+        <text id="def-hi" x="960" y="553" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="76" font-weight="770" fill="#fde9a6">कमी</text>
+      </g>
+      <g id="def-meaning">
+        <rect x="151" y="698" width="1618" height="249" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <rect x="151" y="698" width="13" height="249" rx="6" fill="#f2b705"/>
+        <text id="def-formula" x="960" y="847" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="72" font-weight="780">ज़रूरी postage − दिया गया postage</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur:13.98,
+    shots:[[0,"#why"],[7.78,"#def"]],
+    on:[
+      [0.00,"fade","#condition-breach",{dur:.32}],
+      [3.70,"fade","#check-reason",{dur:.23}],
+      [3.70,"words","#check-reason-line",{gap:.12,dist:12}],
+      [6.14,"highlight","#check-reason-line",{words:"किस वजह",color:"#f2b705",opacity:.35,pad:4,dur:.38}],
+      [7.78,"type","#def-name",{cps:20}],
+      [8.30,"fade","#def-hi",{dur:.30}],
+      [10.28,"fade","#def-meaning",{dur:.23}],
+      [10.28,"words","#def-formula",{gap:.19,dist:14}]
+    ]
+  })
+  </script>
+</section>
