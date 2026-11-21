@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s026" data-in="cut" data-section="PART 2 · LETTER WEIGHT &amp; SIZE" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif" fill="#2b2622">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="forms">
+      <text x="960" y="271" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="83" font-weight="780" fill="#9e1b1b">Letter के दो रूप</text>
+      <g id="roll-card">
+        <rect x="120" y="361" width="802" height="545" rx="34" fill="#fffefa" stroke="#ead9a8" stroke-width="4"/>
+        <use href="piece:postal-roll" transform="translate(180 516) scale(.85)"/>
+        <text id="roll-name" x="521" y="785" text-anchor="middle" font-size="66" font-weight="800" fill="#9e1b1b">Roll</text>
+      </g>
+
+      <g id="nonroll-card">
+        <rect x="998" y="361" width="802" height="545" rx="34" fill="#fffefa" stroke="#ead9a8" stroke-width="4"/>
+        <g id="flat-packet" stroke="#2b2622" stroke-width="4" stroke-linejoin="round">
+          <path d="M1110 592l140-96h480l-140 96z" fill="#f3ead6"/>
+          <path d="M1110 592h480v60h-480z" fill="#dbc5a8"/>
+          <path d="M1590 592l140-96v59l-140 97z" fill="#c8ae8b"/>
+          <path d="M1305 496l-140 96v60m172-156l-140 96v60" fill="none" stroke="#a78d6a" stroke-width="3"/>
+        </g>
+        <text x="1399" y="785" text-anchor="middle" font-size="66" font-weight="800" fill="#9e1b1b">Non-roll</text>
+        <text id="nonroll-gloss" x="1399" y="848" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="52" font-weight="670" fill="#6f6a63">roll के अलावा</text>
+      </g>
+    </g>
+    <g id="roll">
+      <use href="piece:postal-roll" transform="translate(320 401) scale(1.6)"/>
+      <g id="length-arrow" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M378 334v92 M1539 334v108" stroke="#bb7d72" stroke-width="4"/>
+        <path d="M378 350H1539 M402 333l-24 17 24 17 M1515 333l24 17-24 17"/>
+      </g>
+      <text id="length-label" x="960" y="302" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="65" font-weight="810" fill="#9e1b1b">लंबाई</text>
+      <g id="diameter-arrow" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <path d="M1418 449V673 M1400 472l18-23 18 23 M1400 650l18 23 18-23" stroke="#fff9e9" stroke-width="15"/>
+        <path d="M1418 449V673 M1400 472l18-23 18 23 M1400 650l18 23 18-23 M1430 561h132" stroke="#8a5d00" stroke-width="6"/>
+      </g>
+      <g id="diameter-label" text-anchor="start">
+        <text x="1577" y="551" font-size="51" font-weight="810" fill="#734c00">Diameter</text>
+        <text x="1577" y="612" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="51" font-weight="710" fill="#6f6a63">व्यास</text>
+      </g>
+      <g id="diameter-definition">
+        <rect x="430" y="799" width="1060" height="125" rx="62" fill="#fde9a6"/>
+        <text x="960" y="882" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="63" font-weight="800" fill="#644601">गोल सिरे के आर-पार की दूरी</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur:9.78,
+    shots:[[0,"#forms"],[2.56,"#roll"]],
+    on:[
+      [0,"type","#roll-name",{cps:15}],
+      [1.14,"pop","#nonroll-card",{from:.95,spring:"fast"}],
+      [1.52,"fade","#nonroll-gloss",{dur:.25}],
+      [3.14,"draw","#length-arrow",{dur:.42}],
+      [3.14,"fade","#length-label",{dur:.25}],
+      [4.36,"draw","#diameter-arrow",{dur:.42}],
+      [4.36,"fade","#diameter-label",{dur:.25}],
+      [7.30,"fade","#diameter-definition",{dur:.28}]
+    ]
+  })
+  </script>
+</section>
