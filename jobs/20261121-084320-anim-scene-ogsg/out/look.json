@@ -8,12 +8,5 @@
   "9.09"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s068",
-   "message": "highlight: \"× 2\" isn't in that <text> (it says \"\")",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
