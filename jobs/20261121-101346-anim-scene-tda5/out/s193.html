@@ -30,8 +30,7 @@
       <g id="pill2">
         <rect x="1080" y="548" width="565" height="104" rx="33" fill="#fae9af"/>
         <text x="1117" y="589" font-size="42" font-weight="790" fill="#774820">second-class</text>
-        <text id="sorting" class="hi" x="1117" y="636" font-size="41" font-weight="725" fill="#774820">· sorting में first-class</text>
-        <text id="sorting-final" class="hi" x="1551" y="636" font-size="41" font-weight="725" fill="#774820">जैसा</text>
+        <text id="sorting" class="hi" x="1117" y="636" font-size="41" font-weight="725" fill="#774820">· sorting में first-class<tspan id="sorting-final" x="1551" opacity="0">जैसा</tspan></text>
       </g>
       <g id="k2">
         <circle cx="273" cy="607" r="31" fill="#e3f1e8"/>
@@ -56,14 +55,17 @@
   <script type="text/scene">
   ({
     on:[
-      [0,'fade','#sorting-final',{dur:0.24}],
       [0.60,'fade','#k2',{dur:0.22}],
       [1.36,'fade','#r3',{dur:0.26}],
       [3.44,'fade','#pill3',{dur:0.24}],
       [5.94,'fade','#k3',{dur:0.22}],
       [7.10,'fade','#r4',{dur:0.25}],
       [9.22,'fade','#pill4',{dur:0.25}]
-    ]
+    ],
+    update(t,section,$) {
+      const suffix=$("#sorting-final")[0];
+      if(suffix) suffix.setAttribute("opacity",String(Math.max(0,Math.min(1,t/0.24))));
+    }
   })
   </script>
 </section>
