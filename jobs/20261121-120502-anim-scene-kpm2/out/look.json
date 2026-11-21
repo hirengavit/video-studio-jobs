@@ -8,12 +8,5 @@
   "8.95"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s065",
-   "text": "Window size / Window size",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
