@@ -8,12 +8,5 @@
   "12.17"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s047",
-   "text": "Dispatch / office सेकब जाती",
-   "t": 7.39
-  }
- ]
+ "warnings": []
 }
