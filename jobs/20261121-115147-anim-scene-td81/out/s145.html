@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s145" data-in="cut" data-section="PART 8 · MAIL CLASSES &amp; AIRMAIL" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="fee">
+      <text id="airmail-fee-title" x="960" y="247" text-anchor="middle" font-family="Inter,sans-serif" font-size="81" font-weight="820" fill="#9e1b1b">Airmail fee</text>
+      <text id="airmail-fee-hi" x="960" y="319" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="55" font-weight="710" fill="#6f6a63">हवाई डाक शुल्क</text>
+      <g id="airmail-scale">
+        <ellipse cx="471" cy="903" rx="234" ry="18" fill="#dfcfb1" opacity=".56"/>
+        <use href="piece:postal-scale" transform="translate(206 480) scale(1.06)"/>
+        <g id="accepted-item">
+          <use href="piece:domestic-envelope" transform="translate(330 356) scale(.37)"/>
+          <rect x="497" y="384" width="77" height="28" rx="4" fill="#2456a6"/>
+          <path d="M511 398h50" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+        </g>
+      </g>
+      <g id="fee-plane">
+        <use href="piece:icon-airplane" transform="translate(1220 377) scale(1.05)"/>
+      </g>
+      <g id="accepted-by-air">
+        <rect x="978" y="675" width="796" height="119" rx="35" fill="#fde9a6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1376" y="749" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="790" fill="#523907">हवा से भेजने के लिए स्वीकार</text>
+      </g>
+      <g id="fee-stack">
+        <rect x="754" y="561" width="395" height="77" rx="14" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <text x="951.5" y="616" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="770" fill="#2b2622">Postage</text>
+        <rect x="754" y="473" width="395" height="77" rx="14" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+        <text x="951.5" y="528" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="49" font-weight="770" fill="#2b2622">बाकी fees</text>
+        <g id="extra-airmail">
+          <rect x="754" y="385" width="395" height="77" rx="14" fill="#fde9a6" stroke="#d29b00" stroke-width="4"/>
+          <text x="951.5" y="440" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="790" fill="#694700">Airmail fee</text>
+        </g>
+      </g>
+      <g id="on-top">
+        <rect x="770" y="694" width="177" height="81" rx="40.5" fill="#fde9a6"/>
+        <text x="858.5" y="751" text-anchor="middle" font-family="Noto Sans Devanagari,sans-serif" font-size="45" font-weight="770" fill="#694700">ऊपर से</text>
+      </g>
+      <g id="routing-decision">
+        <rect x="1050" y="829" width="724" height="137" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <text x="1412" y="888" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">Department का फ़ैसला:</text>
+        <text x="1412" y="944" text-anchor="middle" font-family="Noto Sans Devanagari,sans-serif" font-size="49" font-weight="780" fill="#4b4f58">जहाज़ से?</text>
+      </g>
+      <g id="fee-different">
+        <circle cx="979" cy="897.5" r="48" fill="#4b4f58"/>
+        <text x="979" y="917" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="800" fill="#fff">≠</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    on:[
+      [0,'fade','#fee-stack',{dur:0.23}],
+      [0.60,'slide','#extra-airmail',{from:'up',dist:38,spring:'soft'}],
+      [2.50,'pop','#on-top',{from:0.95,spring:'soft'}],
+      [5.92,'fade','#routing-decision',{dur:0.43}],
+      [8.78,'pop','#fee-different',{from:0.93,spring:'soft'}]
+    ]
+  })
+  </script>
+</section>
