@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s023" data-in="cut" data-section="PART 1 · THREE FORMS, PRODUCT &amp; SERVICE" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Recap: letters, letter cards, postcards and accountable items">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="sum">
+    <use id="recap-forms" href="piece:three-forms-icons" transform="translate(540 170) scale(.6)"/>
+    <text id="recap-title" x="960" y="439" text-anchor="middle" font-family="'Noto Sans Devanagari',sans-serif" font-size="59" font-weight="780" fill="#9e1b1b">अब तक की बातें</text>
+    <g id="recap-letter">
+      <rect x="170" y="500" width="1580" height="120" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="212" y="536" width="9" height="51" rx="4" fill="#f2b705"/>
+      <text x="255" y="580" font-family="Inter,sans-serif" font-size="66" font-weight="800" fill="#9e1b1b">Letter</text>
+      <text id="recap-letter-fact" x="664" y="580" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="690" fill="#2b2622">व्यक्ति के नाम, current और personal</text>
+    </g>
+    <g id="recap-ilc">
+      <rect x="170" y="640" width="1580" height="120" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="212" y="676" width="9" height="51" rx="4" fill="#f2b705"/>
+      <text x="255" y="720" font-family="Inter,sans-serif" font-size="66" font-weight="800" fill="#9e1b1b">Letter Card</text>
+      <text id="recap-ilc-fact" x="664" y="720" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="690" fill="#2b2622">मुड़ी, गोंद लगी sheet</text>
+    </g>
+    <g id="recap-postcard">
+      <rect x="170" y="780" width="1580" height="120" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="212" y="816" width="9" height="51" rx="4" fill="#f2b705"/>
+      <text x="255" y="860" font-family="Inter,sans-serif" font-size="66" font-weight="800" fill="#9e1b1b">Postcard</text>
+      <text id="recap-postcard-fact" x="664" y="860" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="690" fill="#2b2622">खुला संदेश</text>
+    </g>
+    <g id="recap-accountable">
+      <rect x="170" y="920" width="1580" height="120" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="212" y="956" width="9" height="51" rx="4" fill="#f2b705"/>
+      <text x="255" y="1000" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#9e1b1b">Accountable item</text>
+      <text id="recap-accountable-fact" x="735" y="1000" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="690" fill="#2b2622">booking पर receipt + delivery का सबूत</text>
+    </g>
+
+    <g id="receipt" transform="translate(1570 938) scale(.21)"><use href="piece:booking-receipt"/></g>
+    <g id="proof-tick"><circle cx="1686" cy="980" r="34" fill="#e9f4ea" stroke="#2e7d4f" stroke-width="3"/><path d="m1670 981 11 11 22-24" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+   dur:12.30,
+   shots:[[0,"#sum"]],
+   update(t) {
+     let active=t<.03?"letter":t<4.06?"ilc":"postcard";
+     for(const id of ["letter","ilc","postcard"]){
+       $("#fill-"+id).forEach(el=>el.setAttribute("fill",id===active?"#f3ead6":"#f2efeb"));
+       $("#icon-"+id).forEach(el=>el.setAttribute("stroke",id===active?"#2b2622":"#a8a19a"));
+     }
+   },
+   on: [
+     [.03,"fade","#recap-ilc",{dur:.22}],
+     [1.04,"words","#recap-ilc-fact",{gap:.48,dist:9,from:"down"}],
+     [4.06,"fade","#recap-postcard",{dur:.24}],
+     [5.20,"words","#recap-postcard-fact",{gap:.44,dist:9,from:"down"}],
+     [6.78,"fade","#recap-accountable",{dur:.24}],
+     [8.56,"words","#recap-accountable-fact",{gap:.48,dist:9,from:"down"}],
+     [9.34,"pop","#receipt",{from:.86,spring:"fast"}],
+     [11.38,"pop","#proof-tick",{from:.85,spring:"fast"}]
+   ]
+ })
+ </script>
+</section>
