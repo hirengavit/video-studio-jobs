@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s059" data-in="cut" data-section="PART 4 · KEYS, BAG AND ROUND" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The key is issued at each fixed round and stays in custody between rounds">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="day">
+    <text id="day-title" x="960" y="257" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="800" fill="#9e1b1b">Round का तय समय</text>
+    <path id="day-track" d="M160 620H1760" fill="none" stroke="#d6c5a5" stroke-width="10" stroke-linecap="round"/>
+    <g id="between-rounds">
+      <path d="M559 620H1361" fill="none" stroke="#f2b705" stroke-width="12" stroke-linecap="round"/>
+      <path d="M960 617V534" fill="none" stroke="#8a5d00" stroke-width="4" stroke-linecap="round"/>
+      <g id="key-in-cabinet">
+        <use id="custody-cabinet" href="piece:key-cabinet" transform="translate(834 310) scale(.63)"/>
+        <use id="stored-key" href="piece:box-key" transform="translate(859 311) scale(.51)"/>
+      </g>
+    </g>
+    <g id="round-1">
+      <rect x="164" y="544" width="385" height="152" rx="30" fill="#9e1b1b"/>
+      <rect x="177" y="557" width="359" height="126" rx="23" fill="none" stroke="#f3ead6" stroke-opacity=".72" stroke-width="4" stroke-dasharray="1 11" stroke-linecap="round"/>
+      <text x="356.5" y="641" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="830" fill="#fff">Round 1</text>
+    </g>
+    <g id="key-round-1"><use href="piece:box-key" transform="translate(156 314) scale(1)"/></g>
+    <g id="round-2">
+      <rect x="1371" y="544" width="385" height="152" rx="30" fill="#9e1b1b"/>
+      <rect x="1384" y="557" width="359" height="126" rx="23" fill="none" stroke="#f3ead6" stroke-opacity=".72" stroke-width="4" stroke-dasharray="1 11" stroke-linecap="round"/>
+      <text x="1563.5" y="611" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="830" fill="#fff">Round 2</text>
+      <text id="round-evening" x="1563.5" y="670" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" style="line-height:1.3" font-weight="720" fill="#fde9a6">शाम</text>
+    </g>
+    <g id="key-round-2"><use href="piece:box-key" transform="translate(1363 314) scale(1)"/></g>
+    <g id="no-custody">
+      <rect x="675" y="690" width="570" height="88" rx="44" fill="#f0efed" stroke="#b4b3b1" stroke-width="2"/>
+      <circle cx="738" cy="734" r="24" fill="none" stroke="#4b4f58" stroke-width="3"/>
+      <path d="m727 723 22 22m0-22-22 22" fill="none" stroke="#4b4f58" stroke-width="4" stroke-linecap="round"/>
+      <text x="974" y="751" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="740" fill="#4b4f58">पास नहीं रखता</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0,{zoom:1}]],
+  shots: [[0,'#day']],
+  on: [
+    [1.18,'pop','#round-1',{from:.96,spring:'soft'}],
+    [2.00,'pop','#key-round-1',{from:.92,spring:'soft'}],
+    [6.42,'fade','#between-rounds',{dur:.36}],
+    [9.52,'fade','#no-custody',{dur:.28}],
+    [10.48,'pop','#round-2',{from:.96,spring:'soft'}],
+    [10.48,'pop','#key-round-2',{from:.92,spring:'soft'}],
+    [11.06,'fade','#round-evening',{dur:.24}]
+  ]
+}
+</script>
+</section>
