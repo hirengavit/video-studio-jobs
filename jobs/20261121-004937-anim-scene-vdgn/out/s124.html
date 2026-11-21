@@ -1,5 +1,5 @@
 <section class="vs-scene" id="s124" data-in="cut" data-section="PART 7 · CHECKS AND EXTRA DUTIES" data-series="LETTER BOXES">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Letter-box duty map: rules, attendant duties, the clearance process and extra duties">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Letter-box duty map: posting rules, attendant duties and the clearance process">
   <rect width="1920" height="1080" fill="#fbf7ee"/>
   <g id="map">
     <g id="duty-branches" fill="none" stroke="#d4bd95" stroke-width="6" stroke-linecap="round">
@@ -24,11 +24,11 @@
         <text id="b2-punctuality" x="1384" y="392" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="710" fill="#6f6a63">· punctuality</text>
         <text id="b2-defect" x="1254" y="443" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="710" fill="#6f6a63">· defect report</text>
       </g>
-      <g id="b3"><rect id="b3-bg" x="115" y="714" width="620" height="218" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
-        <g id="b3-title"><rect x="153" y="740" width="8" height="47" rx="4" fill="#9e1b1b"/><text id="b3-title-text" x="184" y="782" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="820" fill="#2b2622">Clearance की प्रक्रिया</text></g>
-        <text id="b3-equipment" x="184" y="830" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="710" fill="#6f6a63">सामान लेना</text>
-        <text id="b3-electronic" x="184" y="873" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="710" fill="#6f6a63">· electronic record</text>
-        <text id="b3-return" x="184" y="938" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="710" fill="#6f6a63">· बिना देर लौटना</text>
+      <g id="b3"><rect id="b3-shell" x="115" y="714" width="620" height="264" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+        <g id="b3-title"><rect x="153" y="736" width="8" height="47" rx="4" fill="#9e1b1b"/><text id="b3-title-text" x="184" y="778" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="820" fill="#2b2622">Clearance की प्रक्रिया</text></g>
+        <text id="b3-equipment" x="184" y="838" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="710" fill="#6f6a63">सामान लेना</text>
+        <text id="b3-electronic" x="184" y="897" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="710" fill="#6f6a63">· electronic record</text>
+        <text id="b3-return" x="184" y="951" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="710" fill="#6f6a63">· बिना देर लौटना</text>
       </g>
       <g id="b4"><rect x="1185" y="714" width="620" height="218" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
         <g id="b4-title"><rect x="1223" y="740" width="8" height="47" rx="4" fill="#9e1b1b"/><text id="b4-title-text" x="1254" y="782" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="820" fill="#2b2622">Extra duties</text></g>
@@ -40,12 +40,8 @@
 </svg>
 <script type="text/scene">
 {
-  update(t, section, $) {
-    const p = Math.max(0, Math.min(1,t/.26));
-    $('#b3-bg')[0].setAttribute('height', 218 + 31 * p * (2-p));
-  },
   on: [
-    [0,'words','#b3-return',{gap:.39,dist:0}],
+    [0,'words','#b3-return',{gap:.39,from:'none',dist:0}],
     [2.32,'fade','#b4-title',{dur:.24}],
     [4.30,'words','#b4-mail',{gap:.4,dist:8}],
     [6.58,'fade','#b4-packer',{dur:.24}]
