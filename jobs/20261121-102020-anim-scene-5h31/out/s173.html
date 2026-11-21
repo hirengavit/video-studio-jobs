@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s173" data-section="PART 9 · COUNTER CHECKS &amp; DUES" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" fill="#2b2622">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="worked-example">
+    <rect x="140" y="220" width="1000" height="737" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text x="235" y="338" font-family="Noto Sans Devanagari, sans-serif" font-size="81" font-weight="800" fill="#9e1b1b">एक हिसाब</text>
+    <path d="M230 375h819" stroke="#ead9a8" stroke-width="4"/>
+    <text id="needed" x="240" y="498" font-family="Noto Sans Devanagari, Georgia, sans-serif" font-size="70" font-weight="730">चाहिए ₹5</text>
+    <text id="paid" x="240" y="614" font-family="Noto Sans Devanagari, Georgia, sans-serif" font-size="70" font-weight="730">लगे ₹3</text>
+    <g id="shortfall" font-size="70" font-weight="750">
+      <text id="shortfall-term" x="240" y="730" font-family="Noto Sans Devanagari, Georgia, sans-serif">कमी</text>
+      <text x="766" y="730" text-anchor="middle" font-family="Georgia, serif">=</text>
+      <text id="shortfall-amount" x="850" y="730" font-family="Georgia, serif">₹2</text>
+    </g>
+    <g id="answer-pill"><rect x="811" y="773" width="220" height="111" rx="55.5" fill="#e3f1e8" stroke="#2e7d4f" stroke-width="3"/></g>
+    <text id="double-deficiency" x="240" y="852" font-family="Noto Sans Devanagari, Georgia, sans-serif" font-size="70" font-weight="790">कमी × 2</text>
+    <text id="answer-equals" x="766" y="852" text-anchor="middle" font-family="Georgia, serif" font-size="70" font-weight="750">=</text>
+    <text id="answer-amount" x="921" y="852" text-anchor="middle" font-family="Georgia, serif" font-size="76" font-weight="800" fill="#215b3e">₹4</text>
+    <g id="dues-mark">
+      <use href="piece:postage-due-mark" transform="translate(1280 236) scale(1.05)"/>
+      <text id="due-label" x="1441" y="450" text-anchor="middle" font-size="42" font-weight="850" fill="#4b4f58">DUE ₹4</text>
+    </g>
+  </g>
+  <g id="wrong-full-postage">
+    <rect x="1198" y="574" width="582" height="190" rx="25" fill="#efedeb" stroke="#cbc7c4" stroke-width="3"/>
+    <text id="wrong-whole-line" x="1237" y="648" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#4b4f58">पूरे postage का दोगुना</text>
+    <text id="wrong-ten-rupees" x="1237" y="717" font-family="Inter, sans-serif" font-size="58" font-weight="800" fill="#4b4f58">= ₹10</text>
+    <g id="wrong-ten-cross">
+      <circle cx="1702" cy="702" r="37" fill="#4b4f58"/>
+      <path d="m1688 688 28 28m0-28-28 28" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </g>
+  <g id="rule-reminder">
+    <rect x="1198" y="806" width="582" height="151" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text id="reminder-first" x="1237" y="863" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="720" fill="#6f6a63">हमेशा देखिए:</text>
+    <text id="reminder-second" x="1237" y="925" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="55" font-weight="800" fill="#2b2622">कौन सा नियम?</text>
+  </g>
+</svg>
+<script type="text/scene">
+({
+ on:[
+   [1.04,"highlight","#double-deficiency",{color:"#fde9a6",opacity:.95,pad:9,dur:.40}],
+   [2.40,"fade","#wrong-full-postage",{dur:.39}],
+   [4.54,"strike","#wrong-whole-line, #wrong-ten-rupees",{color:"#4b4f58",width:7,dur:.35}],
+   [4.54,"pop","#wrong-ten-cross",{from:.86}],
+   [5.62,"fade","#rule-reminder",{dur:.32}],
+   [5.62,"words","#reminder-first",{gap:.24,dist:10,from:"down"}],
+   [7.80,"words","#reminder-second",{gap:.26,dist:10,from:"down"}]
+ ]
+})
+</script>
+</section>
