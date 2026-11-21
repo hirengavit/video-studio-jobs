@@ -8,12 +8,5 @@
   "9.57"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s048",
-   "text": "Letter / पत्र",
-   "t": 7.78
-  }
- ]
+ "warnings": []
 }
