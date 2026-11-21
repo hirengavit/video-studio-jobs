@@ -8,12 +8,5 @@
   "11.17"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s206",
-   "text": "दोगुना postage / − credit",
-   "t": 9.06
-  }
- ]
+ "warnings": []
 }
