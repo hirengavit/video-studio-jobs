@@ -61,7 +61,7 @@
     <g id="last-box-pill">
       <rect id="last-box-pill-shape" x="904" y="887" width="677" height="79" rx="35" fill="#f3ead6"/>
       <text id="return-prompt" x="931" y="943" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="750" fill="#2b2622">बिना देर लौटना</text>
-      <text id="defect-report" x="931" y="969" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#2b2622">defect report<tspan id="report-postmaster"> → Postmaster</tspan></text>
+      <text id="defect-report" x="931" y="965" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#2b2622">defect report<tspan id="report-postmaster"> → Postmaster</tspan></text>
     </g>
     <path id="recap-tick-5" d="m1629 909 13 13 26-28" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
@@ -85,7 +85,7 @@
   const a=Math.min(1,Math.max(0,(t-3.37)/.21));
   $('#last-box-pill-shape')[0].setAttribute('y',887-20*a);
   $('#last-box-pill-shape')[0].setAttribute('height',79+41*a);
-  $('#return-prompt')[0].setAttribute('y',943-29*a);
+  $('#return-prompt')[0].setAttribute('y',943-21*a);
   $('#report-postmaster')[0].setAttribute('opacity',Math.min(1,Math.max(0,(t-4.59)/.22)));
  }
 }
