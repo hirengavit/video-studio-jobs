@@ -13,9 +13,9 @@
     <g id="app-name">
       <rect x="311" y="392" width="230" height="123" rx="17" fill="#9e1b1b"/>
       <rect id="app-name-highlight" x="327" y="408" width="198" height="91" rx="11" fill="#fde9a6" fill-opacity=".20"/>
+      <g id="app-marker"><rect id="app-marker-panel" x="322" y="408" width="208" height="95" rx="10" fill="none"/></g>
       <text id="app-title-a" x="426" y="443" text-anchor="middle" font-family="Inter,sans-serif" font-size="38" font-weight="810" fill="#fff">Doorstep</text>
       <text id="app-title-b" x="426" y="486" text-anchor="middle" font-family="Inter,sans-serif" font-size="38" font-weight="810" fill="#fff">Service</text>
-      <g id="app-marker"><text id="app-marker-a" x="426" y="443" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">Doorstep</text><text id="app-marker-b" x="426" y="486" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">Service</text></g>
     </g>
     </g>
   </g>
@@ -42,13 +42,17 @@
     $('#phone-panel')[0].setAttribute('y',253+39*k);
     $('#phone-panel')[0].setAttribute('width',640-28*k);
     $('#phone-panel')[0].setAttribute('height',760-97*k);
-    for(const id of ['#app-title-a','#app-title-b']) $(id)[0].setAttribute('font-size',44-6*k);
+    for(const id of ['#app-title-a','#app-title-b']) {
+      $(id)[0].setAttribute('font-size',44-6*k);
+      $(id)[0].setAttribute('fill',t>=3.66&&t<5.17?'#2b2622':'#fff');
+    }
+    $('#app-title-a')[0].setAttribute('y',437+6*k);
+    $('#app-title-b')[0].setAttribute('y',492-6*k);
   },
   on: [
     [2.58, 'reveal', '#app-name', {from:'left',dur:.42}],
     [3.58, 'fade', '#app-marker', {dur:.15}],
-    [3.58, 'highlight', '#app-marker-a', {color:'#fde9a6',opacity:.8,pad:8,dur:.34}],
-    [3.58, 'highlight', '#app-marker-b', {color:'#fde9a6',opacity:.8,pad:8,dur:.34}],
+    [3.58, 'highlight', '#app-marker-panel', {color:'#fde9a6',opacity:.8,pad:8,dur:.26}],
     [5.10, 'out', '#app-marker', {dur:.18,scale:1}],
     [5.30, 'fade', '#app-name-highlight', {dur:.20}],
     [5.82, 'slide', '#manual-card', {from:'right',dist:60,spring:'soft'}],
