@@ -8,24 +8,5 @@
   "8.47"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s169",
-   "message": "highlight: \"× 2\" isn't in that <text> (it says \"\")",
-   "t": 0.3
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s169",
-   "message": "a card is mostly empty at 1.7 s: bring its items in sooner, or size it for what it holds now",
-   "t": 1.72
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s169",
-   "message": "a card is mostly empty at 3.5 s: bring its items in sooner, or size it for what it holds now",
-   "t": 3.45
-  }
- ]
+ "warnings": []
 }
