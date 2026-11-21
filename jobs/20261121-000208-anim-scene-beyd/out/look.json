@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.78",
+  "3.57",
+  "5.35",
+  "7.14",
+  "8.77"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s092",
+   "text": "= / electronic record",
+   "t": 7.14
+  }
+ ]
+}
