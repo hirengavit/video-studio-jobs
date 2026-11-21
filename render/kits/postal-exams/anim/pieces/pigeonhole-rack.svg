@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect id="frame" x="3" y="3" width="894" height="514" rx="9" fill="#9e1b1b"/>
+<g id="compartment-1"><rect x="22" y="24" width="202" height="174" rx="2" fill="#fbf7ee"/><path d="M32 36H214V186H32Z" stroke="#ead9a8"/><rect id="label-1" x="36" y="211" width="174" height="32" rx="2" fill="#ffffff" stroke="#ead9a8"/></g>
+<g id="compartment-2"><rect x="240" y="24" width="202" height="174" rx="2" fill="#fbf7ee"/><path d="M250 36H432V186H250Z" stroke="#ead9a8"/><rect id="label-2" x="254" y="211" width="174" height="32" rx="2" fill="#ffffff" stroke="#ead9a8"/></g>
+<g id="compartment-3"><rect x="458" y="24" width="202" height="174" rx="2" fill="#fbf7ee"/><path d="M468 36H650V186H468Z" stroke="#ead9a8"/><rect id="label-3" x="472" y="211" width="174" height="32" rx="2" fill="#ffffff" stroke="#ead9a8"/></g>
+<g id="compartment-4"><rect x="676" y="24" width="202" height="174" rx="2" fill="#fbf7ee"/><path d="M686 36H868V186H686Z" stroke="#ead9a8"/><rect id="label-4" x="690" y="211" width="174" height="32" rx="2" fill="#ffffff" stroke="#ead9a8"/></g>
+<g id="compartment-5"><rect x="22" y="262" width="202" height="174" rx="2" fill="#fbf7ee"/><path d="M32 274H214V424H32Z" stroke="#ead9a8"/><rect id="label-5" x="36" y="449" width="174" height="32" rx="2" fill="#ffffff" stroke="#ead9a8"/></g>
+<g id="compartment-6"><rect x="240" y="262" width="202" height="174" rx="2" fill="#fbf7ee"/><path d="M250 274H432V424H250Z" stroke="#ead9a8"/><rect id="label-6" x="254" y="449" width="174" height="32" rx="2" fill="#ffffff" stroke="#ead9a8"/></g>
+<g id="compartment-7"><rect x="458" y="262" width="202" height="174" rx="2" fill="#fbf7ee"/><path d="M468 274H650V424H468Z" stroke="#ead9a8"/><rect id="label-7" x="472" y="449" width="174" height="32" rx="2" fill="#ffffff" stroke="#ead9a8"/></g>
+<g id="compartment-8"><rect x="676" y="262" width="202" height="174" rx="2" fill="#fbf7ee"/><path d="M686 274H868V424H686Z" stroke="#ead9a8"/><rect id="label-8" x="690" y="449" width="174" height="32" rx="2" fill="#ffffff" stroke="#ead9a8"/></g>
+
+<circle data-anchor="base" cx="450" cy="517" r="0"/>
+<circle data-anchor="top" cx="450" cy="3" r="0"/>
+</svg>
