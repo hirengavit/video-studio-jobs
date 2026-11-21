@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s016" data-section="PART 1 · THREE FORMS, PRODUCT &amp; SERVICE" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" fill="#2b2622">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="terms">
+    <g id="accountable-term">
+      <rect x="125" y="365" width="650" height="353" rx="24" fill="#fff" stroke="#2e7d4f" stroke-width="6"/>
+      <path d="M183 407h95" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round"/>
+      <text x="450" y="572" font-size="82" font-weight="800" text-anchor="middle">Accountable</text>
+    </g>
+    <g id="not-accountable">
+      <rect x="804" y="499" width="165" height="84" rx="42" fill="#4b4f58"/>
+      <text x="886.5" y="555" text-anchor="middle" font-family="Noto Sans Devanagari, sans-serif" font-size="58" font-weight="760" fill="#fff">नहीं</text>
+    </g>
+    <g id="unaccountable-term">
+      <rect x="998" y="365" width="797" height="353" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="5"/>
+      <path d="M1056 407h95" stroke="#f2b705" stroke-width="8" stroke-linecap="round"/>
+      <text x="1396.5" y="544" font-size="67" font-weight="800" text-anchor="middle">Unaccountable item</text>
+      <text id="unaccountable-hindi" x="1396.5" y="623" text-anchor="middle" font-family="Noto Sans Devanagari, sans-serif" font-size="52" font-weight="630" fill="#6f6a63">गैर-जवाबदेह वस्तु</text>
+    </g>
+  </g>
+  <g id="env">
+    <use href="piece:domestic-envelope" transform="translate(409 213) scale(1.45)"/>
+    <g id="letter-tag">
+      <rect x="556" y="828" width="370" height="100" rx="50" fill="#e8f3e9" stroke="#2e7d4f" stroke-width="4"/>
+      <text x="725" y="897" font-size="68" font-weight="800" text-anchor="middle">Letter</text>
+      <path d="M841 876l15 15 30-36" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+    <g id="service-tag">
+      <rect x="994" y="828" width="370" height="100" rx="50" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+      <text x="1179" y="897" font-size="68" font-weight="800" text-anchor="middle">Service ?</text>
+    </g>
+    <text id="service-pending" x="1179" y="995" font-family="Noto Sans Devanagari, sans-serif" font-size="51" font-weight="700" text-anchor="middle" fill="#4b4f58">अभी तय नहीं</text>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  shots: [[0, '#terms'], [5.16, '#env']],
+  on: [
+    [1.02, 'pop', '#not-accountable', {spring:'soft'}],
+    [2.72, 'pop', '#unaccountable-term', {spring:'soft'}],
+    [3.22, 'fade', '#unaccountable-hindi', {dur:0.45}],
+    [6.56, 'pop', '#letter-tag', {spring:'soft'}],
+    [8.98, 'pop', '#service-tag', {spring:'soft'}],
+    [9.66, 'pulse', '#service-tag', {amount:0.09}],
+    [9.66, 'fade', '#service-pending', {dur:0.32}]
+  ]
+})
+</script>
+</section>
