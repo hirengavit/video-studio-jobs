@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s013" data-in="cut" data-section="PART 1 · THREE FORMS, PRODUCT &amp; SERVICE" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif" fill="#2b2622">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="two-questions">
+      <text id="conditions-line" x="960" y="192" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="720" fill="#6f6a63">दोनों की अपनी शर्तें</text>
+      <g id="question-cards">
+        <g id="product-card">
+          <rect x="140" y="220" width="760" height="740" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+          <circle cx="520" cy="347" r="64" fill="#9e1b1b"/>
+          <text x="520" y="376" text-anchor="middle" font-size="80" font-weight="820" fill="#ffffff">1</text>
+          <text id="product-title" x="520" y="533" text-anchor="middle" font-size="92" font-weight="820">Product?</text>
+          <text id="product-hindi" x="520" y="607" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="670" fill="#6f6a63">पहला सवाल</text>
+          <g id="product-query">
+            <rect x="190" y="667" width="660" height="110" rx="18" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+            <text id="product-line" x="520" y="738" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="740">ये कौन सा product है?</text>
+          </g>
+          <g id="product-clarifier">
+            <text id="product-rule" x="520" y="878" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="56" font-weight="765">नाम → कौन सी शर्तें</text>
+          </g>
+        </g>
+        <g id="service-card">
+          <rect x="1020" y="220" width="760" height="740" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+          <circle cx="1400" cy="347" r="64" fill="#9e1b1b"/>
+          <text x="1400" y="376" text-anchor="middle" font-size="80" font-weight="820" fill="#ffffff">2</text>
+          <text id="service-title" x="1400" y="533" text-anchor="middle" font-size="92" font-weight="820">Service?</text>
+          <text id="service-hindi" x="1400" y="607" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="49" font-weight="670" fill="#6f6a63">दूसरा सवाल</text>
+          <g id="service-query">
+            <rect x="1070" y="667" width="660" height="110" rx="18" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+            <text id="service-line" x="1400" y="738" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="53" font-weight="740">किस service में book हुआ?</text>
+          </g>
+        </g>
+      </g>
+      <path id="split-line" d="M960 248V936" fill="none" stroke="#d7c9aa" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    on:[
+      [0.98,'fade','#product-clarifier',{dur:0.4}],
+      [3.40,'highlight','#product-rule',{words:'शर्तें',color:'#f2b705',opacity:0.42,dur:0.44}],
+      [4.96,'type','#service-title',{cps:19}],
+      [5.44,'fade','#service-hindi',{dur:0.32}],
+      [6.33,'fade','#service-query',{dur:0.27}],
+      [6.46,'words','#service-line',{gap:0.26,dist:12,from:'down'}]
+    ]
+  })
+  </script>
+</section>
