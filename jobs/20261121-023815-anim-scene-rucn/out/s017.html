@@ -52,6 +52,9 @@
   ],
   update(t,section,$) {
     const p=S.clamp((t-1.55)/.46,0,1);
+    // Keep the director's heading swap without ghosting two languages together.
+    $('#old-notice-heading').forEach(n=>n.setAttribute('display',t<.21?'inline':'none'));
+    $('#rule-heading').forEach(n=>n.setAttribute('display',t<.21?'none':'inline'));
     const q=S.clamp(t/.48,0,1);
     const top=50*q*q*(3-2*q);
     $('#notice-card').forEach(n=>{n.setAttribute('y',String(390-top));n.setAttribute('height',String(262+top+197*p*p*(3-2*p)));});
