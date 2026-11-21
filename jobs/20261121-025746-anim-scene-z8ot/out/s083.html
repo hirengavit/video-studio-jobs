@@ -41,8 +41,8 @@
       <text x="1258" y="768" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="670" fill="#6f6a63">दरवाज़े के अंदर</text>
     </g>
     <g id="android-chip">
-      <rect x="839" y="968" width="274" height="63" rx="20" fill="#fde9a6" stroke="#ead9a8" stroke-width="3"/>
-      <text x="976" y="1012" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="790" fill="#694700">Android app</text>
+      <rect x="839" y="942" width="274" height="63" rx="20" fill="#fde9a6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="976" y="986" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="790" fill="#694700">Android app</text>
     </g>
   </g>
   <g id="type-handset">
@@ -110,8 +110,8 @@
   ],
   update(t,section,$) {
     const u=S.clamp((t-.14)/.74,0,1), dx=126*u*u*(3-2*u);
-    $('#scan-phone').forEach(n=>n.setAttribute('transform',`translate(${-120+dx} 0)`));
-    $('#scan-link').forEach(n=>n.setAttribute('d',`M${804+dx} 776H673`));
+    $('#scan-phone').forEach(n=>n.setAttribute('transform',`translate(${-120+dx} ${-26*dx/126})`));
+    $('#scan-link').forEach(n=>n.setAttribute('d',`M${804+dx} ${776-26*dx/126}L673 776`));
     $('#route-reveal').forEach(n=>n.setAttribute('width',String(970*S.clamp((t-8.92)/.74,0,1))));
     const x=t<7.10?885:t<7.37?912:940;
     $('#caret').forEach(n=>{n.setAttribute('d','M'+x+' 422V461');n.setAttribute('opacity',Math.floor(t*4)%2?'.35':'1')});
