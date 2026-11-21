@@ -118,15 +118,15 @@
         const ns=sub.namespaceURI;
         if (!sub.querySelector('tspan')) {
           sub.textContent='';
-          for (const [txt,x,dy] of [['पूरे prepaid ordinary:',699,0],['letter, letter card, postcard',699,45]]) {
+          for (const [txt,x,dy] of [['पूरे prepaid ordinary:',699,0],['letter, letter card, postcard',699,39]]) {
             const el=document.createElementNS(ns,'tspan');
             el.setAttribute('x',x);el.setAttribute('dy',dy);el.textContent=txt;sub.append(el);
           }
         }
-        sub.setAttribute('y',928);
+        sub.setAttribute('y',930);
         sub.setAttribute('font-size',37);
         const title=$('#step5 > text')[0];
-        if(title) title.setAttribute('y',882);
+        if(title) {title.setAttribute('y',891);title.setAttribute('font-size',48);}
       }
     }
   })
