@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s058" data-in="cut" data-section="PART 4 · KEYS, BAG AND ROUND" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <rect x="120" y="268" width="765" height="694" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <rect x="1035" y="268" width="765" height="694" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <use id="attendant" href="piece:attendant-badge" transform="translate(183 345) scale(1.13)"/>
+ <text x="410" y="887" text-anchor="middle" font-size="59" font-weight="800" fill="#2b2622">Attendant</text>
+ <use id="cabinet" href="piece:key-cabinet" transform="translate(1137.5 305) scale(1.4)"/>
+ <text id="postmaster" x="1417.5" y="852" text-anchor="middle" font-size="53" font-weight="820" fill="#2b2622">Postmaster</text>
+ <text id="assistant" x="1417.5" y="918" text-anchor="middle" class="hi" font-size="48" font-weight="750" fill="#6f6a63">या responsible Assistant</text>
+ <g id="no" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round">
+   <circle cx="713" cy="552" r="52"/>
+   <path d="M681 531l64 43m0-43-64 43"/>
+   <text x="713" y="645" text-anchor="middle" class="hi" font-size="46" font-weight="750" fill="#4b4f58" stroke="none">पास नहीं</text>
+ </g>
+ <g id="flow" fill="none" stroke="#8a5d00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+   <path d="M910 550h99m-26-26 26 26-26 26"/>
+ </g>
+ <g id="equipment">
+  <use href="piece:box-key" transform="translate(513 287) scale(.87)"/>
+  <use href="piece:hour-plate" transform="translate(628 690) scale(.92)"/>
+ </g>
+ <g id="custody">
+  <rect x="1190" y="181" width="455" height="140" rx="24" fill="#9e1b1b"/>
+  <rect x="1203" y="193" width="429" height="116" rx="16" fill="none" stroke="#b8403a" stroke-dasharray="6 7" stroke-width="3"/>
+  <text x="1417.5" y="240" text-anchor="middle" font-size="58" font-weight="800" fill="#fff">Custody</text>
+  <text id="custody-hi" x="1417.5" y="294" text-anchor="middle" class="hi" font-size="46" font-weight="700" fill="#fde9a6">अभिरक्षा</text>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [2.72,'pop','#no',{from:.94,spring:'soft'}],
+  [3.98,'move','#equipment',{by:[705,0],spring:'soft'}],
+  [3.98,'draw','#flow',{dur:.36}],
+  [4.44,'fade','#postmaster',{dur:.28}],
+  [5.96,'fade','#assistant',{dur:.32}],
+  [7.98,'pop','#custody',{from:.94,spring:'soft'}],
+  [8.60,'fade','#custody-hi',{dur:.28}]
+ ]
+}
+</script>
+</section>
