@@ -107,7 +107,6 @@
   on:[
     [0,'out','#prior-code-detail',{dur:.44}],
     [.50,'words','#three-independent',{gap:.27,dist:12}],
-    [2.50,'fade','#first-check-passed',{dur:.25}],
     [4.56,'pop','#code-questions',{from:.95}],
     [5.78,'fade','#not-automatic',{dur:.29}],
     [5.92,'words','#not-automatic-label',{gap:.45,dist:12}]
@@ -115,6 +114,8 @@
   update(t,section,$) {
     const q=$('#qr-illustration')[0]?.querySelector('[id$="quiet-zone"]');
     if(q)q.setAttribute('visibility','hidden');
+    for(const g of $('#check-1')) g.setAttribute('visibility',t<2.50?'visible':'hidden');
+    for(const g of $('#first-check-passed')) g.setAttribute('visibility',t<2.50?'hidden':'visible');
     const p=Math.max(0,Math.min(1,(t-.25)/.53));
     for(const g of $('#three-checks')) g.setAttribute('transform','translate(0 '+(-410*p*p*(3-2*p))+')');
   }
