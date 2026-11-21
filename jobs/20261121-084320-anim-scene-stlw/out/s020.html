@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s020" data-in="cut" data-section="PART 1 · THREE FORMS, PRODUCT &amp; SERVICE" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="mythcard">
+      <rect x="142" y="194" width="1636" height="321" rx="38" fill="#fffdf9" stroke="#e1d2bd" stroke-width="3"/>
+      <rect x="207" y="227" width="179" height="70" rx="35" fill="#e4e5e8"/>
+      <text class="hi" x="296" y="275" text-anchor="middle" font-size="44" font-weight="750" fill="#4b4f58">भ्रम</text>
+      <text x="207" y="412" font-size="75" font-weight="830" fill="#2b2622">Ordinary mail + barcode</text>
+      <text id="myth-claim" x="1150" y="412" font-size="68" font-weight="800" fill="#2b2622">= accountable</text>
+      <g id="myth-bars" fill="none" stroke="#4b4f58" stroke-linecap="butt">
+        <path d="M219 448v33m14-33v33m12-33v33m15-33v33m16-33v33m13-33v33m15-33v33m14-33v33m15-33v33m11-33v33m16-33v33m14-33v33" stroke-width="5"/>
+        <path d="M254 448v33m45-33v33m28-33v33m40-33v33" stroke-width="7"/>
+      </g>
+      <g id="myth-cross">
+        <circle cx="1681" cy="391" r="44" fill="#f0edf0" stroke="#4b4f58" stroke-width="5"/>
+        <path d="M1664 374l34 34m0-34-34 34" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+      </g>
+    </g>
+    <g id="factcard">
+      <rect x="142" y="554" width="1636" height="420" rx="38" fill="#f3ead6" stroke="#e1cda2" stroke-width="3"/>
+      <rect x="207" y="589" width="179" height="70" rx="35" fill="#2e7d4f"/>
+      <text class="hi" x="296" y="637" text-anchor="middle" font-size="44" font-weight="750" fill="#fffdf7">तथ्य</text>
+      <rect x="1400" y="592" width="315" height="65" rx="32" fill="#faebbc"/>
+      <text class="hi" x="1557" y="637" text-anchor="middle" font-size="44" font-weight="750" fill="#77501f">शर्तें देखें</text>
+      <text id="fact" x="207" y="785" font-size="107" font-weight="860" fill="#9e1b1b">Barcode ≠ accountable</text>
+      <text id="reason" class="hi" x="211" y="897" font-size="61" font-weight="720" fill="#3c302a">Booking की service और शर्तें अलग से देखें</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur:10.28,
+    on:[
+      [1.06,"draw","#myth-bars",{dur:.45}],
+      [3.18,"type","#myth-claim",{cps:28}],
+      [4.06,"strike","#myth-claim",{words:"accountable",color:"#4b4f58",width:8,dur:.33,dim:.48}],
+      [4.06,"pop","#myth-cross",{from:.88}],
+      [5.36,"slide","#factcard",{from:"down",dist:35}],
+      [5.36,"type","#fact",{cps:36}],
+      [7.12,"words","#reason",{gap:.12,dist:10}],
+      [8.12,"highlight","#reason",{words:"अलग से",color:"#f2b705",opacity:.34,dur:.43}]
+    ]
+  })
+  </script>
+</section>
