@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="van-body"><path d="M43 263V135Q43 123 55 123H247L292 170H329Q350 170 356 191L368 263Z" fill="#9e1b1b"/><path id="window-band" d="M52 141H238L278 184H52Z" fill="#fbf7ee"/><path d="M193 141V251M243 148L272 184H210V148Z"/><path id="rear-door" d="M64 199H172V248H64Z" stroke="#f3ead6"/><path d="M219 208H238" stroke="#fbf7ee"/><rect x="344" y="207" width="15" height="14" rx="2" fill="#fbf7ee"/><path id="bumper" d="M35 260H375V272H35Z" fill="#f3ead6"/></g>
+<g id="wheels" fill="#2b2622"><circle cx="101" cy="271" r="30"/><circle cx="307" cy="271" r="30"/></g><g id="wheel-hubs" fill="#f3ead6"><circle cx="101" cy="271" r="13"/><circle cx="307" cy="271" r="13"/></g>
+<circle data-anchor="base" cx="205" cy="301" r="0"/>
+</svg>
