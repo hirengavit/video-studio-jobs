@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.26",
+  "4.51",
+  "6.77",
+  "9.02",
+  "11.13"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-off-frame",
+   "scene": "s156",
+   "text": "जहाँ transmission instructions allow करे",
+   "t": 4.51
+  }
+ ]
+}
