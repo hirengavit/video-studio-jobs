@@ -8,12 +8,5 @@
   "11.65"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s131",
-   "text": "· postage / · postal directions",
-   "t": 2.36
-  }
- ]
+ "warnings": []
 }
