@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s099" data-in="cut" data-section="PART 6 · POSTCARD CONDITIONS" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Stiff postcard stock compared with writing paper cut to the same shape">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="stiffness-compare">
+  <g id="stiff-card">
+   <rect x="145" y="221" width="760" height="554" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <path d="M270 589V337H780V574l-14 15Z" fill="#c6a985" stroke="#2b2622" stroke-width="4" stroke-linejoin="round"/>
+   <use href="piece:service-postcard" transform="translate(270 282) scale(.85)"/>
+   <text x="705" y="371" text-anchor="middle" font-family="Inter,sans-serif" font-size="18" font-weight="800" fill="#fff">50 p</text>
+   <text x="546" y="325" font-family="Inter,sans-serif" font-size="21" font-weight="760" fill="#2b2622">POST CARD</text>
+   <g id="stiffness-tag">
+    <rect x="248" y="646" width="555" height="78" rx="38" fill="#f3ead6"/>
+    <text x="525.5" y="700" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="55" font-weight="810" fill="#2b2622">card जैसी मज़बूती</text>
+   </g>
+   <g id="stiffness-check">
+    <circle cx="785" cy="574" r="44" fill="#2e7d4f" stroke="#fff" stroke-width="6"/>
+    <path d="m765 574 13 13 27-30" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+   </g>
+  </g>
+  <g id="thin-paper">
+   <rect x="1015" y="221" width="760" height="554" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <g id="curling-sheet" stroke-linejoin="round">
+    <path d="M1100 270H1650V544q0 73-75 88h-475z" fill="#fffdfa" stroke="#2b2622" stroke-width="3"/>
+    <path d="M1575 632c43-13 49-56 31-82q28 2 44-6c0 47-21 76-75 88Z" fill="#e7d7ba" stroke="#2b2622" stroke-width="3"/>
+    <path d="M1138 307h322M1138 343h244M1138 379h286M1138 415h251M1138 451h279M1138 487h225" fill="none" stroke="#e4d8c3" stroke-width="4" stroke-linecap="round"/>
+   </g>
+   <g id="postcard-cut">
+    <rect x="1120" y="292" width="510" height="284" rx="8" fill="none" stroke="#4b4f58" stroke-width="5" stroke-dasharray="14 10"/>
+    <g id="cut-scissors" transform="translate(1594 288)" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+     <circle cx="24" cy="-16" r="12" fill="#fffdfa"/><circle cx="24" cy="15" r="12" fill="#fffdfa"/><path d="m14-9-44 24m44-6-44-24"/>
+    </g>
+   </g>
+   <text x="1395" y="700" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="55" font-weight="810" fill="#2b2622">लिखने का पतला कागज़</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [1.60,'fade','#stiffness-tag',{dur:.28}],
+  [3.02,'stamp','#stiffness-check',{from:1.20,rot:0,spring:'soft'}],
+  [4.34,'fade','#thin-paper',{dur:.32}],
+  [6.66,'reveal','#postcard-cut',{from:'left',dur:.75}]
+ ]
+}
+</script>
+</section>
