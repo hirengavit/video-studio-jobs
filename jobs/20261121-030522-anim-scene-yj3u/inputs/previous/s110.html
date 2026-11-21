@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s110" data-section="PART 7 · CHECKS AND EXTRA DUTIES" data-series="LETTER BOXES" data-in="cut" lang="hi">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="checklist">
+      <rect x="158" y="324" width="530" height="174" rx="35" fill="#9e1b1b"/>
+      <text x="423" y="394" text-anchor="middle" font-family="Inter" font-size="63" font-weight="800" fill="#fff">Postmaster</text>
+      <text x="423" y="466" text-anchor="middle" font-family="Noto Sans Devanagari, Inter" font-size="56" font-weight="700" fill="#fde9a6">की जाँच</text>
+      <use href="piece:post-counter-icon" transform="translate(198 552) scale(1.13)"/>
+      <rect x="760" y="240" width="1000" height="750" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <g fill="#fffdf8" stroke="#ead9a8" stroke-width="2">
+        <rect x="804" y="278" width="912" height="146" rx="18"/>
+        <rect x="804" y="454" width="912" height="146" rx="18"/>
+        <rect x="804" y="630" width="912" height="146" rx="18"/>
+        <rect x="804" y="806" width="912" height="146" rx="18"/>
+      </g>
+      <g fill="#2b2622">
+        <text font-family="Noto Sans Devanagari, Inter" id="office" x="852" y="340" font-size="56" font-weight="750">Office का letter box</text>
+        <text font-family="Noto Sans Devanagari, Inter" id="office-time" x="852" y="396" font-size="49" font-weight="650">ठीक समय पर</text>
+        <text font-family="Noto Sans Devanagari, Inter" id="outside" x="852" y="516" font-size="56" font-weight="750">बाहर के boxes</text>
+        <text font-family="Noto Sans Devanagari, Inter" id="outside-time" x="852" y="572" font-size="49" font-weight="650">अपने तय समय पर</text>
+      </g>
+      <g id="plate-row" fill="#2b2622">
+        <use href="piece:hour-plate" transform="translate(852 661) scale(1.05)"/>
+        <text id="plate-title" x="1072" y="688" font-family="Inter, sans-serif" font-size="55" font-weight="760">Hour plates</text>
+        <text id="plate-change" x="1072" y="744" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="650">सही और समय पर बदलीं</text>
+      </g>
+      <g id="attendant-row" fill="#2b2622">
+        <text x="852" y="868" font-family="Inter, sans-serif" font-size="55" font-weight="760">Attendant</text>
+        <text id="attendant-out" x="852" y="925" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="650">तय समय पर निकला</text>
+        <g id="attendant-return">
+          <rect x="1351" y="876" width="297" height="62" rx="31" fill="#fde9a6"/>
+          <text x="1499.5" y="923" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="720" fill="#694700">लौटा</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0,{zoom:1}]],
+    on: [
+      [2.46, 'fade', '#plate-row', {dur:.24}],
+      [3.28, 'fade', '#plate-change', {dur:.24}],
+      [6.34, 'fade', '#attendant-row', {dur:.24}],
+      [8.30, 'fade', '#attendant-out', {dur:.22}],
+      [10.64, 'fade', '#attendant-return', {dur:.22}]
+    ]
+  }
+  </script>
+</section>
