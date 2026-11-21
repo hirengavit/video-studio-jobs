@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="bottle" d="M182 96H218V140Q218 150 230 156L262 170Q280 178 280 198V326Q280 340 266 340H134Q120 340 120 326V198Q120 178 138 170L170 156Q182 150 182 140Z" fill="#7a4f2a"/>
+<path d="M134 196V322" stroke="#a37a52" stroke-width="5" fill="none"/>
+<path id="stopper" d="M176 60H224Q228 60 228 66V88Q228 96 220 96H180Q172 96 172 88V66Q172 60 176 60Z" fill="#c8cbcc"/>
+<g id="label"><rect x="142" y="202" width="116" height="104" rx="4" fill="#ffffff"/>
+<path d="M200 210 242 254 200 298 158 254Z" fill="none" stroke-width="2.5"/>
+<path d="M176 228 186 242M224 228 214 242" stroke-width="5" fill="none"/>
+<path d="M188 246q3 5 0 7q-3-2 0-7ZM212 246q3 5 0 7q-3-2 0-7Z" fill="#2b2622" stroke-width="1.5"/>
+<path d="M176 262h22v9h-22Z" fill="#2b2622" stroke-width="1.5"/><path d="M180 262v-4m5 4v-5m5 5v-4" stroke-width="2"/>
+<path d="M204 262h22v10h-10l-4-4-4 4h-4Z" fill="#2b2622" stroke-width="1.5"/></g>
+<circle data-anchor="base" cx="200" cy="340" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="200" cy="60" r="0" fill="none" stroke="none"/>
+</svg>
