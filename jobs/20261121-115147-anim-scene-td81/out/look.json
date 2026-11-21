@@ -8,12 +8,5 @@
   "11.27"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s145",
-   "text": "हवा से भेजने के लिए स्वीकार / ऊपर से",
-   "t": 4.57
-  }
- ]
+ "warnings": []
 }
