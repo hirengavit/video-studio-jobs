@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.82",
+  "3.64",
+  "5.46",
+  "7.28",
+  "8.95"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s065",
+   "text": "Window size / Window size",
+   "t": 3.64
+  }
+ ]
+}
