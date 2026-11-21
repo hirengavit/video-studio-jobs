@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s102" data-in="fade" data-in-dur="0.5" data-section="PART 4 · CIRCLES &amp; HEADQUARTERS" data-series="POSTAL ADMINISTRATION">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="chapter">
+  <rect x="120" y="305" width="10" height="54" rx="5" fill="#f2b705"/>
+  <text x="150" y="347" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="800" fill="#9e1b1b">PART 4 · भाग 4</text>
+  <text x="120" y="508" font-family="Inter, sans-serif" font-size="108" font-weight="850" fill="#2b2622">Circles &amp;</text>
+  <text x="120" y="634" font-family="Inter, sans-serif" font-size="108" font-weight="850" fill="#2b2622">Headquarters</text>
+  <text x="120" y="765" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="66" font-weight="750" fill="#9e1b1b">Circle, मुख्यालय और इलाके</text>
+  <path id="underline" d="M122 794 Q475 788 817 794" fill="none" stroke="#f2b705" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="132" cy="899" r="11" fill="#9e1b1b"/><circle cx="174" cy="899" r="11" fill="#9e1b1b"/><circle cx="216" cy="899" r="11" fill="#9e1b1b"/><circle cx="258" cy="899" r="11" fill="#f2b705"/><circle cx="300" cy="899" r="11" fill="#e6dcc4"/><circle cx="342" cy="899" r="11" fill="#e6dcc4"/>
+  <text x="388" y="913" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="650" fill="#6f6a63">Part 4 of 6 · भाग 4 / 6</text>
+  <g id="postmark">
+    <rect x="1260" y="284" width="540" height="648" rx="26" fill="#9e1b1b"/>
+    <rect x="1260" y="284" width="540" height="648" rx="26" fill="none" stroke="#fbf7ee" stroke-width="16" stroke-dasharray="0 27" stroke-linecap="round"/>
+    <rect x="1304" y="324" width="452" height="423" rx="20" fill="#f3ead6"/>
+    <g id="chapter-pin"><use href="piece:icon-city-pin" transform="translate(1419 394) scale(1.85)"/></g>
+    <text x="1312" y="870" font-family="Inter, sans-serif" font-size="96" font-weight="850" fill="#ffffff">04</text>
+  </g>
+</g>
+<g id="definition">
+  <rect id="hq" x="120" y="280" width="700" height="480" rx="30" fill="#9e1b1b"/>
+  <rect x="120" y="280" width="700" height="480" rx="30" fill="none" stroke="#fbf7ee" stroke-width="15" stroke-dasharray="0 25" stroke-linecap="round"/>
+  <text x="187" y="494" font-family="Inter, sans-serif" font-size="72" font-weight="850" fill="#ffffff">Headquarters</text>
+  <text id="hq-hi" x="187" y="618" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="68" font-weight="750" fill="#fbf7ee" opacity="0.85">मुख्यालय</text>
+  <g id="meaning-shell">
+  <rect id="meaning" x="900" y="280" width="900" height="480" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="967" y="368" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="750" fill="#6f6a63">अर्थ</text>
+  </g>
+  <text id="city" x="967" y="476" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="800" fill="#2b2622">वो शहर, जहाँ Circle का</text>
+  <text id="office" x="967" y="580" font-family="Inter, sans-serif" font-size="53" font-weight="800" fill="#2b2622">central administrative office</text>
+  <text id="is" x="967" y="677" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="62" font-weight="750" fill="#2b2622">है।</text>
+  <g id="definition-pin"><use href="piece:icon-city-pin" transform="translate(1665 605) scale(.66)"/></g>
+  <g id="envelope-band">
+    <rect x="120" y="820" width="1680" height="170" rx="27" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M160 888 H232 V937 H160 Z M160 891 L196 916 L232 891" stroke="#9e1b1b" stroke-width="5" fill="none" stroke-linejoin="round"/>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0.00, '#chapter'], [3.86, '#definition']],
+  on: [
+    [0.10, 'stamp', '#postmark', {from: 1.09, rot: -3, spring: 'soft'}],
+    [0.68, 'fade', '#chapter-pin', {dur: 0.32}],
+    [2.10, 'draw', '#underline', {dur: 0.48}],
+    [4.36, 'fade', '#hq-hi', {dur: 0.26}],
+    [5.12, 'fade', '#meaning-shell', {dur: 0.20}],
+    [5.24, 'fade', '#city', {dur: 0.30}],
+    [5.80, 'pop', '#definition-pin', {from: 0.78, spring: 'soft'}],
+    [7.82, 'fade', '#office', {dur: 0.24}],
+    [7.98, 'highlight', '#office', {color: '#f2b705', opacity: 0.43, dur: 0.48}],
+    [9.02, 'fade', '#is', {dur: 0.23}],
+    [9.86, 'fade', '#envelope-band', {dur: 0.23}]
+  ]
+}
+</script>
+</section>
