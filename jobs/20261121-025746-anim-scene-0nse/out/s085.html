@@ -22,7 +22,7 @@
       <rect id="location-pill" x="1286" y="314" width="428" height="104" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
       <use href="piece:gps-pin" transform="translate(1246 269) scale(.49)"/>
       <text id="location-check-label" x="1538" y="380" text-anchor="middle" font-family="Inter,sans-serif" font-size="41" font-weight="790" fill="#2b2622">Location check</text>
-      <text id="coordinates" x="1554" y="382" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="790" fill="#2b2622">GPS coordinates</text>
+      <text id="coordinates" x="1567" y="382" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="790" fill="#2b2622">GPS coordinates</text>
       <g id="location-tick" transform="translate(1369 325)">
         <circle r="24" fill="#2e7d4f" stroke="#fff" stroke-width="3"/>
         <path d="m-12 1 8 8 16-19" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -78,7 +78,7 @@
  update(t,section,$) {
   const q=S.clamp((t-1.13)/.35,0,1);
   const p=q*q*(3-2*q);
-  $('#location-pill').forEach(n=>n.setAttribute('width',String(428+40*p)));
+  $('#location-pill').forEach(n=>n.setAttribute('width',String(428+54*p)));
  }
 }
 </script>
