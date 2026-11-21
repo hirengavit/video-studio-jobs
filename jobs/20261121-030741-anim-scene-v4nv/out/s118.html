@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s118" data-in="cut" data-section="PART 7 · CHECKS AND EXTRA DUTIES" data-series="LETTER BOXES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="पत्र पेटी में मिली गलत डाक और कुछ सेवाओं की स्वीकृति शर्तें">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text id="wrong-mail-heading" class="hi" x="120" y="225" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="820" fill="#9e1b1b">box से निकली गलत डाक</text>
+  <g id="wrong-mail">
+    <rect x="120" y="268" width="670" height="712" rx="34" fill="#f3ead6"/>
+    <path d="M175 948H735" stroke="#d9c6a6" stroke-width="3" stroke-linecap="round"/>
+    <use id="wrong-mail-box" href="piece:letter-box-door-open" transform="translate(123 253) scale(1.752)"/>
+    <g id="tagged-article" transform="translate(274.2 767.8) rotate(-10) scale(1.2)">
+      <rect width="124" height="76" rx="9" fill="#fff" stroke="#2b2622" stroke-width="4"/>
+      <path d="M4 7L62 44 120 7" fill="none" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M111 39q31-25 56-4" fill="none" stroke="#8a5d00" stroke-width="3" stroke-linecap="round"/>
+      <g id="question-tag" transform="translate(153 13) rotate(13)">
+        <path d="M0 15L16 0H64Q72 0 72 8V67Q72 75 64 75H7Q0 75 0 68Z" fill="#f2b705" stroke="#8a5d00" stroke-width="3" stroke-linejoin="round"/>
+        <circle cx="12" cy="17" r="3.7" fill="#fbf7ee" stroke="#8a5d00" stroke-width="2"/>
+        <text x="39" y="59" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="840" fill="#2b2622">?</text>
+      </g>
+    </g>
+  </g>
+  <g id="requirements">
+    <g id="counter-booking">
+      <rect x="900" y="301" width="900" height="194" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle cx="986" cy="398" r="53" fill="#9e1b1b"/>
+      <text x="986" y="417" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="810" fill="#fff">1</text>
+      <text x="1074" y="422" font-family="Inter,sans-serif" font-size="68" font-weight="790" fill="#2b2622">Counter booking</text>
+    </g>
+    <g id="fixed-details">
+      <rect x="900" y="523" width="900" height="194" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle cx="986" cy="620" r="53" fill="#9e1b1b"/>
+      <text x="986" y="639" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="810" fill="#fff">2</text>
+      <text class="hi" x="1074" y="644" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="68" font-weight="790" fill="#2b2622">तय details</text>
+    </g>
+    <g id="receipt">
+      <rect x="900" y="745" width="900" height="194" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle cx="986" cy="842" r="53" fill="#9e1b1b"/>
+      <text x="986" y="861" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="810" fill="#fff">3</text>
+      <text x="1074" y="866" font-family="Inter,sans-serif" font-size="68" font-weight="790" fill="#2b2622">Receipt</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [3.76,'pop','#counter-booking',{from:.97,spring:'soft'}],
+    [4.86,'pop','#fixed-details',{from:.97,spring:'soft'}],
+    [7.60,'pop','#receipt',{from:.97,spring:'soft'}]
+  ]
+}
+</script>
+</section>
