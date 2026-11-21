@@ -1,0 +1,34 @@
+<section class="vs-scene" id="s044" data-section="PART 3 · LETTER ENVELOPE" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" fill="#2b2622">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="neq">
+    <rect x="140" y="245" width="1640" height="705" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <g id="gsm"><rect x="242" y="376" width="550" height="216" rx="40" fill="#f3ead6"/><text x="517" y="516" text-anchor="middle" font-size="92" font-weight="800">GSM</text></g>
+    <g id="thickness"><rect x="1128" y="376" width="550" height="216" rx="40" fill="#f3ead6"/><text x="1403" y="516" text-anchor="middle" font-family="Noto Sans Devanagari, sans-serif" font-size="92" font-weight="800">मोटाई</text></g>
+    <text id="not-equal" x="960" y="521" text-anchor="middle" font-size="122" font-weight="800" fill="#4b4f58">≠</text>
+    <text id="independent" x="960" y="736" text-anchor="middle" font-family="Noto Sans Devanagari, sans-serif" font-size="68" font-weight="700">एक पूरी ≠ दूसरी पूरी</text>
+    <g id="independent-keyword">
+      <rect x="702" y="817" width="516" height="79" rx="39.5" fill="#fde9a6"/>
+      <text x="960" y="870" text-anchor="middle" font-family="Noto Sans Devanagari, sans-serif" font-size="47" font-weight="750" fill="#694700">GSM और मोटाई अलग</text>
+    </g>
+  </g>
+  <g id="film">
+    <g id="film-prop"><use href="piece:film-packet" transform="translate(448 205) scale(1.6)"/></g>
+    <text id="film-term" x="960" y="918" font-size="63" font-weight="800" text-anchor="middle">Safety cinematograph film</text>
+    <text id="film-gloss" x="960" y="982" font-family="Noto Sans Devanagari, sans-serif" font-size="48" font-weight="600" text-anchor="middle" fill="#6f6a63">सुरक्षा सिनेमा फ़िल्म</text>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  shots: [[0, '#neq'], [7.79, '#film']],
+  on: [
+    [0.78, 'pop', '#not-equal', {spring:'soft'}],
+    [2.26, 'words', '#independent', {gap:0.68, dist:18, spring:'soft'}],
+    [6.14, 'pop', '#independent-keyword', {spring:'soft'}],
+    [7.79, 'pop', '#film-prop', {from:0.88, spring:'soft'}],
+    [10.35, 'type', '#film-term', {cps:22}],
+    [10.85, 'fade', '#film-gloss', {dur:0.5}]
+  ]
+})
+</script>
+</section>
