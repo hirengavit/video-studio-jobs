@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s162" data-in="cut" data-section="PART 9 · COUNTER CHECKS &amp; DUES" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="steps">
+      <use id="counter" href="piece:post-counter-icon" transform="translate(120 260) scale(.7)"/>
+      <text class="hi" x="123" y="592" font-size="61" font-weight="790" fill="#9e1b1b">Counter</text>
+      <text class="hi" x="125" y="660" font-size="50" font-weight="690" fill="#675442">जाँच के 5 कदम</text>
+      <path d="M624 270V910" fill="none" stroke="#ead7b5" stroke-width="9" stroke-linecap="round"/>
+      <path d="M688 349H1800M688 509H1800M688 669H1800M688 829H1800" fill="none" stroke="#e8d7b9" stroke-width="3" stroke-linecap="round"/>
+      <rect id="step-one-background" x="560" y="200" width="1240" height="140" rx="27" fill="#fffdf8" stroke="#e5cfaa" stroke-width="3"/>
+      <rect id="step-two-background" x="560" y="360" width="1240" height="140" rx="27" fill="#fffdf8" stroke="#e5cfaa" stroke-width="3"/>
+      <g id="step-shell-1">
+        <circle cx="624" cy="270" r="36" fill="#9e1b1b"/>
+        <text x="624" y="286" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">1</text>
+      </g>
+      <g id="step-shell-2">
+        <circle cx="624" cy="430" r="36" fill="#9e1b1b"/>
+        <text x="624" y="446" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">2</text>
+      </g>
+      <g id="step-shell-3">
+        <circle cx="624" cy="590" r="36" fill="#9e1b1b"/>
+        <text x="624" y="606" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">3</text>
+      </g>
+      <g id="step-shell-4">
+        <circle cx="624" cy="750" r="36" fill="#9e1b1b"/>
+        <text x="624" y="766" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">4</text>
+      </g>
+      <g id="step-shell-5">
+        <circle cx="624" cy="910" r="36" fill="#9e1b1b"/>
+        <text x="624" y="926" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">5</text>
+      </g>
+      <g id="step1">
+        <text class="hi" x="699" y="291" font-size="61" font-weight="810" fill="#292421">Product पहचानिए</text>
+        <use id="mini-forms" href="piece:three-forms-icons" transform="translate(1240 183) scale(.3)"/>
+      </g>
+
+      <g id="mini-labels" font-size="34" font-weight="790" text-anchor="middle" fill="#7f271e">
+        <text class="hi" id="form-letter" x="1310" y="319">बंद</text>
+        <text class="hi" id="form-ilc" x="1450" y="319">मुड़ा</text>
+        <text class="hi" id="form-postcard" x="1590" y="319">खुला</text>
+      </g>
+      <rect id="step-one-dim" x="559" y="199" width="1242" height="142" rx="27" fill="#fbf7ee" fill-opacity=".43"/>
+      <g id="step2">
+        <text class="hi" x="699" y="451" font-size="61" font-weight="810" fill="#292421">वज़न और size की सीमा</text>
+      </g>
+
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur:10.74,
+    on:[
+      [0,"fade","#form-letter",{dur:.21}],
+      [0,"pulse","#icon-letter",{amount:.085}],
+      [1.32,"fade","#form-ilc",{dur:.21}],
+      [1.32,"pulse","#icon-ilc",{amount:.085}],
+      [3.36,"fade","#form-postcard",{dur:.21}],
+      [3.36,"pulse","#icon-postcard",{amount:.085}],
+      [4.80,"fade","#step-one-dim, #step-two-background, #step2",{dur:.30}]
+    ]
+  })
+  </script>
+</section>
