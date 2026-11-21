@@ -1,0 +1,71 @@
+<section class="vs-scene" id="s096" data-in="cut" data-section="PART 6 · POSTCARD CONDITIONS" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif" fill="#2b2622">
+    <style>.hi096 { font-family: 'Noto Sans Devanagari', Inter, sans-serif; }</style>
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="open">
+      <g id="message-card" transform="translate(180 248) scale(1.8)">
+      <use href="piece:service-postcard"/>
+      <text x="512" y="104" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">50 p</text>
+      <path d="M45 124h198 M45 160h210 M45 196h168 M45 232h194" stroke="#2b2622" stroke-width="4" opacity=".78" stroke-linecap="round"/>
+    </g>
+      <g id="anyone-can-see">
+        <circle cx="1532" cy="531" r="169" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M1400 531 Q1462 451 1532 451 Q1602 451 1664 531 Q1602 611 1532 611 Q1462 611 1400 531 Z" fill="#f3ead6" stroke="#2b2622" stroke-width="8" stroke-linejoin="round"/>
+        <circle cx="1532" cy="531" r="37" fill="#2b2622"/>
+        <circle cx="1545" cy="518" r="9" fill="#ffffff"/>
+      </g>
+      <g id="open-gist">
+        <rect x="180" y="908" width="1560" height="90" rx="16" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <text id="open-gist-words" x="960" y="970" class="hi096" font-size="57" font-weight="740" text-anchor="middle">बंद या गोपनीय पत्र नहीं</text>
+      </g>
+    </g>
+    <g id="five">
+      <g id="checklist-postcard" transform="translate(100 300) scale(1.2)">
+      <use href="piece:service-postcard"/>
+      <text x="512" y="104" text-anchor="middle" font-size="17" font-weight="800" fill="#ffffff">50 p</text>
+    </g>
+      <g id="checklist">
+        <rect x="1000" y="200" width="820" height="780" rx="22" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M1022 200h776q22 0 22 22v88h-820v-88q0-22 22-22Z" fill="#9e1b1b"/>
+        <text x="1410" y="273" class="hi096" font-size="58" font-weight="780" fill="#ffffff" text-anchor="middle">Postcard की 5 शर्तें</text>
+    <g id="condition-1">
+      <rect x="1030" y="342" width="760" height="104" rx="16" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+      <circle cx="1093" cy="394" r="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+      <text x="1093" y="406" font-size="32" font-weight="800" fill="#6f6a63" text-anchor="middle">1</text>
+      <text id="weight" x="1145" y="410" class="hi096" font-size="49" font-weight="730">वज़न: 5 g तक</text>
+    </g>
+    <g id="condition-2">
+      <rect x="1030" y="464" width="760" height="104" rx="16" fill="#fcfaf5" stroke="#ead9a8" stroke-width="2"/>
+      <circle cx="1093" cy="516" r="28" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+      <text x="1093" y="528" font-size="32" font-weight="800" fill="#6f6a63" text-anchor="middle">2</text>
+    </g>
+    <g id="condition-3">
+      <rect x="1030" y="586" width="760" height="104" rx="16" fill="#fcfaf5" stroke="#ead9a8" stroke-width="2"/>
+      <circle cx="1093" cy="638" r="28" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+      <text x="1093" y="650" font-size="32" font-weight="800" fill="#6f6a63" text-anchor="middle">3</text>
+    </g>
+    <g id="condition-4">
+      <rect x="1030" y="708" width="760" height="104" rx="16" fill="#fcfaf5" stroke="#ead9a8" stroke-width="2"/>
+      <circle cx="1093" cy="760" r="28" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+      <text x="1093" y="772" font-size="32" font-weight="800" fill="#6f6a63" text-anchor="middle">4</text>
+    </g>
+    <g id="condition-5">
+      <rect x="1030" y="830" width="760" height="104" rx="16" fill="#fcfaf5" stroke="#ead9a8" stroke-width="2"/>
+      <circle cx="1093" cy="882" r="28" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+      <text x="1093" y="894" font-size="32" font-weight="800" fill="#6f6a63" text-anchor="middle">5</text>
+    </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#open'], [6.96, '#five']],
+    on: [
+      [0.96, 'pop', '#anyone-can-see', {from: 0.78}],
+      [3.87, 'fade', '#open-gist', {dur: 0.24}],
+      [3.88, 'words', '#open-gist-words', {gap: 0.18, from: 'down', dist: 13}],
+      [9.02, 'fade', '#weight', {dur: 0.32}],
+    ],
+  }
+  </script>
+</section>
