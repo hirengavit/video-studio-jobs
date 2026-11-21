@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s084" data-in="cut" data-section="PART 5 · INLAND LETTER CARD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="An allowed thin image on a postcard does not carry over to inland letter cards">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="cmp">
+  <g id="cmp-postcard">
+   <rect x="125" y="228" width="810" height="647" rx="31" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+   <path d="M157 230h746q30 0 30 30v97H127v-97q0-30 30-30Z" fill="#fde9a6"/>
+   <text x="530" y="312" text-anchor="middle" font-family="Inter,sans-serif" font-size="68" font-weight="820" fill="#513506">Postcard</text>
+   <use href="piece:service-postcard" transform="translate(270 414) scale(.87)"/>
+   <text x="715.5" y="505" text-anchor="middle" font-family="Inter,sans-serif" font-size="18" font-weight="800" fill="#fff">50 p</text>
+   <text x="541" y="456" font-family="Inter,sans-serif" font-size="21" font-weight="780" fill="#2b2622">POST CARD</text>
+   <g id="cmp-photo">
+    <use href="piece:photograph-print" transform="translate(300 515) scale(.37)"/>
+   </g>
+   <g id="cmp-allowance">
+    <rect x="215" y="773" width="630" height="73" rx="35" fill="#e6f0e7"/>
+    <text x="265" y="827" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="810" fill="#225e3a">बहुत पतला चित्र: छूट</text>
+    <circle cx="787" cy="810" r="26" fill="#2e7d4f"/>
+    <path d="m775 810 8 9 15-18" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+   </g>
+  </g>
+  <g id="cmp-letter-card">
+   <rect x="985" y="228" width="810" height="647" rx="31" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+   <path d="M1017 230h746q30 0 30 30v97H987v-97q0-30 30-30Z" fill="#9e1b1b"/>
+   <text x="1390" y="312" text-anchor="middle" font-family="Inter,sans-serif" font-size="68" font-weight="820" fill="#fff">Letter Card</text>
+   <use href="piece:letter-card-folded" transform="translate(1107 450) scale(.90)"/>
+   <text x="1171" y="538" font-family="Inter,sans-serif" font-size="26" font-weight="780" fill="#2b2622">Letter Card</text>
+   <g id="cmp-no-allowance">
+    <rect x="1085" y="773" width="610" height="73" rx="35" fill="#efeeed"/>
+    <text x="1390" y="827" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="810" fill="#4b4f58">छूट नहीं</text>
+   </g>
+   <g id="cmp-no-cross">
+    <circle cx="1637" cy="810" r="26" fill="#4b4f58"/>
+    <path d="m1628 801 18 18m0-18-18 18" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+   </g>
+  </g>
+ </g>
+ <g id="opt">
+  <g id="option-card">
+   <rect x="180" y="250" width="1560" height="555" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+   <path d="M212 264H1708" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+   <rect x="263" y="316" width="315" height="94" rx="47" fill="#9e1b1b"/>
+   <text x="420.5" y="380" text-anchor="middle" font-family="Inter,sans-serif" font-size="61" font-weight="840" fill="#fff">Option</text>
+   <path d="M263 446H1657" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+   <text id="option-line-one" x="263" y="547" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="72" font-weight="770" fill="#2b2622">वज़न 5 grams के अंदर हो, तो</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ shots:[[0,'#cmp'],[7.60,'#opt']],
+ on:[
+  [1.00,'pop','#cmp-photo',{from:.90,spring:'soft'}],
+  [3.42,'fade','#cmp-allowance',{dur:.23}],
+  [5.26,'fade','#cmp-no-allowance',{dur:.28}],
+  [6.66,'stamp','#cmp-no-cross',{from:1.40,rot:0,spring:'soft'}],
+  [9.76,'type','#option-line-one',{cps:17}]
+ ]
+}
+</script>
+</section>
