@@ -8,5 +8,12 @@
   "8.64"
  ],
  "problems": [],
- "warnings": []
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s048",
+   "text": "Dispatch / office सेकब जाती",
+   "t": 0.3
+  }
+ ]
 }
