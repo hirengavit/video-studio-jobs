@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.81",
+  "3.63",
+  "5.44",
+  "7.26",
+  "8.92"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s167",
+   "text": "बड़ा ordinary item / फिर भी ordinary",
+   "t": 0.3
+  }
+ ]
+}
