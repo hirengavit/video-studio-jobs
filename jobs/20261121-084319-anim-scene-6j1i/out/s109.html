@@ -4,7 +4,7 @@
 <g id="labels">
   <use id="address-postcard" href="piece:service-postcard" transform="translate(310 209) scale(1.98)"/>
   <rect id="reserved-tint" x="908" y="216" width="582" height="738" rx="14" fill="#f2b705" fill-opacity=".13" stroke="#c99b21" stroke-width="4"/>
-  <text x="958" y="307" font-family="Inter,sans-serif" font-size="47" font-weight="820" letter-spacing="2" fill="#2b2622">POST CARD</text>
+  <text x="950" y="307" font-family="Inter,sans-serif" font-size="39" font-weight="820" letter-spacing="2" fill="#2b2622">POST CARD</text>
   <text x="1323.8" y="414" font-family="Inter,sans-serif" font-size="34" font-weight="820" text-anchor="middle" fill="#fff">50 p</text>
   <g id="left-address-labels">
     <rect x="369" y="451" width="476" height="135" rx="14" fill="#fff" stroke="#2e7d4f" stroke-width="4"/>
@@ -20,6 +20,7 @@
   </g>
 </g>
 <g id="banned">
+  <text id="ban-intro" x="960" y="247" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="820" fill="#4b4f58">Postcard पर क्या मना है?</text>
   <g id="ban-1">
     <rect x="115" y="323" width="400" height="458" rx="27" fill="#eeece7" stroke="#b5afb0" stroke-width="3"/>
     <g transform="translate(315 508)" stroke="#4b4f58" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M-90-61H38l52 51v73H-90Z" fill="#fff"/><path d="M38-61v51h52M-64 4 43 47M-50-26l71 29" fill="none"/></g>
@@ -62,6 +63,7 @@
     [9.06,'pop','#ban-2',{from:.96,spring:'fast'}],
     [10.40,'pop','#ban-3',{from:.96,spring:'fast'}],
     [11.38,'pop','#ban-4',{from:.96,spring:'fast'}],
+    [11.71,'out','#ban-intro',{dur:.21,scale:1}],
     [11.96,'pop','#ban-cross-1',{from:.86,spring:'fast'}],
     [12.06,'pop','#ban-cross-2',{from:.86,spring:'fast'}],
     [12.16,'pop','#ban-cross-3',{from:.86,spring:'fast'}],
