@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 420">
+  <g id="icon-letter" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect id="fill-letter" x="63" y="104" width="340" height="212" rx="16" fill="#fff"/>
+    <path d="M69 115l147 117a28 28 0 0 0 34 0l147-117M73 303l116-92m88 0 116 92" fill="none"/>
+  </g>
+  <g id="icon-ilc" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect id="fill-ilc" x="530" y="104" width="340" height="212" rx="12" fill="#fff"/>
+    <path d="M544 105l23 40h266l23-40m-325 25 25 29v122l-25 24m338-175-25 29v122l25 24" fill="none"/>
+    <path d="M677 222h123m-123 24h123m-123 24h96" fill="none" stroke="#6f6a63"/>
+    <rect x="786" y="156" width="40" height="44" rx="3" fill="none" stroke="#9e1b1b" stroke-dasharray="3 4"/>
+  </g>
+  <g id="icon-postcard" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect id="fill-postcard" x="997" y="104" width="340" height="212" rx="11" fill="#fff"/>
+    <path d="M1167 134v152M1019 168h113m-113 25h113m-113 25h88m97 12h104m-104 23h104m-104 23h74" fill="none" stroke="#6f6a63"/>
+    <rect x="1271" y="128" width="42" height="47" rx="3" fill="none" stroke="#9e1b1b" stroke-dasharray="3 4"/>
+    <path d="m1280 144 12 10 12-10m-24-1h24v17h-24z" fill="none" stroke="#9e1b1b"/>
+  </g>
+  <circle data-anchor="base" cx="700" cy="316" r="0"/>
+</svg>
