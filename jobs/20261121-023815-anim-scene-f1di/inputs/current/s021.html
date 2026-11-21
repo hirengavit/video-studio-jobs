@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s021" data-in="cut" data-section="PART 1 · WHAT GOES IN THE LETTER BOX" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="myth">
+  <rect x="230" y="320" width="1460" height="460" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <g id="myth-pill">
+   <rect x="300" y="380" width="380" height="88" rx="44" fill="#4b4f58"/>
+   <text x="490" y="439" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="820" fill="#fff">MYTH · भ्रम</text>
+  </g>
+  <text id="myth-text" x="315" y="579" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="760" fill="#2b2622">हर गलत article अपने आप लौटेगा</text>
+  <text id="myth-extra" x="315" y="695" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="760" fill="#2b2622">या ज़ब्त होगा</text>
+  <g id="myth-slash" fill="none" stroke="#4b4f58" stroke-width="11" stroke-linecap="round">
+    <path d="M306 554L1400 543"/>
+    <path d="M306 671L722 660"/>
+  </g>
+ </g>
+ <g id="pin">
+  <use href="piece:domestic-envelope" transform="translate(276 230) scale(1.8)"/>
+  <rect x="740" y="610" width="668" height="193" fill="#fff"/>
+  <g id="qms">
+    <rect x="363" y="309" width="454" height="122" rx="26" fill="#9e1b1b"/>
+    <text x="590" y="389" text-anchor="middle" font-family="Inter,sans-serif" font-size="68" font-weight="820" fill="#fff">QMS article</text>
+  </g>
+  <text id="town" x="770" y="603" font-family="Inter,sans-serif" font-size="65" font-weight="810" fill="#2b2622">destination town</text>
+  <path d="M770 625H1352" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+  <rect id="digit-1" x="770" y="654" width="82" height="82" rx="12" fill="#fffdf6" stroke="#2b2622" stroke-width="5"/>
+  <rect id="digit-2" x="870" y="654" width="82" height="82" rx="12" fill="#fffdf6" stroke="#2b2622" stroke-width="5"/>
+  <rect id="digit-3" x="970" y="654" width="82" height="82" rx="12" fill="#fffdf6" stroke="#2b2622" stroke-width="5"/>
+  <rect id="digit-4" x="1070" y="654" width="82" height="82" rx="12" fill="#fffdf6" stroke="#2b2622" stroke-width="5"/>
+  <rect id="digit-5" x="1170" y="654" width="82" height="82" rx="12" fill="#fffdf6" stroke="#2b2622" stroke-width="5"/>
+  <rect id="digit-6" x="1270" y="654" width="82" height="82" rx="12" fill="#fffdf6" stroke="#2b2622" stroke-width="5"/>
+  <text id="pin-label" x="770" y="809" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="780" fill="#8a5d00">पूरा PIN</text>
+  <text id="caption" x="1535" y="899" text-anchor="end" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="670" fill="#6f6a63">तो एक line में</text>
+ </g>
+</svg>
+<script type="text/scene">
+{
+  shots:[[0,'#myth'],[1.30,'#pin']],
+  on:[
+    [.60,'fade','#myth-extra',{dur:.15}],
+    [.96,'draw','#myth-slash',{dur:.23}],
+    [3.02,'words','#town',{gap:.56,from:'none',dist:0}],
+    [5.22,'pop','#digit-1',{from:.9,spring:'fast'}],
+    [5.28,'pop','#digit-2',{from:.9,spring:'fast'}],
+    [5.34,'pop','#digit-3',{from:.9,spring:'fast'}],
+    [5.40,'pop','#digit-4',{from:.9,spring:'fast'}],
+    [5.46,'pop','#digit-5',{from:.9,spring:'fast'}],
+    [5.52,'pop','#digit-6',{from:.9,spring:'fast'}],
+    [5.80,'fade','#pin-label',{dur:.20}],
+    [5.80,'highlight','#pin-label',{color:'#fde9a6',opacity:.72,pad:5,dur:.36}],
+    [7.77,'fade','#caption',{dur:.23}]
+  ]
+}
+</script>
+</section>
