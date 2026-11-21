@@ -50,8 +50,7 @@
   </g>
   <g id="breach-tag">
     <rect x="1190" y="860" width="590" height="100" rx="50" fill="#fde9a6"/>
-    <text id="breach-trigger" x="1246" y="924" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="53" font-weight="790" fill="#654500">शर्त टूटे →</text>
-    <text id="breach-letter" x="1526" y="924" font-family="Inter,sans-serif" font-size="53" font-weight="800" fill="#654500">= letter</text>
+    <text id="breach-trigger" x="1246" y="924" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="53" font-weight="790" fill="#654500">शर्त टूटे →<tspan id="breach-letter" x="1506" y="924" font-family="Inter,sans-serif" font-weight="800" opacity="0">= letter</tspan></text>
   </g>
 
   <g id="dues-first">
@@ -64,11 +63,13 @@
 ({
   dur:4.86,
   on:[
-    [0,"fade","#breach-letter",{dur:.24}],
     [0,"color","#fill-letter",{to:"#fde9a6",dur:.32}],
     [0,"color","#fill-ilc, #fill-postcard",{to:"#f3ead6",dur:.32}],
     [1.86,"stamp","#dues-first",{from:1.04,spring:"fast",rot:0}]
-  ]
+  ],
+  update(t, section, $) {
+    for (const span of $("#breach-letter")) span.setAttribute("opacity", Math.max(0,Math.min(1,t/.24)));
+  }
 })
 </script>
 </section>
