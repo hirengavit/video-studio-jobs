@@ -18,39 +18,38 @@
   </g>
   <g id="clock-slots">
     <g id="clock-slot-1">
-      <rect x="788" y="381" width="316" height="430" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="781" y="381" width="330" height="460" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
       <circle cx="946" cy="543" r="116" fill="#fbf7ee" stroke="#ddcba6" stroke-width="4" stroke-dasharray="7 9"/>
-      <g id="clock-1"><use href="piece:clock-face" transform="translate(834.2 431.2) scale(.86)"/></g>
+      <g id="clock-1"><use href="piece:clock-face" transform="translate(818.6 415.6) scale(.98)"/></g>
       <g id="clock-label-1">
         <text x="946" y="698" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="820" fill="#9e1b1b">Clearance</text>
-        <text x="946" y="748" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740" fill="#2b2622">box कब खाली</text>
+        <text x="946" y="748" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="740" fill="#2b2622">box कब खाली</text>
       </g>
     </g>
     <g id="clock-slot-2">
-      <rect x="1136" y="381" width="316" height="430" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="1129" y="381" width="330" height="460" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
       <circle cx="1294" cy="543" r="116" fill="#fbf7ee" stroke="#ddcba6" stroke-width="4" stroke-dasharray="7 9"/>
-      <g id="clock-2"><use href="piece:clock-face" transform="translate(1182.2 431.2) scale(.86)"/></g>
+      <g id="clock-2"><use href="piece:clock-face" transform="translate(1166.6 415.6) scale(.98)"/></g>
       <g id="clock-label-2">
         <text x="1294" y="698" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="820" fill="#9e1b1b">Dispatch</text>
-        <text x="1294" y="748" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740" fill="#2b2622">office से</text>
-        <text x="1294" y="794" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740" fill="#2b2622">कब जाती</text>
+        <text x="1294" y="735" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="740" fill="#2b2622"><tspan x="1294">office से</tspan><tspan x="1294" dy="52">कब जाती</tspan></text>
       </g>
     </g>
     <g id="clock-slot-3">
-      <rect x="1484" y="381" width="316" height="430" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="1477" y="381" width="330" height="460" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
       <circle cx="1642" cy="543" r="116" fill="#fbf7ee" stroke="#ddcba6" stroke-width="4" stroke-dasharray="7 9"/>
-      <g id="clock-3"><use href="piece:clock-face" transform="translate(1530.2 431.2) scale(.86)"/></g>
+      <g id="clock-3"><use href="piece:clock-face" transform="translate(1514.6 415.6) scale(.98)"/></g>
       <g id="clock-label-3">
         <text x="1642" y="698" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="820" fill="#9e1b1b">Delivery</text>
-        <text id="delivery-gloss" x="1642" y="748" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="740" fill="#2b2622">(डाक कब आती)</text>
+        <text id="delivery-gloss" x="1642" y="751" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="740" fill="#2b2622">(डाक कब आती)</text>
       </g>
     </g>
   </g>
   <g id="three-times">
-    <rect x="1074" y="851" width="440" height="90" rx="45" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
-    <text class="hi" x="1294" y="912" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="810" fill="#2b2622">तीन समय</text>
+    <rect x="1074" y="934" width="440" height="90" rx="45" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+    <text class="hi" x="1294" y="995" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="810" fill="#2b2622">तीन समय</text>
   </g>
-    <path id="clock-link-all" d="M946 833v112q0 22 22 22h652q22 0 22-22V833m-12 14 12-14 12 14" fill="none" stroke="#8a5d00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="clock-link-all" d="M946 860v20q0 20 20 20h656q20 0 20-20V860m-12 14 12-14 12 14" fill="none" stroke="#8a5d00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <g id="flow">
    <g id="flow-layout" transform="translate(-24 -55) scale(1.15)">
@@ -94,6 +93,20 @@
   update(t,section,$) {
     $('#linked-clocks')[0].setAttribute('display',t<4.55?'inline':'none');
     $('#flow')[0].setAttribute('display',t<4.55?'none':'inline');
+    const cues = [[0, -60, 0], [4.90, -30, 0], [8.44, 15, 180]];
+    for (let i = 0; i < cues.length; i++) {
+      const [start, h, m] = cues[i];
+      const p = Math.max(0, Math.min(1, (t - start) / .37));
+      const settle = 0;
+      const g = $('#clock-' + (i + 1))[0];
+      if (!g) continue;
+      for (const [part, angle, length] of [['hour', h - 10 * settle, 39], ['minute', m - 23 * settle, 56]]) {
+        const hand = g.querySelector('[id$="-' + part + '-hand"], [id="' + part + '-hand"]');
+        if (!hand) continue;
+        const r = angle * Math.PI / 180;
+        hand.setAttribute('d', 'M130 130L' + (130 + length * Math.sin(r)).toFixed(3) + ' ' + (130 - length * Math.cos(r)).toFixed(3));
+      }
+    }
   }
 }
 </script>
