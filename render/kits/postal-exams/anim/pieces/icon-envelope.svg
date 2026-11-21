@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<g stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g id="body"><rect x="44" y="104" width="312" height="192" rx="16" fill="#fbf7ee"/></g>
+<g id="folds"><path d="M51 286l101-86m197 86-101-86" fill="none" stroke="#6f6a63"/></g>
+<g id="flap"><path d="M48 116l133 103q19 15 38 0l133-103" fill="none" stroke="#9e1b1b"/></g>
+</g>
+<circle data-anchor="top" cx="200" cy="104" r="0"/>
+<circle data-anchor="base" cx="200" cy="296" r="0"/>
+</svg>
