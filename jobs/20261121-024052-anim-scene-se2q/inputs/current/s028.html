@@ -1,0 +1,67 @@
+<section class="vs-scene" id="s028" data-in="cut" data-section="PART 2 · COUNTER, NOT THE BOX" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Domestic registration is delivered only to the named addressee and remains accountable">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text id="registration-kicker" x="120" y="260" font-family="Inter, sans-serif" font-size="68" font-weight="800" fill="#9e1b1b">Registration</text>
+  <g id="registration-term">
+    <rect x="120" y="337" width="680" height="529" rx="30" fill="#9e1b1b"/>
+    <rect x="138" y="355" width="644" height="493" rx="20" fill="none" stroke="#f3ead6" stroke-opacity=".72" stroke-width="7" stroke-dasharray="0 18" stroke-linecap="round"/>
+    <text x="460" y="518" text-anchor="middle" font-family="Inter, sans-serif" font-size="96" font-weight="820" fill="#fff">Domestic</text>
+    <text x="460" y="629" text-anchor="middle" font-family="Inter, sans-serif" font-size="96" font-weight="820" fill="#fff">registration</text>
+    <text id="term-hi" x="460" y="752" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="750" fill="#fde9a6">घरेलू रजिस्ट्री</text>
+  </g>
+  <g id="documents-card" text-anchor="middle">
+    <rect x="860" y="337" width="451" height="420" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <use href="piece:registration-envelope" transform="translate(922 310) scale(.82)"/>
+    <rect x="906" y="576" width="359" height="64" rx="32" fill="#9e1b1b"/>
+    <text x="1085.5" y="620" font-family="Inter,sans-serif" font-size="42" font-weight="800" fill="#fff">Speed Post</text>
+    <text id="documents-label" x="1085.5" y="705" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="740" fill="#2b2622">दस्तावेज़</text>
+  </g>
+  <g id="parcels-card" text-anchor="middle">
+    <rect x="1349" y="337" width="451" height="420" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <use href="piece:parcel-box" transform="translate(1448 370) scale(.80)"/>
+    <rect x="1395" y="576" width="359" height="64" rx="32" fill="#9e1b1b"/>
+    <text x="1574.5" y="620" font-family="Inter,sans-serif" font-size="42" font-weight="800" fill="#fff">Speed Post</text>
+    <text x="1574.5" y="705" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="740" fill="#2b2622">पार्सल</text>
+  </g>
+  <g id="service-chip">
+    <rect x="860" y="792" width="940" height="108" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text x="1330" y="864" text-anchor="middle" font-family="Inter,sans-serif" font-size="50" font-weight="810" fill="#2b2622">Value-added service</text>
+  </g>
+  <path id="delivery-arrow" d="M1176 382v-64q0-16 16-16h369q14 0 14 14v16l-15-17m15 17 15-17" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="recipient-card">
+    <rect x="1349" y="337" width="451" height="420" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M1350 440v-76q0-26 26-26h397q26 0 26 26v76Z" fill="#f3ead6"/>
+    <text x="1574.5" y="407" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" font-weight="820" fill="#9e1b1b">Addressee</text>
+    <circle cx="1429" cy="517" r="22" fill="#fde9a6"/>
+    <path d="m1419 517 7 7 13-16" fill="none" stroke="#2e7d4f" stroke-width="5" stroke-linecap="round"/>
+    <path d="M1474 519h238m-238 53h238m-238 54h173" fill="none" stroke="#c9c0b1" stroke-linecap="round" stroke-width="4"/>
+  </g>
+  <g id="same-person-note">
+    <rect x="860" y="922" width="940" height="89" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text id="same-person-copy" x="1330" y="982" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="790" fill="#2b2622">उसी को, जिसके नाम article है</text>
+  </g>
+  <g id="accountable-carried">
+    <rect x="937" y="482" width="297" height="69" rx="34.5" fill="#9e1b1b" stroke="#fff" stroke-width="4"/>
+    <text x="1085.5" y="530" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="820" fill="#fff">Accountable</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ update(t, section, $) {
+   $('#recipient-card')[0].setAttribute('visibility',t < 1.91 ? 'hidden' : 'visible');
+   $('#parcels-card')[0].setAttribute('visibility',t >= 1.87 ? 'hidden' : 'visible');
+   $('#accountable-carried')[0].setAttribute('visibility',t < 6.34 ? 'hidden' : 'visible');
+ },
+ on:[
+  [1.42,'draw','#delivery-arrow',{dur:.65}],
+  [1.62,'out','#parcels-card',{dur:.25,scale:1}],
+  [1.91,'fade','#recipient-card',{dur:.26}],
+  [2.76,'fade','#same-person-note',{dur:.24}],
+  [2.82,'words','#same-person-copy',{gap:.28,dist:6}],
+  [4.30,'highlight','#same-person-copy',{words:'उसी',color:'#f2b705',opacity:.34,pad:6,dur:.31}],
+  [6.34,'pop','#accountable-carried',{from:.94,spring:'fast'}]
+ ]
+}
+</script>
+</section>
