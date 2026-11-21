@@ -9,20 +9,22 @@
    <text x="313" y="271" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="810" fill="#fff">Exam में यहीं confusion</text>
   </g>
   <g id="order-book">
-   <use href="piece:record-book" transform="translate(429 372) scale(1.12)"/>
-   <text x="616" y="563" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="800" fill="#2b2622">Order Book</text>
-   <text id="order-book-label" x="600" y="864" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="810" fill="#2b2622">Order Book</text>
+   <use href="piece:record-book" transform="translate(415 311) scale(1.5)"/>
+   <text id="order-book-label" x="640" y="948" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="810" fill="#2b2622">Order Book</text>
   </g>
   <g id="error-book">
-   <use href="piece:record-book" transform="translate(1139 372) scale(1.12)"/>
-   <text x="1326" y="563" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="800" fill="#2b2622">Error Book</text>
-   <rect id="error-book-marker" x="1148" y="804" width="324" height="79" rx="5" fill="#fde9a6" opacity=".84"/>
-   <text id="error-book-label" x="1310" y="864" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="810" fill="#2b2622">Error Book</text>
+   <use href="piece:record-book" transform="translate(1055 311) scale(1.5)"/>
+   <rect id="error-book-marker" x="1125" y="889" width="310" height="67" rx="4" fill="#fde9a6" fill-opacity=".84"/>
+   <text id="error-book-label" x="1280" y="948" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="810" fill="#2b2622">Error Book</text>
+  </g>
+  <g id="test-letter-result">
+   <rect x="340" y="964" width="600" height="70" rx="21" fill="#2e7d4f"/>
+   <text x="640" y="1011" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="770" fill="#fff">Test letter का नतीजा</text>
   </g>
   <g id="irregular-posting">
-   <rect x="1010" y="900" width="600" height="73" rx="21" fill="#f3ead6"/>
-   <text id="irregular-english" x="1310" y="950" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="740" fill="#4b4f58">Irregular posting</text>
-   <text id="irregular-hindi" x="1036" y="950" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="770" fill="#2b2622">गलत तरीके से डाली गई डाक</text>
+   <rect x="980" y="964" width="600" height="70" rx="21" fill="#f3ead6"/>
+   <text id="irregular-english" x="1280" y="1011" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="740" fill="#4b4f58">Irregular posting</text>
+   <text id="irregular-hindi" x="1280" y="1011" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="770" fill="#2b2622">गलत तरीके से डाली गई डाक</text>
   </g>
  </g>
  <g id="hp">
@@ -60,7 +62,18 @@
   [5.70,'fade','#inspection',{dur:.24}],
   [8.41,'fade','#availability',{dur:.24}],
   [11.19,'fade','#availability-value',{dur:.19}]
- ]
+ ],
+ update(t,section,$) {
+  if (t >= 3.19) return;
+  const label=$('#error-book-label')[0], marker=$('#error-book-marker')[0];
+  if (!label || !marker) return;
+  const b=label.getBBox();
+  if (!b.width) return;
+  marker.setAttribute('x', b.x-8);
+  marker.setAttribute('y', b.y-4);
+  marker.setAttribute('width', b.width+16);
+  marker.setAttribute('height', b.height+8);
+ }
 }
 </script>
 </section>
