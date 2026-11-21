@@ -1,0 +1,68 @@
+<section class="vs-scene" id="s031" data-in="cut" data-section="PART 2 · COUNTER, NOT THE BOX" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="table">
+  <rect id="table-card" x="160" y="276" width="1600" height="600" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M188 276H1732A28 28 0 0 1 1760 304V416H160V304A28 28 0 0 1 188 276Z" fill="#9e1b1b"/>
+  <rect id="first-row-fill" x="162" y="417" width="1596" height="152" fill="#fbf7ee"/>
+  <path id="last-row-fill" d="M162 722H1758V848Q1758 874 1732 874H188Q162 874 162 848Z" fill="#fbf7ee"/>
+  <path id="body-rules" d="M160 569H1760M160 722H1760M862 416V875M1311 416V875" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <path id="header-rules" d="M862 276V416M1311 276V416" fill="none" stroke="#bd5550" stroke-width="3"/>
+  <rect x="211" y="324" width="10" height="46" rx="5" fill="#f2b705"/>
+  <text x="243" y="364" font-family="Inter,sans-serif" font-size="51" font-weight="800" fill="#fff">Article</text>
+  <text id="box-heading" class="hi" x="1086" y="363" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="790" fill="#fff">Letter box में?</text>
+  <text class="hi" x="1535" y="363" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="790" fill="#fff">डाल दिया तो</text>
+  <text id="article-1" x="243" y="480" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#2b2622">Franked article</text>
+  <text id="gloss-1" x="243" y="533" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="680" fill="#6f6a63">फ्रैंक की गई डाक</text>
+  <g id="cross-1">
+   <circle cx="1135.5" cy="501" r="45" fill="none" stroke="#4b4f58" stroke-width="4"/>
+   <path d="M1107.5 473l56 56m0-56-56 56" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text id="unpaid-1" x="1535" y="520" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="810" fill="#8a5d00">Unpaid</text>
+  <text id="article-2" x="243" y="650" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#2b2622">Registered newspaper item</text>
+  <text id="gloss-2" x="243" y="703" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="680" fill="#6f6a63">पंजीकृत समाचारपत्र की डाक</text>
+  <g id="cross-2">
+   <circle cx="1135.5" cy="671" r="45" fill="none" stroke="#4b4f58" stroke-width="4"/>
+   <path d="M1107.5 643l56 56m0-56-56 56" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text id="unpaid-2" x="1535" y="690" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="810" fill="#8a5d00">Unpaid</text>
+  <text id="article-3" x="243" y="820" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#2b2622">Periodical post item</text>
+  <text id="gloss-3" x="243" y="873" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="680" fill="#6f6a63">सामयिक प्रकाशन की डाक</text>
+  <g id="cross-3">
+   <circle cx="1135.5" cy="841" r="45" fill="none" stroke="#4b4f58" stroke-width="4"/>
+   <path d="M1107.5 813l56 56m0-56-56 56" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <text id="unpaid-3" x="1535" y="860" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="810" fill="#8a5d00">Unpaid</text>
+  <rect id="unpaid-column" x="1324" y="429" width="421" height="484" rx="19" fill="none" stroke="#f2b705" stroke-width="7"/>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ camera: [[0,{zoom:1}]],
+ shots: [[0,'#table']],
+ on: [
+  [0,'fade','#article-1,#gloss-1',{dur:.22}],
+  [1.58,'fade','#article-2,#gloss-2',{dur:.22}],
+  [3.78,'fade','#article-3,#gloss-3',{dur:.22}],
+  [5.88,'fade','#cross-1',{dur:.19}],
+  [6.08,'fade','#cross-2',{dur:.19}],
+  [6.28,'fade','#cross-3',{dur:.19}],
+  [10.40,'words','#unpaid-1',{from:'none',dist:0}],
+  [10.55,'words','#unpaid-2',{from:'none',dist:0}],
+  [10.70,'words','#unpaid-3',{from:'none',dist:0}],
+  [11.30,'draw','#unpaid-column',{dur:.32}]
+ ],
+ update(t,section,$) {
+  const u=Math.min(1,Math.max(0,t/.55));
+  const f=u*u*(3-2*u);
+  const a=862+98*f, r1=569+17*f, r2=722+34*f, trim=875+50*f, base=874+50*f, knee=848+50*f;
+  $('#table-card')[0].setAttribute('height',600+50*f);
+  $('#first-row-fill')[0].setAttribute('height',r1-417);
+  $('#last-row-fill')[0].setAttribute('d',`M162 ${r2}H1758V${knee}Q1758 ${base} 1732 ${base}H188Q162 ${base} 162 ${knee}Z`);
+  $('#body-rules')[0].setAttribute('d',`M160 ${r1}H1760M160 ${r2}H1760M${a} 416V${trim}M1311 416V${trim}`);
+  $('#header-rules')[0].setAttribute('d',`M${a} 276V416M1311 276V416`);
+  $('#box-heading')[0].setAttribute('x',1086+49.5*f);
+ }
+}
+</script>
+</section>
