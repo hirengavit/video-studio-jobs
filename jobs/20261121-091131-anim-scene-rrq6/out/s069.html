@@ -23,6 +23,7 @@
         <text id="postage-double" x="1373" y="545" font-size="67" font-weight="790" text-anchor="middle">letter postage × 2</text>
         <g id="credit-row">
           <rect x="976" y="627" width="794" height="150" rx="16" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+          <rect id="credit-mark" x="1541" y="670" width="164" height="76" rx="4" fill="#f2b705" opacity=".42"/>
           <text id="credit-detail" x="1373" y="720" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="54" font-weight="780">− दिया हुआ postage (credit)</text>
         </g>
       </g>
@@ -44,7 +45,7 @@
     on:[
       [0,'fade','#credit-row',{dur:0.24}],
       [0,'type','#credit-detail',{cps:15}],
-      [3.14,'highlight','#credit-detail',{words:'credit',color:'#f2b705',opacity:0.42,dur:0.48}],
+      [3.14,'reveal','#credit-mark',{from:'left',dur:0.48}],
       [4.41,'words','#window-only',{gap:0.48,dist:15}]
     ]
   })
