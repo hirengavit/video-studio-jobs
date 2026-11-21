@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s079" data-in="cut" data-section="PART 5 · ELECTRONIC RECORD" data-series="LETTER BOXES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="नियमित पत्र पेटी निकासी के लिए Doorstep Service ऐप और डाक नियमावली में बताए इलेक्ट्रॉनिक निकासी और निगरानी सॉफ़्टवेयर का परिचय">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text x="120" y="225" font-family="Inter,sans-serif" font-size="57" font-weight="820" fill="#9e1b1b">Regular letter box clearance</text>
+  <g id="regular-phone">
+    <rect id="phone-panel" x="120" y="253" width="640" height="760" rx="33" fill="#f3ead6"/>
+    <g id="phone-hero" transform="translate(426 606) scale(1.3) translate(-426 -606)">
+    <use id="app-phone" href="piece:phone-screen" transform="translate(76 271) scale(1.75)"/>
+    <g id="app-screen-lines" fill="none" stroke="#dfd4bf" stroke-width="5" stroke-linecap="round">
+      <rect x="317" y="539" width="218" height="220" rx="18" fill="#fff" stroke="#e9dec7" stroke-width="3"/>
+      <path d="M349 590h154M349 639h154M349 688h119"/>
+    </g>
+    <g id="app-name">
+      <rect x="311" y="392" width="230" height="123" rx="17" fill="#9e1b1b"/>
+      <rect id="app-name-highlight" x="327" y="408" width="198" height="91" rx="11" fill="#fde9a6" fill-opacity=".20"/>
+      <g id="app-marker"><rect id="app-marker-panel" x="322" y="408" width="208" height="95" rx="10" fill="none"/></g>
+      <text id="app-title-a" x="426" y="443" text-anchor="middle" font-family="Inter,sans-serif" font-size="38" font-weight="810" fill="#fff">Doorstep</text>
+      <text id="app-title-b" x="426" y="486" text-anchor="middle" font-family="Inter,sans-serif" font-size="38" font-weight="810" fill="#fff">Service</text>
+    </g>
+    </g>
+  </g>
+  <g id="manual-card">
+    <rect x="785" y="292" width="1030" height="663" rx="33" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <path d="M810 306H1790" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+    <path d="M851 325V914" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+    <text x="903" y="410" font-family="Georgia, serif" font-size="70" font-weight="700" fill="#9e1b1b">Postal Manual</text>
+    <text id="manual-source" x="903" y="454" font-family="Inter,sans-serif" font-size="34" font-weight="650" fill="#6f6a63">Source: Postal Manual</text>
+    <path d="M903 474H1736" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <g id="software-description" font-family="Inter,sans-serif" font-size="49" font-weight="770" fill="#2b2622">
+      <text id="summary-clearance" x="903" y="533">Electronic clearance</text>
+      <text id="summary-monitoring" x="903" y="600">+ monitoring software</text>
+    </g>
+    <rect id="software-name-plate" x="875" y="648" width="850" height="210" rx="27" fill="#f3ead6" stroke="#ddcba6" stroke-width="3"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  update(t, section, $) {
+    const p=Math.max(0,Math.min(1,(t-5.24)/.58));
+    const k=p*p*(3-2*p);
+    $('#phone-hero')[0].setAttribute('transform','translate(426 606) scale('+(1.3-.3*k)+') translate(-426 -606)');
+    $('#phone-panel')[0].setAttribute('y',253+39*k);
+    $('#phone-panel')[0].setAttribute('width',640-28*k);
+    $('#phone-panel')[0].setAttribute('height',760-97*k);
+    for(const id of ['#app-title-a','#app-title-b']) {
+      $(id)[0].setAttribute('font-size',44-6*k);
+      $(id)[0].setAttribute('fill',t>=3.66&&t<5.17?'#2b2622':'#fff');
+    }
+    $('#app-title-a')[0].setAttribute('y',437+6*k);
+    $('#app-title-b')[0].setAttribute('y',492-6*k);
+  },
+  on: [
+    [2.58, 'reveal', '#app-name', {from:'left',dur:.42}],
+    [3.58, 'fade', '#app-marker', {dur:.15}],
+    [3.58, 'highlight', '#app-marker-panel', {color:'#fde9a6',opacity:.8,pad:8,dur:.26}],
+    [5.10, 'out', '#app-marker', {dur:.18,scale:1}],
+    [5.30, 'fade', '#app-name-highlight', {dur:.20}],
+    [5.82, 'slide', '#manual-card', {from:'right',dist:60,spring:'soft'}],
+    [7.22, 'fade', '#summary-clearance', {dur:.26}],
+    [9.08, 'fade', '#summary-monitoring', {dur:.26}]
+  ]
+}
+</script>
+</section>

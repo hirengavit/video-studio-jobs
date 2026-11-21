@@ -1,0 +1,80 @@
+<section class="vs-scene" id="s078" data-in="fade" data-in-dur="0.4" data-section="PART 5 · ELECTRONIC RECORD" data-series="LETTER BOXES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Electronic clearance record and its five fields">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <ellipse cx="446" cy="955" rx="188" ry="13" fill="#ead9a8" opacity=".6"/>
+  <use id="record-phone" href="piece:phone-screen" transform="translate(46 200) scale(2)"/>
+  <g id="phone-form">
+    <rect x="315" y="331" width="262" height="520" rx="19" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M315 403v-53q0-19 19-19h224q19 0 19 19v53Z" fill="#9e1b1b"/>
+    <path d="M341 368h91m-91 13h60" stroke="#fff" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M542 356h14v22h-14zm3 6h8m-8 5h8m-8 5h8" stroke="#fff" stroke-width="2" fill="none"/>
+    <path d="M332 493h228m-228 78h228m-228 78h228m-228 78h228m-228 78h228" fill="none" stroke="#ead9a8" stroke-width="2"/>
+    <g stroke="#a59b8b" stroke-width="4" stroke-linecap="round" fill="#fbf7ee">
+      <circle cx="350" cy="455" r="7"/><path d="M375 455h133"/>
+      <circle cx="350" cy="533" r="7"/><path d="M375 533h112"/>
+      <circle cx="350" cy="611" r="7"/><path d="M375 611h121"/>
+      <circle cx="350" cy="689" r="7"/><path d="M375 689h105"/>
+      <circle cx="350" cy="767" r="7"/><path d="M375 767h126"/>
+    </g>
+    <g fill="#9e1b1b" stroke="#fff" stroke-width="2">
+      <circle id="phone-row-1" cx="350" cy="455" r="9"/>
+      <circle id="phone-row-2" cx="350" cy="533" r="9"/>
+      <circle id="phone-row-3" cx="350" cy="611" r="9"/>
+      <circle id="phone-row-4" cx="350" cy="689" r="9"/>
+      <circle id="phone-row-5" cx="350" cy="767" r="9"/>
+    </g>
+  </g>
+  <g id="record-card">
+    <rect x="709" y="233" width="1060" height="726" rx="34" fill="#f3ead6"/>
+    <rect x="709" y="222" width="1060" height="726" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M710 347V256q0-34 34-34h990q34 0 34 34v91Z" fill="#f3ead6"/>
+    <text x="775" y="306" font-family="Inter,sans-serif" font-size="64" font-weight="820" fill="#9e1b1b">Clearance record</text>
+    <path d="M769 347h940" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M767 461h944m-944 110h944m-944 110h944m-944 110h944" stroke="#ede4d3" stroke-width="2"/>
+    <g class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="730" fill="#2b2622">
+      <g id="record-row-1">
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="871" y="419">Box clear हुआ?</text>
+        <path d="M1385 421h280" fill="none" stroke="#c7bfb0" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <g id="record-status">
+        <circle cx="790" cy="405" r="21" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+        <path d="m779 405 8 8 13-16" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <circle cx="835" cy="405" r="17" fill="#efeeeb"/>
+        <path d="m828 398 14 14m0-14-14 14" stroke="#4b4f58" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <g id="record-row-2">
+        <use href="piece:gps-pin" transform="translate(748 447) scale(.31)"/>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="871" y="529">कहाँ</text>
+        <path d="M1385 531h280" fill="none" stroke="#c7bfb0" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <g id="record-row-3">
+        <use href="piece:clock-face" transform="translate(778 598) scale(.24)"/>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="871" y="639">कब</text>
+        <path d="M1385 641h280" fill="none" stroke="#c7bfb0" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <g id="record-row-4">
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="871" y="749">कितने letters</text>
+        <path d="M1385 751h280" fill="none" stroke="#c7bfb0" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <g id="record-row-5">
+        <path d="M1385 861h280" fill="none" stroke="#c7bfb0" stroke-width="4" stroke-linecap="round"/>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="record-agent" x="871" y="859">किसने किया</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0, {zoom:1}]],
+  on: [
+    [2.84,'fade','#record-row-1, #phone-row-1',{dur:.27}],
+    [4.66,'fade','#record-status',{dur:.24}],
+    [6.82,'fade','#record-row-2, #phone-row-2',{dur:.24}],
+    [7.60,'fade','#record-row-3, #phone-row-3',{dur:.24}],
+    [8.60,'fade','#record-row-4, #phone-row-4',{dur:.24}],
+    [10.32,'fade','#record-row-5, #phone-row-5',{dur:.24}],
+    [11.28,'fade','#record-agent',{dur:.24}]
+  ]
+}
+</script>
+</section>
