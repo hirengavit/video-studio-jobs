@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s158" data-section="PART 8 · MAIL CLASSES &amp; AIRMAIL" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" fill="#2b2622">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="three">
+    <g id="sorting">
+      <rect x="112" y="379" width="457" height="238" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <text id="sorting-name" x="340.5" y="521" text-anchor="middle" font-size="56" font-weight="780">Sorting priority</text>
+    </g>
+    <g id="surface">
+      <rect x="690" y="379" width="540" height="238" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <text x="960" y="483" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="55" font-weight="780">First-class के साथ</text>
+      <text x="960" y="555" text-anchor="middle" font-size="61" font-weight="780">surface</text>
+    </g>
+    <g id="airlift">
+      <rect x="1351" y="379" width="457" height="238" rx="25" fill="#fff" stroke="#4b4f58" stroke-width="5" stroke-dasharray="14 12"/>
+      <text x="1579.5" y="521" text-anchor="middle" font-size="63" font-weight="780" fill="#4b4f58">Free airlift</text>
+    </g>
+    <text class="neq" x="629.5" y="524" text-anchor="middle" font-size="80" font-weight="800" fill="#4b4f58">≠</text>
+    <text class="neq" x="1290.5" y="524" text-anchor="middle" font-size="80" font-weight="800" fill="#4b4f58">≠</text>
+    <g id="different">
+      <rect x="660" y="721" width="600" height="108" rx="54" fill="#fde9a6"/>
+      <text x="960" y="796" text-anchor="middle" font-family="Noto Sans Devanagari, sans-serif" font-size="63" font-weight="760" fill="#694700">तीन अलग चीज़ें</text>
+    </g>
+  </g>
+  <g id="fc">
+    <rect x="112" y="216" width="1696" height="730" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text x="960" y="365" text-anchor="middle" font-size="94" font-weight="800" fill="#9e1b1b">First-class mail</text>
+    <path d="M769 409h382" stroke="#f2b705" stroke-width="8" stroke-linecap="round"/>
+    <use href="piece:three-forms-icons" transform="translate(155 409) scale(1.15)"/>
+    <text id="letters" x="422.95" y="818" text-anchor="middle" font-size="60" font-weight="760">Letters</text>
+    <text id="letter-cards" x="960" y="818" text-anchor="middle" font-size="60" font-weight="760">Letter cards</text>
+    <text id="postcards" x="1497.05" y="818" text-anchor="middle" font-size="60" font-weight="760">Postcards</text>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  shots: [[0,'#three'],[9.94,'#fc']],
+  on: [
+    [0.54,'fade','#sorting-name',{dur:0.32}],
+    [1.94,'pop','#surface',{spring:'soft'}],
+    [5.60,'pop','#airlift',{spring:'soft'}],
+    [7.38,'pop','.neq',{stagger:0.2,spring:'soft'}],
+    [7.68,'fade','#different',{dur:0.4}],
+    [10.58,'fade','#letters',{dur:0.29}],
+    [11.50,'fade','#postcards',{dur:0.29}],
+    [13.08,'fade','#letter-cards',{dur:0.29}]
+  ],
+  update(t,section) {
+    for (const id of ['letter','ilc','postcard']) {
+      const p=section.querySelector('[id$="-fill-'+id+'"],[id="fill-'+id+'"]');
+      if(p) p.setAttribute('fill','#f3ead6');
+    }
+  }
+})
+</script>
+</section>
