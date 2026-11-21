@@ -8,12 +8,5 @@
   "8.64"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s069",
-   "message": "highlight: \"credit\" isn't in that <text> (it says \"− दिया\")",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
