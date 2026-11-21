@@ -8,13 +8,5 @@
   "13.04"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "low-contrast",
-   "scene": "s181",
-   "text": "50 p (1.0:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 2.64
-  }
- ]
+ "warnings": []
 }
