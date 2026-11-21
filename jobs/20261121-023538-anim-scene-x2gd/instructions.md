@@ -1,0 +1,42 @@
+# Fix animated scene s013
+
+Read `inputs/CRAFT.md` (rules every scene follows), `inputs/storyboard.md` (the parts for this scene: "Shared",
+"Continuity", its section "## s013" and its neighbours'; follow its section closely), `inputs/SCENES.md` (the narration and word times for
+s013), `inputs/SCENE-API.md` (how to write a scene file on the engine), `inputs/kit.json` (the channel
+kit) and `inputs/pieces.md` (library pieces:
+place them with `<use href="piece:<id>" transform="..."/>` and animate their parts by id; and sets: places with
+named spots and framings, pictured in `inputs/sets/<id>.jpg` with the spots marked). If the storyboard puts
+this scene in a set, build it on the set (see SCENE-API.md, "Sets"): the character and props on its spots, the
+camera on its framings.
+
+**The header is drawn by the app.** A fixed frame (section, series) sits above every scene: never draw a section label, a series tag or anything in the top band (y < 150). Instead put the words on your <section>: `data-section="…"` and `data-series="…"` (from the storyboard).
+
+**Continuity.** The scene before this one, as finally written, is `inputs/previous/s012.html`. Where the storyboard continues its layout, keep the same positions, sizes and colours, and start from the camera framing it ended on (a zoom that is held at its end continues here, or it returns before the cut). Reuse its element ids and pieces rather than redrawing them differently.
+
+## What to change
+
+The current file is `inputs/current/s013.html`. Change it as follows, and keep everything else that works. Fix crowding by moving or resizing things, never by deleting what the storyboard planned to show:
+
+The director asked for these fixes:
+
+The idea is right: one condition, then "≠". The "jump" notes at 1.25 s (card pop) and 6.24 s (cut to #but) are intended. Three things go wrong on screen. The red stamp card sits empty for ~4 s. The gloss never gets time to be read. In #but, the envelope is about three times as wide as the letter box it is meant to go into.
+
+1. Card timing: pop the red key-fact card at ~4.4 s (just before "पूरा prepaid", ~4.5–5.0 s), not at 1.01 s, so it arrives with its words. Land "Fully prepaid" at ~4.97 s. Until then "शर्त" holds alone, which suits "शर्त एक है".
+2. Gloss: bring "पूरा postage पहले से" in at ~5.2 s, 44 px #fde9a6, under "Fully prepaid" inside the card's group. It isn't visible in any frame, and it needs at least 1 s on screen before the 6.24 s cut.
+3. #but scale: shrink the `domestic-envelope` from ~660 px wide to ~360 px (one scale number). Raise the `letter-box-pillar` to scale 1.6 (as in s011), with its base on the same line as the envelope's resting baseline (~y 860). Then the letter reads as smaller than the box and both sit on one ground line, not the envelope hanging mid-air beside a short box.
+4. Turn the dashed stamp box on the envelope into the plain library stamp (no dotted placeholder outline). The dotted rectangle reads as an empty slot, against "पूरा postage".
+
+The scene lasts 12.52 s: every time in it is between 0 and 12.52.
+
+**No character.** This channel has NO recurring character: never place the host rig (no data-rig, no rigs block) and plan no person on screen. Present ideas the way a great lecture deck would, but animated: exact-word document cards (highlighted phrase by phrase), points that build one at a time, timelines, side-by-side compare cards, one key term in focus, icons and small drawn objects, quick checks and recap cards, in the kit's colours and fonts, with the fixed places the channel's rules name. Every element lands on the word it belongs to, then holds long enough to read. Clarity first: big readable text and elements that use the frame (even margins, never a small card in a big empty canvas), nothing cramped or cut off at the frame edge.
+
+Write `out/s013.html`: one `<section class="vs-scene" id="s013" …>` with the SVG and a
+`<script type="text/scene">` block. Use the engine's
+physical actions (hold, pour, fall, place, level) instead of building them yourself.
+
+**Look at your own frames before you finish.** Run `node look.mjs`: it renders your scene with the real engine
+and writes `out/look.jpg`, six moments across the scene, plus `out/look.json` with the engine's warnings.
+Open the picture and check it like a viewer on a phone would: is every word readable, on its own background,
+inside its card, inside the frame? Does each thing arrive on its word and hold? Nothing missing, nothing
+doubled, nothing squashed? Fix what you see, run `node look.mjs` again, and only then run `node check.mjs`
+and fix what it reports.
