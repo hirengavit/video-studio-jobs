@@ -1,0 +1,72 @@
+<section class="vs-scene" id="s118" data-in="cut" data-section="PART 4 · CIRCLES &amp; HEADQUARTERS" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" text-anchor="middle" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="goa">
+      <g id="goa-pill">
+        <rect x="160" y="400" width="600" height="280" rx="46" fill="#fde9a6" stroke="#dfa61c" stroke-width="3" filter="url(#vs-shadow)"/>
+        <text x="460" y="536" font-size="80" font-weight="800" fill="#2b2622">Goa</text>
+        <text x="460" y="615" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="59" font-weight="700" fill="#6f6a63">गोवा</text>
+      </g>
+      <path id="goa-arrow" d="M792 540 H930 M907 517 L930 540 L907 563" fill="none" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="maharashtra">
+        <rect x="960" y="360" width="800" height="360" rx="35" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+        <text x="1360" y="535" font-size="66" font-weight="800" fill="#fff">Maharashtra Circle</text>
+        <text x="1360" y="620" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="700" fill="#fde9a6">महाराष्ट्र परिमंडल</text>
+      </g>
+    </g>
+    <g id="merge">
+      <text id="merge-date" x="960" y="230" font-size="72" font-weight="800" fill="#9e1b1b">26 January 2020</text>
+      <path id="merge-rule" d="M820 268 H1100" stroke="#f2b705" stroke-width="9" stroke-linecap="round"/>
+      <path id="merge-card" d="M285 380 H1635 Q1660 380 1660 405 V675 Q1660 700 1635 700 H285 Q260 700 260 675 V405 Q260 380 285 380 Z" fill="#fff" stroke="#dfcdb3" stroke-width="3"/>
+      <path id="merge-target" d="M185 380 H1735 Q1760 380 1760 405 V735 Q1760 760 1735 760 H185 Q160 760 160 735 V405 Q160 380 185 380 Z" fill="none" stroke="none"/>
+      <g id="ut-a">
+        <rect x="160" y="380" width="700" height="320" rx="26" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+        <path d="M218 438 H802" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round"/>
+        <text x="510" y="546" font-size="60" font-weight="800" fill="#2b2622">Union Territory</text>
+        <text x="510" y="624" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="700" fill="#6f6a63">केंद्र शासित प्रदेश</text>
+      </g>
+      <g id="ut-b">
+        <rect x="1060" y="380" width="700" height="320" rx="26" fill="#fff" stroke="#dfcdb3" stroke-width="3" filter="url(#vs-shadow)"/>
+        <path d="M1118 438 H1702" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round"/>
+        <text x="1410" y="546" font-size="60" font-weight="800" fill="#2b2622">Union Territory</text>
+        <text x="1410" y="624" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="700" fill="#6f6a63">केंद्र शासित प्रदेश</text>
+      </g>
+      <g id="one-ut">
+        <circle cx="266" cy="570" r="66" fill="#9e1b1b"/>
+        <text x="266" y="595" font-size="76" font-weight="800" fill="#fff">1</text>
+      </g>
+      <g id="name-marker" fill="#fde9a6">
+        <rect x="626" y="471" width="774" height="76" rx="16"/>
+        <rect x="693" y="594" width="640" height="76" rx="16"/>
+      </g>
+      <text id="name-a" x="1013" y="532" font-size="63" font-weight="800" fill="#2b2622">Dadra and Nagar Haveli</text>
+      <text id="name-b" x="1013" y="655" font-size="63" font-weight="800" fill="#2b2622">and Daman and Diu</text>
+      <text id="name-hi" x="960" y="860" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#6f6a63">दादरा और नगर हवेली और दमन और दीव</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0.00, '#goa'], [2.48, '#merge']],
+    on: [
+      [0.00, 'pop', '#goa-pill', {from: 0.88, spring: 'soft'}],
+      [1.18, 'draw', '#goa-arrow', {dur: 0.44}],
+      [1.18, 'slide', '#maharashtra', {from: 'right', dist: 105, spring: 'soft'}],
+      [2.48, 'words', '#merge-date', {gap: 0.46, dist: 16}],
+      [2.48, 'draw', '#merge-rule', {dur: 0.39}],
+      [2.48, 'pop', '#ut-a', {from: 0.95, spring: 'soft'}],
+      [2.48, 'pop', '#ut-b', {from: 0.95, spring: 'soft'}],
+      [2.48, 'move', '#ut-a', {by: [99, 0], spring: 'fast'}],
+      [2.48, 'move', '#ut-b', {by: [-99, 0], spring: 'fast'}],
+      [2.48, 'out', '#ut-a', {dur: 0.20, scale: 1}],
+      [2.48, 'out', '#ut-b', {dur: 0.20, scale: 1}],
+      [2.48, 'fade', '#merge-card', {dur: 0.18}],
+      [2.48, 'morph', '#merge-card', {to: '#merge-target', dur: 0.43}],
+      [2.48, 'pop', '#one-ut', {from: 0.88, spring: 'soft'}],
+      [2.48, 'words', '#name-a', {gap: 0.64, dist: 14}],
+      [2.48, 'words', '#name-b', {gap: 0.34, dist: 14}],
+      [2.48, 'fade', '#name-hi', {dur: 0.35}],
+      [2.48, 'fade', '#name-marker', {dur: 0.23}],
+    ],
+  }
+  </script>
+</section>
