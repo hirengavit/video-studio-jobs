@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s013" data-in="cut" data-section="PART 1 · WHAT GOES IN THE LETTER BOX" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Full prepayment of postage is required but does not make every article eligible for a letter box">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="cond">
+    <text id="condition-kicker" x="960" y="252" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="61" font-weight="810" fill="#9e1b1b">शर्त</text>
+    <g id="prepaid-card">
+      <rect x="460" y="310" width="1000" height="450" rx="36" fill="#9e1b1b"/>
+      <rect x="480" y="330" width="960" height="410" rx="24" fill="none" stroke="#f3ead6" stroke-opacity=".76" stroke-width="7" stroke-dasharray="0 19" stroke-linecap="round"/>
+      <text id="prepaid-term" x="960" y="515" text-anchor="middle" font-family="Inter,sans-serif" font-size="105" font-weight="830" fill="#fff">Fully prepaid</text>
+      <text id="prepaid-hi" x="960" y="643" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="720" fill="#fde9a6">पूरा postage पहले से</text>
+    </g>
+  </g>
+  <g id="but">
+    <g id="stamped-envelope">
+      <use href="piece:domestic-envelope" transform="translate(360 670.9) scale(.475)"/>
+      <use id="postage-stamp" href="piece:postage-stamp" transform="translate(626 667) scale(.24)"/>
+    </g>
+    <use id="letter-box" href="piece:letter-box-pillar" transform="translate(1300 194.4) scale(1.6)"/>
+    <text id="not-equal-symbol" x="1048" y="614" text-anchor="middle" font-family="Inter,sans-serif" font-size="164" font-weight="790" fill="#8a5d00">≠</text>
+    <g id="exception-row">
+      <rect x="329" y="888" width="1262" height="108" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text id="not-every-item" x="960" y="963" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="760" fill="#2b2622">पूरा postage ≠ हर article box में</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera: [[0,{zoom:1}]],
+ shots: [[0,'#cond'], [6.24,'#but']],
+ update(t, section, $) {
+  for (const zone of $('#frank-zone')) zone.setAttribute('display','none');
+ },
+ on: [
+  [4.40,'pop','#prepaid-card',{from:.96,spring:'soft'}],
+  [4.97,'fade','#prepaid-term',{dur:.24}],
+  [5.20,'fade','#prepaid-hi',{dur:.12}],
+  [8.74,'pop','#not-equal-symbol',{from:.94,spring:'soft'}],
+  [9.36,'fade','#exception-row',{dur:.22}],
+  [9.36,'words','#not-every-item',{gap:.10,dist:5}]
+ ]
+}
+</script>
+</section>
