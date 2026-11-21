@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s107" data-in="fade" data-in-dur="0.4" data-section="RECAP · PARTS 5 AND 6" data-series="LETTER BOXES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Recap of electronic clearance and valuables">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="recap-envelope">
+    <rect x="160" y="185" width="1600" height="800" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <path d="M190 187h1540q28 0 28 28v47L960 365 162 262v-47q0-28 28-28Z" fill="#f3ead6"/>
+    <path d="m164 262 796 103 796-103" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <text x="960" y="284" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="820" fill="#9e1b1b">Part 5 और 6</text>
+    <g id="recap-seal">
+      <circle cx="960" cy="365" r="39" fill="#9e1b1b"/>
+      <circle cx="960" cy="365" r="28" fill="none" stroke="#fde9a6" stroke-width="2.5" stroke-dasharray="3 5" stroke-linecap="round"/>
+      <text x="960" y="379" text-anchor="middle" font-family="Inter,sans-serif" font-size="37" font-weight="810" fill="#fde9a6">5</text>
+    </g>
+    <path d="M225 514h1470m-1470 110h1470m-1470 110h1470m-1470 110h1470" fill="none" stroke="#eee5d4" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <g id="recap-row-1">
+    <text x="250" y="450" font-family="Inter,sans-serif" font-size="48" font-weight="820" fill="#2b2622">Nanyatha</text>
+    <text x="250" y="494" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="670" fill="#6f6a63">नन्यता</text>
+    <g id="r1-pill">
+      <rect x="640" y="423" width="941" height="64" rx="32" fill="#fde9a6"/>
+      <text x="674" y="468" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#694700">letter box electronic clearance</text>
+    </g>
+    <path id="r1-tick" d="m1614 454 15 15 30-35" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="recap-row-2">
+    <text x="250" y="560" font-family="Inter,sans-serif" font-size="48" font-weight="820" fill="#2b2622">Barcode</text>
+    <text x="250" y="604" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="670" fill="#6f6a63">बारकोड</text>
+    <g id="r2-pill">
+      <rect x="640" y="533" width="405" height="64" rx="32" fill="#fde9a6"/>
+      <text x="674" y="577" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#694700">दरवाज़े के अंदर</text>
+    </g>
+    <path id="r2-tick" d="m1070 564 11 11 22-27" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="r2-extension">
+      <rect x="1135" y="533" width="446" height="64" rx="32" fill="#fde9a6"/>
+      <text x="1164" y="577" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740" fill="#694700">+ गिनती attendant</text>
+    </g>
+    <path id="r2-final-tick" d="m1614 564 15 15 30-35" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [1.18,'fade','#recap-row-1',{dur:.30}],
+  [3.96,'pop','#r1-pill',{from:.97,spring:'fast'}],
+  [6.30,'draw','#r1-tick',{dur:.32}],
+  [7.18,'fade','#recap-row-2',{dur:.27}],
+  [7.80,'pop','#r2-pill',{from:.97,spring:'fast'}],
+  [8.62,'draw','#r2-tick',{dur:.29}],
+  [9.78,'pop','#r2-extension',{from:.97,spring:'fast'}],
+  [11.32,'draw','#r2-final-tick',{dur:.32}]
+ ]
+}
+</script>
+</section>
