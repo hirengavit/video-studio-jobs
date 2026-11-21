@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "0.97",
+  "1.94",
+  "2.92",
+  "3.89",
+  "4.71"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s120",
+   "text": "1 / category",
+   "t": 4.71
+  }
+ ]
+}
