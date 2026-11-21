@@ -119,6 +119,9 @@
   $('#p3')[0].setAttribute('visibility',t<6.68?'visible':'hidden');
   $('#p4')[0].setAttribute('visibility',t>=6.68?'visible':'hidden');
   const f=Math.max(0,Math.min(1,(t-2.20)/.4)), e=f*f*(3-2*f);
+  $('#p3-row-5')[0].setAttribute('visibility',t>=2.20?'visible':'hidden');
+  $('#p3-rule-5')[0].setAttribute('visibility',t>=2.20?'visible':'hidden');
+  $('#custody-plate')[0].setAttribute('transform','translate(0 '+(-11*e)+')');
   $('#p3-shadow')[0].setAttribute('height',700+29*e);
   $('#p3-card')[0].setAttribute('height',700+35*e);
   $('#p3-rules')[0].setAttribute('d','M726 435h1008M726 610h1008M726 '+(785-21*e)+'h1008');
