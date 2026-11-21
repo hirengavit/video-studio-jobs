@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s089" data-in="cut" data-section="PART 5 · INLAND LETTER CARD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="An unpaid or short-paid item for abroad is stopped and returned to the sender">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="route">
+  <text x="160" y="237" font-family="'Noto Sans Devanagari',Inter,sans-serif" fill="#9e1b1b" font-size="60" font-weight="800">विदेश जाने वाला item</text>
+  <g id="unpaid-status">
+    <rect x="780" y="182" width="315" height="82" rx="41" fill="#fde9a6"/>
+    <text x="937.5" y="237" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#694700">unpaid</text>
+  </g>
+  <g id="short-status">
+    <rect x="1115" y="182" width="350" height="82" rx="41" fill="#fde9a6"/>
+    <text x="1290" y="237" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="800" fill="#694700">कम postage</text>
+  </g>
+  <path id="forward-route" d="M590 538H1328m-37-29 37 29-37 29" stroke="#bcac91" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <g id="post-office">
+    <path d="M219 421 400 337 581 421v206H219Z" fill="#f3ead6" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M200 430 400 337l200 93" fill="none" stroke="#9e1b1b" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="260" y="437" width="280" height="69" rx="12" fill="#fff" stroke="#bda989" stroke-width="3"/>
+    <text x="400" y="485" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="820" fill="#2b2622">Post Office</text>
+    <rect x="353" y="535" width="94" height="92" rx="9" fill="#9e1b1b" stroke="#2b2622" stroke-width="4"/>
+    <path d="M252 562h65m164 0h65" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+    <path d="M208 627h384" stroke="#2b2622" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g id="outgoing-item" transform="translate(14 0)" aria-label="Outgoing mail item">
+    <rect x="585" y="486" width="174" height="105" rx="12" fill="#fff" stroke="#9e1b1b" stroke-width="5"/>
+    <path d="m593 497 79 54 79-54m-158 83 56-45m102 45-56-45" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  <g id="globe" stroke="#6f6a63" stroke-width="5" fill="none" aria-label="International route">
+    <circle cx="1510" cy="539" r="146" fill="#f3ead6"/>
+    <ellipse cx="1510" cy="539" rx="70" ry="146"/>
+    <path d="M1364 539h292m-262-74h232m-232 148h232m-116-220v292"/>
+  </g>
+  <g id="route-barrier">
+    <rect x="916" y="418" width="76" height="239" rx="23" fill="#4b4f58"/>
+    <path d="M927 477l56-37m-56 87 56-37m-56 87 56-37m-56 87 56-37" stroke="#fbf7ee" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <g id="blocked-label">
+    <rect x="711" y="670" width="486" height="86" rx="43" fill="#ebe8e2" stroke="#938d90" stroke-width="3"/>
+    <text x="954" y="729" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="820" fill="#4b4f58">आगे नहीं जाता</text>
+  </g>
+  <path id="return-arrow" d="M880 582C748 588 659 626 659 705V767Q659 856 588 856H565m30-24-30 24 30 24" stroke="#9e1b1b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <g id="sender-box">
+    <rect x="211" y="800" width="340" height="116" rx="24" fill="#fff" stroke="#9e1b1b" stroke-width="4"/>
+    <text x="381" y="873" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" font-weight="820" fill="#9e1b1b">Sender</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [1.74,'pop','#unpaid-status',{from:.96,spring:'soft'}],
+    [3.76,'pop','#short-status',{from:.96,spring:'soft'}],
+    [5.78,'pop','#route-barrier',{from:.94,spring:'fast'}],
+    [6.40,'fade','#blocked-label',{dur:.23}],
+    [7.84,'draw','#return-arrow',{dur:.54}],
+    [8.18,'fade','#sender-box',{dur:.22}]
+  ]
+}
+</script>
+</section>
