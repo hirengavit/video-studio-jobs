@@ -37,7 +37,7 @@
  ({
    dur:12.30,
    shots:[[0,"#sum"]],
-   update(t) {
+   update(t, section, $) {
      let active=t<.03?"letter":t<4.06?"ilc":"postcard";
      for(const id of ["letter","ilc","postcard"]){
        $("#fill-"+id).forEach(el=>el.setAttribute("fill",id===active?"#f3ead6":"#f2efeb"));
