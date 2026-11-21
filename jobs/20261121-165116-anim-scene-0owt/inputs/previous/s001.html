@@ -1,0 +1,36 @@
+<section class="vs-scene" id="s001" data-in="cut" data-section="LETTERS, LETTER CARDS &amp; POSTCARDS" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Three forms for sending a message by post: Letter, Letter Card and Postcard">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <use href="piece:three-forms-icons" transform="translate(260 330)"/>
+  <g text-anchor="middle" font-family="Inter,sans-serif" font-size="72" font-weight="820" fill="#2b2622">
+   <text id="letter-title" x="493" y="820">Letter</text>
+   <text id="letter-card-title" x="960" y="820">Letter Card</text>
+   <text id="postcard-title" x="1427" y="820">Postcard</text>
+  </g>
+  <g text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="670" fill="#6f6a63">
+   <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" id="letter-hi" x="493" y="877">पत्र</text>
+   <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" id="letter-card-hi" x="960" y="877">पत्र कार्ड</text>
+   <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" id="postcard-hi" x="1427" y="877">पोस्टकार्ड</text>
+  </g>
+  <text id="common-idea" x="960" y="960" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">डाक से संदेश भेजने के तीन रूप</text>
+ </svg>
+ <script type="text/scene">
+ ({
+   camera: [[0,{zoom:1}],[9.5,{zoom:1.05},"linear"]],
+   on: [
+     [0,"pulse","#icon-letter, #icon-ilc, #icon-postcard",{amount:.035}],
+     [1.22,"type","#letter-title",{cps:28}],
+     [1.22,"color","#fill-letter",{to:"#f3ead6",dur:.3}],
+     [1.70,"fade","#letter-hi",{dur:.35}],
+     [2.60,"type","#letter-card-title",{cps:30}],
+     [2.60,"color","#fill-ilc",{to:"#f3ead6",dur:.3}],
+     [3.10,"fade","#letter-card-hi",{dur:.35}],
+     [4.22,"type","#postcard-title",{cps:30}],
+     [4.22,"color","#fill-postcard",{to:"#f3ead6",dur:.3}],
+     [4.70,"fade","#postcard-hi",{dur:.35}],
+     [7.96,"words","#common-idea",{gap:.07,dist:9,from:"down"}],
+     [8.52,"underline","#common-idea",{words:"तीन रूप",color:"#f2b705",width:6,gap:8,dur:.35}]
+   ]
+ })
+ </script>
+</section>
