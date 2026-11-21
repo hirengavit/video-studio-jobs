@@ -73,11 +73,13 @@
   [3.00,'draw','#recap-tick-5',{dur:.24}]
  ],
  update(t, section, $){
+  const u=Math.min(1,Math.max(0,t/.20));
+  for (const id of ['#recap-franked','#recap-registered','#recap-periodical']) $(id)[0].setAttribute('font-size',44-3*u);
   const f=Math.max(0,Math.min(1,(t-2.28)/.22));
   const e=f*f*(3-2*f);
   $('#charge-shell')[0].setAttribute('x',1191-14*e);
   $('#charge-shell')[0].setAttribute('width',310+36*e);
-  $('#unpaid-label')[0].setAttribute('x',1346-107*e);
+  $('#unpaid-label')[0].setAttribute('x',1346-101*e);
   $('#unpaid-pill')[0].setAttribute('visibility',t>=1.52?'visible':'hidden');
  }
 }
