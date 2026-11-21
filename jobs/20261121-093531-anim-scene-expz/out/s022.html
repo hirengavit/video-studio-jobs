@@ -3,6 +3,7 @@
   <rect width="1920" height="1080" fill="#fbf7ee"/>
   <g id="stamps">
   <rect x="125" y="262" width="790" height="676" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <g id="prepay-contents">
   <path d="M189 359h95" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
   <text id="prepayment" x="189" y="476" font-family="Inter,sans-serif" font-size="88" font-weight="820" fill="#2b2622">Prepayment</text>
   <text id="prepayment-hi" x="191" y="555" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="650" fill="#6f6a63">पूर्व भुगतान</text>
@@ -10,6 +11,7 @@
    <rect x="189" y="659" width="661" height="105" rx="52" fill="#f3ead6"/>
    <rect id="settled-rule-highlight" x="225" y="677" width="241" height="76" rx="4" fill="#fde9a6" opacity=".89"/>
    <text id="usual-rule" x="234" y="727" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="740" fill="#2b2622">आम नियम: postage पहले</text>
+  </g>
   </g>
   <g id="stationery">
    <text x="1025" y="310" font-family="Inter,sans-serif" font-size="53" font-weight="760" fill="#2b2622">Post Office stationery</text>
@@ -29,7 +31,6 @@
       <text x="1692" y="668" text-anchor="middle" font-family="Inter,sans-serif" font-size="24" font-weight="810" fill="#2b2622">50 p</text>
     </g>
     <g id="difference-card">
-      <rect x="125" y="262" width="790" height="676" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
       <rect x="189" y="355" width="12" height="58" rx="6" fill="#f2b705"/>
       <text x="223" y="401" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="66" font-weight="770" fill="#9e1b1b">फ़र्क कैसे भरें?</text>
       <text x="189" y="554" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="710" fill="#2b2622">ज़रूरी − छपी value</text>
@@ -38,13 +39,13 @@
       <text x="232" y="789" font-family="Inter,sans-serif" font-size="59" font-weight="780" fill="#694700">→ extra stamps</text>
     </g>
     <g id="extra-a-reveal">
-      <g id="extra-a" transform="translate(1393 403) scale(.44)">
+      <g id="extra-a" transform="translate(1490 410) scale(.36)">
         <use href="piece:adhesive-stamp"/>
         <path d="M47 116L80 67L113 116Z M56 128H104" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" fill="none"/>
       </g>
     </g>
     <g id="extra-b-reveal">
-      <g id="extra-b" transform="translate(1487 403) scale(.44)">
+      <g id="extra-b" transform="translate(1554 410) scale(.36)">
         <use href="piece:adhesive-stamp"/>
         <rect x="56" y="63" width="48" height="66" rx="7" fill="none" stroke="#9e1b1b" stroke-width="8"/>
       </g>
@@ -67,6 +68,7 @@
    shots:[[0,"#stamps"],[7.62,"#sum"]],
    on: [
      [1.88,"pop","#denomination-focus",{from:.93,spring:"fast"}],
+     [3.46,"out","#prepay-contents, #print-tag",{dur:.21,scale:1}],
      [3.72,"fade","#difference-card",{dur:.26}],
      [5.10,"fade","#extra-a-reveal",{dur:.14}],
      [5.10,"fall","#extra-a",{by:200,bounce:.12}],
