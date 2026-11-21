@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="400" height="320" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g id="building">
+    <path d="M40 112 L200 32 L360 112 Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+    <rect x="60" y="150" width="280" height="112" fill="#e6d8b8" stroke="#2b2622" stroke-width="3"/>
+    <rect x="182" y="196" width="36" height="66" rx="3" fill="#6f6a63" stroke="#2b2622" stroke-width="3"/>
+    <rect x="72" y="150" width="26" height="112" fill="#fbf7ee" stroke="#2b2622" stroke-width="3"/>
+    <rect x="132" y="150" width="26" height="112" fill="#fbf7ee" stroke="#2b2622" stroke-width="3"/>
+    <rect x="242" y="150" width="26" height="112" fill="#fbf7ee" stroke="#2b2622" stroke-width="3"/>
+    <rect x="302" y="150" width="26" height="112" fill="#fbf7ee" stroke="#2b2622" stroke-width="3"/>
+    <rect x="40" y="262" width="320" height="14" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+    <rect x="26" y="276" width="348" height="14" fill="#e6d8b8" stroke="#2b2622" stroke-width="3"/>
+    <rect x="12" y="290" width="376" height="16" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+  </g>
+  <g id="name-band">
+    <rect x="48" y="112" width="304" height="38" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+  </g>
+  <circle data-anchor="base" cx="200" cy="306" r="0"/>
+</svg>
