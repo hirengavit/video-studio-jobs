@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <g id="rings" fill="none">
+      <circle cx="150" cy="150" r="133"/>
+      <circle cx="150" cy="150" r="119" stroke-width="2"/>
+    </g>
+    <path id="office-arc" d="M62 108 A98 98 0 0 1 238 108" fill="none" stroke="none"/>
+    <rect id="date-bar" x="49" y="123" width="202" height="54" rx="3" fill="none"/>
+  </g>
+  <circle data-anchor="base" cx="150" cy="283" r="0"/>
+</svg>
