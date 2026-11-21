@@ -1,9 +1,10 @@
 <section class="vs-scene" id="s138" data-in="cut" data-section="PART 8 · MAIL CLASSES &amp; AIRMAIL" data-series="PRODUCTS" lang="hi">
  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Two conditions for second-class mail to go by airmail: airmail marking and payment of the required air surcharge">
   <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <defs><clipPath id="s138-plane-window"><rect x="320" y="258" width="430" height="188"/></clipPath></defs>
   <g id="air-packet">
    <rect x="125" y="235" width="775" height="676" rx="29" fill="#fffdf8" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
-   <g id="air-only">
+   <g id="air-only" clip-path="url(#s138-plane-window)">
     <use href="piece:transport-icons" transform="translate(-477 192) scale(1.02)"/>
    </g>
    <ellipse cx="514" cy="821" rx="288" ry="19" fill="#dbccaf" opacity=".65"/>
@@ -47,13 +48,7 @@
      [4.50,"place","#air-mark",{on:"#airmark-seat",x:390.8}],
      [7.90,"fade","#air-condition-two",{dur:.46}],
      [7.90,"pop","#surcharge-mark",{from:.82}]
-   ],
-   update(t, section, $) {
-     for (const id of ["rail","road","ground"]) {
-       const item = section.querySelector("#air-only #"+id);
-       if (item) item.style.display = "none";
-     }
-   }
+   ]
  })
  </script>
 </section>
