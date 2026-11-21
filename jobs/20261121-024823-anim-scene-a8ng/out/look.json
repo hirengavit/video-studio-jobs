@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.82",
+  "5.63",
+  "8.45",
+  "11.26",
+  "13.93"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-off-frame",
+   "scene": "s051",
+   "text": "बदलने योग्य समय-पट्टिका",
+   "t": 2.82
+  },
+  {
+   "kind": "off-frame",
+   "scene": "s051",
+   "message": "a card or panel runs 58 px past the frame edge at 5.6 s (check the camera zoom and the layout)",
+   "t": 5.63
+  }
+ ]
+}
