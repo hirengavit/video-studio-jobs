@@ -19,6 +19,7 @@
         <path d="M956 236h834q20 0 20 20v130H936V256q0-20 20-20Z" fill="#9e1b1b"/>
         <text x="1373" y="332" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="70" font-weight="780" fill="#ffffff">शर्त टूटने पर</text>
         <rect x="976" y="448" width="794" height="148" rx="16" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+        <rect id="double-marker" x="1553" y="478" width="117" height="88" rx="3" fill="#f2b705" opacity=".32"/>
         <text id="postage-double" x="1373" y="545" font-size="67" font-weight="790" text-anchor="middle">letter postage × 2</text>
       </g>
     </g>
@@ -29,7 +30,7 @@
       [2.48, 'pop', '#size-chip, #envelope-chip', {from:0.88, stagger:0.96}],
       [4.72, 'draw', '#breach-cross', {dur:0.34}],
       [6.08, 'type', '#postage-double', {cps:19}],
-      [7.36, 'highlight', '#postage-double', {words:'× 2', color:'#f2b705', opacity:0.32, pad:7, dur:0.45}],
+      [7.36, 'reveal', '#double-marker', {from:'left', dur:0.45}],
     ],
   }
   </script>
