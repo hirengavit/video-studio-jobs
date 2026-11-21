@@ -1,0 +1,296 @@
+[
+  {
+    "id": "three-forms-icons",
+    "kind": "symbol",
+    "description": "Recurring picture, 1400x420: three big flat ink icons in a row on the cream page (centres x 233/700/1167): closed envelope (#icon-letter, fill #fill-letter), folded Inland Letter Card with three flaps (#icon-ilc, #fill-ilc), open postcard with printed stamp (#icon-postcard, #fill-postcard). Fills white; the taught one is coloured #f3ead6 by the scene, the others go warm grey #6f6a63. 3 px ink outlines.",
+    "ideas": [
+      "compare three postal forms",
+      "spotlight one form"
+    ],
+    "viewBox": "0 0 1400 420",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "icon-letter",
+      "fill-letter",
+      "icon-ilc",
+      "fill-ilc",
+      "icon-postcard",
+      "fill-postcard"
+    ]
+  },
+  {
+    "id": "letter-card-open",
+    "kind": "prop",
+    "description": "Inland Letter Card unfolded, 900x600: sand #f3ead6 sheet, ink outline, two dashed fold lines, three flaps (#flap-left, #flap-right, #flap-top) with gum bands, printed stamp (#ilc-stamp), blank address rules (#ilc-rules), blank title spot top left of the address panel (#ilc-title-spot). No lettering.",
+    "ideas": [
+      "show three gummed flaps",
+      "letter blank title panel"
+    ],
+    "viewBox": "0 0 900 600",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "ilc-sheet",
+      "flap-left",
+      "flap-right",
+      "flap-top",
+      "ilc-fold-lines",
+      "ilc-title-spot",
+      "ilc-rules",
+      "ilc-stamp"
+    ]
+  },
+  {
+    "id": "letter-card-folded",
+    "kind": "prop",
+    "description": "Inland Letter Card folded shut, 630x300 (210x100 mm), address side up, three flap edges visible, printed stamp top right (#ilc-stamp), blank title spot top left (#ilc-title-spot), address rules. No lettering.",
+    "ideas": [
+      "show folded dimensions",
+      "label address side"
+    ],
+    "viewBox": "0 0 630 300",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "ilc-folded-body",
+      "ilc-flap-edges",
+      "ilc-title-spot",
+      "ilc-rules",
+      "ilc-stamp"
+    ]
+  },
+  {
+    "id": "postal-roll",
+    "kind": "prop",
+    "description": "Rolled document tied with string, 800x200, side view with elliptical round end at right (#roll-end) and body (#roll-body), sand paper, ink outline.",
+    "ideas": [
+      "measure a roll",
+      "point to the round end"
+    ],
+    "viewBox": "0 0 800 200",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "roll-body",
+      "roll-end",
+      "roll-tie"
+    ]
+  },
+  {
+    "id": "postal-scale",
+    "kind": "prop",
+    "description": "Flat ink letter scale 500x420: sand body, round dial with needle (#needle), flat pan on top.",
+    "ideas": [
+      "weigh a letter",
+      "animate the dial needle"
+    ],
+    "viewBox": "0 0 500 420",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "scale-body",
+      "dial",
+      "needle",
+      "needle-hub",
+      "scale-pan"
+    ]
+  },
+  {
+    "id": "paper-sheet-swatch",
+    "kind": "prop",
+    "description": "Corner-lifted paper sheet 360x460 with a visible thickness edge (#edge), white, ink outline.",
+    "ideas": [
+      "show paper thickness",
+      "compare GSM and thickness"
+    ],
+    "viewBox": "0 0 360 460",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "edge",
+      "sheet",
+      "fold"
+    ]
+  },
+  {
+    "id": "clip-and-staple",
+    "kind": "prop",
+    "description": "Metal paper clip (#clip) and a staple (#staple) side by side, 320x200, slate ink.",
+    "ideas": [
+      "compare two metal fasteners",
+      "mark an unsuitable closure"
+    ],
+    "viewBox": "0 0 320 200",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "clip",
+      "staple"
+    ]
+  },
+  {
+    "id": "film-packet",
+    "kind": "prop",
+    "description": "Flat sealed packet 640x400 holding a film-reel shape, sand wrap, blank white label (#film-label, x120-520 y120-280) for the scene to letter.",
+    "ideas": [
+      "add prescribed film wording",
+      "show sealed mailing packet"
+    ],
+    "viewBox": "0 0 640 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "film-wrap",
+      "film-seams",
+      "film-reel",
+      "film-label"
+    ]
+  },
+  {
+    "id": "linear-barcode",
+    "kind": "symbol",
+    "description": "Plain ink 1D barcode bars on white, 420x120, no digits.",
+    "ideas": [
+      "illustrate linear barcode placement",
+      "show a quiet margin"
+    ],
+    "viewBox": "0 0 420 120",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "barcode-paper",
+      "barcode-bars"
+    ]
+  },
+  {
+    "id": "excel-sheet-icon",
+    "kind": "symbol",
+    "description": "Generic spreadsheet file icon 320x380: green corner fold, grid of cells, no brand logo.",
+    "ideas": [
+      "show booking data grid",
+      "illustrate a spreadsheet file"
+    ],
+    "viewBox": "0 0 320 380",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "sheet",
+      "corner-fold",
+      "cell-grid"
+    ]
+  },
+  {
+    "id": "transport-icons",
+    "kind": "symbol",
+    "description": "Three ink icons on one ground line, 1200x300: train (#rail), road van (#road), plane (#air).",
+    "ideas": [
+      "compare rail road and air",
+      "emphasize one transport mode"
+    ],
+    "viewBox": "0 0 1200 300",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "ground",
+      "rail",
+      "road",
+      "air"
+    ]
+  },
+  {
+    "id": "airmail-label",
+    "kind": "prop",
+    "description": "Blue (#2456a6) rectangular airmail label 360x160 with white border, blank for lettering 'AIR MAIL'.",
+    "ideas": [
+      "letter an air mail label",
+      "show address-side placement"
+    ],
+    "viewBox": "0 0 360 160",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "label-face",
+      "label-border"
+    ]
+  },
+  {
+    "id": "limited-airlift-label",
+    "kind": "prop",
+    "description": "White label 640x200 with blue border, blank for lettering 'For Limited air lifts between … and … only'.",
+    "ideas": [
+      "letter a limited-airlift route",
+      "distinguish a partial route"
+    ],
+    "viewBox": "0 0 640 200",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "label-face",
+      "label-border"
+    ]
+  },
+  {
+    "id": "qms-letter-box",
+    "kind": "prop",
+    "description": "Red pillar letter box 360x600 with two bright yellow #f2b705 bands round it and a blank plate; ink outline.",
+    "ideas": [
+      "identify two yellow bands",
+      "letter the blank QMS plate"
+    ],
+    "viewBox": "0 0 360 600",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "body",
+      "body-side",
+      "bands",
+      "band-upper",
+      "band-lower",
+      "cap",
+      "slot",
+      "plate",
+      "service-door",
+      "plinth"
+    ]
+  },
+  {
+    "id": "specimen-box",
+    "kind": "prop",
+    "description": "Small sealed box 360x300 with a vial shape on its label panel, ink outline, sand and white.",
+    "ideas": [
+      "illustrate a generic sealed specimen parcel",
+      "identify its vial symbol"
+    ],
+    "viewBox": "0 0 360 300",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "side",
+      "top-face",
+      "front",
+      "seal-strip",
+      "label-panel",
+      "vial-mark"
+    ]
+  }
+]
