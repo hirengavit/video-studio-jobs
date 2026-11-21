@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.84",
+  "3.67",
+  "5.51",
+  "7.34",
+  "9.03"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s017",
+   "text": "Box पर लिखा निर्देश / FOR LETTERS ONLY",
+   "t": 0.3
+  }
+ ]
+}
