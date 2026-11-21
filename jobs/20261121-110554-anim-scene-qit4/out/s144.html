@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s144" data-in="cut" data-section="PART 8 · MAIL CLASSES &amp; AIRMAIL" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif" fill="#2b2622">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="bp">
+      <g id="env">
+        <use href="piece:domestic-envelope" transform="translate(390 220) scale(1.5)"/>
+        <rect x="614" y="287" width="522" height="88" rx="4" fill="#fde9a6" fill-opacity=".92"/>
+        <text id="packet-marking" x="875" y="357" text-anchor="middle" font-size="69" font-weight="820">BOOK PACKET</text>
+        <text id="mark-greetings" x="632" y="453" text-anchor="middle" font-family="Georgia, serif" font-size="56" font-weight="700" fill="#2b2622">Greetings</text>
+        <text id="mark-or" x="801" y="453" text-anchor="middle" font-family="Georgia, serif" font-size="45" font-weight="660" fill="#6f6a63">or</text>
+        <text id="mark-invitations" x="976" y="453" text-anchor="middle" font-family="Georgia, serif" font-size="56" font-weight="700" fill="#2b2622">Invitations</text>
+      </g>
+      <g id="surface-facility">
+        <rect x="164" y="867" width="744" height="109" rx="38" fill="#e8f3e9" stroke="#2e7d4f" stroke-width="4"/>
+        <path d="m224 925 14 14 28-30" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="572" y="939" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="790" fill="#245338">surface की सुविधा</text>
+      </g>
+      <g id="no-free-airlift">
+        <rect x="1012" y="867" width="744" height="109" rx="38" fill="#efedeb" stroke="#d3ceca" stroke-width="3"/>
+        <path d="M1068 928l-14-35h10l25 25 29-3-9-21h10l26 19 24-1q16-1 18 7t-15 11l-27 2-26 21h-10l10-20-35 2q-10 0-16-7z" fill="#fff" stroke="#4b4f58" stroke-width="3" stroke-linejoin="round"/>
+        <path d="m1061 944 105-45" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+        <text x="1478" y="939" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="790" fill="#4b4f58">free airlift नहीं</text>
+      </g>
+    </g>
+    <g id="fee">
+      <text id="airmail-fee-title" x="960" y="247" text-anchor="middle" font-family="Inter,sans-serif" font-size="81" font-weight="820" fill="#9e1b1b">Airmail fee</text>
+      <text id="airmail-fee-hi" x="960" y="319" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="55" font-weight="710" fill="#6f6a63">हवाई डाक शुल्क</text>
+      <g id="airmail-scale">
+        <ellipse cx="471" cy="903" rx="234" ry="18" fill="#dfcfb1" opacity=".56"/>
+        <use href="piece:postal-scale" transform="translate(206 480) scale(1.06)"/>
+        <g id="accepted-item">
+          <use href="piece:domestic-envelope" transform="translate(330 356) scale(.37)"/>
+          <rect x="497" y="384" width="77" height="28" rx="4" fill="#2456a6"/>
+          <path d="M511 398h50" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+        </g>
+      </g>
+      <g id="fee-plane">
+        <use href="piece:icon-airplane" transform="translate(1220 412) scale(1.05)"/>
+      </g>
+      <g id="accepted-by-air">
+        <rect x="978" y="675" width="796" height="119" rx="35" fill="#fde9a6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1376" y="749" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="790" fill="#523907">हवा से भेजने के लिए स्वीकार</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    shots:[[0,"#bp"],[4.21,"#fee"]],
+    on:[
+      [0,"fade","#surface-facility",{dur:.26}],
+      [2.28,"fade","#no-free-airlift",{dur:.38}],
+      [4.21,"type","#airmail-fee-title",{cps:25}],
+      [4.74,"fade","#airmail-fee-hi",{dur:.37}],
+      [5.61,"fade","#accepted-item, #accepted-by-air",{dur:.44}]
+    ]
+  })
+  </script>
+</section>
