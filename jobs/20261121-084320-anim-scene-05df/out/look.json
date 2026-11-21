@@ -34,12 +34,6 @@
    "t": 8.29
   },
   {
-   "kind": "text-overlap",
-   "scene": "s177",
-   "text": "हर अगले 20 g या हिस्से पर / + ₹5",
-   "t": 10.21
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s177",
    "message": "a card is mostly empty at 10.2 s: bring its items in sooner, or size it for what it holds now",
