@@ -8,12 +8,5 @@
   "10.77"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s193",
-   "text": "· sorting में first-class / जैसा",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
