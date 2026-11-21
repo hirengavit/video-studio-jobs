@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<path id="moon" d="M228 54C154 41 78 100 78 184C78 270 148 335 229 322C275 315 313 284 330 244C282 271 218 259 184 220C143 172 157 96 228 54Z" fill="#f2b705"/>
+<path id="star" d="M299 79L312 110L346 113L320 135L328 168L299 151L270 168L278 135L252 113L286 110Z" fill="#f2b705"/>
+<circle data-anchor="base" cx="204" cy="324" r="0"/>
+</svg>
