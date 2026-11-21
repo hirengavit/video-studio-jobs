@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.30",
+  "4.60",
+  "6.90",
+  "9.20",
+  "11.35"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s116",
+   "message": "type: option \"dur\" isn't used (it takes: cps)",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s116",
+   "message": "highlight: \"दोगुना\" isn't in that <text> (it says \"\")",
+   "t": 0.3
+  }
+ ]
+}
