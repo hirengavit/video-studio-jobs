@@ -44,7 +44,7 @@
 </svg>
 <script type="text/scene">
 {
- camera:[[0,{zoom:1}],[1.0,{on:'#box',zoom:1.15,x:345},'inOut'],[7.55,{on:'#box',zoom:1.15,x:345}],[8.20,{zoom:1},'inOut']],
+ camera:[[0,{zoom:1}],[1.0,{on:'#box',zoom:1.15,x:445,y:-48},'inOut'],[7.55,{on:'#box',zoom:1.15,x:445,y:-48}],[8.20,{zoom:1},'inOut']],
  update(t,section,$) {
   const p = Math.min(1, t / .55);
   for (const id of ['#change','#timing']) $(id)[0].setAttribute('display', t >= 8.40 ? 'none' : 'inline');
