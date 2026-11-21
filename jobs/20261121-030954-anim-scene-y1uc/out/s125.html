@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s125" data-in="fade" data-in-dur="0.4" data-section="KEY POINTS" data-series="LETTER BOXES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Key point one: what goes in the letter box">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="intro-heading"><text id="key-heading" x="701" y="546" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="820" fill="#9e1b1b">सबसे ज़रूरी बातें</text></g>
+  <g id="key-frame">
+    <g id="key-shell">
+      <rect x="680" y="271" width="1100" height="700" rx="32" fill="#f3ead6"/>
+      <rect x="680" y="260" width="1100" height="700" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M726 435h1008m-1008 175h1008m-1008 175h1008" stroke="#eee4d3" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <g id="key-stamp">
+      <rect x="140" y="271" width="460" height="700" rx="29" fill="#e4bc96"/>
+      <rect x="140" y="260" width="460" height="700" rx="29" fill="#9e1b1b"/>
+      <rect x="158" y="278" width="424" height="664" rx="19" fill="none" stroke="#fde9a6" stroke-opacity=".82" stroke-width="9" stroke-linecap="round" stroke-dasharray="0 22"/>
+      <circle cx="370" cy="493" r="120" fill="#821515" stroke="#d9786e" stroke-width="2.5"/>
+      <text id="point-number" x="370" y="562" text-anchor="middle" font-family="Inter,sans-serif" font-size="185" font-weight="820" fill="#fff">1</text>
+      <path d="M213 646h314" stroke="#e5a39a" stroke-width="2"/>
+      <text id="point-title" x="370" y="742" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="62" font-weight="820" fill="#fff">Box में क्या</text>
+    </g>
+    <g id="key-row-1">
+      <text x="738" y="330" font-family="Inter,sans-serif" font-size="53" font-weight="820" fill="#2b2622">Letter box:</text>
+      <text id="row-1-fact" x="738" y="394" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="740" fill="#2b2622">list वाली, पूरी prepaid डाक</text>
+      <path id="row-1-tick" d="m1678 350 17 17 33-40" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [3.20,'move','#intro-heading',{by:[-561,-330],spring:'soft'}],
+  [3.38,'fade','#key-stamp,#key-shell',{dur:.30}],
+  [6.36,'fade','#key-row-1',{dur:.25}],
+  [7.30,'words','#row-1-fact',{gap:.22,dist:0,from:'none'}],
+  [9.26,'draw','#row-1-tick',{dur:.29}]
+ ],
+ update(t,section,$) {
+  const p=Math.max(0,Math.min(1,(t-3.20)/.42));
+  $('#key-heading')[0].setAttribute('font-size',72-11*p*p*(3-2*p));
+ }
+}
+</script>
+</section>
