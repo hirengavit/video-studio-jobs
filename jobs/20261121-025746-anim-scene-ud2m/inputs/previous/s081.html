@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s081" data-in="cut" data-section="PART 5 · ELECTRONIC RECORD" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="trap-banner">
+  <rect x="145" y="200" width="1630" height="158" rx="25" fill="#9e1b1b"/>
+  <rect x="161" y="215" width="1598" height="128" rx="17" fill="none" stroke="#b8403a" stroke-width="3"/>
+  <path d="M244 230L295 320H193Z" fill="#fde9a6" stroke="#f2b705" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M244 258v23m0 13v2" fill="none" stroke="#7d1414" stroke-width="7" stroke-linecap="round"/>
+  <text x="335" y="302" font-family="Inter,sans-serif" font-size="62" font-weight="810" fill="#fff">Exam angle:</text>
+  <text id="nanyatha" x="739" y="302" font-family="Inter,sans-serif" font-size="72" font-weight="820" fill="#fde9a6">Nanyatha</text>
+ </g>
+ <g id="clearance-card">
+  <rect x="145" y="402" width="1630" height="165" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="240" y="508" font-family="Inter,sans-serif" font-size="67" font-weight="795" fill="#2b2622">Letter box clearance</text>
+  <g id="clearance-tick">
+   <circle cx="1642" cy="484.5" r="55" fill="#2e7d4f"/>
+   <path d="m1618 485 16 16 33-37" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+ </g>
+ <g id="parcel-card">
+  <rect x="145" y="596" width="1630" height="165" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="240" y="702" font-family="Inter,sans-serif" font-size="67" font-weight="760" fill="#2b2622">Parcel booking</text>
+  <g id="parcel-cross">
+   <circle cx="1642" cy="678.5" r="54" fill="#f4f1ed" stroke="#4b4f58" stroke-width="4"/>
+   <path d="m1621 657 42 42m0-42-42 42" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+  </g>
+ </g>
+ <g id="allotment-card">
+  <rect x="145" y="790" width="1630" height="165" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="240" y="896" font-family="Inter,sans-serif" font-size="67" font-weight="760" fill="#2b2622">Post box allotment</text>
+  <g id="allotment-cross">
+   <circle cx="1642" cy="872.5" r="54" fill="#f4f1ed" stroke="#4b4f58" stroke-width="4"/>
+   <path d="m1621 851 42 42m0-42-42 42" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [2.18,'fade','#nanyatha',{dur:.24}],
+  [3.96,'fade','#clearance-card',{dur:.25}],
+  [5.28,'pop','#clearance-tick',{from:.92,spring:'soft'}],
+  [6.26,'fade','#parcel-card',{dur:.24}],
+  [8.16,'fade','#allotment-card',{dur:.24}],
+  [9.66,'pop','#allotment-cross',{from:.92,spring:'soft'}]
+ ]
+}
+</script>
+</section>
