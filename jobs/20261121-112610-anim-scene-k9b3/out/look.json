@@ -16,9 +16,9 @@
    "t": 2.23
   },
   {
-   "kind": "text-overlap",
+   "kind": "mostly-empty",
    "scene": "s087",
-   "text": "Letter postage / =",
+   "message": "a card is mostly empty at 4.5 s: bring its items in sooner, or size it for what it holds now",
    "t": 4.46
   }
  ]
