@@ -10,16 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
+   "kind": "text-off-frame",
    "scene": "s116",
-   "message": "type: option \"dur\" isn't used (it takes: cps)",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s116",
-   "message": "highlight: \"दोगुना\" isn't in that <text> (it says \"\")",
-   "t": 0.3
+   "text": "दोगुना × (letter postage − दिया postage)",
+   "t": 9.2
   }
  ]
 }
