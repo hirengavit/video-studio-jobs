@@ -8,18 +8,5 @@
   "8.75"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s055",
-   "text": "15 micron / मोटाई",
-   "t": 1.78
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s055",
-   "text": "PVC / Polyvinyl Chloride",
-   "t": 7.12
-  }
- ]
+ "warnings": []
 }
