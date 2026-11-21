@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s172" data-section="PART 9 · COUNTER CHECKS &amp; DUES" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" fill="#2b2622">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="worked-example">
+    <rect x="140" y="220" width="1000" height="737" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text x="235" y="338" font-family="Noto Sans Devanagari, sans-serif" font-size="81" font-weight="800" fill="#9e1b1b">एक हिसाब</text>
+    <path d="M230 375h819" stroke="#ead9a8" stroke-width="4"/>
+    <text id="needed" x="240" y="498" font-family="Noto Sans Devanagari, Georgia, sans-serif" font-size="70" font-weight="730">चाहिए ₹5</text>
+    <text id="paid" x="240" y="614" font-family="Noto Sans Devanagari, Georgia, sans-serif" font-size="70" font-weight="730">लगे ₹3</text>
+    <g id="shortfall" font-size="70" font-weight="750">
+      <text id="shortfall-term" x="240" y="730" font-family="Noto Sans Devanagari, Georgia, sans-serif">कमी</text>
+      <text x="766" y="730" text-anchor="middle" font-family="Georgia, serif">=</text>
+      <text id="shortfall-amount" x="850" y="730" font-family="Georgia, serif">₹2</text>
+    </g>
+    <g id="answer-pill"><rect x="811" y="773" width="220" height="111" rx="55.5" fill="#e3f1e8" stroke="#2e7d4f" stroke-width="3"/></g>
+    <text id="double-deficiency" x="240" y="852" font-family="Noto Sans Devanagari, Georgia, sans-serif" font-size="70" font-weight="790">कमी × 2</text>
+    <text id="answer-equals" x="766" y="852" text-anchor="middle" font-family="Georgia, serif" font-size="70" font-weight="750">=</text>
+    <text id="answer-amount" x="921" y="852" text-anchor="middle" font-family="Georgia, serif" font-size="76" font-weight="800" fill="#215b3e">₹4</text>
+    <g id="dues-mark">
+      <use href="piece:postage-due-mark" transform="translate(1280 236) scale(1.05)"/>
+      <text id="due-label" x="1441" y="450" text-anchor="middle" font-size="42" font-weight="850" fill="#4b4f58">DUE ₹4</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  on: [
+    [0.88,'type','#needed',{cps:18}],
+    [3.60,'type','#paid',{cps:17}],
+    [5.00,'fade','#shortfall',{dur:0.22}],
+    [5.00,'type','#shortfall-term',{cps:14}],
+    [5.40,'type','#shortfall-amount',{cps:12}],
+    [6.60,'type','#double-deficiency',{cps:14}],
+    [7.34,'fade','#answer-equals',{dur:0.20}],
+    [7.92,'pop','#answer-pill',{from:.9,spring:'soft'}],
+    [7.92,'count','#answer-amount',{from:0,to:4,prefix:'₹',dur:0.34}],
+    [8.40,'stamp','#dues-mark',{from:1.25,rot:-4}]
+  ]
+})
+</script>
+</section>
