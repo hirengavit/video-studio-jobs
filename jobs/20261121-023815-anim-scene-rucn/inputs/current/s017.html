@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s017" data-in="cut" data-section="PART 1 · WHAT GOES IN THE LETTER BOX" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="For letters only: letters and postcards are allowed; book packets and other classes are not.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="notice">
+    <use href="piece:letter-box-pillar" transform="translate(340 241.2) scale(1.8)"/>
+    <rect id="plate-border" x="446" y="520" width="148" height="130" rx="13" fill="none" stroke="#f2b705" stroke-width="7"/>
+    <text id="plate-notice" x="520" y="552" text-anchor="middle" font-family="Inter,sans-serif" font-size="31" font-weight="850" fill="#2b2622"><tspan x="520" y="555">FOR</tspan><tspan x="520" y="589">LETTERS</tspan><tspan x="520" y="623">ONLY</tspan></text>
+    <g id="notice-label">
+      <rect id="notice-card" x="816" y="390" width="900" height="262" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M875 441h782" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+      <text x="1266" y="550" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="76" font-weight="820" fill="#2b2622">Box पर लिखा निर्देश</text>
+    </g>
+    <g id="class-list">
+      <path d="M1266 593v230m-405-122h810" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+      <g id="letters">
+        <circle cx="899" cy="647" r="24" fill="#2e7d4f"/>
+        <path d="M888 647l8 8 14-16" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="939" y="663" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="790" fill="#2b2622">Letters</text>
+      </g>
+      <g id="postcards">
+        <circle cx="899" cy="772" r="24" fill="#2e7d4f"/>
+        <path d="M888 772l8 8 14-16" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="939" y="788" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="790" fill="#2b2622">Postcards</text>
+      </g>
+      <g id="book-packets">
+        <circle cx="1320" cy="647" r="24" fill="#4b4f58"/>
+        <path d="M1311 638l18 18m0-18-18 18" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="1360" y="663" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="790" fill="#4b4f58">Book packets</text>
+      </g>
+      <g id="other-classes">
+        <circle cx="1320" cy="772" r="24" fill="#4b4f58"/>
+        <path d="M1311 763l18 18m0-18-18 18" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="1360" y="788" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="790" fill="#4b4f58">बाकी classes</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera:[[0,{zoom:1.12,x:35,y:0}]],
+  on:[
+    [0,'fade','#plate-notice',{dur:.48}],
+    [2.02,'fade','#class-list',{dur:.27}],
+    [2.12,'fade','#letters',{dur:.22}],
+    [2.90,'fade','#postcards',{dur:.22}],
+    [5.34,'fade','#book-packets',{dur:.22}],
+    [6.52,'fade','#other-classes',{dur:.22}]
+  ],
+  update(t,section,$) {
+    const p=S.clamp((t-1.55)/.46,0,1);
+    $('#notice-card').forEach(n=>n.setAttribute('height',String(262+197*p*p*(3-2*p))));
+  }
+}
+</script>
+</section>
