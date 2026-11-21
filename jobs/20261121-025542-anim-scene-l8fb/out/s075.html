@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s075" data-in="cut" data-section="RECAP · PARTS 3 AND 4" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Parts 3 and 4 recap: times, hour plate and the round equipment">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="recap-envelope">
+    <rect x="160" y="190" width="1600" height="796" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <path d="M188 192H1732Q1758 192 1758 218V234L960 328 162 234V218Q162 192 188 192Z" fill="#f3ead6"/>
+    <path d="M162 234L960 328 1758 234" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text id="recap-title" x="960" y="258" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="830" fill="#9e1b1b">Part 3 और 4</text>
+    <g id="recap-seal">
+      <circle cx="960" cy="328" r="42" fill="#9e1b1b"/>
+      <circle cx="960" cy="328" r="32" fill="none" stroke="#fde9a6" stroke-width="2.5" stroke-dasharray="3 6"/>
+      <text x="960" y="342" text-anchor="middle" font-family="Inter,sans-serif" font-size="39" font-weight="820" fill="#fde9a6">5</text>
+    </g>
+    <path id="recap-dividers" d="M225 502H1695M225 622H1695M225 742H1695M225 862H1695" fill="none" stroke="#eee5d4" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g id="recap-row-1">
+    <text id="three-times" x="266" y="463" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="810" fill="#2b2622">तीन समय</text>
+    <g id="three-clocks">
+      <use href="piece:clock-face" transform="translate(545 405) scale(.30)"/>
+      <use href="piece:clock-face" transform="translate(650 405) scale(.30)"/>
+      <use href="piece:clock-face" transform="translate(755 405) scale(.30)"/>
+    </g>
+  </g>
+  <g id="three-times-pill">
+    <rect x="904" y="404" width="677" height="79" rx="39.5" fill="#f3ead6"/>
+    <text id="clearance" x="931" y="457" font-family="Inter,sans-serif" font-size="46" font-weight="750" fill="#2b2622">Clearance</text>
+    <text id="dispatch" x="1166" y="457" font-family="Inter,sans-serif" font-size="46" font-weight="750" fill="#2b2622">· Dispatch</text>
+    <text id="arrival" x="1398" y="457" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="750" fill="#2b2622">· आना</text>
+  </g>
+  <path id="recap-tick-1" d="m1629 442 13 13 26-28" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="recap-row-2">
+    <text x="266" y="584" font-family="Inter,sans-serif" font-size="52" font-weight="810" fill="#2b2622">Hour plate</text>
+    <g id="plate-pill">
+      <rect x="904" y="524" width="677" height="79" rx="39.5" fill="#f3ead6"/>
+      <text x="931" y="577" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="750" fill="#2b2622">अगली clearance</text>
+    </g>
+    <path id="recap-tick-2" d="m1629 562 13 13 26-28" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="recap-row-3" font-size="48" font-weight="810" fill="#2b2622">
+    <text id="gear-key" class="hi" x="266" y="703" font-family="'Noto Sans Devanagari',Inter,sans-serif">चाबी</text>
+    <text id="gear-plates" x="366" y="703" font-family="Inter,sans-serif">· plates</text>
+    <text id="gear-bag" x="557" y="703" font-family="Inter,sans-serif">· bag</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0,{zoom:1}]],
+  on: [
+    [0,'fade','#three-times-pill',{dur:.24}],
+    [1.03,'fade','#dispatch',{dur:.24}],
+    [2.65,'fade','#arrival',{dur:.24}],
+    [3.48,'draw','#recap-tick-1',{dur:.28}],
+    [4.39,'fade','#recap-row-2',{dur:.25}],
+    [4.84,'fade','#plate-pill',{dur:.25}],
+    [6.43,'draw','#recap-tick-2',{dur:.28}],
+    [6.89,'fade','#gear-key',{dur:.24}],
+    [7.96,'fade','#gear-plates',{dur:.24}],
+    [8.86,'fade','#gear-bag',{dur:.24}]
+  ]
+}
+</script>
+</section>
