@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s080" data-in="cut" data-section="PART 5 · INLAND LETTER CARD" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <defs>
+      <filter id="ilc080-shadow" x="-10%" y="-10%" width="120%" height="135%">
+        <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#463326" flood-opacity=".14"/>
+      </filter>
+    </defs>
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="noflap">
+      <g id="open-card" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="135" y="293" width="925" height="523" rx="12" fill="#fffaf0" stroke="#6f5145" stroke-width="4" filter="url(#ilc080-shadow)"/>
+        <path d="M145 549H1050" stroke="#9f8879" stroke-width="3" stroke-dasharray="13 11"/>
+        <path d="M236 451h498m-498 36h402m-402 145h498m-498 36h432" stroke="#e1d3bf" stroke-width="3"/>
+        <path id="gum-edge" d="M170 759V345Q170 326 189 326H1007Q1026 326 1026 345V759" fill="none" stroke="#b27812" stroke-width="14"/>
+      </g>
+      <g id="effective-seal">
+        <rect x="1136" y="361" width="646" height="143" rx="26" fill="#fff4d2" stroke="#e6c674" stroke-width="3"/>
+        <text class="hi" x="1459" y="452" text-anchor="middle" font-size="59" font-weight="750" fill="#763019">असरदार तरीका</text>
+      </g>
+      <g id="flaps-optional">
+        <rect x="1136" y="543" width="646" height="213" rx="26" fill="#fffdf7" stroke="#ddc8b1" stroke-width="3"/>
+        <text class="hi" x="1459" y="632" text-anchor="middle" font-size="58" font-weight="780" fill="#9e1b1b">flaps छोड़े</text>
+        <text class="hi" x="1459" y="697" text-anchor="middle" font-size="52" font-weight="680" fill="#39302b">जा सकते हैं</text>
+      </g>
+    </g>
+    <g id="private">
+      <g id="private-folded" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="150" y="282" width="900" height="428.57" rx="12" fill="#f3ead6" stroke="#6f5145" stroke-width="4" filter="url(#ilc080-shadow)"/>
+        <path id="private-left-edge" d="M170 317V670" fill="none" stroke="#c8a990" stroke-width="3"/>
+        <path id="private-top-edge" d="M189 303H1010" fill="none" stroke="#c8a990" stroke-width="3"/>
+        <path id="private-right-edge" d="M1030 317V670" fill="none" stroke="#c8a990" stroke-width="3"/>
+        <path d="M634 561H926M634 606H926M634 651H870" stroke="#a8907a" stroke-width="3" fill="none"/>
+      </g>
+      <text id="private-title" x="214" y="420" font-size="70" font-weight="810" fill="#9e1b1b">Private letter card</text>
+      <text id="private-hi" class="hi" x="218" y="490" font-size="51" font-weight="640" fill="#685748">निजी तौर पर बना</text>
+      <g id="private-allowed">
+        <rect x="1140" y="310" width="638" height="106" rx="53" fill="#e3f1e6" stroke="#a5caad" stroke-width="3"/>
+        <path d="M1214 363l16 16 29-32" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="hi" x="1294" y="379" font-size="53" font-weight="770" fill="#245e3c">भेज सकते हैं</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur: 10.26,
+    shots: [[0, '#noflap'], [6.54, '#private']],
+    on: [
+      [0.66, 'draw', '#gum-edge', {dur:.82}],
+      [0.66, 'fade', '#effective-seal', {dur:.35}],
+      [4.02, 'fade', '#flaps-optional', {dur:.35}],
+      [6.54, 'type', '#private-title', {cps:19}],
+      [6.98, 'fade', '#private-hi', {dur:.29}],
+      [8.76, 'pop', '#private-allowed', {from:.96}]
+    ]
+  })
+  </script>
+</section>
