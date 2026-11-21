@@ -1,0 +1,39 @@
+<section class="vs-scene" id="s052" data-in="cut" data-section="PART 3 · TIMES AND HOUR PLATE" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="box">
+    <use href="piece:letter-box-pillar" transform="translate(330 209.6) scale(1.9)"/>
+    <g id="plate"><use href="piece:hour-plate" transform="translate(446.2 539.7) scale(.82)"/></g>
+  </g>
+  <g id="example-tag">
+    <rect x="870" y="245" width="880" height="110" rx="24" fill="#f3ead6"/>
+    <text x="1310" y="315" class="hi" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="780" fill="#2b2622">उदाहरण · सिर्फ समझने के लिए</text>
+  </g>
+  <g id="schedule">
+    <rect x="870" y="388" width="880" height="488" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text id="schedule-title" x="946" y="477" font-family="Inter,sans-serif" font-size="55" font-weight="790" fill="#9e1b1b">Clearance</text>
+    <path d="M930 514H1690M930 687H1690" fill="none" stroke="#ead9a8" stroke-width="3"/>
+    <g id="row-ten">
+      <text id="time-ten" x="946" y="631" font-family="Inter,sans-serif" font-size="86" font-weight="810" fill="#2b2622">10:00</text>
+      <path id="ten-tick" d="m1518 596 21 21 43-49" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="ten-done" x="1633" y="617" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="760" fill="#6f6a63">पूरी</text>
+    </g>
+    <g id="row-fourteen">
+      <text id="time-fourteen" x="946" y="805" font-family="Inter,sans-serif" font-size="86" font-weight="810" fill="#2b2622">14:00</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [4.80,'fade','#schedule',{dur:.24}],
+  [5.20,'pop','#time-ten',{from:.94,spring:'soft'}],
+  [6.26,'pop','#time-fourteen',{from:.94,spring:'soft'}],
+  [8.98,'color','#time-ten',{to:'#6f6a63',dur:.28}],
+  [8.98,'draw','#ten-tick',{dur:.32}],
+  [10.20,'fade','#ten-done',{dur:.24}]
+ ]
+}
+</script>
+</section>
