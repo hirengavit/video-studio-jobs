@@ -23,28 +23,25 @@
       <text class="hi" x="123" y="592" font-size="61" font-weight="790" fill="#9e1b1b">Counter</text>
       <text class="hi" x="125" y="660" font-size="50" font-weight="690" fill="#675442">जाँच के 5 कदम</text>
       <path d="M624 270V910" fill="none" stroke="#ead7b5" stroke-width="9" stroke-linecap="round"/>
+      <path d="M688 349H1800M688 509H1800M688 669H1800M688 829H1800" fill="none" stroke="#e8d7b9" stroke-width="3" stroke-linecap="round"/>
+      <rect id="step-one-background" x="560" y="200" width="1240" height="140" rx="27" fill="#fffdf8" stroke="#e5cfaa" stroke-width="3"/>
       <g id="step-shell-1">
-        <rect x="560" y="200" width="1240" height="140" rx="27" fill="#fffdf8" stroke="#e5cfaa" stroke-width="3"/>
         <circle cx="624" cy="270" r="36" fill="#9e1b1b"/>
         <text x="624" y="286" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">1</text>
       </g>
       <g id="step-shell-2">
-        <rect x="560" y="360" width="1240" height="140" rx="27" fill="#fffdf8" stroke="#e5cfaa" stroke-width="3"/>
         <circle cx="624" cy="430" r="36" fill="#9e1b1b"/>
         <text x="624" y="446" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">2</text>
       </g>
       <g id="step-shell-3">
-        <rect x="560" y="520" width="1240" height="140" rx="27" fill="#fffdf8" stroke="#e5cfaa" stroke-width="3"/>
         <circle cx="624" cy="590" r="36" fill="#9e1b1b"/>
         <text x="624" y="606" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">3</text>
       </g>
       <g id="step-shell-4">
-        <rect x="560" y="680" width="1240" height="140" rx="27" fill="#fffdf8" stroke="#e5cfaa" stroke-width="3"/>
         <circle cx="624" cy="750" r="36" fill="#9e1b1b"/>
         <text x="624" y="766" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">4</text>
       </g>
       <g id="step-shell-5">
-        <rect x="560" y="840" width="1240" height="140" rx="27" fill="#fffdf8" stroke="#e5cfaa" stroke-width="3"/>
         <circle cx="624" cy="910" r="36" fill="#9e1b1b"/>
         <text x="624" y="926" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">5</text>
       </g>
@@ -61,7 +58,7 @@
     on:[
       [.17,"stamp","#stamp",{from:1.06,rot:-3,spring:"soft"}],
       [1.39,"fade","#lower-rate",{dur:.30}],
-      [7.71,"fade","#step1",{dur:.30}]
+      [7.71,"fade","#step-one-background, #step1",{dur:.30}]
     ]
   })
   </script>
