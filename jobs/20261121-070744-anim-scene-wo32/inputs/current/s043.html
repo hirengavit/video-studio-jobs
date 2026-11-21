@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s043" data-in="cut" data-section="PART 2 · POSTAL SERVICES BOARD" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="left">
+      <rect x="100" y="216" width="790" height="594" rx="31" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M131 216H859Q890 216 890 247V347H100V247Q100 216 131 216Z" fill="#9e1b1b"/>
+      <text id="bandLeft" x="495" y="302" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#fff">एक provision</text>
+      <text id="apex" x="495" y="516" text-anchor="middle" font-family="Inter, sans-serif" font-size="66" font-weight="800" fill="#9e1b1b">Apex policy status</text>
+      <text id="apexHi" x="495" y="621" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="650" fill="#6f6a63">शीर्ष नीति दर्जा</text>
+    </g>
+    <g id="right">
+      <rect x="1030" y="216" width="790" height="594" rx="31" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M1061 216H1789Q1820 216 1820 247V347H1030V247Q1030 216 1061 216Z" fill="#f2b705"/>
+      <text id="bandRight" x="1425" y="302" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#2b2622">अलग provision</text>
+      <text id="composition" x="1425" y="454" text-anchor="middle" font-family="Inter, sans-serif" font-size="70" font-weight="800" fill="#9e1b1b">Composition</text>
+      <text id="andDuties" x="1425" y="546" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="750" fill="#9e1b1b">और duties</text>
+      <g id="powerGroup">
+        <rect x="1121" y="596" width="608" height="171" rx="22" fill="#f3ead6"/>
+        <text id="government" x="1425" y="672" text-anchor="middle" font-family="Inter, sans-serif" font-size="51" font-weight="750" fill="#2b2622">Central Government</text>
+        <text id="power" x="1425" y="730" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="650" fill="#2b2622">की power</text>
+      </g>
+    </g>
+    <g id="separate">
+      <circle cx="960" cy="510" r="90" fill="#2b2622" stroke="#fbf7ee" stroke-width="6"/>
+      <text x="960" y="527" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="800" fill="#fff">अलग</text>
+    </g>
+    <g id="forward">
+      <path d="M280 864H1640" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <text id="question" x="960" y="960" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="700" fill="#6f6a63">अब: Board में कौन बैठता है?</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+   on: [
+    [0.00, 'pop', '#left', {from:0.97, spring:'fast'}],
+    [0.00,'words','#apex',{gap:0.40, dist:10, from:'down', spring:'fast'}],
+    [0.00,'fade','#apexHi',{dur:0.26}],
+    [0.00,'fade','#bandLeft',{dur:0.26}],
+    [0.00,'pop','#right',{from:0.97, spring:'fast'}],
+    [0.00,'fade','#composition',{dur:0.29}],
+    [0.00,'words','#andDuties',{gap:0.84, dist:10, from:'down', spring:'fast'}],
+    [0.00,'fade','#powerGroup',{dur:0.26}],
+    [0.00,'words','#government',{gap:0.32, dist:10, from:'down', spring:'fast'}],
+    [0.00,'words','#power',{gap:0.38, dist:10, from:'down', spring:'fast'}],
+    [0.00,'stamp','#separate',{from:1.08, rot:-3, spring:'fast'}],
+    [0.00,'fade','#bandRight',{dur:0.25}],
+    [0.58,'fade','#forward',{dur:0.26}],
+    [0.61,'words','#question',{gap:0.28, dist:10, from:'down', spring:'fast'}]
+   ]
+  }
+  </script>
+</section>

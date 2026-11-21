@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s039" data-in="cut" data-section="PART 2 · POSTAL SERVICES BOARD" data-series="POSTAL ADMINISTRATION">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="psb-stamp">
+      <rect x="100" y="200" width="660" height="760" rx="38" fill="#9e1b1b"/>
+      <rect x="117" y="217" width="626" height="726" rx="28" fill="none" stroke="#fbd9b5" stroke-width="2" stroke-dasharray="3 12" stroke-linecap="round"/>
+      <rect x="158" y="289" width="9" height="61" rx="4" fill="#f2b705"/>
+      <text x="189" y="373" font-size="145" font-weight="810" fill="#fffefa">PSB</text>
+      <text x="160" y="527" font-size="61" font-weight="760" fill="#fffefa">Postal Services</text>
+      <text x="160" y="603" font-size="61" font-weight="760" fill="#fffefa">Board</text>
+      <text class="hi" x="163" y="708" font-size="57" font-weight="660" fill="#fde9a6">डाक सेवा बोर्ड</text>
+      <rect x="160" y="823" width="362" height="79" rx="39.5" fill="#7d1414"/>
+      <text x="341" y="875" text-anchor="middle" font-size="38" font-weight="740" fill="#fffefa">Rule 5 · POR 2024</text>
+    </g>
+    <g id="meaning-card">
+      <rect x="820" y="200" width="1000" height="760" rx="38" fill="#fffefa" stroke="#ead9a8" stroke-width="4"/>
+      <text id="policy-en" x="892" y="330" font-size="64" font-weight="790" fill="#9e1b1b">policy-making body</text>
+      <text id="policy-hi" class="hi" x="895" y="410" font-size="49" font-weight="660" fill="#6f6a63">नीति-निर्माण निकाय</text>
+      <path x="0" d="M892 458 H1744" stroke="#ead9a8" stroke-width="3"/>
+      <text id="meaning-a" class="hi" x="892" y="575" font-size="52" font-weight="650" fill="#2b2622">Post Office की services पर policy</text>
+      <text id="meaning-b" class="hi" x="892" y="648" font-size="52" font-weight="650" fill="#2b2622">बनाने वाली सबसे ऊँची body</text>
+      <g id="apex">
+        <rect id="apex-surface" x="881" y="730" width="878" height="157" rx="27" fill="#f8ecd0"/>
+        <rect id="apex-accent" x="903" y="758" width="8" height="100" rx="4" fill="#f2b705"/>
+        <text id="apex-en" x="933" y="797" font-size="56" font-weight="760" fill="#7d1414">apex management body</text>
+        <text id="apex-hi" class="hi" x="935" y="855" font-size="43" font-weight="660" fill="#514941">शीर्ष प्रबंधन निकाय</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    ({
+      dur: 11.99,
+      on: [
+        [0.00, "words", "#policy-en", {gap:0.46, dist:12}],
+        [0.78, "fade", "#policy-hi", {dur:0.3}],
+        [2.30, "words", "#meaning-a", {gap:0.41, dist:10}],
+        [4.68, "words", "#meaning-b", {gap:0.48, dist:9}],
+        [5.64, "highlight", "#meaning-b", {words:"सबसे ऊँची", color:"#f2b705", opacity:0.45, pad:3, dur:0.82}],
+        [7.62, "fade", "#apex-surface", {dur:0.3}],
+        [7.62, "fade", "#apex-accent", {dur:0.3}],
+        [8.70, "pop", "#apex-en", {from:0.96}],
+        [9.30, "fade", "#apex-hi", {dur:0.3}]
+      ]
+    })
+  </script>
+</section>
+
