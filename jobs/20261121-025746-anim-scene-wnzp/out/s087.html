@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s087" data-in="cut" data-section="PART 5 · ELECTRONIC RECORD" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="why">
+  <use id="inside-barcode-box" href="piece:letter-box-door-open" transform="translate(150 210) scale(1.9)"/>
+  <g id="barcode-question">
+   <rect x="900" y="255" width="856" height="224" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <text id="question-line-a" class="hi" x="955" y="348" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="810" fill="#2b2622">Barcode दरवाज़े के</text>
+   <text id="question-line-b" class="hi" x="955" y="425" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="810" fill="#2b2622">अंदर क्यों?</text>
+  </g>
+  <g id="barcode-answer">
+   <rect x="900" y="534" width="856" height="254" rx="24" fill="#f3ead6"/>
+   <rect x="900" y="534" width="13" height="254" rx="6" fill="#f2b705"/>
+   <text id="answer-line-a" class="hi" x="955" y="634" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="760" fill="#2b2622">scan से पहले</text>
+   <rect x="1068" y="672" width="253" height="85" rx="7" fill="#fde9a6" opacity=".84"/>
+   <text id="answer-line-b" class="hi" x="955" y="729" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="760" fill="#2b2622">box खोलना ही पड़े</text>
+  </g>
+  <g id="outside-myth">
+   <rect x="900" y="534" width="856" height="122" rx="22" fill="#f3ead6"/>
+   <text id="outside-myth-text" x="951" y="613" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="53" font-weight="760" fill="#2b2622">बाहर लगा label scan</text>
+   <g id="outside-myth-cross">
+    <circle cx="1668" cy="595" r="36" fill="#f6f3ec" stroke="#4b4f58" stroke-width="3"/>
+    <path d="m1653 580 30 30m0-30-30 30" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+   </g>
+  </g>
+  <g id="open-proof">
+   <rect x="900" y="682" width="856" height="198" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <text x="954" y="766" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="770" fill="#4b4f58">दरवाज़ा खुला था,</text>
+   <text x="954" y="838" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="810" fill="#2b2622">सबूत नहीं</text>
+  </g>
+  <g id="barcode-role">
+   <rect x="900" y="534" width="856" height="234" rx="24" fill="#f3ead6"/>
+   <rect x="900" y="534" width="13" height="234" rx="6" fill="#f2b705"/>
+   <text id="barcode-role-heading" x="954" y="630" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="770" fill="#2b2622">Barcode का काम:</text>
+   <text id="barcode-role-detail" x="954" y="718" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="770" fill="#2b2622">सिर्फ box पहचानना</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,'out','#barcode-answer',{dur:.40,scale:1}],
+  [.39,'fade','#outside-myth',{dur:.23}],
+  [3.40,'draw','#outside-myth-cross',{dur:.24}],
+  [3.40,'strike','#outside-myth-text',{color:'#4b4f58',dim:.55,dur:.24,width:7}],
+  [3.60,'fade','#open-proof',{dur:.24}],
+  [5.66,'out','#open-proof',{dur:.25,scale:1}],
+  [5.66,'out','#outside-myth',{dur:.25,scale:1}],
+  [5.93,'fade','#barcode-role',{dur:.24}],
+  [6.17,'words','#barcode-role-heading',{gap:.42,from:'none',dist:0}],
+  [7.31,'words','#barcode-role-detail',{gap:.51,from:'none',dist:0}],
+  [8.33,'highlight','#barcode-role-detail',{words:'पहचानना',color:'#fde9a6',opacity:.84,pad:9,dur:.40}]
+ ]
+}
+</script>
+</section>
