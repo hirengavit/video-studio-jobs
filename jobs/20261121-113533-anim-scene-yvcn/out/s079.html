@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s079" data-in="cut" data-section="PART 5 · INLAND LETTER CARD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Unfolded and folded limits for an Inland Letter Card">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="flaps">
+   <text x="960" y="224" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="70" font-weight="820" fill="#9e1b1b">आम तौर पर 3 flaps</text>
+   <g id="open-card-large">
+     <use href="piece:letter-card-open" transform="translate(285 189) scale(1.5)"/>
+   </g>
+
+  <path id="left-focus" d="M422 710L487 675V1020L422 990Z" fill="#f2b705" fill-opacity=".30" stroke="#9a6200" stroke-width="6" stroke-linejoin="round"/>
+  <g id="left-callout">
+    <path d="M400 776H427" stroke="#9a6200" stroke-width="5" stroke-linecap="round"/>
+    <rect x="100" y="696" width="300" height="150" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+    <text x="250.0" y="754" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="820" fill="#9e1b1b">Left flap</text>
+    <text x="250.0" y="812" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="40" font-weight="780" fill="#2b2622" textLength="268" lengthAdjust="spacingAndGlyphs">15 × 100 mm तक</text>
+  </g>
+  <path id="right-focus" d="M1433 675L1498 710V990L1433 1020Z" fill="#f2b705" fill-opacity=".30" stroke="#9a6200" stroke-width="6" stroke-linejoin="round"/>
+  <g id="right-callout">
+    <path d="M1493 776H1520" stroke="#9a6200" stroke-width="5" stroke-linecap="round"/>
+    <rect x="1520" y="696" width="300" height="150" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+    <text x="1670.0" y="754" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="820" fill="#9e1b1b">Right flap</text>
+    <text x="1670.0" y="812" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="40" font-weight="780" fill="#2b2622" textLength="268" lengthAdjust="spacingAndGlyphs">15 × 100 mm तक</text>
+  </g>
+  <path id="top-focus" d="M487 317L525 253H1394L1433 317Z" fill="#f2b705" fill-opacity=".30" stroke="#9a6200" stroke-width="6" stroke-linejoin="round"/>
+  <g id="top-callout">
+    <path d="M1415 287H1490" stroke="#9a6200" stroke-width="5" stroke-linecap="round"/>
+    <rect x="1490" y="243" width="330" height="150" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+    <text x="1655.0" y="301" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="820" fill="#9e1b1b">Top flap</text>
+    <text x="1655.0" y="359" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="40" font-weight="780" fill="#2b2622" textLength="268" lengthAdjust="spacingAndGlyphs">15 × 210 mm तक</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+  dur:11.96,
+  shots:[[0,"#flaps"]],
+  on:[
+    [.04,"fade","#left-focus",{dur:.24}],
+    [.88,"fade","#left-callout",{dur:.24}],
+    [4.26,"out","#left-focus",{dur:.24,scale:1}],
+    [4.26,"fade","#right-focus",{dur:.24}],
+    [5.38,"fade","#right-callout",{dur:.24}],
+    [7.88,"out","#right-focus",{dur:.24,scale:1}],
+    [7.88,"fade","#top-focus",{dur:.24}],
+    [8.94,"fade","#top-callout",{dur:.24}]
+  ]
+})
+</script>
+</section>
