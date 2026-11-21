@@ -56,7 +56,9 @@
     const p=Math.max(0,Math.min(1,(t-.76)/.26));
     const e=p*p*(3-2*p);
     for (const [i,top] of [[3,652],[4,794]]) {
-      $('#measure-'+i)[0].setAttribute('y',top+93-15*e);
+      const shift=Math.max(0,Math.min(1,(t-(i===3?2.84:4.46))/.23));
+      $('#material-'+i)[0].setAttribute('y',top+77-11*shift);
+      $('#measure-'+i)[0].setAttribute('y',top+93-24*e);
       $('#measure-pill-'+i)[0].setAttribute('y',top+25-10*e);
       $('#measure-pill-'+i)[0].setAttribute('height',92+23*e);
     }
