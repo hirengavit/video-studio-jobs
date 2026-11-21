@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.23",
+  "4.46",
+  "6.68",
+  "8.91",
+  "10.99"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "mostly-empty",
+   "scene": "s087",
+   "message": "a card is mostly empty at 2.2 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.23
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s087",
+   "text": "Letter postage / =",
+   "t": 4.46
+  }
+ ]
+}
