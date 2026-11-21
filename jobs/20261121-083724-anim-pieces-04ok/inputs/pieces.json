@@ -1,0 +1,231 @@
+[
+  {
+    "id": "three-forms-icons",
+    "description": "Recurring picture, 1400x420: three big flat ink icons in a row on the cream page (centres x 233/700/1167): closed envelope (#icon-letter, fill #fill-letter), folded Inland Letter Card with three flaps (#icon-ilc, #fill-ilc), open postcard with printed stamp (#icon-postcard, #fill-postcard). Fills white; the taught one is coloured #f3ead6 by the scene, the others go warm grey #6f6a63. 3 px ink outlines.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s001",
+      "s006",
+      "s007",
+      "s008",
+      "s022",
+      "s023",
+      "s136",
+      "s158",
+      "s161",
+      "s162",
+      "s189",
+      "s190",
+      "s191",
+      "s205"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "letter-card-open",
+    "description": "Inland Letter Card unfolded, 900x600: sand #f3ead6 sheet, ink outline, two dashed fold lines, three flaps (#flap-left, #flap-right, #flap-top) with gum bands, printed stamp (#ilc-stamp), blank address rules (#ilc-rules), blank title spot top left of the address panel (#ilc-title-spot). No lettering.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s007",
+      "s009",
+      "s073",
+      "s076",
+      "s078",
+      "s079",
+      "s080"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "letter-card-folded",
+    "description": "Inland Letter Card folded shut, 630x300 (210x100 mm), address side up, three flap edges visible, printed stamp top right (#ilc-stamp), blank title spot top left (#ilc-title-spot), address rules. No lettering.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s009",
+      "s021",
+      "s072",
+      "s073",
+      "s074",
+      "s077",
+      "s080",
+      "s081",
+      "s082",
+      "s083",
+      "s085",
+      "s086",
+      "s087",
+      "s088",
+      "s090",
+      "s091",
+      "s092",
+      "s119",
+      "s188"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "postal-roll",
+    "description": "Rolled document tied with string, 800x200, side view with elliptical round end at right (#roll-end) and body (#roll-body), sand paper, ink outline.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s025",
+      "s026",
+      "s031",
+      "s032",
+      "s033"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "postal-scale",
+    "description": "Flat ink letter scale 500x420: sand body, round dial with needle (#needle), flat pan on top.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s024",
+      "s144",
+      "s150"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "paper-sheet-swatch",
+    "description": "Corner-lifted paper sheet 360x460 with a visible thickness edge (#edge), white, ink outline.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s042",
+      "s043",
+      "s201"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "clip-and-staple",
+    "description": "Metal paper clip (#clip) and a staple (#staple) side by side, 320x200, slate ink.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s041",
+      "s047"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "film-packet",
+    "description": "Flat sealed packet 640x400 holding a film-reel shape, sand wrap, blank white label (#film-label, x120-520 y120-280) for the scene to letter.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s044",
+      "s045",
+      "s046"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "linear-barcode",
+    "description": "Plain ink 1D barcode bars on white, 420x120, no digits.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s017",
+      "s020",
+      "s061",
+      "s205"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "excel-sheet-icon",
+    "description": "Generic spreadsheet file icon 320x380: green corner fold, grid of cells, no brand logo.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s019"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "transport-icons",
+    "description": "Three ink icons on one ground line, 1200x300: train (#rail), road van (#road), plane (#air).",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s133",
+      "s134",
+      "s135",
+      "s138",
+      "s159"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "airmail-label",
+    "description": "Blue (#2456a6) rectangular airmail label 360x160 with white border, blank for lettering 'AIR MAIL'.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s138",
+      "s149",
+      "s159"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "limited-airlift-label",
+    "description": "White label 640x200 with blue border, blank for lettering 'For Limited air lifts between … and … only'.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s152"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "qms-letter-box",
+    "description": "Red pillar letter box 360x600 with two bright yellow #f2b705 bands round it and a blank plate; ink outline.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s154",
+      "s155",
+      "s156",
+      "s157"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "specimen-box",
+    "description": "Small sealed box 360x300 with a vial shape on its label panel, ink outline, sand and white.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s198"
+    ],
+    "reuse": false
+  }
+]
