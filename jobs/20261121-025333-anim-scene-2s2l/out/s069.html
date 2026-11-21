@@ -1,7 +1,7 @@
 <section class="vs-scene" id="s069" data-in="cut" data-section="PART 4 · KEYS, BAG AND ROUND" data-series="LETTER BOXES">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
  <rect width="1920" height="1080" fill="#fbf7ee"/>
- <style>#van-icon path[fill="#4b4f58"] {fill:#9e1b1b}</style>
+ <style>#van-icon path[d^="M24,262"] {fill:#9e1b1b!important}</style>
  <g id="main-clock" transform="translate(814.4 480.4) scale(1.12)"><use href="piece:clock-face"/></g>
  <text id="hours" class="heading hi" x="246" y="256" font-size="65" font-weight="800" fill="#9e1b1b">तय घंटों में arrangements</text>
  <g id="authorised">
@@ -49,7 +49,9 @@
  update(t,section,$) {
   const a=S.clamp((t-6.30)/.60,0,1);
   const e=1-(1-a)**3;
-  const cx=S.lerp(960,169,e), cy=S.lerp(626,251,e), z=S.lerp(1.12,.43,e);
+  const cx=S.lerp(960,169,e);
+  const up=S.clamp(a/.37,0,1), tuck=S.clamp((a-.68)/.32,0,1);
+  const cy=S.lerp(S.lerp(626,366,up),251,tuck), z=S.lerp(1.12,.43,Math.min(1,a/.44));
   $('#main-clock')[0].setAttribute('transform',`translate(${cx-130*z} ${cy-130*z}) scale(${z})`);
   const k=S.clamp((t-2.20)/.27,0,1), h=k*k*(3-2*k);
   for(const q of $('#hour-hand')) q.setAttribute('transform',`rotate(${30*h} 130 130)`);
