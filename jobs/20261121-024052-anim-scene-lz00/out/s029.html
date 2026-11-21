@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s029" data-in="cut" data-section="PART 2 · COUNTER, NOT THE BOX" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="not-in-box" transform="translate(-288 -95.3) scale(1.3)">
+  <rect x="405" y="302" width="1110" height="458" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <use href="piece:letter-box-pillar" transform="translate(530 337) scale(.86)"/>
+  <g id="box-verdict">
+   <circle cx="775" cy="528" r="46" fill="#f4f1ed" stroke="#4b4f58" stroke-width="4"/>
+   <path d="m757 510 36 36m0-36-36 36" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <text x="860" y="552" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="780" fill="#4b4f58">letter box में नहीं</text>
+ </g>
+ <g id="mix">
+  <g id="domestic">
+   <rect x="160" y="450" width="760" height="300" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <text x="540" y="584" text-anchor="middle" font-family="Inter,sans-serif" font-size="60" font-weight="810" fill="#2b2622">Domestic</text>
+   <text x="540" y="668" text-anchor="middle" font-family="Inter,sans-serif" font-size="60" font-weight="810" fill="#2b2622">registration</text>
+  </g>
+  <g id="international">
+   <rect x="1000" y="450" width="760" height="300" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <text x="1380" y="584" text-anchor="middle" font-family="Inter,sans-serif" font-size="60" font-weight="810" fill="#2b2622">International</text>
+   <text x="1380" y="668" text-anchor="middle" font-family="Inter,sans-serif" font-size="60" font-weight="810" fill="#2b2622">registered letter</text>
+  </g>
+  <g id="not-equal">
+   <circle cx="960" cy="600" r="77" fill="#fde9a6"/>
+   <text x="960" y="640" text-anchor="middle" font-family="Inter,sans-serif" font-size="120" font-weight="820" fill="#8a5d00">≠</text>
+  </g>
+ </g>
+ <g id="date">
+  <use id="regulation-parcel" href="piece:parcel-box" transform="translate(230 356) scale(1.95)"/>
+  <g id="regulation-date-postmark" transform="translate(0 40)">
+   <circle cx="1330" cy="550" r="242" fill="#fff" stroke="#9e1b1b" stroke-width="11"/>
+   <circle cx="1330" cy="550" r="222" fill="none" stroke="#b8403a" stroke-width="4" stroke-dasharray="5 10"/>
+   <path d="M1158 482H1502M1158 621H1502" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round"/>
+   <text x="1330" y="572" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="830" fill="#9e1b1b">16 Dec 2024</text>
+  </g>
+  <text id="regulation-label" x="1330" y="909" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="770" fill="#2b2622">Regulations लागू</text>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ camera: [[0,{zoom:1}]],
+ shots: [[0,'#not-in-box'],[1.98,'#mix'],[7.29,'#date']],
+ on: [
+  [3.82,'fade','#international',{dur:.25}],
+  [5.60,'pop','#not-equal',{from:.94,spring:'soft'}],
+  [7.29,'draw','#regulation-parcel',{dur:.50}],
+  [9.47,'stamp','#regulation-date-postmark',{from:1.16,rot:-3,spring:'soft'}],
+  [12.11,'fade','#regulation-label',{dur:.27}]
+ ]
+}
+</script>
+</section>
