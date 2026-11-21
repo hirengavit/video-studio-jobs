@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 320" width="240" height="320">
+  <g id="pages">
+    <rect x="12" y="12" width="220" height="300" rx="6" fill="#fbf7ee" stroke="#2b2622" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M232 268 L188 312 M226 264 L182 308 M220 262 L178 304" fill="none" stroke="#c8b78f" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <g id="cover">
+    <path d="M18 6 H224 Q234 6 234 16 V256 L178 314 H18 Q6 314 6 302 V18 Q6 6 18 6 Z" fill="#9e1b1b" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M30 8 V312" fill="none" stroke="#7d1414" stroke-width="4" stroke-linecap="round"/>
+    <path d="M44 22 H218 V250 L172 298 H44 Z" fill="none" stroke="#2b2622" stroke-width="1.5" stroke-linejoin="round" opacity="0.7"/>
+    <path d="M234 256 L178 314 Q190 284 206 268 Q218 260 234 256 Z" fill="#7d1414" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+  <g id="label">
+    <rect x="62" y="70" width="140" height="84" rx="6" fill="#fbf7ee" stroke="#2b2622" stroke-width="2.5"/>
+  </g>
+  <circle data-anchor="base" cx="120" cy="314" r="0"/>
+  <circle data-anchor="top" cx="120" cy="6" r="0"/>
+  <circle data-anchor="grip" cx="234" cy="150" r="0"/>
+</svg>
