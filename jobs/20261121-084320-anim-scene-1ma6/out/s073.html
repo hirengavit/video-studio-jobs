@@ -1,0 +1,34 @@
+<section class="vs-scene" id="s073" data-in="cut" data-section="PART 5 · INLAND LETTER CARD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The message is written on the same Inland Letter Card sheet, then folded inside">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="open-card">
+  <use href="piece:letter-card-open" transform="translate(330 128) scale(1.4)"/>
+  <g id="handwriting" fill="none" stroke="#2b2622" stroke-width="5.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M622 321q17 5 31-3t29 0q18 8 31-1q9-5 21 1m27 0q17-5 35 1t39-1q11-5 24 1m33-4q21 4 37-2t33 0q18 7 33-1m28 4q19-6 32 0t32 0m35-2q19-7 37-1t37-3"/>
+    <path d="M622 378q19-4 32 2t32-1q14-7 28 0m30-1q16 6 32-2t35 0q19 7 34-2m29 3q16-4 32 2t33-2m30 1q14-5 28 1t30-1q13-6 32 0"/>
+    <path d="M622 431q21-3 36 2t30-3m30 2q19-9 36-2t36 0q18-7 33-1m33 1q20-6 37 0t37-2"/>
+  </g>
+</g>
+<g id="folded-card">
+  <use href="piece:letter-card-folded" transform="translate(519 314) scale(1.4)"/>
+  <text x="620" y="453" font-family="Inter,sans-serif" font-size="36" font-weight="820" fill="#9e1b1b">ILC</text>
+</g>
+<g id="inside-tag">
+  <rect x="643" y="804" width="634" height="107" rx="53.5" fill="#fde9a6"/>
+  <text x="960" y="876" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="820" fill="#694700">लिखा हुआ अंदर</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [.64,'write','#handwriting path:nth-child(1)',{dur:.42}],
+    [.94,'write','#handwriting path:nth-child(2)',{dur:.42}],
+    [1.24,'write','#handwriting path:nth-child(3)',{dur:.42}],
+    [3.30,'color','[id$="flap-left"] path:first-child, [id$="flap-right"] path:first-child, [id$="flap-top"] path:first-child',{to:'#f2b705',dur:.27}],
+    [4.16,'out','#open-card',{scale:.90,dur:.24}],
+    [4.40,'pop','#folded-card',{from:.94,spring:'fast'}],
+    [7.20,'fade','#inside-tag',{dur:.24}]
+  ]
+}
+</script>
+</section>
