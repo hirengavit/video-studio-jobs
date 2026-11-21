@@ -8,12 +8,5 @@
   "8.92"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s167",
-   "text": "बड़ा ordinary item / फिर भी ordinary",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
