@@ -34,13 +34,14 @@
 <script type="text/scene">
 ({
   shots: [[0, '#warn'], [4.10, '#rule']],
+  update(t, section) { section.querySelector("#warn [data-vs-mark]")?.setAttribute("transform","translate(0 -28)"); },
   on: [
     [1.00, 'words', '#warn-line', {gap:0.39, dist:17}],
     [2.50, 'strike', '#warn-line', {words:'पास', color:'#4b4f58', width:8, dim:0.67}],
     [5.36, 'slide', '#roll-measure', {from:'right', dist:120, spring:'soft'}],
     [5.36, 'count', '#roll-measure-value', {from:0,to:800,suffix:' mm तक',dur:0.64}],
     [8.94, 'slide', '#roll-sum', {from:'right', dist:120, spring:'soft'}],
-    [8.94, 'count', '#roll-sum-value', {from:0,to:1000,suffix:' mm तक',dur:0.64}]
+    [8.94, 'count', '#roll-sum-value', {from:0,to:1000,locale:'es-ES',suffix:' mm तक',dur:0.64}]
   ]
 })
 </script>
