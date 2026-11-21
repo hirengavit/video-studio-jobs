@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s114" data-duration="12.76" data-section="PART 6 · POSTCARD CONDITIONS" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="intl">
+      <g id="outlines">
+        <rect x="102" y="278" width="738" height="694" rx="35" fill="#f5eddc" stroke="#e2cbb6" stroke-width="3"/>
+        <path id="outline-max" d="M142 625V470Q142 446 166 446H776Q800 446 800 470V758Q800 782 776 782H166Q142 782 142 758V625Z" fill="#fffcf4" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="outline-min" d="M275 612V510Q275 488 297 488H645Q667 488 667 510V718Q667 740 645 740H297Q275 740 275 718V612Z" fill="#f9f0d6" stroke="#6f6a63" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g id="limits-card">
+        <rect x="870" y="278" width="948" height="694" rx="35" fill="#fffdf7" stroke="#e2cbb6" stroke-width="3"/>
+        <path d="M906 278H1782Q1818 278 1818 314V452H870V314Q870 278 906 278Z" fill="#9e1b1b"/>
+        <text id="intl-en" x="924" y="353" font-size="64" font-weight="810" fill="#fffefa">International postcard</text>
+        <text id="intl-hi" class="hi" x="926" y="418" font-size="45" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="630" fill="#fde9a6">अंतरराष्ट्रीय पोस्टकार्ड</text>
+        <path d="M924 630H1764" stroke="#e4d6be" stroke-width="3" stroke-linecap="round"/>
+        <g id="maximum-row">
+          <path d="M926 512H974" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round"/>
+          <text x="1000" y="529" font-size="48" font-weight="755" fill="#6f211c">Maximum</text>
+        </g>
+        <g font-size="71" font-weight="825" fill="#272521">
+          <text id="max-a" x="1000" y="601">120</text><text id="max-x" x="1160" y="601">×</text><text id="max-b" x="1240" y="601">235</text><text id="max-u" x="1410" y="601" font-size="49" font-weight="735">mm</text>
+        </g>
+        <g id="minimum-row">
+          <path d="M926 676H974" stroke="#6f6a63" stroke-width="6" stroke-linecap="round"/>
+          <text x="1000" y="693" font-size="48" font-weight="755" fill="#5e554c">Minimum</text>
+        </g>
+        <g font-size="71" font-weight="825" fill="#272521">
+          <text id="min-a" x="1000" y="765">90</text><text id="min-x" x="1160" y="765">×</text><text id="min-b" x="1240" y="765">140</text><text id="min-u" x="1410" y="765" font-size="49" font-weight="735">mm</text>
+        </g>
+        <g id="tolerance">
+          <rect x="925" y="841" width="332" height="82" rx="41" fill="#faebbc" stroke="#e7c975" stroke-width="3"/>
+          <text x="1091" y="898" font-size="48" font-weight="795" fill="#7a211a" text-anchor="middle">± 2 mm</text>
+        </g>
+      </g>
+      <g id="airmail-sizes">
+        <rect x="124" y="842" width="684" height="83" rx="41" fill="#faebbc" stroke="#e7c975" stroke-width="3"/>
+        <text x="466" y="899" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="50" font-weight="800" fill="#7a211a">Airmail postcards भी</text>
+      </g>
+    </g>
+<g id="dir">
+  <text x="960" y="264" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="72" font-weight="820" fill="#2b2622">लिखे जा सकते हैं</text>
+  <g id="dir-postcard" transform="translate(535 316) scale(1.42)">
+    <use href="piece:service-postcard"/>
+    <text x="317" y="63" font-family="Inter,sans-serif" font-size="22" font-weight="820" fill="#2b2622">POST CARD</text>
+    <text x="512" y="104" text-anchor="middle" font-family="Inter,sans-serif" font-size="16" font-weight="800" fill="#fff">50 p</text>
+    <text id="air-mail-direction" x="35" y="135" font-family="Caveat,cursive" font-size="56" font-weight="700" fill="#2456a6">Air Mail</text>
+    <text id="late-fee-direction" x="35" y="221" font-family="Caveat,cursive" font-size="48" font-weight="700" fill="#2b2622">Late Fee Paid</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0,'#intl'],[4.52,'#dir']],
+  on: [
+    [1.58,'pop','#airmail-sizes',{spring:'soft'}],
+    [8.34,'reveal','#air-mail-direction',{from:'left',dur:.68}],
+    [11.42,'reveal','#late-fee-direction',{from:'left',dur:.77}],
+  ]
+}
+</script>
+</section>
