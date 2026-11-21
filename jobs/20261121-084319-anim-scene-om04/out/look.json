@@ -8,12 +8,5 @@
   "11.35"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s116",
-   "text": "दोगुना × (letter postage − दिया postage)",
-   "t": 9.2
-  }
- ]
+ "warnings": []
 }
