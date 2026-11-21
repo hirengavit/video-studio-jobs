@@ -1,0 +1,65 @@
+<section class="vs-scene" id="s099" data-in="cut" data-section="PART 6 · MONEY, STAMPS, VALUABLES" data-series="LETTER BOXES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="The stamped corner is cut out, recorded and defaced">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <defs>
+    <clipPath id="envelope-remainder-mask"><path d="M210 395H636V561H875V763H210Z"/></clipPath>
+    <clipPath id="envelope-extract-mask"><path d="M636 399H874V561H636Z"/></clipPath>
+  </defs>
+  <g id="c2">
+    <g id="case-two-badge">
+      <rect x="153" y="202" width="303" height="102" rx="51" fill="#9e1b1b"/>
+      <text x="304" y="269" text-anchor="middle" font-family="Inter,sans-serif" font-size="57" font-weight="830" fill="#fff">Case 2</text>
+    </g>
+    <g id="private-envelope">
+      <rect x="153" y="350" width="785" height="574" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <g clip-path="url(#envelope-remainder-mask)"><use href="piece:domestic-envelope" transform="translate(230 411) scale(.83)"/></g>
+      <g id="extracted-corner">
+        <g clip-path="url(#envelope-extract-mask)"><use href="piece:domestic-envelope" transform="translate(230 411) scale(.83)"/></g>
+        <path id="detached-paper-edges" d="M636 413V561H858" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect id="envelope-focus" x="648" y="430" width="159" height="80" rx="9" fill="none" stroke="#f2b705" stroke-width="7"/>
+        <g id="envelope-stamps">
+        <use href="piece:postage-stamp" transform="translate(634 418) scale(.26)"/>
+        <use href="piece:postage-stamp" transform="translate(717 418) scale(.26)"/>
+      </g>
+        <path id="deface-marks" d="M655 459l146-13m-146 33 146-13m-146 33 146-13" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+      </g>
+      <path id="cut-guide" d="M636 414V561H858" fill="none" stroke="#4b4f58" stroke-width="5" stroke-dasharray="10 8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="remaining-cut-edge" d="M636 414V561H858" fill="none" stroke="#4b4f58" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="unused-label" x="545" y="809" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="780" fill="#6f6a63">बिना इस्तेमाल का</text>
+      <text id="private-label" x="545" y="872" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="820" fill="#2b2622">private envelope</text>
+    </g>
+    <g id="private-postcard">
+      <rect x="982" y="350" width="785" height="574" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="1098" y="449" width="551" height="309" rx="12" fill="#f3ead6" stroke="#2b2622" stroke-width="5"/>
+      <path d="M1379 481v239M1128 587h209m-209 42h209m-209 42h161m236-34h105m-105 40h105" stroke="#c5b698" stroke-width="5" stroke-linecap="round"/>
+      <text x="1128" y="539" font-family="Inter,sans-serif" font-size="45" font-weight="790" fill="#6f6a63">Postcard</text>
+      <rect id="postcard-focus" x="1560" y="470" width="76" height="86" rx="9" fill="none" stroke="#f2b705" stroke-width="7"/>
+      <g id="postcard-stamp"><use href="piece:postage-stamp" transform="translate(1544 459) scale(.27)"/></g>
+      <text x="1374" y="872" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="820" fill="#2b2622">postcard</text>
+    </g>
+    <g id="record-deface-chain">
+      <rect x="1071" y="207" width="696" height="95" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="1253" y="271" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="55" font-weight="800" fill="#2b2622">दर्ज</text>
+      <path d="M1353 255h108m-20-19 20 19-20 19" fill="none" stroke="#8a5d00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="1578" y="271" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="800" fill="#9e1b1b">deface</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera:[[0,{zoom:1}]],
+  shots:[[0,'#c2']],
+  on:[
+    [0,'move','#unused-label',{by:[0,-6],spring:'soft'}],
+    [0,'move','#private-label',{by:[0,22],spring:'soft'}],
+    [0,'fade','#envelope-focus,#postcard-focus',{dur:.27}],
+    [1.96,'reveal','#cut-guide',{from:'up',dur:.55}],
+    [3.55,'out','#cut-guide,#envelope-focus',{dur:.23,scale:1}],
+    [3.56,'fade','#detached-paper-edges,#remaining-cut-edge',{dur:.22}],
+    [3.56,'move','#extracted-corner',{by:[103,-160],spring:'soft'}],
+    [5.10,'pop','#record-deface-chain',{from:.94,spring:'soft'}],
+    [7.70,'draw','#deface-marks',{dur:.35}]
+  ]
+}
+</script>
+</section>
