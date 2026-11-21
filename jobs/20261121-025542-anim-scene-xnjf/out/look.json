@@ -10,35 +10,11 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-overlap",
-   "scene": "s079",
-   "text": "Doorstep / Service",
-   "t": 4.34
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s079",
-   "text": "Doorstep / Doorstep",
-   "t": 4.34
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s079",
-   "text": "Service / Doorstep",
-   "t": 4.34
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s079",
-   "text": "Service / Service",
-   "t": 4.34
-  },
-  {
    "kind": "low-contrast",
    "scene": "s079",
    "text": "Doorstep (1.2:1) / Service (1.2:1)",
    "message": "text too close in colour to what's behind it",
-   "t": 4.34
+   "t": 6.52
   },
   {
    "kind": "mostly-empty",
