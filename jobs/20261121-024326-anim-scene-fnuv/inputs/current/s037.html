@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s037" data-in="cut" data-section="PART 2 · COUNTER, NOT THE BOX" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="not">
+    <use id="attendant" href="piece:attendant-badge" transform="translate(160 340) scale(1.3)"/>
+    <text id="attendant-label" x="420" y="802" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="790" fill="#2b2622">Letter-box attendant</text>
+    <g id="fix-charge-card">
+      <rect x="765" y="382" width="965" height="154" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text id="fix-charge" class="hi" x="835" y="483" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="66" font-weight="740" fill="#2b2622">charge तय करना</text>
+    </g>
+    <g id="collect-charge-card">
+      <rect x="765" y="564" width="965" height="154" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text id="collect-charge" class="hi" x="835" y="665" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="66" font-weight="740" fill="#2b2622">charge वसूलना</text>
+    </g>
+  </g>
+  <g id="big">
+    <use id="article-box" href="piece:letter-box-pillar" transform="translate(240 288) scale(1.6)"/>
+    <use id="large-article" href="piece:domestic-envelope" transform="translate(455 470) rotate(8) scale(.9)"/>
+    <text id="large-article-label" class="hi" x="555" y="402" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="760" fill="#2b2622">बड़ा ordinary article</text>
+    <g id="slot-cross">
+      <circle cx="400" cy="491" r="44" fill="#fbf7ee" stroke="#4b4f58" stroke-width="4"/>
+      <path d="M383 474l34 34m0-34-34 34" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0,{zoom:1}]],
+  shots: [[0,'#not'],[6.02,'#big']],
+  on: [
+    [2.68,'fade','#fix-charge-card',{dur:.23}],
+    [3.28,'strike','#fix-charge',{color:'#4b4f58',width:6,dur:.35,dim:.62}],
+    [4.16,'fade','#collect-charge-card',{dur:.23}],
+    [4.72,'strike','#collect-charge',{color:'#4b4f58',width:6,dur:.35,dim:.62}],
+    [6.52,'fade','#large-article-label',{dur:.24}],
+    [8.42,'pop','#slot-cross',{from:.92,spring:'soft'}]
+  ]
+}
+</script>
+</section>
