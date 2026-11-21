@@ -8,12 +8,5 @@
   "9.04"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s010",
-   "text": "7 / Postmaster",
-   "t": 3.68
-  }
- ]
+ "warnings": []
 }
