@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s057" data-in="cut" data-section="PART 4 · KEYS, BAG AND ROUND" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Rule 117: handover of keys, changeable hour plates where fitted, and a collection bag">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="rule-stamp">
+    <rect x="120" y="236" width="575" height="680" rx="34" fill="#9e1b1b"/>
+    <rect x="140" y="256" width="535" height="640" rx="24" fill="none" stroke="#f3ead6" stroke-opacity=".72" stroke-width="7" stroke-dasharray="0 17" stroke-linecap="round"/>
+    <text x="408" y="362" text-anchor="middle" font-family="Inter,sans-serif" font-weight="800" font-size="84" fill="#fff">RULE</text>
+    <text x="408" y="437" text-anchor="middle" class="hi" font-size="52" font-weight="720" fill="#fde9a6">नियम</text>
+    <text x="408" y="644" text-anchor="middle" font-family="Inter,sans-serif" font-size="202" font-weight="840" fill="#fff">117</text>
+    <path d="M191 696H624" fill="none" stroke="#b8403a" stroke-width="3"/>
+    <g id="round-question" class="hi" font-size="53" font-weight="720" fill="#fff" text-anchor="middle">
+      <text x="408" y="775" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="round-first">Round पर</text>
+      <text x="408" y="843" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="round-second">क्या मिलता है?</text>
+    </g>
+  </g>
+  <text id="rule-source" x="120" y="979" font-family="Inter,sans-serif" font-size="34" font-weight="520" fill="#6f6a63">Postal Manual · Rule 117</text>
+  <g id="handover">
+    <rect x="752" y="236" width="1048" height="379" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <use href="piece:post-counter-icon" transform="translate(775 266) scale(.78)"/>
+    <text id="postmaster" x="1135" y="356" font-family="Inter,sans-serif" font-size="62" font-weight="810" fill="#2b2622">Postmaster</text>
+    <text id="or-connector" x="1135" y="433" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="650" fill="#6f6a63">या</text>
+    <text id="responsible-assistant" x="1135" y="510" font-family="Inter,sans-serif" font-size="55" font-weight="790" fill="#2b2622">responsible Assistant</text>
+  </g>
+  <g id="handover-slots" fill="#f3ead6" stroke="#ead9a8" stroke-width="3">
+    <rect id="slot-1" x="752" y="666" width="330" height="250" rx="24"/>
+    <rect id="slot-2" x="1111" y="666" width="330" height="250" rx="24"/>
+    <rect id="slot-3" x="1470" y="666" width="330" height="250" rx="24"/>
+  </g>
+  <use id="round-key" href="piece:box-key" transform="translate(702.3 548) scale(1.156)"/>
+  <text id="round-key-label" x="917" y="830" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="#2b2622">Keys</text>
+  <text id="round-key-hi" class="hi" x="917" y="879" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="34" font-weight="680" fill="#6f6a63">चाबियाँ</text>
+  <g id="round-plate">
+    <use href="piece:hour-plate" transform="translate(1199.5 697) scale(.85)"/>
+    <text x="1276" y="744" text-anchor="middle" font-family="Inter,sans-serif" font-size="33" font-weight="790" fill="#2b2622">14:00</text>
+    <text x="1276" y="804" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#2b2622">Changeable</text>
+    <text x="1276" y="848" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="800" fill="#2b2622">hour plates</text>
+  </g>
+  <text id="round-plate-note" class="hi" x="1276" y="892" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="670" fill="#6f6a63">जहाँ लगती हैं</text>
+  <use id="round-bag" href="piece:collection-bag" transform="translate(1555 667) scale(.4)"/>
+  <text id="round-bag-label" x="1635" y="831" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="#2b2622">Bag</text>
+  <text id="round-bag-purpose" class="hi" x="1635" y="880" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="670" fill="#6f6a63">मिले articles के लिए</text>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0,{zoom:1}]],
+  on: [
+    [0.00,'draw','#round-key',{dur:.52}],
+    [.96,'fade','#round-key-label,#round-key-hi',{dur:.22}],
+    [1.84,'pop','#round-plate',{from:.97,spring:'soft'}],
+    [3.34,'fade','#round-plate-note',{dur:.22}],
+    [5.94,'pop','#round-bag',{from:.96,spring:'soft'}],
+    [6.14,'fade','#round-bag-label',{dur:.22}],
+    [8.16,'fade','#round-bag-purpose',{dur:.24}]
+  ]
+}
+</script>
+</section>
