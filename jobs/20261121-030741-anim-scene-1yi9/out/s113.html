@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s113" data-in="cut" data-section="PART 7 · CHECKS AND EXTRA DUTIES" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="books">
+  <g id="trap-banner">
+   <rect x="160" y="192" width="1600" height="119" rx="23" fill="#9e1b1b"/>
+   <path d="M233 215l39 70h-78z" fill="#f2b705" stroke="#fde9a6" stroke-width="2"/>
+   <path d="M233 239v19m0 11v2" stroke="#2b2622" stroke-width="5" stroke-linecap="round"/>
+   <text x="313" y="271" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="810" fill="#fff">Exam में यहीं confusion</text>
+  </g>
+  <g id="order-book">
+   <use href="piece:record-book" transform="translate(429 372) scale(1.12)"/>
+   <text x="616" y="563" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="800" fill="#2b2622">Order Book</text>
+   <text id="order-book-label" x="600" y="864" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="810" fill="#2b2622">Order Book</text>
+  </g>
+  <g id="error-book">
+   <use href="piece:record-book" transform="translate(1139 372) scale(1.12)"/>
+   <text x="1326" y="563" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="800" fill="#2b2622">Error Book</text>
+   <rect id="error-book-marker" x="1148" y="804" width="324" height="79" rx="5" fill="#fde9a6" opacity=".84"/>
+   <text id="error-book-label" x="1310" y="864" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="810" fill="#2b2622">Error Book</text>
+  </g>
+  <g id="irregular-posting">
+   <rect x="1010" y="900" width="600" height="73" rx="21" fill="#f3ead6"/>
+   <text id="irregular-english" x="1310" y="950" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="740" fill="#4b4f58">Irregular posting</text>
+   <text id="irregular-hindi" x="1036" y="950" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="770" fill="#2b2622">गलत तरीके से डाली गई डाक</text>
+  </g>
+ </g>
+ <g id="hp">
+  <g id="head-postman">
+   <rect x="160" y="346" width="655" height="248" rx="116" fill="#9e1b1b"/>
+   <rect x="174" y="360" width="627" height="220" rx="101" fill="none" stroke="#f3ead6" stroke-opacity=".88" stroke-width="3" stroke-dasharray="1 10" stroke-linecap="round"/>
+   <g transform="translate(265 470) scale(1.35) translate(-254 -462.5)">
+    <circle cx="254" cy="462.5" r="49" fill="#f3ead6"/>
+    <rect x="220" y="441" width="68" height="43" rx="6" fill="none" stroke="#9e1b1b" stroke-width="4"/>
+    <path d="m222 445 32 21 32-21" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linejoin="round"/>
+   </g>
+   <text x="353" y="495" font-family="Inter,sans-serif" font-size="64" font-weight="810" fill="#fff">Head Postman</text>
+  </g>
+  <g id="inspection">
+   <path d="M850 470H1008m-29-24 29 24-29 24" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+   <rect x="1045" y="346" width="715" height="248" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <text x="1105" y="442" font-family="Inter,sans-serif" font-size="69" font-weight="810" fill="#2b2622">Attendants</text>
+   <text x="1105" y="535" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="78" font-weight="780" fill="#2b2622">के काम की जाँच</text>
+  </g>
+  <g id="availability">
+   <rect x="560" y="646" width="800" height="148" rx="74" fill="#fde9a6" stroke="#d39a06" stroke-width="3"/>
+   <text x="913" y="744" text-anchor="end" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="790" fill="#8a5d00">शर्त:</text>
+   <text id="availability-value" x="944" y="744" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="70" font-weight="810" fill="#8a5d00">उपलब्ध हो</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ shots:[[0,'#books'],[3.19,'#hp']],
+ on:[
+  [.18,'out','#irregular-english',{dur:.26,scale:1}],
+  [.46,'words','#irregular-hindi',{gap:.34,dist:0,from:'none'}],
+  [3.19,'pop','#head-postman',{from:.96,spring:'soft'}],
+  [5.70,'fade','#inspection',{dur:.24}],
+  [8.41,'fade','#availability',{dur:.24}],
+  [11.19,'fade','#availability-value',{dur:.19}]
+ ]
+}
+</script>
+</section>
