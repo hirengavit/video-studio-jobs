@@ -8,12 +8,5 @@
   "11.89"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s052",
-   "text": "सिर्फ address block दिखे / + barcode",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
