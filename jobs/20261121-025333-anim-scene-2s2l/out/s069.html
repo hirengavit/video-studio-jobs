@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s069" data-in="cut" data-section="PART 4 · KEYS, BAG AND ROUND" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <style>#van-icon path[fill="#4b4f58"] {fill:#9e1b1b}</style>
+ <g id="main-clock" transform="translate(814.4 480.4) scale(1.12)"><use href="piece:clock-face"/></g>
+ <text id="hours" class="heading hi" x="246" y="256" font-size="65" font-weight="800" fill="#9e1b1b">तय घंटों में arrangements</text>
+ <g id="authorised">
+  <rect x="238" y="287" width="620" height="81" rx="38" fill="#f3ead6"/>
+  <text class="hi" x="270" y="343" font-size="46" font-weight="700" fill="#2b2622">जहाँ सुविधा authorised हो</text>
+ </g>
+ <g id="rms">
+  <rect x="120" y="430" width="535" height="510" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <g id="rms-building" stroke="#2b2622" stroke-width="5" stroke-linejoin="round" transform="translate(187 493) scale(1.2)">
+   <path d="M12 56L167 5 321 56v22H12Z" fill="#9e1b1b"/>
+   <path d="M31 80H304V244H31Z" fill="#f3ead6"/>
+   <path d="M19 244h297v14H19Z" fill="#e7cf9a"/>
+   <path d="M117 243V142Q117 106 167 106Q217 106 217 142V243Z" fill="#9e1b1b"/>
+   <path d="M51 120h44v62H51Zm188 0h44v62h-44Z" fill="#fff"/>
+   <path d="M143 188h48" stroke="#fde9a6" stroke-linecap="round"/>
+   <path d="M144 167h46" fill="none" stroke="#fde9a6" stroke-linecap="round"/>
+  </g>
+  <text x="387.5" y="866" text-anchor="middle" font-size="55" font-weight="800" fill="#9e1b1b">RMS offices</text>
+ </g>
+ <g id="selected">
+  <rect x="692.5" y="430" width="535" height="510" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <use href="piece:post-office-front" transform="translate(775 493) scale(.88)"/>
+  <text x="960" y="866" text-anchor="middle" class="hi" font-size="55" font-weight="800" fill="#9e1b1b">चुने हुए offices</text>
+ </g>
+ <g id="van">
+  <rect x="1265" y="430" width="535" height="510" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <use id="van-icon" href="piece:mail-van" transform="translate(1319.7 483) scale(.76)"/>
+  <text id="van-title" x="1532.5" y="820" text-anchor="middle" class="hi" font-size="54" font-weight="800" fill="#9e1b1b">RMS mail vans</text>
+  <text id="van-boxes" x="1532.5" y="880" text-anchor="middle" class="hi" font-size="48" font-weight="700" fill="#2b2622">के letter boxes</text>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [.88,'fade','#authorised',{dur:.34}],
+  [3.00,'highlight','#hours',{words:'तय घंटों में',color:'#fde9a6',opacity:.65,dur:.46,pad:7}],
+  [6.50,'pop','#rms',{from:.96,spring:'soft'}],
+  [6.56,'draw','#rms-building',{dur:.48}],
+  [8.60,'pop','#selected',{from:.96,spring:'soft'}],
+  [10.70,'pop','#van',{from:.96,spring:'soft'}],
+  [10.70,'draw','#van-icon',{dur:.64}],
+  [10.70,'fade','#van-title',{dur:.26}],
+  [12.28,'fade','#van-boxes',{dur:.30}]
+ ],
+ update(t,section,$) {
+  const a=S.clamp((t-6.30)/.60,0,1);
+  const e=1-(1-a)**3;
+  const cx=S.lerp(960,169,e), cy=S.lerp(626,251,e), z=S.lerp(1.12,.43,e);
+  $('#main-clock')[0].setAttribute('transform',`translate(${cx-130*z} ${cy-130*z}) scale(${z})`);
+  const k=S.clamp((t-2.20)/.27,0,1), h=k*k*(3-2*k);
+  for(const q of $('#hour-hand')) q.setAttribute('transform',`rotate(${30*h} 130 130)`);
+  for(const q of $('#minute-hand')) q.setAttribute('transform',`rotate(${30*h} 130 130)`);
+ }
+}
+</script>
+</section>
