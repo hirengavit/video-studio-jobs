@@ -8,13 +8,5 @@
   "8.85"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "low-contrast",
-   "scene": "s101",
-   "text": "50 p (1.2:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 5.4
-  }
- ]
+ "warnings": []
 }
