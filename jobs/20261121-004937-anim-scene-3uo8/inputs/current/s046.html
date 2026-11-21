@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s046" data-in="fade" data-in-dur="0.4" data-section="PART 3 · TIMES AND HOUR PLATE" data-series="POST OFFICE RULES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="पत्र-पेटी परिचर का काम: नियम 116 में तीन समय">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="attendant-heading">
+    <rect x="120" y="177" width="1680" height="150" rx="28" fill="#f3ead6"/>
+    <use href="piece:attendant-badge" transform="translate(94 124) scale(.64)"/>
+    <text class="hi" x="324" y="274" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="810" fill="#2b2622">attendant का काम</text>
+  </g>
+  <g id="rule-stamp">
+    <rect x="120" y="381" width="590" height="560" rx="30" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+    <rect x="120" y="381" width="590" height="560" rx="30" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+    <rect x="146" y="407" width="538" height="508" rx="20" fill="none" stroke="#b8403a" stroke-width="3"/>
+    <text class="hi" x="415" y="505" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="810" fill="#fde9a6">RULE · नियम</text>
+    <text id="rule-number" x="415" y="743" text-anchor="middle" font-family="Inter, sans-serif" font-size="244" font-weight="840" fill="#fff">116</text>
+    <path d="M186 784H644" stroke="#b8403a" stroke-width="3"/>
+    <text x="415" y="855" text-anchor="middle" font-family="Inter, sans-serif" font-size="45" font-weight="790" fill="#fff">Letter-box attendant</text>
+  </g>
+  <g id="clock-slots">
+    <g id="clock-slot-1">
+      <rect x="788" y="381" width="316" height="430" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="946" cy="543" r="116" fill="#fbf7ee" stroke="#ddcba6" stroke-width="4" stroke-dasharray="7 9"/>
+    </g>
+    <g id="clock-slot-2">
+      <rect x="1136" y="381" width="316" height="430" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="1294" cy="543" r="116" fill="#fbf7ee" stroke="#ddcba6" stroke-width="4" stroke-dasharray="7 9"/>
+    </g>
+    <g id="clock-slot-3">
+      <rect x="1484" y="381" width="316" height="430" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="1642" cy="543" r="116" fill="#fbf7ee" stroke="#ddcba6" stroke-width="4" stroke-dasharray="7 9"/>
+    </g>
+  </g>
+  <g id="three-times">
+    <rect x="1074" y="851" width="440" height="90" rx="45" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+    <text class="hi" x="1294" y="912" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="810" fill="#2b2622">तीन समय</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [3.16, 'slide', '#rule-stamp', {from:'left',dist:54,spring:'soft'}],
+    [3.72, 'pop', '#rule-number', {from:.94,spring:'soft'}],
+    [6.42, 'pop', '#clock-slot-1', {from:.95,spring:'soft'}],
+    [6.54, 'pop', '#clock-slot-2', {from:.95,spring:'soft'}],
+    [6.66, 'pop', '#clock-slot-3', {from:.95,spring:'soft'}],
+    [6.92, 'fade', '#three-times', {dur:.25}]
+  ]
+}
+</script>
+</section>
