@@ -1,0 +1,68 @@
+<section class="vs-scene" id="s095" data-in="cut" data-section="PART 6 · MONEY, STAMPS, VALUABLES" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="find">
+  <use id="open-box" href="piece:letter-box-door-open" transform="translate(215 219) scale(1.62)"/>
+  <g id="money" stroke="#2b2622" stroke-width="3" stroke-linejoin="round">
+   <g transform="rotate(-10 391 691)">
+    <rect x="355" y="672" width="74" height="39" rx="5" fill="#d6e6db"/>
+    <rect x="362" y="678" width="60" height="27" rx="4" fill="none" stroke="#2e7d4f" stroke-width="2"/>
+    <circle cx="392" cy="692" r="7" fill="#2e7d4f" stroke="none"/>
+   </g>
+   <circle cx="454" cy="700" r="19" fill="#f2b705"/>
+   <circle cx="454" cy="700" r="12" fill="none" stroke="#8a5d00" stroke-width="2"/>
+  </g>
+  <g id="find-label">
+   <rect x="233" y="892" width="595" height="80" rx="40" fill="#f3ead6"/>
+   <text x="530.5" y="947" text-anchor="middle" class="hi" font-size="54" font-weight="790" fill="#2b2622">पैसा / कीमती चीज़</text>
+  </g>
+ </g>
+ <defs>
+  <g id="manual-art">
+  <rect x="986" y="328" width="774" height="474" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M1011 328h724q25 0 25 25v7H986v-7q0-25 25-25Z" fill="#9e1b1b"/>
+  <text x="1050" y="466" font-family="Georgia,serif" font-size="65" font-weight="700" fill="#2b2622">Postal Manual</text>
+  <text id="volume" x="1050" y="539" font-size="56" font-weight="735" fill="#6f6a63">Volume 5</text>
+  <path d="M1050 575h645" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <g id="rule">
+   <circle cx="1512" cy="696" r="92" fill="#9e1b1b"/>
+   <circle cx="1512" cy="696" r="78" fill="none" stroke="#fde9a6" stroke-dasharray="5 7" stroke-width="2.5"/>
+   <text x="1512" y="687" text-anchor="middle" font-size="47" font-weight="820" fill="#fff">Rule</text>
+   <text x="1512" y="740" text-anchor="middle" font-size="55" font-weight="840" fill="#fff">154</text>
+  </g>
+  </g>
+ </defs>
+ <g id="manual-opening"><use href="#manual-art"/></g>
+ <g id="manual"><use href="#manual-art" transform="translate(160 -50) scale(.85)"/></g>
+ 
+ <g id="hand-over" fill="none" stroke="#8a5d00" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M803 699c92 0 111 61 171 61h27"/>
+  <path d="M982 740l20 20-20 20"/>
+ </g>
+ <g id="postmaster">
+  <rect x="1015" y="712" width="304" height="96" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1167" y="777" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#2b2622">Postmaster</text>
+ </g>
+ <g id="disposal">
+  <rect x="1355" y="660" width="420" height="200" rx="25" fill="#9e1b1b"/>
+  <rect x="1367" y="672" width="396" height="176" rx="18" fill="none" stroke="#b8403a" stroke-width="3" stroke-dasharray="6 7"/>
+  <text x="1565" y="752" text-anchor="middle" font-family="Inter,sans-serif" font-size="72" font-weight="800" fill="#fff">Disposal</text>
+  <text id="disposal-hi" x="1565" y="824" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="710" fill="#fde9a6">निपटारा</text>
+ </g>
+ <text id="what-next" x="1388" y="950" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="790" fill="#2b2622">आगे क्या? → मिला क्या है</text>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [.22,'out','#manual-opening',{dur:.22,scale:1}],
+  [.44,'fade','#manual',{dur:.30}],
+  [.82,'pop','#postmaster',{from:.95,spring:'soft'}],
+  [.96,'draw','#hand-over',{dur:.7}],
+  [3.14,'pop','#disposal',{from:.95,spring:'soft'}],
+  [3.64,'fade','#disposal-hi',{dur:.27}],
+  [4.92,'words','#what-next',{gap:.58,dist:10,from:'down'}],
+  [8.70,'highlight','#what-next',{words:'मिला क्या है',color:'#fde9a6',opacity:.75,pad:8,dur:.42}]
+ ]
+}
+</script>
+</section>
