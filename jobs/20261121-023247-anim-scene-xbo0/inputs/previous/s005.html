@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s005" data-in="cut" data-section="INTRODUCTION" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="who">
+  <use id="attendant" href="piece:attendant-badge" transform="translate(240 320) scale(1.4)"/>
+  <text id="role" class="hi" x="838" y="305" font-size="55" font-weight="780" fill="#2b2622">Box clear करने वाला कर्मचारी</text>
+  <rect x="821" y="356" width="938" height="214" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+  <g id="nameplate">
+   <rect x="820" y="355" width="940" height="216" rx="28" fill="#9e1b1b"/>
+   <rect x="834" y="369" width="912" height="188" rx="18" fill="none" stroke="#b8403a" stroke-width="3" stroke-dasharray="7 8"/>
+   <text id="name-en" x="1290" y="451" text-anchor="middle" font-size="83" font-weight="830" fill="#fff">Letter-box peon</text>
+   <text id="name-hi" x="1290" y="533" text-anchor="middle" class="hi" font-size="51" font-weight="720" fill="#fde9a6">लेटर-बॉक्स पियून</text>
+  </g>
+  <g id="common">
+    <rect x="420" y="769" width="200" height="73" rx="35" fill="#eae9e7"/>
+    <text x="520" y="817" text-anchor="middle" class="hi" font-size="43" font-weight="760" fill="#4b4f58">आम नाम</text>
+  </g>
+  <g id="manual">
+    <rect x="820" y="600" width="940" height="360" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M843 601h894q22 0 22 23v7H821v-7q0-23 22-23Z" fill="#9e1b1b"/>
+    <text id="source" x="871" y="701" font-family="Georgia,serif" font-size="42" font-weight="700" fill="#6f6a63">Postal Manual · Volume 6 · Part 3</text>
+    <path d="M872 730h819" stroke="#ead9a8" stroke-width="3"/>
+    <g id="postmark">
+      <circle cx="1643" cy="827" r="79" fill="#9e1b1b"/>
+      <circle cx="1643" cy="827" r="67" fill="none" stroke="#fde9a6" stroke-width="2.5" stroke-dasharray="4 6"/>
+      <text x="1643" y="819" text-anchor="middle" font-size="36" font-weight="820" fill="#fff">Vol 6</text>
+      <text x="1643" y="861" text-anchor="middle" font-size="35" font-weight="820" fill="#fff">Pt 3</text>
+    </g>
+    <text id="official" x="875" y="822" font-size="64" font-weight="820" fill="#2b2622">Letter-box attendant</text>
+    <g id="official-tag">
+      <rect x="875" y="850" width="322" height="76" rx="36" fill="#f3ead6"/>
+      <text x="1036" y="900" text-anchor="middle" class="hi" font-size="44" font-weight="760" fill="#8a5d00">आधिकारिक नाम</text>
+    </g>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [0,'fade','#common',{dur:.27}],
+  [1.92,'slide','#manual',{from:'down',dist:72,spring:'soft'}],
+  [1.92,'words','#source',{gap:.31,dist:8,from:'down'}],
+  [4.24,'stamp','#postmark',{from:1.35,rot:-5,spring:'soft'}],
+  [6.04,'words','#official',{gap:1.44,dist:10,from:'down'}],
+  [7.48,'highlight','#official',{color:'#fde9a6',opacity:.72,dur:.41,pad:7}],
+  [7.48,'fade','#official-tag',{dur:.26}]
+ ]
+}
+</script>
+</section>
