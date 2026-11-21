@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s086" data-in="cut" data-section="PART 5 · ELECTRONIC RECORD" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="rec">
+  <rect x="245" y="220" width="1430" height="710" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M271 220H1649Q1675 220 1675 246V334H245V246Q245 220 271 220Z" fill="#9e1b1b"/>
+  <text x="305" y="298" font-family="Inter,sans-serif" font-size="64" font-weight="820" fill="#fff">Record</text>
+  <path d="M302 474H1618M302 614H1618M302 754H1618" stroke="#ead9a8" stroke-width="3"/>
+  <g fill="#2b2622" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="750">
+   <text id="record-date" class="hi" x="345" y="434">तारीख</text>
+   <text id="record-time" class="hi" x="345" y="574">समय</text>
+   <text id="record-count" class="hi" x="345" y="714">Letters की गिनती</text>
+   <text id="record-attendant" class="hi" x="345" y="854">Clear करने वाले का detail</text>
+  </g>
+ </g>
+ <g id="why">
+  <use id="inside-barcode-box" href="piece:letter-box-door-open" transform="translate(150 210) scale(1.9)"/>
+  <g id="barcode-question">
+   <rect x="900" y="255" width="856" height="224" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <text id="question-line-a" class="hi" x="955" y="348" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="810" fill="#2b2622">Barcode दरवाज़े के</text>
+   <text id="question-line-b" class="hi" x="955" y="425" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="810" fill="#2b2622">अंदर क्यों?</text>
+  </g>
+  <g id="barcode-answer">
+   <rect x="900" y="534" width="856" height="254" rx="24" fill="#f3ead6"/>
+   <rect x="900" y="534" width="13" height="254" rx="6" fill="#f2b705"/>
+   <text id="answer-line-a" class="hi" x="955" y="634" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="760" fill="#2b2622">scan से पहले</text>
+   <text id="answer-line-b" class="hi" x="955" y="729" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="760" fill="#2b2622">box खोलना ही पड़े</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ shots:[[0,'#rec'],[7.05,'#why']],
+ on:[
+  [.64,'fade','#record-date',{dur:.24}],
+  [1.24,'fade','#record-time',{dur:.24}],
+  [2.08,'words','#record-count',{gap:.3,from:'none',dist:0}],
+  [4.30,'words','#record-attendant',{gap:.26,from:'none',dist:0}],
+  [7.05,'words','#question-line-a',{gap:.34,from:'none',dist:0}],
+  [8.67,'words','#question-line-b',{gap:.30,from:'none',dist:0}],
+  [8.67,'pulse','[data-piece="letter-box-door-open"] [id$="-barcode"],[data-piece="letter-box-door-open"] [id="barcode"]',{amount:.19}],
+  [9.69,'fade','#barcode-answer',{dur:.22}],
+  [9.69,'words','#answer-line-a',{gap:.54,from:'none',dist:0}],
+  [11.85,'words','#answer-line-b',{gap:.33,from:'none',dist:0}],
+  [12.73,'highlight','#answer-line-b',{words:'खोलना ही',color:'#fde9a6',opacity:.84,pad:9,dur:.40}]
+ ]
+}
+</script>
+</section>
