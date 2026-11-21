@@ -44,8 +44,8 @@
     const ease = (from, to, at) => { const p = Math.max(0, Math.min(1, (at - from) / (to - from))); return p * p * (3 - 2 * p); };
     for (const [n, rowAt, valueAt, offAt] of [[1,4.48,5.62,7.77],[2,8.16,9.20,10.66]]) {
       const hold = 1 - ease(offAt, offAt + .29, t);
-      $(`#row-focus-${n}`).setAttribute('opacity', (ease(rowAt, rowAt + .20, t) * hold).toFixed(4));
-      $(`#value-focus-${n}`).setAttribute('opacity', (ease(valueAt, valueAt + .18, t) * hold).toFixed(4));
+      $(`#row-focus-${n}`)[0].setAttribute('opacity', (ease(rowAt, rowAt + .20, t) * hold).toFixed(4));
+      $(`#value-focus-${n}`)[0].setAttribute('opacity', (ease(valueAt, valueAt + .18, t) * hold).toFixed(4));
     }
   }
 }
