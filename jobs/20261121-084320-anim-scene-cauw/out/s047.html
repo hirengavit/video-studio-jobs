@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s047" data-in="cut" data-section="PART 3 · LETTER ENVELOPE" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Both envelope paper tests and closure without clips or staples">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text x="960" y="239" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="820" fill="#9e1b1b">Envelope का कागज़</text>
+  <g id="checked-envelope">
+   <use href="piece:domestic-envelope" transform="translate(580 315)"/>
+   <rect id="closed-edge" x="584" y="319" width="752" height="392" rx="18" fill="none" stroke="#2e7d4f" stroke-width="8"/>
+  </g>
+  <g id="gsm-pass">
+   <rect x="128" y="423" width="405" height="181" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <text x="169" y="533" font-family="Inter,sans-serif" font-size="68" font-weight="820" fill="#2b2622">GSM</text>
+   <circle cx="459" cy="514" r="40" fill="#2e7d4f"/>
+   <path d="m440 514 13 13 23-29" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="thickness-pass">
+   <rect x="1387" y="423" width="405" height="181" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <text x="1428" y="533" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="820" fill="#2b2622">मोटाई</text>
+   <circle cx="1718" cy="514" r="40" fill="#2e7d4f"/>
+   <path d="m1699 514 13 13 23-29" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="both-chip">
+   <rect x="766" y="264" width="388" height="68" rx="33" fill="#fde9a6"/>
+   <text x="960" y="311" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="810" fill="#694700">दोनों शर्तें</text>
+  </g>
+  <g id="closure-chip">
+   <rect x="133" y="794" width="790" height="152" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <circle cx="214" cy="870" r="38" fill="#2e7d4f"/>
+   <path d="m197 870 12 13 23-29" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+   <text x="284" y="893" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="66" font-weight="820" fill="#225e3a">सभी तरफ़ बंद</text>
+  </g>
+  <g id="fasteners-chip">
+   <rect x="967" y="794" width="820" height="152" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <use href="piece:clip-and-staple" transform="translate(970 787) scale(.80)"/>
+   <text x="1220" y="891" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="55" font-weight="820" fill="#4b4f58">बिना clip और staple</text>
+  </g>
+  <g id="fasteners-rejected">
+   <circle cx="1181" cy="911" r="27" fill="#4b4f58" stroke="#fff" stroke-width="4"/>
+   <path d="m1171 901 20 20m0-20-20 20" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  </g>
+ </svg>
+ <script type="text/scene">
+ {
+  camera:[[0,{zoom:1}]],
+  on:[
+   [1.62,'fade','#gsm-pass',{dur:.27}],
+   [3.60,'fade','#thickness-pass',{dur:.27}],
+   [4.28,'pop','#both-chip',{from:.95,spring:'soft'}],
+   [6.62,'draw','#closed-edge',{dur:1.15}],
+   [8.10,'fade','#closure-chip',{dur:.26}],
+   [8.62,'pop','#fasteners-chip',{from:.96,spring:'soft'}],
+   [9.80,'stamp','#fasteners-rejected',{from:1.28,rot:0,spring:'soft'}]
+  ]
+ }
+ </script>
+</section>
