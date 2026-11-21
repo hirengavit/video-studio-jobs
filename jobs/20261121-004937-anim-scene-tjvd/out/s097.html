@@ -1,0 +1,71 @@
+<section class="vs-scene" id="s097" data-in="cut" data-section="PART 6 · MONEY, STAMPS, VALUABLES" data-series="LETTER BOXES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Procedure for loose stamps when their article cannot be found">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="c1" data-shot-box="0 0 1920 1080">
+    <g id="flow-base">
+      <rect x="140" y="351" width="1640" height="424" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M514 565h1214" fill="none" stroke="#d9c9ad" stroke-width="3" stroke-dasharray="8 13" stroke-linecap="round"/>
+    </g>
+    <g id="flow-step-1">
+      <rect x="166" y="377" width="348" height="372" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:postage-stamp" transform="translate(193 420) scale(.53) rotate(-10 200 200)"/>
+      <path d="M363 527h44m-14-13 14 13-14 13" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <use href="piece:magnifier-icon" transform="translate(402 482) scale(.24)"/>
+      <path d="M200 607h280" stroke="#ead9a8" stroke-width="2"/>
+      <g id="search-copy">
+        <text x="340" y="655" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="800" fill="#2b2622">किस article के?</text>
+        <text x="340" y="704" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="35" font-weight="700" fill="#6f6a63">पहले: article ढूँढना</text>
+      </g>
+    </g>
+    <g id="not-found">
+      <rect x="541" y="296" width="266" height="64" rx="32" fill="#4b4f58"/>
+      <text x="674" y="340" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#fff">पता न चले</text>
+      <path d="M520 535H536M536 535V366M536 535V565H551" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="step-2">
+      <rect x="552" y="377" width="386" height="372" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:post-counter-icon" transform="translate(667 380) scale(.39)"/>
+      <text x="745" y="559" text-anchor="middle" font-family="Inter,sans-serif" font-size="50" font-weight="800" fill="#2b2622">Postmaster</text>
+      <text x="745" y="615" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="710" fill="#6f6a63">या</text>
+      <text x="745" y="670" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="770" fill="#2b2622">Head Sorting</text>
+      <text x="745" y="728" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="770" fill="#2b2622">Assistant</text>
+    </g>
+    <g id="step-3">
+      <rect x="976" y="377" width="426" height="372" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:record-book" transform="translate(1084 403) scale(.62)"/>
+      <path d="M1142 510h94" stroke="#6f6a63" stroke-width="4" stroke-linecap="round"/>
+      <text x="1189" y="671" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="780" fill="#2b2622">Error Book /</text>
+      <text x="1189" y="730" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="780" fill="#2b2622">Daily Report</text>
+    </g>
+    <g id="stamp-travel"><use href="piece:postage-stamp" transform="translate(1044 347) scale(.25)"/></g>
+    <g id="book-cancel" fill="none" stroke="#4b4f58" stroke-width="4" stroke-linecap="round">
+      <path d="M1184 484L1237 475M1184 493L1237 484M1184 502L1237 493"/>
+    </g>
+    <g id="step-4">
+      <rect x="1440" y="377" width="314" height="372" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:postage-stamp" transform="translate(1486 417) scale(.55)"/>
+      <path id="cancel-lines" d="M1521 505l151-24m-151 48 151-24m-151 48 151-24" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+      <g id="deface-term">
+        <rect x="1475" y="650" width="244" height="76" rx="22" fill="#9e1b1b"/>
+        <text x="1597" y="704" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="810" fill="#fff">Deface</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [2.26,'fade','#not-found',{dur:.22}],
+  [3.32,'pop','#step-2',{from:.96,spring:'fast'}],
+  [7.96,'fade','#step-3',{dur:.25}],
+  [11.76,'fade','#stamp-travel',{dur:.13}],
+  [11.76,'move','#stamp-travel',{by:[120,72],spring:'fast'}],
+  [12.52,'fade','#step-4',{dur:.22}],
+  [12.52,'draw','#book-cancel',{dur:.36}],
+  [12.52,'draw','#cancel-lines',{dur:.43}],
+  [12.52,'fade','#deface-term',{dur:.26}]
+ ]
+}
+</script>
+</section>
