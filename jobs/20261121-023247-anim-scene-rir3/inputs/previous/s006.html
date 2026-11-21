@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s006" data-in="cut" data-section="INTRODUCTION" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="same">
+  <g id="peon-name">
+   <rect x="150" y="415" width="565" height="175" rx="26" fill="#9e1b1b"/>
+   <rect x="162" y="427" width="541" height="151" rx="17" fill="none" stroke="#b8403a" stroke-width="3" stroke-dasharray="6 7"/>
+   <text x="432.5" y="519" text-anchor="middle" font-size="54" font-weight="830" fill="#fff">Letter-box peon</text>
+  </g>
+  <use id="attendant" href="piece:attendant-badge" transform="translate(680 220) scale(1.4)"/>
+  <g id="official-name">
+   <rect x="1205" y="415" width="565" height="175" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <rect x="1233" y="457" width="509" height="87" rx="16" fill="#fde9a6"/>
+   <text x="1487.5" y="519" text-anchor="middle" font-size="47" font-weight="810" fill="#2b2622">Letter-box attendant</text>
+  </g>
+  <g id="equals">
+   <path d="M724 502h84m304 0h84" fill="none" stroke="#8a5d00" stroke-width="5" stroke-linecap="round"/>
+   <circle cx="960" cy="665" r="44" fill="#fde9a6"/>
+   <text x="960" y="686" text-anchor="middle" font-size="62" font-weight="830" fill="#8a5d00">=</text>
+  </g>
+  <text id="one-person" x="960" y="808" text-anchor="middle" class="hi" font-size="67" font-weight="800" fill="#2b2622">एक ही कर्मचारी</text>
+ </g>
+ <g id="lines">
+  <g id="strip-1">
+   <rect x="160" y="330" width="1600" height="230" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <circle cx="260" cy="445" r="50" fill="#9e1b1b"/>
+   <text x="260" y="464" text-anchor="middle" font-size="57" font-weight="830" fill="#fff">1</text>
+   <text id="posting-rule" x="337" y="462" class="hi" font-size="59" font-weight="810" fill="#9e1b1b">Posting के नियम</text>
+   <path id="posting-arrow" d="M842 444h84m-22-19 22 19-22 19" fill="none" stroke="#8a5d00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+   <text id="box-what" x="978" y="461" class="hi" font-size="51" font-weight="765" fill="#2b2622">box में क्या डाला जा सकता है</text>
+  </g>
+  <g id="strip-2">
+   <rect x="160" y="620" width="1600" height="230" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <circle cx="260" cy="735" r="50" fill="#9e1b1b"/>
+   <text x="260" y="754" text-anchor="middle" font-size="57" font-weight="830" fill="#fff">2</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,'#same'],[2.96,'#lines']],
+ on:[
+  [.52,'pop','#equals',{from:.93,spring:'soft'}],
+  [1.30,'words','#one-person',{gap:.15,dist:12,from:'down'}],
+  [5.34,'words','#posting-rule',{gap:.22,dist:10,from:'down'}],
+  [7.34,'draw','#posting-arrow',{dur:.34}],
+  [7.70,'words','#box-what',{gap:.31,dist:10,from:'down'}]
+ ]
+}
+</script>
+</section>
