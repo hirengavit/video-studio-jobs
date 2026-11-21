@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s038" data-in="cut" data-section="PART 2 · COUNTER, NOT THE BOX" data-series="LETTER BOXES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="An oversized ordinary article goes to the window, but its service does not change">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="big">
+    <use id="article-box" href="piece:letter-box-pillar" transform="translate(240 288) scale(1.6)"/>
+    <use id="large-article" href="piece:domestic-envelope" transform="translate(455 470) rotate(8) scale(.9)"/>
+    <text id="large-article-label" class="hi" x="555" y="402" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="760" fill="#2b2622">बड़ा ordinary article</text>
+    <g id="slot-cross">
+      <circle cx="400" cy="491" r="44" fill="#fbf7ee" stroke="#4b4f58" stroke-width="4"/>
+      <path d="M383 474l34 34m0-34-34 34" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+    </g>
+  </g>
+  <path id="handoff-arrow" d="M1084 555h139l-22-21m22 21-22 21" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/>
+  <g id="counter"><use href="piece:post-counter-icon" transform="translate(1210 361.6) scale(1.2)"/>
+    <text id="window-label" x="1450" y="522" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="800" fill="#2b2622">Window</text>
+  </g>
+  <g id="service-card">
+    <rect x="551" y="939" width="1230" height="88" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text id="service-copy" x="1166" y="997" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="790" fill="#2b2622">हाथ में देने से service नहीं बदलती</text>
+  </g>
+  <g id="ordinary-pill" transform="rotate(8 776 751)">
+    <rect x="629" y="713" width="294" height="76" rx="38" fill="#efedeb" stroke="#4b4f58" stroke-width="3"/>
+    <text id="ordinary-label" x="776" y="769" text-anchor="middle" font-family="Inter,sans-serif" font-size="47" font-weight="810" fill="#2b2622">Ordinary</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.05,'draw','#handoff-arrow',{dur:.68}],
+  [.70,'fade','#counter',{dur:.32}],
+  [1.76,'fade','#window-label',{dur:.22}],
+  [3.08,'fade','#service-card',{dur:.25}],
+  [3.14,'words','#service-copy',{gap:.19,dist:6}],
+  [5.96,'pop','#ordinary-pill',{from:.95,spring:'fast'}],
+  [6.64,'highlight','#ordinary-label',{color:'#f2b705',opacity:.35,pad:5,dur:.31}]
+ ]
+}
+</script>
+</section>
