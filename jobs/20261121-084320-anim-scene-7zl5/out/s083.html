@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s083" data-in="cut" data-section="PART 5 · INLAND LETTER CARD" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Do not put anything inside or attach anything to an Inland Letter Card">
+  <defs><filter id="muted-items" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values=".12"/></filter></defs>
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="ilc" transform="translate(393 287) scale(1.8)">
+    <use href="piece:letter-card-folded"/>
+    <text x="66" y="94" font-family="Inter,sans-serif" font-size="27" font-weight="820" fill="#2b2622">LETTER CARD</text>
+  </g>
+  <text id="inside-label" x="239" y="421" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="810" fill="#4b4f58">अंदर</text>
+  <path id="inside-arrow" d="M184 479H465m-24-20 24 20-24 20" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="inside-no">
+    <circle cx="495" cy="512" r="36" fill="#4b4f58" stroke="#fbf7ee" stroke-width="4"/>
+    <path d="m480 497 30 30m0-30-30 30" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <text id="outside-label" x="1665" y="365" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="810" fill="#4b4f58">ऊपर</text>
+  <path id="outside-arrow" d="M1730 405Q1600 410 1517 463l-94 59m13-28-13 28 29-2" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="outside-no">
+    <circle cx="1394" cy="553" r="36" fill="#4b4f58" stroke="#fbf7ee" stroke-width="4"/>
+    <path d="m1379 538 30 30m0-30-30 30" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g id="prohibited-sheet" filter="url(#muted-items)">
+    <use href="piece:paper-sheet-swatch" transform="translate(147 656) scale(.47)"/>
+  </g>
+  <g id="prohibited-photo" filter="url(#muted-items)">
+    <use href="piece:photograph-print" transform="translate(1550 708) scale(.5)"/>
+  </g>
+  <g id="prohibited-object" stroke="#4b4f58" stroke-width="4">
+    <ellipse cx="960" cy="932" rx="53" ry="49" fill="#d8d7d3"/><ellipse cx="960" cy="926" rx="43" ry="39" fill="#ece9e4"/>
+    <circle cx="947" cy="920" r="5" fill="#4b4f58"/><circle cx="973" cy="920" r="5" fill="#4b4f58"/>
+    <circle cx="947" cy="938" r="5" fill="#4b4f58"/><circle cx="973" cy="938" r="5" fill="#4b4f58"/>
+  </g>
+  <g fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round">
+    <path id="strike-sheet" d="M152 824l169-120"/>
+    <path id="strike-photo" d="M1544 852l248-124"/>
+    <path id="strike-object" d="M901 968l119-76"/>
+  </g>
+  <g id="keyword">
+    <rect x="675" y="177" width="570" height="86" rx="43" fill="#f3ead6" stroke="#d6c5a5" stroke-width="3"/>
+    <text x="960" y="233" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="820" fill="#2b2622">न अंदर, न ऊपर</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.86,'fade','#inside-label',{dur:.21}],
+  [.86,'draw','#inside-arrow',{dur:.44}],
+  [1.60,'pop','#inside-no',{from:.91,spring:'fast'}],
+  [3.30,'fade','#outside-label',{dur:.21}],
+  [3.30,'draw','#outside-arrow',{dur:.44}],
+  [4.76,'pop','#outside-no',{from:.91,spring:'fast'}],
+  [6.02,'pop','#prohibited-sheet',{from:.94,spring:'fast'}],
+  [6.94,'pop','#prohibited-photo',{from:.94,spring:'fast'}],
+  [8.30,'pop','#prohibited-object',{from:.94,spring:'fast'}],
+  [9.60,'draw','#strike-sheet',{dur:.28}],
+  [9.69,'draw','#strike-photo',{dur:.28}],
+  [9.78,'draw','#strike-object',{dur:.28}],
+  [10.34,'stamp','#keyword',{from:1.04,rot:0,spring:'fast'}]
+ ]
+}
+</script>
+</section>
