@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s066" data-in="cut" data-section="PART 4 · KEYS, BAG AND ROUND" data-series="LETTER BOXES" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" aria-label="Defect reporting is a clearance duty; on Sundays and holidays post offices are generally closed">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="duty" data-shot-box="0 0 1920 1080">
+    <rect x="140" y="403" width="1640" height="290" rx="31" fill="#ead9a8"/>
+    <rect x="140" y="392" width="1640" height="290" rx="31" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M140 423q0-31 31-31h492v290H171q-31 0-31-31Z" fill="#9e1b1b"/>
+    <g transform="translate(211 489)" fill="none" stroke="#fde9a6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M0 0h59l20 20v80H0Zm59 0v20h20"/>
+      <path d="M14 42h49m-49 18h49m-49 18h32"/>
+    </g>
+    <text x="319" y="553" font-family="Inter,sans-serif" font-size="47" font-weight="810" fill="#fff">Defect report</text>
+    <g id="duty-equation">
+      <circle cx="737" cy="537" r="45" fill="#fde9a6"/>
+      <text x="737" y="560" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="820" fill="#805715">=</text>
+      <text id="duty-phrase" x="826" y="557" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="810" fill="#2b2622">clearance duty का हिस्सा</text>
+    </g>
+  </g>
+  <g id="closed" data-shot-box="0 0 1920 1080">
+    <path id="closed-floor" d="M86 747h1694" stroke="#d8c6a8" stroke-width="3" stroke-linecap="round"/>
+    <g id="sunday-calendar">
+      <use href="piece:calendar-sheet" transform="translate(78 410) scale(1.13)"/>
+      <path d="M139.9 665h170m-170 26h170m-170 26h170" stroke="#eee5d4" stroke-width="3" stroke-linecap="round"/>
+      <text x="224.9" y="630" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#9e1b1b">Sunday</text>
+    </g>
+    <g id="holiday-calendar">
+      <use href="piece:calendar-sheet" transform="translate(366 410) scale(1.13)"/>
+      <path d="M427.9 665h170m-170 26h170m-170 26h170" stroke="#eee5d4" stroke-width="3" stroke-linecap="round"/>
+      <text x="512.9" y="630" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#9e1b1b">Holiday</text>
+    </g>
+    <g id="regular-office">
+      <use href="piece:post-office-front" transform="translate(645 306) scale(1.30)"/>
+      <text x="918" y="495" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="800" fill="#2b2622">Post Office</text>
+      <g id="office-closed">
+        <path d="m890 602 28-22 28 22" stroke="#f3ead6" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+        <rect x="863" y="602" width="110" height="68" rx="9" fill="#4b4f58" stroke="#fbf7ee" stroke-width="3"/>
+        <text x="918" y="651" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="780" fill="#fff">बंद</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ shots:[[0,'#duty'],[4.60,'#closed']],
+ on:[
+  [1.76,'fade','#duty-equation',{dur:.25}],
+  [1.80,'words','#duty-phrase',{gap:.16,dist:9,from:'down',spring:false}],
+  [3.48,'highlight','#duty-phrase',{words:'हिस्सा',color:'#f2b705',opacity:.37,pad:5,dur:.27}],
+  [4.76,'pop','#sunday-calendar',{from:.94,spring:'fast'}],
+  [5.80,'pop','#holiday-calendar',{from:.94,spring:'fast'}],
+  [7.62,'pop','#regular-office',{from:.95,spring:'fast'}],
+  [9.50,'pop','#office-closed',{from:.94,spring:'soft'}]
+ ]
+}
+</script>
+</section>
