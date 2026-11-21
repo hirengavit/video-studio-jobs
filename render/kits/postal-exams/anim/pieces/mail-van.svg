@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320" width="560" height="320">
+  <g id="van" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- closed slate cargo box with a postal-red band; no window or counter -->
+    <path id="body" d="M24,262 L24,58 Q24,40 42,40 L400,40 L400,262 Z" fill="#4b4f58"/>
+    <path id="band" d="M24,170 L400,170 L400,196 L24,196 Z" fill="#9e1b1b"/>
+    <!-- small rear door at the back end -->
+    <rect id="rear-door" x="38" y="62" width="58" height="182" rx="4" fill="none"/>
+    <path d="M84,140 L84,160" fill="none" stroke="#f3ead6" stroke-width="4"/>
+    <!-- cab, facing right -->
+    <path id="cab" d="M400,262 L400,98 L452,98 Q462,98 468,106 L506,156 L518,156 Q534,156 534,172 L534,250 Q534,262 520,262 Z" fill="#9e1b1b"/>
+    <path id="window" d="M412,112 L448,112 L484,156 L412,156 Z" fill="#f3ead6"/>
+    <path d="M462,166 L462,256" fill="none"/>
+    <path d="M472,180 L488,180" fill="none" stroke-width="4"/>
+    <rect id="headlight" x="522" y="180" width="12" height="16" rx="4" fill="#fbf7ee"/>
+    <rect x="514" y="240" width="32" height="16" rx="6" fill="#2b2622"/>
+    <rect x="12" y="240" width="22" height="16" rx="6" fill="#2b2622"/>
+    <!-- wheels -->
+    <path d="M80,262 A50,50 0 0 1 180,262 Z M410,262 A50,50 0 0 1 510,262 Z" fill="#2b2622"/>
+    <g id="wheel-back" style="transform-box:fill-box;transform-origin:50% 50%">
+      <circle cx="130" cy="270" r="36" fill="#2b2622"/>
+      <circle cx="130" cy="270" r="13" fill="#f3ead6"/>
+    </g>
+    <g id="wheel-front" style="transform-box:fill-box;transform-origin:50% 50%">
+      <circle cx="460" cy="270" r="36" fill="#2b2622"/>
+      <circle cx="460" cy="270" r="13" fill="#f3ead6"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="280" cy="306" r="0"/>
+</svg>
