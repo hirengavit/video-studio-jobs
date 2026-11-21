@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s027" data-duration="10.06" data-section="PART 2 · LETTER WEIGHT &amp; SIZE" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="box">
+  <rect x="160" y="200" width="1600" height="760" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <text x="960" y="311" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="69" font-weight="800" fill="#2b2622">Non-roll · बाकी letters</text>
+  <g fill="#f3ead6" stroke="#2b2622" stroke-width="6" stroke-linejoin="round">
+    <path d="M629 455H1429L1175 666H375Z"/>
+    <path d="M375 666H1175V739H375Z" fill="#e5cf9f"/>
+    <path d="M1175 666L1429 455V528L1175 739Z" fill="#dfc58f"/>
+    <path d="M634 466H1394L1148 655H406Z M790 466L548 655" fill="none" stroke="#cfb882" stroke-width="3"/>
+  </g>
+  <path id="length-arrow" d="M375 818H1175 M392 804L375 818L392 832 M1158 804L1175 818L1158 832" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="length-label" x="775" y="894" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="58" font-weight="750" fill="#2b2622">लंबाई</text>
+  <path id="width-arrow" d="M591 425L339 634 M572 426L591 425L588 445 M363 632L339 634L343 611" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="width-label" x="390" y="491" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="58" font-weight="750" fill="#2b2622">चौड़ाई</text>
+  <path id="depth-arrow" d="M1468 455V528 M1454 473L1468 455L1482 473 M1454 510L1468 528L1482 510" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="depth-label" x="1576" y="509" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="58" font-weight="750" fill="#2b2622">मोटाई</text>
+</g>
+<g id="table">
+  <text x="160" y="253" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="65" font-weight="800" fill="#2b2622">Letter के माप</text>
+  <rect x="160" y="285" width="1600" height="620" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M188 285H1732Q1760 285 1760 313V419H160V313Q160 285 188 285Z" fill="#9e1b1b"/>
+  <path d="M164 419H1756V579H164Z M164 739H1756V876Q1756 901 1732 901H188Q164 901 164 876Z" fill="#fcf7eb"/>
+  <path d="M642 419V903M1198 419V903M161 579H1759M161 739H1759" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <rect id="roll-focus" x="660" y="302" width="520" height="100" rx="15" fill="none" stroke="#fde9a6" stroke-width="5"/>
+  <g font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="52" font-weight="780" fill="#fff">
+    <text x="240" y="369" font-family="Noto Sans Devanagari,Inter,sans-serif">माप</text><text x="920" y="369" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif">Roll · रोल</text><text x="1478" y="369" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="46">Non-roll · बाकी letters</text>
+  </g>
+  <g font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="52" font-weight="740" fill="#2b2622">
+    <text x="230" y="518" font-family="Noto Sans Devanagari,Inter,sans-serif">कोई एक माप</text><text x="230" y="677" font-family="Noto Sans Devanagari,Inter,sans-serif">जोड़</text><text x="230" y="838" font-family="Noto Sans Devanagari,Inter,sans-serif">सामने की सतह</text>
+  </g>
+  <text id="roll-min" x="920" y="487" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="820" fill="#2b2622">min 100 mm</text>
+  <text x="960" y="977" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="600" fill="#6f6a63">Reg. 87 · Post Office Regulations 2024</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0, '#box'], [4.52, '#table']],
+  on: [
+    [1.04, 'draw', '#length-arrow', {dur: .32}], [1.04, 'fade', '#length-label', {dur: .22}],
+    [1.90, 'draw', '#width-arrow', {dur: .32}], [1.90, 'fade', '#width-label', {dur: .22}],
+    [2.94, 'draw', '#depth-arrow', {dur: .32}], [2.94, 'fade', '#depth-label', {dur: .22}],
+    [5.06, 'draw', '#roll-focus', {dur: .32}],
+    [8.64, 'type', '#roll-min', {cps: 31}],
+  ],
+}
+</script>
+</section>
