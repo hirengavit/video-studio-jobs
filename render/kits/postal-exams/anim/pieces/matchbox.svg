@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g transform="translate(-5 -34)">
+<g id="drawer"><path d="M96 206H150V288H96Z" fill="#e6cf9a"/><path d="M96 206 110 184H164L150 206Z" fill="#8c6d3a"/><path d="M96 206 110 184V266L96 288Z" fill="#c9a66a"/></g>
+<g id="matches"><path d="M114 190H170M110 196H170M106 202H170" stroke="#efe0b8" stroke-width="5" fill="none"/>
+<g fill="#9e1b1b" stroke-width="1.5"><circle cx="114" cy="190" r="4.5"/><circle cx="110" cy="196" r="4.5"/><circle cx="106" cy="202" r="4.5"/></g></g>
+<g id="sleeve"><path d="M150 200H300L314 176H164Z" fill="#e6d9bb"/><path d="M150 200H300V292H150Z" fill="#f3ead6"/><path d="M300 200 314 176V268L300 292Z" fill="#d9c9a3"/>
+<path d="M303 210 311 196V256L303 270Z" fill="#8a5d00" stroke="none"/><rect x="172" y="218" width="106" height="56" rx="4" fill="none" stroke="#c9b98f" stroke-width="2"/></g></g>
+<circle data-anchor="base" cx="200" cy="258" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="200" cy="142" r="0" fill="none" stroke="none"/>
+</svg>
