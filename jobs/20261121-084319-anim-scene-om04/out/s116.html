@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s116" data-in="cut" data-section="PART 6 · POSTCARD CONDITIONS" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Postcard condition breach: treat as a letter and recover twice the postage difference">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="rule">
+  <text id="breach-heading" x="160" y="226" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="820" fill="#9e1b1b">शर्त टूटने पर</text>
+  <g id="postcard-article">
+   <use href="piece:service-postcard" transform="translate(212 273) scale(.72)"/>
+   <text x="580.6" y="347" text-anchor="middle" font-family="Inter,sans-serif" font-size="18" font-weight="800" fill="#fff">50 p</text>
+   <text x="448" y="310" font-family="Inter,sans-serif" font-size="18" font-weight="780" fill="#2b2622">POST CARD</text>
+   <g id="breach-cross" transform="translate(627 527)">
+    <circle r="44" fill="#4b4f58" stroke="#fbf7ee" stroke-width="6"/>
+    <path d="m-14-14 28 28m0-28-28 28" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+   </g>
+   <text x="428" y="597" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="810" fill="#2b2622">Postcard</text>
+  </g>
+  <path id="class-arrow" d="M720 413H1107m-43-35 43 35-43 35" fill="none" stroke="#6f6a63" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="letter-article">
+   <use href="piece:domestic-envelope" transform="translate(1168 273) scale(.68)"/>
+   <text x="1426" y="597" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="810" fill="#2b2622">Letter</text>
+  </g>
+  <g id="charge-card">
+    <rect x="160" y="636" width="1600" height="218" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+    <path d="M182 648H1738" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round"/>
+    <text x="218" y="703" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="41" font-weight="760" fill="#6f6a63">Delivery पर वसूली</text>
+    <text id="postage-formula" x="960" y="797" text-anchor="middle" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="67" font-weight="700" fill="#2b2622">दोगुना × (letter postage − दिया postage)</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1}]],
+ on:[
+  [1.48,'draw','#class-arrow',{dur:.49}],
+  [3.32,'pop','#letter-article',{from:.96,spring:'soft'}],
+  [5.58,'slide','#charge-card',{from:'down',dist:75,spring:'soft'}],
+  [6.64,'type','#postage-formula',{dur:2.5}],
+  [10.58,'highlight','#postage-formula',{words:'दोगुना',color:'#fde9a6',opacity:.92,pad:9,dur:.40}]
+ ]
+}
+</script>
+</section>
