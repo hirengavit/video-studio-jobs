@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
+  <path id="ground" d="M27 253H1173" fill="none" stroke="#e3d5b8" stroke-width="3" stroke-linecap="round"/>
+  <g id="rail" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M52 231h312m-292 10h276m-246-9l-13 9m57-9l-13 9m57-9l-13 9m57-9l-13 9m57-9l-13 9m57-9l-13 9" fill="none" stroke="#6f6a63"/>
+    <path d="M70 180v-46q0-40 38-40h154q51 0 84 36l18 21q11 14-6 25l-30 14H82q-12 0-12-10Z" fill="#9e1b1b"/>
+    <path d="M88 134q0-21 25-21h145q38 0 64 26l16 17H88Z" fill="#f3ead6"/>
+    <path d="M150 114v42m79-42v42m71-33l-7 33M81 173h256" fill="none"/>
+    <path d="M92 190v12h231v-12" fill="#6f6a63"/>
+    <circle cx="129" cy="213" r="14" fill="#2b2622"/><circle cx="292" cy="213" r="14" fill="#2b2622"/>
+    <path d="M129 213h.1M292 213h.1" stroke="#f3ead6" stroke-width="6"/>
+  </g>
+  <g id="road" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M447 182v-44q0-21 19-21h169v76H453Z" fill="#f3ead6"/>
+    <path d="M635 137h46q18 0 30 16l32 37v30H445v-30h190Z" fill="#9e1b1b"/>
+    <path d="M651 149h28q11 0 22 13l16 19h-66Z" fill="#f3ead6"/>
+    <path d="M510 140h72v30h-72z m2 2l34 16 34-16" fill="#fff"/>
+    <path d="M633 189v29m-171-3h-22m293-9h12" fill="none"/>
+    <circle cx="491" cy="221" r="22" fill="#2b2622"/><circle cx="693" cy="221" r="22" fill="#2b2622"/>
+    <circle cx="491" cy="221" r="8" fill="#f3ead6"/><circle cx="693" cy="221" r="8" fill="#f3ead6"/>
+  </g>
+  <g id="air" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M823 155l-4-41h28l30 29 89-4-36-58h25l83 54 61-3q27-2 43 12 12 12-1 19-10 5-35 6l-70 2-71 56h-31l36-56-96 3q-35 0-51-19Z" fill="#fff"/>
+    <path d="M834 160q11 6 37 6l111-3m61-2 70-2q14-1 25-5" fill="none" stroke="#9e1b1b" stroke-width="4"/>
+    <path d="M901 152h.2m17-.5h.2m17-.5h.2m16-.5h.2m115-4h.2m17-.5h.2m17-.5h.2" stroke-width="5"/>
+    <path d="M888 243h185" fill="none" stroke="#e3d5b8"/>
+  </g>
+  <circle data-anchor="base" cx="600" cy="253" r="0"/>
+</svg>
