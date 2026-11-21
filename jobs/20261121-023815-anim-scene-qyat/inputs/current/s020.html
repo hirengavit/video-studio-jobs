@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s020" data-in="cut" data-section="PART 1 · WHAT GOES IN THE LETTER BOX" data-series="LETTER BOXES">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="term">
+  <g id="different-article">
+   <rect x="598" y="181" width="724" height="81" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <text x="639" y="237" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="760" fill="#2b2622">दूसरा article</text>
+   <rect x="1010" y="190" width="293" height="63" rx="31" fill="#4b4f58"/>
+   <text x="1156.5" y="235" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="39" font-weight="760" fill="#fff">अलग class</text>
+  </g>
+  <g id="detention-term">
+   <rect x="230" y="292" width="1460" height="267" rx="27" fill="#9e1b1b"/>
+   <rect x="249" y="311" width="1422" height="229" rx="18" fill="none" stroke="#b8403a" stroke-width="4"/>
+   <path d="M267 328H1653M267 521H1653" stroke="#fde9a6" stroke-opacity=".75" stroke-width="8" stroke-linecap="round" stroke-dasharray="0 20"/>
+   <text x="960" y="421" text-anchor="middle" font-family="Inter,sans-serif" font-size="100" font-weight="840" fill="#fff">Liable to detention</text>
+   <text id="detention-hi" x="960" y="506" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="760" fill="#fde9a6">रोका जा सकता है</text>
+  </g>
+  <g id="meaning-card">
+   <rect x="230" y="620" width="1460" height="254" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <rect x="230" y="620" width="13" height="254" rx="6" fill="#f2b705"/>
+   <text id="meaning" x="310" y="769" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="74" font-weight="730" fill="#2b2622">आगे भेजने में रोक लग सकती है</text>
+  </g>
+ </g>
+ <g id="myth">
+  <rect x="230" y="320" width="1460" height="460" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <g id="myth-pill">
+   <rect x="300" y="380" width="380" height="88" rx="44" fill="#4b4f58"/>
+   <text x="490" y="439" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="820" fill="#fff">MYTH · भ्रम</text>
+  </g>
+  <text id="myth-text" x="315" y="579" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="760" fill="#2b2622">हर गलत article अपने आप लौटेगा</text>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ camera: [[0,{zoom:1}]],
+ shots: [[0,'#term'],[7.30,'#myth']],
+ on: [
+  [2.30,'pop','#detention-term',{from:.95,spring:'soft'}],
+  [3.72,'fade','#detention-hi',{dur:.23}],
+  [4.34,'fade','#meaning-card',{dur:.22}],
+  [4.34,'words','#meaning',{gap:.30,from:'none',dist:0}],
+  [8.72,'words','#myth-text',{gap:.32,from:'none',dist:0}]
+ ]
+}
+</script>
+</section>
