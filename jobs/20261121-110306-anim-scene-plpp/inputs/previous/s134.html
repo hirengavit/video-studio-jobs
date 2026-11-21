@@ -1,0 +1,65 @@
+<section class="vs-scene" id="s134" data-in="cut" data-section="PART 8 · MAIL CLASSES &amp; AIRMAIL" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="how">
+      <g id="instructions-chip">
+        <rect x="490" y="218" width="940" height="110" rx="55" fill="#f3ead6" stroke="#e8cea2" stroke-width="3"/>
+        <text x="960" y="288" text-anchor="middle" font-size="57" font-weight="820" fill="#7f271e">Administrative instructions</text>
+      </g>
+      <use id="transport" href="piece:transport-icons" transform="translate(425 445)"/>
+      <rect id="air-mask" x="1211" y="493" width="385" height="185" rx="16" fill="#fbf7ee" fill-opacity=".65"/>
+      <g id="ordinary">
+        <rect x="116" y="468" width="285" height="266" rx="27" fill="#fff9e8" stroke="#e1cba7" stroke-width="3"/>
+        <g fill="#f3ead6" stroke="#7f4b35" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+          <rect x="187" y="497" width="143" height="77" rx="8"/>
+          <path d="M191 503l67 43 67-43" fill="none"/>
+        </g>
+        <g text-anchor="middle" font-weight="760" fill="#43362f">
+          <text x="258" y="622" font-size="42">Ordinary</text>
+          <text x="258" y="669" font-size="33">unaccountable</text>
+          <text x="258" y="712" font-size="42">mail</text>
+        </g>
+      </g>
+      <g id="surface-card">
+        <rect x="116" y="799" width="285" height="158" rx="28" fill="#fff0c1" stroke="#e4c260" stroke-width="3"/>
+        <text id="surface-word" x="258" y="868" text-anchor="middle" font-size="54" font-weight="830" fill="#7f271e">Surface</text>
+        <text id="surface-hi" class="hi" x="258" y="924" text-anchor="middle" font-size="44" font-weight="720" fill="#68513b">ज़मीन से</text>
+      </g>
+
+      <g id="rail-tag">
+        <rect x="460" y="727" width="337" height="75" rx="37.5" fill="#f3ead6"/>
+        <text class="hi" x="628.5" y="778" text-anchor="middle" font-size="48" font-weight="750" fill="#2b2622">लंबी दूरी</text>
+      </g>
+      <g id="road-tag">
+        <rect x="847" y="727" width="349" height="75" rx="37.5" fill="#f3ead6"/>
+        <text class="hi" x="1021.5" y="778" text-anchor="middle" font-size="48" font-weight="750" fill="#2b2622">शहर के अंदर</text>
+      </g>
+      <g id="air-tag">
+        <rect x="1246" y="727" width="394" height="75" rx="37.5" fill="#f3ead6"/>
+        <text x="1443" y="778" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">सिर्फ खास cases</text>
+      </g>
+      <g id="geography-chip">
+        <rect x="460" y="843" width="550" height="94" rx="47" fill="#fff0c1" stroke="#e4c260" stroke-width="3"/>
+        <text class="hi" x="735" y="905" text-anchor="middle" font-size="48" font-weight="790" fill="#7f271e">भूगोल की मजबूरी</text>
+      </g>
+      <g id="decision-chip">
+        <rect x="1045" y="843" width="595" height="94" rx="47" fill="#fff0c1" stroke="#e4c260" stroke-width="3"/>
+        <text x="1342.5" y="905" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="48" font-weight="790" fill="#7f271e">department का फ़ैसला</text>
+      </g>
+
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur:11.56,
+    on:[
+      [.64,"fade","#rail-tag",{dur:.24}],
+      [2.52,"fade","#road-tag",{dur:.24}],
+      [3.92,"out","#air-mask",{dur:.34,scale:1}],
+      [4.88,"fade","#air-tag",{dur:.28}],
+      [7.54,"pop","#geography-chip",{from:.96,spring:"fast"}],
+      [10.20,"pop","#decision-chip",{from:.96,spring:"fast"}]
+    ]
+  })
+  </script>
+</section>
