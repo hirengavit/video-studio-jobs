@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s125" data-duration="11.47" data-section="PART 7 · ONE POSTCARD CATEGORY" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="three">
+  <rect x="140" y="207" width="1640" height="778" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <text x="960" y="299" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="63" font-weight="810" fill="#2b2622">Postcard की शब्दावली</text>
+  <g id="term-row-1">
+    <rect x="175" y="336" width="1570" height="145" rx="16" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+    <text x="213" y="424" font-family="Inter,sans-serif" font-size="55" font-weight="820" fill="#2b2622">Printed postcard</text>
+    <text x="718" y="424" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="44" font-weight="690" fill="#514941">Machine-printed text or images · cyclostyling भी</text>
+  </g>
+  <g id="term-row-2">
+    <rect x="175" y="496" width="1570" height="145" rx="16" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="213" y="584" font-family="Inter,sans-serif" font-size="55" font-weight="820" fill="#2b2622">Meghdoot</text>
+    <text x="718" y="584" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="44" font-weight="690" fill="#514941">Address के पास ad · 4 रंग तक · 140 × 90 mm</text>
+  </g>
+  <g id="term-row-3">
+    <rect x="175" y="656" width="1570" height="145" rx="16" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+    <text x="213" y="744" font-family="Inter,sans-serif" font-size="55" font-weight="820" fill="#2b2622">Competition</text>
+    <text x="718" y="744" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="44" font-weight="690" fill="#514941">TV, radio, press, magazine… · सिर्फ students नहीं</text>
+  </g>
+  <g id="tariff">
+    <rect x="477" y="847" width="966" height="109" rx="54" fill="#f3ead6"/>
+    <text id="tariff-label" x="960" y="916" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="53" font-weight="800" fill="#2b2622">एक ही tariff · 50 paise (20 Dec 2024 से)</text>
+  </g>
+</g>
+<g id="brs">
+  <g id="postcard-card">
+    <rect x="145" y="265" width="759" height="687" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M173 265H876Q904 265 904 293V419H145V293Q145 265 173 265Z" fill="#f2b705"/>
+    <text x="524" y="360" text-anchor="middle" font-family="Inter,sans-serif" font-size="74" font-weight="820" fill="#2b2622">Postcard</text>
+    <g fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round">
+      <rect x="264" y="516" width="520" height="333" rx="18" fill="#f3ead6"/>
+      <path d="M520 548V812M558 669H735M558 716H735M558 763H712" stroke="#8f8171"/>
+      <rect x="659" y="548" width="85" height="87" rx="7" fill="#fff" stroke="#9e1b1b"/>
+    </g>
+    <text x="701" y="604" text-anchor="middle" font-family="Inter,sans-serif" font-size="37" font-weight="800" fill="#9e1b1b">50 p</text>
+  </g>
+  <g id="brs-card">
+    <rect x="1016" y="265" width="759" height="687" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M1044 265H1747Q1775 265 1775 293V419H1016V293Q1016 265 1044 265Z" fill="#9e1b1b"/>
+    <text x="1396" y="358" text-anchor="middle" font-family="Inter,sans-serif" font-size="61" font-weight="820" fill="#fff">Business Reply Service</text>
+    <use id="business-reply-preview" href="piece:business-reply-card" transform="translate(1169 534) scale(.81)" opacity=".40"/>
+  </g>
+  <g id="not-equal">
+    <circle cx="960" cy="602" r="58" fill="#2b2622" stroke="#fbf7ee" stroke-width="8"/>
+    <text x="960" y="630" text-anchor="middle" font-family="Inter,sans-serif" font-size="79" font-weight="810" fill="#fde9a6">≠</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0,'#three'],[7.83,'#brs']],
+  on: [
+    [0,'fade','#term-row-1',{dur:.20}],
+    [1.16,'fade','#term-row-2',{dur:.24}],
+    [3.02,'fade','#term-row-3',{dur:.24}],
+    [4.70,'fade','#tariff',{dur:.28}],
+    [5.88,'highlight','#tariff-label',{words:'एक ही tariff',color:'#f2b705',opacity:.31,pad:7,dur:.32}],
+    [9.63,'pop','#not-equal',{spring:'soft'}],
+  ],
+}
+</script>
+</section>
