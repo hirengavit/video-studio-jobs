@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.89",
+  "3.78",
+  "5.68",
+  "7.57",
+  "9.31"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s028",
+   "text": "Speed Post / दस्तावेज़",
+   "t": 0.3
+  }
+ ]
+}
