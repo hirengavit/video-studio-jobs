@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s119" data-in="cut" data-section="PART 6 · POSTCARD CONDITIONS" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <rect x="100" y="200" width="750" height="610" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <rect x="1070" y="200" width="750" height="610" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text x="475" y="294" text-anchor="middle" font-size="64" font-weight="790" fill="#9e1b1b">Postcard</text>
+    <text id="post-hi" x="475" y="352" text-anchor="middle" font-family="'Noto Sans Devanagari', sans-serif" font-size="43" font-weight="650" fill="#6f6a63">पोस्टकार्ड</text>
+    <text x="1445" y="294" text-anchor="middle" font-size="64" font-weight="790" fill="#9e1b1b">Letter Card</text>
+    <text id="letter-hi" x="1445" y="352" text-anchor="middle" font-family="'Noto Sans Devanagari', sans-serif" font-size="43" font-weight="650" fill="#6f6a63">पत्र कार्ड</text>
+
+    <g id="postcard" transform="translate(190 386) scale(.95)">
+      <use href="piece:service-postcard"/>
+      <text x="326" y="66" font-size="27" font-weight="790" fill="#2b2622">POST CARD</text>
+      <text x="512" y="107" text-anchor="middle" font-size="22" font-weight="800" fill="#fff">50 p</text>
+    </g>
+    <g id="letter-card" transform="translate(1145.75 423) scale(.95)">
+      <use href="piece:letter-card-folded"/>
+    </g>
+
+    <g id="allow-tag">
+      <rect x="546" y="689" width="270" height="90" rx="45" fill="#2e7d4f" stroke="#fff" stroke-width="5"/>
+      <path d="M571 733 l13 13 27 -28" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="633" y="751" font-size="44" font-weight="750" fill="#fff">allowed</text>
+    </g>
+    <path id="arrow" d="M877 560 H1043 M1022 539 L1043 560 L1022 581" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="no-transfer">
+      <circle cx="957" cy="560" r="45" fill="#fbf7ee" stroke="#4b4f58" stroke-width="6"/>
+      <path d="M942 545 L972 575 M972 545 L942 575" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+    </g>
+    <g id="takeaway">
+      <rect x="350" y="854" width="1220" height="125" rx="28" fill="#f3ead6"/>
+      <text x="960" y="940" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="61" font-weight="740" fill="#2b2622">अपने आप allowed नहीं</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur: 6.48,
+    on: [
+      [0.48,"fade","#post-hi",{dur:0.24}],
+      [0.48,"fade","#letter-hi",{dur:0.24}],
+      [2.14,"pop","#allow-tag",{from:0.94,spring:"fast"}],
+      [3.44,"draw","#arrow",{dur:0.65}],
+      [5.12,"pop","#no-transfer",{from:0.91,spring:"fast"}],
+      [5.12,"fade","#takeaway",{dur:0.25}]
+    ]
+  })
+  </script>
+</section>
