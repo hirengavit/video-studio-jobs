@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s150" data-section="PART 8 · MAIL CLASSES &amp; AIRMAIL" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" fill="#2b2622">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <rect x="110" y="184" width="755" height="814" rx="24" fill="#f3ead6"/>
+  <g id="weigh-scale"><use href="piece:postal-scale" transform="translate(191 435) scale(1.18)"/></g>
+  <g id="parcel" transform="translate(486 461) scale(.90)">
+    <path d="M-193 -227l68-60h329l-68 60z" fill="#efd8a7" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M136 -227l68-60v227L136 0z" fill="#ba8d58" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M-193 -227H136V0H-193z" fill="#deba87" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M-54 -287h69l-68 60v84h-69v-84z" fill="#f6e7c5" stroke="#90714e" stroke-width="2"/>
+    <rect x="19" y="-101" width="90" height="65" rx="5" fill="#f9efda" stroke="#90714e" stroke-width="3"/>
+    <path d="M35 -77h56m-56 17h41" fill="none" stroke="#90714e" stroke-width="3" stroke-linecap="round"/>
+    <g id="ack-tie" fill="none" stroke="#695239" stroke-width="4" stroke-linecap="round">
+      <path d="M-88-205q-5-39 17-51 15 18-9 31-28 0-35-21 20-8 32 15m-4 24 13 23"/>
+    </g>
+    <g id="ack-card">
+      <path d="M-103-190H65l19 20v103q0 7-7 7h-173q-7 0-7-7z" fill="#fff" stroke="#695239" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="-76" cy="-177" r="5" fill="#f3ead6" stroke="#695239" stroke-width="2"/>
+      <path d="M-78-137H55m-133 22H40m-118 22H28" fill="none" stroke="#a09889" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <circle data-anchor="base" cx="0" cy="0" r="0"/>
+  </g>
+  <g id="ack-tag">
+    <rect x="199" y="913" width="577" height="73" rx="36.5" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="487.5" y="963" text-anchor="middle" font-size="45" font-weight="750">Acknowledgement card</text>
+  </g>
+  <g id="first-rule">
+    <rect x="953" y="337" width="861" height="216" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M994 380v129" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+    <text id="first-line" x="1043" y="465" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="68" font-weight="760">पूरी airmail fee पहले</text>
+  </g>
+  <g id="second-rule">
+    <rect x="953" y="594" width="861" height="224" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M994 640v132" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+    <text id="second-line" x="1043" y="727" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="63" font-weight="760">इसका वज़न भी air fee में</text>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  on: [
+    [0.70,'fade','#first-rule',{dur:0.42}],
+    [2.62,'highlight','#first-line',{words:'पहले',color:'#f2b705',opacity:0.42,dur:0.46}],
+    [5.16,'slide','#ack-card',{from:'up',dist:110,spring:'soft'}],
+    [5.36,'draw','#ack-tie',{dur:0.35}],
+    [5.96,'fade','#ack-tag',{dur:0.38}],
+    [7.56,'fade','#second-rule',{dur:0.42}],
+    [7.92,'highlight','#second-line',{words:'भी',color:'#f2b705',opacity:0.42,dur:0.42}]
+  ]
+})
+</script>
+</section>
