@@ -2,10 +2,10 @@
   <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif" fill="#2b2622">
     <rect width="1920" height="1080" fill="#fbf7ee"/>
     <g id="eight">
-      <rect x="117" y="177" width="1686" height="833" rx="35" fill="#fffdf8" stroke="#e2cdaa" stroke-width="4"/>
+      <rect id="table-shell" x="117" y="177" width="1686" height="833" rx="35" fill="#fffdf8" stroke="#e2cdaa" stroke-width="4"/>
       <text id="eight-title" x="960" y="270" text-anchor="middle" class="hi" font-size="76" font-weight="830" fill="#9e1b1b">Envelope की 8 शर्तें</text>
-      <path d="M958 300V918" stroke="#e9d7b7" stroke-width="4"/>
-      <path d="M158 304H1762" stroke="#e6d0ab" stroke-width="4" stroke-linecap="round"/>
+      <path id="table-vertical" d="M958 300V918" stroke="#e9d7b7" stroke-width="4"/>
+      <path id="table-horizontal" d="M158 304H1762" stroke="#e6d0ab" stroke-width="4" stroke-linecap="round"/>
       <text id="size-paper-title" x="202" y="383" class="hi" font-size="53" font-weight="790" fill="#9e1b1b">Size और कागज़</text>
       <rect id="construction-backing" x="1001" y="328" width="242" height="70" rx="14" fill="#fde9a6"/>
       <text id="construction-title" x="1030" y="383" class="hi" font-size="53" font-weight="790" fill="#5c5148">बनावट</text>
@@ -14,7 +14,7 @@
         <rect id="left-mark1" x="158" y="418" width="763" height="140" rx="20" fill="#fde9a6"/>
         <circle cx="208" cy="488" r="29" fill="#9e1b1b"/>
         <text x="208" y="500" text-anchor="middle" font-size="34" font-weight="800" fill="#fffdf6">1</text>
-        <text id="rule-text-1" x="257" y="474" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="750" fill="#3e302b">Size: 140 × 90 से<tspan x="257" dy="53">458 × 324 mm (± 2)</tspan></text>
+        <text id="rule-text-1" x="257" y="474" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="750" fill="#3e302b">Size: 140 × 90 से <tspan x="257" dy="53">458 × 324 mm (± 2)</tspan></text>
       </g>
       <g id="row2" transform="translate(0 61)">
         <rect x="158" y="524" width="763" height="86" rx="20" fill="#f6efe1"/>
@@ -72,7 +72,14 @@
   <script type="text/scene">
   ({
     dur:11.80,
-    camera:[[0,{zoom:1}],[8.12,{zoom:1}],[8.65,{on:"#row6",zoom:1.5},"inOut"]],
+    camera:[[0,{zoom:1}],[8.12,{zoom:1}],[8.68,{on:"#row6",zoom:1.5},"inOut"]],
+    update(t, section, $) {
+      const k=Math.min(1,Math.max(0,(t-8.12)/.23));
+      for(const el of $("#table-shell,#table-vertical,#table-horizontal,#eight-title,#size-paper-title,#construction-title,#row1,#row2,#row3,#source")) {
+        el.setAttribute("opacity",String(1-k));
+        el.setAttribute("display",k===1?"none":"inline");
+      }
+    },
     on:[
       [.92,"out","#left-mark1, #left-mark2, #left-mark3",{dur:.24,scale:1}],
       [.92,"fade","#construction-backing",{dur:.24}],
