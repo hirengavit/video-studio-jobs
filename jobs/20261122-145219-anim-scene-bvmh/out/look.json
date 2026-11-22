@@ -8,12 +8,5 @@
   "9.25"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s033",
-   "message": "color: option \"from\" isn't used (it takes: to, dur, prop)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
