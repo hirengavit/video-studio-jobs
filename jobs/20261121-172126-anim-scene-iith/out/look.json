@@ -10,43 +10,5 @@
  "problems": [
   "s103: no photo \"franking-machine-photo-cutout\" in the materials"
  ],
- "warnings": [
-  {
-   "kind": "low-contrast",
-   "scene": "s103",
-   "text": "2 (1.0:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 0.3
-  },
-  {
-   "kind": "text-off-frame",
-   "scene": "s103",
-   "text": "Address side",
-   "t": 2.22
-  },
-  {
-   "kind": "text-off-frame",
-   "scene": "s103",
-   "text": "पते वाला भाग",
-   "t": 2.22
-  },
-  {
-   "kind": "off-frame",
-   "scene": "s103",
-   "message": "a card or panel (#s103-service-postcard-card) runs 219 px past the frame edge at 4.5 s (check the camera zoom and the layout)",
-   "t": 4.45
-  },
-  {
-   "kind": "off-frame",
-   "scene": "s103",
-   "message": "a card or panel (#s103-service-postcard-card) runs 219 px past the frame edge at 6.7 s (check the camera zoom and the layout)",
-   "t": 6.67
-  },
-  {
-   "kind": "off-frame",
-   "scene": "s103",
-   "message": "a card or panel (#s103-service-postcard-card) runs 219 px past the frame edge at 8.9 s (check the camera zoom and the layout)",
-   "t": 8.9
-  }
- ]
+ "warnings": []
 }
