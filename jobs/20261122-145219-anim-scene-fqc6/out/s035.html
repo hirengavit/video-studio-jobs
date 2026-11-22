@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s035" data-section="PART 2 · LETTER WEIGHT &amp; SIZE" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" fill="#2b2622">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="rule">
+    <g id="roll-stamp" transform="translate(156 389) scale(.65 .98) translate(-155 -270)">
+      <rect x="155" y="270" width="480" height="332" rx="19" fill="#9e1b1b" stroke="#9e1b1b" stroke-width="12" stroke-linejoin="round" stroke-dasharray="5 13" stroke-linecap="round"/>
+      <rect x="178" y="293" width="434" height="286" rx="10" fill="none" stroke="#b8403a" stroke-width="4"/>
+      <text x="395" y="478" text-anchor="middle" font-size="110" font-weight="800" fill="#fff">Roll</text>
+    </g>
+    <g id="roll-measure" transform="translate(515 389) scale(1.16 1.02) translate(-690 -270)">
+      <rect x="690" y="270" width="1075" height="154" rx="20" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <text x="733" y="373" font-family="Noto Sans Devanagari, sans-serif" font-size="66" font-weight="730">एक माप</text>
+      <rect x="1258" y="294" width="476" height="104" rx="52" fill="#f3ead6"/>
+      <text id="roll-measure-value" x="1496" y="367" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-variant-numeric="tabular-nums" font-size="62" font-weight="800">800 mm तक</text>
+    </g>
+    <g id="roll-sum" transform="translate(515 566) scale(1.16 1.02) translate(-690 -448)">
+      <rect x="690" y="448" width="1075" height="154" rx="20" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <text x="733" y="551" font-family="Noto Sans Devanagari, sans-serif" font-size="66" font-weight="730">जोड़</text>
+      <rect x="1258" y="472" width="476" height="104" rx="52" fill="#f3ead6"/>
+      <text id="roll-sum-value" x="1496" y="545" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-variant-numeric="tabular-nums" font-size="62" font-weight="800">1000 mm तक</text>
+    </g>
+    <g id="non-roll-stamp" transform="translate(156 749) scale(.65 .86) translate(-155 -646)">
+      <rect x="155" y="646" width="480" height="332" rx="19" fill="#9e1b1b" stroke="#9e1b1b" stroke-width="12" stroke-linejoin="round" stroke-dasharray="5 13" stroke-linecap="round"/>
+      <rect x="178" y="669" width="434" height="286" rx="10" fill="none" stroke="#b8403a" stroke-width="4"/>
+      <text x="395" y="853" text-anchor="middle" font-size="86" font-weight="800" fill="#fff">Non-roll</text>
+    </g>
+    <g id="non-roll-measure" transform="translate(515 749) scale(1.16 .86) translate(-690 -646)">
+      <rect x="690" y="646" width="1075" height="154" rx="20" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <text x="733" y="749" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="66" font-weight="730">एक माप</text>
+      <rect x="1258" y="670" width="476" height="104" rx="52" fill="#f3ead6"/>
+      <text x="1496" y="743" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="800">600 mm तक</text>
+    </g>
+    <g id="non-roll-sum" transform="translate(515 892) scale(1.16 .86) translate(-690 -824)">
+      <rect x="690" y="824" width="1075" height="154" rx="20" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <text x="733" y="927" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="66" font-weight="730">जोड़</text>
+      <rect x="1258" y="848" width="476" height="104" rx="52" fill="#f3ead6"/>
+      <text id="non-roll-sum-value" x="1496" y="921" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="800">900 mm तक</text>
+    </g>
+  </g>
+  <g id="option">
+    <rect x="260" y="283" width="1400" height="555" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+    <path d="M292 297H1628" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+    <rect x="343" y="349" width="315" height="94" rx="47" fill="#9e1b1b"/>
+    <text x="500.5" y="413" text-anchor="middle" font-size="61" font-weight="840" fill="#fff">Option</text>
+    <path d="M343 479H1577" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <text x="343" y="594" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="70" font-weight="760">Letter का size</text>
+    <text id="option-size" x="343" y="729" font-family="Inter,sans-serif" font-size="96" font-weight="830">600 × 300 × 300 mm</text>
+  </g>
+</svg>
+<script type="text/scene">
+({
+ shots:[[0,"#rule"],[7.00,"#option"]],
+ on:[
+  [0,"pop","#non-roll-stamp",{from:.88}],
+  [2.04,"fade","#non-roll-measure",{dur:.36}],
+  [4.40,"fade","#non-roll-sum",{dur:.30}],
+  [4.40,"count","#non-roll-sum-value",{from:0,to:900,suffix:" mm तक",dur:.90}],
+  [8.20,"type","#option-size",{cps:6.5}]
+ ]
+})
+</script>
+</section>
