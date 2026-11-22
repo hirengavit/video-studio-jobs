@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s128" data-in="cut" data-duration="11.32" data-section="PART 7 · ONE POSTCARD CATEGORY" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="hist">
+  <text x="960" y="247" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="72" font-weight="820" fill="#9e1b1b">थोड़ा इतिहास</text>
+  <path id="track" d="M160 689H1760" fill="none" stroke="#ead9a8" stroke-width="12" stroke-linecap="round"/>
+  <path id="track-1869" d="M160 689H530" fill="none" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round"/>
+  <g id="austria-photo">
+    <g transform="rotate(-2 530 480)">
+      <rect x="273" y="296" width="514" height="366" rx="6" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <image id="austria-postcard-image" href="photo:first-postcard-austria-1869" x="285" y="307" width="490" height="339.43" preserveAspectRatio="xMidYMid meet"/>
+    </g>
+    <text x="804" y="625" font-family="Inter,sans-serif" font-size="31" font-weight="650" fill="#6f6a63">Correspondenz-Karte</text>
+  </g>
+  <g id="event-1869">
+    <rect x="160" y="727" width="740" height="246" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+    <text id="first-date" x="210" y="816" font-family="Inter,sans-serif" font-size="59" font-weight="780" fill="#2b2622">1 October</text>
+    <text id="first-year" x="541" y="816" font-family="Inter,sans-serif" font-size="64" font-weight="820" fill="#9e1b1b">1869</text>
+    <text id="first-country" x="210" y="881" font-family="Inter,sans-serif" font-size="51" font-weight="790" fill="#9e1b1b">Austria</text>
+    <text x="210" y="937" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="46" font-weight="700" fill="#2b2622">दुनिया का पहला postcard</text>
+  </g>
+  <path id="track-1879" d="M530 689H1390" fill="none" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round"/>
+  <circle id="dot1869" cx="530" cy="689" r="21" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="7"/>
+  <circle id="dot1879" cx="1390" cy="689" r="21" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="7"/>
+  <g id="india-date-stamp">
+    <g transform="rotate(2 1390 480)">
+      <rect x="1133" y="296" width="514" height="366" rx="6" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="1150" y="313" width="480" height="332" rx="8" fill="#9e1b1b"/>
+      <rect x="1164" y="327" width="452" height="304" rx="7" fill="none" stroke="#fde9a6" stroke-width="4" stroke-dasharray="4 10" stroke-linecap="round"/>
+      <text x="1390" y="395" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="41" font-weight="760" fill="#fde9a6">भारत में पहला</text>
+      <text id="first-india-year" x="1390" y="541" text-anchor="middle" font-family="Inter,sans-serif" font-size="136" font-weight="840" fill="#fff">1879</text>
+    </g>
+  </g>
+  <g id="event-1879">
+    <rect x="1020" y="727" width="740" height="246" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+    <text id="first-india-label" x="1070" y="848" font-family="Inter,sans-serif" font-size="58" font-weight="820" fill="#9e1b1b">East India Postcard</text>
+    <text x="1070" y="923" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="46" font-weight="700" fill="#2b2622">भारत का पहला postcard</text>
+  </g>
+  <g id="tariff-band">
+    <rect x="160" y="987" width="1600" height="64" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text id="tariff-caption" x="204" y="1035" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="42" font-weight="780" fill="#2b2622">तीनों तरह के संदेश: एक ही Postcard tariff</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+  dur:11.32,
+  shots:[[0,"#hist"]],
+  on:[
+    [.04,"draw","#track-1879",{dur:1.16}],
+    [1.20,"pop","#dot1879",{from:.82,spring:"fast"}],
+    [2.18,"slide","#event-1879",{from:"down",dist:30,spring:"fast"}],
+    [2.18,"fade","#india-date-stamp",{dur:.38}],
+    [3.90,"pop","#first-india-year",{from:.85,spring:"fast"}],
+    [6.42,"fade","#tariff-band",{dur:.34}]
+  ]
+})
+</script>
+</section>
