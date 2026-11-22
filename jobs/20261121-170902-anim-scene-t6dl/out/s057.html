@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s057" data-in="cut" data-section="PART 4 · WINDOW ENVELOPE" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="clear">
+      <text class="heading hi" x="960" y="216" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="66" font-weight="700" fill="#9e1b1b">पूरा पारदर्शी envelope</text>
+      <g id="transparent-envelope">
+        <g stroke="#d1cabc" stroke-width="3" stroke-dasharray="10 15">
+          <path d="M570 329V807 M765 329V807 M960 329V807 M1155 329V807 M1350 329V807"/>
+          <path d="M295 459H1625 M295 578H1625 M295 697H1625"/>
+        </g>
+        <rect x="340" y="364" width="1240" height="426" rx="25" fill="#dceef4" fill-opacity=".25" stroke="#477c8f" stroke-width="8"/>
+        <path d="M348 379 L920 652 Q960 671 1000 652 L1572 379 M348 772 L747 571 M1572 772 L1173 571" fill="none" stroke="#7298a6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M381 433V410Q381 398 393 398H550" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+      </g>
+      <g id="reject">
+        <circle cx="960" cy="579" r="99" fill="#4b4f58" stroke="#fbf7ee" stroke-width="9"/>
+        <path d="M919 538 L1001 620 M1001 538 L919 620" fill="none" stroke="#fff" stroke-width="13" stroke-linecap="round"/>
+        <rect x="630" y="853" width="660" height="121" rx="27" fill="#fff" stroke="#4b4f58" stroke-width="3"/>
+        <text class="hi" x="960" y="931" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#4b4f58">डाक में नहीं</text>
+      </g>
+    </g>
+    <g id="pos">
+      <text id="position-heading" x="960" y="216" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="66" font-weight="770" fill="#9e1b1b">Window की जगह</text>
+      <use id="position-envelope" href="piece:window-envelope" transform="translate(240 240) scale(2.4)"/>
+      <g id="left-margin" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M260 612 V664 M615 612 V664"/>
+        <path d="M267 638 H608 M267 638 L285 622 M267 638 L285 654 M608 638 L590 622 M608 638 L590 654"/>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur: 8.73,
+    shots: [[0,"#clear"],[5.01,"#pos"]],
+    on: [
+      [3.62,"pop","#reject",{from:0.94,spring:"fast"}],
+      [6.40,"draw","#left-margin",{dur:0.80}]
+    ]
+  })
+  </script>
+</section>
