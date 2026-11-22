@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s142" data-in="cut" data-section="PART 8 · MAIL CLASSES &amp; AIRMAIL" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif" fill="#2b2622">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="book-packet">
+      <g id="env">
+        <use href="piece:domestic-envelope" transform="translate(481 208) scale(1.26)"/>
+        <text id="packet-marking" x="858" y="349" text-anchor="middle" font-size="69" font-weight="820">BOOK PACKET</text>
+      </g>
+      <g id="greeting-card" transform="translate(140 408) scale(.955)" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="241" height="242" rx="20" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <path d="M55 51l124-9 10 146-124 9z" fill="#f3ead6" stroke="#2b2622" stroke-width="4"/>
+        <path d="M68 61l101-7 9 124-101 8z" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+        <path d="M119 92c-12-24-43-7-23 14l29 25 24-29c14-24-18-37-30-10z" fill="#9e1b1b" stroke="none"/>
+        <path d="M104 157l48-4M109 168l39-3" stroke="#6f6a63" stroke-width="4"/>
+      </g>
+      <g id="printed-invitation" transform="translate(1550 408) scale(.955)" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="241" height="242" rx="20" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+        <rect x="63" y="42" width="115" height="158" rx="8" fill="#f3ead6" stroke="#2b2622" stroke-width="4"/>
+        <rect x="73" y="53" width="95" height="136" rx="5" fill="#fbf7ee" stroke="#e0caa5" stroke-width="3"/>
+        <path d="M121 68l12 16-12 15-12-15z" fill="#9e1b1b" stroke="none"/>
+        <path d="M92 121h59m-52 17h45m-47 17h49m-40 16h32" stroke="#6f6a63" stroke-width="4"/>
+      </g>
+      <g id="greeting-label" text-anchor="middle">
+        <text x="255" y="692" font-family="Inter,sans-serif" font-size="40" font-weight="800">Greeting cards</text>
+        <text x="255" y="736" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="34" font-weight="700" fill="#6f6a63">ग्रीटिंग कार्ड</text>
+      </g>
+      <g id="invitation-label" text-anchor="middle">
+        <text x="1665" y="692" font-family="Inter,sans-serif" font-size="40" font-weight="800">Printed invitations</text>
+        <text x="1665" y="736" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="34" font-weight="700" fill="#6f6a63">छपे निमंत्रण</text>
+      </g>
+      <g id="only-these">
+        <rect x="660" y="728" width="600" height="84" rx="18" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text x="960" y="785" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750">सिर्फ ये हों</text>
+      </g>
+      <g id="route-chip">
+        <rect x="164" y="865" width="1592" height="92" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+        <text id="route-copy" x="960" y="928" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="745">First-class mail + registered newspapers के साथ</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.40, 'pop', '#greeting-card', {from:0.88}],
+      [1.90, 'pop', '#printed-invitation', {from:0.88}],
+      [3.78, 'type', '#packet-marking', {cps:21}],
+      [4.74, 'fade', '#only-these', {dur:0.30}],
+      [5.90, 'fade', '#greeting-label', {dur:0.24}],
+      [6.80, 'fade', '#invitation-label', {dur:0.24}],
+      [8.78, 'fade', '#route-chip', {dur:0.38}],
+    ],
+  }
+  </script>
+</section>
