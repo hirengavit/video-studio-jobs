@@ -52,7 +52,7 @@
     for (const [sel, attr, start, shift] of [
       ['#event-one-bg','height',246,66], ['#first-date','y',816,31],
       ['#first-year','y',816,31], ['#first-country','y',881,46], ['#austria-detail','y',937,53]
-    ]) $(sel)?.setAttribute(attr, start - e*shift);
+    ]) for (const el of $(sel)) el.setAttribute(attr, start - e*shift);
   },
   on:[
     [.04,"draw","#track-1879",{dur:1.16}],
