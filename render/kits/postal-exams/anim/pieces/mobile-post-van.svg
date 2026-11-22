@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <g id="van" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- cargo body -->
+    <path id="body" d="M30,292 L30,64 Q30,44 50,44 L470,44 L470,292 Z" fill="#9e1b1b"/>
+    <!-- cab, facing right -->
+    <path id="cab" d="M470,292 L470,104 L528,104 Q538,104 544,112 L588,170 L598,170 Q614,170 614,186 L614,278 Q614,292 600,292 Z" fill="#9e1b1b"/>
+    <path id="window" d="M484,118 L524,118 L564,170 L484,170 Z" fill="#f3ead6"/>
+    <path d="M534,180 L534,284" fill="none"/>
+    <path d="M546,196 L562,196" fill="none" stroke-width="4"/>
+    <rect id="headlight" x="600" y="196" width="14" height="18" rx="4" fill="#fbf7ee"/>
+    <rect id="bumper" x="592" y="268" width="32" height="18" rx="6" fill="#4b4f58"/>
+    <rect x="18" y="268" width="24" height="18" rx="6" fill="#4b4f58"/>
+    <!-- lower trim line -->
+    <path d="M30,252 L614,252" fill="none" stroke="#7d1414" stroke-width="4"/>
+    <!-- blank white sign panel above the hatch -->
+    <rect id="sign" x="120" y="54" width="250" height="40" rx="6" fill="#ffffff"/>
+    <!-- open counter hatch: dark inside, counter ledge -->
+    <rect id="hatch" x="130" y="126" width="230" height="104" rx="4" fill="#7d1414"/>
+    <path d="M150,198 L150,150 L190,150 L190,198 M210,198 L210,150 L250,150 L250,198" fill="none" stroke="#b8403a" stroke-width="3"/>
+    <rect id="counter" x="118" y="226" width="254" height="14" rx="4" fill="#f3ead6"/>
+    <!-- shutter: drawn closed over the hatch but hidden; show it and grow scaleY from the top to roll it down -->
+    <g id="shutter" opacity="0" style="transform-box:fill-box;transform-origin:50% 0">
+      <rect x="130" y="126" width="230" height="102" rx="4" fill="#b8403a"/>
+      <path d="M134,146 L356,146 M134,166 L356,166 M134,186 L356,186 M134,206 L356,206" fill="none" stroke="#7d1414" stroke-width="2"/>
+      <path d="M230,220 L260,220" fill="none" stroke-width="4"/>
+    </g>
+    <!-- cream awning over the hatch -->
+    <path id="awning" d="M118,102 L372,102 L386,124 Q376,134 366,124 Q356,134 346,124 Q336,134 326,124 Q316,134 306,124 Q296,134 286,124 Q276,134 266,124 Q256,134 246,124 Q236,134 226,124 Q216,134 206,124 Q196,134 186,124 Q176,134 166,124 Q156,134 146,124 Q136,134 126,124 Q116,134 104,124 Z" fill="#f3ead6"/>
+    <!-- wheels -->
+    <path d="M100,292 A50,50 0 0 1 200,292 Z M480,292 A50,50 0 0 1 580,292 Z" fill="#2b2622"/>
+    <g id="wheel-back" style="transform-box:fill-box;transform-origin:50% 50%">
+      <circle cx="150" cy="298" r="40" fill="#4b4f58"/>
+      <circle cx="150" cy="298" r="15" fill="#f3ead6"/>
+    </g>
+    <g id="wheel-front" style="transform-box:fill-box;transform-origin:50% 50%">
+      <circle cx="530" cy="298" r="40" fill="#4b4f58"/>
+      <circle cx="530" cy="298" r="15" fill="#f3ead6"/>
+    </g>
+  </g>
+  <circle data-anchor="top" cx="250" cy="44" r="0"/>
+  <circle data-anchor="base" cx="320" cy="340" r="0"/>
+</svg>
