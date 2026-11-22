@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s185" data-duration="10.65" data-section="PART 9 · COUNTER CHECKS &amp; DUES" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="dues-flow">
+ <rect x="141" y="209" width="1638" height="465" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+ <g id="due-item">
+   <g transform="translate(229 318) scale(.39)">
+     <use href="piece:domestic-envelope"/>
+     <use href="piece:postage-due-mark" transform="translate(86 30) scale(.76)"/>
+     <rect x="139" y="121" width="198" height="87" rx="8" fill="#fff" stroke="#4b4f58" stroke-width="7"/>
+     <text x="238" y="180" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#4b4f58">DUE</text>
+   </g>
+   <rect x="157" y="522" width="510" height="89" rx="44" fill="#f3ead6"/>
+   <text x="412" y="582" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="46" font-weight="790" fill="#2b2622">Unpaid / कम postage</text>
+ </g>
+ <g id="collect">
+   <path d="M630 398h207m-28-24 28 24-28 24" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+   <circle cx="960" cy="401" r="90" fill="#fde9a6" stroke="#a9874c" stroke-width="6"/>
+   <circle cx="960" cy="401" r="72" fill="none" stroke="#a9874c" stroke-width="3"/>
+   <text x="960" y="435" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="97" font-weight="810" fill="#2b2622">₹</text>
+   <text x="960" y="585" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="59" font-weight="800" fill="#2b2622">रकम लें</text>
+ </g>
+ <g id="deliver">
+   <path d="M1085 398h242m-28-24 28 24-28 24" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+   <g stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+     <rect x="1442" y="319" width="183" height="108" rx="11" fill="#fff"/>
+     <path d="M1450 328l83 59 83-59" fill="none"/>
+     <path d="M1387 455l59-29c10-5 21-3 30 3l32 21h58l48-24c15-8 30 11 14 24l-72 45h-73l-55 17z" fill="#f3ead6"/>
+   </g>
+   <text x="1517" y="585" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="58" font-weight="800" fill="#2b2622">फिर deliver</text>
+ </g>
+</g>
+<g id="letter-delivery-box">
+   <rect x="251" y="765" width="268" height="198" rx="20" fill="#f3ead6" stroke="#2b2622" stroke-width="6"/>
+   <path d="M251 807H519" stroke="#2b2622" stroke-width="6"/>
+   <rect x="310" y="781" width="148" height="14" rx="7" fill="#4b4f58"/>
+   <rect x="287" y="829" width="196" height="110" rx="13" fill="#fff" stroke="#a9874c" stroke-width="4"/>
+   <circle cx="455" cy="886" r="7" fill="#2b2622"/>
+   <text x="555" y="903" font-family="Inter,sans-serif" font-size="50" font-weight="790" fill="#2b2622">Letter delivery box</text>
+</g>
+<path id="to-box" d="M386 625v117m-22-22 22 22 22-22" fill="none" stroke="#4b4f58" stroke-width="7" stroke-dasharray="9 10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="no-box" d="M272 780L501 948M501 780L272 948" fill="none" stroke="#4b4f58" stroke-width="16" stroke-linecap="round"/>
+<g id="dues-keyword">
+  <rect x="1096" y="825" width="648" height="113" rx="20" fill="#fde9a6" stroke="#a9874c" stroke-width="4"/>
+  <text x="1420" y="897" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="52" font-weight="810" fill="#2b2622">Dues पहले, delivery बाद</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [2.76,'pop','#collect',{spring:'soft'}],
+    [4.40,'pop','#deliver',{spring:'soft'}],
+    [5.96,'fade','#letter-delivery-box',{dur:.26}],
+    [7.98,'draw','#to-box',{dur:.34}],
+    [9.22,'draw','#no-box',{dur:.24}],
+    [9.80,'pop','#dues-keyword',{spring:'fast'}],
+  ],
+}
+</script>
+</section>
