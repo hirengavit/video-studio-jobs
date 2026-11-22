@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "2.36",
+  "4.72",
+  "7.08",
+  "9.44",
+  "11.65"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s131",
+   "text": "मोड़ना · cover · काटना (2.0:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 4.72
+  }
+ ]
+}
