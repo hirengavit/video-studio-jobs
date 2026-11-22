@@ -8,24 +8,5 @@
   "11.41"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s134",
-   "text": "Ordinary / unaccountable",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s134",
-   "text": "unaccountable / mail",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s134",
-   "text": "Surface / ज़मीन से",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
