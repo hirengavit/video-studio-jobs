@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s206" data-in="cut" data-duration="11.32" data-section="KEY POINTS" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="card-d">
+  <rect x="140" y="252" width="470" height="703" rx="28" fill="#9e1b1b"/>
+  <rect x="140" y="252" width="470" height="703" rx="28" fill="none" stroke="#fbf7ee" stroke-width="15" stroke-dasharray="0 25" stroke-linecap="round"/>
+  <rect x="178" y="291" width="394" height="425" rx="16" fill="#fbf7ee"/>
+  <use href="piece:three-forms-icons" transform="translate(198 450) scale(.253)"/>
+  <text x="375" y="855" text-anchor="middle" font-family="Inter,sans-serif" font-size="112" font-weight="820" fill="#fff">D</text>
+  <rect x="650" y="252" width="1130" height="703" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M650 463H1780M650 627H1780M650 791H1780" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <g id="first-class-row">
+    <text x="698" y="331" font-family="Inter,sans-serif" font-size="47" font-weight="810" fill="#2b2622">First-class: letters, postcards, letter cards</text>
+    <g id="airlift-pill">
+      <rect x="698" y="356" width="496" height="79" rx="39" fill="#f3ead6"/>
+      <text x="946" y="410" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="52" font-weight="780" fill="#2b2622">free airlift नहीं</text>
+    </g>
+    <g id="tick-1" fill="none" stroke="#2e7d4f" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="1704" cy="387" r="26" stroke-width="5"/>
+      <path d="M1691 387l9 9 17-19" stroke-width="6"/>
+    </g>
+  </g>
+  <g id="barcode-row">
+    <use href="piece:linear-barcode" transform="translate(699 510) scale(.48)"/>
+    <text x="940" y="566" font-family="Inter,sans-serif" font-size="57" font-weight="810" fill="#2b2622">Barcode ≠ accountable</text>
+  </g>
+  <g id="tick-2" fill="none" stroke="#2e7d4f" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="1704" cy="545" r="26" stroke-width="5"/>
+    <path d="M1691 545l9 9 17-19" stroke-width="6"/>
+  </g>
+  <g id="letter-breach-row">
+    <text x="698" y="735" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#2b2622">Letter:</text>
+    <text id="letter-double" x="899" y="735" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="780" fill="#2b2622">दोगुना postage<tspan id="letter-credit" x="1324" y="735" font-family="Inter,sans-serif" font-size="55">− credit</tspan></text>
+    <g id="tick-3" fill="none" stroke="#2e7d4f" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="1704" cy="709" r="26" stroke-width="5"/>
+      <path d="M1691 709l9 9 17-19" stroke-width="6"/>
+    </g>
+  </g>
+  <g id="card-postcard-row">
+    <text x="698" y="895" font-family="Inter,sans-serif" font-size="52" font-weight="810" fill="#2b2622">Letter Card / Postcard</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+  on:[
+    [1.52,"draw","#tick-2",{dur:.21}],
+    [1.98,"fade","#letter-breach-row",{dur:.31}],
+    [4.32,"fade","#letter-double",{dur:.31}],
+    [7.52,"draw","#tick-3",{dur:.21}],
+    [7.84,"fade","#card-postcard-row",{dur:.33}]
+  ],
+  update(t,section,$) {
+    const credit=Math.min(1,Math.max(0,(t-6.88)/.31));
+    for(const node of $("#letter-credit")) node.style.opacity=String(credit*credit*(3-2*credit));
+    for(const name of ["letter","ilc","postcard"]) $("#fill-"+name).forEach(el=>el.setAttribute("fill","#f3ead6"));
+  }
+})
+</script>
+</section>
