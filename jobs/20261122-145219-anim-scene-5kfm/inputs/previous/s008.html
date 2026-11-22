@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s008" data-section="PART 1 · THREE FORMS, PRODUCT &amp; SERVICE" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" fill="#2b2622">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text id="postcard-title" x="160" y="280" font-size="84" font-weight="800">Postcard</text>
+  <text id="postcard-hindi" x="160" y="345" font-family="Noto Sans Devanagari, sans-serif" font-size="51" font-weight="650" fill="#6f6a63">पोस्टकार्ड</text>
+  <g id="forms-strip">
+    <use href="piece:three-forms-icons" transform="translate(700 106) scale(.51)"/>
+  </g>
+  <g id="outside-tag">
+    <rect x="1498" y="202" width="322" height="78" rx="39" fill="#f3ead6"/>
+    <text x="1659" y="255" text-anchor="middle" font-family="Noto Sans Devanagari, sans-serif" font-size="47" font-weight="730">बाहर से पहचान</text>
+  </g>
+  <g id="postcard">
+    <use href="piece:service-postcard" transform="translate(480 316) scale(1.6)"/>
+  </g>
+  <g id="dimension-brackets" stroke="#6f6a63" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M480 950v30m0-15h960m0-15v30"/>
+    <path d="M1462 316h28m-14 0v608m-14 0h28"/>
+  </g>
+  <g id="fixed-size">
+    <rect x="1512" y="468" width="281" height="83" rx="41.5" fill="#f3ead6"/>
+    <text x="1652.5" y="524" text-anchor="middle" font-size="51" font-weight="760" font-family="Noto Sans Devanagari, Inter, sans-serif">तय size</text>
+  </g>
+  <g id="rectangle-tag">
+    <rect x="110" y="481" width="326" height="83" rx="41.5" fill="#f3ead6"/>
+    <text x="273" y="537" text-anchor="middle" font-size="47" font-weight="730" font-family="Noto Sans Devanagari, Inter, sans-serif">आयताकार card</text>
+  </g>
+  <g id="message-mark" fill="none" stroke="#8b745d" stroke-width="6" stroke-linecap="round">
+    <path d="M563 558q62-4 105 0t140 0 M563 624q57-5 114 0t133 0 M563 690q44-4 99 0t87 0"/>
+    <path d="M444 703h54q22 0 37-13" stroke="#ae7900" stroke-width="4"/>
+  </g>
+  <g id="open-message">
+    <rect x="110" y="662" width="326" height="83" rx="41.5" fill="#fde9a6"/>
+    <text x="273" y="718" text-anchor="middle" font-size="49" font-weight="750" font-family="Noto Sans Devanagari, sans-serif" fill="#694700">खुला संदेश</text>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  camera: [[5.58,{zoom:1}],[6.0,{zoom:0.98}]],
+  on: [
+    [0, 'type', '#postcard-title', {cps:23}],
+    [0, 'pop', '#postcard', {from:0.84,spring:'soft'}],
+    [0.50, 'fade', '#postcard-hindi', {dur:0.42}],
+    [1.02, 'draw', '#dimension-brackets', {dur:0.59}],
+    [1.02, 'pop', '#fixed-size', {spring:'soft'}],
+    [2.18, 'pop', '#rectangle-tag', {spring:'soft'}],
+    [4.04, 'pop', '#open-message', {spring:'soft'}],
+    [4.04, 'draw', '#message-mark', {dur:0.52}],
+    [5.58, 'pulse', '#forms-strip', {amount:0.06}],
+    [6.38, 'fade', '#outside-tag', {dur:0.45}]
+  ],
+  update(t,section) {
+    for (const id of ['letter','ilc','postcard']) {
+      const p=section.querySelector('[id$="-fill-'+id+'"],[id="fill-'+id+'"]');
+      if (p) p.setAttribute('fill',id==='postcard'?'#f3ead6':'#c9c0b3');
+    }
+  }
+})
+</script>
+</section>
