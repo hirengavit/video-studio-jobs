@@ -3,7 +3,7 @@
     <rect width="1920" height="1080" fill="#fbf7ee"/>
     <g id="breach">
       <g id="envelope-breach">
-        <use id="breach-envelope" href="piece:domestic-envelope" transform="translate(100 292) scale(1.25)"/>
+        <use id="breach-envelope" href="piece:domestic-envelope" transform="translate(100 270) scale(1.25)"/>
         <g id="size-chip">
           <rect x="124" y="785" width="428" height="83" rx="18" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
           <text x="338" y="844" text-anchor="middle" font-size="52" font-weight="740">size</text>
@@ -12,7 +12,7 @@
           <rect x="600" y="785" width="428" height="83" rx="18" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
           <text x="814" y="844" text-anchor="middle" font-size="52" font-weight="740">envelope</text>
         </g>
-        <path id="breach-cross" d="M510 468L640 598M640 468L510 598" fill="none" stroke="#4b4f58" stroke-width="17" stroke-linecap="round"/>
+        <path id="breach-cross" d="M510 446L640 576M640 446L510 576" fill="none" stroke="#4b4f58" stroke-width="17" stroke-linecap="round"/>
       </g>
       <g id="working-card">
         <rect x="1090" y="320" width="730" height="520" rx="20" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
@@ -21,6 +21,7 @@
         <g id="double-row">
           <rect x="1124" y="478" width="662" height="171" rx="16" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
           <text id="breach-caption" class="hi" x="1160" y="544" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#6f6a63">शर्त टूटी →</text>
+          <rect id="double-marker" x="1602" y="550" width="116" height="86" rx="4" fill="#f2b705" opacity=".32"/>
           <text id="postage-double" x="1160" y="616" font-family="Inter, sans-serif" font-size="64" font-weight="700">letter postage × 2</text>
         </g>
       </g>
@@ -34,7 +35,7 @@
       [5.70, 'draw', '#breach-cross', {dur:0.34}],
       [6.90, 'fade', '#double-row', {dur:0.30}],
       [6.90, 'type', '#postage-double', {cps:21}],
-      [7.90, 'highlight', '#postage-double', {words:'× 2', color:'#f2b705', opacity:.32, pad:8, dur:.36}],
+      [7.90, 'reveal', '#double-marker', {from:'left', dur:.36}],
     ],
   }
   </script>
