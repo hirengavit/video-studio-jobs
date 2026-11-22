@@ -1,0 +1,85 @@
+<section class="vs-scene" id="s148" data-duration="11.77" data-section="PART 8 · MAIL CLASSES &amp; AIRMAIL" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="airmail-sum">
+      <text class="hi" x="203" y="271" font-size="80" font-weight="815" fill="#9e1b1b">एक हिसाब</text>
+      <g id="weight-label">
+        <rect x="1361" y="195" width="359" height="100" rx="50" fill="#fff7e1" stroke="#e8cf8d" stroke-width="3"/>
+        <text id="weight120" x="1540" y="264" font-size="59" font-weight="815" fill="#73321f" text-anchor="middle">120 g</text>
+      </g>
+      <rect id="weight-track" x="200" y="380" width="1520" height="120" rx="19" fill="#fffdf8" stroke="#d9c5aa" stroke-width="4"/>
+      <path d="M707 382V498M1213 382V498" fill="none" stroke="#dbc5a5" stroke-width="3"/>
+      <g id="block1">
+        <rect x="204" y="384" width="499" height="112" rx="15" fill="#9e1b1b"/>
+      </g>
+      <text id="block1-weight" x="453.5" y="462" text-anchor="middle" font-size="62" font-weight="840" fill="#fffdf6">50 g</text>
+      <g id="block2">
+        <rect x="710" y="384" width="500" height="112" rx="15" fill="#b34a42"/>
+      </g>
+      <text id="block2-weight" x="960" y="462" text-anchor="middle" font-size="62" font-weight="840" fill="#fffdf6">50 g</text>
+      <g id="fee1">
+        <path d="M453.5 510V551" fill="none" stroke="#cfab66" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="453.5" cy="640" r="80" fill="#fde9a6" stroke="#d89421" stroke-width="6"/>
+        <circle cx="453.5" cy="640" r="67" fill="none" stroke="#e0af5a" stroke-width="2.5"/>
+        <text x="453.5" y="666" font-size="72" font-weight="850" fill="#75371d" text-anchor="middle">₹2</text>
+      </g>
+      <g id="fee2">
+        <path d="M960 510V551" fill="none" stroke="#cfab66" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="960" cy="640" r="80" fill="#fde9a6" stroke="#d89421" stroke-width="6"/>
+        <circle cx="960" cy="640" r="67" fill="none" stroke="#e0af5a" stroke-width="2.5"/>
+        <text x="960" y="666" font-size="72" font-weight="850" fill="#75371d" text-anchor="middle">₹1</text>
+      </g>
+      <text id="tariff-source" x="202" y="978" font-size="32" font-weight="570" fill="#6f6a63">Source: Post Office Regulations 2024, Schedule I</text>
+      <g id="last-block">
+        <rect x="1217" y="384" width="499" height="112" rx="15" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-dasharray="12 9"/>
+        <g id="block3-fill"><rect x="1217" y="384" width="200" height="112" rx="15" fill="#9e1b1b"/></g>
+        <text id="block3-weight" x="1317" y="462" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="840" fill="#fffdf6">20 g</text>
+      </g>
+      <g id="last-block-kind">
+        <rect x="1215" y="289" width="501" height="56" rx="26" fill="#f3ead6"/>
+        <text x="1465.5" y="330" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="42" font-weight="770" fill="#2b2622">अगले 50 का हिस्सा</text>
+      </g>
+      <g id="fee3">
+        <path d="M1466.5 510V551" fill="none" stroke="#cfab66" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="1466.5" cy="640" r="80" fill="#fde9a6" stroke="#d89421" stroke-width="6"/>
+        <circle cx="1466.5" cy="640" r="67" fill="none" stroke="#e0af5a" stroke-width="2.5"/>
+        <text x="1466.5" y="666" font-size="72" font-weight="850" fill="#75371d" text-anchor="middle">₹1</text>
+      </g>
+      <g id="airmail-total">
+        <rect x="496" y="755" width="928" height="112" rx="56" fill="#e7f4e7" stroke="#2e7d4f" stroke-width="4"/>
+        <text id="sum-operands" x="641" y="831" font-family="Inter,sans-serif" font-size="69" font-weight="810" fill="#234936">₹2 + ₹1 + ₹1 =</text>
+        <text id="sum-result" x="1124" y="831" text-anchor="start" font-family="Inter,sans-serif" font-size="72" font-weight="840" fill="#234936">₹4</text>
+      </g>
+      <text id="airmail-extra" x="960" y="928" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="48" font-weight="690" fill="#6f6a63">postage और बाकी fees के अलावा</text>
+    </g>
+</svg>
+<script type="text/scene">
+{
+  dur:11.77,
+  update(t, section, $) {
+    const p=Math.max(0,Math.min(1,(t-.08)/.54)), e=p*p*(3-2*p);
+    for (const el of $("#weight-label")) el.setAttribute("transform","translate(0 "+(-25*e)+")");
+    for (const el of $("#tariff-source")) el.setAttribute("y",978+47*e);
+    if(t>=6.60) {
+      const op=$("#sum-operands")[0];
+      if(op) {
+        const b=op.getBBox();
+        for (const el of $("#sum-result")) el.setAttribute("x",b.x+b.width+16);
+      }
+    }
+  },
+  on: [
+    [0,'fade','#last-block',{dur:.18}],
+    [0,'grow','#block3-fill',{axis:'x',origin:'left',spring:'soft'}],
+    [.48,'fade','#block3-weight',{dur:.21}],
+    [1.48,'fade','#last-block-kind',{dur:.24}],
+    [3.84,'pop','#fee3',{from:.90,spring:'fast'}],
+    [5.68,'fade','#airmail-total',{dur:.18}],
+    [5.68,'type','#sum-operands',{cps:24}],
+    [6.74,'fade','#sum-result',{dur:.12}],
+    [6.74,'count','#sum-result',{from:2,to:4,dur:.24,prefix:'₹'}],
+    [8.42,'fade','#airmail-extra',{dur:.26}],
+  ]
+}
+</script>
+</section>
