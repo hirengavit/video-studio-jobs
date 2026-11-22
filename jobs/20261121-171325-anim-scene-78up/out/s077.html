@@ -1,0 +1,101 @@
+<section class="vs-scene" id="s077" data-in="cut" data-section="PART 5 · INLAND LETTER CARD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Unfolded and folded limits for an Inland Letter Card">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="unfolded-card" transform="translate(-103 -64) scale(1.15)">
+  <use href="piece:letter-card-open" transform="translate(120 260)"/>
+  <g id="open-size-brackets" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+   <path d="M212 849v35m0-17h716m0-18v35"/>
+   <path d="M152 303h32m-16 0v512m-16 0h32"/>
+   <path d="M212 815v23m716-23v23M184 303h38M184 815h38" stroke-dasharray="6 8" stroke="#b8403a" stroke-width="3"/>
+  </g>
+ </g>
+ <g id="open-limits">
+  <g id="open-limits-heading">
+   <rect x="1000" y="260" width="840" height="90" rx="23" fill="#9e1b1b"/>
+   <text x="1038" y="322" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#fff">खुला card</text>
+  </g>
+  <g id="open-minimum">
+   <rect x="1000" y="370" width="840" height="150" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <text x="1036" y="431" font-family="Inter,sans-serif" font-size="48" font-weight="820" fill="#2b2622">Minimum</text>
+   <text x="1036" y="481" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="34" font-weight="670" fill="#6f6a63">कम से कम</text>
+   <rect x="1319" y="396" width="494" height="98" rx="45" fill="#f3ead6"/>
+   <text id="open-minimum-value" x="1362" y="463" font-family="Inter,sans-serif" font-size="60" font-weight="810" fill="#2b2622">282 × 182 mm</text>
+  </g>
+  <g id="open-maximum">
+   <rect x="1000" y="545" width="840" height="150" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <text x="1036" y="606" font-family="Inter,sans-serif" font-size="48" font-weight="820" fill="#2b2622">Maximum</text>
+   <text x="1036" y="656" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="34" font-weight="670" fill="#6f6a63">ज़्यादा से ज़्यादा</text>
+   <rect x="1319" y="571" width="494" height="98" rx="45" fill="#f3ead6"/>
+   <text id="open-maximum-value" x="1362" y="638" font-family="Inter,sans-serif" font-size="60" font-weight="810" fill="#2b2622">300 × 210 mm</text>
+  </g>
+ </g>
+ <g id="folded-art">
+  <use href="piece:letter-card-folded" transform="translate(150.5 385) scale(1.3)"/>
+ </g>
+ <g id="folded-brackets" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M157 807v34m0-17h806m0-17v34"/>
+  <path d="M102 390h30m-15 0v380m-15 0h30"/>
+ </g>
+ <g id="folded-limits">
+  <g id="folded-heading">
+   <rect x="1000" y="550" width="840" height="74" rx="23" fill="#9e1b1b"/>
+   <text x="1038" y="604" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#fff">मुड़ा card</text>
+  </g>
+  <g id="fold-min">
+   <rect x="1000" y="642" width="840" height="140" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <text x="1036" y="701" font-family="Inter,sans-serif" font-size="48" font-weight="820" fill="#2b2622">Minimum</text>
+   <text x="1036" y="747" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="34" font-weight="670" fill="#6f6a63">कम से कम</text>
+   <rect x="1319" y="663" width="494" height="98" rx="35" fill="#f3ead6"/>
+   <text id="fold-min-value" x="1362" y="730" font-family="Inter,sans-serif" font-size="56" font-weight="810" fill="#2b2622">152 × 90 mm</text>
+  </g>
+  <g id="fold-max">
+   <rect x="1000" y="808" width="840" height="140" rx="21" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <text x="1036" y="867" font-family="Inter,sans-serif" font-size="48" font-weight="820" fill="#2b2622">Maximum</text>
+   <text x="1036" y="913" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="34" font-weight="670" fill="#6f6a63">ज़्यादा से ज़्यादा</text>
+   <rect id="fold-max-pill" x="1319" y="829" width="494" height="98" rx="35" fill="#f3ead6"/>
+   <text id="fold-max-value" x="1362" y="896" font-family="Inter,sans-serif" font-size="56" font-weight="810" fill="#2b2622">210 × 100 mm</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ dur:9.10,
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,"out","#unfolded-card",{dur:.35}],
+  [.30,"pop","#folded-art",{from:.96,spring:"fast"}],
+  [.50,"draw","#folded-brackets",{dur:.60}],
+  [.54,"fade","#folded-heading",{dur:.27}],
+  [1.36,"fade","#fold-min",{dur:.26}],
+  [1.80,"type","#fold-min-value",{cps:4.6}],
+  [5.30,"fade","#fold-max",{dur:.26}],
+  [5.90,"type","#fold-max-value",{cps:4.60}]
+ ],
+ update(t,section,$) {
+  const p=Math.max(0,Math.min(t/.52,1));
+  const k=p*p*(3-2*p);
+  const rect=(id,key,a,b)=>{ for(const el of $(id)) el.setAttribute(key,String(a+(b-a)*k)); };
+  for(const el of $("#unfolded-card")) el.style.filter="grayscale("+Math.min(1,t/.18)+")";
+  for(const el of $("#open-limits")) {
+    el.style.filter="grayscale("+k+")";
+    el.style.opacity=String(1-k*.24);
+  }
+  for(const [id,dy] of [["#open-limits-heading",-30],["#open-minimum",-70],["#open-maximum",-124]]) {
+    for(const el of $(id)) el.setAttribute("transform","translate(0 "+(dy*k)+")");
+  }
+  rect("#open-limits-heading rect","height",90,58);
+  rect("#open-limits-heading text","y",322,307);
+  rect("#open-limits-heading text","font-size",52,44);
+  for(const [id,rowY,valueY,labelY] of [["#open-minimum",396,463,431],["#open-maximum",571,638,606]]) {
+    rect(id+" > rect:first-of-type","height",150,105);
+    rect(id+" > text:first-of-type","y",labelY,labelY-13);
+    rect(id+" > text:nth-of-type(2)","y",labelY+50,labelY+30);
+    rect(id+" > rect:nth-of-type(2)","y",rowY,rowY-10);
+    rect(id+" > rect:nth-of-type(2)","height",98,67);
+    rect(id+" > text:last-of-type","font-size",60,40);
+    rect(id+" > text:last-of-type","y",valueY,valueY-24);
+  }
+ }
+})
+</script>
+</section>
