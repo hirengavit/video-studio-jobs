@@ -1,0 +1,27 @@
+{
+ "moments": [
+  "0.30",
+  "2.26",
+  "4.53",
+  "6.79",
+  "9.06",
+  "11.17"
+ ],
+ "problems": [
+  "s128: no photo \"first-postcard-austria-1869\" in the materials"
+ ],
+ "warnings": [
+  {
+   "kind": "error",
+   "scene": "s128",
+   "message": "update(): $(...)?.setAttribute is not a function",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s128",
+   "text": "दुनिया का पहला postcard / तीनों तरह के संदेश: एक ही Postcard tarif",
+   "t": 6.79
+  }
+ ]
+}
