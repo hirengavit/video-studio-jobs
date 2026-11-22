@@ -1,0 +1,100 @@
+<section class="vs-scene" id="s155" data-in="cut" data-section="PART 8 · MAIL CLASSES &amp; AIRMAIL" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="qms">
+  <use id="qms-box" href="piece:qms-letter-box" transform="translate(260 300) scale(1.2)"/>
+  <text id="qms-name" x="806" y="266" font-family="Inter,sans-serif" font-size="80" font-weight="825" fill="#2b2622">Quick Mail Service</text>
+  <text id="qms-hindi" x="809" y="345" font-family="Noto Sans Devanagari, sans-serif" font-size="55" font-weight="680" fill="#6f6a63">त्वरित डाक सेवा</text>
+  <g id="qms-short">
+    <rect x="806" y="381" width="237" height="93" rx="46.5" fill="#9e1b1b"/>
+    <text x="924.5" y="447" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="830" fill="#fff">QMS</text>
+  </g>
+  <g id="qms-places">
+    <g id="capitals">
+      <rect x="806" y="503" width="417" height="80" rx="40" fill="#f3ead6"/>
+      <text x="1014.5" y="557" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="760" fill="#2b2622">State capitals</text>
+    </g>
+    <g id="union-territories">
+      <rect x="1250" y="503" width="493" height="80" rx="40" fill="#f3ead6"/>
+      <text x="1496.5" y="557" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="760" fill="#2b2622">Union Territories</text>
+    </g>
+    <g id="towns">
+      <rect x="806" y="604" width="592" height="80" rx="40" fill="#f3ead6"/>
+      <text x="1102" y="658" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48" font-weight="760" fill="#2b2622">कुछ important towns</text>
+    </g>
+  </g>
+  <g id="qms-steps">
+    <g id="qms-step-1">
+     <g id="qms-step-1-layout">
+      <rect x="806" y="580" width="994" height="120" rx="22" fill="#fffefa" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="864" cy="640" r="38" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="4"/>
+      <text x="864" y="659" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#fff">1</text>
+      <text id="qms-step-text-1" x="925" y="657" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">First-class + पूरा prepaid</text>
+     </g>
+    </g>
+    <g id="qms-step-2">
+      <rect x="806" y="720" width="994" height="120" rx="22" fill="#fffefa" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="864" cy="780" r="38" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="4"/>
+      <text x="864" y="799" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#fff">2</text>
+      <text x="925" y="768" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">Address के आखिर में</text>
+      <text id="qms-step-text-2" x="925" y="822" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">delivery office का <tspan id="pin-word">PIN</tspan></text>
+    </g>
+    <g id="qms-step-3">
+      <rect id="qms-step-3-bg" x="806" y="860" width="994" height="120" rx="22" fill="#fffefa" stroke="#ead9a8" stroke-width="3"/>
+      <circle cx="864" cy="920" r="38" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="4"/>
+      <text x="864" y="939" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#fff">3</text>
+      <text id="qms-step-text-3" x="925" y="935" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">पीली धारियों वाला QMS box</text>
+      <g id="qms-deadline">
+        <circle cx="948" cy="1004" r="24" fill="#fff3cd" stroke="#8a5d00" stroke-width="4"/>
+        <path d="M948 987v17h11" stroke="#8a5d00" stroke-width="4" stroke-linecap="round" fill="none"/>
+        <text x="992" y="1021" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="760" fill="#694700">तय clearance time से पहले</text>
+      </g>
+    </g>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+  dur:13.83,
+  update(t,section,$) {
+    const ease=p=>{const q=Math.max(0,Math.min(1,p));return q*q*(3-2*q)};
+    const e=ease(t/.42), mix=(a,b)=>a+(b-a)*e;
+    const places=[
+      ["#capitals",806,503,417,1014.5,557,49,806,273],
+      ["#union-territories",1250,503,493,1496.5,557,49,1094,348],
+      ["#towns",806,604,592,1102,658,48,1457,354]
+    ];
+    for(const [sel,x,y,w,tx,ty,fs,nx,nw] of places) {
+      for(const el of $(sel+" rect")) {
+        el.setAttribute("x",mix(x,nx));el.setAttribute("y",mix(y,494));
+        el.setAttribute("width",mix(w,nw));el.setAttribute("height",mix(80,62));
+      }
+      for(const el of $(sel+" text")) {
+        el.setAttribute("x",mix(tx,nx+nw/2));el.setAttribute("y",mix(ty,537));
+        el.setAttribute("font-size",mix(fs,36));
+      }
+    }
+    for(const el of $("#qms-places")) el.style.opacity=String(1-.40*e);
+    for(const el of $("#qms-step-1-layout")) el.setAttribute("transform","translate(0 "+(129*(1-e))+")");
+    const grow=ease((t-11.18)/.36);
+    for(const el of $("#qms-step-3-bg")) el.setAttribute("height",120+67*grow);
+    const phase=Math.max(0,Math.min(1,(t-8.62)/.60)), pulse=Math.sin(Math.PI*phase);
+    for(const el of $("#bands")) {
+      const b=el.getBBox(), cx=b.x+b.width/2, cy=b.y+b.height/2;
+      el.setAttribute("transform","translate("+cx+" "+cy+") scale("+(1+.08*pulse)+") translate("+(-cx)+" "+(-cy)+")");
+      el.style.filter=pulse>.002 ? "drop-shadow(0 0 "+(12*pulse)+"px rgba(253,233,166,"+pulse+"))" : "";
+    }
+  },
+  on:[
+    [0.00,"fade","#qms-step-1",{dur:.28}],
+    [0.00,"color","#qms-places rect",{to:"#eee9e1",dur:.34}],
+    [0.00,"color","#qms-places text",{to:"#6f6a63",dur:.34}],
+    [3.03,"highlight","#qms-step-text-1",{words:"पूरा prepaid",color:"#f2b705",opacity:.40,pad:4,dur:.45}],
+    [4.03,"fade","#qms-step-2",{dur:.30}],
+    [6.72,"highlight","#pin-word",{color:"#f2b705",opacity:.40,pad:4,dur:.42}],
+    [7.62,"fade","#qms-step-3",{dur:.30}],
+    [11.30,"pop","#qms-deadline",{from:.96,spring:"fast"}]
+  ]
+})
+</script>
+</section>
