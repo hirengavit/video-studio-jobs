@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s009" data-in="cut" data-section="PART 1 · THREE FORMS, PRODUCT &amp; SERVICE" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="letter-panel">
+      <rect x="145" y="207" width="760" height="751" rx="38" fill="#f3ead6" stroke="#dfc8ab" stroke-width="3"/>
+      <text x="525" y="325" text-anchor="middle" font-size="75" font-weight="840" fill="#9e1b1b">Letter</text>
+      <g id="sheet">
+        <rect x="321" y="425" width="409" height="224" rx="8" fill="#fffdfa" stroke="#ad8a74" stroke-width="4"/>
+        <path d="M359 464H650M359 498H608" stroke="#b8aa96" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <use id="envelope" href="piece:domestic-envelope" transform="translate(210 523) scale(.83)"/>
+      <g id="separate-cover">
+        <rect x="257" y="871" width="536" height="68" rx="34" fill="#fff9e8" stroke="#e2cc99" stroke-width="2"/>
+        <text class="hi" x="525" y="918" text-anchor="middle" font-size="48" font-weight="750" fill="#553a2a">अलग envelope</text>
+      </g>
+    </g>
+    <g id="letter-card-panel">
+      <rect x="1015" y="207" width="760" height="751" rx="38" fill="#f3ead6" stroke="#dfc8ab" stroke-width="3"/>
+      <text x="1395" y="325" text-anchor="middle" font-size="75" font-weight="840" fill="#9e1b1b">Letter Card</text>
+    </g>
+    <g id="open-card">
+      <use href="piece:letter-card-open" transform="translate(1107 396) scale(.64)"/>
+    </g>
+    <g id="folded-card">
+      <use href="piece:letter-card-folded" transform="translate(1092.6 486) scale(.96)"/>
+    </g>
+    <g id="own-cover">
+      <rect x="1127" y="871" width="536" height="68" rx="34" fill="#fff9e8" stroke="#e2cc99" stroke-width="2"/>
+      <text id="own-caption" class="hi" x="1395" y="918" text-anchor="middle" font-size="48" font-weight="750" fill="#553a2a">खुद अपना cover</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur:9.1,
+    on:[
+      [1.96,"move","#sheet",{by:[0,120],spring:"soft"}],
+      [2.44,"fade","#separate-cover",{dur:.32}],
+      [3.00,"fade","#letter-card-panel",{dur:.40}],
+      [3.00,"fade","#open-card",{dur:.40}],
+      [4.90,"out","#open-card",{dur:.30,scale:.92}],
+      [5.10,"pop","#folded-card",{from:.92,spring:"soft"}],
+      [7.62,"fade","#own-cover",{dur:.26}],
+      [7.75,"underline","#own-caption",{words:"cover",color:"#d2930c",width:5,dur:.34}]
+    ]
+  })
+  </script>
+</section>
