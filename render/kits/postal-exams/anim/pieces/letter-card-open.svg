@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path id="ilc-sheet" d="M135 85h630v470H135z" fill="#f3ead6"/>
+    <g id="flap-left">
+      <path d="M135 324v231l-43-21V347z" fill="#e7d7ba"/>
+      <path d="M105 357v166" stroke="#ac9071" stroke-dasharray="2 6"/>
+    </g>
+    <g id="flap-right">
+      <path d="M765 324v231l43-21V347z" fill="#e7d7ba"/>
+      <path d="M795 357v166" stroke="#ac9071" stroke-dasharray="2 6"/>
+    </g>
+    <g id="flap-top">
+      <path d="M135 85l26-42h578l26 42z" fill="#e7d7ba"/>
+      <path d="M172 56h556" stroke="#ac9071" stroke-dasharray="2 6"/>
+    </g>
+    <path id="ilc-fold-lines" d="M157 240h586M157 324h586" fill="none" stroke="#6f6a63" stroke-dasharray="8 10"/>
+    <rect id="ilc-title-spot" x="164" y="354" width="245" height="50" rx="6" fill="#fbf7ee" stroke="#ac9071" stroke-dasharray="3 6"/>
+    <path id="ilc-rules" d="M447 455h258m-258 32h258m-258 32h190" fill="none" stroke="#6f6a63"/>
+    <g id="ilc-stamp" fill="none" stroke="#9e1b1b">
+      <rect x="681" y="346" width="55" height="67" rx="5" stroke-dasharray="3 5"/>
+      <path d="M691 367h35v23h-35zm0 0 17.5 13 17.5-13"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="450" cy="555" r="0"/>
+  <circle data-anchor="top" cx="450" cy="43" r="0"/>
+</svg>
