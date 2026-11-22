@@ -1,0 +1,76 @@
+<section class="vs-scene" id="s141" data-in="cut" data-section="PART 8 · MAIL CLASSES &amp; AIRMAIL" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Registered newspapers: sorting treatment does not include free airmail">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="news">
+   <rect x="125" y="231" width="1670" height="701" rx="30" fill="#fffdf8" stroke="#ead9a8" stroke-width="3"/>
+   <g id="news-bundle">
+    <ellipse cx="444" cy="674" rx="232" ry="23" fill="#dbcfae" opacity=".55"/>
+    <use href="piece:newspaper-bundle" transform="translate(204 365) scale(1.6)"/>
+   </g>
+   <rect id="registered-highlight" x="756" y="310" width="438" height="80" rx="13" fill="#fde9a6"/>
+   <text id="news-term" x="771" y="375" font-family="Inter,sans-serif" font-size="76" font-weight="820" fill="#2b2622">Registered newspaper</text>
+   <text id="news-hi" x="771" y="465" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="730" fill="#6f6a63">पंजीकृत समाचार पत्र</text>
+   <g id="news-class" style="opacity:.4;filter:grayscale(1)">
+    <rect x="771" y="547" width="565" height="104" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text x="1053.5" y="614" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#2b2622">Second-class mail</text>
+   </g>
+   <g id="sorting-rack" style="opacity:.4;filter:grayscale(1)">
+    <rect x="1486" y="553" width="235" height="167" rx="12" fill="#f3ead6" stroke="#504435" stroke-width="5"/>
+    <rect x="1499" y="566" width="209" height="141" rx="4" fill="#fffdf8" stroke="#504435" stroke-width="2"/>
+    <path d="M1569 566v141m69-141v141m-139-71h209" fill="none" stroke="#504435" stroke-width="4"/>
+    <path d="M1513 614h41m29 0h40m30 0h40m-180 72h41m29 0h40m30 0h40" fill="none" stroke="#c9a77c" stroke-width="8" stroke-linecap="round"/>
+    <rect x="1486" y="749" width="235" height="75" rx="21" fill="#f3ead6"/>
+    <text x="1603.5" y="799" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="760" fill="#2b2622">sorting</text>
+   </g>
+   <g id="sorting-treatment">
+    <rect x="771" y="676" width="647" height="84" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M1418 711h41l23-34" fill="none" stroke="#9b6500" stroke-width="4" stroke-linecap="round"/>
+    <text x="1094.5" y="736" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="790" fill="#2b2622">First-class जैसा treatment</text>
+   </g>
+   <g id="airlift-plane">
+    <use href="piece:icon-plane" transform="translate(267 603) scale(.88)"/>
+   </g>
+   <g id="no-free-airlift">
+    <path d="M402 754l82 69m0-69-82 69" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+    <text x="443" y="911" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="790" fill="#4b4f58">free airlift नहीं</text>
+   </g>
+   <g id="news-air-surcharge">
+    <rect x="771" y="808" width="647" height="84" rx="22" fill="#fff4cf" stroke="#f2b705" stroke-width="3"/>
+    <rect x="970" y="824" width="244" height="66" rx="4" fill="#fde9a6"/>
+    <text x="1094.5" y="868" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="790" fill="#2b2622">हवा से = <tspan id="surcharge-word">surcharge</tspan> देना होगा</text>
+   </g>
+
+   <g id="registration-note">
+    <rect x="771" y="490" width="789" height="110" rx="22" fill="#fffaf0" stroke="#f2b705" stroke-width="4"/>
+    <text x="1165.5" y="562" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="790" fill="#2b2622" textLength="742" lengthAdjust="spacingAndGlyphs">= newspaper का postal registration</text>
+   </g>
+   <g id="not-first-class">
+    <rect id="wrong-class-bg" x="188" y="716" width="513" height="180" rx="22" fill="#fff" stroke="#2b2622" stroke-width="3"/>
+    <text id="wrong-class" x="444.5" y="787" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="810" fill="#2b2622">First-class mail</text>
+    <text id="not-related" x="444.5" y="857" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="790" fill="#4b4f58">कोई लेना-देना नहीं</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+   dur:9.44,
+   update(t, section, $) {
+     const p=Math.max(0,Math.min(1,(t-1.35)/.72)), e=p*p*(3-2*p);
+     for(const a of $('#news-class')) a.setAttribute('transform','translate(0 '+(70*e)+')');
+     for(const a of $('#sorting-treatment')) a.setAttribute('transform','translate(0 '+(64*e)+')');
+     for(const a of $('#wrong-class-bg')) {
+       a.setAttribute('fill', t>=8 ? '#eae8e6' : '#fff');
+       a.setAttribute('stroke', t>=8 ? '#4b4f58' : '#2b2622');
+     }
+   },
+   on:[
+     [0,'reveal','#registered-highlight',{from:'left',dur:.42}],
+     [1.25,'out','#airlift-plane, #no-free-airlift, #news-air-surcharge',{dur:.30}],
+     [2.50,'fade','#registration-note',{dur:.34}],
+     [5.48,'fade','#not-first-class',{dur:.29}],
+     [8.00,'strike','#wrong-class',{color:'#4b4f58',width:6,dur:.30,dim:.72}],
+     [8.00,'fade','#not-related',{dur:.34}]
+   ]
+ })
+ </script>
+</section>
