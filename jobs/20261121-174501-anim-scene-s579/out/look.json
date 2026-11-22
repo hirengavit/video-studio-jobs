@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "2.07",
+  "4.14",
+  "6.22",
+  "8.29",
+  "10.21"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "mostly-empty",
+   "scene": "s177",
+   "message": "a card is mostly empty at 2.1 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.07
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s177",
+   "text": "हर अगले 20 g / + ₹5",
+   "t": 10.21
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s177",
+   "text": "या हिस्से पर / + ₹5",
+   "t": 10.21
+  }
+ ]
+}
