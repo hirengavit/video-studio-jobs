@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.92",
+  "5.84",
+  "8.77",
+  "11.69",
+  "14.46"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "mostly-empty",
+   "scene": "s044",
+   "message": "a card (#s044-film-label) is mostly empty at 11.7 s: bring its items in sooner, or size it for what it holds now",
+   "t": 11.69
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s044",
+   "message": "a card (#s044-film-label) is mostly empty at 14.5 s: bring its items in sooner, or size it for what it holds now",
+   "t": 14.46
+  }
+ ]
+}
