@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 200" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="tray-back"><path d="M40 14H400L430 100H10Z" fill="#cdbf9f"/><path d="M46 22H394L388 52H52Z" fill="#d8cbac" stroke="none"/></g>
+<path id="tray-floor" d="M52 52H388L424 100H16Z" fill="#e9dfc7" stroke="#b9a77d" stroke-width="2"/>
+<path d="M40 14H400L430 100H10Z" fill="none" stroke="#2b2622" stroke-width="4"/>
+<g id="tray-front"><rect x="10" y="100" width="420" height="86" rx="8" fill="#f3ead6" stroke="#2b2622"/><path d="M12 100H428V113H12Z" fill="#2b2622" stroke="none"/></g>
+<path id="band" d="M12 124H428V178H12Z" fill="#f2b705" stroke="none"/><path d="M12 124H428M12 178H428" stroke="#2b2622" stroke-width="2" fill="none"/>
+<g id="padlock"><path d="M56 147V139a10 10 0 0 1 20 0v8" fill="none" stroke="#2b2622" stroke-width="4"/><rect x="50" y="146" width="32" height="24" rx="4" fill="#2b2622"/><circle cx="66" cy="156" r="3" fill="#f2b705" stroke="none"/><path d="M66 158v6" stroke="#f2b705" stroke-width="3"/></g>
+<circle data-anchor="base" cx="220" cy="186" r="0" fill="none" stroke="none"/>
+<circle data-anchor="mouth" cx="220" cy="58" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="220" cy="14" r="0" fill="none" stroke="none"/>
+<circle data-anchor="lip" cx="220" cy="100" r="0" fill="none" stroke="none"/>
+</svg>

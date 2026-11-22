@@ -1,0 +1,67 @@
+<section class="vs-scene" id="s052" data-in="cut" data-section="PART 4 · WINDOW ENVELOPE" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif" fill="#2b2622">
+    <defs><clipPath id="s051-window-clip"><rect x="163" y="115" width="274" height="99" rx="8"/></clipPath></defs>
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="win">
+      <g id="window-assembly" transform="translate(240 240) scale(2.4)">
+        <use id="window-envelope" href="piece:window-envelope"/>
+        <rect x="161" y="113" width="278" height="103" rx="10" fill="#e7f1f4"/>
+        <g clip-path="url(#s051-window-clip)">
+          <g id="inner-sheet">
+            <rect x="164" y="115" width="271" height="124" rx="2" fill="#ffffff"/>
+            <rect id="address-marker" x="179" y="131" width="215" height="49" rx="3" fill="#f2b705" opacity=".24"/>
+            <g id="address-block" stroke="#535e64" stroke-width="2.6" stroke-linecap="round">
+              <path d="M186 138h161m-161 16h199m-199 16h130"/>
+            </g>
+
+            <g id="window-barcode-entrance">
+              <rect id="barcode-emphasis" x="178" y="184" width="144" height="26" rx="3" fill="#fde9a6"/>
+              <path id="window-barcode" d="M187 190v15m5-15v15m6-15v15m4-15v15m5-15v15m7-15v15m4-15v15m7-15v15m4-15v15m5-15v15m8-15v15m4-15v15m7-15v15m5-15v15m6-15v15m4-15v15m8-15v15m5-15v15m4-15v15m8-15v15m4-15v15m7-15v15" fill="none" stroke="#2b2622" stroke-width="2"/>
+            </g>
+          </g>
+        </g>
+        <path d="M169 191v-62q0-8 9-8h219" fill="none" stroke="#ffffff" stroke-width="2"/>
+        <rect id="panel-outline" x="161" y="113" width="278" height="103" rx="10" fill="none" stroke="#2b2622" stroke-width="3"/>
+      </g>
+      <g id="panel-tag">
+        <rect x="100" y="165" width="690" height="76" rx="16" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="445" y="216" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750">Panel · पारदर्शी खिड़की</text>
+      </g>
+      <g id="address-keyword">
+        <rect x="1000" y="165" width="820" height="76" rx="16" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+        <text id="address-keyword-text" x="1410" y="216" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="740">सिर्फ address block दिखे</text>
+        <text id="barcode-chip-add" x="1678" y="216" text-anchor="middle" font-family="Inter,sans-serif" font-size="47" font-weight="810">+ barcode</text>
+      </g>
+      <g id="window-stable-tag">
+        <rect x="1313" y="701" width="345" height="79" rx="46" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+        <text x="1485.5" y="752" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="790">कागज़ न खिसके</text>
+      </g>
+      <g id="window-rules-strip">
+        <rect x="100" y="970" width="1720" height="71" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+        <rect x="117" y="977" width="820" height="57" rx="19" fill="#eeeae3"/>
+        <text x="527" y="1021" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="740" fill="#4b4f58">Envelope की आम 8 शर्तें</text>
+        <rect x="956" y="977" width="847" height="57" rx="19" fill="#fde9a6"/>
+        <text x="1379.5" y="1021" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="790">+ Window की शर्तें</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    on:[
+      [0,"fade","#window-barcode-entrance",{dur:.34}],
+      [.26,"fade","#barcode-chip-add",{dur:.38}],
+      [0,"reveal","#barcode-emphasis",{from:"left",dur:.45}],
+      [3.94,"fade","#window-stable-tag",{dur:.42}],
+      [7.00,"slide","#window-rules-strip",{from:"down",dist:34,spring:"soft"}]
+    ],
+    update(t,section,$) {
+      const q=Math.min(Math.max(t/.35,0),1);
+      const smooth=q*q*(3-2*q);
+      for(const el of $("#address-keyword-text")) { el.setAttribute("transform","translate("+(-133*smooth)+" 0)"); el.setAttribute("font-size",String(48-4*smooth)); }
+      const n=Math.min(Math.max((t-1.84)/.82,0),1);
+      const dx= -14/2.4*Math.pow(Math.sin(Math.PI*n),2);
+      for(const el of $("#inner-sheet")) el.setAttribute("transform","translate("+dx+" 0)");
+    }
+  })
+  </script>
+</section>
