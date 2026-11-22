@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s188" data-duration="9.00" data-section="PART 9 · COUNTER CHECKS &amp; DUES" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="und">
+  <rect x="140" y="201" width="1640" height="791" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <g id="status-undelivered">
+    <rect x="424" y="234" width="530" height="92" rx="46" fill="#f3ead6"/>
+    <text x="689" y="295" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="800" fill="#2b2622">Undelivered</text>
+  </g>
+  <g id="status-unpaid">
+    <rect x="986" y="234" width="367" height="92" rx="46" fill="#f3ead6"/>
+    <text x="1169.5" y="295" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="800" fill="#2b2622">Unpaid</text>
+  </g>
+  <g id="und-postcard" transform="translate(298 364) scale(.76)">
+    <use href="piece:service-postcard"/>
+    <text x="317" y="63" font-family="Inter,sans-serif" font-size="22" font-weight="820" fill="#2b2622">POST CARD</text>
+    <text x="512" y="104" text-anchor="middle" font-family="Inter,sans-serif" font-size="16" font-weight="800" fill="#fff">50 p</text>
+  </g>
+  <g id="und-ilc" transform="translate(1138 382) scale(.77)">
+    <use href="piece:letter-card-folded"/>
+    <text x="330" y="66" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="820" fill="#2b2622">LETTER CARD</text>
+  </g>
+  <text x="526" y="706" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="770" fill="#2b2622">Postcard</text>
+  <text x="1380" y="706" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="770" fill="#2b2622">Letter Card</text>
+  <g id="strike-cards" fill="none" stroke="#4b4f58" stroke-width="14" stroke-linecap="round">
+    <path d="M317 386L731 627M731 386L317 627"/>
+    <path d="M1162 400L1597 598M1597 400L1162 598"/>
+  </g>
+  <g id="destroy-tag">
+    <rect x="745" y="749" width="430" height="90" rx="45" fill="#4b4f58"/>
+    <text x="960" y="810" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="53" font-weight="800" fill="#fff">तुरंत नष्ट</text>
+  </g>
+  <g id="und-rule">
+    <rect x="220" y="860" width="759" height="91" rx="45" fill="#f3ead6"/>
+    <rect id="und-hl" x="280" y="875" width="257" height="58" rx="7" fill="#fde9a6"/>
+    <text id="und-rule-text" x="599.5" y="922" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="48" font-weight="790" fill="#2b2622">Undelivered items का नियम</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [.80,'pop','#status-unpaid',{spring:'soft'}],
+    [3.34,'draw','#strike-cards',{dur:.38}],
+    [3.34,'fade','#destroy-tag',{dur:.32}],
+    [6.04,'fade','#und-rule',{dur:.28}],
+    [6.38,'fade','#und-hl',{dur:.27}],
+  ],
+  update(t, section, $) {
+    const label = $('#und-rule-text')[0], marker = $('#und-hl')[0];
+    if (!label || !marker) return;
+    const w=label.getComputedTextLength();
+    if (w) {
+      marker.setAttribute('x',599.5-w/2-8);
+      marker.setAttribute('width',label.getSubStringLength(0,11)+16);
+    }
+  }
+}
+</script>
+</section>
