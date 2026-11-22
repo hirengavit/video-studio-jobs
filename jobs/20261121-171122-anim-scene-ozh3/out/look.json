@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "1.85",
+  "3.70",
+  "5.54",
+  "7.39",
+  "9.09"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s068",
+   "message": "highlight: \"× 2\" isn't in that <text> (it says \"\")",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s068",
+   "message": "highlight: \"× 2\" isn't in that <text> (it says \"letter pos\")",
+   "t": 7.39
+  }
+ ]
+}
