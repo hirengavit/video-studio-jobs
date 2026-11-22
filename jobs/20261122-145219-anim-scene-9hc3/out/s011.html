@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s011" data-in="cut" data-section="PART 1 · THREE FORMS, PRODUCT &amp; SERVICE" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="term">
+      <g id="term-stamp">
+        <rect x="128" y="265" width="790" height="550" rx="35" fill="#9e1b1b"/>
+        <rect x="128" y="265" width="790" height="550" rx="35" fill="none" stroke="#fbf7ee" stroke-width="15" stroke-linecap="round" stroke-dasharray="0 25"/>
+        <rect x="200" y="352" width="9" height="56" rx="4" fill="#f2b705"/>
+        <text x="230" y="395" font-family="'Noto Sans Devanagari', sans-serif" font-size="54" font-weight="700" fill="#fde9a6">मुख्य शब्द</text>
+        <text id="letter-post" x="205" y="577" font-family="Inter, sans-serif" font-size="106" font-weight="810" fill="#fff">Letter Post</text>
+        <text id="letter-post-hi" x="208" y="704" font-family="'Noto Sans Devanagari', sans-serif" font-size="74" font-weight="740" fill="#fde9a6">पत्र डाक</text>
+      </g>
+      <g id="meaning">
+        <rect x="974" y="315" width="816" height="455" rx="36" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <text id="broad" x="1050" y="501" font-family="'Noto Sans Devanagari', sans-serif" font-size="77" font-weight="770" fill="#9e1b1b">बड़ा शब्द</text>
+        <path d="M1052 545 H1692" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+        <text id="several" x="1050" y="657" font-family="'Noto Sans Devanagari', sans-serif" font-size="60" font-weight="700" fill="#2b2622">इसमें कई तरह की डाक</text>
+      </g>
+    </g>
+    <g id="false-equality">
+      <rect x="495" y="590" width="930" height="107" rx="52" fill="#efedea" stroke="#d3ceca" stroke-width="3"/>
+      <text id="false-equality-label" x="960" y="662" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="810" fill="#4b4f58">हर item = letter</text>
+    </g>
+    <g id="postcard-example">
+      <rect x="154" y="718" width="774" height="185" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+      <use href="piece:service-postcard" transform="translate(204 741) scale(.36)"/>
+      <text x="462" y="798" font-family="Inter,sans-serif" font-size="65" font-weight="830" fill="#2b2622">Postcard</text>
+      <text x="464" y="863" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="710" fill="#6f6a63">पोस्टकार्ड</text>
+    </g>
+    <g id="book-post-example">
+      <rect x="992" y="718" width="774" height="185" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+      <g transform="translate(1052 749)" stroke="#2b2622" stroke-width="4" stroke-linejoin="round">
+        <path d="M2 15L98 0l107 14v104l-107-14-96 17Z" fill="#f3ead6"/>
+        <path d="M98 0v104m-79-25 61-11m39 1 66 9M18 50l62-11m39-2 66 9" fill="none" stroke-linecap="round"/>
+      </g>
+      <text x="1300" y="798" font-family="Inter,sans-serif" font-size="65" font-weight="830" fill="#2b2622">Book Post</text>
+      <text x="1302" y="863" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="710" fill="#6f6a63">बुक पोस्ट</text>
+    </g>
+    <g id="separate-products">
+      <path d="M541 909v34h838v-34" fill="none" stroke="#b8771d" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="707" y="920" width="506" height="105" rx="50" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text id="separate-products-label" x="960" y="988" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="800" fill="#2b2622">अलग products</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    on:[
+      [2.60,"pop","#false-equality",{from:.91}],
+      [4.30,"strike","#false-equality-label",{color:"#4b4f58",width:8,dur:.36}],
+      [4.60,"slide","#postcard-example",{from:"down",dist:52,spring:"soft"}],
+      [6.38,"slide","#book-post-example",{from:"down",dist:52,spring:"soft"}],
+      [7.56,"pop","#separate-products",{from:.9}],
+      [7.67,"highlight","#separate-products-label",{color:"#fde9a6",opacity:.95,pad:6,dur:.45}]
+    ],
+    update(t,section,$) {
+      const f=Math.min(1,Math.max(0,t/1.2));
+      const k=f*f*(3-2*f);
+      for(const el of $("#term")) el.setAttribute("transform","translate("+(239.5*k)+" "+(-37*k)+") scale("+(1-.25*k)+")");
+    }
+  })
+  </script>
+</section>
