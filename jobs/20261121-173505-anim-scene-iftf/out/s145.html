@@ -51,7 +51,7 @@
     dur:11.42,
     update(t,section,$) {
       const p=Math.max(0,Math.min(1,t/.42)), e=p*p*(3-2*p), sc=1-.15*e;
-      for(const el of $("#accepted-by-air")) el.setAttribute("transform","translate("+(82*e)+" "+(18*e)+") translate(1376 735) scale("+sc+") translate(-1376 -735)");
+      for(const el of $("#accepted-by-air")) el.setAttribute("transform","translate("+(82*e)+" "+(46*e)+") translate(1376 735) scale("+sc+") translate(-1376 -735)");
       for(const el of $("#fee-plane")) el.setAttribute("transform","translate("+(90*e)+" 0)");
     },
     on:[
