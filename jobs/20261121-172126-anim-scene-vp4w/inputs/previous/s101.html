@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s101" data-in="cut" data-section="PART 6 · POSTCARD CONDITIONS" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="still">
+      <rect x="100" y="250" width="1720" height="556" rx="38" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <g fill="#f3ead6">
+        <rect x="225" y="373" width="690" height="175" rx="87.5"/>
+        <rect x="1005" y="373" width="690" height="175" rx="87.5"/>
+      </g>
+      <g font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="80" font-weight="740" fill="#2b2622">
+        <text x="510" y="491" font-family="'Noto Sans Devanagari', sans-serif" text-anchor="middle">वज़न</text>
+        <text x="1290" y="488" text-anchor="middle">size</text>
+      </g>
+      <path d="M691 462 l26 26 55 -57 M1471 462 l26 26 55 -57" fill="none" stroke="#2e7d4f" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="rules-hold" x="960" y="699" text-anchor="middle" font-family="'Noto Sans Devanagari', sans-serif" font-size="76" font-weight="730" fill="#9e1b1b">फिर भी लगती हैं</text>
+    </g>
+    <g id="side">
+      <g id="postcard">
+        <use href="piece:service-postcard" transform="translate(300 172) scale(2.2)"/>
+        <rect id="right-tint" x="971" y="190" width="629" height="800" rx="10" fill="#fde9a6" opacity=".60" style="mix-blend-mode:multiply"/>
+        <text x="1005" y="309" font-size="44" font-weight="780" fill="#2b2622">POST CARD</text>
+        <rect x="1341" y="365" width="172" height="49" fill="#9e1b1b"/>
+        <text x="1426.4" y="406" text-anchor="middle" font-size="46" font-weight="800" fill="#fff">50 p</text>
+        <text x="382" y="326" font-size="70" font-weight="790" fill="#9e1b1b">Address side</text>
+        <text id="side-hi" x="384" y="395" font-family="'Noto Sans Devanagari', sans-serif" font-size="49" font-weight="650" fill="#6f6a63">पते वाला भाग</text>
+        <path id="divider" d="M960 207 v20 M960 248 v20 M960 289 v20 M960 330 v20 M960 371 v20 M960 412 v20 M960 453 v20 M960 494 v20 M960 535 v20 M960 576 v20 M960 617 v20 M960 658 v20 M960 699 v20 M960 740 v20 M960 781 v20 M960 822 v20 M960 863 v20 M960 904 v20 M960 945 v20" fill="none" stroke="#9b6500" stroke-width="10" stroke-linecap="round"/>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur: 9,
+    shots: [[0,"#still"],[4.54,"#side"]],
+    on: [
+      [2.78,"fade","#rules-hold",{dur:0.27}],
+      [4.54,"pop","#postcard",{from:0.956,spring:"fast"}],
+      [5.04,"fade","#side-hi",{dur:0.26}],
+      [7.18,"draw","#divider",{dur:0.80}],
+      [8.44,"fade","#right-tint",{dur:0.25}]
+    ]
+  })
+  </script>
+</section>
