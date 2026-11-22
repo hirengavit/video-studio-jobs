@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s053" data-in="cut" data-section="PART 4 · WINDOW ENVELOPE" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Envelope window dimensions: width 35 to 50 millimetres, length 80 to 125 millimetres">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<text x="160" y="242" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="810" fill="#9e1b1b">Window का size</text>
+<g id="window-closeup">
+  <rect x="460" y="330" width="1000" height="400" rx="30" fill="#f3ead6" stroke="#2b2622" stroke-width="5" filter="url(#vs-shadow)"/>
+  <rect x="480" y="350" width="960" height="360" rx="21" fill="#e9efea" stroke="#a99b81" stroke-width="3"/>
+  <path d="M502 445 576 371h168L502 613zm64 243 303-317h58L622 688z" fill="#fff" opacity=".54"/>
+  <path d="M1349 699h-74m132-16V571" stroke="#fff" stroke-opacity=".87" stroke-width="7" stroke-linecap="round"/>
+</g>
+<g id="width-guides" stroke="#b9976b" stroke-width="3" fill="none" stroke-linecap="round">
+  <path d="M1469 330h72M1469 730h72"/>
+</g>
+<path id="width-arrow" d="M1527 338v384m-16-365 16-19 16 19m-32 346 16 19 16-19" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="width-label">
+  <rect x="1561" y="438" width="285" height="148" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1586" y="495" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="820" fill="#9e1b1b">चौड़ाई</text>
+</g>
+<text id="width-min" x="1586" y="556" font-family="Inter,sans-serif" font-size="44" font-weight="820" fill="#2b2622">35</text>
+<text id="width-max" x="1653" y="556" font-family="Inter,sans-serif" font-size="44" font-weight="820" fill="#2b2622">– 50 mm</text>
+<g id="length-guides" stroke="#b9976b" stroke-width="3" fill="none" stroke-linecap="round">
+  <path d="M460 741v80m1000-80v80"/>
+</g>
+<path id="length-arrow" d="M469 799h982m-962-16-20 16 20 16m942-32 20 16-20 16" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="length-label">
+  <rect x="635" y="848" width="650" height="103" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="691" y="916" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#9e1b1b">लंबाई</text>
+  <path d="M857 870v59" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+</g>
+<text id="length-min" x="908" y="917" font-family="Inter,sans-serif" font-size="53" font-weight="820" fill="#2b2622">80</text>
+<text id="length-max" x="989" y="917" font-family="Inter,sans-serif" font-size="53" font-weight="820" fill="#2b2622">– 125 mm</text>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [1.60,'fade','#width-guides, #width-label',{dur:.22}],
+    [1.60,'draw','#width-arrow',{dur:.34}],
+    [2.12,'type','#width-min',{cps:24}],
+    [3.26,'type','#width-max',{cps:34}],
+    [4.84,'fade','#length-guides, #length-label',{dur:.22}],
+    [4.84,'draw','#length-arrow',{dur:.44}],
+    [5.68,'type','#length-min',{cps:24}],
+    [7.98,'type','#length-max',{cps:34}]
+  ]
+}
+</script>
+</section>

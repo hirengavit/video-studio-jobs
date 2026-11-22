@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<defs><pattern id="osmic-acid-pack-grains" width="16" height="16" patternUnits="userSpaceOnUse"><circle cx="4" cy="5" r="2" fill="#a8834a" stroke="none"/><circle cx="12" cy="12" r="1.8" fill="#a8834a" stroke="none"/></pattern></defs>
+<g id="box"><path d="M40 60H720V520H40ZM72 124V488H688V124Z" fill="#d9b77c" fill-rule="evenodd"/>
+<path d="M48 504H712M56 140V480M704 140V480" stroke="#a8834a" stroke-width="2" fill="none"/>
+<rect x="230" y="72" width="300" height="40" rx="3" fill="#ffffff" stroke-width="2.5"/></g>
+<g id="cotton"><rect x="72" y="124" width="616" height="364" fill="#ffffff" stroke="none"/>
+<g fill="none" stroke="#d6d1ca" stroke-width="2.5"><path d="M100 150q8-10 16 0q8-10 16 0"/><path d="M600 150q8-10 16 0q8-10 16 0"/><path d="M110 300q8-10 16 0q8-10 16 0"/><path d="M610 300q8-10 16 0q8-10 16 0"/><path d="M100 450q8-10 16 0q8-10 16 0"/><path d="M620 450q8-10 16 0q8-10 16 0"/><path d="M300 470q8-10 16 0q8-10 16 0"/><path d="M440 470q8-10 16 0q8-10 16 0"/><path d="M300 152q8-10 16 0q8-10 16 0"/><path d="M440 156q8-10 16 0q8-10 16 0"/><path d="M140 220q8-10 16 0q8-10 16 0"/><path d="M580 220q8-10 16 0q8-10 16 0"/><path d="M140 380q8-10 16 0q8-10 16 0"/><path d="M590 390q8-10 16 0q8-10 16 0"/></g></g>
+<g id="tin"><rect x="210" y="184" width="340" height="256" rx="6" fill="#a7aaad"/>
+<rect x="210" y="184" width="340" height="52" rx="6" fill="#8c8f94"/><rect x="290" y="194" width="180" height="32" rx="3" fill="#ffffff" stroke-width="2.5"/>
+<path d="M214 236H546" stroke="#53616a" stroke-width="5" fill="none"/>
+<g fill="#53616a" stroke="none"><circle cx="234" cy="236" r="4"/><circle cx="264" cy="236" r="4"/><circle cx="294" cy="236" r="4"/><circle cx="324" cy="236" r="4"/><circle cx="354" cy="236" r="4"/><circle cx="384" cy="236" r="4"/><circle cx="414" cy="236" r="4"/><circle cx="444" cy="236" r="4"/><circle cx="474" cy="236" r="4"/><circle cx="504" cy="236" r="4"/><circle cx="534" cy="236" r="4"/></g></g>
+<g id="sand"><rect x="226" y="244" width="308" height="182" fill="#e6cf9a"/><rect x="226" y="244" width="308" height="182" fill="url(#osmic-acid-pack-grains)" stroke="none"/></g>
+<g id="capsule"><path d="M372 256H388V272Q388 280 396 284Q410 292 410 306V392Q410 410 392 410H368Q350 410 350 392V306Q350 292 364 284Q372 280 372 272Z" fill="#cfe3e8"/>
+<path d="M352 352H408V392Q408 408 392 408H368Q352 408 352 392Z" fill="#e8e0a8" stroke="none"/><path d="M362 300V394" stroke="#ffffff" stroke-width="4" fill="none"/>
+<path d="M372 256H388V272Q388 280 396 284Q410 292 410 306V392Q410 410 392 410H368Q350 410 350 392V306Q350 292 364 284Q372 280 372 272Z" fill="none"/></g>
+<circle data-anchor="base" cx="380" cy="520" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="380" cy="60" r="0" fill="none" stroke="none"/>
+</svg>
