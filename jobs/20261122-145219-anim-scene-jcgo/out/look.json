@@ -8,12 +8,5 @@
   "12.07"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s062",
-   "text": "Quiet space / खाली जगह",
-   "t": 4.89
-  }
- ]
+ "warnings": []
 }
