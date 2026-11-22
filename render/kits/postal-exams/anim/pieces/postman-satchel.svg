@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 300" width="340" height="300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g id="strap">
+    <path d="M58 132 C60 40 280 40 282 132" stroke="#2b2622" stroke-width="18"/>
+    <path d="M58 132 C60 40 280 40 282 132" stroke="#7a4c22" stroke-width="12"/>
+  </g>
+  <g id="body">
+    <rect x="40" y="122" width="260" height="160" rx="22" fill="#8b5a2b" stroke="#2b2622" stroke-width="3"/>
+    <path d="M56 268 H284" stroke="#74481f" stroke-width="3"/>
+    <rect x="48" y="98" width="22" height="24" rx="5" fill="#d9ab3f" stroke="#2b2622" stroke-width="3"/>
+    <rect x="270" y="98" width="22" height="24" rx="5" fill="#d9ab3f" stroke="#2b2622" stroke-width="3"/>
+  </g>
+  <g id="flap">
+    <path d="M44 132 Q44 118 62 118 H278 Q296 118 296 132 V196 Q296 220 270 220 H70 Q44 220 44 196 Z" fill="#74481f" stroke="#2b2622" stroke-width="3"/>
+    <path d="M58 132 H282 V194 Q282 206 268 206 H72 Q58 206 58 194 Z" stroke="#c4925a" stroke-width="2" stroke-dasharray="4 6"/>
+    <rect x="156" y="206" width="28" height="26" rx="4" fill="#d9ab3f" stroke="#2b2622" stroke-width="3"/>
+    <path d="M170 212 V226" stroke="#2b2622" stroke-width="3"/>
+  </g>
+  <circle data-anchor="base" cx="170" cy="282" r="0"/>
+  <circle data-anchor="grip" cx="170" cy="63" r="0"/>
+</svg>
