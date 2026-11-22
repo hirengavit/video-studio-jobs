@@ -1,0 +1,38 @@
+{
+ "moments": [
+  "0.30",
+  "2.03",
+  "4.06",
+  "6.09",
+  "8.12",
+  "10.00"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-off-frame",
+   "scene": "s105",
+   "text": "Address side",
+   "t": 2.03
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s105",
+   "text": "संदेश के लिए",
+   "t": 2.03
+  },
+  {
+   "kind": "low-contrast",
+   "scene": "s105",
+   "text": "छपा advertisement (1.9:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 4.06
+  },
+  {
+   "kind": "off-frame",
+   "scene": "s105",
+   "message": "a card or panel (#s105-service-postcard-card) runs 367 px past the frame edge at 4.1 s (check the camera zoom and the layout)",
+   "t": 4.06
+  }
+ ]
+}
