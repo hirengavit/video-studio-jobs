@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s041" data-in="cut" data-section="PART 3 · LETTER ENVELOPE" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="clip-shot">
+      <use href="piece:domestic-envelope" transform="translate(409 317) scale(1.45)"/>
+      <use id="fasteners" href="piece:clip-and-staple" transform="translate(477 224) scale(1.8)"/>
+      <g id="prohibit">
+        <ellipse cx="776" cy="404" rx="126" ry="86" fill="#fbf7ee" fill-opacity=".25" stroke="#4b4f58" stroke-width="7"/>
+        <path d="M679 350 L873 458 M873 350 L679 458" fill="none" stroke="#4b4f58" stroke-width="12" stroke-linecap="round"/>
+        <rect x="925" y="259" width="190" height="74" rx="37" fill="#4b4f58"/>
+        <text x="1020" y="310" text-anchor="middle" font-family="'Noto Sans Devanagari', sans-serif" font-size="50" font-weight="750" fill="#fff">मना</text>
+      </g>
+      <text id="staple-reminder" x="960" y="996" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="750" fill="#4b4f58">Staple की आदत: यहाँ नहीं</text>
+    </g>
+    <g id="paper-shot">
+      <text id="paper-title" x="960" y="270" text-anchor="middle" font-family="'Noto Sans Devanagari', sans-serif" font-size="75" font-weight="770" fill="#9e1b1b">कागज़ की दो शर्तें</text>
+      <g id="paper-card-1">
+        <rect x="120" y="351" width="800" height="611" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <circle cx="210" cy="441" r="49" fill="#9e1b1b"/>
+        <text x="210" y="462" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="790" fill="#fff">1</text>
+      </g>
+      <g id="paper-card-2">
+        <rect x="1000" y="351" width="800" height="611" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <circle cx="1090" cy="441" r="49" fill="#9e1b1b"/>
+        <text x="1090" y="462" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="790" fill="#fff">2</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur: 10.29,
+    shots: [[0,"#clip-shot"],[6.99,"#paper-shot"]],
+    on: [
+      [1.18,"pop","#staple",{from:0.86,spring:"fast"}],
+      [2.60,"pop","#prohibit",{from:0.92,spring:"fast"}],
+      [3.74,"fade","#staple-reminder",{dur:0.26}],
+      [6.99,"type","#paper-title",{cps:40}],
+      [7.28,"pop","#paper-card-1",{from:0.955,spring:"fast"}],
+      [7.58,"pop","#paper-card-2",{from:0.955,spring:"fast"}]
+    ]
+  })
+  </script>
+</section>
