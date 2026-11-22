@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s172" data-section="PART 9 · COUNTER CHECKS &amp; DUES" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" fill="#2b2622">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="worked-example">
+    <rect x="140" y="220" width="1000" height="737" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text x="235" y="338" font-family="Noto Sans Devanagari, sans-serif" font-size="81" font-weight="800" fill="#9e1b1b">एक हिसाब</text>
+    <path d="M230 375h819" stroke="#ead9a8" stroke-width="4"/>
+    <g id="needed-row" font-size="64" font-weight="750">
+      <text id="needed" class="hi" x="240" y="490" font-family="'Noto Sans Devanagari',Inter,sans-serif">चाहिए</text>
+      <text id="needed-equals" x="766" y="490" text-anchor="middle" font-family="Georgia,serif">=</text>
+      <text id="needed-amount" x="942" y="490" text-anchor="end" font-family="Georgia,serif" fill="#2b2622">₹5</text>
+    </g>
+    <g id="paid-row" font-size="64" font-weight="750">
+      <text id="paid" class="hi" x="240" y="605" font-family="'Noto Sans Devanagari',Inter,sans-serif">लगे</text>
+      <text id="paid-equals" x="766" y="605" text-anchor="middle" font-family="Georgia,serif">=</text>
+      <text id="paid-amount" x="942" y="605" text-anchor="end" font-family="Georgia,serif" fill="#2b2622">₹3</text>
+    </g>
+    <g id="shortfall-row" font-size="64" font-weight="750">
+      <text id="shortfall-term" class="hi" x="240" y="720" font-family="'Noto Sans Devanagari',Inter,sans-serif">कमी</text>
+      <text id="shortfall-equals" x="766" y="720" text-anchor="middle" font-family="Georgia,serif">=</text>
+      <text id="shortfall-amount" x="942" y="720" text-anchor="end" font-family="Georgia,serif" fill="#2b2622">₹2</text>
+    </g>
+    <g id="answer-pill"><rect x="814" y="765" width="170" height="100" rx="50" fill="#e3f1e8" stroke="#2e7d4f" stroke-width="3"/></g>
+    <g id="answer-row" font-size="64" font-weight="750">
+      <text id="double-deficiency" class="hi" x="240" y="835" font-family="'Noto Sans Devanagari',Inter,sans-serif">कमी × 2</text>
+      <text id="answer-equals" x="766" y="835" text-anchor="middle" font-family="Georgia,serif">=</text>
+      <text id="answer-amount" x="942" y="835" text-anchor="end" font-family="Georgia,serif" fill="#215b3e">₹4</text>
+    </g>
+    <g id="dues-mark">
+      <use href="piece:postage-due-mark" transform="translate(1140 240) scale(1.8)"/>
+      <text id="due-label" x="1416" y="607" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="850" fill="#4b4f58">DUE ₹4</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  dur:9.24,
+  on: [
+    [0.88,'fade','#needed-equals, #needed-amount',{dur:.25}],
+    [0.97,'type','#needed',{cps:17}],
+    [3.60,'fade','#paid-equals, #paid-amount',{dur:.24}],
+    [3.60,'type','#paid',{cps:16}],
+    [5.00,'type','#shortfall-term',{cps:14}],
+    [5.18,'fade','#shortfall-equals',{dur:.20}],
+    [5.40,'type','#shortfall-amount',{cps:12}],
+    [6.60,'type','#double-deficiency',{cps:14}],
+    [7.34,'fade','#answer-equals',{dur:.20}],
+    [7.92,'pop','#answer-pill',{from:.90,spring:'soft'}],
+    [7.92,'count','#answer-amount',{from:0,to:4,prefix:'₹',dur:.34}],
+    [8.40,'stamp','#dues-mark',{from:1.14,rot:-4}]
+  ]
+})
+</script>
+</section>
