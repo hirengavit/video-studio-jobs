@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.39",
+  "4.78",
+  "7.18",
+  "9.57",
+  "11.81"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s079",
+   "text": "15 × 100 mm / तक",
+   "t": 2.39
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s079",
+   "text": "15 × 210 mm / तक",
+   "t": 9.57
+  }
+ ]
+}
