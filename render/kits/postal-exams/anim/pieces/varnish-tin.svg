@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="tin" d="M100 112V292A100 18 0 0 0 300 292V112Z" fill="#a7aaad"/>
+<path d="M114 140V292" stroke="#d6d8da" stroke-width="6" fill="none"/>
+<path id="label" d="M100 164V244A100 18 0 0 0 300 244V164A100 18 0 0 1 100 164Z" fill="#ffffff"/>
+<g id="lid"><path d="M96 96V114A104 18 0 0 0 304 114V96Z" fill="#8c8f94"/><ellipse cx="200" cy="96" rx="104" ry="18" fill="#c8cbcc"/><ellipse cx="200" cy="96" rx="88" ry="13" fill="none" stroke="#8c8f94" stroke-width="3"/></g>
+<path id="drip" d="M262 128V170Q262 182 270 182Q278 182 278 170V128Q270 132 262 128Z" fill="#8a5d00" stroke-width="2"/>
+<circle data-anchor="base" cx="200" cy="310" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="200" cy="78" r="0" fill="none" stroke="none"/>
+</svg>

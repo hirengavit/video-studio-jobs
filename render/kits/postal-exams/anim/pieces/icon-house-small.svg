@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<path id="walls" d="M76 174L200 86L324 174V321H76Z" fill="#fbf7ee"/>
+<path id="roof" d="M49 179L194 71Q200 66 206 71L351 179L338 196L200 94L62 196Z" fill="#9e1b1b"/>
+<g id="door"><path d="M168 223H232V321H168Z" fill="#9e1b1b"/><path d="M218 267V277" stroke="#fbf7ee"/></g>
+<g id="windows" fill="#f3ead6"><path d="M100 206H142V252H100ZM258 206H300V252H258Z"/><path d="M121 206V252M100 229H142M279 206V252M258 229H300"/></g>
+<path id="step" d="M62 321H338V334H62Z" fill="#f3ead6"/>
+<circle data-anchor="base" cx="200" cy="334" r="0"/>
+<circle data-anchor="top" cx="200" cy="68" r="0"/>
+</svg>
