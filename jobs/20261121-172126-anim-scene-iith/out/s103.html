@@ -88,9 +88,9 @@
     const smooth=q=>{q=Math.max(0,Math.min(q,1)); return q*q*(3-2*q)};
     const k=smooth(t)* (1-smooth((t-10.52)/.58));
     const cam=$("#card-camera")[0];
-    if(cam) cam.setAttribute("transform","translate("+(-140*k)+" "+(-173*k)+") scale("+(1+.35*k)+" "+(1+.32*k)+")");
+    if(cam) cam.setAttribute("transform","translate("+(-140*k)+" "+(-114*k)+") scale("+(1+.35*k)+" "+(1+.26*k)+")");
     const side=$("#sidebar-camera")[0];
-    if(side) side.setAttribute("transform","translate("+(696*k)+" "+(70*k)+") scale("+(1-.32*k)+")");
+    if(side) side.setAttribute("transform","translate("+(665*k)+" "+(70*k)+") scale("+(1-.32*k)+")");
     const dim=smooth((t-.04)/.5);
     for(const id of ["right-half-legend","address-emphasis","disc-address","disc-directions","directions-emphasis"]) for(const el of $("#"+id)) el.setAttribute("opacity",1-.77*dim);
     const label=$("#post-card-title")[0];
