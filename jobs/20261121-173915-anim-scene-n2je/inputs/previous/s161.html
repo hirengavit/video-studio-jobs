@@ -1,0 +1,65 @@
+<section class="vs-scene" id="s161" data-in="fade" data-in-dur="0.5" data-section="PART 9 · COUNTER CHECKS &amp; DUES" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="opener">
+      <rect x="166" y="325" width="12" height="59" rx="6" fill="#f2b705"/>
+      <text class="hi" x="209" y="369" font-size="45" font-weight="760" fill="#9e1b1b">PART 9 · भाग 9</text>
+      <text x="205" y="522" font-size="92" font-weight="830" fill="#2b2622">Counter checks &amp; dues</text>
+      <text class="hi" x="210" y="638" font-size="65" font-weight="730" fill="#9e1b1b">Counter पर जाँच और due रकम</text>
+      <g id="lower-rate">
+        <rect x="210" y="700" width="714" height="90" rx="45" fill="#faebbc" stroke="#ebd18a" stroke-width="3"/>
+        <text class="hi" x="256" y="759" font-size="52" font-weight="780" fill="#744021">कम rate = शर्तें पूरी</text>
+      </g>
+      <g id="stamp">
+        <rect x="1300" y="265" width="455" height="566" rx="25" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+        <rect x="1300" y="265" width="455" height="566" rx="25" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 25" stroke-linecap="round"/>
+        <rect x="1342" y="310" width="371" height="373" rx="15" fill="#fbf7ee"/>
+        <use href="piece:post-counter-icon" transform="translate(1367 336) scale(.8)"/>
+        <text x="1355" y="782" font-size="83" font-weight="850" fill="#fffdf6">09</text>
+      </g>
+    </g>
+    <g id="steps">
+      <use id="counter" href="piece:post-counter-icon" transform="translate(120 260) scale(.7)"/>
+      <text class="hi" x="123" y="592" font-size="61" font-weight="790" fill="#9e1b1b">Counter</text>
+      <text class="hi" x="125" y="660" font-size="50" font-weight="690" fill="#675442">जाँच के 5 कदम</text>
+      <path d="M624 270V910" fill="none" stroke="#ead7b5" stroke-width="9" stroke-linecap="round"/>
+      <path d="M688 349H1800M688 509H1800M688 669H1800M688 829H1800" fill="none" stroke="#e8d7b9" stroke-width="3" stroke-linecap="round"/>
+      <rect id="step-one-background" x="560" y="200" width="1240" height="140" rx="27" fill="#fffdf8" stroke="#e5cfaa" stroke-width="3"/>
+      <g id="step-shell-1">
+        <circle cx="624" cy="270" r="36" fill="#9e1b1b"/>
+        <text x="624" y="286" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">1</text>
+      </g>
+      <g id="step-shell-2">
+        <circle cx="624" cy="430" r="36" fill="#9e1b1b"/>
+        <text x="624" y="446" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">2</text>
+      </g>
+      <g id="step-shell-3">
+        <circle cx="624" cy="590" r="36" fill="#9e1b1b"/>
+        <text x="624" y="606" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">3</text>
+      </g>
+      <g id="step-shell-4">
+        <circle cx="624" cy="750" r="36" fill="#9e1b1b"/>
+        <text x="624" y="766" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">4</text>
+      </g>
+      <g id="step-shell-5">
+        <circle cx="624" cy="910" r="36" fill="#9e1b1b"/>
+        <text x="624" y="926" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">5</text>
+      </g>
+      <g id="step1">
+        <text class="hi" x="699" y="291" font-size="61" font-weight="810" fill="#292421">Product पहचानिए</text>
+        <use id="mini-forms" href="piece:three-forms-icons" transform="translate(1240 183) scale(.3)"/>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur:10.16,
+    shots:[[0,"#opener"],[5.17,"#steps"]],
+    on:[
+      [.17,"stamp","#stamp",{from:1.06,rot:-3,spring:"soft"}],
+      [1.39,"fade","#lower-rate",{dur:.30}],
+      [7.71,"fade","#step-one-background, #step1",{dur:.30}]
+    ]
+  })
+  </script>
+</section>
