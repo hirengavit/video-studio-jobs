@@ -1,0 +1,74 @@
+<section class="vs-scene" id="s059" data-in="cut" data-section="PART 4 · WINDOW ENVELOPE" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="pos">
+      <text id="position-heading" x="960" y="216" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="66" font-weight="770" fill="#9e1b1b">Window की जगह</text>
+      <use id="position-envelope" href="piece:window-envelope" transform="translate(240 240) scale(2.4)"/>
+      <g id="left-margin" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M260 612 V664 M615 612 V664"/>
+        <path d="M267 638 H608 M267 638 L285 622 M267 638 L285 654 M608 638 L590 622 M608 638 L590 654"/>
+      </g>
+      <g id="left-label">
+        <rect x="307" y="538" width="259" height="66" rx="33" fill="#fff0c4" stroke="#ead083" stroke-width="3"/>
+        <text id="left-value" x="437" y="585" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#7b291e">≥ 15 mm</text>
+      </g>
+      <g id="bottom-margin" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M816 767H876M816 946H876"/>
+        <path d="M846 775V938M846 775l-16 18m16-18 16 18M846 938l-16-18m16 18 16-18"/>
+      </g>
+      <g id="bottom-label">
+        <rect x="900" y="821" width="270" height="76" rx="38" fill="#fff0c4" stroke="#ead083" stroke-width="3"/>
+        <text id="bottom-value" x="1035" y="874" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#7b291e">≥ 15 mm</text>
+      </g>
+      <g id="top-margin" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M816 253H876M816 503H876"/>
+        <path d="M846 261V495M846 261l-16 18m16-18 16 18M846 495l-16-18m16 18 16-18"/>
+      </g>
+      <g id="top-label">
+        <rect id="top-highlight" x="900" y="340" width="270" height="77" rx="38" fill="#fde9a6" stroke="#e5bd61" stroke-width="3"/>
+        <text id="top-value" x="1035" y="393" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#7b291e">≥ 40 mm</text>
+      </g>
+
+      <g id="sender-zone">
+        <rect x="298" y="303" width="360" height="150" rx="13" fill="#faebbc" stroke="#d1a344" stroke-width="4"/>
+        <text id="sender-tag" class="hi" x="478" y="363" font-family="'Noto Sans Devanagari',Inter,sans-serif" style="line-height:1.3" text-anchor="middle" font-size="44" font-weight="820" fill="#762d1b">Sender का नाम</text>
+        <text class="hi" x="478" y="420" font-family="'Noto Sans Devanagari',Inter,sans-serif" style="line-height:1.3" text-anchor="middle" font-size="44" font-weight="780" fill="#762d1b">+ logo</text>
+      </g>
+      <g id="postage-marks">
+        <g id="adhesive">
+          <use href="piece:adhesive-stamp" transform="translate(1220 299) scale(.70)"/>
+        </g>
+        <g id="franking">
+          <use href="piece:franking-impression" transform="translate(1347 215) scale(.75)"/>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur:9.44,
+    update(t,section,$){
+      const zone=section.querySelector('[id="postage-zone"], [id$="-postage-zone"]');
+      if(!zone || zone.tagName.toLowerCase()!=='rect') return;
+      const p=Math.max(0,Math.min(1,(t-6.75)/.26));
+      if(!p) return;
+      const target={x:392,y:17,width:199,height:70};
+      for(const key of Object.keys(target)){
+        const init=zone.getAttribute("data-vs-base-"+key)??zone.getAttribute(key);
+        if(init===null) continue;
+        zone.setAttribute("data-vs-base-"+key,init);
+        zone.setAttribute(key,String(+init+(target[key]-+init)*p));
+      }
+    },
+    on:[
+      [1.10,"color","#left-margin, #bottom-margin, #top-margin",{to:"#85817b",prop:"stroke",dur:.30}],
+      [1.10,"color","#left-value, #bottom-value, #top-value",{to:"#6f6a63",dur:.30}],
+      [1.10,"color","#left-label rect, #bottom-label rect, #top-highlight",{to:"#ece8e0",dur:.30}],
+      [1.10,"color","#left-label rect, #bottom-label rect, #top-highlight",{to:"#cfcbc3",prop:"stroke",dur:.30}],
+      [2.02,"fade","#sender-zone",{dur:.26}],
+      [7.12,"pop","#adhesive",{from:.96,spring:"fast"}],
+      [7.40,"pop","#franking",{from:.96,spring:"fast"}]
+    ]
+  })
+  </script>
+</section>
