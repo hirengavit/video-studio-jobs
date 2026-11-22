@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path id="edge" d="M41 422h192l96-104v12l-91 107H47q-6 0-6-6z" fill="#e7d7ba"/>
+    <path id="sheet" d="M41 24h288v294l-96 104H41z" fill="#fff"/>
+    <path id="fold" d="M233 422l3-77q0-15 15-17l78-10z" fill="#f3ead6"/>
+  </g>
+  <circle data-anchor="base" cx="180" cy="437" r="0"/>
+</svg>
