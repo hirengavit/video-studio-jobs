@@ -1,0 +1,32 @@
+{
+ "moments": [
+  "0.30",
+  "1.82",
+  "3.64",
+  "5.46",
+  "7.28",
+  "8.95"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s065",
+   "message": "move: option \"dur\" isn't used (it takes: by, spring)",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s065",
+   "message": "move: option \"ease\" isn't used (it takes: by, spring)",
+   "t": 0.3
+  },
+  {
+   "kind": "low-contrast",
+   "scene": "s065",
+   "text": "तीन अलग जाँच (1.0:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 1.82
+  }
+ ]
+}
