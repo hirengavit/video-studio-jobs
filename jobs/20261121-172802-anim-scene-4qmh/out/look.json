@@ -12,16 +12,10 @@
  ],
  "warnings": [
   {
-   "kind": "error",
-   "scene": "s128",
-   "message": "update(): $(...)?.setAttribute is not a function",
-   "t": 0.3
-  },
-  {
    "kind": "text-overlap",
    "scene": "s128",
-   "text": "दुनिया का पहला postcard / तीनों तरह के संदेश: एक ही Postcard tarif",
-   "t": 6.79
+   "text": "1 October / Austria",
+   "t": 2.26
   }
  ]
 }
