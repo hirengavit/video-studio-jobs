@@ -6,8 +6,8 @@
       <text class="hi" x="123" y="592" font-size="61" font-weight="790" fill="#9e1b1b">Counter</text>
       <text class="hi" x="125" y="660" font-size="50" font-weight="690" fill="#675442">जाँच के 5 कदम</text>
       <path d="M624 270V910" fill="none" stroke="#ead7b5" stroke-width="9" stroke-linecap="round"/>
-      <path d="M688 355H1800M688 509H1800M688 669H1800M688 829H1800" fill="none" stroke="#e8d7b9" stroke-width="3" stroke-linecap="round"/>
-      <rect id="step-one-background" x="560" y="200" width="1240" height="151" rx="27" fill="#fffdf8" stroke="#e5cfaa" stroke-width="3"/>
+      <path id="step-divider" d="M688 355H1800M688 509H1800M688 669H1800M688 829H1800" fill="none" stroke="#e8d7b9" stroke-width="3" stroke-linecap="round"/>
+      <rect id="step-one-background" x="560" y="188" width="1240" height="163" rx="27" fill="#fffdf8" stroke="#e5cfaa" stroke-width="3"/>
       <rect id="step-two-background" x="560" y="360" width="1240" height="140" rx="27" fill="#fffdf8" stroke="#e5cfaa" stroke-width="3"/>
       <g id="step-shell-1">
         <circle cx="624" cy="270" r="36" fill="#9e1b1b"/>
@@ -57,6 +57,25 @@
     update(t, section, $) {
       const p=(start)=>Math.max(0,Math.min(1,(t-start)/.30));
       const rgb=(a,b,q)=>'rgb('+a.map((n,i)=>Math.round(n+(b[i]-n)*q)).join(',')+')';
+      const u=Math.min(1,Math.max(0,t/.30));
+      const e=u*u*(3-2*u);
+      const m=(a,b)=>a+(b-a)*e;
+      for(const bg of $('#step-one-background')) {
+        bg.setAttribute('y',String(m(200,188)));
+        bg.setAttribute('height',String(m(140,163)));
+      }
+      for(const d of $('#step-divider')) {
+        const y=m(349,355);
+        d.setAttribute('d','M688 '+y+'H1800M688 509H1800M688 669H1800M688 829H1800');
+      }
+      const scale=m(.30,.46), x=m(1240,1150), y=m(183,153);
+      for(const mini of $('#mini-forms')) mini.setAttribute('transform','translate('+x+' '+y+') scale('+scale+')');
+      for(const [id,centre] of [['form-letter',233],['form-ilc',700],['form-postcard',1167]]) {
+        for(const label of $('#'+id)) {
+          label.setAttribute('x',String(x+centre*scale));
+          label.setAttribute('y',String(m(319,338)));
+        }
+      }
       const ink=[43,38,34], grey=[111,106,99];
       for(const [k,cue] of [['letter',0],['ilc',1.32],['postcard',3.36]]) {
         const q=p(cue);
@@ -64,7 +83,7 @@
         for(const body of $('#fill-'+k)) {
           body.style.fill=rgb([255,253,248],[243,234,214],q);
           body.style.stroke=outlines;
-          body.style.strokeWidth=String(3/.46);
+          body.style.strokeWidth=String(3/scale);
         }
         for(const g of $('#icon-'+k)) {
           g.style.stroke=outlines;
@@ -73,7 +92,10 @@
           }
         }
       }
-      for(const title of $('#step-one-title')) title.style.fill=rgb([41,36,33],grey,p(4.8));
+      for(const title of $('#step-one-title')) {
+        title.style.fill=rgb([41,36,33],grey,p(4.8));
+        title.setAttribute('font-size',String(m(61,56)));
+      }
     }
   })
   </script>
