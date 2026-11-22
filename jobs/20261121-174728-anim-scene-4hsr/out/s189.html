@@ -1,0 +1,94 @@
+<section class="vs-scene" id="s189" data-in="cut" data-duration="10.97" data-section="PART 9 · COUNTER CHECKS &amp; DUES" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="und">
+  <rect id="und-plate" x="140" y="201" width="1640" height="791" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <g id="status-undelivered">
+    <rect x="424" y="234" width="530" height="92" rx="46" fill="#f3ead6"/>
+    <text x="689" y="295" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="800" fill="#2b2622">Undelivered</text>
+  </g>
+  <g id="status-unpaid">
+    <rect x="986" y="234" width="367" height="92" rx="46" fill="#f3ead6"/>
+    <text x="1169.5" y="295" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="800" fill="#2b2622">Unpaid</text>
+  </g>
+  <g id="und-postcard" transform="translate(298 364) scale(.76)">
+    <use href="piece:service-postcard"/>
+    <text x="317" y="63" font-family="Inter,sans-serif" font-size="22" font-weight="820" fill="#2b2622">POST CARD</text>
+    <text x="512" y="104" text-anchor="middle" font-family="Inter,sans-serif" font-size="16" font-weight="800" fill="#fff">50 p</text>
+  </g>
+  <g id="und-ilc" transform="translate(1138 382) scale(.77)">
+    <use href="piece:letter-card-folded"/>
+    <text x="330" y="66" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="820" fill="#2b2622">LETTER CARD</text>
+  </g>
+  <text x="526" y="706" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="770" fill="#2b2622">Postcard</text>
+  <text x="1380" y="706" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="770" fill="#2b2622">Letter Card</text>
+  <g id="strike-cards" fill="none" stroke="#4b4f58" stroke-width="14" stroke-linecap="round">
+    <path d="M317 386L731 627M731 386L317 627"/>
+    <path d="M1162 400L1597 598M1597 400L1162 598"/>
+  </g>
+  <g id="destroy-tag">
+    <rect id="destroy-bg" x="745" y="749" width="430" height="90" rx="45" fill="#4b4f58"/>
+    <text id="destroy-text" x="960" y="810" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="53" font-weight="800" fill="#fff">तुरंत नष्ट</text>
+  </g>
+  <g id="und-rule">
+    <rect id="und-rule-bg" x="220" y="860" width="759" height="91" rx="45" fill="#f3ead6"/>
+    <rect id="und-hl" x="280" y="875" width="257" height="58" rx="7" fill="#fde9a6"/>
+    <text id="und-rule-text" x="599.5" y="922" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="790" fill="#2b2622">Undelivered items का नियम</text>
+  </g>
+  <g id="not-every">
+    <rect x="315" y="883" width="1290" height="109" rx="50" fill="#fde9a6"/>
+    <text id="caveat" x="960" y="950" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="770" fill="#2b2622">हर कम postage वाला card नहीं</text>
+  </g>
+</g>
+<g id="sum9">
+  <use id="forms" href="piece:three-forms-icons" transform="translate(400 113) scale(.8)"/>
+  <text x="960" y="448" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="75" font-weight="800" fill="#9e1b1b">Maximum वज़न</text>
+  <g id="stamp-letter">
+    <rect x="140" y="500" width="510" height="328" rx="23" fill="#9e1b1b"/>
+    <rect x="140" y="500" width="510" height="328" rx="23" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 25" stroke-linecap="round"/>
+    <rect x="162" y="522" width="466" height="284" rx="14" fill="none" stroke="#b8403a" stroke-width="3"/>
+    <text x="395" y="591" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="780" fill="#fde9a6">Letter</text>
+    <text x="395" y="744" text-anchor="middle" font-family="Inter,sans-serif" font-size="119" font-weight="820" fill="#fff">500 g</text>
+  </g>
+  <g id="stamp-ilc">
+    <rect x="705" y="500" width="510" height="328" rx="23" fill="#9e1b1b"/>
+    <rect x="705" y="500" width="510" height="328" rx="23" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 25" stroke-linecap="round"/>
+    <rect x="727" y="522" width="466" height="284" rx="14" fill="none" stroke="#b8403a" stroke-width="3"/>
+    <text x="960" y="591" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="780" fill="#fde9a6">Letter Card</text>
+    <text x="960" y="744" text-anchor="middle" font-family="Inter,sans-serif" font-size="119" font-weight="820" fill="#fff">5 g</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  dur:10.97,
+  shots:[[0,"#und"],[5.05,"#sum9"]],
+  on:[
+    [.35,"fade","#not-every",{dur:.28}],
+    [3.50,"underline","#caveat",{words:"नहीं",color:"#2b2622",width:6,gap:9,dur:.34}],
+    [6.39,"pop","#stamp-letter",{from:.94,spring:"fast"}],
+    [8.73,"pop","#stamp-ilc",{from:.94,spring:"fast"}]
+  ],
+  update(t, section, $) {
+    const smooth=(a,b)=>{const u=Math.max(0,Math.min(1,(t-a)/(b-a)));return u*u*(3-2*u);};
+    const q=smooth(0,.48), drag=smooth(0,.34), fade=smooth(.24,.66);
+    for(const plate of $('#und-plate')) plate.setAttribute('height',String(791-138*q));
+    for(const rule of $('#und-rule')) rule.setAttribute('transform','translate(0 '+(-108*q)+')');
+    for(const tag of $('#destroy-tag')) tag.setAttribute('transform','translate('+(492*drag)+' 0)');
+    const mix=(a,b)=>'rgb('+a.map((v,i)=>Math.round(v+fade*(b[i]-v))).join(',')+')';
+    for(const bg of $('#destroy-bg')) bg.style.fill=mix([75,79,88],[235,232,226]);
+    for(const el of $('#destroy-text')) el.style.fill=mix([255,255,255],[111,106,99]);
+    for(const el of $('#und-rule-text')) el.style.fill=mix([43,38,34],[111,106,99]);
+    for(const el of $('#und-rule-bg')) el.style.fill=mix([243,234,214],[235,232,226]);
+    const label = $('#und-rule-text')[0], marker = $('#und-hl')[0];
+    if(marker) marker.style.opacity=String(1-fade);
+    if (!label || !marker) return;
+    const w=label.getComputedTextLength();
+    if (w) {
+      marker.setAttribute('x',599.5-w/2-8);
+      marker.setAttribute('width',label.getSubStringLength(0,11)+16);
+    }
+  }
+}
+</script>
+</section>
