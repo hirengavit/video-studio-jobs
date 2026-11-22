@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s112" data-in="cut" data-section="PART 6 · POSTCARD CONDITIONS" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="trap" data-shot-box="0 0 1920 1080">
+  <g id="trap-banner">
+   <rect x="140" y="206" width="1640" height="118" rx="28" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+   <path d="M199 291l31-59 31 59z" fill="#f2b705" stroke="#f2b705" stroke-width="6" stroke-linejoin="round"/>
+   <path d="M230 251v18m0 10v2" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+   <text x="310" y="283" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="820" fill="#fff">Size पर trap</text>
+  </g>
+  <g id="envelope-card">
+   <rect x="140" y="390" width="780" height="410" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+   <use href="piece:domestic-envelope" transform="translate(201 447) scale(.33)"/>
+   <text x="200" y="693" font-family="Inter,sans-serif" font-size="66" font-weight="820" fill="#2b2622">Envelope</text>
+   <text id="envelope-allowance" x="200" y="759" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="730" fill="#6f6a63">± 2 mm छूट</text>
+   <g id="envelope-stamp">
+    <rect x="663" y="449" width="195" height="194" rx="18" fill="#9e1b1b"/>
+    <rect x="677" y="463" width="167" height="166" rx="11" fill="none" stroke="#fde9a6" stroke-width="8" stroke-dasharray="0 18" stroke-linecap="round"/>
+    <text x="760.5" y="582" text-anchor="middle" font-family="Inter,sans-serif" font-size="85" font-weight="850" fill="#fff">±2</text>
+   </g>
+  </g>
+  <g id="domestic-card">
+   <rect x="1000" y="390" width="780" height="410" rx="28" fill="#fff" stroke="#f2b705" stroke-width="5" filter="url(#vs-shadow)"/>
+   <use href="piece:service-postcard" transform="translate(1060 425) scale(.26)"/>
+   <g id="no-allowance-stamp">
+    <rect x="1570" y="425" width="148" height="144" rx="17" fill="#4b4f58"/>
+    <rect x="1584" y="439" width="120" height="116" rx="10" fill="none" stroke="#d9dada" stroke-width="7" stroke-dasharray="0 15" stroke-linecap="round"/>
+    <text x="1644" y="523" text-anchor="middle" font-family="Inter,sans-serif" font-size="76" font-weight="850" fill="#fff">0</text>
+   </g>
+   <text x="1060" y="625" font-family="Inter,sans-serif" font-size="60" font-weight="820" fill="#2b2622">Domestic postcard</text>
+   <text id="no-domestic-allowance" x="1062" y="695" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="760" fill="#4b4f58">छूट नहीं</text>
+   <text id="domestic-size-line" x="1060" y="762" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="720" fill="#2b2622">size बिना छूट के तय: 140 × 90 mm</text>
+  </g>
+  <g id="allowance-reminder">
+   <rect x="140" y="856" width="1640" height="115" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+   <text id="international-allowance" x="960" y="928" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="770" fill="#2b2622">2 mm की छूट: International postcard पर</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ on:[
+  [0,"slide","#domestic-card",{from:"down",dist:38,spring:"soft"}],
+  [1.52,"underline","#no-domestic-allowance",{color:"#f2b705",width:6,dur:.33,gap:7}],
+  [2.36,"fade","#domestic-size-line",{dur:.40}],
+  [7.08,"fade","#allowance-reminder",{dur:.40}],
+  [9.58,"highlight","#international-allowance",{words:"International",color:"#fde9a6",opacity:.92,pad:7,dur:.40}]
+ ]
+})
+</script>
+</section>
