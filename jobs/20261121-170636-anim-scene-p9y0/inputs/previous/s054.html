@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s054" data-duration="11.08" data-section="PART 4 · WINDOW ENVELOPE" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fffbf2"/>
+<g id="window-materials">
+  <rect x="160" y="200" width="1600" height="760" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <rect x="184" y="222" width="1552" height="132" rx="16" fill="#f3ead6"/>
+  <text x="960" y="308" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="68" font-weight="800" fill="#2b2622">Window का material</text>
+  <path d="M1188 372V936" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <g id="material-row-1">
+    <path d="M192 510H1728" fill="none" stroke="#ead9a8" stroke-width="3"/>
+    <rect id="row-focus-1" x="192" y="378" width="978" height="122" rx="17" fill="#fff7e2" stroke="#f2b705" stroke-width="4" opacity="0"/>
+    <rect id="value-focus-1" x="1212" y="384" width="478" height="110" rx="55" fill="none" stroke="#f2b705" stroke-width="5" opacity="0"/>
+    <text id="material-1" x="232" y="459" font-family="Inter,sans-serif" font-size="64" font-weight="800" fill="#2b2622">Glassine paper</text>
+    <rect x="1221" y="393" width="460" height="92" rx="46" fill="#f3ead6"/>
+    <text id="measure-1" x="1451" y="461" text-anchor="middle" font-family="Inter,Noto Sans Devanagari,sans-serif" font-size="62" font-weight="820" fill="#2b2622">35 GSM</text>
+  </g>
+  <g id="material-row-2">
+    <path d="M192 652H1728" fill="none" stroke="#ead9a8" stroke-width="3"/>
+    <rect id="row-focus-2" x="192" y="520" width="978" height="122" rx="17" fill="#fff7e2" stroke="#f2b705" stroke-width="4" opacity="0"/>
+    <rect id="value-focus-2" x="1212" y="526" width="478" height="110" rx="55" fill="none" stroke="#f2b705" stroke-width="5" opacity="0"/>
+    <text id="material-2" x="232" y="601" font-family="Inter,sans-serif" font-size="64" font-weight="800" fill="#2b2622">Cellophane paper</text>
+    <rect x="1221" y="535" width="460" height="92" rx="46" fill="#f3ead6"/>
+    <text id="measure-2" x="1451" y="603" text-anchor="middle" font-family="Inter,Noto Sans Devanagari,sans-serif" font-size="62" font-weight="820" fill="#2b2622">40 GSM</text>
+  </g>
+  <g id="material-row-3">
+    <path d="M192 794H1728" fill="none" stroke="#ead9a8" stroke-width="3"/>
+    
+    <text id="material-3" x="232" y="729" font-family="Inter,sans-serif" font-size="59" font-weight="800" fill="#2b2622">PVC</text>
+    <rect x="1221" y="677" width="460" height="92" rx="46" fill="#f3ead6"/>
+    <text id="measure-3" x="1451" y="745" text-anchor="middle" font-family="Inter,Noto Sans Devanagari,sans-serif" font-size="62" font-weight="820" fill="#2b2622">15 micron</text>
+  </g>
+  <g id="material-row-4">
+    
+    
+    <text id="material-4" x="232" y="871" font-family="Inter,sans-serif" font-size="59" font-weight="800" fill="#2b2622">BOPP</text>
+    <rect x="1221" y="819" width="460" height="92" rx="46" fill="#f3ead6"/>
+    <text id="measure-4" x="1451" y="887" text-anchor="middle" font-family="Inter,Noto Sans Devanagari,sans-serif" font-size="62" font-weight="820" fill="#2b2622">15 micron</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  update(t, section, $) {
+    const ease = (from, to, at) => { const p = Math.max(0, Math.min(1, (at - from) / (to - from))); return p * p * (3 - 2 * p); };
+    for (const [n, rowAt, valueAt, offAt] of [[1,4.48,5.62,7.77],[2,8.16,9.20,10.66]]) {
+      const hold = 1 - ease(offAt, offAt + .29, t);
+      $(`#row-focus-${n}`)[0].setAttribute('opacity', (ease(rowAt, rowAt + .20, t) * hold).toFixed(4));
+      $(`#value-focus-${n}`)[0].setAttribute('opacity', (ease(valueAt, valueAt + .18, t) * hold).toFixed(4));
+    }
+  }
+}
+</script>
+</section>
