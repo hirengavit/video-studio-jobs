@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" width="560" height="360">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect id="paper" x="6" y="6" width="548" height="348" rx="12" fill="white" stroke="#ead9a8" stroke-width="7"/>
+    <path id="top-band" d="M17 22Q17 17 22 17H538Q543 17 543 22V96H17Z" fill="#fbf7ee" stroke="none"/>
+    <rect x="6" y="6" width="548" height="348" rx="12" fill="none"/>
+    <g id="bars" fill="#2b2622" stroke="none">
+      <rect x="476" y="119" width="14" height="190" rx="2"/>
+      <rect x="506" y="119" width="14" height="190" rx="2"/>
+    </g>
+    <path id="address-block" d="M197 190H410 M197 218H382 M197 246H400" fill="none" stroke="#a4a098"/>
+    <path id="permit-line" d="M65 293H189" fill="none" stroke="#a4a098"/>
+  </g>
+  <circle data-anchor="base" cx="280" cy="354" r="0"/>
+</svg>

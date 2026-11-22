@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <rect id="paper" x="21" y="94" width="358" height="212" fill="#e4eaf0" rx="7"/>
+  <g id="airmail-border" stroke="none">
+    <path d="M29 98h13l-5 8h-13Z M29 294h13l-5 8h-13Z" fill="#9e1b1b"/>
+    <path d="M53 98h13l-5 8h-13Z M53 294h13l-5 8h-13Z" fill="#496887"/>
+    <path d="M77 98h13l-5 8h-13Z M77 294h13l-5 8h-13Z" fill="#9e1b1b"/>
+    <path d="M101 98h13l-5 8h-13Z M101 294h13l-5 8h-13Z" fill="#496887"/>
+    <path d="M125 98h13l-5 8h-13Z M125 294h13l-5 8h-13Z" fill="#9e1b1b"/>
+    <path d="M149 98h13l-5 8h-13Z M149 294h13l-5 8h-13Z" fill="#496887"/>
+    <path d="M173 98h13l-5 8h-13Z M173 294h13l-5 8h-13Z" fill="#9e1b1b"/>
+    <path d="M197 98h13l-5 8h-13Z M197 294h13l-5 8h-13Z" fill="#496887"/>
+    <path d="M221 98h13l-5 8h-13Z M221 294h13l-5 8h-13Z" fill="#9e1b1b"/>
+    <path d="M245 98h13l-5 8h-13Z M245 294h13l-5 8h-13Z" fill="#496887"/>
+    <path d="M269 98h13l-5 8h-13Z M269 294h13l-5 8h-13Z" fill="#9e1b1b"/>
+    <path d="M293 98h13l-5 8h-13Z M293 294h13l-5 8h-13Z" fill="#496887"/>
+    <path d="M317 98h13l-5 8h-13Z M317 294h13l-5 8h-13Z" fill="#9e1b1b"/>
+    <path d="M341 98h13l-5 8h-13Z M341 294h13l-5 8h-13Z" fill="#496887"/>
+    <path d="M25 115l8 -5v13l-8 5Z M367 115l8 -5v13l-8 5Z" fill="#496887"/>
+    <path d="M25 140l8 -5v13l-8 5Z M367 140l8 -5v13l-8 5Z" fill="#9e1b1b"/>
+    <path d="M25 165l8 -5v13l-8 5Z M367 165l8 -5v13l-8 5Z" fill="#496887"/>
+    <path d="M25 190l8 -5v13l-8 5Z M367 190l8 -5v13l-8 5Z" fill="#9e1b1b"/>
+    <path d="M25 215l8 -5v13l-8 5Z M367 215l8 -5v13l-8 5Z" fill="#496887"/>
+    <path d="M25 240l8 -5v13l-8 5Z M367 240l8 -5v13l-8 5Z" fill="#9e1b1b"/>
+    <path d="M25 265l8 -5v13l-8 5Z M367 265l8 -5v13l-8 5Z" fill="#496887"/>
+  </g>
+  <path id="fold" d="M48 276H352M58 284H342" stroke="#aaa39a" stroke-width="1.8"/>
+  <g id="printed-stamp">
+    <rect x="308" y="119" width="42" height="48" fill="none" stroke="#9e1b1b" rx="2"/>
+    <path d="M315 127h28v32h-28Z" stroke="#9e1b1b" stroke-width="1.5"/>
+  </g>
+  <circle data-anchor="base" cx="200" cy="306" r="0"/>
+</svg>
