@@ -52,7 +52,6 @@
   on:[
     [0,'out','#breach-letter-card-active, #breach-letter-card-as, #breach-letter-card-formula',{dur:.32}],
     [0,'draw','#postcard-header-outline',{dur:.32}],
-    [0,'color','#col-two-as, #col-two-line-one, #col-two-line-two, #col-two-line-three',{to:'#6f6a63',dur:.34}],
     [2.10,'draw','#postcard-as-outline',{dur:.35}],
     [2.10,'type','#postcard-cell-1',{cps:18}],
     [3.64,'draw','#postcard-formula-outline',{dur:.40}],
@@ -63,9 +62,15 @@
     [5.72,'type','#postcard-cell-5',{cps:23}],
     [8.36,'draw','#postcard-rounding-outline',{dur:.34}],
     [8.36,'type','#postcard-cell-6',{cps:20}],
-    [10.0,'color','#col-one-1, #col-one-2, #col-one-3, #col-one-4, #col-one-5, #col-one-6, #col-two-as, #col-two-line-one, #col-two-line-two, #col-two-line-three',{to:'#2b2622',dur:.32}],
     [10.0,'out','#postcard-header-outline, #postcard-as-outline, #postcard-formula-outline, #postcard-minimum-outline, #postcard-rounding-outline',{dur:.34}]
-  ]
+  ],
+  update(t,section,$) {
+    const ramp=(cue)=>Math.max(0,Math.min(1,(t-cue)/.34));
+    const grey=[111,106,99], ink=[43,38,34];
+    const tint=(level)=>'rgb('+ink.map((v,i)=>Math.round(v+(grey[i]-v)*level)).join(',')+')';
+    for(const id of [1,2,3,4,5,6]) for(const e of $('#col-one-'+id)) e.style.fill=tint(1-ramp(10));
+    for(const id of ['as','line-one','line-two','line-three']) for(const e of $('#col-two-'+id)) e.style.fill=tint(ramp(0)*(1-ramp(10)));
+  }
 })
 </script>
 </section>
