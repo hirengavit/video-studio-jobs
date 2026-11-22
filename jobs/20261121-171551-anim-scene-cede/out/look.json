@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.23",
+  "4.46",
+  "6.68",
+  "8.91",
+  "10.99"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s087",
+   "text": "Letter postage / =",
+   "t": 4.46
+  }
+ ]
+}
