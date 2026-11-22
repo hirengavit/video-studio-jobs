@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s085" data-in="cut" data-section="PART 5 · INLAND LETTER CARD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="A separate sheet breaches inland letter card conditions">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="opt">
+  <g id="option-card">
+   <rect x="180" y="250" width="1560" height="555" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+   <path d="M212 264H1708" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+   <rect x="263" y="316" width="315" height="94" rx="47" fill="#9e1b1b"/>
+   <text x="420.5" y="380" text-anchor="middle" font-family="Inter,sans-serif" font-size="61" font-weight="840" fill="#fff">Option</text>
+   <path d="M263 446H1657" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+   <text id="option-line-one" x="263" y="547" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="72" font-weight="770" fill="#2b2622">वज़न 5 grams के अंदर हो, तो</text>
+   <text id="option-line-two" x="263" y="661" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="72" font-weight="770" fill="#2b2622">अलग sheet रख सकते हैं</text>
+   <g id="option-wrong">
+    <g id="wrong-pill">
+    <rect x="1383" y="316" width="272" height="94" rx="46" fill="#eeecea"/>
+    <text x="1490" y="380" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="810" fill="#4b4f58">गलत</text>
+    </g>
+    <path id="wrong-cross" d="m1420 348 29 29m0-29-29 29" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+   </g>
+  </g>
+ </g>
+ <g id="rule">
+  <rect x="150" y="228" width="1620" height="620" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+  <use href="piece:letter-card-folded" transform="translate(215 342) scale(.87)"/>
+  <text x="489" y="686" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="820" fill="#2b2622">Letter Card</text>
+  <path id="letter-rule-arrow" d="M832 468h244m-61-47 61 47-61 47" fill="none" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="treated-as-letter">
+   <g id="closed-envelope" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="1130" y="342" width="548" height="261" rx="13" fill="#f3ead6"/>
+    <path d="M1137 351 1404 496 1671 351" fill="none"/>
+    <rect x="1586" y="362" width="53" height="31" rx="3" fill="#fffefa"/>
+   </g>
+   <text x="1404" y="686" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="820" fill="#2b2622">Letter</text>
+  </g>
+  <g id="due-on-delivery">
+   <rect x="540" y="726" width="840" height="91" rx="44" fill="#f3ead6"/>
+   <text id="delivery-formula" x="960" y="789" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#2b2622">Delivery पर: कमी × 2</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ shots:[[0,"#opt"],[3.98,"#rule"]],
+ on:[
+  [0,"type","#option-line-two",{cps:21}],
+  [1.70,"strike","#option-line-one, #option-line-two",{color:"#4b4f58",width:5,dim:.75,dur:.35}],
+  [1.90,"pop","#wrong-cross",{from:.93}],
+  [2.00,"fade","#wrong-pill",{dur:.18}],
+  [5.58,"draw","#letter-rule-arrow",{dur:.55}],
+  [5.58,"pop","#treated-as-letter",{from:.91}],
+  [8.18,"pop","#due-on-delivery",{from:.9}],
+  [9.76,"highlight","#delivery-formula",{words:"× 2",color:"#fde9a6",opacity:.95,pad:6,dur:.34}]
+ ]
+})
+</script>
+</section>
