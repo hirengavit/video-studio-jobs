@@ -8,12 +8,5 @@
   "13.68"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s155",
-   "text": "Union Territories / कुछ important towns",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
