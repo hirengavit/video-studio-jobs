@@ -65,17 +65,18 @@
       ["#towns",806,604,592,1102,658,48,1457,354]
     ];
     for(const [sel,x,y,w,tx,ty,fs,nx,nw] of places) {
+      const slide=sel==="#towns" ? ease(t/.27) : e, lift=sel==="#towns" ? ease((t-.27)/.24) : e;
       for(const el of $(sel+" rect")) {
-        el.setAttribute("x",mix(x,nx));el.setAttribute("y",mix(y,494));
+        el.setAttribute("x",x+(nx-x)*slide);el.setAttribute("y",y+(494-y)*lift);
         el.setAttribute("width",mix(w,nw));el.setAttribute("height",mix(80,62));
       }
       for(const el of $(sel+" text")) {
-        el.setAttribute("x",mix(tx,nx+nw/2));el.setAttribute("y",mix(ty,537));
+        el.setAttribute("x",tx+(nx+nw/2-tx)*slide);el.setAttribute("y",ty+(537-ty)*lift);
         el.setAttribute("font-size",mix(fs,36));
       }
     }
     for(const el of $("#qms-places")) el.style.opacity=String(1-.40*e);
-    for(const el of $("#qms-step-1-layout")) el.setAttribute("transform","translate(0 "+(129*(1-e))+")");
+    for(const el of $("#qms-step-1-layout")) el.setAttribute("transform","translate(0 "+(129*(1-ease((t-.26)/.34)))+")");
     const grow=ease((t-11.18)/.36);
     for(const el of $("#qms-step-3-bg")) el.setAttribute("height",120+67*grow);
     const phase=Math.max(0,Math.min(1,(t-8.62)/.60)), pulse=Math.sin(Math.PI*phase);
