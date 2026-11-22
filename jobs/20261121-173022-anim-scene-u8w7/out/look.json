@@ -1,0 +1,27 @@
+{
+ "moments": [
+  "0.30",
+  "0.31",
+  "0.63",
+  "0.94",
+  "1.26",
+  "1.42"
+ ],
+ "problems": [
+  "s129: no photo \"first-postcard-austria-1869\" in the materials"
+ ],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s129",
+   "message": "stamp: option \"dur\" isn't used (it takes: from, spring, rot)",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s129",
+   "text": "1 October / Austria",
+   "t": 0.3
+  }
+ ]
+}
