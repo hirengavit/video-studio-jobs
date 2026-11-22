@@ -1,0 +1,67 @@
+<section class="vs-scene" id="s043" data-duration="9.30" data-section="PART 3 · LETTER ENVELOPE" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="paper-shot">
+      <text id="paper-title" x="960" y="270" text-anchor="middle" font-family="'Noto Sans Devanagari', sans-serif" font-size="75" font-weight="770" fill="#9e1b1b">कागज़ की दो शर्तें</text>
+      <g id="paper-card-1">
+        <rect x="120" y="351" width="800" height="611" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <circle cx="210" cy="441" r="49" fill="#9e1b1b"/>
+        <text x="210" y="462" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="790" fill="#fff">1</text>
+        <g id="thickness">
+          <text x="293" y="462" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="800" fill="#2b2622">मोटाई</text>
+          <use id="thickness-swatch" href="piece:paper-sheet-swatch" transform="translate(326 627) scale(.64)"/>
+          <path id="edge-caliper" d="M348 895H592M348 908H592M595 892h18m-9 0v19m-9 0h18" stroke="#9b6500" stroke-width="4" stroke-linecap="round" fill="none"/>
+        </g>
+        <g id="thickness-value">
+          <rect x="280" y="518" width="490" height="92" rx="18" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+          <text id="thick-start" x="325" y="581" font-family="Inter,sans-serif" font-size="61" font-weight="820" fill="#2b2622">0.15</text>
+          <text id="thick-end" x="472" y="581" font-family="Inter,sans-serif" font-size="61" font-weight="820" fill="#2b2622">– 0.5 mm</text>
+        </g>
+      </g>
+      <g id="paper-card-2">
+        <rect x="1000" y="351" width="800" height="611" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+        <circle cx="1090" cy="441" r="49" fill="#9e1b1b"/>
+        <text x="1090" y="462" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="790" fill="#fff">2</text>
+        <g id="paper-gsm">
+          <text x="1173" y="462" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="800" fill="#2b2622">कागज़</text>
+          <use id="tiny-scale" href="piece:postal-scale" transform="translate(1290 708) scale(.50)"/>
+          <use id="gsm-swatch" href="piece:paper-sheet-swatch" transform="translate(1372 617) scale(.235)"/>
+        </g>
+        <g id="gsm-value-card">
+          <rect x="1160" y="518" width="490" height="92" rx="18" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+          <text id="gsm-value" x="1405" y="581" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="820" fill="#2b2622">कम से कम 70 GSM</text>
+        </g>
+      </g>
+    </g>
+  <g id="gsm-def">
+    <rect x="1012" y="975" width="773" height="67" rx="32" fill="#fde9a6"/>
+    <text x="1398.5" y="1022" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="48" font-weight="790" fill="#2b2622">GSM = ग्राम प्रति वर्ग मीटर</text>
+  </g>
+  <g id="square-area">
+    <path d="M1580 678h155v155h-155z" fill="#fbf7ee" stroke="#9e1b1b" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M1619 678v155m38-155v155m39-155v155m-116-116h155m-155 38h155m-155 39h155" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  </g>
+  <text id="square-area-tag" x="1657.5" y="892" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" font-weight="810" fill="#9e1b1b">1 m²</text>
+  <g id="square-mass">
+    <rect x="1025" y="700" width="251" height="151" rx="23" fill="#f3ead6"/>
+    <text x="1150.5" y="754" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="43" font-weight="780" fill="#2b2622" textLength="209" lengthAdjust="spacingAndGlyphs">1 m² sheet</text>
+    <text x="1150.5" y="809" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="42" font-weight="710" fill="#2b2622" textLength="209" lengthAdjust="spacingAndGlyphs">वज़न: grams</text>
+  </g>
+  <g id="mm-tag">
+    <rect x="635" y="742" width="229" height="85" rx="42" fill="#fde9a6"/>
+    <text x="749.5" y="800" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="57" font-weight="810" fill="#2b2622">mm में</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [0,'pop','#gsm-def',{spring:'fast'}],
+    [2.10,'draw','#square-area',{dur:.62}],
+    [2.46,'fade','#square-area-tag',{dur:.29}],
+    [4.30,'fade','#square-mass',{dur:.32}],
+    [6.16,'pulse','#thickness-value',{amount:.04}],
+    [6.80,'fade','#mm-tag',{dur:.25}],
+  ]
+}
+</script>
+</section>
