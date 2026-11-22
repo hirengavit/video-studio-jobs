@@ -8,12 +8,5 @@
   "12.41"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s064",
-   "text": "साफ़ दिखे / Window size",
-   "t": 10.05
-  }
- ]
+ "warnings": []
 }
