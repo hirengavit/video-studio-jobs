@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="shield" d="M200 73 C238 97 270 105 307 108 V190 C307 251 260 298 200 329 C140 298 93 251 93 190 V108 C130 105 162 97 200 73Z" fill="#f3ead6"/><path id="heart-line" d="M126 194 H167 C155 182 158 163 173 160 C185 158 194 165 200 175 C206 165 215 158 227 160 C242 163 245 182 233 194 L200 226 L167 194 M233 194 H274" stroke="#9e1b1b"/>
+<circle data-anchor="base" cx="200" cy="329" r="0"/>
+</svg>

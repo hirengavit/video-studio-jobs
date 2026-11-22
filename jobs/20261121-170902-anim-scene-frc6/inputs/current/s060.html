@@ -1,0 +1,75 @@
+<section class="vs-scene" id="s060" data-in="cut" data-section="PART 4 · WINDOW ENVELOPE" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="pos">
+      <text id="position-heading" x="960" y="216" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="66" font-weight="770" fill="#9e1b1b">Window की जगह</text>
+      <use id="position-envelope" href="piece:window-envelope" transform="translate(240 240) scale(2.4)"/>
+      <g id="left-margin" fill="none" stroke="#85817b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M260 612 V664 M615 612 V664"/>
+        <path d="M267 638 H608 M267 638 L285 622 M267 638 L285 654 M608 638 L590 622 M608 638 L590 654"/>
+      </g>
+      <g id="left-label">
+        <rect x="307" y="538" width="259" height="66" rx="33" fill="#ece8e0" stroke="#cfcbc3" stroke-width="3"/>
+        <text id="left-value" x="437" y="585" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#6f6a63">≥ 15 mm</text>
+      </g>
+      <g id="bottom-margin" fill="none" stroke="#85817b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M816 767H876M816 946H876"/>
+        <path d="M846 775V938M846 775l-16 18m16-18 16 18M846 938l-16-18m16 18 16-18"/>
+      </g>
+      <g id="bottom-label">
+        <rect x="900" y="821" width="270" height="76" rx="38" fill="#ece8e0" stroke="#cfcbc3" stroke-width="3"/>
+        <text id="bottom-value" x="1035" y="874" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#6f6a63">≥ 15 mm</text>
+      </g>
+      <g id="top-margin" fill="none" stroke="#85817b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M816 253H876M816 503H876"/>
+        <path d="M846 261V495M846 261l-16 18m16-18 16 18M846 495l-16-18m16 18 16-18"/>
+      </g>
+      <g id="top-label">
+        <rect id="top-highlight" x="900" y="340" width="270" height="77" rx="38" fill="#ece8e0" stroke="#cfcbc3" stroke-width="3"/>
+        <text id="top-value" x="1035" y="393" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#6f6a63">≥ 40 mm</text>
+      </g>
+
+      <g id="sender-zone">
+        <rect x="313" y="303" width="330" height="153" rx="13" fill="#faebbc" stroke="#d1a344" stroke-width="4"/>
+        <text id="sender-tag" class="hi" x="478" y="367" text-anchor="middle" font-size="41" font-weight="820" fill="#762d1b">Sender का नाम</text>
+        <text class="hi" x="478" y="422" text-anchor="middle" font-size="41" font-weight="780" fill="#762d1b">+ logo</text>
+      </g>
+      <g id="postage-marks">
+        <g id="adhesive">
+          <use href="piece:adhesive-stamp" transform="translate(1306 316) scale(.65)"/>
+        </g>
+        <g id="franking">
+          <use href="piece:franking-impression" transform="translate(1410 299) scale(.4)"/>
+        </g>
+      </g>
+      <g id="postage-top-right">
+        <rect x="1246" y="255" width="338" height="54" rx="19" fill="#fde9a6" stroke="#e5bd61" stroke-width="3"/>
+        <text x="1415" y="292" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="810" fill="#762d1b">ऊपर right</text>
+      </g>
+      <g id="postage-address-gap" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1255 457h63M1190 569h128M1285 463v100m0-100-13 15m13-15 13 15m-13 85-13-15m13 15 13-15"/>
+      </g>
+      <g id="postage-gap-label">
+        <rect x="1323" y="485" width="260" height="66" rx="22" fill="#fff0c4" stroke="#ead083" stroke-width="3"/>
+        <text x="1453" y="531" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="810" fill="#762d1b">≥ 10 mm</text>
+      </g>
+      <rect id="lower-barcode-focus" x="345.6" y="813.6" width="1228.8" height="96" rx="14" fill="none" stroke="#b37500" stroke-width="6"/>
+      <g id="lower-barcode-label">
+        <rect x="1252" y="825" width="294" height="69" rx="22" fill="#fde9a6" stroke="#e5bd61" stroke-width="3"/>
+        <text x="1399" y="874" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="810" fill="#762d1b">नीचे 15 mm</text>
+      </g>
+    </g>
+  </svg>
+
+  <script type="text/scene">
+  ({
+    on:[
+      [0,"fade","#postage-top-right",{dur:.28}],
+      [1.52,"draw","#postage-address-gap",{dur:.50}],
+      [5.26,"fade","#postage-gap-label",{dur:.25}],
+      [6.50,"draw","#lower-barcode-focus",{dur:.40}],
+      [7.92,"fade","#lower-barcode-label",{dur:.26}]
+    ]
+  })
+  </script>
+</section>
