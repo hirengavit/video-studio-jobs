@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s182" data-section="PART 9 · COUNTER CHECKS &amp; DUES" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" fill="#2b2622">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="calc">
+    <g id="calc-left">
+      <rect x="135" y="274" width="704" height="596" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="135" y="274" width="704" height="136" rx="28" fill="#9e1b1b"/>
+      <path d="M135 383h704v27H135z" fill="#9e1b1b"/>
+      <text x="487" y="365" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="72" font-weight="800" fill="#fff">हिसाब 1:</text>
+      <text id="double-postage" x="487" y="532" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="72" font-weight="790">दोगुना postage</text>
+      <text id="minus-credit" x="487" y="624" text-anchor="middle" font-size="72" font-weight="790">− credit</text>
+      <g id="letter-applies">
+        <rect x="302" y="722" width="370" height="101" rx="50.5" fill="#e8f3e9" stroke="#2e7d4f" stroke-width="3"/>
+        <use href="piece:domestic-envelope" transform="translate(338 751) scale(.12)"/>
+        <text x="538" y="792" text-anchor="middle" font-size="64" font-weight="800">Letter</text>
+      </g>
+    </g>
+    <g id="calc-right">
+      <rect x="1081" y="274" width="704" height="596" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect x="1081" y="274" width="704" height="136" rx="28" fill="#fde9a6"/>
+      <path d="M1081 383h704v27h-704z" fill="#fde9a6"/>
+      <text x="1433" y="365" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="72" font-weight="800" fill="#694700">हिसाब 2:</text>
+      <text id="double-shortfall" x="1433" y="569" text-anchor="middle" font-family="Noto Sans Devanagari, sans-serif" font-size="73" font-weight="790">कमी का दोगुना</text>
+    </g>
+    <g id="calc-ne">
+      <circle cx="960" cy="551" r="73" fill="#4b4f58"/>
+      <text x="960" y="582" text-anchor="middle" font-size="93" font-weight="810" fill="#fff">≠</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  on: [
+    [0.96,'type','#double-postage',{cps:15}],
+    [1.95,'type','#minus-credit',{cps:16}],
+    [2.41,'slide','#calc-right',{from:'right',dist:95,spring:'soft'}],
+    [2.93,'type','#double-shortfall',{cps:13}],
+    [4.39,'pop','#calc-ne',{spring:'soft'}],
+    [6.84,'pop','#letter-applies',{spring:'soft'}]
+  ]
+})
+</script>
+</section>
