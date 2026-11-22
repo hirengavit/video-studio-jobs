@@ -1,6 +1,7 @@
 <section class="vs-scene" id="s151" data-in="cut" data-section="PART 8 · MAIL CLASSES &amp; AIRMAIL" data-series="PRODUCTS">
   <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
     <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <defs><clipPath id="s151-arc-clip"><rect id="air-draw-window" x="563" y="330" width="0" height="368"/></clipPath></defs>
     <g id="route">
       <text x="960" y="256" text-anchor="middle" font-family="Inter, sans-serif" font-size="76" font-weight="800" fill="#9e1b1b">Limited airlift</text>
       <text id="term-hi" x="960" y="324" text-anchor="middle" font-family="'Noto Sans Devanagari', sans-serif" font-size="51" font-weight="660" fill="#6f6a63">सीमित हवाई ढुलाई</text>
@@ -21,7 +22,7 @@
         <text x="960" y="791" text-anchor="middle" font-family="'Noto Sans Devanagari', sans-serif" font-size="48" font-weight="710" fill="#4b4f58">मुश्किल हिस्सा</text>
       </g>
       <path id="air-guide" d="M568 692 Q960 8 1352 692" fill="none" stroke="none" aria-hidden="true"/>
-      <path id="air-arc" d="M568.0 692.0 L586.3 660.8 M597.0 643.2 L615.3 614.4 M626.1 598.2 L644.4 571.7 M655.1 556.9 L673.4 532.8 M684.1 519.4 L702.4 497.6 M713.2 485.6 L731.5 466.2 M742.2 455.6 L760.5 438.6 M771.3 429.3 L789.6 414.7 M800.3 406.8 L818.6 394.5 M829.3 388.0 L847.6 378.1 M858.4 373.0 L876.7 365.5 M887.4 361.7 L905.7 356.6 M916.4 354.2 L934.7 351.4 M945.5 350.5 L963.8 350.0 M974.5 350.5 L992.8 352.4 M1003.6 354.2 L1021.8 358.5 M1032.6 361.7 L1050.9 368.4 M1061.6 373.0 L1079.9 382.0 M1090.7 388.0 L1109.0 399.4 M1119.7 406.8 L1138.0 420.5 M1148.7 429.3 L1167.0 445.4 M1177.8 455.6 L1196.1 474.0 M1206.8 485.6 L1225.1 506.4 M1235.9 519.4 L1254.1 542.6 M1264.9 556.9 L1283.2 582.5 M1293.9 598.2 L1312.2 626.1 M1323.0 643.2 L1341.3 673.5" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+      <path id="air-arc" clip-path="url(#s151-arc-clip)" d="M568.0 692.0 L586.3 660.8 M597.0 643.2 L615.3 614.4 M626.1 598.2 L644.4 571.7 M655.1 556.9 L673.4 532.8 M684.1 519.4 L702.4 497.6 M713.2 485.6 L731.5 466.2 M742.2 455.6 L760.5 438.6 M771.3 429.3 L789.6 414.7 M800.3 406.8 L818.6 394.5 M829.3 388.0 L847.6 378.1 M858.4 373.0 L876.7 365.5 M887.4 361.7 L905.7 356.6 M916.4 354.2 L934.7 351.4 M945.5 350.5 L963.8 350.0 M974.5 350.5 L992.8 352.4 M1003.6 354.2 L1021.8 358.5 M1032.6 361.7 L1050.9 368.4 M1061.6 373.0 L1079.9 382.0 M1090.7 388.0 L1109.0 399.4 M1119.7 406.8 L1138.0 420.5 M1148.7 429.3 L1167.0 445.4 M1177.8 455.6 L1196.1 474.0 M1206.8 485.6 L1225.1 506.4 M1235.9 519.4 L1254.1 542.6 M1264.9 556.9 L1283.2 582.5 M1293.9 598.2 L1312.2 626.1 M1323.0 643.2 L1341.3 673.5" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
       <circle id="air-start" cx="568" cy="692" r="12" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="3"/>
       <circle id="air-end" cx="1352" cy="692" r="12" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="3"/>
       <g id="plane">
@@ -51,6 +52,7 @@
       const p=guide.getPointAtLength(at),
         a=guide.getPointAtLength(Math.max(0,at-.8)),
         b=guide.getPointAtLength(Math.min(len,at+.8));
+      for(const el of $("#air-draw-window")) el.setAttribute("width",Math.max(0,p.x-563+3));
       const ang=Math.atan2(b.y-a.y,b.x-a.x)*180/Math.PI;
       for(const el of $("#plane-ride")) el.setAttribute("transform","translate("+p.x+" "+p.y+") rotate("+ang+")");
     },
