@@ -1,0 +1,73 @@
+{
+ "moments": [
+  "0.30",
+  "2.36",
+  "4.72",
+  "7.08",
+  "9.44",
+  "11.65"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-off-frame",
+   "scene": "s040",
+   "text": "Envelope की 8 शर्तें",
+   "t": 9.44
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s040",
+   "text": "Size और कागज़",
+   "t": 9.44
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s040",
+   "text": "1",
+   "t": 9.44
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s040",
+   "text": "Size: 140 × 90 से458 × 324 mm (± 2)",
+   "t": 9.44
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s040",
+   "text": "2",
+   "t": 9.44
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s040",
+   "text": "कागज़: कम से कम 70 GSM",
+   "t": 9.44
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s040",
+   "text": "3",
+   "t": 9.44
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s040",
+   "text": "मोटाई: 0.15 – 0.5 mm",
+   "t": 9.44
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s040",
+   "text": "Source: Post Office Regulations 2024, Ch",
+   "t": 9.44
+  },
+  {
+   "kind": "off-frame",
+   "scene": "s040",
+   "message": "a card or panel runs 874 px past the frame edge at 9.4 s (check the camera zoom and the layout)",
+   "t": 9.44
+  }
+ ]
+}
