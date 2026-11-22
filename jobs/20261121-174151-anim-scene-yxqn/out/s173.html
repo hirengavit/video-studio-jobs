@@ -22,12 +22,12 @@
     </g>
   </g>
   <g id="wrong-full-postage">
-    <rect x="1180" y="548" width="640" height="190" rx="25" fill="#efedeb" stroke="#cbc7c4" stroke-width="3"/>
-    <text id="wrong-whole-line" x="1220" y="622" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#4b4f58">पूरे postage का दोगुना</text>
-    <text id="wrong-ten-rupees" x="1220" y="690" font-family="Inter, sans-serif" font-size="58" font-weight="800" fill="#4b4f58">= ₹10</text>
+    <rect x="1180" y="575" width="640" height="190" rx="25" fill="#efedeb" stroke="#cbc7c4" stroke-width="3"/>
+    <text id="wrong-whole-line" x="1220" y="649" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#4b4f58">पूरे postage का दोगुना</text>
+    <text id="wrong-ten-rupees" x="1220" y="717" font-family="Inter, sans-serif" font-size="58" font-weight="800" fill="#4b4f58">= ₹10</text>
     <g id="wrong-ten-cross">
-      <circle cx="1740" cy="675" r="37" fill="#4b4f58"/>
-      <path d="m1726 661 28 28m0-28-28 28" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="1740" cy="702" r="37" fill="#4b4f58"/>
+      <path d="m1726 688 28 28m0-28-28 28" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
     </g>
   </g>
   <g id="rule-reminder">
@@ -42,7 +42,8 @@
  on:[
    [1.04,"highlight","#double-deficiency",{color:"#fde9a6",opacity:.95,pad:9,dur:.40}],
    [2.40,"fade","#wrong-full-postage",{dur:.39}],
-   [4.54,"strike","#wrong-whole-line, #wrong-ten-rupees",{color:"#4b4f58",width:7,dur:.35,dim:1}],
+   [4.54,"strike","#wrong-whole-line",{color:"#4b4f58",width:6,dur:.35,dim:1}],
+   [4.54,"strike","#wrong-ten-rupees",{color:"#4b4f58",width:4,dur:.35,dim:1}],
    [4.54,"pop","#wrong-ten-cross",{from:.86}],
    [5.62,"fade","#rule-reminder",{dur:.32}],
    [5.62,"words","#reminder-first",{gap:.24,dist:10,from:"down"}],
