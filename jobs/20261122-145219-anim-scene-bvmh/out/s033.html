@@ -32,7 +32,7 @@
         <text id="new-equation" x="1374" y="778" text-anchor="middle" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="51" font-weight="710" fill="#2b2622">जोड़ = 750 + 260</text>
         <path d="M1165 805h418" stroke="#ead9a8" stroke-width="3"/>
         <text id="over-limit-result" x="1374" y="864" text-anchor="middle" font-family="Georgia, serif" font-size="61" font-weight="710" fill="#2b2622">= 1,010 mm</text>
-        <g id="fail-verdict">
+        <g id="fail-verdict" transform="translate(-15 0)">
           <ellipse cx="1502" cy="680" rx="108" ry="55" fill="#fffefa" stroke="#4b4f58" stroke-width="7"/>
           <ellipse cx="1502" cy="680" rx="96" ry="44" fill="none" stroke="#4b4f58" stroke-width="3"/>
           <text x="1502" y="693" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="37" font-weight="820" fill="#4b4f58">FAIL · फ़ेल</text>
@@ -56,10 +56,15 @@
 
   <script type="text/scene">
   {
+    update(t, section, $) {
+      const ease=x=>{ const u=Math.min(1,Math.max(0,x)); return u*u*(3-2*u); };
+      const a=ease((t-.20)/.50)*(1-ease((t-4.28)/.35));
+      const ink=[111,106,99].map((base,i)=>Math.round(base+([43,38,34][i]-base)*a));
+      for(const el of $('#eq1 text, #eq2, #first-result')) el.setAttribute('fill','rgb('+ink.join(',')+')');
+    },
     on: [
       [0,'fade','#length-highlight',{dur:.28}],
       [0,'fade','#length-pass',{dur:.28}],
-      [4.28,'color','#eq1 text, #eq2, #first-result',{from:'#2b2622',to:'#6f6a63',dur:.35}],
       [4.28,'pop','#fail-cross',{from:.84}],
       [5.26,'stamp','#fail-verdict',{from:1.10,rot:0}],
       [7.22,'draw','#total-underline',{dur:.35}],
