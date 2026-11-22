@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="bananas">
+<path d="M92 168Q215 150 342 120Q215 230 92 186Z" fill="#f2b705"/><path d="M110 176Q215 188 322 128" fill="none" stroke="#d99f00" stroke-width="2"/><circle cx="342" cy="120" r="5" fill="#8a5d00" stroke-width="2"/>
+<path d="M92 168Q215 184 336 154Q215 264 92 186Z" fill="#f2b705"/><path d="M110 176Q215 222 316 162" fill="none" stroke="#d99f00" stroke-width="2"/><circle cx="336" cy="154" r="5" fill="#8a5d00" stroke-width="2"/>
+<path d="M92 168Q215 218 330 188Q215 298 92 186Z" fill="#f2b705"/><path d="M110 176Q215 256 310 196" fill="none" stroke="#d99f00" stroke-width="2"/><circle cx="330" cy="188" r="5" fill="#8a5d00" stroke-width="2"/>
+<path d="M92 168Q215 252 324 222Q215 332 92 186Z" fill="#f2b705"/><path d="M110 176Q215 290 304 230" fill="none" stroke="#d99f00" stroke-width="2"/><circle cx="324" cy="222" r="5" fill="#8a5d00" stroke-width="2"/></g>
+<path id="stem" d="M40 162L98 166V190L44 186Q36 174 40 162Z" fill="#8a5d00"/>
+<circle data-anchor="base" cx="195" cy="270" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="195" cy="118" r="0" fill="none" stroke="none"/>
+</svg>
