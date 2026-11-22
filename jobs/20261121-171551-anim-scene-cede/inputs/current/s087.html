@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s087" data-in="cut" data-section="PART 5 · INLAND LETTER CARD" data-series="PRODUCTS" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="sum">
+  <text x="960" y="260" text-anchor="middle" font-family="'Noto Sans Devanagari',sans-serif" font-size="79" font-weight="790" fill="#9e1b1b">उदाहरण</text>
+  <g id="example-card">
+   <g id="sheet-reveal">
+    <g id="separate-sheet">
+     <rect x="338" y="349" width="294" height="176" rx="13" fill="#eeecea" stroke="#4b4f58" stroke-width="5"/>
+     <path d="M369 380H605M369 413H578M369 445H596" stroke="#a49fa0" stroke-width="4" stroke-linecap="round"/>
+    </g>
+   </g>
+   <use href="piece:letter-card-folded" transform="translate(169 470) scale(1.01)"/>
+   <text id="example-card-label" x="486" y="834" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="790" fill="#2b2622">Letter Card</text>
+   <text id="now-letter" x="486" y="834" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="64" font-weight="790" fill="#2b2622">अब Letter</text>
+   <g id="price-tag">
+    <rect x="279" y="866" width="413" height="102" rx="28" fill="#fde9a6"/>
+    <text id="paid-value" x="485.5" y="937" text-anchor="middle" font-family="Inter,sans-serif" font-size="74" font-weight="810" fill="#2b2622">₹2.50</text>
+   </g>
+  </g>
+  <g id="work">
+   <rect x="897" y="336" width="872" height="632" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+   <rect x="961" y="402" width="9" height="55" rx="4.5" fill="#f2b705"/>
+   <text x="994" y="449" font-family="'Noto Sans Devanagari',sans-serif" font-size="57" font-weight="790" fill="#9e1b1b">हिसाब</text>
+   <path d="M961 489H1712" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+   <g id="postage-line" fill="#2b2622" font-size="44" font-weight="760">
+    <text id="postage-text" x="961" y="592" font-family="Georgia, serif">Letter postage</text>
+    <text id="postage-equals" x="1357" y="592" text-anchor="middle" font-family="Georgia,serif">=</text>
+    <text id="postage-amount" x="1392" y="592" font-family="Georgia,serif">₹5</text>
+   </g>
+   <g id="shortfall-line" fill="#2b2622" font-size="47" font-weight="760">
+    <text id="shortfall-text" x="961" y="716" font-family="Noto Sans Devanagari,sans-serif">कमी</text>
+    <text id="shortfall-equals" x="1357" y="716" text-anchor="middle" font-family="Georgia,serif">=</text>
+    <text id="shortfall-calculation" x="1392" y="716" font-family="Georgia,serif" font-size="44">₹5 − ₹2.50</text>
+    <text id="shortfall-result" x="1392" y="770" font-family="Georgia,serif" font-size="44">= ₹2.50</text>
+   </g>
+   <g id="double-line" fill="#2b2622" font-size="50" font-weight="780">
+    <text id="double-text" x="961" y="900" font-family="Noto Sans Devanagari,sans-serif">दोगुना</text>
+    <text id="double-equals" x="1357" y="900" text-anchor="middle" font-family="Georgia,serif">=</text>
+    <rect id="rupees-green" x="1382" y="835" width="174" height="93" rx="46.5" fill="#e3f1e8" stroke="#2e7d4f" stroke-width="3"/>
+    <text id="due-rupees" x="1469" y="900" font-family="Georgia,serif" text-anchor="middle" font-size="59">₹5</text>
+   </g>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+  on:[
+    [0,'fall','#separate-sheet',{by:130,bounce:0}],
+    [1.64,'swap','#example-card-label',{to:'#now-letter',dur:0.40,dist:17}],
+    [3.46,'type','#postage-text',{cps:19}],
+    [4.42,'fade','#postage-equals',{dur:0.18}],
+    [4.62,'type','#postage-amount',{cps:15}],
+    [6.20,'type','#shortfall-text',{cps:14}],
+    [6.58,'fade','#shortfall-equals',{dur:0.16}],
+    [6.72,'type','#shortfall-calculation',{cps:20}],
+    [7.16,'type','#shortfall-result',{cps:17}],
+    [8.18,'type','#double-text',{cps:14}],
+    [9.23,'fade','#double-equals',{dur:0.14}],
+    [9.56,'count','#due-rupees',{from:0,to:5,prefix:'₹',dur:0.38}],
+    [10.10,'fade','#rupees-green',{dur:0.30}],
+    [10.10,'color','#due-rupees',{to:'#215b3e',dur:0.30}]
+  ]
+})
+</script>
+</section>

@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s086" data-in="cut" data-section="PART 5 · INLAND LETTER CARD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Deficiency is the difference between letter postage and postage already paid">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="rule">
+  <rect x="150" y="228" width="1620" height="620" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+  <use href="piece:letter-card-folded" transform="translate(215 342) scale(.87)"/>
+  <text x="489" y="686" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="820" fill="#2b2622">Letter Card</text>
+  <path id="letter-rule-arrow" d="M832 468h244m-61-47 61 47-61 47" fill="none" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="treated-as-letter">
+   <use href="piece:domestic-envelope" transform="translate(1130 325) scale(.72)"/>
+   <text x="1404" y="686" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="820" fill="#2b2622">Letter</text>
+  </g>
+  <g id="due-on-delivery">
+   <rect x="540" y="726" width="840" height="91" rx="44" fill="#f3ead6"/>
+   <rect x="1146" y="734" width="104" height="82" rx="4" fill="#fde9a6" opacity=".95"/>
+   <text id="delivery-formula" x="960" y="789" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="820" fill="#2b2622">Delivery पर: कमी × 2</text>
+  </g>
+  <g id="deficiency-bar">
+   <rect x="150" y="876" width="1620" height="124" rx="26" fill="#fffefa" stroke="#ead9a8" stroke-width="4"/>
+   <text x="214" y="955" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="790" fill="#9e1b1b">कमी · Deficiency</text>
+   <path d="M744 900V977" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+   <text id="deficiency-formula" x="795" y="955" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="730" fill="#2b2622">letter postage − दिया postage</text>
+  </g>
+ </g>
+ <g id="sum">
+  <text x="960" y="260" text-anchor="middle" font-family="'Noto Sans Devanagari',sans-serif" font-size="79" font-weight="790" fill="#9e1b1b">उदाहरण</text>
+  <g id="example-card">
+   <g id="sheet-reveal">
+    <g id="separate-sheet">
+     <rect x="338" y="349" width="294" height="176" rx="13" fill="#eeecea" stroke="#4b4f58" stroke-width="5"/>
+     <path d="M369 380H605M369 413H578M369 445H596" stroke="#a49fa0" stroke-width="4" stroke-linecap="round"/>
+    </g>
+   </g>
+   <use href="piece:letter-card-folded" transform="translate(169 470) scale(1.01)"/>
+   <text id="example-card-label" x="486" y="834" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="790" fill="#2b2622">Letter Card</text>
+   <g id="price-tag">
+    <rect x="279" y="866" width="413" height="102" rx="28" fill="#fde9a6"/>
+    <text id="paid-value" x="485.5" y="937" text-anchor="middle" font-family="Inter,sans-serif" font-size="74" font-weight="810" fill="#2b2622">₹2.50</text>
+   </g>
+  </g>
+  <g id="work">
+   <rect x="897" y="336" width="872" height="632" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+   <rect x="961" y="402" width="9" height="55" rx="4.5" fill="#f2b705"/>
+   <text x="994" y="449" font-family="'Noto Sans Devanagari',sans-serif" font-size="57" font-weight="790" fill="#9e1b1b">हिसाब</text>
+   <path d="M961 489H1712" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ dur:10.70,
+ shots:[[0,"#rule"],[5.82,"#sum"]],
+ on:[
+  [0.00,"fade","#deficiency-bar",{dur:.27}],
+  [1.00,"words","#deficiency-formula",{gap:.64,dist:10,from:"down"}],
+  [8.40,"pop","#price-tag",{from:.94,spring:"fast"}],
+  [8.40,"count","#paid-value",{from:0,to:2.5,prefix:"₹",decimals:2,dur:.56}],
+  [10.30,"fade","#sheet-reveal",{dur:.25}],
+  [10.70,"fall","#separate-sheet",{by:120,bounce:0}]
+ ]
+})
+</script>
+</section>
