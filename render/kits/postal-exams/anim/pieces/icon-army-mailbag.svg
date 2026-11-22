@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="bag"><path d="M159 111 L146 73 Q173 67 200 79 Q225 67 251 73 L238 111 C253 148 295 190 299 260 Q306 319 264 327 H136 Q94 319 101 260 C105 190 147 148 159 111Z" fill="#a29c70"/><path d="M163 123 C155 154 139 169 132 191 M237 123 C245 154 261 169 268 191 M134 308 Q200 321 266 308" stroke="#77734f"/></g><g id="tie"><path d="M154 110 Q200 119 244 110 M155 117 Q200 126 245 117"/><path d="M222 119 Q257 111 260 126 Q250 138 227 124 M222 120 L246 150"/></g><g id="tag"><path d="M241 141 L267 149 L278 185 L246 195 L235 159Z" fill="#9e1b1b"/><circle cx="245" cy="153" r="3" fill="#f3ead6" stroke="none"/></g><path id="star" d="M200 207 L209 228 L232 230 L214 246 L219 269 L200 257 L181 269 L186 246 L168 230 L191 228Z" fill="#2b2622" stroke="none"/>
+<circle data-anchor="base" cx="200" cy="327" r="0"/>
+</svg>
