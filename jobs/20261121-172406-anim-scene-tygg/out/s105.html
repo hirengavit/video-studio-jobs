@@ -11,7 +11,7 @@
         <text x="755.5" y="447" text-anchor="middle" font-size="21" font-weight="800" fill="#fff">50 p</text>
         <path id="front-message" d="M210 471q32-9 67 0t66 0 107 0m-240 43q35-11 71 0t60 0 112 0m-243 44q33-9 73 0t64 0 68 0m-205 45q38-10 75 0t85 0" fill="none" stroke="#725637" stroke-width="5" stroke-linecap="round"/>
       </g>
-      <g id="postcard-back">
+      <g id="back-card">
         <rect x="1063" y="325" width="690" height="437" rx="13" fill="#f3ead6" stroke="#2b2622" stroke-width="4"/>
         <rect x="1071" y="334" width="674" height="419" rx="8" fill="#fde9a6" opacity=".60" style="mix-blend-mode:multiply"/>
         <text id="back-side-label" x="1408" y="283" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="810" fill="#9e1b1b">पीछे की side</text>
@@ -60,7 +60,8 @@
     update(t,section,$) {
       const ease=x=>{const q=Math.max(0,Math.min(1,x));return q*q*(3-2*q)};
       const k=ease((t-1.14)/1.20)*(1-ease((t-4.95)/1.35));
-      for(const el of $("#back")) el.setAttribute("transform","translate("+(-580*k)+" "+(-108*k)+") scale("+(1+.25*k)+")");
+      for(const el of $("#back-card, #advertisement-tag")) el.setAttribute("transform","translate("+(-565*k)+" "+(-108*k)+") scale("+(1+.25*k)+")");
+      for(const el of $("#small-address-side, #message-use")) el.setAttribute("transform","translate("+(10*k)+" "+(116*k)+") scale("+(1-.20*k)+")");
     }
   })
   </script>
