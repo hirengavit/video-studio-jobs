@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="bottle" d="M170 122H230V136Q232 146 248 150L264 156Q280 162 280 180V306Q280 320 266 320H134Q120 320 120 306V180Q120 162 136 156L152 150Q168 146 170 136Z" fill="#cfe3e8"/>
+<path d="M132 186V304" stroke="#ffffff" stroke-width="6" fill="none"/>
+<g id="cap"><rect x="158" y="80" width="84" height="44" rx="6" fill="#fbf7ee"/><path d="M172 88v28M186 88v28M200 88v28M214 88v28M228 88v28" stroke="#d6d1ca" stroke-width="2" fill="none"/></g>
+<g id="label"><rect x="140" y="190" width="120" height="100" rx="4" fill="#ffffff"/><path d="M190 214h20v16h16v20h-16v16h-20v-16h-16v-20h16Z" fill="#2b2622" stroke="none"/></g>
+<circle data-anchor="base" cx="200" cy="320" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="200" cy="80" r="0" fill="none" stroke="none"/>
+</svg>
