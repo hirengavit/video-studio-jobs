@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 340" width="420" height="340">
+  <g id="building" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect id="plinth" x="22" y="316" width="376" height="20" rx="3" fill="#ead9a8"/>
+    <rect id="walls" x="34" y="94" width="352" height="222" fill="#f3ead6"/>
+    <path id="gable" d="M150 58 L150 34 Q210 10 270 34 L270 58 Z" fill="#9e1b1b"/>
+    <g id="roof-band">
+      <rect x="18" y="56" width="384" height="40" rx="4" fill="#9e1b1b"/>
+      <line x1="22" y1="86" x2="398" y2="86" stroke="#7d1414" stroke-width="3"/>
+    </g>
+    <rect id="sign-plate" x="96" y="108" width="228" height="52" rx="6" fill="#ffffff"/>
+    <g id="window-left">
+      <rect x="60" y="188" width="82" height="80" rx="4" fill="#fde9a6"/>
+      <line x1="101" y1="188" x2="101" y2="268"/>
+      <line x1="60" y1="228" x2="142" y2="228"/>
+      <rect x="54" y="268" width="94" height="10" rx="3" fill="#ead9a8"/>
+    </g>
+    <g id="window-right">
+      <rect x="278" y="188" width="82" height="80" rx="4" fill="#fde9a6"/>
+      <line x1="319" y1="188" x2="319" y2="268"/>
+      <line x1="278" y1="228" x2="360" y2="228"/>
+      <rect x="272" y="268" width="94" height="10" rx="3" fill="#ead9a8"/>
+    </g>
+    <g id="door">
+      <path d="M178 316 L178 208 Q178 182 210 182 Q242 182 242 208 L242 316 Z" fill="#9e1b1b"/>
+      <line x1="210" y1="186" x2="210" y2="316" stroke="#7d1414"/>
+      <circle cx="200" cy="256" r="3" fill="#f2b705" stroke="none"/>
+      <circle cx="220" cy="256" r="3" fill="#f2b705" stroke="none"/>
+    </g>
+    <rect id="step" x="166" y="316" width="88" height="20" rx="3" fill="#cfc6b6"/>
+  </g>
+  <circle data-anchor="base" cx="210" cy="336" r="0"/>
+  <circle data-anchor="top" cx="210" cy="134" r="0"/>
+</svg>
