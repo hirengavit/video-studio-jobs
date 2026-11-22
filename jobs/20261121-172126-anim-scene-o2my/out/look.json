@@ -14,12 +14,6 @@
    "scene": "s100",
    "message": "a card is mostly empty at 4.6 s: bring its items in sooner, or size it for what it holds now",
    "t": 4.62
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s100",
-   "text": "बराबर मोटाई ज़रूरी / बस minimum मज़बूती",
-   "t": 9.23
   }
  ]
 }
