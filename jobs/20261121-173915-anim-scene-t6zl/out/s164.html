@@ -1,0 +1,77 @@
+<section class="vs-scene" id="s164" data-in="cut" data-section="PART 9 · COUNTER CHECKS &amp; DUES" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="steps">
+      <use id="counter" href="piece:post-counter-icon" transform="translate(120 260) scale(.7)"/>
+      <text class="hi" x="123" y="592" font-size="61" font-weight="790" fill="#9e1b1b">Counter</text>
+      <text class="hi" x="125" y="660" font-size="50" font-weight="690" fill="#675442">जाँच के 5 कदम</text>
+      <path id="step-spine" d="M624 236V964" fill="none" stroke="#ead7b5" stroke-width="9" stroke-linecap="round"/>
+      <rect id="step-one-background" x="560" y="200" width="1240" height="72" rx="23" fill="#f8f6f1" stroke="#e5cfaa" stroke-width="3"/>
+      <rect id="step-two-background" x="560" y="290" width="1240" height="72" rx="23" fill="#f8f6f1" stroke="#e5cfaa" stroke-width="3"/>
+      <rect id="step-three-background" x="560" y="380" width="1240" height="286" rx="27" fill="#fffdf8" stroke="#e5cfaa" stroke-width="3"/>
+      <rect id="step-four-background" x="560" y="684" width="1240" height="205" rx="27" fill="#fffdf8" stroke="#e5cfaa" stroke-width="3"/>
+      <g id="step-shell-1">
+        <circle cx="624" cy="236" r="28" fill="#a64239"/>
+        <text x="624" y="250" font-size="39" font-weight="830" fill="#fffefa" text-anchor="middle">1</text>
+      </g>
+      <g id="step-shell-2">
+        <circle cx="624" cy="326" r="28" fill="#a64239"/>
+        <text x="624" y="340" font-size="39" font-weight="830" fill="#fffefa" text-anchor="middle">2</text>
+      </g>
+      <g id="step-shell-3">
+        <circle id="step-three-badge" cx="624" cy="432" r="36" fill="#9e1b1b"/>
+        <text x="624" y="448" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">3</text>
+      </g>
+      <g id="step-shell-4">
+        <circle cx="624" cy="736" r="36" fill="#9e1b1b"/>
+        <text x="624" y="752" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">4</text>
+      </g>
+      <g id="step-shell-5">
+        <circle cx="624" cy="964" r="36" fill="#9e1b1b"/>
+        <text x="624" y="980" font-size="45" font-weight="830" fill="#fffefa" text-anchor="middle">5</text>
+      </g>
+      <g id="step1">
+        <text class="hi" x="699" y="251" font-size="46" font-weight="790" fill="#6f6a63">Product पहचानिए</text>
+      </g>
+      <g id="step2">
+        <text class="hi" x="699" y="341" font-size="46" font-weight="790" fill="#6f6a63">वज़न और size की सीमा</text>
+      </g>
+      <g id="step3">
+        <text id="construction-title" class="hi" x="699" y="451" font-size="58" font-weight="810" fill="#292421">बनावट देखिए</text>
+        <text id="letter-construction" class="hi" x="709" y="510" font-size="36" font-weight="740" fill="#292421">Letter: envelope, बंद करना</text>
+        <g id="ilc-construction">
+          <rect id="ilc-chip-bg" x="696" y="520" width="651" height="51" rx="24" fill="#f3ead6"/>
+          <text id="ilc-line" class="hi" x="709" y="557" font-size="36" font-weight="780" fill="#7f271e">Letter card: न अंदर, न ऊपर</text>
+        </g>
+        <text id="postcard-construction" class="hi" x="709" y="613" font-size="36" font-weight="740" fill="#292421">Postcard: सिर्फ allowed बदलाव / चीज़ें</text>
+      </g>
+      <g id="step4">
+        <text class="hi" x="699" y="756" font-size="58" font-weight="810" fill="#292421">Postage मिलाइए</text>
+        <g id="match-postage" fill="#292421" font-size="36" font-weight="760" font-family="'Noto Sans Devanagari',Inter,sans-serif">
+          <text id="postage-start" x="709" y="842" class="hi">ज़रूरी postage =</text>
+          <text id="postage-printed" x="1012" y="842" class="hi">छपा +</text>
+          <text id="postage-extra" x="1134" y="842" class="hi">extra valid stamps</text>
+        </g>
+        <g id="valid-stamp">
+          <use href="piece:adhesive-stamp" transform="translate(1479 778) scale(.52)"/>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    dur:13.37,
+    on:[
+      [0,"fade","#postcard-construction",{dur:.25}],
+      [4.61,"fade","#step-four-background, #step4",{dur:.28}],
+      [4.61,"color","#construction-title, #letter-construction, #ilc-line, #postcard-construction",{to:"#6f6a63",dur:.35}],
+      [4.61,"color","#step-three-badge",{to:"#a64239",dur:.35}],
+      [4.61,"color","#ilc-chip-bg",{to:"#f0ece4",dur:.35}],
+      [8.30,"words","#postage-start",{gap:.16,dist:12}],
+      [10.58,"words","#postage-printed",{gap:.15,dist:12}],
+      [11.95,"words","#postage-extra",{gap:.18,dist:12}],
+      [12.40,"pop","#valid-stamp",{from:.87,spring:"fast"}]
+    ]
+  })
+  </script>
+</section>
