@@ -78,7 +78,7 @@
   for(const el of $("#unfolded-card")) el.style.filter="grayscale("+Math.min(1,t/.18)+")";
   for(const el of $("#open-limits")) {
     el.style.filter="grayscale("+k+")";
-    el.style.opacity=String(1-k*.24);
+    el.style.opacity=String(1-k*.09);
   }
   for(const [id,dy] of [["#open-limits-heading",-30],["#open-minimum",-70],["#open-maximum",-124]]) {
     for(const el of $(id)) el.setAttribute("transform","translate(0 "+(dy*k)+")");
@@ -90,6 +90,7 @@
     rect(id+" > rect:first-of-type","height",150,105);
     rect(id+" > text:first-of-type","y",labelY,labelY-13);
     rect(id+" > text:nth-of-type(2)","y",labelY+50,labelY+30);
+    for(const el of $(id+" > text:nth-of-type(2)")) el.setAttribute("fill","rgb("+(111-36*k)+" "+(106-27*k)+" "+(99-11*k)+")");
     rect(id+" > rect:nth-of-type(2)","y",rowY,rowY-10);
     rect(id+" > rect:nth-of-type(2)","height",98,67);
     rect(id+" > text:last-of-type","font-size",60,40);
