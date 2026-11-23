@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s022" data-in="cut" data-duration="11.92" data-section="PART 1 · LITERATURE FOR THE BLIND" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="A private letter does not qualify merely because it is packed with a Braille book">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="example">
+   <text x="160" y="245" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="61" font-weight="840" fill="#9e1b1b">एक उदाहरण</text>
+   <rect x="160" y="290" width="715" height="505" rx="30" fill="#f3ead6" stroke="#e1cca5" stroke-width="3"/>
+   <use href="piece:braille-book-icon" transform="translate(194 352) scale(1.25)"/>
+   <g id="private-letter">
+    <rect x="925" y="290" width="460" height="505" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+    <use href="piece:handwritten-letter" transform="translate(1018 327) scale(.76)"/>
+    <text x="1155" y="715" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="780" fill="#2b2622">आम छपाई की<tspan x="1155" y="768">निजी चिट्ठी</tspan></text>
+   </g>
+   <g id="letter-cross">
+    <circle cx="1155" cy="503" r="93" fill="#fbf7ee" fill-opacity=".91" stroke="#4c5661" stroke-width="7"/>
+    <path d="m1118 466 74 74m0-74-74 74" fill="none" stroke="#4c5661" stroke-width="13" stroke-linecap="round"/>
+   </g>
+   <g id="letter-verdict">
+    <rect x="1420" y="486" width="360" height="126" rx="25" fill="#e5e8eb"/>
+    <text x="1600" y="568" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="820" fill="#414c58">allowed नहीं</text>
+   </g>
+   <g id="book-no-exemption">
+    <rect x="160" y="847" width="1620" height="122" rx="25" fill="#e5e8eb"/>
+    <text x="970" y="925" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="810" fill="#414c58">किताब के साथ रखने से, चिट्ठी को छूट नहीं</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [4.70,"slide","#private-letter",{from:"right",dist:104,spring:"soft"}],
+   [6.54,"fade","#letter-cross",{dur:.24}],
+   [6.54,"fade","#letter-verdict",{dur:.27}],
+   [7.56,"fade","#book-no-exemption",{dur:.34}]
+  ]
+ })
+ </script>
+</section>
