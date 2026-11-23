@@ -1,0 +1,37 @@
+<section class="vs-scene" id="s002" data-in="cut" data-duration="12.52" data-section="OVERVIEW" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Post Office Regulations 2024: Literature for the Blind, effective 16 December 2024">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="timeline">
+   <g id="rulebook">
+    <use href="piece:regulations-book" transform="translate(160 260) scale(1.1)"/>
+    <rect id="rulebook-marker" x="242" y="369" width="196" height="144" rx="8" fill="#fde9a6"/>
+    <text x="340" y="410" font-family="Inter,sans-serif" font-size="34" font-weight="810" text-anchor="middle" fill="#2b2622">Post Office<tspan x="340" dy="38">Regulations</tspan><tspan x="340" dy="42" font-size="42">2024</tspan></text>
+   </g>
+   <path id="timeline-line" d="M640 620H1780" stroke="#c5b28c" stroke-width="8" stroke-linecap="round"/>
+   <circle id="timeline-stop-one" cx="860" cy="620" r="17" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="5"/>
+   <g id="timeline-icon-one">
+    <use href="piece:braille-book-icon" transform="translate(756 355) scale(.4)"/>
+   </g>
+   <text id="timeline-topic-one" x="860" y="552" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#2b2622">Literature for the Blind</text>
+   <g id="timeline-date-one">
+    <circle cx="860" cy="785" r="125" fill="#fff9f0" stroke="#9e1b1b" stroke-width="7"/>
+    <circle cx="860" cy="785" r="111" fill="none" stroke="#9e1b1b" stroke-width="2.5" stroke-dasharray="2 7" stroke-linecap="round"/>
+    <text x="860" y="773" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="850" fill="#9e1b1b">16 DEC<tspan x="860" y="833" font-size="54">2024</tspan></text>
+   </g>
+   <text id="timeline-effective-one" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="860" y="982" text-anchor="middle" font-size="40" font-weight="700" fill="#5e5953">से लागू</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+   camera:[[0,{zoom:1}]],
+   on:[
+     [1.50,"pop","#timeline-icon-one",{spring:"soft"}],
+     [1.50,"fade","#timeline-topic-one",{dur:.32}],
+     [3.84,"pulse","#rulebook",{amount:.065}],
+     [3.84,"fade","#rulebook-marker",{dur:.35}],
+     [8.68,"stamp","#timeline-date-one",{from:1.35,spring:"soft",rot:-6}],
+     [11.34,"fade","#timeline-effective-one",{dur:.28}]
+   ]
+ })
+ </script>
+</section>
