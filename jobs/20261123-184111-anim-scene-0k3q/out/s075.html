@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s075" data-in="cut" data-duration="8.86" data-section="PART 4 · GYAN POST" data-series="POSTAL PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Departmental Post Office: Gyan Post is paid, unlike the blind-literature postage concession">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="counter">
+ <use href="piece:posting-counter" transform="translate(200 300) scale(1.4)"/>
+ <use href="piece:gyan-post-book-icon" transform="translate(1120 344) scale(.5)"/>
+ <text id="counter-sign" x="830" y="419" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="810" fill="#2b2622">Departmental Post Office</text>
+ <g id="paid-service">
+  <rect x="1117" y="222" width="335" height="83" rx="41.5" fill="#9e1b1b"/>
+  <text x="1284.5" y="278" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#fff">paid service</text>
+ </g>
+ <g id="blind-concession">
+  <use href="piece:braille-book-icon" transform="translate(1563 331) scale(.35)"/>
+  <rect x="1514" y="464" width="292" height="83" rx="22" fill="#fde9a6"/>
+  <text x="1660" y="520" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">postage छूट</text>
+ </g>
+ <defs><clipPath id="arrow-wipe"><rect id="arrow-window" x="1313" y="374" width="206" height="77"/></clipPath></defs>
+ <g id="concession-arrow" clip-path="url(#arrow-wipe)" fill="none" stroke="#61564e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M1515 395C1457 391 1409 404 1330 430" stroke-dasharray="12 11"/>
+  <path d="m1346 405-18 26 31 8"/>
+ </g>
+ <g id="ordinary-book-tag">
+  <path d="M1580 583L1451 427" fill="none" stroke="#a79a88" stroke-width="3" stroke-dasharray="5 7" stroke-linecap="round"/>
+  <rect x="1457" y="582" width="357" height="106" rx="20" fill="#e5e8eb"/>
+  <text x="1635.5" y="626" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="39" font-weight="780" fill="#4b4f58">आम educational</text>
+  <text x="1635.5" y="671" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="37" font-weight="750" fill="#4b4f58">किताबें</text>
+ </g>
+ <g id="ordinary-book-cross">
+  <circle cx="1436" cy="399" r="24" fill="#e5e8eb"/>
+  <path d="m1425 388 22 22m0-22-22 22" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+ </g>
+</g>
+<g id="groups">
+ <text x="142" y="243" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="65" font-weight="850" fill="#9e1b1b">कौन-सी किताबें: तीन groups</text>
+ <rect x="142" y="267" width="576" height="5" rx="2.5" fill="#e8b83e"/>
+ <g id="student-group-row-1">
+  <rect x="142" y="320" width="1636" height="193" rx="26" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+  <rect x="177" y="371" width="99" height="91" rx="20" fill="#9e1b1b"/>
+  <text x="226.5" y="434" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="860" fill="#fff">1</text>
+ </g>
+ <g id="student-group-row-2">
+  <rect x="142" y="544" width="1636" height="193" rx="26" fill="#fbf7ee" stroke="#e1cca5" stroke-width="3"/>
+  <rect x="177" y="595" width="99" height="91" rx="20" fill="#f3ead6"/>
+  <text x="226.5" y="658" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="860" fill="#6f6a63">2</text>
+ </g>
+ <g id="student-group-row-3">
+  <rect x="142" y="768" width="1636" height="193" rx="26" fill="#fbf7ee" stroke="#e1cca5" stroke-width="3"/>
+  <rect x="177" y="819" width="99" height="91" rx="20" fill="#f3ead6"/>
+  <text x="226.5" y="882" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="860" fill="#6f6a63">3</text>
+ </g>
+ <text id="students-books" x="330" y="398" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="830" fill="#2b2622">Students के लिए तय किताबें</text>
+</g>
+</svg>
+
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,"#counter"],[3.12,"#groups"]],
+ on:[
+ [0,"fade","#ordinary-book-tag",{dur:.29}],
+ [1.96,"pop","#ordinary-book-cross",{spring:"soft",from:.85}],
+ [5.84,"fade","#students-books",{dur:.30}]
+ ]
+})
+</script>
+</section>
