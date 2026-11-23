@@ -1,0 +1,32 @@
+{
+ "moments": [
+  "0.30",
+  "1.72",
+  "3.45",
+  "5.17",
+  "6.90",
+  "8.47"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s011",
+   "text": "कागज़ (1.4:1) / पत्रिकाएँ (1.4:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s011",
+   "text": "Braille / Braille",
+   "t": 1.72
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s011",
+   "text": "ब्रेल लिपि / Photo: UNESCO · Braille Review",
+   "t": 1.72
+  }
+ ]
+}
