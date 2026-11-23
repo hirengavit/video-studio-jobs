@@ -1,0 +1,27 @@
+{
+ "moments": [
+  "0.30",
+  "2.55",
+  "5.10",
+  "7.66",
+  "10.21",
+  "12.61"
+ ],
+ "problems": [
+  "s089: no photo \"newspapers-and-magazines-cutout\" in the materials"
+ ],
+ "warnings": [
+  {
+   "kind": "mostly-empty",
+   "scene": "s089",
+   "message": "a card (#s089-condition-row-2) is mostly empty at 2.5 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.55
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s089",
+   "message": "a card (#s089-condition-row-3) is mostly empty at 5.1 s: bring its items in sooner, or size it for what it holds now",
+   "t": 5.1
+  }
+ ]
+}
