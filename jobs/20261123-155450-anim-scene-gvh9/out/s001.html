@@ -11,8 +11,8 @@
     <text id="gyan-term" x="1400" y="780">Gyan Post</text>
   </g>
   <g font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="660" fill="#6f6a63" text-anchor="middle">
-    <text id="braille-hi" x="500" y="840">नेत्रहीनों के लिए साहित्य</text>
-    <text id="gyan-hi" x="1400" y="840">ज्ञान पोस्ट</text>
+    <text id="braille-hi" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="500" y="840">नेत्रहीनों के लिए साहित्य</text>
+    <text id="gyan-hi" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="1400" y="840">ज्ञान पोस्ट</text>
   </g>
   <g id="shared-band">
     <rect x="260" y="900" width="1400" height="80" rx="28" fill="#f3ead6"/>
@@ -27,7 +27,7 @@
      [1.70,"fade","#braille-hi",{dur:.30}],
      [3.38,"type","#gyan-term",{cps:25}],
      [3.90,"fade","#gyan-hi",{dur:.30}],
-     [6.16,"slide","#shared-band",{from:"down",dist:25,dur:.30}],
+     [6.16,"slide","#shared-band",{from:"down",dist:25,spring:"soft"}],
      [6.16,"words","#shared-words",{gap:.42,dist:8}]
    ]
  })
