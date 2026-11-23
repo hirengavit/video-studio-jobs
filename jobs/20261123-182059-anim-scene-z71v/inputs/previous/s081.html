@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s081" data-in="cut" data-duration="8.56" data-section="PART 4 · GYAN POST" data-series="POSTAL PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Gyan Post booking weight: minimum 300 grams, maximum 5 kilograms">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="service">
+<g id="weighing">
+<use href="piece:postal-scale" transform="translate(145 435) scale(1.1)"/>
+<use href="piece:gyan-post-book-icon" transform="translate(335 278) scale(.5)"/>
+<rect x="327" y="771" width="186" height="73" rx="14" fill="#2b2622"/>
+<text id="scale-weight" x="420" y="821" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#fff6cf"></text>
+</g>
+<rect x="800" y="200" width="1000" height="760" rx="27" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+<path d="M800 303V227Q800 200 827 200H1773Q1800 200 1800 227V303Z" fill="#9e1b1b"/>
+<text x="850" y="270" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="830" fill="#fff">Service की खास बातें</text>
+<rect id="feature-row-1" x="833" y="322" width="934" height="139" rx="20" fill="#fcf7eb" stroke="#eadbbc" stroke-width="2"/>
+<rect id="feature-row-2" x="833" y="477" width="934" height="139" rx="20" fill="#fff" stroke="#eadbbc" stroke-width="2"/>
+<rect id="feature-row-3" x="833" y="632" width="934" height="139" rx="20" fill="#fcf7eb" stroke="#eadbbc" stroke-width="2"/>
+<rect id="feature-row-4" x="833" y="787" width="934" height="139" rx="20" fill="#fff" stroke="#eadbbc" stroke-width="2"/>
+<text id="booking-weight" x="870" y="378" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="810" fill="#2b2622">Booking का वज़न</text>
+<g id="weight-min">
+<rect x="869" y="392" width="200" height="55" rx="17" fill="#fde9a6"/>
+<text x="969" y="433" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="830" fill="#7d1616">300 g</text>
+</g>
+<text id="weight-max" x="1093" y="433" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="830" fill="#2b2622">से 5 kg</text>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ update(t,section,$) {
+  const node=$('#scale-weight')[0];
+  if (!node) return;
+  const f=Math.max(0,Math.min(1,(t-7.22)/.58));
+  const g=Math.round((300+4700*f)/50)*50;
+  node.textContent=t<4.4?'':t<7.22?'300 g':f>=1?'5 kg':g<1000?g+' g':(g/1000).toFixed(1)+' kg';
+ },
+ on:[
+ [2.16,"fade","#booking-weight",{dur:.30}],
+ [4.40,"fade","#weight-min",{dur:.30}],
+ [7.22,"fade","#weight-max",{dur:.30}]
+ ]
+})
+</script>
+</section>
