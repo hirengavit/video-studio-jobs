@@ -1,0 +1,79 @@
+<section class="vs-scene" id="s099" data-in="cut" data-duration="11.48" data-section="PART 5 · GYAN POST PACKET" data-series="POSTAL PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Three Gyan Post packing options: no cover, an unsealed envelope, or an easily removable cover">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="packing">
+<text x="120" y="234" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="820" fill="#9e1b1b">Packing: तीन में से एक</text>
+<g id="packing-options">
+<rect x="120" y="300" width="540" height="560" rx="26" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+<rect x="690" y="300" width="540" height="560" rx="26" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+<rect x="1260" y="300" width="540" height="560" rx="26" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+<g id="no-cover">
+ <use href="piece:gyan-post-book-icon" transform="translate(248 365) scale(.79)"/>
+ <rect x="154" y="748" width="472" height="78" rx="20" fill="#e5f0e9"/>
+ <text x="390" y="801" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="790" fill="#17634a">बिना cover</text>
+</g>
+<g id="unsealed-envelope">
+ <path d="M766 478Q754 475 766 462L946 360Q960 352 974 360L1154 462Q1166 475 1154 478Z" fill="#f3ead6" stroke="#bb9b74" stroke-width="4" stroke-linejoin="round"/>
+ <use href="piece:address-envelope" transform="translate(749 473) scale(.66)"/>
+ <rect x="724" y="748" width="472" height="78" rx="20" fill="#e5f0e9"/>
+ <text x="960" y="801" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="790" fill="#17634a">बिना बंद envelope</text>
+</g>
+<g id="removable-cover">
+ <g id="wrapper-example"><use href="piece:open-ended-wrapper" transform="translate(1278 453) scale(.81)"/></g>
+ <rect x="1294" y="748" width="472" height="78" rx="20" fill="#e5f0e9"/>
+ <text x="1530" y="801" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="790" fill="#17634a">आराम से हटने वाला cover</text>
+</g>
+</g>
+<g id="inspection-chips">
+ <g id="inspection-chip-1">
+  <rect x="120" y="895" width="302" height="91" rx="20" fill="#e5e8eb"/>
+  <text x="271" y="952" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="780" fill="#4b4f58">seal तोड़ना</text>
+ </g>
+ <g id="inspection-chip-2">
+  <rect x="442" y="895" width="320" height="91" rx="20" fill="#e5e8eb"/>
+  <text x="602" y="952" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="780" fill="#4b4f58">कागज़ फाड़ना</text>
+ </g>
+ <g id="inspection-chip-3">
+  <rect x="782" y="895" width="647" height="91" rx="20" fill="#e5e8eb"/>
+  <text x="1105.5" y="952" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="780" fill="#4b4f58">चिपकी सतहें अलग करना</text>
+ </g>
+ <g id="inspection-chip-4">
+  <rect x="1449" y="895" width="351" height="91" rx="20" fill="#e5e8eb"/>
+  <text x="1624.5" y="952" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="780" fill="#4b4f58">न पड़े</text>
+ </g>
+</g>
+<g id="tight-packet">
+ <rect x="1047" y="580" width="690" height="249" rx="26" fill="#fff" stroke="#a6a4aa" stroke-width="3"/>
+ <use href="piece:packet-with-tag" transform="translate(1081 618) scale(.7)"/>
+ <g id="tied-verdict">
+  <rect x="1347" y="654" width="358" height="91" rx="19" fill="#e5e8eb"/>
+  <text x="1526" y="714" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="820" fill="#4b4f58">ऐसे न बँधा हो</text>
+ </g>
+</g>
+</g>
+</svg>
+
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ update(t,section,$){
+  const book=$('#wrapper-example #book')[0];
+  if(book) book.setAttribute('transform','translate(100 0)');
+  const opts=$('#packing-options')[0];
+  if(opts){
+   const u=Math.max(0,Math.min(1,(t-7.48)/.38));
+   opts.style.filter='grayscale('+u+')';
+   opts.style.opacity=String(1-.60*u);
+  }
+ },
+ on:[
+ [0.64,"fade","#inspection-chip-1",{dur:.28}],
+ [2.08,"fade","#inspection-chip-2",{dur:.28}],
+ [4.00,"fade","#inspection-chip-3",{dur:.28}],
+ [6.30,"fade","#inspection-chip-4",{dur:.28}],
+ [7.48,"pop","#tight-packet",{spring:"soft",from:.93}],
+ [10.40,"fade","#tied-verdict",{dur:.29}]
+ ]
+})
+</script>
+</section>
