@@ -21,7 +21,7 @@
   <circle id="tick4-slot" cx="370" cy="884" r="27" fill="#fff" stroke="#b5a991" stroke-width="3"/>
   <text id="row1" class="hi" x="426" y="515" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="750" fill="#2b2622">Braille या खास लिपि: कागज़, <tspan id="row1-magazines">पत्रिकाएँ,</tspan> <tspan id="row1-books">किताबें</tspan></text>
   <path id="tick1" d="M358 497l8 9 17-19" fill="none" stroke="#087650" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-  <text id="row2" class="hi" x="426" y="643" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#2b2622">Recorded: sender या addressee recognised संस्था</text>
+  <text id="row2" class="hi" x="426" y="643" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#2b2622">Recorded: <tspan id="row2-parties">sender या addressee</tspan> <tspan id="row2-recognised">recognised संस्था</tspan></text>
   <path id="tick2" d="M358 626l8 9 17-19" fill="none" stroke="#087650" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </svg>
@@ -32,6 +32,8 @@
     const p = (start) => Math.max(0,Math.min(1,(t-start)/.20));
     $('#row1-magazines')[0].style.opacity = p(0);
     $('#row1-books')[0].style.opacity = p(1.48);
+    $('#row2-parties')[0].style.opacity = p(4.52);
+    $('#row2-recognised')[0].style.opacity = p(7.20);
   }
 }
 </script>
