@@ -16,6 +16,12 @@
    "t": 1.62
   },
   {
+   "kind": "text-overlap",
+   "scene": "s047",
+   "text": "Roll के अलावा / 100 × 70 mm",
+   "t": 3.25
+  },
+  {
    "kind": "mostly-empty",
    "scene": "s047",
    "message": "a card is mostly empty at 3.3 s: bring its items in sooner, or size it for what it holds now",
