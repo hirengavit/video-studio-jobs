@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" width="480" height="320">
+  <g fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="books">
+      <g id="book-1">
+        <rect x="60" y="96" width="384" height="54" rx="5" fill="#9e1b1b"/>
+        <rect x="62" y="104" width="374" height="38" fill="#ffffff" stroke="none"/>
+        <path d="M396 104 H436 M396 142 H436" stroke-width="2"/>
+        <path d="M400 114 H432 M400 123 H432 M400 132 H432" stroke="#6f6a63" stroke-width="1.5"/>
+      </g>
+      <g id="book-2">
+        <rect x="60" y="152" width="394" height="56" rx="5" fill="#7d1414"/>
+        <rect x="62" y="160" width="384" height="40" fill="#ffffff" stroke="none"/>
+        <path d="M396 160 H446 M396 200 H446" stroke-width="2"/>
+        <path d="M400 170 H442 M400 180 H442 M400 190 H442" stroke="#6f6a63" stroke-width="1.5"/>
+      </g>
+      <g id="book-3">
+        <rect x="60" y="210" width="378" height="56" rx="5" fill="#b8403a"/>
+        <rect x="62" y="218" width="368" height="40" fill="#ffffff" stroke="none"/>
+        <path d="M396 218 H430 M396 258 H430" stroke-width="2"/>
+        <path d="M400 228 H426 M400 238 H426 M400 248 H426" stroke="#6f6a63" stroke-width="1.5"/>
+      </g>
+    </g>
+    <g id="wrapper">
+      <path d="M40 92 H392 V268 H40 Z" fill="#f3ead6"/>
+      <path d="M40 92 L78 180 L40 268" stroke="#6f6a63" stroke-width="2"/>
+      <path d="M92 108 L130 104 M300 250 L350 254" stroke="#6f6a63" stroke-width="1.5"/>
+    </g>
+    <g id="open-end">
+      <path d="M392 92 L420 74 L428 86 L400 102 Z" fill="#f3ead6"/>
+      <path d="M392 268 L420 286 L428 274 L400 258 Z" fill="#f3ead6"/>
+    </g>
+    <g id="string">
+      <path d="M214 86 V274"/>
+      <path d="M36 180 H392"/>
+      <path d="M214 180 C194 156 172 166 186 184 C194 194 206 188 214 180 Z" fill="#f3ead6"/>
+      <path d="M214 180 C234 156 256 166 242 184 C234 194 222 188 214 180 Z" fill="#f3ead6"/>
+      <path d="M214 180 L198 210 M214 180 L232 208"/>
+      <circle cx="214" cy="180" r="6" fill="#2b2622"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="240" cy="270" r="0"/>
+  <circle data-anchor="top" cx="216" cy="92" r="0"/>
+</svg>
