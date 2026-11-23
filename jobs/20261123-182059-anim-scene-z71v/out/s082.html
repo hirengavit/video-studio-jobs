@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s082" data-in="cut" data-duration="13.00" data-section="PART 4 · GYAN POST" data-series="POSTAL PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Gyan Post is trackable and delivered at the specified address">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="service">
+<g id="weighing">
+<use href="piece:postal-scale" transform="translate(145 435) scale(1.1)"/>
+<use href="piece:gyan-post-book-icon" transform="translate(335 278) scale(.5)"/>
+<rect x="327" y="771" width="186" height="73" rx="14" fill="#2b2622"/>
+<text id="scale-weight" x="420" y="821" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#fff6cf">5 kg</text>
+</g>
+<rect x="800" y="200" width="1000" height="760" rx="27" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+<path d="M800 303V227Q800 200 827 200H1773Q1800 200 1800 227V303Z" fill="#9e1b1b"/>
+<text x="850" y="270" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="830" fill="#fff">Service की खास बातें</text>
+<rect id="feature-row-1" x="833" y="322" width="934" height="139" rx="20" fill="#fcf7eb" stroke="#eadbbc" stroke-width="2"/>
+<rect id="feature-row-2" x="833" y="477" width="934" height="139" rx="20" fill="#fff" stroke="#eadbbc" stroke-width="2"/>
+<rect id="feature-row-3" x="833" y="632" width="934" height="139" rx="20" fill="#fcf7eb" stroke="#eadbbc" stroke-width="2"/>
+<rect id="feature-row-4" x="833" y="787" width="934" height="139" rx="20" fill="#fff" stroke="#eadbbc" stroke-width="2"/>
+<text id="booking-weight" x="870" y="378" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="810" fill="#2b2622">Booking का वज़न</text>
+<g id="weight-min">
+<rect x="869" y="392" width="200" height="55" rx="17" fill="#fde9a6"/>
+<text x="969" y="433" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="830" fill="#7d1616">300 g</text>
+</g>
+<text id="weight-max" x="1093" y="433" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="830" fill="#2b2622">से 5 kg</text>
+<g id="service-trackable">
+<use href="piece:booking-receipt" transform="translate(872 493) scale(.27)"/>
+<text x="975" y="567" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">trackable</text>
+</g>
+<g id="ordinary-chip">
+<rect x="1290" y="515" width="443" height="67" rx="17" fill="#e5e8eb"/>
+<text x="1506" y="559" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="37" font-weight="760" fill="#4b4f58">Ordinary (बिना tracking)</text>
+<path id="ordinary-cross" d="m1700 532 20 23m0-23-20 23" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+</g>
+<g id="service-address">
+<use href="piece:house-icon" transform="translate(865 650) scale(.36)"/>
+<text x="1003" y="693" font-family="Inter,sans-serif" font-size="47" font-weight="830" fill="#2b2622">address specific:</text>
+<text id="delivery-at-address" x="1003" y="743" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="41" font-weight="740" fill="#2b2622">दिए गए पते पर ही delivery</text>
+</g>
+</g>
+</svg>
+
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+ [1.06,"fade","#service-trackable",{dur:.30}],
+ [2.82,"fade","#ordinary-chip",{dur:.29}],
+ [6.46,"fade","#ordinary-cross",{dur:.23}],
+ [8.02,"fade","#service-address",{dur:.30}],
+ [10.42,"fade","#delivery-at-address",{dur:.29}]
+ ]
+})
+</script>
+</section>
