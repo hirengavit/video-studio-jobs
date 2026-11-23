@@ -8,12 +8,5 @@
   "9.83"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s001",
-   "message": "slide: option \"dur\" isn't used (it takes: from, dist, spring)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
