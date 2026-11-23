@@ -8,12 +8,5 @@
   "10.39"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "error",
-   "scene": "s009",
-   "message": "update(): $(...)?.setAttribute is not a function",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
