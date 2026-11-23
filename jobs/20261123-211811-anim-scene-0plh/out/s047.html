@@ -48,6 +48,7 @@
    <text id="recap-max" x="435" y="785" font-family="Inter,sans-serif" font-size="49" font-weight="780" fill="#2b2622">Maximum <tspan id="recap-seven" font-weight="850">7 kg</tspan></text>
 
    <text id="recap-size-label" x="832" y="785" font-family="Inter,sans-serif" font-size="45" font-weight="750" fill="#2b2622">· minimum</text>
+   <text id="recap-nonroll" x="1092" y="817" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="29" font-weight="740" fill="#65564c">Roll के अलावा</text>
    <text id="recap-size" x="1092" y="785" font-family="Inter,sans-serif" font-size="49" font-weight="850" fill="#7d1616">100 × 70 mm</text>
    <text id="recap-cover" x="435" y="915" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="790" fill="#2b2622">बिना cover या दोनों सिरों से खुला cover</text>
    <g id="recap-tick-4" stroke="#17634a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
@@ -64,7 +65,7 @@
  <script type="text/scene">
  ({
   on:[
-   [1.48,'fade','#recap-size-label',{dur:.23}],
+   [1.48,'fade','#recap-size-label, #recap-nonroll',{dur:.23}],
    [1.76,'fade','#recap-size',{dur:.24}],
    [3.16,'fade','#recap-tick-4',{dur:.22}],
    [4.12,'fade','#recap-cover',{dur:.29}],
