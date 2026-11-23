@@ -1,0 +1,35 @@
+<section class="vs-scene" id="s001" data-in="cut" data-duration="9.98" data-section="OVERVIEW" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Literature for the Blind and Gyan Post">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="books">
+    <use id="braille-book" href="piece:braille-book-icon" transform="translate(214 254) scale(1.1)"/>
+    <use id="gyan-book" href="piece:gyan-post-book-icon" transform="translate(1220 240)"/>
+    <text x="1424" y="505" text-anchor="middle" font-family="Inter,sans-serif" font-size="29" font-weight="800" fill="#2b2622">Gyan Post</text>
+  </g>
+  <g font-family="Inter,sans-serif" font-size="64" font-weight="820" fill="#2b2622" text-anchor="middle">
+    <text id="braille-term" x="500" y="780">Literature for the Blind</text>
+    <text id="gyan-term" x="1400" y="780">Gyan Post</text>
+  </g>
+  <g font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="660" fill="#6f6a63" text-anchor="middle">
+    <text id="braille-hi" x="500" y="840">नेत्रहीनों के लिए साहित्य</text>
+    <text id="gyan-hi" x="1400" y="840">ज्ञान पोस्ट</text>
+  </g>
+  <g id="shared-band">
+    <rect x="260" y="900" width="1400" height="80" rx="28" fill="#f3ead6"/>
+    <text id="shared-words" x="960" y="956" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="760" fill="#2b2622">किताबें और पढ़ने का सामान</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+   camera:[[0,{zoom:1}],[6.16,{zoom:1}],[7.25,{zoom:1.03},"inOut"],[8.46,{zoom:1.03}],[9.84,{zoom:1},"inOut"]],
+   on:[
+     [1.16,"type","#braille-term",{cps:30}],
+     [1.70,"fade","#braille-hi",{dur:.30}],
+     [3.38,"type","#gyan-term",{cps:25}],
+     [3.90,"fade","#gyan-hi",{dur:.30}],
+     [6.16,"slide","#shared-band",{from:"down",dist:25,dur:.30}],
+     [6.16,"words","#shared-words",{gap:.42,dist:8}]
+   ]
+ })
+ </script>
+</section>
