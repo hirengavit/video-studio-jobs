@@ -58,6 +58,10 @@
  <script type="text/scene">
  ({
    shots:[[0,'#form'],[5.54,'#dots']],
+   update(t,section,$) {
+    $('#form')[0].style.display = t < 5.54 ? '' : 'none';
+    $('#dots')[0].style.display = t < 5.54 ? 'none' : '';
+   },
    on:[
     [.50,'fade','#braille-chip',{dur:.28}],
     [1.92,'fade','#other-script',{dur:.28}],
