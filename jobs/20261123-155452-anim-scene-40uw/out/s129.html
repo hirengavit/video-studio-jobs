@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s129" data-in="cut" data-duration="14.02" data-section="PART 7 · POD AND REGISTRATION" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Attested copy and the fee exemption for blind literature">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="term">
+  <rect x="120" y="250" width="640" height="630" rx="30" fill="#9e1b1b"/>
+  <rect x="120" y="250" width="640" height="630" rx="30" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 27" stroke-linecap="round"/>
+  <text id="attested-term" x="440" y="541" text-anchor="middle" font-family="Inter,sans-serif" font-size="72" font-weight="850" fill="#fff">attested copy</text>
+  <text id="attested-hi" x="440" y="624" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="760" fill="#fde9a6">अनुप्रमाणित प्रति</text>
+  <rect x="830" y="250" width="970" height="630" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <g id="receipts">
+   <use href="piece:booking-receipt" transform="translate(966 345) scale(1.05)"/>
+   <use href="piece:booking-receipt" transform="translate(1392 345) scale(1.05)"/>
+   <path d="M1275 518h78m-22-14 22 14-22 14" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+   <text x="1102" y="800" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#2b2622">Original</text>
+   <text x="1528" y="800" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#2b2622">Copy</text>
+  </g>
+  <g id="attested-stamp">
+   <circle cx="1528" cy="572" r="111" fill="#fff5ed" fill-opacity=".96" stroke="#9e1b1b" stroke-width="6"/>
+   <circle cx="1528" cy="572" r="96" fill="none" stroke="#9e1b1b" stroke-width="2.5" stroke-dasharray="3 6"/>
+   <text x="1528" y="585" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="890" fill="#9e1b1b">ATTESTED</text>
+  </g>
+ </g>
+ <g id="gist">
+  <rect x="140" y="220" width="1640" height="720" rx="29" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+  <rect x="204" y="279" width="12" height="102" rx="6" fill="#9e1b1b"/>
+  <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="243" y="348" font-size="52" font-weight="810" fill="#9e1b1b">सार (gist)</text>
+  <use href="piece:braille-book-icon" transform="translate(1537 279) scale(.3)"/>
+  <text id="exemption-gist" x="243" y="481" font-family="Georgia,serif" font-size="48" font-weight="700" fill="#2b2622">No fee is charged for an attested copy for a blind-literature item.</text>
+  <text x="243" y="580" font-family="Inter,sans-serif" font-size="36" font-weight="680" fill="#675349">Post Office Regulations 2024 · Reg. 136(4)</text>
+  <rect x="205" y="663" width="1510" height="198" rx="24" fill="#f3ead6"/>
+  <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="243" y="746" font-size="46" font-weight="730" fill="#2b2622">Literature for the Blind के item की attested copy पर<tspan x="243" y="809">कोई fee नहीं।</tspan></text>
+ </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  shots:[[0,"#term"],[7.64,"#gist"]],
+  on:[
+   [.24,"type","#attested-term",{cps:26}],
+   [.74,"fade","#attested-hi",{dur:.27}],
+   [3.14,"pop","#receipts",{spring:"soft"}],
+   [5.04,"stamp","#attested-stamp",{from:1.30,spring:"soft",rot:-6}],
+   [11.96,"highlight","#exemption-gist",{words:"No fee",color:"#fde9a6",opacity:1,dur:.34,pad:8}]
+  ]
+ })
+ </script>
+</section>
