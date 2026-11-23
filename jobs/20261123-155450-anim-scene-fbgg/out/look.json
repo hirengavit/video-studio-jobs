@@ -10,16 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "mostly-empty",
+   "kind": "error",
    "scene": "s009",
-   "message": "a card is mostly empty at 2.1 s: bring its items in sooner, or size it for what it holds now",
-   "t": 2.11
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s009",
-   "message": "a card is mostly empty at 4.2 s: bring its items in sooner, or size it for what it holds now",
-   "t": 4.22
+   "message": "update(): $(...)?.setAttribute is not a function",
+   "t": 0.3
   }
  ]
 }
