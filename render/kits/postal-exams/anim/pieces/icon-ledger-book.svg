@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<path id="cover" d="M39 110Q117 84 200 119Q283 84 361 110V304Q276 284 200 318Q124 284 39 304Z" fill="#9e1b1b"/>
+<g id="left-page"><path d="M49 99Q121 80 184 111V287Q113 263 49 286Z" fill="#fbf7ee"/><path d="M69 139Q119 129 163 144M69 170Q119 160 163 175M69 201Q119 191 163 206M69 232Q119 222 163 237" stroke="#ead9a8"/><path d="M142 120V263" stroke="#ead9a8"/></g>
+<g id="right-page"><path d="M216 111Q279 80 351 99V286Q287 263 216 287Z" fill="#fbf7ee"/><path d="M237 144Q281 129 331 139M237 175Q281 160 331 170M237 206Q281 191 331 201M237 237Q281 222 331 232" stroke="#ead9a8"/><path d="M310 120V263" stroke="#ead9a8"/></g>
+<g id="spine"><path d="M184 111Q200 117 216 111V287L200 300L184 287Z" fill="#9e1b1b"/><path id="rupee" d="M190 172H210M190 181H210M194 172Q212 176 203 190Q199 195 191 194L209 217" stroke="#fbf7ee" stroke-width="2.5"/></g>
+<circle data-anchor="base" cx="200" cy="318" r="0"/>
+<circle data-anchor="top" cx="200" cy="111" r="0"/>
+</svg>
