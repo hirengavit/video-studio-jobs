@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s056" data-in="cut" data-duration="11.06" data-section="PART 3 · POSTAGE AND FOREIGN MAIL" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="When a blind-literature condition is breached, the concession ends and twice the postage for the corresponding postal item applies">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="breach-rule">
+   <rect x="160" y="200" width="1600" height="760" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+   <path d="M160 320V230Q160 200 190 200H1730Q1760 200 1760 230V320Z" fill="#9e1b1b"/>
+   <text x="218" y="282" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="850" fill="#fff">शर्त टूटी तो?</text>
+   <g id="concession-chip">
+    <rect x="218" y="377" width="255" height="89" rx="23" fill="#e5e8eb"/>
+    <text id="concession-word" x="345.5" y="437" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="790" fill="#414c58" opacity=".45">रियायत</text>
+    <path id="concession-strike" d="M269 429Q352 431 423 427" stroke="#4c5661" stroke-width="5" stroke-linecap="round" fill="none"/>
+   </g>
+   <text id="concession-ends" x="513" y="437" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="810" fill="#414c58">खत्म</text>
+   <text id="related-postage" x="218" y="574" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="820" fill="#2b2622">संबंधित postal item के postage का</text>
+   <g id="double-postage">
+    <rect x="1240" y="477" width="453" height="168" rx="26" fill="#fde9a6" stroke="#d8ad49" stroke-width="3"/>
+    <rect x="1240" y="477" width="453" height="168" rx="26" fill="none" stroke="#fff" stroke-width="12" stroke-dasharray="0 25" stroke-linecap="round"/>
+    <text x="1466.5" y="550" text-anchor="middle" font-family="Inter,sans-serif" font-size="63" font-weight="880" fill="#9e1b1b">2×</text>
+    <text x="1466.5" y="611" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="820" fill="#2b2622">दोगुना</text>
+   </g>
+   <g id="related-note">
+    <rect x="218" y="647" width="1000" height="107" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+    <rect x="218" y="669" width="8" height="63" rx="4" fill="#ab8660"/>
+    <text x="256" y="716" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="760" fill="#2b2622">item असल में जिस category का, उसकी शर्तें</text>
+   </g>
+   <g id="tagged-packet">
+    <use href="piece:packet-with-tag" transform="translate(1250 670) scale(.8)"/>
+    <path d="M1500 719Q1528 713 1545 746" fill="none" stroke="#847356" stroke-width="4" stroke-linecap="round"/>
+    <path d="M1392 743H1701Q1712 743 1712 754V821Q1712 832 1701 832H1392L1365 788Z" fill="#fffaf1" stroke="#ad9669" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="1390" cy="788" r="5" fill="#e2cda7" stroke="#ad9669" stroke-width="2"/>
+    <text id="tag-words" x="1546" y="798" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="830" fill="#2b2622">Literature for the Blind</text>
+   </g>
+  </g>
+ </svg>
+
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [0.82,"fade","#related-note",{dur:.32}],
+   [7.62,"slide","#tagged-packet",{from:"right",dist:100,spring:"soft"}],
+   [8.46,"type","#tag-words",{cps:24}]
+  ]
+ })
+ </script>
+</section>
