@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <path id="wax" d="M60 7C72 8 75 14 85 13c8-1 16 6 17 14 1 9 10 12 11 22 2 12-5 17-5 29-1 10-8 18-18 20-9 2-14 12-26 13-10 0-16-5-27-5-12 0-19-8-22-18-2-9-9-16-10-25-1-10 6-16 7-25 1-12 11-21 20-23 12-1 16-9 28-8Z" fill="#9e1b1b" stroke="#7d1414" stroke-width="3"/>
+  <circle id="device-bed" cx="60" cy="59" r="34" fill="#a62424" stroke="#7d1414" stroke-width="3"/>
+  <circle id="device-ring" cx="60" cy="59" r="29.5" stroke="#cf6863" stroke-width="2"/>
+  <path id="sheen" d="M25 34c4-7 10-11 17-13m43 73 7-5" stroke="#cd5c56" stroke-width="2.5"/>
+  <circle data-anchor="base" cx="60" cy="112.5" r="0"/>
+</svg>
