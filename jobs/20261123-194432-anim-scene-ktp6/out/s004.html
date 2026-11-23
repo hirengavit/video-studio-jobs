@@ -1,0 +1,39 @@
+<section class="vs-scene" id="s004" data-in="cut" data-duration="9.24" data-section="OVERVIEW" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Two postal product summaries">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="twolines">
+   <text class="hi" x="120" y="203" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">दो lines में</text>
+   <rect x="120" y="240" width="1680" height="320" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <rect x="120" y="600" width="1680" height="340" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <rect x="173" y="286" width="365" height="228" rx="24" fill="#f3ead6"/>
+   <rect x="173" y="646" width="365" height="248" rx="24" fill="#f3ead6"/>
+   <use href="piece:braille-book-icon" transform="translate(213 294) scale(.55)"/>
+   <g id="gyan-row-book">
+    <use href="piece:gyan-post-book-icon" transform="translate(257 650) scale(.55)"/>
+    <text x="363" y="801" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="#2b2622">Gyan Post</text>
+   </g>
+   <text id="row1-summary" class="hi" x="604" y="428" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="800" fill="#2b2622">नेत्रहीनों के लिए खास तैयार सामान</text>
+
+   <g id="no-postage">
+    <rect x="1390" y="366" width="345" height="88" rx="44" fill="#fde9a6"/>
+    <text class="hi" x="1562.5" y="428" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="800" fill="#2b2622">बिना postage</text>
+   </g>
+   <text id="gyan-title" x="604" y="735" font-family="Inter,sans-serif" font-size="58" font-weight="850" fill="#9e1b1b">Gyan Post</text>
+   <text id="row2-summary" class="hi" x="604" y="811" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="800" fill="#2b2622">कुछ तय किताबें</text>
+   <g id="low-postage">
+    <rect x="1390" y="701" width="345" height="88" rx="44" fill="#fde9a6"/>
+    <text class="hi" x="1562.5" y="763" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="800" fill="#2b2622">कम postage</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  on:[
+   [1.54,'slide','#no-postage',{from:'right',dist:45,dur:.30}],
+   [4.58,'fade','#row2-summary',{dur:.34}],
+   [6.80,'type','#gyan-title',{cps:12}],
+   [8.32,'fade','#low-postage',{dur:.28}]
+  ]
+ })
+ </script>
+</section>
