@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s031" data-in="fade" data-in-dur="0.5" data-section="PART 2 · PACKET, WEIGHT AND SIZE" data-series="POSTAL PRODUCTS">
+<svg viewBox="0 0 1920 1080" aria-label="Two required markings outside the packet">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="packet-marking">
+  <text class="hi" x="310" y="274" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="65" font-weight="800" fill="#9e1b1b">Item के बाहर</text>
+  <use href="piece:packet-with-tag" transform="translate(260 306) scale(2.6)"/>
+  <rect x="354" y="546" width="604" height="246" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+  <text id="inscription" x="382" y="623" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#2b2622">Literature for the Blind</text>
+  <g id="sender-face">
+    <text class="hi" x="382" y="700" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="650" fill="#504a44">From: sender का नाम-पता</text>
+    <path d="M382 724H924 M382 758H790" stroke="#b9b5ad" stroke-width="3" stroke-linecap="round" fill="none"/>
+  </g>
+  <text id="requirements" class="hi" x="1550" y="373" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="800" fill="#9e1b1b">दो चीज़ें ज़रूरी</text>
+  <g id="words-chip">
+    <rect x="1300" y="439" width="500" height="134" rx="20" fill="#fde9a6" stroke="#ead9a8" stroke-width="3"/>
+    <circle cx="1382" cy="506" r="33" fill="#9e1b1b"/>
+    <text x="1382" y="519" text-anchor="middle" font-family="Inter,sans-serif" font-size="34" font-weight="800" fill="#fff">1</text>
+    <text class="hi" x="1450" y="525" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="800" fill="#452f14">ये शब्द</text>
+  </g>
+  <g id="sender-chip">
+    <rect x="1300" y="613" width="500" height="219" rx="20" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <circle cx="1382" cy="692" r="33" fill="#9e1b1b"/>
+    <text x="1382" y="705" text-anchor="middle" font-family="Inter,sans-serif" font-size="34" font-weight="800" fill="#fff">2</text>
+    <text class="hi" x="1440" y="707" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="800" fill="#2b2622">sender का नाम-पता</text>
+    <text id="written-or-printed" class="hi" x="1440" y="777" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">हाथ से लिखा या छपा</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [1.26, 'fade', '#requirements', {dur:0.28}],
+    [5.32, 'fade', '#inscription', {dur:0.33}],
+    [5.32, 'fade', '#words-chip', {dur:0.30}],
+    [8.90, 'fade', '#sender-face', {dur:0.34}],
+    [8.90, 'fade', '#sender-chip', {dur:0.30}],
+    [11.38, 'fade', '#written-or-printed', {dur:0.26}]
+  ]
+}
+</script>
+</section>
