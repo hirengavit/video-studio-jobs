@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s004",
-   "message": "slide: option \"dur\" isn't used (it takes: from, dist, spring)",
-   "t": 0.3
-  },
-  {
    "kind": "text-overlap",
    "scene": "s004",
    "text": "नेत्रहीनों के लिए खास तैयार सामान / बिना postage",
