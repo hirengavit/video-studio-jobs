@@ -14,8 +14,8 @@
     <use href="piece:braille-book-icon" transform="translate(278 700) scale(.7)"/>
    </g>
    <g id="meaning">
-    <rect x="880" y="200" width="920" height="760" rx="30" fill="#fff" stroke="#e9d8aa" stroke-width="3"/>
-    <rect x="936" y="356" width="9" height="446" rx="4.5" fill="#f3ead6"/>
+    <rect id="meaning-panel" x="880" y="200" width="920" height="344" rx="30" fill="#fff" stroke="#e9d8aa" stroke-width="3"/>
+    <rect id="meaning-guide" x="936" y="356" width="9" height="130" rx="4.5" fill="#f3ead6"/>
     <text id="meaning-category" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="740" x="990" y="452" fill="#2b2622">डाक की एक category</text>
     <text id="meaning-audience" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="740" x="990" y="603" fill="#2b2622">नेत्रहीन लोगों के इस्तेमाल के लिए</text>
     <text id="meaning-prepared" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="820" x="990" y="762" fill="#2b2622">खास तैयार सामान</text>
@@ -25,6 +25,12 @@
  <script type="text/scene">
  ({
    camera:[[0,{zoom:1}]],
+   update(t, section, $) {
+     const ease = (start) => { const x = Math.max(0, Math.min(1, (t - start) / .35)); return x*x*(3-2*x); };
+     const a = ease(6.12), b = ease(8.82);
+     $('#meaning-panel')?.setAttribute('height', 344 + 184*a + 232*b);
+     $('#meaning-guide')?.setAttribute('height', 130 + 158*a + 158*b);
+   },
    on:[
      [.50,"fade","#term-hi",{dur:.28}],
      [1.66,"fade","#meaning-category",{dur:.30}],
