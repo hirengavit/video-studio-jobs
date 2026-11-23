@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 260" width="420" height="260" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g id="envelope">
+    <rect x="6" y="6" width="408" height="248" rx="8" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+  </g>
+  <g id="stamp-slot">
+    <rect x="328" y="24" width="68" height="80" rx="3" fill="#f3ead6" stroke="#6f6a63" stroke-width="2.5" stroke-dasharray="2 6"/>
+  </g>
+  <g id="address-lines" stroke="#b9b2a6" stroke-width="4">
+    <path d="M168 150 H372"/>
+    <path d="M168 184 H372"/>
+    <path d="M168 218 H320"/>
+  </g>
+  <circle data-anchor="base" cx="210" cy="254" r="0"/>
+  <circle data-anchor="top" cx="210" cy="6" r="0"/>
+</svg>
