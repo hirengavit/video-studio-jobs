@@ -1,0 +1,43 @@
+{
+ "moments": [
+  "0.30",
+  "2.67",
+  "5.34",
+  "8.02",
+  "10.69",
+  "13.21"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "mostly-empty",
+   "scene": "s084",
+   "message": "a card is mostly empty at 2.7 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.67
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s084",
+   "message": "a card is mostly empty at 5.3 s: bring its items in sooner, or size it for what it holds now",
+   "t": 5.34
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s084",
+   "message": "a card is mostly empty at 8.0 s: bring its items in sooner, or size it for what it holds now",
+   "t": 8.02
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s084",
+   "message": "a card is mostly empty at 10.7 s: bring its items in sooner, or size it for what it holds now",
+   "t": 10.69
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s084",
+   "message": "a card is mostly empty at 13.2 s: bring its items in sooner, or size it for what it holds now",
+   "t": 13.21
+  }
+ ]
+}
