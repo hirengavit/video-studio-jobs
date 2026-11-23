@@ -28,8 +28,8 @@
    update(t, section, $) {
      const ease = (start) => { const x = Math.max(0, Math.min(1, (t - start) / .35)); return x*x*(3-2*x); };
      const a = ease(6.12), b = ease(8.82);
-     $('#meaning-panel')?.setAttribute('height', 344 + 184*a + 232*b);
-     $('#meaning-guide')?.setAttribute('height', 130 + 158*a + 158*b);
+     $('#meaning-panel')[0]?.setAttribute('height', 344 + 184*a + 232*b);
+     $('#meaning-guide')[0]?.setAttribute('height', 130 + 158*a + 158*b);
    },
    on:[
      [.50,"fade","#term-hi",{dur:.28}],
