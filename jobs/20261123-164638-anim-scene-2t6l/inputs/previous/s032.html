@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s032" data-in="cut" data-duration="13.78" data-section="PART 2 · PACKET, WEIGHT AND SIZE" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Packing: either no cover or an open-ended wrapper removable for inspection">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="packing">
+   <text x="120" y="225" font-family="Inter,sans-serif" font-size="58" font-weight="840" fill="#9e1b1b">Packing</text>
+   <rect x="120" y="260" width="540" height="640" rx="26" fill="#fff" stroke="#e4d2aa" stroke-width="3"/>
+   <rect x="690" y="260" width="540" height="640" rx="26" fill="#fff" stroke="#e4d2aa" stroke-width="3"/>
+   <rect x="1260" y="260" width="540" height="640" rx="26" fill="#faf3e5" stroke="#dfcda7" stroke-width="3" stroke-dasharray="12 10"/>
+   <g id="bare-book-closed">
+    <rect x="165" y="449" width="450" height="211" rx="28" fill="#f3ead6"/>
+    <path d="M210 527h351v54q0 30-30 30H231q-21 0-21-21Z" fill="#fffaf0" stroke="#2b2622" stroke-width="4"/>
+    <path d="M231 561h310m-310 16h310m-310 16h304" fill="none" stroke="#bd9d77" stroke-width="3"/>
+    <path d="M211 518q0-18 18-18h316l30 54H237q-26 0-26-21Z" fill="#9e1b1b" stroke="#2b2622" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M241 508l20 38" stroke="#fde9a6" stroke-width="4"/>
+    <g id="closed-braille-dots" fill="#fde9a6">
+      <circle cx="318" cy="522" r="5"/><circle cx="332" cy="522" r="5"/><circle cx="323" cy="536" r="5"/><circle cx="337" cy="536" r="5"/>
+      <circle cx="354" cy="522" r="5"/><circle cx="359" cy="536" r="5"/><circle cx="373" cy="536" r="5"/>
+      <circle cx="390" cy="522" r="5"/><circle cx="404" cy="522" r="5"/><circle cx="395" cy="536" r="5"/>
+    </g>
+   </g>
+   <g id="bare-label">
+    <circle cx="282" cy="746" r="24" fill="#e5f0e9" stroke="#17634a" stroke-width="3"/>
+    <path d="m271 746 8 8 14-16" fill="none" stroke="#17634a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="326" y="762" font-size="46" font-weight="760" fill="#17634a">बिना cover</text>
+   </g>
+   <g id="wrapper"><use href="piece:open-ended-wrapper" transform="translate(707 431) scale(.76)"/></g>
+   <text id="wrapper-label" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="960" y="745" text-anchor="middle" font-size="44" font-weight="790" fill="#2b2622">दोनों सिरों से खुला cover</text>
+   <text id="wrapper-out" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="960" y="803" text-anchor="middle" font-size="40" font-weight="680" fill="#675349">आसानी से हटे</text>
+   <g id="staff-inspect">
+    <use href="piece:magnifier-icon" transform="translate(961 304) scale(.43)"/>
+    <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="960" y="865" text-anchor="middle" font-size="40" font-weight="760" fill="#17634a">postal staff अंदर देख सके</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [1.82,"fade","#bare-label",{dur:.28}],
+   [3.62,"pop","#wrapper",{spring:"soft"}],
+   [5.46,"fade","#wrapper-label",{dur:.32}],
+   [7.36,"move","#wrapper #book",{by:[120,0],spring:"soft"}],
+   [7.72,"fade","#wrapper-out",{dur:.28}],
+   [9.84,"pop","#staff-inspect",{spring:"soft"}]
+  ]
+ })
+ </script>
+</section>
