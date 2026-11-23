@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 520" width="260" height="520">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="body">
+      <path d="M39 113H221V474H39Z" fill="#9e1b1b"/>
+      <path d="M196 116H219V474H196Z" fill="#7d1414" stroke="none"/>
+      <path d="M69 303H191V451H69Z" fill="none" stroke="#7d1414"/>
+      <circle cx="174" cy="375" r="4" fill="#2b2622" stroke="none"/>
+    </g>
+    <g id="cap">
+      <path d="M24 102C24 50 60 9 130 9S236 50 236 102Z" fill="#9e1b1b"/>
+      <path d="M45 86C52 51 84 28 119 25" stroke="#b8403a" fill="none"/>
+      <rect x="20" y="98" width="220" height="22" rx="7" fill="#7d1414"/>
+    </g>
+    <g id="slot">
+      <rect x="62" y="141" width="136" height="26" rx="8" fill="#2b2622"/>
+      <path d="M71 164H189" stroke="#b8403a" stroke-width="2"/>
+    </g>
+    <rect id="plate" x="75" y="196" width="110" height="64" rx="7" fill="#f3ead6"/>
+    <g id="plinth">
+      <path d="M42 470H218L236 490V511H24V490Z" fill="#6f6a63"/>
+      <path d="M26 490H234" fill="none" stroke="#4b4f58"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="130" cy="511" r="0"/>
+  <circle data-anchor="top" cx="130" cy="9" r="0"/>
+  <circle data-anchor="mouth" cx="130" cy="154" r="0"/>
+</svg>
