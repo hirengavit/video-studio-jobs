@@ -1,0 +1,187 @@
+[
+  {
+    "id": "braille-book-icon",
+    "description": "Open book, white pages with rows of raised Braille dots (small ink circles with a cream highlight), postal-red cover edge, 3 px ink outline; 520x340. Recurring picture of Parts 1-3.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s001",
+      "s002",
+      "s003",
+      "s004",
+      "s009",
+      "s015",
+      "s019",
+      "s022",
+      "s027",
+      "s032",
+      "s048",
+      "s074",
+      "s129",
+      "s130",
+      "s153",
+      "s166",
+      "s174"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "gyan-post-book-icon",
+    "description": "Closed hardback, sand #f3ead6 cover with postal-red spine, a white luggage tag on a string with a blank face the scene letters 'Gyan Post'; 360x440, 3 px ink. Recurring picture of Parts 4-6.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s001",
+      "s003",
+      "s004",
+      "s072",
+      "s074",
+      "s081",
+      "s087",
+      "s098",
+      "s112",
+      "s127",
+      "s128",
+      "s153",
+      "s171",
+      "s174"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "recorded-media-icons",
+    "description": "Six flat ink icons, each its own group: #plate (embossed plate with dot rows), #record (sound record), #disc, #film (reel), #tape (cassette), #wire (wire spool); kit colours, 3 px ink; 1500x260.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s016",
+      "s017",
+      "s018"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "institution-building",
+    "description": "Small columned building, sand walls, postal-red roof line, blank white sign plate (x60-300, y40-100) for the scene's words; 360x320, 3 px ink.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s017",
+      "s018",
+      "s061"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "paper-roll",
+    "description": "Horizontal rolled document seen three-quarter: cream body (#body), round end on the left drawn as an ellipse (#end) so a diameter line can cross it; 760x260, 3 px ink.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s036",
+      "s037",
+      "s038",
+      "s039"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "open-ended-wrapper",
+    "description": "Sand paper band wrapped round a book (#band), both short ends open with the book (#book) visible and able to slide out; 520x300, 3 px ink.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s024",
+      "s032",
+      "s033",
+      "s098",
+      "s099"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "postage-stamp-plain",
+    "description": "Perforated white postage stamp, postal-red frame, small ink post-horn motif, blank value corner; 200x240.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s023",
+      "s024",
+      "s061"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "value-paper",
+    "description": "Postal-order-like slip: cream paper, red border, a rupee mark, blank rules and a counterfoil edge; no real document copied; 420x240.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s024",
+      "s061"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "handwritten-letter",
+    "description": "Folded white letter with loose handwriting squiggle lines in ink, no readable words; 360x460.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s022",
+      "s026",
+      "s089",
+      "s096"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "airmail-plane",
+    "description": "Flat ink plane icon, white body with a blue #2456a6 stripe; 360x200.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s050",
+      "s064",
+      "s083"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "globe-icon",
+    "description": "Ink globe: cream sea, sand land, one meridian arc; 320x320.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s057",
+      "s058",
+      "s059"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "house-icon",
+    "description": "Simple ink house with a door and a blank number plate, sand walls, red roof; 300x300.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s082",
+      "s174"
+    ],
+    "reuse": false
+  }
+]
