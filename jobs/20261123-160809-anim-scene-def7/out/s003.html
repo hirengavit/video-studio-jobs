@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s003" data-in="cut" data-duration="9.05" data-section="OVERVIEW" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Gyan Post launch and two product summaries">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="timeline">
+   <g id="rulebook">
+    <use href="piece:regulations-book" transform="translate(160 260) scale(1.1)"/>
+    <rect id="rulebook-marker" x="242" y="369" width="196" height="144" rx="8" fill="#fde9a6"/>
+    <text x="340" y="410" font-family="Inter,sans-serif" font-size="34" font-weight="810" text-anchor="middle" fill="#2b2622">Post Office<tspan x="340" dy="38">Regulations</tspan><tspan x="340" dy="42" font-size="42">2024</tspan></text>
+   </g>
+   <path id="timeline-line" d="M640 620H1780" stroke="#c5b28c" stroke-width="8" stroke-linecap="round"/>
+   <circle id="timeline-stop-one" cx="860" cy="620" r="17" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="5"/>
+   <g id="timeline-icon-one">
+    <use href="piece:braille-book-icon" transform="translate(756 355) scale(.4)"/>
+   </g>
+   <text id="timeline-topic-one" x="860" y="552" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#2b2622">Literature for the Blind</text>
+   <g id="timeline-date-one">
+    <circle cx="860" cy="785" r="125" fill="#fff9f0" stroke="#9e1b1b" stroke-width="7"/>
+    <circle cx="860" cy="785" r="111" fill="none" stroke="#9e1b1b" stroke-width="2.5" stroke-dasharray="2 7" stroke-linecap="round"/>
+    <text x="860" y="773" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="850" fill="#9e1b1b">16 DEC<tspan x="860" y="833" font-size="54">2024</tspan></text>
+   </g>
+   <text id="timeline-effective-one" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="860" y="982" text-anchor="middle" font-size="40" font-weight="700" fill="#5e5953">से लागू</text>
+   <path id="timeline-progress" d="M1022 620H1560" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+   <g id="timeline-icon-two">
+    <circle cx="1560" cy="620" r="17" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="5"/>
+    <use href="piece:gyan-post-book-icon" transform="translate(1488 350) scale(.4)"/>
+    <text x="1565" y="457" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="800" fill="#2b2622">Gyan Post</text>
+   </g>
+   <g id="timeline-date-two">
+    <circle cx="1560" cy="785" r="125" fill="#fff9f0" stroke="#9e1b1b" stroke-width="7"/>
+    <circle cx="1560" cy="785" r="111" fill="none" stroke="#9e1b1b" stroke-width="2.5" stroke-dasharray="2 7" stroke-linecap="round"/>
+    <text x="1560" y="773" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="850" fill="#9e1b1b">1 MAY<tspan x="1560" y="833" font-size="54">2025</tspan></text>
+   </g>
+   <text id="timeline-started-two" x="1560" y="982" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="700" fill="#5e5953">Gyan Post शुरू</text>
+  </g>
+  <g id="twolines">
+   <text class="hi" x="120" y="203" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">दो lines में</text>
+   <rect x="120" y="240" width="1680" height="320" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <rect x="120" y="600" width="1680" height="340" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <rect x="173" y="286" width="365" height="228" rx="24" fill="#f3ead6"/>
+   <rect x="173" y="646" width="365" height="248" rx="24" fill="#f3ead6"/>
+   <use href="piece:braille-book-icon" transform="translate(213 294) scale(.55)"/>
+   <g id="gyan-row-book">
+    <use href="piece:gyan-post-book-icon" transform="translate(257 650) scale(.55)"/>
+    <text x="363" y="801" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="800" fill="#2b2622">Gyan Post</text>
+   </g>
+   <text id="row1-summary" class="hi" x="604" y="428" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="800" fill="#2b2622">नेत्रहीनों के लिए खास तैयार सामान</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  shots:[[0,'#timeline'],[4.27,'#twolines']],
+  on:[
+   [0.02,'draw','#timeline-progress',{dur:.48}],
+   [0.04,'pop','#timeline-icon-two',{from:.84,spring:'soft'}],
+   [1.12,'stamp','#timeline-date-two',{from:1.35,spring:'soft',rot:-6}],
+   [3.20,'fade','#timeline-started-two',{dur:.28}],
+   [6.77,'fade','#row1-summary',{dur:.32}]
+  ]
+ })
+ </script>
+</section>
