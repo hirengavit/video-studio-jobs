@@ -1,0 +1,37 @@
+<section class="vs-scene" id="s009" data-in="fade" data-in-dur="0.5" data-duration="10.54" data-section="PART 1 · LITERATURE FOR THE BLIND" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Literature for the Blind: a postal category for articles specially prepared for the use of blind people">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="term">
+   <g id="term-stamp">
+    <rect x="120" y="200" width="680" height="420" rx="27" fill="#9e1b1b"/>
+    <rect x="120" y="200" width="680" height="420" rx="27" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 28" stroke-linecap="round"/>
+    <text x="460" y="355" text-anchor="middle" font-family="Inter,sans-serif" font-size="68" font-weight="850" fill="white">Literature for<tspan x="460" y="440">the Blind</tspan></text>
+    <text id="term-hi" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="740" x="460" y="532" text-anchor="middle" fill="#fde9a6">नेत्रहीनों के लिए साहित्य</text>
+   </g>
+   <g id="book-panel">
+    <rect x="120" y="668" width="680" height="292" rx="27" fill="#f3ead6" stroke="#e9d8aa" stroke-width="3"/>
+    <path d="M136 921L337 789m246 0 201 132" fill="none" stroke="#e1cca5" stroke-width="3"/>
+    <use href="piece:braille-book-icon" transform="translate(278 700) scale(.7)"/>
+   </g>
+   <g id="meaning">
+    <rect x="880" y="200" width="920" height="760" rx="30" fill="#fff" stroke="#e9d8aa" stroke-width="3"/>
+    <rect x="936" y="356" width="9" height="446" rx="4.5" fill="#f3ead6"/>
+    <text id="meaning-category" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="740" x="990" y="452" fill="#2b2622">डाक की एक category</text>
+    <text id="meaning-audience" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="740" x="990" y="603" fill="#2b2622">नेत्रहीन लोगों के इस्तेमाल के लिए</text>
+    <text id="meaning-prepared" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="820" x="990" y="762" fill="#2b2622">खास तैयार सामान</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+   camera:[[0,{zoom:1}]],
+   on:[
+     [.50,"fade","#term-hi",{dur:.28}],
+     [1.66,"fade","#meaning-category",{dur:.30}],
+     [6.18,"fade","#meaning-audience",{dur:.30}],
+     [8.90,"fade","#meaning-prepared",{dur:.28}],
+     [9.34,"highlight","#meaning-prepared",{words:"खास तैयार",color:"#fde9a6",opacity:1,dur:.32,pad:8}]
+   ]
+ })
+ </script>
+</section>
