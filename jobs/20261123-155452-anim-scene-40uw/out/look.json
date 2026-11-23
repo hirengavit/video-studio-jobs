@@ -8,18 +8,5 @@
   "13.87"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "mostly-empty",
-   "scene": "s129",
-   "message": "a card is mostly empty at 2.8 s: bring its items in sooner, or size it for what it holds now",
-   "t": 2.8
-  },
-  {
-   "kind": "text-off-frame",
-   "scene": "s129",
-   "text": "No fee is charged for an attested copy f",
-   "t": 8.41
-  }
- ]
+ "warnings": []
 }
