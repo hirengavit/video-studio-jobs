@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 360" width="420" height="360">
+  <g fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="box">
+      <path d="M110 140 L128 78 H388 L370 140 Z" fill="#f3ead6"/>
+      <path d="M80 170 L110 140 H370 L340 170 Z" fill="#ead9a8"/>
+      <path d="M80 170 H340 V330 H80 Z" fill="#f3ead6"/>
+      <path d="M340 170 L370 140 V300 L340 330 Z" fill="#ead9a8"/>
+      <path d="M80 170 L110 140 L46 116 L20 148 Z" fill="#f3ead6"/>
+      <path d="M340 170 L370 140 L408 164 L380 196 Z" fill="#f3ead6"/>
+      <path d="M150 300 H270" stroke="#6f6a63" stroke-width="2"/>
+    </g>
+    <g id="glass">
+      <path d="M160 56 H262 L252 174 H170 Z" fill="#ffffff" fill-opacity="0.8" stroke="none"/>
+      <path d="M160 56 L170 174 M262 56 L252 174"/>
+      <ellipse cx="211" cy="56" rx="51" ry="8" fill="#ffffff"/>
+      <path d="M178 76 L185 150 M192 74 L195 104" stroke="#6f6a63" stroke-width="2"/>
+    </g>
+    <g id="flutes">
+      <path d="M80 170 H340 V182 H80 Z" fill="#f3ead6"/>
+      <path d="M80 176 q5 -5 10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0 t10 0" stroke-width="2"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="210" cy="330" r="0"/>
+  <circle data-anchor="mouth" cx="225" cy="155" r="0"/>
+</svg>
