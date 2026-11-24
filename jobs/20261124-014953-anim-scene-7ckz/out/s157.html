@@ -41,9 +41,8 @@
     <text x="1426" y="443" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="35" font-weight="800" fill="#694800">हवा से: airmail fee</text>
    </g>
    <g id="item-two-textbook">
-    <image id="item-two-photo" href="photo:printed-books-stack-cutout" x="737" y="493" width="103" height="88" preserveAspectRatio="xMidYMid meet"/>
-    <text id="item-two-title" class="hi" x="258" y="526" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="35" font-weight="820" fill="#2b2622"><tspan id="item-two-weight">2 kg </tspan><tspan id="item-two-competitive">competitive exam textbook</tspan></text>
-    <text id="item-two-print" class="hi" x="258" y="573" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="31" font-weight="750" fill="#6f5a43">(आम छपाई)<tspan id="item-two-condition"> · शर्तें पूरी</tspan></text>
+    <text id="item-two-title" class="hi" x="258" y="526" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="37" font-weight="820" fill="#2b2622"><tspan id="item-two-weight">2 kg </tspan><tspan id="item-two-competitive">competitive exam textbook</tspan></text>
+    <text id="item-two-print" class="hi" x="258" y="573" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="37" font-weight="750" fill="#6f5a43">(आम छपाई)<tspan id="item-two-condition"> · शर्तें पूरी</tspan></text>
    </g>
    <g id="item-two-service">
     <rect x="880" y="493" width="420" height="88" rx="18" fill="#e3f1e8" stroke="#afd7be" stroke-width="2"/>
@@ -54,7 +53,7 @@
  <script type="text/scene">
  ({
   camera:[[0,{zoom:1}]],
-  on:[[.46,"fade","#item-two-print",{dur:.23}],[5.22,"fade","#item-two-photo",{dur:.26}],[8.72,"fade","#item-two-service",{dur:.28}]],
+  on:[[.46,"fade","#item-two-print",{dur:.23}],[8.72,"fade","#item-two-service",{dur:.28}]],
   update(t,section,$){
    for(const [id,start] of [["#item-two-weight",1.88],["#item-two-competitive",3.68],["#item-two-condition",6.70]]){
     const el=$(id)[0]; if(el)el.style.opacity=Math.min(1,Math.max(0,(t-start)/.22));
