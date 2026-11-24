@@ -6,7 +6,7 @@
    <text x="487" y="218" font-family="Inter,sans-serif" font-size="59" font-weight="840" fill="#9e1b1b">Gyan Post tariff</text>
    <rect id="settled-tax-marker" x="587" y="233" width="446" height="52" rx="4" fill="#fde9a6"/>
    <text id="tariff-tax-note" x="487" y="272" font-family="Inter,sans-serif" font-size="36" font-weight="670" fill="#61564e">Rates exclude applicable taxes · Schedule I, Table X</text>
-   <rect x="360" y="300" width="1200" height="690" rx="24" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+   <rect id="tariff-frame" x="360" y="300" width="1200" height="690" rx="24" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
    <path d="M360 369V324Q360 300 384 300H1536Q1560 300 1560 324V369Z" fill="#9e1b1b"/>
    <text x="752" y="349" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="820" fill="#fff">वज़न</text>
    <text x="1290" y="349" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="820" fill="#fff">Postage</text>
@@ -129,8 +129,8 @@
    <rect id="tax-emphasis" x="587" y="233" width="446" height="52" rx="7" fill="none" stroke="#bd811a" stroke-width="3" pointer-events="none"/>
 
    <g id="no-booking-below-300">
-    <rect x="360" y="998" width="1200" height="41" rx="17" fill="#e7edf0" stroke="#a2aeb6" stroke-width="2"/>
-    <text x="960" y="1032" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="820" fill="#354754">300 g से कम: booking नहीं</text>
+    <rect x="360" y="988" width="1200" height="51" rx="17" fill="#e7edf0" stroke="#a2aeb6" stroke-width="2"/>
+    <text x="960" y="1026" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="820" fill="#354754">300 g से कम: booking नहीं</text>
    </g>
   </g>
  </svg>
@@ -149,6 +149,7 @@
     note.style.filter="grayscale("+(1-pulse)+")";
     note.setAttribute("transform","translate(1741.5 641) scale("+(1+.06*pulse)+") translate(-1741.5 -641)");
    }
+   $("#tariff-frame")[0]?.setAttribute("height",690-10*progress(6.01,.30));
    $("#slab-band-7")[0]?.setAttribute("opacity",1-progress(0,.30));
    $("#slab-band-1")[0]?.setAttribute("opacity",progress(4.32,.28));
   }
