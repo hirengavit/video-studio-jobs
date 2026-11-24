@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.24",
+  "4.47",
+  "6.71",
+  "8.94",
+  "11.03"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s096",
+   "text": "अक्षर सिर्फ / छपाई से",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s096",
+   "message": "a card (#s096-outside-note-card) is mostly empty at 8.9 s: bring its items in sooner, or size it for what it holds now",
+   "t": 8.94
+  }
+ ]
+}
