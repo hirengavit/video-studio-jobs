@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.36",
+  "2.72",
+  "4.08",
+  "5.44",
+  "6.65"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s044",
+   "text": "Roll के अलावा minimum / 100 × 70 mm",
+   "t": 0.3
+  }
+ ]
+}
