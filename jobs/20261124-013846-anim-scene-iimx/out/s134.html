@@ -35,14 +35,9 @@
     </g>
    </g>
    <g id="gyan-col">
-    <rect x="690" y="200" width="560" height="790" rx="26" fill="#f7f4ec" stroke="#c7c3b9" stroke-width="3"/>
-    <path d="M690 316V226Q690 200 716 200H1224Q1250 200 1250 226V316Z" fill="#e9e6df"/>
-    <text x="970" y="275" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi" font-size="48" font-weight="800" fill="#6f6a63">Gyan Post का नियम</text>
-    <g id="gyan-active">
-     <rect x="690" y="200" width="560" height="790" rx="26" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
-     <path d="M690 316V226Q690 200 716 200H1224Q1250 200 1250 226V316Z" fill="#9e1b1b"/>
-     <text x="970" y="275" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi" font-size="48" font-weight="800" fill="#fff">Gyan Post का नियम</text>
-    </g>
+    <rect id="gyan-frame" x="690" y="200" width="560" height="790" rx="26" fill="#f7f4ec" stroke="#c7c3b9" stroke-width="3"/>
+    <path id="gyan-header" d="M690 316V226Q690 200 716 200H1224Q1250 200 1250 226V316Z" fill="#e9e6df"/>
+    <text id="gyan-header-text" x="970" y="275" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi" font-size="48" font-weight="800" fill="#6f6a63">Gyan Post का नियम</text>
     <text id="three-services" class="hi" x="725" y="404" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="800" fill="#2b2622">तीन services का नाम:</text>
    </g>
    <g id="firm-col">
@@ -59,9 +54,18 @@
   on:[
    [2.62,"fade","#do-not-transfer",{dur:.28}],
    [5.42,"strike","#unsupported-transfer",{color:"#59606b",dur:.29}],
-   [6.74,"fade","#gyan-active",{dur:.27}],
    [9.52,"fade","#three-services",{dur:.28}]
-  ]
+  ],
+  update(t,section,$){
+   const r=Math.max(0,Math.min(1,(t-6.74)/.27));
+   const mix=(a,b)=>"rgb("+a.map((v,i)=>Math.round(v+(b[i]-v)*r)).join(",")+")";
+   for(const [id,attr,a,b] of [
+    ["#gyan-frame","fill",[247,244,236],[255,255,255]],
+    ["#gyan-frame","stroke",[199,195,185],[225,204,165]],
+    ["#gyan-header","fill",[233,230,223],[158,27,27]],
+    ["#gyan-header-text","fill",[111,106,99],[255,255,255]]
+   ]){const el=$(id)[0];if(el)el.setAttribute(attr,mix(a,b));}
+  }
  })
  </script>
 </section>
