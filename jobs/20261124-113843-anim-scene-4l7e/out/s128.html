@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s128" data-in="cut" data-duration="9.60" data-section="PART 7 · POD AND REGISTRATION" data-series="POSTAL PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Gyan Post POD form and address-side endorsement">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="gyanpod">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <rect id="book-panel" x="142" y="200" width="650" height="745" rx="27" fill="#f3ead6" stroke="#e1cca5" stroke-width="3"/>
+ <use id="pod-gyan-book" href="piece:gyan-post-book-icon" transform="translate(341 379) scale(.7)"/>
+ <text id="book-caption" x="467" y="776" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="840" fill="#7d1616">Gyan Post</text>
+ <rect id="gyan-pod-card" x="824" y="200" width="954" height="745" rx="27" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+ <path id="gyan-pod-header" d="M824 344V227Q824 200 851 200H1751Q1778 200 1778 227V344Z" fill="#9e1b1b"/>
+ <text id="pod-heading" x="884" y="294" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="65" font-weight="840" fill="#fff">Gyan Post में POD</text>
+ <g id="gyan-pod-fee">
+  <rect id="fee-fill" x="899" y="498" width="804" height="154" rx="25" fill="#fde9a6" stroke="#e1bc72" stroke-width="2"/>
+  <text id="fee-copy" x="1301" y="598" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="840" fill="#4c3821">fee posting के समय ही</text>
+ </g>
+
+ <g id="pod-packet">
+  <use href="piece:packet-with-tag" transform="translate(960 626) scale(1.2)"/>
+ </g>
+ <g id="pod-slip">
+  <use href="piece:signature-slip"/>
+ </g>
+ <g id="pod-form-step">
+  <rect x="545" y="476" width="1210" height="68" rx="16" fill="#f7efde"/>
+  <text x="580" y="523" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="820" fill="#5d400e">तय form ठीक से भरिए</text>
+ </g>
+ <g id="pod-attachment-step">
+  <rect x="545" y="555" width="1210" height="68" rx="16" fill="#e3f1e8"/>
+  <text x="580" y="602" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="820" fill="#17634a">item के साथ मज़बूती से जोड़िए</text>
+ </g>
+ <g id="pod-address-side">
+  <text x="1482" y="737" font-family="Inter,sans-serif" font-size="44" font-weight="820" fill="#7d1616">address side</text>
+  <path d="M1463 725H1304m14-12-14 12 14 12" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+ <g id="pod-endorsed">
+  <rect x="990" y="695" width="301" height="93" rx="9" fill="#fffaf0" stroke="#997b4b" stroke-width="2"/>
+  <text id="pod-superscription" x="1140.5" y="736" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="850" fill="#2b2622">Proof of</text>
+  <text id="pod-superscription-end" x="1140.5" y="780" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="850" fill="#2b2622">delivery due</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[[0,"fade","#pod-packet",{dur:.36}],[0,"fade","#pod-slip",{dur:.36}],[.22,"fade","#pod-form-step",{dur:.22}],[3.5,"fade","#pod-attachment-step",{dur:.22}],[5.58,"fade","#pod-address-side",{dur:.20}],[7.66,"fade","#pod-endorsed",{dur:.14}],[7.66,"type","#pod-superscription",{cps:38}],[8.14,"type","#pod-superscription-end",{cps:33}]],
+ update(t,section,$){
+  const ramp=(a,d)=>Math.max(0,Math.min(1,(t-a)/d)), ease=u=>u*u*(3-2*u);
+  const q=ease(ramp(0,.48)), v=ease(ramp(2.54,1.84));
+  const set=(id,k,val)=>{const e=$("#"+id)[0];if(e)e.setAttribute(k,val);};
+  const lerp=(a,b)=>a+(b-a)*q;
+  set("book-panel","x",lerp(142,100));set("book-panel","width",lerp(650,340));
+  set("pod-gyan-book","transform","translate("+lerp(341,153)+" 379) scale("+lerp(.7,.65)+")");
+  set("book-caption","x",lerp(467,270));
+  const left=lerp(824,480), right=lerp(1778,1820);
+  set("gyan-pod-card","x",left);set("gyan-pod-card","width",right-left);
+  set("gyan-pod-header","d","M"+left+" 344V227Q"+left+" 200 "+(left+27)+" 200H"+(right-27)+"Q"+right+" 200 "+right+" 227V344Z");
+  set("pod-heading","x",lerp(884,545));
+  for(const [k,a,b] of [["x",899,545],["y",498,363],["width",804,1210],["height",154,98]])set("fee-fill",k,lerp(a,b));
+  set("fee-copy","x",lerp(1301,1150));set("fee-copy","y",lerp(598,431));
+  set("pod-slip","transform","translate("+(1468-309*v)+" "+(690+87*v)+") scale("+(.45-.08*v)+")");
+ }
+})
+</script>
+</section>
