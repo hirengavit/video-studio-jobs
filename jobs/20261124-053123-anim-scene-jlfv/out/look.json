@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "2.79",
+  "5.59",
+  "8.38",
+  "11.18",
+  "13.82"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s119",
+   "text": "₹20 + ₹25 + … (2.3:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  }
+ ]
+}
