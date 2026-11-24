@@ -1,0 +1,39 @@
+{
+ "moments": [
+  "0.30",
+  "2.02",
+  "4.05",
+  "6.07",
+  "8.10",
+  "9.97"
+ ],
+ "problems": [
+  "s090: no photo \"newspapers-and-magazines-cutout\" in the materials"
+ ],
+ "warnings": [
+  {
+   "kind": "mostly-empty",
+   "scene": "s090",
+   "message": "a card (#s090-condition-row-4) is mostly empty at 4.0 s: bring its items in sooner, or size it for what it holds now",
+   "t": 4.05
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s090",
+   "message": "a card (#s090-condition-row-5) is mostly empty at 6.1 s: bring its items in sooner, or size it for what it holds now",
+   "t": 6.07
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s090",
+   "message": "a card (#s090-condition-row-5) is mostly empty at 8.1 s: bring its items in sooner, or size it for what it holds now",
+   "t": 8.1
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s090",
+   "message": "a card (#s090-condition-row-5) is mostly empty at 10.0 s: bring its items in sooner, or size it for what it holds now",
+   "t": 9.97
+  }
+ ]
+}
