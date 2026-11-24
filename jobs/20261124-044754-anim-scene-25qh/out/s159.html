@@ -61,6 +61,7 @@
    <g id="item-three-service">
     <rect x="880" y="621" width="420" height="88" rx="18" fill="#eef0f1" stroke="#b9bec4" stroke-width="2"/>
     <text id="item-three-gyan-word" x="921" y="681" font-family="Inter,sans-serif" font-size="45" font-weight="820" fill="#434d5c">Gyan Post</text>
+    <text id="item-three-question" x="1169" y="681" font-family="Inter,sans-serif" font-size="44" font-weight="850" fill="#434d5c">?</text>
     <text id="item-three-not" x="1169" y="681" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="850" fill="#434d5c">नहीं</text>
    </g>
    <text id="item-four-gift" class="hi" x="258" y="784" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="820" fill="#2b2622">नेत्रहीन पाठक को भेंट:</text>
@@ -72,10 +73,14 @@
   on:[
    [3.26,"fade","#item-three-periodical",{dur:.24}],
    [5.18,"fade","#item-three-service",{dur:.24}],
-   [6.46,"fade","#item-three-not",{dur:.22}],
    [6.46,"strike","#item-three-gyan-word",{color:"#59606b",dur:.27}],
    [6.92,"fade","#item-four-gift",{dur:.25}]
-  ]
+  ],
+  update(t,section,$){
+   const q=$("#item-three-question")[0], no=$("#item-three-not")[0];
+   if(q)q.style.opacity=t<6.46?1:0;
+   if(no)no.style.opacity=t<6.46?0:1;
+  }
  })
  </script>
 </section>
