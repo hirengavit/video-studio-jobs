@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s122" data-in="cut" data-duration="9.42" data-section="PART 7 · POD AND REGISTRATION" data-series="POSTAL PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Proof of delivery is separate from the booking receipt and shows that the item reached the recipient">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="papers">
+ <text x="120" y="232" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="830" fill="#9e1b1b">दो कागज़ जो उलझते हैं</text>
+ <g id="booking-card">
+  <rect x="120" y="280" width="780" height="620" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+  <path d="M120 392V310Q120 280 150 280H870Q900 280 900 310V392Z" fill="#9e1b1b"/>
+  <text x="510" y="354" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="840" fill="#fff">Booking receipt</text>
+  <use href="piece:booking-receipt" transform="translate(406 422) scale(.8)"/>
+  <g id="booking-meaning">
+   <rect x="161" y="756" width="698" height="105" rx="22" fill="#f3ead6"/>
+   <text x="510" y="822" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="800" fill="#2b2622">item डाक के लिए स्वीकार हुआ</text>
+  </g>
+ </g>
+ <g id="papers-vs">
+  <circle cx="960" cy="573" r="43" fill="#f3ead6" stroke="#e1cca5" stroke-width="3"/>
+  <text x="960" y="586" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="830" fill="#7d1616">VS</text>
+ </g>
+ <g id="pod-card">
+  <rect x="1020" y="280" width="780" height="620" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+  <path d="M1020 417V310Q1020 280 1050 280H1770Q1800 280 1800 310V417Z" fill="#f3ead6"/>
+  <text x="1410" y="341" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" font-weight="840" fill="#7d1616">proof of delivery (POD)</text>
+  <text id="pod-hindi" x="1410" y="395" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="39" font-weight="740" fill="#50453c">वितरण का प्रमाण</text>
+  <use href="piece:signature-slip" transform="translate(1250 387) scale(.8)"/>
+  <g id="separate-proof">
+   <rect x="1270" y="676" width="280" height="62" rx="18" fill="#fde9a6"/>
+   <text x="1410" y="720" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="810" fill="#2b2622">अलग सबूत</text>
+  </g>
+  <g id="pod-meaning">
+   <rect x="1061" y="756" width="698" height="105" rx="22" fill="#f3ead6"/>
+   <text x="1410" y="822" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="800" fill="#2b2622">item पाने वाले तक पहुँचा</text>
+  </g>
+ </g>
+</g>
+</svg>
+
+<script type="text/scene">
+({camera:[[0,{zoom:1}]],on:[
+[0,"fade","#pod-card",{dur:.27}],
+[0.50,"fade","#pod-hindi",{dur:.28}],
+[3.44,"fade","#separate-proof",{dur:.29}],
+[6.66,"fade","#pod-meaning",{dur:.30}]
+]})
+</script>
+</section>
