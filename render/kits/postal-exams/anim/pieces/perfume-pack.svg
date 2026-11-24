@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<defs><pattern id="perfume-pack-wave" width="14" height="14" patternUnits="userSpaceOnUse"><path d="M0 9q3.5-8 7 0t7 0" fill="none" stroke="#a8834a" stroke-width="2"/></pattern>
+<pattern id="perfume-pack-wave-v" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(90)"><path d="M0 9q3.5-8 7 0t7 0" fill="none" stroke="#a8834a" stroke-width="2"/></pattern></defs>
+<g id="box"><path d="M40 60H720V520H40ZM72 124V488H688V124Z" fill="#d9b77c" fill-rule="evenodd"/>
+<path d="M48 504H712M56 140V480M704 140V480" stroke="#a8834a" stroke-width="2" fill="none"/>
+<rect x="230" y="72" width="300" height="40" rx="3" fill="#ffffff" stroke-width="2.5"/></g>
+<g id="shavings"><rect x="72" y="124" width="616" height="364" fill="#efe0b8" stroke="none"/>
+<g stroke="none"><rect x="74" y="126" width="612" height="14" fill="url(#perfume-pack-wave)"/><rect x="74" y="472" width="612" height="14" fill="url(#perfume-pack-wave)"/><rect x="74" y="140" width="14" height="332" fill="url(#perfume-pack-wave-v)"/><rect x="672" y="140" width="14" height="332" fill="url(#perfume-pack-wave-v)"/></g>
+<g fill="none" stroke="#c9a66a" stroke-width="2.5"><path d="M120 180a9 7 0 1 1 10 8a5 4 0 1 1-6-5"/><path d="M130 300a9 7 0 1 1 10 8a5 4 0 1 1-6-5"/><path d="M110 420a9 7 0 1 1 10 8a5 4 0 1 1-6-5"/><path d="M620 190a9 7 0 1 1 10 8a5 4 0 1 1-6-5"/><path d="M630 310a9 7 0 1 1 10 8a5 4 0 1 1-6-5"/><path d="M610 420a9 7 0 1 1 10 8a5 4 0 1 1-6-5"/><path d="M260 150a9 7 0 1 1 10 8a5 4 0 1 1-6-5"/><path d="M380 148a9 7 0 1 1 10 8a5 4 0 1 1-6-5"/><path d="M500 150a9 7 0 1 1 10 8a5 4 0 1 1-6-5"/><path d="M270 460a9 7 0 1 1 10 8a5 4 0 1 1-6-5"/><path d="M400 458a9 7 0 1 1 10 8a5 4 0 1 1-6-5"/><path d="M520 460a9 7 0 1 1 10 8a5 4 0 1 1-6-5"/><path d="M150 250a9 7 0 1 1 10 8a5 4 0 1 1-6-5"/><path d="M600 370a9 7 0 1 1 10 8a5 4 0 1 1-6-5"/></g></g>
+<g id="paper"><rect x="190" y="166" width="380" height="288" rx="4" fill="#f7f1e1"/><path d="M190 166 226 202M570 166 534 202M190 454 226 418M570 454 534 418" stroke="#d6c9a8" stroke-width="2" fill="none"/></g>
+<g id="carton"><rect x="214" y="190" width="332" height="240" rx="3" fill="#d9bf8c"/><rect x="234" y="210" width="292" height="200" rx="10" fill="#fbf7ee" stroke="#b9a77d" stroke-width="2"/>
+<path d="M250 236q12-10 24 0M486 236q12-10 24 0M250 386q12 10 24 0M486 386q12 10 24 0" stroke="#d6c9a8" stroke-width="2" fill="none"/></g>
+<g id="bottle"><path d="M352 292V270H408V292" fill="#cfe3e8"/><rect x="362" y="248" width="36" height="24" fill="#cfe3e8"/>
+<rect x="322" y="290" width="116" height="112" rx="14" fill="#cfe3e8"/><path d="M326 336H434V388Q434 398 424 398H336Q326 398 326 388Z" fill="#fde9a6" stroke="none"/>
+<rect x="322" y="290" width="116" height="112" rx="14" fill="none"/>
+<rect x="364" y="234" width="32" height="18" rx="2" fill="#c99a5b"/><path d="M356 226H404V254Q404 258 400 258H360Q356 258 356 254Z" fill="#a7aaad"/>
+<path d="M336 302V388" stroke="#ffffff" stroke-width="5" fill="none"/></g>
+<circle data-anchor="base" cx="380" cy="520" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="380" cy="60" r="0" fill="none" stroke="none"/>
+</svg>
