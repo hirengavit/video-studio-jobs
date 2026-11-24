@@ -8,12 +8,5 @@
   "12.13"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s043",
-   "text": "बिना cover, या दोनों सिरों से खुला cover",
-   "t": 4.91
-  }
- ]
+ "warnings": []
 }
