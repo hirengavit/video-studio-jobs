@@ -1,0 +1,71 @@
+<section class="vs-scene" id="s134" data-in="cut" data-duration="12.48" data-section="PART 7 · POD AND REGISTRATION" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="POD fee and the general registration rule for Speed Post documents and parcels">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="three">
+   <g id="general-col">
+    <rect x="120" y="200" width="560" height="790" rx="26" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+    <path d="M120 316V226Q120 200 146 200H654Q680 200 680 226V316Z" fill="#9e1b1b"/>
+    <text x="400" y="275" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi" font-size="51" font-weight="820" fill="#fff">आम नियम</text>
+    <g id="reg-line">
+     <rect x="142" y="341" width="516" height="136" rx="20" fill="#f3ead6"/>
+     <text x="165" y="396" font-family="Inter,sans-serif" font-size="42" font-weight="740" fill="#6f6a63">registration =</text>
+     <text x="165" y="449" font-family="Inter,sans-serif" font-size="51" font-weight="820" fill="#2b2622">Registered Post</text>
+    </g>
+    <g id="speed-line">
+     <rect x="142" y="492" width="516" height="157" rx="20" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+     <text x="165" y="545" font-family="Inter,sans-serif" font-size="42" font-weight="830" fill="#2b2622">Speed Post</text>
+     <text x="165" y="592" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi" font-size="38" font-weight="690" fill="#2b2622">documents, parcels की</text>
+     <text x="165" y="633" font-family="Inter,sans-serif" font-size="38" font-weight="690" fill="#2b2622">value-added service</text>
+    </g>
+    <g id="delivery-line">
+     <rect x="142" y="660" width="516" height="119" rx="18" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+     <text class="hi" x="165" y="709" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="38" font-weight="780" fill="#2b2622">Delivery: नामित addressee</text>
+     <text class="hi" x="165" y="756" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="790" fill="#7d1616">या उसका अधिकृत व्यक्ति</text>
+    </g>
+    <text id="insurance-line" x="165" y="823" font-family="Inter,sans-serif" font-size="40" font-weight="790" fill="#2b2622">insurance:</text>
+    <text id="insurance-speed" class="hi" x="389" y="823" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="28" font-weight="750" fill="#2b2622">Speed Post item पर</text>
+    <g id="registration-tile">
+     <rect x="142" y="846" width="516" height="100" rx="14" fill="#fde9a6" stroke="#9e1b1b" stroke-width="2" stroke-dasharray="5 4"/>
+     <text x="400" y="879" text-anchor="middle" font-family="Inter,sans-serif" font-size="34" font-weight="830" fill="#7d1616">Speed Post registration</text>
+     <text x="400" y="927" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="830" fill="#2b2622"><tspan id="rupees">₹5</tspan><tspan id="tax"> + GST</tspan></text>
+    </g>
+    <g id="do-not-transfer">
+     <rect x="142" y="950" width="516" height="35" rx="8" fill="#e7e8e9"/>
+     <text class="hi" x="401" y="976" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="29" font-weight="790" fill="#3e4858"><tspan id="unsupported-transfer">₹5 + GST</tspan> को Gyan Post की दर न मानें</text>
+    </g>
+   </g>
+   <g id="gyan-col">
+    <rect id="gyan-frame" x="690" y="200" width="560" height="790" rx="26" fill="#f7f4ec" stroke="#c7c3b9" stroke-width="3"/>
+    <path id="gyan-header" d="M690 316V226Q690 200 716 200H1224Q1250 200 1250 226V316Z" fill="#e9e6df"/>
+    <text id="gyan-header-text" x="970" y="275" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi" font-size="48" font-weight="800" fill="#6f6a63">Gyan Post का नियम</text>
+    <text id="three-services" class="hi" x="725" y="404" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="800" fill="#2b2622">तीन services का नाम:</text>
+   </g>
+   <g id="firm-col">
+    <rect x="1260" y="200" width="560" height="790" rx="26" fill="#f7f4ec" stroke="#c7c3b9" stroke-width="3"/>
+    <path d="M1260 316V226Q1260 200 1286 200H1794Q1820 200 1820 226V316Z" fill="#e9e6df"/>
+    <text x="1540" y="275" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi" font-size="48" font-weight="800" fill="#6f6a63">पक्की बातें</text>
+   </g>
+  </g>
+
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [2.62,"fade","#do-not-transfer",{dur:.28}],
+   [5.42,"strike","#unsupported-transfer",{color:"#59606b",dur:.29}],
+   [9.52,"fade","#three-services",{dur:.28}]
+  ],
+  update(t,section,$){
+   const r=Math.max(0,Math.min(1,(t-6.74)/.27));
+   const mix=(a,b)=>"rgb("+a.map((v,i)=>Math.round(v+(b[i]-v)*r)).join(",")+")";
+   for(const [id,attr,a,b] of [
+    ["#gyan-frame","fill",[247,244,236],[255,255,255]],
+    ["#gyan-frame","stroke",[199,195,185],[225,204,165]],
+    ["#gyan-header","fill",[233,230,223],[158,27,27]],
+    ["#gyan-header-text","fill",[111,106,99],[255,255,255]]
+   ]){const el=$(id)[0];if(el)el.setAttribute(attr,mix(a,b));}
+  }
+ })
+ </script>
+</section>
