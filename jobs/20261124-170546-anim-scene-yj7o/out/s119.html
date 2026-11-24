@@ -119,9 +119,9 @@
     <text x="1732.5" y="623" text-anchor="middle" font-family="Inter,sans-serif" font-size="29" font-weight="810" fill="#5d400e">↓</text>
     <text x="1732.5" y="660" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="27" font-weight="790" fill="#5d400e">अपने वज़न का<tspan x="1732.5" y="692">एक slab</tspan></text>
    </g>
-   <g id="sum-trap" style="filter:grayscale(1);opacity:.72">
+   <g id="sum-trap" style="filter:grayscale(1);opacity:1">
     <rect x="1637" y="732" width="191" height="96" rx="18" fill="#eef0f1" stroke="#aeb5bd" stroke-width="2"/>
-    <text id="sum-trap-copy" x="1732.5" y="777" text-anchor="middle" font-family="Inter,sans-serif" font-size="24" font-weight="820" fill="#424954">₹20 + ₹25 + …</text>
+    <text id="sum-trap-copy" x="1732.5" y="777" text-anchor="middle" font-family="Inter,sans-serif" font-size="24" font-weight="820" fill="#2c3036">₹20 + ₹25 + …</text>
     <path id="sum-trap-strike" d="M1650 768H1815" stroke="#59606b" stroke-width="4" stroke-linecap="round"/>
     <path id="sum-trap-cross" d="M1723 796l19 19m0-19-19 19" fill="none" stroke="#59606b" stroke-width="5" stroke-linecap="round"/>
    </g>
@@ -145,7 +145,7 @@
     if(trap)trap.style.display=t>=3.19?"none":"";
     const clamp=x=>Math.max(0,Math.min(1,x));
     const focus=Math.min(clamp((t-5.17)/.22),clamp((7.46-t)/.16));
-    const k=1+focus/9;
+    const k=1+focus/20;
     $("#tariff-tax-strip")[0]?.setAttribute("transform","translate(487 261) scale("+k+") translate(-487 -261)");
     $("#slab-band-4")[0]?.setAttribute("opacity",String(1-clamp((t-1.30)/.18)));
     $("#slab-band-1")[0]?.setAttribute("opacity",t>=8.13&&t<9.75?"1":"0");
