@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s037" data-in="cut" data-duration="8.94" data-section="PART 2 · PACKET, WEIGHT AND SIZE" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Blind-literature size limits and roll diameter">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="diameter">
+   <rect width="1920" height="1080" fill="#fbf7ee"/>
+   <text x="120" y="247" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#9e1b1b">Diameter</text>
+   <path d="M120 278h350" stroke="#d6ac59" stroke-width="5" stroke-linecap="round"/>
+   <use id="roll-piece" href="piece:paper-roll" transform="translate(230 359) scale(1.76)"/>
+   <path id="diameter-line" d="M428.88 452.28V744.44 M412.88 472.28l16-20 16 20 M412.88 724.44l16 20 16-20" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+   <g id="diameter-caption">
+    <rect x="286" y="813" width="631" height="83" rx="26" fill="#fde9a6"/>
+    <text class="hi" x="601.5" y="868" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="790" fill="#4c3821">एक किनारे से दूसरे तक</text>
+   </g>
+   <text id="center-distance" x="955" y="866" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="790" fill="#4c3821">बीच से होकर दूरी</text>
+   <g id="roll-check-1">
+    <rect x="726" y="201" width="468" height="82" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="960" y="256" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="790" fill="#2b2622">1 लंबाई ≤ 800</text>
+   </g>
+   <g id="roll-check-2">
+    <rect x="1217" y="201" width="548" height="82" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="1491" y="256" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="790" fill="#2b2622">2 जोड़ ≤ 1000</text>
+   </g>
+   <g id="roll-length">
+    <path id="roll-length-line" d="M434 408H1507 M454 394l-20 14 20 14 M1487 394l20 14-20 14" fill="none" stroke="#7e6d53" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="roll-length-band" x="843" y="365" width="256" height="76" rx="20" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+    <text id="roll-length-value" x="971" y="416" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="820" fill="#7d1616">700 <tspan id="roll-length-units">mm</tspan></text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [.38,"fade","#center-distance",{dur:.24}],
+   [1.94,"fade","#roll-check-1",{dur:.27}],[1.94,"fade","#roll-check-2",{dur:.27}],
+   [6.48,"draw","#roll-length-line",{dur:.60}],
+   [6.68,"fade","#roll-length-band",{dur:.23}],[6.68,"fade","#roll-length-value",{dur:.23}]
+  ],
+  update(t,section,$){
+   const el=$("#roll-length-units")[0]; if(el)el.style.opacity=Math.max(0,Math.min(1,(t-7.24)/.21));
+  }
+ })
+ </script>
+</section>
