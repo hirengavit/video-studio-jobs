@@ -8,12 +8,5 @@
   "9.34"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s133",
-   "text": "insurance: / Speed Post item पर",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
