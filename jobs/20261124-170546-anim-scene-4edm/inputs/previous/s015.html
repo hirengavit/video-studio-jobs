@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s015" data-in="cut" data-duration="10.01" data-section="PART 1 · LITERATURE FOR THE BLIND" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Special form and the ordinary-print exam trap">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="trap">
+   <rect width="1920" height="1080" fill="#fbf7ee"/>
+   <rect x="120" y="171" width="1680" height="155" rx="28" fill="#9e1b1b"/>
+   <text class="hi" x="960" y="277" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="74" font-weight="850" fill="#fff">EXAM TRAP · परीक्षा का जाल</text>
+   <g id="print-example">
+    <image id="printed-books-photo" href="photo:printed-books-stack-cutout" x="200" y="420" width="500" height="425" preserveAspectRatio="xMidYMid meet"/>
+    <rect x="156" y="826" width="588" height="67" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+    <text class="hi" x="450" y="873" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="830" fill="#2b2622">आम छपाई की किताब</text>
+   </g>
+   <path id="reader-arrow" d="M762 680h258m-35-27 35 27-35 27" fill="none" stroke="#7e6d53" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+   <g id="reader-envelope">
+    <use href="piece:address-envelope" transform="translate(1060 470)"/>
+    <g id="reader-address">
+     <rect x="1254" y="655" width="405" height="100" rx="15" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+     <text class="hi" x="1456.5" y="719" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="41" font-weight="790" fill="#2b2622">नेत्रहीन व्यक्ति का पता</text>
+    </g>
+   </g>
+   <g id="blind-question">
+    <rect x="717" y="359" width="587" height="72" rx="23" fill="#fff" stroke="#b9b7ae" stroke-width="3"/>
+    <text id="blind-question-text" x="1010.5" y="408" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="820" fill="#424954">Literature for the Blind?</text>
+   </g>
+   <path id="blind-question-strike" d="M756 396H1266" fill="none" stroke="#59606b" stroke-width="4" stroke-linecap="round"/>
+   <path id="blind-question-cross" d="M1349 379l31 34m0-34-31 34" stroke="#59606b" stroke-width="8" stroke-linecap="round"/>
+   <g id="trap-takeaway">
+    <rect x="120" y="913" width="1680" height="75" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+    <text id="trap-takeaway-text" x="960" y="965" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="820" fill="#2b2622">देखा जाता है: सामान किस <tspan id="form-word">रूप</tspan> में तैयार है</text>
+   </g>
+  </g>
+  <g id="recorded">
+   <rect width="1920" height="1080" fill="#fbf7ee"/>
+   <text x="142" y="252" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="66" font-weight="840" fill="#9e1b1b">Recorded सामान</text>
+   <path d="M142 276h510" stroke="#d6ac59" stroke-width="5" stroke-linecap="round"/>
+   <g id="printed-reference" style="filter:grayscale(1);opacity:.70">
+    <rect x="141" y="451" width="313" height="312" rx="25" fill="#fff" stroke="#c3b39b" stroke-width="3"/>
+    <use href="piece:braille-book-icon" transform="translate(193 489) scale(.4)"/>
+    <text x="297.5" y="706" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="810" fill="#2b2622">छपा सामान</text>
+   </g>
+   <path id="more-arrow" d="M488 610h82m-26-20 26 20-26 20" stroke="#7e6d53" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+   <g id="recorded-box">
+    <rect id="recorded-box-frame" x="600" y="320" width="1200" height="580" rx="27" fill="#fff" stroke="#d3b982" stroke-width="4"/>
+    <text x="663" y="409" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="53" font-weight="820" fill="#7d1616">+ कुछ और चीज़ें भी</text>
+    <path d="M660 439H1738" stroke="#efe1c4" stroke-width="3"/>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  shots:[[0,"#trap"],[4.47,"#recorded"]],
+  on:[
+   [2.82,"highlight","#form-word",{color:"#fde9a6",opacity:.84,dur:.26}],
+   [4.47,"fade","#recorded",{dur:.01}],
+   [5.75,"draw","#more-arrow",{dur:.34}],
+   [5.75,"fade","#recorded-box",{dur:.29}],
+   [8.27,"pulse","#recorded-box",{amount:.02}]
+  ]
+ })
+ </script>
+</section>
