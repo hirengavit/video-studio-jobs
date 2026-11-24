@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s027" data-in="cut" data-section="PART 1 · LITERATURE FOR THE BLIND" data-series="POSTAL PRODUCTS">
+<svg viewBox="0 0 1920 1080" aria-label="Comparison of postal mail classes">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="mail-class">
+  <text class="hi" x="960" y="222" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="66" font-weight="800" fill="#2b2622">Mail की class</text>
+  <g id="left">
+    <rect x="120" y="260" width="800" height="640" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <path d="M148 260H892Q920 260 920 288V433H120V288Q120 260 148 260Z" fill="#9e1b1b"/>
+    <text id="first-en" x="520" y="333" text-anchor="middle" font-family="Inter, sans-serif" font-size="55" font-weight="800" fill="#fff">first-class mail</text>
+    <text id="first-hi" class="hi" x="520" y="391" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="700" fill="#fff0d9">प्रथम श्रेणी की डाक</text>
+    <g id="letters">
+      <use href="piece:icon-envelope-letter" transform="translate(146 473) scale(.53)"/>
+      <text x="252" y="710" text-anchor="middle" font-family="Inter, sans-serif" font-size="37" font-weight="750" fill="#2b2622">Letters</text>
+    </g>
+    <g id="postcards">
+      <use href="piece:postcard-blank" transform="translate(414 473) scale(.53)"/>
+      <text x="520" y="710" text-anchor="middle" font-family="Inter, sans-serif" font-size="37" font-weight="750" fill="#2b2622">postcards</text>
+    </g>
+    <g id="letter-cards">
+      <use href="piece:letter-card" transform="translate(681 473) scale(.53)"/>
+      <text x="787" y="710" text-anchor="middle" font-family="Inter, sans-serif" font-size="37" font-weight="750" fill="#2b2622">letter cards</text>
+    </g>
+  </g>
+  <g id="right">
+    <rect x="1000" y="260" width="800" height="640" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <path d="M1028 260H1772Q1800 260 1800 288V433H1000V288Q1000 260 1028 260Z" fill="#fde9a6"/>
+    <g id="braille-packets">
+      <rect x="1168" y="476" width="464" height="253" rx="14" fill="#f3ead6" stroke="#2b2622" stroke-width="4"/>
+      <use href="piece:braille-book-icon" transform="translate(1205 457) scale(.75)"/>
+      <path d="M1170 640H1630V714Q1630 727 1618 727H1182Q1170 727 1170 714Z" fill="#efdfb8" stroke="#2b2622" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M1191 704H1608" fill="none" stroke="#d0b886" stroke-width="3" stroke-linecap="round"/>
+      <text x="1400" y="796" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="800" fill="#2b2622">Literature for the Blind packets</text>
+    </g>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [1.62, 'fade', '#letters', {dur:0.26}],
+    [3.12, 'fade', '#postcards', {dur:0.26}],
+    [4.46, 'fade', '#letter-cards', {dur:0.26}],
+    [5.56, 'fade', '#first-en', {dur:0.25}],
+    [6.06, 'fade', '#first-hi', {dur:0.25}],
+    [7.80, 'fade', '#braille-packets', {dur:0.34}]
+  ]
+}
+</script>
+</section>
