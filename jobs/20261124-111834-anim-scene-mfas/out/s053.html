@@ -66,15 +66,19 @@
   on:[
    [0.04,'fade','#portion-labels',{dur:.23}],
    [1.66,'fade','#block1-fill',{dur:.26}],
-   [1.66,'color','#part-counted',{prop:'fill',to:'#fffaf0',dur:.30}],
    [3.10,'fade','#first-charge',{dur:.23}],
    [4.78,'fade','#remaining-blocks',{dur:.25}],
    [8.08,'fade','#block2-fill',{dur:.30}],
-   [8.08,'color','#part-counted',{prop:'fill',to:'#fde9a6',dur:.30}],
    [8.08,'fade','#second-charge',{dur:.24}],
    [8.21,'fade','#third-charge',{dur:.24}],
    [9.98,'fade','#charges-sum',{dur:.31}]
-  ]
+  ],
+  update(t,section,$){
+   const clamp=x=>Math.max(0,Math.min(1,x));
+   const yellow=1-clamp((t-1.66)/.30)+clamp((t-8.08)/.30);
+   const third=$("#part-counted")[0];
+   if(third) third.setAttribute("fill","rgb("+[255-2*yellow,250-17*yellow,240-74*yellow].map(x=>Math.round(x)).join(",")+")");
+  }
  })
  </script>
 </section>
