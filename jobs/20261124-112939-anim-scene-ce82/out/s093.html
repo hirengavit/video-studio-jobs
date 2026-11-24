@@ -70,10 +70,10 @@
     <text id="invoice-allowance-text" class="hi" x="303" y="923" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="790" fill="#17634a">इसी किताब का invoice या bill (या दोनों) चलता है</text>
    </g>
    <g id="other-bills-trap">
-    <rect x="1120" y="821" width="420" height="96" rx="14" fill="#eef0f1" stroke="#aeb5bd" stroke-width="2"/>
+    <rect x="1134" y="821" width="406" height="96" rx="14" fill="#eef0f1" stroke="#aeb5bd" stroke-width="2"/>
     <text id="other-bills-copy" class="hi" x="1348" y="853" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="32" font-weight="780" fill="#434d5c">दूसरी किताबों के bills,</text>
     <text id="supply-orders-copy" x="1348" y="894.6" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="780" fill="#434d5c">supply orders</text>
-    <path id="bills-cross" d="M1136 854l28 28m0-28-28 28" fill="none" stroke="#4b4f58" stroke-width="4" stroke-linecap="round"/>
+    <path id="bills-cross" d="M1150 854l28 28m0-28-28 28" fill="none" stroke="#4b4f58" stroke-width="4" stroke-linecap="round"/>
    </g>
    <g id="commercial-ads-trap">
     <rect x="822" y="591" width="535" height="60" rx="16" fill="#eef0f1" stroke="#aeb5bd" stroke-width="2"/>
@@ -96,7 +96,7 @@
   [8.96,"strike","#commercial-ads-copy",{color:"#4b4f58",width:4,dim:.55,dur:.27}]
  ],
  update(t, section, $) {
-  const p = Math.max(0, Math.min(1, (t - .22) / .23));
+  const p = Math.max(0, Math.min(1, (t - .04) / .18));
   $("#invoice-allowance-shell")[0].setAttribute("width", 1328 - 496 * p);
   $("#invoice-allowance-text")[0].setAttribute("font-size", 43 - 7 * p);
  }
