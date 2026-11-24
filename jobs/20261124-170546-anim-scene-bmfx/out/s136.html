@@ -14,22 +14,22 @@
     </g>
     <g id="reg-line">
      <rect x="142" y="341" width="516" height="136" rx="20" fill="#f3ead6"/>
-     <text x="165" y="396" font-family="Inter,sans-serif" font-size="42" font-weight="740" fill="#6f6a63">registration =</text>
-     <text x="165" y="449" font-family="Inter,sans-serif" font-size="51" font-weight="820" fill="#2b2622">Registered Post</text>
+     <text x="165" y="388" font-family="Inter,sans-serif" font-size="37" font-weight="740" fill="#6f6a63">registration =</text>
+     <text x="165" y="449" font-family="Inter,sans-serif" font-size="49" font-weight="820" fill="#2b2622">Registered Post</text>
     </g>
     <g id="speed-line">
      <rect x="142" y="492" width="516" height="157" rx="20" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
-     <text x="165" y="545" font-family="Inter,sans-serif" font-size="42" font-weight="830" fill="#2b2622">Speed Post</text>
-     <text x="165" y="592" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi" font-size="38" font-weight="690" fill="#2b2622">documents, parcels की</text>
-     <text x="165" y="633" font-family="Inter,sans-serif" font-size="38" font-weight="690" fill="#2b2622">value-added service</text>
-     <path id="speed-registration-under" d="M165 552H378" fill="none" stroke="#8a5d00" stroke-width="4" stroke-linecap="round"/>
+     <text x="165" y="538" font-family="Inter,sans-serif" font-size="42" font-weight="830" fill="#2b2622">Speed Post</text>
+     <text x="165" y="584" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi" font-size="35" font-weight="690" fill="#2b2622">documents, parcels की</text>
+     <text x="165" y="634" font-family="Inter,sans-serif" font-size="35" font-weight="690" fill="#2b2622">value-added service</text>
+     <path id="speed-registration-under" d="M165 545H378" fill="none" stroke="#8a5d00" stroke-width="4" stroke-linecap="round"/>
     </g>
     <g id="delivery-line">
      <rect x="142" y="660" width="516" height="119" rx="18" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
      <text class="hi" x="165" y="709" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="38" font-weight="780" fill="#2b2622">Delivery: नामित addressee</text>
      <text class="hi" x="165" y="756" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="790" fill="#7d1616">या उसका अधिकृत व्यक्ति</text>
     </g>
-    <text id="insurance-line" class="hi" x="165" y="823" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="790" fill="#2b2622">insurance:<tspan id="insurance-speed" dx="20" font-size="32" font-weight="750">Speed Post item पर</tspan></text>
+    <text id="insurance-line" class="hi" x="158" y="823" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="33" font-weight="790" fill="#2b2622">insurance:<tspan id="insurance-speed" dx="12" font-size="32" font-weight="750">Speed Post item पर</tspan></text>
     <g id="registration-tile">
      <rect x="142" y="846" width="516" height="100" rx="14" fill="#fde9a6" stroke="#9e1b1b" stroke-width="2" stroke-dasharray="5 4"/>
      <text x="400" y="879" text-anchor="middle" font-family="Inter,sans-serif" font-size="34" font-weight="830" fill="#7d1616">Speed Post registration</text>
@@ -91,10 +91,10 @@
     const rect=group.querySelector("rect");rect.setAttribute("y",y[0]);rect.setAttribute("height",y[1]);
     group.querySelectorAll("text").forEach((e,i)=>e.setAttribute("y",y[i+2]));
    };
-   settle("#reg-line",[341,136,396,449],[394,116,440,489]);
-   settle("#speed-line",[492,157,545,592,633],[520,144,568,613,651]);
+   settle("#reg-line",[341,136,388,449],[394,116,432,490]);
+   settle("#speed-line",[492,157,538,584,634],[520,144,559,605,653]);
    settle("#delivery-line",[660,119,709,756],[674,109,720,765]);
-   $("#speed-registration-under")[0]?.setAttribute("transform","translate(0 "+(23*a)+")");
+   $("#speed-registration-under")[0]?.setAttribute("transform","translate(0 "+(21*a)+")");
    const k=clamp((t-7.80)/.26);
    const mix=(a,b)=>"rgb("+a.map((v,i)=>Math.round(v+(b[i]-v)*k)).join(",")+")";
    for(const [id,attr,a,b] of [
