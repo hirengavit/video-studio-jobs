@@ -22,6 +22,12 @@
    "t": 4.16
   },
   {
+   "kind": "text-overlap",
+   "scene": "s159",
+   "text": "Gyan Post / ?",
+   "t": 6.24
+  },
+  {
    "kind": "mostly-empty",
    "scene": "s159",
    "message": "a card (#s159-item-row-4) is mostly empty at 6.2 s: bring its items in sooner, or size it for what it holds now",
