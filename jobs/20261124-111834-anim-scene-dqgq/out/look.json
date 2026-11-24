@@ -8,12 +8,5 @@
   "9.34"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s054",
-   "text": "₹2 + ₹1 + ₹1 / = ₹4",
-   "t": 1.9
-  }
- ]
+ "warnings": []
 }
