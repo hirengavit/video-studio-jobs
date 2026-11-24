@@ -1,0 +1,38 @@
+{
+ "moments": [
+  "0.30",
+  "1.77",
+  "3.54",
+  "5.32",
+  "7.09",
+  "8.71"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s161",
+   "text": "Gyan Post (2.5:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s161",
+   "message": "a card (#s161-item-row-5) is mostly empty at 1.8 s: bring its items in sooner, or size it for what it holds now",
+   "t": 1.77
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s161",
+   "message": "a card (#s161-item-row-5) is mostly empty at 3.5 s: bring its items in sooner, or size it for what it holds now",
+   "t": 3.54
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s161",
+   "message": "a card (#s161-item-row-5) is mostly empty at 5.3 s: bring its items in sooner, or size it for what it holds now",
+   "t": 5.32
+  }
+ ]
+}
