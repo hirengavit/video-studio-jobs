@@ -14,12 +14,6 @@
    "scene": "s093",
    "text": "Price list, bills, supply orders नहीं / दूसरी किताबों के bills,",
    "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s093",
-   "text": "इसी किताब का invoice या bill (या दोनों)  / supply orders",
-   "t": 0.3
   }
  ]
 }
