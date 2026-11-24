@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="shackle"><path id="shackle-closed" d="M171 201v-32a29 29 0 0 1 58 0v32h-13v-32a16 16 0 1 0-32 0v20Z" fill="#d6d1ca"/><path id="shackle-open" opacity="0" d="M171 201v-32a29 29 0 0 1 58 0v16h-13v-16a16 16 0 1 0-32 0v32Z" fill="#d6d1ca"/></g>
+<rect id="lock-body" x="155" y="200" width="90" height="60" rx="12" fill="#4b4f58"/>
+<path d="M165 215h70" stroke="#747982" stroke-width="2"/><path id="keyhole" d="M200 220a7 7 0 0 1 4 13l2 9h-12l2-9a7 7 0 0 1 4-13Z" fill="#f3ead6" stroke="none"/>
+<circle data-anchor="base" cx="200" cy="260" r="0" fill="none" stroke="none"/>
+</svg>
