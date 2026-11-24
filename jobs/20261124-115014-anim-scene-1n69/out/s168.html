@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s168" data-in="cut" data-duration="12.46" data-section="KEY POINTS" data-series="POSTAL PRODUCTS">
+<svg viewBox="0 0 1920 1080" aria-label="Literature for the Blind recap">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="envA">
+  <rect x="260" y="196" width="1400" height="794" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <path d="M286 197H1634Q1647 197 1652 208L960 421L268 208Q273 197 286 197Z" fill="#f3ead6"/>
+  <path d="M268 210L960 421L1652 210" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="hi" x="960" y="276" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="800" fill="#9e1b1b">पूरे topic की ज़रूरी बातें</text>
+  <g id="flap-term">
+    <rect x="494" y="303" width="932" height="94" rx="45" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <use href="piece:braille-book-icon" transform="translate(540 300) scale(.25)"/>
+    <text x="1007" y="367" text-anchor="middle" font-family="Inter, sans-serif" font-size="53" font-weight="800" fill="#2b2622">Literature for the Blind</text>
+  </g>
+  <rect id="row1-shell" x="308" y="443" width="1304" height="108" rx="18" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+  <circle id="tick1-slot" cx="370" cy="497" r="27" fill="#fff" stroke="#b5a991" stroke-width="3"/>
+  <rect id="row2-shell" x="308" y="572" width="1304" height="108" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+  <circle id="tick2-slot" cx="370" cy="626" r="27" fill="#fff" stroke="#b5a991" stroke-width="3"/>
+  <rect id="row3-shell" x="308" y="701" width="1304" height="108" rx="18" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+  <circle id="tick3-slot" cx="370" cy="755" r="27" fill="#fff" stroke="#b5a991" stroke-width="3"/>
+  <rect id="row4-shell" x="308" y="830" width="1304" height="108" rx="18" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+  <circle id="tick4-slot" cx="370" cy="884" r="27" fill="#fff" stroke="#b5a991" stroke-width="3"/>
+  <text id="row1" class="hi" x="426" y="515" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="750" fill="#2b2622">Braille या खास लिपि: कागज़, <tspan id="row1-magazines">पत्रिकाएँ,</tspan> <tspan id="row1-books">किताबें</tspan></text>
+  <path id="tick1" d="M358 497l8 9 17-19" fill="none" stroke="#087650" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="row2" class="hi" x="426" y="643" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#2b2622">Recorded: <tspan id="row2-parties">sender या addressee</tspan> <tspan id="row2-recognised">recognised संस्था</tspan></text>
+  <path id="tick2" d="M358 626l8 9 17-19" fill="none" stroke="#087650" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="row3-ban" class="hi" x="426" y="771" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#4b4f58">आम संदेश मना</text>
+  <text id="row3-exceptions" class="hi" x="782" y="771" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#17634a"><tspan fill="#4b4f58"> · </tspan>छूट: <tspan id="recap-title">title,</tspan> <tspan id="recap-key">key,</tspan> <tspan id="recap-return">वापसी label</tspan></text>
+  <path id="tick3" d="M358 755l8 9 17-19" fill="none" stroke="#087650" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="row4-class" x="426" y="901" font-family="Inter,sans-serif" font-size="49" font-weight="750" fill="#2b2622">second-class mail ·</text>
+  <g id="row4-max">
+    <rect x="1090" y="850" width="286" height="68" rx="25" fill="#fde9a6"/>
+    <text x="1233" y="898" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="780" fill="#77510a">max <tspan id="recap-weight">7 kg</tspan></text>
+  </g>
+  <path id="tick4" d="M358 884l8 9 17-19" fill="none" stroke="#087650" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+
+<script type="text/scene">
+{
+  on:[
+    [0,'fade','#row3-ban',{dur:.26}],
+    [2.44,'fade','#row3-exceptions',{dur:.25}],
+    [6.74,'draw','#tick3',{dur:.23}],
+    [7.70,'fade','#row4-class',{dur:.27}],
+    [10.04,'fade','#row4-max',{dur:.24}],
+    [11.44,'draw','#tick4',{dur:.23}]
+  ],
+  update(t,section,$) {
+    const opacity = (sel,start) => {
+      const el=$(sel)[0];
+      if (el) el.style.opacity=Math.max(0,Math.min(1,(t-start)/.20));
+    };
+    const ban=$('#row3-ban')[0], exc=$('#row3-exceptions')[0];
+    if (ban && exc) exc.setAttribute('x', 426 + ban.getComputedTextLength() + 12);
+    const mail=$('#row4-class')[0], max=$('#row4-max')[0];
+    if (mail && max) max.setAttribute('transform', 'translate(' + (426 + mail.getComputedTextLength() + 24 - 1090) + ' 0)');
+    opacity('#recap-title',2.76);
+    opacity('#recap-key',4.00);
+    opacity('#recap-return',5.16);
+    opacity('#recap-weight',11.04);
+  }
+}
+</script>
+</section>
