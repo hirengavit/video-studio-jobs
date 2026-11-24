@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "2.62",
+  "5.23",
+  "7.85",
+  "10.46",
+  "12.93"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s137",
+   "text": "registered या insured (2.2:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 12.93
+  }
+ ]
+}
