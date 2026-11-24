@@ -1,0 +1,33 @@
+{
+ "moments": [
+  "0.30",
+  "2.00",
+  "4.00",
+  "6.01",
+  "8.01",
+  "9.86"
+ ],
+ "problems": [
+  "s015: no photo \"printed-books-stack-cutout\" in the materials"
+ ],
+ "warnings": [
+  {
+   "kind": "mostly-empty",
+   "scene": "s015",
+   "message": "a card (#s015-recorded-box-frame) is mostly empty at 6.0 s: bring its items in sooner, or size it for what it holds now",
+   "t": 6.01
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s015",
+   "message": "a card (#s015-recorded-box-frame) is mostly empty at 8.0 s: bring its items in sooner, or size it for what it holds now",
+   "t": 8.01
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s015",
+   "message": "a card (#s015-recorded-box-frame) is mostly empty at 9.9 s: bring its items in sooner, or size it for what it holds now",
+   "t": 9.86
+  }
+ ]
+}
