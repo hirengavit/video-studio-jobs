@@ -136,9 +136,9 @@
    const ramp=(at,dur)=>Math.max(0,Math.min(1,(t-at)/dur));
    const s=ramp(0,.27);
    for(const id of ["tariff-trap","booking-min","rejected-299","accepted-300","twenty-after-tax","one-slab-note","sum-trap","middle-slabs"]){
-    const el=$("#"+id)[0];if(el){el.style.filter="grayscale("+s+")";el.style.opacity=1-.28*s;}
+    const el=$("#"+id)[0];if(el){el.style.filter="grayscale("+s+")";el.style.opacity=1-(id==="sum-trap"?.12:.28)*s;}
    }
-   for(const [id,dx,dy,scale] of [["tariff-trap",322,39,.8],["booking-min",322,54,.8],["rejected-299",322,54,.8],["accepted-300",322,43,.8],["one-slab-note",330,280,.8],["sum-trap",330,273,.8],["middle-slabs",-28,0,1]]){
+   for(const [id,dx,dy,scale] of [["tariff-trap",322,39,.8],["booking-min",322,54,.8],["rejected-299",322,54,.8],["accepted-300",322,38,.8],["one-slab-note",330,280,.8],["sum-trap",330,273,.8],["middle-slabs",-45,0,1]]){
     const e=$("#"+id)[0];if(e)e.setAttribute("transform","translate("+dx*s+" "+dy*s+") scale("+(1-(1-scale)*s)+")");
    }
    const a=ramp(2.90,.25), b=ramp(7.68,.25);
