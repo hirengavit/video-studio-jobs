@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" width="560" height="360">
+  <g fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="flap-open">
+      <path d="M40 124 L280 22 L520 124 Z" fill="#f3ead6"/>
+      <path d="M92 116 L280 38 L468 116" stroke="#ead9a8" stroke-width="6"/>
+    </g>
+    <g id="body">
+      <rect x="40" y="124" width="480" height="216" rx="6" fill="#ffffff"/>
+      <path d="M40 340 L250 226 Q280 212 310 226 L520 340" stroke-width="2.5"/>
+      <path d="M40 124 L236 240 M520 124 L324 240" stroke-width="2.5"/>
+    </g>
+    <g id="flap-tucked" opacity="0">
+      <path d="M40 124 H520" stroke-width="3"/>
+      <path d="M52 128 L280 222 L508 128" stroke="#6f6a63" stroke-width="2.5" stroke-dasharray="10 9"/>
+    </g>
+    <g id="flap-pasted" opacity="0">
+      <path d="M40 124 H520 L292 240 Q280 246 268 240 Z" fill="#ffffff"/>
+      <path d="M96 140 L280 226 L464 140" stroke="#ead9a8" stroke-width="6"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="280" cy="340" r="0"/>
+  <circle data-anchor="top" cx="280" cy="124" r="0"/>
+  <circle data-anchor="mouth" cx="280" cy="124" r="0"/>
+</svg>
