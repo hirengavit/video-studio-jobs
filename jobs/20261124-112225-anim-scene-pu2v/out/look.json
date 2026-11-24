@@ -1,0 +1,37 @@
+{
+ "moments": [
+  "0.30",
+  "2.30",
+  "4.61",
+  "6.91",
+  "9.22",
+  "11.37"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s066",
+   "message": "fade #exam-postage-exempt: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s066",
+   "message": "a card is mostly empty at 6.9 s: bring its items in sooner, or size it for what it holds now",
+   "t": 6.91
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s066",
+   "message": "a card is mostly empty at 9.2 s: bring its items in sooner, or size it for what it holds now",
+   "t": 9.22
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s066",
+   "message": "a card is mostly empty at 11.4 s: bring its items in sooner, or size it for what it holds now",
+   "t": 11.37
+  }
+ ]
+}
