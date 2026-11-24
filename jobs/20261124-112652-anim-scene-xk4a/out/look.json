@@ -1,0 +1,27 @@
+{
+ "moments": [
+  "0.30",
+  "2.63",
+  "5.26",
+  "7.88",
+  "10.51",
+  "12.99"
+ ],
+ "problems": [
+  "s088: no photo \"newspapers-and-magazines-cutout\" in the materials"
+ ],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s088",
+   "text": "सामान की सात शर्तें / screen पर list",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s088",
+   "message": "a card (#s088-condition-row-1) is mostly empty at 2.6 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.63
+  }
+ ]
+}
