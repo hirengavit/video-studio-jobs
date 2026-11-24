@@ -32,8 +32,8 @@
     <text x="927" y="701" text-anchor="middle" font-family="Inter,sans-serif" font-size="31" font-weight="820" fill="#fff">3</text>
     <text class="hi" x="974" y="706" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="790" fill="#2b2622">Roll के अलावा <tspan id="minimum-word">minimum</tspan></text>
     <g id="minimum-value">
-     <rect x="1442" y="653" width="275" height="76" rx="22" fill="#fde9a6"/>
-     <text x="1579.5" y="704" text-anchor="middle" font-family="Inter,sans-serif" font-size="41" font-weight="820" fill="#4c3821">100 <tspan id="minimum-times">×</tspan> <tspan id="minimum-seventy">70</tspan> <tspan id="minimum-units">mm</tspan></text>
+     <rect x="1480" y="653" width="252" height="76" rx="22" fill="#fde9a6"/>
+     <text x="1606" y="704" text-anchor="middle" font-family="Inter,sans-serif" font-size="41" font-weight="820" fill="#4c3821">100 <tspan id="minimum-times">×</tspan> <tspan id="minimum-seventy">70</tspan> <tspan id="minimum-units">mm</tspan></text>
     </g>
    </g>
    <g id="exam-point-4">
@@ -49,7 +49,7 @@
   camera:[[0,{zoom:1}]],
   on:[[0,"fade","#minimum-value",{dur:.12}],[2.26,"fade","#exam-point-4",{dur:.24}],[5.60,"underline","#roll-sum",{color:"#9e1b1b",dur:.28}]],
   update(t,section,$){
-   for(const [id,start] of [["#minimum-times",.14],["#minimum-seventy",.62],["#minimum-units",1.08],["#roll-length",2.86],["#roll-limit",3.58],["#roll-sum",5.60]]){
+   for(const [id,start] of [["#minimum-times",.14],["#minimum-seventy",.62],["#minimum-units",1.08],["#roll-length",2.86],["#roll-limit",5.60],["#roll-sum",5.60]]){
     const el=$(id)[0]; if(el)el.style.opacity=Math.min(1,Math.max(0,(t-start)/.16));
    }
   }
