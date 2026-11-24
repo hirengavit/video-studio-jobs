@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s058" data-in="cut" data-duration="12.06" data-section="PART 3 · POSTAGE AND FOREIGN MAIL" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Cecogrammes is the foreign-mail term for Literature for the Blind">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="foreign">
+   <rect width="1920" height="1080" fill="#fbf7ee"/>
+   <use href="piece:globe-icon" transform="translate(200 305) scale(1.625)"/>
+   <text x="920" y="258" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="76" font-weight="850" fill="#9e1b1b">विदेश डाक</text>
+   <text id="literature-equals" x="920" y="326" font-family="Inter,sans-serif" font-size="43" font-weight="740" fill="#65564c">Literature for the Blind =</text>
+   <g id="ceco-stamp">
+    <rect x="920" y="353" width="816" height="177" rx="24" fill="#fde9a6" stroke="#9e1b1b" stroke-width="3" stroke-dasharray="9 7"/>
+    <text x="956" y="437" font-family="Inter,sans-serif" font-size="76" font-weight="850" fill="#9e1b1b">Cecogrammes</text>
+    <text id="ceco-hindi" x="956" y="500" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="770" fill="#2b2622">नेत्रहीनों का साहित्य (विदेश डाक)</text>
+   </g>
+   <g id="ceco-packet">
+    <use href="piece:packet-with-tag" transform="translate(1095 553) scale(1.6)"/>
+    <g id="ceco-label">
+     <rect x="1164" y="729" width="362" height="76" rx="8" fill="#fff" stroke="#b39d79" stroke-width="3"/>
+     <text x="1345" y="779" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="850" fill="#2b2622">Cecogrammes</text>
+    </g>
+   </g>
+   <g id="printed-hint">
+    <rect x="1032" y="944" width="610" height="62" rx="20" fill="#f3ead6"/>
+    <text x="1337" y="988" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="39" font-weight="770" fill="#2b2622">हो सके तो छपे label पर</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [1.52,'fade','#literature-equals',{dur:.28}],
+   [3.42,'stamp','#ceco-stamp',{from:1.035,rot:0,spring:'soft'}],
+   [3.92,'fade','#ceco-hindi',{dur:.24}],
+   [5.52,'slide','#ceco-packet',{from:'bottom',dist:85,spring:'soft'}],
+   [6.32,'pop','#ceco-label',{from:.94,spring:'soft'}],
+   [10.48,'fade','#printed-hint',{dur:.23}]
+  ]
+ })
+ </script>
+</section>
