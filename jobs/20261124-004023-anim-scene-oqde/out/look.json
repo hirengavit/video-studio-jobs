@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.10",
+  "4.20",
+  "6.29",
+  "8.39",
+  "10.34"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s013",
+   "message": "type: option \"dur\" isn't used (it takes: cps)",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s013",
+   "text": "ये शर्त सिर्फ किताबों की नहीं / खास रूप",
+   "t": 2.1
+  }
+ ]
+}
