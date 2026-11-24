@@ -8,30 +8,5 @@
   "12.14"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s018",
-   "text": "लिखावट के अक्षरों / वाली plates",
-   "t": 0.3
-  },
-  {
-   "kind": "off-frame",
-   "scene": "s018",
-   "message": "a card or panel runs 298 px past the frame edge at 4.9 s (check the camera zoom and the layout)",
-   "t": 4.92
-  },
-  {
-   "kind": "off-frame",
-   "scene": "s018",
-   "message": "a card or panel runs 298 px past the frame edge at 7.4 s (check the camera zoom and the layout)",
-   "t": 7.37
-  },
-  {
-   "kind": "off-frame",
-   "scene": "s018",
-   "message": "a card or panel runs 298 px past the frame edge at 9.8 s (check the camera zoom and the layout)",
-   "t": 9.83
-  }
- ]
+ "warnings": []
 }
