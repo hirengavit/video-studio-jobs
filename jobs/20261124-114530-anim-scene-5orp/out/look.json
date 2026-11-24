@@ -8,18 +8,5 @@
   "11.11"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s150",
-   "message": "pulse: option \"dur\" isn't used (it takes: amount)",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s150",
-   "text": "Parcel Retail (local): / ₹48",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
