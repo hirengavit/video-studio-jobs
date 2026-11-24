@@ -52,7 +52,7 @@
   on:[[1.10,"fade","#diameter-value",{dur:.24}],[6.8,"out","#diameter-caption",{dur:.22,scale:1}],[6.8,"out","#center-distance",{dur:.22,scale:1}],[7.22,"fade","#roll-working",{dur:.24}]],
   update(t,section,$){
    const ramp=(at,dur)=>Math.max(0,Math.min(1,(t-at)/dur));
-   const k=ramp(6.90,.50);const smooth=k*k*(3-2*k);
+   const k=ramp(6.90,.50);const smooth=1-(1-k)*(1-k)*(1-k)*(1-k);
    const roll=$("#roll-diagram")[0];if(roll)roll.setAttribute("transform","translate("+(-54*smooth)+" "+(208*smooth)+") scale("+(1-.39*smooth)+")");
    const box=$("#roll-length-band")[0], v=$("#roll-length-value")[0];
    for(const [key,a,b] of [["x",843,438],["y",365,427],["width",256,200],["height",76,58]]) if(box) box.setAttribute(key,a+(b-a)*smooth);
