@@ -8,12 +8,5 @@
   "9.45"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s128",
-   "text": "Proof of / delivery due",
-   "t": 9.45
-  }
- ]
+ "warnings": []
 }
