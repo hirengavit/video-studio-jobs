@@ -8,12 +8,5 @@
   "8.41"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "error",
-   "scene": "s081",
-   "message": "Failed to execute 'querySelectorAll' on 'Element': 'M416 699 L484 657 L424 706 Z' is not a valid selector.",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
