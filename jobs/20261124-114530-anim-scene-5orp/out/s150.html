@@ -20,8 +20,8 @@
    </g>
    <g id="worked-example">
     <g id="worked-heading">
-     <path d="M920 330V230Q920 200 950 200H1770Q1800 200 1800 230V330Z" fill="#9e1b1b"/>
-     <text x="979" y="290" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="63" font-weight="830" fill="#fff">एक उदाहरण</text>
+     <path id="worked-heading-bg" d="M920 330V230Q920 200 950 200H1770Q1800 200 1800 230V330Z" fill="#9e1b1b"/>
+     <text id="worked-heading-title" x="979" y="290" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="63" font-weight="830" fill="#fff">एक उदाहरण</text>
     </g>
     <g id="worked-booking">
      <rect x="966" y="367" width="788" height="95" rx="19" fill="#f3ead6"/>
@@ -49,7 +49,7 @@
      <text x="1000" y="770" class="hi" font-family="'Noto Sans Devanagari',Georgia,serif" font-size="44" font-weight="820" fill="#2b2622">कमी =</text>
      <text id="working-parcel" x="1148" y="770" style="font-family: Georgia, serif" font-size="44" font-weight="800" fill="#2b2622">₹48</text>
      <text id="working-paid" x="1253" y="770" style="font-family: Georgia, serif" font-size="44" font-weight="800" fill="#2b2622">− ₹35</text>
-     <text id="working-difference" x="1400" y="770" style="font-family: Georgia, serif" font-size="44" font-weight="850" fill="#9e1b1b">= ₹13</text>
+     <text id="working-difference" x="1432" y="770" style="font-family: Georgia, serif" font-size="44" font-weight="850" fill="#9e1b1b">= ₹13</text>
     </g>
     <g id="worked-recovery">
      <text x="1000" y="860" class="hi" font-family="'Noto Sans Devanagari',Georgia,serif" font-size="48" font-weight="820" fill="#2b2622">वसूली =</text>
@@ -67,7 +67,7 @@
  ({
   camera:[[0,{zoom:1}]],
   on:[
-   [0,'pop','#parcel-value',{from:.84,spring:'soft'}],[.07,'pulse','#parcel-value',{amount:.055,dur:.22}],
+   [0,'pop','#parcel-value',{from:.84,spring:'soft'}],[.07,'pulse','#parcel-value',{amount:.055}],
    [1.38,'fade','#worked-tax',{dur:.25}],
    [1.38,'fade','#worked-divider',{dur:.25}],
    [3.92,'fade','#worked-deficiency',{dur:.22}],
@@ -76,7 +76,7 @@
    [7.54,'fade','#working-difference',{dur:.22}],
    [8.44,'fade','#worked-recovery',{dur:.22}],
    [9.24,'fade','#working-double',{dur:.20}],
-   [9.94,'fade','#recovery-result',{dur:.16}],[9.94,'pulse','#recovery-result',{amount:.045,dur:.28}]
+   [9.94,'fade','#recovery-result',{dur:.16}],[9.94,'pulse','#recovery-result',{amount:.045}]
   ],update(t,section,$){
    const u=Math.min(1,Math.max(0,t/.75)), q=u*u*(3-2*u);
    const e=id=>$("#"+id)[0];
@@ -85,7 +85,10 @@
    for(const [id,delta,h0,h1] of [["worked-booking",-39,95,73],["worked-found",-74,86,65],["gyan-payment",-107,76,68],["local-parcel",-112,76,68]]){
     const g=e(id);if(g){g.setAttribute("transform","translate(0 "+delta*q+")");const box=g.querySelector("rect");if(box)box.setAttribute("height",h0+(h1-h0)*q);for(const txt of g.querySelectorAll("text"))txt.setAttribute("transform","translate(0 "+((h1-h0)/2*q)+")");}
    }
-   for(const [id,delta] of [["gyan-payment-value",-111],["parcel-value-pos",-116]]){const a=e(id);if(a)a.setAttribute("transform","translate(0 "+delta*q+")");}
+   for(const [id,delta,dx] of [["gyan-payment-value",-111,77],["parcel-value-pos",-116,77]]){const a=e(id);if(a)a.setAttribute("transform","translate("+(dx*q)+" "+delta*q+")");}
+   const title=e("worked-heading-title"), head=e("worked-heading-bg");
+   if(title)title.setAttribute("y",290-12*q);
+   if(head){const y=200-10*q,b=330-15*q;head.setAttribute("d","M920 "+b+"V"+(y+30)+"Q920 "+y+" 950 "+y+"H1770Q1800 "+y+" 1800 "+(y+30)+"V"+b+"Z");}
   }
  })
  </script>
