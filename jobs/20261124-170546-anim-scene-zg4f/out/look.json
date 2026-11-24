@@ -8,12 +8,5 @@
   "12.33"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s134",
-   "text": "registration = / Registered Post",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
