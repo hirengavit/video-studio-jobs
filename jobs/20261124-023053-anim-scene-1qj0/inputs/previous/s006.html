@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s006" data-in="cut" data-duration="12.20" data-section="OVERVIEW" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Two postal product summaries">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="map1">
+   <rect width="1920" height="1080" fill="#fbf7ee"/>
+   <text class="hi" x="120" y="208" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="65" font-weight="820" fill="#9e1b1b">इस lecture के <tspan id="eight">आठ</tspan> हिस्से</text>
+   <path d="M120 252h593" stroke="#d6ac59" stroke-width="5" stroke-linecap="round"/>
+   <g id="map-slot-1">
+    <rect x="186" y="320" width="1548" height="145" rx="25" fill="#fdf8ef" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="221" y="349" width="87" height="87" rx="17" fill="#9e1b1b"/>
+    <text x="264.5" y="411" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="850" fill="#fff">1</text>
+   </g>
+   <g id="map-slot-2">
+    <rect x="186" y="475" width="1548" height="145" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="221" y="504" width="87" height="87" rx="17" fill="#9e1b1b"/>
+    <text x="264.5" y="566" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="850" fill="#fff">2</text>
+   </g>
+   <g id="map-slot-3">
+    <rect x="186" y="630" width="1548" height="145" rx="25" fill="#fdf8ef" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="221" y="659" width="87" height="87" rx="17" fill="#9e1b1b"/>
+    <text x="264.5" y="721" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="850" fill="#fff">3</text>
+   </g>
+   <g id="map-slot-4">
+    <rect x="186" y="785" width="1548" height="145" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="221" y="814" width="87" height="87" rx="17" fill="#9e1b1b"/>
+    <text x="264.5" y="876" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="850" fill="#fff">4</text>
+   </g>
+   <text class="hi" id="map-row1" x="362" y="409" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="790" fill="#2b2622">Literature for the Blind में क्या जाता है</text>
+   <text class="hi" id="map-row2" x="362" y="564" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="790" fill="#2b2622">Packet: <tspan id="map-name">नाम,</tspan> <tspan id="map-packing">packing,</tspan> वज़न, size</text>
+   <text id="map-row3" class="hi" x="362" y="719" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="790" fill="#2b2622">Postage, <tspan id="map-air">हवाई डाक,</tspan> <tspan id="map-breach">शर्त टूटना,</tspan> <tspan id="map-foreign">विदेश डाक</tspan></text>
+   <text id="map-row4" class="hi" x="362" y="874" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="790" fill="#2b2622">Gyan Post <tspan id="map-eligible">और योग्य किताबें</tspan></text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+   camera:[[0,{zoom:1}]],
+   update(t,section,$) {
+     const ramp=(start,dur)=>Math.max(0,Math.min(1,(t-start)/dur));
+     for(const [id,start] of [["#map-air",4.24],["#map-breach",5.32],["#map-foreign",7.04],["#map-eligible",10.70]]) {
+       const el=$(id)[0]; if(el) el.style.opacity=ramp(start,.23);
+     }
+     const greying=ramp(11.04,.46);
+     for(const id of ["#map-slot-1","#map-slot-2","#map-slot-3","#map-row1","#map-row2","#map-row3"]) {
+       const el=$(id)[0]; if(el) {el.style.filter="grayscale("+greying+")"; el.style.opacity=1-.38*greying;}
+     }
+     const row3=$("#map-row3")[0], row4=$("#map-row4")[0];
+     if(row3) row3.style.opacity=ramp(1.92,.28)*(1-.38*greying);
+     if(row4) row4.style.opacity=ramp(8.04,.28);
+   }
+ })
+ </script>
+</section>
