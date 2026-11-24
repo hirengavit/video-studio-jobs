@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 300">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect id="ilc-folded-body" x="4" y="4" width="622" height="292" rx="11" fill="#f3ead6"/>
+    <path id="ilc-flap-edges" d="M27 5l27 34h522l27-34M5 27l29 31v169l-29 42m620-242-29 31v169l29 42" fill="none" stroke="#9c7d60"/>
+    <rect id="ilc-title-spot" x="52" y="57" width="254" height="53" rx="6" fill="#fbf7ee" stroke="#ac9071" stroke-dasharray="3 6"/>
+    <path id="ilc-rules" d="M314 169h244m-244 33h244m-244 33h184" fill="none" stroke="#6f6a63"/>
+    <g id="ilc-stamp" fill="none" stroke="#9e1b1b">
+      <rect x="518" y="53" width="59" height="69" rx="5" stroke-dasharray="3 5"/>
+      <path d="M530 76h35v23h-35zm0 0 17.5 13 17.5-13"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="315" cy="296" r="0"/>
+  <circle data-anchor="top" cx="315" cy="4" r="0"/>
+</svg>
