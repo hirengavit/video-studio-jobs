@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s036" data-in="cut" data-duration="13.92" data-section="PART 2 · PACKET, WEIGHT AND SIZE" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Blind-literature size limits and roll diameter">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="size">
+   <rect width="1920" height="1080" fill="#fbf7ee"/>
+   <rect x="140" y="220" width="1640" height="680" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <path d="M168 220H1752Q1780 220 1780 248V360H140V248Q140 220 168 220Z" fill="#9e1b1b"/>
+   <text x="205" y="309" font-family="Inter,sans-serif" font-size="57" font-weight="810" fill="#fff">Size · Literature for the Blind</text>
+   <rect id="size-row-1" x="200" y="431" width="1520" height="100" rx="14" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+   <g id="size-tile-1">
+    <rect x="222" y="446" width="70" height="70" rx="12" fill="#9e1b1b"/>
+    <text x="257" y="497" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="820" fill="#fff">1</text>
+   </g>
+   <rect id="size-row-2" x="200" y="570" width="1520" height="100" rx="14" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+   <g id="size-tile-2">
+    <rect x="222" y="585" width="70" height="70" rx="12" fill="#9e1b1b"/>
+    <text x="257" y="636" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="820" fill="#fff">2</text>
+   </g>
+   <rect id="size-row-3" x="200" y="709" width="1520" height="100" rx="14" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+   <g id="size-tile-3">
+    <rect x="222" y="724" width="70" height="70" rx="12" fill="#9e1b1b"/>
+    <text x="257" y="775" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="820" fill="#fff">3</text>
+   </g>
+
+   <rect id="size-range-one-marker" x="608" y="453.5" width="438" height="64" rx="4" fill="#fde9a6" opacity=".35"/>
+   <text id="size-line-one" class="hi" x="330" y="497" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="760" fill="#2b2622">Roll: लंबाई — <tspan id="size-range-one">100 mm से 800 mm</tspan></text>
+   <rect id="size-range-two-marker" x="950" y="593" width="454" height="65" rx="4" fill="#fde9a6" opacity=".35"/>
+   <rect id="size-min-three-marker" x="894" y="732" width="303" height="64" rx="4" fill="#fde9a6" opacity=".35"/>
+   <text id="size-line-two" class="hi" x="330" y="636" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="760" fill="#2b2622">Roll: लंबाई + 2 × diameter — <tspan id="size-range-two">170 mm<tspan id="size-range-two-ceiling"> से 1000 mm</tspan></tspan></text>
+   <text id="size-line-three" class="hi" x="330" y="775" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="760" fill="#2b2622">Roll के अलावा — <tspan id="size-min-word">minimum </tspan><tspan id="size-min-three">100 × 70 mm</tspan></text>
+   <g id="nonroll-max">
+    <path id="max-divider" d="M1240 727V791" stroke="#d6ba81" stroke-width="2"/>
+    <text id="nonroll-max-word" x="1280" y="751" font-family="Inter,sans-serif" font-size="30" font-weight="780" fill="#77510a">maximum</text>
+    <text x="1280" y="793" font-family="Inter,sans-serif" font-size="37" font-weight="820" fill="#2b2622"><tspan id="max600">600</tspan> <tspan id="max300a">× 300</tspan> <tspan id="max300b">× 300</tspan> <tspan id="max-mm">mm</tspan></text>
+   </g>
+  </g>
+  <g id="diameter">
+   <rect width="1920" height="1080" fill="#fbf7ee"/>
+   <text x="120" y="247" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#9e1b1b">Diameter</text>
+   <path d="M120 278h350" stroke="#d6ac59" stroke-width="5" stroke-linecap="round"/>
+   <use id="roll-piece" href="piece:paper-roll" transform="translate(230 359) scale(1.76)"/>
+   <path id="diameter-line" d="M428.88 452.28V744.44 M412.88 472.28l16-20 16 20 M412.88 724.44l16 20 16-20" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+   <g id="diameter-caption">
+    <rect x="286" y="813" width="631" height="83" rx="26" fill="#fde9a6"/>
+    <text class="hi" x="601.5" y="868" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="790" fill="#4c3821">एक किनारे से दूसरे तक</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  shots:[[0,"#size"],[6.28,"#diameter"]],
+  on:[
+   [.62,"fade","#nonroll-max",{dur:.25}],
+   [6.28,"fade","#diameter",{dur:.01}],
+   [10.66,"draw","#diameter-line",{dur:.55}],
+   [12.32,"fade","#diameter-caption",{dur:.28}]
+  ],
+  update(t,section,$){
+   for(const [id,start] of [["#max600",1.72],["#max300a",2.92],["#max300b",4.56],["#max-mm",5.06]]){
+    const el=$(id)[0]; if(el)el.style.opacity=Math.min(1,Math.max(0,(t-start)/.18));
+   }
+  }
+ })
+ </script>
+</section>
