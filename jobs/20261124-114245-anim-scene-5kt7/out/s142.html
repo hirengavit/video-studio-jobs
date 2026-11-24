@@ -55,9 +55,17 @@
    [3.48,"fade","#row3",{dur:.28}],
    [3.98,"fade","#pod-translation",{dur:.27}],
    [7.38,"fade","#pod-fee",{dur:.28}],
-   [8.62,"swap","#pod-fee-label",{to:"#pod-fee-amount",dur:.22,dist:8}],
+   [8.62,"swap","#pod-fee-label",{to:"#pod-fee-amount",dur:.012,dist:0}],
    [8.62,"fade","#tick3",{dur:.20}]
-  ]
+  ],
+  update(t,section,$){
+   const z=Math.max(0,Math.min(1,(t-3.14)/.32)); const e=z*z*(3-2*z);
+   for(const [id,attr,start,delta] of [
+    ["#row3-slot","height",102,12],["#tick3-slot","cy",661,6],
+    ["#row4-slot","y",738,12],["#tick4-slot","cy",789,12],
+    ["#row5-slot","y",866,12],["#tick5-slot","cy",917,12]
+   ]){const el=$(id)[0];if(el)el.setAttribute(attr,start+delta*e);}
+  }
 })
 </script>
 </section>
