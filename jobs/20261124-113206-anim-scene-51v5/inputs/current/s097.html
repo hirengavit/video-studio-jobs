@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s097" data-in="cut" data-duration="9.08" data-section="PART 5 · GYAN POST PACKET" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Gyan Post: the seventh condition, printing or handwriting">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="outside">
+   <rect width="1920" height="1080" fill="#fbf7ee"/>
+   <text id="outside-title" x="142" y="250" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="820" font-size="63" fill="#9e1b1b">Packet का बाहर</text>
+   <path d="M142 276H635" stroke="#d6ac59" stroke-width="5" stroke-linecap="round"/>
+   <use id="outside-packet" href="piece:packet-with-tag" transform="translate(240 315) scale(2.4)"/>
+   <rect id="outside-note-card" x="1260" y="335" width="540" height="576" rx="24" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+   <g id="outside-gyan-mark">
+    <rect x="338" y="417" width="565" height="92" rx="10" fill="#fffaf0" stroke="#a4814d" stroke-width="3"/>
+    <text id="outside-gyan-word" x="362" y="483" font-family="Inter,sans-serif" font-size="59" font-weight="865" fill="#7d1616">Gyan Post</text>
+   </g>
+   <g id="outside-required">
+    <rect x="1295" y="368" width="470" height="84" rx="18" fill="#fde9a6"/>
+    <text x="1530" y="425" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="820" font-size="52" fill="#5d400e">ज़रूरी</text>
+   </g>
+
+   <g id="delivery-address">
+    <rect x="338" y="530" width="487" height="76" rx="10" fill="#fffaf0" stroke="#a4814d" stroke-width="2"/>
+    <text id="delivery-address-copy" x="361" y="579" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="820" font-size="42" fill="#2b2622">To: delivery का पता</text>
+   </g>
+   <g id="return-address">
+    <rect x="338" y="641" width="487" height="108" rx="10" fill="#fffaf0" stroke="#a4814d" stroke-width="2"/>
+    <text id="return-address-copy" x="361" y="684" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="820" font-size="39" fill="#2b2622">From: sender का</text>
+    <text id="return-address-cont" x="361" y="729" font-family="Inter,sans-serif" font-size="37" font-weight="820" fill="#2b2622">return address</text>
+   </g>
+   <g id="delivery-check">
+    <rect x="1295" y="473" width="470" height="81" rx="18" fill="#e3f1e8" stroke="#afd7be" stroke-width="2"/>
+    <text x="1530" y="526" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="820" font-size="42" fill="#17634a">✓ Delivery का पता</text>
+   </g>
+   <g id="return-check">
+    <rect x="1295" y="573" width="470" height="81" rx="18" fill="#e3f1e8" stroke="#afd7be" stroke-width="2"/>
+    <text x="1530" y="626" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="820" font-size="32" fill="#17634a">✓ Sender का return address</text>
+   </g>
+   <g id="packet-inspection-glass">
+    <use href="piece:magnifier-icon" transform="translate(830 627) scale(.66)"/>
+   </g>
+   <g id="packet-inspection-note">
+    <rect x="1295" y="675" width="470" height="150" rx="18" fill="#e7edf0" stroke="#a2aeb6" stroke-width="2"/>
+    <text x="1530" y="740" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="820" font-size="42" fill="#354754">Postal officers</text>
+    <text x="1530" y="794" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="820" font-size="40" fill="#354754">जाँच कर सकते हैं</text>
+   </g>
+  </g>
+ </svg>
+
+
+ 
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[[0,"fade","#delivery-address",{dur:.15}],[0,"type","#delivery-address-copy",{cps:23}],[0,"fade","#delivery-check",{dur:.22}],[2.14,"fade","#return-address",{dur:.15}],[2.14,"type","#return-address-copy",{cps:23}],[2.84,"type","#return-address-cont",{cps:23}],[2.14,"fade","#return-check",{dur:.22}],[4.40,"fade","#packet-inspection-glass",{dur:.18}],[4.40,"fade","#packet-inspection-note",{dur:.22}]],
+  update(t,section,$){
+    const q=Math.max(0,Math.min(1,(t-4.4)/.62));
+    $("#packet-inspection-glass")[0].setAttribute("transform","translate("+(152*(1-q)*(1-q))+" 0)");
+  }
+ })
+ </script>
+</section>
