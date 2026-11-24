@@ -60,7 +60,7 @@
      <text id="recovery-amount" x="1617" y="930" text-anchor="middle" style="font-family: Georgia, serif" font-size="44" font-weight="850" fill="#17634a">= ₹26</text>
     </g>
    </g>
-   <text id="pre-tax-result" class="hi" x="1742" y="949" text-anchor="end" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="790" fill="#17634a">(taxes से पहले)</text>
+   <text id="pre-tax-result" class="hi" x="1742" y="952" text-anchor="end" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="790" fill="#17634a">(taxes से पहले)</text>
    <g id="trap-parcel-total">
     <rect x="120" y="800" width="740" height="85" rx="18" fill="#eeeceb" stroke="#59606b" stroke-width="3"/>
     <text id="trap-parcel-label" class="hi" x="146" y="836" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="810" fill="#424954">विकल्प: पूरे parcel postage<tspan x="146" y="872">का दोगुना:</tspan></text>
@@ -84,9 +84,13 @@
     set("#formula-inset","y",365-22*a);
     set("#formula-inset","height",507-108*a);
     for(const [q,dy] of [["#formula-label",-15],["#formula-recovery",-53],["#formula-double",-53],["#formula-double-band",-53],["#formula-correct",-82],["#formula-paid",-90],["#formula-deficiency",-114]]) set(q,"transform","translate(0 "+dy*a+")");
+    set("#worked-deficiency","transform","translate(0 "+(-10*b)+")");
+    set("#worked-tax","transform","translate(0 "+(-4*b)+")");
+    set("#worked-divider","transform","translate(0 "+(-4*b)+")");
+    set("#breach-example-shell","height",760+16*b);
     set("#worked-recovery","transform","translate(0 "+(-20*b)+")");
     set("#recovery-result-pill","y",889-15*b);
-    set("#recovery-result-pill","height",55-12*b);
+    set("#recovery-result-pill","height",55-16*b);
     set("#recovery-amount","y",930-22*b);
   }
  })
