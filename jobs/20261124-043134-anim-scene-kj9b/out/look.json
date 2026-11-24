@@ -8,12 +8,5 @@
   "9.87"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s136",
-   "text": "Speed Post / Speed Post तक सीमित",
-   "t": 6.01
-  }
- ]
+ "warnings": []
 }
