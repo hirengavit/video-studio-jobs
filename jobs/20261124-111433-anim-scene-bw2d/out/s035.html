@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s035" data-in="cut" data-duration="11.18" data-section="PART 2 · PACKET, WEIGHT AND SIZE" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Blind-literature weight and size table">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="size">
+   <rect width="1920" height="1080" fill="#fbf7ee"/>
+   <rect x="140" y="220" width="1640" height="680" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <path d="M168 220H1752Q1780 220 1780 248V360H140V248Q140 220 168 220Z" fill="#9e1b1b"/>
+   <text x="205" y="309" font-family="Inter,sans-serif" font-size="57" font-weight="810" fill="#fff">Size · Literature for the Blind</text>
+   <rect id="size-row-1" x="200" y="431" width="1520" height="100" rx="14" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+   <g id="size-tile-1">
+    <rect x="222" y="446" width="70" height="70" rx="12" fill="#9e1b1b"/>
+    <text x="257" y="497" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="820" fill="#fff">1</text>
+   </g>
+   <rect id="size-row-2" x="200" y="570" width="1520" height="100" rx="14" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+   <g id="size-tile-2">
+    <rect x="222" y="585" width="70" height="70" rx="12" fill="#9e1b1b"/>
+    <text x="257" y="636" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="820" fill="#fff">2</text>
+   </g>
+   <rect id="size-row-3" x="200" y="709" width="1520" height="100" rx="14" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+   <g id="size-tile-3">
+    <rect x="222" y="724" width="70" height="70" rx="12" fill="#9e1b1b"/>
+    <text x="257" y="775" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="820" fill="#fff">3</text>
+   </g>
+
+   <rect id="size-range-one-marker" x="608" y="453.5" width="438" height="64" rx="4" fill="#fde9a6" opacity=".35"/>
+   <text id="size-line-one" class="hi" x="330" y="497" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="760" fill="#2b2622">Roll: लंबाई — <tspan id="size-range-one">100 mm से 800 mm</tspan></text>
+   <text id="size-line-two" class="hi" x="330" y="636" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="760" fill="#2b2622">Roll: लंबाई + 2 × diameter — <tspan id="size-range-two" fill="#8a5d00">170 mm<tspan id="size-range-two-ceiling"> से 1000 mm</tspan></tspan></text>
+   <text id="size-line-three" class="hi" x="330" y="775" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="760" fill="#2b2622">Roll के अलावा — <tspan id="size-min-word">minimum </tspan><tspan id="size-min-three" fill="#8a5d00">100 × 70 mm</tspan></text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [0,'fade','#size-line-two',{dur:.28}],
+   [4.08,'highlight','#size-line-two',{words:'170 mm से 1000 mm',color:'#f2b705',opacity:.5,pad:5,dur:.32}],
+   [7.24,'fade','#size-line-three',{dur:.28}],
+   [9.18,'highlight','#size-line-three',{words:'100 × 70 mm',color:'#f2b705',opacity:.5,pad:5,dur:.32}]
+  ],
+  update(t,section,$) {
+   const ramp=(start)=>Math.min(1,Math.max(0,(t-start)/.22));
+   for(const [sel,start] of [['#size-range-two',4.08],['#size-range-two-ceiling',5.46],['#size-min-word',8.90],['#size-min-three',9.18]]) {
+    const e=$(sel)[0]; if(e) e.style.opacity=ramp(start);
+   }
+  }
+ })
+ </script>
+</section>
