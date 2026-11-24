@@ -24,7 +24,7 @@
 
    <rect id="size-range-one-marker" x="608" y="453.5" width="438" height="64" rx="4" fill="#fde9a6" opacity=".35"/>
    <text id="size-line-one" class="hi" x="330" y="497" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="760" fill="#2b2622">Roll: लंबाई — <tspan id="size-range-one">100 mm से 800 mm</tspan></text>
-   <text id="size-line-two" class="hi" x="330" y="636" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="760" fill="#2b2622">Roll: लंबाई + 2 × diameter — <tspan id="size-range-two">170 mm से 1000 mm</tspan></text>
+   <text id="size-line-two" class="hi" x="330" y="636" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="760" fill="#2b2622">Roll: लंबाई + 2 × diameter — <tspan id="size-range-two">170 mm<tspan id="size-range-two-ceiling"> से 1000 mm</tspan></tspan></text>
    <text id="size-line-three" class="hi" x="330" y="775" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="760" fill="#2b2622">Roll के अलावा — <tspan id="size-min-word">minimum </tspan><tspan id="size-min-three">100 × 70 mm</tspan></text>
   </g>
  </svg>
@@ -39,7 +39,7 @@
   ],
   update(t,section,$) {
    const ramp=(start)=>Math.min(1,Math.max(0,(t-start)/.22));
-   for(const [sel,start] of [['#size-range-two',4.08],['#size-min-word',8.90],['#size-min-three',9.18]]) {
+   for(const [sel,start] of [['#size-range-two',4.08],['#size-range-two-ceiling',5.46],['#size-min-word',8.90],['#size-min-three',9.18]]) {
     const e=$(sel)[0]; if(e) e.style.opacity=ramp(start);
    }
   }
