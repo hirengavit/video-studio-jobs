@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s059" data-in="cut" data-duration="8.54" data-section="PART 3 · POSTAGE AND FOREIGN MAIL" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Cecogrammes is the foreign-mail term for Literature for the Blind">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="foreign">
+   <rect width="1920" height="1080" fill="#fbf7ee"/>
+   <use href="piece:globe-icon" transform="translate(200 305) scale(1.625)"/>
+   <text x="920" y="258" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="76" font-weight="850" fill="#9e1b1b">विदेश डाक</text>
+   <text id="literature-equals" x="920" y="326" font-family="Inter,sans-serif" font-size="43" font-weight="740" fill="#65564c">Literature for the Blind =</text>
+   <g id="ceco-stamp">
+    <rect x="920" y="353" width="816" height="177" rx="24" fill="#fde9a6" stroke="#9e1b1b" stroke-width="3" stroke-dasharray="9 7"/>
+    <text x="956" y="437" font-family="Inter,sans-serif" font-size="76" font-weight="850" fill="#9e1b1b">Cecogrammes</text>
+    <text id="ceco-hindi" x="956" y="500" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="770" fill="#2b2622">नेत्रहीनों का साहित्य (विदेश डाक)</text>
+   </g>
+   <g id="ceco-packet">
+    <use href="piece:packet-with-tag" transform="translate(1095 553) scale(1.6)"/>
+    <g id="ceco-label">
+     <rect x="1164" y="729" width="362" height="76" rx="8" fill="#fff" stroke="#b39d79" stroke-width="3"/>
+     <text x="1345" y="779" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="850" fill="#2b2622">Cecogrammes</text>
+    </g>
+    <g id="ceco-official-label">
+     <rect x="1301" y="660" width="219" height="80" rx="8" fill="#fff" stroke="#b39d79" stroke-width="3"/>
+     <text x="1410.5" y="694" text-anchor="middle" font-family="Inter,sans-serif" font-size="29" font-weight="830" fill="#2b2622">Envois pour<tspan x="1410.5" y="723">les aveugles</tspan></text>
+    </g>
+    <g id="sender-callout">
+     <text x="1150" y="689" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="35" font-weight="820" fill="#2b2622">From:</text>
+     <text x="1150" y="730" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="33" font-weight="780" fill="#2b2622">नाम-पता</text>
+    </g>
+   </g>
+   <g id="printed-hint">
+    <rect x="1032" y="944" width="610" height="62" rx="20" fill="#f3ead6"/>
+    <text x="1337" y="988" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="39" font-weight="770" fill="#2b2622">हो सके तो छपे label पर</text>
+   </g>
+   <g id="placement-caption">
+    <text x="1410" y="596" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="38" font-weight="820" fill="#7d1616">सामने, ऊपर दाहिने कोने में</text>
+   </g>
+   <path id="placement-ring" d="M1289 662Q1302 647 1328 647H1499Q1533 648 1533 682L1532 723Q1530 750 1504 751H1321Q1288 750 1287 722Z" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+   <g id="sender-required">
+    <rect x="929" y="826" width="176" height="58" rx="19" fill="#fde9a6"/>
+    <text x="1017" y="868" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="37" font-weight="810" fill="#8a5d00">ज़रूरी</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[[2.08,"out","#ceco-label",{dur:.12}],[2.08,"fade","#ceco-official-label",{dur:.12}],[2.66,"fade","#placement-caption",{dur:.22}],[2.66,"draw","#placement-ring",{dur:.43}],[5.56,"fade","#sender-callout",{dur:.27}],[7.44,"fade","#sender-required",{dur:.22}]],
+  update(t,section,$) {
+   const f=Math.min(1,Math.max(0,(t-1.06)/1.14)), e=f*f*(3-2*f);
+   const label=$("#ceco-label")[0];
+   if(label)label.setAttribute("transform","translate("+(65*e)+" "+(-69*e)+") translate("+ (1345-1345*(1-.395*e)) +" 0) scale("+(1-.395*e)+" 1)");
+  }
+ })
+ </script>
+</section>
