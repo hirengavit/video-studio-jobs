@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.25",
+  "4.50",
+  "6.76",
+  "9.01",
+  "11.11"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s150",
+   "message": "pulse: option \"dur\" isn't used (it takes: amount)",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s150",
+   "text": "Parcel Retail (local): / ₹48",
+   "t": 0.3
+  }
+ ]
+}
