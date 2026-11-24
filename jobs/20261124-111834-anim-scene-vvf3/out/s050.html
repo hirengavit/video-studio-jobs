@@ -34,7 +34,6 @@
 </svg>
 <script type="text/scene">
 ({camera:[[0,{zoom:1}]],on:[
-[2.08,"move","#surface-van",{by:[80,0],dur:1.2,ease:"out",spring:"soft"}],
 [2.08,"fade","#surface-tag",{dur:.30}],
 [3.72,"fade","#air-card",{dur:.24}],
 [3.72,"pop","#air-plane",{spring:"soft",from:.82}],
@@ -42,6 +41,12 @@
 [6.26,"fade","#air-fee-hi",{dur:.28}],
 [8.00,"fade","#travel-takeaway",{dur:.31}],
 [10.30,"highlight","#travel-takeaway-text",{words:"हवाई सफ़र नहीं",color:"#fde9a6",opacity:1,dur:.35,pad:8}]
-]})
+],
+update(t,section,$){
+ const van=$("#surface-van")[0];
+ const p=Math.max(0,Math.min(1,(t-2.08)/1.2));
+ if(van) van.setAttribute("transform","translate("+(80*(1-(1-p)**3))+" 0)");
+}
+})
 </script>
 </section>
