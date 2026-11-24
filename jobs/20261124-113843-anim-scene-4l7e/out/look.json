@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.92",
+  "3.84",
+  "5.76",
+  "7.68",
+  "9.45"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s128",
+   "text": "Proof of / delivery due",
+   "t": 9.45
+  }
+ ]
+}
