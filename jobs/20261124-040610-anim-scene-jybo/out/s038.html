@@ -47,11 +47,14 @@
  <script type="text/scene">
  ({
   camera:[[0,{zoom:1}]],
-  on:[[1.10,"fade","#diameter-value",{dur:.24}],[3.70,"out","#length-criterion",{dur:.20}],[3.70,"fade","#length-check-passed",{dur:.24}],[7.22,"fade","#roll-working",{dur:.24}]],
+  on:[[1.10,"fade","#diameter-value",{dur:.24}],[7.22,"fade","#roll-working",{dur:.24}]],
   update(t,section,$){
    const ramp=(at,dur)=>Math.max(0,Math.min(1,(t-at)/dur));
    const k=ramp(.06,.82);const smooth=k*k*(3-2*k);
    const roll=$("#roll-diagram")[0];if(roll)roll.setAttribute("transform","translate("+(50*smooth)+" "+(208*smooth)+") scale("+(1-.48*smooth)+")");
+   const old=$("#length-criterion")[0], passed=$("#length-check-passed")[0];
+   if(old)old.style.opacity=t<3.70?1:0;
+   if(passed)passed.style.opacity=t<3.70?0:1;
    const bg=$("#roll-check-1-bg")[0]; const g=ramp(3.70,.24);
    if(bg)bg.setAttribute("fill","rgb("+[227,241,232].map(v=>Math.round(255+(v-255)*g)).join(",")+")");
    for(const [id,at] of [["#sum-length",8.52],["#sum-plus",9.00],["#sum-factor",9.96],["#sum-diameter",10.70]]){
