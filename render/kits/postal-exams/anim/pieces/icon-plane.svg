@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="tail"><path d="M74 193L49 100H79L133 194Z" fill="#fbf7ee"/><path d="M55 121H91L102 140H60Z" fill="#9e1b1b" stroke="none"/></g>
+<g id="fuselage"><path d="M31 194H288Q323 194 347 212L374 232Q375 242 359 245H101Q66 243 40 223Z" fill="#fbf7ee"/><path id="cockpit" d="M301 202Q319 205 333 216H304Z" fill="#f3ead6"/><path d="M60 218H113" stroke="#9e1b1b" stroke-width="8"/><g id="windows" fill="#f3ead6"><rect x="160" y="207" width="13" height="15" rx="4"/><rect x="187" y="207" width="13" height="15" rx="4"/><rect x="214" y="207" width="13" height="15" rx="4"/><rect x="241" y="207" width="13" height="15" rx="4"/></g></g>
+<g id="engine-pod"><path d="M196 244H254Q263 246 263 258Q263 270 254 270H196Z" fill="#f3ead6"/><ellipse cx="196" cy="257" rx="7" ry="13" fill="#fbf7ee"/></g>
+<path id="wing" d="M176 227H219L150 299H106Z" fill="#f3ead6"/>
+<path id="tailplane" d="M77 214H112L70 244H34Z" fill="#f3ead6"/>
+<circle data-anchor="base" cx="204" cy="299" r="0"/>
+</svg>

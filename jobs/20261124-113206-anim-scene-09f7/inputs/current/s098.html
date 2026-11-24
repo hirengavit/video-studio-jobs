@@ -1,0 +1,35 @@
+<section class="vs-scene" id="s098" data-in="cut" data-duration="12.06" data-section="PART 5 · GYAN POST PACKET" data-series="POSTAL PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Three Gyan Post packing options: no cover, an unsealed envelope, or an easily removable cover">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="packing">
+<text x="120" y="234" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="820" fill="#9e1b1b">Packing: तीन में से एक</text>
+<rect x="120" y="300" width="540" height="560" rx="26" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+<rect x="690" y="300" width="540" height="560" rx="26" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+<rect x="1260" y="300" width="540" height="560" rx="26" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+<g id="no-cover">
+ <use href="piece:gyan-post-book-icon" transform="translate(248 365) scale(.79)"/>
+ <rect x="154" y="748" width="472" height="78" rx="20" fill="#e5f0e9"/>
+ <text x="390" y="801" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="790" fill="#17634a">बिना cover</text>
+</g>
+<g id="unsealed-envelope">
+ <path d="M766 478Q754 475 766 462L946 360Q960 352 974 360L1154 462Q1166 475 1154 478Z" fill="#f3ead6" stroke="#bb9b74" stroke-width="4" stroke-linejoin="round"/>
+ <use href="piece:address-envelope" transform="translate(749 473) scale(.66)"/>
+ <rect x="724" y="748" width="472" height="78" rx="20" fill="#e5f0e9"/>
+ <text x="960" y="801" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="790" fill="#17634a">बिना बंद envelope</text>
+</g>
+<g id="removable-cover">
+ <g id="wrapper-example"><use href="piece:open-ended-wrapper" transform="translate(1278 453) scale(.81)"/></g>
+ <rect x="1294" y="748" width="472" height="78" rx="20" fill="#e5f0e9"/>
+ <text x="1530" y="801" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="790" fill="#17634a">आराम से हटने वाला cover</text>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+({camera:[[0,{zoom:1}]],on:[
+[3.52,"fade","#no-cover",{dur:.31}],
+[5.04,"fade","#unsealed-envelope",{dur:.31}],
+[7.92,"fade","#removable-cover",{dur:.31}],
+[10.98,"move","#wrapper-example #book",{by:[100,0],spring:"soft"}]
+]})
+</script>
+</section>
