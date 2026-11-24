@@ -8,12 +8,5 @@
   "10.07"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s055",
-   "text": "2× / दोगुना",
-   "t": 10.07
-  }
- ]
+ "warnings": []
 }
