@@ -33,9 +33,9 @@
   <path d="M1463 725H1304m14-12-14 12 14 12" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
  </g>
  <g id="pod-endorsed">
-  <rect x="990" y="695" width="301" height="93" rx="9" fill="#fffaf0" stroke="#997b4b" stroke-width="2"/>
-  <text id="pod-superscription" x="1140.5" y="736" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="850" fill="#2b2622">Proof of</text>
-  <text id="pod-superscription-end" x="1140.5" y="780" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="850" fill="#2b2622">delivery due</text>
+  <rect x="990" y="690" width="301" height="101" rx="9" fill="#fffaf0" stroke="#997b4b" stroke-width="2"/>
+  <text id="pod-superscription" x="1140.5" y="732" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="850" fill="#2b2622">Proof of</text>
+  <text id="pod-superscription-end" x="1140.5" y="783" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="850" fill="#2b2622">delivery due</text>
  </g>
 </g>
 </svg>
@@ -45,7 +45,7 @@
  on:[[0,"fade","#pod-packet",{dur:.36}],[0,"fade","#pod-slip",{dur:.36}],[.22,"fade","#pod-form-step",{dur:.22}],[3.5,"fade","#pod-attachment-step",{dur:.22}],[5.58,"fade","#pod-address-side",{dur:.20}],[7.66,"fade","#pod-endorsed",{dur:.14}],[7.66,"type","#pod-superscription",{cps:38}],[8.14,"type","#pod-superscription-end",{cps:33}]],
  update(t,section,$){
   const ramp=(a,d)=>Math.max(0,Math.min(1,(t-a)/d)), ease=u=>u*u*(3-2*u);
-  const q=ease(ramp(0,.48)), v=ease(ramp(2.54,1.84));
+  const q=ease(ramp(0,.20)), v=ease(ramp(2.54,1.84));
   const set=(id,k,val)=>{const e=$("#"+id)[0];if(e)e.setAttribute(k,val);};
   const lerp=(a,b)=>a+(b-a)*q;
   set("book-panel","x",lerp(142,100));set("book-panel","width",lerp(650,340));
