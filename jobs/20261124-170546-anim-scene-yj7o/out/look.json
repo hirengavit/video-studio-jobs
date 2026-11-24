@@ -12,15 +12,9 @@
   {
    "kind": "low-contrast",
    "scene": "s119",
-   "text": "₹20 + ₹25 + … (2.3:1)",
+   "text": "₹20 + ₹25 + … (1.6:1)",
    "message": "text too close in colour to what's behind it",
    "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s119",
-   "text": "Rates exclude applicable taxes · Schedul / Exam angle",
-   "t": 5.59
   }
  ]
 }
