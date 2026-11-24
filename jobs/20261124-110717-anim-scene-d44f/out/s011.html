@@ -36,7 +36,7 @@
     <text class="hi" x="1296" y="953" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="800" fill="#2b2622">या नेत्रहीनों की कोई और खास लिपि</text>
    </g>
   </g>
-  <g id="dots" opacity="0">
+  <g id="dots">
    <rect width="1920" height="1080" fill="#fbf7ee"/>
    <g id="braille-photo" transform="rotate(1 580 550)">
     <rect x="125" y="201" width="910" height="697" rx="8" fill="white" stroke="#d8c7aa" stroke-width="2" filter="url(#vs-shadow)"/>
@@ -58,14 +58,10 @@
  <script type="text/scene">
  ({
    shots:[[0,'#form'],[5.54,'#dots']],
-   update(t,section,$) {
-    const cut=t>=5.54;
-    $('#form')[0].style.opacity=cut?0:1;
-    $('#dots')[0].style.opacity=cut?1:0;
-   },
    on:[
     [.50,'fade','#braille-hindi',{dur:.28}],
     [1.92,'fade','#other-script',{dur:.28}],
+    [5.54,'fade','#dots',{dur:.01}],
     [6.42,'pop','#dot-1',{from:.74,spring:'soft'}],
     [6.52,'pop','#dot-2',{from:.74,spring:'soft'}],
     [6.62,'pop','#dot-3',{from:.74,spring:'soft'}],
