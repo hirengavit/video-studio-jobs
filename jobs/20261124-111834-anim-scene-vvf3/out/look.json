@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.28",
+  "4.55",
+  "6.83",
+  "9.10",
+  "11.23"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s050",
+   "message": "move: option \"dur\" isn't used (it takes: by, spring)",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s050",
+   "message": "move: option \"ease\" isn't used (it takes: by, spring)",
+   "t": 0.3
+  }
+ ]
+}
