@@ -1,0 +1,44 @@
+{
+ "moments": [
+  "0.30",
+  "2.32",
+  "4.63",
+  "6.95",
+  "9.26",
+  "11.43"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s017",
+   "text": "discs (2.8:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s017",
+   "text": "लिखावट के अक्षरों / वाली plates",
+   "t": 4.63
+  },
+  {
+   "kind": "off-frame",
+   "scene": "s017",
+   "message": "a card or panel runs 298 px past the frame edge at 4.6 s (check the camera zoom and the layout)",
+   "t": 4.63
+  },
+  {
+   "kind": "off-frame",
+   "scene": "s017",
+   "message": "a card or panel runs 298 px past the frame edge at 7.0 s (check the camera zoom and the layout)",
+   "t": 6.95
+  },
+  {
+   "kind": "off-frame",
+   "scene": "s017",
+   "message": "a card or panel runs 298 px past the frame edge at 9.3 s (check the camera zoom and the layout)",
+   "t": 9.26
+  }
+ ]
+}
