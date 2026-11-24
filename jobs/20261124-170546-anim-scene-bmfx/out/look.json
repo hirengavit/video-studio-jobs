@@ -8,18 +8,5 @@
   "9.87"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s136",
-   "text": "documents, parcels की / value-added service",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s136",
-   "text": "registration = / Registered Post",
-   "t": 6.01
-  }
- ]
+ "warnings": []
 }
