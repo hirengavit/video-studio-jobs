@@ -36,6 +36,7 @@
     <circle cx="1530" cy="567" r="13" fill="none" stroke="#e6a274" stroke-width="2"/>
     <text class="hi" x="1530" y="754" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="800" fill="#2b2622">Seal किया cover</text>
    </g>
+   <path id="seal-reject-keyline" d="M1454 451l154 154m0-154-154 154" fill="none" stroke="#fffaf0" stroke-width="13" stroke-linecap="round"/>
    <path id="seal-reject" d="M1454 451l154 154m0-154-154 154" fill="none" stroke="#4b4f58" stroke-width="3" stroke-linecap="round"/>
   </g>
   <g id="weight">
@@ -67,6 +68,7 @@
   shots:[[0,'#packing'],[4.24,'#weight']],
   on:[
    [.025,'pop','#sealed-cover',{from:.89,spring:'soft'}],
+   [2.76,'draw','#seal-reject-keyline',{dur:.40}],
    [2.76,'draw','#seal-reject',{dur:.40}],
    [4.24,'fade','#weight',{dur:.01}],
    [5.56,'fade','#maximum',{dur:.30}],
