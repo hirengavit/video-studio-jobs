@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s050" data-in="cut" data-duration="11.38" data-section="PART 3 · POSTAGE AND FOREIGN MAIL" data-series="POSTAL PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Surface postage is free; sending by air incurs an airmail fee">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="travel-compare">
+ <g id="surface-card">
+  <rect x="120" y="215" width="800" height="635" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+  <path d="M120 346V245Q120 215 150 215H890Q920 215 920 245V346Z" fill="#9e1b1b"/>
+  <text x="520" y="299" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="820" fill="#fff">बिना postage का सफ़र</text>
+  <path d="M196 662H844" stroke="#e4d3af" stroke-width="4" stroke-linecap="round"/>
+  <g id="surface-van"><use href="piece:mail-van" transform="translate(220 381) scale(.87)"/></g>
+  <g id="surface-tag">
+   <rect x="309" y="716" width="422" height="87" rx="24" fill="#f3ead6"/>
+   <text x="520" y="777" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">surface</text>
+  </g>
+ </g>
+ <g id="air-card">
+  <rect x="1000" y="215" width="800" height="635" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+  <path d="M1000 346V245Q1000 215 1030 215H1770Q1800 215 1800 245V346Z" fill="#9e1b1b"/>
+  <text x="1400" y="299" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="820" fill="#fff">हवा से</text>
+  <g id="air-plane"><use href="piece:airmail-plane" transform="translate(1072 370) scale(1.36)"/></g>
+  <use href="piece:airmail-label" transform="translate(1516 554) scale(.60)"/>
+  <text x="1624" y="616" text-anchor="middle" font-family="Inter,sans-serif" font-size="30" font-weight="890" fill="#fff">AIR MAIL</text>
+  <g id="air-fee">
+   <rect x="1059" y="679" width="682" height="131" rx="24" fill="#f3ead6"/>
+   <text x="1400" y="730" text-anchor="middle" font-family="Inter,sans-serif" font-size="50" font-weight="830" fill="#9e1b1b">airmail fee</text>
+   <text id="air-fee-hi" x="1400" y="785" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="750" fill="#2b2622">हवाई डाक शुल्क</text>
+  </g>
+ </g>
+ <g id="travel-takeaway">
+  <rect x="120" y="900" width="1680" height="90" rx="25" fill="#f3ead6"/>
+  <text id="travel-takeaway-text" x="960" y="963" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="800" fill="#2b2622">postage मुफ्त है, हवाई सफ़र नहीं</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({camera:[[0,{zoom:1}]],on:[
+[2.08,"move","#surface-van",{by:[80,0],spring:"soft"}],
+[2.08,"fade","#surface-tag",{dur:.30}],
+[3.72,"fade","#air-card",{dur:.24}],
+[3.72,"pop","#air-plane",{spring:"soft",from:.82}],
+[5.76,"fade","#air-fee",{dur:.31}],
+[6.26,"fade","#air-fee-hi",{dur:.28}],
+[8.00,"fade","#travel-takeaway",{dur:.31}],
+[9.72,"highlight","#travel-takeaway-text",{words:"हवाई सफ़र नहीं",color:"#fde9a6",opacity:1,dur:.35,pad:8}]
+]})
+</script>
+</section>
