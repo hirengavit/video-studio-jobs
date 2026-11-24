@@ -34,7 +34,7 @@
     </g>
     <g id="media-film">
      <defs><clipPath id="clip-film"><rect x="720" y="662" width="220" height="183"/></clipPath></defs>
-     <g clip-path="url(#clip-film)"><use href="piece:recorded-media-icons" transform="translate(42.5 632.5) scale(.9)"/></g>
+     <g id="film-art-spacer" clip-path="url(#clip-film)"><use href="piece:recorded-media-icons" transform="translate(42.5 632.5) scale(.9)"/></g>
      <text x="830" y="885" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="810" fill="#2b2622">films</text>
     </g>
     <g id="media-tape">
@@ -85,6 +85,7 @@
    const u=Math.max(0,Math.min(1,(t-1.72)/.8)), q=u*u*(3-2*u);
    $("#recorded-carry")[0].setAttribute("transform","translate("+(-360*q)+" "+(104*q)+") scale("+(1-.2*q)+")");
    for(const label of section.querySelectorAll("[id*=media-] text"))label.setAttribute("font-size",String(40+5*q));
+   $("#film-art-spacer")[0].setAttribute("transform","translate(0 "+(22*q)+")");
    $("#printed-reference")[0].style.opacity=.7*(1-q);
    $("#more-arrow")[0].style.opacity=1-q;
   }
