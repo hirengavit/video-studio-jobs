@@ -34,14 +34,14 @@
   <text x="356" y="575" font-family="Inter,sans-serif" font-size="36" font-weight="760" fill="#2b2622">Government universities</text>
  </g>
  <g id="gov-bodies-chip">
-  <rect x="330" y="513" width="1000" height="56" rx="17" fill="#f3ead6"/>
-  <text x="356" y="553" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="760" fill="#2b2622">Government के autonomous और statutory bodies</text>
+  <rect x="330" y="503" width="1000" height="56" rx="17" fill="#f3ead6"/>
+  <text x="356" y="543" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="760" fill="#2b2622">Government के autonomous और statutory bodies</text>
  </g>
  <g id="government-footer">
-  <text x="330" y="608" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="820" fill="#7d1616">Government =</text>
-  <g id="government-central"><rect x="652" y="575" width="172" height="42" rx="14" fill="#f3ead6"/><text x="738" y="608" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="760" fill="#2b2622">Central</text></g>
-  <g id="government-state"><rect x="838" y="575" width="146" height="42" rx="14" fill="#f3ead6"/><text x="911" y="608" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="760" fill="#2b2622">State</text></g>
-  <g id="government-ut"><rect x="998" y="575" width="332" height="42" rx="14" fill="#f3ead6"/><text x="1164" y="608" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="760" fill="#2b2622">Union Territory</text></g>
+  <text x="330" y="599" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="820" fill="#7d1616">Government =</text>
+  <g id="government-central"><rect x="652" y="568" width="172" height="40" rx="14" fill="#f3ead6"/><text x="738" y="599" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="760" fill="#2b2622">Central</text></g>
+  <g id="government-state"><rect x="838" y="568" width="146" height="40" rx="14" fill="#f3ead6"/><text x="911" y="599" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="760" fill="#2b2622">State</text></g>
+  <g id="government-ut"><rect x="998" y="568" width="332" height="40" rx="14" fill="#f3ead6"/><text x="1164" y="599" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="760" fill="#2b2622">Union Territory</text></g>
  </g>
 </g>
 </svg>
@@ -56,7 +56,7 @@
  ],
  update(t,section,$){
   const u=Math.max(0,Math.min(1,(t-.55)/.57)), k=u*u*(3-2*u);
-  for(const [id,dy] of [["students-books",-42],["syllabus-qualifier",-57],["prescribed-by",-79],["boards-chip",-92],["universities-chip",-92]]){
+  for(const [id,dy] of [["students-books",-42],["syllabus-qualifier",-57],["prescribed-by",-79],["boards-chip",-92],["universities-chip",-97]]){
    const el=$("#"+id)[0];if(el)el.setAttribute("transform","translate(0 "+dy*k+")");
   }
   for(const id of ["boards-band","universities-band"]){
