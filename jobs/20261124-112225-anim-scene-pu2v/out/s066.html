@@ -87,11 +87,11 @@
    [3.23,"reveal","#compliant-resubmission",{from:"left",dur:.40}],
    [6.07,"fade","#exam",{dur:.01}],
    [8.10,"fade","#exam-postage",{dur:.22}],
-   [8.64,"fade","#exam-postage-exempt",{dur:.22}],
    [9.78,"fade","#exam-surface",{dur:.26}]
   ],
   update(t,section,$){
-   const row=$("#fee-breach-shell")[0];
+   const row=$("#fee-breach-shell")[0], exempt=$("#exam-postage-exempt")[0];
+   if(exempt) exempt.style.opacity=Math.max(0,Math.min(1,(t-8.64)/.22));
    const p=Math.max(0,Math.min(1,(t-3.23)/.40));
    if(row) row.setAttribute("height",145+13*p);
   }
