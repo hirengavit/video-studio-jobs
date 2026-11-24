@@ -8,5 +8,13 @@
   "8.81"
  ],
  "problems": [],
- "warnings": []
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s117",
+   "text": "₹20 + ₹25 + … (2.3:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 8.81
+  }
+ ]
 }
