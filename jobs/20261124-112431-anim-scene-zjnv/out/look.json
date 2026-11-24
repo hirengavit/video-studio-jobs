@@ -8,13 +8,5 @@
   "10.38"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "low-contrast",
-   "scene": "s079",
-   "text": "3 (1.6:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
