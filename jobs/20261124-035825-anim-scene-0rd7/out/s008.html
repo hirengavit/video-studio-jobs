@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s008" data-in="cut" data-duration="5.64" data-section="OVERVIEW" data-series="POSTAL PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Overview: lecture topics five through eight">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="map2">
+   <rect width="1920" height="1080" fill="#fbf7ee"/>
+   <text class="hi" x="120" y="208" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="65" font-weight="820" fill="#9e1b1b">इस lecture के <tspan id="eight">आठ</tspan> हिस्से</text>
+   <path d="M120 252h593" stroke="#d6ac59" stroke-width="5" stroke-linecap="round"/>
+   <g id="map-slot-5">
+    <rect x="186" y="320" width="1548" height="145" rx="25" fill="#fdf8ef" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="221" y="349" width="87" height="87" rx="17" fill="#9e1b1b"/>
+    <text x="264.5" y="411" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="850" fill="#fff">5</text>
+   </g>
+   <g id="map-slot-6">
+    <rect x="186" y="475" width="1548" height="145" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="221" y="504" width="87" height="87" rx="17" fill="#9e1b1b"/>
+    <text x="264.5" y="566" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="850" fill="#fff">6</text>
+   </g>
+   <g id="map-slot-7">
+    <rect x="186" y="630" width="1548" height="145" rx="25" fill="#fdf8ef" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="221" y="659" width="87" height="87" rx="17" fill="#9e1b1b"/>
+    <text x="264.5" y="721" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="850" fill="#fff">7</text>
+   </g>
+   <g id="map-slot-8">
+    <rect x="186" y="785" width="1548" height="145" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="221" y="814" width="87" height="87" rx="17" fill="#9e1b1b"/>
+    <text x="264.5" y="876" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="850" fill="#fff">8</text>
+   </g>
+   <text id="map-row5" class="hi" x="362" y="409" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="790" fill="#2b2622"><tspan id="map-inside">अंदर,</tspan> <tspan id="map-outside">बाहर,</tspan> <tspan id="map-pack">packing</tspan> <tspan id="map-and">और</tspan> <tspan id="map-size">size</tspan></text>
+   <text id="map-row6" x="362" y="564" font-family="Inter,sans-serif" font-size="52" font-weight="790" fill="#2b2622">Tariff</text>
+   <text id="map-row7" x="362" y="719" font-family="Inter,sans-serif" font-size="52" font-weight="790" fill="#2b2622"><tspan id="map-pod">POD,</tspan> <tspan id="map-attested">attested copy,</tspan> <tspan id="map-registration">registration,</tspan> <tspan id="map-insurance">insurance</tspan></text>
+   <text id="map-row8" class="hi" x="362" y="874" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="790" fill="#2b2622"><tspan id="map-recovery">वसूली</tspan><tspan id="map-recovery-and"> और </tspan><tspan id="map-service-choice">सही service</tspan></text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[[4.66,"underline","#map-row8",{color:"#dfa900",dur:.32}]],
+  update(t,section,$){
+   for(const [id,start] of [["#map-recovery",2.24],["#map-recovery-and",2.82],["#map-service-choice",3.60]]){
+    const el=$(id)[0]; if(el)el.style.opacity=Math.max(0,Math.min(1,(t-start)/.22));
+   }
+  }
+ })
+ </script>
+</section>
