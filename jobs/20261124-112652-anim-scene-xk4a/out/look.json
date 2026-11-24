@@ -12,12 +12,6 @@
  ],
  "warnings": [
   {
-   "kind": "text-overlap",
-   "scene": "s088",
-   "text": "सामान की सात शर्तें / screen पर list",
-   "t": 0.3
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s088",
    "message": "a card (#s088-condition-row-1) is mostly empty at 2.6 s: bring its items in sooner, or size it for what it holds now",
