@@ -39,10 +39,10 @@
   <text x="1155" y="557" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="35" font-weight="760" fill="#2b2622">और statutory bodies</text>
  </g>
  <g id="government-footer">
-  <text x="1130" y="350" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="35" font-weight="840" fill="#7d1616">Government =</text>
-  <g id="government-central"><rect x="1130" y="371" width="150" height="48" rx="14" fill="#f3ead6"/><text x="1205" y="405" text-anchor="middle" font-family="Inter,sans-serif" font-size="31" font-weight="780" fill="#2b2622">Central</text></g>
-  <g id="government-state"><rect x="1294" y="371" width="132" height="48" rx="14" fill="#f3ead6"/><text x="1360" y="405" text-anchor="middle" font-family="Inter,sans-serif" font-size="31" font-weight="780" fill="#2b2622">State</text></g>
-  <g id="government-ut"><rect x="1440" y="371" width="301" height="48" rx="14" fill="#f3ead6"/><text x="1590.5" y="405" text-anchor="middle" font-family="Inter,sans-serif" font-size="31" font-weight="780" fill="#2b2622">Union Territory</text></g>
+  <text x="1130" y="326" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="35" font-weight="840" fill="#7d1616">Government =</text>
+  <g id="government-central"><rect x="1130" y="397" width="150" height="48" rx="14" fill="#f3ead6"/><text x="1205" y="431" text-anchor="middle" font-family="Inter,sans-serif" font-size="31" font-weight="780" fill="#2b2622">Central</text></g>
+  <g id="government-state"><rect x="1294" y="397" width="132" height="48" rx="14" fill="#f3ead6"/><text x="1360" y="431" text-anchor="middle" font-family="Inter,sans-serif" font-size="31" font-weight="780" fill="#2b2622">State</text></g>
+  <g id="government-ut"><rect x="1440" y="397" width="301" height="48" rx="14" fill="#f3ead6"/><text x="1590.5" y="431" text-anchor="middle" font-family="Inter,sans-serif" font-size="31" font-weight="780" fill="#2b2622">Union Territory</text></g>
  </g>
  <text id="social-title" x="330" y="513" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="830" fill="#2b2622"><tspan id="social-word">Social,</tspan> <tspan id="cultural-word">cultural</tspan> <tspan id="religious-word">और religious</tspan> <tspan id="literature-word">साहित्य</tspan></text>
  <g id="law-qualifier">
@@ -71,6 +71,8 @@
   if(tile)tile.setAttribute("fill",t<2.16?"#fbf7ee":"#ffffff");
   if(badge)badge.setAttribute("fill",t<2.16?"#f3ead6":"#9e1b1b");
   if(num)num.setAttribute("fill",t<2.16?"#6f6a63":"#ffffff");
+  const social=$("#social-title")[0];
+  if(social) social.style.visibility=t<2.94?"hidden":"visible";
   const label=$("#law-text")[0], band=$("#law-band")[0];
   if(label&&band)band.setAttribute("width",label.getComputedTextLength()+48);
   for(const [id,start] of [["social-word",2.94],["cultural-word",3.68],["religious-word",4.40],["literature-word",5.28]]){
