@@ -1,0 +1,68 @@
+<section class="vs-scene" id="s077" data-in="cut" data-duration="10.74" data-section="PART 4 · GYAN POST" data-series="POSTAL PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Gyan Post course books and the authorities that prescribe them">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="groups">
+ <text x="142" y="209" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="850" fill="#9e1b1b">कौन-सी किताबें: तीन groups</text>
+ <rect x="142" y="219" width="576" height="5" rx="2.5" fill="#e8b83e"/>
+ <g id="student-group-row-1">
+  <rect x="142" y="230" width="1636" height="390" rx="26" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+  <rect x="177" y="268" width="99" height="91" rx="20" fill="#9e1b1b"/>
+  <text x="226.5" y="331" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="860" fill="#fff">1</text>
+ </g>
+ <g id="student-group-row-2">
+  <rect x="142" y="640" width="1636" height="150" rx="26" fill="#fbf7ee" stroke="#e1cca5" stroke-width="3"/>
+  <rect x="177" y="669" width="99" height="91" rx="20" fill="#f3ead6"/>
+  <text x="226.5" y="732" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="860" fill="#6f6a63">2</text>
+ </g>
+ <g id="student-group-row-3">
+  <rect x="142" y="810" width="1636" height="150" rx="26" fill="#fbf7ee" stroke="#e1cca5" stroke-width="3"/>
+  <rect x="177" y="839" width="99" height="91" rx="20" fill="#f3ead6"/>
+  <text x="226.5" y="902" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="860" fill="#6f6a63">3</text>
+ </g>
+ <text id="students-books" x="330" y="326" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="830" fill="#2b2622">Students के लिए तय किताबें</text>
+
+ <g id="syllabus-qualifier">
+  <text x="330" y="380" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="750" fill="#65564c">correspondence या regular courses के syllabus में</text>
+ </g>
+ <text id="prescribed-by" x="330" y="440" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="34" font-weight="800" fill="#9e1b1b">तय करते हैं:</text>
+ <g id="boards-chip">
+  <rect id="boards-band" x="330" y="465" width="770" height="56" rx="17" fill="#f3ead6"/>
+  <text x="356" y="505" font-family="Inter,sans-serif" font-size="36" font-weight="760" fill="#2b2622">Recognised boards of education</text>
+ </g>
+ <g id="universities-chip">
+  <rect id="universities-band" x="330" y="535" width="770" height="56" rx="17" fill="#f3ead6"/>
+  <text x="356" y="575" font-family="Inter,sans-serif" font-size="36" font-weight="760" fill="#2b2622">Government universities</text>
+ </g>
+ <g id="gov-bodies-chip">
+  <rect x="330" y="503" width="1000" height="56" rx="17" fill="#f3ead6"/>
+  <text x="356" y="543" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="760" fill="#2b2622">Government के autonomous और statutory bodies</text>
+ </g>
+ <g id="government-footer">
+  <text x="330" y="599" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="820" fill="#7d1616">Government =</text>
+  <g id="government-central"><rect x="652" y="568" width="172" height="40" rx="14" fill="#f3ead6"/><text x="738" y="599" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="760" fill="#2b2622">Central</text></g>
+  <g id="government-state"><rect x="838" y="568" width="146" height="40" rx="14" fill="#f3ead6"/><text x="911" y="599" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="760" fill="#2b2622">State</text></g>
+  <g id="government-ut"><rect x="998" y="568" width="332" height="40" rx="14" fill="#f3ead6"/><text x="1164" y="599" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="760" fill="#2b2622">Union Territory</text></g>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ on:[
+  [1.12,"fade","#gov-bodies-chip",{dur:.28}],
+  [6.60,"fade","#government-footer",{dur:.24}],
+  [7.62,"fade","#government-central",{dur:.24}],
+  [8.46,"fade","#government-state",{dur:.24}],
+  [9.50,"fade","#government-ut",{dur:.24}]
+ ],
+ update(t,section,$){
+  const u=Math.max(0,Math.min(1,(t-.55)/.57)), k=u*u*(3-2*u);
+  for(const [id,dy] of [["students-books",-42],["syllabus-qualifier",-57],["prescribed-by",-79],["boards-chip",-92],["universities-chip",-97]]){
+   const el=$("#"+id)[0];if(el)el.setAttribute("transform","translate(0 "+dy*k+")");
+  }
+  for(const id of ["boards-band","universities-band"]){
+   const el=$("#"+id)[0];if(el)el.setAttribute("width",770+230*k);
+  }
+ }
+})
+</script>
+</section>
