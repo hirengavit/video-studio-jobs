@@ -22,8 +22,7 @@
   <text id="row1" class="hi" x="426" y="486" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="760" fill="#2b2622">बाहर: Literature for the Blind + sender का नाम-पता</text>
   <text id="row1-cover" class="hi" x="426" y="534" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="720" fill="#4b4f58">· cover दोनों सिरों से खुला</text>
   <path id="tick1" d="M358 497l8 9 17-19" fill="none" stroke="#087650" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-  <text id="row2" class="hi" x="426" y="643" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#2b2622">Postage नहीं</text>
-  <text id="row2-surface" class="hi" x="757" y="643" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#2b2622">· surface</text>
+  <text id="row2" class="hi" x="426" y="643" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#2b2622">Postage नहीं <tspan id="row2-surface">· surface</tspan></text>
 </g>
 </svg>
 <script type="text/scene">
@@ -32,9 +31,12 @@
   on:[
     [3.42,"draw","#tick1",{dur:.23}],
     [4.56,"fade","#row1-cover",{dur:.27}],
-    [6.64,"fade","#row2",{dur:.28}],
-    [10.36,"fade","#row2-surface",{dur:.24}]
-  ]
+    [6.64,"fade","#row2",{dur:.28}]
+  ],
+  update(t,section,$) {
+    const surface=$("#row2-surface")[0];
+    if(surface) surface.style.opacity=Math.max(0,Math.min(1,(t-10.36)/.24));
+  }
 })
 </script>
 </section>
