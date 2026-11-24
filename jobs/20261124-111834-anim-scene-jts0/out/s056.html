@@ -23,7 +23,7 @@
     <rect x="218" y="669" width="8" height="63" rx="4" fill="#ab8660"/>
     <text x="256" y="716" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="760" fill="#2b2622">item असल में जिस category का, उसकी शर्तें</text>
    </g>
-   <g id="tagged-packet">
+   <g id="tagged-packet" transform="translate(-12 0)">
     <use href="piece:packet-with-tag" transform="translate(1233 598) scale(1.5)"/>
     <path d="M1459 677Q1531 692 1554 752" fill="none" stroke="#847356" stroke-width="4" stroke-linecap="round"/>
     <path d="M1347 747H1713Q1729 747 1729 763V900Q1729 916 1713 916H1347L1315 831Z" fill="#fffaf1" stroke="#ad9669" stroke-width="3" stroke-linejoin="round"/>
@@ -42,7 +42,11 @@
    [7.62,"slide","#tagged-packet",{from:"right",dist:100,spring:"soft"}],
    [9.10,"type","#tag-words",{cps:27}],
    [9.47,"type","#tag-words-two",{cps:26}]
-  ]
+  ],
+  update(t,section,$){
+   const original=$("#tagged-packet #tag")[0];
+   if(original) original.setAttribute("display","none");
+  }
  })
  </script>
 </section>
