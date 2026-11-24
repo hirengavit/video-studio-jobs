@@ -89,9 +89,10 @@
   if(prefix&&suffix&&t>=4.94) suffix.setAttribute("x",330+prefix.getComputedTextLength()+19);
 
   const mix=(a,b)=>"rgb("+a.map((v,i)=>Math.round(v+(b[i]-v)*k)).join(",")+")";
-  for(const [id,a,b] of [["group-three-card",[251,247,238],[255,255,255]],["group-three-number",[243,234,214],[158,27,27]],["group-three-index",[111,106,99],[255,255,255]]]){
-   const el=$("#"+id)[0]; if(el)el.setAttribute("fill",mix(a,b));
-  }
+  const card=$("#group-three-card")[0], badge=$("#group-three-number")[0], numeral=$("#group-three-index")[0];
+  if(card) card.setAttribute("fill",mix([251,247,238],[255,255,255]));
+  if(badge) badge.setAttribute("fill",t<.20?"#f3ead6":"#9e1b1b");
+  if(numeral) numeral.setAttribute("fill",t<.20?"#5b5650":"#ffffff");
  }
 })
 </script>
