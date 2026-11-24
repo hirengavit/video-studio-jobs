@@ -29,8 +29,9 @@
    <text id="size-line-two" class="hi" x="330" y="636" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="760" fill="#2b2622">Roll: लंबाई + 2 × diameter — <tspan id="size-range-two">170 mm<tspan id="size-range-two-ceiling"> से 1000 mm</tspan></tspan></text>
    <text id="size-line-three" class="hi" x="330" y="775" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="760" fill="#2b2622">Roll के अलावा — <tspan id="size-min-word">minimum </tspan><tspan id="size-min-three">100 × 70 mm</tspan></text>
    <g id="nonroll-max">
-    <text id="nonroll-max-word" x="1220" y="751" font-family="Inter,sans-serif" font-size="30" font-weight="780" fill="#77510a">maximum</text>
-    <text x="1220" y="793" font-family="Inter,sans-serif" font-size="37" font-weight="820" fill="#2b2622"><tspan id="max600">600</tspan> <tspan id="max300a">× 300</tspan> <tspan id="max300b">× 300</tspan> <tspan id="max-mm">mm</tspan></text>
+    <path id="max-divider" d="M1240 727V791" stroke="#d6ba81" stroke-width="2"/>
+    <text id="nonroll-max-word" x="1280" y="751" font-family="Inter,sans-serif" font-size="30" font-weight="780" fill="#77510a">maximum</text>
+    <text x="1280" y="793" font-family="Inter,sans-serif" font-size="37" font-weight="820" fill="#2b2622"><tspan id="max600">600</tspan> <tspan id="max300a">× 300</tspan> <tspan id="max300b">× 300</tspan> <tspan id="max-mm">mm</tspan></text>
    </g>
   </g>
   <g id="diameter">
@@ -50,7 +51,7 @@
   camera:[[0,{zoom:1}]],
   shots:[[0,"#size"],[6.28,"#diameter"]],
   on:[
-   [.62,"fade","#nonroll-max-word",{dur:.25}],
+   [.62,"fade","#nonroll-max",{dur:.25}],
    [6.28,"fade","#diameter",{dur:.01}],
    [10.66,"draw","#diameter-line",{dur:.55}],
    [12.32,"fade","#diameter-caption",{dur:.28}]
