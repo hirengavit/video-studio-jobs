@@ -1,0 +1,29 @@
+<section class="vs-scene" id="s121" data-in="fade" data-in-dur="0.5" data-duration="10.22" data-section="PART 7 · POD AND REGISTRATION" data-series="POSTAL PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="A booking receipt proves a postal article was accepted for posting">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="papers">
+ <text x="120" y="232" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="62" font-weight="830" fill="#9e1b1b">दो कागज़ जो उलझते हैं</text>
+ <g id="booking-card">
+  <rect x="120" y="280" width="780" height="620" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+  <path d="M120 392V310Q120 280 150 280H870Q900 280 900 310V392Z" fill="#9e1b1b"/>
+  <text x="510" y="354" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="840" fill="#fff">Booking receipt</text>
+  <use href="piece:booking-receipt" transform="translate(132 374) scale(1.4)"/>
+  <g id="booking-meaning">
+   <rect x="483" y="582" width="384" height="128" rx="22" fill="#f3ead6"/>
+   <text x="675" y="635" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="41" font-weight="800" fill="#2b2622">item डाक के लिए<tspan x="675" y="680">स्वीकार हुआ</tspan></text>
+  </g>
+ </g>
+ <g id="papers-vs">
+  <circle cx="960" cy="590" r="43" fill="#f3ead6" stroke="#e1cca5" stroke-width="3"/>
+  <text x="960" y="603" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="830" fill="#7d1616">VS</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({camera:[[0,{zoom:1}]],on:[
+[1.90,"pop","#papers-vs",{spring:"snap"}],
+[3.92,"slide","#booking-card",{from:"left",dist:84,spring:"snap"}],
+[6.80,"fade","#booking-meaning",{dur:.28}]
+]})
+</script>
+</section>
