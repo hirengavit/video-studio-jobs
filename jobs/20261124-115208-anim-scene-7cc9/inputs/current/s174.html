@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s174" data-in="fade" data-in-dur="0.5" data-section="CLOSE" data-series="POSTAL PRODUCTS">
+<svg viewBox="0 0 1920 1080" aria-label="The right postal service brings each book to its reader">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<defs><clipPath id="route-window" clipPathUnits="userSpaceOnUse"><rect id="route-reveal" x="1080" y="500" width="0" height="220"/></clipPath></defs>
+<g id="closing">
+  <g id="send-right">
+    <rect x="508" y="190" width="904" height="116" rx="55" fill="#fde9a6"/>
+    <text class="hi" x="960" y="267" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="800" fill="#512f0d">सही नियम से भेजी जाए</text>
+  </g>
+  <ellipse cx="446" cy="725" rx="272" ry="25" fill="#f3ead6"/>
+  <ellipse cx="917" cy="725" rx="150" ry="22" fill="#f3ead6"/>
+  <use href="piece:braille-book-icon" transform="translate(129 321) scale(1.22)"/>
+  <g id="textbook">
+    <use href="piece:gyan-post-book-icon" transform="translate(727 316) scale(1.06)"/>
+    <text x="931" y="601" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="800" fill="#2b2622">Gyan Post</text>
+  </g>
+  <g id="book-caption">
+    <rect x="177" y="812" width="884" height="104" rx="51" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text class="hi" x="619" y="881" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="750" fill="#2b2622">Braille किताब · exam textbook</text>
+  </g>
+  <path id="delivery-path" d="M1095 611 C1180 611 1184 547 1268 547 S1354 611 1435 611" fill="none" stroke="#9e1b1b" stroke-width="9" stroke-linecap="round" stroke-dasharray="1 22" clip-path="url(#route-window)"/>
+  <g id="reader-house">
+    <ellipse cx="1598" cy="721" rx="151" ry="22" fill="#e3f1e8"/>
+    <use href="piece:house-icon" transform="translate(1445 404) scale(1.04)"/>
+  </g>
+  <g id="reader-caption">
+    <rect x="1342" y="812" width="516" height="104" rx="51" fill="#e3f1e8"/>
+    <text class="hi" x="1600" y="880" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="750" fill="#225b3a">पाठक तक आराम से</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  camera:[[0,{zoom:1}], [6.66,{zoom:1}], [10.25,{zoom:1.04}]],
+  on:[
+    [1.92,'fade','#book-caption',{dur:0.30}],
+    [3.94,'fade','#send-right',{dur:0.34}],
+    [7.38,'pop','#reader-house',{from:.86,spring:'soft'}],
+    [8.24,'fade','#reader-caption',{dur:0.32}]
+  ],
+  update(t,section,$){
+    const r=$('#route-reveal')[0];
+    if(r) r.setAttribute('width',Math.max(0,Math.min(1,(t-6.66)/.74))*366);
+  }
+}
+</script>
+</section>
