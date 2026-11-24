@@ -8,12 +8,5 @@
   "11.88"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s148",
-   "text": "एक उदाहरण",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
