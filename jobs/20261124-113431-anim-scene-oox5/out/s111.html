@@ -53,6 +53,7 @@
  <path d="M984 768l11 11 20-23" stroke="#17634a" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <text id="recap-letter" class="hi" x="1110" y="784" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="770" fill="#4b4f58">निजी चिट्ठी</text>
+<path id="recap-letter-strike" stroke="#4b4f58" stroke-width="3.5" stroke-linecap="round" fill="none"/>
 <g id="recap-letter-cross">
  <circle cx="1490" cy="766" r="23" fill="#4b4f58"/>
  <path d="M1482 758l16 16m0-16l-16 16" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round"/>
@@ -76,7 +77,7 @@
 ({camera:[[0,{zoom:1}]],on:[
  [.02,'fade','#recap-invoice',{dur:.25}],
  [3.20,'fade','#recap-letter',{dur:.24}],
- [4.12,'strike','#recap-letter',{color:'#4b4f58',dur:.23}],
+ 
  [4.12,'fade','#recap-letter-cross',{dur:.21}],
  [4.12,'fade','#recap-tick-4',{dur:.21}],
  [4.60,'fade','#recap-minimum',{dur:.29}],
@@ -85,7 +86,7 @@
  [10.90,'fade','#recap-tick-5',{dur:.22}]
 ],update(t,section,$){
  const phrase=$("#recap-letter")[0], cross=$("#recap-letter-cross")[0];
- if(t>=4.12&&phrase&&cross){const b=phrase.getBBox();cross.setAttribute("transform","translate("+(b.x+b.width+16+23-1490)+" "+(b.y+b.height/2-766)+")");}
+ if(t>=4.12&&phrase&&cross){const b=phrase.getBBox();cross.setAttribute("transform","translate("+(b.x+b.width+16+23-1490)+" "+(b.y+b.height/2-766)+")");const s=$("#recap-letter-strike")[0], z=Math.min(1,(t-4.12)/.23), mid=b.y+b.height/2+2;if(s)s.setAttribute("d","M"+b.x+" "+mid+"h"+(b.width*z));}
 }})
 </script>
 </section>
