@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.11",
+  "4.21",
+  "6.32",
+  "8.42",
+  "10.38"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s079",
+   "text": "Students के लिए तय किताबें / तय करते हैं:",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s079",
+   "text": "Students के लिए तय किताबें / recognised boards of education",
+   "t": 0.3
+  }
+ ]
+}
