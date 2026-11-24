@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <circle id="rim" cx="130" cy="130" r="116" fill="#f3ead6"/>
+  <circle id="dial" cx="130" cy="130" r="103" fill="#fbf7ee" stroke="#ead9a8"/>
+  <g id="hour-ticks">
+    <path d="M130 42v14m88 74h-14m-74 88v-14m-88-74h14" stroke-width="5"/>
+    <path d="M174 54l-5 9m37 23-9 5m9 83-9-5m-23 37-5-9m-83 9 5-9m-37-23 9-5m-9-83 9 5m23-37 5 9"/>
+  </g>
+  <path id="hour-hand" data-pivot="130,130" d="M130 130L101 104" stroke-width="8"/>
+  <path id="minute-hand" data-pivot="130,130" d="M130 130L175 96" stroke-width="6" stroke="#9e1b1b"/>
+  <circle id="hub" cx="130" cy="130" r="6" fill="#2b2622" stroke="none"/>
+  <circle data-anchor="base" cx="130" cy="247.5" r="0" stroke="none"/>
+</svg>
