@@ -5,6 +5,7 @@
 <g id="weighing" transform="translate(-63 -96.13) scale(1.15)">
 <use id="weigh-scale" href="piece:postal-scale" transform="translate(145 435) scale(1.1)"/>
 <path id="weigh-needle" d="M420 699 L342 695 L420 708 Z" fill="#9e1b1b"/>
+<path id="weigh-needle-full" d="M416 699 L484 657 L424 706 Z" fill="none" stroke="none" aria-hidden="true"/>
 <circle cx="420" cy="702.3" r="12.1" fill="#2b2622"/>
 <use href="piece:gyan-post-book-icon" transform="translate(335 278) scale(.5)"/>
 <rect x="327" y="771" width="186" height="73" rx="14" fill="#2b2622"/>
@@ -38,7 +39,7 @@
  [2.16,"fade","#booking-weight",{dur:.30}],
  [4.40,"fade","#weight-min",{dur:.30}],
  [4.40,"fade","#weigh-needle",{dur:.09}],
- [7.22,"morph","#weigh-needle",{to:"M416 699 L484 657 L424 706 Z",dur:1.2,ease:"linear"}],
+ [7.22,"morph","#weigh-needle",{to:"#weigh-needle-full",dur:1.2,ease:"linear"}],
  [7.22,"fade","#weight-max",{dur:.30}]
  ]
 })
