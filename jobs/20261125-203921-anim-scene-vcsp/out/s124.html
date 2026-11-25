@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s124" data-in="cut" data-duration="8.85" data-section="PART 7 · SENDER PAYMENT AND AMOUNT CHANGES" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The delivery official accounts for the money and the office remits it to the sender">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="cod-flow">
+   <use href="piece:cod-flow-diagram" transform="translate(160 300)"/>
+   <g id="sender">
+    <use href="piece:person-icon" transform="translate(170 502)"/>
+    <text x="250" y="825" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">Sender</text>
+    <text x="250" y="882" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="650" fill="#6f6a63">प्रेषक</text>
+   </g>
+   <g id="addressee">
+    <use href="piece:person-icon" transform="translate(1590 502)"/>
+    <text x="1670" y="825" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">Addressee</text>
+    <text x="1670" y="882" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="650" fill="#6f6a63">प्राप्तकर्ता</text>
+   </g>
+   <use id="delivered-parcel" href="piece:parcel-icon" transform="translate(1360 229.2) scale(.8)"/>
+   <g id="remittance-coin">
+    <use href="piece:rupee-coin" transform="translate(1332 554)"/>
+    <text x="1392" y="634" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="800" fill="#9e1b1b">₹</text>
+   </g>
+   <g id="accounts-bag">
+    <use href="piece:cash-bag" transform="translate(1308 727) scale(.8)"/>
+    <text x="1380" y="961" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">हिसाब</text>
+   </g>
+   <text id="remittance-method" x="960" y="806" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="700" fill="#6f6a63">booking के लागू तरीके से</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [2.02,"pop","#accounts-bag",{from:.95,spring:"soft"}],
+   [5.90,"color","#step-4 circle",{to:"#f2b705",dur:.25}],
+   [5.90,"fade","#remittance-method",{dur:.25}],
+   [6.80,"move","#remittance-coin",{by:[0,76],spring:[24,1]}],
+   [7.10,"move","#remittance-coin",{by:[-922,0],spring:[5.5,1]}]
+  ]
+ })
+ </script>
+</section>
