@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 460" width="520" height="460">
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<line x1="6" y1="455" x2="514" y2="455"/>
+<rect id="chimney" x="360" y="40" width="44" height="90" fill="#7d1414"/>
+<rect id="walls" x="56" y="190" width="408" height="265" fill="#f3ead6"/>
+<path id="roof" d="M20 200 L260 26 L500 200 Z" fill="#9e1b1b"/>
+<g id="windows" fill="#ffffff">
+<rect x="96" y="250" width="86" height="80" rx="4"/><line x1="139" y1="250" x2="139" y2="330"/><line x1="96" y1="290" x2="182" y2="290"/>
+<rect x="338" y="250" width="86" height="80" rx="4"/><line x1="381" y1="250" x2="381" y2="330"/><line x1="338" y1="290" x2="424" y2="290"/>
+</g>
+<g id="door"><rect x="216" y="300" width="88" height="155" rx="6" fill="#7d1414"/><circle cx="288" cy="382" r="5" fill="#f3ead6" stroke="none"/></g>
+<rect id="number-plate" x="230" y="252" width="60" height="34" rx="4" fill="#ffffff"/>
+</g>
+<circle data-anchor="base" cx="260" cy="456" r="0"/>
+</svg>

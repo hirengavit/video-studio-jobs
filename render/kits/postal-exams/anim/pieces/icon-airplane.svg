@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<g stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g id="tail"><path d="M96 191l-29-55H44l12 65Z" fill="#f3ead6" /></g>
+<g id="far-wing"><path d="M200 187l-41-52h-34l21 52Z" fill="#f3ead6" /></g>
+<g id="fuselage"><path d="M44 199q6-19 29-20h201q32 0 53 14l30 17q13 10 3 21-10 11-44 11H106q-44-2-62-20-9-10 0-23Z" fill="#fbf7ee" /></g>
+<g id="stripe"><path d="M51 224h294" fill="none" stroke="#9e1b1b" stroke-width="6"/></g>
+<g id="near-wing"><path d="M214 224l-65 38h-38l26-38Z" fill="#f3ead6" /></g>
+<g id="cockpit"><path d="M306 189l-2 15h31" fill="none" stroke="#6f6a63"/></g>
+</g>
+<circle data-anchor="base" cx="200" cy="262" r="0"/>
+</svg>
