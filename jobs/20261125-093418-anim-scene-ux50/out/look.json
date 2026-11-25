@@ -8,12 +8,5 @@
   "11.17"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s167",
-   "text": "Delivery या वसूली गलत / ₹",
-   "t": 11.17
-  }
- ]
+ "warnings": []
 }
