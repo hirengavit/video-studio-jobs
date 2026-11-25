@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s105" data-in="cut" data-duration="8.88" data-section="PART 6 · DELIVERY, COLLECTION AND POD" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Signature and delivery record connect the item to its receiver">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <rect x="139" y="282" width="1642" height="518" rx="34" fill="#fffaf1" stroke="#e1cca5" stroke-width="3"/>
+  <g id="item-chain">
+   <g id="record">
+    <use href="piece:invoice-sheet" transform="translate(470 401) rotate(9 90 120) scale(.6)"/>
+    <text x="540" y="376" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="#2b2622">Delivery record</text>
+   </g>
+   <use href="piece:signature-slip" transform="translate(160 360) scale(1.1)"/>
+   <text x="380" y="759" text-anchor="middle" font-family="Inter,sans-serif" font-size="47" font-weight="800" fill="#2b2622">Signature</text>
+   <use href="piece:parcel-icon" transform="translate(700 314) scale(1.3)"/>
+   <text x="960" y="759" text-anchor="middle" font-family="Inter,sans-serif" font-size="47" font-weight="800" fill="#2b2622">Item</text>
+   <g id="receiver">
+    <use href="piece:person-icon" transform="translate(1428 330) scale(1.4)"/>
+    <text x="1540" y="759" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="800" fill="#2b2622">जिसने लिया</text>
+   </g>
+   <path id="link-one" d="M665 600H801L780 586M801 600l-21 14" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+   <path id="link-two" d="M1118 600H1418L1397 586M1418 600l-21 14" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="turn-band">
+   <rect x="356" y="860" width="1208" height="104" rx="23" fill="#f3ead6" stroke="#e1cca5" stroke-width="3"/>
+   <text x="960" y="931" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="820" fill="#9e1b1b">अब: delivery के प्रयास</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+   camera:[[0,{zoom:1}]],
+   on:[
+     [1.18,"pop","#record",{spring:"soft"}],
+     [4.14,"draw","#link-one",{dur:.50}],
+     [4.14,"draw","#link-two",{dur:.50}],
+     [4.14,"fade","#receiver",{dur:.35}],
+     [6.90,"reveal","#turn-band",{from:"left",dur:.38}]
+   ]
+ })
+ </script>
+</section>
