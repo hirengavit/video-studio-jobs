@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s032" data-in="cut" data-section="PART 2 · AGREEMENT, LIMITS AND INSURANCE" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The Regulations leave the recovery amount to administrative instructions">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="source">
+    <g id="regulations">
+      <use href="piece:regulations-book" transform="translate(275 444) scale(1.1)"/>
+      <g text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="850" fill="#2b2622">
+        <text x="455" y="590">Post Office</text>
+        <text x="455" y="635">Regulations</text>
+        <text x="455" y="681" fill="#9e1b1b">2024</text>
+      </g>
+    </g>
+    <g id="recovery-amount">
+      <rect x="241" y="214" width="398" height="98" rx="25" fill="#9e1b1b"/>
+      <rect x="241" y="214" width="398" height="98" rx="25" fill="none" stroke="#fbf7ee" stroke-width="10" stroke-dasharray="0 22" stroke-linecap="round"/>
+      <text x="440" y="287" text-anchor="middle" font-family="Inter,sans-serif" font-size="72" font-weight="850" fill="#fff">₹50,000</text>
+    </g>
+    <text id="not-fixed" x="440" y="384" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="800" fill="#4b4f58">पक्की सीमा नहीं</text>
+    <path id="delegation-arrow" d="M700 620h400m-40-31 40 31-40 31" fill="none" stroke="#2b2622" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="admin-sheet">
+      <use href="piece:invoice-sheet" transform="translate(1215 282) scale(1.5)"/>
+      <rect x="1250" y="319" width="380" height="131" rx="10" fill="#fbf7ee"/>
+      <g text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="850" fill="#2b2622">
+        <text x="1440" y="373">Administrative</text>
+        <text x="1440" y="432">instructions</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  on:[
+    [1.54,"pop","#recovery-amount",{from:.94}],
+    [6.22,"fade","#not-fixed",{dur:.25}],
+    [7.66,"draw","#delegation-arrow",{dur:.43}],
+    [10.00,"slide","#admin-sheet",{from:"right",dist:110}]
+  ]
+})
+</script>
+</section>
