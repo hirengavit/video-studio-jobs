@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s080" data-in="cut" data-duration="8.71" data-section="PART 4 · MORE BOOKING CONDITIONS AND APO" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The APO destination restriction remains; D offices do not handle money orders">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="rename">
+   <rect x="120" y="300" width="650" height="360" rx="36" fill="#f4f0ec" stroke="#ded7cf" stroke-width="3"/>
+   <text x="445" y="530" text-anchor="middle" font-family="Inter,sans-serif" font-size="140" font-weight="850" fill="#615a52">VP</text>
+   <path id="rename-arrow" d="M824 480h272m-36-26 36 26-36 26" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+   <g id="rename-cod">
+    <rect x="1150" y="300" width="650" height="360" rx="36" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="1475" y="530" text-anchor="middle" font-family="Inter,sans-serif" font-size="140" font-weight="850" fill="#9e1b1b">COD</text>
+   </g>
+   <g id="apo-tag">
+    <rect x="650" y="680" width="620" height="127" rx="26" fill="#eeecee" stroke="#cfcdd0" stroke-width="3"/>
+    <path d="M757 739v-14a18 18 0 0 1 36 0v14" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+    <rect x="747" y="736" width="56" height="44" rx="8" fill="#4b4f58"/>
+    <path d="M775 751v13" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+    <text x="985" y="768" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="840" fill="#4b4f58">APO</text>
+   </g>
+   <text id="restriction" x="960" y="902" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="800" fill="#4b4f58">रोक खत्म नहीं</text>
+ </g>
+ <g id="exam">
+  <rect x="180" y="190" width="1560" height="760" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <rect x="180" y="233" width="375" height="104" rx="13" fill="#9e1b1b"/>
+  <path d="M191 252v67" stroke="#f4cda9" opacity=".75" stroke-width="3" stroke-dasharray="5 7"/>
+  <text x="228" y="303" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#fff">परीक्षा के लिए</text>
+  <g id="row1">
+   <rect x="248" y="378" width="1424" height="116" rx="18" fill="#fbf7ee"/>
+   <rect x="270" y="394" width="143" height="84" rx="15" fill="#4b4f58"/>
+   <text x="341.5" y="455" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#fff">"D"</text>
+   <text id="row1-rule" x="444" y="457" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="770" fill="#2b2622">offices: money order का काम नहीं</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,"pop","#apo-tag",{from:.93,spring:"soft"}],
+  [1.57,"fade","#restriction",{dur:.25}],
+  [4.87,"slide","#row1",{from:"left",dist:40,spring:"soft"}],
+  [4.87,"fade","#row1",{dur:.20}],
+  [6.23,"highlight","#row1-rule",{color:"#fde9a6",opacity:.76,dur:.38,pad:7,words:"money order का काम नहीं"}]
+ ],
+ update(t,section,$){
+  $("#rename")[0].style.display=t<3.47?"":"none";
+  $("#exam")[0].style.display=t<3.47?"none":"";
+ }
+})
+</script>
+</section>
