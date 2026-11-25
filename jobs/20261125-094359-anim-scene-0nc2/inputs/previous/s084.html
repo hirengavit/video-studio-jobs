@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s084" data-in="cut" data-duration="15.40" data-section="PART 5 · COD FEE" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Cash on Delivery fee schedule and both fee slabs">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="src">
+  <circle cx="520" cy="556" r="191" fill="#fff" stroke="#9e1b1b" stroke-width="8"/>
+  <circle cx="520" cy="556" r="171" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-dasharray="3 12" stroke-linecap="round"/>
+  <path d="M400 552h240" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+  <g text-anchor="middle" font-family="Inter,sans-serif" fill="#9e1b1b" font-size="48" font-weight="800">
+   <text x="520" y="514">Schedule IV</text>
+   <text x="520" y="622">Table III</text>
+  </g>
+  <text x="520" y="846" text-anchor="middle" font-family="Inter,sans-serif" font-size="41" font-weight="670" fill="#655b54">Post Office Regulations 2024</text>
+  <g id="postage-block">
+   <rect x="990" y="603" width="740" height="156" rx="30" fill="#f3ead6" stroke="#e1cca5" stroke-width="4"/>
+   <text x="1360" y="705" text-anchor="middle" font-family="Inter,sans-serif" font-size="70" font-weight="800" fill="#2b2622">Postage</text>
+  </g>
+  <g id="fee-block">
+   <rect x="990" y="416" width="740" height="156" rx="30" fill="#9e1b1b"/>
+   <path d="M1023 436h674m-674 116h674" stroke="#fde9a6" stroke-width="6" stroke-dasharray="2 16" stroke-linecap="round"/>
+   <text x="1360" y="519" text-anchor="middle" font-family="Inter,sans-serif" font-size="70" font-weight="820" fill="#fff">+ COD fee</text>
+  </g>
+ </g>
+ <g id="table">
+  <text id="title" x="140" y="253" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="74" font-weight="820" fill="#9e1b1b">COD fee · दो slabs</text>
+  <rect x="140" y="304" width="1640" height="490" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M168 304H1752A28 28 0 0 1 1780 332V416H140V332A28 28 0 0 1 168 304Z" fill="#9e1b1b"/>
+  <rect x="159" y="433" width="1602" height="146" rx="16" fill="#fbf7ee"/>
+  <rect x="159" y="598" width="1602" height="176" rx="16" fill="#fbf7ee"/>
+  <path d="M820 436V772" stroke="#ead9a8" stroke-width="3"/>
+  <g id="head" font-size="52" font-weight="810" fill="#fff">
+   <text x="224" y="382" font-family="'Noto Sans Devanagari', Inter, sans-serif">वसूली की रकम</text>
+   <text x="887" y="382" font-family="Inter,sans-serif">COD fee</text>
+  </g>
+  <g id="table-rows" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-weight="790">
+   <rect id="row1-focus" x="160" y="434" width="1600" height="144" rx="16" fill="none" stroke="#e2b429" stroke-width="5"/>
+   <rect id="inclusive-band" x="211" y="506" width="313" height="60" rx="15" fill="#fde9a6"/>
+   <text id="r1-label" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="218" y="496" font-size="58">₹6,500 तक</text>
+   <text id="r1-inclusive" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="230" y="552" font-size="46">(6,500 समेत)</text>
+   <text id="r1-value" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="887" y="530" font-size="59">वसूली का 1.6%</text>
+   <text id="r2-label" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="218" y="708" font-size="58">₹6,500 से ऊपर</text>
+   <text id="r2-base" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="887" y="674" font-size="59">₹100 +</text>
+   <text id="r2-extra" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="887" y="741" font-size="51">6,500 से ऊपर वाली रकम का 1%</text>
+  </g>
+  <text id="takeaway" x="149" y="873" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="690" fill="#5c554e">Postage, charges, tax अलग</text>
+  <text id="source" x="149" y="957" font-family="Inter,sans-serif" font-size="42" font-weight="620" fill="#655b54">Post Office Regulations 2024, Schedule IV, Table III</text>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,"#src"],[6.74,"#table"]],
+ on:[
+  [4.68,"pop","#postage-block",{from:.96,spring:"soft"}],
+  [5.08,"pop","#fee-block",{from:.96,spring:"soft"}],
+  [8.46,"fade","#table-rows",{dur:.22}],
+  [10.60,"fade","#row1-focus",{dur:.26}],
+  [14.50,"fade","#inclusive-band",{dur:.24}]
+ ]
+})
+</script>
+</section>
