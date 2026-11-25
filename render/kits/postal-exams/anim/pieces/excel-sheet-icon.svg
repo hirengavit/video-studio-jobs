@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 380" role="img" aria-label="Generic spreadsheet document">
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="sheet" d="M65 20h139l61 61v254q0 20-20 20H65q-20 0-20-20V40q0-20 20-20z" fill="#fffefa"/>
+<path id="corner-fold" d="M204 20v51a10 10 0 0 0 10 10h51z" fill="#2e7d4f"/>
+<g id="cell-grid">
+<rect x="70" y="113" width="170" height="202" rx="6" fill="#fff"/>
+<path d="M71.5 120q0-5 5-5h157q5 0 5 5v32h-167z" fill="#e2eee4" stroke="none"/>
+<path d="M70 153h170M70 194h170M70 234h170M70 275h170M123 113v202m60-202v202" fill="none" stroke="#6f6a63"/>
+</g>
+</g>
+<circle data-anchor="base" cx="160" cy="355" r="0"/>
+</svg>
