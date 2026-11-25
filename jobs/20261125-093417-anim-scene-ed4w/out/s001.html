@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s001" data-in="cut" data-duration="9.48" data-section="INTRODUCTION" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Value Payable Articles and Cash on Delivery">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <circle cx="465" cy="480" r="334" fill="#f7f0e0"/>
+  <g id="delivery-hook">
+   <rect x="239" y="640" width="447" height="25" rx="9" fill="#e6d5b1" stroke="#2b2622" stroke-width="4"/>
+   <path d="M286 665h30v95h-30zm306 0h30v95h-30z" fill="#f3ead6" stroke="#2b2622" stroke-width="4" stroke-linejoin="round"/>
+   <path d="M160 760H760" stroke="#2b2622" stroke-width="4" stroke-linecap="round"/>
+   <use id="parcel" href="piece:parcel-icon" transform="translate(-20 -53.6) scale(2.4)"/>
+   <g id="payment-coin">
+    <use href="piece:rupee-coin" transform="translate(622 611) scale(1.3)"/>
+    <text x="700" y="718" text-anchor="middle" font-family="Inter,sans-serif" font-size="84" font-weight="820" fill="#9e1b1b">₹</text>
+   </g>
+   <path id="payment-direction" d="M626 711Q577 704 533 679m25 1l-26-2 13 23" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="topic">
+   <text x="860" y="253" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#9e1b1b">आज का topic</text>
+   <path d="M860 272h131" stroke="#d9ba72" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g id="vpp-title">
+   <rect x="860" y="300" width="940" height="170" rx="28" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+   <rect x="860" y="300" width="940" height="170" rx="28" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 26" stroke-linecap="round"/>
+   <text x="1330" y="413" text-anchor="middle" font-family="Inter,sans-serif" font-size="84" font-weight="810" textLength="846" lengthAdjust="spacingAndGlyphs" fill="#fff">Value Payable Articles</text>
+  </g>
+  <g id="cod-title">
+   <rect x="860" y="540" width="940" height="180" rx="28" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+   <rect x="860" y="540" width="940" height="180" rx="28" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 26" stroke-linecap="round"/>
+   <text x="1330" y="662" text-anchor="middle" font-family="Inter,sans-serif" font-size="96" font-weight="820" textLength="852" lengthAdjust="spacingAndGlyphs" fill="#fff">Cash on Delivery (COD)</text>
+  </g>
+  <text id="cod-hindi" x="860" y="800" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="720" fill="#2b2622">वितरण पर नकद भुगतान</text>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [1.24,"pop","#vpp-title",{from:.95,spring:"soft"}],
+   [4.22,"pop","#cod-title",{from:.95,spring:"soft"}],
+   [5.44,"fade","#cod-hindi",{dur:.26}],
+   [7.36,"draw","#payment-direction",{dur:.38}],
+   [7.36,"pulse","#payment-coin",{amount:.045}]
+  ]
+ })
+ </script>
+</section>
