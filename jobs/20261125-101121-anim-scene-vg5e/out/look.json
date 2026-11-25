@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.73",
+  "3.46",
+  "5.18",
+  "6.91",
+  "8.49"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s004",
+   "text": "Regulation / 135",
+   "t": 1.73
+  }
+ ]
+}
