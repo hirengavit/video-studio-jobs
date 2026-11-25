@@ -8,12 +8,5 @@
   "9.17"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s180",
-   "text": "Complaint / Compensation",
-   "t": 7.46
-  }
- ]
+ "warnings": []
 }
