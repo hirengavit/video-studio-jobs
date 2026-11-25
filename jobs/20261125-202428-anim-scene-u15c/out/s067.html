@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s067" data-in="cut" data-duration="2.24" data-section="PART 3 · BOOKING, FORMS AND DECLARATION" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Exam notes: the place of money order payment must match the place of booking">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="exam-angle">
+   <rect x="180" y="190" width="1560" height="760" rx="28" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+   <g id="exam-kicker">
+    <rect x="210" y="217" width="415" height="88" rx="14" fill="#9e1b1b"/>
+    <rect x="210" y="217" width="415" height="88" rx="14" fill="none" stroke="#fff" stroke-width="9" stroke-dasharray="0 17" stroke-linecap="round"/>
+    <text x="417.5" y="278" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#fff">परीक्षा के लिए</text>
+   </g>
+   <g id="exam-row1-in"><g id="exam-row1">
+    <rect x="250" y="332" width="1420" height="108" rx="19" fill="#f8f1e3" stroke="#eadbbb" stroke-width="2"/>
+    <rect x="276" y="351" width="68" height="70" rx="13" fill="#ede1c6"/>
+    <text x="310" y="405" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="830" fill="#9e1b1b">1</text>
+    <text id="cdf2" textLength="1245" lengthAdjust="spacingAndGlyphs" class="hi" x="384" y="407" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="770" fill="#2b2622">CDF-2: COD Retail का declaration और booking form</text>
+   </g></g>
+   <g id="exam-row2-in"><g id="exam-row2">
+    <rect x="250" y="452" width="1420" height="108" rx="19" fill="#fffaf1" stroke="#eadbbb" stroke-width="2"/>
+    <rect x="276" y="471" width="68" height="70" rx="13" fill="#ede1c6"/>
+    <text x="310" y="525" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="830" fill="#9e1b1b">2</text>
+    <text id="cdf1" class="hi" x="384" y="527" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="770" fill="#2b2622">CDF-1: parcel पर, 90 दिन रखा जाता</text>
+   </g></g>
+   <g id="exam-row3-in"><g id="exam-row3">
+    <rect x="250" y="572" width="1420" height="108" rx="19" fill="#f8f1e3" stroke="#eadbbb" stroke-width="2"/>
+    <rect x="276" y="591" width="68" height="70" rx="13" fill="#ede1c6"/>
+    <text x="310" y="645" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="830" fill="#9e1b1b">3</text>
+    <text id="exam-row3-text" class="hi" x="384" y="647" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="770" fill="#2b2622">COD Retail: दोनों offices eMO offices</text>
+   </g></g>
+   <g id="exam-row4-in"><g id="exam-row4">
+    <rect x="250" y="692" width="1420" height="108" rx="19" fill="#fffaf1" stroke="#eadbbb" stroke-width="2"/>
+    <rect x="276" y="711" width="68" height="70" rx="13" fill="#ede1c6"/>
+    <text x="310" y="765" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="830" fill="#9e1b1b">4</text>
+    <text id="exam-row4-text" class="hi" x="384" y="767" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="770" fill="#2b2622">रकम sender तय करता है</text>
+   </g></g>
+   <g id="exam-row5-in"><g id="exam-row5">
+    <rect id="row5-bg" x="250" y="812" width="1420" height="108" rx="19" fill="#f8f1e3" stroke="#eadbbb" stroke-width="2"/>
+    <rect id="row5-highlight" x="263" y="825" width="1394" height="82" rx="13" fill="none"/>
+    <rect x="276" y="831" width="68" height="70" rx="13" fill="#ede1c6"/>
+    <text x="310" y="885" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="830" fill="#9e1b1b">5</text>
+    <text id="exam-row5-text" class="hi" x="384" y="887" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="770" fill="#2b2622">Money order में payment की जगह</text>
+    <text id="row5-complete" class="hi" x="384" y="887" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="770" fill="#2b2622">MO में payment की जगह = booking की जगह</text>
+   </g></g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [0,"swap","#exam-row5-text",{to:"#row5-complete",dist:0,dur:.001}],
+   [1.18,"highlight","#row5-highlight",{color:"#fde9a6",opacity:1,pad:0,dur:.27}]
+  ],
+  update(t,section,$){
+   for(const id of ["#exam-row1","#exam-row2"]){
+    const row=$(id)[0];if(row){row.style.filter="grayscale(1)";row.style.opacity=.85;}
+   }
+   // At the cut the swap is already complete, including the exact first frame.
+   if(t<.001){
+    $("#exam-row5-text")[0].style.visibility="hidden";
+    $("#row5-complete")[0].parentNode.style.opacity="1";
+   }else{
+    $("#exam-row5-text")[0].style.visibility="";
+   }
+  }
+ })
+ </script>
+</section>
