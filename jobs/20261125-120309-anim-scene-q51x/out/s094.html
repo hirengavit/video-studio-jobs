@@ -1,0 +1,35 @@
+<section class="vs-scene" id="s094" data-in="cut" data-duration="11.87" data-section="PART 5 · COD FEE" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Reject the 300 rupee method: the one-percent fee applies only to the amount above 6,500 rupees">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="trap">
+    <rect id="trap-banner" x="300" y="212" width="1320" height="142" rx="29" fill="#4b4f58"/>
+    <text id="trap-headline" x="960" y="307" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="73" font-weight="830" fill="#fff">यहीं trap है</text>
+    <g id="wrong-card">
+      <rect x="300" y="420" width="1320" height="360" rx="31" fill="#eeedf0" stroke="#98949c" stroke-width="3"/>
+      <text id="wrong-equation" x="960" y="576" text-anchor="middle" style="font-family:Georgia,Times,serif;font-size:90px" fill="#4b4f58">₹100 + 1% × 20,000</text>
+      <text id="wrong-result" x="960" y="700" text-anchor="middle" style="font-family:Georgia,Times,serif;font-size:90px" fill="#4b4f58">= ₹300</text>
+      <g id="wrong-cross" stroke="#4b4f58" stroke-linecap="round">
+        <circle cx="1480" cy="600" r="67" fill="#fff" stroke-width="4"/>
+        <path d="M1453 573l54 54m0-54-54 54" stroke-width="12"/>
+      </g>
+    </g>
+      <g id="remember">
+      <rect x="300" y="838" width="1320" height="115" rx="28" fill="#fde9a6" stroke="#e1bd63" stroke-width="3"/>
+      <text id="remember-words" x="960" y="917" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="59" font-weight="840" fill="#62430e">1% सिर्फ 6,500 से ऊपर वाली रकम पर</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [3.38,"type","#wrong-result",{cps:18}],
+  [5.18,"strike","#wrong-equation",{color:"#4b4f58",width:7,dur:.34,dim:.67}],
+  [5.18,"strike","#wrong-result",{color:"#4b4f58",width:7,dur:.34,dim:.67}],
+  [5.18,"pop","#wrong-cross",{from:.92,spring:"soft"}],
+  [6.40,"reveal","#remember",{from:"left",dur:.35}],
+  [8.26,"highlight","#remember-words",{words:"6,500 से ऊपर",color:"#f2b705",opacity:.47,dur:.39,pad:7}]
+ ]
+})
+</script>
+</section>
