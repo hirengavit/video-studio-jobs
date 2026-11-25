@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 420" width="200" height="420">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="base-plinth">
+      <rect x="28" y="380" width="144" height="36" rx="5" fill="#6f6a63"/>
+      <line x1="32" y1="392" x2="168" y2="392" stroke="#4b4f58"/>
+    </g>
+    <g id="body">
+      <rect x="40" y="96" width="120" height="286" fill="#9e1b1b"/>
+      <rect x="132" y="98" width="22" height="282" fill="#7d1414" stroke="none"/>
+      <rect x="40" y="96" width="120" height="286" fill="none"/>
+      <path id="door-line" d="M58 250 L58 360 L142 360 L142 250 Z" fill="none" stroke="#7d1414"/>
+    </g>
+    <g id="cap">
+      <path d="M32 92 Q32 22 100 20 Q168 22 168 92 Z" fill="#9e1b1b"/>
+      <rect x="26" y="86" width="148" height="16" rx="5" fill="#7d1414"/>
+    </g>
+    <rect id="slot" x="62" y="120" width="76" height="14" rx="6" fill="#2b2622"/>
+    <rect id="collection-plate" x="60" y="156" width="80" height="70" rx="6" fill="#f3ead6"/>
+  </g>
+  <circle data-anchor="base" cx="100" cy="416" r="0"/>
+  <circle data-anchor="top" cx="100" cy="20" r="0"/>
+  <circle data-anchor="mouth" cx="100" cy="127" r="0"/>
+</svg>
