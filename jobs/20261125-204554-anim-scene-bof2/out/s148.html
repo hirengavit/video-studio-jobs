@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s148" data-in="cut" data-section="PART 8 · RETENTION AND RETURN" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The 17 August 2026 change directs return to the sender; attached POD is not handed back">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="ret">
+    <g id="return-date">
+      <use href="piece:calendar-sheet" transform="translate(165 419) scale(1.5)"/>
+      <text x="360" y="529" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="850" fill="#fff">AUG 2026</text>
+      <text x="360" y="763" text-anchor="middle" font-family="Inter,sans-serif" font-size="165" font-weight="850" fill="#9e1b1b">17</text>
+    </g>
+    <g id="return-caption">
+      <rect x="250" y="185" width="1420" height="120" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="960" y="264" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="850" fill="#2b2622">लौटा item → sender को deliver</text>
+    </g>
+    <g id="return-line"><path d="M754 801H1693" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/><circle data-anchor="top" cx="900" cy="801" r="0"/></g>
+    <g id="return-sender">
+      <use href="piece:person-icon" transform="translate(1464 491) scale(1.2)"/>
+      <text x="1560" y="872" text-anchor="middle" font-family="Inter,sans-serif" font-size="51" font-weight="850" fill="#2b2622">Sender</text>
+    </g>
+    <use id="returned-parcel" href="piece:parcel-icon" transform="translate(620 396) scale(1.4)"/>
+    <g id="pod-retained" transform="translate(0 -46)">
+      <circle data-anchor="base" cx="900" cy="801" r="0"/>
+      <rect x="790" y="659" width="220" height="140" rx="16" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="900" y="750" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="850" fill="#2b2622">POD</text>
+      <path id="pod-clip" d="M967 655v21c0 12 18 12 18 0v-23c0-7-11-7-11 0v19" fill="none" stroke="#6f6a63" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g id="pod-not-returned">
+      <rect x="770" y="825" width="260" height="72" rx="16" fill="#e9e8e7"/>
+      <text x="900" y="876" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="850" fill="#4b4f58">वापस नहीं</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  on:[
+    [0,"pop","#return-date",{from:.93}],
+    [3.02,"fade","#return-caption",{dur:.26}],
+    [3.02,"fade","#returned-parcel",{dur:.26}],
+    [3.02,"fade","#pod-retained",{dur:.26}],
+    [4.08,"move","#returned-parcel",{by:[340,0],spring:"soft"}],
+    [4.38,"out","#pod-clip",{dur:.15,scale:.92}],
+    [4.38,"fall","#pod-retained",{onto:"#return-line",bounce:.08}],
+    [4.88,"place","#pod-retained",{on:"#return-line",x:900}],
+    [10.20,"fade","#pod-not-returned",{dur:.22}]
+  ]
+})
+</script>
+</section>
