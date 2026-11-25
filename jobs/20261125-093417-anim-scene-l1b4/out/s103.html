@@ -3,21 +3,21 @@
   <rect width="1920" height="1080" fill="#fbf7ee"/>
   <text id="delivery-heading" x="960" y="220" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="850" fill="#9e1b1b">Delivery + वसूली, एक साथ</text>
   <use id="cod-flow" href="piece:cod-flow-diagram" transform="translate(160 300)"/>
-  <use id="delivery-parcel" href="piece:parcel-icon" transform="translate(1400 295) scale(.60)"/>
+  <use id="delivery-parcel" href="piece:parcel-icon" transform="translate(1400 277) scale(.60)"/>
   <g id="sender">
     <use href="piece:person-icon" transform="translate(191 545) scale(.85)"/>
     <text x="259" y="827" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="850" fill="#2b2622">Sender</text>
   </g>
   <g id="addressee">
     <g id="addressee-icon">
-      <use href="piece:person-icon" transform="translate(1500 623) scale(.8)"/>
+      <use href="piece:person-icon" transform="translate(1476 623) scale(.8)"/>
     </g>
-    <text x="1564" y="885" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="850" fill="#2b2622" textLength="184" lengthAdjust="spacingAndGlyphs">Addressee</text>
+    <text x="1540" y="906" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="850" fill="#2b2622">Addressee</text>
   </g>
   <g id="authorised-person">
     <use href="piece:person-icon" transform="translate(1680 623) scale(.8)"/>
-    <text x="1744" y="885" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="850" fill="#2b2622" textLength="156" lengthAdjust="spacingAndGlyphs">Authorised</text>
-    <text x="1744" y="934" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="850" fill="#2b2622">person</text>
+    <text x="1744" y="885" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="850" fill="#2b2622">Authorised</text>
+    <text x="1744" y="929" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="850" fill="#2b2622">person</text>
   </g>
   <g id="collection-coin">
     <use href="piece:rupee-coin" transform="translate(1512 533) scale(.77)"/>
@@ -27,7 +27,7 @@
 <script type="text/scene">
 ({
   on:[
-    [1.42,"pulse","#addressee-icon",{scale:1.06,dur:.40}],
+    [1.42,"pulse","#addressee-icon",{amount:.09}],
     [3.00,"fade","#authorised-person",{dur:.28}],
     [5.92,"color","#step-3 circle",{to:"#f2b705",dur:.25}],
     [5.92,"fade","#delivery-heading",{dur:.30}],
