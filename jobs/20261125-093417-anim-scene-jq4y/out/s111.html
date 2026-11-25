@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s111" data-in="cut" data-section="PART 6 · DELIVERY, COLLECTION AND POD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Delivered COD items link to collection and remittance records; undelivered items stay recorded in deposit">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="records">
+    <path d="M149 602H1771" stroke="#ead9a8" stroke-width="2"/>
+    <path id="collection-link" d="M440 403H590" fill="none" stroke="#2b2622" stroke-width="8" stroke-linecap="round"/>
+    <path id="remittance-link" d="M1010 403H1070" fill="none" stroke="#2b2622" stroke-width="8" stroke-linecap="round"/>
+    <path id="deposit-branch" d="M440 797h73q19 0 19 19v11q0 19 19 19h39" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+    <g id="delivered-parcel">
+      <use href="piece:parcel-icon" transform="translate(40 135) scale(1.3)"/>
+      <circle cx="433" cy="343" r="47" fill="#e3f1e8" stroke="#fbf7ee" stroke-width="6"/>
+      <path d="m412 344 14 14 28-31" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="300" y="548" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="800" fill="#2b2622">Delivered</text>
+    </g>
+    <g id="undelivered-parcel">
+      <use href="piece:parcel-icon" transform="translate(40 529) scale(1.3)"/>
+      <circle cx="433" cy="737" r="47" fill="#e8e8e8" stroke="#fbf7ee" stroke-width="6"/>
+      <path d="m431 716-18 16 18 16m-18-16h26q17 0 17 16v9" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="300" y="942" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="800" fill="#4b4f58">Undelivered</text>
+    </g>
+    <g id="collection-record">
+      <rect x="590" y="310" width="420" height="186" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="800" y="427" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="830" fill="#2b2622">वसूली record</text>
+    </g>
+    <g id="remittance-record">
+      <rect x="1070" y="310" width="460" height="186" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="1300" y="397" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="830" fill="#2b2622">Remittance</text>
+      <text x="1300" y="451" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#2b2622">record</text>
+    </g>
+    <g id="deposit-record">
+      <rect x="590" y="753" width="420" height="186" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="800" y="868" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">Deposit में दर्ज</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  on:[
+    [3.40,"draw","#collection-link",{dur:.33}],
+    [3.40,"pop","#collection-record",{from:.94}],
+    [4.26,"draw","#remittance-link",{dur:.24}],
+    [4.26,"pop","#remittance-record",{from:.94}],
+    [7.78,"fade","#undelivered-parcel",{dur:.26}],
+    [9.22,"draw","#deposit-branch",{dur:.36}],
+    [9.22,"pop","#deposit-record",{from:.94}]
+  ]
+})
+</script>
+</section>
