@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="thread" fill="none"><path d="M24 200C80 188 120 212 160 200M240 200C280 188 320 212 376 200" stroke="#9e1b1b" stroke-width="9"/>
+<path d="M24 200C80 188 120 212 160 200M240 200C280 188 320 212 376 200" stroke="#f2b705" stroke-width="3" stroke-dasharray="5 9"/>
+<path d="M24 200l-8 22M24 200l2 24M24 200l12 20M376 200l8 22M376 200l-2 24M376 200l-12 20" stroke="#9e1b1b" stroke-width="3"/></g>
+<g id="flower"><circle cx="240" cy="200" r="22" fill="#9e1b1b"/><circle cx="228.3" cy="228.3" r="22" fill="#f2b705"/><circle cx="200" cy="240" r="22" fill="#9e1b1b"/><circle cx="171.7" cy="228.3" r="22" fill="#f2b705"/><circle cx="160" cy="200" r="22" fill="#9e1b1b"/><circle cx="171.7" cy="171.7" r="22" fill="#f2b705"/><circle cx="200" cy="160" r="22" fill="#9e1b1b"/><circle cx="228.3" cy="171.7" r="22" fill="#f2b705"/><circle cx="200" cy="200" r="34" fill="#f2b705"/></g>
+<g id="centre"><circle cx="200" cy="200" r="24" fill="#fbf7ee"/><circle cx="200" cy="200" r="8" fill="#9e1b1b" stroke="none"/></g>
+<g id="gold" opacity="0"><circle cx="200" cy="200" r="26" fill="#f2b705" stroke="#8a5d00" stroke-width="3"/><circle cx="200" cy="200" r="15" fill="#f8d25a" stroke="#8a5d00" stroke-width="2"/><path d="M193 192l6 3" stroke="#ffffff" stroke-width="3"/></g>
+<circle data-anchor="base" cx="200" cy="262" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="200" cy="138" r="0" fill="none" stroke="none"/>
+</svg>
