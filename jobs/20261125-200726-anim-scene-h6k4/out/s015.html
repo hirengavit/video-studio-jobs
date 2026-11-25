@@ -72,12 +72,16 @@
   [1.62,"out","#no-upfront",{dur:.24}],
   [1.80,"pop","#paid-coin",{from:.91,spring:"soft"}],
   [3.60,"draw","#money-line",{dur:.50}],
-  [4.20,"move","#paid-coin-motion",{by:[-900,0],dur:1.20,ease:"inOut"}],
   [9.41,"pop","#step-1",{from:.92,spring:"soft"}],
   [9.41,"pop","#route-parcel",{from:.94,spring:"soft"}],
   [11.89,"fade","#step-1-label",{dur:.28}]
  ],
- update(t,section,$){for(const id of ["#step-2","#step-3","#step-4"]){const el=$(id)[0];if(el)el.setAttribute("display","none");}}
+ update(t,section,$){
+  // The built-in move is spring-only; use engine time keys for the director’s exact travel and hold.
+  const coin=$("#paid-coin-motion")[0];
+  if(coin)coin.setAttribute("transform",`translate(${S.kf(t,[[4.20,0],[5.40,-900,"inOut"]])} 0)`);
+  for(const id of ["#step-2","#step-3","#step-4"]){const el=$(id)[0];if(el)el.setAttribute("display","none");}
+ }
 })
 </script>
 </section>
