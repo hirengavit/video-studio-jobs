@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s132" data-in="cut" data-duration="11.89" data-section="PART 7 · PAYMENT TO SENDER AND CHANGING THE AMOUNT" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Administrative instructions and service arrangements determine the remittance timeline; retention never permits holding collected money.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="period">
+   <g id="regulations">
+    <use href="piece:regulations-book" transform="translate(245 395) scale(1.3)"/>
+    <text x="458" y="570" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="770" fill="#2b2622">Post Office</text>
+    <text x="458" y="624" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="770" fill="#2b2622">Regulations</text>
+    <text x="458" y="679" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="820" fill="#9e1b1b">2024</text>
+   </g>
+   <g id="period-chip">
+    <rect x="860" y="286" width="920" height="134" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <g stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+     <rect x="911" y="318" width="63" height="62" rx="9" fill="#fff"/>
+     <path d="M911 338h63m-47-24v11m30-11v11" fill="none"/>
+     <circle cx="985" cy="369" r="24" fill="#ffefb8"/>
+     <path d="M985 358v12l9 5" fill="none"/>
+    </g>
+    <text x="1389" y="375" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="810" fill="#2b2622">पैसा भेजने की एक तय अवधि?</text>
+   </g>
+   <g id="period-answer">
+    <rect x="860" y="449" width="920" height="110" rx="24" fill="#eeecee"/>
+    <path d="M934 484l32 32m-32 0 32-32" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+    <text x="1324" y="524" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="780" fill="#4b4f58">हर agreement के लिए नहीं</text>
+   </g>
+   <g id="period-policy-path">
+    <path d="M1745 405h52v361h-142m17-12-17 12 17 12 M1745 405h52v173h-480v188h-64m17-12-17 12 17 12" fill="none" stroke="#8d7860" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+   </g>
+   <g id="policy-admin">
+    <use href="piece:invoice-sheet" transform="translate(965 621) scale(.9)"/>
+    <rect x="901" y="880" width="398" height="107" rx="19" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="1100" y="924" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">Administrative</text>
+    <text x="1100" y="972" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">instructions</text>
+   </g>
+   <g id="policy-service">
+    <use href="piece:invoice-sheet" transform="translate(1365 621) scale(.9)"/>
+    <rect x="1326" y="880" width="348" height="107" rx="19" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="1500" y="948" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="810" fill="#2b2622">Service व्यवस्था</text>
+   </g>
+   <g id="retention-distinction-card">
+    <rect x="860" y="600" width="920" height="120" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="895" y="677" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="790" fill="#2b2622">रखने की अवधि</text>
+    <text id="retention-distinction" x="1260" y="677" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="810" fill="#2b2622">≠ पैसा रोकने की छूट</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [0,"slide","#policy-admin",{from:"down",dist:48,spring:"soft"}],
+   [0,"fade","#policy-admin",{dur:.22}],
+   [0,"fade","#period-policy-path",{dur:.24}],
+   [2.96,"slide","#policy-service",{from:"down",dist:48,spring:"soft"}],
+   [2.96,"fade","#policy-service",{dur:.22}],
+   [5.36,"fade","#retention-distinction-card",{dur:.23}],
+   [9.80,"fade","#retention-distinction",{dur:.22}],
+   [9.80,"highlight","#retention-distinction",{color:"#fde9a6",opacity:.77,dur:.45,pad:7}]
+  ]
+ })
+ </script>
+</section>
