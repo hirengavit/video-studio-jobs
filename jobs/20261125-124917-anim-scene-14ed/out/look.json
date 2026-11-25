@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.64",
+  "5.28",
+  "7.92",
+  "10.56",
+  "13.05"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s163",
+   "message": "fade: option \"to\" isn't used (it takes: dur)",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s163",
+   "text": "सामान्य रोक: / 7 दिन",
+   "t": 5.28
+  }
+ ]
+}
