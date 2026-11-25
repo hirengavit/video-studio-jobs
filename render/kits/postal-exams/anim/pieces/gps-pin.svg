@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="pin" d="M200 120c33 0 60 26 60 60 0 38-39 73-60 100-21-27-60-62-60-100 0-34 27-60 60-60Z" fill="#9e1b1b"/>
+<circle id="center-dot" cx="200" cy="180" r="23" fill="#fff" stroke="#7d1414"/>
+<path d="M156 171c4-14 14-25 26-31" fill="none" stroke="#d77769" stroke-width="3"/>
+<circle data-anchor="base" cx="200" cy="280" r="0" fill="none" stroke="none"/>
+</svg>
