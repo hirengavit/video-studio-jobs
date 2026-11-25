@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 440" width="520" height="440">
+<title>tape loop</title>
+<g id="tape-back" fill="none" stroke="#8a5d00" stroke-width="3" stroke-linecap="round" stroke-dasharray="8 8">
+<path d="M402 110 V350 L342 390"/>
+<path d="M428 110 V350 L368 390"/>
+</g>
+<g id="tape-front">
+<path d="M342 150 L402 110 L428 110 L368 150 Z" fill="#f2b705" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="342" y="150" width="26" height="240" fill="#f2b705" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M347 156 V388" stroke="#2b2622" stroke-width="10" stroke-dasharray="1.6 10.4"/>
+<path d="M350 156 V388" stroke="#2b2622" stroke-width="16" stroke-dasharray="1.6 58.4"/>
+<path d="M352 143 l8 -5 M366 134 l8 -5 M380 124 l8 -5 M394 115 l8 -5" stroke="#2b2622" stroke-width="1.6" stroke-linecap="round"/>
+</g>
+<g id="tape-case">
+<path d="M332 374 H344" stroke="#f2b705" stroke-width="10"/>
+<rect x="280" y="342" width="54" height="48" rx="12" fill="#2b2622" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="307" cy="366" r="11" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+</g>
+<circle data-anchor="base" cx="240" cy="390" r="0"/>
+</svg>
