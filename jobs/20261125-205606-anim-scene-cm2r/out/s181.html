@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s181" data-in="cut" data-duration="10.83" data-section="PART 9 · COMPLAINTS AND FRAUD SAFEGUARD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Compensation periods are not COD remittance deadlines; VP enquiries need full article details">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="not" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="820">
+ <g id="period-compensation">
+  <rect x="140" y="360" width="800" height="520" rx="30" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+  <rect x="157" y="377" width="766" height="486" rx="16" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="4 9" stroke-linecap="round"/>
+  <circle cx="540" cy="523" r="62" fill="#e3f1e8"/>
+  <path d="M512 522l21 22 40-48" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="hi" x="540" y="680" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif;font-size:60px;fill:#fff">Compensation</text>
+  <text class="hi" x="540" y="756" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif;font-size:60px;fill:#fff">की अवधियाँ</text>
+ </g>
+ <g id="period-remittance">
+  <rect x="980" y="360" width="800" height="520" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+  <text id="remittance-wording" class="hi" x="1380" y="680" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif;font-size:60px">COD पैसा भेजने</text>
+  <text id="remittance-period" class="hi" x="1380" y="756" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif;font-size:60px">की अवधि</text>
+  <path id="period-cross" d="M1570 422l150 150m-150 0l150-150" fill="none" stroke="#4b4f58" stroke-width="13" stroke-linecap="round"/>
+ </g>
+</g>
+<g id="enq" font-family="'Noto Sans Devanagari',Inter,sans-serif">
+ <text class="hi" x="140" y="236" font-size="64" font-weight="830" fill="#9e1b1b">VP की पूछताछ</text>
+ <use id="vp-complaint-envelope" href="piece:domestic-envelope" transform="translate(88 340) scale(1.4)"/>
+ <g id="enquiry-row1">
+  <rect x="1180" y="326" width="600" height="108" rx="23" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+  <rect x="1180" y="350" width="7" height="60" rx="3.5" fill="#9e1b1b"/>
+  <text class="hi" x="1480" y="397" text-anchor="middle" font-size="48" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="800" fill="#2b2622">हर article की पूरी details</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,"#not"],[6.35,"#enq"]],
+ on:[
+  [2.68,"fade","#period-remittance",{dur:.24}],
+  [5.48,"draw","#period-cross",{dur:.23}],
+  [5.48,"strike","#remittance-wording",{color:"#4b4f58",width:7,dur:.23,dim:1}],
+  [5.48,"strike","#remittance-period",{color:"#4b4f58",width:7,dur:.23,dim:1}],
+  [8.67,"slide","#enquiry-row1",{from:"left",dist:38,spring:"snap"}]
+ ],
+ update(t,section,$){
+  const color=t>=5.48?"#4b4f58":"#2b2622";
+  $("#remittance-wording")[0].setAttribute("fill",color);
+  $("#remittance-period")[0].setAttribute("fill",color);
+ }
+})
+</script>
+</section>
