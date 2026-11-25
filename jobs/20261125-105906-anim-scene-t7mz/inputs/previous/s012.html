@@ -1,0 +1,85 @@
+<section class="vs-scene" id="s012" data-in="cut" data-section="PART 1 · WHAT COD IS" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Definition of cash on delivery, based on Regulation 135">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="quote">
+   <rect x="140" y="170" width="1640" height="710" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <path d="M140 214V198Q140 170 168 170H1752Q1780 170 1780 198V214Z" fill="#9e1b1b"/>
+   <rect x="232" y="268" width="8" height="42" rx="4" fill="#9e1b1b"/>
+   <text id="quote-source" x="263" y="301" font-family="Inter,sans-serif" font-size="35" font-weight="790" fill="#7d1616">Based on Post Office Regulations 2024 · Reg. 135</text>
+   <g id="pinned-quote-highlights" fill="#fde9a6">
+    <rect id="previous-mark-one" x="795" y="359" width="519" height="74" rx="4"/>
+    <rect id="previous-mark-three" x="226" y="512" width="916" height="73" rx="4"/>
+   </g>
+   <g id="definition" font-family="Georgia,serif" font-size="52" fill="#2b2622">
+    <text id="definition-one" style="font-family:Georgia,Times,serif;font-size:52px" x="232" y="414">Cash on delivery (COD) is a value-added postal service</text>
+    <text id="definition-two" style="font-family:Georgia,Times,serif;font-size:52px" x="232" y="490">in which the Post Office</text>
+    <text id="definition-three" style="font-family:Georgia,Times,serif;font-size:52px" x="232" y="566">collects a specified amount from the addressee</text>
+    <text id="definition-four" style="font-family:Georgia,Times,serif;font-size:52px" x="232" y="642">when delivering an item and remits the amount to the sender.</text>
+   </g>
+   <g id="postmark">
+    <circle cx="1496" cy="756" r="83" fill="none" stroke="#9e1b1b" stroke-width="5"/>
+    <circle cx="1496" cy="756" r="73" fill="none" stroke="#9e1b1b" stroke-width="2"/>
+    <text x="1496" y="748" text-anchor="middle" font-family="Inter,sans-serif" font-size="24" font-weight="830" fill="#9e1b1b">REG. 135</text>
+    <text x="1496" y="783" text-anchor="middle" font-family="Inter,sans-serif" font-size="31" font-weight="820" fill="#9e1b1b">2024</text>
+    <path d="M1597 730q15-12 32 0t32 0t32 0m-96 27q15-12 32 0t32 0t32 0m-96 27q15-12 32 0t32 0t32 0" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round"/>
+   </g>
+   <g id="gist">
+    <rect x="140" y="899" width="1640" height="94" rx="20" fill="#f3ead6"/>
+    <text x="232" y="961" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="800" fill="#2b2622">सार: delivery पर वसूली, sender को भुगतान</text>
+   </g>
+  </g>
+  <g id="terms">
+   <g id="term-slots" fill="none" stroke="#e5d7b8" stroke-width="3" stroke-dasharray="10 13">
+    <rect x="140" y="220" width="500" height="560" rx="30"/>
+    <rect x="710" y="220" width="500" height="560" rx="30"/>
+    <rect x="1280" y="220" width="500" height="560" rx="30"/>
+   </g>
+   <g id="sender-term">
+    <rect x="140" y="220" width="500" height="560" rx="30" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+    <rect x="140" y="220" width="500" height="560" rx="30" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 26" stroke-linecap="round"/>
+    <text x="390" y="487" text-anchor="middle" font-family="Inter,sans-serif" font-size="84" font-weight="850" fill="#fff">Sender</text>
+    <text id="sender-hi" x="390" y="573" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="820" fill="#fde9a6">प्रेषक</text>
+   </g>
+   <g id="sender-meaning">
+    <rect x="140" y="800" width="500" height="160" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="390" y="860" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="810" fill="#2b2622">item post करता है</text>
+    <text id="sender-chooses" x="390" y="924" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="810" fill="#2b2622" textLength="430" lengthAdjust="spacingAndGlyphs">वसूली की रकम तय करता है</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  shots:[[0,"#quote"],[3.41,"#terms"]],
+  camera:[[0,{zoom:1}]],
+  on:[
+   [1.89,"highlight","#definition-four",{words:"remits the amount to the sender",color:"#fde9a6",opacity:1,pad:6,dur:.42}],
+   [2.75,"fade","#gist",{dur:.24}],
+   [4.55,"pop","#sender-term",{from:.94}],
+   [5.05,"fade","#sender-hi",{dur:.23}],
+   [6.15,"fade","#sender-meaning",{dur:.26}],
+   [9.35,"fade","#sender-chooses",{dur:.27}]
+  ],
+  update(t,section,$) {
+   if(t >= 3.41) return;
+   for (const [from, dest, phrase] of [
+    ["#definition-one","#previous-mark-one","value-added postal service"],
+    ["#definition-three","#previous-mark-three","collects a specified amount from the addressee"]
+   ]) {
+    const el=$(from)[0], mark=$(dest)[0];
+    if (!el || !mark || !el.getExtentOfChar) continue;
+    const width=el.getComputedTextLength(), i=el.textContent.indexOf(phrase);
+    if (i<0 || !width || mark.getAttribute("data-measured-width")===String(width)) continue;
+    let x0=Infinity,y0=Infinity,x1=-Infinity,y1=-Infinity;
+    for (let k=i;k<i+phrase.length;k++) {
+     const b=el.getExtentOfChar(k);
+     x0=Math.min(x0,b.x); y0=Math.min(y0,b.y); x1=Math.max(x1,b.x+b.width); y1=Math.max(y1,b.y+b.height);
+    }
+    if (!Number.isFinite(x0)) continue;
+    mark.setAttribute("x",x0-6); mark.setAttribute("y",y0-3);
+    mark.setAttribute("width",x1-x0+12); mark.setAttribute("height",y1-y0+6);
+    mark.setAttribute("data-measured-width",String(width));
+   }
+  }
+ })
+ </script>
+</section>
