@@ -8,12 +8,5 @@
   "11.55"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s159",
-   "text": "ज़्यादा से ज़्यादा 7 दिन / Sunday /",
-   "t": 11.55
-  }
- ]
+ "warnings": []
 }
