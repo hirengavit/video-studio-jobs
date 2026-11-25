@@ -1,0 +1,39 @@
+<section class="vs-scene" id="s110" data-in="cut" data-section="PART 6 · DELIVERY, COLLECTION AND POD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Use standard remarks for non-delivery and proof for items recorded as delivered">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="non-delivery-panel">
+    <rect x="140" y="240" width="780" height="640" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <use href="piece:parcel-icon" transform="translate(134 205) scale(1.5)"/>
+    <g id="remark-tag">
+      <path d="M598 413H822Q838 413 838 429V613Q838 629 822 629H598L561 521Z" fill="#f0efee" stroke="#4b4f58" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="589" cy="521" r="9" fill="#fff" stroke="#4b4f58" stroke-width="3"/>
+      <path d="M555 510q12-9 33 11" fill="none" stroke="#4b4f58" stroke-width="4" stroke-linecap="round"/>
+      <text x="705" y="471" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="830" fill="#4b4f58">Remark</text>
+      <path d="M620 497H799m-179 29H799m-179 29H799m-179 29H799" fill="none" stroke="#8a8990" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <text id="remark-caption" x="530" y="787" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="850" fill="#2b2622">तय standard remarks</text>
+  </g>
+  <g id="delivered-panel">
+    <rect x="1000" y="240" width="780" height="640" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <use href="piece:parcel-icon" transform="translate(950 205) scale(1.5)"/>
+    <circle cx="1381" cy="442" r="52" fill="#e3f1e8" stroke="#fff" stroke-width="7"/>
+    <path d="m1358 443 15 15 31-34" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="proof-slip">
+      <use href="piece:signature-slip" transform="translate(1450 401) scale(.76)"/>
+    </g>
+    <text id="proof-caption" x="1390" y="787" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="850" fill="#2b2622">Delivered → सबूत ज़रूरी</text>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  on:[
+    [2.72,"pop","#remark-tag",{from:.92}],
+    [2.72,"fade","#remark-caption",{dur:.25}],
+    [5.49,"fade","#delivered-panel",{dur:.32}],
+    [9.45,"slide","#proof-slip",{from:"right",dist:75}],
+    [9.45,"fade","#proof-caption",{dur:.25}],
+    [9.45,"highlight","#proof-caption",{words:"सबूत",color:"#f2b705",opacity:.42,dur:.36,pad:6}]
+  ]
+})
+</script>
+</section>
