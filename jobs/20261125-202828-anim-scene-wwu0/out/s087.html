@@ -1,0 +1,42 @@
+<section class="vs-scene" id="s087" data-in="cut" data-section="PART 5 · COD FEE" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Base COD fee, first worked example">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="fee-rules">
+    <rect x="120" y="220" width="580" height="680" rx="28" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+    <rect x="120" y="220" width="580" height="680" rx="28" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 26" stroke-linecap="round"/>
+    <text x="180" y="345" font-family="Inter,sans-serif" font-size="64" font-weight="800" fill="#fff">Base COD fee</text>
+    <path d="M180 390H640" stroke="#b8403a" stroke-width="3"/>
+    <rect id="first-slab-bg" x="174" y="432" width="472" height="130" rx="20" fill="#7d1414"/>
+    <text id="first-slab-rule" x="205" y="516" font-family="Georgia,'Noto Sans Devanagari',serif" font-size="53" font-weight="700" fill="#fff">≤ 6,500: 1.6%</text>
+    <rect x="174" y="600" width="472" height="196" rx="20" fill="#7d1414"/>
+    <text x="205" y="675" font-family="Georgia,'Noto Sans Devanagari',serif" font-size="43" font-weight="700" textLength="406" lengthAdjust="spacingAndGlyphs" fill="#fff">&gt; 6,500: ₹100 + 1%</text>
+    <text class="hi" x="205" y="747" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="700" fill="#fff">(ऊपर वाली रकम)</text>
+  </g>
+  <g id="example-card">
+    <rect x="760" y="220" width="1040" height="680" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <text id="base-only" class="hi" x="820" y="313" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="700" fill="#6f6a63">सिर्फ base COD fee</text>
+    <text id="example-one-heading" x="820" y="420" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="800" fill="#2b2622" xml:space="preserve"><tspan id="example-title">पहला हिसाब ·</tspan> <tspan id="example-amount">₹5,000</tspan></text>
+    <text id="work-line" x="820" y="600" font-family="Georgia,'Noto Sans Devanagari',serif" font-size="60" font-weight="700" fill="#2b2622" xml:space="preserve"><tspan id="calc-amount">5,000</tspan> <tspan id="calc-times">×</tspan> <tspan id="calc-rate">1.6</tspan> <tspan id="calc-divide">÷</tspan> <tspan id="calc-hundred">100</tspan></text>
+    <g id="first-slab-chip">
+      <rect x="820" y="457" width="252" height="86" rx="24" fill="#fde9a6"/>
+      <text class="hi" x="946" y="513" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="800" fill="#67231a">पहला slab</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  on:[
+    [3.13,"type","#example-title",{cps:22}],
+    [4.63,"type","#example-amount",{cps:22}],
+    [6.01,"pop","#first-slab-chip",{from:.94}],
+    [6.01,"color","#first-slab-bg",{to:"#fde9a6",dur:.06}],
+    [6.01,"color","#first-slab-rule",{to:"#67231a",dur:.06}],
+    [7.81,"type","#calc-amount",{cps:14}],
+    [8.23,"type","#calc-times",{cps:14}],
+    [9.03,"type","#calc-rate",{cps:14}],
+    [10.19,"type","#calc-divide",{cps:14}],
+    [11.13,"type","#calc-hundred",{cps:14}]
+  ]
+})
+</script>
+</section>
