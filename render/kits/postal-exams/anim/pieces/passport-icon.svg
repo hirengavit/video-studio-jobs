@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 300" width="220" height="300">
+<g stroke-linecap="round" stroke-linejoin="round">
+<rect id="pages" x="16" y="10" width="200" height="286" rx="12" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+<path id="cover" d="M4 4 L196 4 Q 210 4 210 18 L210 278 Q 210 292 196 292 L4 292 Z" fill="#7d1414" stroke="#2b2622" stroke-width="3"/>
+<line x1="22" y1="8" x2="22" y2="288" stroke="#9e1b1b" stroke-width="3"/>
+<rect id="title-band" x="42" y="36" width="140" height="44" rx="6" fill="none" stroke="#f3ead6" stroke-width="3" opacity="0.8"/>
+<g id="motif" fill="none" stroke="#f3ead6" stroke-width="3" opacity="0.8">
+<circle cx="112" cy="170" r="44"/>
+<circle cx="112" cy="170" r="26"/>
+</g>
+<rect id="lower-band" x="42" y="238" width="140" height="22" rx="6" fill="none" stroke="#f3ead6" stroke-width="3" opacity="0.5"/>
+</g>
+<circle data-anchor="base" cx="110" cy="294" r="0"/>
+</svg>
