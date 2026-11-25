@@ -1,0 +1,167 @@
+[
+  {
+    "id": "cod-flow-diagram",
+    "description": "The recurring COD picture, 1600x560: item line y 170 (x 240-1360, arrowhead right) and money line y 390 (arrowhead left), thin 3 px ink; four numbered round step markers (white disc, ink rim, red numeral, dia 84) #step-1 (300,170) booking, #step-2 (800,170) carriage, #step-3 (1300,280) collection, #step-4 (800,390) remittance, each a group so a scene can colour it yellow #f2b705; clear zones at both ends for person icons. Parts #line-item, #line-money, #arrow-item, #arrow-money, #step-1..#step-4. No lettering.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s005",
+      "s015",
+      "s016",
+      "s017",
+      "s103",
+      "s124",
+      "s125",
+      "s174",
+      "s194",
+      "s195"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "parcel-icon",
+    "description": "Flat parcel box 220x180, kraft #f3ead6 fill, 3 px ink outline, ink string crossed over it, small blank white label on the front.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s001",
+      "s005",
+      "s014",
+      "s015",
+      "s016",
+      "s017",
+      "s018",
+      "s019",
+      "s022",
+      "s034",
+      "s035",
+      "s036",
+      "s052",
+      "s061",
+      "s073",
+      "s077",
+      "s103",
+      "s105",
+      "s108",
+      "s110",
+      "s111",
+      "s124",
+      "s130",
+      "s134",
+      "s135",
+      "s145",
+      "s147",
+      "s148",
+      "s155",
+      "s167",
+      "s183",
+      "s207"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "cod-parcel-face",
+    "description": "Big front face of a parcel 960x600, kraft #f3ead6, ink outline, ink string crossing centre-right; three blank white zones: #zone-cod upper left (x40-420, y40-210), #zone-sender lower left (x40-420, y400-560), #zone-address right (x520-920, y280-520) with three grey rule lines. No lettering.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s057",
+      "s058",
+      "s071",
+      "s072"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "mo-form",
+    "description": "White money order form 600x400, ink outline, dashed perforation at y 250 splitting #upper (blank grey rules, blank field box #field-place x40-300 y150-210) from #lower (coupon with two rules). No lettering.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s058",
+      "s069",
+      "s077",
+      "s187",
+      "s188",
+      "s190"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "retention-day-line",
+    "description": "Thin grey #6f6a63 4 px line x30-1590 at y 120 with 15 small ticks #tick-1..#tick-15 at x = 60 + (n-1)*107; empty space above for bands and markers, below for the scene's day numerals. 1620x220.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s151",
+      "s152",
+      "s153",
+      "s154",
+      "s155",
+      "s157",
+      "s158",
+      "s159",
+      "s160"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "address-label-tag",
+    "description": "Large white address label 380x240 with three blank rule lines, a reinforced hole at the left end and an ink string loop.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s072"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "complaint-channel-icons",
+    "description": "Five flat ink icons in a row on 300 px centres, 1500x240, each its own group: #book (open bound book), #portal (browser window), #social (speech bubbles), #phone (handset), #letter (envelope with pen). No lettering.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s175",
+      "s176",
+      "s177"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "id-card-icon",
+    "description": "Flat identity card 260x170, white with ink outline, grey photo square holding a plain sand silhouette (no face), blank lines.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s104",
+      "s119"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "watch-icon",
+    "description": "Flat ink wrist watch 220x300, white dial with two hands, sand strap.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s041",
+      "s042",
+      "s043"
+    ],
+    "reuse": false
+  }
+]
