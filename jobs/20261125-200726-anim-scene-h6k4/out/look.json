@@ -10,18 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s015",
-   "message": "move: option \"dur\" isn't used (it takes: by, spring)",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s015",
-   "message": "move: option \"ease\" isn't used (it takes: by, spring)",
-   "t": 0.3
-  },
-  {
    "kind": "low-contrast",
    "scene": "s015",
    "text": "₹ (2.6:1)",
