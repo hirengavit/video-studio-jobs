@@ -18,7 +18,7 @@
     </g>
    </g>
    <g id="fact-2">
-    <rect x="140" y="680" width="1640" height="320" rx="29" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+    <rect id="fact2-bg" x="140" y="680" width="1640" height="320" rx="29" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
     <g id="fact2-badge"><circle cx="238" cy="840" r="52" fill="#9e1b1b"/>
     <text x="238" y="859" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="820" fill="#fff">2</text></g>
     <text id="refusal-fact" x="342" y="860" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="830" fill="#2b2622">VP article मना / कोई लेने न आए</text>
@@ -51,6 +51,7 @@
   update(t,section,$){
    const u=S.clamp(t/.40,0,1),e=u*u*(3-2*u);
    const title=$("#refusal-fact")[0], badge=$("#fact2-badge")[0];
+   const bg=$("#fact2-bg")[0];bg.setAttribute("y",String(680-22*e));bg.setAttribute("height",String(320+22*e));
    title.setAttribute("x",String(342-82*e));title.setAttribute("y",String(860-130*e));
    badge.setAttribute("transform","translate("+(11.5*e)+" "+(210*e)+") scale("+(1-.25*e)+")");
    const el=$("#mo-retained-window")[0], k=S.clamp((t-3.20)/.50,0,1);
