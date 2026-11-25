@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s077" data-in="cut" data-duration="10.02" data-section="PART 4 · MORE BOOKING CONDITIONS AND APO" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Army Post Office addresses: VP articles and money orders are not booked">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="apo-stamp">
+ <rect x="140" y="240" width="680" height="460" rx="30" fill="#9e1b1b"/>
+ <rect x="162" y="262" width="636" height="416" rx="18" fill="none" stroke="#fff4d5" stroke-width="4" stroke-dasharray="5 12" stroke-linecap="round"/>
+ <text x="480" y="441" text-anchor="middle" font-family="Inter,sans-serif" font-weight="850" font-size="140" fill="#fff">APO</text>
+ <text id="apo-expanded" x="480" y="535" text-anchor="middle" font-family="Inter,sans-serif" font-weight="780" font-size="56" fill="#fff">Army Post Office</text>
+ <text id="apo-hindi" class="hi" x="480" y="611" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="750" font-size="48" fill="#fff4d5">सेना डाकघर</text>
+</g>
+<g id="vp-card">
+ <rect x="940" y="300" width="620" height="180" rx="24" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+ <use href="piece:parcel-icon" transform="translate(970 306) scale(.42)"/>
+ <text x="1369" y="438" text-anchor="middle" font-family="Inter,sans-serif" font-weight="810" font-size="52" fill="#2b2622">VP articles</text>
+</g>
+<g id="mo-card">
+ <rect x="940" y="540" width="620" height="180" rx="24" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+ <use href="piece:mo-form" transform="translate(950 550) scale(.4)"/>
+ <text x="1369" y="678" textLength="322" lengthAdjust="spacingAndGlyphs" text-anchor="middle" font-family="Inter,sans-serif" font-weight="810" font-size="52" fill="#2b2622">Money orders</text>
+</g>
+<g id="apo-target">
+ <rect x="1640" y="456" width="140" height="126" rx="23" fill="#f3ead6" stroke="#d3bd8f" stroke-width="3"/>
+ <text x="1710" y="530" text-anchor="middle" font-family="Inter,sans-serif" font-weight="830" font-size="48" fill="#7d1616">APO</text>
+</g>
+<g fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+ <path id="vp-arrow" d="M1570 390 H1594 V502 H1627"/>
+ <path id="mo-arrow" d="M1570 630 H1594 V536 H1627"/>
+ <path id="vp-arrow-head" d="M1614 490l13 12-13 12"/>
+ <path id="mo-arrow-head" d="M1614 524l13 12-13 12"/>
+ <path id="vp-no" d="M1482 311l56 56m-56 0l56-56" stroke-width="8"/>
+ <path id="mo-no" d="M1482 551l56 56m-56 0l56-56" stroke-width="8"/>
+</g>
+<g id="booking-verdict">
+ <rect x="1035" y="820" width="580" height="112" rx="56" fill="#e7e8ec" stroke="#4b4f58" stroke-width="4"/>
+ <text class="hi" x="1325" y="899" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="830" font-size="64" fill="#4b4f58">book नहीं होते</text>
+</g>
+</svg>
+<script type="text/scene">
+({
+ on:[
+ [1.85,"fade","#apo-expanded",{dur:.24}],
+ [2.35,"fade","#apo-hindi",{dur:.24}],
+ [5.81,"pop","#vp-card",{from:.93,spring:"soft"}],
+ [5.95,"fade","#apo-target",{dur:.24}],
+ [5.95,"draw","#vp-arrow",{dur:.40,ease:"linear"}],
+ [6.27,"draw","#vp-arrow-head",{dur:.08,ease:"linear"}],
+ [8.00,"pop","#mo-card",{from:.93,spring:"soft"}],
+ [8.14,"draw","#mo-arrow",{dur:.40,ease:"linear"}],
+ [8.46,"draw","#mo-arrow-head",{dur:.08,ease:"linear"}],
+ [9.00,"draw","#vp-no",{dur:.28}],
+ [9.00,"draw","#mo-no",{dur:.28}],
+ [9.00,"stamp","#booking-verdict",{from:1.15,spring:"snap",rot:-3}]
+ ]
+})
+</script>
+</section>
