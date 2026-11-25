@@ -10,46 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
+   "kind": "mostly-empty",
    "scene": "s087",
-   "message": "type #example-title: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s087",
-   "message": "type #example-amount: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s087",
-   "message": "type #calc-amount: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s087",
-   "message": "type #calc-times: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s087",
-   "message": "type #calc-rate: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s087",
-   "message": "type #calc-divide: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s087",
-   "message": "type #calc-hundred: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
+   "message": "a card is mostly empty at 2.5 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.48
   }
  ]
 }
