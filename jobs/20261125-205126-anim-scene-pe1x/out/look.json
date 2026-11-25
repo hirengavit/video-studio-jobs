@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.52",
+  "5.05",
+  "7.57",
+  "10.10",
+  "12.47"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s162",
+   "message": "pop: option \"dur\" isn't used (it takes: spring, from)",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s162",
+   "text": "sender बकाया charges देता है / प्राप्ति की पुष्टि",
+   "t": 0.3
+  }
+ ]
+}
