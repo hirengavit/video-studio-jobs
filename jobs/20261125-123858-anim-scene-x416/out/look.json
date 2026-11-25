@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.30",
+  "4.60",
+  "6.90",
+  "9.20",
+  "11.35"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s161",
+   "text": "sender बकाया charges देता है / + receipt की पुष्टि",
+   "t": 11.35
+  }
+ ]
+}
