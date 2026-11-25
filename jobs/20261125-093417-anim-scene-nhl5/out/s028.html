@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s028" data-in="cut" data-duration="11.40" data-section="PART 2 · AGREEMENT, LIMITS AND INSURANCE" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="What a COD agreement decides, and what determines the collection limit">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<text class="hi" x="140" y="236" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="830" fill="#9e1b1b">Agreement तय करता है</text>
+<g id="agreement-product">
+ <rect x="140" y="340" width="500" height="300" rx="28" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+ <use href="piece:parcel-icon" transform="translate(238 327) scale(.76)"/>
+ <text class="hi" x="390" y="586" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="810" fill="#2b2622">कौन सा product</text>
+</g>
+<g id="agreement-collection">
+ <rect x="710" y="340" width="500" height="300" rx="28" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+ <path d="M883 437L925 393H1043Q1056 393 1056 406V494Q1056 507 1043 507H925L883 463Z" fill="#f3ead6" stroke="#2b2622" stroke-width="4" stroke-linejoin="round"/>
+ <circle cx="916" cy="450" r="7" fill="#fff" stroke="#2b2622" stroke-width="3"/>
+ <text x="986" y="477" text-anchor="middle" font-family="Inter,sans-serif" font-size="69" font-weight="800" fill="#9e1b1b">₹</text>
+ <text class="hi" x="960" y="586" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="810" fill="#2b2622">कितनी वसूली</text>
+</g>
+<g id="agreement-remit">
+ <rect x="1280" y="340" width="500" height="300" rx="28" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+ <path d="M1514 450h132m-32-25 32 25-32 25" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+ <circle cx="1476" cy="450" r="52" fill="#fff" stroke="#2b2622" stroke-width="4"/>
+ <circle cx="1476" cy="450" r="41" fill="#f3ead6" stroke="#e1cca5" stroke-width="2"/>
+ <text x="1476" y="469" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" font-weight="820" fill="#9e1b1b">₹</text>
+ <text class="hi" x="1530" y="586" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="810" fill="#2b2622">पैसा किस तरीके से</text>
+</g>
+<g id="agreement-limit">
+ <rect x="140" y="760" width="1640" height="160" rx="26" fill="#f3ead6" stroke="#e1cca5" stroke-width="3"/>
+ <rect id="agreement-category-band" x="841" y="797" width="432" height="84" rx="16" fill="#fde9a6"/>
+ <text class="hi" x="960" y="862" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="800" fill="#2b2622">वसूली की सीमा → <tspan id="agreement-category">COD category</tspan> पर निर्भर</text>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [1.32,"pop","#agreement-collection",{from:.93,spring:"soft"}],
+  [3.18,"pop","#agreement-remit",{from:.93,spring:"soft"}],
+  [6.44,"reveal","#agreement-limit",{from:"left",dur:.34}],
+  [9.56,"fade","#agreement-category-band",{dur:.24}]
+ ],
+ update(t,section,$){
+  const marker=$("#agreement-category-band")[0],word=$("#agreement-category")[0];
+  if(marker&&word){
+   const b=word.getBBox();
+   if(b.width>0){marker.setAttribute("x",b.x-14);marker.setAttribute("width",b.width+28);}
+  }
+ }
+})
+</script>
+</section>
