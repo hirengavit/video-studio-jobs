@@ -1,0 +1,37 @@
+<section class="vs-scene" id="s176" data-in="cut" data-duration="9.20" data-section="PART 9 · COMPLAINTS AND FRAUD SAFEGUARD" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Three complaint channels: post office complaints book during working hours, the web portal, and social media">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="ways">
+   <text id="ways-heading" x="140" y="220" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="830" fill="#9e1b1b">Complaint के पाँच रास्ते</text>
+   <g id="ways-count">
+    <circle cx="990" cy="198" r="50" fill="#9e1b1b"/>
+    <text x="990" y="219" text-anchor="middle" font-family="Inter,sans-serif" font-size="60" font-weight="830" fill="#fff">5</text>
+   </g>
+   <g id="ways-icon-slots"><use id="ways-channel-icons" href="piece:complaint-channel-icons" transform="translate(210 300)"/></g>
+   <g id="ways-book-label" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="780" fill="#2b2622">
+    <text x="360" y="620" textLength="291" lengthAdjust="spacingAndGlyphs">Suggestion and</text>
+    <text x="360" y="675" textLength="289" lengthAdjust="spacingAndGlyphs">complaints book</text>
+    <text id="ways-book-hours" x="360" y="742" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="710" fill="#6f6a63">working hours में</text>
+   </g>
+   <text id="ways-portal-label" x="660" y="620" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="780" fill="#2b2622">Web portal</text>
+   <text id="ways-social-label" x="960" y="620" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="780" fill="#2b2622">Social media</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [0,"pop","#book",{from:.92,spring:"soft"}],
+   [0,"fade","#ways-book-label",{dur:.24}],
+   [.88,"fade","#ways-book-hours",{dur:.23}],
+   [4.74,"pop","#portal",{from:.92,spring:"soft"}],
+   [4.74,"fade","#ways-portal-label",{dur:.24}],
+   [7.06,"pop","#social",{from:.92,spring:"soft"}],
+   [7.06,"fade","#ways-social-label",{dur:.24}]
+  ],
+  update(t,section,$){
+   for(const id of ["#phone","#letter"]){const el=$(id)[0];if(el)el.style.display="none"}
+  }
+ })
+ </script>
+</section>
