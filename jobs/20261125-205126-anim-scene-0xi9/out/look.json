@@ -8,5 +8,12 @@
   "3.61"
  ],
  "problems": [],
- "warnings": []
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s166",
+   "text": "VP Poste Restante: सामान्य रोक 7 दिन / विस्तार का अपवाद लागू",
+   "t": 0.3
+  }
+ ]
 }
