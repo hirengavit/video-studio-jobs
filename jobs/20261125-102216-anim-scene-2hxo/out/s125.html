@@ -38,7 +38,7 @@
     <rect x="790" y="560" width="340" height="74" rx="20" fill="#f9e9ba" stroke="#e1c36f" stroke-width="3"/>
     <text x="960" y="614" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="780" fill="#2b2622">Sender तक</text>
    </g>
-   <g id="delay-complaint">
+   <g id="delay-complaint" transform="translate(0 -48)">
     <path d="M113 355Q113 332 136 332H543Q566 332 566 355V427Q566 450 543 450H293L250 485V450H136Q113 450 113 427Z" fill="#fff" stroke="#9e1b1b" stroke-width="4" stroke-linejoin="round"/>
     <text x="339" y="409" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="780" fill="#2b2622">देरी की complaint</text>
    </g>
@@ -48,17 +48,18 @@
  ({
   camera:[[0,{zoom:1}]],
   on:[
-   [0,"color","#step-4 circle",{to:"#ffffff",dur:.08}],
-   [2.56,"color","#step-2 circle",{to:"#f2b705",dur:.22}],
    [2.56,"fade","#delivery-chip",{dur:.20}],
-   [4.80,"color","#step-2 circle",{to:"#ffffff",dur:.22}],
-   [4.80,"color","#step-3 circle",{to:"#f2b705",dur:.22}],
    [4.80,"fade","#collection-chip",{dur:.20}],
-   [7.34,"color","#step-3 circle",{to:"#ffffff",dur:.22}],
-   [7.34,"color","#step-4 circle",{to:"#f2b705",dur:.22}],
    [7.34,"fade","#sender-chip",{dur:.20}],
    [13.20,"pop","#delay-complaint",{from:.96,spring:"snap"}]
-  ]
+  ],
+  update(t,section,$) {
+   const current=t<.10 ? 4 : t<2.56 ? 0 : t<4.80 ? 2 : t<7.34 ? 3 : 4;
+   for(const n of [2,3,4]) for(const g of $('#step-'+n)) {
+    const node=g.querySelector("circle");
+    if(node) node.setAttribute("fill",n===current ? "#f2b705" : "#ffffff");
+   }
+  }
  })
  </script>
 </section>
