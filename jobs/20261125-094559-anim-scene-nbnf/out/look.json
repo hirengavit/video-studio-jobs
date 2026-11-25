@@ -8,12 +8,5 @@
   "8.86"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s079",
-   "text": "COD की अनुमति नहीं / VP",
-   "t": 3.6
-  }
- ]
+ "warnings": []
 }
