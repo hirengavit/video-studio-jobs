@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s147" data-in="cut" data-duration="12.04" data-section="PART 8 · RETENTION AND RETURN" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="A return goes to the sender if the sender's details are clear, otherwise to the Returned Letter Office">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="parcel">
+  <use href="piece:parcel-icon" transform="translate(52 246) scale(1.6)"/>
+ </g>
+ <g id="clear-label">
+  <rect x="414" y="583" width="99" height="69" rx="7" fill="#fde9a6" stroke="#c55737" stroke-width="5"/>
+  <path d="M429 602h67m-67 13h67m-67 13h48" fill="none" stroke="#6d563e" stroke-width="3" stroke-linecap="round"/>
+  <path d="M459 655v61H379" fill="none" stroke="#aa7d29" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="175" y="726" width="413" height="92" rx="25" fill="#fff5d4" stroke="#ead39a" stroke-width="3"/>
+  <text x="381.5" y="787" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="830" fill="#5e420f">नाम-पता साफ़</text>
+ </g>
+ <path id="to-sender" d="M570 584H700Q728 584 728 556V413Q728 379 762 379H994m-22-17 22 17-22 17" fill="none" stroke="#17634a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="sender">
+  <rect x="1030" y="250" width="738" height="261" rx="30" fill="#fff" stroke="#afd7be" stroke-width="4"/>
+  <use href="piece:person-icon" transform="translate(1085 278) scale(.78)"/>
+  <text x="1260" y="366" font-family="Inter,sans-serif" font-size="70" font-weight="830" fill="#2b2622">Sender</text>
+  <text x="1260" y="435" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="680" fill="#5b5249">प्रेषक</text>
+  <circle cx="1644" cy="380" r="55" fill="#e3f1e8"/>
+  <path d="M1621 379l16 16 31-35" stroke="#17634a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+ </g>
+ <path id="to-rlo" d="M570 584H700Q728 584 728 615V793Q728 827 762 827H994m-22-17 22 17-22 17" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="otherwise">
+  <rect x="769" y="733" width="217" height="69" rx="25" fill="#eeedf0"/>
+  <text x="877.5" y="782" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="820" fill="#4b4f58">न हो, तो</text>
+ </g>
+ <g id="rlo">
+  <rect x="1030" y="701" width="738" height="248" rx="28" fill="#9e1b1b"/>
+  <path d="M1061 725h676m-676 197h676" fill="none" stroke="#fde9a6" stroke-width="5" stroke-dasharray="2 15" stroke-linecap="round"/>
+  <text id="rlo-short" x="1399" y="825" text-anchor="middle" font-family="Inter,sans-serif" font-size="97" font-weight="840" fill="#fff">RLO</text>
+  <text x="1399" y="893" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="745" fill="#fff">Returned Letter Office</text>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.98,"fade","#clear-label",{dur:.27}],
+  [3.64,"draw","#to-sender",{dur:.45}],
+  [4.04,"pop","#sender",{from:.96,spring:"soft"}],
+  [6.36,"draw","#to-rlo",{dur:.42}],
+  [6.46,"fade","#otherwise",{dur:.22}],
+  [7.34,"pop","#rlo",{from:.96,spring:"soft"}],
+  [10,"fade","#rlo-short",{dur:.24}]
+ ]
+})
+</script>
+</section>
