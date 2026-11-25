@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s022" data-in="cut" data-section="PART 1 · WHAT COD IS" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="COD records connect booking, delivery and collection; COD itself is not insurance">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="records">
+    <path id="records-link" d="M180 550H1740" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round"/>
+    <g id="booking-node">
+      <rect x="160" y="400" width="480" height="300" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <use href="piece:booking-receipt" transform="translate(335 424) scale(.50)"/>
+      <text x="400" y="655" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="850" fill="#2b2622">Booking</text>
+    </g>
+    <g id="delivery-node">
+      <rect x="720" y="400" width="480" height="300" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <use href="piece:signature-slip" transform="translate(823 360) scale(.685)"/>
+      <path d="M995 541l17 15 28-34" fill="none" stroke="#2e7d4f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="960" y="655" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="850" fill="#2b2622">Delivery</text>
+    </g>
+    <g id="collection-node">
+      <rect x="1280" y="400" width="480" height="300" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <use href="piece:rupee-coin" transform="translate(1436 436) scale(1.4)"/>
+      <text x="1520" y="546" text-anchor="middle" font-family="Inter,sans-serif" font-size="73" font-weight="800" fill="#2b2622">₹</text>
+      <text x="1520" y="655" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="850" fill="#2b2622">वसूली गई रकम</text>
+    </g>
+  </g>
+  <g id="noins">
+    <use id="cod-parcel" href="piece:parcel-icon" transform="translate(160 222) scale(2)"/>
+    <g id="insurance-shield">
+      <path d="M1300 370c66 32 122 43 199 49v130c0 101-61 176-199 248-138-72-199-147-199-248V419c77-6 133-17 199-49Z" fill="#f3ead6" stroke="#2b2622" stroke-width="8" stroke-linejoin="round"/>
+      <text x="1300" y="498" text-anchor="middle" font-family="Inter,sans-serif" font-size="60" font-weight="850" fill="#2b2622">Insurance</text>
+      <g id="insurance-cross" stroke="#4b4f58" stroke-width="15" stroke-linecap="round">
+        <path id="insurance-cross-a" d="m1234 564 132 124"/>
+        <path id="insurance-cross-b" d="m1366 564-132 124"/>
+      </g>
+    </g>
+    <g id="noins-statement">
+      <rect x="220" y="857" width="1480" height="106" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="960" y="930" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="850" fill="#2b2622">COD से अंदर का सामान insure नहीं होता</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  shots:[[0,"#records"],[7.11,"#noins"]],
+  on:[
+    [4.60,"draw","#records-link",{dur:1}],
+    [10.47,"fade","#noins-statement",{dur:.24}],
+    [11.57,"draw","#insurance-cross-a",{dur:.19}],
+    [11.69,"draw","#insurance-cross-b",{dur:.19}]
+  ]
+})
+</script>
+</section>
+
