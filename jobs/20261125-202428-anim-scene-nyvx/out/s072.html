@@ -43,12 +43,12 @@
  </g>
  <text id="solution-lead" x="1200" y="300" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#9e1b1b">हल:</text>
  <text id="solution-detail" x="1305" y="300" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="800" fill="#2b2622">बड़ा, साफ़, बँधा हुआ</text>
- <path id="tie" d="M615 542C605 658 639 750 710 815Q743 851 769 873" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round"/>
+ <path id="tie" d="M615 542C605 658 639 750 710 853Q743 913 769 941" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round"/>
  <g id="address-tag">
-  <use href="piece:address-label-tag" transform="translate(741 728.4) scale(1.2)"/>
+  <use href="piece:address-label-tag" transform="translate(741 796.4) scale(1.2)"/>
   <g id="tag-confirm">
-   <circle cx="1186" cy="907" r="39" fill="#e3f1e8" stroke="#afd7be" stroke-width="2"/>
-   <path d="M1168 908l12 12 22-25" fill="none" stroke="#17634a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+   <circle cx="1186" cy="975" r="39" fill="#e3f1e8" stroke="#afd7be" stroke-width="2"/>
+   <path d="M1168 976l12 12 22-25" fill="none" stroke="#17634a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
  </g>
 </svg>
@@ -58,7 +58,7 @@
  on:[
   [.82,"stamp","#refused-stamp",{from:1.2,spring:"soft",rot:-7}],
   [2.64,"fade","#solution-lead",{dur:.26}],
-  [4.84,"slide","#address-tag",{from:"down",dist:60,spring:"soft"}],
+  [4.84,"slide","#address-tag",{from:"down",dist:20,spring:"soft"}],
   [4.84,"draw","#tie",{dur:.56}],
   [7.00,"pop","#tag-confirm",{spring:"soft"}],
   [7.00,"fade","#solution-detail",{dur:.27}]
