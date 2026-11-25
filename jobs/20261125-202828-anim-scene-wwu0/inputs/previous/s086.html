@@ -1,0 +1,42 @@
+<section class="vs-scene" id="s086" data-in="cut" data-section="PART 5 · COD FEE" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Cash on Delivery fee schedule and both fee slabs">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="table">
+  <text id="title" x="140" y="253" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="74" font-weight="820" fill="#9e1b1b">COD fee · दो slabs</text>
+  <rect x="140" y="304" width="1640" height="490" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M168 304H1752A28 28 0 0 1 1780 332V416H140V332A28 28 0 0 1 168 304Z" fill="#9e1b1b"/>
+  <rect x="159" y="433" width="1602" height="146" rx="16" fill="#fbf7ee"/>
+  <rect x="159" y="598" width="1602" height="176" rx="16" fill="#fbf7ee"/>
+  <path d="M820 436V772" stroke="#ead9a8" stroke-width="3"/>
+  <g id="head" font-size="52" font-weight="810" fill="#fff">
+   <text x="224" y="382" font-family="'Noto Sans Devanagari', Inter, sans-serif">वसूली की रकम</text>
+   <text x="887" y="382" font-family="Inter,sans-serif">COD fee</text>
+  </g>
+  <g id="table-rows" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-weight="790">
+   <text id="r1-label" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="218" y="496" font-size="58">₹6,500 तक</text>
+   <text id="r1-inclusive" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="230" y="552" font-size="46">(6,500 समेत)</text>
+   <rect id="row2-focus" x="160" y="599" width="1600" height="174" rx="16" fill="none" stroke="#e2b429" stroke-width="5"/>
+   <text id="r1-value" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="887" y="530" font-size="59">वसूली का 1.6%</text>
+   <text id="r2-label" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="218" y="708" font-size="58">₹6,500 से ऊपर</text>
+   <rect id="fee-base-mark" x="869" y="621" width="265" height="65" rx="14" fill="#fde9a6"/>
+   <rect id="fee-excess-underlay" x="869" y="694" width="857" height="64" rx="13" fill="#f3ead6"/>
+   <text id="r2-base" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="887" y="674" font-size="59">₹100 +</text>
+   <text id="r2-extra" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="887" y="741" font-size="51">6,500 से ऊपर वाली रकम का 1%</text>
+  </g>
+  <rect id="separate-mark" x="135" y="814" width="808" height="83" rx="19" fill="#eeebe5"/>
+  <text id="takeaway" x="149" y="873" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="690" fill="#5c554e">Postage, charges, tax अलग</text>
+  <text id="source" x="149" y="957" font-family="Inter,sans-serif" font-size="42" font-weight="620" fill="#655b54">Post Office Regulations 2024, Schedule IV, Table III</text>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,"pop","#fee-base-mark",{from:.94,spring:"soft"}],
+  [.89,"fade","#fee-excess-underlay",{dur:.22}],
+  [2.53,"highlight","#r2-extra",{words:"6,500 से ऊपर वाली",color:"#f2b705",opacity:.32,pad:6,dur:.34}],
+  [5.83,"fade","#separate-mark",{dur:.24}]
+ ]
+})
+</script>
+</section>
