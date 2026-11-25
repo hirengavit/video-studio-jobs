@@ -10,7 +10,7 @@
 </g>
 <g id="vp-card">
  <rect x="940" y="300" width="620" height="180" rx="24" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
- <use href="piece:parcel-icon" transform="translate(970 306) scale(.42)"/>
+ <use href="piece:parcel-icon" transform="translate(950 310) scale(.52)"/>
  <text x="1369" y="438" text-anchor="middle" font-family="Inter,sans-serif" font-weight="810" font-size="52" fill="#2b2622">VP articles</text>
 </g>
 <g id="mo-card">
@@ -23,10 +23,8 @@
  <text x="1710" y="530" text-anchor="middle" font-family="Inter,sans-serif" font-weight="830" font-size="48" fill="#7d1616">APO</text>
 </g>
 <g fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
- <path id="vp-arrow" d="M1570 390 H1594 V502 H1627"/>
- <path id="mo-arrow" d="M1570 630 H1594 V536 H1627"/>
- <path id="vp-arrow-head" d="M1614 490l13 12-13 12"/>
- <path id="mo-arrow-head" d="M1614 524l13 12-13 12"/>
+ <path id="vp-arrow" d="M1570 390 H1594 V502 H1627 l-13 -12 l13 12 l-13 12"/>
+ <path id="mo-arrow" d="M1570 630 H1594 V536 H1627 l-13 -12 l13 12 l-13 12"/>
  <path id="vp-no" d="M1482 311l56 56m-56 0l56-56" stroke-width="8"/>
  <path id="mo-no" d="M1482 551l56 56m-56 0l56-56" stroke-width="8"/>
 </g>
@@ -43,10 +41,8 @@
  [5.81,"pop","#vp-card",{from:.93,spring:"soft"}],
  [5.95,"fade","#apo-target",{dur:.24}],
  [5.95,"draw","#vp-arrow",{dur:.40,ease:"linear"}],
- [6.27,"draw","#vp-arrow-head",{dur:.08,ease:"linear"}],
  [8.00,"pop","#mo-card",{from:.93,spring:"soft"}],
  [8.14,"draw","#mo-arrow",{dur:.40,ease:"linear"}],
- [8.46,"draw","#mo-arrow-head",{dur:.08,ease:"linear"}],
  [9.00,"draw","#vp-no",{dur:.28}],
  [9.00,"draw","#mo-no",{dur:.28}],
  [9.00,"stamp","#booking-verdict",{from:1.15,spring:"snap",rot:-3}]
