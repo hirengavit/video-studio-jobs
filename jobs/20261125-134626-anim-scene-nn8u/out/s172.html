@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s172" data-in="cut" data-section="PART 9 · COMPLAINTS AND FRAUD SAFEGUARD" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Complaint deadlines: emphasize sixty days from booking, then damage or loss">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="table">
+   <text id="deadline-title" x="140" y="275" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="69" font-weight="840" fill="#9e1b1b">Complaint की समय-सीमा</text>
+   <rect x="140" y="302" width="1640" height="558" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+   <path d="M168 302H1752Q1780 302 1780 330V404H140V330Q140 302 168 302Z" fill="#9e1b1b"/>
+   <g id="deadline-head" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="820" fill="#fff">
+    <text x="205" y="374" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">हालत</text>
+    <text x="752" y="374" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">कब</text>
+   </g>
+   <g id="deadline-rows" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="780" fill="#2b2622">
+    <g id="deadline-row-1">
+     <rect x="163" y="419" width="1594" height="133" rx="18" fill="#fbf7ee"/>
+     <rect id="missing-focus" x="184" y="438" width="486" height="95" rx="18" fill="#fde9a6"/>
+     <text id="missing-label" x="205" y="511" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">Item न मिला</text>
+     <rect id="missing-first-held" x="738" y="422" width="582" height="59" rx="6" fill="#f8e19b"/>
+     <text id="missing-first" x="752" y="465" font-size="49" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">booking के 15 दिन बाद,</text>
+     <rect id="missing-second-focus" x="738" y="492" width="415" height="56" rx="12" fill="#fde9a6"/>
+     <text id="missing-second" x="752" y="534" font-size="49" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">60 दिन के अंदर</text>
+    </g>
+    <g id="deadline-row-2">
+     <rect x="163" y="564" width="1594" height="133" rx="18" fill="#fffaf1"/>
+     <rect id="damage-focus" x="184" y="583" width="486" height="95" rx="18" fill="#fde9a6"/>
+     <text id="damage-label" x="205" y="651" font-size="46" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">अंदर damage या loss</text>
+     <text id="damage-value" x="752" y="651" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">item मिलने के 2 दिन के अंदर</text>
+    </g>
+    <g id="deadline-row-3">
+     <rect x="163" y="709" width="1594" height="133" rx="18" fill="#fbf7ee"/>
+     <text id="claim-label" x="205" y="796" font-size="47" font-family="Inter,sans-serif">Compensation claim</text>
+     <text id="claim-value" x="752" y="796" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">posting के 60 दिन बाद नहीं</text>
+    </g>
+   </g>
+   <path d="M702 419V842" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+   <text id="deadline-source" x="145" y="924" font-family="Inter,sans-serif" font-size="42" font-weight="640" fill="#6f6a63">Post Office Regulations 2024 · Reg. 75</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [0.20,"out","#missing-first-held",{dur:.18,scale:false}],
+   [.48,"fade","#missing-second-focus",{dur:.21}],
+   [2.20,"out","#missing-second-focus",{dur:.20,scale:false}],
+   [2.20,"out","#missing-focus",{dur:.20,scale:false}],
+   [2.20,"fade","#damage-focus",{dur:.23}]
+  ]
+ })
+ </script>
+</section>
