@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s005" data-in="cut" data-duration="9.54" data-section="INTRODUCTION" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The item goes from sender to addressee; money returns from addressee to sender.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text x="140" y="220" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="850" fill="#9e1b1b">पूरी तस्वीर, दो lines में</text>
+  <path d="M140 254H628" stroke="#d6ac59" stroke-width="5" stroke-linecap="round"/>
+  <g id="sender">
+   <rect x="140" y="515" width="230" height="430" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <use href="piece:person-icon" transform="translate(175 503)"/>
+   <path d="M167 782H343" stroke="#ead9a8" stroke-width="2"/>
+   <text x="255" y="850" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">Sender</text>
+   <text x="255" y="910" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="730" fill="#615a52">प्रेषक</text>
+  </g>
+  <g id="addressee">
+   <rect x="1550" y="515" width="230" height="430" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <use href="piece:person-icon" transform="translate(1585 503)"/>
+   <path d="M1577 782H1753" stroke="#ead9a8" stroke-width="2"/>
+   <text x="1665" y="850" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="830" fill="#2b2622">Addressee</text>
+   <text x="1665" y="910" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="730" fill="#615a52">प्राप्तकर्ता</text>
+  </g>
+  <!-- Directional lines isolated from cod-flow-diagram; later-scene numbered markers are intentionally absent. -->
+  <g id="cod-flow" transform="translate(160 300)" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+   <path id="line-item" d="M240 170H1360"/>
+   <path id="line-money" d="M1360 390H240"/>
+   <path id="arrow-item" d="M1341 159L1360 170L1341 181Z" fill="#2b2622"/>
+   <path id="arrow-money" d="M259 379L240 390L259 401Z" fill="#2b2622"/>
+  </g>
+  <g id="item-word">
+   <rect x="845" y="491" width="230" height="68" rx="20" fill="#f3ead6"/>
+   <text x="960" y="538" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="780" fill="#5a4327">Item</text>
+  </g>
+  <g id="money-word">
+   <rect x="845" y="711" width="230" height="68" rx="20" fill="#f3ead6"/>
+   <text x="960" y="758" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="780" fill="#5a4327">पैसा</text>
+  </g>
+  <g id="parcel-move"><g id="parcel-show">
+   <use href="piece:parcel-icon" transform="translate(306 280) scale(.60)"/>
+  </g></g>
+  <g id="coin-move"><g id="coin-show">
+   <use href="piece:rupee-coin" transform="translate(1446 588) scale(.80)"/>
+   <text x="1494" y="654" text-anchor="middle" font-family="Inter,sans-serif" font-size="50" font-weight="830" fill="#9e1b1b">₹</text>
+  </g></g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [1.16,"draw","#line-item",{dur:.8}],
+   [1.16,"draw","#line-money",{dur:.8}],
+   [1.85,"fade","#arrow-item",{dur:.15}],
+   [1.85,"fade","#arrow-money",{dur:.15}],
+   [2.04,"pop","#parcel-show",{from:.92,spring:"soft"}],
+   [2.04,"fade","#item-word",{dur:.22}],
+   [3.86,"move","#parcel-move",{by:[1068,0],spring:"soft"}],
+   [6.04,"pop","#coin-show",{from:.92,spring:"soft"}],
+   [6.04,"fade","#money-word",{dur:.22}],
+   [7.78,"move","#coin-move",{by:[-1068,0],spring:"soft"}]
+  ]
+ })
+ </script>
+</section>
