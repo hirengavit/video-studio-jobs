@@ -8,12 +8,5 @@
   "14.04"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s116",
-   "text": "₹10 / Paper POD = accountable item की तरह",
-   "t": 5.68
-  }
- ]
+ "warnings": []
 }
