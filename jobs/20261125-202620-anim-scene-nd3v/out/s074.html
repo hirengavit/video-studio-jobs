@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s074" data-duration="9.61" data-in="cut" data-section="PART 4 · MORE BOOKING CONDITIONS AND APO" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Bulk booking of uninsured value payable articles: no additional charge; contact the local Superintendent of Post Offices">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text id="bulk-heading" class="hi" x="120" y="220" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="850" fill="#9e1b1b">Bulk सुविधा</text>
+  <g id="firm">
+    <use href="piece:icon-firm" transform="translate(114 344.5) scale(1.7)"/>
+    <rect x="180" y="348" width="480" height="71" rx="12" fill="#fff" stroke="#2b2622" stroke-width="5"/>
+    <text id="firm-name" x="420" y="400" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#2b2622">Firm / Institution</text>
+  </g>
+  <g id="daily-stamp">
+    <rect x="900" y="300" width="600" height="400" rx="28" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+    <rect x="900" y="300" width="600" height="400" rx="28" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 26" stroke-linecap="round"/>
+    <text id="daily-count" x="1200" y="529" text-anchor="middle" font-family="Inter,sans-serif" font-size="200" font-weight="850" fill="#fff">10</text>
+    <text id="daily-label" class="hi" x="1200" y="635" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="800" fill="#fde9a6">रोज़ कम से कम</text>
+  </g>
+  <g id="parcel-stack" aria-label="A stack of parcels">
+    <use id="parcel-one" href="piece:parcel-icon" transform="translate(1518 552) scale(.5)"/>
+    <use id="parcel-two" href="piece:parcel-icon" transform="translate(1633 552) scale(.5)"/>
+    <use id="parcel-three" href="piece:parcel-icon" transform="translate(1518 460) scale(.5)"/>
+    <use id="parcel-four" href="piece:parcel-icon" transform="translate(1633 460) scale(.5)"/>
+    <use id="parcel-five" href="piece:parcel-icon" transform="translate(1575 368) scale(.5)"/>
+  </g>
+  <g id="item-strip">
+    <rect x="760" y="760" width="1040" height="120" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <rect id="uninsured-band" x="798" y="784" width="316" height="70" rx="4" fill="#f2b705" opacity=".42"/>
+    <text id="item-text" x="1280" y="839" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="780" fill="#2b2622" textLength="950" lengthAdjust="spacingAndGlyphs">Uninsured value payable articles</text>
+  </g>
+  <g id="bulk-no-charge">
+    <rect x="900" y="905" width="600" height="83" rx="41" fill="#e3f1e8" stroke="#a7c7b2" stroke-width="3"/>
+    <text class="hi" x="1200" y="963" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="810" fill="#17634a">कोई extra charge नहीं</text>
+  </g>
+  <text id="bulk-enquiry" class="hi" x="120" y="273" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="760" font-size="48" fill="#6f6a63">स्थानीय पूछताछ</text>
+  <g id="bulk-superintendent">
+    <rect x="120" y="310" width="700" height="210" rx="22" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+    <rect x="133" y="323" width="674" height="184" rx="13" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="4 9" stroke-linecap="round"/>
+    <text x="470" y="403" text-anchor="middle" font-family="Inter,sans-serif" font-weight="790" font-size="48" fill="#fff" textLength="624" lengthAdjust="spacingAndGlyphs">Superintendent of Post Offices</text>
+    <text id="bulk-superintendent-hi" class="hi" x="470" y="477" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="750" font-size="44" fill="#fde9a6">डाकघर अधीक्षक</text>
+  </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [2.85,"pop","#bulk-no-charge",{from:.93,spring:"soft"}],
+  [4.57,"fade","#bulk-enquiry",{dur:.25}],
+  [6.10,"pop","#bulk-superintendent",{from:.93,spring:"soft"}],
+  [6.60,"fade","#bulk-superintendent-hi",{dur:.24}]
+ ],
+ update(t,section,$){
+  const q=Math.max(0,Math.min(1,(t-4.00)/.57)), a=q*q*(3-2*q);
+  const heading=$("#bulk-heading")[0], firm=$("#firm")[0];
+  if(heading) heading.setAttribute("y",220-25*a);
+  if(firm) firm.setAttribute("transform","translate("+(135.8824*a)+" "+(318*a)+") scale("+(1-.3235294*a)+")");
+ }
+})
+</script>
+</section>
