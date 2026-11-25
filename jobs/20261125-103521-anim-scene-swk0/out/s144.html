@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s144" data-in="cut" data-duration="10.67" data-section="PART 8 · RETENTION AND RETURN" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Not every retention day is chargeable; payment does not allow an item to stay indefinitely">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text x="140" y="190" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="780" fill="#6f6a63">पहले दो शब्द</text>
+  <g id="retention-card">
+   <rect x="140" y="220" width="780" height="340" rx="28" fill="#9e1b1b"/>
+   <rect x="140" y="220" width="780" height="340" rx="28" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 25" stroke-linecap="round"/>
+   <text x="530" y="390" text-anchor="middle" font-family="Inter,sans-serif" font-size="96" font-weight="820" fill="#fff">Retention</text>
+   <text id="retention-hi" x="530" y="480" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="820" fill="#fde9a6">रोककर रखना</text>
+  </g>
+  <g id="retention-meaning">
+   <rect x="140" y="600" width="780" height="240" rx="28" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+   <text id="retention-line-1" x="186" y="668" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="750" fill="#2b2622">Undelivered item को</text>
+   <text id="retention-line-2" x="186" y="735" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="750" fill="#2b2622">अनुमति वाली अवधि तक</text>
+   <text id="retention-line-3" x="186" y="802" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="750" fill="#2b2622">post office में रखना</text>
+  </g>
+  <g id="demurrage-card">
+   <rect x="1000" y="220" width="780" height="340" rx="28" fill="#9e1b1b"/>
+   <rect x="1000" y="220" width="780" height="340" rx="28" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 25" stroke-linecap="round"/>
+   <text x="1390" y="390" text-anchor="middle" font-family="Inter,sans-serif" font-size="96" font-weight="820" fill="#fff">Demurrage</text>
+   <text id="demurrage-hi" x="1390" y="480" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="820" fill="#fde9a6">विलंब शुल्क</text>
+  </g>
+  <g id="demurrage-meaning">
+   <rect x="1000" y="600" width="780" height="240" rx="28" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+   <text id="demurrage-line-1" x="1046" y="668" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="750" fill="#2b2622">उससे ज़्यादा</text>
+   <text id="demurrage-line-2" x="1046" y="735" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="750" fill="#2b2622">रोकने का charge,</text>
+   <text id="demurrage-line-3" x="1046" y="802" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="750" fill="#2b2622">जहाँ नियम तय करे</text>
+  </g>
+  <g id="retention-clarifiers">
+   <rect x="140" y="870" width="1640" height="120" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+   <path d="M960 893v73" fill="none" stroke="#d9bf8f" stroke-width="3" stroke-linecap="round"/>
+   <text id="retention-note" x="550" y="940" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="780" fill="#2b2622">हर दिन charge वाला ज़रूरी नहीं</text>
+   <text id="demurrage-note" x="1370" y="940" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="780" fill="#2b2622">charge देकर भी अनगिनत दिन नहीं</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [0,"highlight","#demurrage-line-3",{words:"जहाँ नियम तय करे",color:"#fde9a6",opacity:1,dur:.001,pad:5}],
+   [0,"color","#retention-line-1,#retention-line-2,#retention-line-3,#demurrage-line-1,#demurrage-line-2,#demurrage-line-3",{to:"#6f6a63",dur:.4}],
+   [1.48,"reveal","#retention-clarifiers",{dur:.28}],
+   [1.48,"fade","#retention-note",{dur:.23}],
+   [3.82,"underline","#retention-note",{words:"ज़रूरी नहीं",dur:.34,color:"#8a5d00",width:5,gap:5}],
+   [5.54,"fade","#demurrage-note",{dur:.23}],
+   [8.14,"underline","#demurrage-note",{words:"अनगिनत दिन नहीं",dur:.36,color:"#8a5d00",width:5,gap:5}]
+  ],
+  update(t,section,$){
+   const mark=$("#demurrage-meaning [data-vs-mark]")[0], line=$("#demurrage-line-3")[0];
+   if(mark&&line){
+    if(t<=.001){mark.setAttribute("width",String(line.getBBox().width+10));}
+    const u=Math.max(0,Math.min(1,t/.4));
+    mark.style.opacity=1-u;
+   }
+  }
+ })
+ </script>
+</section>
