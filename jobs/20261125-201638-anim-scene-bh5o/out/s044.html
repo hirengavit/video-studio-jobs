@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s044" data-in="cut" data-duration="10.56" data-section="PART 2 · AGREEMENT, LIMITS AND INSURANCE" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="COD agreement and per-item recovery limits">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="exam-card">
+  <rect x="180" y="190" width="1560" height="795" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <g id="kicker">
+   <rect x="220" y="223" width="470" height="102" rx="21" fill="#9e1b1b"/>
+   <path d="M245 241h420m-420 66h420" fill="none" stroke="#fde9a6" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round"/>
+   <text x="455" y="295" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="820" fill="#fff">परीक्षा के लिए</text>
+  </g>
+  <path d="M224 342H1696" fill="none" stroke="#ead9a8" stroke-width="4"/>
+  <g id="exam-row-1">
+   <rect x="224" y="363" width="1472" height="100" rx="18" fill="#fbf7ee"/>
+   <circle cx="284" cy="413" r="28" fill="#f3ead6"/>
+   <text x="284" y="427" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="820" fill="#625548">1</text>
+   <text x="340" y="435" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="800" fill="#2b2622">Agreement ज़रूरी: retail हो या contractual</text>
+  </g>
+  <g id="exam-row-2">
+   <rect x="224" y="480" width="1472" height="100" rx="18" fill="#fbf7ee"/>
+   <circle cx="284" cy="530" r="28" fill="#f3ead6"/>
+   <text x="284" y="544" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="820" fill="#625548">2</text>
+   <text x="340" y="551" font-family="Inter,sans-serif" font-size="59" font-weight="800" fill="#2b2622">Parcel · Retail COD</text>
+   <g id="retail-amount"><rect x="1090" y="493" width="318" height="74" rx="20" fill="#fde9a6"/><text x="1249" y="550" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="850" fill="#62430e">₹10,000</text></g>
+   <text id="retail-unit" x="1435" y="548" font-family="Inter,sans-serif" font-size="48" font-weight="660" fill="#4b4f58">/ item</text>
+  </g>
+  <g id="exam-row-3">
+   <rect x="224" y="597" width="1472" height="100" rx="18" fill="#fbf7ee"/>
+   <circle cx="284" cy="647" r="28" fill="#f3ead6"/>
+   <text x="284" y="661" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="820" fill="#625548">3</text>
+   <text x="340" y="668" font-family="Inter,sans-serif" font-size="59" font-weight="800" fill="#2b2622">Contractual COD</text>
+   <g id="contract-amount"><rect x="1090" y="610" width="318" height="74" rx="20" fill="#fde9a6"/><text x="1249" y="667" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="850" fill="#62430e">₹50,000</text></g>
+   <text id="contract-unit" x="1435" y="665" font-family="Inter,sans-serif" font-size="48" font-weight="660" fill="#4b4f58">/ item</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [2.04,"fade","#exam-row-1",{dur:.26}],
+  [3.56,"fade","#exam-row-2",{dur:.26}],
+  [5.82,"fade","#retail-amount",{dur:.24}],
+  [7.50,"fade","#exam-row-3",{dur:.26}],
+  [7.50,"slide","#exam-row-3",{from:"right",dist:28}],
+  [8.20,"fade","#contract-amount",{dur:.24}],
+  [9.80,"fade","#retail-unit",{dur:.24}],
+  [9.80,"fade","#contract-unit",{dur:.24}]
+ ]
+})
+</script>
+</section>
