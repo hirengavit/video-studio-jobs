@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 420" width="320" height="420">
+<defs><clipPath id="registered-list-sheet-clip"><rect x="3" y="3" width="314" height="414" rx="8"/></clipPath></defs>
+<rect id="sheet" x="3" y="3" width="314" height="414" rx="8" fill="#ffffff"/>
+<rect id="band" x="3" y="3" width="314" height="70" fill="#9e1b1b" clip-path="url(#registered-list-sheet-clip)"/>
+<g stroke="#cfc6b8" stroke-width="3" stroke-linecap="round">
+<line x1="70" y1="88" x2="70" y2="400"/>
+<g id="rows">
+<line x1="24" y1="128" x2="296" y2="128"/>
+<line x1="24" y1="168" x2="296" y2="168"/>
+<line x1="24" y1="208" x2="296" y2="208"/>
+<line x1="24" y1="248" x2="296" y2="248"/>
+<line x1="24" y1="288" x2="296" y2="288"/>
+<line x1="24" y1="328" x2="296" y2="328"/>
+<line x1="24" y1="368" x2="296" y2="368"/>
+</g>
+</g>
+<rect x="3" y="3" width="314" height="414" rx="8" fill="none" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+<circle data-anchor="base" cx="160" cy="418" r="0"/>
+<circle data-anchor="top" cx="160" cy="2" r="0"/>
+</svg>
