@@ -10,13 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "low-contrast",
-   "scene": "s095",
-   "text": "> 6,500: ₹100 + 1% (1.2:1) / (ऊपर वाली रकम) (1.2:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 0.3
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s095",
    "message": "a card is mostly empty at 2.2 s: bring its items in sooner, or size it for what it holds now",
