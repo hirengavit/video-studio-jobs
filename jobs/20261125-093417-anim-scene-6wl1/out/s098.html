@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s098" data-in="cut" data-duration="12.26" data-section="PART 5 · COD FEE" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Exam angle: the two cash-on-delivery fee brackets">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="cod-exam-card" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="800">
+  <rect x="180" y="190" width="1560" height="760" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+  <path d="M180 242H512Q530 242 530 260V306Q530 324 512 324H180Z" fill="#9e1b1b"/>
+  <text class="hi" x="225" y="299" fill="#fff" font-size="46">परीक्षा के लिए</text>
+  <g id="cod-exam-fee">
+    <rect id="cod-exam-band1" x="232" y="356" width="1456" height="94" rx="19" fill="#fde9a6" stroke="#e7d6a7" stroke-width="2"/>
+    <text class="hi" x="278" y="423" fill="#2b2622" font-size="60">COD fee: <tspan id="cod-exam-postage">postage के ऊपर</tspan></text>
+  </g>
+  <g id="cod-exam-low">
+    <rect id="cod-exam-band2" x="232" y="466" width="1456" height="94" rx="19" fill="#fde9a6" stroke="#e7d6a7" stroke-width="2"/>
+    <text class="hi" x="278" y="533" fill="#2b2622" font-size="60">₹6,500 तक: <tspan id="cod-exam-percent" fill="#7d1616">1.6%</tspan></text>
+  </g>
+  <g id="cod-exam-high">
+    <rect id="cod-exam-band3" x="232" y="576" width="1456" height="94" rx="19" fill="#fde9a6" stroke="#e7d6a7" stroke-width="2"/>
+    <text class="hi" x="278" y="643" fill="#2b2622" font-size="60">ऊपर: <tspan id="cod-exam-fixed" fill="#7d1616">₹100</tspan><tspan id="cod-exam-excess"> + बढ़ी हुई रकम का</tspan></text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [1.24,"slide","#cod-exam-fee",{from:"left",dist:40,dur:.20}],
+  [4.18,"slide","#cod-exam-low",{from:"left",dist:40,dur:.20}],
+  [7.92,"slide","#cod-exam-high",{from:"left",dist:40,dur:.20}]
+ ],
+ update(t, section, $){
+  const clamp=x=>Math.max(0,Math.min(1,x));
+  for(const [id, cue] of [["cod-exam-fee",1.24],["cod-exam-postage",2.28],["cod-exam-low",4.18],["cod-exam-percent",5.58],["cod-exam-high",7.92],["cod-exam-fixed",8.92],["cod-exam-excess",10.64]]){
+   const el=$("#"+id)[0];
+   if(el)el.setAttribute("opacity",String(clamp((t-cue)/.20)));
+  }
+  for(const [id, cue] of [["cod-exam-band1",4.18],["cod-exam-band2",7.92]]){
+   const el=$("#"+id)[0], a=clamp((t-cue)/.26);
+   if(el)el.setAttribute("fill","rgb("+[253+Math.round(2*a),233+Math.round(18*a),166+Math.round(74*a)].join(",")+")");
+  }
+ }
+})
+</script>
+</section>
