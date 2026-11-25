@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s018" data-in="cut" data-duration="9.35" data-section="PART 1 · WHAT COD IS" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="COD combines delivery, collection and remittance. Keep three amounts separate.">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<text class="hi" x="160" y="236" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="830" font-size="64" fill="#9e1b1b">COD में</text>
+<g id="cod-delivery">
+ <rect x="160" y="330" width="480" height="300" rx="26" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+ <use href="piece:parcel-icon" transform="translate(280 325) scale(.60)"/>
+ <text x="400" y="563" text-anchor="middle" font-family="Inter,sans-serif" font-weight="810" font-size="60" fill="#2b2622">Delivery</text>
+</g>
+<text id="cod-plus-1" x="680" y="500" text-anchor="middle" font-family="Inter,sans-serif" font-weight="850" font-size="53" fill="#9e1b1b">+</text>
+<g id="cod-collection">
+ <rect x="720" y="330" width="480" height="300" rx="26" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+ <use href="piece:rupee-coin" transform="translate(900 382)"/>
+ <text class="hi" x="960" y="563" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="810" font-size="60" fill="#2b2622">वसूली</text>
+</g>
+<text id="cod-plus-2" x="1240" y="500" text-anchor="middle" font-family="Inter,sans-serif" font-weight="850" font-size="53" fill="#9e1b1b">+</text>
+<g id="cod-remittance">
+ <rect x="1280" y="330" width="480" height="300" rx="26" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+ <path d="M1398 442h118m-92-24-26 24 26 24" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+ <use href="piece:rupee-coin" transform="translate(1519 382)"/>
+ <text x="1520" y="563" text-anchor="middle" font-family="Inter,sans-serif" font-weight="810" font-size="60" fill="#2b2622">Remittance</text>
+</g>
+<g id="cod-amounts">
+ <rect x="160" y="760" width="1600" height="140" rx="26" fill="#f3ead6" stroke="#e1cca5" stroke-width="3"/>
+ <text class="hi" x="960" y="852" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="820" font-size="60" fill="#2b2622">तीन रकमें अलग रखिए</text>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [1.54,"pop","#cod-delivery",{from:.93,spring:"soft"}],
+  [3.66,"pop","#cod-collection",{from:.93,spring:"soft"}],
+  [3.66,"fade","#cod-plus-1",{dur:.24}],
+  [4.80,"pop","#cod-remittance",{from:.93,spring:"soft"}],
+  [4.80,"fade","#cod-plus-2",{dur:.24}],
+  [6.99,"reveal","#cod-amounts",{from:"left",dur:.34}]
+ ]
+})
+</script>
+</section>
