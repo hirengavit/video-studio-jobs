@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s051" data-in="cut" data-duration="12.00" data-section="PART 3 · BOOKING, FORMS AND DECLARATION" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Booking record: sender, addressee, destination and COD amount">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="booking-register">
+   <use href="piece:form-register" transform="translate(400 236) scale(2)"/>
+   <text x="710" y="406" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="820" fill="#2b2622">Booking record</text>
+   <g id="record-fields">
+    <rect x="1092" y="516" width="328" height="60" rx="8" fill="#fff"/>
+    <text id="sender" x="1108" y="570" font-family="Inter,'Noto Sans Devanagari',sans-serif" font-size="52" font-weight="740" fill="#2b2622">Sender</text>
+    <rect x="1092" y="612" width="328" height="60" rx="8" fill="#fff"/>
+    <text id="addressee" x="1108" y="666" font-family="Inter,'Noto Sans Devanagari',sans-serif" font-size="52" font-weight="740" fill="#2b2622">Addressee</text>
+    <rect x="1092" y="708" width="328" height="60" rx="8" fill="#fff"/>
+    <text id="destination" x="1108" y="762" font-family="Inter,'Noto Sans Devanagari',sans-serif" font-size="52" font-weight="740" fill="#2b2622">Destination</text>
+    <rect x="1092" y="804" width="328" height="60" rx="8" fill="#fff"/>
+    <text id="cod" x="1108" y="858" font-family="Inter,'Noto Sans Devanagari',sans-serif" font-size="52" font-weight="740" fill="#2b2622">COD रकम</text>
+   </g>
+   <g id="record-ticks">
+    <g id="sender-tick"><circle cx="1038" cy="552" r="22" fill="#e1f0e7" stroke="#a6c8b3" stroke-width="2"/><path d="M1027 552l8 8 14-17" stroke="#2e7d4f" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g id="addressee-tick"><circle cx="1038" cy="648" r="22" fill="#e1f0e7" stroke="#a6c8b3" stroke-width="2"/><path d="M1027 648l8 8 14-17" stroke="#2e7d4f" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g id="destination-tick"><circle cx="1038" cy="744" r="22" fill="#e1f0e7" stroke="#a6c8b3" stroke-width="2"/><path d="M1027 744l8 8 14-17" stroke="#2e7d4f" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g id="cod-tick"><circle cx="1038" cy="840" r="22" fill="#e1f0e7" stroke="#a6c8b3" stroke-width="2"/><path d="M1027 840l8 8 14-17" stroke="#2e7d4f" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+   </g>
+  </g>
+  <g id="amount-warning">
+   <rect x="600" y="909" width="720" height="77" rx="22" fill="#4b4f58"/>
+   <text x="960" y="963" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="800" fill="#fff">रकम गलत → वसूली गलत</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [1.51,"type","#sender",{cps:22}],
+   [2.41,"type","#addressee",{cps:22}],
+   [3.55,"type","#destination",{cps:22}],
+   [5.1,"type","#cod",{cps:22}],
+   [6.46,"pop","#record-ticks",{from:.96,spring:"soft"}],
+   [8.39,"color","#cod",{to:"#4b4f58",dur:.23}],
+   [8.39,"out","#cod-tick",{dur:.20}],
+   [8.39,"fade","#amount-warning",{dur:.27}]
+  ]
+ })
+ </script>
+</section>
