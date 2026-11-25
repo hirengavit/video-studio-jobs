@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s024" data-in="cut" data-duration="10.58" data-section="PART 1 · WHAT COD IS" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="COD collection and remittance, accountable items, and the meaning of VP or VPP.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="exam">
+   <rect id="exam-shell" x="180" y="190" width="1560" height="295" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+   <path d="M180 242H512Q530 242 530 260V306Q530 324 512 324H180Z" fill="#9e1b1b"/>
+   <text x="225" y="299" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="820" fill="#fff">परीक्षा के लिए</text>
+   <g id="exam-row-1">
+    <rect id="recap-band1" x="232" y="356" width="1456" height="94" rx="19" fill="#fde9a6" stroke="#e7d6a7" stroke-width="2"/>
+    <text x="278" y="423" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="820" fill="#2b2622">COD: addressee से वसूली<tspan id="recap-sender"> → sender को भेजना</tspan></text>
+   </g>
+
+   <g id="exam-row-2">
+    <rect id="recap-band2" x="232" y="466" width="1456" height="94" rx="19" fill="#fde9a6" stroke="#e7d6a7" stroke-width="2"/>
+    <text x="278" y="533" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="820" fill="#2b2622">COD item = Accountable item</text>
+   </g>
+   <g id="exam-row-3">
+    <rect id="recap-band3" x="232" y="576" width="1456" height="94" rx="19" fill="#fffbf0" stroke="#e7d6a7" stroke-width="2"/>
+    <rect id="recap-highlight3" x="233" y="577" width="1454" height="92" rx="18" fill="#fde9a6"/>
+    <text x="278" y="643" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="820" fill="#2b2622">VP / VPP<tspan id="recap-expansion"> = Value Payable Post</tspan></text>
+   </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [3.36,"slide","#exam-row-2",{from:"left",dist:40,spring:"snap"}],
+  [5.50,"slide","#exam-row-3",{from:"left",dist:40,spring:"snap"}],
+  [7.80,"fade","#recap-highlight3",{dur:.27}]
+ ],
+ update(t,section,$){
+  const linear=x=>Math.max(0,Math.min(1,x)), smooth=x=>{const a=linear(x);return a*a*(3-2*a)};
+  $("#recap-sender")[0].setAttribute("opacity",String(linear((t-.44)/.23)));
+  $("#recap-expansion")[0].setAttribute("opacity",String(linear((t-7.80)/.26)));
+  $("#exam-shell")[0].setAttribute("height",295+110*smooth((t-3.26)/.31)+110*smooth((t-5.40)/.31));
+  for(const [id,at] of [["recap-band1",3.36],["recap-band2",5.50]]){
+    const a=linear((t-at)/.28);$("#"+id)[0].setAttribute("fill","rgb("+[253+Math.round(2*a),233+Math.round(18*a),166+Math.round(74*a)].join(",")+")");
+  }
+ }
+})
+</script>
+</section>
