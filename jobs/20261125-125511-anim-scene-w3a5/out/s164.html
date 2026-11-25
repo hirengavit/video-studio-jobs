@@ -74,7 +74,7 @@
   [7.28,"slide","#recap-second",{from:"left",dist:40,spring:"soft"}]
  ],
  update(t,section,$) {
-   const b=$('#recap-first-band');
+   const b=$('#recap-first-band')[0];
    if(b) b.setAttribute('opacity',t<7.28 ? '.43' : String(Math.max(0,.43*(1-(t-7.28)/.35))));
  }
 })
