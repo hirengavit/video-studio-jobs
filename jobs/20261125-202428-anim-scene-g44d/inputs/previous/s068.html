@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s068" data-in="wipe" data-in-dur="0.50" data-duration="8.84" data-section="PART 4 · MORE BOOKING CONDITIONS AND APO" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Both offices must do money order work; offices marked D in the List of Post Offices">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="offices">
+   <g id="first-office">
+    <use href="piece:post-counter-icon" transform="translate(120 341.2) scale(.9)"/>
+    <g id="first-mo">
+     <rect x="219" y="647" width="162" height="67" rx="30" fill="#2e7d4f"/>
+     <text x="244" y="692" font-family="Inter,sans-serif" font-size="41" font-weight="800" fill="#fff">MO</text>
+     <path d="M324 680l9 9 19-21" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+   </g>
+   <g id="second-office">
+    <use href="piece:post-counter-icon" transform="translate(520 341.2) scale(.9)"/>
+    <g id="second-mo">
+     <rect x="619" y="647" width="162" height="67" rx="30" fill="#2e7d4f"/>
+     <text x="644" y="692" font-family="Inter,sans-serif" font-size="41" font-weight="800" fill="#fff">MO</text>
+     <path d="M724 680l9 9 19-21" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+   </g>
+   <text x="500" y="770" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="760" fill="#6f6a63">दोनों offices</text>
+   <text id="mo-caption" x="500" y="836" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">money order का काम</text>
+  </g>
+  <g id="list-sheet">
+   <use href="piece:registered-list-sheet" transform="translate(1068 279.4) scale(1.7)"/>
+   <text x="1340" y="361" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="800" fill="#fff">List of Post Offices</text>
+   <g id="d-badge">
+    <circle cx="1129" cy="599" r="35" fill="#fde9a6" stroke="#956713" stroke-width="3"/>
+    <text x="1129" y="615" text-anchor="middle" font-family="Inter,sans-serif" font-size="47" fill="#2b2622" font-weight="850">D</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [1.10,"pop","#first-mo",{from:.94,spring:"soft"}],
+   [1.30,"pop","#second-mo",{from:.94,spring:"soft"}],
+   [1.94,"fade","#mo-caption",{dur:.24}],
+   [4.14,"slide","#list-sheet",{from:"down",dist:86,spring:"soft"}],
+   [4.14,"draw","#list-sheet #rows",{dur:.76}],
+   [7.58,"stamp","#d-badge",{from:1.35,spring:"soft",rot:-7}]
+  ]
+ })
+ </script>
+</section>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 340" width="520" height="340">
+<defs><clipPath id="ack-card-clip"><rect x="2" y="2" width="516" height="336" rx="12"/></clipPath></defs>
+<rect id="paper" x="2" y="2" width="516" height="336" rx="12" fill="#f3ead6"/>
+<rect id="band" x="2" y="2" width="516" height="70" fill="#9e1b1b" clip-path="url(#ack-card-clip)"/>
+<g id="rules" stroke="#cfc6b8" stroke-width="3" stroke-linecap="round">
+<line x1="32" y1="132" x2="290" y2="132"/>
+<line x1="32" y1="182" x2="290" y2="182"/>
+<line x1="32" y1="232" x2="290" y2="232"/>
+</g>
+<rect id="sign-box" x="316" y="200" width="172" height="106" rx="6" fill="none" stroke="#6f6a63" stroke-width="3" stroke-dasharray="10 8" stroke-linecap="round"/>
+<rect x="2" y="2" width="516" height="336" rx="12" fill="none" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+<circle data-anchor="base" cx="260" cy="339" r="0"/>
+<circle data-anchor="top" cx="260" cy="1" r="0"/>
+</svg>
