@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s108" data-in="cut" data-duration="10.25" data-section="PART 6 · DELIVERY, COLLECTION AND POD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Holding period, then scanning and invoicing at the delivery office">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="hold">
+  <rect x="456" y="181" width="1008" height="111" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <text x="960" y="253" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="63" font-weight="830" fill="#9e1b1b">लागू holding period</text>
+  <use href="piece:calendar-sheet" transform="translate(713 356) scale(1.9)"/>
+  <text x="960" y="502" text-anchor="middle" font-family="Inter,sans-serif" font-size="74" font-weight="830" fill="#fff">Holding</text>
+  <rect x="780" y="604" width="360" height="190" rx="25" fill="#fde9a6"/>
+  <text x="960" y="726" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="92" font-weight="820" fill="#62430e">अवधि</text>
+ </g>
+ <g id="office">
+  <text id="office-title" x="140" y="235" font-family="Inter,sans-serif" font-size="75" font-weight="830" fill="#9e1b1b">Delivery office</text>
+  <text x="142" y="303" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="670" fill="#66574c">वितरण डाकघर</text>
+  <path d="M140 327H695" fill="none" stroke="#d8ab4b" stroke-width="5" stroke-linecap="round"/>
+  <g id="accountable-parcel">
+   <use href="piece:parcel-icon" transform="translate(295 387) scale(1.3)"/>
+   <rect x="338" y="794" width="438" height="78" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <text x="557" y="847" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="820" fill="#2b2622">Accountable item</text>
+   <path d="M601 670h48m-48 8h48m-48 8h48" stroke="#806e61" stroke-width="3" fill="none"/>
+  </g>
+  <g id="scanner">
+   <path d="M883 462Q899 450 918 468L965 512Q976 524 961 535L921 562L872 515Q852 497 865 479Z" fill="#f3ead6" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+   <path d="M913 550L900 587Q897 603 914 610l8 4q14 6 20-12l17-51" fill="#e0cdae" stroke="#2b2622" stroke-width="5" stroke-linejoin="round"/>
+   <path d="M862 498l41 41" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+   <rect x="775" y="678" width="210" height="74" rx="25" fill="#fde9a6"/>
+   <text x="880" y="728" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="830" fill="#62430e">Scan</text>
+  </g>
+  <path id="beam" d="M868 516L642 678" fill="none" stroke="#b82d30" stroke-width="6" stroke-linecap="round"/>
+  <g id="invoice">
+   <use href="piece:invoice-sheet" transform="translate(1130 355) scale(1.4)"/>
+   <text x="1340" y="451" text-anchor="middle" font-family="Inter,sans-serif" font-size="60" font-weight="850" fill="#9e1b1b">Invoice</text>
+   <text x="1205" y="522" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="35" font-weight="690" fill="#65584d">मद का विवरण</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,"#hold"],[3.69,"#office"]],
+ on:[
+  [6.91,"fade","#accountable-parcel",{dur:.25}],
+  [8.17,"fade","#scanner",{dur:.24}],
+  [8.17,"draw","#beam",{dur:.27}],
+  [8.95,"slide","#invoice",{from:"down",dist:49,spring:"soft"}]
+ ]
+})
+</script>
+</section>
