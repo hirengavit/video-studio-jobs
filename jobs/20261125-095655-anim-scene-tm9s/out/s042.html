@@ -5,7 +5,7 @@
    <rect width="1920" height="1080" fill="#fbf7ee"/>
    <text x="180" y="220" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="830" fill="#9e1b1b">एक example</text>
    <rect x="180" y="278" width="600" height="584" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
-   <use id="insured-watch" href="piece:watch-icon" transform="translate(160 260) scale(1.6)"/>
+   <g id="insured-watch"><use href="piece:watch-icon" transform="translate(160 260) scale(1.6)"/></g>
    <g id="watch-price">
     <text x="920" y="380" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="810" fill="#2b2622">घड़ी की कीमत</text>
     <text id="price-number" x="1348" y="380" font-family="Inter,sans-serif" font-size="64" font-weight="840" fill="#9e1b1b">₹5,000</text>
@@ -34,7 +34,7 @@
    [4.60,"fade","#repair-recovery-value",{dur:.22}],
    [6.80,"pop","#watch-insurance",{from:.93,spring:"soft"}],
    [8.02,"fade","#watch-insurance-qualifier",{dur:.22}],
-   [8.02,"pulse","#insured-watch",{scale:1.04,dur:.39}]
+   [8.02,"pulse","#insured-watch",{amount:.055}]
   ]
  })
  </script>
