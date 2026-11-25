@@ -46,8 +46,8 @@
    [7.29,"pop","#rename-cod",{from:.95,spring:"soft"}]
   ],
   update(t,section,$){
-   $("#addr")[0].setAttribute("visibility",t<5.08?"visible":"hidden");
-   $("#rename")[0].setAttribute("visibility",t<5.08?"hidden":"visible");
+   $("#addr")[0].style.display=t<5.08?"":"none";
+   $("#rename")[0].style.display=t<5.08?"none":"";
   }
  })
  </script>
