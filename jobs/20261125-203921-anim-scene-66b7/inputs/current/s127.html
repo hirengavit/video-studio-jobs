@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s127" data-in="cut" data-duration="9.88" data-section="PART 7 · PAYMENT TO SENDER AND CHANGING THE AMOUNT" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="COD Retail: eMO after delivery; contractual COD: ePayment">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="two">
+    <text id="question" x="960" y="257" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="830" fill="#2b2622">पैसा भेजने के दो रास्ते</text>
+    <g id="left">
+      <rect x="160" y="324" width="740" height="516" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M188 324H872A28 28 0 0 1 900 352V494H160V352A28 28 0 0 1 188 324Z" fill="#9e1b1b"/>
+      <text x="530" y="439" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="820" fill="#fff">Contractual COD</text>
+      <text id="epayment" x="530" y="698" text-anchor="middle" font-family="Inter,sans-serif" font-size="100" font-weight="850" fill="#2b2622">ePayment</text>
+    </g>
+    <g id="right">
+      <rect x="1020" y="324" width="740" height="516" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M1048 324H1732A28 28 0 0 1 1760 352V494H1020V352A28 28 0 0 1 1048 324Z" fill="#fde9a6"/>
+      <text x="1390" y="439" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="820" fill="#2b2622">COD Retail</text>
+      <text id="after-delivery" x="1390" y="559" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="760" fill="#4b4f58">delivery के बाद</text>
+      <text id="emo" x="1390" y="679" text-anchor="middle" font-family="Inter,sans-serif" font-size="105" font-weight="850" fill="#2b2622">eMO</text>
+      <text id="emo-full" x="1390" y="746" text-anchor="middle" font-family="Inter,sans-serif" font-size="51" font-weight="730" fill="#2b2622">electronic money order</text>
+      <path d="M1094 781H1686" stroke="#ead9a8" stroke-width="3"/>
+    </g>
+    <text id="fixed-steps" x="1390" y="874" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="760" fill="#4b4f58">steps तय हैं</text>
+    <g id="note">
+      <rect x="280" y="886" width="1360" height="92" rx="27" fill="#f3ead6" stroke="#e4c98f" stroke-width="3"/>
+      <text x="960" y="950" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="800" fill="#5d400e">पहले category, फिर तरीका</text>
+    </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [0,"fade","#right",{dur:.21}],
+   [1.64,"fade","#after-delivery",{dur:.22}],
+   [2.92,"pop","#emo",{from:.95,spring:"soft"}],
+   [4.46,"fade","#emo-full",{dur:.24}],
+   [7.92,"fade","#fixed-steps",{dur:.24}]
+  ]
+ })
+ </script>
+</section>
