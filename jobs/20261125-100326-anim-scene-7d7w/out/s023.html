@@ -39,7 +39,7 @@
    </g>
   </g>
   <g id="exam">
-   <rect x="180" y="190" width="1560" height="760" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+   <rect id="exam-shell" x="180" y="190" width="1560" height="295" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
    <path d="M180 242H512Q530 242 530 260V306Q530 324 512 324H180Z" fill="#9e1b1b"/>
    <text x="225" y="299" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="820" fill="#fff">परीक्षा के लिए</text>
    <g id="exam-row-1">
@@ -55,7 +55,8 @@
  on:[
   [3.70,"pop","#insurance-card",{from:.96,spring:"soft"}],
   [11.60,"slide","#exam-row-1",{from:"left",dist:40,spring:"snap"}]
- ]
+ ],
+ update(t,section,$){const u=Math.max(0,Math.min(1,(t-11.55)/.27));$("#exam-shell")[0].setAttribute("height",158+137*u*u*(3-2*u));}
 })
 </script>
 </section>
