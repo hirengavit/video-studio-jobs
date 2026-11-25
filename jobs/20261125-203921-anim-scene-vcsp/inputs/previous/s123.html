@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s123" data-in="wipe" data-in-dur=".5" data-in-opts='{"from":"right"}' data-duration="8.98" data-section="PART 7 · SENDER PAYMENT AND AMOUNT CHANGES" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="COD completion requires both correct delivery and correct money records">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="delivery-record">
+   <rect x="200" y="300" width="640" height="420" rx="32" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+   <text x="520" y="399" text-anchor="middle" font-family="Inter,sans-serif" font-size="60" font-weight="810" fill="#2b2622">Delivery record</text>
+   <use href="piece:parcel-icon" transform="translate(255 285) scale(1.27)"/>
+   <circle cx="737" cy="623" r="41" fill="#edf6ef" stroke="#badac5" stroke-width="2"/>
+   <path id="delivery-tick" d="M717 623l14 15 27-31" fill="none" stroke="#17634a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="money-record">
+   <rect x="1080" y="300" width="640" height="420" rx="32" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+   <text x="1400" y="399" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="810" fill="#2b2622">पैसे का record</text>
+   <use href="piece:rupee-coin" transform="translate(1274 432) scale(2.1)"/>
+   <text x="1400" y="584" text-anchor="middle" font-family="Inter,sans-serif" font-size="80" font-weight="840" fill="#9e1b1b">₹</text>
+   <circle cx="1617" cy="623" r="41" fill="#edf6ef" stroke="#badac5" stroke-width="2"/>
+   <path id="money-tick" d="M1597 623l14 15 27-31" fill="none" stroke="#17634a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="cod-complete"><g id="cod-strip">
+   <rect x="396" y="800" width="1128" height="120" rx="24" fill="#9e1b1b"/>
+   <rect x="396" y="800" width="1128" height="120" rx="24" fill="none" stroke="#fbf7ee" stroke-width="12" stroke-dasharray="0 23" stroke-linecap="round"/>
+   </g>
+   <text id="cod-complete-label" x="960" y="879" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="820" fill="#fff">COD पूरा = दोनों ठीक</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [4.32,"fade","#money-record",{dur:.26}],
+   [6.32,"draw","#delivery-tick",{dur:.23}],
+   [6.52,"draw","#money-tick",{dur:.23}],
+   [7.04,"reveal","#cod-strip",{from:"left",dur:.38}],
+   [7.42,"fade","#cod-complete-label",{dur:.16}]
+  ]
+ })
+ </script>
+</section>
