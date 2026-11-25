@@ -1,0 +1,79 @@
+<section class="vs-scene" id="s015" data-in="cut" data-duration="14.71" data-section="PART 1 · WHAT COD IS" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Customer pays on delivery, then the COD route starts at booking">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="example">
+ <text id="example-title" x="140" y="231" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="67" font-weight="800" fill="#9e1b1b">एक example</text>
+ <path d="M140 254H432" stroke="#d2a851" stroke-width="5" stroke-linecap="round"/>
+ <g id="supplier">
+  <use href="piece:icon-firm" transform="translate(162 443) scale(1.1)"/>
+  <rect x="229" y="467" width="262" height="61" rx="14" fill="#fff" stroke="#ead9a8" stroke-width="2"/>
+  <text x="360" y="511" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="840" fill="#2b2622">Supplier</text>
+ </g>
+ <g id="gujarat">
+  <rect x="239" y="812" width="242" height="76" rx="28" fill="#fde9a6"/>
+  <text x="360" y="866" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="820" fill="#62430e">Gujarat</text>
+ </g>
+ <g id="customer">
+  <use href="piece:person-icon" transform="translate(1448 457) scale(1.4)"/>
+  <rect x="1385" y="815" width="350" height="127" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1560" y="874" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#2b2622">Customer</text>
+  <text x="1560" y="921" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="680" fill="#62564b">ग्राहक</text>
+ </g>
+ <g id="order" transform="translate(55 0)">
+  <rect x="1413" y="289" width="294" height="93" rx="20" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M1450 315v38m0-38h30l11 10v28h-41m10-24h17m-17 10h20" fill="none" stroke="#665849" stroke-width="4" stroke-linecap="round"/>
+  <text x="1540" y="351" font-family="Inter,sans-serif" font-size="47" font-weight="800" fill="#2b2622">order</text>
+ </g>
+ <path id="route-line" d="M568 600H1360m-23-15 23 15-23 15" fill="none" stroke="#776959" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="parcel-flight" transform="translate(620 0)">
+  <g transform="rotate(-2 666 574)">
+   <rect x="480" y="320" width="372" height="268" rx="20" fill="#fff" stroke="#e6d6b6" stroke-width="4"/>
+   <image href="photo:india-post-parcel-cutout" x="496" y="333" width="340" height="221" preserveAspectRatio="xMidYMid meet"/>
+   <text x="666" y="575" text-anchor="middle" font-family="Inter,sans-serif" font-size="23" font-weight="650" fill="#62564b">Illustration: RegisteredMailBarcode</text>
+  </g>
+ </g>
+ <g id="no-upfront">
+  <rect x="775" y="772" width="590" height="123" rx="24" fill="#f0eff0" stroke="#b9b4ba" stroke-width="3"/>
+  <circle cx="839" cy="834" r="37" fill="#fff" stroke="#4b4f58" stroke-width="4"/>
+  <text x="839" y="848" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="850" fill="#4b4f58">₹</text>
+  <path d="M815 858l48-48" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+  <text x="900" y="851" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="800" fill="#4b4f58">पहले से पैसा नहीं</text>
+ </g>
+ <g id="paid-coin-motion"><g id="paid-coin">
+  <use href="piece:rupee-coin" transform="translate(1170 770)"/>
+  <text x="1230" y="848" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="830" fill="#9e1b1b">₹</text>
+ </g></g>
+ </g>
+ <g id="route">
+  <text x="140" y="231" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="820" fill="#9e1b1b">रास्ता, चार steps में</text>
+  <use id="route-diagram" href="piece:cod-flow-diagram" transform="translate(160 300)"/>
+  <g id="route-sender">
+   <use href="piece:person-icon" transform="translate(164 485) scale(1.2)"/>
+   <text x="260" y="880" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="820" fill="#2b2622">Sender</text>
+  </g>
+  <g id="route-addressee">
+   <use href="piece:person-icon" transform="translate(1564 485) scale(1.2)"/>
+   <text x="1660" y="880" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="820" fill="#2b2622">Addressee</text>
+  </g>
+  <g id="route-parcel-motion"><g id="route-parcel">
+   <use href="piece:parcel-icon" transform="translate(422 238) scale(.60)"/>
+  </g></g>
+  <text id="step-1-label" x="519" y="568" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="810" fill="#2b2622">COD के साथ booking</text>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,"#example"],[7.47,"#route"]],
+ on:[
+  [1.62,"out","#no-upfront",{dur:.24}],
+  [1.80,"pop","#paid-coin",{from:.91,spring:"soft"}],
+  [5.98,"move","#paid-coin-motion",{by:[-870,0],spring:"snap"}],
+  [9.41,"pop","#step-1",{from:.92,spring:"soft"}],
+  [9.41,"pop","#route-parcel",{from:.94,spring:"soft"}],
+  [11.89,"fade","#step-1-label",{dur:.28}]
+ ],
+ update(t,section,$){for(const id of ["#step-2","#step-3","#step-4"]){const el=$(id)[0];if(el)el.setAttribute("display","none");}}
+})
+</script>
+</section>
