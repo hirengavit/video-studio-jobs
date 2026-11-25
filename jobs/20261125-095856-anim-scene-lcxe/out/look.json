@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.87",
+  "3.73",
+  "5.60",
+  "7.46",
+  "9.18"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s033",
+   "message": "move: option \"dur\" isn't used (it takes: by, spring)",
+   "t": 0.3
+  }
+ ]
+}
