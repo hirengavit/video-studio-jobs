@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s170" data-in="cut" data-duration="8.78" data-section="PART 9 · COMPLAINTS AND FRAUD SAFEGUARD" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Details for a COD payment complaint: item number, booking details, delivery information, amount collected, and remittance reference if available.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="complaint-checklist">
+   <rect id="complaint-shell" x="140" y="220" width="1060" height="760" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <rect x="180" y="251" width="10" height="70" rx="5" fill="#9e1b1b"/>
+   <text x="215" y="309" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="840" fill="#9e1b1b">COD payment complaint में</text>
+   <path d="M180 339H1160" stroke="#ead9a8" stroke-width="3"/>
+    <g id="complaint-row-1">
+     <rect x="180" y="360" width="980" height="100" rx="18" fill="#f7efdf" stroke="#ead9a8" stroke-width="2"/>
+     <rect x="215" y="384" width="53" height="53" rx="12" fill="#e2f1e4" stroke="#2e7d4f" stroke-width="3"/>
+     <path d="M228 412l10 10 18-22" fill="none" stroke="#17634a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+     <text x="305" y="428" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="780" fill="#2b2622">Item number</text>
+    </g>
+    <g id="complaint-row-2">
+     <rect x="180" y="480" width="980" height="100" rx="18" fill="#fbf8f2" stroke="#ead9a8" stroke-width="2"/>
+     <rect x="215" y="504" width="53" height="53" rx="12" fill="#e2f1e4" stroke="#2e7d4f" stroke-width="3"/>
+     <path d="M228 532l10 10 18-22" fill="none" stroke="#17634a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+     <text x="305" y="548" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="780" fill="#2b2622">Booking की details</text>
+    </g>
+    <g id="complaint-row-3">
+     <rect x="180" y="600" width="980" height="100" rx="18" fill="#f7efdf" stroke="#ead9a8" stroke-width="2"/>
+     <rect x="215" y="624" width="53" height="53" rx="12" fill="#e2f1e4" stroke="#2e7d4f" stroke-width="3"/>
+     <path d="M228 652l10 10 18-22" fill="none" stroke="#17634a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+     <text x="305" y="668" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="780" fill="#2b2622">Delivery की जानकारी</text>
+    </g>
+    <g id="complaint-row-4">
+     <rect x="180" y="720" width="980" height="100" rx="18" fill="#fbf8f2" stroke="#ead9a8" stroke-width="2"/>
+     <rect x="215" y="744" width="53" height="53" rx="12" fill="#e2f1e4" stroke="#2e7d4f" stroke-width="3"/>
+     <path d="M228 772l10 10 18-22" fill="none" stroke="#17634a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+     <text x="305" y="788" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="780" fill="#2b2622">वसूली गई रकम</text>
+    </g>
+    <g id="complaint-row-5">
+     <rect x="180" y="840" width="980" height="100" rx="18" fill="#f7efdf" stroke="#ead9a8" stroke-width="2"/>
+     <rect x="215" y="864" width="53" height="53" rx="12" fill="#e2f1e4" stroke="#2e7d4f" stroke-width="3"/>
+     <path d="M228 892l10 10 18-22" fill="none" stroke="#17634a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+     <text x="305" y="908" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="780" fill="#2b2622">Remittance reference (अगर हो)</text>
+    </g>
+    <g id="diagnostic-delivery">
+      <rect x="1280" y="360" width="500" height="100" rx="26" fill="#f9e9ba" stroke="#dfc475" stroke-width="3"/>
+      <text x="1530" y="428" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="800" fill="#2b2622">Delivery?</text>
+    </g>
+    <g id="diagnostic-collection">
+      <rect x="1280" y="480" width="500" height="100" rx="26" fill="#f9e9ba" stroke="#dfc475" stroke-width="3"/>
+      <text x="1530" y="548" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="800" fill="#2b2622">वसूली?</text>
+    </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [0.00,"fade","#complaint-row-4",{dur:.20}],
+   [1.66,"fade","#complaint-row-5",{dur:.22}],
+   [6.24,"pop","#diagnostic-delivery",{from:.94,spring:"soft"}],
+   [7.58,"pop","#diagnostic-collection",{from:.94,spring:"soft"}]
+  ]
+ })
+ </script>
+</section>
