@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s026" data-in="wipe" data-in-dur=".5" data-in-opts='{"from":"right"}' data-duration="11.36" data-section="PART 2 · AGREEMENT, LIMITS AND INSURANCE" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="COD customers, including retail customers, enter an agreement with the relevant postal authority">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="agreement-board">
+   <g id="customer">
+    <use href="piece:person-icon" transform="translate(248 439) scale(1.4)"/>
+    <text x="360" y="874" text-anchor="middle" font-family="Inter,sans-serif" font-size="50" font-weight="800" fill="#2b2622">Customer</text>
+   </g>
+   <g id="postal-authority">
+    <use href="piece:post-counter-icon" transform="translate(1280 355.2) scale(1.4)"/>
+    <rect x="1356" y="383" width="408" height="71" rx="14" fill="#fff" stroke="#e1cca5" stroke-width="2"/>
+    <text x="1560" y="430" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">Postal authority</text>
+   </g>
+   <g id="agreement">
+    <use href="piece:invoice-sheet" transform="translate(780 347.2) scale(1.2)"/>
+    <text x="960" y="418" text-anchor="middle" font-family="Georgia,serif" font-size="48" font-weight="800" fill="#2b2622">Agreement</text>
+    <path id="agreement-signature" d="M977 764c11-10 22-26 28-23 7 4-14 28-3 26 9-1 14-13 18-15 5-2-5 13 3 13 8 0 16-12 28-10 7 1 13 3 23-2" stroke="#315179" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle id="agreement-seal" cx="1090" cy="768" r="10" fill="#9e1b1b"/>
+   </g>
+   <g id="retail-pill">
+    <rect x="631" y="243" width="658" height="90" rx="40" fill="#e3f1e8" stroke="#b3d4bf" stroke-width="2"/>
+    <path d="M688 288l11 12 22-26" fill="none" stroke="#17634a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="751" y="306" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#17634a">Retail customer भी</text>
+   </g>
+   <g id="only-request">
+    <rect x="492" y="624" width="273" height="84" rx="17" fill="#fff" stroke="#c3b29a" stroke-width="2"/>
+    <text id="request-text" x="628.5" y="682" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="770" fill="#4b4f58">सिर्फ request</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [2.52,"fade","#postal-authority",{dur:.30}],
+   [5.14,"slide","#agreement",{from:"down",dist:72,spring:"soft"}],
+   [5.14,"draw","#agreement-signature",{dur:.55}],
+   [5.64,"pop","#agreement-seal",{spring:"soft"}],
+   [7.28,"pop","#retail-pill",{spring:"soft"}],
+   [10.18,"pop","#only-request",{spring:"soft"}]
+  ]
+ })
+ </script>
+</section>
