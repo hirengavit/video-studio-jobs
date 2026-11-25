@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s021" data-in="cut" data-duration="9.58" data-section="PART 1 · WHAT COD IS" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Delivery requires the addressee’s or an authorised person’s signature, in ink or digitally.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="heading">
+   <text x="140" y="220" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="850" fill="#9e1b1b">Signature ज़रूरी</text>
+   <path d="M140 251H577" stroke="#d6ac59" stroke-width="5" stroke-linecap="round"/>
+   <path d="M973 347V933" stroke="#e4d1a9" stroke-width="3"/>
+  </g>
+  <g id="addressee">
+   <rect x="177" y="397" width="350" height="441" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <use href="piece:person-icon" transform="translate(264 440) scale(1.10)"/>
+   <path d="M221 730H483" stroke="#ead9a8" stroke-width="2"/>
+   <text x="352" y="792" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="790" fill="#2b2622">Addressee</text>
+  </g>
+  <g id="authorised">
+   <rect x="583" y="397" width="350" height="441" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <use href="piece:person-icon" transform="translate(670 440) scale(1.10)"/>
+   <path d="M627 730H889" stroke="#ead9a8" stroke-width="2"/>
+   <text x="758" y="778" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="790" fill="#2b2622">Authorised</text>
+   <text x="758" y="824" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="760" fill="#2b2622">person</text>
+  </g>
+  <g id="either">
+   <rect x="516" y="582" width="78" height="71" rx="25" fill="#fde9a6" stroke="#e4bf64" stroke-width="2"/>
+   <text x="555" y="632" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="830" fill="#5d400e">या</text>
+  </g>
+  <g id="ink-method">
+   <g transform="translate(967 480) scale(1.20)" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 100H337L360 123V300H40Z" fill="#fff"/>
+    <path d="M337 100V123H360" fill="#f3ead6"/>
+    <path d="M64 129H153M64 151H209 M64 257H272" stroke="#b9b4ad"/>
+    <path id="ink-signature" d="M70 237C84 225 109 187 101 183C88 177 86 249 107 240C121 234 128 211 123 211C114 212 114 245 132 235L146 219Q139 241 155 236L172 224Q165 242 181 233Q194 223 206 234L231 226" stroke="#17634a" stroke-width="3.8"/>
+    <g transform="rotate(-27 272 230)">
+     <path d="M217 222H327V238H217L195 230Z" fill="#9e1b1b"/>
+     <path d="M217 222V238L195 230Z" fill="#f3ead6"/>
+     <path d="M195 230H202 M304 222V238M327 224H337V236H327 M312 218H336V229"/>
+    </g>
+   </g>
+   <text x="1207" y="924" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="800" fill="#2b2622">स्याही</text>
+  </g>
+  <g id="digital-method">
+   <rect x="1470" y="440" width="300" height="400" rx="32" fill="#fff" stroke="#2b2622" stroke-width="6"/>
+   <rect x="1490" y="471" width="260" height="329" rx="14" fill="#f8efdd" stroke="#c9a45d" stroke-width="3"/>
+   <circle cx="1620" cy="820" r="7" fill="#9e1b1b"/>
+   <path d="M1524 700H1716" stroke="#c9a45d" stroke-width="3" stroke-linecap="round"/>
+   <path id="digital-signature" d="M1530 680q58-80 72-70q13 5-11 50q-16 35 12 20q27-26 41-21q11 1 0 17q20 3 33-8t28-4" fill="none" stroke="#17634a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+   <text x="1620" y="924" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="800" fill="#2b2622">Digital</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [2.66,"pop","#authorised",{from:.95,spring:"soft"}],
+   [2.66,"fade","#either",{dur:.25}],
+   [4.04,"fade","#heading",{dur:.26}],
+   [6.14,"slide","#ink-method",{from:"down",dist:65,spring:"soft"}],
+   [6.22,"draw","#ink-signature",{dur:.46}],
+   [8.30,"pop","#digital-method",{from:.96,spring:"soft"}],
+   [8.38,"draw","#digital-signature",{dur:.42}]
+  ]
+ })
+ </script>
+</section>
