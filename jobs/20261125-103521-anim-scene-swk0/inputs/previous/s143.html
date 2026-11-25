@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s143" data-in="wipe" data-in-dur=".5" data-in-opts='{"from":"right"}' data-duration="15.08" data-section="PART 8 · RETENTION AND RETURN" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Retention means holding an undelivered item for its allowed period; demurrage is a charge for longer holding where the rules provide one">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text x="140" y="190" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="780" fill="#6f6a63">पहले दो शब्द</text>
+  <g id="retention-card">
+   <rect x="140" y="220" width="780" height="340" rx="28" fill="#9e1b1b"/>
+   <rect x="140" y="220" width="780" height="340" rx="28" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 25" stroke-linecap="round"/>
+   <text x="530" y="390" text-anchor="middle" font-family="Inter,sans-serif" font-size="96" font-weight="820" fill="#fff">Retention</text>
+   <text id="retention-hi" x="530" y="480" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="820" fill="#fde9a6">रोककर रखना</text>
+  </g>
+  <g id="retention-meaning">
+   <rect x="140" y="600" width="780" height="240" rx="28" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+   <text id="retention-line-1" x="186" y="668" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="750" fill="#2b2622">Undelivered item को</text>
+   <text id="retention-line-2" x="186" y="735" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="750" fill="#2b2622">अनुमति वाली अवधि तक</text>
+   <text id="retention-line-3" x="186" y="802" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="750" fill="#2b2622">post office में रखना</text>
+  </g>
+  <g id="demurrage-card">
+   <rect x="1000" y="220" width="780" height="340" rx="28" fill="#9e1b1b"/>
+   <rect x="1000" y="220" width="780" height="340" rx="28" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 25" stroke-linecap="round"/>
+   <text x="1390" y="390" text-anchor="middle" font-family="Inter,sans-serif" font-size="96" font-weight="820" fill="#fff">Demurrage</text>
+   <text id="demurrage-hi" x="1390" y="480" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="820" fill="#fde9a6">विलंब शुल्क</text>
+  </g>
+  <g id="demurrage-meaning">
+   <rect x="1000" y="600" width="780" height="240" rx="28" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+   <text id="demurrage-line-1" x="1046" y="668" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="750" fill="#2b2622">उससे ज़्यादा</text>
+   <text id="demurrage-line-2" x="1046" y="735" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="750" fill="#2b2622">रोकने का charge,</text>
+   <text id="demurrage-line-3" x="1046" y="802" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="750" fill="#2b2622">जहाँ नियम तय करे</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [.88,"pop","#retention-card",{spring:"soft"}],
+   [1.38,"fade","#retention-hi",{dur:.24}],
+   [2.30,"fade","#retention-meaning",{dur:.27}],
+   [8.08,"pop","#demurrage-card",{spring:"soft"}],
+   [8.58,"fade","#demurrage-hi",{dur:.24}],
+   [9.50,"fade","#demurrage-meaning",{dur:.27}],
+   [11.94,"highlight","#demurrage-line-3",{words:"जहाँ नियम तय करे",color:"#fde9a6",opacity:1,dur:.34,pad:5}]
+  ]
+ })
+ </script>
+</section>
