@@ -1,0 +1,77 @@
+<section class="vs-scene" id="s072" data-in="cut" data-duration="9.36" data-section="PART 4 · MORE BOOKING CONDITIONS AND APO" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="A parcel is refused when the label cannot be attached; a clear tied address label is the solution">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="parcel">
+  <use href="piece:cod-parcel-face" transform="translate(140 300)"/>
+  <g id="label-spaces">
+   <rect id="slot-one" x="196" y="355" width="348" height="139" rx="13" fill="#fffdf8" stroke="rgb(75,79,88)" stroke-width="6" stroke-dasharray="15 11"/>
+   <rect id="slot-two" x="196" y="715" width="348" height="131" rx="13" fill="#fffdf8" stroke="rgb(75,79,88)" stroke-width="6" stroke-dasharray="15 11"/>
+   <g stroke="#b39864" stroke-width="4" stroke-linecap="round" fill="none" aria-hidden="true">
+    <path d="M230 392v24m0-24h24M510 392h-24m24 0v24M230 459v-24m0 24h24M510 459h-24m24 0v-24"/>
+    <path d="M230 748v24m0-24h24M510 748h-24m24 0v24M230 813v-24m0 24h24M510 813h-24m24 0v-24"/>
+   </g>
+  </g>
+  <g id="label-caption">
+   <path d="M269 579v33m202-33v33M269 612h202m-101 0v25" stroke="#847568" stroke-width="4" fill="none" stroke-linecap="round"/>
+   <text x="370" y="670" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="770" fill="#5a5149">labels की जगह</text>
+  </g>
+ </g>
+ <g id="size">
+  <rect x="1200" y="359" width="580" height="138" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <circle cx="1282" cy="428" r="40" fill="#f3ead6"/>
+  <path d="M1260 403h44v50h-44zm0 13h22m-22 13h13m-13 13h22" fill="none" stroke="#6f6051" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1350" y="447" font-family="Inter,sans-serif" font-size="59" font-weight="800" fill="#2b2622">Size</text>
+ </g>
+ <g id="writing">
+  <rect x="1200" y="519" width="580" height="138" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <circle cx="1282" cy="588" r="40" fill="#f3ead6"/>
+  <path d="M1261 601l8-17 27-27 10 10-27 27-18 7zm29-36 10 10m-34 36h41" fill="none" stroke="#6f6051" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1350" y="608" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="59" font-weight="800" fill="#2b2622">लिखावट</text>
+ </g>
+ <g id="wax">
+  <rect x="1200" y="679" width="580" height="138" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <circle cx="1282" cy="748" r="40" fill="#f3ead6"/>
+  <path d="M1282 723c7 5 14 2 19 8s1 12 5 18c2 9-6 12-10 17s-12 3-17 7c-9 1-10-7-18-9-6-5 0-11-5-18-2-8 6-11 10-16 4-6 11-2 16-7Z" fill="#9e1b1b"/>
+  <circle cx="1282" cy="748" r="12" fill="none" stroke="#f3dec1" stroke-width="3"/>
+  <text x="1350" y="767" font-family="Inter,sans-serif" font-size="59" font-weight="800" fill="#2b2622">Sealing wax</text>
+ </g>
+ <g id="refused-stamp">
+  <circle cx="960" cy="379" r="130" fill="#ededef" stroke="#4b4f58" stroke-width="6"/>
+  <circle cx="960" cy="379" r="113" fill="none" stroke="#858892" stroke-width="3" stroke-dasharray="5 7"/>
+  <text x="960" y="368" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="820" fill="#4b4f58">नहीं लिया</text>
+  <text x="960" y="425" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="820" fill="#4b4f58">जाता</text>
+ </g>
+ <text id="solution-lead" x="1200" y="300" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#9e1b1b">हल:</text>
+ <text id="solution-detail" x="1305" y="300" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="800" fill="#2b2622">बड़ा, साफ़, बँधा हुआ</text>
+ <path id="tie" d="M615 542C605 658 639 750 710 815Q743 851 769 873" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round"/>
+ <g id="address-tag">
+  <use href="piece:address-label-tag" transform="translate(741 728.4) scale(1.2)"/>
+  <g id="tag-confirm">
+   <circle cx="1186" cy="907" r="39" fill="#e3f1e8" stroke="#afd7be" stroke-width="2"/>
+   <path d="M1168 908l12 12 22-25" fill="none" stroke="#17634a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.82,"stamp","#refused-stamp",{from:1.2,spring:"soft",rot:-7}],
+  [2.64,"fade","#solution-lead",{dur:.26}],
+  [4.84,"slide","#address-tag",{from:"down",dist:60,spring:"soft"}],
+  [4.84,"draw","#tie",{dur:.56}],
+  [7.00,"pop","#tag-confirm",{spring:"soft"}],
+  [7.00,"fade","#solution-detail",{dur:.27}]
+ ],
+ update(t,section,$){
+  const c=Math.max(0,Math.min(1,(t-.03)/.58));
+  const d=40*c*c*(3-2*c);
+  for(const id of ['size','writing','wax']){
+    const el=$('#'+id)[0];
+    if(el)el.setAttribute('transform','translate(0 '+d+')');
+  }
+ }
+})
+</script>
+</section>
+
