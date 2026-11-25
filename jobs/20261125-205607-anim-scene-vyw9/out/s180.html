@@ -24,7 +24,7 @@
  </g>
  <g class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="815" fill="#2b2622">
   <text x="1335" y="523">Complaint</text>
-  <text x="1335" y="591">मिलने से</text>
+  <text x="1335" y="591" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif">मिलने से</text>
  </g>
  </g>
  </g>
@@ -38,12 +38,12 @@
   <text x="1293" y="298" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="790" fill="#2b2622">Lost घोषित</text>
  </g>
  <g id="compensation-stamp">
-  <circle cx="1640" cy="303" r="130" fill="#fffdf7" stroke="#9e1b1b" stroke-width="7"/>
-  <circle cx="1640" cy="303" r="117" fill="none" stroke="#b8403a" stroke-width="3" stroke-dasharray="3 8" stroke-linecap="round"/>
-  <text x="1640" y="273" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="850" fill="#9e1b1b">10 दिन</text>
-  <text x="1640" y="345" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="810" fill="#9e1b1b">के अंदर</text>
+  <circle cx="1620" cy="320" r="150" fill="#fffdf7" stroke="#9e1b1b" stroke-width="7"/>
+  <circle cx="1620" cy="320" r="137" fill="none" stroke="#b8403a" stroke-width="3" stroke-dasharray="3 8" stroke-linecap="round"/>
+  <text x="1620" y="273" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="850" fill="#9e1b1b">10 दिन</text>
+  <text x="1620" y="329" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="810" fill="#9e1b1b">के अंदर</text>
+  <text x="1620" y="377" text-anchor="middle" textLength="230" lengthAdjust="spacingAndGlyphs" font-family="Inter,sans-serif" font-size="34" font-weight="780" fill="#9e1b1b">Compensation</text>
  </g>
- <text id="compensation-label" x="1780" y="450" dominant-baseline="hanging" text-anchor="end" font-family="Inter,sans-serif" font-size="44" font-weight="780" fill="#4b4f58">Compensation</text>
 </svg>
 <script type="text/scene">
 ({
@@ -51,8 +51,7 @@
  on:[
   [0,"fade","#complaint-condition",{dur:.27}],
   [3.60,"fade","#lost-chip",{dur:.25}],
-  [6.64,"stamp","#compensation-stamp",{from:1.06,spring:"soft",rot:-4}],
-  [6.64,"fade","#compensation-label",{dur:.22}]
+  [6.64,"stamp","#compensation-stamp",{from:1.06,spring:"soft",rot:-4}]
  ]
 })
 </script>
