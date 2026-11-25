@@ -8,12 +8,5 @@
   "12.16"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s089",
-   "text": "6,500 / ×",
-   "t": 4.92
-  }
- ]
+ "warnings": []
 }
