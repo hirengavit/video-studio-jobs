@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s006" data-in="cut" data-duration="9.46" data-section="INTRODUCTION" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The COD category determines limit, charges and procedure. The lecture has nine parts.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="category-stamp">
+   <rect x="560" y="190" width="800" height="250" rx="28" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+   <rect x="560" y="190" width="800" height="250" rx="28" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 26" stroke-linecap="round"/>
+   <text x="960" y="311" text-anchor="middle" font-family="Inter,sans-serif" font-size="96" font-weight="820" fill="#fff">COD category</text>
+   <text id="category-translation" x="960" y="392" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="650" fill="#fff">COD श्रेणी</text>
+  </g>
+  <g id="linking-lines" fill="none" stroke="#514640" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+   <path id="limit-branch" d="M960 445v63H410v92"/>
+   <path id="charges-branch" d="M960 508v92"/>
+   <path id="procedure-branch" d="M960 508h550v92"/>
+  </g>
+  <g id="limit-card">
+   <rect x="160" y="600" width="500" height="220" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <circle cx="270" cy="681" r="58" fill="#f3ead6"/>
+   <path d="M-28 12V-20M0 12V-30M28 12V-6M-37 13H37" transform="translate(270 681)" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+   <text x="351" y="697" font-family="Inter,'Noto Sans Devanagari',sans-serif" font-size="68" font-weight="790" fill="#2b2622">सीमा</text>
+  </g>
+  <g id="charges-card">
+   <rect x="710" y="600" width="500" height="220" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <circle cx="820" cy="681" r="58" fill="#f3ead6"/>
+   <path d="M-21-22H19M-21-7H19M-20-22h11a14 14 0 0 1 0 28h-10l30 24" transform="translate(820 681)" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+   <text x="901" y="697" font-family="Inter,'Noto Sans Devanagari',sans-serif" font-size="68" font-weight="790" fill="#2b2622">Charges</text>
+  </g>
+  <g id="procedure-card">
+   <rect x="1260" y="600" width="500" height="220" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <circle cx="1370" cy="681" r="58" fill="#f3ead6"/>
+   <path d="M-27-18l7 8 13-16M-27 3l7 8 13-16M-27 24l7 8 13-16M2-17h29M2 4h29M2 25h29" transform="translate(1370 681)" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+   <text x="1451" y="697" font-family="Inter,'Noto Sans Devanagari',sans-serif" font-size="68" font-weight="790" fill="#2b2622">प्रक्रिया</text>
+  </g>
+  <g id="nine-parts">
+   <circle cx="1640" cy="860" r="156.5" fill="#fbf7ee" stroke="#9e1b1b" stroke-width="7"/>
+   <circle cx="1640" cy="860" r="142" fill="none" stroke="#9e1b1b" stroke-width="2.5" stroke-dasharray="5 6"/>
+   <path d="M1558 808h164m-164 105h164" stroke="#9e1b1b" stroke-width="3" stroke-linecap="round"/>
+   <text x="1640" y="887" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="72" font-weight="680" fill="#9e1b1b"><tspan font-weight="900">9</tspan> हिस्से</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [.54,"fade","#category-translation",{dur:.25}],
+   [3.24,"draw","#limit-branch",{dur:.30}],
+   [3.54,"pop","#limit-card",{from:.95,spring:"soft"}],
+   [4.16,"draw","#charges-branch",{dur:.30}],
+   [4.46,"pop","#charges-card",{from:.95,spring:"soft"}],
+   [5.62,"draw","#procedure-branch",{dur:.30}],
+   [5.92,"pop","#procedure-card",{from:.95,spring:"soft"}],
+   [8.02,"stamp","#nine-parts",{from:1.06,spring:"soft",rot:-7}]
+  ]
+ })
+ </script>
+</section>
