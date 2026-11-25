@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 340" width="480" height="340">
+<title>cloth parcel</title>
+<g id="cloth" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M60 130 L140 70 L460 70 L380 130 Z" fill="#ffffff"/>
+<path d="M60 130 H380 V320 H60 Z" fill="#ffffff"/>
+<path d="M380 130 L460 70 V260 L380 320 Z" fill="#f1ece2"/>
+<path d="M110 176 q20 20 6 52 M310 168 q-14 30 4 60 M420 140 q12 30 0 70" fill="none" stroke="#ead9a8"/>
+</g>
+<g id="stitches" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 9">
+<path d="M72 140 H370"/>
+<path d="M220 140 V310"/>
+<path d="M156 80 H446"/>
+<path d="M390 140 L450 95"/>
+<path d="M390 140 V308"/>
+</g>
+<g id="label">
+<path d="M200 86 L318 86 L300 116 L180 116 Z" fill="#fffdf6" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<g id="seals" stroke-linecap="round">
+<circle cx="220" cy="140" r="15" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/>
+<circle cx="220" cy="140" r="8" fill="none" stroke="#7d1414" stroke-width="3"/>
+<circle cx="220" cy="238" r="15" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/>
+<circle cx="220" cy="238" r="8" fill="none" stroke="#7d1414" stroke-width="3"/>
+<circle cx="390" cy="224" r="15" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/>
+<circle cx="390" cy="224" r="8" fill="none" stroke="#7d1414" stroke-width="3"/>
+</g>
+<circle data-anchor="base" cx="240" cy="320" r="0"/>
+<circle data-anchor="top" cx="260" cy="100" r="0"/>
+</svg>
