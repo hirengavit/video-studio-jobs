@@ -8,18 +8,5 @@
   "13.05"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s163",
-   "text": "सामान्य रोक: / 7 दिन",
-   "t": 5.28
-  },
-  {
-   "kind": "text-off-frame",
-   "scene": "s163",
-   "text": "लिखित आवेदन + तय fee: विस्तार संभव",
-   "t": 7.92
-  }
- ]
+ "warnings": []
 }
