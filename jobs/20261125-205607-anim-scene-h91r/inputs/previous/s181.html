@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s181" data-in="cut" data-duration="10.83" data-section="PART 9 · COMPLAINTS AND FRAUD SAFEGUARD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Compensation periods are not COD remittance deadlines; VP enquiries need full article details">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="not" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="820">
+ <g id="period-compensation">
+  <rect x="140" y="300" width="780" height="420" rx="30" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+  <rect x="157" y="317" width="746" height="386" rx="16" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="4 9" stroke-linecap="round"/>
+  <circle cx="530" cy="441" r="52" fill="#e3f1e8"/>
+  <path d="M507 440l17 18 32-39" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="530" y="578" text-anchor="middle" font-size="66" fill="#fff">Compensation</text>
+  <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="530" y="646" text-anchor="middle" font-size="53" fill="#fff">की अवधियाँ</text>
+ </g>
+ <g id="period-remittance">
+  <rect x="1000" y="300" width="780" height="420" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+  <g id="period-cross">
+   <circle cx="1390" cy="441" r="52" fill="#e7e8ec"/>
+   <path d="M1369 420l42 42m-42 0 42-42" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="1390" y="578" text-anchor="middle" font-size="66" fill="#4b4f58">COD पैसा भेजने</text>
+  <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="1390" y="646" text-anchor="middle" font-size="53" fill="#4b4f58">की अवधि</text>
+ </g>
+</g>
+<g id="enq" font-family="'Noto Sans Devanagari',Inter,sans-serif">
+ <text class="hi" x="140" y="236" font-size="64" font-weight="830" fill="#9e1b1b">VP की पूछताछ</text>
+ <use id="vp-complaint-envelope" href="piece:domestic-envelope" transform="translate(88 340) scale(1.4)"/>
+ <g id="enquiry-row1">
+  <rect x="1180" y="326" width="600" height="108" rx="23" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+  <rect x="1180" y="350" width="7" height="60" rx="3.5" fill="#9e1b1b"/>
+  <text class="hi" x="1480" y="397" text-anchor="middle" font-size="46" font-weight="800" fill="#2b2622">हर article की पूरी details</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,"#not"],[6.35,"#enq"]],
+ on:[
+  [2.68,"fade","#period-remittance",{dur:.24}],
+  [5.48,"pop","#period-cross",{from:.88,spring:"snap"}],
+  [8.67,"slide","#enquiry-row1",{from:"left",dist:38,spring:"snap"}]
+ ]
+})
+</script>
+</section>
