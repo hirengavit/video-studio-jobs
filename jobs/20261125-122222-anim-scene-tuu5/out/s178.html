@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s178" data-in="cut" data-duration="12.63" data-section="PART 9 · COMPLAINTS AND FRAUD SAFEGUARD" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Keep any details of missing goods; compensation requires proof of booking and a written demand">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="keep">
+   <text id="keep-heading" x="140" y="220" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="830" fill="#9e1b1b">संभालकर रखिए</text>
+   <rect id="keep-card" x="140" y="320" width="1640" height="620" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <path d="M697 383v472m526-472v472" stroke="#eee4d0" stroke-width="3" stroke-linecap="round"/>
+   <g id="keep-booking">
+    <use href="piece:invoice-sheet" transform="translate(325 378) scale(.8)"/>
+    <text x="445" y="789" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="810" fill="#2b2622">Booking receipt</text>
+   </g>
+   <g id="keep-records">
+    <use href="piece:registered-list-sheet" transform="translate(864 446) scale(.6)"/>
+    <text x="960" y="789" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="810" fill="#2b2622">Delivery / payment</text>
+    <text x="960" y="842" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="810" fill="#2b2622">records</text>
+   </g>
+   <g id="keep-cover">
+    <use href="piece:sealed-insured-cover" transform="translate(1320 488) scale(.5)"/>
+    <text x="1480" y="789" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="810" fill="#2b2622">Cover, packing</text>
+   </g>
+   <text id="keep-missing-detail" x="1480" y="866" text-anchor="middle" textLength="443" lengthAdjust="spacingAndGlyphs" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="730" fill="#6f6a63">+ गायब सामान की जानकारी</text>
+  </g>
+  <g id="claim">
+   <g id="claim-stamp">
+    <rect x="140" y="240" width="760" height="220" rx="25" fill="#9e1b1b"/>
+    <rect x="164" y="260" width="712" height="180" rx="14" fill="none" stroke="#f6d487" stroke-width="4" stroke-dasharray="3 11" stroke-linecap="round"/>
+    <text x="520" y="340" text-anchor="middle" font-family="Inter,sans-serif" font-size="80" font-weight="820" fill="#fff">Compensation</text>
+    <text x="520" y="422" text-anchor="middle" font-family="Inter,sans-serif" font-size="80" font-weight="820" fill="#fff">claim</text>
+   </g>
+   <g id="claim-booking">
+    <rect x="140" y="560" width="1640" height="120" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <circle cx="225" cy="620" r="35" fill="#e3f1e8"/>
+    <path d="M208 618l12 12 23-25" fill="none" stroke="#17634a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="295" y="642" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="810" fill="#2b2622">Booking का valid सबूत</text>
+   </g>
+   <g id="claim-written">
+    <rect x="140" y="720" width="1640" height="120" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <circle cx="225" cy="780" r="35" fill="#e3f1e8"/>
+    <path d="M208 778l12 12 23-25" fill="none" stroke="#17634a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="295" y="802" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="810" fill="#2b2622">लिखित माँग</text>
+   </g>
+   <g id="claim-lost-question">
+    <rect x="140" y="887" width="1640" height="105" rx="22" fill="#eeecee"/>
+    <text x="960" y="957" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="800" fill="#4b4f58">Item lost कब माना जाता है?</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [0,"fade","#keep-missing-detail",{dur:.25}],
+   [5.62,"fade","#claim-booking",{dur:.24}],
+   [8.20,"fade","#claim-written",{dur:.24}],
+   [10.03,"reveal","#claim-lost-question",{from:"left",dur:.35,ease:"smooth"}]
+  ],
+  update(t,section,$){
+   $("#keep")[0].style.display=t<3.72?"":"none";
+   $("#claim")[0].style.display=t<3.72?"none":"";
+  }
+ })
+ </script>
+</section>
