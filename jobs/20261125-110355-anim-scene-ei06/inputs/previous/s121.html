@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s121" data-in="cut" data-duration="10.22" data-section="PART 6 · DELIVERY, COLLECTION AND POD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Exam review: collect COD at delivery; two attempts then a notice; domestic proof of delivery costs ten rupees and is free for insured items">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="exam" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="800">
+ <rect x="180" y="190" width="1560" height="760" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+ <path d="M180 242H512Q530 242 530 260V306Q530 324 512 324H180Z" fill="#9e1b1b"/>
+ <text class="hi" x="225" y="299" fill="#fff" font-size="46">परीक्षा के लिए</text>
+ <g id="cod-delivery-row">
+  <rect id="cod-delivery-band" x="232" y="356" width="1456" height="154" rx="19" fill="#fde9a6" stroke="#e7d6a7" stroke-width="2"/>
+  <text x="278" y="416" fill="#2b2622" font-size="60" font-family="Inter,sans-serif">COD delivery:</text>
+  <text id="cod-delivery-recipient" class="hi" x="278" y="484" fill="#2b2622" font-size="53">addressee या authorised person को,<tspan id="cod-delivery-collection" fill="#785300"> वसूली के साथ</tspan></text>
+ </g>
+ <g id="delivery-attempts-row">
+  <rect id="delivery-attempts-band" x="232" y="526" width="1456" height="96" rx="19" fill="#fffaf0" stroke="#e7d6a7" stroke-width="2"/>
+  <text class="hi" x="278" y="592" fill="#2b2622" font-size="60">दो प्रयास<tspan id="delivery-no-third"> · तीसरा नहीं</tspan><tspan id="delivery-notice"> · फिर notice</tspan></text>
+ </g>
+ <g id="delivery-pod-row">
+  <rect id="delivery-pod-band" x="232" y="636" width="1456" height="96" rx="19" fill="#fffaf0" stroke="#e7d6a7" stroke-width="2"/>
+  <text class="hi" x="278" y="702" fill="#2b2622" font-size="60">Domestic POD<tspan id="delivery-pod-price"> ₹10</tspan><tspan id="delivery-pod-insured"> · insured पर free</tspan></text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [1.94,"slide","#delivery-attempts-row",{from:"left",dist:40,spring:"snap"}],
+  [1.94,"fade","#delivery-attempts-row",{dur:.2}],
+  [5.78,"slide","#delivery-pod-row",{from:"left",dist:40,spring:"snap"}],
+  [5.78,"fade","#delivery-pod-row",{dur:.2}]
+ ],
+ update(t,section,$){
+  const get=id=>$(id)[0];
+  const reveal=(id,start)=>get(id).setAttribute("opacity",String(Math.max(0,Math.min(1,(t-start)/.16))));
+  reveal("#cod-delivery-collection",0);
+  reveal("#delivery-no-third",3.06);
+  reveal("#delivery-notice",4.60);
+  reveal("#delivery-pod-price",6.96);
+  reveal("#delivery-pod-insured",8.02);
+  get("#cod-delivery-band").setAttribute("fill",t<1.94?"#fde9a6":"#fffaf0");
+  get("#cod-delivery-collection").setAttribute("fill",t<1.94?"#785300":"#2b2622");
+  get("#delivery-attempts-band").setAttribute("fill",t<5.78?"#fde9a6":"#fffaf0");
+  get("#delivery-pod-band").setAttribute("fill","#fde9a6");
+ }
+})
+</script>
+</section>
