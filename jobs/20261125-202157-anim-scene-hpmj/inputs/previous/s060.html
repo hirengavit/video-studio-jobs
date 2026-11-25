@@ -1,0 +1,37 @@
+<section class="vs-scene" id="s060" data-in="cut" data-section="PART 3 · BOOKING, FORMS AND DECLARATION" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Bona fide order in the sender declaration means a genuine order received by the sender">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="decl">
+ <rect x="200" y="200" width="1520" height="700" rx="31" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+ <path d="M262 391H1658" stroke="#e1cca5" stroke-width="3"/>
+ <text id="decl-heading" x="262" y="298" font-family="Inter,sans-serif" font-size="64" font-weight="840" fill="#9e1b1b">Declaration</text>
+ <text id="decl-sender" x="262" y="366" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#6f6a63">Sender लिखकर देता है</text>
+ <path id="decl-line1-slot" d="M262 471H1658" stroke="#e9dfcd" stroke-width="3" stroke-linecap="round"/>
+ <path id="decl-line2-slot" d="M262 802H1658" stroke="#e9dfcd" stroke-width="3" stroke-linecap="round"/>
+ <text id="decl-line-one" x="262" y="452" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="800" fill="#2b2622">Item, एक bona fide order पर भेजा जा रहा है</text>
+ <g id="bona-fide-chip">
+  <rect x="260" y="560" width="740" height="160" rx="25" fill="#9e1b1b"/>
+  <path d="M285 579H975M285 701H975" fill="none" stroke="#fde9a6" stroke-width="4" stroke-dasharray="3 11" stroke-linecap="round"/>
+  <text x="630" y="632" text-anchor="middle" font-family="Inter,sans-serif" font-size="57" font-weight="840" fill="#fff">Bona fide order</text>
+  <text id="bona-fide-hindi" x="630" y="686" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="790" fill="#fde9a6">असली order</text>
+ </g>
+ <g id="bona-fide-meaning">
+  <rect x="1032" y="566" width="625" height="148" rx="24" fill="#f2eee7" stroke="#e1d5c2" stroke-width="3"/>
+  <text x="1344.5" y="633" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="770" fill="#595250">sender को मिला</text>
+  <text x="1344.5" y="683" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="820" fill="#4b4f58">असली order</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.40,"fade","#decl-line-one",{dur:.24}],
+  [1.58,"highlight","#decl-line-one",{words:"bona fide order",color:"#f2b705",opacity:.33,pad:6,dur:.34}],
+  [4.78,"pop","#bona-fide-chip",{from:.94,spring:"soft"}],
+  [5.28,"fade","#bona-fide-hindi",{dur:.25}],
+  [8.82,"fade","#bona-fide-meaning",{dur:.24}]
+ ]
+})
+</script>
+</section>
