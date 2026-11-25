@@ -18,7 +18,7 @@
     </g>
    </g>
    <g id="fact-2">
-    <rect x="140" y="680" width="1640" height="320" rx="29" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+    <rect id="fact2-bg" x="140" y="658" width="1640" height="342" rx="29" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
     <g id="fact2-badge" transform="translate(11.5 210) scale(.75)"><circle cx="238" cy="840" r="52" fill="#9e1b1b"/>
     <text x="238" y="859" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="820" fill="#fff">2</text></g>
     <text id="refusal-fact" x="260" y="730" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="830" fill="#2b2622">VP article मना / कोई लेने न आए</text>
@@ -34,8 +34,7 @@
     <g id="upper-disposed-held">
     <text id="upper-disposed" x="260" y="810" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="600" fill="#4b4f58">ऊपरी हिस्सा: नष्ट</text>
     </g>
-    <text id="lower-certificate" x="260" y="880" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="600" fill="#2b2622">निचला हिस्सा + sender का certificate</text>
-    <text id="vp-file" x="1090" y="880" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#6f6a63">→ file</text>
+    <text id="lower-certificate" x="260" y="880" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="600" fill="#2b2622">निचला हिस्सा + sender का certificate<tspan id="vp-file" x="1008" y="880" style="font-family:Inter,sans-serif;font-size:44px;font-weight:750;fill:#6f6a63" opacity="0">→ file</tspan></text>
    </g>
   </g>
   <g id="exam">
@@ -61,11 +60,12 @@
   shots:[[0,"#facts"],[1.26,"#exam"]],
   on:[
    [0,"strike","#upper-disposed",{color:"#4b4f58",width:3,dur:.001,dim:1}],
-   [0,"fade","#vp-file",{dur:.18}],
    [2.35,"fade","#exam-row-1",{dur:.22}],
    [2.35,"slide","#exam-row-1",{from:"left",dist:40,spring:"snap"}]
   ],
   update(t,section,$){
+   const k=Math.max(0,Math.min(1,t/.18));
+   $("#vp-file")[0].setAttribute("opacity",String(k*k*(3-2*k)));
    const stroke=$("#upper-disposed-held [data-vs-mark]")[0];
    if(stroke){stroke.style.opacity="1";stroke.style.strokeDashoffset="0";}
   }
