@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s122" data-in="cut" data-duration="10.55" data-section="PART 6 · DELIVERY, COLLECTION AND POD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Delivery exam recap: tampering requires the Postmaster and inventory; a booking receipt proves acceptance only">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="exam" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="800">
+ <rect x="180" y="190" width="1560" height="760" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+ <path d="M180 242H512Q530 242 530 260V306Q530 324 512 324H180Z" fill="#9e1b1b"/>
+ <text class="hi" x="225" y="299" fill="#fff" font-size="46">परीक्षा के लिए</text>
+ <g id="cod-delivery-row">
+  <rect id="cod-delivery-band" x="232" y="356" width="1456" height="154" rx="19" fill="#fffaf0" stroke="#e7d6a7" stroke-width="2"/>
+  <text x="278" y="416" fill="#2b2622" font-size="60" font-family="Inter,sans-serif">COD delivery:</text>
+  <text id="cod-delivery-recipient" class="hi" x="278" y="484" fill="#2b2622" font-size="53">addressee या authorised person को,<tspan id="cod-delivery-collection" fill="#2b2622"> वसूली के साथ</tspan></text>
+ </g>
+ <g id="delivery-attempts-row">
+  <rect id="delivery-attempts-band" x="232" y="526" width="1456" height="96" rx="19" fill="#fffaf0" stroke="#e7d6a7" stroke-width="2"/>
+  <text class="hi" x="278" y="592" fill="#2b2622" font-size="60">दो प्रयास<tspan id="delivery-no-third"> · तीसरा नहीं</tspan><tspan id="delivery-notice"> · फिर notice</tspan></text>
+ </g>
+ <g id="delivery-pod-row">
+  <rect id="delivery-pod-band" x="232" y="636" width="1456" height="96" rx="19" fill="#fde9a6" stroke="#e7d6a7" stroke-width="2"/>
+  <text class="hi" x="278" y="702" fill="#2b2622" font-size="60">Domestic POD<tspan id="delivery-pod-price"> ₹10</tspan><tspan id="delivery-pod-insured"> · insured पर free</tspan></text>
+ </g>
+ <g id="tampering-row">
+  <rect id="tampering-band" x="232" y="746" width="1456" height="96" rx="19" fill="#fde9a6" stroke="#e7d6a7" stroke-width="2"/>
+  <text x="278" y="812" class="hi" fill="#2b2622" font-size="46">छेड़छाड़ का शक:<tspan id="postmaster-rule"> Postmaster की मौजूदगी,</tspan><tspan id="inventory-rule"> inventory 2 copies</tspan></text>
+ </g>
+ <g id="receipt-row">
+  <rect x="232" y="856" width="1456" height="78" rx="19" fill="#fffaf0" stroke="#e7d6a7" stroke-width="2"/>
+  <rect id="receipt-focus" x="233" y="857" width="1454" height="76" rx="18" fill="#fde9a6"/>
+  <text x="278" y="912" class="hi" fill="#2b2622" font-size="52">Booking receipt<tspan id="receipt-limit"> = सिर्फ स्वीकार का सबूत</tspan></text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,"fade","#tampering-row",{dur:.20}],
+  [6.10,"slide","#receipt-row",{from:"left",dist:40,spring:"snap"}],
+  [7.90,"fade","#receipt-focus",{dur:.26}]
+ ],
+ update(t,section,$){
+  const linear=x=>Math.max(0,Math.min(1,x));
+  for(const [id,cue] of [["postmaster-rule",1.50],["inventory-rule",3.96],["receipt-limit",6.78]])
+   $("#"+id)[0].setAttribute("opacity",String(linear((t-cue)/.23)));
+  for(const [id,cue] of [["delivery-pod-band",0],["tampering-band",6.10]]){
+   const a=linear((t-cue)/.24);$("#"+id)[0].setAttribute("fill","rgb("+[253+Math.round(2*a),233+Math.round(17*a),166+Math.round(74*a)].join(",")+")");
+  }
+ }
+})
+</script>
+</section>
