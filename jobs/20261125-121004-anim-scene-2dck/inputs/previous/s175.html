@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s175" data-in="cut" data-duration="9.93" data-section="PART 9 · COMPLAINTS AND FRAUD SAFEGUARD" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The missing-item wait does not delay a money complaint; introduction to five complaint channels">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="remit">
+   <text id="remit-caption" x="960" y="240" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="825" fill="#9e1b1b">delivery के बाद भी</text>
+   <use id="remittance-diagram" href="piece:cod-flow-diagram" transform="translate(160 300)"/>
+   <path d="M1550 573l15 15 32-35" fill="none" stroke="#17634a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+   <g id="remit-sender">
+    <use href="piece:person-icon" transform="translate(177 438) scale(.96)"/>
+    <text x="254" y="755" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="790" fill="#2b2622">Sender</text>
+   </g>
+   <g id="remit-addressee">
+    <use href="piece:person-icon" transform="translate(1589 438) scale(.96)"/>
+    <text x="1666" y="755" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="790" fill="#2b2622">Addressee</text>
+   </g>
+   <use id="remit-parcel" href="piece:parcel-icon" transform="translate(1060 278) scale(.60)"/>
+   <use id="remit-coin" href="piece:rupee-coin" transform="translate(565 561) scale(.80)"/>
+   <g id="remit-callout">
+    <path d="M245 381v30l48-30" fill="#fff" stroke="#e1cca5" stroke-width="3" stroke-linejoin="round"/>
+    <rect x="140" y="274" width="664" height="108" rx="25" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+    <text x="472" y="344" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="810" fill="#2b2622">Remittance complaint</text>
+   </g>
+   <g id="complaint-wait-strip">
+    <rect x="210" y="872" width="1500" height="104" rx="22" fill="#eeecee"/>
+    <text id="complaint-wait-copy" x="960" y="940" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="805" fill="#4b4f58">15 दिन का इंतज़ार ≠ पैसे की शिकायत टालना</text>
+   </g>
+  </g>
+  <g id="ways">
+   <text id="ways-heading" x="140" y="220" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="830" fill="#9e1b1b">Complaint के पाँच रास्ते</text>
+   <g id="ways-count">
+    <circle cx="990" cy="198" r="50" fill="#9e1b1b"/>
+    <text x="990" y="219" text-anchor="middle" font-family="Inter,sans-serif" font-size="60" font-weight="830" fill="#fff">5</text>
+   </g>
+   <g id="ways-icon-slots" style="display:none"><use id="ways-channel-icons" href="piece:complaint-channel-icons" transform="translate(210 300)"/></g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [0,"fade","#complaint-wait-strip",{dur:.24}],
+   [4.92,"highlight","#complaint-wait-copy",{words:"≠ पैसे की शिकायत टालना",color:"#fde9a6",opacity:.86,pad:8,dur:.37}],
+   [8.31,"pop","#ways-count",{from:.92,spring:"soft"}]
+  ],
+  update(t,section,$){
+   $("#remit")[0].style.display=t<7.17?"":"none";
+   $("#ways")[0].style.display=t<7.17?"none":"";
+   const disc=$("#step-4 circle")[0];
+   if(disc)disc.setAttribute("fill","#f2b705");
+  }
+ })
+ </script>
+</section>
