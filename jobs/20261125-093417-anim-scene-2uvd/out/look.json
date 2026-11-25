@@ -8,12 +8,5 @@
   "15.25"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s084",
-   "text": "₹6,500 तक / (6,500 समेत)",
-   "t": 9.24
-  }
- ]
+ "warnings": []
 }
