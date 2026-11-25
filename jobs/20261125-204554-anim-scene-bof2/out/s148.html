@@ -39,7 +39,8 @@
     [4.08,"move","#returned-parcel",{by:[340,0],spring:"soft"}],
     [4.38,"out","#pod-clip",{dur:.15,scale:.92}],
     [4.38,"fall","#pod-retained",{onto:"#return-line",bounce:.08}],
-    [4.88,"place","#pod-retained",{on:"#return-line",x:900}],
+    // The engine keeps the 46px fall offset after landing; avoid applying it twice at place.
+    [4.88,"place","#pod-retained",{on:"#return-line",x:900,dy:-46}],
     [10.20,"fade","#pod-not-returned",{dur:.22}]
   ]
 })
