@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s156" data-in="cut" data-duration="10.56" data-section="PART 8 · RETENTION AND RETURN" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Seven-day deposit counting: unsuccessful enquiry for the registered item, first offer or arrival notice in the VP procedure">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="cmp">
+   <text id="question" x="960" y="245" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="830" fill="#2b2622">दोनों अलग नियम · दोनों सही</text>
+   <g id="left">
+    <rect x="160" y="324" width="740" height="540" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <path d="M188 324H872Q900 324 900 352V494H160V352Q160 324 188 324Z" fill="#9e1b1b"/>
+    <text id="registered-head" x="530" y="430" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="830" fill="#fff">Registered item</text>
+    <use href="piece:domestic-envelope" transform="translate(363 535) scale(.44)"/>
+    <g id="registered-fact">
+     <text id="registered-start" x="530" y="778" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="790" fill="#2b2622">पूछताछ असफल होने के बाद</text>
+     <text x="530" y="837" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">7 दिन</text>
+    </g>
+   </g>
+   <g id="right">
+    <rect x="1020" y="324" width="740" height="540" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <path d="M1048 324H1732Q1760 324 1760 352V494H1020V352Q1020 324 1048 324Z" fill="#f2b705"/>
+    <text id="vp-head" x="1390" y="430" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="830" fill="#2b2622">VP article</text>
+    <use href="piece:parcel-icon" transform="translate(1200 426) scale(.95)"/>
+    <g id="vp-fact">
+     <text id="vp-start" x="1390" y="778" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="790" fill="#2b2622">पेश करने या intimation के बाद</text>
+     <text x="1390" y="837" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">7 दिन</text>
+    </g>
+   </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,"pulse","#registered-head",{amount:.065}],
+  [1.52,"fade","#registered-fact",{dur:.24}],
+  [2.48,"highlight","#registered-start",{words:"पूछताछ असफल",color:"#f2b705",opacity:.36,dur:.36,pad:5}],
+  [6.22,"pulse","#vp-head",{amount:.075}],
+  [7.78,"fade","#vp-fact",{dur:.24}],
+  [9.66,"highlight","#vp-start",{words:"पेश करने",color:"#f2b705",opacity:.36,dur:.34,pad:5}]
+ ]
+})
+</script>
+</section>
