@@ -22,6 +22,7 @@
       <text id="fraction-amount" x="1320" y="893" text-anchor="middle" font-family="Inter,sans-serif" font-size="66" font-weight="850" fill="#424650">₹10,000.50</text>
     </g>
     <path id="fraction-cross" d="M1610 857l36 36m0-36-36 36" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+    <path id="paise-underline" d="M1404 911H1515" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
     <text id="fraction-caption" class="hi" x="1330" y="991" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="750" fill="#4b4f58">पैसे का हिस्सा</text>
   </g>
   <g id="products">
@@ -48,7 +49,7 @@
   [1.92,"pop","#fraction-amount-chip",{from:.96}],
   [3.76,"strike","#fraction-amount",{color:"#4b4f58",width:7,dur:.29,dim:.76}],
   [3.76,"draw","#fraction-cross",{dur:.23}],
-  [6.26,"underline","#fraction-amount",{words:".50",color:"#4b4f58",width:6,gap:4,dur:.25}],
+  [6.26,"draw","#paise-underline",{dur:.25}],
   [6.26,"fade","#fraction-caption",{dur:.22}],
   [10.43,"reveal","#eligible-band",{from:"left",dur:.48}]
  ]
