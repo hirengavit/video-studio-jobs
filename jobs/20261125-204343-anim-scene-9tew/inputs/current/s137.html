@@ -1,0 +1,37 @@
+<section class="vs-scene" id="s137" data-in="cut" data-duration="10.35" data-section="PART 7 · PAYMENT TO SENDER AND CHANGING THE AMOUNT" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Counter officials cannot waive or change the amount on their own; the amount collected must be sent to the sender">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="counter">
+  <text x="960" y="214" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="835" fill="#9e1b1b">Counter official</text>
+  <use href="piece:booking-counter" transform="translate(448 239) scale(1.6)"/>
+  <g id="waive"><rect x="507" y="773" width="330" height="98" rx="25" fill="#eeedf0" stroke="#89858c" stroke-width="4"/><text x="546" y="839" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="820" fill="#4b4f58">छोड़ना</text><path d="M767 809l34 34m0-34-34 34" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/></g>
+  <g id="change"><rect x="1083" y="773" width="330" height="98" rx="25" fill="#eeedf0" stroke="#89858c" stroke-width="4"/><text x="1122" y="839" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="820" fill="#4b4f58">बदलना</text><path d="M1343 809l34 34m0-34-34 34" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/></g>
+ </g>
+ <g id="exam">
+  <rect x="180" y="190" width="1560" height="795" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <g id="kicker">
+   <rect x="220" y="223" width="470" height="102" rx="21" fill="#9e1b1b"/>
+   <path d="M245 241h420m-420 66h420" fill="none" stroke="#fde9a6" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round"/>
+   <text x="455" y="295" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="820" fill="#fff">परीक्षा के लिए</text>
+  </g>
+  <path d="M224 342H1696" fill="none" stroke="#ead9a8" stroke-width="4"/>
+  <g id="exam-row-1">
+   <rect x="224" y="363" width="1472" height="111" rx="18" fill="#fbf7ee"/>
+   <circle cx="284" cy="419" r="28" fill="#f3ead6"/>
+   <text x="284" y="433" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="820" fill="#625548">1</text>
+   <text x="340" y="443" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="61" font-weight="800" fill="#2b2622">वसूली की रकम, sender को भेजनी ही है</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,"#counter"],[5.71,"#exam"]],
+ on:[
+  [2.90,"pop","#waive",{from:.96,spring:"soft"}],
+  [4.38,"pop","#change",{from:.96,spring:"soft"}],
+  [6.99,"fade","#exam-row-1",{dur:.26}]
+ ]
+})
+</script>
+</section>
