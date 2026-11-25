@@ -1,0 +1,71 @@
+<section class="vs-scene" id="s182" data-in="cut" data-duration="10.74" data-section="PART 9 · COMPLAINTS AND FRAUD SAFEGUARD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="VP enquiry fees are paid by postage stamps and refunded if the complaint is correct">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="enq" font-family="'Noto Sans Devanagari',Inter,sans-serif">
+ <text class="hi" x="140" y="236" font-size="64" font-weight="830" fill="#9e1b1b">VP की पूछताछ</text>
+ <use id="vp-complaint-envelope" href="piece:domestic-envelope" transform="translate(88 340) scale(1.4)"/>
+ <g id="enquiry-row1">
+  <rect x="1180" y="326" width="600" height="108" rx="23" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+  <rect x="1180" y="350" width="7" height="60" rx="3.5" fill="#9e1b1b"/>
+  <text class="hi" x="1480" y="397" text-anchor="middle" font-size="48" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="800" fill="#2b2622">हर article की पूरी details</text>
+ </g>
+< <g id="expanded-frank">
+  <rect x="703" y="442" width="290" height="193" fill="#fff"/>
+  <rect x="576" y="446" width="414" height="182" rx="8" fill="none" stroke="#6f6a63" stroke-width="2.4" stroke-dasharray="12 9.6" stroke-linecap="round" opacity=".55"/>
+ </g>
+ <g id="postage-1" transform="translate(610 459) scale(1.325)">
+  <rect width="83" height="116" rx="6" fill="#f2ded8" stroke="#9e1b1b" stroke-width="3"/>
+  <path d="M9 9h65v98H9z" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-dasharray="2 7" stroke-linecap="round"/>
+  <rect x="23" y="35" width="37" height="26" rx="4" fill="none" stroke="#9e1b1b" stroke-width="3"/>
+  <path d="M24 37l17.5 13L59 37m-31 46h27" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+ <g id="postage-2" transform="translate(732 459) scale(1.325)">
+  <rect width="83" height="116" rx="6" fill="#f2ded8" stroke="#9e1b1b" stroke-width="3"/>
+  <path d="M9 9h65v98H9z" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-dasharray="2 7" stroke-linecap="round"/>
+  <rect x="23" y="35" width="37" height="26" rx="4" fill="none" stroke="#9e1b1b" stroke-width="3"/>
+  <path d="M24 37l17.5 13L59 37m-31 46h27" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+ <g id="postage-3" transform="translate(854 459) scale(1.325)">
+  <rect width="83" height="116" rx="6" fill="#f2ded8" stroke="#9e1b1b" stroke-width="3"/>
+  <path d="M9 9h65v98H9z" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-dasharray="2 7" stroke-linecap="round"/>
+  <rect x="23" y="35" width="37" height="26" rx="4" fill="none" stroke="#9e1b1b" stroke-width="3"/>
+  <path d="M24 37l17.5 13L59 37m-31 46h27" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+ <g id="enquiry-row2">
+  <rect x="1080" y="486" width="720" height="128" rx="23" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+  <rect x="1080" y="520" width="7" height="60" rx="3.5" fill="#9e1b1b"/>
+  <text x="1440" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="800" fill="#2b2622"><tspan x="1440" y="538">हर article की</tspan><tspan x="1440" y="592">तय enquiry fee</tspan></text>
+ </g>
+ <g id="enquiry-row3">
+  <rect x="1080" y="646" width="720" height="128" rx="23" fill="#e3f1e8" stroke="#afd7be" stroke-width="3"/>
+  <path d="M1110 708l11 12 24-28" fill="none" stroke="#17634a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1465" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="830" fill="#2e7d4f"><tspan x="1465" y="698">Complaint सही</tspan><tspan x="1465" y="753">→ fee वापस</tspan></text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,"fade","#enquiry-row2",{dur:.27}],
+  [5.02,"pop","#postage-1",{from:.96,spring:"soft"}],
+  [5.17,"pop","#postage-2",{from:.96,spring:"soft"}],
+  [5.32,"pop","#postage-3",{from:.96,spring:"soft"}],
+  [7.62,"fade","#enquiry-row3",{dur:.26}]
+ ],
+ update(t,section,$){
+  const u=Math.min(1,Math.max(0,t/.42)), k=u*u*(3-2*u);
+  $("#vp-complaint-envelope")[0].setAttribute("transform","translate("+(88+16*k)+" "+(340+80*k)+") scale("+(1.4-.2*k)+")");
+  $("#expanded-frank")[0].style.opacity=String(Math.min(1,Math.max(0,(t-.42)/.18)));
+  for(const id of ["#enquiry-row1","#enquiry-row2"]){
+   const row=$(id)[0], boxes=row.querySelectorAll("rect"), label=row.querySelector("text");
+   boxes[0].setAttribute("x",String(1180-100*k));
+   boxes[0].setAttribute("width",String(600+120*k));
+   boxes[1].setAttribute("x",String(1180-100*k));
+   label.setAttribute("x",String(1480-40*k));
+   for(const part of label.querySelectorAll("tspan"))part.setAttribute("x",String(1480-40*k));
+  }
+ }
+})
+</script>
+</section>
