@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s207" data-in="fade" data-in-dur="0.6" data-duration="9.44" data-section="RECAP" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The amount written at the counter is the same amount collected at the door">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="close-counter">
+ <use href="piece:booking-counter" transform="translate(128 306) scale(1.1)"/>
+ <rect x="396" y="633" width="168" height="82" rx="12" fill="#fff" stroke="#2b2622" stroke-width="3"/>
+ <text id="close-slip-amount" x="480" y="693" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="820" fill="#2b2622">₹</text>
+</g>
+<g id="close-door">
+ <rect x="1260" y="200" width="360" height="560" rx="26" fill="#ead9b8" stroke="#2b2622" stroke-width="6"/>
+ <rect x="1283" y="227" width="314" height="525" rx="18" fill="#f3ead6" stroke="#947554" stroke-width="4"/>
+ <rect x="1314" y="264" width="251" height="200" rx="13" fill="#fff4db" stroke="#947554" stroke-width="4"/>
+ <rect x="1314" y="505" width="251" height="198" rx="13" fill="#f9efda" stroke="#947554" stroke-width="4"/>
+ <circle cx="1566" cy="487" r="10" fill="#9e1b1b"/>
+ <path d="M1227 757h426" stroke="#2b2622" stroke-width="6" stroke-linecap="round"/>
+ <use href="piece:parcel-icon" transform="translate(1240 571) scale(.6)"/>
+</g>
+<g id="close-coin">
+ <use href="piece:rupee-coin" transform="translate(1497 651) scale(.7)"/>
+ <text x="1539" y="708" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="830" fill="#2b2622">₹</text>
+</g>
+<path id="close-match-line" d="M480 800H1440" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round"/>
+<g id="close-match-chips" font-family="Inter,sans-serif" font-size="43" font-weight="830" text-anchor="middle" fill="#2b2622">
+ <rect x="435" y="771" width="90" height="58" rx="29" fill="#fde9a6" stroke="#947554" stroke-width="3"/>
+ <rect x="1395" y="771" width="90" height="58" rx="29" fill="#fde9a6" stroke="#947554" stroke-width="3"/>
+ <text x="480" y="815">₹</text><text x="1440" y="815">₹</text>
+</g>
+<g id="close-verdict">
+ <rect x="160" y="860" width="1600" height="120" rx="26" fill="#9e1b1b"/>
+ <rect x="177" y="875" width="1566" height="90" rx="17" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="4 10" stroke-linecap="round"/>
+ <text class="hi" x="960" y="943" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="830" fill="#fff">यही COD पर भरोसा बनाता है</text>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}],[9.44,{zoom:1.04},"inOut"]],
+ on:[
+  [1.72,"underline","#close-slip-amount",{color:"#9e1b1b",width:5,dur:.37}],
+  [2.70,"fade","#close-door",{dur:.31}],
+  [5.40,"pop","#close-coin",{from:.92,spring:"soft"}],
+  [5.40,"draw","#close-match-line",{dur:.52}],
+  [5.40,"fade","#close-match-chips",{dur:.30}],
+  [8.08,"reveal","#close-verdict",{from:"up",dur:.32}]
+ ]
+})
+</script>
+</section>
