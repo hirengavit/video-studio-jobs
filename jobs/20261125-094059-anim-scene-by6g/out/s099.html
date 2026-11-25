@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s099" data-in="cut" data-duration="7.66" data-section="PART 5 · COD FEE" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Exam angle: both COD fee brackets and two worked results">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="cod-exam-card" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="800">
+  <rect x="180" y="190" width="1560" height="760" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+  <path d="M180 242H512Q530 242 530 260V306Q530 324 512 324H180Z" fill="#9e1b1b"/>
+  <text class="hi" x="225" y="299" fill="#fff" font-size="46">परीक्षा के लिए</text>
+  <g id="cod-exam-fee">
+    <rect id="cod-exam-band1" x="232" y="356" width="1456" height="94" rx="19" fill="#fffbf0" stroke="#e7d6a7" stroke-width="2"/>
+    <text class="hi" x="278" y="423" fill="#2b2622" font-size="60">COD fee: <tspan id="cod-exam-postage">postage के ऊपर</tspan></text>
+  </g>
+  <g id="cod-exam-low">
+    <rect id="cod-exam-band2" x="232" y="466" width="1456" height="94" rx="19" fill="#fffbf0" stroke="#e7d6a7" stroke-width="2"/>
+    <text class="hi" x="278" y="533" fill="#2b2622" font-size="60">₹6,500 तक: <tspan id="cod-exam-percent" fill="#7d1616">1.6%</tspan></text>
+  </g>
+  <g id="cod-exam-high">
+    <rect id="cod-exam-band3" x="232" y="576" width="1456" height="94" rx="19" fill="#fde9a6" stroke="#e7d6a7" stroke-width="2"/>
+    <text class="hi" x="278" y="643" fill="#2b2622" font-size="60">ऊपर: <tspan id="cod-exam-fixed" fill="#7d1616">₹100</tspan><tspan id="cod-exam-excess"> + बढ़ी हुई रकम का</tspan><tspan id="cod-exam-extra" fill="#7d1616"> 1%</tspan></text>
+  </g>
+  <g id="cod-example-4">
+   <rect x="232" y="686" width="1456" height="94" rx="19" fill="#fbf7ee" stroke="#e7d6a7" stroke-width="2"/>
+   <text x="278" y="753" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" fill="#2b2622">₹5,000</text>
+   <g id="cod-result-4">
+    <path d="M708 733h107m-26-17 26 17-26 17" fill="none" stroke="#7a6550" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="865" y="696" width="346" height="74" rx="27" fill="#e2f1e4" stroke="#a1caae" stroke-width="2"/>
+    <text x="1038" y="750" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" font-weight="850" fill="#17634a">₹80</text>
+   </g>
+  </g>
+  <g id="cod-example-5">
+   <rect x="232" y="796" width="1456" height="94" rx="19" fill="#fbf7ee" stroke="#e7d6a7" stroke-width="2"/>
+   <text x="278" y="863" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" fill="#2b2622">₹20,000</text>
+   <g id="cod-result-5">
+    <path d="M708 843h107m-26-17 26 17-26 17" fill="none" stroke="#7a6550" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="865" y="806" width="346" height="74" rx="27" fill="#e2f1e4" stroke="#a1caae" stroke-width="2"/>
+    <text x="1038" y="860" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" font-weight="850" fill="#17634a">₹235</text>
+   </g>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [1.22,"fade","#cod-example-4",{dur:.22}],
+  [2.10,"pop","#cod-result-4",{from:.96,spring:"soft"}],
+  [4.32,"fade","#cod-example-5",{dur:.22}],
+  [5.34,"pop","#cod-result-5",{from:.96,spring:"soft"}]
+ ],
+ update(t,section,$){$("#cod-exam-extra")[0].setAttribute("opacity",String(Math.min(1,Math.max(0,t/.19))));}
+})
+</script>
+</section>
