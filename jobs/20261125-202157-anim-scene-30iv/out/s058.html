@@ -3,7 +3,8 @@
 <rect width="1920" height="1080" fill="#fbf7ee"/>
 <g id="face">
  <use id="cod-parcel" href="piece:cod-parcel-face" transform="translate(278 150) scale(1.42)"/>
- <rect id="zone-cod" x="335" y="207" width="539" height="241" rx="12" fill="#fde9a6" fill-opacity=".40" stroke="#d6ac59" stroke-width="3" opacity="0"/>
+ <rect id="cod-white-box" x="335" y="207" width="539" height="241" rx="12" fill="#fff" stroke="#2b2622" stroke-width="4"/>
+ <rect id="scene-cod-focus" x="335" y="207" width="539" height="241" rx="12" fill="#fde9a6" fill-opacity=".40" stroke="#d6ac59" stroke-width="3" opacity="0"/>
  <rect id="zone-sender" x="335" y="718" width="539" height="227" rx="12" fill="none" stroke="none"/>
  <text id="cod-retail" x="374" y="269" font-family="Inter,sans-serif" font-weight="700" font-size="56" fill="#2b2622">COD retail</text>
  <text id="cod-amount" x="374" y="345" font-family="Inter,sans-serif" font-weight="700" font-size="56" fill="#2b2622">₹____</text>
@@ -40,7 +41,7 @@
 <script type="text/scene">
 ({
  shots:[[0,"#face"],[7.84,"#mo"]],
- camera:[[0,{on:"#zone-cod",zoom:1.6}],[.8,{on:"#zone-sender",zoom:1.6},"inOut"],[7.839,{on:"#zone-sender",zoom:1.6}],[7.84,{zoom:1}]],
+ camera:[[0,{on:"#scene-cod-focus",zoom:1.6}],[.8,{on:"#zone-sender",zoom:1.6},"inOut"],[7.839,{on:"#zone-sender",zoom:1.6}],[7.84,{zoom:1}]],
  on:[
    [0,"draw","#sender-border",{dur:.43}],
    [1.72,"type","#sender-full",{cps:20}],
