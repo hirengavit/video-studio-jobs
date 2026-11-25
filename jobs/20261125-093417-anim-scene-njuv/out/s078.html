@@ -1,0 +1,36 @@
+<section class="vs-scene" id="s078" data-in="cut" data-duration="11.19" data-section="PART 4 · MORE BOOKING CONDITIONS AND APO" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Defence personnel address format: service number, rank, name, unit, care of 56 APO or 99 APO">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="addr">
+   <use href="piece:address-envelope" transform="translate(320 200) scale(2)"/>
+   <text id="addr-heading" class="hi" x="380" y="320" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="820" fill="#9e1b1b">Defence personnel का पता</text>
+   <g id="addr-fields" font-family="Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">
+    <text id="addr-number" x="902" y="630">Service number</text>
+    <text id="addr-rank" x="1320" y="630">· Rank</text>
+    <text id="addr-name" x="902" y="714">Name</text>
+    <text id="addr-unit" x="902" y="798">Unit</text>
+    <text id="addr-care" x="902" y="882">C/o</text>
+    <text id="addr-56" x="1014" y="882">56 APO</text>
+    <text id="addr-slash" x="1233" y="882">/</text>
+    <text id="addr-99" x="1288" y="882">99 APO</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [3.43,"type","#addr-number",{cps:32}],
+   [4.43,"type","#addr-rank",{cps:30}],
+   [4.97,"type","#addr-name",{cps:28}],
+   [5.53,"type","#addr-unit",{cps:28}],
+   [6.61,"type","#addr-care",{cps:24}],
+   [7.25,"fade","#addr-56",{dur:.08}],
+   [7.25,"highlight","#addr-56",{color:"#fde9a6",opacity:1,dur:.32,pad:8}],
+   [9.21,"fade","#addr-slash",{dur:.12}],
+   [9.91,"fade","#addr-99",{dur:.08}],
+   [9.91,"highlight","#addr-99",{color:"#fde9a6",opacity:1,dur:.32,pad:8}]
+  ]
+ })
+ </script>
+</section>
