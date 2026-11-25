@@ -7,8 +7,8 @@
    <rect x="232" y="268" width="8" height="42" rx="4" fill="#9e1b1b"/>
    <text id="quote-source" x="263" y="301" font-family="Inter,sans-serif" font-size="35" font-weight="790" fill="#7d1616">Based on Post Office Regulations 2024 · Reg. 135</text>
    <g id="pinned-quote-highlights" fill="#fde9a6">
-    <rect x="795" y="359" width="519" height="74" rx="3"/>
-    <rect x="226" y="512" width="916" height="73" rx="3"/>
+    <rect id="previous-mark-one" x="795" y="359" width="519" height="74" rx="4"/>
+    <rect id="previous-mark-three" x="226" y="512" width="916" height="73" rx="4"/>
    </g>
    <g id="definition" font-family="Georgia,serif" font-size="52" fill="#2b2622">
     <text id="definition-one" style="font-family:Georgia,Times,serif;font-size:52px" x="232" y="414">Cash on delivery (COD) is a value-added postal service</text>
@@ -58,7 +58,28 @@
    [5.05,"fade","#sender-hi",{dur:.23}],
    [6.15,"fade","#sender-meaning",{dur:.26}],
    [9.35,"fade","#sender-chooses",{dur:.27}]
-  ]
+  ],
+  update(t,section,$) {
+   if(t >= 3.41) return;
+   for (const [from, dest, phrase] of [
+    ["#definition-one","#previous-mark-one","value-added postal service"],
+    ["#definition-three","#previous-mark-three","collects a specified amount from the addressee"]
+   ]) {
+    const el=$(from)[0], mark=$(dest)[0];
+    if (!el || !mark || !el.getExtentOfChar) continue;
+    const width=el.getComputedTextLength(), i=el.textContent.indexOf(phrase);
+    if (i<0 || !width || mark.getAttribute("data-measured-width")===String(width)) continue;
+    let x0=Infinity,y0=Infinity,x1=-Infinity,y1=-Infinity;
+    for (let k=i;k<i+phrase.length;k++) {
+     const b=el.getExtentOfChar(k);
+     x0=Math.min(x0,b.x); y0=Math.min(y0,b.y); x1=Math.max(x1,b.x+b.width); y1=Math.max(y1,b.y+b.height);
+    }
+    if (!Number.isFinite(x0)) continue;
+    mark.setAttribute("x",x0-6); mark.setAttribute("y",y0-3);
+    mark.setAttribute("width",x1-x0+12); mark.setAttribute("height",y1-y0+6);
+    mark.setAttribute("data-measured-width",String(width));
+   }
+  }
  })
  </script>
 </section>
