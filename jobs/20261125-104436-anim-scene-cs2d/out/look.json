@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "1.74",
+  "3.48",
+  "5.23",
+  "6.97",
+  "8.56"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s080",
+   "message": "slide: option \"dur\" isn't used (it takes: from, dist, spring)",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s080",
+   "message": "a card is mostly empty at 3.5 s: bring its items in sooner, or size it for what it holds now",
+   "t": 3.48
+  }
+ ]
+}
