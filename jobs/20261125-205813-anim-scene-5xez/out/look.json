@@ -8,12 +8,5 @@
   "4.55"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s191",
-   "text": "निचला हिस्सा + sender का certificate / → file",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
