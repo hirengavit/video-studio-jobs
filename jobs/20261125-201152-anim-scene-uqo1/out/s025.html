@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s025" data-in="cut" data-duration="5.43" data-section="PART 1 · WHAT COD IS" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="COD does not automatically insure an item">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="myth">
+  <rect x="240" y="260" width="1440" height="240" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <rect x="305" y="291" width="220" height="67" rx="24" fill="#ecebed"/>
+  <text x="415" y="338" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="820" fill="#4b4f58">विकल्प</text>
+  <rect id="insure-highlight" x="790" y="382" width="218" height="75" rx="13" fill="#fde9a6"/>
+  <text id="myth-line" x="310" y="440" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="68" font-weight="810" fill="#242429">COD से सामान<tspan id="insure-word" dx="20" font-family="Inter,sans-serif" font-weight="820">insure</tspan><tspan dx="20">हो जाता है</tspan></text>
+  <g id="wrong">
+   <circle cx="1542" cy="415" r="52" fill="#eeedf0" stroke="#83858c" stroke-width="3"/>
+   <path d="M1524 397l36 36m0-36-36 36" stroke="#4b4f58" stroke-width="8" fill="none" stroke-linecap="round"/>
+  </g>
+ </g>
+ <g id="fact">
+  <rect x="240" y="560" width="1440" height="240" rx="29" fill="#fff" stroke="#afd7be" stroke-width="4"/>
+  <text x="306" y="666" font-family="Inter,sans-serif" font-size="85" font-weight="840" fill="#2b2622">COD ≠ insurance</text>
+  <rect x="304" y="700" width="638" height="74" rx="20" fill="#fde9a6"/>
+  <text x="333" y="752" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="820" fill="#62430e">insurance अलग से</text>
+  <g id="correct-postmark">
+   <circle cx="1518" cy="680" r="87" fill="#e3f1e8" stroke="#2e7d4f" stroke-width="5"/>
+   <circle cx="1518" cy="680" r="70" fill="none" stroke="#2e7d4f" stroke-width="3" stroke-dasharray="4 9"/>
+   <text x="1518" y="703" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="59" font-weight="850" fill="#17634a">सही</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [2.60,"fade","#insure-highlight",{dur:.24}],
+  [3.50,"strike","#myth-line",{dur:.25,color:"#858b94",width:7,dim:.72}],
+  [3.50,"pop","#wrong",{from:.92,spring:"snap"}],
+  [3.90,"fade","#fact",{dur:.40}],
+  [4.40,"stamp","#correct-postmark",{from:1.14,rot:-5,spring:"snap"}]
+ ],
+ update(t,section,$){
+  const word=$("#insure-word")[0], highlight=$("#insure-highlight")[0];
+  if(!word || !highlight) return;
+  const box=word.getBBox();
+  if(!box.width) return;
+  highlight.setAttribute("x",box.x-9);
+  highlight.setAttribute("width",box.width+18);
+ }
+})
+</script>
+</section>
