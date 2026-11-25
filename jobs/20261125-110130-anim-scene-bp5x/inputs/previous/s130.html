@@ -1,0 +1,65 @@
+<section class="vs-scene" id="s130" data-in="cut" data-duration="9.00" data-section="PART 7 · PAYMENT TO SENDER AND CHANGING THE AMOUNT" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Identify the COD category before the method; remittance is linked to the delivered item.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="verdict">
+   <g id="epayment-statement">
+    <rect x="140" y="240" width="1640" height="200" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect x="198" y="286" width="12" height="108" rx="6" fill="#9e1b1b"/>
+    <text x="255" y="362" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="810" fill="#2b2622">“COD का पैसा ePayment से जाता है”</text>
+   </g>
+   <g id="contractual">
+    <rect x="140" y="520" width="760" height="380" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="520" y="655" text-anchor="middle" font-family="Inter,sans-serif" font-size="66" font-weight="850" fill="#9e1b1b">Contractual COD</text>
+    <path d="M220 702h600" stroke="#ead9a8" stroke-width="3"/>
+    <g id="contractual-verdict">
+     <rect x="308" y="748" width="424" height="99" rx="25" fill="#e2f1e4"/>
+     <path d="M379 795l14 15 27-31" stroke="#17634a" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+     <text x="555" y="818" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="830" fill="#17634a">सही</text>
+    </g>
+   </g>
+   <g id="retail">
+    <rect x="1020" y="520" width="760" height="380" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="1400" y="655" text-anchor="middle" font-family="Inter,sans-serif" font-size="66" font-weight="850" fill="#9e1b1b">COD Retail</text>
+    <path d="M1100 702h600" stroke="#ead9a8" stroke-width="3"/>
+    <g id="retail-verdict">
+     <rect x="1188" y="748" width="424" height="99" rx="25" fill="#eeecee"/>
+     <path d="M1264 782l28 28m0-28-28 28" stroke="#4b4f58" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+     <text x="1435" y="818" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="830" fill="#4b4f58">हर बार नहीं</text>
+    </g>
+   </g>
+   <g id="category-before-method">
+    <rect x="140" y="920" width="1640" height="80" rx="22" fill="#eeecee"/>
+    <text x="960" y="980" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="790" fill="#4b4f58">पहले category, फिर तरीका</text>
+   </g>
+  </g>
+  <g id="link">
+   <path id="remittance-link" d="M597 506H1180" fill="none" stroke="#2b2622" stroke-width="7" stroke-linecap="round"/>
+   <g id="delivered-item">
+    <use href="piece:parcel-icon" transform="translate(60 179.8) scale(1.8)"/>
+    <circle cx="598" cy="466" r="49" fill="#e3f1e8" stroke="#fbf7ee" stroke-width="6"/>
+    <path d="M577 468l14 14 28-31" stroke="#2e7d4f" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="420" y="778" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="815" fill="#2b2622">Delivered item</text>
+   </g>
+   <g id="remittance-card">
+    <rect x="1180" y="320" width="640" height="374" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <circle cx="1500" cy="471" r="102" fill="#f7f0e0"/>
+    <use href="piece:rupee-coin" transform="translate(1460 402) scale(1.06)"/>
+    <text x="1523.6" y="490" text-anchor="middle" font-family="Inter,sans-serif" font-size="68" font-weight="815" fill="#9e1b1b">₹</text>
+    <path d="M1461 467h-88m20-18-20 18 20 18" fill="none" stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1260 587H1740" fill="none" stroke="#ead9a8" stroke-width="3"/>
+    <text x="1500" y="649" text-anchor="middle" font-family="Inter,sans-serif" font-size="60" font-weight="815" fill="#2b2622">Remittance</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  shots:[[0,"#verdict"],[3.64,"#link"]],
+  on:[
+   [.02,"reveal","#category-before-method",{from:"left",dur:.31}],
+   [6.48,"fade","#delivered-item",{dur:.26}],
+   [7.86,"draw","#remittance-link",{dur:.37}]
+  ]
+ })
+ </script>
+</section>
