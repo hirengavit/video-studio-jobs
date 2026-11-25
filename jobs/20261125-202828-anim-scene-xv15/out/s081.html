@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s081" data-in="cut" data-duration="12.03" data-section="PART 4 · MORE BOOKING CONDITIONS AND APO" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Exam recap: D offices, bulk VP, and the APO destination restriction">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="exam">
+  <rect x="180" y="190" width="1560" height="760" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <rect x="180" y="233" width="375" height="104" rx="13" fill="#9e1b1b"/>
+  <path d="M191 252v67" stroke="#f4cda9" opacity=".75" stroke-width="3" stroke-dasharray="5 7"/>
+  <text x="228" y="303" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#fff">परीक्षा के लिए</text>
+  <g id="row1">
+   <rect x="248" y="378" width="1424" height="116" rx="18" fill="#fbf7ee"/>
+   <rect x="270" y="394" width="143" height="84" rx="15" fill="#9e1b1b"/>
+   <text x="341.5" y="455" text-anchor="middle" font-family="Inter,sans-serif" font-size="60" font-weight="820" fill="#fff">"D"</text>
+   <rect id="row1-held-band" x="680" y="394" width="704" height="90" rx="5" fill="#fdebbb"/>
+   <text id="row1-rule" x="444" y="457" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="770" fill="#2b2622">offices: money order का काम नहीं</text>
+  </g>
+  <g id="row2-wrap">
+   <g id="row2">
+    <rect id="row2-band" x="248" y="535" width="1424" height="136" rx="18" fill="#fde9a6"/>
+    <text x="284" y="585" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="770" fill="#2b2622">Bulk VP: रोज़ ≥ 10 uninsured articles</text>
+    <text id="no-extra" x="284" y="653" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="790" fill="#5d400e">· बिना extra charge</text>
+   </g>
+  </g>
+  <g id="row3-wrap">
+   <g id="row3">
+    <rect x="248" y="692" width="1424" height="116" rx="18" fill="#fde9a6"/>
+    <text x="284" y="766" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="770" fill="#2b2622">APO पता: VP articles और money orders नहीं</text>
+   </g>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,"fade","#row2-wrap",{dur:.20}],
+  [0,"slide","#row2",{from:"left",dist:40,spring:"soft"}],
+  [5.50,"fade","#no-extra",{dur:.24}],
+  [7.48,"fade","#row3-wrap",{dur:.20}],
+  [7.48,"slide","#row3",{from:"left",dist:40,spring:"soft"}]
+ ],
+ update(t,section,$){
+  $("#row1-held-band")[0].setAttribute("opacity",String(Math.max(0,1-t/.23)));
+  $("#row2-band")[0].setAttribute("fill",t<7.48 ? "#fde9a6" : "#fbf7ee");
+ }
+})
+</script>
+</section>
