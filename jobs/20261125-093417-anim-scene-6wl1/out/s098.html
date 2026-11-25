@@ -23,9 +23,9 @@
 ({
  camera:[[0,{zoom:1}]],
  on:[
-  [1.24,"slide","#cod-exam-fee",{from:"left",dist:40,dur:.20}],
-  [4.18,"slide","#cod-exam-low",{from:"left",dist:40,dur:.20}],
-  [7.92,"slide","#cod-exam-high",{from:"left",dist:40,dur:.20}]
+  [1.24,"slide","#cod-exam-fee",{from:"left",dist:40,spring:"snap"}],
+  [4.18,"slide","#cod-exam-low",{from:"left",dist:40,spring:"snap"}],
+  [7.92,"slide","#cod-exam-high",{from:"left",dist:40,spring:"snap"}]
  ],
  update(t, section, $){
   const clamp=x=>Math.max(0,Math.min(1,x));
