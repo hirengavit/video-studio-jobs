@@ -1,0 +1,65 @@
+<section class="vs-scene" id="s125" data-in="cut" data-duration="13.58" data-section="PART 7 · PAYMENT TO SENDER AND CHANGING THE AMOUNT" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Delivery, collection and remittance are separate events">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="cod-flow">
+   <use href="piece:cod-flow-diagram" transform="translate(160 300)"/>
+   <g id="sender">
+    <use href="piece:person-icon" transform="translate(170 502)"/>
+    <text x="250" y="825" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">Sender</text>
+    <text x="250" y="882" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="650" fill="#6f6a63">प्रेषक</text>
+   </g>
+   <g id="addressee">
+    <use href="piece:person-icon" transform="translate(1590 502)"/>
+    <text x="1670" y="825" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">Addressee</text>
+    <text x="1670" y="882" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="650" fill="#6f6a63">प्राप्तकर्ता</text>
+   </g>
+   <use id="delivered-parcel" href="piece:parcel-icon" transform="translate(1360 229.2) scale(.8)"/>
+   <g id="remittance-coin" transform="translate(-1080 0)">
+    <use href="piece:rupee-coin" transform="translate(1360.8 582.8) scale(.52)"/>
+    <text x="1392" y="629" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="800" fill="#9e1b1b">₹</text>
+   </g>
+   <g id="accounts-bag">
+    <use href="piece:cash-bag" transform="translate(1308 687.2) scale(.8)"/>
+    <text x="1380" y="921" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">हिसाब</text>
+   </g>
+   <text id="remittance-method" x="960" y="806" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="700" fill="#6f6a63">booking के लागू तरीके से</text>
+   <g id="delivery-chip">
+    <path d="M960 417v10" stroke="#9e1b1b" stroke-width="4"/>
+    <rect x="817" y="344" width="286" height="74" rx="20" fill="#f9e9ba" stroke="#e1c36f" stroke-width="3"/>
+    <text x="960" y="398" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="780" fill="#2b2622">Delivery</text>
+   </g>
+   <g id="collection-chip">
+    <path d="M1403 580h15" stroke="#9e1b1b" stroke-width="4"/>
+    <rect x="1180" y="543" width="224" height="74" rx="20" fill="#f9e9ba" stroke="#e1c36f" stroke-width="3"/>
+    <text x="1292" y="597" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="780" fill="#2b2622">वसूली</text>
+   </g>
+   <g id="sender-chip">
+    <path d="M960 633v15" stroke="#9e1b1b" stroke-width="4"/>
+    <rect x="790" y="560" width="340" height="74" rx="20" fill="#f9e9ba" stroke="#e1c36f" stroke-width="3"/>
+    <text x="960" y="614" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="780" fill="#2b2622">Sender तक</text>
+   </g>
+   <g id="delay-complaint" transform="translate(0 -48)">
+    <path d="M113 355Q113 332 136 332H543Q566 332 566 355V427Q566 450 543 450H293L250 485V450H136Q113 450 113 427Z" fill="#fff" stroke="#9e1b1b" stroke-width="4" stroke-linejoin="round"/>
+    <text x="339" y="409" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="780" fill="#2b2622">देरी की complaint</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [2.56,"fade","#delivery-chip",{dur:.20}],
+   [4.80,"fade","#collection-chip",{dur:.20}],
+   [7.34,"fade","#sender-chip",{dur:.20}],
+   [13.20,"pop","#delay-complaint",{from:.96,spring:"snap"}]
+  ],
+  update(t,section,$) {
+   const current=t<.10 ? 4 : t<2.56 ? 0 : t<4.80 ? 2 : t<7.34 ? 3 : 4;
+   for(const n of [2,3,4]) for(const g of $('#step-'+n)) {
+    const node=g.querySelector("circle");
+    if(node) node.setAttribute("fill",n===current ? "#f2b705" : "#ffffff");
+   }
+  }
+ })
+ </script>
+</section>
