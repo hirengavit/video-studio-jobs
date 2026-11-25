@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s195" data-in="cut" data-section="PART 9 · COMPLAINTS AND FRAUD SAFEGUARD" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Delivery, collection, remittance and compensation have separate records and conditions">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="four">
+   <text id="four-heading" x="140" y="223" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="830" fill="#9e1b1b">चार अलग घटनाएँ</text>
+   <use id="four-diagram" href="piece:cod-flow-diagram" transform="translate(160 300)"/>
+   <g id="sender">
+    <use href="piece:person-icon" transform="translate(170 502)"/>
+    <text x="250" y="825" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">Sender</text>
+    <text x="250" y="882" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="650" fill="#6f6a63">प्रेषक</text>
+   </g>
+   <g id="addressee">
+    <use href="piece:person-icon" transform="translate(1590 502)"/>
+    <text x="1670" y="825" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">Addressee</text>
+    <text x="1670" y="882" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="650" fill="#6f6a63">प्राप्तकर्ता</text>
+   </g>
+   <use id="delivered-parcel" href="piece:parcel-icon" transform="translate(1360 229.2) scale(.8)"/>
+   <g id="four-delivery">
+    <rect x="808" y="326" width="304" height="74" rx="21" fill="#fde9a6" stroke="#e1bb58" stroke-width="3"/>
+    <text x="960" y="377" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="800" fill="#2b2622">Delivery</text>
+   </g>
+   <g id="four-collection">
+    <rect x="1192" y="510" width="215" height="74" rx="21" fill="#fde9a6" stroke="#e1bb58" stroke-width="3"/>
+    <text x="1299.5" y="562" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="810" fill="#2b2622">वसूली</text>
+   </g>
+   <g id="four-remittance">
+    <rect x="778" y="754" width="364" height="72" rx="20" fill="#fde9a6" stroke="#e1bb58" stroke-width="3"/>
+    <text x="960" y="805" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="800" fill="#2b2622">Remittance</text>
+   </g>
+   <g id="four-compensation">
+    <rect x="632" y="876" width="656" height="118" rx="26" fill="#eeedf0" stroke="#89858c" stroke-width="3"/>
+    <path d="M655 890h610m-610 91h610" stroke="#a8a3a9" stroke-width="3" stroke-dasharray="3 11" stroke-linecap="round"/>
+    <use href="piece:scales-icon" transform="translate(660 851) scale(.4)"/>
+    <text x="1007" y="951" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="800" fill="#4b4f58">Compensation</text>
+   </g>
+
+   <defs><filter id="record-grey"><feColorMatrix type="saturate" values="0"/></filter></defs>
+   <g id="record-delivery" filter="url(#record-grey)" opacity=".90"><use href="piece:invoice-sheet" transform="translate(1142 313) scale(.25)"/></g>
+   <g id="record-collection" filter="url(#record-grey)" opacity=".90"><use href="piece:invoice-sheet" transform="translate(1087 497) scale(.25)"/></g>
+   <g id="record-remittance" filter="url(#record-grey)" opacity=".90"><use href="piece:invoice-sheet" transform="translate(1172 740) scale(.25)"/></g>
+   <g id="record-compensation" filter="url(#record-grey)" opacity=".90"><use href="piece:invoice-sheet" transform="translate(1318 885) scale(.25)"/></g>
+   <text id="record-caption" x="140" y="286" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="740" fill="#625b55">अपने records और शर्तों के साथ</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [0,"pop","#record-delivery",{from:.94,spring:"soft"}],
+   [.15,"pop","#record-collection",{from:.94,spring:"soft"}],
+   [.30,"pop","#record-remittance",{from:.94,spring:"soft"}],
+   [.45,"pop","#record-compensation",{from:.94,spring:"soft"}],
+   [.78,"fade","#record-caption",{dur:.22}]
+  ],
+  update(t,section,$){
+   for(const n of [2,3,4]){const dot=$("#step-"+n+" circle")[0];if(dot)dot.style.fill="#f2b705";}
+  }
+ })
+ </script>
+</section>
