@@ -1,0 +1,78 @@
+<section class="vs-scene" id="s045" data-in="cut" data-duration="9.78" data-section="PART 2 · AGREEMENT, LIMITS AND INSURANCE" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="COD agreement and per-item recovery limits">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="exam-card">
+  <rect x="180" y="190" width="1560" height="795" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <g id="kicker">
+   <rect x="220" y="223" width="470" height="102" rx="21" fill="#9e1b1b"/>
+   <path d="M245 241h420m-420 66h420" fill="none" stroke="#fde9a6" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round"/>
+   <text x="455" y="295" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="820" fill="#fff">परीक्षा के लिए</text>
+  </g>
+  <path d="M224 342H1696" fill="none" stroke="#ead9a8" stroke-width="4"/>
+  <g id="exam-row-1">
+   <rect x="224" y="363" width="1472" height="100" rx="18" fill="#fbf7ee"/>
+   <circle cx="284" cy="413" r="28" fill="#f3ead6"/>
+   <text x="284" y="427" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="820" fill="#625548">1</text>
+   <text x="340" y="435" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="800" fill="#2b2622">Agreement ज़रूरी: retail हो या contractual</text>
+  </g>
+  <g id="exam-row-2">
+   <rect x="224" y="480" width="1472" height="100" rx="18" fill="#fbf7ee"/>
+   <circle cx="284" cy="530" r="28" fill="#f3ead6"/>
+   <text x="284" y="544" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="820" fill="#625548">2</text>
+   <text x="340" y="551" font-family="Inter,sans-serif" font-size="59" font-weight="800" fill="#2b2622">Parcel · Retail COD</text>
+   <g id="retail-amount"><rect x="1090" y="493" width="318" height="74" rx="20" fill="#fde9a6"/><text x="1249" y="550" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="850" fill="#62430e">₹10,000</text></g>
+   <text id="retail-unit" x="1435" y="548" font-family="Inter,sans-serif" font-size="46" font-weight="660" fill="#5d554e">/ item</text>
+  </g>
+  <g id="exam-row-3">
+   <rect x="224" y="597" width="1472" height="100" rx="18" fill="#fbf7ee"/>
+   <circle cx="284" cy="647" r="28" fill="#f3ead6"/>
+   <text x="284" y="661" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="820" fill="#625548">3</text>
+   <text x="340" y="668" font-family="Inter,sans-serif" font-size="59" font-weight="800" fill="#2b2622">Contractual COD</text>
+   <g id="contract-amount"><rect x="1090" y="610" width="318" height="74" rx="20" fill="#fde9a6"/><text x="1249" y="667" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="850" fill="#62430e">₹50,000</text></g>
+   <text id="contract-unit" x="1435" y="665" font-family="Inter,sans-serif" font-size="46" font-weight="660" fill="#5d554e">/ item</text>
+  </g>
+  <g id="exam-row-4">
+   <rect x="224" y="714" width="1472" height="100" rx="18" fill="#fbf7ee"/>
+   <circle cx="284" cy="764" r="28" fill="#f3ead6"/>
+   <text x="284" y="778" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="820" fill="#625548">4</text>
+   <text x="340" y="785" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="800" fill="#2b2622">Contractual: पूरे रुपये</text>
+  </g>
+  <g id="exam-row-5">
+   <rect id="row5-bg" x="224" y="783" width="1472" height="150" rx="18" fill="#fbf7ee"/>
+   <circle cx="284" cy="858" r="28" fill="#f3ead6"/>
+   <text x="284" y="872" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="820" fill="#625548">5</text>
+   <text x="340" y="839" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="800" fill="#2b2622">Insurance optional (सिर्फ COD से)</text>
+   <text id="prohibited" x="340" y="907" font-family="Inter,sans-serif" font-size="56" font-weight="800" fill="#4b4f58">Prohibited = prohibited</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,"fade","#exam-row-4",{dur:.30}],
+  [3.98,"fade","#exam-row-5",{dur:.28}],
+  [6.24,"fade","#prohibited",{dur:.26}],
+  [6.24,"color","#row5-bg",{to:"#fde9a6",dur:.30}]
+ ],
+ update(t,section,$) {
+  const x=Math.max(0,Math.min(1,t/.48));
+  const q=x*x*(3-2*x);
+  const rgb=(a,b)=>'rgb('+a.map((v,i)=>Math.round(v+(b[i]-v)*q)).join(',')+')';
+  for(let i=1;i<=4;i++){
+    const row=$("#exam-row-"+i)[0];
+    if(!row)continue;
+    row.setAttribute("transform","translate(0 "+(-12*(i-1)*q)+")");
+    row.firstElementChild.setAttribute("height",100-6*q);
+    if(i===4)continue;
+    for(const el of row.querySelectorAll("text")){
+      const h=el.dataset.startFill||(el.dataset.startFill=el.getAttribute("fill"));
+      const v=[1,3,5].map(j=>parseInt(h.slice(j,j+2),16));
+      el.setAttribute("fill",rgb(v,[111,106,99]));
+    }
+    for(const el of row.querySelectorAll("g rect"))el.setAttribute("opacity",1-q);
+  }
+ }
+})
+</script>
+</section>
