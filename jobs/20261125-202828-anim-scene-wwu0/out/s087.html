@@ -26,17 +26,21 @@
 <script type="text/scene">
 ({
   on:[
-    [3.13,"type","#example-title",{cps:22}],
-    [4.63,"type","#example-amount",{cps:22}],
     [6.01,"pop","#first-slab-chip",{from:.94}],
     [6.01,"color","#first-slab-bg",{to:"#fde9a6",dur:.06}],
-    [6.01,"color","#first-slab-rule",{to:"#67231a",dur:.06}],
-    [7.81,"type","#calc-amount",{cps:14}],
-    [8.23,"type","#calc-times",{cps:14}],
-    [9.03,"type","#calc-rate",{cps:14}],
-    [10.19,"type","#calc-divide",{cps:14}],
-    [11.13,"type","#calc-hundred",{cps:14}]
-  ]
+    [6.01,"color","#first-slab-rule",{to:"#67231a",dur:.06}]
+  ],
+  update(t, section, $) {
+    const cues=[
+      ["example-title",3.13,22,"पहला हिसाब ·"],["example-amount",4.63,22,"₹5,000"],
+      ["calc-amount",7.81,14,"5,000"],["calc-times",8.23,14,"×"],["calc-rate",9.03,14,"1.6"],["calc-divide",10.19,14,"÷"],["calc-hundred",11.13,14,"100"]
+    ];
+    const segmenter=new Intl.Segmenter("hi",{granularity:"grapheme"});
+    for (const [id,start,cps,label] of cues) {
+      const parts=Array.from(segmenter.segment(label),p=>p.segment);
+      $("#"+id)[0].textContent= t<start ? "" : parts.slice(0,Math.floor((t-start)*cps)+1).join("");
+    }
+  }
 })
 </script>
 </section>
