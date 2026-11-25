@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s113" data-duration="9.04" data-in="cut" data-section="PART 6 · DELIVERY, COLLECTION AND POD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Three papers: booking receipt, receiver's receipt and separately requested proof of delivery">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="papers">
+   <text id="papers-title" x="140" y="250" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="68" font-weight="820" fill="#9e1b1b">तीन कागज़</text>
+   <path d="M140 275h215" stroke="#d8bb79" stroke-width="5" stroke-linecap="round"/>
+   <g id="paper-1">
+    <rect x="140" y="330" width="500" height="570" rx="31" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <circle cx="200" cy="390" r="33" fill="#9e1b1b"/>
+    <text x="200" y="404" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="820" fill="#fff">1</text>
+    <rect x="248" y="385" width="284" height="330" rx="25" fill="#f7f0e0"/>
+    <use href="piece:invoice-sheet" transform="translate(286.5 408) scale(.69)"/>
+    <text x="390" y="788" text-anchor="middle" font-family="Inter,sans-serif" font-size="50" font-weight="810" fill="#2b2622">Booking receipt</text>
+    <text id="booking-detail" x="390" y="855" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="720" fill="#6f6a63">item स्वीकार हुआ</text>
+   </g>
+   <g id="paper-2">
+    <rect x="710" y="330" width="500" height="570" rx="31" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <circle cx="770" cy="390" r="33" fill="#9e1b1b"/>
+    <text x="770" y="404" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="820" fill="#fff">2</text>
+    <rect x="818" y="385" width="284" height="330" rx="25" fill="#f7f0e0"/>
+    <use href="piece:signature-slip" transform="translate(816 407) scale(.72)"/>
+    <text x="960" y="788" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="810" fill="#2b2622">लेने वाले की receipt</text>
+    <text id="receiver-detail" x="960" y="855" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="720" fill="#6f6a63">delivery दर्ज</text>
+   </g>
+   <g id="paper-3">
+    <rect x="1280" y="330" width="500" height="570" rx="31" fill="#ffefb8" stroke="#d8bb79" stroke-width="3" filter="url(#vs-shadow)"/>
+    <circle cx="1340" cy="390" r="33" fill="#9e1b1b"/>
+    <text x="1340" y="404" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="820" fill="#fff">3</text>
+    <rect x="1388" y="385" width="284" height="292" rx="25" fill="#fae29b"/>
+    <g id="pod-document" transform="translate(1444 421)">
+      <rect width="172" height="224" rx="13" fill="#fff9eb" stroke="#2b2622" stroke-width="4"/>
+      <path d="M27 49h118M27 75h118M27 101h75M27 127h53" fill="none" stroke="#d5bb86" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="119" cy="165" r="33" fill="#f7e2a3" stroke="#9e1b1b" stroke-width="4"/>
+      <path d="m103 164 11 11 20-23" fill="none" stroke="#9e1b1b" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text x="1530" y="738" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="850" fill="#9e1b1b">POD</text>
+    <text x="1530" y="794" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="780" fill="#2b2622">Proof of Delivery</text>
+    <text id="pod-detail" x="1530" y="855" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="750" fill="#2b2622">sender को सबूत</text>
+   </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,"fade","#paper-2",{dur:.22}],
+  [1.68,"fade","#receiver-detail",{dur:.20}],
+  [5.12,"fade","#paper-3",{dur:.24}],
+  [6.98,"fade","#pod-detail",{dur:.19}],
+  [7.18,"highlight","#pod-detail",{color:"#ffd54a",opacity:.72,pad:9,dur:.38}]
+ ]
+})
+</script>
+</section>
