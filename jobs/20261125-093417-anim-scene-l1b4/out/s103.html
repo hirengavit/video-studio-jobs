@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s103" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}' data-section="PART 6 · DELIVERY, COLLECTION AND POD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="COD delivery and collection happen together">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text id="delivery-heading" x="960" y="220" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="850" fill="#9e1b1b">Delivery + वसूली, एक साथ</text>
+  <use id="cod-flow" href="piece:cod-flow-diagram" transform="translate(160 300)"/>
+  <use id="delivery-parcel" href="piece:parcel-icon" transform="translate(1400 295) scale(.60)"/>
+  <g id="sender">
+    <use href="piece:person-icon" transform="translate(191 545) scale(.85)"/>
+    <text x="259" y="827" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="850" fill="#2b2622">Sender</text>
+  </g>
+  <g id="addressee">
+    <g id="addressee-icon">
+      <use href="piece:person-icon" transform="translate(1500 623) scale(.8)"/>
+    </g>
+    <text x="1564" y="885" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="850" fill="#2b2622" textLength="184" lengthAdjust="spacingAndGlyphs">Addressee</text>
+  </g>
+  <g id="authorised-person">
+    <use href="piece:person-icon" transform="translate(1680 623) scale(.8)"/>
+    <text x="1744" y="885" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="850" fill="#2b2622" textLength="156" lengthAdjust="spacingAndGlyphs">Authorised</text>
+    <text x="1744" y="934" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="850" fill="#2b2622">person</text>
+  </g>
+  <g id="collection-coin">
+    <use href="piece:rupee-coin" transform="translate(1512 533) scale(.77)"/>
+    <text x="1558" y="596" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="850" fill="#2b2622">₹</text>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  on:[
+    [1.42,"pulse","#addressee-icon",{scale:1.06,dur:.40}],
+    [3.00,"fade","#authorised-person",{dur:.28}],
+    [5.92,"color","#step-3 circle",{to:"#f2b705",dur:.25}],
+    [5.92,"fade","#delivery-heading",{dur:.30}],
+    [8.06,"pop","#collection-coin",{from:.87}]
+  ]
+})
+</script>
+</section>
