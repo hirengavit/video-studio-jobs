@@ -1,0 +1,28 @@
+<section class="vs-scene" id="s057" data-in="cut" data-duration="10.32" data-section="PART 3 · BOOKING, FORMS AND DECLARATION" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Write COD retail and the amount in words and figures in the upper-left corner of the parcel">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="face">
+ <use id="cod-parcel" href="piece:cod-parcel-face" transform="translate(278 150) scale(1.42)"/>
+ <rect id="cod-white-box" x="335" y="207" width="539" height="241" rx="12" fill="#fff" stroke="#2b2622" stroke-width="4"/>
+ <rect id="scene-cod-focus" x="335" y="207" width="539" height="241" rx="12" fill="#fde9a6" fill-opacity=".40" stroke="#d6ac59" stroke-width="3" opacity="0"/>
+ <rect id="zone-sender" x="335" y="718" width="539" height="227" rx="12" fill="none" stroke="none"/>
+ <text id="cod-retail" x="374" y="269" font-family="Inter,sans-serif" font-weight="700" font-size="56" fill="#2b2622">COD retail</text>
+ <text id="cod-amount" x="374" y="345" font-family="Inter,sans-serif" font-weight="700" font-size="56" fill="#2b2622">₹____</text>
+ <rect id="cod-words-band" x="362" y="365" width="474" height="62" rx="12" fill="#fde9a6"/>
+ <text id="cod-words" class="hi" x="374" y="413" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="760" font-size="44" fill="#6f6a63">(शब्दों और अंकों में)</text>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:.96}],[2.08,{zoom:.96}],[3.02,{on:"#scene-cod-focus",zoom:1.6},"inOut"]],
+ on:[
+  [2.10,"pulse","#scene-cod-focus",{amount:.035}],
+  [4.12,"type","#cod-retail",{cps:23}],
+  [6.34,"type","#cod-amount",{cps:21}],
+  [7.26,"fade","#cod-words-band",{dur:.22}],
+  [7.26,"fade","#cod-words",{dur:.25}]
+ ],
+ update(t,section,$){const z=$("#scene-cod-focus")[0];const u=(t-2.10)/.62;if(z)z.setAttribute("opacity",u>0&&u<1?String(.74*Math.sin(Math.PI*u)):"0");}
+})
+</script>
+</section>
