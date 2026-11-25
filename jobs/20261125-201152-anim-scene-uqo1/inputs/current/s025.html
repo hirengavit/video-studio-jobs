@@ -1,0 +1,39 @@
+<section class="vs-scene" id="s025" data-in="cut" data-duration="5.43" data-section="PART 1 · WHAT COD IS" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="COD does not automatically insure an item">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="myth">
+  <rect x="170" y="221" width="1580" height="335" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <rect x="228" y="263" width="243" height="76" rx="27" fill="#ecebed"/>
+  <text x="349.5" y="314" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="820" fill="#4b4f58">विकल्प</text>
+  <rect id="insure-highlight" x="722" y="411" width="218" height="80" rx="16" fill="#fde9a6"/>
+  <text x="241" y="470" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="68" font-weight="810" fill="#242429">COD से सामान</text>
+  <text x="831" y="470" text-anchor="middle" font-family="Inter,sans-serif" font-size="68" font-weight="820" fill="#242429">insure</text>
+  <text x="987" y="470" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="68" font-weight="810" fill="#242429">हो जाता है</text>
+  <path id="myth-strike" d="M227 445H1309" stroke="#858b94" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <g id="wrong">
+   <circle cx="1555" cy="446" r="67" fill="#eeedf0" stroke="#83858c" stroke-width="3"/>
+   <path d="M1534 425l42 42m0-42-42 42" stroke="#4b4f58" stroke-width="9" fill="none" stroke-linecap="round"/>
+  </g>
+ </g>
+ <g id="fact">
+  <rect x="170" y="574" width="1580" height="386" rx="29" fill="#fff" stroke="#afd7be" stroke-width="4"/>
+  <text x="238" y="719" font-family="Inter,sans-serif" font-size="93" font-weight="840" fill="#2b2622">COD ≠ insurance</text>
+  <rect x="234" y="774" width="711" height="115" rx="24" fill="#fde9a6"/>
+  <text x="272" y="854" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="71" font-weight="820" fill="#62430e">insurance अलग से</text>
+  <circle cx="1514" cy="766" r="109" fill="#e3f1e8" stroke="#2e7d4f" stroke-width="5"/>
+  <circle cx="1514" cy="766" r="89" fill="none" stroke="#2e7d4f" stroke-width="3" stroke-dasharray="4 9"/>
+  <text x="1514" y="789" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="850" fill="#17634a">सही</text>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [2.60,"fade","#insure-highlight",{dur:.24}],
+  [4.46,"draw","#myth-strike",{dur:.26}],
+  [4.46,"pop","#wrong",{from:.92,spring:"soft"}],
+  [4.86,"fade","#fact",{dur:.21}]
+ ]
+})
+</script>
+</section>
