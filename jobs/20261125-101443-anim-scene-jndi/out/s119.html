@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s119" data-in="cut" data-duration="9.47" data-section="PART 6 · DELIVERY, COLLECTION AND POD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Signed inventory copy and unsigned POD go to the sender; identification and suspected tampering conditions">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="inventory">
+  <rect x="267" y="174" width="591" height="83" rx="22" fill="#f3ead6"/>
+  <text x="562" y="231" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="825" fill="#9e1b1b">Inventory · 2 copies</text>
+  <use href="piece:inventory-sheet" transform="translate(290 270) scale(1.5)"/>
+  <path id="copy-edge" d="M825 320V946H358" fill="none" stroke="#daae43" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="350" y="351" font-family="Inter,sans-serif" font-size="51" font-weight="820" fill="#2b2622">Inventory</text>
+  <text x="350" y="426" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="32" font-weight="720" fill="#62564d">क्र.</text>
+  <text x="433" y="426" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="720" fill="#62564d">विवरण</text>
+  <g id="sig-label">
+   <rect x="326" y="808" width="199" height="74" rx="17" fill="#fff3ca"/>
+   <text x="426" y="856" text-anchor="middle" font-family="Inter,sans-serif" font-size="34" font-weight="820" fill="#60440d">Addressee</text>
+  </g>
+  <path id="signed-main" d="M554 854c26-41 47-58 60-40 12 17-29 40-21 47 13 9 39-44 58-37 15 5-11 31 2 34 14 3 24-17 35-18 12 0 3 15 18 13l19-6" fill="none" stroke="#17634a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+ <g id="signed-copy">
+  <defs><clipPath id="signed-copy-face-clip"><rect x="1170" y="661" width="209" height="274"/></clipPath></defs>
+  <g clip-path="url(#signed-copy-face-clip)"><use href="piece:inventory-sheet" transform="translate(1169 661) scale(.63)"/></g>
+  <text x="1218" y="702" font-family="Inter,sans-serif" font-size="28" font-weight="830" fill="#2b2622">Inventory</text>
+  <path transform="translate(0 9)" d="M1284 903c12-17 23-24 28-17 4 6-12 15-8 17 5 4 13-18 22-15 6 2-5 13 0 14s11-7 15-7 2 5 9 4" fill="none" stroke="#17634a" stroke-width="3" stroke-linecap="round"/>
+  <rect x="1107" y="934" width="350" height="66" rx="24" fill="#e3f1e8" stroke="#afd7be" stroke-width="2"/>
+  <text x="1282" y="979" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="810" fill="#17634a">Signed copy</text>
+ </g>
+ <g id="unsigned-pod">
+  <rect x="1122" y="432" width="335" height="184" rx="23" fill="#fff" stroke="#d8c9b5" stroke-width="4"/>
+  <text x="1289.5" y="506" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="845" fill="#2b2622">POD</text>
+  <path d="M1171 529h237" stroke="#ded5ca" stroke-width="3" stroke-linecap="round"/>
+  <text x="1289.5" y="579" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="760" fill="#5a5149">बिना signature</text>
+ </g>
+ <g id="sender-route" fill="none" stroke="#17634a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M1465 526h28v229m-77 0h158m-16-14 16 14-16 14"/>
+ </g>
+ <g id="sender">
+  <use href="piece:person-icon" transform="translate(1613 597) scale(1.08)"/>
+  <rect x="1568" y="895" width="256" height="88" rx="25" fill="#fff" stroke="#aed8bd" stroke-width="3"/>
+  <text x="1696" y="954" text-anchor="middle" font-family="Inter,sans-serif" font-size="53" font-weight="820" fill="#2b2622">Sender</text>
+ </g>
+ <g id="identity">
+  <rect x="917" y="279" width="861" height="126" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <use href="piece:id-card-icon" transform="translate(925 263) scale(.43)"/>
+  <text x="1116" y="330" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="815" fill="#2b2622">पहचान ज़रूरी</text>
+  <text id="delivery-id" x="1116" y="382" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="37" font-weight="715" fill="#665a4d">delivery office की माँगी पहचान</text>
+ </g>
+ <g id="tamper-only">
+  <rect x="904" y="174" width="894" height="83" rx="23" fill="#fde9a6"/>
+  <text x="1351" y="231" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="840" fill="#62430e">सिर्फ छेड़छाड़ के शक में</text>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,"draw","#sender-route",{dur:.33}],
+  [0,"fade","#sender",{dur:.28}],
+  [1.38,"pop","#identity",{from:.96,spring:"soft"}],
+  [2.72,"fade","#delivery-id",{dur:.26}],
+  [6.73,"fade","#tamper-only",{dur:.28}]
+ ]
+})
+</script>
+</section>
