@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s180" data-in="cut" data-duration="9.32" data-section="PART 9 · COMPLAINTS AND FRAUD SAFEGUARD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="If the complaint was made in time, compensation is given within ten days after the item is declared lost.">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <text id="condition-main" x="140" y="233" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="63" font-weight="830" fill="#9e1b1b">Final delivery status नहीं, तो</text>
+ <text id="two-dates" x="143" y="305" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#64594f">दो तारीखें</text>
+ <g id="booking">
+ <rect x="140" y="345" width="760" height="380" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+ <use href="piece:calendar-sheet" transform="translate(199 406) scale(.8)"/>
+ <g id="booking-days">
+  <text x="303" y="550" text-anchor="middle" font-family="Inter,sans-serif" font-size="78" font-weight="850" fill="#9e1b1b">60</text>
+  <text x="303" y="603" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="775" fill="#5b5047">दिन</text>
+ </g>
+ <text x="455" y="548" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="815" fill="#2b2622">Booking से</text>
+ </g>
+ <g id="complaint">
+ <rect x="1020" y="345" width="760" height="380" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+ <use href="piece:calendar-sheet" transform="translate(1079 406) scale(.8)"/>
+ <g id="complaint-days">
+  <text x="1183" y="550" text-anchor="middle" font-family="Inter,sans-serif" font-size="78" font-weight="850" fill="#9e1b1b">30</text>
+  <text x="1183" y="603" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="775" fill="#5b5047">दिन</text>
+ </g>
+ <text x="1335" y="548" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="815" fill="#2b2622">Complaint मिलने से</text>
+ </g>
+ <g id="later-band">
+  <rect x="140" y="806" width="1640" height="116" rx="30" fill="#fde9a6" stroke="#e1ba5e" stroke-width="3"/>
+  <text x="960" y="884" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="65" font-weight="850" fill="#62430e">जो बाद में आए</text>
+ </g>
+ <text id="complaint-condition" x="960" y="978" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="770" fill="#615a52">शर्त: complaint तय समय में</text>
+ <g id="lost-chip">
+  <rect x="1176" y="247" width="310" height="71" rx="23" fill="#f1ece6" stroke="#ded5cd" stroke-width="2"/>
+  <text x="1331" y="295" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="790" fill="#4b4f58">Lost घोषित</text>
+ </g>
+ <g id="compensation-stamp">
+  <circle cx="1640" cy="303" r="130" fill="#fffdf7" stroke="#9e1b1b" stroke-width="7"/>
+  <circle cx="1640" cy="303" r="117" fill="none" stroke="#b8403a" stroke-width="3" stroke-dasharray="3 8" stroke-linecap="round"/>
+  <text x="1640" y="260" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="850" fill="#9e1b1b">10 दिन</text>
+  <text x="1640" y="322" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="39" font-weight="810" fill="#9e1b1b">के अंदर</text>
+  <text x="1640" y="376" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="800" fill="#9e1b1b">Compensation</text>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,"fade","#complaint-condition",{dur:.27}],
+  [3.60,"fade","#lost-chip",{dur:.25}],
+  [6.64,"stamp","#compensation-stamp",{from:1.06,spring:"soft",rot:-4}]
+ ]
+})
+</script>
+</section>
