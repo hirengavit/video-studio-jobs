@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s035" data-in="cut" data-duration="12.12" data-section="PART 2 · AGREEMENT, LIMITS AND INSURANCE" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="COD eligibility includes India Post Parcel, Speed Post and, from 1 August 2026, India Post Parcel Last Mile.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="products">
+    <circle cx="960" cy="229" r="7" fill="#2b2622"/>
+    <path d="M960 229V282" stroke="#2b2622" stroke-width="6" stroke-linecap="round"/>
+    <path d="M773 270H1147L1180 303V418L1147 450H773L740 418V303Z" fill="#9e1b1b" stroke="#791515" stroke-width="4"/>
+    <circle cx="960" cy="285" r="10" fill="#fbf7ee"/>
+    <text x="960" y="396" text-anchor="middle" font-family="Inter,sans-serif" font-size="96" font-weight="860" fill="#fff">COD</text>
+    <g id="eligible-band">
+      <rect x="230" y="503" width="1460" height="115" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <text x="960" y="580" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="790" fill="#2b2622">eligible postal products के साथ सुविधा</text>
+    </g>
+
+    <g id="product-slots">
+    <g id="product-bay-1">
+     <g id="product-card-1">
+      <rect x="300" y="640" width="520" height="260" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <g transform="translate(560 0)"><use href="piece:parcel-icon" transform="translate(-143 589) scale(.715)"/></g>
+      <text x="560" y="856" text-anchor="middle" font-family="Inter,sans-serif" font-size="51" font-weight="830" fill="#2b2622">India Post Parcel</text>
+     </g>
+    </g>
+    <g id="product-bay-2">
+     <g id="product-card-2">
+      <rect x="1100" y="640" width="520" height="260" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <g transform="translate(1360 0)"><use href="piece:parcel-icon" transform="translate(-108 589) scale(.715)"/><path d="M-133 701h65m-92 30h92m-72 30h72" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/></g>
+      <text x="1360" y="856" text-anchor="middle" font-family="Inter,sans-serif" font-size="51" font-weight="830" fill="#2b2622">Speed Post</text>
+     </g>
+    </g>
+    </g>
+    <text id="own-terms" x="960" y="976" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="47" font-weight="780" fill="#6f6a63">अपनी शर्तों पर</text>
+    <g id="last-mile-date">
+     <use href="piece:calendar-sheet" transform="translate(1550 217) scale(.76)"/>
+     <text x="1648.8" y="276" text-anchor="middle" font-family="Inter,sans-serif" font-size="29" font-weight="850" fill="#fff">AUG 2026</text>
+     <text x="1648.8" y="391" text-anchor="middle" font-family="Inter,sans-serif" font-size="81" font-weight="860" fill="#9e1b1b">1</text>
+    </g>
+    <g id="last-mile">
+     <rect x="1300" y="640" width="480" height="260" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+     <use href="piece:parcel-icon" transform="translate(1420 585) scale(.6)"/>
+     <text x="1540" y="807" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="700" fill="#2b2622">India Post Parcel</text>
+     <text x="1540" y="866" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="860" fill="#9e1b1b">Last Mile</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.46,"pop","#product-card-1",{from:.95,spring:"soft"}],
+  [2.70,"pop","#product-card-2",{from:.95,spring:"soft"}],
+  [4.80,"fade","#own-terms",{dur:.24}],
+  [6.52,"pop","#last-mile-date",{from:.96,spring:"soft"}],
+  [10.12,"pop","#last-mile",{from:.95,spring:"soft"}]
+ ],
+ update(t,section,$){
+  const u=Math.max(0,Math.min(1,(t-9.23)/.74)),a=u*u*(3-2*u);
+  for(const [i,dx] of [[1,-160],[2,-380]])$("#product-bay-"+i)[0].setAttribute("transform","translate("+dx*a+" 0)");
+  $("#own-terms")[0].setAttribute("x",960-320*a);
+ }
+})
+</script>
+</section>
