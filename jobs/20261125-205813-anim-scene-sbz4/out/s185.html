@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s185" data-in="cut" data-duration="10.11" data-section="PART 9 · COMPLAINTS AND FRAUD SAFEGUARD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The Head of the Circle can stop payment pending inquiry; proven fraud can lead to returning the article.">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="hoc">
+ <g id="circle-office">
+  <use href="piece:icon-circle-office" transform="translate(220 393) scale(1.2)"/>
+  <rect x="140" y="800" width="760" height="190" rx="27" fill="#9e1b1b"/>
+  <rect x="155" y="815" width="730" height="160" rx="18" fill="none" stroke="#fde9a6" stroke-width="4" stroke-dasharray="3 8" stroke-linecap="round"/>
+  <text x="520" y="888" text-anchor="middle" font-family="Inter,sans-serif" font-size="60" font-weight="850" fill="#fff">Head of the Circle</text>
+  <text id="hoc-hindi" x="520" y="950" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="810" fill="#fff5d9">डाक परिमंडल प्रमुख</text>
+ </g>
+ <g id="prima-facie">
+  <use id="hoc-scales" href="piece:scales-icon" transform="translate(1100 248) scale(1.2)"/>
+  <text id="prima-facie-label" x="1340" y="720" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="810" fill="#615a52">पहली नज़र में आधार</text>
+ </g>
+ <g id="payment-on-hold">
+  <rect x="1000" y="790" width="780" height="90" rx="23" fill="#9e1b1b"/>
+  <rect x="1011" y="800" width="758" height="70" rx="15" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="3 7"/>
+  <text x="1390" y="853" text-anchor="middle" class="hi" font-size="54" font-weight="830" fill="#fff">Payment रोकना (जाँच तक)</text>
+ </g>
+ <g id="fraud-proven">
+  <rect x="1000" y="238" width="530" height="84" rx="22" fill="#eeecee"/>
+  <text x="1265" y="293" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="785" fill="#4b4f58">धोखा पूरी तरह साबित हो, तो</text>
+ </g>
+ <g id="two-orders">
+  <rect x="1550" y="238" width="230" height="84" rx="22" fill="#fde9a6"/>
+  <text x="1665" y="293" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="815" fill="#67231a">दो आदेश</text>
+ </g>
+ <g id="article-return">
+  <rect x="1000" y="900" width="780" height="90" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1027" y="959" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="600" fill="#2b2622">Article → sender को</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,"fade","#payment-on-hold",{dur:.21}],
+  [2.38,"fade","#fraud-proven",{dur:.24}],
+  [6.44,"pop","#two-orders",{from:.96,spring:"soft"}],
+  [8.42,"fade","#article-return",{dur:.23}]
+ ]
+})
+</script>
+</section>
