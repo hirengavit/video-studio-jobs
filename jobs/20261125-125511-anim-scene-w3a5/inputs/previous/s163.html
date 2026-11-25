@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s163" data-in="cut" data-duration="13.20" data-section="PART 8 · RETENTION AND RETURN" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Legacy Poste Restante comparison: ordinary deposit up to one month; standard VP hold seven days, subject to the prescribed written-request extension.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="pr">
+    <g id="poste-restante-card">
+      <rect x="140" y="240" width="860" height="280" rx="33" fill="#9e1b1b"/>
+      <rect x="160" y="260" width="820" height="240" rx="22" fill="none" stroke="#fde9a6" stroke-width="5" stroke-dasharray="4 11" stroke-linecap="round"/>
+      <text x="570" y="373" text-anchor="middle" font-family="Inter,sans-serif" font-size="96" font-weight="780" fill="#fff">Poste Restante</text>
+      <text x="570" y="453" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#fff">डाकघर में रखी डाक</text>
+    </g>
+    <g id="poste-restante-meaning">
+      <text x="174" y="600" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="750" fill="#2b2622">post office पर रखी डाक,</text>
+    </g>
+    <g id="poste-restante-completion">
+      <text x="174" y="674" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="750" fill="#2b2622">जिसे जाकर लेना है</text>
+    </g>
+    <g id="poste-restante-scope">
+      <rect x="1080" y="178" width="363" height="60" rx="20" fill="#f3ead6" stroke="#dfcba3" stroke-width="3"/>
+      <text x="1106" y="220" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="790" fill="#533620">पुराना डाक नियम</text>
+    </g>
+    <g id="vp-poste-card">
+      <rect x="1080" y="260" width="700" height="260" rx="28" fill="#e5f2e8" stroke="#79a989" stroke-width="4"/>
+      <text x="1124" y="335" font-family="Inter,sans-serif" font-size="61" font-weight="825" fill="#17634a">VP article</text>
+      <rect id="vp-seven-band" x="1412" y="356" width="145" height="64" rx="14" fill="#ffd54a" opacity=".64"/>
+      <text x="1124" y="404" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="790" fill="#174735">सामान्य रोक:</text>
+      <text x="1428" y="404" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="840" fill="#174735">7 दिन</text>
+      <text x="1573" y="404" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="790" fill="#174735">तक</text>
+      <text id="vp-poste-exception" x="1124" y="482" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="770" fill="#174735">अपवाद: लिखित आवेदन + तय fee</text>
+    </g>
+    <g id="ordinary-poste-card">
+      <rect x="1080" y="600" width="700" height="260" rx="28" fill="#eeedf0" stroke="#cbc9cf" stroke-width="4"/>
+      <text x="1124" y="689" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="825" fill="#4b4f58">बाकी डाक</text>
+      <text x="1124" y="769" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="825" fill="#4b4f58">1 महीने तक</text>
+      <path id="ordinary-month-underline" d="M1125 781h185" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,"fade","#poste-restante-completion",{dur:.26}],
+  [4.24,"fade","#poste-restante-scope",{dur:.23}],
+  [4.24,"pop","#vp-poste-card",{from:.96,spring:"soft"}],
+  [6.50,"fade","#vp-seven-band",{dur:.26}],
+  [6.50,"fade","#vp-poste-exception",{dur:.26}],
+  [8.16,"pop","#ordinary-poste-card",{from:.96,spring:"soft"}],
+  [11.30,"draw","#ordinary-month-underline",{dur:.38}]
+ ]
+})
+</script>
+</section>
