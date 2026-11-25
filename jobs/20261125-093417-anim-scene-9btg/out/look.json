@@ -10,23 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "low-contrast",
-   "scene": "s087",
-   "text": "≤ 6,500: 1.6% (1.2:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 0.3
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s087",
    "message": "a card is mostly empty at 2.5 s: bring its items in sooner, or size it for what it holds now",
    "t": 2.48
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s087",
-   "text": "पहला हिसाब · / ₹5,000",
-   "t": 4.96
   }
  ]
 }
