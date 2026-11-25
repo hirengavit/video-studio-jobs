@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s046" data-in="cut" data-section="PART 2 · AGREEMENT, LIMITS AND INSURANCE" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Recovery limit and insurance limit are different">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="recovery-limit">
+    <rect x="150" y="242" width="750" height="508" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <path d="M178 242H872a28 28 0 0 1 28 28v144H150V270a28 28 0 0 1 28-28Z" fill="#9e1b1b"/>
+    <text x="525" y="350" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="65" font-weight="850" fill="#fff">वसूली की सीमा</text>
+    <use href="piece:rupee-coin" transform="translate(381 431) scale(2.4)"/>
+    <text x="525" y="618" text-anchor="middle" font-family="Inter,sans-serif" font-size="120" font-weight="800" fill="#2b2622">₹</text>
+  </g>
+  <g id="insurance-limit">
+    <rect x="1020" y="242" width="750" height="508" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <path d="M1048 242H1742a28 28 0 0 1 28 28v144h-750V270a28 28 0 0 1 28-28Z" fill="#f2b705"/>
+    <text x="1395" y="350" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="65" font-weight="850" fill="#2b2622">Insurance की सीमा</text>
+    <path d="M1395 449c37 22 70 31 107 35v83c0 61-32 108-107 146-75-38-107-85-107-146v-83c37-4 70-13 107-35Z" fill="#f3ead6" stroke="#2b2622" stroke-width="7" stroke-linejoin="round"/>
+    <use href="piece:parcel-icon" transform="translate(1255 435) scale(.7)"/>
+  </g>
+  <g id="versus-disc">
+    <circle cx="960" cy="574" r="64" fill="#2b2622" stroke="#fbf7ee" stroke-width="9"/>
+    <text id="versus-symbol" x="960" y="592" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="850" fill="#fde9a6">VS</text>
+    <text id="unequal-symbol" x="960" y="598" text-anchor="middle" font-family="Inter,sans-serif" font-size="76" font-weight="800" fill="#fde9a6">≠</text>
+  </g>
+  <g id="takeaway">
+    <rect x="328" y="817" width="1264" height="134" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text x="960" y="902" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="850" fill="#2b2622">दो अलग सीमाएँ</text>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  on:[
+    [2.02,"fade","#insurance-limit",{dur:.26}],
+    [2.02,"pop","#versus-disc",{from:.94}],
+    [3.62,"swap","#versus-symbol",{to:"#unequal-symbol",dur:.26,dist:12}],
+    [3.62,"reveal","#takeaway",{from:"left",dur:.45}]
+  ]
+})
+</script>
+</section>
