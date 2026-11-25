@@ -1,0 +1,35 @@
+<section class="vs-scene" id="s104" data-in="cut" data-duration="9.65" data-section="PART 6 · DELIVERY, COLLECTION AND POD" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="A signature does not replace collection; an official who does not know the receiver may ask for identification">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="delivery-rule">
+   <use href="piece:signature-slip" transform="translate(140 370) scale(1.3)"/>
+   <text x="400" y="841" text-anchor="middle" font-family="Inter,sans-serif" font-size="50" font-weight="810" fill="#2b2622">Signature</text>
+   <g id="collection">
+    <use href="piece:rupee-coin" transform="translate(916 439) scale(1.4)"/>
+    <text x="1000" y="550" text-anchor="middle" font-family="Inter,sans-serif" font-size="72" font-weight="830" fill="#9e1b1b">₹</text>
+    <text x="1000" y="672" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#2b2622">वसूली</text>
+   </g>
+   <text id="not-equal" x="760" y="626" text-anchor="middle" font-family="Inter,sans-serif" font-size="104" font-weight="810" fill="#4b4f58">≠</text>
+   <g id="signature-note">
+    <rect x="179" y="226" width="976" height="119" rx="24" fill="#edecea" stroke="#d3d0cb" stroke-width="2"/>
+    <text x="667" y="301" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="55" font-weight="810" fill="#4b4f58">सिर्फ signature काफ़ी नहीं</text>
+   </g>
+   <g id="identification">
+    <use href="piece:id-card-icon" transform="translate(1180 304) scale(1.6)"/>
+   </g>
+   <text id="identity-caption" x="1500" y="860" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="800" fill="#2b2622">पहचान माँग सकता है</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [1.96,"pop","#collection",{spring:"soft"}],
+   [2.96,"pop","#not-equal",{spring:"soft"}],
+   [2.96,"fade","#signature-note",{dur:.28}],
+   [7.61,"slide","#identification",{from:"down",dist:64,spring:"soft"}],
+   [7.61,"fade","#identity-caption",{dur:.31}]
+  ]
+ })
+ </script>
+</section>
