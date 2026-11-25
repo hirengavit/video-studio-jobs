@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s016" data-in="cut" data-section="PART 1 · WHAT COD IS" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="COD route steps two and three: carry the parcel to the delivery office and collect payment on delivery">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="route">
+  <text x="140" y="231" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="820" fill="#9e1b1b">रास्ता, चार steps में</text>
+  <use id="route-diagram" href="piece:cod-flow-diagram" transform="translate(160 300)"/>
+  <g id="route-sender">
+   <use href="piece:person-icon" transform="translate(164 485) scale(1.2)"/>
+   <text x="260" y="880" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="820" fill="#2b2622">Sender</text>
+  </g>
+  <g id="route-addressee">
+   <use href="piece:person-icon" transform="translate(1564 485) scale(1.2)"/>
+   <text x="1660" y="880" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="820" fill="#2b2622">Addressee</text>
+  </g>
+  <g id="route-parcel-motion"><g id="route-parcel-stage-2"><g id="route-parcel">
+   <use href="piece:parcel-icon" transform="translate(422 238) scale(.60)"/>
+  </g></g></g>
+  <text id="step-1-label" x="519" y="568" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="810" fill="#2b2622">COD के साथ booking</text>
+
+  <text id="step-2-label" x="1063" y="568" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="810" fill="#2b2622">delivery office तक</text>
+  <g id="route-coin-motion">
+   <g id="route-coin">
+    <use href="piece:rupee-coin" transform="translate(1447 642) scale(.8)"/>
+    <text x="1495" y="705" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="830" fill="#9e1b1b">₹</text>
+   </g>
+  </g>
+  <text id="step-3-label" x="1400" y="811" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="810" fill="#2b2622">देते समय वसूली</text>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,"pop","#step-2",{from:.92,spring:"soft"}],
+  [0,"move","#step-1-label",{by:[65,0],spring:"snap"}],
+  [1.84,"move","#route-parcel-motion",{by:[500,0],spring:"soft"}],
+  [2.82,"fade","#step-2-label",{dur:.24}],
+  [5.30,"pop","#step-3",{from:.92,spring:"soft"}],
+  [5.30,"move","#route-parcel-stage-2",{by:[500,0],spring:"soft"}],
+  [9.42,"pop","#route-coin",{from:.92,spring:"soft"}],
+  [9.42,"fade","#step-3-label",{dur:.24}]
+ ],
+ update(t,section,$){const next=$("#step-4")[0];if(next)next.setAttribute("display","none");}
+})
+</script>
+</section>
