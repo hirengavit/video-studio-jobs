@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+ <circle id="sea" cx="160" cy="160" r="145" fill="#fbf7ee"/>
+ <g id="land" fill="#ead9b6">
+  <path d="M62 70l29-19 22 5 15-10 38 10 7 15-16 14-17 1-16 18-10 25-26 14-19-6-10-23-23-8 8-20Z"/>
+  <path d="M86 150l26-6 13 15 18 14-10 20 8 23-20 22-4 26-13 3-14-23-8-36 5-17-14-23Z"/>
+  <path d="M190 72l20-12 29 3 19 14 22 10 13 33-16 19-30-5-9 19-18 2-15-11-12 15-14-14-2-18-16-8 6-24 18-10Z"/>
+  <path d="M169 143l20 9 22 10 6 18-13 16-6 22-15 20-13-6-6-22-17-18 4-29Z"/>
+  <path d="M238 225l19-13 22 4 12 17-9 18-31 8-18-13Z"/>
+ </g>
+ <path id="meridian" d="M160 16C65 49 62 268 160 304" fill="none" stroke="#8c7c60"/>
+ <circle data-anchor="base" cx="160" cy="306.5" r="0"/>
+</svg>
