@@ -29,7 +29,7 @@
     <g id="contractual-cod">
       <rect x="160" y="260" width="740" height="220" rx="32" fill="#9e1b1b"/>
       <rect x="160" y="260" width="740" height="220" rx="32" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 28" stroke-linecap="round"/>
-      <text x="530" y="401" text-anchor="middle" font-family="Inter,sans-serif" font-size="88" font-weight="850" fill="#fff">Contractual COD</text>
+      <text x="530" y="401" text-anchor="middle" font-family="Inter,sans-serif" font-size="76" font-weight="850" fill="#fff">Contractual COD</text>
     </g>
     <g id="whole-rule">
       <rect x="160" y="560" width="1600" height="200" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
@@ -41,7 +41,7 @@
 ({
   shots:[[0,"#source"],[3.03,"#whole"]],
   on:[
-    [0,"move","#recovery-amount",{by:[1000,0],dur:.8}],
+    [0,"move","#recovery-amount",{by:[1000,0],spring:"soft"}],
     [5.15,"reveal","#whole-rule",{from:"left",dur:.42}],
     [6.47,"highlight","#whole-rule-line",{words:"पूरे रुपयों",dur:.40}]
   ]
