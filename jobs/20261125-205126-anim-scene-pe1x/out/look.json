@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s162",
-   "message": "pop: option \"dur\" isn't used (it takes: spring, from)",
-   "t": 0.3
-  },
-  {
    "kind": "text-overlap",
    "scene": "s162",
    "text": "sender बकाया charges देता है / प्राप्ति की पुष्टि",
