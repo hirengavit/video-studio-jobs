@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 560" width="520" height="560" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g id="unit">
+    <rect x="40" y="520" width="440" height="20" rx="4" fill="#8d9299" stroke="#2b2622" stroke-width="3"/>
+    <rect x="20" y="20" width="480" height="504" rx="14" fill="#c9ccd1" stroke="#2b2622" stroke-width="3"/>
+    <path d="M346 32 V512" stroke="#aeb2b8" stroke-width="3"/>
+  </g>
+  <g id="lockers">
+    <g id="locker-1"><rect x="40" y="40" width="140" height="152" rx="6" fill="#e6e8eb" stroke="#2b2622" stroke-width="3"/><rect x="160" y="96" width="8" height="40" rx="4" fill="#8d9299" stroke="#2b2622" stroke-width="2"/></g>
+    <g id="locker-2"><rect x="192" y="40" width="140" height="152" rx="6" fill="#e6e8eb" stroke="#2b2622" stroke-width="3"/><rect x="312" y="96" width="8" height="40" rx="4" fill="#8d9299" stroke="#2b2622" stroke-width="2"/></g>
+    <g id="locker-3"><rect x="40" y="204" width="140" height="152" rx="6" fill="#e6e8eb" stroke="#2b2622" stroke-width="3"/><rect x="160" y="260" width="8" height="40" rx="4" fill="#8d9299" stroke="#2b2622" stroke-width="2"/></g>
+    <g id="locker-4"><rect x="192" y="204" width="140" height="152" rx="6" fill="#e6e8eb" stroke="#2b2622" stroke-width="3"/><rect x="312" y="260" width="8" height="40" rx="4" fill="#8d9299" stroke="#2b2622" stroke-width="2"/></g>
+    <g id="locker-5"><rect x="40" y="368" width="140" height="152" rx="6" fill="#e6e8eb" stroke="#2b2622" stroke-width="3"/><rect x="160" y="424" width="8" height="40" rx="4" fill="#8d9299" stroke="#2b2622" stroke-width="2"/></g>
+    <g id="locker-6"><rect x="192" y="368" width="140" height="152" rx="6" fill="#e6e8eb" stroke="#2b2622" stroke-width="3"/><rect x="312" y="424" width="8" height="40" rx="4" fill="#8d9299" stroke="#2b2622" stroke-width="2"/></g>
+  </g>
+  <g id="screen">
+    <rect x="360" y="56" width="124" height="100" rx="8" fill="#5a5f66" stroke="#2b2622" stroke-width="3"/>
+    <rect x="370" y="66" width="104" height="80" rx="4" fill="#eef2ee"/>
+  </g>
+  <g id="keypad" fill="#e6e8eb" stroke="#2b2622" stroke-width="2">
+    <rect x="368" y="184" width="26" height="22" rx="4"/><rect x="409" y="184" width="26" height="22" rx="4"/><rect x="450" y="184" width="26" height="22" rx="4"/>
+    <rect x="368" y="216" width="26" height="22" rx="4"/><rect x="409" y="216" width="26" height="22" rx="4"/><rect x="450" y="216" width="26" height="22" rx="4"/>
+    <rect x="368" y="248" width="26" height="22" rx="4"/><rect x="409" y="248" width="26" height="22" rx="4"/><rect x="450" y="248" width="26" height="22" rx="4"/>
+    <rect x="368" y="280" width="26" height="22" rx="4"/><rect x="409" y="280" width="26" height="22" rx="4"/><rect x="450" y="280" width="26" height="22" rx="4"/>
+  </g>
+  <g id="parcel-slot">
+    <rect x="368" y="340" width="108" height="14" rx="5" fill="#2b2622"/>
+  </g>
+  <circle data-anchor="base" cx="260" cy="540" r="0"/>
+  <circle data-anchor="top" cx="260" cy="20" r="0"/>
+</svg>
