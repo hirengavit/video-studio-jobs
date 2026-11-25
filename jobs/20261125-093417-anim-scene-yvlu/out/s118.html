@@ -1,0 +1,42 @@
+<section class="vs-scene" id="s118" data-in="cut" data-duration="9.86" data-section="PART 6 · DELIVERY, COLLECTION AND POD" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Two inventory copies signed by the addressee, with a signed copy and unsigned proof of delivery">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="inventory">
+  <rect x="267" y="174" width="591" height="83" rx="22" fill="#f3ead6"/>
+  <text x="562" y="231" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="825" fill="#9e1b1b">Inventory · 2 copies</text>
+  <use href="piece:inventory-sheet" transform="translate(290 270) scale(1.5)"/>
+  <path id="copy-edge" d="M825 320V946H358" fill="none" stroke="#daae43" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="350" y="351" font-family="Inter,sans-serif" font-size="51" font-weight="820" fill="#2b2622">Inventory</text>
+  <g id="sig-label">
+   <rect x="326" y="808" width="199" height="74" rx="17" fill="#fff3ca"/>
+   <text x="426" y="856" text-anchor="middle" font-family="Inter,sans-serif" font-size="27" font-weight="820" fill="#60440d">Addressee</text>
+  </g>
+  <path id="signed-main" d="M554 854c26-41 47-58 60-40 12 17-29 40-21 47 13 9 39-44 58-37 15 5-11 31 2 34 14 3 24-17 35-18 12 0 3 15 18 13l19-6" fill="none" stroke="#17634a" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+ <g id="signed-copy">
+  <use href="piece:inventory-sheet" transform="translate(1169 661) scale(.63)"/>
+  <text x="1218" y="702" font-family="Inter,sans-serif" font-size="28" font-weight="830" fill="#2b2622">Inventory</text>
+  <path d="M1284 903c12-17 23-24 28-17 4 6-12 15-8 17 5 4 13-18 22-15 6 2-5 13 0 14s11-7 15-7 2 5 9 4" fill="none" stroke="#17634a" stroke-width="3" stroke-linecap="round"/>
+  <rect x="1107" y="934" width="350" height="66" rx="24" fill="#e3f1e8" stroke="#afd7be" stroke-width="2"/>
+  <text x="1282" y="979" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="810" fill="#17634a">Signed copy</text>
+ </g>
+ <g id="unsigned-pod">
+  <rect x="1122" y="432" width="335" height="184" rx="23" fill="#fff" stroke="#d8c9b5" stroke-width="4"/>
+  <text x="1289.5" y="506" text-anchor="middle" font-family="Inter,sans-serif" font-size="62" font-weight="845" fill="#2b2622">POD</text>
+  <path d="M1171 529h237" stroke="#ded5ca" stroke-width="3" stroke-linecap="round"/>
+  <text x="1289.5" y="579" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="760" fill="#5a5149">बिना signature</text>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.52,"fade","#copy-edge",{dur:.23}],
+  [2.84,"fade","#sig-label",{dur:.24}],
+  [3.92,"draw","#signed-main",{dur:.50}],
+  [5.42,"pop","#signed-copy",{from:.96,spring:"soft"}],
+  [8.24,"pop","#unsigned-pod",{from:.96,spring:"soft"}]
+ ]
+})
+</script>
+</section>
