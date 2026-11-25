@@ -8,12 +8,5 @@
   "6.72"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s139",
-   "text": "रकम बदलना: Postmaster, / sender की लिखित request पर",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
