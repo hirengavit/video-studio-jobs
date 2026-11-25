@@ -1,0 +1,205 @@
+[
+  {
+    "id": "cod-flow-diagram",
+    "kind": "symbol",
+    "description": "The recurring COD picture, 1600x560: item line y 170 (x 240-1360, arrowhead right) and money line y 390 (arrowhead left), thin 3 px ink; four numbered round step markers (white disc, ink rim, red numeral, dia 84) #step-1 (300,170) booking, #step-2 (800,170) carriage, #step-3 (1300,280) collection, #step-4 (800,390) remittance, each a group so a scene can colour it yellow #f2b705; clear zones at both ends for person icons. Parts #line-item, #line-money, #arrow-item, #arrow-money, #step-1..#step-4. No lettering.",
+    "ideas": [
+      "booking",
+      "carriage",
+      "collection",
+      "remittance"
+    ],
+    "viewBox": "0 0 1600 560",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "line-item",
+      "line-money",
+      "arrow-item",
+      "arrow-money",
+      "step-1",
+      "step-2",
+      "step-3",
+      "step-4"
+    ]
+  },
+  {
+    "id": "parcel-icon",
+    "kind": "prop",
+    "description": "Flat parcel box 220x180, kraft #f3ead6 fill, 3 px ink outline, ink string crossed over it, small blank white label on the front.",
+    "ideas": [
+      "parcel",
+      "shipment",
+      "item"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "parcel-box",
+      "parcel-string",
+      "parcel-label"
+    ]
+  },
+  {
+    "id": "cod-parcel-face",
+    "kind": "prop",
+    "description": "Big front face of a parcel 960x600, kraft #f3ead6, ink outline, ink string crossing centre-right; three blank white zones: #zone-cod upper left (x40-420, y40-210), #zone-sender lower left (x40-420, y400-560), #zone-address right (x520-920, y280-520) with three grey rule lines. No lettering.",
+    "ideas": [
+      "COD marking",
+      "sender details",
+      "delivery address"
+    ],
+    "viewBox": "0 0 960 600",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "parcel-string",
+      "zone-cod",
+      "zone-sender",
+      "zone-address"
+    ]
+  },
+  {
+    "id": "mo-form",
+    "kind": "prop",
+    "description": "White money order form 600x400, ink outline, dashed perforation at y 250 splitting #upper (blank grey rules, blank field box #field-place x40-300 y150-210) from #lower (coupon with two rules). No lettering.",
+    "ideas": [
+      "money order",
+      "place field",
+      "coupon"
+    ],
+    "viewBox": "0 0 600 400",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "upper",
+      "field-place",
+      "perforation",
+      "lower"
+    ]
+  },
+  {
+    "id": "retention-day-line",
+    "kind": "prop",
+    "description": "Thin grey #6f6a63 4 px line x30-1590 at y 120 with 15 small ticks #tick-1..#tick-15 at x = 60 + (n-1)*107; empty space above for bands and markers, below for the scene's day numerals. 1620x220.",
+    "ideas": [
+      "retention",
+      "day ticks",
+      "timeline"
+    ],
+    "viewBox": "0 0 1620 220",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "day-line",
+      "tick-1",
+      "tick-2",
+      "tick-3",
+      "tick-4",
+      "tick-5",
+      "tick-6",
+      "tick-7",
+      "tick-8",
+      "tick-9",
+      "tick-10",
+      "tick-11",
+      "tick-12",
+      "tick-13",
+      "tick-14",
+      "tick-15"
+    ]
+  },
+  {
+    "id": "address-label-tag",
+    "kind": "prop",
+    "description": "Large white address label 380x240 with three blank rule lines, a reinforced hole at the left end and an ink string loop.",
+    "ideas": [
+      "address",
+      "tie-on tag",
+      "blank label"
+    ],
+    "viewBox": "0 0 380 240",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "label-stock",
+      "tag-hole",
+      "tag-string",
+      "label-rules"
+    ]
+  },
+  {
+    "id": "complaint-channel-icons",
+    "kind": "symbol",
+    "description": "Five flat ink icons in a row on 300 px centres, 1500x240, each its own group: #book (open bound book), #portal (browser window), #social (speech bubbles), #phone (handset), #letter (envelope with pen). No lettering.",
+    "ideas": [
+      "complaint book",
+      "web portal",
+      "social channels",
+      "telephone",
+      "letter"
+    ],
+    "viewBox": "0 0 1500 240",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "book",
+      "portal",
+      "social",
+      "phone",
+      "letter"
+    ]
+  },
+  {
+    "id": "id-card-icon",
+    "kind": "prop",
+    "description": "Flat identity card 260x170, white with ink outline, grey photo square holding a plain sand silhouette (no face), blank lines.",
+    "ideas": [
+      "identity",
+      "verification",
+      "identity card"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "card-shell",
+      "portrait",
+      "blank-fields"
+    ]
+  },
+  {
+    "id": "watch-icon",
+    "kind": "prop",
+    "description": "Flat ink wrist watch 220x300, white dial with two hands, sand strap.",
+    "ideas": [
+      "wristwatch",
+      "time",
+      "waiting"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "strap",
+      "case",
+      "hour-hand",
+      "minute-hand"
+    ]
+  }
+]
