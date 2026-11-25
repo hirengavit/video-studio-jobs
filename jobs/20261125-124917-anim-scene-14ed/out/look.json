@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s163",
-   "message": "fade: option \"to\" isn't used (it takes: dur)",
-   "t": 0.3
-  },
-  {
    "kind": "text-overlap",
    "scene": "s163",
    "text": "सामान्य रोक: / 7 दिन",
