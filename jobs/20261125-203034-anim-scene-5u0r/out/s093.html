@@ -24,19 +24,15 @@
       <rect x="1296" y="274" width="432" height="66" rx="23" fill="#fde9a6"/>
       <text x="1512" y="321" text-anchor="middle" class="hi" font-size="44" font-weight="800" fill="#67231a">दूसरा slab · 3 steps</text>
     </g>
-    <text id="step-one" x="820" y="450" class="hi" font-size="52" font-weight="810" fill="#9e1b1b">1 · 6,500 से ऊपर कितना?</text>
-    <text id="excess-subtraction" x="820" y="519" style="font-family:Georgia,Times,serif;font-size:58px" font-weight="760" fill="#2b2622">20,000 − 6,500</text>
-    <text id="excess-result" x="1265" y="519" style="font-family:Georgia,Times,serif;font-size:58px" font-weight="760" fill="#2b2622">= 13,500</text>
-    <g id="step-two" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#2b2622">
-      <text id="step-two-number" x="820" y="619" fill="#9e1b1b">2 ·</text>
-      <text id="excess-one-percent" x="918" y="619">1%</text>
-      <text id="step-two-equals" x="1039" y="619">=</text>
-      <rect id="fee-highlight" x="1107" y="567" width="174" height="70" rx="19" fill="#fde9a6"/>
-      <text id="fee-part" x="1120" y="619">₹135</text>
+    <text id="step-one" x="820" y="450" class="hi" style="font-family:Georgia,'Noto Sans Devanagari',serif;font-size:52px" font-weight="760" fill="#2b2622"><tspan fill="#9e1b1b">1 ·</tspan> 6,500 से ऊपर कितना?</text>
+    <text id="step-one-working" x="820" y="519" xml:space="preserve" style="font-family:Georgia,Times,serif;font-size:60px" font-weight="760" fill="#2b2622"><tspan id="excess-subtraction">20,000 − 6,500</tspan><tspan id="excess-result"> = 13,500</tspan></text>
+    <g id="step-two">
+      <rect id="fee-highlight" x="1052" y="566" width="155" height="74" rx="19" fill="#fde9a6"/>
+      <text id="step-two-working" x="820" y="619" xml:space="preserve" style="font-family:Georgia,Times,serif;font-size:60px" font-weight="760" fill="#2b2622"><tspan id="step-two-number" fill="#9e1b1b">2 ·</tspan><tspan id="excess-one-percent"> 1%</tspan><tspan id="step-two-equals"> = </tspan><tspan id="fee-part">₹135</tspan></text>
     </g>
     <g id="step-three" font-family="Georgia,Times,serif" font-size="60" font-weight="760" fill="#2b2622">
-      <text id="step-three-number" x="820" y="689" fill="#9e1b1b">3 ·</text>
-      <text id="step-three-equation" x="922" y="689">₹100 + ₹135</text>
+      <text id="step-three-number" style="font-family:Georgia,Times,serif;font-size:60px" x="820" y="689" fill="#9e1b1b">3 ·</text>
+      <text id="step-three-equation" style="font-family:Georgia,Times,serif;font-size:60px" x="922" y="689">₹100 + ₹135</text>
     </g>
     <g id="fee-result">
       <rect x="1330" y="657" width="375" height="95" rx="35" fill="#e3f1e8" stroke="#2e7d4f" stroke-width="3"/>
@@ -63,7 +59,18 @@
   [2.98,"pop","#fee-result",{from:.94,spring:"soft"}],
   [6.10,"fade","#wrong-card",{dur:.25}],
   [6.30,"type","#wrong-equation",{cps:13}]
- ]
+ ],
+ update(t,section,$) {
+   if(t>=4.98) return;
+   const fee=$("#fee-part")[0], bg=$("#fee-highlight")[0];
+   if(fee && bg) {
+     const b=fee.getBBox();
+     if(b.width) {
+       bg.setAttribute("x",String(b.x-12));
+       bg.setAttribute("width",String(b.width+24));
+     }
+   }
+ }
 })
 </script>
 </section>
