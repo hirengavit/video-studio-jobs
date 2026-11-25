@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s043" data-in="cut" data-duration="9.54" data-section="PART 2 · AGREEMENT, LIMITS AND INSURANCE" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="A ₹500 repair recovery need not equal the watch’s ₹5,000 insured value">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="watch">
+   <rect width="1920" height="1080" fill="#fbf7ee"/>
+   <text x="180" y="220" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="830" fill="#9e1b1b">एक example</text>
+   <rect x="180" y="278" width="600" height="584" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+   <g id="insured-watch"><use href="piece:watch-icon" transform="translate(160 260) scale(1.6)"/></g>
+   <g id="watch-price">
+    <text x="920" y="380" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="810" fill="#2b2622">घड़ी की कीमत</text>
+    <text id="price-number" x="1348" y="380" font-family="Inter,sans-serif" font-size="64" font-weight="840" fill="#9e1b1b">₹5,000</text>
+   </g>
+   <text id="watch-return" x="920" y="480" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="750" fill="#5e594f">repair के बाद मालिक को</text>
+   <text id="repair-price" class="hi" x="920" y="615" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="800" fill="#2b2622">Repair खर्च ₹500</text>
+   <g id="repair-recovery">
+    <rect x="920" y="704" width="320" height="146" rx="24" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+    <text class="hi" x="1080" y="761" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="800" fill="#2b2622">वसूली</text>
+    <text id="repair-recovery-value" x="1080" y="824" text-anchor="middle" font-family="Inter,sans-serif" font-size="57" font-weight="840" fill="#2b2622">₹500</text>
+   </g>
+   <g id="watch-insurance">
+    <rect x="1340" y="704" width="450" height="146" rx="24" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+    <rect x="1352" y="716" width="426" height="122" rx="12" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="4 9" stroke-linecap="round"/>
+    <text x="1565" y="764" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="810" fill="#fff">Insured value</text>
+    <text id="watch-insurance-qualifier" class="hi" x="1565" y="823" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="800" fill="#fde9a6">→ घड़ी की</text>
+    <text id="watch-insurance-amount" x="1565" y="823" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="850" fill="#fde9a6">= ₹5,000</text>
+   </g>
+   <rect id="recover-focus" x="925" y="709" width="310" height="136" rx="20" fill="none" stroke="#d6a91e" stroke-width="7"/>
+   <rect id="insured-focus" x="1345" y="709" width="440" height="136" rx="20" fill="none" stroke="#fde9a6" stroke-width="7"/>
+   <text id="not-equal" x="1290" y="808" text-anchor="middle" font-family="Inter,sans-serif" font-size="84" font-weight="850" fill="#4b4f58">≠</text>
+   <text id="not-necessarily-equal" x="1355" y="946" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#6f6a63">बराबर ज़रूरी नहीं</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [.88,"out","#watch-insurance-qualifier",{dur:.14}],
+   [1.02,"fade","#watch-insurance-amount",{dur:.24}],
+   [2.30,"fade","#recover-focus",{dur:.23}],
+   [4.36,"fade","#insured-focus",{dur:.23}],
+   [5.54,"pop","#not-equal",{from:.94,spring:"soft"}],
+   [6.74,"fade","#not-necessarily-equal",{dur:.24}]
+  ]
+ })
+ </script>
+</section>
