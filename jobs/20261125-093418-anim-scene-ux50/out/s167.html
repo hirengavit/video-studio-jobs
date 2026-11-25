@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s167" data-in="wipe" data-in-dur="0.50" data-duration="11.32" data-section="PART 9 · COMPLAINTS AND FRAUD SAFEGUARD" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Identify the problem: missing item, damaged or missing contents, or incorrect delivery or collection">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="grid">
+   <text x="140" y="234" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="820" fill="#9e1b1b">गड़बड़ क्या है?</text>
+   <path d="M140 261H346" stroke="#d8bb79" stroke-width="5" stroke-linecap="round"/>
+   <g id="missing-item">
+    <rect x="140" y="320" width="800" height="300" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <circle cx="266" cy="468" r="87" fill="#f3ead6"/>
+    <use href="piece:parcel-icon" transform="translate(143 359) scale(.60)"/>
+    <circle cx="332" cy="425" r="39" fill="#fff" stroke="#9e1b1b" stroke-width="4"/>
+    <text x="332" y="444" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="800" fill="#9e1b1b">?</text>
+    <text x="400" y="491" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="790" fill="#2b2622">Item पहुँचा ही नहीं</text>
+   </g>
+   <g id="bad-contents">
+    <rect x="980" y="320" width="800" height="300" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <circle cx="1106" cy="468" r="87" fill="#f3ead6"/>
+    <g transform="translate(1051 447)" stroke="#2b2622" stroke-width="4" stroke-linejoin="round">
+     <path d="M0 0l55-22 56 22v62l-56 25L0 62z" fill="#f3ead6"/>
+     <path d="M0 0l55 25 56-25-56-22z" fill="#e3c88f"/>
+     <path d="M0 0l-17-29 55-25 17 32m56 22 17-29-55-25-18 32" fill="#fcf6e8"/>
+     <path d="M55 25v62M52-30l14-18m-33 9 7-13" fill="none"/>
+    </g>
+    <text x="1240" y="491" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="790" fill="#2b2622">सामान खराब या गायब</text>
+   </g>
+   <g id="wrong-delivery">
+    <rect x="140" y="660" width="800" height="300" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <circle cx="266" cy="808" r="87" fill="#f3ead6"/>
+    <use href="piece:parcel-icon" transform="translate(141 686) scale(.60)"/>
+    <use href="piece:rupee-coin" transform="translate(288 808) scale(.52)"/>
+    <text x="319" y="850" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="770" fill="#9e1b1b">₹</text>
+    <path d="M203 875L332 747" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+    <text x="400" y="831" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="790" fill="#2b2622">Delivery या वसूली गलत</text>
+   </g>
+   <g id="not-remitted">
+    <rect x="980" y="660" width="800" height="300" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <circle cx="1106" cy="808" r="87" fill="#f3ead6"/>
+    <use href="piece:rupee-coin" transform="translate(1014 774) scale(.60)"/>
+    <text x="1050" y="825" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="790" fill="#9e1b1b">₹</text>
+    <path d="M1090 811h39m-7-10v20" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+    <use href="piece:person-icon" transform="translate(1141 758) scale(.38)"/>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [2.52,"pop","#missing-item",{from:.96,spring:"soft"}],
+   [4.20,"pop","#bad-contents",{from:.96,spring:"soft"}],
+   [7.02,"pop","#wrong-delivery",{from:.96,spring:"soft"}],
+   [9.92,"fade","#not-remitted",{dur:.26}]
+  ]
+ })
+ </script>
+</section>
