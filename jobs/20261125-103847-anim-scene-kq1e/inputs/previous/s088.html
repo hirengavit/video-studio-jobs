@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s088" data-in="cut" data-duration="9.30" data-section="PART 5 · COD FEE" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="First COD fee result and the inclusive 6,500 threshold">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="fee-rules">
+    <rect x="120" y="220" width="580" height="680" rx="28" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+    <rect x="120" y="220" width="580" height="680" rx="28" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 26" stroke-linecap="round"/>
+    <text x="180" y="345" font-family="Inter,sans-serif" font-size="64" font-weight="800" fill="#fff">Base COD fee</text>
+    <path d="M180 390H640" stroke="#b8403a" stroke-width="3"/>
+    <rect id="first-slab-bg" x="174" y="432" width="472" height="130" rx="20" fill="#fde9a6"/>
+    <text id="first-slab-rule" x="205" y="516" font-family="Georgia,'Noto Sans Devanagari',serif" font-size="53" font-weight="700" fill="#67231a">≤ 6,500: 1.6%</text>
+    <rect x="174" y="600" width="472" height="196" rx="20" fill="#7d1414"/>
+    <text x="205" y="675" font-family="Inter,'Noto Sans Devanagari',sans-serif" font-size="43" font-weight="700" textLength="406" lengthAdjust="spacingAndGlyphs" fill="#fff">&gt; 6,500: ₹100 + 1%</text>
+    <text class="hi" x="205" y="747" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="700" fill="#fff">(ऊपर वाली रकम)</text>
+  </g>
+  <g id="ex1">
+    <rect x="760" y="220" width="1040" height="680" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <text id="base-only" class="hi" x="820" y="313" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="700" fill="#6f6a63">सिर्फ base COD fee</text>
+    <g id="example-one-heading" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="800" fill="#2b2622">
+      <text id="example-title" class="hi" x="820" y="420">पहला हिसाब ·</text>
+      <text id="example-amount" x="1232" y="420">₹5,000</text>
+    </g>
+    <g id="work-line" font-family="Georgia,'Noto Sans Devanagari',serif" font-size="60" font-weight="700" fill="#2b2622">
+      <text id="calc-amount" x="820" y="540">5,000</text>
+      <text id="calc-times" x="1003" y="540">×</text>
+      <text id="calc-rate" x="1069" y="540">1.6</text>
+      <text id="calc-divide" x="1180" y="540">÷</text>
+      <text id="calc-hundred" x="1244" y="540">100</text>
+    </g>
+    <g id="first-slab-chip">
+      <rect x="820" y="589" width="252" height="86" rx="24" fill="#fde9a6"/>
+      <text class="hi" x="946" y="645" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="43" font-weight="800" fill="#67231a">पहला slab</text>
+    </g>
+    <g id="eighty-result">
+      <rect x="1350" y="675" width="350" height="115" rx="34" fill="#e3f1e8" stroke="#afd7be" stroke-width="2"/>
+      <text x="1525" y="753" text-anchor="middle" font-family="Inter,sans-serif" font-size="66" font-weight="830" fill="#17634a">₹80</text>
+    </g>
+  </g>
+  <g id="ex2">
+    <rect x="760" y="220" width="1040" height="680" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <text x="820" y="313" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="700" fill="#6f6a63">सिर्फ base COD fee</text>
+    <text id="example-two-heading" x="820" y="388" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="800" fill="#2b2622">दूसरा · ठीक ₹6,500</text>
+    <g id="inclusive-band">
+      <rect x="820" y="420" width="914" height="89" rx="18" fill="#f9edc4"/>
+      <text id="inclusive-label" x="858" y="480" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="53" font-weight="810" fill="#5d400e">“तक” में 6,500 शामिल</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+ shots:[[0,"#ex1"],[1.85,"#ex2"]],
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.60,"pop","#eighty-result",{spring:"soft"}],
+  [1.85,"fade","#ex2",{dur:.01}],
+  [1.85,"type","#example-two-heading",{cps:17}],
+  [5.17,"reveal","#inclusive-band",{from:"left",dur:.45}],
+  [8.38,"highlight","#inclusive-label",{words:"शामिल",color:"#f2d267",opacity:1,pad:5,dur:.28}]
+ ]
+})
+</script>
+</section>
