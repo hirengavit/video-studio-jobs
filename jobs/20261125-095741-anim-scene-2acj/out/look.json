@@ -8,12 +8,5 @@
   "14.05"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s038",
-   "text": "Insurance / बीमा",
-   "t": 8.52
-  }
- ]
+ "warnings": []
 }
