@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g id="postmark" stroke="#9e1b1b">
+    <g id="cancel-lines">
+      <path d="M277 152C290 139 306 165 326 152S352 145 378 152M284 176C300 163 312 189 332 176S356 169 378 176M286 200C304 187 318 213 338 200S360 193 378 200M284 224C300 211 312 237 332 224S356 217 378 224M277 248C290 235 306 261 326 248S352 241 378 248"/>
+    </g>
+    <g id="rings"><circle cx="156" cy="200" r="130"/><circle cx="156" cy="200" r="115"/></g>
+  </g>
+  <circle data-anchor="base" cx="156" cy="330" r="0"/>
+</svg>
