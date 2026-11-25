@@ -9,7 +9,7 @@
     <path d="M516 688l22 20 41-44" fill="none" stroke="#2e7d4f" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
    </g>
    <g id="official-checklist">
-    <rect x="900" y="260" width="880" height="640" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <rect id="checklist-shell" x="900" y="260" width="880" height="640" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
     <rect x="950" y="308" width="10" height="64" rx="5" fill="#9e1b1b"/>
     <text x="986" y="357" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="840" fill="#9e1b1b">Official देखता है</text>
     <path d="M950 390H1730" stroke="#ead9a8" stroke-width="3"/>
@@ -35,7 +35,11 @@
    [3.55,"fade","#official-checklist",{dur:.28}],
    [6.45,"fade","#check-row-1",{dur:.25}],
    [7.71,"fade","#check-row-2",{dur:.25}]
-  ]
+  ],
+  update(t,section,$){
+   const ease=x=>{const u=Math.max(0,Math.min(1,x));return u*u*(3-2*u);};
+   $("#checklist-shell")[0].setAttribute("height",145+175*ease((t-6.45)/.22)+320*ease((t-7.71)/.22));
+  }
  })
  </script>
 </section>
