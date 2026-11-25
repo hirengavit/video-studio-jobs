@@ -8,12 +8,5 @@
   "8.73"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s183",
-   "text": "VP article मिलने के तुरंत बाद complaint",
-   "t": 8.73
-  }
- ]
+ "warnings": []
 }
