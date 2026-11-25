@@ -1,0 +1,65 @@
+<section class="vs-scene" id="s190" data-in="cut" data-section="PART 9 · COMPLAINTS AND FRAUD SAFEGUARD" data-series="PRODUCTS" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Historical VP handling: the upper money order form is destroyed, and the lower part is retained with the sender certificate">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="facts">
+   <text id="facts-heading" x="960" y="220" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="820" font-size="64" fill="#9e1b1b">दो छोटे तथ्य</text>
+   <g id="fact-1">
+    <rect x="140" y="320" width="1640" height="320" rx="29" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+    <circle cx="238" cy="480" r="52" fill="#9e1b1b"/>
+    <text x="238" y="499" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="820" fill="#fff">1</text>
+    <g id="redirect-fact">
+     <text x="342" y="460" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="830" fill="#2b2622">VP article redirect</text>
+     <use href="piece:parcel-icon" transform="translate(1306 295) scale(1.02)"/>
+     <path d="M1540 409V377Q1540 362 1555 362H1632m-23-21 23 21-23 21" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="intimation-fact">
+     <rect x="332" y="493" width="997" height="82" rx="21" fill="#fde9a6"/>
+     <text x="371" y="552" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="780" fill="#5d400e">→ intimation, office of posting को</text>
+    </g>
+   </g>
+   <g id="fact-2">
+    <rect x="140" y="680" width="1640" height="320" rx="29" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+    <g id="fact2-badge"><circle cx="238" cy="840" r="52" fill="#9e1b1b"/>
+    <text x="238" y="859" text-anchor="middle" font-family="Inter,sans-serif" font-size="55" font-weight="820" fill="#fff">2</text></g>
+    <text id="refusal-fact" x="342" y="860" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="830" fill="#2b2622">VP article मना / कोई लेने न आए</text>
+
+    <defs>
+     <clipPath id="mo-retained-clip" clipPathUnits="userSpaceOnUse"><rect id="mo-retained-window" x="1345" y="705" width="430" height="290"/></clipPath>
+    </defs>
+    <g id="vp-form">
+     <g clip-path="url(#mo-retained-clip)">
+      <use href="piece:mo-form" transform="translate(1350 710) scale(.7)"/>
+     </g>
+    </g>
+    <text id="upper-disposed" x="260" y="810" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="600" fill="#4b4f58">ऊपरी हिस्सा: नष्ट</text>
+    <text id="lower-certificate" x="260" y="880" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="600" fill="#2b2622">निचला हिस्सा + sender का certificate</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [0,"pop","#vp-form",{from:.94,spring:"soft"}],
+   [2.20,"highlight","#upper",{color:"#f2b705",opacity:.4,pad:8,dur:.20}],
+   [2.30,"fade","#upper-disposed",{dur:.22}],
+   [3.20,"out","#upper",{dur:.50,scale:false}],
+   [3.20,"strike","#upper-disposed",{color:"#4b4f58",width:3,dur:.29,dim:1}],
+   [4.86,"fade","#lower-certificate",{dur:.24}],
+   [4.86,"highlight","#lower",{color:"#f2b705",opacity:.4,pad:8,dur:.23}]
+  ],
+  update(t,section,$){
+   const u=S.clamp(t/.40,0,1),e=u*u*(3-2*u);
+   const title=$("#refusal-fact")[0], badge=$("#fact2-badge")[0];
+   title.setAttribute("x",String(342-82*e));title.setAttribute("y",String(860-130*e));
+   badge.setAttribute("transform","translate("+(11.5*e)+" "+(210*e)+") scale("+(1-.25*e)+")");
+   const el=$("#mo-retained-window")[0], k=S.clamp((t-3.20)/.50,0,1);
+   const y=705+(885-705)*k;
+   el.setAttribute("y",String(y));el.setAttribute("height",String(995-y));
+   const marks=$("#vp-form [data-vs-mark]");
+   if(marks[0]&&t>=3.20) marks[0].style.opacity=String(1-k);
+   if(marks[1]&&t>=5.65) marks[1].style.opacity=String(1-S.clamp((t-5.65)/.27,0,1));
+  }
+ })
+ </script>
+</section>
