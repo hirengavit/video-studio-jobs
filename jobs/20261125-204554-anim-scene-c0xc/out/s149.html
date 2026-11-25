@@ -1,0 +1,77 @@
+<section class="vs-scene" id="s149" data-in="cut" data-section="PART 8 · RETENTION AND RETURN" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Attached proof of delivery is destroyed; items undeliverable to the sender go to the Returned Letter Office">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="ret">
+    <g id="return-date">
+      <use href="piece:calendar-sheet" transform="translate(165 419) scale(1.5)"/>
+      <text x="360" y="529" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="850" fill="#fff">AUG 2026</text>
+      <text x="360" y="763" text-anchor="middle" font-family="Inter,sans-serif" font-size="165" font-weight="850" fill="#9e1b1b">17</text>
+    </g>
+    <g id="return-caption">
+      <rect x="250" y="185" width="1420" height="120" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="960" y="264" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="850" fill="#2b2622">लौटा item → sender को deliver</text>
+    </g>
+    <g id="return-line"><path d="M754 801H1693" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/><circle data-anchor="top" cx="900" cy="801" r="0"/></g>
+    <g id="return-sender">
+      <use href="piece:person-icon" transform="translate(1464 491) scale(1.2)"/>
+      <text x="1560" y="872" text-anchor="middle" font-family="Inter,sans-serif" font-size="51" font-weight="850" fill="#2b2622">Sender</text>
+    </g>
+    <use id="returned-parcel" href="piece:parcel-icon" transform="translate(960 396) scale(1.4)"/>
+    <g id="pod-retained">
+      <circle data-anchor="base" cx="900" cy="801" r="0"/>
+      <rect x="790" y="659" width="220" height="140" rx="16" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="900" y="750" text-anchor="middle" font-family="Inter,sans-serif" font-size="58" font-weight="850" fill="#2b2622">POD</text>
+    </g>
+    <g id="pod-not-returned">
+      <rect x="770" y="825" width="260" height="72" rx="16" fill="#e9e8e7"/>
+      <text x="900" y="876" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="850" fill="#4b4f58">वापस नहीं</text>
+    </g>
+    <g id="destroyed">
+      <rect x="785" y="555" width="230" height="84" rx="21" fill="#eeedf0" stroke="#89858c" stroke-width="3"/>
+      <text x="900" y="614" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="850" fill="#4b4f58">नष्ट</text>
+    </g>
+    <g id="rlo">
+      <rect x="1370" y="358" width="380" height="80" rx="24" fill="#fff" stroke="#89858c" stroke-width="3"/>
+      <text x="1560" y="414" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="850" fill="#4b4f58">RLO</text>
+    </g>
+    <text id="rlo-condition" x="1560" y="482" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="790" fill="#625b57">Sender को भी न दे सके</text>
+  </g>
+  <g id="regs">
+    <g id="regs-book">
+      <use href="piece:regulations-book" transform="translate(230 356) scale(1.4)"/>
+      <g text-anchor="middle" font-family="Inter,sans-serif" font-weight="830" fill="#2b2622">
+        <text x="460" y="541" font-size="43">Post Office</text>
+        <text x="460" y="598" font-size="39">Regulations</text>
+        <text x="460" y="661" fill="#9e1b1b" font-size="49">2024</text>
+      </g>
+    </g>
+    <g id="inland-cod">
+      <path d="M932 267h790" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+      <text x="1320" y="244" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="820" fill="#2b2622">देश के अंदर का COD</text>
+    </g>
+    <!-- s150 reveals and then rejects these hypothetical rules. -->
+    <g id="retention-choices" visibility="hidden" aria-hidden="true">
+      <g id="holding-card">
+        <rect x="860" y="300" width="920" height="165" rx="28" fill="#fff" stroke="#89858c" stroke-width="4"/>
+        <text x="1320" y="402" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="800" fill="#4b4f58">एक ही holding period</text>
+      </g>
+      <g id="demurrage-card">
+        <rect x="860" y="520" width="920" height="165" rx="28" fill="#fff" stroke="#89858c" stroke-width="4"/>
+        <text x="1320" y="622" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="800" fill="#4b4f58">एक ही demurrage दर</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  shots:[[0,"#ret"],[7.75,"#regs"]],
+  on:[
+    [0,"strike","#pod-retained",{color:"#4b4f58",width:4,dur:.35,dim:.66}],
+    [0,"fade","#destroyed",{dur:.24}],
+    [2.90,"fade","#rlo-condition",{dur:.24}],
+    [4.30,"pop","#rlo",{from:.94,spring:"soft"}],
+    [9.47,"fade","#inland-cod",{dur:.24}]
+  ]
+})
+</script>
+</section>
