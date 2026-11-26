@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s243" data-in="cut" data-section="KEY POINTS" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="local">
+ <rect x="100" y="190" width="800" height="770" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <text x="155" y="304" font-size="76" font-weight="830" fill="#9e1b1b">Local</text>
+ <text class="hi" x="159" y="374" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="670" fill="#6f6a63">स्थानीय</text>
+ <path d="M154 422H846" stroke="#ead9a8" fill="none" stroke-width="3"/>
+ <g id="pin-rule">
+  <path d="M206 549S176 522 176 502a30 30 0 0 1 60 0c0 20-30 47-30 47Z" fill="#f3ead6" stroke="#2b2622" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="206" cy="502" r="9" fill="#fff" stroke="#2b2622" stroke-width="3"/>
+  <text class="hi" x="272" y="520" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="760" fill="#2b2622">तय PIN codes (Metro)</text>
+ </g>
+ <g id="municipal-rule">
+  <path d="M154 605H846" stroke="#ead9a8" fill="none" stroke-width="3"/>
+  <path d="M174 693L183 666L231 661L241 695L217 739L175 727Z" fill="#f3ead6" stroke="#2b2622" stroke-width="4" stroke-linejoin="round" stroke-dasharray="7 6"/>
+  <circle cx="205" cy="699" r="7" fill="#2b2622"/>
+  <text id="municipal-label" class="hi" x="272" y="714" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#2b2622">या municipal सीमा के अंदर</text>
+ </g>
+</g>
+<g id="article">
+ <g id="stamp">
+  <text x="1364" y="218" text-anchor="middle" font-size="51" font-weight="790" fill="#9e1b1b">Article number</text>
+  <use href="piece:key-fact-stamp" transform="translate(1000 254) scale(1.3)"/>
+  <text id="count" x="1364" y="455" text-anchor="middle" font-size="90" font-weight="850" fill="#fff">13 characters</text>
+  <text id="alphanumeric" class="hi" x="1364" y="564" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="720" fill="#fde9a6">अक्षर + अंक (alphanumeric)</text>
+ </g>
+ <g id="boxes">
+  <rect x="1000" y="721" width="820" height="105" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <rect class="character-box" x="1021" y="744" width="51" height="59" rx="9" fill="#fbf7ee" stroke="#d6c5a5" stroke-width="3"/>
+  <rect class="character-box" x="1081" y="744" width="51" height="59" rx="9" fill="#fbf7ee" stroke="#d6c5a5" stroke-width="3"/>
+  <rect class="character-box" x="1141" y="744" width="51" height="59" rx="9" fill="#fbf7ee" stroke="#d6c5a5" stroke-width="3"/>
+  <rect class="character-box" x="1201" y="744" width="51" height="59" rx="9" fill="#fbf7ee" stroke="#d6c5a5" stroke-width="3"/>
+  <rect class="character-box" x="1261" y="744" width="51" height="59" rx="9" fill="#fbf7ee" stroke="#d6c5a5" stroke-width="3"/>
+  <rect class="character-box" x="1321" y="744" width="51" height="59" rx="9" fill="#fbf7ee" stroke="#d6c5a5" stroke-width="3"/>
+  <rect class="character-box" x="1381" y="744" width="51" height="59" rx="9" fill="#fbf7ee" stroke="#d6c5a5" stroke-width="3"/>
+  <rect class="character-box" x="1441" y="744" width="51" height="59" rx="9" fill="#fbf7ee" stroke="#d6c5a5" stroke-width="3"/>
+  <rect class="character-box" x="1501" y="744" width="51" height="59" rx="9" fill="#fbf7ee" stroke="#d6c5a5" stroke-width="3"/>
+  <rect class="character-box" x="1561" y="744" width="51" height="59" rx="9" fill="#fbf7ee" stroke="#d6c5a5" stroke-width="3"/>
+  <rect class="character-box" x="1621" y="744" width="51" height="59" rx="9" fill="#fbf7ee" stroke="#d6c5a5" stroke-width="3"/>
+  <rect class="character-box" x="1681" y="744" width="51" height="59" rx="9" fill="#fbf7ee" stroke="#d6c5a5" stroke-width="3"/>
+  <rect class="character-box" x="1741" y="744" width="51" height="59" rx="9" fill="#fbf7ee" stroke="#d6c5a5" stroke-width="3"/>
+ </g>
+ <g id="not-digits">
+  <text x="1405" y="925" text-anchor="middle" font-size="54" font-weight="790" fill="#4b4f58">13-digit</text>
+  <path id="digits-strike" d="M1302 906H1506M1542 888L1574 920M1574 888L1542 920" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [1.28,'reveal','#pin-rule',{from:'left',dur:0.32}],
+  [2.70,'reveal','#municipal-rule',{from:'left',dur:0.38}],
+  [4.04,'highlight','#municipal-label',{words:'अंदर',color:'#f2b705',opacity:0.38,dur:0.34}],
+  [5.14,'pop','#stamp',{spring:'soft'}],
+  [5.56,'pop','#count',{spring:'soft'}],
+  [5.56,'fade','#boxes',{dur:0.18}],
+  [5.56,'fade','.character-box',{dur:0.12,stagger:0.048}],
+  [6.28,'fade','#alphanumeric',{dur:0.33}],
+  [6.28,'fade','#not-digits',{dur:0.27}],
+  [6.55,'draw','#digits-strike',{dur:0.45}],
+ ]
+}
+</script>
+</section>
