@@ -8,12 +8,5 @@
   "9.09"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s069",
-   "text": "लागू fee / duplicate fee:नियम में तय नहीं",
-   "t": 1.85
-  }
- ]
+ "warnings": []
 }
