@@ -22,7 +22,6 @@
         </g>
         <text id="naf-en" x="193" y="752" font-family="Inter" font-size="48" font-weight="770" fill="#2b2622">National Account Facility</text>
         <text id="naf-hi" x="193" y="804" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="640" fill="#6f6a63">राष्ट्रीय खाता सुविधा</text>
- <g id="facility-5-active"><circle cx="137" cy="910" r="32" fill="#9e1b1b"/><text x="137" y="923" font-family="Inter, sans-serif" font-size="36" font-weight="770" fill="#fff" text-anchor="middle">5</text></g>
  <text id="cod-en" x="193" y="922" font-family="Inter, sans-serif" font-size="48" font-weight="770" fill="#2b2622" text-anchor="start">Cash on Delivery</text>
  <text id="cod-hi" x="193" y="965" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="640" fill="#6f6a63" text-anchor="start">डिलीवरी पर नकद</text>
  <g id="cod-pill"><rect x="701" y="879" width="157" height="54" rx="27" fill="#f3ead6"/><text x="779.5" y="914" font-family="Inter, sans-serif" font-size="31" font-weight="780" fill="#9e1b1b" text-anchor="middle">(COD)</text></g>
@@ -66,7 +65,9 @@
  on:[
   [0.40,'color','#facility-4 circle',{to:'#e8e0d6',dur:0.2}],
   [0.40,'color','#facility-4 text, #naf-en',{to:'#6f6a63',dur:0.2}],
-  [1.44,'fade','#facility-5-active, #cod-en',{dur:0.24}],
+  [1.44,'color','#facility-5 circle',{to:'#9e1b1b',dur:0.14}],
+  [1.44,'color','#facility-5 text',{to:'#ffffff',dur:0.14}],
+  [1.44,'fade','#cod-en',{dur:0.24}],
   [3.30,'pop','#cod-pill',{from:0.91,spring:'soft'}],
   [3.60,'fade','#cod-hi',{dur:0.24}],
   [5.79,'pulse','#cod-post-office',{amount:0.05}],
