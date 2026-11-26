@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 380" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path id="side-buttons" d="M26 104H20V150H26M174 111H180V176H174" fill="#6f6a63"/>
+  <rect id="case" x="25" y="13" width="150" height="354" rx="24" fill="#4b4f58"/>
+  <rect id="screen" x="38" y="52" width="124" height="269" rx="9" fill="#fbf7ee" stroke="#ead9a8"/>
+  <path id="speaker" d="M88 33H112" stroke="#f3ead6"/>
+  <path id="home-bar" d="M82 343H118" stroke="#f3ead6"/>
+  <circle data-anchor="base" cx="100" cy="368.5" r="0" stroke="none"/>
+</svg>
