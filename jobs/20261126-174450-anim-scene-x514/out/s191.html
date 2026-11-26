@@ -6,7 +6,7 @@
       <use id="ordinary-parcel" href="piece:speed-post-parcel" transform="translate(340 224)"/>
       <text x="520" y="610" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="740" fill="#2b2622">Ordinary Speed Post item</text>
       <g id="ordinary-pill">
-        <rect x="197" y="680" width="646" height="88" rx="44" fill="#f3ead6"/>
+        <rect x="177" y="680" width="686" height="88" rx="44" fill="#f3ead6"/>
         <text x="240" y="736" font-family="Inter, sans-serif" font-size="41" font-weight="650" fill="#2b2622">insurance:</text>
         <text id="optional" x="466" y="737" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="42" font-weight="660" fill="#2b2622">आम तौर पर वैकल्पिक</text>
       </g>
@@ -28,12 +28,12 @@
   <script type="text/scene">
   {
     on: [
-      [1.92, 'pop', '#ordinary-pill', {dur:0.28}],
+      [1.92, 'pop', '#ordinary-pill'],
       [3.98, 'fade', '#optional', {dur:0.22}],
-      [5.10, 'pop', '#valuables-card', {dur:0.26}],
+      [5.10, 'pop', '#valuables-card'],
       [5.18, 'fade', '#jewellery', {dur:0.25}],
       [6.04, 'fade', '#valuables-label', {dur:0.23}],
-      [7.88, 'stamp', '#required-pill', {dur:0.24}]
+      [7.88, 'stamp', '#required-pill', {rot:0}]
     ]
   }
   </script>
