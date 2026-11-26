@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s072" data-in="cut" data-duration="11.00" data-section="PART 3 · IDENTITY CARD" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Postal identity card fees under Post Office Regulations 2024, Regulation 54; ordinary card and value-added processing and total">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text id="identity-fee-title" x="200" y="223" class="hi" font-size="56" font-weight="850" fill="#9e1b1b">Identity card fees · शुल्क</text>
+  <g id="identity-fee-table">
+   <g id="fee-grid">
+    <rect x="200" y="280" width="1520" height="580" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <path d="M227 280H1693Q1720 280 1720 307V350H200V307Q200 280 227 280Z" fill="#9e1b1b"/>
+    <path d="M210 350H1710V470H210Z" fill="#fbf7ee"/>
+    <path d="M210 600H1360V730H210Z" fill="#fbf7ee"/>
+    <path d="M1360 470H1708V846H1360Z" fill="#fcf8ee"/>
+    <path d="M210 470H1710M210 600H1360M210 730H1360M1080 350V849M1360 470V849" fill="none" stroke="#ead9a8" stroke-width="3"/>
+    <text x="260" y="329" class="hi" font-size="43" font-weight="820" fill="#fff">CARD · कार्ड</text>
+    <text x="1218" y="329" text-anchor="middle" class="hi" font-size="43" font-weight="820" fill="#fff">FEE · शुल्क</text>
+   </g>
+   <g id="fee-row-1">
+    <text id="ordinary-identity-card" x="258" y="429" class="hi" font-size="48" font-weight="810" fill="#2b2622">सामान्य postal identity card</text>
+   </g>
+   <text id="ordinary-identity-fee" x="1218" y="432" text-anchor="middle" class="hi" font-size="72" font-weight="860" fill="#9e1b1b">₹9</text>
+   <g id="value-added-poid">
+    <path d="M1412 498h-21v313h21" fill="none" stroke="#a77a29" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1552" y="552" text-anchor="middle" class="hi" font-size="44" font-weight="820" fill="#2b2622">Value-added</text>
+    <text x="1552" y="608" text-anchor="middle" class="hi" font-size="44" font-weight="820" fill="#2b2622">POID card</text>
+    <path d="M1499 642h106" stroke="#d7bc7c" stroke-width="3" stroke-linecap="round"/>
+    <text x="1552" y="703" text-anchor="middle" class="hi" font-size="44" font-weight="740" fill="#6f6a63">मूल्यवर्धित</text>
+    <text x="1552" y="757" text-anchor="middle" class="hi" font-size="44" font-weight="740" fill="#6f6a63">डाकघर</text>
+    <text x="1552" y="811" text-anchor="middle" class="hi" font-size="44" font-weight="740" fill="#6f6a63">पहचान पत्र</text>
+   </g>
+   <g id="fee-row-2"><text id="application-charge" x="258" y="555" class="hi" font-size="48" font-weight="810" fill="#2b2622">Application charge</text></g>
+   <text id="application-fee" x="1218" y="557" text-anchor="middle" class="hi" font-size="72" font-weight="860" fill="#9e1b1b">₹20</text>
+   <text id="processing-charge" x="258" y="686" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="810" fill="#2b2622">Processing charge</text>
+   <text id="processing-fee" x="1218" y="687" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="72" font-weight="860" fill="#9e1b1b">₹250</text>
+   <text id="total-charge" x="258" y="816" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="850" fill="#2b2622">Value-added POID: कुल</text>
+   <text id="total-fee" x="1218" y="817" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="72" font-weight="860" fill="#9e1b1b">₹270</text>
+   <rect id="total-outline" x="213" y="735" width="1142" height="109" rx="13" fill="none" stroke="#f2b705" stroke-width="6"/>
+   <g id="fee-distinction">
+    <rect x="1037" y="892" width="681" height="83" rx="20" fill="#f3ead6" stroke="#e5cf9f" stroke-width="3"/>
+    <text x="1377.5" y="948" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="780" fill="#2b2622">दो अलग card व्यवस्थाएँ</text>
+   </g>
+   <text id="fee-source" x="200" y="917" class="hi" font-size="42" font-weight="670" fill="#6f6a63">Post Office Regulations 2024 · Reg. 54</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],on:[
+   [0,"fade","#processing-charge",{dur:.24}],
+   [.88,"pop","#processing-fee",{from:.92,spring:"soft"}],
+   [2.58,"fade","#total-charge",{dur:.24}],
+   [3.90,"pop","#total-fee",{from:.92,spring:"soft"}],
+   [3.90,"draw","#total-outline",{dur:.42}],
+   [5.22,"highlight","#ordinary-identity-fee",{words:"₹9",color:"#f2b705",opacity:.36,pad:9,dur:.34}],
+   [6.62,"highlight","#total-fee",{words:"₹270",color:"#f2b705",opacity:.36,pad:9,dur:.34}],
+   [7.92,"fade","#fee-distinction",{dur:.25}]
+  ]
+ })
+ </script>
+</section>
