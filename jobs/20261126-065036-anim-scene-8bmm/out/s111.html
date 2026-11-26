@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s111" data-in="cut" data-duration="10.83" data-section="PART 5 · CANCELLATION" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Exceptions: the request cannot be completed, or the item is delivered contrary to it; liability is limited under the prescribed conditions.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="refund">
+   <text id="refund-heading" x="200" y="228" class="hi" font-size="56" font-weight="850" fill="#9e1b1b">Recall / alteration: fee की वापसी</text>
+   <g id="refund-rule-card">
+    <rect x="200" y="300" width="1520" height="320" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+    <path d="M237 335v250" stroke="#fde9a6" stroke-width="9" stroke-linecap="round"/>
+   </g>
+   <g id="no-refund-rule">
+    <path d="M295 441l40 40m0-40-40 40" fill="none" stroke="#5e6673" stroke-width="9" stroke-linecap="round"/>
+    <text x="381" y="482" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi" font-size="52" font-weight="790" fill="#2b2622">सामान्य नियम: दिया गया postage और fee वापस नहीं</text>
+   </g>
+   <g id="refund-exception">
+    <rect x="200" y="650" width="1520" height="325" rx="30" fill="#fffdfa" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+    <path d="M237 685v255" stroke="#e5d8bd" stroke-width="9" stroke-linecap="round"/>
+    <text x="280" y="722" font-family="'Noto Sans Devanagari',Inter,sans-serif" class="hi" font-size="44" font-weight="760" fill="#5e6673">पर एक अलग नियम</text>
+    <g id="request-unfulfilled" class="hi" font-weight="760" fill="#2b2622">
+     <circle cx="294" cy="778" r="7" fill="#a78745"/>
+     <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" id="request-unfulfilled-text" x="321" y="794" font-size="48">Request पूरी न हो पाए</text>
+    </g>
+    <g id="request-contrary" class="hi" font-weight="760" fill="#2b2622">
+     <circle cx="294" cy="839" r="7" fill="#a78745"/>
+     <text class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" id="request-contrary-text" x="321" y="855" font-size="48">या application के उलट deliver हो जाए</text>
+    </g>
+    <text id="conditional-liability" x="280" y="925" class="hi" font-size="44" font-weight="740" fill="#5e6673">तय शर्तों पर post office ज़िम्मेदार नहीं</text>
+   </g>
+   <g id="request-fee-refund">
+    <rect x="1190" y="758" width="490" height="88" rx="32" fill="#e7f3eb" stroke="#2e7d4f" stroke-width="3"/>
+    <text id="request-fee-label" x="1435" y="820" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="810" fill="#246441">request fee वापस</text>
+   </g>
+   <g id="exam-confusion">
+    <rect x="1280" y="176" width="410" height="74" rx="24" fill="#eeedf0" stroke="#a6a4aa" stroke-width="3"/>
+    <text x="1485" y="228" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="790" fill="#4b4f58">Exam में confusion</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],shots:[[0,"#refund"]],on:[
+   [1.42,"stamp","#request-fee-refund",{from:1.05,rot:0,spring:"soft"}],
+   [1.42,"color","#request-unfulfilled-text",{to:"#6f6a63",dur:.24}],
+   [1.42,"color","#request-contrary-text",{to:"#6f6a63",dur:.24}],
+   [1.42,"color","#conditional-liability",{to:"#6f6a63",dur:.24}],
+   [5.80,"fade","#exam-confusion",{dur:.27}],
+   [8.94,"highlight","#request-fee-label",{words:"request fee",color:"#f2b705",opacity:.38,pad:7,dur:.34}]
+  ]
+ })
+ </script>
+</section>
