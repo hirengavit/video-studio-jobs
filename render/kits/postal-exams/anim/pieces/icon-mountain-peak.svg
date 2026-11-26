@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<path id="mountain" d="M20 326L174 74L221 149L253 116L380 326Z" fill="#4b4f58"/>
+<path id="snow" d="M174 74L221 149L253 116L292 180L264 172L245 191L220 170L204 189L180 149L160 171L145 151L124 156Z" fill="#ffffff"/>
+<path id="ridge" d="M174 74L180 149L163 249L188 326M253 116L245 191L267 326" stroke="#2b2622"/>
+<circle data-anchor="base" cx="200" cy="326" r="0"/>
+<circle data-anchor="top" cx="174" cy="74" r="0"/>
+</svg>
