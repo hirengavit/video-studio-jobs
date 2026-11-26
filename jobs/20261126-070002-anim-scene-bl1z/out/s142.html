@@ -40,12 +40,12 @@
    </g>
    <g id="request-sheet">
     <use href="piece:written-request" transform="translate(1560 744) scale(.4)"/>
-    <rect id="writing-focus" x="1489" y="675" width="309" height="56" rx="16" fill="#fde9a6"/>
+    <rect id="writing-focus" x="1468" y="675" width="351" height="56" rx="16" fill="#fde9a6"/>
     <text id="writing-label" x="1643.5" y="715" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="750">लिखित request</text>
    </g>
    <g id="request-actors">
-    <rect x="1100" y="808" width="433" height="120" rx="18" fill="#fffdfa" stroke="#ead9a8" stroke-width="2"/>
-    <text x="1120" y="855" font-family="Inter,sans-serif" font-size="44" font-weight="750"><tspan x="1120" y="855">Sender · Addressee</tspan><tspan x="1120" y="908">· Authorised person</tspan></text>
+    <rect x="1100" y="808" width="440" height="120" rx="18" fill="#fffdfa" stroke="#ead9a8" stroke-width="2"/>
+    <text x="1120" y="855" font-family="Inter,sans-serif" font-size="44" font-weight="750"><tspan x="1119" y="855" textLength="403" lengthAdjust="spacing">Sender · Addressee</tspan><tspan x="1119" y="908" textLength="403" lengthAdjust="spacing">· Authorised person</tspan></text>
    </g>
   </g>
  </svg>
@@ -58,13 +58,21 @@
    [5.20,'slide','#request-sheet',{from:'down',dist:45,spring:'soft'}],
    [5.20,'fade','#request-actors',{dur:.27}],
    [5.20,'move','#international-globe',{by:[0,-98],spring:'soft'}],
-   [5.20,'move','#recall-envelope',{by:[92,88],spring:'soft'}],
-   [5.20,'move','#outward-source',{by:[-1310,18],spring:'soft'}],
    [5.20,'color','#outward-arrow',{to:'#6f6a63',prop:'stroke',dur:.38}],
    [5.20,'color','#outward-accountable',{to:'#6f6a63',dur:.38}],
    [11.36,'fade','#writing-label',{dur:.27}],
    [11.36,'reveal','#writing-focus',{from:'left',dur:.35}]
-  ]
+  ],
+  update(t,section,$){
+   const u=Math.max(0,Math.min(1,(t-5.20)/.40));
+   const blend=u<.5?1-2*u:2*u-1;
+   const relocated=u>=.5;
+   const source=$("#outward-source")[0], envelope=$("#recall-envelope")[0];
+   source.setAttribute("opacity",blend);
+   source.setAttribute("transform",relocated?"translate(-1310 18)":"translate(0 0)");
+   envelope.setAttribute("opacity",blend*(relocated?.70:1));
+   envelope.setAttribute("transform",relocated?"translate(1300 942) scale(.25)":"translate(1208 845) scale(.25)");
+  }
  })
  </script>
 </section>
