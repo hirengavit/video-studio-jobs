@@ -8,12 +8,5 @@
   "12.35"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s023",
-   "text": "विदेश जाने वाला item / अपने आप नहीं",
-   "t": 12.35
-  }
- ]
+ "warnings": []
 }
