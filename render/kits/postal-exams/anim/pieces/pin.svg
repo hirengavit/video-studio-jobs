@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="shaft" d="M100 196H312L332 200L312 204H100Z" fill="#c8cbcc" stroke-width="2.5"/>
+<g id="head"><circle cx="86" cy="200" r="16" fill="#a7aaad"/><path d="M80 193a8 8 0 0 1 8-3" stroke="#ffffff" stroke-width="3" fill="none"/></g>
+<circle data-anchor="base" cx="200" cy="216" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="200" cy="184" r="0" fill="none" stroke="none"/>
+</svg>
