@@ -1,20 +1,20 @@
 <section class="vs-scene" id="s183" data-in="cut" data-section="PART 8 · 24 AND 48 SPEED POST" data-series="PRODUCTS">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
     <rect width="1920" height="1080" fill="#fbf7ee"/>
-    <g font-family="Noto Sans Devanagari, Inter, sans-serif">
+    <g>
       <rect x="120" y="180" width="1680" height="90" rx="24" fill="#f3ead6"/>
       <path d="m161 224 12 12 24-26" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <text x="230" y="239" font-size="40" font-weight="620" fill="#2b2622">ज़रूरी: पूरे, सही पते · दोनों के mobile numbers</text>
+      <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="230" y="239" font-size="40" font-weight="620" fill="#2b2622">ज़रूरी: पूरे, सही पते · दोनों के mobile numbers</text>
       <g id="weight-stamp">
         <use href="piece:key-fact-stamp" transform="translate(132 413) scale(1.1)"/>
         <text x="440" y="617" text-anchor="middle" font-family="Inter, sans-serif" font-size="140" font-weight="800" fill="#ffffff">500 g</text>
-        <text x="440" y="691" text-anchor="middle" font-size="40" font-weight="650" fill="#fde9a6">Document की सीमा</text>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="440" y="691" text-anchor="middle" font-size="40" font-weight="650" fill="#fde9a6">Document की सीमा</text>
       </g>
       <g id="caution-card">
-        <rect x="860" y="340" width="940" height="560" rx="32" fill="#ffffff" stroke="#4b4f58" stroke-width="3"/>
-        <text x="935" y="462" font-size="48" font-weight="740" fill="#4b4f58">मत मानिए</text>
-        <text id="claim-one" x="935" y="560" font-size="48" font-weight="650" fill="#2b2622">Gujarat का हर office</text>
-        <text id="claim-two" x="935" y="680" font-size="48" font-weight="650" fill="#2b2622">हर premium product देता है</text>
+        <rect id="caution-surface" x="860" y="340" width="940" height="160" rx="32" fill="#ffffff" stroke="#4b4f58" stroke-width="3"/>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="935" y="462" font-size="48" font-weight="740" fill="#4b4f58">मत मानिए</text>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="claim-one" x="935" y="560" font-size="48" font-weight="650" fill="#2b2622">Gujarat का हर office</text>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" id="claim-two" x="935" y="680" font-size="48" font-weight="650" fill="#2b2622">हर premium product देता है</text>
         <path id="slate-cross" d="m1665 765 70 70m0-70-70 70" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
       </g>
     </g>
@@ -29,7 +29,12 @@
       [9.16, 'strike', '#claim-one', {color:'#4b4f58',width:5,dur:0.25,dim:0.72}],
       [9.16, 'strike', '#claim-two', {color:'#4b4f58',width:5,dur:0.25,dim:0.72}],
       [9.16, 'draw', '#slate-cross', {dur:0.29}]
-    ]
+    ],
+    update(t, section, $) {
+      const progress = (a,b) => Math.max(0, Math.min(1, (t-a)/(b-a)));
+      const surface = $('#caution-surface')[0];
+      if (surface) surface.setAttribute('height', 160 + 120 * progress(5.70,5.98) + 120 * progress(7.32,7.60) + 160 * progress(9.06,9.32));
+    }
   }
   </script>
 </section>
