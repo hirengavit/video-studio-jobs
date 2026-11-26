@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s022" data-in="cut" data-section="PART 1 · WHAT IT IS" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="example">
+ <text x="700" y="201" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="660" fill="#6f6a63">एक example</text>
+ <use id="scale" href="piece:parcel-scale" transform="translate(140 400) scale(0.86)"/>
+ <g id="parcel"><use href="piece:speed-post-parcel" transform="translate(255 316) scale(0.70)"/></g>
+ <text id="scale-value" x="381" y="654" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" font-weight="750" fill="#ffffff">100 g</text>
+ <g id="commercial-tag">
+  <rect x="140" y="220" width="482" height="70" rx="35" fill="#fbf7ee" stroke="#f2b705" stroke-width="4"/>
+  <text x="381" y="267" text-anchor="middle" font-family="Inter, sans-serif" font-size="47" font-weight="750" fill="#2b2622">commercial item</text>
+ </g>
+ <g id="weight-compare">
+  <rect x="700" y="330" width="420" height="290" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="910" y="462" text-anchor="middle" font-family="Inter, sans-serif" font-size="57" font-weight="800" fill="#2b2622">100 g &lt; 500 g</text>
+  <text id="weight-caption" x="910" y="534" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="660" fill="#6f6a63">वजन कम</text>
+ </g>
+ <g id="document">
+  <rect x="1200" y="240" width="580" height="200" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1490" y="335" text-anchor="middle" font-family="Inter, sans-serif" font-size="47" font-weight="800" fill="#2b2622">Speed Post Document</text>
+  <text x="1490" y="396" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="660" fill="#6f6a63">स्पीड पोस्ट दस्तावेज</text>
+  <path id="document-strike" d="M1231 323L1749 325" stroke="#a4a6aa" stroke-width="5" stroke-linecap="round"/>
+  <path id="document-cross" d="M1727 261l24 24m0-24-24 24" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+ </g>
+ <g id="parcel-verdict">
+   <rect x="1200" y="500" width="580" height="180" rx="38" fill="#2e7d4f"/>
+   <text x="1237" y="578" font-family="Inter" font-size="49" font-weight="790" fill="#ffffff">Speed Post Parcel</text>
+   <text x="1237" y="633" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="650" fill="#ffffff">स्पीड पोस्ट पार्सल</text>
+   <circle cx="1719" cy="589" r="32" fill="none" stroke="#ffffff" stroke-width="3"/>
+   <path id="parcel-tick" d="M1703 588l11 12 21-23" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+</g>
+<g id="ems-band">
+  <rect x="140" y="770" width="1640" height="220" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+  <g id="ems-world"><use href="piece:globe-icon" transform="translate(160 785) scale(0.6)"/></g>
+  <text id="international-sp" x="399" y="900" font-family="Inter" font-size="50" font-weight="750" fill="#2b2622">International Speed Post</text>
+  <path id="ems-arrow" d="M1050 881H1115 M1099 866L1115 881 1099 896" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="ems" x="1140" y="909" font-family="Inter" font-size="86" font-weight="820" fill="#9e1b1b">EMS</text>
+  <text id="ems-expansion" x="1344" y="899" font-family="Inter" font-size="43" font-weight="720" fill="#2b2622">Express Mail Service</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [0.59,'highlight','#commercial-tag text',{color:'#f2b705',opacity:0.33,dur:0.45,pad:7}],
+  [2.25,'pop','#parcel-verdict',{from:0.95}],
+  [2.25,'draw','#parcel-tick',{dur:0.34}],
+  [3.38,'fade','#ems-band',{dur:0.26}],
+  [3.38,'draw','#ems-world',{dur:0.68}],
+  [3.38,'words','#international-sp',{gap:0.52,dist:13}],
+  [5.38,'draw','#ems-arrow',{dur:0.33}],
+  [5.38,'stamp','#ems',{from:1.16,rot:-3}],
+  [7.46,'words','#ems-expansion',{gap:0.71,dist:12}],
+ ]
+}
+</script>
+</section>
