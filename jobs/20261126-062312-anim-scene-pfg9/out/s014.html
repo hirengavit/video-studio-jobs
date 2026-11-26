@@ -36,7 +36,6 @@
 <script type="text/scene">
 {
   on: [
-    [.30, 'move', '#limit-move', {by:[-440,0],spring:'soft'}],
     [.72, 'fade', '#person-limit-caption', {dur:.26}],
     [3.58, 'slide', '#article-limit', {from:'right',dist:160,spring:'soft'}],
     [6.14, 'fade', '#article-rule', {dur:.23}],
@@ -45,8 +44,9 @@
   ],
   update(t,section,$) {
     const u=Math.max(0,Math.min(1,(t-.30)/.80));
-    const size=1-.38*u*u*(3-2*u);
-    for (const item of $("#limit-fit")) item.setAttribute("transform", "translate(960 510) scale("+size+") translate(-960 -510)");
+    const d=u*u*(3-2*u);
+    const size=1-.38*d;
+    for (const item of $("#limit-fit")) item.setAttribute("transform", "translate("+(960-440*d)+" 510) scale("+size+") translate(-960 -510)");
   }
 }
 </script>
