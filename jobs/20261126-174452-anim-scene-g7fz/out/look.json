@@ -8,12 +8,5 @@
   "10.29"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s233",
-   "message": "move: option \"dur\" isn't used (it takes: by, spring)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
