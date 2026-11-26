@@ -44,8 +44,15 @@
     <text id="girth-term" x="420" y="521" text-anchor="middle" font-family="Inter, sans-serif" font-size="128" font-weight="820" fill="#fff">Girth</text>
     <text id="girth-meaning" x="420" y="612" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="680" fill="#fde9a6">parcel का घेरा</text>
   </g>
-  <style>#girth #len { display: none; } #girth #girth-loop { stroke:#f2b705; stroke-width:6; }</style>
-  <use id="girth-diagram" href="piece:dimension-box" transform="translate(800 240) scale(1.5)"/>
+  <g id="girth-diagram" transform="translate(800 240) scale(1.5)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path id="box" stroke="#2b2622" stroke-width="3" d="M110 134 285 64 474 131 295 205Z M110 134V246L295 317 474 244V131 M295 205V317"/>
+    <path id="wid" stroke="#2b2622" stroke-width="3" d="M316 344 491 271 M316 344l11-15m-11 15 19 2 M491 271l-17-2m17 2-10 15"/>
+    <path id="ht" stroke="#2b2622" stroke-width="3" d="M523 126v116m0-116-8 13m8-13 8 13m-8 103-8-13m8 13 8-13"/>
+    <g id="girth-loop" stroke="#f2b705" stroke-width="5">
+      <path id="girth-trace" d="M215 169 374 104Q385 99 385 111V200Q385 210 374 215L220 279Q208 284 208 273V181Q208 172 215 169Z"/>
+      <path id="girth-dashes" d="M215 169 374 104Q385 99 385 111V200Q385 210 374 215L220 279Q208 284 208 273V181Q208 172 215 169Z" stroke-dasharray="9 6"/>
+    </g>
+  </g>
   <text id="girth-width-label" x="1430" y="791" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="720" fill="#2b2622">चौड़ाई</text>
   <text id="girth-height-label" x="1625" y="534" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="720" fill="#2b2622">मोटाई</text>
 </g>
@@ -58,7 +65,9 @@
   [1.85,'pop','#tolerance-value',{from:0.90,spring:'fast'}],
   [5.23,'pop','#girth-term',{from:0.89,spring:'fast'}],
   [6.21,'fade','#girth-meaning',{dur:0.34}],
-  [7.17,'draw','#girth-loop',{dur:0.48}],
+  [7.17,'draw','#girth-trace',{dur:0.48}],
+  [7.65,'out','#girth-trace',{dur:0.16,scale:1}],
+  [7.65,'fade','#girth-dashes',{dur:0.16}],
   [8.19,'draw','#wid',{dur:0.30}],
   [8.19,'fade','#girth-width-label',{dur:0.32}],
   [9.88,'draw','#ht',{dur:0.28}],
