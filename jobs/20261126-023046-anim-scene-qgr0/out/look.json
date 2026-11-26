@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "1.73",
+  "3.46",
+  "5.18",
+  "6.91",
+  "8.49"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s018",
+   "text": "To be kept till called for (1.9:1) / To await arrival (1.9:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  }
+ ]
+}
