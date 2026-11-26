@@ -1,0 +1,74 @@
+<section class="vs-scene" id="s036" data-in="cut" data-duration="11.22" data-section="PART 2 · HOLDING PERIOD" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="COD: no separate Poste Restante period or automatic paid extension">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="cod-term">
+   <rect x="140" y="180" width="1640" height="156" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <rect x="140" y="180" width="12" height="156" rx="6" fill="#9e1b1b"/>
+   <text x="960" y="251" text-anchor="middle" font-family="Inter,sans-serif" font-size="72" font-weight="840" fill="#2b2622">COD (Cash on Delivery)</text>
+   <text id="cod-hindi" x="960" y="310" text-anchor="middle" class="hi" font-size="48" font-weight="760" fill="#6f6a63">डिलीवरी पर भुगतान</text>
+  </g>
+  <g id="value-added">
+   <rect x="660" y="357" width="600" height="62" rx="30" fill="#eeecee"/>
+   <text x="960" y="401" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#4b4f58">value-added service</text>
+  </g>
+  <defs><filter id="flow-grey" color-interpolation-filters="sRGB"><feColorMatrix id="flow-saturation" type="saturate" values="1"/></filter></defs>
+  <g id="cod-flow">
+   <g id="cod-sender">
+    <rect x="112" y="510" width="376" height="369" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M168 797H432" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <use href="piece:person-icon" transform="translate(224 550) scale(.95)"/>
+    <text x="300" y="851" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">Sender</text>
+   </g>
+   <g id="cod-office">
+    <rect x="750" y="510" width="420" height="369" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M810 797H1110" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <use href="piece:post-office-icon" transform="translate(809.6 537.6) scale(.94)"/>
+    <text x="960" y="851" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">Post Office</text>
+   </g>
+   <g id="cod-addressee">
+    <rect x="1308" y="510" width="384" height="369" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M1368 797H1632" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <use href="piece:person-icon" transform="translate(1424 550) scale(.95)"/>
+    <text x="1500" y="851" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">Addressee</text>
+   </g>
+   <path id="collect-arrow" d="M1285 684H1193m24-18-24 18 24 18" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+   <path id="remit-arrow" d="M725 684H515m24-18-24 18 24 18" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+   <g id="cod-money">
+    <use href="piece:rupee-deposit" transform="translate(222 423) scale(.65)"/>
+   </g>
+  </g>
+  <g id="cod-rules">
+   <rect x="200" y="500" width="1520" height="490" rx="28" fill="#fffdfa" stroke="#ead9a8" stroke-width="3"/>
+   <text x="264" y="559" class="hi" font-size="48" font-weight="820" fill="#9e1b1b">COD के नियम</text>
+   <path d="M264 575H1656M264 688H1656M264 818H1656" stroke="#ead9a8" stroke-width="2"/>
+   <text id="separate-period" x="264" y="630" class="hi" font-size="52" font-weight="750" fill="#2b2622">Poste Restante के लिए अलग अवधि</text>
+   <path id="no-separate-period" d="M1595 598l37 37m0-37-37 37" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+   <text id="automatic-extension" x="264" y="760" class="hi" font-size="52" font-weight="750" fill="#2b2622">fee देकर अवधि अपने आप बढ़ना</text>
+   <path id="no-automatic-extension" d="M1595 728l37 37m0-37-37 37" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  update(t, section, $){
+   const flow=$('#cod-flow')[0];
+   const level=Math.max(0,Math.min(1,(t-1.26)/.40));
+   if(flow){
+    if(level>0){
+     const filter=$('#flow-grey')[0];
+     if(filter) flow.setAttribute('filter','url(#'+filter.id+')');
+     $('#flow-saturation')[0]?.setAttribute('values',(1-level).toFixed(4));
+    }else flow.removeAttribute('filter');
+   }
+  },
+  on:[
+   [1.26,'slide','#cod-rules',{from:'down',dist:85,spring:'soft'}],
+   [2.78,'fade','#separate-period',{dur:.26}],
+   [5.58,'draw','#no-separate-period',{dur:.36}],
+   [6.98,'fade','#automatic-extension',{dur:.26}],
+   [10.14,'draw','#no-automatic-extension',{dur:.36}]
+  ]
+ })
+ </script>
+</section>
+
