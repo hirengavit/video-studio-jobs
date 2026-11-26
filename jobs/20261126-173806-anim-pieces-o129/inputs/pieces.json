@@ -1,0 +1,136 @@
+[
+  {
+    "id": "speed-post-emblem",
+    "description": "The lecture's recurring picture: a simple ink Speed Post envelope (white, 3 px ink #2b2622 outline, three short postal-red #9e1b1b speed lines at its left edge, blank label strip) leaning on a sand #f3ead6 cardboard parcel with a blank white label; 520x360, no lettering, no logo. Parts #envelope, #parcel, #speed-lines.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s001",
+      "s010",
+      "s027",
+      "s053",
+      "s056",
+      "s082",
+      "s089",
+      "s099",
+      "s101",
+      "s102",
+      "s126",
+      "s147",
+      "s150",
+      "s162",
+      "s184",
+      "s187",
+      "s190",
+      "s208",
+      "s232",
+      "s240",
+      "s251"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "key-fact-stamp",
+    "description": "Postal-red #9e1b1b card with a perforated stamp edge, 560x340, thin #b8403a inner line, blank for one big white figure and a pale-yellow Hindi line under it; the recurring key-fact card (500 g, 35 kg, ₹19/₹47, 13 characters, ₹5 lakh, ₹1,000).",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s001",
+      "s002",
+      "s005",
+      "s015",
+      "s028",
+      "s030",
+      "s050",
+      "s051",
+      "s075",
+      "s083",
+      "s108",
+      "s119",
+      "s122",
+      "s128",
+      "s131",
+      "s138",
+      "s144",
+      "s152",
+      "s167",
+      "s175",
+      "s183",
+      "s193",
+      "s205",
+      "s231",
+      "s235",
+      "s242",
+      "s243",
+      "s248",
+      "s250"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "speed-post-parcel",
+    "description": "Sand #f3ead6 cardboard box in three-quarter view, 3 px ink outline, tan tape cross on top, blank white address label with an ink barcode band; 360x300.",
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "scenes": [
+      "s003",
+      "s020",
+      "s021",
+      "s031",
+      "s037",
+      "s040",
+      "s042",
+      "s044",
+      "s049",
+      "s072",
+      "s075",
+      "s082",
+      "s086",
+      "s088",
+      "s123",
+      "s128",
+      "s142",
+      "s191",
+      "s204",
+      "s224",
+      "s244",
+      "s247"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "dimension-box",
+    "description": "Open ink line drawing of a box in three-quarter view, 640x420, with three blank dimension arrows (#len, #wid, #ht) and a dashed loop round its middle (#girth-loop) to draw on; no numbers.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s033",
+      "s034",
+      "s037",
+      "s051",
+      "s241"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "calendar-strip",
+    "description": "Four white day tiles in a row (each 240x260, 3 px ink) with a blank postal-red top band for the day name and a big blank centre; groups #day-1..#day-4 so a scene can strike or tick each.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s156"
+    ],
+    "reuse": false
+  }
+]
