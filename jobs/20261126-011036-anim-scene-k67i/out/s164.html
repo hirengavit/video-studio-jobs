@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s164" data-in="cut" data-section="PART 7 · INTERNATIONAL" data-series="DELIVERY RULES">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="day-eight">
+    <text x="960" y="236" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="72" font-weight="800" fill="#9e1b1b">8वाँ दिन</text>
+    <use href="piece:day-strip" transform="translate(300 420)"/>
+    <rect x="1077" y="437" width="96" height="96" rx="9" fill="#f2b705"/>
+    <g text-anchor="middle" font-family="Inter, sans-serif" font-size="54" font-weight="650" fill="#2b2622">
+      <text x="355" y="507">1</text>
+      <text x="465" y="507">2</text>
+      <text x="575" y="507">3</text>
+      <text x="685" y="507">4</text>
+      <text x="795" y="507">5</text>
+      <text x="905" y="507">6</text>
+      <text x="1015" y="507">7</text>
+      <text x="1125" y="507" font-weight="850">8</text>
+      <text x="1235" y="507">9</text>
+      <text x="1345" y="507">10</text>
+      <text x="1455" y="507">11</text>
+      <text x="1565" y="507">12</text>
+    </g>
+    <g id="charge-flag">
+      <path d="M1125 363V430" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round"/>
+      <rect x="944" y="302" width="362" height="83" rx="20" fill="#9e1b1b"/>
+      <text x="1125" y="360" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="54" font-weight="750" fill="#fff">charge शुरू</text>
+    </g>
+    <g id="last-date">
+      <rect x="300" y="674" width="1320" height="111" rx="18" fill="#f2eee7" stroke="#d6cdc1" stroke-width="3"/>
+      <text id="last-label" x="410" y="748" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="54" font-weight="650" fill="#4b4f58">आखिरी तारीख</text>
+    </g>
+    <g id="return-date">
+      <rect x="300" y="813" width="1320" height="111" rx="18" fill="#f2eee7" stroke="#d6cdc1" stroke-width="3"/>
+      <text id="return-label" x="410" y="887" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="54" font-weight="650" fill="#4b4f58">वापसी की तारीख</text>
+    </g>
+    <path id="last-no" d="M1501 710l38 38m0 -38l-38 38" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+    <path id="return-no" d="M1501 849l38 38m0 -38l-38 38" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [.74,'stamp','#charge-flag',{from:1.14, rot:-3}],
+    [4.62,'fade','#last-date',{dur:.28}],
+    [5.87,'fade','#return-date',{dur:.28}],
+    [7.30,'strike','#last-label',{color:'#4b4f58',width:5,dur:.26,dim:.83}],
+    [7.30,'strike','#return-label',{color:'#4b4f58',width:5,dur:.26,dim:.83}],
+    [7.30,'draw','#last-no,#return-no',{dur:.32}],
+  ],
+}
+</script>
+</section>
