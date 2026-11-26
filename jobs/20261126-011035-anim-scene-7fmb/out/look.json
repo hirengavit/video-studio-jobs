@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.09",
+  "4.19",
+  "6.28",
+  "8.38",
+  "10.32"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "off-frame",
+   "scene": "s051",
+   "message": "a card or panel (#s051-frame) runs 132 px past the frame edge at 6.3 s (check the camera zoom and the layout)",
+   "t": 6.28
+  },
+  {
+   "kind": "off-frame",
+   "scene": "s051",
+   "message": "a card or panel (#s051-frame) runs 132 px past the frame edge at 8.4 s (check the camera zoom and the layout)",
+   "t": 8.38
+  }
+ ]
+}
