@@ -1,0 +1,37 @@
+<section class="vs-scene" id="s080" data-in="cut" data-section="PART 3 · TARIFF" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="recap">
+    <rect x="160" y="190" width="1600" height="780" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M193 192h1534q28 0 31 28v15L960 340 162 235v-15q3-28 31-28z" fill="#f3ead6"/>
+    <path d="M163 235 960 340l797-105" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linejoin="round"/>
+    <text x="960" y="231" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="700">याद रखें</text>
+    <text x="960" y="296" text-anchor="middle" fill="#9e1b1b" font-size="60" font-weight="820">Tariff</text>
+    <g id="seal"><circle cx="960" cy="341" r="32" fill="#9e1b1b"/><circle cx="960" cy="341" r="24" fill="none" stroke="#fde9a6" stroke-width="2" stroke-dasharray="3 5"/><text x="960" y="354" text-anchor="middle" fill="#fde9a6" font-size="34" font-weight="790">3</text></g>
+    <path d="M250 610h1420m-1420 180h1420" fill="none" stroke="#ead9a8" stroke-width="2" stroke-linecap="round"/>
+    <g id="ordinary-term">
+      <text x="325" y="433" fill="#2b2622" font-size="48" font-weight="800">Ordinary Speed Post Document</text>
+      <text x="325" y="482" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650">साधारण स्पीड पोस्ट दस्तावेज</text>
+    </g>
+    <g id="slab-one"><rect x="325" y="512" width="200" height="70" rx="35" fill="#f3ead6"/><rect id="first-slab-highlight" x="325" y="512" width="200" height="70" rx="35" fill="#fde9a6"/><text x="425" y="558" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="740">50 g तक</text></g>
+    <g id="slab-two"><rect x="548" y="512" width="220" height="70" rx="35" fill="#f3ead6"/><text x="658" y="558" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="740">51–250 g</text></g>
+    <g id="slab-three"><rect x="791" y="512" width="235" height="70" rx="35" fill="#f3ead6"/><text x="908.5" y="558" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="740">251–500 g</text></g>
+    <g id="local-price">
+      <rect x="1200" y="413" width="410" height="82" rx="41" fill="#fde9a6"/>
+      <text x="1280" y="469" fill="#8a5d00" font-size="48" font-weight="790">₹19</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [0,'fade','#ordinary-term',{dur:0.24}],
+    [1.08,'pop','#slab-one',{from:0.93}],
+    [2.92,'pop','#slab-two',{from:0.93}],
+    [5.52,'pop','#slab-three',{from:0.93}],
+    [8.30,'fade','#first-slab-highlight',{dur:0.28}],
+    [9.68,'pop','#local-price',{from:0.94}]
+  ]
+}
+</script>
+</section>
