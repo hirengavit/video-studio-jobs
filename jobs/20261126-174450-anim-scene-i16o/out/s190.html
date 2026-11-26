@@ -8,9 +8,9 @@
   <text id="hindi-title" x="123" y="604" font-size="75" font-weight="720" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#9e1b1b">बीमा</text>
   <path id="underline" d="M125 628Q179 621 249 627" fill="none" stroke="#f2b705" stroke-width="9" stroke-linecap="round"/>
   <g id="definition" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="600" fill="#2b2622">
-    <text x="123" y="729">सफ़र में</text>
-    <text id="covered" x="300" y="729">पात्र loss या damage</text>
-    <text x="123" y="798">से पैसे की सुरक्षा</text>
+    <text x="123" y="729" font-family="'Noto Sans Devanagari', Inter, sans-serif">सफ़र में</text>
+    <text id="covered" x="360" y="729" font-family="'Noto Sans Devanagari', Inter, sans-serif">पात्र loss या damage</text>
+    <text x="123" y="798" font-family="'Noto Sans Devanagari', Inter, sans-serif">से पैसे की सुरक्षा</text>
   </g>
   <g><circle cx="132" cy="921" r="7" fill="#9e1b1b"/><circle cx="163" cy="921" r="7" fill="#9e1b1b"/><circle cx="194" cy="921" r="7" fill="#9e1b1b"/><circle cx="225" cy="921" r="7" fill="#9e1b1b"/><circle cx="256" cy="921" r="7" fill="#9e1b1b"/><circle cx="287" cy="921" r="7" fill="#9e1b1b"/><circle cx="318" cy="921" r="7" fill="#9e1b1b"/><circle cx="349" cy="921" r="7" fill="#9e1b1b"/><circle cx="380" cy="921" r="9" fill="#f2b705"/><circle cx="411" cy="921" r="7" fill="#e6dcc4"/><circle cx="442" cy="921" r="7" fill="#e6dcc4"/><text x="484" y="934" font-size="36" font-weight="600" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63">Part 9 of 11 · भाग 9 / 11</text></g>
   <g id="postal-stamp">
@@ -51,10 +51,10 @@
     [0.42,'draw','#underline',{dur:0.54}],
     [1.50,'fade','#definition',{dur:0.36}],
     [2.98,'highlight','#covered',{words:'loss या damage',color:'#f2b705',opacity:0.36,dur:0.5,pad:6}],
-    [6.68,'pop','#not-equal',{dur:0.28}],
+    [6.68,'pop','#not-equal',{spring:'soft'}],
     [7.02,'fade','#pli',{dur:0.32}],
     [9.18,'fade','#rpli',{dur:0.32}],
-    [11.24,'pop','#different',{dur:0.28}]
+    [11.24,'pop','#different',{spring:'soft'}]
   ]
 }
 </script>
