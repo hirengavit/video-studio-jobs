@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "1.87",
+  "3.74",
+  "5.61",
+  "7.48",
+  "9.20"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "error",
+   "scene": "s005",
+   "message": "update(): dot.setAttribute is not a function",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s005",
+   "text": "Speed Post क्या है / · दो classes",
+   "t": 7.48
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s005",
+   "message": "a card is mostly empty at 7.5 s: bring its items in sooner, or size it for what it holds now",
+   "t": 7.48
+  }
+ ]
+}
