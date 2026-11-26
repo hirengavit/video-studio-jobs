@@ -10,10 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
+   "kind": "text-overlap",
    "scene": "s064",
-   "message": "stamp: option \"dur\" isn't used (it takes: from, spring, rot)",
-   "t": 0.3
+   "text": "Validity: / 3 साल",
+   "t": 3.62
   }
  ]
 }
