@@ -67,6 +67,7 @@
   const recent=k*k*(3-2*k);
   for(let i=1;i<=5;i++){
    $("#tile-bg-"+i).forEach(el=>el.setAttribute("height",640-90*recent));
+   if (i<=3) $("#tile-"+i+"-term").forEach(el=>el.setAttribute("transform","translate(0 "+(-19*recent)+")"));
    $("#tile-"+i+"-job").forEach(el=>el.setAttribute("transform","translate(0 "+(-(i<=3?58:35)*recent)+")"));
   }
  },
