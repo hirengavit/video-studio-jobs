@@ -8,12 +8,5 @@
   "11.78"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s008",
-   "text": "खुद आकर ले जाता है",
-   "t": 11.78
-  }
- ]
+ "warnings": []
 }
