@@ -8,12 +8,5 @@
   "10.65"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s162",
-   "message": "stamp: option \"dur\" isn't used (it takes: from, spring, rot)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
