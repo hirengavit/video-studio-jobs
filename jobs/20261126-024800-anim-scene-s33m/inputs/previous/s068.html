@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s068" data-duration="13.02" data-in="cut" data-section="PART 3 · IDENTITY CARD" data-series="DELIVERY RULES">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="dup">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="lost-card">
+  <use href="piece:id-card" transform="translate(245 248) scale(2)"/>
+  <rect x="229" y="232" width="632" height="432" rx="24" fill="none" stroke="#4b4f58" stroke-width="5" stroke-dasharray="16 14"/>
+  <rect x="410" y="253" width="270" height="75" rx="20" fill="#eeecee"/>
+  <text x="545" y="307" text-anchor="middle" class="hi" font-size="48" font-weight="850" fill="#4b4f58">खो गया</text>
+ </g>
+ <path id="duplicate-arrow" d="M897 448h126m-27-25 27 25-27 25" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="duplicate-card">
+  <use href="piece:id-card" transform="translate(1075 248) scale(2)"/>
+  <rect x="1085" y="257" width="580" height="72" rx="19" fill="#9e1b1b"/>
+  <text x="1375" y="310" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="860" letter-spacing="3" fill="#fff">DUPLICATE</text>
+ </g>
+
+ <g id="duplicate-fee">
+  <rect x="205" y="750" width="580" height="154" rx="27" fill="#fff3d2" stroke="#e0c78b" stroke-width="4"/>
+  <use href="piece:rupee-deposit" transform="translate(237 775) scale(.62)"/>
+  <text id="duplicate-fee-label" x="565" y="845" text-anchor="middle" class="hi" font-size="52" font-weight="830" fill="#62430e">लागू fee</text>
+ </g>
+ <g id="declaration-sheet">
+  <use href="piece:written-request" transform="translate(826 674) scale(.6)"/>
+  <text x="952" y="737" font-family="Inter,sans-serif" text-anchor="middle" font-size="40" font-weight="810" fill="#9e1b1b">Declaration</text>
+ </g>
+ <g id="declaration-line">
+  <rect x="1111" y="702" width="598" height="248" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M1131 727v198" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round"/>
+  <text x="1160" y="756" class="hi" font-size="44" font-weight="790" fill="#2b2622">पुराने card के गलत</text>
+  <text x="1160" y="811" class="hi" font-size="44" font-weight="790" fill="#2b2622">इस्तेमाल की</text>
+  <text x="1160" y="866" class="hi" font-size="44" font-weight="790" fill="#2b2622">ज़िम्मेदारी से</text>
+  <text id="department-release" x="1160" y="921" class="hi" font-size="44" font-weight="820" fill="#2b2622">Department मुक्त</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,"#dup"]],
+ on:[
+  [.64,"pop","#duplicate-fee",{from:.92,spring:"soft"}],
+  [2.40,"slide","#declaration-sheet",{from:"down",dist:59,spring:"soft"}],
+  [6.24,"pulse","#lost-card",{amount:.025}],
+  [6.24,"fade","#declaration-line",{dur:.28}],
+  [11.32,"highlight","#department-release",{words:"मुक्त",color:"#f2b705",opacity:.42,pad:6,dur:.35}],
+ ]
+})
+</script>
+</section>
