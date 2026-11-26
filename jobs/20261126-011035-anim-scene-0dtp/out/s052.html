@@ -1,0 +1,33 @@
+<section class="vs-scene" id="s052" data-in="cut" data-section="PART 3 · IDENTITY CARD" data-series="DELIVERY RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="two-words">
+      <text x="960" y="209" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="60" font-weight="750" fill="#9e1b1b">नियम के दो शब्द</text>
+      <rect id="left-paper" x="140" y="290" width="780" height="470" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <rect id="right-paper" x="1000" y="290" width="780" height="470" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <g id="left-label">
+        <rect x="181" y="337" width="698" height="80" rx="16" fill="#f3ead6"/>
+        <text x="530" y="392" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="650" fill="#2b2622">Addressee / authorised person</text>
+      </g>
+      <text id="may-rule" x="530" y="554" text-anchor="middle" font-family="Georgia, serif" font-size="64" fill="#2b2622">may seek identification</text>
+      <text id="left-condition" x="530" y="683" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="600" fill="#4b4f58">postman न जानता हो</text>
+      <g id="reg-54-stamp">
+        <use href="piece:postmark-ring" transform="translate(1073 800) scale(.84)"/>
+        <text x="1165" y="906" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">Reg. 54</text>
+        <text x="1448" y="879" font-family="Inter, sans-serif" font-size="44" font-weight="650" fill="#9e1b1b">Post Office</text>
+        <text x="1448" y="938" font-family="Inter, sans-serif" font-size="44" font-weight="650" fill="#9e1b1b">Regulations 2024</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [2.28, 'fade', '#left-label', {dur:.3}],
+      [4.94, 'fade', '#left-condition', {dur:.3}],
+      [7.70, 'type', '#may-rule', {cps:32}],
+      [10.62, 'highlight', '#may-rule', {words:'may',color:'#f2b705',opacity:.43,dur:.23}],
+      [10.62, 'stamp', '#reg-54-stamp', {from:1.08,rot:-2}],
+    ],
+  }
+  </script>
+</section>
