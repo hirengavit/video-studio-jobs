@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s029" data-in="cut" data-duration="9.57" data-section="PART 1 · POSTE RESTANTE" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="At the Poste Restante counter, an article is held in deposit for the applicable period, not indefinitely.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <use href="set:po-counter" layer="back"/>
+  <g id="waiting-envelope">
+    <use href="piece:domestic-envelope" transform="translate(0 0) scale(.28)"/>
+    <g transform="translate(166 12)">
+      <circle cx="0" cy="17" r="30" fill="#fffaf0" stroke="#9e1b1b" stroke-width="3"/>
+      <circle cx="0" cy="17" r="26" fill="none" stroke="#9e1b1b" stroke-width="1"/>
+      <text x="0" y="15" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" font-weight="850" fill="#9e1b1b">POSTE</text>
+      <text x="0" y="28" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="850" fill="#9e1b1b">RESTANTE</text>
+    </g>
+    <circle cx="106" cy="112" r="0" data-anchor="base"/>
+  </g>
+  <use href="set:po-counter" layer="front"/>
+  <g id="medium-overlays" transform="translate(71.111111 9) scale(.9259259259)">
+    <g id="rack-print" transform="rotate(-1.5 306.5 343.5)">
+      <rect x="96" y="198" width="421" height="291" rx="16" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+      <image href="photo:letters-pigeonhole-rack" x="109" y="211" width="395" height="264" preserveAspectRatio="xMidYMid meet"/>
+    </g>
+    <g id="period-note">
+      <rect x="536" y="598" width="848" height="128" rx="22" fill="#f3ead6" stroke="#d5c5a3" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="960" y="672" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="820" fill="#2b2622">लागू अवधि तक deposit</text>
+    </g>
+    <rect id="bounded-duration" x="560" y="686" width="800" height="16" rx="8" fill="#9e1b1b"/>
+    <path id="duration-end" d="M1360 675v38" fill="none" stroke="#7d1414" stroke-width="6" stroke-linecap="round"/>
+    <g id="forever-panel">
+      <rect x="1440" y="300" width="360" height="220" rx="24" fill="#fffdf8" stroke="#c5bdad" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text id="forever-label" x="1620" y="372" textLength="307" lengthAdjust="spacingAndGlyphs" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="810" fill="#2b2622">हमेशा के लिए</text>
+      <g id="forever-cross">
+        <path d="M1567 393l106 106m0-106-106 106" fill="none" stroke="#4b4f58" stroke-width="12" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  set:"po-counter",
+  camera:[[0,{zoom:1.08,x:0,y:-31}]],
+  on:[
+    [0,"place","#waiting-envelope",{spot:"rack-slot"}],
+    [3.92,"grow","#bounded-duration",{axis:"x",origin:"left",spring:"soft"}],
+    [3.92,"fade","#period-note",{dur:.24}],
+    [4.30,"fade","#duration-end",{dur:.18}],
+    [6.42,"fade","#forever-panel",{dur:.28}],
+    [8.38,"strike","#forever-label",{color:"#4b4f58",width:5,dim:.78,dur:.26}],
+    [8.38,"pop","#forever-cross",{from:.9,spring:"soft"}]
+  ]
+})
+</script>
+</section>
