@@ -5,7 +5,7 @@
  <path id="underline" d="M145 411Q382 403 601 410Q785 417 973 406" fill="none" stroke="#f2b705" stroke-width="12" stroke-linecap="round"/>
  <text id="title-hi" x="146" y="482" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="760" fill="#9e1b1b">स्पीड पोस्ट</text>
  <use id="emblem" href="piece:speed-post-emblem" transform="translate(1140 220) scale(1.2)"/>
- <g id="chips"><g id="features"><rect x="140" y="540" width="215" height="88" rx="44" fill="#f3ead6"/><text x="247.5" y="599" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="730" fill="#2b2622">खूबियाँ</text></g><g id="limits"><rect x="374" y="540" width="219" height="88" rx="44" fill="#f3ead6"/><text x="483.5" y="599" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="730" fill="#2b2622">सीमाएँ</text></g><g id="standards"><rect x="612" y="540" width="468" height="88" rx="44" fill="#f3ead6"/><text x="846" y="599" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="730" fill="#2b2622">service standards</text></g></g>
+ <g id="chips"><g id="features"><rect x="140" y="540" width="215" height="88" rx="44" fill="#f3ead6"/><text x="247.5" y="597" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#2b2622">खूबियाँ</text></g><g id="limits"><rect x="374" y="540" width="219" height="88" rx="44" fill="#f3ead6"/><text x="483.5" y="597" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#2b2622">सीमाएँ</text></g><g id="standards"><rect x="612" y="540" width="468" height="88" rx="44" fill="#f3ead6"/><text x="846" y="597" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#2b2622">service standards</text></g></g>
  <g id="launch" transform="translate(140 680) scale(0.94)">
   <use href="piece:key-fact-stamp"/>
   <text id="launch-day" x="280" y="84" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="760" fill="#ffffff">1 August</text>
@@ -18,9 +18,9 @@
  camera:[[0,{zoom:1}],[7.15,{zoom:1.04}],[10.9,{zoom:1}]],
  on:[
   [1.20,'draw','#underline',{dur:0.54}],
-  [3.18,'pop','#features',{spring:'soft'}],
-  [4.22,'pop','#limits',{spring:'soft'}],
-  [5.76,'pop','#standards',{spring:'soft'}],
+  [3.18,'fade','#features',{dur:0.22}],
+  [4.22,'fade','#limits',{dur:0.22}],
+  [5.76,'fade','#standards',{dur:0.22}],
   [7.30,'stamp','#launch',{spring:'soft'}],
   [8.44,'fade','#launch-day',{dur:0.29}],
   [9.08,'pop','#launch-year',{spring:'soft'}]
