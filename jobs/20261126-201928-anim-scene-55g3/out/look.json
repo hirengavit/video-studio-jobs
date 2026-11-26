@@ -16,12 +16,6 @@
    "t": 0.3
   },
   {
-   "kind": "text-overlap",
-   "scene": "s046",
-   "text": "बाद में: छूट सिर्फ / Director General की खास इजाज़त से",
-   "t": 1.99
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s046",
    "message": "a card is mostly empty at 4.0 s: bring its items in sooner, or size it for what it holds now",
