@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s032" data-in="cut" data-duration="11.31" data-section="PART 1 · POSTE RESTANTE" data-series="PRODUCTS" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Exam trap: three months is the person's limit, not a holding period for each article.">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="800">
+  <rect x="140" y="192" width="1640" height="114" rx="26" fill="#9e1b1b"/>
+  <path d="M161 211H1759M161 288H1759" fill="none" stroke="#fde9a6" stroke-width="4" stroke-dasharray="3 11" stroke-linecap="round"/>
+  <text class="hi" x="960" y="269" text-anchor="middle" font-size="64" fill="#fff">EXAM TRAP · परीक्षा का जाल</text>
+  <rect id="trap-surface" x="140" y="336" width="1640" height="142" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <text id="trap-line" class="hi" x="205" y="426" font-size="52" fill="#2b2622">हर Poste restante article 3 महीने रखा जाता है?</text>
+  <path id="trap-cross" d="M1650 381l48 48m-48 0 48-48" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+  <g id="article-card">
+   <rect x="140" y="520" width="790" height="316" rx="30" fill="#fff" stroke="#d5a835" stroke-width="5" filter="url(#vs-shadow)"/>
+   <text x="523" y="643" text-anchor="middle" font-family="Inter,sans-serif" font-size="76" fill="#2b2622">Article</text>
+   <text class="hi" x="523" y="760" text-anchor="middle" font-size="57" fill="#65584d">Part 2 में</text>
+   <circle cx="812" cy="671" r="69" fill="#fde9a6" stroke="#d5a835" stroke-width="4"/>
+   <text x="812" y="699" text-anchor="middle" font-family="Inter,sans-serif" font-size="80" fill="#62430e">?</text>
+  </g>
+  <g id="person-card">
+   <rect x="990" y="520" width="790" height="316" rx="30" fill="#fff" stroke="#e1cca5" stroke-width="3" filter="url(#vs-shadow)"/>
+   <text class="hi" x="1040" y="703" font-size="60" fill="#2b2622">Person · व्यक्ति</text>
+   <g id="three-mark">
+    <circle cx="1628" cy="670" r="100" fill="#9e1b1b"/>
+    <circle cx="1628" cy="670" r="85" fill="none" stroke="#fde9a6" stroke-width="4" stroke-dasharray="3 9" stroke-linecap="round"/>
+    <text x="1628" y="695" text-anchor="middle" font-family="Inter,sans-serif" font-size="68" fill="#fff">3 M</text>
+   </g>
+  </g>
+  <g id="remember">
+   <rect x="140" y="868" width="1640" height="126" rx="25" fill="#f9e9ba" stroke="#e1bc58" stroke-width="3"/>
+   <text id="remember-text" class="hi" x="960" y="952" text-anchor="middle" font-size="65" fill="#2b2622">3 महीने = व्यक्ति की सीमा</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [2.66,"fade","#trap-surface",{dur:.20}],
+  [2.66,"type","#trap-line",{cps:12}],
+  [7.80,"strike","#trap-line",{color:"#4b4f58",width:7,dur:.28,dim:.82}],
+  [7.80,"draw","#trap-cross",{dur:.25}],
+  [8.14,"slide","#article-card",{from:"down",dist:47,spring:"soft"}],
+  [8.14,"slide","#person-card",{from:"down",dist:47,spring:"soft"}],
+  [8.14,"stamp","#three-mark",{from:1.18,rot:-5,spring:"soft"}],
+  [10.30,"reveal","#remember",{from:"left",dur:.31}],
+  [10.30,"highlight","#remember-text",{words:"व्यक्ति",color:"#f2b705",opacity:.38,pad:6,dur:.4}]
+ ]
+})
+</script>
+</section>
