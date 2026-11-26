@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s025" data-in="cut" data-duration="9.52" data-section="PART 1 · POSTE RESTANTE" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Poste Restante changes only where the item waits: at the post office instead of the usual address">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text id="only-place-heading" x="960" y="222" text-anchor="middle" class="hi" font-size="60" font-weight="840" fill="#9e1b1b">सिर्फ जगह बदलती है</text>
+  <g id="usual-route">
+   <rect x="180" y="260" width="1560" height="300" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <rect x="216" y="341" width="396" height="138" rx="22" fill="#eeecee"/>
+   <text x="414" y="428" text-anchor="middle" class="hi" font-size="60" font-weight="820" fill="#4b4f58">सामान्य</text>
+   <path d="M645 300V520" fill="none" stroke="#ead9a8" stroke-width="3"/>
+   <use href="piece:domestic-envelope" transform="translate(692 338) scale(.43)"/>
+   <path d="M1064 424h164m-28-21 28 21-28 21" fill="none" stroke="#6f6a63" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+   <g style="filter:grayscale(1)">
+    <use href="piece:house-icon" transform="translate(1329 285) scale(.87)"/>
+   </g>
+  </g>
+  <g id="poste-route">
+   <rect x="180" y="640" width="1560" height="300" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <rect x="216" y="721" width="396" height="138" rx="22" fill="#f3ead6"/>
+   <text x="414" y="807" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" font-weight="820" fill="#2b2622">Poste Restante</text>
+   <path d="M645 681V900" fill="none" stroke="#ead9a8" stroke-width="3"/>
+   <g id="poste-envelope">
+    <use href="piece:domestic-envelope" transform="translate(692 718) scale(.43)"/>
+   </g>
+   <path id="poste-arrow" d="M1064 804h164m-28-21 28 21-28 21" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+   <g id="poste-office">
+    <use href="piece:post-office-icon" transform="translate(1334 643) scale(.78)"/>
+    <text id="poste-office-label" x="1459" y="914" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="830" fill="#2b2622">Post Office</text>
+   </g>
+  </g>
+  <g id="where-it-waits">
+   <rect x="1156" y="956" width="606" height="66" rx="26" fill="#fde9a6"/>
+   <text x="1459" y="1006" text-anchor="middle" class="hi" font-size="48" font-weight="810" fill="#5d400e">यहाँ इंतज़ार करता है</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [.74,"fade","#only-place-heading",{dur:.22}],
+   [2.06,"fade","#poste-route",{dur:.20}],
+   [2.06,"pop","#poste-envelope",{from:.92,spring:"soft"}],
+   [2.06,"draw","#poste-arrow",{dur:.38}],
+   [4.90,"pop","#poste-office",{from:.94,spring:"soft"}],
+   [5.08,"highlight","#poste-office-label",{color:"#fde9a6",opacity:.82,pad:7,dur:.24}],
+   [7.36,"fade","#where-it-waits",{dur:.24}]
+  ]
+ })
+ </script>
+</section>
