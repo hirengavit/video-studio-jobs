@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s137" data-in="fade" data-in-dur="0.4" data-section="RECAP" data-series="DELIVERY RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="recap-envelope">
+      <rect x="160" y="196" width="1600" height="790" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M176 198 L960 407 L1744 198 Z" fill="#f3ead6"/>
+      <path d="M176 198 L960 407 L1744 198" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="960" y="260" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="700" fill="#6f6a63">दोहराव</text>
+      <text x="960" y="334" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="66" font-weight="800" fill="#9e1b1b">Part 5 और Part 6</text>
+      <g id="recap-seal">
+        <circle cx="960" cy="407" r="41" fill="#9e1b1b"/>
+        <circle cx="960" cy="407" r="31" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="4 7" stroke-linecap="round"/>
+        <text x="960" y="422" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="800" fill="#fde9a6">4</text>
+      </g>
+      <path d="M265 571 H1655 M265 699 H1655 M265 827 H1655" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+      <g id="recap-name-1" fill="#6f6a63">
+        <text x="310" y="493" font-family="Inter,sans-serif" font-size="50" font-weight="770">Cancellation</text>
+        <text x="310" y="549" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="590">रद्द करना</text>
+      </g>
+      <g id="recap-name-2" fill="#6f6a63">
+        <text x="310" y="621" font-family="Inter,sans-serif" font-size="50" font-weight="770">Request fee refund</text>
+        <text x="310" y="677" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="590">अनुरोध शुल्क की वापसी</text>
+      </g>
+      <g id="recap-name-3" fill="#6f6a63">
+        <text x="310" y="749" font-family="Inter,sans-serif" font-size="50" font-weight="770">Same delivery area</text>
+        <text x="310" y="805" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="590">एक ही वितरण क्षेत्र</text>
+      </g>
+      <g id="recap-name-4" fill="#6f6a63">
+        <text x="310" y="877" font-family="Inter,sans-serif" font-size="50" font-weight="770">3 months</text>
+        <text x="310" y="933" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="590">3 महीने</text>
+      </g>
+      <g id="recap-self-booking">
+        <rect x="867" y="461" width="566" height="89" rx="40" fill="#fde9a6"/>
+        <text x="1150" y="520" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="710" fill="#6b4806">self-booking: स्वीकार से पहले</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.58, 'fade', '#recap-name-1', {dur:0.27}],
+      [1.73, 'fade', '#recap-name-2', {dur:0.27}],
+      [1.88, 'fade', '#recap-name-3', {dur:0.27}],
+      [2.03, 'fade', '#recap-name-4', {dur:0.27}],
+      [8.10, 'color', '#recap-name-1', {to:'#2b2622',dur:0.24}],
+      [8.10, 'pop', '#recap-self-booking', {from:0.94,spring:'soft'}]
+    ]
+  }
+  </script>
+</section>
