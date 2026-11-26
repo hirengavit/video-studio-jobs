@@ -8,18 +8,5 @@
   "10.49"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s054",
-   "message": "move: option \"dur\" isn't used (it takes: by, spring)",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s054",
-   "text": "पहचान की शर्त वाले / दूसरे items",
-   "t": 2.13
-  }
- ]
+ "warnings": []
 }
