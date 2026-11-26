@@ -12,9 +12,10 @@
   <text id="base-answer" x="1677" y="418" text-anchor="end" font-size="101" font-weight="840" fill="#9e1b1b">₹4</text>
  </g>
  <g id="fee-tier-2">
-  <rect x="120" y="520" width="1680" height="240" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <rect id="tier-preview" x="120" y="520" width="445" height="240" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <rect id="tier-wide" x="120" y="520" width="1680" height="240" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
   <text id="above" class="hi" x="176" y="654" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="800" fill="#2b2622">₹200 से ऊपर</text>
-  <path d="M565 565V715" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <path id="tier-divider" d="M565 565V715" fill="none" stroke="#ead9a8" stroke-width="3"/>
   <text id="fee-base" x="622" y="654" font-size="64" font-weight="835" fill="#9e1b1b">₹4</text>
   <text id="fee-extra" class="hi" x="751" y="654" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="680" fill="#2b2622">+ ₹200 से ऊपर वाले हिस्से का</text>
   <g id="fee-percent"><rect x="1485" y="587" width="253" height="98" rx="25" fill="#fde9a6"/><text x="1611.5" y="657" text-anchor="middle" font-size="64" font-weight="840" fill="#8a5d00">1.50%</text></g>
@@ -28,6 +29,9 @@
   [1.78,'fade','#up-to',{dur:0.28}],
   [3.62,'pop','#base-answer',{spring:'soft'}],
   [4.56,'pop','#fee-tier-2',{spring:'soft'}],
+  [6.53,'fade','#tier-wide',{dur:0.22}],
+  [6.75,'out','#tier-preview',{dur:0.04}],
+  [6.53,'fade','#tier-divider',{dur:0.22}],
   [6.58,'fade','#fee-base',{dur:0.28}],
   [7.66,'words','#fee-extra',{gap:0.43,dist:15,spring:'soft'}],
   [11.22,'pop','#fee-percent',{spring:'soft'}],
