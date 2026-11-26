@@ -1,0 +1,79 @@
+<section class="vs-scene" id="s053" data-in="cut" data-duration="11.90" lang="hi" data-section="PART 3 · IDENTITY CARD" data-series="DELIVERY RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="two-words">
+      <text x="960" y="209" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="60" font-weight="750" fill="#9e1b1b">नियम के दो शब्द</text>
+      <rect id="left-paper" x="140" y="290" width="780" height="470" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <g id="card-right"><rect id="right-paper" x="1000" y="270" width="780" height="590" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/></g>
+      <g id="left-label">
+        <rect id="left-tab" x="181" y="337" width="698" height="80" rx="16" fill="#f3ead6"/>
+        <text id="left-tab-label" x="530" y="392" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="650" fill="#2b2622">Addressee / authorised person</text>
+      </g>
+      <rect id="may-mark" x="246" y="488" width="115" height="89" rx="3" fill="#f2b705" opacity=".43"/>
+      <text id="may-rule" x="252" y="554" text-anchor="start" font-family="Georgia, serif" font-size="64" fill="#2b2622">may seek identification</text>
+      <text id="left-condition" x="530" y="683" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="600" fill="#4b4f58">postman न जानता हो</text>
+      <g id="reg-54-stamp">
+        <use href="piece:postmark-ring" transform="translate(1300 152) scale(.60)"/>
+        <rect x="1311" y="197" width="110" height="47" fill="#fbf7ee"/>
+        <text x="1366" y="234" textLength="100" lengthAdjust="spacingAndGlyphs" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">Reg. 54</text>
+        <text x="1572" y="178" font-family="Inter, sans-serif" font-size="44" font-weight="650" fill="#9e1b1b"><tspan x="1572">Post Office</tspan><tspan x="1572" dy="46">Regulations</tspan><tspan x="1572" dy="46">2024</tspan></text>
+      </g>
+      <g id="may-gist">
+        <rect x="140" y="860" width="780" height="60" rx="20" fill="#f3ead6"/>
+        <text x="530" y="902" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="44" font-weight="700" fill="#2b2622">सार (gist): पहचान माँग सकता है</text>
+      </g>
+      <g id="shall-label">
+        <rect x="1041" y="315" width="698" height="80" rx="16" fill="#f3ead6"/>
+        <text x="1390" y="370" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="44" font-weight="690" fill="#2b2622">कुछ accountable items</text>
+      </g>
+      <g id="shall-rule" font-family="Georgia, serif" font-size="52" fill="#2b2622" text-anchor="middle">
+        <text id="shall-rule-one" x="1390" y="470" font-family="Georgia, serif">shall be delivered only</text>
+        <text id="shall-rule-two" x="1390" y="532" font-family="Georgia, serif">after identification</text>
+        <text id="shall-rule-three" x="1390" y="594" font-family="Georgia, serif">is sought</text>
+      </g>
+      <g id="passport-chip">
+        <rect x="1022" y="643" width="360" height="80" rx="19" fill="#f3ead6"/>
+        <use href="piece:id-card" transform="translate(1038 665) scale(.18)"/>
+        <text x="1103" y="697" font-family="Inter,sans-serif" font-size="40" font-weight="740" fill="#2b2622">Passport</text>
+      </g>
+      <g id="pan-chip">
+        <rect x="1398" y="643" width="360" height="80" rx="19" fill="#f3ead6"/>
+        <use href="piece:id-card" transform="translate(1414 665) scale(.18)"/>
+        <text x="1479" y="697" font-family="Inter,sans-serif" font-size="40" font-weight="740" fill="#2b2622">PAN card</text>
+      </g>
+      <g id="licence-chip">
+        <rect x="1022" y="741" width="360" height="80" rx="19" fill="#f3ead6"/>
+        <use href="piece:id-card" transform="translate(1038 763) scale(.18)"/>
+        <text x="1103" y="795" font-family="Inter,sans-serif" font-size="40" font-weight="740" fill="#2b2622">Driving licence</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0, 'reveal', '#may-gist', {from:'left',dur:.30}],
+      [2.40, 'fade', '#card-right', {dur:.40}],
+      [2.58, 'fade', '#shall-label', {dur:.25}],
+      [4.38, 'type', '#shall-rule-one', {cps:50}],
+      [4.83, 'type', '#shall-rule-two', {cps:48}],
+      [5.30, 'type', '#shall-rule-three', {cps:48}],
+      [8.80, 'pop', '#passport-chip', {from:.93,spring:'soft'}],
+      [9.40, 'pop', '#pan-chip', {from:.93,spring:'soft'}],
+      [10.70, 'pop', '#licence-chip', {from:.93,spring:'soft'}]
+    ],
+    update(t,section,$) {
+      // Reframe after the exact s052 opening on the opening gist line.
+      const p=Math.max(0,Math.min(1,(t-.04)/.47));
+      const k=p*p*(3-2*p);
+      const y=(selector,start,end)=>$(selector)[0].setAttribute('y',start+(end-start)*k);
+      y('#left-paper',290,270);
+      $('#left-paper')[0].setAttribute('height',470+120*k);
+      y('#left-tab',337,315);
+      y('#left-tab-label',392,370);
+      y('#may-mark',488,404);
+      y('#may-rule',554,470);
+      y('#left-condition',683,628);
+    }
+  }
+  </script>
+</section>
