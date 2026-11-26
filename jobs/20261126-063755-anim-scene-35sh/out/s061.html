@@ -6,28 +6,29 @@
    <g id="sub-post-office">
     <text x="358" y="224" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">Sub Post Office</text>
     <text class="hi" x="358" y="280" text-anchor="middle" font-size="40" font-weight="730" fill="#625d59">उप डाकघर</text>
-    <use href="piece:post-office-icon" transform="translate(150 278) scale(1.3)"/>
+    <use href="piece:post-office-icon" transform="translate(102 338) scale(1.6)"/>
    </g>
    <g id="head-post-office">
     <text x="1500" y="224" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">Head Post Office</text>
     <text class="hi" x="1500" y="280" text-anchor="middle" font-size="40" font-weight="730" fill="#625d59">प्रधान डाकघर</text>
-    <use href="piece:icon-circle-office" transform="translate(1300 284)"/>
+    <use href="piece:icon-circle-office" transform="translate(1250 344) scale(1.25)"/>
    </g>
    <g id="issued-id-card">
-    <use href="piece:id-card" transform="translate(1540 644) scale(.8)"/>
-    <text x="1660" y="675" text-anchor="middle" font-family="Inter,sans-serif" font-size="25" font-weight="810" fill="#9e1b1b" lengthAdjust="spacingAndGlyphs" textLength="209">Postal Identity Card</text>
+    <use href="piece:id-card" transform="translate(1540 775) scale(.8)"/>
+    <text x="1660" y="806" text-anchor="middle" font-family="Inter,sans-serif" font-size="25" font-weight="810" fill="#9e1b1b" lengthAdjust="spacingAndGlyphs" textLength="209">Postal Identity Card</text>
    </g>
    <g id="sub-inquiry">
-    <rect x="550" y="493" width="684" height="91" rx="22" fill="#f3ead6" stroke="#e4d4ac" stroke-width="3"/>
-    <text class="hi" x="892" y="552" text-anchor="middle" font-size="44" font-weight="785" fill="#2b2622">Sub-Postmaster पूछताछ करता है</text>
+    <rect x="612" y="493" width="612" height="91" rx="22" fill="#f3ead6" stroke="#e4d4ac" stroke-width="3"/>
+    <text x="918" y="529" text-anchor="middle" font-family="Inter,sans-serif" font-size="38" font-weight="785" fill="#2b2622">Sub-Postmaster</text>
+    <text class="hi" x="918" y="568" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="38" font-weight="785" fill="#2b2622">पूछताछ करता है</text>
    </g>
    <g id="forward-application" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M480 641L1380 581"/>
-    <path d="M1357 562l23 19-20 22"/>
+    <path d="M616 769L1233 710"/>
+    <path d="M1210 693l23 17-20 21"/>
    </g>
-   <g id="application" transform="translate(900 -60)">
-    <use href="piece:written-request" transform="translate(375 653) scale(.5)"/>
-    <text x="480" y="681" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="790" fill="#2b2622">Application</text>
+   <g id="application" transform="translate(925 -18)">
+    <use href="piece:written-request" transform="translate(375 793) scale(.5)"/>
+    <text x="480" y="821" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="790" fill="#2b2622">Application</text>
    </g>
   </g>
    <g id="issuer-pill">
@@ -39,7 +40,7 @@
     <text id="issuer-name" x="788" y="852" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="780" fill="#2b2622">Head Post Office / Head Postmaster</text>
    </g>
    <g id="exam-confusion">
-    <rect x="739" y="162" width="442" height="64" rx="28" fill="#eeecee" stroke="#d7d3d8" stroke-width="3"/>
+    <rect x="758" y="162" width="404" height="64" rx="28" fill="#eeecee" stroke="#d7d3d8" stroke-width="3"/>
     <text x="960" y="206" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="800" fill="#4b4f58">Exam में confusion</text>
    </g>
    <g id="trap-option">
@@ -54,8 +55,7 @@
   update(t, section, $) {
     const ramp = (a,b) => { const k=Math.max(0,Math.min(1,(t-a)/(b-a))); return k*k*(3-2*k); };
     const lift=ramp(.06,.56);
-    $("#issued-id-card").forEach(el=>el.setAttribute("transform","translate(0 "+(-44*lift)+")"));
-    $("#application").forEach(el=>el.setAttribute("transform","translate(900 -60) translate(375 653) scale("+(1-.40*lift)+") translate(-375 -653)"));
+    $("#issuer-flow").forEach(el=>el.setAttribute("transform","translate(960 150) scale("+(1-.34*lift)+") translate(-960 -150)"));
     const dim=ramp(4.91,5.27);
     ["#sub-inquiry","#forward-application","#application"].forEach(id=>$(id).forEach(el=>{el.setAttribute("opacity",1-.60*dim);el.style.filter="grayscale("+dim+")";}));
     const words=$("#trap-line")[0], surface=$("#trap-surface")[0];
