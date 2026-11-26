@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "2.03",
+  "4.07",
+  "6.10",
+  "8.14",
+  "10.02"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s055",
+   "text": "Addressee / authorised person (1.9:1) / may seek identification (1.9:1) / postman न जानता हो (1.0:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  }
+ ]
+}
