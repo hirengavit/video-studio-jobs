@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s063" data-in="cut" data-duration="10.58" data-section="PART 3 · IDENTITY CARD" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="What the Sub Office does and what a postal identity card holds">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="poid-closeup">
+   <use id="full-id-card" href="piece:id-card" transform="translate(360 200) scale(4)"/>
+   <text x="960" y="332" text-anchor="middle" font-family="Inter,sans-serif" font-size="76" font-weight="830" fill="#9e1b1b">Postal Identity Card</text>
+   <g id="details-callout">
+    <path id="details-leader" d="M1440 577h135l42-47" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round"/>
+    <text id="details-label" x="1594" y="515" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">पूरा विवरण</text>
+   </g>
+   <path id="sign-line" d="M1054 870h397" fill="none" stroke="#6f6a63" stroke-width="4" stroke-linecap="round"/>
+   <path id="holder-signature" d="M1090 849q39-17 70-47t13 5q-6 18-29 35t16 3q28-21 45-38-9 22-1 34 14 6 34-10t39-8q-7 5-7 12t30-10l30-12m-163 49q65-13 134-11" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+   <g id="signature-callout"><path id="signature-leader" d="M1451 870h124l38-20" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round"/>
+   <text id="signature-label" x="1593" y="827" font-family="Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">signature</text></g>
+   <rect id="photo-focus" x="445" y="461" width="373" height="449" rx="12" fill="none" stroke="#f2b705" stroke-width="9"/>
+   <path id="photo-leader" d="M445 602H286l-37-29" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round"/>
+   <text id="photo-label" x="158" y="557" font-family="Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">photo</text>
+  
+   <g id="applicant-note">
+    <text x="158" y="625" class="hi" font-size="44" font-weight="740" fill="#4b4f58">applicant</text>
+    <text x="158" y="680" class="hi" font-size="44" font-weight="740" fill="#4b4f58">खुद देता है</text>
+   </g>
+   <g id="photo-size">
+    <path id="photo-width-line" d="M445 446v-22m0 10h373m0-10v22m-354-21-19 9 19 9m335-18 19 9-19 9" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text id="photo-width-label" x="631.5" y="410" text-anchor="middle" font-family="Inter,sans-serif" font-size="60" font-weight="850" fill="#9e1b1b">88 mm</text>
+    <path id="photo-height-line" d="M835 461h26m-13 0v449m-13 0h26m-23-430 10-19 10 19m-20 411 10 19 10-19" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect id="photo-height-back" x="852" y="646" width="226" height="79" rx="12" fill="#fff6e1"/>
+    <text id="photo-height-label" x="965" y="706" text-anchor="middle" font-family="Inter,sans-serif" font-size="60" font-weight="850" fill="#9e1b1b">63 mm</text>
+    <g id="smaller-photo-note">
+     <rect x="897" y="762" width="400" height="67" rx="16" fill="#fff6e1" stroke="#e2c983" stroke-width="2"/>
+     <text x="1097" y="812" class="hi" text-anchor="middle" font-size="48" font-weight="790" fill="#4b4f58">या थोड़ा छोटा</text>
+    </g>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}],[4.72,{zoom:1}],[5.39,{on:"#photo-focus",zoom:1.15},"inOut"]],
+  shots:[[0,"#poid-closeup"]],
+  on:[
+   [.32,"fade","#applicant-note",{dur:.28}],
+   [4.40,"out","#details-callout,#signature-callout",{dur:.30}],
+   [4.72,"draw","#photo-width-line",{dur:.37}],
+   [4.72,"fade","#photo-width-label",{dur:.25}],
+   [6.58,"draw","#photo-height-line",{dur:.37}],
+   [6.58,"fade","#photo-height-back,#photo-height-label",{dur:.25}],
+   [8.20,"fade","#smaller-photo-note",{dur:.28}],
+  ],
+ })
+ </script>
+</section>
