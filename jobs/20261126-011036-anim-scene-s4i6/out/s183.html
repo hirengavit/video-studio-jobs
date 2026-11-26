@@ -18,11 +18,11 @@
       <use href="piece:postmark-ring"/>
       <text font-family="Inter,sans-serif" font-size="22" font-weight="850" fill="#9e1b1b" text-anchor="middle"><tspan x="110" y="104">POSTE</tspan><tspan x="110" y="130">RESTANTE</tspan></text>
     </g>
-    <text id="addressee" x="99" y="233" font-family="Inter,sans-serif" font-size="110" font-weight="750" fill="#2b2622">Mehul Shah</text>
-    <text x="99" y="311" font-family="Inter,sans-serif" font-size="82" font-weight="620" fill="#6f6a63">Poste Restante</text>
+    <text id="addressee" x="99" y="228" font-family="Inter,sans-serif" font-size="101" font-weight="750" fill="#2b2622">Mehul Shah</text>
+    <text x="99" y="327" font-family="Inter,sans-serif" font-size="82" font-weight="620" fill="#6f6a63">Poste Restante</text>
   </g>
-  <path id="match-link" d="M1149 651C1320 644 1442 657 1564 836" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
-  <path id="delivery-tick" d="M1065 697 L1078 710 L1102 681" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="match-link" d="M1114 651C1320 644 1442 657 1564 836" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+  <path id="delivery-tick" d="M821 605 L831 615 L850 592" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
   <g id="right-hands">
     <rect x="1178" y="370" width="515" height="105" rx="20" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
     <text x="1435" y="436" text-anchor="middle" class="hi" font-family="Noto Sans Devanagari" font-size="56" font-weight="750" fill="#2b2622">सही हाथ तक</text>
@@ -31,11 +31,11 @@
 <script type="text/scene">
 {
   set: "po-counter",
-  camera: [[0,"wide"],[5.86,"wide"],[8.20,{zoom:1.35,x:-103,y:-105},"inOut"]],
+  camera: [[0,"wide"],[5.86,"wide"],[8.20,{zoom:1.35,x:72,y:96},"inOut"]],
   on: [
     [.60,"highlight","#addressee",{color:"#f2b705",opacity:.44,dur:.35,pad:6}],
     [.60,"draw","#match-link",{dur:.56}],
-    [2.82,"pulse","#request-sheet",{dur:.42,scale:1.035}],
+    [2.82,"pulse","#request-sheet",{amount:.038}],
     [2.82,"draw","#request-underline",{dur:.6}],
     [5.86,"draw","#delivery-tick",{dur:.48}],
     [5.86,"fade","#right-hands",{dur:.44}]
