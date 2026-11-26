@@ -8,24 +8,5 @@
   "10.39"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s047",
-   "message": "type: option \"dur\" isn't used (it takes: cps)",
-   "t": 0.3
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s047",
-   "message": "a card is mostly empty at 6.3 s: bring its items in sooner, or size it for what it holds now",
-   "t": 6.32
-  },
-  {
-   "kind": "mostly-empty",
-   "scene": "s047",
-   "message": "a card is mostly empty at 8.4 s: bring its items in sooner, or size it for what it holds now",
-   "t": 8.43
-  }
- ]
+ "warnings": []
 }
