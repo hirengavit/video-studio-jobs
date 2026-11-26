@@ -10,23 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s220",
-   "message": "color: option \"attr\" isn't used (it takes: to, dur, prop)",
-   "t": 0.3
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s220",
    "message": "a card is mostly empty at 3.7 s: bring its items in sooner, or size it for what it holds now",
    "t": 3.74
-  },
-  {
-   "kind": "low-contrast",
-   "scene": "s220",
-   "text": "Sender (3.0:1) / भेजने वाला (1.1:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 5.6
   }
  ]
 }
