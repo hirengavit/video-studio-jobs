@@ -13,8 +13,8 @@
    <rect id="booking-marker" x="146" y="744" width="420" height="66" rx="13" fill="#fde9a6"/>
    <text x="356" y="794" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="760">Office of booking</text>
    <g id="outward-flight">
-    <path id="outward-arrow" d="M583 610 H1302 M1270 584 L1302 610 L1270 636" fill="none" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-    <g id="outward-plane"><use href="piece:icon-plane" transform="translate(971 379) scale(.55)"/></g>
+    <path id="outward-arrow" d="M583 610 H1302 L1270 584 M1302 610 L1270 636" fill="none" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="outward-plane"><use href="piece:icon-plane" transform="translate(971 408) scale(.55)"/></g>
    </g>
    <g id="sender-scope">
     <rect x="578" y="666" width="744" height="112" rx="21" fill="#f3ead6"/>
@@ -23,7 +23,7 @@
    </g>
    <g id="recall-return">
     <use id="recall-envelope" href="piece:domestic-envelope" transform="translate(1208 845) scale(.25)"/>
-    <path id="recall-arrow" d="M1186 932 C884 1004 494 982 360 833 M360 833 L371 873 M360 833 L403 843" fill="none" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="recall-arrow" d="M1186 932 C884 1004 494 982 360 833 L371 873 M360 833 L403 843" fill="none" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
    </g>
    <g id="recall-label">
     <rect x="801" y="815" width="285" height="80" rx="20" fill="#9e1b1b"/>
@@ -41,13 +41,13 @@
    [0.44, 'reveal', '#outward-term', {from:'left',dur:0.38}],
    [3.14, 'fade', '#outward-gloss', {dur:0.25}],
    [3.14, 'draw', '#outward-arrow', {dur:0.82}],
-   [3.26, 'slide', '#outward-plane', {from:'left',dist:342,dur:1.02}],
+   [3.26, 'slide', '#outward-plane', {from:'left',dist:342,spring:'soft'}],
    [4.70, 'fade', '#sender-scope', {dur:0.28}],
    [7.76, 'fade', '#sender-label', {dur:0.25}],
    [9.06, 'fade', '#booking-marker', {dur:0.26}],
    [9.06, 'fade', '#recall-envelope', {dur:0.22}],
    [9.06, 'draw', '#recall-arrow', {dur:0.70}],
-   [10.22, 'stamp', '#recall-label', {dur:0.40}],
+   [10.22, 'stamp', '#recall-label', {spring:'soft'}],
    [10.22, 'fade', '#outward-source', {dur:0.30}]
   ]
  }
