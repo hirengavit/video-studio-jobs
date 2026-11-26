@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <g id="ledger" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- postal-red cloth cover showing round the pages -->
+    <path id="cover" d="M44,112 Q44,100 56,100 L192,104 L200,110 L208,104 L344,100 Q356,100 356,112 L356,300 Q356,310 346,310 L208,306 L200,312 L192,306 L54,310 Q44,310 44,300 Z" fill="#9e1b1b"/>
+    <!-- pages -->
+    <path id="page-left" d="M200,120 Q132,102 60,110 L60,292 Q132,286 200,300 Z" fill="#f3ead6"/>
+    <path id="page-right" d="M200,120 Q268,102 340,110 L340,292 Q268,286 200,300 Z" fill="#f3ead6"/>
+    <!-- cloth spine down the gutter -->
+    <path id="spine" d="M196,112 L204,112 L204,308 L196,308 Z" fill="#9e1b1b" stroke-width="2"/>
+  </g>
+  <!-- faint ink ruled lines -->
+  <g id="rules-left" stroke="#2b2622" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" fill="none">
+    <path d="M74,142 Q132,136 188,148"/>
+    <path d="M74,164 Q132,158 188,170"/>
+    <path d="M74,186 Q132,180 188,192"/>
+    <path d="M74,208 Q132,202 188,214"/>
+    <path d="M74,230 Q132,224 188,236"/>
+    <path d="M74,252 Q132,246 188,258"/>
+    <path d="M74,274 Q132,268 188,280"/>
+    <path d="M150,124 L150,282"/>
+  </g>
+  <g id="rules-right" stroke="#2b2622" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" fill="none">
+    <path d="M212,164 Q268,158 326,152"/>
+    <path d="M212,186 Q268,180 326,174"/>
+    <path d="M212,208 Q268,202 326,196"/>
+    <path d="M212,230 Q268,224 326,218"/>
+    <path d="M212,252 Q268,246 326,240"/>
+    <path d="M212,274 Q268,268 326,262"/>
+    <path d="M290,124 L290,282"/>
+  </g>
+  <!-- small red rupee sign, top-left of the right page -->
+  <g id="rupee" stroke="#9e1b1b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M216,126 L236,126"/>
+    <path d="M216,133 L236,133"/>
+    <path d="M216,126 L223,126 Q231,126 231,133 Q231,140 223,140 L218,140 L232,153"/>
+  </g>
+  <circle data-anchor="top" cx="200" cy="100" r="0"/>
+  <circle data-anchor="base" cx="200" cy="312" r="0"/>
+</svg>
