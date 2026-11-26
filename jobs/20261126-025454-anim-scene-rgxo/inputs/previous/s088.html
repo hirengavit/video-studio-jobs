@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s088" data-in="cut" data-duration="12.21" data-section="PART 4 · SENDER'S RECALL" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The office can act on a clear request. A request is not taken once the item is out for delivery.">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="req">
+ <use id="request-paper" href="piece:written-request" transform="translate(300 214) scale(1.4)"/>
+ <text x="350" y="315" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="800" fill="#9e1b1b">Request</text>
+ <g id="booking-details">
+  <text x="350" y="409" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="770" fill="#2b2622">booking details</text>
+  <use id="booking-receipt" href="piece:receipt-slip" transform="translate(1120 271) scale(.46)"/>
+  <rect x="1256" y="336" width="536" height="92" rx="20" fill="#fffdfa" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1524" y="397" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="770" fill="#2b2622">item की पहचान साफ़</text>
+ </g>
+ <g id="request-action">
+  <text x="350" y="485" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="770" fill="#2b2622">क्या करवाना है</text>
+  <rect x="1256" y="452" width="536" height="92" rx="20" fill="#fffdfa" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1524" y="513" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="770" fill="#2b2622">साफ़ लिखा हो</text>
+ </g>
+ <rect x="344" y="512" width="410" height="72" rx="4" fill="#f2b705" opacity=".39"/>
+ <text id="request-change" x="350" y="561" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="770" fill="#2b2622">नया पता / सही नाम</text>
+ <path id="usable-tick" d="M791 352L811 371L849 324" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<g id="bars">
+ <text id="bars-heading" x="210" y="209" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="820" fill="#9e1b1b">चार हालात: request नहीं</text>
+ <path d="M212 239H789" fill="none" stroke="#d6ac59" stroke-width="5" stroke-linecap="round"/>
+ <g id="bar-1">
+  <rect x="210" y="330" width="1500" height="120" rx="23" fill="#fffdfa" stroke="#4b4f58" stroke-width="4"/>
+  <g id="stop-hand-1" transform="translate(251 347)">
+   <rect width="88" height="86" rx="17" fill="#efedef"/>
+   <path d="M31 55L22 42Q20 38 24 35Q28 33 32 39L36 45V22Q36 17 40 17Q45 17 45 22V36V15Q45 11 49 11Q54 11 54 15V37V19Q54 15 58 15Q62 15 62 19V39V27Q62 23 66 23Q70 23 70 27V48Q69 65 60 72H42Z" fill="#4b4f58"/>
+  </g>
+  <g id="bar-1-text">
+   <text x="373" y="411" font-family="Inter,sans-serif" font-size="60" font-weight="800" fill="#2b2622">Out for delivery</text>
+   <text x="1032" y="408" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="730" fill="#2b2622">वितरण के लिए निकल चुकी</text>
+  </g>
+ </g>
+ <g id="bar-2"><rect x="210" y="480" width="1500" height="120" rx="23" fill="#fffdfa" stroke="#4b4f58" stroke-width="4"/></g>
+ <g id="bar-3"><rect x="210" y="630" width="1500" height="120" rx="23" fill="#fffdfa" stroke="#4b4f58" stroke-width="4"/></g>
+ <g id="bar-4"><rect x="210" y="780" width="1500" height="120" rx="23" fill="#fffdfa" stroke="#4b4f58" stroke-width="4"/></g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,"#req"],[2.91,"#bars"]],
+ on:[
+  [1.48,"draw","#usable-tick",{dur:.52}],
+  [7.09,"pop","#stop-hand-1",{from:.94,spring:"soft"}],
+  [9.99,"fade","#bar-1-text",{dur:.32}]
+ ]
+})
+</script>
+</section>
