@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 160" width="200" height="160">
+  <g id="helmet" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M34 114 C34 62 64 30 102 30 C140 30 168 62 168 114 Z" fill="#4b4f58"/>
+    <path d="M14 114 Q14 106 22 106 L178 106 Q188 106 188 116 Q188 130 172 130 L28 130 Q14 130 14 120 Z" fill="#4b4f58"/>
+    <path d="M42 84 C72 76 132 76 160 84" fill="none" stroke="#6f747d" stroke-width="3"/>
+    <path d="M60 60 C70 46 86 40 100 40" fill="none" stroke="#6f747d" stroke-width="3"/>
+  </g>
+  <circle data-anchor="base" cx="100" cy="130" r="0"/>
+</svg>
