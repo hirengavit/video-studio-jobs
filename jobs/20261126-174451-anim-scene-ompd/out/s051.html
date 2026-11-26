@@ -1,0 +1,36 @@
+<section class="vs-scene" id="s051" data-in="cut" data-section="PART 2 · WEIGHT AND SIZE" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="exam"><rect x="140" y="190" width="620" height="77" rx="38" fill="#9e1b1b"/><text x="450" y="241" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="770">EXAM ANGLE · परीक्षा की नज़र से</text></g>
+  <g id="weight">
+    <use href="piece:key-fact-stamp" transform="translate(140 300)"/>
+    <text x="420" y="489" text-anchor="middle" fill="#ffffff" font-size="124" font-weight="820">35 kg</text>
+    <text x="420" y="566" text-anchor="middle" fill="#fde9a6" font-size="42" font-weight="720">Ordinary parcel</text>
+  </g>
+  <use id="diagram" href="piece:dimension-box" transform="translate(960 270) scale(1.1)"/>
+  <text id="length" x="1084" y="671" fill="#2b2622" font-size="48" font-weight="780">1.5 m</text>
+  <g id="girth-limit"><rect x="995" y="735" width="660" height="72" rx="36" fill="#f3ead6"/><text x="1325" y="786" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="760">लंबाई + Girth = 3 m</text></g>
+  <g id="charge">
+    <rect x="140" y="830" width="1640" height="130" rx="28" fill="#f3ead6"/>
+    <text x="195" y="915" fill="#9e1b1b" font-size="52" font-weight="820">Charge</text>
+    <path d="M421 857v75" stroke="#d6c9ae" stroke-width="3"/>
+    <text id="methods" x="475" y="910" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="680">gross और volumetric में</text>
+    <g id="higher"><rect id="higher-marker" x="1008" y="857" width="210" height="73" rx="28" fill="#fde9a6"/><text x="1113" y="910" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="790">जो ज़्यादा</text></g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [1.10,'stamp','#weight',{from:1.08,rot:0}],
+    [3.10,'draw','#len',{dur:0.56}],
+    [3.98,'pop','#length',{from:0.93}],
+    [5.20,'draw','#girth-loop',{dur:0.67}],
+    [6.66,'pop','#girth-limit',{from:0.94}],
+    [7.82,'reveal','#charge',{from:'left',dur:0.42}],
+    [8.84,'words','#methods',{gap:0.33,dist:10}],
+    [11.24,'fade','#higher',{dur:0.20}],
+    [11.48,'reveal','#higher-marker',{from:'left',dur:0.34}]
+  ]
+}
+</script>
+</section>
