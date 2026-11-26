@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s033" data-duration="12.84" data-in="wipe" data-in-dur="0.40" data-section="PART 2 · HOLDING PERIOD" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The Postmaster generally holds the Poste Restante article for fifteen days; if it is not collected, it returns to the sender.">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="790">
+  <text x="145" y="217" class="hi" font-size="56" font-weight="830" fill="#9e1b1b">सामान्य नियम, एक line में</text>
+  <path d="M145 241h434" stroke="#d6ac59" stroke-width="5" stroke-linecap="round"/>
+  <g id="office">
+   <use href="piece:post-office-icon" transform="translate(1240 180) scale(1.5)"/>
+   <g id="held-envelope" transform="translate(1503 405) scale(.45)">
+    <use href="piece:domestic-envelope"/>
+   </g>
+   <path d="M1242 586H1828" fill="none" stroke="#d9c9ae" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <g id="postmaster">
+   <rect x="1178" y="600" width="604" height="66" rx="24" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+   <text x="1480" y="648" text-anchor="middle" class="hi" font-size="48" fill="#2b2622">Postmaster के पास</text>
+  </g>
+  <g id="duration">
+   <rect x="232" y="280" width="850" height="332" rx="28" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+   <rect x="255" y="303" width="804" height="286" rx="15" fill="none" stroke="#fde9a6" stroke-width="5" stroke-linecap="round" stroke-dasharray="3 13"/>
+   <text x="657" y="432" text-anchor="middle" font-family="Inter,sans-serif" font-size="88" fill="#fff">Article: 15 days</text>
+   <text id="duration-hindi" x="657" y="526" text-anchor="middle" class="hi" font-size="64" fill="#fde9a6">15 दिन</text>
+  </g>
+  <g id="conditional">
+   <rect x="1178" y="674" width="604" height="66" rx="22" fill="#eeedf0" stroke="#b9b7bd" stroke-width="3"/>
+   <text x="1480" y="721" text-anchor="middle" class="hi" font-size="48" fill="#4b4f58">कोई लेने न आए</text>
+  </g>
+  <g id="sender">
+   <use href="piece:house-icon" transform="translate(225 592) scale(1.3)"/>
+   <text x="420" y="1017" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" fill="#4b4f58">sender</text>
+  </g>
+  <path id="return-route" d="M1444 775C1283 870 1000 900 610 858Q517 848 455 914M504 910l-49 4 16-46" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="return-label" x="900" y="821" text-anchor="middle" class="hi" font-size="48" fill="#4b4f58">sender को वापस</text>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [4.42,"fade","#postmaster",{dur:.24}],
+  [6.12,"stamp","#duration",{from:1.13,rot:-3,spring:"soft"}],
+  [6.62,"fade","#duration-hindi",{dur:.24}],
+  [8.22,"fade","#conditional",{dur:.24}],
+  [10.24,"draw","#return-route",{dur:.90}],
+  [10.24,"pop","#sender",{from:.94,spring:"soft"}],
+  [10.24,"fade","#return-label",{dur:.24}]
+ ]
+})
+</script>
+</section>
