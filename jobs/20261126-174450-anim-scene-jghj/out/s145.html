@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s145" data-in="cut" data-section="PART 6 · DELIVERY" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="exam-banner">
+<rect x="120" y="170" width="1680" height="90" rx="24" fill="#9e1b1b"/>
+<text x="960" y="230" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="49" font-weight="760" fill="#fff">EXAM ANGLE · परीक्षा की नज़र से</text>
+</g>
+<g id="registration-row">
+<rect x="160" y="300" width="1600" height="150" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<text x="230" y="366" font-family="Inter, sans-serif" font-size="56" font-weight="760" fill="#2b2622">Registration</text>
+<text x="231" y="415" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="37" font-weight="610" fill="#6f6a63">रजिस्ट्री</text>
+</g>
+<g id="otp-row">
+<rect x="160" y="470" width="1600" height="150" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<text x="230" y="570" font-family="Inter, sans-serif" font-size="58" font-weight="760" fill="#2b2622">OTP</text>
+</g>
+<g id="registration-fee">
+<rect x="1224" y="335" width="200" height="80" rx="16" fill="#f3ead6"/>
+<text x="1324" y="395" text-anchor="middle" font-family="Inter, sans-serif" font-size="58" font-weight="810" fill="#2b2622">₹5</text>
+</g>
+<g id="otp-fee">
+<rect x="1224" y="505" width="200" height="80" rx="16" fill="#f3ead6"/>
+<text x="1324" y="565" text-anchor="middle" font-family="Inter, sans-serif" font-size="58" font-weight="810" fill="#2b2622">₹5</text>
+</g>
+<path id="both-bracket" d="M1460 373h28v174h-28" fill="none" stroke="#9b958c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="gst-chip">
+<rect x="1510" y="426" width="220" height="68" rx="34" fill="#eeebe6" stroke="#dad5cb" stroke-width="2"/>
+<text x="1620" y="471" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="39" font-weight="700" fill="#504b45">GST अलग</text>
+</g>
+<g id="otp-note">
+<rect x="160" y="631" width="1600" height="60" rx="19" fill="#f3ead6"/>
+<circle cx="206" cy="661" r="5" fill="#9e1b1b"/>
+<text id="delivery-note" x="229" y="675" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="43" font-weight="670" fill="#2b2622">delivery के समय देना</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [1.08, 'fade', '#registration-row', {dur:0.24}],
+    [2.08, 'pop', '#registration-fee', {from:0.91}],
+    [3.16, 'fade', '#otp-row', {dur:0.24}],
+    [3.90, 'pop', '#otp-fee', {from:0.91}],
+    [5.94, 'draw', '#both-bracket', {dur:0.40}],
+    [5.94, 'fade', '#gst-chip', {dur:0.23}],
+    [7.16, 'fade', '#otp-note', {dur:0.24}],
+    [8.22, 'highlight', '#delivery-note', {words:'delivery के समय',color:'#f2b705',opacity:0.36,dur:0.48,pad:6}]
+  ]
+}
+</script>
+</section>
