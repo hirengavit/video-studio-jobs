@@ -35,20 +35,20 @@
    <use href="piece:person-icon" transform="translate(1536 652) scale(1.3)"/>
   </g>
   <g id="customer-label">
-   <rect x="1380" y="524" width="449" height="104" rx="23" fill="#fff8df" stroke="#ead9a8" stroke-width="3"/>
-   <text x="1604" y="591" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#2b2622">खुद आकर ले जाता है</text>
+   <rect x="1315" y="524" width="510" height="104" rx="23" fill="#fff8df" stroke="#ead9a8" stroke-width="3"/>
+   <text x="1570" y="591" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#2b2622">खुद आकर ले जाता है</text>
   </g>
  </g>
 </svg>
 <script type="text/scene">
 ({
  set:"po-counter",
- camera:[[0,"wide"],[10.50,"wide"],[11.08,{zoom:1.10,x:22,y:24},"inOut"]],
+ camera:[[0,"wide"],[10.50,"wide"],[11.08,{zoom:1.05,x:10,y:-13},"inOut"]],
  shots:[[0,"#term"],[3.08,"#how"]],
  on:[
   [1.14,"fade","#term-gloss",{dur:.25}],
   [2.00,"reveal","#meaning-strip",{from:"left",dur:.38}],
-  [3.08,"place","#named-envelope",{spot:"counter-centre"}],
+  [3.08,"place","#named-envelope",{spot:"counter-centre",dx:-344}],
   [5.58,"place","#named-envelope",{spot:"rack-slot"}],
   [5.58,"fade","#rack-print",{dur:.28}],
   [8.14,"slide","#customer",{from:"right",dist:230,spring:"soft"}],
