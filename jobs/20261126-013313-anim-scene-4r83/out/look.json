@@ -8,5 +8,12 @@
   "13.65"
  ],
  "problems": [],
- "warnings": []
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s158",
+   "text": "600 g: ₹10 प्रति दिन, 8वें दिन से / charge नहीं",
+   "t": 8.28
+  }
+ ]
 }
