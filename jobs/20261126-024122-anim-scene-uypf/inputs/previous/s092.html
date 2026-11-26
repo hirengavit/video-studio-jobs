@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s092" data-in="cut" data-duration="9.06" data-section="PART 4 · SENDER'S RECALL" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Recall request fee: four articles at ₹6 each cost ₹24, even if posted together">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="sum">
+   <text id="sum-heading" x="200" y="225" class="hi" font-size="56" font-weight="850" fill="#9e1b1b">Fee का हिसाब</text>
+   <g id="sum-envelope-1"><use href="piece:domestic-envelope" transform="translate(180 300) scale(.5)"/></g>
+   <g id="sum-envelope-2"><use href="piece:domestic-envelope" transform="translate(573 300) scale(.5)"/></g>
+   <g id="sum-envelope-3"><use href="piece:domestic-envelope" transform="translate(967 300) scale(.5)"/></g>
+   <g id="sum-envelope-4"><use href="piece:domestic-envelope" transform="translate(1360 300) scale(.5)"/></g>
+   <g class="fee-tag" id="sum-tag-1">
+    <rect x="296" y="525" width="148" height="66" rx="30" fill="#9e1b1b"/>
+    <text x="370" y="573" text-anchor="middle" class="hi" font-size="47" font-weight="810" fill="#fff">₹6</text>
+   </g>
+   <g class="fee-tag" id="sum-tag-2">
+    <rect x="689" y="525" width="148" height="66" rx="30" fill="#9e1b1b"/>
+    <text x="763" y="573" text-anchor="middle" class="hi" font-size="47" font-weight="810" fill="#fff">₹6</text>
+   </g>
+   <g class="fee-tag" id="sum-tag-3">
+    <rect x="1083" y="525" width="148" height="66" rx="30" fill="#9e1b1b"/>
+    <text x="1157" y="573" text-anchor="middle" class="hi" font-size="47" font-weight="810" fill="#fff">₹6</text>
+   </g>
+   <g class="fee-tag" id="sum-tag-4">
+    <rect x="1476" y="525" width="148" height="66" rx="30" fill="#9e1b1b"/>
+    <text x="1550" y="573" text-anchor="middle" class="hi" font-size="47" font-weight="810" fill="#fff">₹6</text>
+   </g>
+   <g id="shared-posting">
+    <path id="posting-bracket" d="M180 289V270H1740V289" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text id="posting-label" x="960" y="247" text-anchor="middle" class="hi" font-size="44" font-weight="740" fill="#4b4f58">एक साथ post</text>
+   </g>
+   <g id="sum-card">
+    <rect x="460" y="620" width="1000" height="320" rx="30" fill="#fff8df" stroke="#e2b955" stroke-width="4" filter="url(#vs-shadow)"/>
+    <rect x="480" y="641" width="960" height="278" rx="18" fill="none" stroke="#d4ab52" stroke-width="3" stroke-dasharray="2 11" stroke-linecap="round"/>
+    <text id="fee-multiply" x="695" y="819" text-anchor="middle" class="hi" font-size="96" font-weight="830" fill="#2b2622">4 × ₹6</text>
+    <g id="fee-total">
+     <rect id="fee-total-mark" x="976" y="733" width="348" height="117" rx="19" fill="#fde9a6"/>
+     <text x="1150" y="819" text-anchor="middle" class="hi" font-size="96" font-weight="830" fill="#2b2622">= ₹24</text>
+    </g>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [1.68,"pop",".fee-tag",{stagger:.12,from:.76,spring:"soft"}],
+   [2.56,"fade","#fee-multiply",{dur:.34}],
+   [5.14,"pop","#fee-total",{from:.90,spring:"soft"}],
+   [5.14,"reveal","#fee-total-mark",{from:"left",dur:.35}],
+   [6.22,"draw","#posting-bracket",{dur:.46}],
+   [6.22,"fade","#posting-label",{dur:.32}]
+  ]
+ })
+ </script>
+</section>
