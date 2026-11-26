@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s240" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}' data-section="KEY POINTS" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="env">
+      <use href="piece:speed-post-emblem" transform="translate(110 420) scale(0.75)"/>
+      <rect x="560" y="180" width="1260" height="780" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M582 181H1798L1190 419Z" fill="#f3ead6"/>
+      <path d="M582 182 1190 419 1798 182" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linejoin="round"/>
+      <text x="1190" y="241" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="37" font-weight="670" fill="#6f6a63">दोहराव</text>
+      <text x="1190" y="305" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">पूरे topic की ज़रूरी बातें</text>
+      <text id="class-line" x="1190" y="365" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="680" fill="#2b2622">दो classes: Document और Parcel</text>
+      <g id="recap-seal">
+        <circle cx="1190" cy="420" r="42" fill="#9e1b1b" stroke="#ffffff" stroke-width="4"/>
+        <circle cx="1190" cy="420" r="30" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="4 6" stroke-linecap="round"/>
+        <text x="1190" y="435" text-anchor="middle" font-family="Inter" font-size="40" font-weight="800" fill="#fde9a6">3</text>
+      </g>
+      <path d="M626 638H1760 M626 808H1760" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+      <g id="recap-row-1">
+        <text id="document-en" x="758" y="542" font-family="Inter" font-size="52" font-weight="790" fill="#2b2622">Speed Post Document</text>
+        <text id="document-hi" x="758" y="596" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="39" font-weight="600" fill="#6f6a63">स्पीड पोस्ट दस्तावेज</text>
+        <g id="document-limit">
+          <rect x="1440" y="509" width="320" height="84" rx="42" fill="#f3ead6"/>
+          <text x="1600" y="568" text-anchor="middle" style="font-family:Inter,'Noto Sans Devanagari',sans-serif" font-size="50" font-weight="760" fill="#9e1b1b">500 g तक</text>
+        </g>
+        <circle id="document-tick-bg" cx="671" cy="554" r="36" fill="#e3f1e8"/>
+        <path id="document-tick" d="M653 554 666 567 690 542" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g id="recap-row-2">
+        <text id="parcel-en" x="758" y="712" font-family="Inter" font-size="52" font-weight="790" fill="#2b2622">Speed Post Parcel</text>
+        <text id="parcel-hi" x="758" y="766" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="39" font-weight="600" fill="#6f6a63">स्पीड पोस्ट पार्सल</text>
+        <g id="parcel-limit">
+          <rect x="1440" y="679" width="320" height="84" rx="42" fill="#f3ead6"/>
+          <text x="1600" y="738" text-anchor="middle" style="font-family:Inter,'Noto Sans Devanagari',sans-serif" font-size="50" font-weight="760" fill="#9e1b1b">35 kg तक</text>
+        </g>
+        <circle id="parcel-tick-bg" cx="671" cy="724" r="36" fill="#e3f1e8"/>
+        <path id="parcel-tick" d="M653 724 666 737 690 712" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [4.32, 'fade', '#class-line', {dur: 0.25}],
+      [5.50, 'fade', '#document-en', {dur: 0.24}],
+      [6.00, 'fade', '#document-hi', {dur: 0.25}],
+      [6.94, 'fade', '#parcel-en', {dur: 0.24}],
+      [7.44, 'fade', '#parcel-hi', {dur: 0.25}],
+      [8.30, 'pop', '#document-limit', {from: 0.93}],
+      [9.26, 'fade', '#document-tick-bg', {dur: 0.2}],
+      [9.26, 'draw', '#document-tick', {dur: 0.32}],
+      [11.18, 'pop', '#parcel-limit', {from: 0.93}],
+      [12.18, 'fade', '#parcel-tick-bg', {dur: 0.2}],
+      [12.18, 'draw', '#parcel-tick', {dur: 0.32}],
+    ],
+  }
+  </script>
+</section>
