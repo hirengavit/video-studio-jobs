@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s130" lang="hi" data-duration="11.80" data-in="cut" data-section="PART 6 · ADDRESSEE'S REDIRECTION" data-series="DELIVERY RULES">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="parcel" font-family="Inter,sans-serif" fill="#2b2622">
+  <g id="issuing-area">
+    <rect x="980" y="300" width="760" height="640" rx="26" fill="#fff1c6" stroke="#ead9a8" stroke-width="3"/>
+    <use href="piece:post-office-icon" transform="translate(1232 325) scale(.8)"/>
+    <text x="1360" y="633" font-size="58" font-weight="740" text-anchor="middle"><tspan class="hi" font-family="Noto Sans Devanagari">जारी करने वाला</tspan> office</text>
+    <text id="delivery-area-label" x="1360" y="702" font-size="52" font-weight="620" text-anchor="middle" fill="#6f6a63">delivery area</text>
+    <text id="post-town" x="1360" y="774" text-anchor="middle" class="hi" font-size="44" font-weight="740" fill="#6f6a63">या उसी post town में</text>
+    <g id="no-redirection-fee"><rect x="1090" y="813" width="540" height="85" rx="30" fill="#e4f0e6" stroke="#afcbb7" stroke-width="3"/><text x="1360" y="872" text-anchor="middle" class="hi" fill="#17634a" font-size="49" font-weight="830">redirection fee नहीं</text></g>
+  </g>
+  <image id="returned-parcel-photo" href="photo:india-post-parcel-cutout" x="177" y="383" width="550" height="360" preserveAspectRatio="xMidYMid meet"/>
+  <text id="parcel-credit" x="452" y="783" text-anchor="middle" font-size="25" fill="#6f6a63">Photo: RegisteredMailBarcode</text>
+  <g id="unclaimed">
+    <rect x="177" y="819" width="276" height="82" rx="41" fill="#f3ead6"/>
+    <text x="315" y="873" text-anchor="middle" font-size="48" font-weight="700">unclaimed</text>
+  </g>
+  <g id="refused">
+    <circle cx="478" cy="860" r="5" fill="#6f6a63"/>
+    <rect x="503" y="819" width="224" height="82" rx="41" fill="#f3ead6"/>
+    <text x="615" y="873" text-anchor="middle" font-size="48" font-weight="700">refused</text>
+  </g>
+  <path id="return-arrow" d="M752 536 C805 483 824 492 872 536 C920 579 956 591 1029 544 M994 539L1029 544L1015 578" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="two">
+ <text x="160" y="225" class="hi" font-size="52" font-weight="850" fill="#9e1b1b">दोनों offices को लिखित निर्देश</text>
+ <g id="central-request">
+  <use href="piece:written-request" transform="translate(771 280) scale(.9)"/>
+  <text x="960" y="420" text-anchor="middle" class="hi" font-size="45" font-weight="820" fill="#2b2622">लिखित निर्देश</text>
+ </g>
+ <path id="two-arrow-left" d="M763 532H548m25-19-25 19 25 19" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+ <path id="two-arrow-right" d="M1157 532h215m-25-19 25 19-25 19" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="two-office-left">
+  <use href="piece:post-office-icon" transform="translate(210 405) scale(.9)"/>
+  <text id="two-office-left-label" x="354" y="733" text-anchor="middle" class="hi" font-size="48" font-weight="800" fill="#2b2622">जिस जगह को छोड़ रहा है</text>
+ </g>
+ <g id="two-office-right">
+  <use href="piece:post-office-icon" transform="translate(1422 405) scale(.9)"/>
+  <text id="two-office-right-label" x="1566" y="733" text-anchor="middle" class="hi" font-size="48" font-weight="800" fill="#2b2622">जिस जगह जा रहा है</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  camera:[[0,{zoom:1}]],
+  shots:[[0,"#parcel"],[5.72,"#two"]],
+  on:[
+    [.66,"fade","#post-town",{dur:.23}],
+    [3.24,"stamp","#no-redirection-fee",{from:1.12,rot:-2,spring:"soft"}],
+    [7.60,"draw","#two-arrow-left",{dur:.35}],
+    [7.60,"draw","#two-arrow-right",{dur:.35}],
+    [7.60,"pop","#two-office-left",{from:.92,spring:"soft"}],
+    [7.60,"pop","#two-office-right",{from:.92,spring:"soft"}]
+  ]
+}
+</script>
+</section>
