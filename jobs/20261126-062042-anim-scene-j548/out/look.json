@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.20",
+  "4.40",
+  "6.59",
+  "8.79",
+  "10.84"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s004",
+   "text": "Delivery Post Office / delivery post office में रुककर",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s004",
+   "message": "a card is mostly empty at 4.4 s: bring its items in sooner, or size it for what it holds now",
+   "t": 4.4
+  }
+ ]
+}
