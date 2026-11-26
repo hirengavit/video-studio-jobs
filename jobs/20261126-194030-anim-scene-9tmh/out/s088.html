@@ -1,0 +1,70 @@
+<section class="vs-scene" id="s088" data-in="cut" data-section="PART 4 · BOOKING AND TRACKING" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="route">
+ <defs><clipPath id="air-only" clipPathUnits="userSpaceOnUse"><rect x="1070" y="225" width="372" height="150"/></clipPath></defs>
+ <text x="140" y="230" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="64" font-weight="810" fill="#2b2622" text-anchor="start">Transmission</text>
+ <text x="140" y="295" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="680" fill="#6f6a63" text-anchor="start">प्रेषण</text>
+ <g id="document-chip">
+  <rect x="140" y="400" width="520" height="100" rx="26" fill="#9e1b1b"/>
+  <text x="400" y="461" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="43" font-weight="770" fill="#ffffff" text-anchor="middle">Speed Post Document</text>
+ </g>
+ <g id="parcel-chip">
+  <rect x="140" y="540" width="520" height="100" rx="26" fill="#ead9a8"/>
+  <text x="400" y="601" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="43" font-weight="770" fill="#2b2622" text-anchor="middle">Speed Post Parcel</text>
+ </g>
+ <path id="air-arc" d="M760 570Q1260 90 1760 570" fill="none" stroke="#b8403a" stroke-width="5" stroke-linecap="round" stroke-dasharray="13 14"/>
+ <g id="air-plane"><g clip-path="url(#air-only)"><use href="piece:transport-icons" transform="translate(265 149)"/></g></g>
+ <text id="air-caption" x="1590" y="295" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="44" font-weight="750" fill="#2b2622" text-anchor="middle">हवाई रास्ता</text>
+  <defs><clipPath id="road-only" clipPathUnits="userSpaceOnUse"><rect x="864" y="671" width="289" height="137"/></clipPath></defs>
+  <path id="road-line" d="M760 800H1760" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round"/>
+  <g id="road-truck"><g clip-path="url(#road-only)"><use href="piece:transport-icons" transform="translate(472 581.3) scale(.9)"/></g></g>
+  <g id="fast-tag">
+    <rect x="1210" y="646" width="420" height="70" rx="32" fill="#fde9a6"/>
+    <text x="1420" y="693" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="42" font-weight="740" fill="#2b2622" text-anchor="middle">तेज़ surface route</text>
+  </g>
+  <g id="road-direction">
+    <path id="road-arrow" d="M1179 760H1728m-25-20 25 20-25 20" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="1480" y="857" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="42" font-weight="740" fill="#2b2622" text-anchor="middle">surface से</text>
+  </g>
+  </g>
+  <g id="race">
+    <text x="140" y="230" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="55" font-weight="800" fill="#9e1b1b" text-anchor="start">हर stage पर</text>
+    <path d="M600 470H1760M600 780H1760" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round"/>
+    <path id="stage-1" d="M980 318V826" fill="none" stroke="#9c8866" stroke-width="3" stroke-dasharray="12 12"/>
+    <path id="stage-2" d="M1360 318V826" fill="none" stroke="#9c8866" stroke-width="3" stroke-dasharray="12 12"/>
+    <path id="stage-3" d="M1740 318V826" fill="none" stroke="#9c8866" stroke-width="3" stroke-dasharray="12 12"/>
+    <g id="speed-race-label">
+      <text x="140" y="427" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="44" font-weight="800" fill="#9e1b1b" text-anchor="start">Speed Post Parcel</text>
+      <text x="140" y="485" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="38" font-weight="640" fill="#6f6a63" text-anchor="start">स्पीड पोस्ट पार्सल</text>
+    </g>
+    <g id="speed-race-parcel">
+      <use href="piece:speed-post-parcel" transform="translate(622 362.4) scale(0.4)"/>
+    </g>
+    <g id="india-race-label">
+      <text x="140" y="737" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="44" font-weight="800" fill="#2b2622" text-anchor="start">India Post Parcel</text>
+      <text x="140" y="795" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="38" font-weight="640" fill="#6f6a63" text-anchor="start">इंडिया पोस्ट पार्सल</text>
+    </g>
+    <g id="india-race-parcel" transform="translate(622 672.4) scale(.4)" stroke="#2b2622" stroke-width="6" stroke-linejoin="round">
+      <path d="M35 91 178 31 325 85 181 147Z" fill="#f3ead6"/>
+      <path d="M35 91 181 147 181 269 35 209Z" fill="#ead9a8"/>
+      <path d="M181 147 325 85 325 210 181 269Z" fill="#ddc794"/>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,'#route'],[4.24,'#race']],
+ on:[
+  [1.20,'draw','#road-line',{dur:0.44}],
+  [1.20,'pop','#road-truck',{from:0.92,spring:'soft'}],
+  [1.52,'pop','#fast-tag',{from:0.93,spring:'soft'}],
+  [3.30,'fade','#road-direction',{dur:0.25}],
+  [3.30,'draw','#road-arrow',{dur:0.38}],
+  [5.70,'pop','#speed-race-label, #speed-race-parcel',{from:0.92,spring:'soft'}],
+  [7.16,'reveal','#stage-1, #stage-2, #stage-3',{from:'top',dur:0.35,stagger:0.15}],
+  [8.38,'pop','#india-race-label, #india-race-parcel',{from:0.92,spring:'soft'}]
+ ]
+}
+</script>
+</section>
