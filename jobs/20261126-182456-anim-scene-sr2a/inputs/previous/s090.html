@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s090" data-in="cut" data-section="PART 4 · BOOKING AND TRACKING" data-series="PRODUCTS">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="regs" font-family="Inter, sans-serif">
+      <rect id="reg-card" x="360" y="200" width="1200" height="220" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="425" y="318" font-size="64" font-family="Georgia, serif" font-weight="760" fill="#9e1b1b">Regulations</text>
+      <text class="hi" x="428" y="378" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#6f6a63">विनियम</text>
+      <g id="method">
+        <path d="M425 422H1495" fill="none" stroke="#ead9a8" stroke-width="2"/>
+        <text class="hi" x="446" y="513" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="730" fill="#2b2622">तरीका</text>
+        <path id="valid-method" d="m1378 477 20 22 49-55" fill="none" stroke="#2e7d4f" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g id="airline-row">
+        <path d="M425 563H1495" fill="none" stroke="#ead9a8" stroke-width="2"/>
+        <text id="airline-names" class="hi" x="446" y="690" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="730" fill="#2b2622">airlines के नाम</text>
+        <path id="not-names" d="M1388 635l52 52m0-52-52 52" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+      </g>
+      <text x="960" y="956" text-anchor="middle" font-size="32" font-weight="620" fill="#6f6a63">Post Office Regulations 2024</text>
+    </g>
+    <g id="bag" font-family="Inter, sans-serif">
+      <g id="mail-bag">
+        <path d="M160 640H565" fill="none" stroke="#d7cbb2" stroke-width="3" stroke-linecap="round"/>
+        <path d="M311 362c-22-17-39-40-48-65 27 6 51 9 75-1 17-7 37-6 54 1 22 8 43 4 68-2-9 31-24 49-44 69 35 39 67 76 104 155 35 74 27 116-30 121H233c-52-2-63-42-38-102 29-72 65-130 116-176Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M310 360c25 8 78 10 106 2m-101-13c26 8 73 10 98 4m-61 9c4 22-12 42-28 48m30-47c7 25 27 37 48 39m-125 48c-35 52-52 97-44 146m224-151c29 44 47 89 47 124" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M266 618c68 8 139 8 204 0" fill="none" stroke="#d7cbb2" stroke-width="3" stroke-linecap="round"/>
+      </g>
+      <text id="bag-label" x="360" y="709" text-anchor="middle" font-size="48" font-weight="760" fill="#2b2622">Speed Post bag</text>
+      <g id="list-slip">
+        <use href="piece:registered-list-sheet" transform="translate(1000 190) scale(1.9)"/>
+        <text id="list-label" x="1304" y="279" text-anchor="middle" font-size="50" font-weight="770" fill="#ffffff">Speed Post list</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0,'#regs'],[4.80,'#bag']],
+    on: [
+      [1.38,'fade','#method',{dur:0.25}],
+      [1.50,'draw','#valid-method',{dur:0.34}],
+      [2.60,'fade','#airline-row',{dur:0.25}],
+      [3.68,'strike','#airline-names',{color:'#4b4f58',width:6,dur:0.26,dim:0.72}],
+      [3.68,'draw','#not-names',{dur:0.29}],
+      [5.64,'fade','#bag-label',{dur:0.27}],
+      [7.48,'slide','#list-slip',{from:'right',dist:135,spring:'soft'}],
+      [8.26,'type','#list-label',{cps:24}]
+    ],
+    update(t, section, $) {
+      const progress=(a,b)=>Math.max(0,Math.min(1,(t-a)/(b-a)));
+      const card=$('#reg-card')[0];
+      if(card) card.setAttribute('height',220+155*progress(1.20,1.55)+325*progress(2.38,2.83));
+    }
+  }
+  </script>
+</section>

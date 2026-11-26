@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 420" role="img" aria-label="Mechanical postal letter scale">
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="scale-body">
+<rect x="98" y="371" width="55" height="21" rx="6" fill="#6f6a63"/>
+<rect x="347" y="371" width="55" height="21" rx="6" fill="#6f6a63"/>
+<path d="M153 112h194c24 0 38 16 43 45l39 204a19 19 0 0 1-19 21H90a19 19 0 0 1-19-21l39-204c5-29 19-45 43-45Z" fill="#f3ead6"/>
+<path d="M95 330h310" stroke="#d7bd91" fill="none"/>
+<rect x="216" y="66" width="68" height="48" rx="6" fill="#e0caa5"/>
+</g>
+<g id="dial">
+<circle cx="250" cy="243" r="103" fill="#fffefa"/>
+<circle cx="250" cy="243" r="90" fill="none" stroke="#d5c4ab"/>
+<path d="M250 165v18m39-8-9 16m37 12-16 9m28 30h-18m-100-67 9 16m-37 12 16 9m-28 30h18" fill="none" stroke="#6f6a63"/>
+</g>
+<path id="needle" d="m250 244-7-3 48-55-34 63z" fill="#9e1b1b" stroke="none"/>
+<circle id="needle-hub" cx="250" cy="243" r="11" fill="#2b2622"/>
+<g id="scale-pan">
+<path d="M35 29h430v19c0 12-10 22-22 22H57a22 22 0 0 1-22-22Z" fill="#e1cda9"/>
+<rect x="30" y="23" width="440" height="22" rx="8" fill="#fffefa"/>
+</g>
+</g>
+<circle data-anchor="base" cx="250" cy="392" r="0"/>
+<circle data-anchor="top" cx="250" cy="23" r="0"/>
+</svg>
