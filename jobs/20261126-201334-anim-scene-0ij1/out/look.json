@@ -8,12 +8,5 @@
   "10.55"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s089",
-   "text": "हवाई जहाज़ में / ज़रूरी नहीं",
-   "t": 6.42
-  }
- ]
+ "warnings": []
 }
