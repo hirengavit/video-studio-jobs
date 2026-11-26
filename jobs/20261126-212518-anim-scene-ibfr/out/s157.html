@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s157" data-in="cut" data-section="PART 7 · SERVICE STANDARDS" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+
+<g id="calendar" style="font-family:'Noto Sans Devanagari',Inter,sans-serif">
+  <text style="font-family:'Noto Sans Devanagari',Inter,sans-serif" id="example-title" x="150" y="205" fill="#9e1b1b" font-size="56" font-weight="800">उदाहरण</text>
+  <g id="day-1">
+    <g transform="translate(150 300) scale(1.5)"><rect x="0" y="0" width="240" height="260" rx="12" fill="#ffffff"/><path d="M0 60V12Q0 0 12 0H228Q240 0 240 12V60Z" fill="#9e1b1b"/><rect x="0" y="0" width="240" height="260" rx="12" fill="none" stroke="#2b2622" stroke-width="3"/></g>
+    <text style="font-family:'Noto Sans Devanagari',Inter,sans-serif" x="330" y="360" fill="#fff" text-anchor="middle" font-size="44" font-weight="760">सोमवार</text>
+    <g id="day-1-meaning" fill="#2b2622" text-anchor="middle" font-size="44" font-weight="680">
+      <text style="font-family:'Noto Sans Devanagari',Inter,sans-serif" id="mon-when" x="330" y="524">cut-off के बाद</text>
+      <text style="font-family:'Noto Sans Devanagari',Inter,sans-serif" id="mon-booking" x="330" y="580">booking</text>
+    </g>
+  </g>
+  <g id="day-2">
+    <g transform="translate(570 300) scale(1.5)"><rect x="0" y="0" width="240" height="260" rx="12" fill="#ffffff"/><path d="M0 60V12Q0 0 12 0H228Q240 0 240 12V60Z" fill="#9e1b1b"/><rect x="0" y="0" width="240" height="260" rx="12" fill="none" stroke="#2b2622" stroke-width="3"/></g>
+    <text style="font-family:'Noto Sans Devanagari',Inter,sans-serif" x="750" y="360" fill="#fff" text-anchor="middle" font-size="44" font-weight="760">मंगलवार</text>
+    <g id="day-2-meaning" fill="#2b2622" text-anchor="middle" font-size="44" font-weight="680">
+      <text style="font-family:'Noto Sans Devanagari',Inter,sans-serif" id="tue-holiday" x="750" y="552">public holiday</text>
+    </g>
+  </g>
+  <g id="day-3">
+    <g transform="translate(990 300) scale(1.5)"><rect x="0" y="0" width="240" height="260" rx="12" fill="#ffffff"/><path d="M0 60V12Q0 0 12 0H228Q240 0 240 12V60Z" fill="#9e1b1b"/><rect x="0" y="0" width="240" height="260" rx="12" fill="none" stroke="#2b2622" stroke-width="3"/></g>
+    <text style="font-family:'Noto Sans Devanagari',Inter,sans-serif" x="1170" y="360" fill="#fff" text-anchor="middle" font-size="44" font-weight="760">बुधवार</text>
+    <text id="count-day-1" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" x="1170" y="564" fill="#2b2622" text-anchor="middle" font-size="80" font-weight="810">दिन 1</text>
+  </g>
+  <g id="day-4">
+    <g transform="translate(1410 300) scale(1.5)"><rect x="0" y="0" width="240" height="260" rx="12" fill="#ffffff"/><path d="M0 60V12Q0 0 12 0H228Q240 0 240 12V60Z" fill="#9e1b1b"/><rect x="0" y="0" width="240" height="260" rx="12" fill="none" stroke="#2b2622" stroke-width="3"/></g>
+    <text style="font-family:'Noto Sans Devanagari',Inter,sans-serif" x="1590" y="360" fill="#fff" text-anchor="middle" font-size="44" font-weight="760">गुरुवार</text>
+    <text id="count-day-2" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" x="1590" y="564" fill="#2b2622" text-anchor="middle" font-size="80" font-weight="810">दिन 2</text>
+  </g>
+  <path id="skip-mon" d="M250 464L410 624M410 464L250 624" fill="none" stroke="#4b4f58" stroke-width="15" stroke-opacity=".46" stroke-linecap="round"/>
+  <path id="skip-tue" d="M670 464L830 624M830 464L670 624" fill="none" stroke="#4b4f58" stroke-width="15" stroke-opacity=".46" stroke-linecap="round"/>
+  <g id="method-band">
+    <rect x="140" y="800" width="1640" height="150" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text id="method" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" x="205" y="893" fill="#2b2622" font-size="48" font-weight="750">सिर्फ गिनने का तरीका ·</text>
+    <text id="no-guarantee" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" x="730" y="893" fill="#4b4f58" font-size="48" font-weight="750">किसी route की guarantee नहीं</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [2.68,'strike','#mon-when,#mon-booking,#tue-holiday',{color:'#4b4f58',dim:.62,width:5,dur:.31}],
+  [2.68,'draw','#skip-mon,#skip-tue',{dur:.46,stagger:.20}],
+  [3.72,'pop','#day-3',{from:.88,spring:'fast'}],
+  [4.28,'pop','#count-day-1',{from:.86,spring:'fast'}],
+  [5.58,'pop','#day-4',{from:.88,spring:'fast'}],
+  [6.20,'pop','#count-day-2',{from:.86,spring:'fast'}],
+  [7.18,'slide','#method-band',{from:'down',dist:85,spring:'fast'}],
+  [7.18,'words','#method',{gap:.13,dist:12,spring:'fast'}],
+  [9.40,'words','#no-guarantee',{gap:.09,dist:12,spring:'fast'}],
+  [10.32,'underline','#no-guarantee',{words:'guarantee नहीं',color:'#f2b705',width:5,gap:3,dur:.33}]
+ ]
+}
+</script>
+</section>
