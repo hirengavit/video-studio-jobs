@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 260" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+ <g id="plate" transform="translate(125 125)">
+  <rect x="-86" y="-73" width="172" height="146" rx="12" fill="#eee2cc"/><rect x="-72" y="-60" width="144" height="120" rx="7" fill="#f3ead6"/>
+  <path d="M-45-30h90m-90 29h90m-90 29h90" fill="none" stroke-width="9" stroke-dasharray=".1 19"/>
+  <path d="M-59 48h118" stroke="#b7a487"/>
+ </g>
+ <g id="record" transform="translate(375 125)">
+  <circle r="85" fill="#34302b"/><circle r="73" fill="none" stroke="#6f6a63"/><circle r="59" fill="none" stroke="#6f6a63"/><circle r="46" fill="none" stroke="#6f6a63"/><circle r="30" fill="#9e1b1b"/><circle r="6" fill="#f3ead6"/>
+ </g>
+ <g id="disc" transform="translate(625 125)">
+  <circle r="85" fill="#f9f0dd"/><path d="M-40-75l32 53m43 4 48-25M-21 18l-55 34m119 6-24-34" stroke="#d3bd99" stroke-width="12"/><circle r="28" fill="none" stroke="#a79576"/><circle r="11" fill="#fff"/>
+ </g>
+ <g id="film" transform="translate(875 125)">
+  <circle r="78" fill="#f3ead6"/><circle r="18" fill="#fff"/><g fill="#fff"><circle cx="0" cy="-46" r="17"/><circle cx="44" cy="-15" r="17"/><circle cx="27" cy="37" r="17"/><circle cx="-27" cy="37" r="17"/><circle cx="-44" cy="-15" r="17"/></g>
+  <path d="M52 58l20 23q10 10 26 5l11-4v19l-14 4q-22 6-36-10L41 74Z" fill="#9e1b1b"/>
+ </g>
+ <g id="tape" transform="translate(1125 125)">
+  <rect x="-93" y="-58" width="186" height="116" rx="10" fill="#f3ead6"/><rect x="-65" y="-34" width="130" height="51" rx="8" fill="#9e1b1b"/>
+  <path d="M-34-9h68" stroke="#ead9a8" stroke-width="9"/><circle cx="-38" cy="-9" r="12" fill="#fff"/><circle cx="38" cy="-9" r="12" fill="#fff"/><path d="M-62 57l12-24H50l12 24" fill="#fff"/>
+ </g>
+ <g id="wire" transform="translate(1375 125)">
+  <path d="M-59-66H50v134H-59Z" fill="#e7d7ba"/><path d="M-56-53H50m-106 15H50m-106 15H50m-106 15H50m-106 15H50m-106 15H50m-106 15H50m-106 15H50" fill="none" stroke="#6f6a63"/>
+  <ellipse cx="-58" rx="23" ry="73" fill="#f3ead6"/><ellipse cx="51" rx="24" ry="73" fill="#9e1b1b"/><ellipse cx="51" rx="9" ry="20" fill="#f3ead6"/>
+  <path d="M18 61q15 22 41 21t35 15" fill="none"/>
+ </g>
+ <circle data-anchor="base" cx="750" cy="216" r="0"/>
+</svg>
