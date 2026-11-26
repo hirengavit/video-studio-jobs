@@ -1,0 +1,29 @@
+<section class="vs-scene" id="s038" data-in="cut" data-section="PART 2 · HOLDING PERIOD" data-series="DELIVERY RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="deposit-rule" font-family="'Noto Sans Devanagari', Inter, sans-serif">
+      <text id="deposit-title" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="960" y="224" font-size="60" font-weight="750" text-anchor="middle" fill="#9e1b1b">Deliver न हो पाई डाक: सामान्य deposit</text>
+      <use id="deposit-letter" href="piece:domestic-envelope" transform="translate(350 300) scale(1)"/>
+      <text id="addressee-question" x="850" y="540" font-family="Inter, sans-serif" font-size="120" font-weight="700" text-anchor="middle" fill="#6f6a63">?</text>
+      <path id="enquiry-glass" d="M1400 470 A70 70 0 1 1 1260 470 A70 70 0 1 1 1400 470 M1380 521 L1470 611" fill="none" stroke="#2b2622" stroke-width="9" stroke-linecap="round"/>
+      <path id="enquiry-cross" d="M1304 444 L1356 496 M1356 444 L1304 496" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+      <g id="enquiry-result">
+        <rect id="enquiry-strip" x="350" y="777" width="1220" height="162" rx="24" fill="#f3ead6"/>
+        <text id="enquiry-term" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="505" y="875" font-size="56" font-weight="670" fill="#2b2622">Addressee की पूछताछ:</text>
+        <text id="enquiry-failed" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="1140" y="875" font-size="56" font-weight="780" fill="#4b4f58">असफल</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.73, 'fade', '#deposit-title', {dur:0.30}],
+      [4.85, 'draw', '#enquiry-glass', {dur:0.65}],
+      [6.69, 'fade', '#enquiry-strip', {dur:0.15}],
+      [6.81, 'fade', '#enquiry-term', {dur:0.21}],
+      [7.52, 'fade', '#enquiry-failed', {dur:0.22}],
+      [7.52, 'draw', '#enquiry-cross', {dur:0.25}]
+    ]
+  }
+  </script>
+</section>
