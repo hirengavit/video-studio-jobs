@@ -8,12 +8,5 @@
   "8.47"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s152",
-   "text": "Reg. 119A · Schedule III Table XI / 7 दिन free",
-   "t": 3.45
-  }
- ]
+ "warnings": []
 }
