@@ -18,9 +18,21 @@
    <use href="piece:house-icon" transform="translate(719 672) scale(.64)"/>
    <text x="815" y="923" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="780" fill="#2b2622">घर 2</text>
   </g>
-  <g id="same-office-routes" fill="none" stroke="#5d7466" stroke-width="6" stroke-dasharray="4 14" stroke-linecap="round">
-   <path id="a-route-one" d="M562 642H410Q385 642 385 667V686"/>
-   <path id="a-route-two" d="M638 642H790Q815 642 815 667V686"/>
+  <g id="same-office-routes" fill="#5d7466" stroke-linecap="round">
+   <circle id="a-dot-l-0" cx="562" cy="642" r="3.7"/><circle id="a-dot-r-0" cx="638" cy="642" r="3.7"/>
+   <circle id="a-dot-l-1" cx="546" cy="642" r="3.7"/><circle id="a-dot-r-1" cx="654" cy="642" r="3.7"/>
+   <circle id="a-dot-l-2" cx="530" cy="642" r="3.7"/><circle id="a-dot-r-2" cx="670" cy="642" r="3.7"/>
+   <circle id="a-dot-l-3" cx="514" cy="642" r="3.7"/><circle id="a-dot-r-3" cx="686" cy="642" r="3.7"/>
+   <circle id="a-dot-l-4" cx="498" cy="642" r="3.7"/><circle id="a-dot-r-4" cx="702" cy="642" r="3.7"/>
+   <circle id="a-dot-l-5" cx="482" cy="642" r="3.7"/><circle id="a-dot-r-5" cx="718" cy="642" r="3.7"/>
+   <circle id="a-dot-l-6" cx="466" cy="642" r="3.7"/><circle id="a-dot-r-6" cx="734" cy="642" r="3.7"/>
+   <circle id="a-dot-l-7" cx="450" cy="642" r="3.7"/><circle id="a-dot-r-7" cx="750" cy="642" r="3.7"/>
+   <circle id="a-dot-l-8" cx="434" cy="642" r="3.7"/><circle id="a-dot-r-8" cx="766" cy="642" r="3.7"/>
+   <circle id="a-dot-l-9" cx="418" cy="642" r="3.7"/><circle id="a-dot-r-9" cx="782" cy="642" r="3.7"/>
+   <circle id="a-dot-l-10" cx="403" cy="645" r="3.7"/><circle id="a-dot-r-10" cx="797" cy="645" r="3.7"/>
+   <circle id="a-dot-l-11" cx="389" cy="654" r="3.7"/><circle id="a-dot-r-11" cx="811" cy="654" r="3.7"/>
+   <circle id="a-dot-l-12" cx="385" cy="669" r="3.7"/><circle id="a-dot-r-12" cx="815" cy="669" r="3.7"/>
+   <circle id="a-dot-l-13" cx="385" cy="685" r="3.7"/><circle id="a-dot-r-13" cx="815" cy="685" r="3.7"/>
   </g>
   <g id="free-in-a">
    <rect x="470" y="849" width="260" height="74" rx="32" fill="#e7f3eb" stroke="#2e7d4f" stroke-width="3"/>
@@ -29,8 +41,8 @@
   <g id="area-b">
    <rect x="1160" y="300" width="620" height="660" rx="32" fill="#f0eeee" stroke="#d0c9cb" stroke-width="4"/>
    <text x="1214" y="381" font-family="Inter,sans-serif" font-size="49" font-weight="820" fill="#9e1b1b">Area B</text>
-   <use href="piece:post-office-icon" transform="translate(1350 332) scale(.75)"/>
-   <text x="1470" y="620" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="760" fill="#2b2622">दूसरा delivery post office</text>
+   <use href="piece:post-office-icon" transform="translate(1390 332) scale(.75)"/>
+   <text x="1510" y="620" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="760" fill="#2b2622">दूसरा delivery post office</text>
    <use href="piece:house-icon" transform="translate(1220 672) scale(.64)"/>
    <text x="1316" y="923" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="780" fill="#2b2622">घर 3</text>
   </g>
@@ -40,12 +52,10 @@
 <script type="text/scene">
 ({
  camera:[[0,{zoom:1}]],shots:[[0,"#example"]],on:[
-  [1.44,"draw","#a-route-one",{dur:.46}],
-  [1.44,"draw","#a-route-two",{dur:.46}],
   [4.92,"stamp","#free-in-a",{from:1.06,rot:0,spring:"soft"}],
   [6.90,"reveal","#area-b",{from:"left",dur:.48}],
   [8.54,"draw","#move-to-b",{dur:.65}]
- ]
+ ],update(t,section,$){for(let i=0;i<14;i++){for(const d of ["l","r"]){$("#a-dot-"+d+"-"+i)[0].setAttribute("opacity",t>=1.44+i*.035?1:0);}}}
 })
 </script>
 </section>
