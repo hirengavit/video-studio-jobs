@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s160" data-in="cut" data-duration="14.64" data-section="PART 7 · INTERNATIONAL" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Two different counting starts: Poste Restante arrival; ordinary first delivery presentation or arrival intimation">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="international-count">
+   <text id="counting-title" x="160" y="198" class="hi" font-size="56" font-weight="840" fill="#9e1b1b">गिनती कहाँ से?</text>
+   <g id="poste-count-row">
+    <rect x="160" y="220" width="1600" height="340" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M805 254V527" stroke="#ead9a8" stroke-width="3"/>
+    <g id="poste-count-label">
+     <rect x="194" y="326" width="576" height="116" rx="22" fill="#f3ead6"/>
+     <text x="482" y="402" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="830" fill="#2b2622">Poste Restante items</text>
+    </g>
+    <g id="delivery-arrival">
+     <use href="piece:post-office-icon" transform="translate(1350 236) scale(.78)"/>
+     <text x="1475" y="506" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="820" fill="#2b2622">Delivery office</text>
+    </g>
+    <g id="delivery-flight">
+     <use href="piece:icon-plane" transform="translate(882 221) scale(.67)"/>
+    </g>
+    <path id="arrival-arrow" d="M1151 385h164m-24-19 24 19-24 19" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="delivery-day-one">
+     <path d="M902 459H1239L1258 492L1239 525H902Z" fill="#9e1b1b"/>
+     <text x="1074" y="506" text-anchor="middle" class="hi" font-size="44" font-weight="820" fill="#fff">दिन 1: पहुँचने से</text>
+    </g>
+   </g>
+   <g id="ordinary-count-row">
+    <rect x="160" y="620" width="1600" height="360" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text id="ordinary-count-label" x="220" y="705" font-family="Inter,sans-serif" font-size="49" font-weight="820" fill="#4b4f58">Ordinary international items</text>
+    <g id="ordinary-seven">
+     <rect x="1492" y="644" width="208" height="73" rx="36" fill="#fff"/>
+     <text x="1596" y="695" class="hi" text-anchor="middle" font-size="44" font-weight="760" fill="#4b4f58">7 दिन</text>
+    </g>
+    <g id="first-presentation">
+     <use href="piece:house-icon" transform="translate(268 744) scale(.52)"/>
+     <use href="piece:domestic-envelope" transform="translate(375 844) scale(.14)"/>
+     <text x="521" y="818" class="hi" font-size="44" font-weight="720" fill="#2b2622">पहली बार delivery के लिए</text>
+     <text x="521" y="884" class="hi" font-size="44" font-weight="720" fill="#2b2622">पेश करने से</text>
+    </g>
+    <g id="ordinary-or">
+     <circle cx="1130" cy="846" r="44" fill="#4b4f58"/>
+     <text x="1130" y="861" text-anchor="middle" class="hi" font-size="44" font-weight="760" fill="#fff">या</text>
+    </g>
+    <g id="arrival-notice">
+     <rect x="1213" y="754" width="480" height="106" rx="17" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+     <text x="1453" y="821" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#2b2622">arrival intimation</text>
+     <text x="1453" y="920" text-anchor="middle" class="hi" font-size="44" font-weight="720" fill="#2b2622">intimation देने से</text>
+    </g>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [0,"highlight","#ordinary-count-label",{color:"#fde9a6",opacity:.92,pad:8,dur:.35}],
+   [2.32,"fade","#ordinary-seven",{dur:.25}],
+   [5.02,"fade","#first-presentation",{dur:.35}],
+   [8.30,"pop","#ordinary-or",{from:.75}],
+   [11.88,"pop","#arrival-notice",{from:.91,spring:"soft"}]
+  ]
+ })
+ </script>
+</section>
