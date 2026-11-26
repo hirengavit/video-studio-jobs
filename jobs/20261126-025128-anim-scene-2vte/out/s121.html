@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s121" data-duration="11.16" data-in="cut" data-section="PART 6 · ADDRESSEE'S REDIRECTION" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Redirection within one delivery post office area is free; a second delivery area is distinct.">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="example">
+  <text x="600" y="224" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">एक ही delivery area</text>
+  <rect id="area-a" x="140" y="300" width="920" height="660" rx="32" fill="#fff3cc" stroke="#ead9a8" stroke-width="4"/>
+  <text x="194" y="381" font-family="Inter,sans-serif" font-size="49" font-weight="820" fill="#9e1b1b">Area A</text>
+  <g id="example-office">
+   <use href="piece:post-office-icon" transform="translate(469 322) scale(.82)"/>
+   <text x="600" y="620" text-anchor="middle" font-family="Inter,sans-serif" font-size="47" font-weight="760" fill="#2b2622">Delivery post office</text>
+  </g>
+  <g id="house-1">
+   <use href="piece:house-icon" transform="translate(289 672) scale(.64)"/>
+   <text x="385" y="923" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="780" fill="#2b2622">घर 1</text>
+  </g>
+  <path id="move-arrow" d="M503 771 H678 M653 745 L679 771 L653 797" fill="none" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="house-2">
+   <use href="piece:house-icon" transform="translate(719 672) scale(.64)"/>
+   <text x="815" y="923" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="780" fill="#2b2622">घर 2</text>
+  </g>
+  <g id="same-office-routes" fill="none" stroke="#5d7466" stroke-width="6" stroke-dasharray="4 14" stroke-linecap="round">
+   <path id="a-route-one" d="M562 642H410Q385 642 385 667V686"/>
+   <path id="a-route-two" d="M638 642H790Q815 642 815 667V686"/>
+  </g>
+  <g id="free-in-a">
+   <rect x="470" y="849" width="260" height="74" rx="32" fill="#e7f3eb" stroke="#2e7d4f" stroke-width="3"/>
+   <text x="600" y="901" text-anchor="middle" font-family="Inter,sans-serif" font-size="50" font-weight="830" fill="#246441">Free</text>
+  </g>
+  <g id="area-b">
+   <rect x="1160" y="300" width="620" height="660" rx="32" fill="#f0eeee" stroke="#d0c9cb" stroke-width="4"/>
+   <text x="1214" y="381" font-family="Inter,sans-serif" font-size="49" font-weight="820" fill="#9e1b1b">Area B</text>
+   <use href="piece:post-office-icon" transform="translate(1350 332) scale(.75)"/>
+   <text x="1470" y="620" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="760" fill="#2b2622">दूसरा delivery post office</text>
+   <use href="piece:house-icon" transform="translate(1220 672) scale(.64)"/>
+   <text x="1316" y="923" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="780" fill="#2b2622">घर 3</text>
+  </g>
+  <path id="move-to-b" d="M385 937v34q0 13 14 13h903q14 0 14-13v-28m-13 13 13-13 13 13" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],shots:[[0,"#example"]],on:[
+  [1.44,"draw","#a-route-one",{dur:.46}],
+  [1.44,"draw","#a-route-two",{dur:.46}],
+  [4.92,"stamp","#free-in-a",{from:1.06,rot:0,spring:"soft"}],
+  [6.90,"reveal","#area-b",{from:"left",dur:.48}],
+  [8.54,"draw","#move-to-b",{dur:.65}]
+ ]
+})
+</script>
+</section>
