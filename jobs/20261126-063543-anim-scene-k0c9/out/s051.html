@@ -4,7 +4,7 @@
 <defs><clipPath id="rack-viewport" clipPathUnits="userSpaceOnUse"><rect id="rack-aperture" x="0" y="150" width="1920" height="930"/></clipPath></defs>
 <g clip-path="url(#rack-viewport)"><use href="set:po-counter" layer="back"/></g>
 <use href="set:po-counter" layer="front"/>
-<g id="letter" transform="translate(960 730) scale(.89) translate(-960 -730)">
+<g id="letter" transform="translate(960 730) scale(.81) translate(-960 -730)">
  <use href="piece:domestic-envelope" transform="translate(785.2 546) scale(.46)"/>
  <g transform="translate(1051 601)" fill="none" stroke="#9e1b1b">
   <circle r="41" stroke-width="2.5"/><circle r="36" stroke-width="1.6"/>
@@ -17,29 +17,23 @@
  <rect x="784" y="471" width="352" height="65" rx="20" fill="#fffdfa" stroke="#ead9a8" stroke-width="3"/>
  <text x="960" y="517" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="720" fill="#2b2622">delivery staff</text>
 </g>
-<text id="question" x="1520" y="704" text-anchor="middle" font-family="Inter,sans-serif" font-size="79" font-weight="800" fill="#6f6a63">?</text>
-<text id="unknown" x="1520" y="768" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="790" fill="#4b4f58">अनजान</text>
+<text id="question" x="1520" y="724" text-anchor="middle" font-family="Inter,sans-serif" font-size="69" font-weight="800" fill="#6f6a63">?</text>
+<text id="unknown" x="1520" y="777" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="790" fill="#4b4f58">अनजान</text>
 <use id="idcard" href="piece:id-card" transform="scale(.6)"/>
 <g id="check-label">
  <rect x="1119" y="536" width="345" height="59" rx="15" fill="#fffdfa" stroke="#ead9a8" stroke-width="3"/>
  <text x="1291.5" y="579" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">पहचान की जाँच</text>
 </g>
 <g id="confirmed">
- <rect x="1331" y="598" width="315" height="73" rx="18" fill="#fffdfa" stroke="#c9dfcd" stroke-width="3"/>
- <text x="1488.5" y="651" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">सही व्यक्ति</text>
+ <rect x="1331" y="578" width="315" height="73" rx="18" fill="#fffdfa" stroke="#c9dfcd" stroke-width="3"/>
+ <text x="1488.5" y="631" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">सही व्यक्ति</text>
 </g>
-<path id="tick" d="M1120 654l11 12 19-24" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="tick" d="M1101 655l10 11 17-24" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 <script type="text/scene">
 ({
  set:'po-counter',
- camera:[[0,'wide'],[5.70,'wide'],[6.25,{zoom:1.35,x:140,y:108},'inOut']],
- update(t, section, $) {
-  const k=Math.max(0,Math.min(1,(t-5.70)/.55));
-  const e=k<.5?4*k*k*k:1-((-2*k+2)**3)/2;
-  const rackTop=540+108*e+(150-540)/(1+.35*e);
-  $('#rack-aperture')[0]?.setAttribute('y',rackTop.toFixed(2));
- },
+ camera:[[0,'wide'],[5.70,'wide'],[6.25,{zoom:1.10,x:42,y:-34},'inOut']],
  on:[
   [2.76,'fade','#staff',{dur:.27}],
   [4.14,'pop','#question',{from:.90,spring:'soft'}],
