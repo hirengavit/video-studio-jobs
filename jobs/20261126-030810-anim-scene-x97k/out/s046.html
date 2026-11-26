@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s046" data-duration="9.84" data-in="cut" data-section="PART 2 · HOLDING PERIOD" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The three different holding periods.">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="three">
+  <text id="periods-heading" x="200" y="268" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="850" fill="#9e1b1b">तीन अवधियाँ, तीन अलग बातें</text>
+  <g id="periods-rows">
+   <rect id="period-row-1" x="200" y="330" width="1520" height="170" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <rect id="period-row-2" x="200" y="530" width="1520" height="170" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <rect id="period-row-3" x="200" y="730" width="1520" height="170" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  </g>
+  <g id="period-person-label">
+   <rect x="230" y="387" width="12" height="56" rx="6" fill="#f2b705"/>
+   <text x="268" y="435" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="790" fill="#2b2622">व्यक्ति के लिए सुविधा</text>
+  </g>
+  <g id="period-person-value">
+   <rect x="1110" y="374" width="553" height="82" rx="29" fill="#9e1b1b"/>
+   <text x="1386.5" y="434" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="830" fill="#fff">3 महीने तक</text>
+  </g>
+  <g id="period-article-label">
+   <rect x="230" y="587" width="12" height="56" rx="6" fill="#f2b705"/>
+   <text x="268" y="635" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="790" fill="#2b2622">Poste restante article</text>
+  </g>
+  <g id="period-article-value">
+   <rect x="1110" y="574" width="553" height="82" rx="29" fill="#9e1b1b"/>
+   <text x="1386.5" y="634" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="830" fill="#fff">15 दिन</text>
+  </g>
+  <g id="period-deposit-label">
+   <rect x="230" y="787" width="12" height="56" rx="6" fill="#f2b705"/>
+   <text x="268" y="835" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="790" fill="#2b2622">पूछताछ असफल होने पर deposit</text>
+  </g>
+  <g id="period-deposit-value">
+   <rect x="1110" y="774" width="553" height="82" rx="29" fill="#9e1b1b"/>
+   <text x="1386.5" y="834" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="830" fill="#fff">आम तौर पर 7 दिन</text>
+  </g>
+  <text id="period-article-return" x="268" y="681" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="690" fill="#4b4f58">फिर sender को वापस</text>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,"#three"]],
+ on:[
+  [0,"fade","#period-article-label",{dur:.26}],
+  [1.52,"pop","#period-article-value",{from:.91,spring:"soft"}],
+  [3.02,"fade","#period-article-return",{dur:.24}],
+  [4.88,"fade","#period-deposit-label",{dur:.26}],
+  [8.82,"pop","#period-deposit-value",{from:.91,spring:"soft"}]
+ ]
+})
+</script>
+</section>
