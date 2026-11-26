@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s085" data-in="cut" data-duration="11.06" data-section="PART 4 · SENDER'S RECALL" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Six rupees per item for all three requests, with a fee receipt">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="fee">
+ <text id="heading" x="220" y="188" font-family="Inter,sans-serif" font-size="56" font-weight="820" fill="#9e1b1b">Fee</text>
+ <g id="fee-stamp">
+  <rect x="520" y="216" width="880" height="304" rx="22" fill="#9e1b1b"/>
+  <rect x="548" y="244" width="824" height="248" rx="16" fill="none" stroke="#b8403a" stroke-width="3"/>
+  <g fill="#fbf7ee">
+<circle cx="566" cy="216" r="8"/><circle cx="612" cy="216" r="8"/><circle cx="658" cy="216" r="8"/><circle cx="704" cy="216" r="8"/><circle cx="750" cy="216" r="8"/><circle cx="796" cy="216" r="8"/><circle cx="842" cy="216" r="8"/><circle cx="888" cy="216" r="8"/><circle cx="934" cy="216" r="8"/><circle cx="980" cy="216" r="8"/><circle cx="1026" cy="216" r="8"/><circle cx="1072" cy="216" r="8"/><circle cx="1118" cy="216" r="8"/><circle cx="1164" cy="216" r="8"/><circle cx="1210" cy="216" r="8"/><circle cx="1256" cy="216" r="8"/><circle cx="1302" cy="216" r="8"/><circle cx="1348" cy="216" r="8"/><circle cx="566" cy="520" r="8"/><circle cx="612" cy="520" r="8"/><circle cx="658" cy="520" r="8"/><circle cx="704" cy="520" r="8"/><circle cx="750" cy="520" r="8"/><circle cx="796" cy="520" r="8"/><circle cx="842" cy="520" r="8"/><circle cx="888" cy="520" r="8"/><circle cx="934" cy="520" r="8"/><circle cx="980" cy="520" r="8"/><circle cx="1026" cy="520" r="8"/><circle cx="1072" cy="520" r="8"/><circle cx="1118" cy="520" r="8"/><circle cx="1164" cy="520" r="8"/><circle cx="1210" cy="520" r="8"/><circle cx="1256" cy="520" r="8"/><circle cx="1302" cy="520" r="8"/><circle cx="1348" cy="520" r="8"/><circle cx="520" cy="257" r="8"/><circle cx="520" cy="301" r="8"/><circle cx="520" cy="345" r="8"/><circle cx="520" cy="389" r="8"/><circle cx="520" cy="433" r="8"/><circle cx="520" cy="477" r="8"/><circle cx="1400" cy="257" r="8"/><circle cx="1400" cy="301" r="8"/><circle cx="1400" cy="345" r="8"/><circle cx="1400" cy="389" r="8"/><circle cx="1400" cy="433" r="8"/><circle cx="1400" cy="477" r="8"/>
+  </g>
+  <text x="960" y="404" text-anchor="middle" font-family="Inter,sans-serif" font-size="96" font-weight="820" fill="#fffdfa">₹6 per item</text>
+ </g>
+ <g id="recall">
+  <rect x="200" y="600" width="470" height="112" rx="24" fill="#fffdfa" stroke="#ead9a8" stroke-width="3"/>
+  <text x="435" y="676" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">Recall</text>
+ </g>
+ <g id="address">
+  <rect x="725" y="600" width="470" height="112" rx="24" fill="#fffdfa" stroke="#ead9a8" stroke-width="3"/>
+  <text x="960" y="676" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">पता बदलना</text>
+ </g>
+ <g id="name">
+  <rect x="1250" y="600" width="470" height="112" rx="24" fill="#fffdfa" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1485" y="676" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">नाम बदलना</text>
+ </g>
+ <use id="receipt" href="piece:counter-receipt" transform="translate(1490 714) scale(.6)"/>
+ <g id="receipt-label">
+  <text x="1594" y="981" text-anchor="end" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="740" fill="#2b2622">fee की</text>
+  <text x="1605" y="981" textLength="142" lengthAdjust="spacing" font-family="Inter,sans-serif" font-size="44" font-weight="740" fill="#2b2622">receipt</text>
+ </g>
+ <path id="receipt-underline" d="M1605 991Q1680 987 1747 991" fill="none" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.64,'stamp','#fee-stamp',{from:1.08,rot:-2,spring:'soft'}],
+  [2.72,'pop','#recall',{from:.92,spring:'soft'}],
+  [3.86,'pop','#address',{from:.92,spring:'soft'}],
+  [6.20,'pop','#name',{from:.92,spring:'soft'}],
+  [7.56,'slide','#receipt',{from:'down',dist:65,spring:'soft'}],
+  [9.48,'fade','#receipt-label',{dur:.24}],
+  [9.48,'draw','#receipt-underline',{dur:.45}]
+ ]
+})
+</script>
+</section>
