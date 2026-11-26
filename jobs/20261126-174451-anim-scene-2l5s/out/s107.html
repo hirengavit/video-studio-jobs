@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s107" data-in="cut" data-section="PART 5 · BUSINESS CUSTOMERS" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="cod">
+ <rect x="140" y="220" width="760" height="740" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <path d="M170 220H870A30 30 0 0 1 900 250V360H140V250A30 30 0 0 1 170 220Z" fill="#9e1b1b"/>
+ <text x="520" y="280" text-anchor="middle" font-family="Inter, sans-serif" font-size="54" font-weight="800" fill="#ffffff">Cash on Delivery</text>
+ <text x="520" y="332" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="680" fill="#fff4df">डिलीवरी पर नकद</text>
+ <g id="cod-money"><use href="piece:rupee-deposit" transform="translate(362 427) scale(1.32)"/></g>
+ <text id="cod-role" x="520" y="790" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="59" font-weight="750" fill="#2b2622">पैसा वसूलता है</text>
+</g>
+<g id="insurance">
+ <rect x="1020" y="220" width="760" height="740" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <path d="M1050 220H1750A30 30 0 0 1 1780 250V360H1020V250A30 30 0 0 1 1050 220Z" fill="#fde9a6"/>
+ <g id="insurance-title">
+  <text x="1400" y="280" text-anchor="middle" font-family="Inter, sans-serif" font-size="54" font-weight="800" fill="#2b2622">Insurance</text>
+  <text x="1400" y="332" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="680" fill="#6f6a63">बीमा</text>
+ </g>
+ <g id="choice">
+  <rect x="1130" y="382" width="540" height="68" rx="34" fill="#f3ead6"/>
+  <text x="1400" y="428" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="690" fill="#2b2622">sender चुन सकता है · वैकल्पिक</text>
+ </g>
+ <g id="insurance-icon"><use href="piece:insured-envelope-emblem" transform="translate(1240 466) scale(0.64)"/></g>
+ <g id="insurance-role">
+  <text x="1400" y="755" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="750" fill="#2b2622">eligible loss या damage</text>
+  <text id="protect" x="1400" y="824" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="750" fill="#2b2622">से बचाता है</text>
+ </g>
+</g>
+<g id="versus">
+ <circle cx="960" cy="600" r="43" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+ <text x="960" y="614" text-anchor="middle" font-family="Inter, sans-serif" font-size="35" font-weight="800" fill="#2b2622">VS</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [0,'pop','#insurance-title',{spring:'soft'}],
+  [1.60,'pop','#choice',{spring:'soft'}],
+  [3.12,'pop','#cod-money',{spring:'soft'}],
+  [3.98,'fade','#cod-role',{dur:0.28}],
+  [5.22,'pop','#insurance-icon',{spring:'soft'}],
+  [6.40,'fade','#insurance-role',{dur:0.28}],
+  [8.08,'highlight','#protect',{words:'बचाता',dur:0.29,pad:6,color:'#f2b705',opacity:0.35}]
+ ]
+}
+</script>
+</section>
