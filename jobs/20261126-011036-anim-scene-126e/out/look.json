@@ -10,10 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
+   "kind": "text-overlap",
    "scene": "s082",
-   "message": "pop: option \"dur\" isn't used (it takes: spring, from)",
-   "t": 0.3
+   "text": "Accountable domestic item / जवाबदेह देशी डाक",
+   "t": 2.27
   }
  ]
 }
