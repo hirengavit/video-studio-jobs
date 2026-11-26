@@ -8,12 +8,5 @@
   "10.29"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s161",
-   "text": "500 g से ज़्यादा / ₹10 प्रति दिन",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
