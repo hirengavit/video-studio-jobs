@@ -13,6 +13,7 @@
         <rect x="1210" y="290" width="300" height="110" fill="#ead9a8"/>
         <rect x="1510" y="290" width="300" height="110" fill="#9e1b1b"/>
         <text x="150" y="337" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="790" fill="#2b2622" text-anchor="start">Monthly revenue</text>
+        <path id="gst-rule-underline" d="M468 389H671" fill="none" stroke="#b18500" stroke-width="5" stroke-linecap="round"/>
         <text id="revenue-hindi" x="150" y="380" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="690" fill="#2b2622" text-anchor="start">महीने की revenue (GST के बिना)</text>
         <text x="1360" y="363" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="830" fill="#2b2622" text-anchor="middle">NTD</text>
         <text x="1660" y="363" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="830" fill="#ffffff" text-anchor="middle">TD</text>
@@ -81,7 +82,7 @@
  shots:[[0,'#table'],[6.58,'#forms']],
  on:[
   [1.64,'highlight','#revenue-hindi',{words:'महीने की revenue',color:'#f2b705',opacity:0.38,pad:6,dur:0.36}],
-  [3.06,'underline','#revenue-hindi',{words:'GST के बिना',color:'#b18500',width:5,dur:0.36}],
+  [3.06,'draw','#gst-rule-underline',{dur:0.36}],
   [7.88,'pop','#td-initial',{from:0.91,spring:'soft'}],
   [8.94,'fade','#td-english',{dur:0.22}],
   [9.30,'fade','#td-hindi',{dur:0.24}]
