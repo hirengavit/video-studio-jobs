@@ -1,0 +1,35 @@
+<section class="vs-scene" id="s129" data-in="cut" data-section="PART 6 · ADDRESSEE'S REDIRECTION" data-series="DELIVERY RULES">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="parcel" font-family="Inter,sans-serif" fill="#2b2622">
+  <g id="issuing-area">
+    <rect x="980" y="300" width="760" height="640" rx="26" fill="#fff1c6" stroke="#ead9a8" stroke-width="3"/>
+    <use href="piece:post-office-icon" transform="translate(1232 325) scale(.8)"/>
+    <text x="1360" y="633" font-size="58" font-weight="740" text-anchor="middle"><tspan class="hi" font-family="Noto Sans Devanagari">जारी करने वाला</tspan> office</text>
+    <text id="delivery-area-label" x="1360" y="702" font-size="52" font-weight="620" text-anchor="middle" fill="#6f6a63">delivery area</text>
+  </g>
+  <image id="returned-parcel-photo" href="photo:india-post-parcel-cutout" x="177" y="383" width="550" height="360" preserveAspectRatio="xMidYMid meet"/>
+  <text id="parcel-credit" x="452" y="783" text-anchor="middle" font-size="25" fill="#6f6a63">Photo: RegisteredMailBarcode</text>
+  <g id="unclaimed">
+    <rect x="177" y="819" width="276" height="82" rx="41" fill="#f3ead6"/>
+    <text x="315" y="873" text-anchor="middle" font-size="48" font-weight="700">unclaimed</text>
+  </g>
+  <g id="refused">
+    <circle cx="478" cy="860" r="5" fill="#6f6a63"/>
+    <rect x="503" y="819" width="224" height="82" rx="41" fill="#f3ead6"/>
+    <text x="615" y="873" text-anchor="middle" font-size="48" font-weight="700">refused</text>
+  </g>
+  <path id="return-arrow" d="M752 536 C805 483 824 492 872 536 C920 579 956 591 1029 544 M994 539L1029 544L1015 578" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [1.34,"fade","#unclaimed",{dur:.26}],
+    [2.34,"fade","#refused",{dur:.26}],
+    [4.58,"draw","#return-arrow",{dur:.62}],
+    [5.24,"reveal","#issuing-area",{from:"left",dur:.45}]
+  ]
+}
+</script>
+</section>
