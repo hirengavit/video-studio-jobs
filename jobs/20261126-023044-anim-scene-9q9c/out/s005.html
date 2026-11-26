@@ -59,8 +59,8 @@
    [9.42,"fade","#part-3-delivery",{dur:.25}]
   ],
   update(t,section,$){
-   for(const item of $("#part-1-main,#part-1-gloss")) item.style.opacity=t>=.10?"0":"1";
-   for(const item of $("#part-2-main")) item.style.visibility=t>=7.56?"hidden":"visible";
+   for(const item of $("#part-1-main,#part-1-gloss")) item.style.display=t>=.10?"none":"";
+   for(const item of $("#part-2-main")) item.style.display=t>=7.56?"none":"";
   }
  })
  </script>
