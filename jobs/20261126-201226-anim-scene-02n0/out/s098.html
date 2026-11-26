@@ -1,0 +1,74 @@
+<section class="vs-scene" id="s098" data-in="cut" data-section="PART 4 · BOOKING AND TRACKING" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="exam"><text x="140" y="237" font-family="Inter, sans-serif" font-size="64" font-weight="820" fill="#9e1b1b">Exam angle</text>
+  <text x="140" y="293" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="675" fill="#6f6a63">परीक्षा की नज़र से</text>
+  <rect x="140" y="330" width="1640" height="670" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <path d="M172 460 H1748 M172 590 H1748 M172 720 H1748 M172 850 H1748" stroke="#ead9a8" stroke-width="2" fill="none"/>
+  <g id="exam-row-1" opacity=".72">
+    <circle cx="230" cy="395" r="37" fill="#9e1b1b"/>
+    <text x="230" y="410" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="820" fill="#fff">1</text>
+    <rect id="carry-mark-1" rx="4" fill="#f2b705" fill-opacity="0.38"/>
+    <text id="exam-row-1-text" x="313" y="412" font-family="Inter, sans-serif" font-size="48" font-weight="790" fill="#2b2622">Article number · 13 alphanumeric characters</text>
+  </g>
+
+  <g id="exam-row-2" opacity=".72">
+    <circle cx="230" cy="525" r="37" fill="#9e1b1b"/>
+    <text x="230" y="540" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="820" fill="#fff">2</text>
+    <rect id="carry-mark-2" rx="4" fill="#f2b705" fill-opacity="0.39"/>
+    <text id="exam-row-2-text" x="313" y="542" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48" font-weight="790" fill="#2b2622">24-hour booking · बड़े शहरों के चुने offices</text>
+  </g>
+  <g id="exam-row-3" opacity=".72">
+    <circle cx="230" cy="655" r="37" fill="#9e1b1b"/>
+    <text x="230" y="670" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="820" fill="#fff">3</text>
+    <rect id="carry-mark-3" rx="4" fill="#f2b705" fill-opacity="0.39"/>
+    <text id="exam-row-3-text" x="313" y="672" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48" font-weight="790" fill="#2b2622">हवाई रास्ता · तेज़ surface route अपवाद</text>
+  </g>
+  <g id="exam-row-4">
+    <circle cx="230" cy="785" r="37" fill="#9e1b1b"/>
+    <text x="230" y="800" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="820" fill="#fff">4</text>
+    <text id="exam-row-4-text" x="313" y="802" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48" font-weight="790" fill="#2b2622">Surface Speed Post Parcel · India Post Parcel से पहले</text>
+    <path id="carry-first-underline" fill="none" stroke="#8a5d00" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g id="exam-row-5">
+    <circle cx="230" cy="915" r="37" fill="#9e1b1b"/>
+    <text x="230" y="930" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="820" fill="#fff">5</text>
+    <text x="313" y="932" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="790" fill="#2b2622">SMS की जानकारी</text>
+    <text id="not-equal" x="680" y="933" text-anchor="middle" font-family="Inter, sans-serif" font-size="53" font-weight="820" fill="#4b4f58">≠</text>
+    <text id="pod" x="745" y="932" font-family="Inter, sans-serif" font-size="44" font-weight="820" fill="#2b2622">POD</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [0.10,'slide','#exam-row-5',{from:'left',dist:42,spring:'soft'}],
+    [1.64,'fade','#pod',{dur:0.24}],
+    [2.40,'pop','#not-equal',{spring:'soft',from:0.90}]
+  ],
+  update(t,section,$){
+    const row=$('#exam-row-4')[0];
+    if(row)row.setAttribute('opacity',String(1-0.28*Math.max(0,Math.min(1,(t-0.10)/0.35))));
+    for(const [id,phrase] of [[1,'13 alphanumeric'],[2,'चुने offices'],[3,'अपवाद'],[4,'पहले']]){
+      const el=$('#exam-row-'+id+'-text')[0];
+      const mark=$(id===4?'#carry-first-underline':'#carry-mark-'+id)[0];
+      if(!el||!mark)continue;
+      const start=el.textContent.indexOf(phrase);
+      let x=Infinity,y=Infinity,right=-Infinity,bottom=-Infinity;
+      for(let i=start;i<start+phrase.length;i++){
+        const q=el.getExtentOfChar(i);x=Math.min(x,q.x);y=Math.min(y,q.y);
+        right=Math.max(right,q.x+q.width);bottom=Math.max(bottom,q.y+q.height);
+      }
+      if(!Number.isFinite(x))continue;
+      if(id===4){
+        const line=bottom+6,wob=(bottom-y)*0.05;
+        mark.setAttribute('d','M'+x+' '+line+' Q'+((x+right)*.5)+' '+(line+wob)+' '+right+' '+(line-wob*.4));
+      }else{
+        mark.setAttribute('x',x-8);mark.setAttribute('y',y-4);
+        mark.setAttribute('width',right-x+16);mark.setAttribute('height',bottom-y+8);
+      }
+    }
+  }
+}
+</script>
+</section>
