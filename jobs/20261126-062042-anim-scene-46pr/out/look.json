@@ -8,12 +8,5 @@
   "10.23"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s003",
-   "text": "Delivery Post Office / delivery post office में",
-   "t": 2.08
-  }
- ]
+ "warnings": []
 }
