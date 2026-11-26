@@ -1,0 +1,75 @@
+<section class="vs-scene" id="s100" data-in="cut" data-section="RECAP · PARTS 3–4" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="env">
+ <rect x="260" y="170" width="1400" height="820" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+ <path d="M288 171H1632Q1659 171 1659 198L960 330 261 198Q261 171 288 171Z" fill="#f3ead6"/>
+ <path d="M268 198L960 330 1652 198" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+ <text x="960" y="221" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="700" fill="#6f6a63">RECAP · दोहराव</text>
+ <text id="recap-title" x="960" y="286" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="61" font-weight="800" fill="#9e1b1b">Tariff और Booking</text>
+ <use href="piece:speed-post-emblem" transform="translate(1420 190) scale(0.35)"/>
+ <g id="seal">
+  <circle cx="960" cy="332" r="33" fill="#9e1b1b"/>
+  <circle cx="960" cy="332" r="25" fill="none" stroke="#fde9a6" stroke-width="2" stroke-dasharray="3 5"/>
+  <text x="960" y="345" text-anchor="middle" font-family="Inter, sans-serif" font-size="35" font-weight="800" fill="#fde9a6">3</text>
+ </g>
+ <path d="M332 550H1588M332 750H1588" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g id="row-1">
+ <text id="document-term" x="420" y="410" font-family="Inter, sans-serif" font-size="51" font-weight="790" fill="#2b2622">Speed Post Document</text>
+ <text id="document-hi" x="420" y="467" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="620" fill="#6f6a63">स्पीड पोस्ट दस्तावेज</text>
+ <text id="slab" x="420" y="521" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="620" fill="#6f6a63">पहला slab</text>
+ <g id="local">
+  <rect x="1180" y="368" width="440" height="70" rx="35" fill="#f3ead6"/>
+  <text x="1400" y="414" text-anchor="middle" font-family="Inter, sans-serif" font-size="45" font-weight="740" fill="#2b2622">local ₹19</text>
+ </g>
+ <g id="non-local">
+  <rect x="1180" y="453" width="440" height="70" rx="35" fill="#f3ead6"/>
+  <text x="1400" y="499" text-anchor="middle" font-family="Inter, sans-serif" font-size="45" font-weight="740" fill="#2b2622">non-local ₹47</text>
+ </g>
+ <g id="document-ok">
+  <circle cx="369" cy="449" r="32" fill="#e9f3ec"/>
+  <path id="document-tick" d="M355 449l10 10 19-23" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+</g>
+<g id="row-2">
+  <text id="term-2" x="420" y="628" font-family="Inter, sans-serif" font-size="51" font-weight="790" fill="#2b2622">Local</text>
+  <text id="hindi-2" x="420" y="686" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="42" font-weight="620" fill="#6f6a63">स्थानीय</text>
+  <g id="pill-2">
+    <rect x="1180" y="597" width="440" height="108" rx="36" fill="#f3ead6"/>
+    <text x="1400" y="641" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="750" fill="#2b2622">PIN codes /</text>
+    <text x="1400" y="690" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="750" fill="#2b2622">municipal सीमा</text>
+  </g>
+  <circle id="tick-bg-2" cx="369" cy="649" r="32" fill="#e9f3ec"/>
+  <path id="ok-2" d="M355 649l10 10 19-23" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="row-3">
+  <text id="term-3" x="420" y="828" font-family="Inter, sans-serif" font-size="51" font-weight="790" fill="#2b2622">Article number</text>
+  <text id="hindi-3" x="420" y="886" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="42" font-weight="620" fill="#6f6a63">हर item की पहचान</text>
+  <g id="pill-3">
+    <rect x="1180" y="797" width="440" height="108" rx="36" fill="#f3ead6"/>
+    <text x="1400" y="865" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="750" fill="#2b2622">13 alphanumeric</text>
+  </g>
+  <circle id="tick-bg-3" cx="369" cy="849" r="32" fill="#e9f3ec"/>
+  <path id="ok-3" d="M355 849l10 10 19-23" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [0,'highlight','#recap-title',{words:'Tariff',dur:0.01,pad:6,color:'#f2b705',opacity:0.35}],
+  [0,'highlight','#recap-title',{words:'Booking',dur:0.01,pad:6,color:'#f2b705',opacity:0.35}],
+  [0.10,'fade','#term-2',{dur:0.22}],
+  [0.60,'fade','#hindi-2',{dur:0.21}],
+  [1.42,'pop','#pill-2',{from:0.95,spring:'fast'}],
+  [4.44,'fade','#tick-bg-2',{dur:0.18}],
+  [4.44,'draw','#ok-2',{dur:0.28}],
+  [4.80,'fade','#term-3',{dur:0.21}],
+  [5.30,'fade','#hindi-3',{dur:0.21}],
+  [5.54,'pop','#pill-3',{from:0.95,spring:'fast'}],
+  [7.98,'fade','#tick-bg-3',{dur:0.18}],
+  [7.98,'draw','#ok-3',{dur:0.28}]
+ ]
+}
+</script>
+</section>
