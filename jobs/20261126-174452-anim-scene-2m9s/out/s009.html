@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s009" data-in="cut" data-section="SPEED POST · OVERVIEW" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+
+    <g id="card-10">
+      <rect x="140" y="210" width="1640" height="310" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="184" y="250" width="108" height="108" rx="20" fill="#9e1b1b"/>
+      <text x="238" y="323" text-anchor="middle" font-family="Inter" font-size="52" font-weight="800" fill="#ffffff">10</text>
+      <text id="compensation" x="328" y="403" font-family="Inter" font-size="60" font-weight="760" fill="#2b2622">compensation</text>
+      <g id="and-complaint">
+        <text x="802" y="403" font-size="44" font-weight="550" fill="#6f6a63" font-family="Noto Sans Devanagari" style="font-family:'Noto Sans Devanagari',Inter,sans-serif">और</text>
+        <text x="888" y="403" font-family="Inter" font-size="60" font-weight="760" fill="#2b2622">complaint</text>
+      </g>
+    </g>
+
+    <g id="card-11">
+      <rect x="140" y="560" width="1640" height="320" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="184" y="600" width="108" height="108" rx="20" fill="#9e1b1b"/>
+      <text x="238" y="673" text-anchor="middle" font-family="Inter" font-size="52" font-weight="800" fill="#ffffff">11</text>
+      <text id="international" x="328" y="690" font-family="Inter" font-size="56" font-weight="750" fill="#2b2622">International Speed Post</text>
+      <text id="ems" x="328" y="820" font-family="Inter" font-size="96" font-weight="820" fill="#9e1b1b">= EMS</text>
+      <g id="ems-globe">
+        <use href="piece:globe-icon" transform="translate(1480 590) scale(0.8)"/>
+        <path d="M1511 756 C1542 784 1649 755 1704 672" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round"/>
+        <g transform="translate(1708 667) rotate(-25)">
+          <rect x="-25" y="-16" width="50" height="32" rx="4" fill="#ffffff" stroke="#9e1b1b" stroke-width="3"/>
+          <path d="M-23 -13 0 3 23 -13" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-linejoin="round"/>
+        </g>
+      </g>
+    </g>
+
+    <g id="part-progress">
+      <path d="M260 950H1660" stroke="#ead9a8" stroke-width="4"/>
+      <circle id="dot-1" cx="260" cy="950" r="20" fill="#9e1b1b"/>
+      <circle id="dot-2" cx="400" cy="950" r="20" fill="#9e1b1b"/>
+      <circle id="dot-3" cx="540" cy="950" r="20" fill="#9e1b1b"/>
+      <circle id="dot-4" cx="680" cy="950" r="20" fill="#9e1b1b"/>
+      <circle id="dot-5" cx="820" cy="950" r="20" fill="#9e1b1b"/>
+      <circle id="dot-6" cx="960" cy="950" r="20" fill="#9e1b1b"/>
+      <circle id="dot-7" cx="1100" cy="950" r="20" fill="#9e1b1b"/>
+      <circle id="dot-8" cx="1240" cy="950" r="20" fill="#9e1b1b"/>
+      <circle id="dot-9" cx="1380" cy="950" r="20" fill="#9e1b1b"/>
+      <circle id="dot-10" cx="1520" cy="950" r="20" fill="#ead9a8"/>
+      <circle id="dot-11" cx="1660" cy="950" r="20" fill="#ead9a8"/>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0, 'pop', '#card-10', {from: 0.96}],
+      [0, 'color', '#dot-10', {to: '#9e1b1b', dur: 0.12}],
+      [0.53, 'fade', '#compensation', {dur: 0.24}],
+      [2.67, 'fade', '#and-complaint', {dur: 0.25}],
+      [4.17, 'pop', '#card-11', {from: 0.96}],
+      [4.17, 'color', '#dot-11', {to: '#9e1b1b', dur: 0.12}],
+      [5.12, 'fade', '#international', {dur: 0.28}],
+      [6.17, 'draw', '#ems-globe', {dur: 0.76}],
+      [8, 'stamp', '#ems', {from: 1.21, rot: -3}],
+    ],
+  }
+  </script>
+</section>
