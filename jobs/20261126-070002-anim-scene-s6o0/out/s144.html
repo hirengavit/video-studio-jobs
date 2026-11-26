@@ -17,7 +17,7 @@
    <text id="delivery-office-label" x="1562" y="794" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">Office of delivery</text>
    </g>
    <path id="inward-arrow" d="M624 610H1318L1286 584L1318 610L1286 636" fill="none" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-   <g id="inward-plane"><use href="piece:icon-plane" transform="translate(1115 450) scale(.55)"/></g>
+   <g id="inward-plane"><use href="piece:icon-plane" transform="translate(1115 432) scale(.55)"/></g>
    </g>
    <g id="inward-scope"><rect x="180" y="832" width="1080" height="83" rx="26" fill="#f3ead6"/>
     <text x="720" y="890" text-anchor="middle" font-family="Inter,sans-serif" font-weight="780" font-size="48" fill="#2b2622">Accountable inward item · addressee</text></g>
@@ -62,7 +62,7 @@
    set("#delivery-office-label","font-size",lerp(48,44));
    const start=lerp(624,403), end=lerp(1318,932), head=lerp(32,25), h=lerp(26,20);
    set("#inward-arrow","d","M"+start+" 610H"+end+"M"+(end-head)+" "+(610-h)+"L"+end+" 610L"+(end-head)+" "+(610+h));
-   set("#inward-plane","transform","translate("+lerp(0,-488)+" "+lerp(0,-14)+")");
+   set("#inward-plane","transform","translate("+lerp(0,-488)+" "+lerp(0,4)+")");
   }
  })
  </script>
