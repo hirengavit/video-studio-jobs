@@ -8,12 +8,5 @@
   "12.93"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s147",
-   "text": "अभी बुक, बाद में भुगतान / 1 office",
-   "t": 7.85
-  }
- ]
+ "warnings": []
 }
