@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.16",
+  "4.32",
+  "6.48",
+  "8.64",
+  "10.65"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s162",
+   "message": "stamp: option \"dur\" isn't used (it takes: from, spring, rot)",
+   "t": 0.3
+  }
+ ]
+}
