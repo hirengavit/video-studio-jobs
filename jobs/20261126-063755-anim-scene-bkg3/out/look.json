@@ -8,12 +8,5 @@
   "8.89"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s064",
-   "text": "Validity: / 3 साल",
-   "t": 3.62
-  }
- ]
+ "warnings": []
 }
