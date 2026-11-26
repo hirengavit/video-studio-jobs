@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s128" data-duration="13.67" data-in="cut" data-section="PART 6 · ADDRESSEE'S REDIRECTION" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="An article is not redirected in transit; redirection is handled at the office of destination.">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="transit">
+ <text id="transit-heading" x="200" y="224" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#9e1b1b">Redirection के और नियम</text>
+ <path d="M201 251H704" fill="none" stroke="#d6ac59" stroke-width="5" stroke-linecap="round"/>
+ <path id="transit-route" d="M160 640H1760" fill="none" stroke="#696b71" stroke-width="5" stroke-linecap="round"/>
+ <path d="m1361 624 21 16-21 16" stroke="#696b71" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="transit-booking">
+  <use href="piece:post-office-icon" transform="translate(220 317) scale(1.02)"/>
+  <text id="transit-booking-label" x="383" y="727" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="790" fill="#2b2622">Booking</text>
+ </g>
+ <g id="transit-destination">
+  <g id="transit-destination-building"><use href="piece:post-office-icon" transform="translate(1380 317) scale(1.02)"/></g>
+  <text id="transit-destination-label" x="1543" y="727" text-anchor="middle" font-family="Inter,sans-serif" font-size="50" font-weight="790" fill="#2b2622">Office of destination</text>
+ </g>
+ <g id="transit-mail"><use href="piece:domestic-envelope" transform="translate(792 460) scale(.44)"/></g>
+ <g id="transit-stop">
+  <g transform="translate(893.2 483.5) scale(1.5)">
+   <rect width="88" height="86" rx="17" fill="#efedef" stroke="#4b4f58" stroke-width="2"/>
+   <path transform="translate(-10.0 -10.4) scale(1.25)" d="M31 55L22 42Q20 38 24 35Q28 33 32 39L36 45V22Q36 17 40 17Q45 17 45 22V36V15Q45 11 49 11Q54 11 54 15V37V19Q54 15 58 15Q62 15 62 19V39V27Q62 23 66 23Q70 23 70 27V48Q69 65 60 72H42Z" fill="#4b4f58"/>
+  </g>
+  <rect x="720" y="748" width="480" height="90" rx="23" fill="#efedef" stroke="#c5c2c6" stroke-width="3"/>
+  <text x="960" y="809" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="800" fill="#353941">रास्ते में redirect नहीं</text>
+ </g>
+ <g id="transit-destination-rule">
+  <rect x="1248" y="748" width="552" height="90" rx="23" fill="#e7f3eb" stroke="#a9cbb1" stroke-width="3"/>
+  <circle cx="1291" cy="793" r="23" fill="#17634a"/>
+  <path d="m1280 793 8 8 14-16" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="1547" y="810" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#17634a" textLength="429" lengthAdjust="spacingAndGlyphs">Redirection: सिर्फ यहीं</text>
+ </g>
+ <g id="transit-destination-explainer">
+  <rect x="1170" y="881" width="658" height="88" rx="23" fill="#fffdfa" stroke="#e1cca5" stroke-width="3"/>
+  <text x="1499" y="940" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="760" fill="#2b2622">जिसके पते पर article भेजा गया</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ shots:[[0,"#transit"]],
+ on:[
+  [.90,"pop","#transit-stop",{from:.95,spring:"soft"}],
+  [3.88,"pulse","#transit-destination-building",{amount:.08}],
+  [3.88,"fade","#transit-destination-rule",{dur:.30}],
+  [8.42,"fade","#transit-destination-explainer",{dur:.32}]
+ ]
+})
+</script>
+</section>
