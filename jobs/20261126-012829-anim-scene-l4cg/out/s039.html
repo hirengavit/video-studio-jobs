@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s039" data-in="cut" data-duration="11.65" data-section="PART 2 · HOLDING PERIOD" data-series="DELIVERY RULES">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="deposit-rule" font-family="'Noto Sans Devanagari', Inter, sans-serif">
+      <text id="deposit-title" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="960" y="224" font-size="60" font-weight="750" text-anchor="middle" fill="#9e1b1b">Deliver न हो पाई डाक: सामान्य deposit</text>
+      <use id="deposit-letter" href="piece:domestic-envelope" transform="translate(350 300) scale(1)"/>
+      <text id="addressee-question" x="850" y="540" font-family="Inter, sans-serif" font-size="120" font-weight="700" text-anchor="middle" fill="#6f6a63">?</text>
+      <path id="enquiry-glass" d="M1400 470 A70 70 0 1 1 1260 470 A70 70 0 1 1 1400 470 M1380 521 L1470 611" fill="none" stroke="#2b2622" stroke-width="9" stroke-linecap="round"/>
+      <path id="enquiry-cross" d="M1304 444 L1356 496 M1356 444 L1304 496" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+      <g id="enquiry-result">
+        <rect id="enquiry-strip" x="350" y="777" width="1220" height="162" rx="24" fill="#f3ead6"/>
+        <text id="enquiry-term" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="505" y="875" font-size="56" font-weight="670" fill="#2b2622">Addressee की पूछताछ:</text>
+        <text id="enquiry-failed" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" x="1140" y="875" font-size="56" font-weight="780" fill="#4b4f58">असफल</text>
+      </g>
+    </g>
+    <g id="seven" font-family="'Noto Sans Devanagari',Inter,sans-serif">
+      <rect x="1180" y="300" width="580" height="400" rx="28" fill="#9e1b1b"/>
+      <rect x="1212" y="332" width="516" height="336" rx="18" fill="none" stroke="#b8403a" stroke-width="3"/>
+      <g fill="#fbf7ee"><circle cx="1223" cy="300" r="8"/><circle cx="1266" cy="300" r="8"/><circle cx="1309" cy="300" r="8"/><circle cx="1352" cy="300" r="8"/><circle cx="1395" cy="300" r="8"/><circle cx="1438" cy="300" r="8"/><circle cx="1481" cy="300" r="8"/><circle cx="1524" cy="300" r="8"/><circle cx="1567" cy="300" r="8"/><circle cx="1610" cy="300" r="8"/><circle cx="1653" cy="300" r="8"/><circle cx="1696" cy="300" r="8"/><circle cx="1223" cy="700" r="8"/><circle cx="1266" cy="700" r="8"/><circle cx="1309" cy="700" r="8"/><circle cx="1352" cy="700" r="8"/><circle cx="1395" cy="700" r="8"/><circle cx="1438" cy="700" r="8"/><circle cx="1481" cy="700" r="8"/><circle cx="1524" cy="700" r="8"/><circle cx="1567" cy="700" r="8"/><circle cx="1610" cy="700" r="8"/><circle cx="1653" cy="700" r="8"/><circle cx="1696" cy="700" r="8"/><circle cx="1180" cy="343" r="8"/><circle cx="1180" cy="386" r="8"/><circle cx="1180" cy="429" r="8"/><circle cx="1180" cy="472" r="8"/><circle cx="1180" cy="515" r="8"/><circle cx="1180" cy="558" r="8"/><circle cx="1180" cy="601" r="8"/><circle cx="1180" cy="644" r="8"/><circle cx="1760" cy="343" r="8"/><circle cx="1760" cy="386" r="8"/><circle cx="1760" cy="429" r="8"/><circle cx="1760" cy="472" r="8"/><circle cx="1760" cy="515" r="8"/><circle cx="1760" cy="558" r="8"/><circle cx="1760" cy="601" r="8"/><circle cx="1760" cy="644" r="8"/></g>
+      <text x="1470" y="529" class="hi" font-size="64" font-weight="830" text-anchor="middle" fill="#fffdfa">आम तौर पर 7 दिन</text>
+    </g>
+    <text id="posting-date" x="1470" y="755" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="680" fill="#6f6a63">posting की तारीख से</text>
+    <text id="undelivered-label" x="730" y="755" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="750" fill="#2b2622">undelivered article का नियम</text>
+  </svg>
+  <script type="text/scene">
+  ({
+    camera:[[0,{zoom:1}]],
+    on:[
+      [0.60,'underline','#enquiry-failed',{dur:.42,color:'#f2b705',gap:11,width:6}],
+      [2.33,'stamp','#seven',{from:1.08,rot:-2,spring:'soft'}],
+      [5.07,'fade','#posting-date',{dur:.26}],
+      [6.39,'strike','#posting-date',{dur:.40,color:'#4b4f58',width:6}],
+      [8.63,'fade','#undelivered-label',{dur:.27}]
+    ]
+  })
+  </script>
+</section>
+
