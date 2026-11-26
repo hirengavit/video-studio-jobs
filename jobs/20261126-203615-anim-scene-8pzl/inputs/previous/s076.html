@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s076" data-in="cut" data-section="PART 3 · TARIFF" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="parcel-eg">
+ <use href="piece:parcel-scale" transform="translate(160 540)"/>
+ <use href="piece:speed-post-parcel" transform="translate(269 405.5) scale(.95)"/>
+ <text id="scale-reading" x="440" y="837" text-anchor="middle" font-size="42" font-weight="800" fill="#fff">500 g</text>
+ <text id="example-title" x="860" y="250" font-size="53" font-weight="820" fill="#9e1b1b">Retail · Speed Post Parcel</text>
+ <text id="example-weight" class="hi" x="862" y="325" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="780" fill="#2b2622">500 g तक</text>
+ <g id="example-gst"><rect x="1500" y="276" width="273" height="70" rx="27" fill="#f3ead6"/><text class="hi" x="1636.5" y="325" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="740" fill="#4b4f58">GST अलग</text></g>
+ <g id="price-1"><use href="piece:key-fact-stamp" transform="translate(860 420) scale(.8)"/><text x="1084" y="545" text-anchor="middle" font-size="93" font-weight="850" fill="#fff">₹28</text><text x="1084" y="607" text-anchor="middle" font-size="43" font-weight="760" fill="#fde9a6">Local</text><text class="hi" x="1084" y="653" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650" fill="#fde9a6">स्थानीय</text></g>
+ <g id="price-2"><use href="piece:key-fact-stamp" transform="translate(1340 420) scale(.8)"/><text x="1564" y="545" text-anchor="middle" font-size="93" font-weight="850" fill="#fff">₹76</text><text x="1564" y="607" text-anchor="middle" font-size="43" font-weight="760" fill="#fde9a6">Within State</text><text class="hi" x="1564" y="653" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650" fill="#fde9a6">राज्य के अंदर</text></g>
+ <text id="tariff-citation" x="860" y="830" font-size="32" font-weight="630" fill="#6f6a63">Post Office Regulations 2024 · Schedule I, Table IV · 1 Aug 2026</text>
+</g>
+<g id="cmp">
+ <g id="left">
+  <rect x="140" y="260" width="760" height="600" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M168 260H872a28 28 0 0 1 28 28v158H140V288a28 28 0 0 1 28-28Z" fill="#9e1b1b"/>
+  <text x="520" y="352" text-anchor="middle" font-size="56" font-weight="810" fill="#fff">Speed Post Document</text>
+  <text x="520" y="413" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="690" fill="#fff">दस्तावेज</text>
+  <text id="doc-local" x="389" y="631" text-anchor="middle" font-size="111" font-weight="850" fill="#9e1b1b">₹19</text>
+  <g id="doc-nonlocal">
+   <circle cx="520" cy="595" r="7" fill="#6f6a63"/>
+   <text x="651" y="631" text-anchor="middle" font-size="111" font-weight="850" fill="#9e1b1b">₹47</text>
+  </g>
+  <path d="M195 691H845" stroke="#ead9a8" stroke-width="2"/>
+  <g id="doc-chip"><rect x="387" y="740" width="266" height="76" rx="35" fill="#f3ead6"/><text id="doc-table" x="520" y="793" text-anchor="middle" font-size="44" font-weight="770" fill="#2b2622">Table IV A</text></g>
+ </g>
+ <g id="right">
+  <rect x="1020" y="260" width="760" height="600" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M1048 260H1752a28 28 0 0 1 28 28v158h-760V288a28 28 0 0 1 28-28Z" fill="#f3ead6"/>
+  <text x="1400" y="352" text-anchor="middle" font-size="56" font-weight="810" fill="#2b2622">Speed Post Parcel</text>
+  <text x="1400" y="413" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="690" fill="#4b4f58">पार्सल</text>
+  <text x="1269" y="631" text-anchor="middle" font-size="111" font-weight="850" fill="#2b2622">₹28</text>
+  <circle cx="1400" cy="595" r="7" fill="#6f6a63"/>
+  <text x="1531" y="631" text-anchor="middle" font-size="111" font-weight="850" fill="#2b2622">₹76</text>
+  <path d="M1075 691H1725" stroke="#ead9a8" stroke-width="2"/>
+ </g>
+ <g id="vs"><circle cx="960" cy="560" r="53" fill="#2b2622" stroke="#fbf7ee" stroke-width="6"/><text x="960" y="583" text-anchor="middle" font-size="70" font-weight="760" fill="#fff">≠</text></g>
+ <text x="960" y="932" text-anchor="middle" font-size="33" font-weight="630" fill="#6f6a63">Post Office Regulations 2024 · Schedule I · Document: 1 Oct 2025 · Parcel: 1 Aug 2026</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,'#parcel-eg'],[2.14,'#cmp']],
+ on:[
+  [0,'highlight','#example-title',{words:'Retail',color:'#f2b705',opacity:.37,dur:.01}],
+  [.30,'underline','#example-title',{color:'#f2b705',width:5,gap:7,dur:.36}],
+  [2.90,'pop','#doc-local',{from:.90,spring:'soft'}],
+  [4.14,'pop','#doc-nonlocal',{from:.92,spring:'soft'}],
+  [7.04,'pop','#vs',{from:.86,spring:'soft'}],
+  [9.76,'fade','#doc-chip',{dur:.14}],
+  [9.76,'type','#doc-table',{cps:25}],
+ ]
+}
+</script>
+</section>
