@@ -34,7 +34,7 @@
     <rect x="1280" y="176" width="410" height="74" rx="24" fill="#eeedf0" stroke="#a6a4aa" stroke-width="3"/>
     <text x="1485" y="228" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="790" fill="#4b4f58">Exam में confusion</text>
    </g>
-   <text id="original-postage" x="1435" y="892" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">original postage</text>
+   <text id="original-postage" x="1435" y="878" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">original postage</text>
    <text id="goods-value" x="1435" y="942" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">सामान की कीमत</text>
   </g>
   <g id="exam">
@@ -49,6 +49,7 @@
  <script type="text/scene">
  ({
   camera:[[0,{zoom:1}]],shots:[[0,"#refund"],[5.21,"#exam"]],on:[
+   [0,"move","#request-fee-refund",{by:[0,-14],spring:"soft"}],
    [0,"fade","#original-postage",{dur:.24}],
    [0,"color","#exception-support",{to:"#6f6a63",dur:.24}],
    [0,"strike","#original-postage",{color:"#4b4f58",width:5,dur:.29,dim:.92}],
