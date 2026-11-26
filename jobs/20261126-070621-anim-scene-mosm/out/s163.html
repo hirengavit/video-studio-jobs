@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s163" data-section="PART 7 · INTERNATIONAL" data-series="DELIVERY RULES" data-in="cut" data-duration="11.34">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<g id="alternate">
+<text x="140" y="220" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="800" fill="#2b2622">Air parcel पर alternate address?</text>
+<g id="air-parcel">
+<rect x="190" y="345" width="415" height="454" rx="30" fill="#f3ead6" stroke="#dfcda8" stroke-width="3"/>
+<use href="piece:icon-plane" transform="translate(217 270) scale(.90)"/>
+<use href="piece:parcel-bag" transform="translate(290 484) scale(.60)"/>
+<path d="M265 732H531" stroke="#d9c6a3" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g id="house-first">
+<rect x="798" y="449" width="404" height="352" rx="24" fill="#fff" stroke="#dfcda8" stroke-width="3"/>
+<use href="piece:house-icon" transform="translate(865 445) scale(.90)"/>
+<text x="1000" y="766" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">पहला addressee</text>
+</g>
+<g id="house-alternate">
+<rect x="1248" y="449" width="404" height="352" rx="24" fill="#fff" stroke="#dfcda8" stroke-width="3"/>
+<use href="piece:house-icon" transform="translate(1336 435) scale(.76)"/>
+<text x="1450" y="714" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">दूसरा addressee</text>
+<text x="1450" y="780" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="700" fill="#655742">(alternate)</text>
+</g>
+<g id="route-fork" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<path id="route-first" d="M620 550H707V361H1000V423M987 409l13 14 13-14"/>
+<path id="route-alternate" d="M1000 361H1450V423M1437 409l13 14 13-14"/>
+</g>
+<g id="exam-confusion">
+ <rect x="140" y="248" width="391" height="65" rx="30" fill="#e9e2d5"/>
+ <text x="335.5" y="293" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="750" fill="#4b4f58">Exam confusion</text>
+</g>
+<g id="first-address-condition">
+ <rect x="190" y="828" width="504" height="142" rx="23" fill="#f3ead6"/>
+ <text x="442" y="880" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="760" fill="#2b2622">मूल पते पर</text>
+ <text x="442" y="936" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="760" fill="#2b2622">delivery नहीं हो पाई</text>
+</g>
+<g id="demurrage-due">
+ <rect x="800" y="819" width="400" height="72" rx="25" fill="#fde9a6"/>
+ <text x="1000" y="870" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="785" fill="#60310c">बकाया demurrage</text>
+</g>
+<path id="debt-transfer" d="M1206 849 C1230 848 1247 833 1262 805 M1243 817L1262 805L1262 827" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="collected-from-second" x="1450" y="899" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" style="font-size:48px" font-weight="780" fill="#2b2622">दूसरे addressee से वसूला</text>
+<text id="when-collected" x="1450" y="965" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" style="font-size:44px" font-weight="690" fill="#2b2622">delivery के समय</text>
+<text id="reg-126-source" x="744" y="1005" font-family="Inter,sans-serif" font-size="33" font-weight="650" fill="#6f6a63">Reg. 126(1) proviso · 2024</text>
+</g>
+</svg>
+<script type="text/scene">
+({shots:[[0,"#alternate"]],on:[
+[1.92,"fade","#first-address-condition",{dur:.28}],
+[1.92,"pop","#demurrage-due",{from:.94,spring:"soft"}],
+[1.92,"fade","#reg-126-source",{dur:.28}],
+[3.08,"draw","#debt-transfer",{dur:.62}],
+[4.50,"fade","#collected-from-second",{dur:.23}],
+[6.68,"fade","#when-collected",{dur:.24}],
+[8.64,"fade","#exam-confusion",{dur:.25}]
+]})
+</script>
+</section>
