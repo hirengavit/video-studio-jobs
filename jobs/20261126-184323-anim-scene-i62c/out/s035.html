@@ -26,6 +26,7 @@
 <text id="calc-double-result" x="1500" y="563" font-family="Georgia, serif" font-size="56" font-weight="700" fill="#2b2622">= 140 cm</text>
 <text id="double-tag" x="1124" y="616" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="610" fill="#6f6a63">दो गुना</text>
 <text id="calc-length" x="1124" y="723" font-family="Georgia, serif" font-size="56" font-weight="700" fill="#2b2622">100 + 140</text>
+<rect id="length-result-mark" x="1462" y="664" width="184" height="80" rx="4" fill="#f2b705" fill-opacity="0.40"/>
 <text id="calc-length-result" x="1420" y="723" font-family="Georgia, serif" font-size="56" font-weight="700" fill="#2b2622">= 240 cm</text>
 <text id="length-tag" x="1124" y="776" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="610" fill="#6f6a63">लंबाई + Girth</text>
 </g>
@@ -41,7 +42,7 @@
     [6.71, 'fade', '#length-tag', {dur: 0.27}],
     [8.06, 'type', '#calc-length', {cps: 14}],
     [11.10, 'type', '#calc-length-result', {cps: 18}],
-    [11.81, 'highlight', '#calc-length-result', {words: '240 cm', color: '#f2b705', opacity: 0.40, pad: 7, dur: 0.30}]
+    [11.81, 'reveal', '#length-result-mark', {from: 'left', dur: 0.30}]
   ],
   update(t, section, $) {
     if (t >= 2.14) {
