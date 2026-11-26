@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s020" data-in="cut" data-section="PART 1 · WHAT IT IS" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="document-card">
+    <rect x="140" y="230" width="660" height="470" rx="31" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M171 230h598q31 0 31 31v85H140v-85q0-31 31-31z" fill="#9e1b1b"/>
+    <text x="470" y="307" text-anchor="middle" fill="#ffffff" font-size="48" font-weight="800">Speed Post Document</text>
+    <g><rect x="187" y="378" width="566" height="72" rx="28" fill="#f3ead6"/><text x="470" y="426" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="720">बैंकिंग · बीमा</text></g>
+<g><rect x="187" y="473" width="566" height="72" rx="28" fill="#f3ead6"/><text x="470" y="521" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="720">सरकारी documents</text></g>
+<g><rect x="187" y="568" width="566" height="72" rx="28" fill="#f3ead6"/><text x="470" y="616" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="720">500 g तक</text></g>
+  </g>
+  <g id="definition">
+    <rect id="definition-outline" x="123" y="214" width="694" height="502" rx="37" fill="none" stroke="#6f6a63" stroke-width="3" stroke-dasharray="10 11"/>
+    <rect x="388" y="689" width="164" height="56" rx="28" fill="#fbf7ee"/>
+    <text x="470" y="727" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="35" font-weight="720">परिभाषा</text>
+  </g>
+  <g id="parcel-card">
+    <rect x="1180" y="230" width="600" height="470" rx="31" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M1211 230h538q31 0 31 31v85h-600v-85q0-31 31-31z" fill="#f3ead6"/>
+    <text x="1480" y="307" text-anchor="middle" fill="#2b2622" font-size="48" font-weight="800">Speed Post Parcel</text>
+  </g>
+  <g id="parcel-icon"><use href="piece:speed-post-parcel" transform="translate(850 400) scale(0.5)"/></g>
+  <g id="outside-x"><circle cx="1027" cy="420" r="28" fill="#fbf7ee" stroke="#4b4f58" stroke-width="3"/><path d="m1016 409 22 22m0-22-22 22" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/></g>
+  <g id="bottom">
+    <rect x="140" y="770" width="1640" height="190" rx="32" fill="#f3ead6"/>
+    <text id="category" x="262" y="883" fill="#2b2622" font-size="56" font-weight="780">category</text>
+    <text id="claim" x="560" y="883" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="740">सिर्फ वजन से तय</text>
+    <use href="piece:parcel-scale" transform="translate(1481 793) scale(0.38)"/>
+    <path id="scale-cross" d="m1650 824 55 66m0-66-55 66" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [0.56,'fade','#definition',{dur:0.27}],
+    [0.56,'reveal','#definition-outline',{from:'left',dur:0.42}],
+    [1.44,'pop','#parcel-icon',{from:0.93}],
+    [1.44,'fade','#outside-x',{dur:0.20}],
+    [2.21,'pop','#parcel-card',{from:0.97}],
+    [2.71,'out','#outside-x',{dur:0.20,scale:0.98}],
+    [2.71,'move','#parcel-icon',{by:[540,0],spring:'soft'}],
+    [5.55,'fade','#bottom',{dur:0.27}],
+    [5.55,'fade','#category',{dur:0.25}],
+    [6.25,'words','#claim',{gap:0.42,dist:10}],
+    [8.12,'strike','#claim',{color:'#4b4f58',dur:0.28,width:5,dim:0.58}],
+    [8.12,'draw','#scale-cross',{dur:0.32}]
+  ]
+}
+</script>
+</section>
