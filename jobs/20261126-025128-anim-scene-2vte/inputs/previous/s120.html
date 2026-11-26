@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s120" data-duration="11.01" data-in="cut" data-section="PART 6 · ADDRESSEE'S REDIRECTION" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Alteration is free within the same delivery post office area: a move from house one to house two within area A.">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="lane">
+  <text x="960" y="219" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="780" fill="#9e1b1b">दो गलियाँ, एक delivery area</text>
+  <rect x="165" y="289" width="1590" height="586" rx="32" fill="#fff3cc" stroke="#ead9a8" stroke-width="4"/>
+  <use href="piece:post-office-icon" transform="translate(278 407) scale(1)"/>
+  <text x="438" y="767" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="750" fill="#2b2622">Delivery post office</text>
+  <path id="lane-one-path" d="M622 535 H811 Q827 535 827 510 V425 Q827 410 846 410 H1255" fill="none" stroke="#2b2622" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="lane-two-path" d="M622 535 H809 Q827 535 827 557 V666 Q827 686 848 686 H1255" fill="none" stroke="#2b2622" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="lane-one-house">
+   <use href="piece:house-icon" transform="translate(1297 318) scale(.60)"/>
+   <text x="1550" y="432" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="770" fill="#2b2622">गली 1</text>
+  </g>
+  <g id="lane-two-house">
+   <use href="piece:house-icon" transform="translate(1297 596) scale(.60)"/>
+   <text x="1550" y="708" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="770" fill="#2b2622">गली 2</text>
+  </g>
+
+  <text id="same-area-label" x="180" y="955" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="780" fill="#2b2622">उसी area में</text>
+  <g id="alteration-free">
+   <rect x="1219" y="903" width="535" height="81" rx="24" fill="#e7f3eb" stroke="#2e7d4f" stroke-width="3"/>
+   <text x="1486.5" y="958" text-anchor="middle" font-family="Inter,sans-serif" font-size="50" font-weight="800" fill="#246441">Alteration: free</text>
+  </g>
+ </g>
+ <g id="example">
+  <text x="600" y="224" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">एक ही delivery area</text>
+  <rect id="area-a" x="140" y="300" width="920" height="660" rx="32" fill="#fff3cc" stroke="#ead9a8" stroke-width="4"/>
+  <text x="194" y="381" font-family="Inter,sans-serif" font-size="49" font-weight="820" fill="#9e1b1b">Area A</text>
+  <g id="example-office">
+   <use href="piece:post-office-icon" transform="translate(469 322) scale(.82)"/>
+   <text x="600" y="620" text-anchor="middle" font-family="Inter,sans-serif" font-size="47" font-weight="760" fill="#2b2622">Delivery post office</text>
+  </g>
+  <g id="house-1">
+   <use href="piece:house-icon" transform="translate(289 672) scale(.64)"/>
+   <text x="385" y="923" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="780" fill="#2b2622">घर 1</text>
+  </g>
+  <path id="move-arrow" d="M503 771 H678 M653 745 L679 771 L653 797" fill="none" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="house-2">
+   <use href="piece:house-icon" transform="translate(719 672) scale(.64)"/>
+   <text x="815" y="923" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="780" fill="#2b2622">घर 2</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,"#lane"],[5.41,"#example"]],
+ on:[
+  [1.50,"fade","#same-area-label",{dur:.36}],
+  [3.32,"stamp","#alteration-free",{from:1.05,rot:0,spring:"soft"}],
+  [9.43,"pop","#house-2",{from:.94,spring:"soft"}],
+  [9.43,"draw","#move-arrow",{dur:.60}]
+ ]
+})
+</script>
+</section>
