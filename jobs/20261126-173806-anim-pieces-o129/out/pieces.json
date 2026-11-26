@@ -1,0 +1,106 @@
+[
+  {
+    "id": "speed-post-emblem",
+    "kind": "prop",
+    "description": "Unlettered white envelope with three postal-red speed marks leaning on a sand parcel with an empty address label.",
+    "ideas": [
+      "Speed Post opener",
+      "chapter marker",
+      "lecture recap"
+    ],
+    "viewBox": "0 0 520 360",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "parcel",
+      "speed-lines",
+      "envelope"
+    ]
+  },
+  {
+    "id": "key-fact-stamp",
+    "kind": "prop",
+    "description": "Blank postal-red perforated stamp card with a subtle inset border and clear room for the scene’s big figure and second line.",
+    "ideas": [
+      "weight limit",
+      "fee figure",
+      "delivery limit"
+    ],
+    "viewBox": "0 0 560 340",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "stamp-body",
+      "stamp-rule"
+    ]
+  },
+  {
+    "id": "speed-post-parcel",
+    "kind": "prop",
+    "description": "Three-quarter sand carton with crossing tan tape, a blank white address label and a stylized barcode band.",
+    "ideas": [
+      "parcel weight",
+      "booking",
+      "delivery"
+    ],
+    "viewBox": "0 0 360 300",
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "parts": [
+      "carton",
+      "tape",
+      "address-label",
+      "barcode"
+    ]
+  },
+  {
+    "id": "dimension-box",
+    "kind": "prop",
+    "description": "Open line-art three-quarter box with independent length, width and height arrows and a dashed girth guide; no figures.",
+    "ideas": [
+      "parcel measurement",
+      "length plus girth",
+      "three dimensions"
+    ],
+    "viewBox": "0 0 640 420",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "box",
+      "len",
+      "wid",
+      "ht",
+      "girth-loop"
+    ]
+  },
+  {
+    "id": "calendar-strip",
+    "kind": "prop",
+    "description": "Four blank white calendar tiles, each 240×260, on equal centers with blank postal-red day bands.",
+    "ideas": [
+      "count delivery days",
+      "show a working-day sequence",
+      "tick or strike selected days"
+    ],
+    "viewBox": "0 0 1056 284",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "day-1",
+      "day-2",
+      "day-3",
+      "day-4"
+    ]
+  }
+]
