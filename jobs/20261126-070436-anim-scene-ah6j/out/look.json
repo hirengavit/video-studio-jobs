@@ -8,12 +8,5 @@
   "14.49"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s160",
-   "text": "पहली बार delivery के लिए / या",
-   "t": 8.78
-  }
- ]
+ "warnings": []
 }
