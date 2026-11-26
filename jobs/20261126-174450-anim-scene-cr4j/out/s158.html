@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s158" data-in="cut" data-section="PART 7 · SERVICE STANDARDS" data-series="PRODUCTS">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="ordinary">
+   <rect x="140" y="220" width="760" height="640" rx="32" fill="#fff"/>
+   <path d="M140 360V252q0-32 32-32h696q32 0 32 32v108Z" fill="#f3ead6"/>
+   <rect x="140" y="220" width="760" height="640" rx="32" fill="none" stroke="#ead9a8" stroke-width="3"/>
+   <text x="198" y="285" font-family="Inter, sans-serif" font-size="54" font-weight="770" fill="#2b2622">Ordinary Speed Post</text>
+   <text x="200" y="334" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="36" font-weight="610" fill="#6f6a63">साधारण स्पीड पोस्ट</text>
+   <text id="ranges" x="198" y="451" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="49" font-weight="650" fill="#2b2622">दिन की ranges</text>
+   <text id="categories" x="198" y="561" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="49" font-weight="650" fill="#2b2622">मोटी categories</text>
+   <text id="not-promise" x="198" y="671" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="49" font-weight="700" fill="#4b4f58">premium का वादा नहीं</text>
+   <path id="wrong" d="M788 630l38 38m0-38-38 38" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+   <g id="local">
+    <rect x="190" y="724" width="660" height="100" rx="21" fill="#f3ead6"/>
+    <text x="226" y="792" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="56" font-weight="770" fill="#2b2622">Local: 1–2 दिन</text>
+   </g>
+  </g>
+  <g id="premium">
+   <rect x="1020" y="220" width="760" height="640" rx="32" fill="#fff"/>
+   <path d="M1020 360V252q0-32 32-32h696q32 0 32 32v108Z" fill="#9e1b1b"/>
+   <rect x="1020" y="220" width="760" height="640" rx="32" fill="none" stroke="#ead9a8" stroke-width="3"/>
+   <rect x="1076" y="241" width="96" height="96" rx="24" fill="#7d1414" stroke="#b8403a" stroke-width="2.5"/>
+   <text x="1124" y="306" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="800" fill="#fff">24</text>
+   <text x="1202" y="286" font-family="Inter, sans-serif" font-size="54" font-weight="770" fill="#fff">24 Speed Post</text>
+   <text x="1204" y="333" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="36" font-weight="610" fill="#fde9a6">24 स्पीड पोस्ट</text>
+   <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="1284" y="456" width="274" height="175" rx="22" fill="#fbf7ee" stroke="#2b2622" stroke-width="4"/>
+    <path d="M1292 471l113 89q16 11 32 0l113-89M1292 615l83-74m175 74-83-74" stroke="#2b2622" stroke-width="4"/>
+    <path d="M1211 492h46m-67 45h67m-46 45h46" stroke="#9e1b1b" stroke-width="5"/>
+   </g>
+   <rect x="1070" y="724" width="660" height="100" rx="21" fill="#f3ead6"/>
+   <text x="1400" y="789" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">अलग booking, खास वादा</text>
+  </g>
+  <g id="not-equal">
+   <circle cx="960" cy="790" r="59" fill="#2b2622" stroke="#fbf7ee" stroke-width="6"/>
+   <text x="960" y="815" text-anchor="middle" font-family="Inter, sans-serif" font-size="76" font-weight="750" fill="#fff">≠</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ {on:[
+   [0.46,'fade','#ranges',{dur:0.24}],
+   [1.90,'fade','#categories',{dur:0.24}],
+   [3.04,'fade','#not-promise',{dur:0.24}],
+   [4.38,'draw','#wrong',{dur:0.3}],
+   [5.20,'pop','#local',{from:0.77}],
+   [7.38,'pop','#premium',{from:0.92}],
+   [9.36,'stamp','#not-equal',{from:1.15,rot:-4}]
+ ]}
+ </script>
+</section>
