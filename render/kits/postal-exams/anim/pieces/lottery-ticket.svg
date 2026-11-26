@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="ticket"><path d="M20 110H92A8 8 0 0 0 108 110H380Q390 110 390 120V280Q390 290 380 290H108A8 8 0 0 0 92 290H20Q10 290 10 280V120Q10 110 20 110Z" fill="#fdf3d8"/>
+<rect x="130" y="134" width="236" height="44" rx="6" fill="#f3ead6" stroke-width="2"/>
+<g fill="#ffffff" stroke-width="2"><rect x="130" y="214" width="32" height="40" rx="3"/><rect x="171" y="214" width="32" height="40" rx="3"/><rect x="212" y="214" width="32" height="40" rx="3"/><rect x="253" y="214" width="32" height="40" rx="3"/><rect x="294" y="214" width="32" height="40" rx="3"/><rect x="335" y="214" width="32" height="40" rx="3"/></g></g>
+<g id="stub"><path d="M100 124V276" stroke="#6f6a63" stroke-width="3" stroke-dasharray="1 9" fill="none"/><rect x="28" y="136" width="54" height="128" rx="5" fill="#f3ead6" stroke-width="2"/><circle cx="55" cy="236" r="12" fill="none" stroke="#6f6a63" stroke-width="2"/></g>
+<circle data-anchor="base" cx="200" cy="290" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="200" cy="110" r="0" fill="none" stroke="none"/>
+</svg>
