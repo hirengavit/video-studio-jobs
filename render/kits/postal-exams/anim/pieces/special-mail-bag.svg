@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 460" width="360" height="460">
+  <g id="bag" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M150 124 C112 156 44 196 44 296 L44 398 Q44 444 90 444 L270 444 Q316 444 316 398 L316 296 C316 196 248 156 210 124 Z" fill="#f3ead6"/>
+    <path d="M150 120 C132 92 120 62 126 32 L148 46 L164 24 L180 44 L196 22 L212 44 L234 30 C240 62 228 92 210 120 Z" fill="#eadcb8"/>
+    <path d="M168 120 C162 96 158 70 164 46 M194 120 C200 96 204 72 196 46" fill="none" stroke-width="2" opacity="0.55"/>
+    <path d="M150 150 C120 220 100 320 108 428 M210 150 C250 230 264 330 252 428" fill="none" stroke-width="2" opacity="0.4"/>
+    <path d="M62 404 L298 404" fill="none" stroke-width="2" stroke-dasharray="2 9" opacity="0.6"/>
+  </g>
+  <g id="cord" fill="none" stroke="#2b2622" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M144 118 C160 132 200 132 216 118" stroke-width="8"/>
+    <path d="M144 126 C160 140 200 140 216 126" stroke-width="5"/>
+    <path d="M208 132 C214 150 222 166 232 180 M214 130 C226 146 240 158 250 170" stroke-width="3"/>
+  </g>
+  <g id="seal" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="240" cy="190" r="24" fill="#9e1b1b"/>
+    <circle cx="240" cy="190" r="14" fill="none" stroke="#b8403a" stroke-width="3"/>
+  </g>
+  <g id="tag" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M254 206 L270 226" fill="none"/>
+    <g transform="rotate(14 300 252)">
+      <path d="M262 232 L330 232 L330 280 L262 280 L250 256 Z" fill="#ffffff"/>
+      <circle cx="264" cy="256" r="4" fill="none" stroke-width="2"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="180" cy="444" r="0"/>
+  <circle data-anchor="top" cx="180" cy="22" r="0"/>
+  <circle data-anchor="grip" cx="180" cy="128" r="0"/>
+  <circle data-anchor="mouth" cx="180" cy="40" r="0"/>
+</svg>

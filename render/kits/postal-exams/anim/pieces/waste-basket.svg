@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 260" width="240" height="260">
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<ellipse id="rim-back" cx="120" cy="66" rx="100" ry="18" fill="#e6dccb"/>
+<g id="scraps">
+<path d="M48 70 L44 34 L62 40 L70 22 L86 36 L92 70 Z" fill="#ffffff"/>
+<path d="M54 44 L80 52" fill="none" stroke="#b9b2a6" stroke-width="2"/>
+<path d="M96 72 L100 20 L118 30 L130 12 L142 32 L148 72 Z" fill="#ffffff"/>
+<path d="M106 40 L136 46 M108 54 L132 58" fill="none" stroke="#b9b2a6" stroke-width="2"/>
+<path d="M150 72 L156 40 L170 46 L182 30 L194 50 L188 72 Z" fill="#fde9a6"/>
+<path d="M162 56 L184 54" fill="none" stroke="#c9a46a" stroke-width="2"/>
+</g>
+<g id="basket">
+<path d="M20 66 L54 248 Q120 260 186 248 L220 66 A100 18 0 0 1 20 66 Z" fill="#f3ead6"/>
+<g fill="none" stroke-width="2">
+<path d="M45 79 L72 251 M73 83 L91 254 M102 84 L109 255 M138 84 L131 255 M167 83 L149 254 M195 79 L168 251"/>
+<path d="M28 110 Q120 134 212 110 M33 140 Q120 162 207 140 M39 172 Q120 192 201 172 M45 206 Q120 224 195 206"/>
+</g>
+<path d="M54 248 Q120 260 186 248" fill="none" stroke-width="5"/>
+<path d="M20 66 A100 18 0 0 0 220 66" fill="none" stroke-width="5"/>
+</g>
+</g>
+<circle data-anchor="base" cx="120" cy="254" r="0"/>
+<circle data-anchor="mouth" cx="120" cy="66" r="0"/>
+</svg>
