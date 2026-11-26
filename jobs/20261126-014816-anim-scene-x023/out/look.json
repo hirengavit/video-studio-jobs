@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.33",
+  "4.65",
+  "6.98",
+  "9.30",
+  "11.48"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s081",
+   "message": "color: option \"stroke\" isn't used (it takes: to, dur, prop)",
+   "t": 0.3
+  }
+ ]
+}
