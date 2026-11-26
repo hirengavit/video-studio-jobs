@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s119" data-duration="9.72" data-in="cut" data-section="PART 6 · ADDRESSEE'S REDIRECTION" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Matching city, district or PIN is not enough to identify a delivery area; two different lanes can share one delivery office.">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="fee-table" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="790">
+  <text id="fee-title" x="201" y="218" class="hi" font-size="56" font-weight="830" fill="#9e1b1b">Alteration fee · शुल्क</text>
+  <path d="M201 245H629" fill="none" stroke="#d6ac59" stroke-width="5" stroke-linecap="round"/>
+  <rect id="fee-shell" x="200" y="280" width="1520" height="480" rx="29" fill="#fff" stroke="#e1cca5" stroke-width="4" filter="url(#vs-shadow)"/>
+  <path d="M229 280H1691Q1720 280 1720 309V405H200V309Q200 280 229 280Z" fill="#9e1b1b"/>
+  <text id="fee-condition-head" x="262" y="365" class="hi" font-size="58" fill="#fff">हालात</text>
+  <text id="fee-price-head" x="1440" y="365" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" fill="#fff">FEE</text>
+  <g id="fee-row-1">
+   <rect x="224" y="430" width="1472" height="135" rx="20" fill="#fbf7ee"/>
+   <text id="same-area-condition" class="hi" x="262" y="512" font-size="48" fill="#2b2622"><tspan x="262" y="487">दोनों पते एक ही Post Office के</tspan><tspan x="262" y="541">delivery area में</tspan></text>
+   <rect id="same-area-outline" x="242" y="438" width="906" height="119" rx="18" fill="none" stroke="#f2b705" stroke-width="7"/>
+   <text id="same-area-free" x="1440" y="523" text-anchor="middle" font-family="Inter,sans-serif" font-size="72" font-weight="840" fill="#2e7d4f">Free</text>
+  </g>
+  <g id="fee-row-2">
+   <rect x="224" y="590" width="1472" height="135" rx="20" fill="#fffaf1"/>
+   <text id="other-area-condition" x="262" y="684" class="hi" font-size="52" fill="#2b2622">ऐसा न हो</text>
+   <text id="other-area-fee" x="1440" y="684" text-anchor="middle" class="hi" font-size="72" font-weight="830" fill="#2b2622">₹6 per item</text>
+  </g>
+  <path d="M1170 424V730" fill="none" stroke="#ead9a8" stroke-width="4"/>
+  <text id="fee-source" x="205" y="823" font-family="Inter,sans-serif" font-size="44" font-weight="630" fill="#6f6a63">Regs. 55–58, 69 · Post Office Regulations 2024</text>
+  <g id="fee-test-band">
+   <rect x="200" y="880" width="1520" height="110" rx="22" fill="#fde9a6"/>
+   <text id="fee-test-text" x="960" y="951" text-anchor="middle" class="hi" font-size="48" fill="#2b2622">कसौटी: एक ही post office का delivery area</text>
+   <text id="fee-test-incorrect" x="269" y="951" font-family="Inter,sans-serif" font-size="47" font-weight="790" fill="#2b2622">same city / district / PIN Code</text>
+   <text id="fee-test-comparison" x="1060" y="951" font-family="Inter,sans-serif" font-size="47" font-weight="790" fill="#2b2622">≠ same delivery area</text>
+  </g>
+ </g>
+ <g id="lane">
+  <text x="960" y="219" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="58" font-weight="780" fill="#9e1b1b">दो गलियाँ, एक delivery area</text>
+  <rect x="165" y="289" width="1590" height="586" rx="32" fill="#fff3cc" stroke="#ead9a8" stroke-width="4"/>
+  <use href="piece:post-office-icon" transform="translate(278 407) scale(1)"/>
+  <text x="438" y="767" text-anchor="middle" font-family="Inter,sans-serif" font-size="45" font-weight="750" fill="#2b2622">Delivery post office</text>
+  <path id="lane-one-path" d="M622 535 H811 Q827 535 827 510 V425 Q827 410 846 410 H1255" fill="none" stroke="#2b2622" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="lane-two-path" d="M622 535 H809 Q827 535 827 557 V666 Q827 686 848 686 H1255" fill="none" stroke="#2b2622" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="lane-one-house">
+   <use href="piece:house-icon" transform="translate(1297 318) scale(.60)"/>
+   <text x="1550" y="432" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="770" fill="#2b2622">गली 1</text>
+  </g>
+  <g id="lane-two-house">
+   <use href="piece:house-icon" transform="translate(1297 596) scale(.60)"/>
+   <text x="1550" y="708" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="770" fill="#2b2622">गली 2</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,"#fee-table"],[6.30,"#lane"]],
+ on:[
+  [0,"out","#fee-test-text",{dur:.17}],
+  [.20,"fade","#fee-test-incorrect,#fee-test-comparison",{dur:.25}],
+  [.54,"highlight","#fee-test-incorrect",{words:"city",color:"#f2b705",opacity:.40,dur:.34}],
+  [1.86,"highlight","#fee-test-incorrect",{words:"district",color:"#f2b705",opacity:.40,dur:.34}],
+  [3.82,"highlight","#fee-test-incorrect",{words:"PIN Code",color:"#f2b705",opacity:.40,dur:.34}],
+  [4.90,"strike","#fee-test-incorrect",{color:"#4b4f58",width:7,dur:.38}],
+  [8.28,"draw","#lane-two-path",{dur:.54}],
+  [8.28,"pop","#lane-two-house",{from:.94,spring:"soft"}]
+ ]
+})
+</script>
+</section>
