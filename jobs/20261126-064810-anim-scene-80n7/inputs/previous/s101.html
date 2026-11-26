@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s101" data-in="cut" data-section="PART 5 · CANCELLATION" data-series="DELIVERY RULES">
+ <svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="table" font-family="Inter,sans-serif">
+   <rect x="160" y="280" width="1600" height="620" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <path d="M188 280H1732Q1760 280 1760 308V380H160V308Q160 280 188 280Z" fill="#9e1b1b"/>
+   <text x="220" y="345" class="hi" font-size="48" font-weight="780" fill="#fff">Cancellation · कब</text>
+   <rect x="184" y="403" width="1552" height="214" rx="18" fill="#fbf7ee"/>
+   <rect x="184" y="663" width="1552" height="214" rx="18" fill="#fbf7ee"/>
+   <path d="M925 403V877" stroke="#ead9a8" stroke-width="4"/>
+   <g id="self-booking-icon">
+    <use href="piece:browser-window" transform="translate(220 465) scale(.16)"/>
+   </g>
+   <text id="self-booking-label" x="423" y="467" class="hi" font-size="52" font-weight="750" fill="#2b2622"><tspan x="423" y="467">Self-booking</tspan><tspan x="423" y="535" font-size="48">(web portal या</tspan><tspan x="423" y="601" font-size="48">mobile app)</tspan></text>
+   <g id="self-booking-value">
+    <text x="980" y="488" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">Post Office के स्वीकार</text>
+    <text x="980" y="567" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">करने से पहले cancel</text>
+   </g>
+   <g id="counter-booking-icon"><use href="piece:booking-counter" transform="translate(218 720) scale(.237)"/></g>
+   <text id="counter-booking-label" x="403" y="789" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="750" fill="#2b2622">Counter booking</text>
+   <text id="counter-booking-value" x="980" y="735" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">booking वाले दिन ही</text>
+   <g id="counter-booking-note">
+    <text x="980" y="796" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="730" fill="#5e6673">गलत data entry:</text>
+    <text x="980" y="854" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="730" fill="#5e6673">Post Office भी उसी दिन</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ {
+  shots:[[0,"#table"]],
+  on:[
+   [0,"fade","#self-booking-value",{dur:.28}],
+   [3.16,"pop","#counter-booking-icon",{from:.86}],
+   [3.16,"fade","#counter-booking-label",{dur:.27}],
+   [4.50,"fade","#counter-booking-value",{dur:.27}],
+   [5.80,"fade","#counter-booking-note",{dur:.27}]
+  ]
+ }
+ </script>
+</section>
