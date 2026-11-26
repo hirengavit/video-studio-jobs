@@ -10,22 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "mostly-empty",
+   "kind": "text-off-frame",
    "scene": "s212",
-   "message": "a card is mostly empty at 2.3 s: bring its items in sooner, or size it for what it holds now",
+   "text": "अंदर का कुछ सामान चोरी होना",
    "t": 2.31
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s212",
-   "text": "अंदर का / कुछ सामान",
-   "t": 4.62
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s212",
-   "text": "कुछ सामान / चोरी होना",
-   "t": 4.62
   }
  ]
 }
