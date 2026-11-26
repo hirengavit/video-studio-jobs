@@ -8,18 +8,5 @@
   "11.71"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s141",
-   "message": "slide: option \"dur\" isn't used (it takes: from, dist, spring)",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s141",
-   "message": "stamp: option \"dur\" isn't used (it takes: from, spring, rot)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
