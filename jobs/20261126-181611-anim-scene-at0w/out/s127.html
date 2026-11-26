@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s127" data-in="cut" data-section="PART 6 · DELIVERY" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="address-shot">
+   <g id="address-card">
+    <rect x="560" y="200" width="800" height="740" rx="32" fill="#fff"/>
+    <path d="M560 348V232q0-32 32-32h736q32 0 32 32v116Z" fill="#9e1b1b"/>
+    <rect x="560" y="200" width="800" height="740" rx="32" fill="none" stroke="#ead9a8" stroke-width="3"/>
+    <text x="960" y="267" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="750" fill="#fff">Ordinary Speed Post</text>
+    <text x="960" y="318" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="37" font-weight="600" fill="#fde9a6">साधारण स्पीड पोस्ट</text>
+    <g transform="translate(637 365) scale(.85)">
+     <use href="piece:domestic-envelope"/>
+     <rect id="addressee-mark" x="256" y="202" width="368" height="123" rx="15" fill="#f2b705" fill-opacity=".30" stroke="#8a5d00" stroke-opacity=".42" stroke-width="2"/>
+    </g>
+    <text id="address-term" x="960" y="772" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="770" fill="#2b2622">address-specific</text>
+    <text id="address-gist" x="960" y="832" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="46" font-weight="660" fill="#2b2622">दिए गए पते पर delivery</text>
+    <text id="address-note" x="960" y="890" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="38" font-weight="560" fill="#6f6a63">जब तक कोई और शर्त न हो</text>
+   </g>
+  </g>
+  <g id="registration-card">
+    <rect x="1020" y="200" width="780" height="740" rx="32" fill="#ffffff"/>
+    <path d="M1020 348V232q0-32 32-32h716q32 0 32 32v116Z" fill="#f2b705"/>
+    <rect x="1020" y="200" width="780" height="740" rx="32" fill="none" stroke="#ead9a8" stroke-width="3"/>
+    <text x="1410" y="267" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">+ Registration</text>
+    <text x="1410" y="318" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="640" fill="#2b2622">रजिस्ट्री</text>
+  </g>
+  <g id="plus" fill="none" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round">
+    <path d="M939 568h32m-16-16v32"/>
+  </g>
+  <g id="registration-id">
+    <path d="M1276 441h268q16 0 16 16v168q0 16-16 16h-268q-16 0-16-16V457q0-16 16-16Z" fill="#f3ead6" stroke="#2b2622" stroke-width="4"/>
+    <path d="M1276 443h268q14 0 14 14v29h-296v-29q0-14 14-14Z" fill="#9e1b1b"/>
+    <path d="M1290 510h88v95h-88Z" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M1407 526h115m-115 33h97m-97 32h112" fill="none" stroke="#6f6a63" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text id="registration-term" x="1410" y="772" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="770" fill="#2b2622">addressee-specific</text>
+  <text id="recipient-first" x="1410" y="832" text-anchor="middle" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="43" font-weight="670" fill="#2b2622">addressee या उसके</text>
+  <text id="recipient-second" x="1140" y="890" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="43" font-weight="670" fill="#2b2622">authorised व्यक्ति</text>
+  <text id="recipient-only" x="1551" y="890" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="670" fill="#2b2622">को ही</text>
+  <path id="only-line" d="M1550 903H1649" fill="none" stroke="#f2b705" stroke-width="7" stroke-linecap="round"/>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0, 'move', '#address-card', {by:[-440,0], spring:'soft'}],
+    [0.40, 'pop', '#registration-card, #plus', {from:0.93, spring:'soft'}],
+    [2.50, 'pop', '#registration-term', {from:0.91, spring:'soft'}],
+    [4.62, 'words', '#recipient-first', {gap:0.37, dist:9}],
+    [6.42, 'draw', '#registration-id', {dur:0.57}],
+    [6.42, 'words', '#recipient-second', {gap:0.50, dist:9}],
+    [7.32, 'words', '#recipient-only', {gap:0.22, dist:9}],
+    [7.54, 'draw', '#only-line', {dur:0.29}]
+  ]
+}
+</script>
+</section>
