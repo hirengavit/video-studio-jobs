@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s123" data-duration="14.12" data-in="cut" data-section="PART 6 · ADDRESSEE'S REDIRECTION" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Written address-change notice goes to the post office; mail follows to the new address. The notice is valid up to three months.">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="notice">
+  <text id="notice-title" x="200" y="224" class="hi" font-size="52" font-weight="850" fill="#9e1b1b">पता बदलने के बाद: लिखित सूचना</text>
+  <g id="change-address-print">
+   <g transform="rotate(1.5 535 593)">
+    <rect x="260" y="292" width="550" height="642" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+    <rect x="291" y="331" width="488" height="337" rx="18" fill="#fff8e7" stroke="#ead9a8" stroke-width="3"/>
+    <image href="photo:change-of-address-card" x="312" y="351" width="446" height="296" preserveAspectRatio="xMidYMid meet"/>
+    <text x="535" y="718" text-anchor="middle" font-family="Inter,sans-serif" font-size="36" font-weight="780" fill="#2b2622">Change of address card</text>
+    <text x="535" y="773" text-anchor="middle" class="hi" font-size="30" font-weight="740" fill="#6f6a63" textLength="480" lengthAdjust="spacingAndGlyphs">U.S., 1961 · उदाहरण, India Post का फ़ॉर्म नहीं</text>
+    <g id="notice-validity">
+     <use href="piece:postmark-ring" transform="translate(310 786) scale(.53)"/>
+     <rect x="435" y="809" width="334" height="73" rx="18" fill="#fff8e7" stroke="#9e1b1b" stroke-width="3"/>
+     <text x="602" y="858" text-anchor="middle" class="hi" font-size="45" font-weight="820" fill="#9e1b1b" textLength="290" lengthAdjust="spacingAndGlyphs">3 महीने तक valid</text>
+    </g>
+   </g>
+  </g>
+  <g id="address-type">
+   <rect x="873" y="515" width="487" height="81" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+   <text x="1116.5" y="572" text-anchor="middle" class="hi" font-size="44" font-weight="820" fill="#2b2622">घर या office का पता</text>
+  </g>
+
+  <path id="notice-to-office" d="M830 709H1008m-22-19 22 19-22 19" fill="none" stroke="#9e1b1b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="notice-office">
+   <use href="piece:post-office-icon" transform="translate(1040 621) scale(.74)"/>
+   <text x="1158" y="879" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="790" fill="#2b2622">Post office</text>
+  </g>
+  <g id="notice-mail"><use href="piece:domestic-envelope" transform="translate(1240 414) scale(.20)"/></g>
+  <path id="office-to-new-address" d="M1295 709H1481m-22-19 22 19-22 19" fill="none" stroke="#9e1b1b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="notice-new-address">
+   <use href="piece:house-icon" transform="translate(1516 615) scale(.90)"/>
+   <text x="1615" y="923" text-anchor="middle" class="hi" font-size="49" font-weight="810" fill="#2b2622">नया पता</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ shots:[[0,"#notice"]],
+ on:[
+  [0,"draw","#notice-to-office",{dur:.46}],
+  [0,"pop","#notice-office",{from:.82,spring:"soft"}],
+  [3.30,"pop","#notice-mail",{from:.80,spring:"soft"}],
+  [8.06,"draw","#office-to-new-address",{dur:.46}],
+  [8.06,"pop","#notice-new-address",{from:.82,spring:"soft"}],
+  [12.20,"stamp","#notice-validity",{from:1.10,rot:-2,spring:"soft"}]
+ ]
+})
+</script>
+</section>
