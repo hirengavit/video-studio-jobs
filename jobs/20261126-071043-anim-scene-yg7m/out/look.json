@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.24",
+  "4.49",
+  "6.73",
+  "8.98",
+  "11.07"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s181",
+   "text": "same delivery area: free / , नहीं तो ₹6 per item",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s181",
+   "text": "International outward recall: booking of / बिना request fee",
+   "t": 0.3
+  }
+ ]
+}
