@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s141" data-in="cut" data-section="PART 7 · INTERNATIONAL" data-series="DELIVERY RULES">
+ <svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="outward-board" fill="#2b2622">
+   <g id="outward-term">
+    <rect x="600" y="166" width="720" height="170" rx="26" fill="#f3ead6"/>
+    <text x="960" y="249" text-anchor="middle" font-family="Inter,sans-serif" font-size="80" font-weight="800" fill="#9e1b1b">Outward</text>
+    <text id="outward-gloss" x="960" y="312" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="670">भारत से बाहर जाने वाला</text>
+   </g>
+   <path d="M164 732 H548" stroke="#2b2622" stroke-width="4" stroke-linecap="round"/>
+   <use id="booking-office" href="piece:post-office-icon" transform="translate(164 374) scale(1.2)"/>
+   <use id="international-globe" href="piece:icon-globe" transform="translate(1340 365) scale(1.3)"/>
+   <rect id="booking-marker" x="146" y="744" width="420" height="66" rx="13" fill="#fde9a6"/>
+   <text x="356" y="794" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="760">Office of booking</text>
+   <g id="outward-flight">
+    <path id="outward-arrow" d="M583 610 H1302 L1270 584 M1302 610 L1270 636" fill="none" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="outward-plane"><use href="piece:icon-plane" transform="translate(971 408) scale(.55)"/></g>
+   </g>
+   <g id="sender-scope">
+    <rect x="578" y="666" width="744" height="112" rx="21" fill="#f3ead6"/>
+    <text x="950" y="715" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="750">Accountable outward item</text>
+    <text id="sender-label" x="950" y="764" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="680" fill="#6f6a63">भेजने वाला (Sender)</text>
+   </g>
+   <g id="recall-return">
+    <use id="recall-envelope" href="piece:domestic-envelope" transform="translate(1208 845) scale(.25)"/>
+    <path id="recall-arrow" d="M1186 932 C884 1004 494 982 360 833 L371 873 M360 833 L403 843" fill="none" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+   </g>
+   <g id="recall-label">
+    <rect x="801" y="815" width="285" height="80" rx="20" fill="#9e1b1b"/>
+    <text x="943" y="874" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="780" fill="#ffffff">Recall</text>
+   </g>
+   <g id="outward-source">
+    <rect x="1470" y="930" width="302" height="54" rx="27" fill="#fbf7ee" stroke="#9e1b1b" stroke-width="2"/>
+    <text x="1621" y="968" text-anchor="middle" font-family="Inter,sans-serif" font-size="32" font-weight="720" fill="#9e1b1b">Reg. 119A(1)</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ {
+  on: [
+   [0.44, 'reveal', '#outward-term', {from:'left',dur:0.38}],
+   [3.14, 'fade', '#outward-gloss', {dur:0.25}],
+   [3.14, 'draw', '#outward-arrow', {dur:0.82}],
+   [3.26, 'slide', '#outward-plane', {from:'left',dist:342,spring:'soft'}],
+   [4.70, 'fade', '#sender-scope', {dur:0.28}],
+   [7.76, 'fade', '#sender-label', {dur:0.25}],
+   [9.06, 'fade', '#booking-marker', {dur:0.26}],
+   [9.06, 'fade', '#recall-envelope', {dur:0.22}],
+   [9.06, 'draw', '#recall-arrow', {dur:0.70}],
+   [10.22, 'stamp', '#recall-label', {spring:'soft'}],
+   [10.22, 'fade', '#outward-source', {dur:0.30}]
+  ]
+ }
+ </script>
+</section>
