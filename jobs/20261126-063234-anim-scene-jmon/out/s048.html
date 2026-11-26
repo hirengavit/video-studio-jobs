@@ -1,0 +1,77 @@
+<section class="vs-scene" id="s048" data-in="fade" data-in-dur=".4" data-duration="10.88" data-section="RECAP" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="First recap for Poste Restante and holding periods, highlighting mail held for collection">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="recap-envelope">
+   <rect x="160" y="174" width="1600" height="826" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <path d="M178 177H1742L960 315Z" fill="#f3ead6"/>
+   <path d="M178 177L960 315 1742 177" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+   <text x="960" y="222" text-anchor="middle" class="hi" font-size="40" font-weight="770" fill="#6f6a63">RECAP · दोहराव</text>
+   <text x="960" y="285" text-anchor="middle" class="hi" font-size="60" font-weight="850" fill="#9e1b1b">Part 1 और Part 2</text>
+   <g id="recap-seal">
+    <circle cx="1655" cy="257" r="45" fill="#9e1b1b"/>
+    <circle cx="1655" cy="257" r="33" fill="none" stroke="#fde9a6" stroke-width="3" stroke-dasharray="4 7" stroke-linecap="round"/>
+    <text x="1655" y="272" text-anchor="middle" font-family="Inter,sans-serif" font-size="43" font-weight="830" fill="#fde9a6">5</text>
+   </g>
+   <g id="recap-row-1">
+    <rect x="200" y="330" width="1520" height="112" rx="22" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+    <g id="term-group-1">
+     <circle id="recap-tick-disc-1" cx="269" cy="386" r="32" fill="#edf3ee" stroke="#d5e5db" stroke-width="2"/>
+     <text id="recap-term-1" x="330" y="404" font-family="Inter,sans-serif" font-size="52" font-weight="820" fill="#6f6a63">Poste Restante</text>
+    </g>
+    <g id="recap-fact-1">
+     <rect x="1030" y="351" width="653" height="70" rx="24" fill="#fde9a6"/>
+     <text x="1356.5" y="401" text-anchor="middle" class="hi" font-size="44" font-weight="800" fill="#5d400e">लेने आने तक रखी डाक</text>
+    </g>
+    <path id="recap-tick-1" d="M253 386l12 12 22-26" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+   </g>
+   <g id="recap-row-2">
+    <rect x="200" y="460" width="1520" height="112" rx="22" fill="#fffdf8" stroke="#ead9a8" stroke-width="2"/>
+    <g id="term-group-2">
+     <circle cx="269" cy="516" r="32" fill="#edf3ee" stroke="#d5e5db" stroke-width="2"/>
+     <text id="recap-term-2" x="330" y="534" font-family="Inter,sans-serif" font-size="52" font-weight="820" fill="#6f6a63">Strangers, travellers</text>
+    </g>
+   </g>
+   <g id="recap-row-3">
+    <rect x="200" y="590" width="1520" height="112" rx="22" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+    <g id="term-group-3">
+     <circle cx="269" cy="646" r="32" fill="#edf3ee" stroke="#d5e5db" stroke-width="2"/>
+     <text id="recap-term-3" x="330" y="664" font-family="Inter,sans-serif" font-size="52" font-weight="820" fill="#6f6a63">Name needed</text>
+    </g>
+   </g>
+   <g id="recap-row-4">
+    <rect x="200" y="720" width="1520" height="112" rx="22" fill="#fffdf8" stroke="#ead9a8" stroke-width="2"/>
+    <g id="term-group-4">
+     <circle cx="269" cy="776" r="32" fill="#edf3ee" stroke="#d5e5db" stroke-width="2"/>
+     <text id="recap-term-4" x="330" y="794" font-family="Inter,sans-serif" font-size="52" font-weight="820" fill="#6f6a63">15 days</text>
+    </g>
+   </g>
+   <g id="recap-row-5">
+    <rect x="200" y="850" width="1520" height="112" rx="22" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+    <g id="term-group-5">
+     <circle cx="269" cy="906" r="32" fill="#edf3ee" stroke="#d5e5db" stroke-width="2"/>
+     <text id="recap-term-5" x="330" y="924" font-family="Inter,sans-serif" font-size="52" font-weight="820" fill="#6f6a63">RLO</text>
+    </g>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [.88,"fade","#term-group-1",{dur:.23}],
+   [1.03,"fade","#term-group-2",{dur:.23}],
+   [1.18,"fade","#term-group-3",{dur:.23}],
+   [1.33,"fade","#term-group-4",{dur:.23}],
+   [1.48,"fade","#term-group-5",{dur:.23}],
+   [5.68,"color","#recap-term-1",{to:"#2b2622",dur:.23}],
+   [8.66,"draw","#recap-tick-1",{dur:.30}],
+   [8.70,"pop","#recap-fact-1",{from:.94,spring:"soft"}]
+  ],
+  update(t,section,$) {
+   const disc=$("#recap-tick-disc-1")[0];
+   disc.setAttribute("fill",t>=8.66?"#2e7d4f":"#edf3ee");
+   disc.setAttribute("stroke",t>=8.66?"#2e7d4f":"#d5e5db");
+  }
+ })
+ </script>
+</section>
