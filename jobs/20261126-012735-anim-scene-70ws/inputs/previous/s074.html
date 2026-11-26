@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s074" data-in="cut" data-duration="14.28" data-section="PART 3 · IDENTITY CARD" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Tamil Nadu Postal Circle's published value-added POID process, application and verification">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="replacement-unproven">
+   <rect x="240" y="454" width="1440" height="128" rx="24" fill="#eeecee"/>
+   <text x="960" y="535" text-anchor="middle" class="hi" font-size="44" font-weight="750" fill="#4b4f58">एक व्यवस्था की जगह दूसरी आई — साबित नहीं</text>
+  </g>
+  <g id="poid-process">
+   <g id="poid-process-title">
+    <text x="200" y="222" font-family="Inter,sans-serif" font-size="52" font-weight="850" fill="#9e1b1b">Tamil Nadu Postal Circle · value-added POID</text>
+    <text x="200" y="283" class="hi" font-size="48" font-weight="750" fill="#6f6a63">प्रकाशित व्यवस्था</text>
+   </g>
+   <g class="step" id="poid-step-1">
+    <rect x="200" y="318" width="1520" height="150" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <circle cx="293" cy="393" r="46" fill="#9e1b1b"/>
+    <text x="293" y="412" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="820" fill="#fff">1</text>
+    <path d="M375 349v88" stroke="#ead9a8" stroke-width="3"/>
+    <text id="poid-step-application" x="422" y="414" class="hi" font-size="54" font-weight="795" fill="#2b2622">Application</text>
+   </g>
+   <path id="poid-steps-link-1" d="M293 467V481" stroke="#ead9a8" stroke-width="7" stroke-linecap="round"/>
+   <g class="step" id="poid-step-2">
+    <rect x="200" y="478" width="1520" height="150" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <circle cx="293" cy="553" r="46" fill="#9e1b1b"/>
+    <text x="293" y="572" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="820" fill="#fff">2</text>
+    <path d="M375 509v88" stroke="#ead9a8" stroke-width="3"/>
+    <text id="poid-step-verification" x="422" y="574" class="hi" font-size="54" font-weight="795" fill="#2b2622">postman या कोई official जाँच करता है</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [2.82,"out","#replacement-unproven",{dur:.23,scale:1}],
+   [2.82,"fade","#poid-process-title",{dur:.26}],
+   [7.60,"fade","#poid-step-1",{dur:.25}],
+   [7.60,"slide","#poid-step-1",{from:"left",dist:100,spring:"soft"}],
+   [8.74,"fade","#poid-step-2",{dur:.26}],
+   [8.74,"slide","#poid-step-2",{from:"left",dist:100,spring:"soft"}],
+   [8.74,"draw","#poid-steps-link-1",{dur:.23}],
+   [13.06,"highlight","#poid-step-verification",{words:"जाँच",color:"#fde9a6",opacity:.92,dur:.30,pad:8}]
+  ]
+ })
+ </script>
+</section>
