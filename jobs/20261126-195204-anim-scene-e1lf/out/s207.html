@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s207" data-in="cut" data-section="PART 9 · INSURANCE" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="exam">
+ <text id="exam-title" class="hi" x="140" y="225" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="790" fill="#9e1b1b">Exam angle · परीक्षा की नज़र से</text>
+ <rect id="exam-list" x="720" y="260" width="1100" height="730" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <path d="M755 450H1785M755 645H1785M755 825H1785" fill="none" stroke="#ead9a8" stroke-width="2"/>
+ <g id="ceiling">
+  <use href="piece:key-fact-stamp" transform="translate(100 400)"/>
+  <text class="hi" x="380" y="586" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="108" font-weight="830" fill="#fff">₹5 लाख</text>
+  <text x="380" y="661" text-anchor="middle" font-size="39" font-weight="700" fill="#fde9a6">General insurance ceiling</text>
+  <text x="380" y="807" text-anchor="middle" font-size="34" font-weight="620" fill="#6f6a63">India Post · 1 Apr 2026</text>
+ </g>
+
+<g id="notes-row">
+ <text id="currency" x="765" y="370" font-size="49" font-weight="800" fill="#2b2622">Currency / bank notes</text>
+ <text id="currency-max" x="1758" y="373" text-anchor="end" font-size="63" font-weight="850" fill="#9e1b1b">₹20,000</text>
+</g>
+<g id="fee-row">
+ <text id="fee" x="765" y="505" font-size="46" font-weight="800" fill="#9e1b1b">Fee</text>
+ <text class="hi" id="base-fee" x="765" y="557" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="740" fill="#2b2622">₹200 तक: ₹4</text>
+ <text class="hi" id="higher-fee" x="765" y="615" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="740" fill="#2b2622">ऊपर: ₹4 + ऊपर वाले हिस्से का</text>
+ <g id="fee-percent"><rect x="1495" y="568" width="191" height="63" rx="16" fill="#fde9a6"/><text x="1590.5" y="614" text-anchor="middle" font-size="48" font-weight="850" fill="#8a5d00">1.50%</text></g>
+</g>
+<g id="loss-row">
+ <text x="765" y="718" font-size="45" font-weight="800" fill="#2b2622"><tspan id="fragile">Fragile</tspan><tspan id="liquid"> · Liquid</tspan><tspan id="perishable"> · Perishable</tspan></text>
+ <text id="loss-cover" class="hi" x="765" y="781" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="720" fill="#2b2622">सिर्फ loss का cover</text>
+</g>
+<g id="insurance-row">
+ <text id="insurance" x="765" y="887" font-size="49" font-weight="800" fill="#9e1b1b">Insurance</text>
+ <text class="hi" x="765" y="952" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="720" fill="#2b2622"><tspan id="sum">पूरी insured रकम की guarantee</tspan><tspan id="not"> नहीं</tspan></text>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [0.78,'fade','#liquid',{dur:.22}],
+  [1.76,'fade','#perishable',{dur:.22}],
+  [2.84,'fade','#loss-cover',{dur:.23}],
+  [3.32,'highlight','#loss-cover',{words:'loss',color:'#f2b705',opacity:.44,pad:6,dur:.34}],
+  [4.82,'fade','#insurance',{dur:.24}],
+  [6.00,'fade','#sum',{dur:.26}],
+  [7.72,'fade','#not',{dur:.20}],
+  [7.72,'underline','#not',{color:'#f2b705',width:5,gap:6,dur:.36}],
+ ]
+}
+</script>
+</section>
