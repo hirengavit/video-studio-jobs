@@ -1,0 +1,70 @@
+<section class="vs-scene" id="s054" data-duration="10.64" lang="hi" data-in="cut" data-section="PART 3 · IDENTITY CARD" data-series="DELIVERY RULES">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="two-words">
+      <text x="960" y="209" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="60" font-weight="750" fill="#9e1b1b">नियम के दो शब्द</text>
+      <rect id="left-paper" x="140" y="270" width="780" height="590" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+      <g id="card-right"><rect id="right-paper" x="1000" y="270" width="780" height="590" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/></g>
+      <g id="left-label">
+        <rect id="left-tab" x="181" y="315" width="698" height="80" rx="16" fill="#f3ead6"/>
+        <text id="left-tab-label" x="530" y="370" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="650" fill="#2b2622">Addressee / authorised person</text>
+      </g>
+      <rect id="may-mark" x="246" y="404" width="115" height="89" rx="3" fill="#f2b705" opacity=".43"/>
+      <text id="may-rule" x="252" y="470" text-anchor="start" font-family="Georgia, serif" font-size="64" fill="#2b2622">may seek identification</text>
+      <text id="left-condition" x="530" y="628" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="600" fill="#4b4f58">postman न जानता हो</text>
+      <g id="reg-54-stamp">
+        <use href="piece:postmark-ring" transform="translate(1300 152) scale(.60)"/>
+        <rect x="1311" y="197" width="110" height="47" fill="#fbf7ee"/>
+        <text x="1366" y="234" textLength="100" lengthAdjust="spacingAndGlyphs" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#9e1b1b">Reg. 54</text>
+        <text x="1572" y="178" font-family="Inter, sans-serif" font-size="44" font-weight="650" fill="#9e1b1b"><tspan x="1572">Post Office</tspan><tspan x="1572" dy="46">Regulations</tspan><tspan x="1572" dy="46">2024</tspan></text>
+      </g>
+      <g id="may-gist">
+        <rect x="140" y="860" width="780" height="60" rx="20" fill="#f3ead6"/>
+        <text x="530" y="902" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="44" font-weight="700" fill="#2b2622">सार (gist): पहचान माँग सकता है</text>
+      </g>
+      <g id="shall-label">
+        <rect x="1041" y="315" width="698" height="80" rx="16" fill="#f3ead6"/>
+        <text x="1390" y="370" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" text-anchor="middle" font-size="44" font-weight="690" fill="#2b2622">कुछ accountable items</text>
+      </g>
+      <g id="shall-rule" font-family="Georgia, serif" font-size="52" fill="#2b2622" text-anchor="middle">
+        <text id="shall-rule-one" x="1390" y="470" font-family="Georgia, serif">shall be delivered only</text>
+        <text id="shall-rule-two" x="1390" y="532" font-family="Georgia, serif">after identification</text>
+        <text id="shall-rule-three" x="1390" y="594" font-family="Georgia, serif">is sought</text>
+      </g>
+      <g id="passport-chip">
+        <rect x="1022" y="643" width="360" height="80" rx="19" fill="#f3ead6"/>
+        <use href="piece:id-card" transform="translate(1038 665) scale(.18)"/>
+        <text x="1103" y="697" font-family="Inter,sans-serif" font-size="40" font-weight="740" fill="#2b2622">Passport</text>
+      </g>
+      <g id="pan-chip">
+        <rect x="1398" y="643" width="360" height="80" rx="19" fill="#f3ead6"/>
+        <use href="piece:id-card" transform="translate(1414 665) scale(.18)"/>
+        <text x="1479" y="697" font-family="Inter,sans-serif" font-size="40" font-weight="740" fill="#2b2622">PAN card</text>
+      </g>
+      <g id="licence-chip">
+        <rect x="1022" y="741" width="360" height="80" rx="19" fill="#f3ead6"/>
+        <use href="piece:id-card" transform="translate(1038 763) scale(.18)"/>
+        <text x="1103" y="795" font-family="Inter,sans-serif" font-size="40" font-weight="740" fill="#2b2622">Driving licence</text>
+      </g>
+      <g id="other-id-chip">
+    <rect x="1398" y="741" width="360" height="110" rx="19" fill="#f3ead6"/>
+    <text x="1578" y="782" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="34" font-weight="760" fill="#2b2622"><tspan x="1578" y="782">पहचान की शर्त वाले</tspan><tspan x="1578" y="826.2">दूसरे items</tspan></text>
+  </g>
+  <g id="shall-gist">
+    <rect x="1000" y="860" width="780" height="60" rx="20" fill="#f3ead6"/>
+    <text x="1390" y="902" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="740" fill="#2b2622">सार (gist): पहचान के बाद ही delivery</text>
+  </g>
+</g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [.62,"pop","#other-id-chip",{from:.93,spring:"soft"}],
+      [6.56,"highlight","#shall-rule-one",{words:"only",color:"#fde9a6",opacity:.72,pad:4,dur:.24}],
+      [6.56,"highlight","#shall-rule-two",{color:"#fde9a6",opacity:.72,pad:4,dur:.24}],
+      [6.56,"highlight","#shall-rule-three",{color:"#fde9a6",opacity:.72,pad:4,dur:.24}],
+      [9.58,"reveal","#shall-gist",{from:"left",dur:.30}]
+    ]
+  }
+  </script>
+</section>
