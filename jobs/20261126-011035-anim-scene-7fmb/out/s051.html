@@ -1,7 +1,8 @@
 <section class="vs-scene" id="s051" data-in="wipe" data-in-dur="0.55" data-in-opts='{"from":"right"}' data-duration="10.47" data-section="PART 3 · IDENTITY CARD" data-series="DELIVERY RULES" lang="hi">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Checking an unknown Poste Restante recipient's identity">
 <rect width="1920" height="1080" fill="#fbf7ee"/>
-<use href="set:po-counter" layer="back"/>
+<defs><clipPath id="rack-viewport" clipPathUnits="userSpaceOnUse"><rect id="rack-aperture" x="0" y="150" width="1920" height="930"/></clipPath></defs>
+<g clip-path="url(#rack-viewport)"><use href="set:po-counter" layer="back"/></g>
 <use href="set:po-counter" layer="front"/>
 <g id="letter">
  <use href="piece:domestic-envelope" transform="translate(785.2 546) scale(.46)"/>
@@ -25,7 +26,7 @@
 </g>
 <g id="confirmed">
  <rect x="1152" y="628" width="315" height="73" rx="18" fill="#fffdfa" stroke="#c9dfcd" stroke-width="3"/>
- <text x="1316" y="681" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">सही व्यक्ति</text>
+ <text x="1342" y="681" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">सही व्यक्ति</text>
 </g>
 <path id="tick" d="M1175 665l12 12 21-26" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -33,6 +34,12 @@
 ({
  set:'po-counter',
  camera:[[0,'wide'],[5.70,'wide'],[6.25,{zoom:1.35,x:140,y:108},'inOut']],
+ update(t, section, $) {
+  const k=Math.max(0,Math.min(1,(t-5.70)/.55));
+  const e=k<.5?4*k*k*k:1-((-2*k+2)**3)/2;
+  const rackTop=540+108*e+(150-540)/(1+.35*e);
+  $('#rack-aperture')[0]?.setAttribute('y',rackTop.toFixed(2));
+ },
  on:[
   [2.76,'fade','#staff',{dur:.27}],
   [4.14,'pop','#question',{from:.90,spring:'soft'}],
