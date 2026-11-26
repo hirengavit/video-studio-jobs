@@ -1261,11 +1261,44 @@
     }
     sc.actors = [...byEl.entries()];
     sc.update = typeof def.update === "function" ? def.update : null;
+    // Blinks: a drawing with a blink twin (the same picture, eyes closed) gets it laid right over it; the twin follows
+    // the drawing (wrappers, attributes, visibility) and shows for a moment every few seconds.
+    sc.blinks = [];
+    for (const twin of section.querySelectorAll("image[data-blink]")) {
+      const orig = section.querySelector(`image[data-blink-src="${twin.getAttribute("data-blink")}"]`);
+      if (!orig) continue;
+      orig.after(twin);
+      sc.blinks.push({ orig, twin, seed: Number(twin.getAttribute("data-blink")) || 1 });
+    }
     buildPhysics(sc, warn);
     sc.warn = warn;
   }
 
   const ORIGIN = { center: "center", left: "left center", right: "right center", top: "center top", bottom: "center bottom" };
+  /** Is a blink on at time t? Rare and uneven, like a person: none in a scene's first 1.6 s, then one every 4.5–9 s,
+   * sometimes a quick double, each 0.12–0.18 s long (a fixed pattern per drawing, so every render is the same). */
+  function blinkOn(t, seed) {
+    const hash = (k) => { const x = Math.sin(seed * 12.9898 + k * 78.233) * 43758.5453; return x - Math.floor(x); };
+    let at = 1.6 + hash(0) * 2.5;
+    for (let k = 1; at <= t && k < 400; k++) {
+      const len = 0.12 + 0.06 * hash(k + 500);
+      if (t < at + len) return true;
+      if (hash(k + 900) < 0.15 && t >= at + len + 0.18 && t < at + 2 * len + 0.18) return true;
+      at += 4.5 + 4.5 * hash(k);
+    }
+    return false;
+  }
+
+  function renderBlinks(sc, t) {
+    for (const { orig, twin, seed } of sc.blinks || []) {
+      for (const a of orig.attributes) if (!["id", "href", "xlink:href", "data-blink-src"].includes(a.name)) twin.setAttribute(a.name, a.value);
+      twin.style.cssText = orig.style.cssText;
+      // Only over a drawing that's fully showing (not mid-swap or fading).
+      const shown = orig.style.display !== "none" && Number(orig.getAttribute("opacity") ?? 1) >= 0.99 && Number(orig.style.opacity || 1) >= 0.99;
+      twin.style.opacity = shown && blinkOn(t, seed) ? "1" : "0";
+    }
+  }
+
   function renderScene(sc, t) {
     // Camera.
     const [z, cx, cy, r] = sc.camKeys.length ? S.kf(t, sc.camKeys) : [1, 0, 0, 0];
@@ -1298,6 +1331,7 @@
     }
     for (const rig of sc.rigs) rig(t);
     renderPhysics(sc, t);
+    renderBlinks(sc, t);
     // Boil: swap between three slightly different wobbles a few times a second.
     if (sc.boil.length) {
       const k = Math.floor(t * (S.kit.boil.fps || 8)) % 3;
@@ -1415,6 +1449,8 @@
     if (frame) {
       let cur = null;
       for (const sc of scenes) if (T >= sc.at - (sc.tinDur || 0)) cur = sc;
+      // A scene with data-frame="off" (an outro, a title card) shows no header.
+      frame.style.display = cur?.section.dataset.frame === "off" ? "none" : "";
       for (const slot of frame.querySelectorAll("[data-slot]")) {
         const v = cur?.section.dataset[slot.dataset.slot] ?? slot.dataset.default ?? "";
         if (slot.textContent !== v) slot.textContent = v;

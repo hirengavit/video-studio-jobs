@@ -1,0 +1,62 @@
+<section class="vs-scene" id="formula-card-gu" data-in="fade" data-in-dur="0.4" data-section="ગણિત">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="hero">
+      <rect x="160" y="200" width="720" height="760" rx="28" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+      <rect x="160" y="200" width="720" height="760" rx="28" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+      <rect x="230" y="276" width="10" height="44" rx="5" fill="#f2b705"/>
+      <text x="258" y="312" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="700" fill="#fde9a6">સૂત્ર</text>
+    </g>
+    <text id="name" x="230" y="414" font-family="Inter, sans-serif" font-size="68" font-weight="800" fill="#ffffff">Simple Interest</text>
+    <text id="namehi" x="230" y="494" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="52" font-weight="700" fill="#fde9a6">સાદું વ્યાજ</text>
+    <g id="formula">
+      <rect x="230" y="548" width="580" height="236" rx="22" fill="#ffffff"/>
+      <text x="270" y="690" font-family="Georgia, serif" font-size="74" fill="#2b2622">SI =</text>
+      <text x="610" y="646" text-anchor="middle" font-family="Georgia, serif" font-size="66" fill="#2b2622">P × R × T</text>
+      <path d="M455 674 H765" stroke="#2b2622" stroke-width="4" stroke-linecap="round"/>
+      <text x="610" y="748" text-anchor="middle" font-family="Georgia, serif" font-size="66" fill="#2b2622">100</text>
+    </g>
+    <text id="leg1" x="230" y="850" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="36" font-weight="700" fill="#ffffff">P = મુદ્દલ · R = વાર્ષિક દર %</text>
+    <text id="leg2" x="230" y="904" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="36" font-weight="700" fill="#ffffff">T = સમય (વર્ષમાં)</text>
+
+    <g id="card">
+      <rect x="940" y="200" width="820" height="760" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="1004" y="276" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="700" fill="#6f6a63">ઉદાહરણ</text>
+    </g>
+    <text id="q1" x="1004" y="352" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="42" font-weight="800" fill="#2b2622">₹5,000 · 8% વાર્ષિક · 3 વર્ષ</text>
+    <text id="qhi" x="1004" y="410" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="36" font-weight="500" fill="#6f6a63">સાદું વ્યાજ કેટલું થશે?</text>
+    <path id="rule" d="M1004 446 H1696" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <text id="w1" x="1004" y="526" font-family="Georgia, serif" font-size="50" fill="#2b2622">SI = 5000 × 8 × 3 ÷ 100</text>
+    <text id="w2" x="1094" y="604" font-family="Georgia, serif" font-size="50" fill="#2b2622">= 1,20,000 ÷ 100</text>
+    <g id="ans">
+      <rect x="1066" y="634" width="300" height="88" rx="20" fill="#2e7d4f"/>
+      <text x="1094" y="694" font-family="Georgia, serif" font-size="52" fill="#ffffff">= ₹1,200</text>
+    </g>
+    <g id="amt">
+      <rect x="1004" y="760" width="692" height="150" rx="22" fill="#f3ead6"/>
+      <text x="1044" y="816" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="700" fill="#6f6a63">કુલ રકમ (P + SI)</text>
+      <text x="1044" y="878" font-family="Georgia, serif" font-size="46" fill="#2b2622">5,000 + 1,200 = <tspan font-weight="700">₹6,200</tspan></text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}], [9, {zoom: 1.02}]],
+    on: [
+      [0.05, 'reveal', '#hero', {from: 'left', dur: 0.6}],
+      [0.5, 'words', '#name', {gap: 0.1, dist: 24, spring: 'soft'}],
+      [0.9, 'fade', '#namehi', {dur: 0.5}],
+      [1.4, 'pop', '#formula', {from: 0.8, spring: 'soft'}],
+      [2.1, 'fade', '#leg1', {dur: 0.4}],
+      [2.4, 'fade', '#leg2', {dur: 0.4}],
+      [3.0, 'slide', '#card', {from: 'right', dist: 80, spring: 'soft'}],
+      [3.3, 'words', '#q1', {gap: 0.08, dist: 20, spring: 'soft'}],
+      [3.9, 'fade', '#qhi', {dur: 0.4}],
+      [4.2, 'draw', '#rule', {dur: 0.4}],
+      [4.6, 'words', '#w1', {gap: 0.12, dist: 20, spring: 'soft'}],
+      [5.6, 'words', '#w2', {gap: 0.12, dist: 20, spring: 'soft'}],
+      [6.4, 'pop', '#ans', {from: 0.6, spring: 'soft'}],
+      [7.3, 'slide', '#amt', {from: 'down', dist: 40, spring: 'soft'}],
+    ],
+  }
+  </script>
+</section>
