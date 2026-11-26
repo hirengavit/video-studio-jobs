@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s085" data-section="PART 4 · BOOKING AND TRACKING" data-series="PRODUCTS" data-in="cut">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <defs>
+      <filter id="muted-counter" color-interpolation-filters="sRGB">
+        <feColorMatrix type="saturate" values="0"/>
+        <feComponentTransfer><feFuncA type="linear" slope=".48"/></feComponentTransfer>
+      </filter>
+    </defs>
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text x="140" y="250" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="72" font-weight="830">24-hour booking</text>
+    <text id="term-hi" x="140" y="320" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="640">चौबीसों घंटे बुकिंग</text>
+    <text id="coverage" x="140" y="423" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="700">बड़े शहरों के कुछ चुने offices में</text>
+    <g id="selection-bg">
+      <rect x="476" y="548" width="312" height="218" rx="21" fill="#fde9a6"/>
+      <rect x="1132" y="548" width="312" height="218" rx="21" fill="#fde9a6"/>
+    </g>
+    <g id="office-1">
+      <use href="piece:booking-counter" transform="translate(160 560) scale(0.45)"/>
+    </g>
+    <g id="office-2">
+      <use href="piece:booking-counter" transform="translate(488 560) scale(0.45)"/>
+    </g>
+    <g id="office-3">
+      <use href="piece:booking-counter" transform="translate(816 560) scale(0.45)"/>
+    </g>
+    <g id="office-4">
+      <use href="piece:booking-counter" transform="translate(1144 560) scale(0.45)"/>
+    </g>
+    <g id="office-5">
+      <use href="piece:booking-counter" transform="translate(1472 560) scale(0.45)"/>
+    </g>
+    <g id="muted-offices">
+      <use href="piece:booking-counter" filter="url(#muted-counter)" transform="translate(160 560) scale(0.45)"/>
+      <use href="piece:booking-counter" filter="url(#muted-counter)" transform="translate(816 560) scale(0.45)"/>
+      <use href="piece:booking-counter" filter="url(#muted-counter)" transform="translate(1472 560) scale(0.45)"/>
+    </g>
+    <g id="badge-1">
+      <rect x="569" y="493" width="126" height="61" rx="30.5" fill="#9e1b1b"/>
+      <text x="632" y="535" text-anchor="middle" fill="#fff" font-family="Inter, sans-serif" font-size="40" font-weight="820">24h</text>
+    </g>
+    <g id="badge-2">
+      <rect x="1225" y="493" width="126" height="61" rx="30.5" fill="#9e1b1b"/>
+      <text x="1288" y="535" text-anchor="middle" fill="#fff" font-family="Inter, sans-serif" font-size="40" font-weight="820">24h</text>
+    </g>
+    <text id="not-all" x="960" y="886" text-anchor="middle" fill="#4b4f58" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="740">हर post office में नहीं</text>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.50,'fade','#term-hi',{dur:0.28}],
+      [1.16,'fade','#office-1,#office-2,#office-3,#office-4,#office-5',{dur:0.28,stagger:0.1}],
+      [1.88,'words','#coverage',{gap:0.15,dist:10,from:'down',spring:'soft'}],
+      [2.86,'reveal','#selection-bg',{from:'left',dur:0.32}],
+      [2.86,'pop','#badge-1,#badge-2',{spring:'soft',from:0.92}],
+      [4.98,'out','#office-1,#office-3,#office-5',{dur:0.31,scale:1}],
+      [4.98,'fade','#muted-offices',{dur:0.31}],
+      [6.28,'reveal','#not-all',{from:'left',dur:0.35}]
+    ]
+  }
+  </script>
+</section>
