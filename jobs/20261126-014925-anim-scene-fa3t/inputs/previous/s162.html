@@ -1,0 +1,36 @@
+<section class="vs-scene" id="s162" data-section="PART 7 · INTERNATIONAL" data-series="DELIVERY RULES" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<g id="alternate">
+<text x="140" y="220" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="800" fill="#2b2622">Air parcel पर alternate address?</text>
+<g id="air-parcel">
+<rect x="190" y="345" width="415" height="454" rx="30" fill="#f3ead6" stroke="#dfcda8" stroke-width="3"/>
+<use href="piece:icon-plane" transform="translate(217 270) scale(.90)"/>
+<use href="piece:parcel-bag" transform="translate(290 484) scale(.60)"/>
+<path d="M265 732H531" stroke="#d9c6a3" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g id="house-first">
+<rect x="798" y="449" width="404" height="352" rx="24" fill="#fff" stroke="#dfcda8" stroke-width="3"/>
+<use href="piece:house-icon" transform="translate(865 445) scale(.90)"/>
+<text x="1000" y="766" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">पहला addressee</text>
+</g>
+<g id="house-alternate">
+<rect x="1248" y="449" width="404" height="352" rx="24" fill="#fff" stroke="#dfcda8" stroke-width="3"/>
+<use href="piece:house-icon" transform="translate(1325.5 449) scale(.83)"/>
+<text x="1450" y="732" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">दूसरा addressee</text>
+<text x="1450" y="778" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="700" fill="#655742">(alternate)</text>
+</g>
+<g id="route-fork" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<path id="route-first" d="M620 550H707V361H1000V423M987 409l13 14 13-14"/>
+<path id="route-alternate" d="M1000 361H1450V423M1437 409l13 14 13-14"/>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+({shots:[[0,"#alternate"]],on:[
+[1.34,"pop","#house-first",{from:.92}],
+[1.64,"pop","#house-alternate",{from:.92}],
+[1.34,"draw","#route-first",{dur:.56}],
+[1.64,"draw","#route-alternate",{dur:.50}]
+]})
+</script>
+</section>
