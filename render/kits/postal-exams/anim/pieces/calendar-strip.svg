@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1056 284" stroke-linecap="round" stroke-linejoin="round">
+<g id="day-1" transform="translate(12 12)"><rect x="0" y="0" width="240" height="260" rx="12" fill="#ffffff"/><path d="M0 60V12Q0 0 12 0H228Q240 0 240 12V60Z" fill="#9e1b1b"/><rect x="0" y="0" width="240" height="260" rx="12" fill="none" stroke="#2b2622" stroke-width="3"/></g>
+<g id="day-2" transform="translate(276 12)"><rect x="0" y="0" width="240" height="260" rx="12" fill="#ffffff"/><path d="M0 60V12Q0 0 12 0H228Q240 0 240 12V60Z" fill="#9e1b1b"/><rect x="0" y="0" width="240" height="260" rx="12" fill="none" stroke="#2b2622" stroke-width="3"/></g>
+<g id="day-3" transform="translate(540 12)"><rect x="0" y="0" width="240" height="260" rx="12" fill="#ffffff"/><path d="M0 60V12Q0 0 12 0H228Q240 0 240 12V60Z" fill="#9e1b1b"/><rect x="0" y="0" width="240" height="260" rx="12" fill="none" stroke="#2b2622" stroke-width="3"/></g>
+<g id="day-4" transform="translate(804 12)"><rect x="0" y="0" width="240" height="260" rx="12" fill="#ffffff"/><path d="M0 60V12Q0 0 12 0H228Q240 0 240 12V60Z" fill="#9e1b1b"/><rect x="0" y="0" width="240" height="260" rx="12" fill="none" stroke="#2b2622" stroke-width="3"/></g>
+<circle data-anchor="base" cx="528" cy="272" r="0"/>
+<circle data-anchor="top" cx="528" cy="12" r="0"/>
+</svg>
