@@ -8,12 +8,5 @@
   "8.69"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s080",
-   "message": "pulse: option \"strength\" isn't used (it takes: amount)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
