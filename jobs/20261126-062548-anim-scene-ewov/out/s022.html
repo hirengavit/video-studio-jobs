@@ -62,9 +62,9 @@
     <path id="matching-link" d="M1420 677V714 M1409 688l11-11 11 11 M1409 703l11 11 11-11" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
     <text id="matching-word" x="1453" y="714" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" fill="#9e1b1b" font-size="52" font-weight="800">मिलान</text>
     <g id="identity-rule" fill="#2b2622" font-size="60" font-weight="820">
-      <text x="1381" y="1043" text-anchor="end" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">निशान</text>
-      <text id="identity-not-equal" x="1420" y="1043" text-anchor="middle" font-family="Inter,sans-serif">≠</text>
-      <text x="1459" y="1043" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">पहचान</text>
+      <text x="1381" y="1052" text-anchor="end" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">निशान</text>
+      <text id="identity-not-equal" x="1420" y="1052" text-anchor="middle" font-family="Inter,sans-serif">≠</text>
+      <text x="1459" y="1052" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">पहचान</text>
     </g>
   </g>
 </svg>
@@ -104,13 +104,13 @@
         strike.setAttribute("d","M293 "+[0,548,663,778,893][i]+"h"+([0,558,1207,271,710][i]*interp(1,.923)));
     }
     const l=$("#name-text-2")[0], line=$("#name-strike-2")[0], compact=$("#row2-compact")[0];
-    const fadeOut=Math.max(0,1-raw/.37);
-    const fadeIn=Math.min(1,Math.max(0,(raw-.60)/.40));
-    l.style.opacity=String(fadeOut);
+    const fadeOut=Math.max(0,1-Math.max(0,raw-.13)/.19);
+    const fadeIn=Math.min(1,Math.max(0,(raw-.32)/.20));
+    l.style.opacity=String(.82*fadeOut);
     line.style.opacity=String(fadeOut);
-    l.style.display=raw>=.37?"none":"";
-    line.style.display=raw>=.37?"none":"";
-    compact.style.display=raw>=.60?"":"none";
+    l.style.display=raw>=.32?"none":"";
+    line.style.display=raw>=.32?"none":"";
+    compact.style.display=raw>=.32?"":"none";
     compact.style.opacity=String(fadeIn);
   }
 })
