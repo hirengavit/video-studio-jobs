@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s191" data-in="cut" data-section="PART 9 · INSURANCE" data-series="PRODUCTS">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="ordinary-card">
+      <rect x="120" y="180" width="800" height="620" rx="32" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <use id="ordinary-parcel" href="piece:speed-post-parcel" transform="translate(340 224)"/>
+      <text x="520" y="610" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="740" fill="#2b2622">Ordinary Speed Post item</text>
+      <g id="ordinary-pill">
+        <rect x="197" y="680" width="646" height="88" rx="44" fill="#f3ead6"/>
+        <text x="240" y="736" font-family="Inter, sans-serif" font-size="41" font-weight="650" fill="#2b2622">insurance:</text>
+        <text id="optional" x="466" y="737" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="42" font-weight="660" fill="#2b2622">आम तौर पर वैकल्पिक</text>
+      </g>
+    </g>
+    <g id="valuables-card">
+      <rect x="1000" y="180" width="800" height="620" rx="32" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <g id="jewellery">
+        <image href="photo:gold-jewellery-cutout" x="1180" y="208" width="440" height="304" preserveAspectRatio="xMidYMid meet" filter="url(#vs-cutout)" transform="rotate(-1.5 1400 360)"/>
+        <text x="1400" y="547" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="32" font-weight="530" fill="#6f6a63">केशाभूषण, बेंगलुरु · १९वीं सदी</text>
+        <text x="1400" y="582" text-anchor="middle" font-family="Inter, sans-serif" font-size="28" fill="#6f6a63">Honolulu Academy of Arts</text>
+      </g>
+      <text id="valuables-label" x="1400" y="642" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="50" font-weight="740" fill="#2b2622">कुछ कीमती सामान</text>
+      <g id="required-pill">
+        <rect x="1170" y="680" width="460" height="88" rx="44" fill="#9e1b1b"/>
+        <text x="1400" y="736" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="690" fill="#ffffff">insurance ज़रूरी</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.92, 'pop', '#ordinary-pill', {dur:0.28}],
+      [3.98, 'fade', '#optional', {dur:0.22}],
+      [5.10, 'pop', '#valuables-card', {dur:0.26}],
+      [5.18, 'fade', '#jewellery', {dur:0.25}],
+      [6.04, 'fade', '#valuables-label', {dur:0.23}],
+      [7.88, 'stamp', '#required-pill', {dur:0.24}]
+    ]
+  }
+  </script>
+</section>
