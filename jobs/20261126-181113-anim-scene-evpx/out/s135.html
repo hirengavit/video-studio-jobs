@@ -1,6 +1,6 @@
 <section class="vs-scene" id="s135" data-in="cut" data-section="PART 6 · DELIVERY" data-series="PRODUCTS">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
-    <defs><filter id="pod-gray" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/></filter></defs>
+    <defs><filter id="pod-gray" color-interpolation-filters="sRGB"><feColorMatrix id="pod-saturate" type="saturate" values="1"/></filter></defs>
     <rect width="1920" height="1080" fill="#fbf7ee"/>
     <g id="receipts" font-family="Inter, sans-serif">
       <g id="original-receipt">
@@ -35,12 +35,7 @@
       <use href="piece:insured-envelope-emblem" transform="translate(101 319) scale(0.88)"/>
       <text x="330" y="689" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="760" fill="#2b2622">Insured item · sender</text>
       <path id="pod-arrow" d="M558 454 H634 M614 435 L634 454 L614 473" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-      <g id="pod-original">
-        <use href="piece:pod-card" transform="translate(660 280)"/>
-        <text x="920" y="332" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" font-weight="810" fill="#fff">POD</text>
-        <path d="M995 552 q19 -36 22 -19 q-10 31 10 14 l20 -18 q-12 31 6 21 l22 -13 q-8 15 16 3 l20 -4" fill="none" stroke="#2b2622" stroke-width="3.5" stroke-linecap="round"/>
-      </g>
-      <g id="pod-dimmed" filter="url(#pod-gray)">
+      <g id="pod-original" filter="url(#pod-gray)">
         <use href="piece:pod-card" transform="translate(660 280)"/>
         <text x="920" y="332" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" font-weight="810" fill="#fff">POD</text>
         <path d="M995 552 q19 -36 22 -19 q-10 31 10 14 l20 -18 q-12 31 6 21 l22 -13 q-8 15 16 3 l20 -4" fill="none" stroke="#2b2622" stroke-width="3.5" stroke-linecap="round"/>
@@ -73,11 +68,14 @@
       [3.60, 'draw', '#pod-arrow', {dur: 0.30}],
       [3.60, 'pop', '#pod-original', {from: 0.95, spring: 'soft'}],
       [4.42, 'pop', '#free-pod', {from: 0.93, spring: 'soft'}],
-      [5.94, 'fade', '#pod-dimmed', {dur: 0.30}],
       [5.94, 'fade', '#pod-missing', {dur: 0.30}],
       [7.90, 'draw', '#certificate-arrow', {dur: 0.30}],
       [7.90, 'pop', '#certificate-card', {from: 0.96, spring: 'soft'}],
     ],
+    update(t, section, $) {
+      const matrix = $('#pod-saturate')[0];
+      if (matrix) matrix.setAttribute('values', String(1 - Math.max(0, Math.min(1, (t - 5.94) / 0.30))));
+    },
   }
   </script>
 </section>
