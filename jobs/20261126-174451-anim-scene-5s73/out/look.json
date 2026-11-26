@@ -8,12 +8,5 @@
   "9.59"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s133",
-   "text": "कागज़ वाला POD / → accountable item की तरह",
-   "t": 7.79
-  }
- ]
+ "warnings": []
 }
