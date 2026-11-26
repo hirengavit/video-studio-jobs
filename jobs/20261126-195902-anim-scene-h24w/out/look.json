@@ -10,12 +10,5 @@
  "problems": [
   "s235: no photo \"gold-jewellery-cutout\" in the materials"
  ],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s235",
-   "message": "reveal: option \"axis\" isn't used (it takes: from, dur, ease)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
