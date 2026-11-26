@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.03",
+  "4.06",
+  "6.08",
+  "8.11",
+  "9.99"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s066",
+   "text": "POSTERESTANTE / Postmaster: और पूछताछ",
+   "t": 8.11
+  }
+ ]
+}
