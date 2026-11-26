@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 440" width="260" height="440">
+<g stroke-linecap="round" stroke-linejoin="round">
+<path id="cord" d="M204 380 C 250 380, 244 300, 238 262" fill="none" stroke="#2b2622" stroke-width="3" stroke-dasharray="1 6"/>
+<g id="stylus" stroke="#2b2622" stroke-width="3">
+<path d="M232 70 L244 70 L244 240 L238 258 L232 240 Z" fill="#6f6a63"/>
+<line x1="232" y1="92" x2="244" y2="92"/>
+</g>
+<rect id="body" x="8" y="8" width="204" height="424" rx="34" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+<g id="scan-window"><rect x="56" y="26" width="108" height="34" rx="8" fill="#2b2622"/>
+<line x1="70" y1="43" x2="150" y2="43" stroke="#b8403a" stroke-width="3"/></g>
+<rect id="screen" x="28" y="76" width="164" height="244" rx="10" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+<line id="screen-line" x1="48" y1="106" x2="150" y2="106" stroke="#cfc6b8" stroke-width="8"/>
+<g id="sign-area">
+<rect x="44" y="170" width="132" height="120" rx="6" fill="none" stroke="#6f6a63" stroke-width="3" stroke-dasharray="8 7"/>
+<line x1="58" y1="266" x2="162" y2="266" stroke="#cfc6b8" stroke-width="3"/>
+</g>
+<g id="keys" fill="#ffffff" stroke="#2b2622" stroke-width="3">
+<rect x="38" y="342" width="36" height="22" rx="6"/>
+<rect x="86" y="342" width="36" height="22" rx="6"/>
+<rect x="134" y="342" width="36" height="22" rx="6"/>
+<rect x="38" y="376" width="36" height="22" rx="6"/>
+<rect x="86" y="376" width="36" height="22" rx="6"/>
+<rect x="134" y="376" width="36" height="22" rx="6"/>
+</g>
+</g>
+<circle data-anchor="base" cx="110" cy="432" r="0"/>
+<circle data-anchor="grip" cx="110" cy="330" r="0"/>
+</svg>
