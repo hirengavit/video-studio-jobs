@@ -11,8 +11,8 @@
     <g id="fee">
       <use href="piece:key-fact-stamp" transform="translate(120 360)"/>
       <text x="400" y="548" text-anchor="middle" fill="#ffffff" font-size="132" font-weight="820">₹10</text>
-      <text x="400" y="622" text-anchor="middle" fill="#fde9a6" font-size="39" font-weight="690">per item</text>
-      <text id="tax-extra" x="495" y="622" fill="#fde9a6" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="33" font-weight="690">· tax अलग</text>
+      <text id="per-item" x="400" y="622" text-anchor="middle" fill="#fde9a6" font-size="39" font-weight="690">per item</text>
+      <text id="tax-extra" x="407" y="622" fill="#fde9a6" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="690">· tax अलग</text>
     </g>
     <text id="signatory" x="1324" y="872" text-anchor="middle" fill="#2b2622" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="690">addressee / authorised व्यक्ति</text>
     <g id="refusal-note">
@@ -25,7 +25,8 @@
 <script type="text/scene">
 {
   on:[
-    [0.00,'type','#tax-extra',{cps:22}],
+    [0.00,'move','#per-item',{by:[-88,0],spring:'snap'}],
+    [0.08,'type','#tax-extra',{cps:22}],
     [1.20,'pulse','#pod-large',{amount:0.045}],
     [2.24,'fade','#signatory',{dur:0.32}],
     [5.10,'draw','#ink-signature',{dur:1.10}],
