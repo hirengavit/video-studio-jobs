@@ -1,0 +1,37 @@
+<section class="vs-scene" id="s176" data-in="cut" data-duration="8.60" data-section="KEY POINTS" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Key points on the addressee name, optional postal identity card and card fees">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="key-points-b">
+   <rect x="140" y="180" width="1640" height="810" rx="26" fill="#fffdfa" stroke="#ead9a8" stroke-width="3"/>
+   <path d="M166 180H1754Q1780 180 1780 206V248H140V206Q140 180 166 180Z" fill="#9e1b1b"/>
+   <text id="key-points-b-kicker" x="216" y="229" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="760" fill="#fffdfa">याद रखिए · 2</text>
+   <path d="M198 407H1722M198 557H1722M198 707H1722M198 857H1722" stroke="#e8dbbd" stroke-width="2"/>
+   <g id="key-points-name">
+    <circle cx="231" cy="301" r="10" fill="#f2b705"/>
+    <text x="279" y="320" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="720" fill="#2b2622">Addressee का नाम ज़रूरी</text>
+    <text id="key-points-name-not" x="279" y="376" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="710" fill="#6f6a63">initials, बनावटी नाम, निशान: नहीं</text>
+   </g>
+   <g id="key-points-id">
+    <circle cx="231" cy="451" r="10" fill="#f2b705"/>
+    <text x="279" y="470" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="720" fill="#2b2622" xml:space="preserve">Identity card: Head Post Office से<tspan id="key-points-validity">, 3 साल valid</tspan><tspan id="card-optional">, optional</tspan></text>
+   </g>
+   <g id="key-points-fees">
+    <circle cx="231" cy="601" r="10" fill="#f2b705"/>
+    <text id="key-points-fee-text" x="279" y="620" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="720" fill="#2b2622" xml:space="preserve">सामान्य card ₹9<tspan id="fee-poid"> · value-added POID ₹270</tspan></text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+   camera:[[0,{zoom:1}]],
+   on:[
+    [2.60,"fade","#key-points-fees",{dur:.25}],
+    [4.14,"highlight","#key-points-fee-text",{words:"₹270",color:"#f2b705",opacity:.38,pad:9,dur:.40}]
+   ],
+   update(t,section,$){
+    $("#card-optional")[0].style.opacity=String(Math.max(0,Math.min(1,t/.26)));
+    $("#fee-poid")[0].style.opacity=String(Math.max(0,Math.min(1,(t-4.14)/.26)));
+   }
+ })
+ </script>
+</section>
