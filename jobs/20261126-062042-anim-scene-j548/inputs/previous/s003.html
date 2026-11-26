@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s003" data-in="cut" data-duration="10.38" data-section="TOPIC · BIG PICTURE" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Poste Restante waits at the delivery office; recall or alteration changes the postal item’s route.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="lines">
+   <g id="line-one-shell">
+    <rect x="140" y="200" width="1640" height="360" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <circle cx="223" cy="287" r="45" fill="#9e1b1b"/>
+    <text x="223" y="305" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#fff">1</text>
+   </g>
+   <g id="line-two-shell">
+    <rect x="140" y="620" width="1640" height="360" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <circle cx="223" cy="705" r="45" fill="#9e1b1b"/>
+    <text x="223" y="723" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#fff">2</text>
+   </g>
+   <text id="line-one-title" x="700" y="304" font-family="Inter,sans-serif" font-size="64" font-weight="840" fill="#9e1b1b">Poste Restante</text>
+   <g id="line-one-envelope">
+    <use href="piece:domestic-envelope" transform="translate(270 326) scale(.55)"/>
+   </g>
+   <g id="line-one-office">
+    <use href="piece:post-office-icon" transform="translate(1430 302) scale(.68)"/>
+   </g>
+   <g id="delivery-office-badge">
+    <rect x="1405" y="347" width="265" height="36" rx="9" fill="#fde9a6" stroke="#ead9a8" stroke-width="2"/>
+    <text x="1537.5" y="372" text-anchor="middle" font-family="Inter,sans-serif" font-size="22" font-weight="800" fill="#2b2622">Delivery Post Office</text>
+   </g>
+   <g id="post-restante-fact">
+    <text id="waiting-line-one" x="714" y="402" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="730" fill="#2b2622">delivery post office में रुककर</text>
+    <text id="waiting-line-two" x="714" y="472" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="49" font-weight="730" fill="#2b2622">addressee का इंतज़ार</text>
+   </g>
+   <g id="recall-alteration-diagram">
+    <text id="route-title" x="700" y="708" font-family="Inter,sans-serif" font-size="64" font-weight="840" fill="#9e1b1b">Recall · Alteration</text>
+    <g id="route-letter"><use href="piece:domestic-envelope" transform="translate(700 751) scale(.39)"/></g>
+    <g id="sender-house"><use href="piece:house-icon" transform="translate(399 742) scale(.52)"/></g>
+    <path id="recall-path" d="M682 835 Q641 878 585 819 L607 823 M585 819 L594 842" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="addressee-house"><use href="piece:house-icon" transform="translate(1422 742) scale(.52)"/></g>
+    <path id="alteration-path" d="M1018 828 H1184 L1396 780 L1371 774 M1396 780 L1378 798 M1184 828 L1396 855 L1374 840 M1396 855 L1371 863" fill="none" stroke="#9e1b1b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <text id="sender-label" x="481" y="948" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">sender</text>
+    <text id="addressee-label" x="1506" y="948" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">addressee</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [.54,"fade","#delivery-office-badge",{dur:.24}],
+   [1.70,"words","#waiting-line-one",{gap:.13,dist:10}],
+   [3.24,"words","#waiting-line-two",{gap:.15,dist:10}],
+   [5.80,"type","#route-title",{cps:26}],
+   [5.80,"fade","#route-letter",{dur:.20}],
+   [5.80,"draw","#recall-path",{dur:.80}],
+   [5.80,"pop","#sender-house",{from:.88,spring:"soft"}],
+   [6.90,"draw","#alteration-path",{dur:.70}],
+   [6.90,"pop","#addressee-house",{from:.88,spring:"soft"}],
+   [8.46,"fade","#sender-label",{dur:.24}],
+   [9.16,"fade","#addressee-label",{dur:.24}]
+  ]
+ })
+ </script>
+</section>
