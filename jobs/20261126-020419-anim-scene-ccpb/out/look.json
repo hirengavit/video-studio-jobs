@@ -8,12 +8,5 @@
   "14.42"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s076",
-   "text": "Head Office: card जारी / service standard",
-   "t": 2.91
-  }
- ]
+ "warnings": []
 }
