@@ -8,12 +8,5 @@
   "9.55"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s135",
-   "text": "POD / POD",
-   "t": 7.76
-  }
- ]
+ "warnings": []
 }
