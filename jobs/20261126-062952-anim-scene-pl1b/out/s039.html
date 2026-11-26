@@ -15,9 +15,9 @@
     </g>
     <g id="seven" font-family="'Noto Sans Devanagari',Inter,sans-serif">
       <rect x="1220" y="300" width="540" height="400" rx="28" fill="#9e1b1b"/>
-      <rect x="1252" y="332" width="476" height="336" rx="18" fill="none" stroke="#b8403a" stroke-width="3"/>
+      <rect x="1248" y="332" width="484" height="336" rx="18" fill="none" stroke="#b8403a" stroke-width="3"/>
       <g fill="#fbf7ee"><circle cx="1262" cy="300" r="8"/><circle cx="1303" cy="300" r="8"/><circle cx="1345" cy="300" r="8"/><circle cx="1386" cy="300" r="8"/><circle cx="1428" cy="300" r="8"/><circle cx="1469" cy="300" r="8"/><circle cx="1511" cy="300" r="8"/><circle cx="1552" cy="300" r="8"/><circle cx="1594" cy="300" r="8"/><circle cx="1635" cy="300" r="8"/><circle cx="1677" cy="300" r="8"/><circle cx="1718" cy="300" r="8"/><circle cx="1262" cy="700" r="8"/><circle cx="1303" cy="700" r="8"/><circle cx="1345" cy="700" r="8"/><circle cx="1386" cy="700" r="8"/><circle cx="1428" cy="700" r="8"/><circle cx="1469" cy="700" r="8"/><circle cx="1511" cy="700" r="8"/><circle cx="1552" cy="700" r="8"/><circle cx="1594" cy="700" r="8"/><circle cx="1635" cy="700" r="8"/><circle cx="1677" cy="700" r="8"/><circle cx="1718" cy="700" r="8"/><circle cx="1220" cy="343" r="8"/><circle cx="1220" cy="386" r="8"/><circle cx="1220" cy="429" r="8"/><circle cx="1220" cy="472" r="8"/><circle cx="1220" cy="515" r="8"/><circle cx="1220" cy="558" r="8"/><circle cx="1220" cy="601" r="8"/><circle cx="1220" cy="644" r="8"/><circle cx="1760" cy="343" r="8"/><circle cx="1760" cy="386" r="8"/><circle cx="1760" cy="429" r="8"/><circle cx="1760" cy="472" r="8"/><circle cx="1760" cy="515" r="8"/><circle cx="1760" cy="558" r="8"/><circle cx="1760" cy="601" r="8"/><circle cx="1760" cy="644" r="8"/></g>
-      <text x="1490" y="529" class="hi" font-size="64" font-weight="830" text-anchor="middle" fill="#fffdfa">आम तौर पर 7 दिन</text>
+      <text x="1490" y="529" class="hi" font-size="58" font-weight="830" text-anchor="middle" fill="#fffdfa">आम तौर पर 7 दिन</text>
     </g>
     <text id="posting-date" x="1490" y="780" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="680" fill="#6f6a63">posting की तारीख से</text>
     <text id="undelivered-label" x="730" y="780" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">undelivered article का नियम</text>
@@ -26,10 +26,10 @@
   ({
     camera:[[0,{zoom:1}]],
     on:[
-      [0.60,'underline','#enquiry-failed',{dur:.42,color:'#f2b705',gap:11,width:6}],
+      [0.60,'underline','#enquiry-failed',{dur:.42,color:'#f2b705',gap:8,width:6}],
       [2.33,'stamp','#seven',{from:1.08,rot:-2,spring:'soft'}],
       [5.07,'fade','#posting-date',{dur:.26}],
-      [6.39,'strike','#posting-date',{dur:.40,color:'#4b4f58',width:6}],
+      [6.39,'strike','#posting-date',{dur:.40,color:'#4b4f58',width:6,dim:.76}],
       [8.63,'fade','#undelivered-label',{dur:.27}]
     ],
     update(t,section,$) {
@@ -39,8 +39,8 @@
       const strip=$('#enquiry-strip')[0];
       strip.setAttribute('y',777+83*k);
       strip.setAttribute('height',162-62*k);
-      $('#enquiry-term')[0].setAttribute('y',875+53*k);
-      $('#enquiry-failed')[0].setAttribute('y',875+53*k);
+      $('#enquiry-term')[0].setAttribute('y',875+47*k);
+      $('#enquiry-failed')[0].setAttribute('y',875+47*k);
     }
   })
   </script>
