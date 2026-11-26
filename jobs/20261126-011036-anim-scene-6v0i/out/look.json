@@ -8,12 +8,5 @@
   "9.99"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s066",
-   "text": "POSTERESTANTE / Postmaster: और पूछताछ",
-   "t": 8.11
-  }
- ]
+ "warnings": []
 }
