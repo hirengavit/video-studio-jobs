@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<g stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g id="display"><rect x="63" y="79" width="274" height="206" rx="12" fill="#2b2622"/><rect x="76" y="92" width="248" height="176" rx="5" fill="#f3ead6"/></g>
+<g id="code-lines"><path d="M102 130h88m-75 23h60m-73 23h83m-69 23h65m-80 23h56" fill="none" /></g>
+<g id="gear"><g transform="translate(248 179)"><rect x="-5" y="-33" width="10" height="17" rx="2" fill="#fbf7ee" transform="rotate(0)"/><rect x="-5" y="-33" width="10" height="17" rx="2" fill="#fbf7ee" transform="rotate(45)"/><rect x="-5" y="-33" width="10" height="17" rx="2" fill="#fbf7ee" transform="rotate(90)"/><rect x="-5" y="-33" width="10" height="17" rx="2" fill="#fbf7ee" transform="rotate(135)"/><rect x="-5" y="-33" width="10" height="17" rx="2" fill="#fbf7ee" transform="rotate(180)"/><rect x="-5" y="-33" width="10" height="17" rx="2" fill="#fbf7ee" transform="rotate(225)"/><rect x="-5" y="-33" width="10" height="17" rx="2" fill="#fbf7ee" transform="rotate(270)"/><rect x="-5" y="-33" width="10" height="17" rx="2" fill="#fbf7ee" transform="rotate(315)"/><circle cx="0" cy="0" r="24" fill="#fbf7ee"/><circle cx="0" cy="0" r="8" fill="#f3ead6"/></g></g>
+<g id="keyboard-base"><path d="M56 280h288l40 32q-5 9-21 9H37q-16 0-21-9Z" fill="#fbf7ee" /><path d="M164 304h72" fill="none" /></g>
+</g>
+<circle data-anchor="base" cx="200" cy="321" r="0"/>
+</svg>
