@@ -8,18 +8,5 @@
   "13.05"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "error",
-   "scene": "s022",
-   "message": "update(): list.setAttribute is not a function",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s022",
-   "text": "Surname के बिना सिर्फ पहला नाम (Christia / मिलान",
-   "t": 7.92
-  }
- ]
+ "warnings": []
 }
