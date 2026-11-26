@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s087" data-in="cut" data-section="PART 4 · BOOKING AND TRACKING" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="pair">
+ <g id="booking-card">
+  <rect x="140" y="220" width="760" height="640" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M170 220H870A30 30 0 0 1 900 250V380H140V250A30 30 0 0 1 170 220Z" fill="#9e1b1b"/>
+  <text x="520" y="295" text-anchor="middle" font-family="Inter, sans-serif" font-size="62" font-weight="790" fill="#ffffff">Online booking</text>
+  <text x="520" y="351" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="660" fill="#fff4df">ऑनलाइन बुकिंग</text>
+ </g>
+ <g id="tracking-card">
+  <rect x="1020" y="220" width="760" height="640" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M1050 220H1750A30 30 0 0 1 1780 250V380H1020V250A30 30 0 0 1 1050 220Z" fill="#f3ead6"/>
+  <text x="1400" y="295" text-anchor="middle" font-family="Inter, sans-serif" font-size="62" font-weight="790" fill="#2b2622">Online tracking</text>
+  <text x="1400" y="351" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="660" fill="#6f6a63">ऑनलाइन ट्रैकिंग</text>
+ </g>
+ <g id="separate-disc">
+  <circle cx="960" cy="540" r="44" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+  <text x="960" y="563" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="790" fill="#4b4f58">≠</text>
+ </g>
+ <text id="separate-caption" x="960" y="940" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="760" fill="#2b2622">दो अलग चीज़ें</text>
+ <text id="booking-meaning" x="520" y="489" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="44" font-weight="730" fill="#2b2622" text-anchor="middle">item स्वीकार कराने का इंतज़ाम</text>
+ <text id="tracking-meaning" x="1400" y="489" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="44" font-weight="730" fill="#2b2622" text-anchor="middle">booked item का सफ़र</text>
+ <use id="booking-counter-mini" href="piece:booking-counter" transform="translate(392 573) scale(0.4)"/>
+ <g id="tracking-route">
+  <path id="tracking-connector" d="M1156 725h92q25 0 43-20l41-46q18-20 43-20h261" fill="none" stroke="#b8403a" stroke-width="5" stroke-linecap="round" stroke-dasharray="5 15"/>
+  <circle cx="1156" cy="725" r="10" fill="#9e1b1b"/><circle cx="1636" cy="639" r="9" fill="#ffffff" stroke="#9e1b1b" stroke-width="4"/>
+ </g>
+ <use id="tracking-parcel" href="piece:speed-post-parcel" transform="translate(1420 578) scale(0.32)"/>
+</g>
+<g id="route">
+ <defs><clipPath id="air-only" clipPathUnits="userSpaceOnUse"><rect x="1070" y="225" width="372" height="150"/></clipPath></defs>
+ <text x="140" y="230" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="64" font-weight="810" fill="#2b2622" text-anchor="start">Transmission</text>
+ <text x="140" y="295" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="680" fill="#6f6a63" text-anchor="start">प्रेषण</text>
+ <g id="document-chip">
+  <rect x="140" y="400" width="520" height="100" rx="26" fill="#9e1b1b"/>
+  <text x="400" y="461" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="43" font-weight="770" fill="#ffffff" text-anchor="middle">Speed Post Document</text>
+ </g>
+ <g id="parcel-chip">
+  <rect x="140" y="540" width="520" height="100" rx="26" fill="#ead9a8"/>
+  <text x="400" y="601" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="43" font-weight="770" fill="#2b2622" text-anchor="middle">Speed Post Parcel</text>
+ </g>
+ <path id="air-arc" d="M760 570Q1260 90 1760 570" fill="none" stroke="#b8403a" stroke-width="5" stroke-linecap="round" stroke-dasharray="13 14"/>
+ <g id="air-plane"><g clip-path="url(#air-only)"><use href="piece:transport-icons" transform="translate(265 149)"/></g></g>
+ <text id="air-caption" x="1590" y="295" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="44" font-weight="750" fill="#2b2622" text-anchor="middle">हवाई रास्ता</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,'#pair'],[7.64,'#route']],
+ on:[
+  [0.78,'words','#booking-meaning',{gap:0.45,dist:9}],
+  [1.32,'fade','#booking-counter-mini',{dur:0.32}],
+  [3.70,'words','#tracking-meaning',{gap:0.52,dist:9}],
+  [3.70,'fade','#tracking-route',{dur:0.35}],
+  [3.70,'draw','#tracking-connector',{dur:0.72}],
+  [4.44,'pop','#tracking-parcel',{from:0.9,spring:'soft'}],
+  [9.02,'pop','#document-chip',{from:0.92,spring:'soft'}],
+  [10.72,'pop','#parcel-chip',{from:0.92,spring:'soft'}],
+  [11.44,'reveal','#air-arc',{from:'left',dur:0.65}],
+  [11.44,'fade','#air-plane',{dur:0.23}],
+  [11.44,'fade','#air-caption',{dur:0.27}]
+ ]
+}
+</script>
+</section>
