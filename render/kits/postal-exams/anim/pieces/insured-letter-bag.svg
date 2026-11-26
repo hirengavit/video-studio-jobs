@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 440" width="360" height="440" fill="none">
+  <title>Insured letter bag</title>
+  <g id="bag">
+    <path d="M150 132 C108 150 52 200 42 280 C34 344 52 412 96 422 C150 432 210 432 264 422 C308 412 326 344 318 280 C308 200 252 150 210 132 Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M150 160 C126 200 112 260 116 330" stroke="#6f6a63" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M210 240 C224 270 250 300 246 330" stroke="#6f6a63" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M86 402 C146 414 214 414 274 402" stroke="#6f6a63" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="2 9"/>
+  </g>
+  <g id="neck">
+    <path d="M152 120 C140 96 112 78 112 56 C130 48 146 62 160 50 C170 42 190 42 200 50 C214 62 230 48 248 56 C248 78 220 96 208 120 Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M160 62 C164 84 166 100 168 116" stroke="#2b2622" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M180 56 V116" stroke="#2b2622" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M200 62 C196 84 194 100 192 116" stroke="#2b2622" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <g id="cord">
+    <path d="M146 118 C160 110 200 110 214 118 L214 136 C200 128 160 128 146 136 Z" fill="#8f5f37" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M208 132 C222 148 234 160 248 172" stroke="#2b2622" stroke-width="3" stroke-linecap="round"/>
+    <path d="M196 134 C200 154 196 166 190 178" stroke="#2b2622" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <g id="seal">
+    <g transform="translate(186 194) scale(0.567)">
+      <path d="M28.05 7.25 Q25.1 14.5 20.4 20.9 Q15.75 27.3 7.9 27.9 Q0 28.5 -7.6 27.45 Q-15.25 26.4 -20.4 20.6 Q-25.5 14.75 -28.25 7.4 Q-31 0 -27.85 -7.1 Q-24.7 -14.25 -19.85 -20.1 Q-15 -26 -7.5 -28.75 Q0 -31.5 7.25 -28.3 Q14.5 -25.1 20.25 -20.05 Q26 -15 28.5 -7.5 Q31 0 28.05 7.25 Z" fill="#9e1b1b" stroke="#2b2622" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+      <circle r="20" stroke="#7d1414" stroke-width="2" vector-effect="non-scaling-stroke"/>
+      <path d="M0 -12.6 L3 -5.2 L10.9 -6.3 L6 0 L10.9 6.3 L3 5.2 L0 12.6 L-3 5.2 L-10.9 6.3 L-6 0 L-10.9 -6.3 L-3 -5.2 Z" fill="#7d1414"/>
+    </g>
+  </g>
+  <g id="label">
+    <g transform="rotate(6 250 170)">
+      <rect x="236" y="164" width="110" height="60" rx="5" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="249" cy="176" r="4" fill="#f3ead6" stroke="#2b2622" stroke-width="2"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="180" cy="426" r="0"/>
+  <circle data-anchor="top" cx="180" cy="44" r="0"/>
+  <circle data-anchor="mouth" cx="180" cy="60" r="0"/>
+</svg>
