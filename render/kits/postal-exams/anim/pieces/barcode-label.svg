@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+<rect id="sticker" x="2" y="2" width="596" height="196" rx="10" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+<g id="barcode">
+<line x1="36" y1="66" x2="564" y2="66" stroke="#2b2622" stroke-width="84" stroke-linecap="butt" stroke-dasharray="3 4 7 3 3 6 9 4 5 3 3 6 7 4 3 3 9 6 5 3 3 4 7 6 3 3 5 4 9 3 3 6"/>
+</g>
+<g id="boxes" fill="#ffffff" stroke="#6f6a63" stroke-width="2.5">
+<rect id="box-1" x="30" y="128" width="36" height="48" rx="4"/>
+<rect id="box-2" x="72" y="128" width="36" height="48" rx="4"/>
+<rect id="box-3" x="114" y="128" width="36" height="48" rx="4"/>
+<rect id="box-4" x="156" y="128" width="36" height="48" rx="4"/>
+<rect id="box-5" x="198" y="128" width="36" height="48" rx="4"/>
+<rect id="box-6" x="240" y="128" width="36" height="48" rx="4"/>
+<rect id="box-7" x="282" y="128" width="36" height="48" rx="4"/>
+<rect id="box-8" x="324" y="128" width="36" height="48" rx="4"/>
+<rect id="box-9" x="366" y="128" width="36" height="48" rx="4"/>
+<rect id="box-10" x="408" y="128" width="36" height="48" rx="4"/>
+<rect id="box-11" x="450" y="128" width="36" height="48" rx="4"/>
+<rect id="box-12" x="492" y="128" width="36" height="48" rx="4"/>
+<rect id="box-13" x="534" y="128" width="36" height="48" rx="4"/>
+</g>
+<circle data-anchor="base" cx="300" cy="199" r="0"/>
+</svg>
