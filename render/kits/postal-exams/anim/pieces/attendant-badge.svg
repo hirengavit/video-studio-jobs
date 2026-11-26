@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<circle id="badge" cx="200" cy="200" r="100" fill="#9e1b1b"/>
+<circle id="rim" cx="200" cy="200" r="86" fill="none" stroke="#f3ead6" stroke-width="2"/>
+<g id="letter-box-symbol" fill="#fff" stroke="none"><path d="M156 178a44 44 0 0 1 88 0Zm8 6h72v64h-72Zm-6 68h84v10h-84Z"/><rect x="176" y="192" width="48" height="8" rx="4" fill="#9e1b1b"/><rect x="184" y="213" width="32" height="16" rx="3" fill="#9e1b1b"/></g>
+<circle data-anchor="base" cx="200" cy="300" r="0" fill="none" stroke="none"/>
+</svg>
