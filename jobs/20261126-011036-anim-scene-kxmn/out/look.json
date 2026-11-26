@@ -8,12 +8,5 @@
   "10.15"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s173",
-   "text": "Poste Restante: strangers, travellers · ",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
