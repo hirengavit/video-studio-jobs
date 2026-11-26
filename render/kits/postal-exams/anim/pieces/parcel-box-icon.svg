@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" width="360" height="280">
+  <!-- Flat kraft parcel, string cross with a bow on the lid, blank white label on the front (x 48–132, y 200–250). -->
+  <g id="parcel" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="box">
+      <path id="side" d="M270,100 L330,40 V206 L270,266 Z" fill="#ead9a8"/>
+      <path id="front" d="M30,100 H270 V266 H30 Z" fill="#f3ead6"/>
+    </g>
+    <path id="lid" d="M30,100 L90,40 H330 L270,100 Z" fill="#fbf7ee"/>
+    <g id="string" fill="none">
+      <path d="M150,100 V266"/>
+      <path d="M30,183 H270 L330,123"/>
+      <path d="M150,100 L210,40"/>
+      <path d="M60,70 H300"/>
+    </g>
+    <rect id="label" x="48" y="200" width="84" height="50" rx="4" fill="#ffffff"/>
+    <g id="bow">
+      <path d="M180,70 C160,46 136,54 148,72 C155,82 170,77 180,70 Z" fill="#f3ead6"/>
+      <path d="M180,70 C200,46 224,54 212,72 C205,82 190,77 180,70 Z" fill="#f3ead6"/>
+      <path d="M180,70 L166,94 M180,70 L196,92" fill="none"/>
+      <circle cx="180" cy="70" r="5" fill="#2b2622"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="180" cy="267.5" r="0"/>
+  <circle data-anchor="top" cx="180" cy="38.5" r="0"/>
+</svg>
