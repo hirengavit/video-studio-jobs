@@ -35,8 +35,7 @@
   </g>
   <text id="registration-term" x="1410" y="772" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="770" fill="#2b2622">addressee-specific</text>
   <text id="recipient-first" x="1410" y="832" text-anchor="middle" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="43" font-weight="670" fill="#2b2622">addressee या उसके</text>
-  <text x="1180" y="890" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="43" font-weight="670" fill="#2b2622"><tspan id="recipient-auth" x="1180">authorised</tspan><tspan id="recipient-person" x="1409" font-family="'Noto Sans Devanagari', Inter, sans-serif">व्यक्ति</tspan><tspan id="recipient-to" x="1540" font-family="'Noto Sans Devanagari', Inter, sans-serif">को</tspan><tspan id="recipient-only" x="1596" font-family="'Noto Sans Devanagari', Inter, sans-serif">ही</tspan></text>
-  <path id="only-line" d="M1540 903H1642" fill="none" stroke="#f2b705" stroke-width="7" stroke-linecap="round"/>
+  <text id="recipient-second" x="1410" y="890" text-anchor="middle" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="43" font-weight="670" fill="#2b2622">authorised व्यक्ति को ही</text>
 </svg>
 <script type="text/scene">
 {
@@ -46,11 +45,8 @@
     [2.50, 'pop', '#registration-term', {from:0.91, spring:'soft'}],
     [4.62, 'words', '#recipient-first', {gap:0.37, dist:9}],
     [6.42, 'draw', '#registration-id', {dur:0.57}],
-    [6.42, 'fade', '#recipient-auth', {dur:0.15}],
-    [6.92, 'fade', '#recipient-person', {dur:0.15}],
-    [7.32, 'fade', '#recipient-to', {dur:0.13}],
-    [7.54, 'fade', '#recipient-only', {dur:0.13}],
-    [7.54, 'draw', '#only-line', {dur:0.29}]
+    [6.42, 'words', '#recipient-second', {gap:0.37, dist:9}],
+    [7.54, 'underline', '#recipient-second', {words:'को ही', color:'#f2b705', width:7, dur:0.29}]
   ]
 }
 </script>
