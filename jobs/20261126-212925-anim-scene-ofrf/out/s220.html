@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s220" data-in="cut" data-section="PART 10 · COMPENSATION" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="who">
+  <text id="who-heading" x="140" y="228" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="810" fill="#9e1b1b">Complaint कौन कर सकता है?</text>
+  <g id="who-sender">
+    <rect id="sender-card-outline" x="160" y="290" width="700" height="330" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <g id="sender-envelope" transform="translate(385 334)" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="0" y="14" width="180" height="115" rx="12" fill="#f3ead6"/>
+      <path d="m8 25 82 63 82-63M7 119l51-54m115 54-51-54"/>
+      <path d="M167 72h74m-22-22 22 22-22 22" stroke="#9e1b1b" stroke-width="8"/>
+    </g>
+    <text id="sender-en" x="510" y="532" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="810" fill="#2b2622">Sender</text>
+    <text id="sender-hi" x="510" y="585" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="680" fill="#6f6a63">भेजने वाला</text>
+  </g>
+  <g id="who-addressee">
+    <rect id="addressee-card-outline" x="1060" y="290" width="700" height="330" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <g id="addressee-house" transform="translate(1300 337)" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M34 56v78h151V56M19 65l91-63 91 63" fill="#f3ead6"/>
+      <path d="M89 134V85h40v49M47 67h29v27H47zM144 67h29v27h-29z" fill="#fff"/>
+      <path d="M19 65l91-63 91 63" stroke="#9e1b1b" stroke-width="8"/>
+    </g>
+    <text id="addressee-en" x="1410" y="532" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="810" fill="#2b2622">Addressee</text>
+    <text id="addressee-hi" x="1410" y="585" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="680" fill="#6f6a63">पाने वाला</text>
+  </g>
+  <g id="compensation-strip">
+    <rect x="140" y="690" width="1640" height="260" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text id="compensation-word" x="200" y="791" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="800" fill="#2b2622">Compensation</text>
+    <path id="to-sender-arrow" d="M585 771H754m-22-17 22 17-22 17" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="sender-pill">
+      <rect x="795" y="730" width="650" height="85" rx="40" fill="#e2f1e5" stroke="#2e7d4f" stroke-width="3"/>
+      <text id="sender-pill-label" x="1120" y="784" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="780" fill="#235d3c">आम तौर पर Sender को</text>
+    </g>
+    <g id="transfer-pill">
+      <rect x="795" y="839" width="875" height="75" rx="37" fill="#eeecea"/>
+      <text id="transfer-pill-label" x="1232.5" y="888" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="710" fill="#4b4f58">हक transfer करने के प्रावधान भी</text>
+    </g>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [0.66,'fade','#who-addressee',{dur:.22}],
+    [0.66,'pop','#addressee-en',{from:.92,spring:'fast'}],
+    [1.16,'fade','#addressee-hi',{dur:.24}],
+    [2.16,'fade','#compensation-strip',{dur:.27}],
+    [4.04,'draw','#to-sender-arrow',{dur:.35}],
+    [4.04,'pop','#sender-pill',{from:.93,spring:'fast'}],
+    [4.04,'color','#sender-card-outline',{attr:'stroke',to:'#2e7d4f',dur:.28}],
+    [6.00,'fade','#transfer-pill',{dur:.32}]
+  ]
+}
+</script>
+</section>
