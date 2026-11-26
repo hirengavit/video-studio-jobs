@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s080" data-in="wipe" data-in-dur="0.45" data-section="PART 4 · SENDER'S RECALL" data-series="DELIVERY RULES">
+ <svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <defs><filter id="recall-grey" color-interpolation-filters="sRGB"><feColorMatrix type="saturate" values="0"/></filter></defs>
+  <g id="recall-board">
+   <text x="201" y="205" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="760" fill="#6f6a63">पहले दो शब्द</text>
+   <g id="recall-term-card">
+    <rect x="196" y="226" width="808" height="324" rx="23" fill="#9e1b1b"/>
+    <g fill="#fbf7ee" aria-hidden="true"><circle cx="217" cy="237" r="7"/><circle cx="217" cy="538" r="7"/><circle cx="272" cy="237" r="7"/><circle cx="272" cy="538" r="7"/><circle cx="327" cy="237" r="7"/><circle cx="327" cy="538" r="7"/><circle cx="382" cy="237" r="7"/><circle cx="382" cy="538" r="7"/><circle cx="437" cy="237" r="7"/><circle cx="437" cy="538" r="7"/><circle cx="492" cy="237" r="7"/><circle cx="492" cy="538" r="7"/><circle cx="547" cy="237" r="7"/><circle cx="547" cy="538" r="7"/><circle cx="602" cy="237" r="7"/><circle cx="602" cy="538" r="7"/><circle cx="657" cy="237" r="7"/><circle cx="657" cy="538" r="7"/><circle cx="712" cy="237" r="7"/><circle cx="712" cy="538" r="7"/><circle cx="767" cy="237" r="7"/><circle cx="767" cy="538" r="7"/><circle cx="822" cy="237" r="7"/><circle cx="822" cy="538" r="7"/><circle cx="877" cy="237" r="7"/><circle cx="877" cy="538" r="7"/><circle cx="932" cy="237" r="7"/><circle cx="932" cy="538" r="7"/><circle cx="987" cy="237" r="7"/><circle cx="987" cy="538" r="7"/><circle cx="204" cy="272" r="7"/><circle cx="996" cy="272" r="7"/><circle cx="204" cy="329" r="7"/><circle cx="996" cy="329" r="7"/><circle cx="204" cy="386" r="7"/><circle cx="996" cy="386" r="7"/><circle cx="204" cy="443" r="7"/><circle cx="996" cy="443" r="7"/><circle cx="204" cy="500" r="7"/><circle cx="996" cy="500" r="7"/></g>
+    <text id="recall-term-en" x="600" y="392" text-anchor="middle" font-family="Inter,sans-serif" font-size="110" font-weight="820" fill="#ffffff">Recall</text>
+    <text id="recall-term-hi" x="600" y="485" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="720" fill="#fde9a6">वापस मंगाना</text>
+   </g>
+   <g id="recall-route">
+    <use id="recall-letter" href="piece:domestic-envelope" transform="translate(1090 365) scale(.70)"/>
+    <use id="sender-house" href="piece:house-icon" transform="translate(1037 218)"/>
+    <g id="addressee-house" opacity=".73" filter="url(#recall-grey)"><use href="piece:house-icon" transform="translate(1585 218)"/></g>
+    <text id="recall-sender-label" x="1187" y="227" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="730" fill="#2b2622">Sender</text>
+    <text id="recall-addressee-label" x="1735" y="227" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="690" fill="#6f6a63">Addressee</text>
+    <g id="usual-route" fill="none" stroke="#777580" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+     <path d="M1623 448H1724" stroke-dasharray="13 10"/>
+     <path d="M1705 434l20 14-20 14"/>
+    </g>
+    <path id="recall-left" d="M1320 526C1256 563 1190 550 1212 464M1195 485l17-21 8 27" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+   </g>
+   <g id="recall-meaning">
+    <rect x="200" y="792" width="1520" height="101" rx="22" fill="#f3ead6"/>
+    <text id="recall-definition" x="960" y="860" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="730" fill="#2b2622">addressee तक भेजने के बजाय, वापस लेने की request</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ {
+  on: [
+   [1.60,'slide','#recall-term-card',{from:'left',dist:160,spring:'soft'}],
+   [2.10,'fade','#recall-term-hi',{dur:0.25}],
+   [5.98,'draw','#recall-left',{dur:0.90}],
+   [7.88,'reveal','#recall-meaning',{from:'left',dur:0.32}],
+   [7.99,'highlight','#recall-definition',{words:'request',color:'#f2b705',opacity:0.38,dur:0.42}]
+  ],
+  update(t,section,$) {
+    const u=Math.max(0,Math.min(1,(t-3.76)/.66));
+    const p=Math.sin(Math.PI*u);
+    $("#usual-route")[0].setAttribute("stroke-width",String(5+5*p));
+    $("#usual-route")[0].setAttribute("stroke",p>.30?"#4b4f58":"#777580");
+  }
+ }
+ </script>
+</section>
