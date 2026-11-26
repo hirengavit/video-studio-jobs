@@ -8,12 +8,5 @@
   "10.75"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s017",
-   "text": "POSTE / To be kept till called for",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
