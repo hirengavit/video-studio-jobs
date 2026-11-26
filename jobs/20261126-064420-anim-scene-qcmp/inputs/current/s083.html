@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s083" data-section="PART 4 · SENDER'S RECALL" data-series="DELIVERY RULES" data-in="cut" data-duration="10.67" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" fill="#2b2622">
+<g id="item">
+<text id="question" class="hi" x="200" y="214" fill="#565253" font-size="48" font-weight="650">ये सुविधा किसके लिए</text>
+<g id="accountable-term">
+<rect x="200" y="232" width="1520" height="112" rx="22" fill="#f3ead6" stroke="#c9ad7e" stroke-width="3"/>
+<text x="240" y="310" font-family="Georgia, serif" font-size="72" font-weight="700" textLength="1004" lengthAdjust="spacingAndGlyphs">Accountable domestic item</text>
+<path d="M1280 256v62" stroke="#c9ad7e" stroke-width="3"/>
+<text class="hi" x="1312" y="309" font-size="44" font-weight="680">जवाबदेह देशी डाक</text>
+</g>
+<g id="booking-card">
+<rect x="200" y="380" width="700" height="580" rx="26" fill="#fffdfa" stroke="#c9ad7e" stroke-width="3"/>
+<use href="piece:receipt-slip" transform="translate(394 403) scale(1.2)"/>
+<text id="receipt-caption" x="550" y="922" text-anchor="middle" font-size="54" font-weight="760">booking receipt</text>
+</g>
+<g id="delivery-card">
+<rect x="1020" y="380" width="700" height="580" rx="26" fill="#fffdfa" stroke="#c9ad7e" stroke-width="3"/>
+<g id="delivery-envelope">
+<use href="piece:domestic-envelope" transform="translate(1085 452) scale(.75)"/>
+<use href="piece:postmark-ring" transform="translate(1479 479) scale(.30)"/>
+<text x="1512" y="511" font-size="8" font-weight="760" text-anchor="middle" fill="#9e1b1b">POSTE</text>
+<text x="1512" y="523" font-size="8" font-weight="760" text-anchor="middle" fill="#9e1b1b">RESTANTE</text>
+</g>
+<path id="signature-ink" d="M1247 833h247" stroke="#a5a1a0" stroke-width="3" stroke-linecap="round"/>
+<path id="signature" transform="translate(0 47)" d="M1259 774c15 6 55-58 70-56 20 3-19 64-6 65 11 1 28-46 38-44 10 2-5 28 2 31 8 3 17-25 27-24 9 1-4 22 2 24 12 4 26-25 32-21 6 4-3 15 10 13 14-2 26-10 41-8" fill="none" stroke="#304e74" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="signature-caption" class="hi" x="1370" y="922" text-anchor="middle" font-size="54" font-weight="760">delivery पर signature</text>
+</g>
+<g id="no-consent">
+ <rect x="410" y="870" width="1100" height="100" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+ <text x="455" y="939" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="53" font-weight="750" fill="#2b2622">Addressee की सहमति</text>
+ <g id="consent-verdict">
+  <path d="M1118 903l29 29m0-29-29 29" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+  <text x="1190" y="939" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="53" font-weight="800" fill="#4b4f58">ज़रूरी नहीं</text>
+ </g>
+</g>
+</g>
+<g id="req">
+ <text x="960" y="225" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="790" fill="#9e1b1b">Request कैसे?</text>
+ <g id="request-person">
+  <rect x="200" y="314" width="690" height="594" rx="28" fill="#f3ead6"/>
+  <use href="piece:person-icon" transform="translate(435 374) scale(1.32)"/>
+  <text x="545" y="781" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="820" fill="#2b2622">Sender</text>
+  <text id="request-authority" x="545" y="853" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="700" fill="#2b2622">या ज़रूरी authority वाला व्यक्ति</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots:[[0,"#item"],[4.86,"#req"]],
+  on:[
+    [1.98,"out","#receipt-caption,#signature-caption",{dur:.13}],
+    [2.14,"fade","#no-consent",{dur:.23}],
+    [3.64,"fade","#consent-verdict",{dur:.23}],
+    [6.91,"pop","#request-person",{from:.93,spring:"soft"}],
+    [8.22,"fade","#request-authority",{dur:.22}],
+    [8.72,"highlight","#request-authority",{words:"authority",color:"#f2b705",opacity:.39,dur:.43}]
+  ]
+}
+</script>
+</section>
