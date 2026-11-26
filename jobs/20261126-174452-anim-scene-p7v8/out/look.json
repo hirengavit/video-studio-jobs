@@ -1,0 +1,43 @@
+{
+ "moments": [
+  "0.30",
+  "1.76",
+  "3.53",
+  "5.29",
+  "7.06",
+  "8.67"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s024",
+   "message": "fade #w-speed: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s024",
+   "message": "fade #w-post: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s024",
+   "message": "fade #w-ki: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s024",
+   "message": "fade #w-do: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s024",
+   "message": "fade #w-classes: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
+  }
+ ]
+}
