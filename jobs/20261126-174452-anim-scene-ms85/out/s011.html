@@ -1,0 +1,69 @@
+<section class="vs-scene" id="s011" data-section="PART 1 · WHAT IT IS" data-series="PRODUCTS" data-in="cut">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <defs><clipPath id="road-only"><rect x="755" y="425" width="410" height="234"/></clipPath></defs>
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text id="heading" x="140" y="250" font-family="Inter, sans-serif" font-size="64" font-weight="820" fill="#9e1b1b">accountable service</text>
+    <text id="subtitle" x="140" y="310" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#6f6a63">हर item का record</text>
+    <g id="counter"><use href="piece:booking-counter" transform="translate(172 421) scale(0.6)"/></g>
+    <text id="booking-label" x="400" y="740" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="780" fill="#2b2622">Booking</text>
+    <g id="receipt"><use href="piece:receipt-slip" transform="translate(510 468) scale(0.5)"/></g>
+    <text id="receipt-label" x="400" y="790" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="630" fill="#6f6a63">sender को receipt</text>
+    <path id="arrow1" d="M642 554 H742 M722 535 L742 554 L722 573" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="journey">
+      <g clip-path="url(#road-only)"><use href="piece:transport-icons" transform="translate(267 326) scale(1.16)"/></g>
+      <text x="960" y="740" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="780" fill="#2b2622">सफ़र</text>
+    </g>
+    <path id="arrow2" d="M1178 554 H1292 M1272 535 L1292 554 L1272 573" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="delivery">
+      <g stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1390 528 L1520 427 L1650 528" fill="none" stroke="#9e1b1b" stroke-width="16"/>
+        <path d="M1407 514 L1520 429 L1633 514 V662 H1407 Z" fill="#f3ead6"/>
+        <path d="M1391 528 L1520 429 L1649 528" fill="none"/>
+        <path d="M1483 662 V550 Q1483 536 1497 536 H1543 Q1557 536 1557 550 V662" fill="#9e1b1b"/>
+        <path d="M1469 662 H1571 M1383 666 H1657" fill="none"/>
+        <rect x="1425" y="543" width="37" height="42" rx="4" fill="#fff"/>
+        <path d="M1443.5 544 V585 M1426 564 H1461" fill="none" stroke-width="3"/>
+        <rect x="1578" y="543" width="37" height="42" rx="4" fill="#fff"/>
+        <path d="M1596.5 544 V585 M1579 564 H1614" fill="none" stroke-width="3"/>
+        <path d="M1540 601 h.1" fill="none" stroke="#fde9a6" stroke-width="8"/>
+      </g>
+      <text x="1520" y="740" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="780" fill="#2b2622">delivery</text>
+    </g>
+    <g id="record-surface">
+      <rect x="200" y="820" width="1520" height="80" rx="22" fill="#f3ead6"/>
+    </g>
+    <path id="record-rule" d="M423 860 H1681" stroke="#2b2622" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <text id="record-label" x="228" y="878" font-family="Inter, sans-serif" font-size="48" font-weight="820" fill="#2b2622">records</text>
+    <g id="ticks" fill="#fbf7ee" stroke="#e2d3b3" stroke-width="2">
+      <circle id="mark1" cx="440" cy="860" r="22"/><circle id="mark2" cx="960" cy="860" r="22"/><circle id="mark3" cx="1520" cy="860" r="22"/>
+      <path id="tick1" d="M430 860 l7 7 14 -15" fill="none" stroke="#2e7d4f" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="tick2" d="M950 860 l7 7 14 -15" fill="none" stroke="#2e7d4f" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="tick3" d="M1510 860 l7 7 14 -15" fill="none" stroke="#2e7d4f" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.60, 'highlight', '#heading', {words: 'accountable', color: '#f2b705', opacity: 0.32, dur: 0.42, pad: 8}],
+      [0.60, 'fade', '#subtitle', {dur: 0.28}],
+      [3.18, 'reveal', '#counter', {from: 'left', dur: 0.39}],
+      [3.18, 'fade', '#booking-label', {dur: 0.28}],
+      [4.46, 'pop', '#receipt', {from: 0.82, spring: 'soft'}],
+      [4.46, 'fade', '#receipt-label', {dur: 0.27}],
+      [5.90, 'draw', '#arrow1', {dur: 0.30}],
+      [5.90, 'pop', '#journey', {from: 0.93, spring: 'soft'}],
+      [6.78, 'draw', '#arrow2', {dur: 0.30}],
+      [6.78, 'pop', '#delivery', {from: 0.93, spring: 'soft'}],
+      [7.84, 'fade', '#record-surface', {dur: 0.20}],
+      [7.84, 'draw', '#record-rule', {dur: 0.45}],
+      [7.84, 'fade', '#record-label', {dur: 0.26}],
+      [8.12, 'fade', '#mark1', {dur: 0.16}],
+      [8.12, 'draw', '#tick1', {dur: 0.21}],
+      [8.32, 'fade', '#mark2', {dur: 0.16}],
+      [8.32, 'draw', '#tick2', {dur: 0.21}],
+      [8.52, 'fade', '#mark3', {dur: 0.16}],
+      [8.52, 'draw', '#tick3', {dur: 0.21}],
+    ],
+  }
+  </script>
+</section>
