@@ -7,6 +7,7 @@
         <g id="facility-1"><circle cx="137" cy="230" r="32" fill="#e8e0d6"/><text x="137" y="243" text-anchor="middle" font-size="36" font-weight="770" fill="#6f6a63">1</text></g>
       <g id="facility-2"><circle cx="137" cy="400" r="32" fill="#9e1b1b"/><text x="137" y="413" text-anchor="middle" font-size="36" font-weight="770" fill="#ffffff">2</text></g>
       <g id="facility-3"><circle cx="137" cy="570" r="32" fill="#e8e0d6"/><text x="137" y="583" text-anchor="middle" font-size="36" font-weight="770" fill="#6f6a63">3</text></g>
+      <g id="facility-3-active"><circle cx="137" cy="570" r="32" fill="#9e1b1b"/><text x="137" y="583" text-anchor="middle" font-size="36" font-weight="770" fill="#ffffff">3</text></g>
       <g id="facility-4"><circle cx="137" cy="740" r="32" fill="#e8e0d6"/><text x="137" y="753" text-anchor="middle" font-size="36" font-weight="770" fill="#6f6a63">4</text></g>
       <g id="facility-5"><circle cx="137" cy="910" r="32" fill="#e8e0d6"/><text x="137" y="923" text-anchor="middle" font-size="36" font-weight="770" fill="#6f6a63">5</text></g>
         <text id="pickup-en" x="193" y="242" font-size="48" font-weight="770" fill="#6f6a63">Free pickup</text>
@@ -64,16 +65,15 @@
   shots:[[0,'#d2'],[1.18,'#d3'],[5.20,'#d4']],
   on:[
     [0,'strike','#counter-pay',{color:'#4b4f58',dur:0.01}],
-    [0.20,'color','#facility-2 circle',{to:'#e8e0d6',dur:0.24}],
-    [0.20,'color','#facility-2 text,#bnpl-en,#bnpl-pill text',{to:'#6f6a63',dur:0.24}],
-    [1.18,'color','#facility-3 circle',{to:'#9e1b1b',dur:0.24}],
-    [1.18,'color','#facility-3 text',{to:'#ffffff',dur:0.24}],
+    [0.20,'color','#facility-2 circle',{to:'#e8e0d6',dur:0.01}],
+    [0.20,'color','#facility-2 text,#bnpl-en,#bnpl-pill text',{to:'#6f6a63',dur:0.01}],
+    [1.18,'fade','#facility-3-active',{dur:0.01}],
     [1.18,'fade','#facility-3-label',{dur:0.25}],
     [2.66,'words','#eligible-customers',{gap:0.44,dist:14}],
-    [5.20,'color','#facility-3 circle',{to:'#e8e0d6',dur:0.24}],
-    [5.20,'color','#facility-3-label text,#facility-3 text',{to:'#6f6a63',dur:0.24}],
-    [6.12,'color','#facility-4 circle',{to:'#9e1b1b',dur:0.24}],
-    [6.12,'color','#facility-4 text',{to:'#ffffff',dur:0.24}],
+    [5.20,'out','#facility-3-active',{dur:0.01,scale:1}],
+    [5.20,'color','#facility-3-label text',{to:'#6f6a63',dur:0.01}],
+    [6.12,'color','#facility-4 circle',{to:'#9e1b1b',dur:0.01}],
+    [6.12,'color','#facility-4 text',{to:'#ffffff',dur:0.01}],
     [6.12,'fade','#naf-en',{dur:0.25}],
     [6.64,'fade','#naf-hi',{dur:0.25}],
     [8.28,'words','#corporate-customer',{gap:0.43,dist:14}],
