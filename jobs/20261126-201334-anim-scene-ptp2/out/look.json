@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s061",
-   "message": "type: option \"dur\" isn't used (it takes: cps)",
-   "t": 0.3
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s061",
    "message": "a card is mostly empty at 2.2 s: bring its items in sooner, or size it for what it holds now",
