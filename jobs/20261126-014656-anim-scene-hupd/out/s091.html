@@ -1,0 +1,68 @@
+<section class="vs-scene" id="s091" data-in="cut" data-duration="10.56" data-section="PART 4 · SENDER'S RECALL" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="An item already out for delivery is still undelivered, but a sender recall request can no longer be accepted">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="route">
+   <text id="recall-route-heading" x="160" y="211" class="hi" font-size="56" font-weight="850" fill="#9e1b1b">एक बारीक बात</text>
+   <path id="delivery-road" d="M160 641H1760" stroke="#e1cca5" stroke-width="9" stroke-linecap="round"/>
+   <path d="M997 641h95m-25-18 25 18-25 18" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+   <g id="route-office">
+    <use href="piece:post-office-icon" transform="translate(218 379) scale(.95)"/>
+    <text x="370" y="709" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">Post Office</text>
+   </g>
+   <g id="route-home">
+    <use href="piece:house-icon" transform="translate(1435 359) scale(.97)"/>
+    <text x="1580" y="709" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">Addressee</text>
+   </g>
+   <g id="route-postman">
+    <image href="photo:postman-delivering-parcel-cutout" x="858" y="220" width="450" height="420" preserveAspectRatio="xMidYMid meet"/>
+   </g>
+   <g id="not-delivered">
+    <rect x="1361" y="277" width="437" height="83" rx="24" fill="#eeecee"/>
+    <text x="1579.5" y="335" text-anchor="middle" class="hi" font-size="48" font-weight="800" fill="#4b4f58">अभी deliver नहीं</text>
+   </g>
+   <g id="undelivered-label">
+    <rect x="837" y="671" width="493" height="78" rx="23" fill="#eeecee"/>
+    <text x="1083.5" y="726" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="820" fill="#4b4f58">undelivered</text>
+   </g>
+   <g id="recall-denied-band">
+    <rect x="160" y="858" width="1600" height="112" rx="26" fill="#fde9a6" stroke="#ead9a8" stroke-width="3"/>
+    <text x="960" y="931" text-anchor="middle" class="hi" font-size="52" font-weight="850" fill="#67231a">फिर भी request नहीं</text>
+   </g>
+   <path id="recall-stop-line" d="M700 432V647" stroke="#9e1b1b" stroke-width="11" stroke-linecap="round"/>
+   <g id="recall-stop">
+    <rect x="615" y="356" width="170" height="76" rx="14" fill="#9e1b1b"/>
+    <text x="700" y="410" text-anchor="middle" font-family="Inter,sans-serif" font-size="47" font-weight="860" fill="#fff">STOP</text>
+    <rect x="460" y="764" width="480" height="69" rx="18" fill="#fff" stroke="#9e1b1b" stroke-width="3"/>
+    <text x="700" y="813" text-anchor="middle" class="hi" font-size="39" font-weight="830" fill="#9e1b1b">Out for delivery = रोक शुरू</text>
+   </g>
+   <text id="delivery-half-truth" x="1010" y="211" text-anchor="middle" class="hi" font-size="52" font-weight="810" fill="#2b2622">“delivery तक recall हमेशा”</text>
+   <text id="half-truth-label" x="1530" y="211" text-anchor="middle" class="hi" font-size="48" font-weight="820" fill="#4b4f58">अधूरी बात</text>
+  </g>
+  <g id="sum">
+   <text id="sum-heading" x="200" y="225" class="hi" font-size="56" font-weight="850" fill="#9e1b1b">Fee का हिसाब</text>
+   <g id="sum-envelope-1"><use href="piece:domestic-envelope" transform="translate(180 300) scale(.5)"/></g>
+   <g id="sum-envelope-2"><use href="piece:domestic-envelope" transform="translate(573 300) scale(.5)"/></g>
+   <g id="sum-envelope-3"><use href="piece:domestic-envelope" transform="translate(967 300) scale(.5)"/></g>
+   <g id="sum-envelope-4"><use href="piece:domestic-envelope" transform="translate(1360 300) scale(.5)"/></g>
+   <g id="sum-card">
+    <rect x="460" y="620" width="1000" height="320" rx="30" fill="#fff8df" stroke="#e2b955" stroke-width="4" filter="url(#vs-shadow)"/>
+    <rect x="480" y="641" width="960" height="278" rx="18" fill="none" stroke="#d4ab52" stroke-width="3" stroke-dasharray="2 11" stroke-linecap="round"/>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  shots:[[0,"#route"],[4.62,"#sum"]],
+  on:[
+   [.18,"fade","#delivery-half-truth",{dur:.23}],
+   [3.52,"strike","#delivery-half-truth",{color:"#4b4f58",width:5,dur:.22,dim:.76}],
+   [3.52,"fade","#half-truth-label",{dur:.23}],
+   [7.34,"pop","#sum-envelope-1",{from:.9,spring:"soft"}],
+   [7.49,"pop","#sum-envelope-2",{from:.9,spring:"soft"}],
+   [7.64,"pop","#sum-envelope-3",{from:.9,spring:"soft"}],
+   [7.79,"pop","#sum-envelope-4",{from:.9,spring:"soft"}]
+  ]
+ })
+ </script>
+</section>
