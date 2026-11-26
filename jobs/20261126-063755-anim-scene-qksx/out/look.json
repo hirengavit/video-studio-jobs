@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "2.73",
+  "5.46",
+  "8.20",
+  "10.93",
+  "13.51"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s059",
+   "message": "color #condition-b-confirm: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s059",
+   "message": "a card is mostly empty at 2.7 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.73
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s059",
+   "message": "a card is mostly empty at 5.5 s: bring its items in sooner, or size it for what it holds now",
+   "t": 5.46
+  }
+ ]
+}
