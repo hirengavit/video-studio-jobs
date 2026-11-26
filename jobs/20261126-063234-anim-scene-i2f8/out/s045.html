@@ -1,0 +1,74 @@
+<section class="vs-scene" id="s045" data-duration="10.86" data-in="cut" data-section="PART 2 · HOLDING PERIOD" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="When an item cannot be delivered or returned, and the three different holding periods.">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="return">
+  <g id="delivery-office-group">
+   <use href="piece:post-office-icon" transform="translate(1120 245) scale(1)"/>
+   <text x="1280" y="566" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">Delivery post office</text>
+  </g>
+  <g id="posting-office">
+   <use href="piece:post-office-icon" transform="translate(425 264) scale(.85)"/>
+   <text x="561" y="566" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">Office of posting</text>
+  </g>
+  <path id="return-to-posting" d="M1098 410C967 373 846 373 722 410l35-36M722 410l48 6" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="sender-home">
+   <use href="piece:house-icon" transform="translate(112 278) scale(.70)"/>
+   <text x="217" y="566" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">sender</text>
+  </g>
+  <path id="return-to-sender" d="M422 411H337m25-21-25 21 25 21" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="sender-not-found" d="M149 342l77 77m0-77l-77 77" fill="none" stroke="#4b4f58" stroke-width="14" stroke-linecap="round"/>
+  <path id="rlo-arrow" d="M219 594v97q0 51 55 51h72m-24-21 24 21-24 21" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="rlo-card">
+   <rect x="360" y="640" width="1200" height="327" rx="30" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+   <rect x="380" y="660" width="1160" height="287" rx="19" fill="none" stroke="#fde9a6" stroke-width="5" stroke-dasharray="0 16" stroke-linecap="round"/>
+   <text id="rlo-term" x="960" y="791" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="850" textLength="1000" lengthAdjust="spacingAndGlyphs" fill="#fff">Returned Letter Office (RLO)</text>
+   <text id="rlo-hindi" x="960" y="893" text-anchor="middle" class="hi" font-size="48" font-weight="810" fill="#fde9a6">वापसी पत्र कार्यालय</text>
+  </g>
+  <text id="rlo-condition" x="960" y="1031" text-anchor="middle" class="hi" font-size="44" font-weight="790" fill="#4b4f58">न deliver हो सके</text>
+  <text id="rlo-condition-complete" x="960" y="1031" text-anchor="middle" class="hi" font-size="44" font-weight="790" fill="#4b4f58">न deliver हो सके, न लौटाई जा सके</text>
+ </g> 
+ <g id="three">
+  <text id="periods-heading" x="200" y="268" style="font-size:56px" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="850" fill="#9e1b1b">तीन अवधियाँ, तीन अलग बातें</text>
+  <g id="periods-rows">
+   <rect id="period-row-1" x="200" y="330" width="1520" height="170" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <rect id="period-row-2" x="200" y="530" width="1520" height="170" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <rect id="period-row-3" x="200" y="730" width="1520" height="170" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  </g>
+  <g class="period-slot-number" id="period-slot-1">
+   <circle cx="256" cy="415" r="18" fill="#9e1b1b"/>
+   <text x="256" y="423" text-anchor="middle" font-family="Inter,sans-serif" font-size="24" font-weight="850" fill="#fff">1</text>
+  </g>
+  <g class="period-slot-number" id="period-slot-2">
+   <circle cx="256" cy="615" r="18" fill="#9e1b1b"/>
+   <text x="256" y="623" text-anchor="middle" font-family="Inter,sans-serif" font-size="24" font-weight="850" fill="#fff">2</text>
+  </g>
+  <g class="period-slot-number" id="period-slot-3">
+   <circle cx="256" cy="815" r="18" fill="#9e1b1b"/>
+   <text x="256" y="823" text-anchor="middle" font-family="Inter,sans-serif" font-size="24" font-weight="850" fill="#fff">3</text>
+  </g>
+  <g id="period-person-label">
+   <rect x="286" y="387" width="12" height="56" rx="6" fill="#f2b705"/>
+   <text x="324" y="435" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="790" fill="#2b2622">व्यक्ति के लिए सुविधा</text>
+  </g>
+  <g id="period-person-value">
+   <rect x="1110" y="374" width="553" height="82" rx="29" fill="#9e1b1b"/>
+   <text x="1386.5" y="434" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="830" fill="#fff">3 महीने तक</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,"#return"],[3.12,"#three"]],
+ on:[
+  [1.06,"fade","#rlo-condition-complete",{dur:.18}],
+  [4.00,"pop",".period-slot-number",{stagger:.15,from:.82,spring:"soft"}],
+  [7.82,"fade","#period-person-label",{dur:.26}],
+  [9.70,"pop","#period-person-value",{from:.91,spring:"soft"}]
+ ],
+ update(t,section,$){
+  for(const el of $("#rlo-condition")) el.style.display=t>=1.06?"none":"";
+ }
+})
+</script>
+</section>
