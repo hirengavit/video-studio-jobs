@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "2.01",
+  "4.02",
+  "6.04",
+  "8.05",
+  "9.91"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s002",
+   "text": "1 August / 1986",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s002",
+   "text": "1986 / शुरुआत",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s002",
+   "text": "देश के अंदर / express",
+   "t": 8.05
+  }
+ ]
+}
