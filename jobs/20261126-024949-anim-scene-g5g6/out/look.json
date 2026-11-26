@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "2.68",
+  "5.37",
+  "8.05",
+  "10.74",
+  "13.27"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s044",
+   "text": "delivery न होने का कारण (1.9:1) / standard कारण दर्ज (1.0:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  }
+ ]
+}
