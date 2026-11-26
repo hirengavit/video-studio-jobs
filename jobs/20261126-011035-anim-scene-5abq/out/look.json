@@ -8,18 +8,5 @@
   "9.29"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s001",
-   "text": "प्राप्ति के लिए डाक रखने की व्यवस्था",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s001",
-   "text": "POSTE / RESTANTE",
-   "t": 7.55
-  }
- ]
+ "warnings": []
 }
