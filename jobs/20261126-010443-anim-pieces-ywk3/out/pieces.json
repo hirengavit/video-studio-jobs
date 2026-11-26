@@ -1,0 +1,91 @@
+[
+  {
+    "id": "postmark-ring",
+    "kind": "prop",
+    "description": "Blank 220px double-ring postal-red postmark, with five wavy cancels to its right and undrawn lettering.",
+    "ideas": [
+      "source",
+      "date",
+      "postal cancellation"
+    ],
+    "viewBox": "0 0 420 220",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "ring",
+      "band",
+      "cancels"
+    ]
+  },
+  {
+    "id": "post-office-icon",
+    "kind": "prop",
+    "description": "White postal office with red roof, blank sand sign band, a door and a post box beside it.",
+    "ideas": [
+      "post office",
+      "destination",
+      "delivery office"
+    ],
+    "viewBox": "0 0 320 300",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "building",
+      "sign-band",
+      "door",
+      "postbox"
+    ]
+  },
+  {
+    "id": "written-request",
+    "kind": "prop",
+    "description": "Blank letter sheet with heading space, five rules, signature line and fee-chip space.",
+    "ideas": [
+      "written request",
+      "recall",
+      "change of address"
+    ],
+    "viewBox": "0 0 420 560",
+    "anchors": [
+      "base",
+      "grip"
+    ],
+    "parts": [
+      "paper",
+      "header",
+      "rules",
+      "signature",
+      "fee-chip"
+    ]
+  },
+  {
+    "id": "day-strip",
+    "kind": "prop",
+    "description": "Twelve individually tintable blank square calendar tiles.",
+    "ideas": [
+      "holding period",
+      "calendar",
+      "deadlines"
+    ],
+    "viewBox": "0 0 1320 130",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "tile-1",
+      "tile-2",
+      "tile-3",
+      "tile-4",
+      "tile-5",
+      "tile-6",
+      "tile-7",
+      "tile-8",
+      "tile-9",
+      "tile-10",
+      "tile-11",
+      "tile-12"
+    ]
+  }
+]
