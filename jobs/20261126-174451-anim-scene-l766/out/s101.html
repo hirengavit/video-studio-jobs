@@ -1,0 +1,37 @@
+<section class="vs-scene" id="s101" data-in="cut" data-section="RECAP · PARTS 3–4" data-series="PRODUCTS">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <rect x="160" y="200" width="1140" height="700" rx="30" fill="#fff"/>
+  <path d="M160 230q0-30 30-30h1080q30 0 30 30v32l-570 132-570-132Z" fill="#f3ead6"/>
+  <path d="m160 262 570 132 570-132" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <rect x="160" y="200" width="1140" height="700" rx="30" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <text x="730" y="256" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="33" font-weight="720" fill="#6f6a63">RECAP · दोहराव</text>
+  <text x="730" y="321" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="55" font-weight="780" fill="#9e1b1b">Transmission और Tracking</text>
+  <circle cx="730" cy="394" r="38" fill="#9e1b1b"/>
+  <circle cx="730" cy="394" r="29" fill="none" stroke="#fde9a6" stroke-width="2" stroke-dasharray="3 5"/>
+  <text x="730" y="408" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="800" fill="#fff">2</text>
+  <text x="227" y="522" font-family="Inter, sans-serif" font-size="49" font-weight="770" fill="#2b2622">Transmission</text>
+  <text x="230" y="577" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="42" font-weight="610" fill="#6f6a63">प्रेषण</text>
+  <g id="air"><rect x="590" y="480" width="149" height="87" rx="43" fill="#f3ead6"/><text x="664.5" y="539" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="39" font-weight="680" fill="#2b2622">हवाई</text></g>
+  <g id="surface"><rect x="762" y="480" width="372" height="87" rx="43" fill="#f3ead6"/><text x="948" y="539" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="39" font-weight="680" fill="#2b2622">तेज़ surface अपवाद</text></g>
+  <g id="tick1"><circle cx="1211" cy="523" r="37" fill="#e3f1e8"/><path d="M1193 523l13 13 23-27" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <path d="M227 630h982" stroke="#ead9a8" stroke-width="3"/>
+  <text id="tracking" x="227" y="765" font-family="Inter, sans-serif" font-size="49" font-weight="770" fill="#2b2622">SMS · POD</text>
+  <g id="sms"><rect x="590" y="706" width="250" height="87" rx="43" fill="#f3ead6"/><text x="715" y="765" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="39" font-weight="680" fill="#2b2622">SMS = status</text></g>
+  <g id="pod"><rect x="863" y="706" width="271" height="87" rx="43" fill="#f3ead6"/><text x="998.5" y="765" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="39" font-weight="680" fill="#2b2622">POD = सबूत</text></g>
+  <g id="tick2"><circle cx="1211" cy="749" r="37" fill="#e3f1e8"/><path d="M1193 749l13 13 23-27" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <path d="M1358 704h469" stroke="#e6dcc4" stroke-width="4" stroke-linecap="round"/>
+  <use href="piece:speed-post-emblem" transform="translate(1360 414) scale(.9)"/>
+ </svg>
+ <script type="text/scene">
+ {on:[
+   [0.50,'pop','#air',{from:0.76}],
+   [1.56,'pop','#surface',{from:0.76}],
+   [3.74,'pop','#tick1',{from:0.67}],
+   [4.40,'fade','#tracking',{dur:0.24}],
+   [4.78,'pop','#sms',{from:0.76}],
+   [6.66,'pop','#pod',{from:0.76}],
+   [8.20,'pop','#tick2',{from:0.67}]
+ ]}
+ </script>
+</section>
