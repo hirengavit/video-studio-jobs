@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1640 300" width="1640" height="300">
+<path id="track" d="M120 150 L1520 150" fill="none" stroke="#6f6a63" stroke-width="4" stroke-dasharray="4 14" stroke-linecap="round" opacity="0.6"/>
+<g id="segments" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round">
+<path id="seg-1" d="M190 150 L400 150"/>
+<path id="seg-2" d="M540 150 L750 150"/>
+<path id="seg-3" d="M890 150 L1100 150"/>
+<path id="seg-4" d="M1240 150 L1450 150"/>
+</g>
+<g id="stop-1">
+<circle id="stop-1-ring" cx="120" cy="150" r="80" fill="none" stroke="#f2b705" stroke-width="8" opacity="0"/>
+<circle id="stop-1-disc" cx="120" cy="150" r="70" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+<g id="stop-1-icon" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M100 132 C100 100 140 100 140 132" fill="none" stroke-width="5"/>
+<rect x="90" y="128" width="60" height="52" rx="8" fill="#9e1b1b"/>
+<path d="M90 136 Q90 128 98 128 L142 128 Q150 128 150 136 L150 152 Q120 162 90 152 Z" fill="#7d1414"/>
+<rect x="114" y="150" width="12" height="10" rx="2" fill="#f2b705"/>
+</g>
+</g>
+<g id="stop-2">
+<circle id="stop-2-ring" cx="470" cy="150" r="80" fill="none" stroke="#f2b705" stroke-width="8" opacity="0"/>
+<circle id="stop-2-disc" cx="470" cy="150" r="70" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+<g id="stop-2-icon" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="434" y="140" width="72" height="46" fill="#ffffff"/>
+<polygon points="424,142 470,108 516,142" fill="#9e1b1b"/>
+<rect x="444" y="146" width="52" height="12" rx="2" fill="#f3ead6"/>
+<rect x="462" y="166" width="16" height="20" fill="#f3ead6"/>
+</g>
+</g>
+<g id="stop-3">
+<circle id="stop-3-ring" cx="820" cy="150" r="80" fill="none" stroke="#f2b705" stroke-width="8" opacity="0"/>
+<circle id="stop-3-disc" cx="820" cy="150" r="70" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+<g id="stop-3-icon" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="790" y="142" width="60" height="46" fill="#ffffff"/>
+<polygon points="780,146 820,108 860,146" fill="#9e1b1b"/>
+<rect x="800" y="164" width="16" height="24" fill="#f3ead6"/>
+<rect x="828" y="154" width="12" height="12" fill="#f3ead6"/>
+</g>
+</g>
+<g id="stop-4">
+<circle id="stop-4-ring" cx="1170" cy="150" r="80" fill="none" stroke="#f2b705" stroke-width="8" opacity="0"/>
+<circle id="stop-4-disc" cx="1170" cy="150" r="70" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+<g id="stop-4-icon" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="#ffffff">
+<polygon points="1124,130 1170,104 1216,130"/>
+<rect x="1126" y="130" width="88" height="10"/>
+<rect x="1133" y="140" width="9" height="36"/>
+<rect x="1155" y="140" width="9" height="36"/>
+<rect x="1177" y="140" width="9" height="36"/>
+<rect x="1199" y="140" width="9" height="36"/>
+<rect x="1120" y="176" width="100" height="10" fill="#f3ead6"/>
+</g>
+</g>
+<g id="stop-5">
+<circle id="stop-5-ring" cx="1520" cy="150" r="80" fill="none" stroke="#f2b705" stroke-width="8" opacity="0"/>
+<circle id="stop-5-disc" cx="1520" cy="150" r="70" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+<g id="stop-5-icon" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M1482 136 l5 -10 l8 6 l7 -10 l7 9 l8 -6 l4 11" fill="#ffffff"/>
+<path d="M1478 136 L1524 136 L1518 186 L1484 186 Z" fill="#ffffff"/>
+<path d="M1490 136 L1493 186 M1501 136 L1501 186 M1512 136 L1509 186 M1480 153 L1522 153 M1482 170 L1520 170" fill="none" stroke-width="2"/>
+<rect x="1532" y="176" width="30" height="10" rx="3" fill="#c9a46a"/>
+<path d="M1546 150 L1560 176" fill="none" stroke-width="7"/>
+<path d="M1546 150 L1560 176" fill="none" stroke="#e2c38e" stroke-width="3"/>
+<rect x="1528" y="128" width="36" height="18" rx="4" transform="rotate(-30 1546 137)" fill="#e2c38e"/>
+</g>
+</g>
+<circle data-anchor="base" cx="820" cy="300" r="0"/>
+<circle data-anchor="top" cx="820" cy="0" r="0"/>
+<circle data-anchor="stop-1" cx="120" cy="150" r="0"/>
+<circle data-anchor="stop-2" cx="470" cy="150" r="0"/>
+<circle data-anchor="stop-3" cx="820" cy="150" r="0"/>
+<circle data-anchor="stop-4" cx="1170" cy="150" r="0"/>
+<circle data-anchor="stop-5" cx="1520" cy="150" r="0"/>
+<circle data-anchor="seg-1-label" cx="295" cy="100" r="0"/>
+<circle data-anchor="seg-2-label" cx="645" cy="100" r="0"/>
+<circle data-anchor="seg-3-label" cx="995" cy="100" r="0"/>
+<circle data-anchor="seg-4-label" cx="1345" cy="100" r="0"/>
+<circle data-anchor="stop-1-label" cx="120" cy="262" r="0"/>
+<circle data-anchor="stop-2-label" cx="470" cy="262" r="0"/>
+<circle data-anchor="stop-3-label" cx="820" cy="262" r="0"/>
+<circle data-anchor="stop-4-label" cx="1170" cy="262" r="0"/>
+<circle data-anchor="stop-5-label" cx="1520" cy="262" r="0"/>
+</svg>
