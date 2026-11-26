@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s115" data-in="cut" data-duration="8.78" data-section="PART 6 · ADDRESSEE'S REDIRECTION" data-series="DELIVERY RULES">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="rights-comparison" font-family="Inter,sans-serif" fill="#2b2622">
+  <g id="sender-panel">
+    <rect x="160" y="220" width="740" height="680" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M184 220H876Q900 220 900 244V402H160V244Q160 220 184 220Z" fill="#f3ead6"/>
+    <use href="piece:person-icon" transform="translate(226 255) scale(.44)"/>
+    <text x="326" y="329" font-size="56" font-weight="760">Sender</text>
+    <rect x="196" y="430" width="668" height="110" rx="16" fill="#fbf7ee"/>
+    <rect x="196" y="564" width="668" height="110" rx="16" fill="#fbf7ee"/>
+    <text id="sender-recall" x="224" y="502" font-size="52" font-weight="720">Recall</text>
+    <path id="sender-check" d="M795 489L808 502L836 472" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="addressee-panel">
+    <rect x="1020" y="220" width="740" height="680" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M1044 220H1736Q1760 220 1760 244V402H1020V244Q1020 220 1044 220Z" fill="#f3ead6"/>
+    <path id="addressee-focus" d="M1044 220H1736Q1760 220 1760 244V402H1020V244Q1020 220 1044 220Z" fill="#fde9a6"/>
+    <use href="piece:person-icon" transform="translate(1086 255) scale(.44)"/>
+    <text x="1186" y="329" font-size="56" font-weight="760">Addressee</text>
+    <rect id="addressee-recall-row" x="1056" y="430" width="668" height="110" rx="16" fill="#fbf7ee"/>
+    <rect x="1056" y="564" width="668" height="110" rx="16" fill="#fbf7ee"/>
+    <text id="addressee-recall" x="1084" y="502" font-size="52" font-weight="720">Recall</text>
+    <path id="addressee-recall-cross" d="M1657 471l36 34m0-34-36 34" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+    <text id="addressee-no-right" x="1608" y="501" class="hi" text-anchor="end" font-size="44" font-weight="780" fill="#4b4f58">हक नहीं</text>
+    <text id="addressee-alter" x="1084" y="635" font-size="52" font-weight="720">Alteration of address</text>
+    <path id="addressee-check" d="M1655 622L1668 635L1696 605" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g id="redirect-example">
+    <path id="redirect-fork" d="M1097 784H1227C1263 784 1290 752 1348 752M1326 738L1348 752L1326 766 M1227 784C1263 784 1290 820 1348 820M1326 806L1348 820L1326 834" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="redirect-home"><use href="piece:house-icon" transform="translate(1370 758) scale(.32)"/></g>
+    <text id="redirect-caption" x="1490" y="806" class="hi" font-family="Noto Sans Devanagari" font-size="48" font-weight="700">दूसरे पते पर</text>
+  </g>
+</g>
+<g id="fee-question">
+  <rect x="160" y="920" width="1600" height="70" rx="22" fill="#9e1b1b"/>
+  <text class="hi" x="960" y="973" text-anchor="middle" font-size="52" font-weight="830" fill="#fff">Fee: एक सवाल</text>
+</g>
+</svg>
+<script type="text/scene">
+({
+  camera:[[0,{zoom:1}]],
+  on:[
+    [3.50,"fade","#addressee-recall",{dur:.3}],
+    [4.90,"strike","#addressee-recall",{color:"#4b4f58",width:6,dim:.68,dur:.37}],
+    [4.90,"draw","#addressee-recall-cross",{dur:.36}],
+    [4.90,"fade","#addressee-no-right",{dur:.30}],
+    [6.04,"reveal","#fee-question",{from:"left",dur:.46}]
+  ]
+})
+</script>
+</section>
