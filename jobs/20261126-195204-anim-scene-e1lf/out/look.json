@@ -10,28 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
+   "kind": "text-overlap",
    "scene": "s207",
-   "message": "fade #liquid: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s207",
-   "message": "fade #perishable: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s207",
-   "message": "fade #sum: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s207",
-   "message": "fade #not: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
+   "text": "पूरी insured रकम की guarantee / नहीं",
+   "t": 8.97
   }
  ]
 }
