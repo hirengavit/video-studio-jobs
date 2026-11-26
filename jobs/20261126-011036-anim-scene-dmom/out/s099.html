@@ -1,0 +1,39 @@
+<section class="vs-scene" id="s099" data-in="wipe" data-in-dur="0.45" data-section="PART 5 · CANCELLATION" data-series="DELIVERY RULES">
+ <svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="cards">
+   <text id="compare-heading" x="960" y="222" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="790" fill="#2b2622">दो अलग काम</text>
+   <g id="recall-card">
+    <rect x="160" y="284" width="724" height="534" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M188 284 H856 Q884 284 884 312 V482 H160 V312 Q160 284 188 284 Z" fill="#9e1b1b"/>
+    <text x="522" y="379" text-anchor="middle" font-family="Inter,sans-serif" font-size="80" font-weight="820" fill="#ffffff">Recall</text>
+    <text x="522" y="444" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="670" fill="#fde9a6">वापस मंगाना</text>
+    <g id="left-fact">
+     <text x="522" y="605" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="720" fill="#2b2622">उस item का, जिसे</text>
+     <text x="522" y="679" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="720" fill="#2b2622">post office</text>
+     <text id="accepted-fact" x="522" y="752" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="740" fill="#2b2622">स्वीकार कर चुका</text>
+    </g>
+   </g>
+   <g id="cancellation-card">
+    <rect x="1036" y="284" width="724" height="534" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M1064 284 H1732 Q1760 284 1760 312 V482 H1036 V312 Q1036 284 1064 284 Z" fill="#f2b705"/>
+    <text x="1398" y="379" text-anchor="middle" font-family="Inter,sans-serif" font-size="80" font-weight="820" fill="#2b2622">Cancellation</text>
+    <text x="1398" y="444" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="51" font-weight="670" fill="#2b2622">रद्द करना</text>
+   </g>
+   <g id="comparison-disc">
+    <circle cx="960" cy="563" r="57" fill="#2b2622" stroke="#fbf7ee" stroke-width="8"/>
+    <text x="960" y="577" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="830" fill="#fde9a6">VS</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ {
+  on: [
+   [2.44,'fade','#compare-heading',{dur:0.26}],
+   [2.44,'pop','#comparison-disc',{from:0.85,spring:'soft'}],
+   [4.60,'fade','#left-fact',{dur:0.32}],
+   [8.32,'highlight','#accepted-fact',{words:'स्वीकार',color:'#f2b705',opacity:0.38,dur:0.40}]
+  ]
+ }
+ </script>
+</section>
