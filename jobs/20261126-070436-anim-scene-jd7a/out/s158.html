@@ -1,0 +1,82 @@
+<section class="vs-scene" id="s158" data-in="cut" data-duration="13.80" data-section="PART 7 · INTERNATIONAL" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Demurrage example comparing a 600 g and a 500 g inward international Poste Restante printed-paper packet.">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="example" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-weight="790">
+  <text id="example-title" x="142" y="217" class="hi" font-size="56" fill="#9e1b1b">एक example</text>
+  <path d="M142 243h340" stroke="#d6ac59" stroke-width="5" stroke-linecap="round"/>
+  <g id="weigh">
+   <use id="example-scale" href="piece:letter-scale" transform="translate(135 386) scale(1.3)"/>
+   <g id="packet-enter"><use id="example-packet" href="piece:book-packet-icon" transform="translate(251 341) scale(.6)"/></g>
+   <text id="weight-readout" x="395" y="706" text-anchor="middle" font-family="Inter,sans-serif" font-size="47" font-weight="850" fill="#2b2622">600 g</text>
+   <g id="packet-label">
+    <rect x="122" y="829" width="556" height="190" rx="25" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
+    <text x="400" y="882" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" fill="#9e1b1b">Poste Restante</text>
+    <text x="400" y="938" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" fill="#2b2622">International</text>
+    <text x="400" y="994" text-anchor="middle" font-family="Inter,sans-serif" font-size="54" textLength="493" lengthAdjust="spacingAndGlyphs" fill="#2b2622">printed-paper packet</text>
+   </g>
+  </g>
+  <g id="days">
+   <text id="days-from-arrival" class="hi" x="1241" y="481" text-anchor="middle" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="48" fill="#4b4f58">Delivery office में पहुँचने के बाद</text>
+   <g id="day-tiles">
+    <use id="days-strip" href="piece:day-strip" transform="translate(700 520) scale(.82)"/>
+    <g id="day-numerals" font-family="Inter,sans-serif" font-size="46" text-anchor="middle" fill="#2b2622">
+     <text x="745.1" y="590">1</text>
+     <text x="835.3" y="590">2</text>
+     <text x="925.5" y="590">3</text>
+     <text x="1015.7" y="590">4</text>
+     <text x="1105.9" y="590">5</text>
+     <text x="1196.1" y="590">6</text>
+     <text x="1286.3" y="590">7</text>
+     <text x="1376.5" y="590">8</text>
+     <text x="1466.7" y="590">9</text>
+     <text x="1556.9" y="590">10</text>
+     <text x="1647.1" y="590">11</text>
+     <text x="1737.3" y="590">12</text>
+    </g>
+   </g>
+   <g id="free-days">
+    <rect x="704" y="660" width="625" height="85" rx="22" fill="#e3f1e8" stroke="#8cb39b" stroke-width="3"/>
+    <text class="hi" x="1016" y="719" text-anchor="middle" font-size="52" fill="#17634a">पहले 7 दिन free</text>
+   </g>
+
+   <g id="paid-days">
+    <rect id="paid-days-back" x="704" y="775" width="760" height="87" rx="20" fill="#fff7da" stroke="#d6ac59" stroke-width="3"/>
+    <text id="paid-days-text" class="hi" x="738" y="834" font-size="48" fill="#62430e" textLength="690" lengthAdjust="spacingAndGlyphs"><tspan font-weight="900">600 g:</tspan> ₹10 प्रति दिन, 8वें दिन से</text>
+   </g>
+   <path id="paid-cross" d="M1484 801l32 32m0-32-32 32" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+   <g id="fee-exempt">
+    <rect x="1532" y="775" width="248" height="87" rx="20" fill="#e3f1e8" stroke="#8cb39b" stroke-width="3"/>
+    <text class="hi" x="1656" y="834" text-anchor="middle" font-size="48" textLength="213" lengthAdjust="spacingAndGlyphs" fill="#17634a">charge नहीं</text>
+   </g>
+   <g id="limit-band">
+    <rect x="704" y="900" width="1076" height="90" rx="20" fill="#eeedf0" stroke="#a6a4aa" stroke-width="3"/>
+    <text class="hi" x="1242" y="959" font-family="Noto Sans Devanagari,Inter,sans-serif" text-anchor="middle" font-size="48" fill="#343841">अनगिनत दिन रखवाने का हक नहीं</text>
+   </g>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.76,"fade","#paid-days",{dur:.28}],
+  [6.46,"strike","#paid-days-text",{color:"#4b4f58",width:5,dur:.32,dim:1}],
+  [6.46,"color","#paid-days-text",{to:"#6f6a63",prop:"fill",dur:.33}],
+  [6.46,"color","#paid-days-back",{to:"#eeedf0",prop:"fill",dur:.33}],
+  [6.46,"draw","#paid-cross",{dur:.33}],
+  [6.46,"fade","#fee-exempt",{dur:.25}],
+  [9.48,"reveal","#limit-band",{from:"left",dur:.39}]
+ ],
+ update(t,section,$){
+  const w=$("#weight-readout")[0];
+  w.textContent=t>=2.78?"500 g":"600 g";
+  const u=S.clamp(Math.abs(t-2.78)/.12,0,1);
+  w.setAttribute("opacity",u);
+  for(let n=1;n<=12;n++){
+   const el=$("#tile-"+n)[0];
+   if(el)el.setAttribute("fill",n<=7?"#dcefe3":((t>=.76+(n-8)*.05&&t<6.46)?"#ffdf78":"#fff"));
+  }
+ }
+})
+</script>
+</section>
