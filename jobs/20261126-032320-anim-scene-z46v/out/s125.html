@@ -36,7 +36,7 @@
   <g id="notice-fee-band">
    <rect x="200" y="949" width="1520" height="80" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
    <text id="notice-fee-text" x="960" y="1005" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="800" fill="#2b2622">Fee वही: same area → free · नहीं तो per item</text>
-   <text id="notice-validity-not-waiver" x="960" y="1005" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="800" fill="#2b2622">3 महीने validity ≠ redirection charge की पूरी छूट</text>
+   <text id="notice-validity-not-waiver" opacity="0" x="960" y="1005" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="800" fill="#2b2622">3 महीने validity ≠ redirection charge की पूरी छूट</text>
   </g>
  </g>
  <g id="who">
@@ -68,11 +68,14 @@
 ({
  shots:[[0,"#notice"],[3.46,"#who"]],
  on:[
-  [0,"swap","#notice-fee-text",{to:"#notice-validity-not-waiver",dur:.36,dist:10}],
   [5.18,"pop","#who-sender",{from:.92,spring:"soft"}],
   [6.24,"pop","#who-addressee",{from:.92,spring:"soft"}],
   [7.46,"pop","#who-authorised",{from:.92,spring:"soft"}]
- ]
+ ],
+ update(t,section,$) {
+  $("#notice-fee-text")[0].setAttribute("opacity",String(Math.max(0,1-t/.15)));
+  $("#notice-validity-not-waiver")[0].setAttribute("opacity",String(Math.max(0,Math.min(1,(t-.15)/.16))));
+ }
 })
 </script>
 </section>
