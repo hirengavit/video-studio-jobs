@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s250" data-in="cut" data-section="KEY POINTS" data-series="PRODUCTS">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="non-receipt-card">
+      <rect x="120" y="190" width="1680" height="370" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="186" y="267" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="57" font-weight="790" fill="#9e1b1b">न मिलने की complaint</text>
+      <path d="M186 296H1734" stroke="#ead9a8" stroke-width="2"/>
+      <rect id="filing-window" x="590" y="400" width="1110" height="60" rx="30" fill="#fde9a6"/>
+      <path d="M220 430H1700" stroke="#6f6a63" stroke-width="4" stroke-linecap="round"/>
+      <g id="booking-tick">
+        <path d="M220 409V451" stroke="#2b2622" stroke-width="5" stroke-linecap="round"/>
+        <text id="booking-label" x="220" y="520" font-family="Inter, sans-serif" font-size="47" font-weight="740" fill="#2b2622">Booking (0)</text>
+      </g>
+      <g id="day-15">
+        <circle cx="590" cy="430" r="14" fill="#fff" stroke="#9e1b1b" stroke-width="5"/>
+        <text x="590" y="520" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48" font-weight="790" fill="#2b2622">15 दिन</text>
+      </g>
+      <g id="after-arrow">
+        <path d="M624 430H758m-17-15 17 15-17 15" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text id="after-label" x="685" y="385" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="780" fill="#9e1b1b">बाद</text>
+      </g>
+      <g id="day-60">
+        <circle cx="1700" cy="430" r="14" fill="#9e1b1b" stroke="#fff" stroke-width="3"/>
+        <text x="1700" y="520" text-anchor="end" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48" font-weight="790" fill="#2b2622">60 दिन</text>
+      </g>
+      <text id="inside-label" x="1268" y="385" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="790" fill="#8a5d00">अंदर</text>
+    </g>
+    <g id="damage-card">
+      <rect x="120" y="620" width="1040" height="340" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="186" y="744" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="63" font-weight="790" fill="#9e1b1b">Damage की complaint</text>
+      <path d="M186 780H1094" stroke="#ead9a8" stroke-width="2"/>
+      <text id="receipt-start" x="186" y="877" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="57" font-weight="710" fill="#2b2622">item मिलने के बाद</text>
+    </g>
+    <g id="two-day-stamp">
+      <use href="piece:key-fact-stamp" transform="translate(1240 640) scale(0.9)"/>
+      <text x="1492" y="802" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="116" font-weight="825" fill="#fff">2 दिन</text>
+      <text x="1492" y="889" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="49" font-weight="730" fill="#fde9a6">मिलने के अंदर</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.70, 'draw', '#booking-tick path', {dur:0.20}],
+      [1.70, 'fade', '#booking-label', {dur:0.23}],
+      [2.42, 'pop', '#day-15', {from:0.93,spring:'fast'}],
+      [3.10, 'draw', '#after-arrow path', {dur:0.34}],
+      [3.10, 'fade', '#after-label', {dur:0.24}],
+      [3.62, 'pop', '#day-60', {from:0.93,spring:'fast'}],
+      [4.22, 'grow', '#filing-window', {axis:'x',origin:'left',spring:'fast'}],
+      [4.82, 'fade', '#inside-label', {dur:0.21}],
+      [5.40, 'pop', '#damage-card', {from:0.96,spring:'fast'}],
+      [6.84, 'fade', '#receipt-start', {dur:0.31}],
+      [8.54, 'pop', '#two-day-stamp', {from:0.91,spring:'fast'}]
+    ]
+  }
+  </script>
+</section>
