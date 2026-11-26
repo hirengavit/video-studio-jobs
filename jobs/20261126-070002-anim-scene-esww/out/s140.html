@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s140" data-duration="9.29" lang="hi" data-in="wipe" data-in-dur="0.42" data-in-opts='{"from":"right"}' data-section="PART 7 · INTERNATIONAL" data-series="DELIVERY RULES">
+<svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g font-family="Inter, sans-serif" font-weight="700" text-anchor="middle">
+    <g id="domestic">
+      <rect x="150" y="300" width="740" height="540" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M178 300 H862 Q890 300 890 328 V435 H150 V328 Q150 300 178 300Z" fill="#9e1b1b"/>
+      <text x="520" y="395" font-size="76" fill="#fff">Domestic</text>
+      <use href="piece:house-icon" transform="translate(385 453) scale(.90)"/>
+      <text x="520" y="800" class="hi" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="60" fill="#2b2622">देश के अंदर</text>
+    </g>
+    <g id="international">
+      <rect x="1030" y="300" width="740" height="540" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M1058 300 H1742 Q1770 300 1770 328 V435 H1030 V328 Q1030 300 1058 300Z" fill="#f2b705"/>
+      <text x="1400" y="395" font-size="76" fill="#2b2622">International</text>
+      <use href="piece:icon-globe" transform="translate(1280 468) scale(.80)"/>
+      <text x="1400" y="800" class="hi" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="60" fill="#2b2622">अंतरराष्ट्रीय</text>
+    </g>
+    <g id="recall-chip">
+      <rect x="635" y="205" width="276" height="73" rx="39" fill="#f3ead6"/>
+      <text x="773" y="258" font-size="44" fill="#2b2622">Recall</text>
+    </g>
+    <g id="redirection-chip">
+      <circle cx="960" cy="242" r="5" fill="#6f6a63"/>
+      <rect x="1009" y="205" width="335" height="73" rx="39" fill="#f3ead6"/>
+      <text x="1176.5" y="258" font-size="44" fill="#2b2622">Redirection</text>
+    </g>
+    <g id="vs">
+      <circle cx="960" cy="568" r="53" fill="#2b2622"/>
+      <text x="960" y="584" font-size="44" fill="#fff">VS</text>
+    </g>
+    <g id="takeaway">
+      <rect x="150" y="880" width="1620" height="110" rx="22" fill="#fde9a6"/>
+      <text x="960" y="950" font-family="Noto Sans Devanagari,Inter,sans-serif" font-size="52" fill="#2b2622">request <tspan class="hi" font-family="Noto Sans Devanagari,Inter,sans-serif">के नियम अलग</tspan></text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [2.32, "pop", "#recall-chip", {from:.77}],
+    [3.68, "pop", "#redirection-chip", {from:.89}],
+    [6.48, "pop", "#vs", {from:.73}],
+    [7.40, "reveal", "#takeaway", {from:"left",dur:.28}]
+  ]
+}
+</script>
+</section>
