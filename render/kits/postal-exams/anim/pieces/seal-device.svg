@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 300" width="160" height="300" fill="none">
+  <title>Sender's seal device</title>
+  <g id="handle">
+    <path d="M80 12 C112 12 122 40 116 62 C111 80 96 88 92 98 C90 106 91 114 94 120 C104 138 112 160 112 182 L48 182 C48 160 56 138 66 120 C69 114 70 106 68 98 C64 88 49 80 44 62 C38 40 48 12 80 12 Z" fill="#8f5f37" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M60 30 C54 40 54 54 60 64" stroke="#6e4524" stroke-width="4" stroke-linecap="round"/>
+    <path d="M69 104 H91" stroke="#6e4524" stroke-width="3" stroke-linecap="round"/>
+    <path d="M60 148 C57 158 56 168 57 176" stroke="#6e4524" stroke-width="4" stroke-linecap="round"/>
+    <rect x="42" y="180" width="76" height="16" rx="5" fill="#6e4524" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+  <g id="face">
+    <rect x="58" y="196" width="44" height="20" fill="#c9a24e" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M58 216 C58 232 26 244 22 262 L138 262 C134 244 102 232 102 216 Z" fill="#c9a24e" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M68 224 C64 236 46 246 40 256" stroke="#9a7628" stroke-width="3" stroke-linecap="round"/>
+    <rect x="18" y="260" width="124" height="22" rx="6" fill="#c9a24e" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M30 271 H130" stroke="#9a7628" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <circle data-anchor="base" cx="80" cy="282" r="0"/>
+  <circle data-anchor="grip" cx="80" cy="140" r="0"/>
+  <circle data-anchor="top" cx="80" cy="12" r="0"/>
+</svg>
