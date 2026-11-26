@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "1.97",
+  "3.94",
+  "5.90",
+  "7.87",
+  "9.69"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "mostly-empty",
+   "scene": "s046",
+   "message": "a card (#s046-period-row-3) is mostly empty at 2.0 s: bring its items in sooner, or size it for what it holds now",
+   "t": 1.97
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s046",
+   "text": "Poste restante article / फिर sender को वापस",
+   "t": 3.94
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s046",
+   "message": "a card (#s046-period-row-3) is mostly empty at 3.9 s: bring its items in sooner, or size it for what it holds now",
+   "t": 3.94
+  }
+ ]
+}
