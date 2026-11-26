@@ -1,0 +1,42 @@
+<section class="vs-scene" id="s058" data-in="cut" data-duration="8.54" data-section="PART 3 · IDENTITY CARD" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Who can get a postal identity card? Any literate person who meets either of two conditions">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="eligibility">
+   <text id="eligibility-heading" class="hi" x="960" y="215" text-anchor="middle" font-size="64" font-weight="830" fill="#2b2622">Card कौन ले सकता है?</text>
+   <path d="M915 247H1005" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+   <g id="literate-stamp">
+    <rect x="360" y="300" width="1200" height="260" rx="34" fill="#9e1b1b"/>
+    <rect x="381" y="321" width="1158" height="218" rx="18" fill="none" stroke="#fde9a6" stroke-width="6" stroke-dasharray="0 17" stroke-linecap="round"/>
+    <text id="literate-title" class="hi" x="960" y="420" text-anchor="middle" font-size="64" font-weight="850" fill="#fff">कोई भी literate व्यक्ति</text>
+    <text id="literate-gloss" class="hi" x="960" y="502" text-anchor="middle" font-size="48" font-weight="780" fill="#fde9a6">पढ़ा-लिखा</text>
+   </g>
+   <text id="conditions-heading" class="hi" x="960" y="615" text-anchor="middle" font-size="44" font-weight="770" fill="#625d59">दो में से एक शर्त</text>
+   <g id="condition-a">
+    <rect x="180" y="640" width="720" height="350" rx="29" fill="#fff" stroke="#dfcd9f" stroke-width="4"/>
+    <circle cx="245" cy="704" r="39" fill="#f3ead6"/>
+    <text x="245" y="720" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="850" fill="#2b2622">A</text>
+   </g>
+   <g id="condition-b">
+    <rect x="1020" y="640" width="720" height="350" rx="29" fill="#fff" stroke="#dfcd9f" stroke-width="4"/>
+    <circle cx="1085" cy="704" r="39" fill="#f3ead6"/>
+    <text x="1085" y="720" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="850" fill="#2b2622">B</text>
+   </g>
+   <g id="or-disc">
+    <circle cx="960" cy="815" r="42" fill="#f3ead6" stroke="#cbb686" stroke-width="3"/>
+    <text class="hi" x="960" y="830" text-anchor="middle" font-size="48" font-weight="820" fill="#2b2622">या</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [2.54,"stamp","#literate-stamp",{from:1.1,rot:-2,spring:"snap"}],
+   [4.50,"fade","#literate-gloss",{dur:.24}],
+   [5.84,"fade","#conditions-heading",{dur:.24}],
+   [5.84,"pop","#condition-a, #condition-b",{from:.96,spring:"soft",stagger:.2}],
+   [6.04,"fade","#or-disc",{dur:.21}]
+  ]
+ })
+ </script>
+</section>
