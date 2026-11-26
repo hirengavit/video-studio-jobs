@@ -35,16 +35,17 @@
    <g id="validity-stamp">
     <circle cx="1160" cy="727" r="126" fill="#fff8df"/>
     <use href="piece:postmark-ring" transform="translate(1028 595) scale(1.2)"/>
-    <text x="1160" y="713" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="850" fill="#9e1b1b">Validity:</text>
-    <text x="1160" y="767" text-anchor="middle" class="hi" font-size="55" font-weight="830" fill="#9e1b1b">3 साल</text>
+    <rect x="1068" y="687" width="184" height="84" rx="10" fill="#fff8df"/>
+    <text x="1160" y="720" text-anchor="middle" font-family="Inter,sans-serif" font-size="42" font-weight="850" fill="#9e1b1b">Validity:</text>
+    <text x="1160" y="765" text-anchor="middle" class="hi" font-size="55" font-weight="830" fill="#9e1b1b">3 साल</text>
    </g>
    <g id="issue-date">
     <rect x="927" y="866" width="466" height="57" rx="15" fill="#fff8df"/>
     <text x="1160" y="910" text-anchor="middle" class="hi" font-size="44" font-weight="770" fill="#62430e">जारी होने की तारीख से</text>
    </g>
    <g id="new-card-note">
-    <rect x="605" y="930" width="885" height="56" rx="17" fill="#f0edf0"/>
-    <text x="1047.5" y="975" text-anchor="middle" class="hi" font-size="48" font-weight="790" fill="#4b4f58">3 साल बाद: नए card के लिए apply</text>
+    <rect x="605" y="930" width="885" height="51" rx="17" fill="#f0edf0"/>
+    <text x="1047.5" y="971" text-anchor="middle" class="hi" font-size="48" font-weight="790" fill="#4b4f58">3 साल बाद: नए card के लिए apply</text>
    </g>
   </g>
  </svg>
@@ -54,7 +55,8 @@
   shots:[[0,"#poid-closeup"]],
   on:[
    [.70,"out","#photo-size",{dur:.30}],
-   [2.42,"stamp","#validity-stamp",{from:1.11,rot:0,dur:.30}],
+   [2.15,"out","#sign-line,#holder-signature",{dur:.23}],
+   [2.42,"stamp","#validity-stamp",{from:1.11,rot:0}],
    [3.30,"fade","#issue-date",{dur:.25}],
    [4.82,"fade","#new-card-note",{dur:.27}],
   ]
