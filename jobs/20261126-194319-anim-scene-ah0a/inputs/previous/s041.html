@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s041" data-in="cut" data-section="PART 2 · WEIGHT AND SIZE" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="example">
+      <text x="140" y="219" fill="#9e1b1b" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="780">उदाहरण</text>
+      <g id="gross-card">
+        <rect x="140" y="270" width="760" height="290" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="520" y="348" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="52" font-weight="790">Gross Weight</text>
+        <text x="520" y="399" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="630">कुल वज़न</text>
+        <text id="weight-gross" x="520" y="511" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="83" font-weight="820">300 g</text>
+      </g>
+      <g id="vol-card">
+        <rect x="1020" y="270" width="760" height="290" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="1400" y="348" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="52" font-weight="790">Volumetric Weight</text>
+        <text x="1400" y="399" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="630">आयतन वज़न</text>
+        <rect id="weight-volumetric-band" x="1245" y="422" width="310" height="108" rx="22" fill="#fde9a6"/>
+        <text id="weight-volumetric" x="1400" y="511" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="83" font-weight="820">450 g</text>
+      </g>
+  <g id="charge">
+   <rect x="560" y="620" width="800" height="140" rx="70" fill="#2e7d4f"/>
+   <text x="960" y="711" text-anchor="middle" font-family="Inter, sans-serif" font-size="66" font-weight="790" fill="#ffffff">Charge → 450 g</text>
+  </g>
+  <g id="case2">
+   <rect x="140" y="800" width="1640" height="160" rx="27" fill="#f3ead6"/>
+   <text x="193" y="901" font-family="Inter, sans-serif" font-size="54" font-weight="750" fill="#2b2622">Volumetric Weight</text>
+  </g>
+  <text id="case2-value" x="757" y="901" font-family="Inter, sans-serif" font-size="64" font-weight="820" fill="#2b2622">600 g</text>
+  <g id="case2-question">
+   <circle cx="1600" cy="880" r="54" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+   <text x="1600" y="905" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="820" fill="#9e1b1b">?</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [1.00,'reveal','#weight-volumetric-band',{from:'left',dur:0.28}],
+    [1.00,'pop','#charge',{spring:'soft',from:0.91}],
+    [4.24,'reveal','#case2',{from:'left',dur:0.42}],
+    [5.38,'pop','#case2-value',{spring:'soft',from:0.90}],
+    [6.62,'pop','#case2-question',{spring:'soft',from:0.91}]
+  ]
+}
+</script>
+</section>
