@@ -5,11 +5,11 @@
   <text x="145" y="217" class="hi" font-size="56" font-weight="830" fill="#9e1b1b">सामान्य नियम, एक line में</text>
   <path d="M145 241h434" stroke="#d6ac59" stroke-width="5" stroke-linecap="round"/>
   <g id="office">
+   <path d="M1273 594H1868" fill="none" stroke="#d9c9ae" stroke-width="4" stroke-linecap="round"/>
    <use href="piece:post-office-icon" transform="translate(1240 180) scale(1.5)"/>
-   <g id="held-envelope" transform="translate(1503 405) scale(.45)">
+   <g id="held-envelope" transform="translate(1524 414) scale(.45)">
     <use href="piece:domestic-envelope"/>
    </g>
-   <path d="M1242 586H1828" fill="none" stroke="#d9c9ae" stroke-width="4" stroke-linecap="round"/>
   </g>
   <g id="postmaster">
    <rect x="1178" y="600" width="604" height="66" rx="24" fill="#fff" stroke="#e1cca5" stroke-width="3"/>
@@ -29,7 +29,8 @@
    <use href="piece:house-icon" transform="translate(225 592) scale(1.3)"/>
    <text x="420" y="1017" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" fill="#4b4f58">sender</text>
   </g>
-  <path id="return-route" d="M1444 775C1283 870 1000 900 610 858Q517 848 455 914M504 910l-49 4 16-46" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="return-route" d="M1444 775C1283 870 1000 900 610 858Q517 848 455 914" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="return-head" d="M504 910l-49 4 16-46" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
   <text id="return-label" x="900" y="821" text-anchor="middle" class="hi" font-size="48" fill="#4b4f58">sender को वापस</text>
  </g>
 </svg>
@@ -43,7 +44,8 @@
   [8.22,"fade","#conditional",{dur:.24}],
   [10.24,"draw","#return-route",{dur:.90}],
   [10.24,"pop","#sender",{from:.94,spring:"soft"}],
-  [10.24,"fade","#return-label",{dur:.24}]
+  [10.24,"fade","#return-label",{dur:.24}],
+  [11.15,"fade","#return-head",{dur:.14}]
  ]
 })
 </script>
