@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s020" data-in="cut" data-duration="9.42" data-section="PART 1 · POSTE RESTANTE" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The addressee's name must be written. Initials or figures alone do not count.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="name-board">
+    <g id="name-strip">
+      <rect x="200" y="180" width="1520" height="150" rx="24" fill="#fff8df" stroke="#e2b955" stroke-width="4" filter="url(#vs-shadow)"/>
+      <rect x="217" y="194" width="1486" height="122" rx="16" fill="none" stroke="#d4ab52" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 11"/>
+      <text x="960" y="249" text-anchor="middle" font-family="Inter,sans-serif" font-size="72" font-weight="840" fill="#2b2622">Name needed, not initials</text>
+      <text id="name-gloss" x="960" y="305" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="800" fill="#62430e">addressee का नाम ज़रूरी</text>
+    </g>
+    <g id="name-list">
+      <rect x="200" y="380" width="1520" height="610" rx="31" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+      <text x="254" y="454" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="820" fill="#6f6a63">नाम की जगह ये नहीं चलते</text>
+      <path d="M254 473h1412" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+      <g id="name-row-1">
+        <rect x="254" y="495" width="1412" height="90" rx="19" fill="#f3f1f1" stroke="#d3cfd1" stroke-width="2"/>
+        <text id="name-text-1" x="300" y="557" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="820" fill="#2b2622">सिर्फ initials या figures</text>
+        <g id="name-cross-1">
+          <circle cx="1599" cy="540" r="29" fill="#e4e1e5" stroke="#777580" stroke-width="3"/>
+          <path d="M1587 528l24 24m0-24-24 24" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  camera:[[0,{zoom:1}]],
+  on:[
+    [1.66,"fade","#name-gloss",{dur:.24}],
+    [4.08,"reveal","#name-list",{from:"up",dur:.44}],
+    [7.10,"fade","#name-row-1",{dur:.25}],
+    [8.66,"strike","#name-text-1",{color:"#4b4f58",width:5,dur:.23,dim:.82}],
+    [8.66,"pop","#name-cross-1",{from:.90,spring:"soft"}]
+  ]
+})
+</script>
+</section>
