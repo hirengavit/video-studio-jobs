@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560">
+<defs><clipPath id="browser-window-clip"><rect x="3" y="3" width="894" height="554" rx="18"/></clipPath></defs>
+<g stroke-linecap="round" stroke-linejoin="round">
+<rect id="window" x="3" y="3" width="894" height="554" rx="18" fill="#ffffff"/>
+<rect id="toolbar" x="3" y="3" width="894" height="80" fill="#f3ead6" clip-path="url(#browser-window-clip)"/>
+<line x1="3" y1="83" x2="897" y2="83" stroke="#2b2622" stroke-width="3"/>
+<g id="dots" stroke="#2b2622" stroke-width="3">
+<circle cx="40" cy="43" r="10" fill="#9e1b1b"/>
+<circle cx="74" cy="43" r="10" fill="#ffffff"/>
+<circle cx="108" cy="43" r="10" fill="#ffffff"/>
+</g>
+<rect id="address-bar" x="146" y="22" width="720" height="42" rx="21" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+<g id="rows">
+<g id="row-1">
+<rect id="check-1" x="64" y="170" width="48" height="48" rx="8" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+<line x1="144" y1="234" x2="836" y2="234" stroke="#cfc6b8" stroke-width="3"/>
+</g>
+<g id="row-2">
+<rect id="check-2" x="64" y="296" width="48" height="48" rx="8" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+<line x1="144" y1="360" x2="836" y2="360" stroke="#cfc6b8" stroke-width="3"/>
+</g>
+<g id="row-3">
+<rect id="check-3" x="64" y="422" width="48" height="48" rx="8" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+<line x1="144" y1="486" x2="836" y2="486" stroke="#cfc6b8" stroke-width="3"/>
+</g>
+</g>
+<rect x="3" y="3" width="894" height="554" rx="18" fill="none" stroke="#2b2622" stroke-width="3"/>
+</g>
+<circle data-anchor="base" cx="450" cy="557" r="0"/>
+</svg>
