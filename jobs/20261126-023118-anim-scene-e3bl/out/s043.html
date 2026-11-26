@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s043" data-duration="9.60" data-in="cut" data-section="PART 2 · HOLDING PERIOD" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Unclaimed or refused domestic items return via the office of posting to the sender.">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="return">
+  <g id="duration">
+   <rect x="200" y="394" width="800" height="52" rx="26" fill="#9e1b1b"/>
+   <path id="duration-end" d="M1000 366v108" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+   <text id="period-ended" x="1000" y="539" text-anchor="end" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="780" fill="#4b4f58">अवधि खत्म</text>
+  </g>
+  <g id="delivery-office-group">
+   <use href="piece:post-office-icon" transform="translate(1120 245) scale(1)"/>
+   <text x="1280" y="566" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">Delivery post office</text>
+   <use id="return-envelope" href="piece:domestic-envelope" transform="translate(1070 610) scale(.57)"/>
+   <g id="return-reason">
+     <path d="M1474 762 L1528 814" fill="none" stroke="#6f6a63" stroke-width="5" stroke-linecap="round"/>
+     <rect x="1208" y="804" width="572" height="95" rx="19" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+     <circle cx="1530" cy="814" r="5" fill="#6f6a63"/>
+     <text id="return-reason-text" x="1494" y="868" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="740" fill="#2b2622">delivery न होने का कारण</text>
+   </g>
+  </g>
+  <g id="return-label">
+   <rect x="211" y="664" width="671" height="100" rx="26" fill="#f3ead6"/>
+   <text x="547" y="731" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="57" font-weight="780" fill="#9e1b1b">वापसी के लिए</text>
+  </g>
+  <g id="standard-reason-note">
+   <rect x="1208" y="916" width="572" height="76" rx="20" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+   <text x="1494" y="968" text-anchor="middle" class="hi" font-size="44" font-weight="760" fill="#4b4f58">standard कारण दर्ज</text>
+  </g>
+  <g id="returned-status">
+   <rect x="1124" y="586" width="543" height="71" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+   <text x="1395.5" y="636" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="730" fill="#2b2622">unclaimed · refused</text>
+  </g>
+  <g id="posting-office">
+   <use href="piece:post-office-icon" transform="translate(425 264) scale(.85)"/>
+   <text x="561" y="566" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">Office of posting</text>
+  </g>
+  <path id="return-to-posting" d="M1098 410C967 373 846 373 722 410m35-36-35 36 48 6" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="sender-home">
+   <use href="piece:house-icon" transform="translate(112 278) scale(.70)"/>
+   <text x="217" y="566" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">sender</text>
+  </g>
+  <path id="return-to-sender" d="M422 411H337m25-21-25 21 25 21" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.54,"fade","#standard-reason-note",{dur:.28}],
+  [3.10,"fade","#returned-status",{dur:.30}],
+  [5.48,"out","#duration",{to:"left",dist:140,dur:.26,scale:1}],
+  [5.48,"out","#return-label",{to:"left",dist:100,dur:.25,scale:1}],
+  [5.48,"pop","#posting-office",{from:.86,spring:"soft"}],
+  [5.48,"draw","#return-to-posting",{dur:.72}],
+  [8.34,"pop","#sender-home",{from:.86,spring:"soft"}],
+  [8.34,"draw","#return-to-sender",{dur:.43}]
+ ]
+})
+</script>
+</section>
