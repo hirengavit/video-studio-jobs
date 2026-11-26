@@ -79,20 +79,20 @@
   update(t,section,$){
     const raw=Math.max(0,Math.min(1,(t-.20)/.58)), s=raw*raw*(3-2*raw);
     const interp=(a,b)=>a+(b-a)*s;
-    const list=$("#name-list");
+    const list=$("#name-list")[0];
     list.setAttribute("transform","translate("+(-56*s)+" 0)");
     list.querySelector(":scope > rect").setAttribute("width",interp(1520,880));
     list.querySelector(":scope > path").setAttribute("d","M254 473h"+interp(1412,776));
     list.querySelector(":scope > text").setAttribute("x",interp(254,242));
     for(let i=1;i<=4;i++){
-      const row=$("#name-row-"+i), rect=row.querySelector("rect"), label=$("#name-text-"+i), strike=$("#name-strike-"+i);
+      const row=$("#name-row-"+i)[0], rect=row.querySelector("rect"), label=$("#name-text-"+i)[0], strike=$("#name-strike-"+i)[0];
       rect.setAttribute("x",interp(254,228));
       rect.setAttribute("width",interp(1412,823));
       const top=[0,495,596,744,852][i], ht=[0,87,136,87,87][i];
       rect.setAttribute("y",interp(495+(i-1)*115,top));
       rect.setAttribute("height",interp(90,ht));
       const sy=[0,-3,9,18,10][i]*s;
-      $("#name-cross-"+i).setAttribute("transform","translate("+(-585*s)+" "+sy+")");
+      $("#name-cross-"+i)[0].setAttribute("transform","translate("+(-585*s)+" "+sy+")");
       label.setAttribute("x",interp(300,244));
       label.setAttribute("y",interp(557+(i-1)*115,[0,553,667,802,910][i]));
       label.setAttribute("font-size",interp(52,48));
@@ -101,7 +101,7 @@
       if(s>0 && (i===1||i===3||i===4))
         strike.setAttribute("d","M293 "+[0,548,663,778,893][i]+"h"+([0,558,1207,271,710][i]*interp(1,.923)));
     }
-    const l=$("#name-text-2"), line=$("#name-strike-2"), compact=$("#row2-compact");
+    const l=$("#name-text-2")[0], line=$("#name-strike-2")[0], compact=$("#row2-compact")[0];
     if(raw>0 && raw<.68){
       const w=interp(1200,714);
       l.setAttribute("textLength",w);
