@@ -4,7 +4,7 @@
   <g id="track">
    <g transform="translate(260 260) scale(1.5)">
     <use href="piece:receipt-slip"/>
-    <rect id="barcode" x="38" y="28" width="184" height="72" rx="8" fill="#f2b705" fill-opacity=".23" stroke="#f2b705" stroke-width="3"/>
+    <rect id="barcode-mark" x="38" y="28" width="184" height="72" rx="8" fill="#f2b705" fill-opacity=".23" stroke="#f2b705" stroke-width="3"/>
    </g>
    <text id="article-label" x="693" y="337" font-family="Inter, sans-serif" font-size="58" font-weight="760" fill="#2b2622">article number</text>
    <path id="barcode-arrow" d="M671 326 608 350m16-24-16 24 29 4" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -37,7 +37,7 @@
   on:[
    [0.32,'fade','#article-label',{dur:0.24}],
    [0.32,'draw','#barcode-arrow',{dur:0.30}],
-   [0.74,'reveal','#barcode',{from:'left',dur:0.31}],
+   [0.74,'reveal','#barcode-mark',{from:'left',dur:0.31}],
    [1.64,'reveal','#tracking-arrow',{from:'left',dur:0.45}],
    [2.74,'pop','#track-label',{from:0.76}],
    [2.74,'pop','#booking-status',{from:0.82}],
