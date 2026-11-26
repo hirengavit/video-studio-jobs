@@ -1,0 +1,27 @@
+{
+ "moments": [
+  "0.30",
+  "1.79",
+  "3.59",
+  "5.38",
+  "7.18",
+  "8.82"
+ ],
+ "problems": [
+  "s156: no photo \"newspaper-bundle-tied-cutout\" in the materials"
+ ],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s156",
+   "text": "Printed-paper / packet या bag",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s156",
+   "text": "insured letter / या box",
+   "t": 0.3
+  }
+ ]
+}
