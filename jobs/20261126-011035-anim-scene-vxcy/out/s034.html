@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s034" data-in="cut" data-duration="10.29" data-section="PART 2 · HOLDING PERIOD" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="The 15 days count at the delivery office, excluding time in transit from the booking office">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="holding-track">
+   <g id="booking-office">
+    <text x="290" y="257" text-anchor="middle" font-family="Inter,sans-serif" font-weight="800" font-size="52" fill="#2b2622">Booking office</text>
+    <use href="piece:post-office-icon" transform="translate(138 285.8) scale(.95)"/>
+   </g>
+   <g id="delivery-office">
+    <text x="1630" y="257" text-anchor="middle" font-family="Inter,sans-serif" font-weight="800" font-size="52" fill="#2b2622">Delivery office</text>
+    <use href="piece:post-office-icon" transform="translate(1508 285.8) scale(.95)"/>
+   </g>
+   <path d="M160 560H440M1660 560H1760" fill="none" stroke="#dcd3bf" stroke-width="4" stroke-linecap="round"/>
+   <path id="transit-line" d="M440 560H960" fill="none" stroke="#77757b" stroke-width="8" stroke-dasharray="18 16" stroke-linecap="round"/>
+   <path id="transit-arrow" d="M690 542l19 18-19 18" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+   <path id="holding-line" d="M980 560H1660" fill="none" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round"/>
+   <circle cx="290" cy="560" r="10" fill="#fff" stroke="#4b4f58" stroke-width="4"/>
+   <circle cx="1660" cy="560" r="11" fill="#fff" stroke="#9e1b1b" stroke-width="5"/>
+   <g id="day-count">
+    <rect x="1111" y="402" width="360" height="104" rx="24" fill="#9e1b1b"/>
+    <text x="1291" y="475" class="hi" text-anchor="middle" font-size="64" font-weight="820" fill="#fff">15 दिन</text>
+   </g>
+   <g id="delivery-note">
+    <rect x="1000" y="642" width="730" height="158" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M1024 644a22 22 0 0 0-22 22v110a22 22 0 0 0 22 22" fill="none" stroke="#9e1b1b" stroke-width="7"/>
+    <text x="1365" y="739" class="hi" text-anchor="middle" font-size="48" font-weight="770" fill="#2b2622">delivery office में जमा</text>
+   </g>
+   <g id="transit-note">
+    <rect x="396" y="642" width="566" height="158" rx="24" fill="#fff" stroke="#d0cccb" stroke-width="3"/>
+    <text id="transit-note-a" x="679" y="705" class="hi" text-anchor="middle" font-size="48" font-weight="760" fill="#2b2622">Booking office से</text>
+    <text id="transit-note-b" x="679" y="764" class="hi" text-anchor="middle" font-size="48" font-weight="760" fill="#2b2622">पहुँचने का समय</text>
+   </g>
+   <g id="excluded-note">
+    <rect x="448" y="839" width="462" height="97" rx="24" fill="#4b4f58"/>
+    <text x="679" y="905" class="hi" text-anchor="middle" font-size="48" font-weight="790" fill="#fff">नहीं गिना जाता</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [.20,"grow","#holding-line",{axis:"x",origin:"left",spring:"snap"}],
+   [.20,"fade","#day-count",{dur:.24}],
+   [1.26,"fade","#delivery-note",{dur:.25}],
+   [5.12,"fade","#transit-note",{dur:.25}],
+   [8.84,"strike","#transit-note-a",{color:"#4b4f58",width:5,dur:.29,dim:.68}],
+   [8.84,"strike","#transit-note-b",{color:"#4b4f58",width:5,dur:.29,dim:.68}],
+   [8.84,"fade","#excluded-note",{dur:.23}]
+  ]
+ })
+ </script>
+</section>
