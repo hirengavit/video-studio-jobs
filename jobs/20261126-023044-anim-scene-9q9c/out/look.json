@@ -8,24 +8,5 @@
   "12.77"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s005",
-   "text": "Part 2 · Holding period / Part 3 · Postal Identity Card",
-   "t": 7.75
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s005",
-   "text": "Poste Restante डाक कितने दिन रुकती है / डाक पहचान पत्र",
-   "t": 7.75
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s005",
-   "text": "और फिर क्या होता है / delivery पर पहचान",
-   "t": 10.34
-  }
- ]
+ "warnings": []
 }
