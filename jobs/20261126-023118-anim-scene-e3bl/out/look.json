@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "1.92",
+  "3.84",
+  "5.76",
+  "7.68",
+  "9.45"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s043",
+   "message": "out: option \"to\" isn't used (it takes: dur, scale)",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s043",
+   "message": "out: option \"dist\" isn't used (it takes: dur, scale)",
+   "t": 0.3
+  }
+ ]
+}
