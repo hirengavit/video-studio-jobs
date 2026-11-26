@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s117" data-in="cut" data-section="PART 5 · BUSINESS CUSTOMERS" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="ex">
+  <g id="example-stamp">
+    <rect x="120" y="190" width="640" height="570" rx="30" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+    <rect x="123" y="193" width="634" height="564" rx="27" fill="none" stroke="#fbf7ee" stroke-width="12" stroke-dasharray="0 24" stroke-linecap="round"/>
+    <rect x="143" y="213" width="594" height="524" rx="20" fill="none" stroke="#b8403a" stroke-width="3"/>
+    <text x="180" y="282" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="800" fill="#fde9a6">EXAMPLE · उदाहरण</text>
+    <g id="example-given">
+      <text x="180" y="352" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="700" fill="#fff">महीने की eligible</text>
+      <text x="180" y="400" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="700" fill="#fff">document revenue</text>
+    </g>
+    <text id="example-amount" x="440" y="529" textLength="525" lengthAdjust="spacing" text-anchor="middle" font-family="Inter, sans-serif" font-size="110" font-weight="830" fill="#fff">₹6,00,000</text>
+    <g id="example-all-ntd">
+      <rect x="180" y="568" width="346" height="68" rx="34" fill="#f3ead6"/>
+      <text x="353" y="614" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="820" fill="#2b2622">सारी NTD</text>
+    </g>
+    <g id="example-all-td">
+      <rect x="180" y="652" width="346" height="68" rx="34" fill="#7d1414" stroke="#e8a3a0" stroke-width="2"/>
+      <text x="353" y="698" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="820" fill="#fff">या सारी TD</text>
+    </g>
+  </g>
+  <rect id="example-working-card" x="820" y="190" width="980" height="570" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+
+  <g id="working-ntd-tag">
+    <rect x="850" y="271" width="118" height="78" rx="39" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+    <text x="909" y="324" text-anchor="middle" font-family="Inter, sans-serif" font-size="37" font-weight="810" fill="#2b2622">NTD</text>
+  </g>
+  <text id="working-ntd" x="988" y="330" font-family="Georgia, 'DejaVu Serif', serif" font-size="54" font-weight="700" fill="#2b2622">₹6,00,000 × 10%</text>
+  <text id="working-ntd-equals" x="1428" y="330" text-anchor="middle" font-family="Georgia, 'DejaVu Serif', serif" font-size="54" font-weight="700" fill="#2b2622">=</text>
+  <g id="working-ntd-answer">
+    <rect x="1480" y="271" width="282" height="78" rx="39" fill="#2e7d4f"/>
+    <text x="1621" y="326" text-anchor="middle" font-family="Georgia, 'DejaVu Serif', serif" font-size="53" font-weight="740" fill="#fff">₹60,000</text>
+  </g>
+  <g id="working-td-tag">
+    <rect x="850" y="461" width="118" height="78" rx="39" fill="#9e1b1b"/>
+    <text x="909" y="514" text-anchor="middle" font-family="Inter, sans-serif" font-size="37" font-weight="810" fill="#fff">TD</text>
+  </g>
+  <text id="working-td" x="988" y="520" font-family="Georgia, 'DejaVu Serif', serif" font-size="54" font-weight="700" fill="#2b2622">₹6,00,000 × 20%</text>
+  <text id="working-td-equals" x="1428" y="520" text-anchor="middle" font-family="Georgia, 'DejaVu Serif', serif" font-size="54" font-weight="700" fill="#2b2622">=</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots:[[0,'#ex']],
+  on:[
+    [0.46,'fade','#working-ntd-tag',{dur:0.22}],
+    [0.46,'type','#working-ntd',{cps:16}],
+    [2.38,'fade','#working-ntd-equals',{dur:0.23}],
+    [3.70,'pop','#working-ntd-answer',{from:0.92,spring:'soft'}],
+    [5.44,'pop','#example-all-td',{from:0.95,spring:'soft'}],
+    [7.74,'fade','#working-td-tag',{dur:0.22}],
+    [7.74,'type','#working-td',{cps:16}],
+    [8.82,'fade','#working-td-equals',{dur:0.20}]
+  ]
+}
+</script>
+</section>
