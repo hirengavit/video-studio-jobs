@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s242" data-in="cut" data-section="KEY POINTS" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="length-limit">
+ <use href="piece:key-fact-stamp" transform="translate(120 330) scale(1.1)"/>
+ <text x="428" y="538" text-anchor="middle" font-size="162" font-weight="850" fill="#fff">3 m</text>
+ <text class="hi" x="428" y="629" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="730" fill="#fde9a6">Length + Girth, अधिकतम</text>
+</g>
+<g id="tariff">
+ <rect x="840" y="190" width="980" height="770" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <path d="M870 190H1790A30 30 0 0 1 1820 220V360H840V220A30 30 0 0 1 870 190Z" fill="#9e1b1b"/>
+ <text x="887" y="268" font-size="63" font-weight="810" fill="#fff">Speed Post Document</text>
+ <text class="hi" x="890" y="326" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="670" fill="#fde9a6">स्पीड पोस्ट दस्तावेज</text>
+ <text class="hi" id="slab" x="891" y="437" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="730" fill="#2b2622">पहला slab: 50 g तक</text>
+ <g id="local">
+  <path d="M890 476H1770" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <text x="901" y="554" font-size="56" font-weight="800" fill="#2b2622">Local</text>
+  <text class="hi" x="905" y="606" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="670" fill="#6f6a63">स्थानीय</text>
+ </g>
+ <text id="local-price" x="1700" y="581" text-anchor="end" font-size="96" font-weight="850" fill="#9e1b1b">₹19</text>
+ <g id="nonlocal">
+  <path d="M890 633H1770" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <text x="901" y="711" font-size="56" font-weight="800" fill="#2b2622">Non-local</text>
+  <text class="hi" x="905" y="763" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="670" fill="#6f6a63">बाहर</text>
+ </g>
+ <text id="nonlocal-price" x="1700" y="738" text-anchor="end" font-size="96" font-weight="850" fill="#9e1b1b">₹47</text>
+ <g id="gst">
+  <rect x="890" y="824" width="260" height="73" rx="25" fill="#f3ead6"/>
+  <text class="hi" x="1020" y="875" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="730" fill="#4b4f58">GST अलग</text>
+ </g>
+ <text id="source" x="891" y="932" font-size="31" font-weight="610" fill="#6f6a63">Schedule I, Post Office Regulations 2024 · 1 Oct 2025</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [2.15,'slide','#tariff',{from:'right',dist:80,spring:'soft'}],
+  [3.43,'fade','#slab',{dur:0.3}],
+  [4.07,'fade','#local',{dur:0.28}],
+  [4.77,'pop','#local-price',{spring:'soft'}],
+  [4.77,'fade','#source',{dur:0.28}],
+  [6.71,'fade','#nonlocal',{dur:0.28}],
+  [7.35,'pop','#nonlocal-price',{spring:'soft'}],
+  [8.93,'pop','#gst',{spring:'soft'}],
+ ]
+}
+</script>
+</section>
