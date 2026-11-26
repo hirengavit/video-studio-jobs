@@ -8,18 +8,5 @@
   "12.37"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s190",
-   "message": "pop: option \"dur\" isn't used (it takes: spring, from)",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s190",
-   "text": "सफ़र में / पात्र loss या damage",
-   "t": 2.5
-  }
- ]
+ "warnings": []
 }
