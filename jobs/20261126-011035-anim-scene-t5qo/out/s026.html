@@ -1,0 +1,33 @@
+<section class="vs-scene" id="s026" data-in="cut" data-duration="11" data-section="PART 1 · POSTE RESTANTE" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Poste Restante: item conditions stay the same">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="list">
+ <text id="list-heading" x="220" y="210" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="820" fill="#9e1b1b">Item की शर्तें वही</text>
+ <g id="row1">
+  <rect x="220" y="330" width="1480" height="180" rx="24" fill="#fffdfa" stroke="#ead9a8" stroke-width="3"/>
+  <rect x="242" y="348" width="162" height="144" rx="18" fill="#f3ead6"/>
+  <use id="receipt" href="piece:receipt-slip" transform="translate(277 351) scale(.36)"/>
+  <text id="receipt-text" x="456" y="438" font-family="Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">Accountable item: booking receipt</text>
+ </g>
+ <g id="row2">
+  <rect x="220" y="540" width="1480" height="180" rx="24" fill="#fffdfa" stroke="#ead9a8" stroke-width="3"/>
+  <rect x="242" y="558" width="162" height="144" rx="18" fill="#f3ead6"/>
+  <path id="signature" d="M260 644 Q281 627 298 602 Q314 583 316 598 Q320 612 291 654 Q282 668 289 667 Q312 650 326 630 Q313 656 325 653 Q334 653 344 637 Q343 652 352 650 L385 630 M268 675 Q326 661 384 667" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="signature-text" x="456" y="620" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622">delivery का सबूत: signature</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [2.74,"fade","#row1",{dur:.24}],
+  [2.74,"pop","#receipt",{from:.92,spring:"soft"}],
+  [2.74,"fade","#receipt-text",{dur:.24}],
+  [9.62,"fade","#row2",{dur:.20}],
+  [9.62,"draw","#signature",{dur:.50}],
+  [9.62,"fade","#signature-text",{dur:.23}]
+ ]
+})
+</script>
+</section>
