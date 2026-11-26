@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s078" data-in="cut" data-section="PART 3 · TARIFF" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="special">
+ <text x="140" y="220" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="790" fill="#9e1b1b">दो खास बातें</text>
+ <g id="sp1">
+  <g id="sp1-body">
+   <rect x="140" y="280" width="1640" height="300" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <text x="260" y="380" font-size="52" font-weight="800" fill="#2b2622">Army Postal Service (APS) offices</text>
+  </g>
+  <g id="sp1-badge">
+   <circle cx="202" cy="361" r="38" fill="#9e1b1b"/><text x="202" y="377" text-anchor="middle" font-size="45" font-weight="820" fill="#fff">1</text>
+  </g>
+  <text id="sp1-hi" x="260" y="450" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="680" fill="#6f6a63">सेना डाक सेवा के offices को भेजी booking</text>
+  <path id="aps-arrow" d="M1180 379H1237m-17-15 17 15-17 15" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="aps-pill">
+   <rect x="1260" y="340" width="480" height="77" rx="38" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+   <text x="1500" y="392" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="770" fill="#2b2622">Other States · अन्य राज्य</text>
+  </g>
+  <text id="aps-may" x="1500" y="472" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">मानी जा सकती है</text>
+  <text id="aps-any" x="1500" y="523" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">booking कहीं से भी</text>
+ </g>
+ <g id="sp2">
+   <rect x="140" y="620" width="1640" height="340" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <g id="sp2-badge"><circle cx="202" cy="700" r="38" fill="#9e1b1b"/><text x="202" y="716" text-anchor="middle" font-family="Inter, sans-serif" font-size="45" font-weight="820" fill="#fff">2</text></g>
+   <text id="ncr" x="260" y="718" font-family="Inter, sans-serif" font-size="52" font-weight="800" fill="#2b2622">NCR</text>
+   <text id="ncr-hi" x="260" y="786" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">राष्ट्रीय राजधानी क्षेत्र</text>
+   <path id="local-arrow" d="M1115 718H1237m-17-15 17 15-17 15" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+   <g id="ncr-pill">
+    <rect x="1260" y="680" width="480" height="77" rx="38" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text x="1500" y="732" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="770" fill="#2b2622">Local · स्थानीय</text>
+   </g>
+   <text id="ncr-limits" x="1500" y="817" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">पाँच इलाकों की municipal सीमा</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [0,'draw','#aps-arrow',{dur:.43}],
+  [0,'pop','#aps-pill',{from:.88,spring:'fast'}],
+  [1.42,'fade','#aps-may',{dur:.29}],
+  [2.72,'fade','#aps-any',{dur:.29}],
+  [4.50,'fade','#sp2',{dur:.27}],
+  [4.88,'type','#ncr',{cps:13}],
+  [4.88,'fade','#ncr-hi',{dur:.34}],
+  [6.18,'fade','#ncr-limits',{dur:.32}],
+  [8.92,'draw','#local-arrow',{dur:.43}],
+  [8.92,'pop','#ncr-pill',{from:.88,spring:'fast'}]
+ ]
+}
+</script>
+</section>
