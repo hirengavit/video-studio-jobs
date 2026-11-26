@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s227" data-in="cut" data-section="PART 10 · COMPENSATION" data-series="PRODUCTS">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="trap-banner">
+      <rect x="100" y="160" width="1720" height="170" rx="26" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+      <path d="M156 286l43-76 43 76Z" fill="#f2b705" stroke="#f2b705" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M199 237v21" stroke="#7d1414" stroke-width="8" stroke-linecap="round"/><circle cx="199" cy="272" r="4.5" fill="#7d1414"/>
+      <text x="286" y="217" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="38" font-weight="730" fill="#fde9a6">EXAM TRAP · परीक्षा का जाल</text>
+      <text id="trap-title" x="286" y="292" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="55" font-weight="790" fill="#fff">दो अलग नियम: 30 दिन settlement ≠ lost मानने का नियम</text>
+    </g>
+    <g id="settlement-card">
+      <rect x="140" y="370" width="790" height="390" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="200" y="478" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="57" font-weight="790" fill="#2b2622">Settlement · निपटारा</text>
+      <path d="M200 516H868" stroke="#ead9a8" stroke-width="2"/>
+      <g>
+        <rect x="200" y="558" width="191" height="132" rx="18" fill="#9e1b1b"/>
+        <rect x="203" y="561" width="185" height="126" rx="15" fill="none" stroke="#fff" stroke-width="9" stroke-dasharray="0 18" stroke-linecap="round"/>
+        <text x="295.5" y="645" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-weight="790" fill="#fff"><tspan font-size="66">30</tspan><tspan font-size="37"> दिन</tspan></text>
+      </g>
+      <text x="431" y="614" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="46" font-weight="650" fill="#2b2622">complaint या claim</text>
+      <text x="431" y="674" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="46" font-weight="650" fill="#2b2622">मिलने से</text>
+    </g>
+    <g id="lost-card">
+      <rect x="990" y="370" width="790" height="390" rx="28" fill="#fff" stroke="#f2b705" stroke-width="4" filter="url(#vs-shadow)"/>
+      <text x="1050" y="478" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="57" font-weight="790" fill="#2b2622">Lost item · खोया माना</text>
+      <path d="M1050 516H1718" stroke="#ead9a8" stroke-width="2"/>
+      <g>
+        <rect x="1050" y="558" width="191" height="132" rx="18" fill="#9e1b1b"/>
+        <rect x="1053" y="561" width="185" height="126" rx="15" fill="none" stroke="#fff" stroke-width="9" stroke-dasharray="0 18" stroke-linecap="round"/>
+        <text x="1145.5" y="645" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-weight="790" fill="#fff"><tspan font-size="66">60</tspan><tspan font-size="37"> दिन</tspan></text>
+      </g>
+      <text x="1280" y="576" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="650" fill="#2b2622">booking से 60 या</text>
+      <text x="1280" y="635" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="650" fill="#2b2622">complaint से 30,</text>
+      <text x="1280" y="694" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="780" fill="#8a5d00">जो बाद में</text>
+    </g>
+    <g id="remember-rule">
+      <rect x="140" y="800" width="1640" height="160" rx="27" fill="#f3ead6"/>
+      <text id="remember-text" x="960" y="899" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="58" font-weight="790" fill="#2b2622">देर से पहुँचा item, अपने आप lost item नहीं</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.90, 'slide', '#settlement-card', {from:'down',dist:55,spring:'fast'}],
+      [2.20, 'slide', '#lost-card', {from:'down',dist:55,spring:'fast'}],
+      [3.76, 'highlight', '#trap-title', {words:'अलग',color:'#f2b705',opacity:0.52,dur:0.37,pad:4}],
+      [5.02, 'fade', '#remember-rule', {dur:0.19}],
+      [5.02, 'words', '#remember-text', {gap:0.40,dist:10,spring:'fast'}],
+      [8.28, 'underline', '#remember-text', {words:'नहीं',color:'#8a5d00',width:6,dur:0.30}]
+    ]
+  }
+  </script>
+</section>
