@@ -1,0 +1,37 @@
+<section class="vs-scene" id="s105" data-in="cut" data-duration="8.50" data-section="PART 5 · CANCELLATION" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Postage refunds follow the Department's administrative instructions">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<defs><clipPath id="stamp-clip"><rect x="1460" y="655" width="241" height="185"/></clipPath></defs>
+<g id="refund">
+ <text id="heading" x="220" y="230" font-family="Inter,sans-serif" font-size="80" font-weight="820" fill="#9e1b1b">Refund?</text>
+ <use id="notes" href="piece:rupee-deposit" transform="translate(300 420) scale(2)"/>
+ <text id="refund-label" x="540" y="802" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">postage refund</text>
+ <path id="arrow" d="M801 591H890l-25-21 25 21-25 21" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="document">
+  <rect x="920" y="380" width="800" height="480" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M983 452h111" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+  <text id="document-copy" x="983" y="552" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="760" fill="#2b2622"><tspan x="983">Department के</tspan><tspan x="983" dy="79" textLength="674" lengthAdjust="spacingAndGlyphs">administrative instructions</tspan></text>
+  <g id="source">
+   <g clip-path="url(#stamp-clip)">
+    <use href="piece:postmark-ring" transform="translate(1464 663) scale(.78)"/>
+   </g>
+   <text x="1550" y="740" text-anchor="middle" fill="#9e1b1b" font-family="Inter,sans-serif" font-weight="800" font-size="34">Reg. 23A</text>
+   <text x="1550" y="782" text-anchor="middle" fill="#9e1b1b" font-family="Inter,sans-serif" font-weight="760" font-size="32" textLength="135" lengthAdjust="spacingAndGlyphs">S.O. 3891(E)</text>
+  </g>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [2.28,'pop','#notes',{from:.98,spring:'soft'}],
+  [2.28,'fade','#refund-label',{dur:.28}],
+  [3.88,'draw','#arrow',{dur:.38}],
+  [3.88,'slide','#document',{from:'right',dist:110,spring:'soft'}],
+  [5.24,'fade','#document-copy',{dur:.28}],
+  [5.24,'stamp','#source',{from:1.08,rot:-3,spring:'soft'}]
+ ]
+})
+</script>
+</section>
