@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s084" data-section="PART 4 · SENDER'S RECALL" data-series="DELIVERY RULES" data-in="cut" data-duration="12.83" lang="hi">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif" fill="#2b2622">
+<g id="req">
+ <text x="960" y="225" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="64" font-weight="790" fill="#9e1b1b">Request कैसे?</text>
+ <g id="request-person">
+  <rect x="200" y="314" width="690" height="594" rx="28" fill="#f3ead6"/>
+  <use href="piece:person-icon" transform="translate(435 374) scale(1.32)"/>
+  <text x="545" y="781" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="820" fill="#2b2622">Sender</text>
+  <rect x="404" y="807" width="228" height="69" rx="3" fill="#f2b705" opacity=".39"/>
+  <text id="request-authority" x="545" y="853" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="700" fill="#2b2622">या ज़रूरी authority वाला व्यक्ति</text>
+ </g>
+ <g id="written-request-sheet">
+  <use href="piece:written-request" transform="translate(1117 221) scale(1.15)"/>
+  <rect x="1155" y="250" width="407" height="93" rx="10" fill="#fff"/>
+  <text x="1358.5" y="313" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="790" fill="#9e1b1b">लिखित request</text>
+  <g id="request-reason">
+   <rect x="1155" y="368" width="371" height="67" rx="10" fill="#fff"/>
+   <text x="1173" y="417" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">कारण</text>
+  </g>
+  <g id="request-fee">
+   <rect x="1161" y="713" width="248" height="71" rx="24" fill="#fde9a6"/>
+   <text x="1285" y="763" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="760" fill="#60310c">लागू fee</text>
+  </g>
+ </g>
+ <g id="numbered-form">
+  <rect x="1117" y="884" width="482" height="63" rx="27" fill="#e9e6e1"/>
+  <text id="numbered-form-label" x="1358" y="929" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="730" fill="#4b4f58">Form No. ___</text>
+ </g>
+ <text id="no-numbered-form" x="1358" y="1002" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="46" font-weight="750" fill="#4b4f58">कोई numbered form नहीं</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots:[[0,"#req"]],
+  on:[
+    [.99,"slide","#written-request-sheet",{from:"right",dist:160,spring:"soft"}],
+    [3.33,"fade","#request-reason",{dur:.24}],
+    [5.97,"pop","#request-fee",{from:.94,spring:"soft"}],
+    [9.69,"fade","#numbered-form",{dur:.28}],
+    [11.59,"strike","#numbered-form-label",{color:"#4b4f58",width:7,dur:.39}],
+    [11.59,"fade","#no-numbered-form",{dur:.29}]
+  ]
+}
+</script>
+</section>
