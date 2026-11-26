@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" fill="none">
+<defs><clipPath id="icon-globe-clip"><circle cx="150" cy="150" r="136"/></clipPath></defs>
+<circle id="icon-globe-ocean" cx="150" cy="150" r="136" fill="#fbf7ee"/>
+<g id="icon-globe-land" clip-path="url(#icon-globe-clip)" fill="#ead9a8">
+<path d="M58,70 C80,48 120,50 134,66 C146,80 128,96 132,112 C136,130 112,138 98,152 C86,164 92,186 76,194 C60,202 40,184 34,160 C28,136 36,92 58,70 Z"/>
+<path d="M176,40 C200,34 232,46 248,66 C262,84 240,96 224,94 C208,92 200,106 184,102 C168,98 160,80 164,64 C166,52 168,44 176,40 Z"/>
+<path d="M186,138 C208,128 238,134 254,152 C270,172 262,206 240,226 C220,244 204,262 188,254 C172,246 182,220 172,204 C162,186 166,148 186,138 Z"/>
+<path d="M100,226 C118,220 134,232 130,248 C126,262 106,268 94,258 C84,250 88,232 100,226 Z"/>
+</g>
+<g id="icon-globe-grid" clip-path="url(#icon-globe-clip)" stroke="#2b2622" stroke-width="2" stroke-linecap="round" opacity="0.6">
+<ellipse cx="150" cy="150" rx="48" ry="136"/><ellipse cx="150" cy="150" rx="98" ry="136"/><line x1="150" y1="14" x2="150" y2="286"/>
+<line x1="14" y1="150" x2="286" y2="150"/><path d="M30,86 C90,100 210,100 270,86"/><path d="M30,214 C90,200 210,200 270,214"/>
+</g>
+<circle cx="150" cy="150" r="136" stroke="#2b2622" stroke-width="3"/>
+<circle data-anchor="base" cx="150" cy="286" r="0"/>
+</svg>
