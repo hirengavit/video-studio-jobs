@@ -29,7 +29,7 @@
 ({
  camera:[[0,{zoom:1}]],
  on:[
-  [4.68,"swap","#topic-heading",{to:"#key-heading",dur:.29,dist:18}],
+  [4.68,"fade","#key-heading",{dur:.18}],
   [4.68,"pop","#tile-1",{from:.95,spring:"soft"}],
   [4.78,"pop","#tile-2",{from:.95,spring:"soft"}],
   [4.88,"pop","#tile-3",{from:.95,spring:"soft"}],
@@ -37,7 +37,10 @@
   [5.08,"pop","#tile-5",{from:.95,spring:"soft"}],
   [7.66,"fade","#tile-1-term",{dur:.28}],
   [10.36,"fade","#tile-1-job",{dur:.26}]
- ]
+ ],
+ update(t,section,$){
+  $("#topic-heading")[0].setAttribute("opacity",t<4.68?1:0);
+ }
 })
 </script>
 </section>
