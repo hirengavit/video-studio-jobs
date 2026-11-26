@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s154" data-in="cut" data-duration="11.20" data-section="PART 7 · INTERNATIONAL" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Demurrage after the free period: international air parcel addressed Poste Restante">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="table">
+   <text id="table-title" x="140" y="218" class="hi" font-size="52" font-weight="850" fill="#9e1b1b">Demurrage · विलंब शुल्क</text>
+   <rect id="table-frame" x="140" y="260" width="1640" height="600" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <path d="M168 260H1752Q1780 260 1780 288V336H140V288Q140 260 168 260Z" fill="#9e1b1b"/>
+   <path id="table-zebra" d="M150 336H1770V535H150ZM150 698H1770V842H150Z" fill="#fbf7ee"/>
+   <path id="table-rules" d="M150 535H1770M150 698H1770M826 336V849M1195 336V849" stroke="#ead9a8" stroke-width="3"/>
+   <g fill="#fff" font-size="44" font-weight="820">
+    <text class="hi" x="185" y="315">ITEM · वस्तु</text>
+    <text class="hi" x="1010.5" y="315" text-anchor="middle">शर्त</text>
+    <text class="hi" x="1487.5" y="315" text-anchor="middle">दर</text>
+   </g>
+   <g id="air-parcel-label">
+    <use href="piece:icon-plane" transform="translate(172 368) scale(.3)"/>
+    <text x="305" y="421" class="hi" font-size="44" font-weight="820" fill="#2b2622">International air parcel</text>
+    <text x="305" y="479" class="hi" font-size="44" font-weight="740" fill="#6f6a63">(Poste Restante)</text>
+   </g>
+   <text id="air-condition" x="1010.5" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="45" font-weight="760" fill="#2b2622"><tspan x="1010.5" y="419">500 g की कोई</tspan><tspan x="1010.5" y="478">शर्त नहीं</tspan></text>
+   <text id="air-daily" x="1487.5" y="419" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="810" fill="#9e1b1b">₹1 प्रति दिन</text>
+   <rect x="1524" y="439" width="105" height="68" rx="4" fill="#f2b705" opacity=".38"/>
+   <text id="air-maximum" x="1487.5" y="485" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="790" fill="#2b2622">maximum ₹40</text>
+   <g id="printed-insured-row">
+    <g id="row-2-poste-restante">
+     <rect x="494" y="544" width="320" height="52" rx="16" fill="#f3ead6"/>
+     <text x="654" y="581" text-anchor="middle" font-family="Inter,sans-serif" font-size="38" font-weight="780" fill="#6f6a63">Poste Restante</text>
+    </g>
+    <image id="row-2-printed-photo" href="photo:newspaper-bundle-tied-cutout" x="160" y="604" width="174" height="130" preserveAspectRatio="xMidYMid meet"/>
+    <g id="row-2-printed-label" font-size="44" font-weight="820" fill="#2b2622">
+     <text x="505" y="638" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">Printed-paper</text>
+     <text x="505" y="689" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">packet या bag</text>
+    </g>
+    <g id="row-2-insured-icon"><use href="piece:insured-letter-bag" transform="translate(332 559) scale(.5)"/></g>
+    <g id="row-2-insured-label" font-size="44" font-weight="820" fill="#2b2622">
+     <text x="505" y="740" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">insured letter</text>
+     <text x="505" y="791" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif">या box</text>
+    </g>
+   </g>
+   <text id="table-source" x="140" y="912" class="hi" font-size="42" font-weight="670" fill="#6f6a63">Reg. 119A / 127 · Schedule III Table XI</text>
+  </g>
+
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [.90,"fade","#row-2-poste-restante",{dur:.23}],
+   [2.44,"fade","#row-2-printed-label",{dur:.24}],
+   [2.44,"pop","#row-2-printed-photo",{from:.92,spring:"soft"}],
+   [7.14,"fade","#row-2-insured-label",{dur:.24}],
+   [7.14,"pop","#row-2-insured-icon",{from:.92,spring:"soft"}]
+  ],
+  update(t, section, $) {
+   const v = Math.max(0, Math.min(1, (t-.90)/1.12));
+   const y = 698 + 106 * (v*v*(3-2*v));
+   $("#table-zebra")[0].setAttribute("d", "M150 336H1770V535H150ZM150 "+y+"H1770V842H150Z");
+   $("#table-rules")[0].setAttribute("d", "M150 535H1770M150 "+y+"H1770M826 336V849M1195 336V849");
+  }
+ })
+ </script>
+</section>
