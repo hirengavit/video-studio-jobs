@@ -1,0 +1,67 @@
+<section class="vs-scene" id="s067" data-duration="9.80" data-in="cut" data-section="PART 3 · IDENTITY CARD" data-series="DELIVERY RULES">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="counter" font-family="Inter,sans-serif" fill="#2b2622">
+  <use href="set:po-counter" layer="back"/>
+  <use href="set:po-counter" layer="front"/>
+  <g id="counter-envelope" transform="translate(820 583) scale(.368)">
+    <use href="piece:domestic-envelope"/>
+    <g transform="translate(520 31) scale(.48)">
+      <use href="piece:postmark-ring"/>
+      <text font-size="22" font-weight="850" fill="#9e1b1b" text-anchor="middle"><tspan x="110" y="104">POSTE</tspan><tspan x="110" y="130">RESTANTE</tspan></text>
+    </g>
+  </g>
+  <use href="piece:person-icon" transform="translate(1568 756) scale(.90)"/>
+  <g id="holder-card"><use href="piece:id-card" transform="translate(1410 738) scale(.6)"/></g>
+  <path id="delivery-tick" d="M940 673L958 693L997 651" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="delivery-note">
+    <rect x="1370" y="247" width="450" height="152" rx="20" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="1595" y="313" text-anchor="middle" font-size="48" font-weight="720">delivery / payment</text>
+    <text x="1595" y="366" text-anchor="middle" class="hi" font-family="Noto Sans Devanagari" font-size="48" font-weight="720" fill="#2e7d4f">आसानी से</text>
+  </g>
+  <g id="doubt-mark">
+    <circle cx="610" cy="424" r="52" fill="#eeebe5"/>
+    <text x="610" y="449" text-anchor="middle" fill="#4b4f58" font-size="67" font-weight="800">?</text>
+  </g>
+  <g id="doubt-note">
+    <rect x="1370" y="423" width="450" height="100" rx="19" fill="#f1ede6" stroke="#dfd6c7" stroke-width="3"/>
+    <text x="1595" y="487" text-anchor="middle" class="hi" font-family="Noto Sans Devanagari" font-size="48" font-weight="720" fill="#4b4f58">शक बचा रहे</text>
+  </g>
+  <g id="postmaster-note">
+    <rect x="649" y="500" width="622" height="93" rx="15" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text x="960" y="561" text-anchor="middle" font-size="48" font-weight="740">Postmaster: <tspan class="hi" font-family="Noto Sans Devanagari">और पूछताछ</tspan></text>
+  </g>
+  <g id="true-holder-proof">
+    <rect x="1340" y="544" width="525" height="85" rx="19" fill="#fff8df" stroke="#e2b955" stroke-width="3"/>
+    <text x="1602.5" y="601" text-anchor="middle" class="hi" font-size="48" font-weight="810" fill="#5d400e">और सबूत: असली holder?</text>
+  </g>
+</g>
+<g id="dup">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="lost-card">
+  <use href="piece:id-card" transform="translate(245 248) scale(2)"/>
+  <rect x="229" y="232" width="632" height="432" rx="24" fill="none" stroke="#4b4f58" stroke-width="5" stroke-dasharray="16 14"/>
+  <rect x="410" y="253" width="270" height="75" rx="20" fill="#eeecee"/>
+  <text x="545" y="307" text-anchor="middle" class="hi" font-size="48" font-weight="850" fill="#4b4f58">खो गया</text>
+ </g>
+ <path id="duplicate-arrow" d="M897 448h126m-27-25 27 25-27 25" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="duplicate-card">
+  <use href="piece:id-card" transform="translate(1075 248) scale(2)"/>
+  <rect x="1085" y="257" width="580" height="72" rx="19" fill="#9e1b1b"/>
+  <text x="1375" y="310" text-anchor="middle" font-family="Inter,sans-serif" font-size="49" font-weight="860" letter-spacing="3" fill="#fff">DUPLICATE</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  set:"po-counter",
+  camera:[[0,"wide"]],
+  shots:[[0,"#counter"],[6.50,"#dup"]],
+  on:[
+    [.80,"fade","#true-holder-proof",{dur:.26}],
+    [7.72,"draw","#duplicate-arrow",{dur:.34}],
+    [7.72,"pop","#duplicate-card",{from:.91,spring:"soft"}]
+  ]
+}
+</script>
+</section>
