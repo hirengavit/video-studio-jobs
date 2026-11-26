@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s002" data-in="cut" data-section="SPEED POST · OVERVIEW" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+
+    <g id="timeline">
+      <rect x="200" y="593" width="1520" height="14" rx="7" fill="#ead9a8"/>
+      <rect x="200" y="593" width="280" height="14" rx="7" fill="#9e1b1b"/>
+      <path id="track-advance" d="M480 600H1440" fill="none" stroke="#9e1b1b" stroke-width="14" stroke-linecap="round"/>
+      <circle cx="480" cy="600" r="22" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="7"/>
+      <circle id="today-node" cx="1440" cy="600" r="22" fill="#ead9a8" stroke="#fbf7ee" stroke-width="7"/>
+    </g>
+
+    <g id="start-stamp">
+      <use href="piece:key-fact-stamp" transform="translate(284 330) scale(0.7)"/>
+      <text x="480" y="394" font-family="Inter" font-size="46" font-weight="680" fill="#ffffff" text-anchor="middle">1 August</text>
+      <text x="480" y="487" font-family="Inter" font-size="105" font-weight="800" fill="#ffffff" text-anchor="middle">1986</text>
+      <text x="480" y="532" font-size="36" font-weight="600" fill="#fde9a6" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif">शुरुआत</text>
+    </g>
+
+    <g id="first-name">
+      <rect x="220" y="640" width="520" height="260" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="480" y="734" font-size="40" font-weight="600" fill="#6f6a63" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif">शुरुआती नाम</text>
+      <text id="old-ems" x="250" y="820" font-family="Inter" font-size="60" font-weight="800" fill="#2b2622">EMS</text>
+      <text id="old-speed" x="399" y="820" font-family="Inter" font-size="60" font-weight="800" fill="#2b2622">Speed</text>
+      <text id="old-post" x="592" y="820" font-family="Inter" font-size="60" font-weight="800" fill="#2b2622">Post</text>
+    </g>
+
+    <text id="today" x="1440" y="520" text-anchor="middle" font-size="64" font-weight="750" fill="#9e1b1b" style="font-family:'Noto Sans Devanagari',Inter,sans-serif">आज</text>
+    <g id="present-status">
+      <rect x="1060" y="640" width="720" height="260" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text id="domestic" x="1137" y="736" font-size="44" font-weight="620" fill="#2b2622" style="font-family:'Noto Sans Devanagari',Inter,sans-serif">देश के अंदर</text>
+      <text id="express" x="1360" y="736" font-family="Inter" font-size="44" font-weight="690" fill="#2b2622">express</text>
+      <text id="delivery" x="1544" y="736" font-family="Inter" font-size="44" font-weight="690" fill="#2b2622">delivery</text>
+      <g id="market-pill">
+        <rect x="1137" y="772" width="455" height="84" rx="42" fill="#fde9a6"/>
+        <rect id="market-sweep" x="1166" y="801" width="350" height="36" rx="10" fill="#f2b705" opacity="0.48"/>
+        <text id="market" x="1178" y="831" font-family="Inter" font-size="52" font-weight="780" fill="#2b2622">market</text>
+        <text id="leader" x="1375" y="831" font-family="Inter" font-size="52" font-weight="780" fill="#2b2622">leader</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.14, 'fade', '#first-name', {dur: 0.25}],
+      [2.04, 'fade', '#old-ems', {dur: 0.19}],
+      [3.40, 'fade', '#old-speed', {dur: 0.16}],
+      [3.90, 'fade', '#old-post', {dur: 0.17}],
+      [4.94, 'draw', '#track-advance', {dur: 0.53}],
+      [4.94, 'pop', '#today', {from: 0.86}],
+      [5.44, 'color', '#today-node', {to: '#9e1b1b', dur: 0.12}],
+      [5.64, 'fade', '#present-status', {dur: 0.22}],
+      [5.64, 'fade', '#domestic', {dur: 0.23}],
+      [6.56, 'fade', '#express', {dur: 0.17}],
+      [6.84, 'fade', '#delivery', {dur: 0.17}],
+      [7.76, 'pop', '#market-pill', {from: 0.94}],
+      [7.76, 'fade', '#market', {dur: 0.15}],
+      [8.12, 'fade', '#leader', {dur: 0.16}],
+      [8.12, 'grow', '#market-sweep', {axis: 'x', origin: 'left'}],
+    ],
+  }
+  </script>
+</section>
