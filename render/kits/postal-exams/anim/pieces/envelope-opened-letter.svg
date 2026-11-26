@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" width="760" height="460">
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="envelope-back">
+<rect x="80" y="196" width="600" height="256" rx="6" fill="#f3ead6"/>
+</g>
+<g id="flap">
+<path d="M82 198 L380 52 L678 198 Z" fill="#ffffff"/>
+</g>
+<g id="letter">
+<rect x="168" y="12" width="424" height="400" rx="4" fill="#ffffff"/>
+<g id="letter-lines" fill="none" stroke="#b9b2a6" stroke-width="4">
+<path d="M204 62 L480 62 M204 100 L556 100 M204 138 L556 138 M204 176 L520 176"/>
+</g>
+<rect id="return-address-box" x="352" y="212" width="214" height="70" rx="4" fill="none" stroke-width="2.5"/>
+</g>
+<g id="pocket">
+<path d="M80 250 L380 372 L680 250 L680 446 Q680 452 674 452 L86 452 Q80 452 80 446 Z" fill="#ffffff"/>
+<path d="M80 452 L330 336 M680 452 L430 336" fill="none" stroke-width="2"/>
+</g>
+</g>
+<circle data-anchor="base" cx="380" cy="452" r="0"/>
+<circle data-anchor="top" cx="380" cy="12" r="0"/>
+<circle data-anchor="return-address" cx="459" cy="247" r="0"/>
+</svg>
