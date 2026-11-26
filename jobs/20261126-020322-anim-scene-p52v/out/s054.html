@@ -48,9 +48,8 @@
         <text x="1111" y="715" font-family="Inter,sans-serif" font-size="37" font-weight="740" fill="#2b2622">Driving licence</text>
       </g>
       <g id="other-id-chip">
-        <rect x="1391" y="674" width="350" height="68" rx="19" fill="#f3ead6"/>
-        <text x="1566" y="704" text-anchor="middle" class="hi" font-size="33" font-weight="760" fill="#2b2622">पहचान की शर्त वाले</text>
-        <text x="1566" y="735" text-anchor="middle" class="hi" font-size="33" font-weight="760" fill="#2b2622">दूसरे items</text>
+        <rect x="1391" y="668" width="350" height="79" rx="19" fill="#f3ead6"/>
+        <text x="1566" y="701" text-anchor="middle" class="hi" font-size="33" font-weight="760" fill="#2b2622"><tspan x="1566">पहचान की शर्त वाले</tspan><tspan x="1566" dy="36">दूसरे items</tspan></text>
       </g>
       <g id="shall-gist">
         <rect x="1000" y="775" width="780" height="77" rx="20" fill="#f3ead6"/>
@@ -65,9 +64,17 @@
       [6.56,"highlight","#shall-rule-one",{words:"only",color:"#fde9a6",opacity:.72,pad:4,dur:.24}],
       [6.56,"highlight","#shall-rule-two",{color:"#fde9a6",opacity:.72,pad:4,dur:.24}],
       [6.56,"highlight","#shall-rule-three",{color:"#fde9a6",opacity:.72,pad:4,dur:.24}],
-      [9.24,"move","#reg-54-stamp",{by:[0,62],dur:.30}],
+      [9.24,"move","#reg-54-stamp",{by:[0,62],spring:"soft"}],
       [9.58,"reveal","#shall-gist",{from:"left",dur:.30}]
-    ]
+    ],
+    update(t,section,$){
+      for(const item of $("#may-rule")){
+        if(t<=.62){item.removeAttribute("textLength");item.removeAttribute("lengthAdjust");continue;}
+        const q=Math.min(1,(t-.62)/.35);
+        item.setAttribute("textLength",String(754-143*q));
+        item.setAttribute("lengthAdjust","spacingAndGlyphs");
+      }
+    }
   }
   </script>
 </section>
