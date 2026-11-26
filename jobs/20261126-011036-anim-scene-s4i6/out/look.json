@@ -8,30 +8,5 @@
   "8.29"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s183",
-   "message": "pulse: option \"dur\" isn't used (it takes: amount)",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s183",
-   "message": "pulse: option \"scale\" isn't used (it takes: amount)",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s183",
-   "text": "Mehul Shah / Poste Restante",
-   "t": 0.3
-  },
-  {
-   "kind": "text-off-frame",
-   "scene": "s183",
-   "text": "सही हाथ तक",
-   "t": 8.29
-  }
- ]
+ "warnings": []
 }
