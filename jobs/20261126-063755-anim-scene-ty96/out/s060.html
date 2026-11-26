@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s060" data-in="cut" data-duration="14.31" data-section="PART 3 · IDENTITY CARD" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="A Sub Post Office accepts and verifies the application, then sends it to the Head Post Office, which issues the identity card">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="issuer-flow">
+   <g id="sub-post-office">
+    <text x="358" y="224" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">Sub Post Office</text>
+    <text class="hi" x="358" y="280" text-anchor="middle" font-size="40" font-weight="730" fill="#625d59">उप डाकघर</text>
+    <use href="piece:post-office-icon" transform="translate(102 338) scale(1.6)"/>
+   </g>
+   <g id="head-post-office">
+    <text x="1500" y="224" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">Head Post Office</text>
+    <text class="hi" x="1500" y="280" text-anchor="middle" font-size="40" font-weight="730" fill="#625d59">प्रधान डाकघर</text>
+    <use href="piece:icon-circle-office" transform="translate(1250 344) scale(1.25)"/>
+   </g>
+   <g id="issued-id-card">
+    <use href="piece:id-card" transform="translate(1540 775) scale(.8)"/>
+    <text x="1660" y="806" text-anchor="middle" font-family="Inter,sans-serif" font-size="25" font-weight="810" fill="#9e1b1b" lengthAdjust="spacingAndGlyphs" textLength="209">Postal Identity Card</text>
+   </g>
+   <g id="sub-inquiry">
+    <rect x="612" y="493" width="612" height="91" rx="22" fill="#f3ead6" stroke="#e4d4ac" stroke-width="3"/>
+    <text class="hi" x="918" y="552" text-anchor="middle" font-size="44" font-weight="785" fill="#2b2622">Sub-Postmaster पूछताछ करता है</text>
+   </g>
+   <g id="forward-application" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M616 769L1233 710"/>
+    <path d="M1210 693l23 17-20 21"/>
+   </g>
+   <g id="application">
+    <use href="piece:written-request" transform="translate(375 793) scale(.5)"/>
+    <text x="480" y="821" text-anchor="middle" font-family="Inter,sans-serif" font-size="26" font-weight="790" fill="#2b2622">Application</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [.87,"pulse","#head-post-office",{amount:.045}],
+   [.87,"pop","#issued-id-card",{from:.91,spring:"soft"}],
+   [3.41,"pop","#application",{from:.94,spring:"soft"}],
+   [8.35,"fade","#sub-inquiry",{dur:.26}],
+   [12.49,"draw","#forward-application",{dur:.30,ease:"out"}],
+   [12.79,"move","#application",{by:[925,-18],spring:"soft"}]
+  ]
+ })
+ </script>
+</section>
