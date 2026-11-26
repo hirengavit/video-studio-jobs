@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s212" data-in="cut" data-section="PART 10 · COMPENSATION" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="hero">
+  <rect x="100" y="190" width="660" height="430" rx="29" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+  <rect x="100" y="190" width="660" height="430" rx="29" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 27" stroke-linecap="round"/>
+  <rect x="155" y="255" width="8" height="37" rx="4" fill="#f2b705"/>
+  <text x="183" y="285" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="700">मुख्य शब्द</text>
+  <text x="155" y="427" fill="#fff" font-size="117" font-weight="830" letter-spacing="-2">Pilferage</text>
+  <text id="term-hi" x="157" y="518" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="700">सामग्री की आंशिक चोरी</text>
+</g>
+<g id="meaning">
+  <rect x="820" y="190" width="1000" height="430" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <text x="882" y="288" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="41" font-weight="700">अर्थ</text>
+  <text id="definition" x="882" y="411" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="62" font-weight="770">अंदर का कुछ सामान चोरी होना</text>
+  <g id="part-loss">
+    <rect x="882" y="474" width="346" height="90" rx="21" fill="#fde9a6"/>
+    <text x="1055" y="535" text-anchor="middle" fill="#2b2622" font-size="48" font-weight="800">= part loss</text>
+  </g>
+</g>
+<g id="question-row">
+  <rect x="100" y="680" width="1720" height="284" rx="28" fill="#f3ead6"/>
+  <text x="149" y="842" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="760">दोगुना किसका?</text>
+</g>
+<g id="right">
+  <rect x="620" y="760" width="500" height="122" rx="61" fill="#2e7d4f"/>
+  <text x="854" y="839" fill="#fff" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="780">postage का</text>
+  <path d="M1012 822 l15 15 29-32" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="wrong">
+  <rect x="1180" y="760" width="600" height="122" rx="61" fill="#fff" stroke="#d4ccc0" stroke-width="3"/>
+  <text id="wrong-label" x="1460" y="839" text-anchor="middle" fill="#4b4f58" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="760">सामान की value का</text>
+  <path id="wrong-cross" d="M1692 808 l28 28 m0-28 -28 28" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.50,'fade','#term-hi',{dur:0.37}],
+    [1.36,'pop','#meaning',{from:0.96,spring:'soft'}],
+    [1.45,'words','#definition',{gap:0.36,dist:9,spring:'soft'}],
+    [4.88,'pop','#part-loss',{from:0.92,spring:'soft'}],
+    [5.84,'fade','#question-row',{dur:0.35}],
+    [6.78,'pop','#right',{from:0.92,spring:'soft'}],
+    [8.42,'pop','#wrong',{from:0.94,spring:'soft'}],
+    [9.78,'strike','#wrong-label',{color:'#4b4f58',dur:0.33}],
+    [9.78,'draw','#wrong-cross',{dur:0.28}]
+  ]
+}
+</script>
+</section>
