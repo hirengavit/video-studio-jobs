@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s010" data-in="fade" data-in-dur="0.5" data-section="PART 1 · WHAT IT IS" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="title">
+  <path d="M145 205V251" stroke="#f2b705" stroke-width="10" stroke-linecap="round"/>
+  <text class="hi" x="172" y="240" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="750" fill="#9e1b1b">PART 1 · भाग 1</text>
+  <text x="140" y="380" font-size="120" font-weight="830" fill="#2b2622">Speed Post</text>
+  <text class="hi" x="144" y="470" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#9e1b1b">क्या है, और उसकी दो classes</text>
+  <path id="title-line" d="M149 505C352 499 610 512 829 503" fill="none" stroke="#f2b705" stroke-width="10" stroke-linecap="round"/>
+  <text id="department" class="hi" x="146" y="568" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="620" fill="#6f6a63">Department of Posts · डाक विभाग</text>
+  <g id="express"><rect x="140" y="640" width="278" height="80" rx="25" fill="#9e1b1b"/><text x="279" y="695" text-anchor="middle" font-size="48" font-weight="770" fill="#fff">express</text></g>
+  <g id="time-bound"><rect x="442" y="640" width="340" height="80" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/><text x="612" y="695" text-anchor="middle" font-size="48" font-weight="770" fill="#2b2622">time-bound</text></g>
+  <text class="hi" x="145" y="812" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="680" fill="#6f6a63">भाग 1 / 11</text>
+  <circle cx="402" cy="798" r="8" fill="#f2b705"/><circle cx="436" cy="798" r="8" fill="#dfd2b8"/><circle cx="470" cy="798" r="8" fill="#dfd2b8"/><circle cx="504" cy="798" r="8" fill="#dfd2b8"/><circle cx="538" cy="798" r="8" fill="#dfd2b8"/><circle cx="572" cy="798" r="8" fill="#dfd2b8"/><circle cx="606" cy="798" r="8" fill="#dfd2b8"/><circle cx="640" cy="798" r="8" fill="#dfd2b8"/><circle cx="674" cy="798" r="8" fill="#dfd2b8"/><circle cx="708" cy="798" r="8" fill="#dfd2b8"/><circle cx="742" cy="798" r="8" fill="#dfd2b8"/>
+  <rect x="1220" y="220" width="500" height="600" rx="24" fill="#9e1b1b"/>
+  <rect x="1220" y="220" width="500" height="600" rx="24" fill="none" stroke="#fbf7ee" stroke-width="17" stroke-dasharray="0 24" stroke-linecap="round"/>
+  <rect x="1260" y="260" width="420" height="407" rx="18" fill="#f3ead6"/>
+  <use href="piece:speed-post-emblem" transform="translate(1280 330) scale(.73)"/>
+  <text x="1260" y="775" font-size="92" font-weight="850" fill="#fff">01</text>
+ </g>
+ <g id="domestic">
+  <rect x="160" y="230" width="700" height="590" rx="32" fill="#f3ead6"/>
+  <path d="M210 452H287M193 504H275M216 556H259" fill="none" stroke="#9e1b1b" stroke-width="9" stroke-linecap="round"/>
+  <use href="piece:domestic-envelope" transform="translate(282 377) rotate(-6 260 140) scale(.69)"/>
+  <text x="510" y="875" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="650" fill="#6f6a63">डाक का लिफाफा · चित्रण</text>
+  <text id="domestic-name" x="960" y="380" font-size="64" font-weight="810" fill="#2b2622">Domestic Speed Post</text>
+  <text id="inside" x="962" y="468" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="760" fill="#9e1b1b">देश के अंदर</text>
+  <g id="map-group"><use href="piece:india-outline-map" transform="translate(1150 520) scale(.5)"/></g>
+  <g id="route-1" fill="none" stroke="#9e1b1b" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1233 638Q1270 649 1302 681"/><path d="M1288 677L1302 681L1299 666"/></g>
+  <g id="route-2" fill="none" stroke="#9e1b1b" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1234 749Q1243 785 1264 810"/><path d="M1251 804L1264 810L1263 796"/></g>
+  <g id="route-3" fill="none" stroke="#9e1b1b" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1279 758Q1292 773 1296 798"/><path d="M1287 786L1296 798L1301 783"/></g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,'#title'],[6.42,'#domestic']],
+ on:[
+  [0.42,'draw','#title-line',{dur:0.57}],
+  [1.20,'fade','#department',{dur:0.4}],
+  [3.50,'pop','#express',{spring:'soft'}],
+  [4.88,'pop','#time-bound',{spring:'soft'}],
+  [6.42,'words','#domestic-name',{gap:0.4,dist:18,spring:'soft'}],
+  [7.92,'fade','#inside',{dur:0.38}],
+  [7.92,'draw','#map-group',{dur:0.95}],
+  [9.08,'draw','#route-1',{dur:0.42}],
+  [9.15,'draw','#route-2',{dur:0.42}],
+  [9.22,'draw','#route-3',{dur:0.42}],
+ ]
+}
+</script>
+</section>
