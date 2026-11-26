@@ -1,0 +1,32 @@
+<section class="vs-scene" id="s116" data-in="cut" data-duration="5.54" data-section="PART 6 · ADDRESSEE'S REDIRECTION" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Are the old and new addresses in the same post office delivery area?">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<text id="question" x="960" y="217" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="60" font-weight="780" fill="#9e1b1b"><tspan x="960">पुराना पता और नया पता:</tspan><tspan x="960" dy="83">एक ही post office के delivery area में?</tspan></text>
+<rect id="area" x="360" y="380" width="1200" height="580" rx="52" fill="#fde9a6" stroke="#f2b705" stroke-width="3"/>
+<g id="area-label">
+ <rect x="776" y="864" width="368" height="72" rx="20" fill="#fffdfa" stroke="#ead9a8" stroke-width="3"/>
+ <text x="960" y="914" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="780" fill="#2b2622">Delivery area</text>
+</g>
+<g id="old">
+ <use href="piece:house-icon" transform="translate(464 524) scale(.76)"/>
+ <text x="578" y="816" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="720" fill="#2b2622">पुराना</text>
+</g>
+<g id="new">
+ <use href="piece:house-icon" transform="translate(1228 524) scale(.76)"/>
+ <text x="1342" y="816" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="720" fill="#2b2622">नया</text>
+</g>
+<use id="office" href="piece:post-office-icon" transform="translate(784 435) scale(1.1)"/>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.54,'pop','#old',{spring:'soft',from:.92}],
+  [1.36,'pop','#new',{spring:'soft',from:.92}],
+  [3.02,'pop','#office',{spring:'soft',from:.92}],
+  [3.90,'reveal','#area',{from:'left',dur:.38}],
+  [3.90,'fade','#area-label',{dur:.24}]
+ ]
+})
+</script>
+</section>
