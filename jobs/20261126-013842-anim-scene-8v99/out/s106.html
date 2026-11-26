@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s106" data-in="cut" data-duration="10.70" data-section="PART 5 · CANCELLATION" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Cancellation does not automatically mean a full refund">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="refund">
+ <text id="heading" x="220" y="230" font-family="Inter,sans-serif" font-size="80" font-weight="820" fill="#9e1b1b">Refund?</text>
+ <use id="notes" href="piece:rupee-deposit" transform="translate(300 420) scale(2)"/>
+ <text id="refund-label" x="540" y="802" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">postage refund</text>
+ <path id="arrow" d="M801 591h89m-25-21 25 21-25 21" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="document">
+  <rect x="920" y="380" width="800" height="480" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M983 452h111" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+  <text id="document-copy" x="983" y="548" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="760" fill="#2b2622"><tspan x="983">Department के</tspan><tspan x="983" dy="72">administrative instructions</tspan></text>
+  <g id="source" transform="translate(1377 662) scale(.75)">
+   <use href="piece:postmark-ring"/>
+   <text x="110" y="102" text-anchor="middle" fill="#9e1b1b" font-family="Inter,sans-serif" font-weight="780" font-size="35">Reg. 23A</text>
+   <text x="110" y="142" text-anchor="middle" fill="#9e1b1b" font-family="Inter,sans-serif" font-weight="700" font-size="28">S.O. 3891(E)</text>
+  </g>
+ </g>
+</g>
+<rect id="conclusion-panel" x="300" y="876" width="1420" height="112" rx="24" fill="#fffdfa" stroke="#ead9a8" stroke-width="3"/>
+<g id="no-fixed-refund">
+ <text x="401" y="946" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">हर product का तय refund % या रकम</text>
+ <g id="not-fixed">
+  <path id="rejection-cross" d="M1420 919l29 29m0-29-29 29" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+  <text id="nahin" x="1473" y="948" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="780" fill="#4b4f58">नहीं</text>
+ </g>
+</g>
+<g id="not-equivalent">
+ <text x="959" y="948" text-anchor="end" font-family="Inter,sans-serif" font-size="56" font-weight="800" fill="#2b2622">Cancellation</text>
+ <text x="1006" y="948" text-anchor="middle" font-family="Inter,sans-serif" font-size="56" font-weight="800" fill="#2b2622">≠</text>
+ <text x="1053" y="948" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="800" fill="#2b2622">पूरा refund</text>
+ <path id="not-equal-underline" d="M986 958q20 5 41 0" fill="none" stroke="#f2b705" stroke-width="5" stroke-linecap="round"/>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.78,'fade','#conclusion-panel',{dur:.23}],
+  [.78,'fade','#no-fixed-refund',{dur:.25}],
+  [5.02,'draw','#rejection-cross',{dur:.30}],
+  [5.02,'fade','#nahin',{dur:.24}],
+  [6.50,'swap','#no-fixed-refund',{to:'#not-equivalent',dur:.38,dist:18}],
+  [6.82,'draw','#not-equal-underline',{dur:.34}]
+ ]
+})
+</script>
+</section>
+
