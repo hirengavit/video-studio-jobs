@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 200" width="1400" height="200">
+<defs>
+  <clipPath id="cq-clip"><rect x="2" y="2" width="1396" height="196" rx="14"/></clipPath>
+</defs>
+<g clip-path="url(#cq-clip)">
+  <g id="q1">
+    <rect class="q-fill" x="0" y="0" width="350" height="200" fill="#ffffff"/>
+    <rect class="q-slot" x="40" y="134" width="270" height="46" rx="10" fill="none" stroke="#ead9a8" stroke-width="2.5" stroke-dasharray="8 7"/>
+  </g>
+  <g id="q2">
+    <rect class="q-fill" x="350" y="0" width="350" height="200" fill="#ffffff"/>
+    <rect class="q-slot" x="390" y="134" width="270" height="46" rx="10" fill="none" stroke="#ead9a8" stroke-width="2.5" stroke-dasharray="8 7"/>
+  </g>
+  <g id="q3">
+    <rect class="q-fill" x="700" y="0" width="350" height="200" fill="#ffffff"/>
+    <rect class="q-slot" x="740" y="134" width="270" height="46" rx="10" fill="none" stroke="#ead9a8" stroke-width="2.5" stroke-dasharray="8 7"/>
+  </g>
+  <g id="q4">
+    <rect class="q-fill" x="1050" y="0" width="350" height="200" fill="#ffffff"/>
+    <rect class="q-slot" x="1090" y="134" width="270" height="46" rx="10" fill="none" stroke="#ead9a8" stroke-width="2.5" stroke-dasharray="8 7"/>
+  </g>
+</g>
+<rect x="2" y="2" width="1396" height="196" rx="14" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M350 2 L350 198 M700 2 L700 198 M1050 2 L1050 198" fill="none" stroke="#2b2622" stroke-width="2.5" stroke-linecap="round"/>
+<circle data-anchor="base" cx="700" cy="198" r="0"/>
+</svg>
