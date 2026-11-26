@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 520" width="1400" height="520">
+  <defs>
+    <clipPath id="document-card-clip"><rect x="1.5" y="1.5" width="1397" height="517" rx="10"/></clipPath>
+  </defs>
+  <g id="document-paper">
+    <rect x="1.5" y="1.5" width="1397" height="517" rx="10" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+  </g>
+  <g id="document-top-edge" clip-path="url(#document-card-clip)">
+    <rect x="0" y="0" width="1400" height="10" fill="#9e1b1b"/>
+  </g>
+  <circle data-anchor="base" cx="700" cy="520" r="0"/>
+  <circle data-anchor="top" cx="700" cy="0" r="0"/>
+</svg>
