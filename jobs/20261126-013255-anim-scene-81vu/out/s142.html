@@ -35,17 +35,17 @@
    </g>
    <text id="scope-reason" x="960" y="387" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="750">किसी भी कारण से</text>
    <g id="admin-chip">
-    <rect x="514" y="494" width="892" height="68" rx="24" fill="#fffdfa" stroke="#ead9a8" stroke-width="3"/>
-    <text x="960" y="542" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="730">administrative instructions के हिसाब से</text>
+    <rect x="566" y="527" width="762" height="60" rx="24" fill="#fffdfa" stroke="#ead9a8" stroke-width="3"/>
+    <text x="947" y="570" textLength="716" lengthAdjust="spacing" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="730">administrative instructions के हिसाब से</text>
    </g>
    <g id="request-sheet">
-    <use href="piece:written-request" transform="translate(1507 632) scale(.5)"/>
+    <use href="piece:written-request" transform="translate(1540 642) scale(.5)"/>
     <rect id="writing-focus" x="1425" y="865" width="350" height="58" rx="16" fill="#fde9a6"/>
     <text id="writing-label" x="1600" y="906" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="750">लिखित request</text>
    </g>
    <g id="request-actors">
-    <rect x="582" y="781" width="840" height="48" rx="17" fill="#fffdfa" stroke="#ead9a8" stroke-width="2"/>
-    <text x="1002" y="818" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" textLength="799" lengthAdjust="spacing" font-weight="750">Sender · Addressee · Authorised person</text>
+    <rect x="582" y="785" width="840" height="50" rx="17" fill="#fffdfa" stroke="#ead9a8" stroke-width="2"/>
+    <text x="1002" y="824" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" textLength="799" lengthAdjust="spacing" font-weight="750">Sender · Addressee · Authorised person</text>
    </g>
   </g>
  </svg>
@@ -56,6 +56,7 @@
    [2.50,'pop','#admin-chip',{from:.94,spring:'soft'}],
    [5.20,'slide','#request-sheet',{from:'down',dist:45,spring:'soft'}],
    [5.20,'fade','#request-actors',{dur:.27}],
+   [5.20,'move','#recall-label',{by:[0,27],spring:'soft'}],
    [11.36,'fade','#writing-label',{dur:.27}],
    [11.36,'reveal','#writing-focus',{from:'left',dur:.35}]
   ]
