@@ -8,12 +8,5 @@
   "12.87"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s068",
-   "text": "इस्तेमाल की ज़िम्मेदारी से",
-   "t": 7.81
-  }
- ]
+ "warnings": []
 }
