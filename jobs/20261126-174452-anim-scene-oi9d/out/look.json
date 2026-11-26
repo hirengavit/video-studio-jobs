@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "2.26",
+  "4.53",
+  "6.79",
+  "9.06",
+  "11.17"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s001",
+   "text": "खूबियाँ (1.9:1) / सीमाएँ (1.9:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 4.53
+  }
+ ]
+}
