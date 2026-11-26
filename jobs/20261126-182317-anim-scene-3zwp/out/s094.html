@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s094" data-section="PART 4 · BOOKING AND TRACKING" data-series="PRODUCTS" data-in="cut">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="key">
+      <rect x="260" y="220" width="1400" height="600" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text id="key-label" x="960" y="369" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="620">2023 · एक paper की key</text>
+      <text id="quote" x="960" y="520" text-anchor="middle" fill="#2b2622" font-family="Georgia, serif" font-size="68" font-weight="700">"SMS based Track and Trace"</text>
+      <text id="exam-verdict" x="960" y="720" text-anchor="middle" fill="#4b4f58" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="730">Speed Post feature: नहीं माना</text>
+    </g>
+      <g id="remember">
+      <rect x="160" y="200" width="1600" height="740" rx="34" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="224" y="290" fill="#9e1b1b" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="800">सही बात याद रखिए</text>
+      <rect x="224" y="363" width="1472" height="170" rx="23" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="224" y="603" width="1472" height="170" rx="23" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text id="tracking-term" x="270" y="470" font-family="Inter" font-size="56" font-weight="790" fill="#2b2622">Track and trace</text>
+      <g id="tracking-meaning">
+        <path d="M793 451H867M853 437L867 451 853 465" fill="none" stroke="#6f6a63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="930" y="470" font-family="Inter" font-size="52" font-weight="700" fill="#2b2622">internet based</text>
+      </g>
+      <circle id="tracking-tick-bg" cx="1622" cy="449" r="38" fill="#e3f1e8"/>
+      <path id="tracking-tick" d="M1603 449 1617 463 1644 435" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="sms-term" x="270" y="710" font-family="Inter" font-size="56" font-weight="790" fill="#2b2622">SMS</text>
+      <g id="delivery-meaning">
+        <path d="M793 691H867M853 677L867 691 853 705" fill="none" stroke="#6f6a63" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="930" y="710" fill="#2b2622" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="50" font-weight="700">delivery की जानकारी</text>
+      </g>
+      <circle id="delivery-tick-bg" cx="1622" cy="689" r="38" fill="#e3f1e8"/>
+      <path id="delivery-tick" d="M1603 689 1617 703 1644 675" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0,'#key'],[2.22,'#remember']],
+    on: [
+      [0.68,'reveal','#exam-verdict',{from:'left',dur:0.22}],
+      [0.90,'underline','#exam-verdict',{words:'नहीं', color:'#4b4f58', width:4, gap:8, dur:0.32}],
+      [4.04,'fade','#tracking-term',{dur:0.27}],
+      [5.98,'reveal','#tracking-meaning',{from:'left',dur:0.32}],
+      [7.14,'fade','#tracking-tick-bg',{dur:0.20}],
+      [7.14,'draw','#tracking-tick',{dur:0.30}],
+      [7.96,'fade','#sms-term',{dur:0.25}],
+      [8.32,'reveal','#delivery-meaning',{from:'left',dur:0.40}],
+      [10.62,'fade','#delivery-tick-bg',{dur:0.20}],
+      [10.62,'draw','#delivery-tick',{dur:0.31}],
+    ],
+  }
+  </script>
+</section>
