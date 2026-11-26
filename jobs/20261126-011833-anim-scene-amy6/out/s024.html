@@ -37,6 +37,9 @@
    const q=S.clamp((t-.87)/.48,0,1), u=q*q*(3-2*q);
    if(t>=.87){
      const env=$('#example-envelope')[0];
+     const caption=$('#named-caption')[0];
+     caption.setAttribute("x",960-440*u);
+     caption.setAttribute("y",999-171*u);
      env.setAttribute("transform","translate("+(314-174*u)+" "+(260+80*u)+") scale("+(1.7-.7*u)+")");
    }
  }})
