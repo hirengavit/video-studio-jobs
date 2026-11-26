@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s171" data-in="cut" data-section="PART 8 · 24 AND 48 SPEED POST" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="benefits">
+  <text id="benefits-title" x="120" y="210" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="780" fill="#9e1b1b">Premium services में क्या मिलता है?</text>
+  <rect x="120" y="250" width="1680" height="710" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M152 430H1768 M152 600H1768 M152 770H1768" fill="none" stroke="#ead9a8" stroke-width="2"/>
+  <g id="otp-row">
+    <use href="piece:otp-phone" transform="translate(194 266) scale(0.35)"/>
+    <text x="330" y="365" font-family="Inter" font-size="52" font-weight="790" fill="#2b2622">OTP delivery</text>
+  </g>
+  <g id="premium-documents-pill">
+    <rect x="1150" y="269" width="610" height="68" rx="34" fill="#f3ead6"/>
+    <text x="1455" y="318" text-anchor="middle" font-family="Inter" font-size="42" font-weight="690" fill="#2b2622">Premium documents</text>
+  </g>
+  <g id="premium-parcel-pill">
+    <rect x="1150" y="347" width="610" height="68" rx="34" fill="#f3ead6"/>
+    <text x="1455" y="396" text-anchor="middle" font-family="Inter" font-size="42" font-weight="690" fill="#2b2622">24 Speed Post Parcel</text>
+  </g>
+
+<g id="registration-row">
+ <use href="piece:rupee-deposit" transform="translate(172 466) scale(.5)"/>
+ <text x="330" y="503" font-size="52" font-weight="790" fill="#2b2622">Registration</text>
+ <text id="registration-type" class="hi" x="332" y="554" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="670" fill="#6f6a63">अलग value-added service</text>
+ <g id="registration-fee"><rect x="1200" y="470" width="206" height="88" rx="30" fill="#9e1b1b"/><text x="1303" y="533" text-anchor="middle" font-size="56" font-weight="830" fill="#fff">₹5</text></g>
+ <text id="gst" class="hi" x="1450" y="525" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="740" fill="#6f6a63">GST अलग</text>
+</g>
+<g id="tracking-row">
+ <g transform="translate(179 624)" fill="none" stroke="#2b2622" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round">
+  <rect x="18" y="0" width="76" height="121" rx="13" fill="#f3ead6"/>
+  <path d="M47 104h19M79 46c0 19-23 40-23 40S33 65 33 46a23 23 0 1 1 46 0Z" fill="#fff"/><circle cx="56" cy="46" r="7" fill="#9e1b1b" stroke="none"/>
+ </g>
+ <text x="330" y="708" font-size="51" font-weight="790" fill="#2b2622">Real-time tracking · SMS alerts</text>
+</g>
+<g id="holiday-row">
+ <g transform="translate(178 805)" fill="none" stroke="#2b2622" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round">
+  <rect x="0" y="13" width="110" height="103" rx="12" fill="#f3ead6"/>
+  <path d="M23 0v29M86 0v29M0 43h110M23 80l17 14 43-28"/>
+ </g>
+ <text class="hi" x="330" y="881" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="760" fill="#2b2622">रविवार और छुट्टियों पर भी delivery</text>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [1.50,'pop','#registration-row',{spring:'soft',from:.94}],
+  [2.92,'fade','#registration-type',{dur:.32}],
+  [5.38,'pop','#registration-fee',{spring:'soft',from:.88}],
+  [6.22,'fade','#gst',{dur:.29}],
+  [8.46,'pop','#tracking-row',{spring:'soft',from:.94}],
+  [11.12,'pop','#holiday-row',{spring:'soft',from:.94}],
+ ]
+}
+</script>
+</section>
