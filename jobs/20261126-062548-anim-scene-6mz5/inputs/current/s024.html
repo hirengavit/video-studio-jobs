@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s024" data-in="cut" data-duration="10.47" data-section="PART 1 · POSTE RESTANTE" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Poste Restante address comparison: named Mehul Shah versus initials only.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <text id="example-heading" x="960" y="211" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="56" font-weight="780" fill="#9e1b1b">एक example</text>
+  <g id="example-envelope" transform="translate(314 260) scale(1.7)">
+   <use id="example-paper" href="piece:domestic-envelope"/>
+   <path d="M519 306H659" stroke="#d8d2c7" stroke-width="7" stroke-linecap="round"/>
+   <g id="example-postmark" transform="translate(520 31) scale(.48)">
+    <use href="piece:postmark-ring"/>
+    <g font-family="Inter,sans-serif" font-size="22" font-weight="850" fill="#9e1b1b" text-anchor="middle">
+     <text x="110" y="106">POSTE</text><text x="110" y="129">RESTANTE</text>
+    </g>
+   </g>
+   <g id="example-address" font-family="Inter,sans-serif" font-size="35.3" font-weight="760" fill="#2b2622">
+    <text id="example-name" x="270" y="215">Mehul Shah</text>
+    <text id="example-service" x="270" y="257">Poste Restante</text>
+    <text id="example-office" x="270" y="299" font-weight="690" fill="#6f6a63">[delivery post office]</text>
+   </g>
+  </g>
+
+  <path id="named-tick" d="M201 430l23 24 45-48" fill="none" stroke="#19754b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="named-caption" x="520" y="828" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#2b2622">Mehul Shah के लेने तक रखो</text>
+  <g id="initials-side">
+   <g transform="translate(1020 340)"><use href="piece:domestic-envelope"/><text x="270" y="217" font-family="Inter,sans-serif" font-size="80" font-weight="800" fill="#2b2622">M.S.</text></g>
+  </g>
+  <path id="initials-cross" d="M1087 406l50 50m0-50-50 50" fill="none" stroke="#5e6673" stroke-width="12" stroke-linecap="round"/>
+  <text id="initials-caption" x="1400" y="828" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="48" font-weight="750" fill="#5e6673">नाम वाली शर्त पूरी नहीं</text>
+ </svg>
+ <script type="text/scene">
+ ({camera:[[0,{zoom:1}]],on:[
+  [.87,"fade","#named-caption",{dur:.29}],
+  [2.91,"draw","#named-tick",{dur:.34}],
+  [5.50,"slide","#initials-side",{from:"right",dist:300,spring:"soft"}],
+  [9.26,"draw","#initials-cross",{dur:.30}],
+  [9.26,"fade","#initials-caption",{dur:.24}]
+ ],update(t,section,$){
+   const q=S.clamp((t-.87)/.48,0,1), u=q*q*(3-2*q);
+   if(t>=.87){
+     const env=$('#example-envelope')[0];
+     const caption=$('#named-caption')[0];
+     caption.setAttribute("x",960-440*u);
+     caption.setAttribute("y",999-171*u);
+     env.setAttribute("transform","translate("+(314-174*u)+" "+(260+80*u)+") scale("+(1.7-.7*u)+")");
+   }
+ }})
+ </script>
+</section>
