@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path id="impression" d="M43 110L92 109 117 110 170 109 194 110 260 109 296 110 354 109 360 113 359 158 360 188 359 247 360 284 355 290 305 289 273 290 244 289 195 290 163 289 121 290 91 289 45 290 40 284 41 251 40 207 41 157 40 115Z" stroke="#4b4f58" stroke-width="4"/>
+  <rect id="amount-box" x="67" y="143" width="173" height="93" fill="none" rx="2" stroke="#4b4f58"/>
+  <path id="initials-line" d="M265 238H335" stroke="#4b4f58"/>
+  <circle data-anchor="base" cx="200" cy="290" r="0"/>
+</svg>

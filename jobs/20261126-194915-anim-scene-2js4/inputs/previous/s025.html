@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s025" data-in="cut" data-section="PART 1 · WHAT IT IS" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" font-family="Inter, 'Noto Sans Devanagari', sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="trap">
+      <g id="flag">
+        <rect x="120" y="190" width="1680" height="170" rx="28" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+        <path d="M157 291 L199 216 L241 291 Z" fill="#f2b705" stroke="#f2b705" stroke-width="9" stroke-linejoin="round"/>
+        <rect x="195.5" y="240" width="7" height="27" rx="3.5" fill="#9e1b1b"/>
+        <circle cx="199" cy="280" r="4.5" fill="#9e1b1b"/>
+        <text x="282" y="245" font-size="36" font-weight="750" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif">परीक्षा का जाल</text>
+        <g id="trap-line" aria-label="Speed Post की दो classes" font-size="52" font-weight="800" fill="#fff">
+          <text id="w-speed" x="282" y="320" font-family="Inter, sans-serif">Speed</text>
+          <text id="w-post" x="457" y="320" font-family="Inter, sans-serif">Post</text>
+          <text id="w-ki" x="591" y="320" font-family="'Noto Sans Devanagari', Inter, sans-serif">की</text>
+          <text id="w-do" x="672" y="320" font-family="'Noto Sans Devanagari', Inter, sans-serif">दो</text>
+          <text id="w-classes" x="748" y="320" font-family="Inter, sans-serif">classes</text>
+        </g>
+        <text id="trap-option" x="282" y="320" font-size="52" font-weight="800" fill="#fff" font-family="Inter, 'Noto Sans Devanagari', sans-serif">500 g से कम हर item = document</text>
+      </g>
+    <g id="document">
+      <rect x="140" y="400" width="800" height="360" rx="28" fill="#fff" stroke="#f2b705" stroke-width="5" filter="url(#vs-shadow)"/>
+      <text x="175" y="589" font-size="52" font-weight="800" fill="#2b2622" textLength="510" lengthAdjust="spacingAndGlyphs" font-family="Inter, sans-serif">Speed Post Document</text>
+      <text x="175" y="659" font-size="36" font-weight="650" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif">स्पीड पोस्ट दस्तावेज</text>
+      <g id="document-stamp">
+        <rect x="712" y="480" width="200" height="200" rx="16" fill="#9e1b1b"/>
+        <rect x="712" y="480" width="200" height="200" rx="16" fill="none" stroke="#fff" stroke-width="11" stroke-dasharray="0 20" stroke-linecap="round"/>
+        <rect x="728" y="496" width="168" height="168" rx="10" fill="none" stroke="#b8403a" stroke-width="2"/>
+        <g id="document-weight">
+          <text x="812" y="579" font-size="64" font-weight="800" text-anchor="middle" fill="#fff" font-family="Inter, sans-serif" textLength="156" lengthAdjust="spacingAndGlyphs">500 g</text>
+          <text x="812" y="630" font-size="37" font-weight="730" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif">तक</text>
+        </g>
+      </g>
+      <path id="document-underline" d="M739 707H885" fill="none" stroke="#f2b705" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <g id="parcel">
+      <rect x="980" y="400" width="800" height="360" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text id="ordinary-label" x="1015" y="501" font-size="36" font-weight="690" fill="#6f6a63" font-family="Inter, sans-serif">ordinary</text>
+      <text x="1015" y="589" font-size="52" font-weight="800" fill="#2b2622" font-family="Inter, sans-serif">Speed Post Parcel</text>
+      <text x="1015" y="659" font-size="36" font-weight="650" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif">स्पीड पोस्ट पार्सल</text>
+      <g id="parcel-stamp">
+        <rect x="1552" y="480" width="200" height="200" rx="16" fill="#9e1b1b"/>
+        <rect x="1552" y="480" width="200" height="200" rx="16" fill="none" stroke="#fff" stroke-width="11" stroke-dasharray="0 20" stroke-linecap="round"/>
+        <rect x="1568" y="496" width="168" height="168" rx="10" fill="none" stroke="#b8403a" stroke-width="2"/>
+        <g id="parcel-weight">
+          <text x="1652" y="579" font-size="64" font-weight="800" text-anchor="middle" fill="#fff" font-family="Inter, sans-serif" textLength="156" lengthAdjust="spacingAndGlyphs">35 kg</text>
+          <text x="1652" y="630" font-size="37" font-weight="730" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif">तक</text>
+        </g>
+      </g>
+    </g>
+    </g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [0.46,'pop','#document-weight',{spring:'soft',from:0.92}],
+    [2.48,'fade','#ordinary-label',{dur:0.26}],
+    [3.60,'pop','#parcel-weight',{spring:'soft',from:0.92}],
+    [6.76,'pulse','#document',{amount:0.06}],
+    [6.76,'draw','#document-underline',{dur:0.27}],
+    [9.10,'out','#trap-line',{dur:0.16,scale:1}],
+    [9.22,'fade','#trap-option',{dur:0.18}],
+    [11.00,'highlight','#trap-option',{words:'document',color:'#f2b705',opacity:0.26,pad:8,dur:0.34}]
+  ]
+}
+</script>
+</section>
