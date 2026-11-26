@@ -1,0 +1,39 @@
+<section class="vs-scene" id="s176" data-in="cut" data-duration="8.60" data-section="KEY POINTS" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Key points on the addressee name, optional postal identity card and card fees">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="key-points-b">
+   <use href="piece:key-fact-card" transform="translate(140 190)"/>
+   <text id="key-points-b-kicker" x="239" y="293" class="hi" font-size="54" font-weight="840" fill="#9e1b1b">याद रखिए · 2</text>
+   <g id="key-points-name">
+    <rect x="200" y="358" width="1520" height="150" rx="21" fill="#fff"/>
+    <circle cx="256" cy="409" r="12" fill="#f2b705"/>
+    <text x="303" y="425" class="hi" font-size="52" font-weight="830" fill="#2b2622">Addressee का नाम ज़रूरी</text>
+    <text id="key-points-name-not" x="303" y="481" class="hi" font-size="44" font-weight="720" fill="#6f6a63">initials, बनावटी नाम, निशान: नहीं</text>
+   </g>
+   <g id="key-points-id">
+    <rect x="200" y="524" width="1520" height="150" rx="21" fill="#fff"/>
+    <circle cx="256" cy="575" r="12" fill="#f2b705"/>
+    <text x="303" y="591" class="hi" font-size="52" font-weight="830" fill="#2b2622">Identity card: Head Post Office से</text>
+    <text id="key-points-validity" x="303" y="647" class="hi" font-size="48" font-weight="770" fill="#2b2622" xml:space="preserve">3 साल valid<tspan id="card-optional">, optional</tspan></text>
+   </g>
+   <g id="key-points-fees">
+    <rect x="200" y="690" width="1520" height="150" rx="21" fill="#fff"/>
+    <circle cx="256" cy="763" r="12" fill="#f2b705"/>
+    <text id="key-points-fee-text" x="303" y="780" class="hi" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622" xml:space="preserve">सामान्य card ₹9<tspan id="fee-poid"> · value-added POID ₹270</tspan></text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+   camera:[[0,{zoom:1}]],
+   on:[
+    [1.54,"fade","#key-points-fees",{dur:.25}],
+    [4.14,"highlight","#key-points-fee-text",{words:"₹270",color:"#f2b705",opacity:.38,pad:9,dur:.40}]
+   ],
+   update(t,section,$){
+    $("#card-optional")[0].setAttribute("opacity",S.clamp(t/.26,0,1));
+    $("#fee-poid")[0].setAttribute("opacity",S.clamp((t-4.14)/.26,0,1));
+   }
+ })
+ </script>
+</section>
