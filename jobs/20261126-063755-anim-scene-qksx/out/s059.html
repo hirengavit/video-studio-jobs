@@ -41,12 +41,16 @@
  <script type="text/scene">
  ({
   camera:[[0,{zoom:1}]],
+  update(t, section, $){
+   const u=Math.max(0,Math.min(1,(t-12.40)/.30));
+   const rgb=[43,38,34].map((v,i)=>Math.round(v+([138,93,0][i]-v)*u));
+   $('#condition-b-confirm')[0].setAttribute('fill','#'+rgb.map(v=>v.toString(16).padStart(2,'0')).join(''));
+  },
   on:[
    [.56,"fade","#condition-a-content",{dur:.29}],
    [5.90,"pulse","#or-disc",{amount:.11}],
    [6.14,"fade","#condition-b-content",{dur:.29}],
-   [12.40,"highlight","#condition-b-line-two",{words:"पुष्टि करें",color:"#fde9a6",opacity:.92,pad:5,dur:.30}],
-   [12.40,"color","#condition-b-confirm",{to:"#8a5d00",dur:.30}]
+   [12.40,"highlight","#condition-b-line-two",{words:"पुष्टि करें",color:"#fde9a6",opacity:.92,pad:5,dur:.30}]
   ]
  })
  </script>
