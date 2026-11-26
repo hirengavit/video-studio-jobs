@@ -8,12 +8,5 @@
   "10.02"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s040",
-   "text": "जानबूझकर Poste restante / VS",
-   "t": 8.14
-  }
- ]
+ "warnings": []
 }
