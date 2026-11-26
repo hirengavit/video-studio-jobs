@@ -1,0 +1,74 @@
+<section class="vs-scene" id="s173" data-in="cut" data-section="PART 8 · 24 AND 48 SPEED POST" data-series="PRODUCTS">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g font-family="Inter, sans-serif" fill="#2b2622">
+      <rect id="benefit-surface" x="120" y="190" width="1000" height="306" rx="32" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="177" y="260" font-size="52" font-weight="780" fill="#9e1b1b">Business customers</text>
+      <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="180" y="312" font-size="38" font-weight="620" fill="#6f6a63">व्यापारिक ग्राहकों के लिए</text>
+      <path d="M180 340H1060" stroke="#ead9a8" stroke-width="2"/>
+      <g id="bnpl">
+        <g transform="translate(180 368)" stroke="#9e1b1b" stroke-width="4" stroke-linejoin="round" fill="none">
+          <rect x="0" y="0" width="68" height="44" rx="7"/><circle cx="34" cy="22" r="10"/><path d="M6 11c7 0 9-2 9-6m47 6c-7 0-9-2-9-6M6 33c7 0 9 2 9 6m47-6c-7 0-9 2-9 6"/>
+          <path d="M9 53h56" stroke-linecap="round"/>
+        </g>
+        <text x="290" y="408" font-size="50" font-weight="750">BNPL</text>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="292" y="457" font-size="36" fill="#6f6a63">अभी book, बाद में भुगतान</text>
+      </g>
+      <g id="pickup">
+        <path d="M180 480H1060" stroke="#ead9a8" stroke-width="2"/>
+        <g transform="translate(180 503)" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M2 7h41v38H2zM43 19h15l11 12v14H43M43 31h26"/><circle cx="16" cy="46" r="6" fill="#ffffff"/><circle cx="56" cy="46" r="6" fill="#ffffff"/>
+        </g>
+        <text x="290" y="548" font-size="50" font-weight="750">Free pickup</text>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="292" y="597" font-size="36" fill="#6f6a63">bulk booking पर</text>
+      </g>
+      <g id="integration">
+        <path d="M180 620H1060" stroke="#ead9a8" stroke-width="2"/>
+        <g transform="translate(180 647)" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M20 8 2 25l18 17m30-34 18 17-18 17M40 3 30 47"/>
+        </g>
+        <text x="290" y="688" font-size="50" font-weight="750">API integration</text>
+      </g>
+      <g id="billing">
+        <path d="M180 760H1060" stroke="#ead9a8" stroke-width="2"/>
+        <g transform="translate(188 783)" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M0 2h52v61l-7-6-6 6-7-6-6 6-7-6-6 6-7-6-6 6zM12 17h28M12 29h28M12 41h17"/>
+        </g>
+        <text x="290" y="828" font-size="50" font-weight="750">Centralised billing</text>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="292" y="877" font-size="36" fill="#6f6a63">एक जगह bill</text>
+      </g>
+      <g id="delay">
+        <rect id="refund-surface" x="1200" y="300" width="600" height="284" rx="32" fill="#f3ead6"/>
+        <g transform="translate(1500 411)" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+          <circle r="49" fill="#fffdf7"/><path d="M0-26V2l20 12"/>
+        </g>
+        <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1500" y="535" text-anchor="middle" font-size="44" font-weight="690">देरी हो, तो</text>
+        <text id="refund-copy" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1500" y="643" text-anchor="middle" font-size="56" font-weight="770">पूरे postage का refund</text>
+        <g id="conditions">
+          <rect x="1338" y="706" width="324" height="72" rx="36" fill="#e6e0d6"/>
+          <text class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="1500" y="756" text-anchor="middle" font-size="39" font-weight="670" fill="#4b4f58">शर्तों के साथ</text>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.08,'fade','#pickup',{dur:0.23}],
+      [2.08,'fade','#integration',{dur:0.23}],
+      [4.36,'fade','#billing',{dur:0.23}],
+      [6.52,'fade','#delay',{dur:0.25}],
+      [8.94,'fade','#refund-copy',{dur:0.24}],
+      [8.94,'highlight','#refund-copy',{words:'refund',color:'#fde9a6',opacity:0.96,dur:0.32,pad:5}],
+      [9.40,'fade','#conditions',{dur:0.24}]
+    ],
+    update(t, section, $) {
+      const p = (a,b) => Math.max(0,Math.min(1,(t-a)/(b-a)));
+      const left=$('#benefit-surface')[0];
+      const right=$('#refund-surface')[0];
+      if(left) left.setAttribute('height',306+141*p(0.92,1.28)+139*p(1.92,2.28)+164*p(4.20,4.56));
+      if(right) right.setAttribute('height',284+103*p(8.71,9.08)+133*p(9.16,9.54));
+    }
+  }
+  </script>
+</section>
