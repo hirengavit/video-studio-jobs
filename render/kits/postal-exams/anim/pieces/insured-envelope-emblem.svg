@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 360" width="520" height="360" fill="none">
+  <title>Insured envelope emblem</title>
+  <defs>
+    <g id="insured-envelope-emblem-wax">
+      <path d="M28.05 7.25 Q25.1 14.5 20.4 20.9 Q15.75 27.3 7.9 27.9 Q0 28.5 -7.6 27.45 Q-15.25 26.4 -20.4 20.6 Q-25.5 14.75 -28.25 7.4 Q-31 0 -27.85 -7.1 Q-24.7 -14.25 -19.85 -20.1 Q-15 -26 -7.5 -28.75 Q0 -31.5 7.25 -28.3 Q14.5 -25.1 20.25 -20.05 Q26 -15 28.5 -7.5 Q31 0 28.05 7.25 Z" fill="#9e1b1b" stroke="#2b2622" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+      <circle r="20" stroke="#7d1414" stroke-width="2.5" vector-effect="non-scaling-stroke"/>
+      <path d="M0 -12.6 L3 -5.2 L10.9 -6.3 L6 0 L10.9 6.3 L3 5.2 L0 12.6 L-3 5.2 L-10.9 6.3 L-6 0 L-10.9 -6.3 L-3 -5.2 Z" fill="#7d1414"/>
+      <path d="M-19.7 -13.8 A24 24 0 0 1 4.2 -23.6" stroke="#b8403a" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    </g>
+  </defs>
+  <g id="paper">
+    <rect x="20" y="20" width="450" height="270" rx="6" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+  <g id="flaps" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 22 L245 175 L468 22"/>
+    <path d="M22 288 L200 144"/>
+    <path d="M468 288 L290 144"/>
+  </g>
+  <g id="seal-1">
+    <use href="#insured-envelope-emblem-wax" transform="translate(245 175)"/>
+  </g>
+  <g id="seal-2">
+    <use href="#insured-envelope-emblem-wax" transform="translate(110 217) scale(0.77)"/>
+  </g>
+  <g id="seal-3">
+    <use href="#insured-envelope-emblem-wax" transform="translate(380 217) scale(0.77)"/>
+  </g>
+  <g id="tag">
+    <path d="M452 276 C470 288 470 302 460 316" stroke="#2b2622" stroke-width="3" stroke-linecap="round"/>
+    <g transform="rotate(8 458 333)">
+      <path d="M426 316 L458 306 L490 316 L490 350 L426 350 Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+      <circle cx="458" cy="316" r="3.5" fill="#ffffff" stroke="#2b2622" stroke-width="2"/>
+      <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M447 324 H469"/>
+        <path d="M447 330 H469"/>
+        <path d="M448 324 H452 C461 324 461 336 452 336 H448 L464 347"/>
+      </g>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="245" cy="290" r="0"/>
+  <circle data-anchor="top" cx="245" cy="20" r="0"/>
+</svg>

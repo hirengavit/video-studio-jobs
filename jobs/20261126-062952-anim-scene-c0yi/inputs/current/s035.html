@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s035" data-in="cut" data-duration="10.56" data-section="PART 2 · HOLDING PERIOD" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Cash on Delivery: the post office collects from the addressee and sends the money to the sender">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="cod-term">
+   <rect x="140" y="180" width="1640" height="156" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <rect x="140" y="180" width="12" height="156" rx="6" fill="#9e1b1b"/>
+   <text x="960" y="251" text-anchor="middle" font-family="Inter,sans-serif" font-size="72" font-weight="840" fill="#2b2622">COD (Cash on Delivery)</text>
+   <text id="cod-hindi" x="960" y="310" text-anchor="middle" class="hi" font-size="48" font-weight="760" fill="#6f6a63">डिलीवरी पर भुगतान</text>
+  </g>
+  <g id="value-added">
+   <rect x="660" y="357" width="600" height="62" rx="30" fill="#eeecee"/>
+   <text x="960" y="401" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#4b4f58">value-added service</text>
+  </g>
+  <g id="cod-flow">
+   <g id="cod-sender">
+    <rect x="112" y="510" width="376" height="369" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M168 797H432" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <use href="piece:person-icon" transform="translate(224 550) scale(.95)"/>
+    <text x="300" y="851" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">Sender</text>
+   </g>
+   <g id="cod-office">
+    <rect x="750" y="510" width="420" height="369" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M810 797H1110" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <use href="piece:post-office-icon" transform="translate(809.6 537.6) scale(.94)"/>
+    <text x="960" y="851" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">Post Office</text>
+   </g>
+   <g id="cod-addressee">
+    <rect x="1308" y="510" width="384" height="369" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path d="M1368 797H1632" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <use href="piece:person-icon" transform="translate(1424 550) scale(.95)"/>
+    <text x="1500" y="851" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="830" fill="#2b2622">Addressee</text>
+   </g>
+   <path id="collect-arrow" d="M1285 684H1193m24-18-24 18 24 18" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+   <path id="remit-arrow" d="M725 684H515m24-18-24 18 24 18" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+   <g id="cod-money">
+    <use href="piece:rupee-deposit" transform="translate(1175 423) scale(.65)"/>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],
+  on:[
+   [.92,"fade","#cod-hindi",{dur:.24}],
+   [2.36,"pop","#cod-office",{from:.94,spring:"soft"}],
+   [2.36,"pop","#cod-addressee",{from:.94,spring:"soft"}],
+   [5.28,"draw","#collect-arrow",{dur:.32}],
+   [5.28,"pop","#cod-money",{from:.94,spring:"soft"}],
+   [5.43,"move","#cod-money",{by:[-295,0],spring:"soft"}],
+   [7.24,"pop","#cod-sender",{from:.94,spring:"soft"}],
+   [7.24,"draw","#remit-arrow",{dur:.36}],
+   [7.65,"move","#cod-money",{by:[-658,0],spring:"soft"}],
+   [9.74,"pop","#value-added",{from:.94,spring:"soft"}]
+  ]
+ })
+ </script>
+</section>
