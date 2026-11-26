@@ -14,6 +14,7 @@
    <rect x="961" y="549" width="6" height="61" rx="3" fill="#9e1b1b"/>
    <text x="989" y="597" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="45" font-weight="700" fill="#2b2622">administrative instructions वाला</text>
   </g>
+  <g id="regulations-cue"><rect x="140" y="830" width="355" height="130" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/><text x="317.5" y="913" text-anchor="middle" font-family="Inter, sans-serif" font-size="43" font-weight="720" fill="#4b4f58">Regulations</text></g>
   <g id="form-note">
    <rect x="140" y="830" width="1660" height="130" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
    <text id="form-label" x="206" y="915" font-family="Inter, sans-serif" font-size="51" font-weight="760" fill="#2b2622">Form No.</text>
@@ -23,10 +24,12 @@
  </svg>
  <script type="text/scene">
  {on:[
-   [0.84,'type','#parcel',{dur:0.52}],
+   [0.84,'type','#parcel',{cps:29}],
    [1.78,'fade','#required',{dur:0.27}],
    [2.18,'fade','#instructions',{dur:0.31}],
-   [5.66,'reveal','#form-note',{from:'left',dur:0.42}],
+   [5.66,'reveal','#regulations-cue',{from:'left',dur:0.31}],
+   [8.45,'out','#regulations-cue',{dur:0.12}],
+   [8.58,'reveal','#form-note',{from:'left',dur:0.24}],
    [8.58,'fade','#form-label',{dur:0.24}],
    [9.26,'draw','#form-cross',{dur:0.30}],
    [9.26,'fade','#form-explanation',{dur:0.24}]
