@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s013" data-in="cut" data-section="PART 1 · WHAT IT IS" data-series="PRODUCTS">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="term">
+   <text x="140" y="199" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="43" font-weight="650" fill="#6f6a63">अब एक शब्द</text>
+   <g id="delivery-standard">
+    <rect x="140" y="233" width="680" height="407" rx="25" fill="#9e1b1b"/>
+    <rect x="140" y="233" width="680" height="407" rx="25" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 28" stroke-linecap="round"/>
+    <rect x="169" y="262" width="622" height="349" rx="15" fill="none" stroke="#b8403a" stroke-width="3"/>
+    <text x="480" y="412" text-anchor="middle" font-family="Inter, sans-serif" font-size="84" font-weight="810" fill="#fff">Delivery</text>
+    <text x="480" y="517" text-anchor="middle" font-family="Inter, sans-serif" font-size="84" font-weight="810" fill="#fff">Standard</text>
+   </g>
+  </g>
+  <g id="meaning-card">
+   <rect x="880" y="233" width="900" height="407" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <text id="service-terms" x="948" y="360" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="46" font-weight="670" fill="#6f6a63">service की शर्तों में,</text>
+   <text id="expected-delivery" x="948" y="470" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="57" font-weight="790" fill="#2b2622">delivery का अपेक्षित समय</text>
+  </g>
+  <g id="not-the-same">
+   <rect x="140" y="700" width="1640" height="260" rx="26" fill="#f7f5f2" stroke="#4b4f58" stroke-width="4"/>
+   <text x="196" y="780" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="45" font-weight="725" fill="#6f6a63">इसका मतलब ये नहीं:</text>
+   <text id="same-time" x="196" y="890" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="58" font-weight="790" fill="#2b2622">हर Speed Post item का समय एक जैसा</text>
+   <path id="different-cross" d="m1675 847 50 50m0-50-50 50" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+  </g>
+ </svg>
+ <script type="text/scene">
+ {
+   on:[
+     [0.46,'fade','#meaning-card',{dur:0.25}],
+     [0.46,'words','#service-terms',{gap:0.33,dist:8,spring:'fast'}],
+     [1.82,'words','#expected-delivery',{gap:0.40,dist:8,spring:'fast'}],
+     [3.24,'highlight','#expected-delivery',{words:'अपेक्षित समय',color:'#f2b705',opacity:0.36,dur:0.45,pad:8}],
+     [4.46,'fade','#not-the-same',{dur:0.25}],
+     [6.34,'words','#same-time',{gap:0.36,dist:8,spring:'fast'}],
+     [8.98,'strike','#same-time',{color:'#4b4f58',width:7,dur:0.46,dim:0.58}],
+     [8.98,'draw','#different-cross',{dur:0.34}]
+   ]
+ }
+ </script>
+</section>
