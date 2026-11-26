@@ -8,18 +8,5 @@
   "9.25"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s117",
-   "text": "₹6,00,000 × 10% / =",
-   "t": 3.76
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s117",
-   "text": "₹6,00,000 × 20% / =",
-   "t": 9.25
-  }
- ]
+ "warnings": []
 }
