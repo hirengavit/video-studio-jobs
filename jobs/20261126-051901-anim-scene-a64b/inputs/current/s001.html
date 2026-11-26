@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s001" data-in="cut" data-duration="9.44" data-section="TOPIC · BIG PICTURE" data-series="DELIVERY RULES" lang="hi">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Postal delivery rules overview: Poste Restante, Recall, and Alteration of address for inland post.">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="medium-composition" transform="translate(248.888889 200) scale(.740740741)">
+  <g id="counter-side" transform="translate(-345 48) scale(.90)">
+   <use href="set:po-counter" layer="back"/>
+   <use href="set:po-counter" layer="front"/>
+   <g id="hook-envelope" transform="translate(766.2 526) scale(.51)">
+    <use href="piece:domestic-envelope"/>
+    <g id="hook-postmark" transform="translate(520 31) scale(.48)">
+     <use href="piece:postmark-ring"/>
+     <g font-family="Inter,sans-serif" font-size="22" font-weight="850" fill="#9e1b1b" text-anchor="middle">
+      <text><tspan x="110" y="104">POSTE</tspan><tspan x="110" y="130">RESTANTE</tspan></text>
+     </g>
+    </g>
+   </g>
+  </g>
+  <g id="topic-terms" font-family="'Noto Sans Devanagari',Inter,sans-serif">
+   <text id="topic-poste" x="1040" y="300" font-family="Inter,sans-serif" font-size="84" font-weight="820" fill="#2b2622">Poste Restante</text>
+   <text x="1040" y="369" class="hi" font-size="48" font-weight="610" fill="#6f6a63"><tspan x="1040" y="369">प्राप्ति के लिए डाक</tspan><tspan x="1040" y="429">रखने की व्यवस्था</tspan></text>
+   <text id="topic-recall" x="1040" y="520" font-family="Inter,sans-serif" font-size="84" font-weight="820" fill="#2b2622">Recall</text>
+   <text id="topic-recall-hi" x="1040" y="589" class="hi" font-size="48" font-weight="610" fill="#6f6a63">वापस मंगाना</text>
+   <text id="topic-alter" x="1040" y="740" font-family="Inter,sans-serif" font-size="84" font-weight="820" textLength="760" lengthAdjust="spacingAndGlyphs" fill="#2b2622">Alteration of address</text>
+   <text id="topic-alter-hi" x="1040" y="809" class="hi" font-size="48" font-weight="610" fill="#6f6a63">पते में परिवर्तन</text>
+   <g id="inland-scope">
+    <path d="M1040 867H1800" stroke="#e1cca5" stroke-width="3"/>
+    <text x="1040" y="936" class="hi" font-size="48" font-weight="650" fill="#6f6a63">देश के अंदर की डाक</text>
+   </g>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ set:"po-counter",
+ camera:[[0,"medium"],[6.94,"medium"],[9.34,{zoom:1.42,x:0,y:60},"inOut"]],
+ on:[
+  [1.14,"highlight","#topic-poste",{color:"#f2b705",opacity:.40,pad:9,dur:.36}],
+  [2.58,"fade","#topic-recall",{dur:.24}],
+  [3.08,"fade","#topic-recall-hi",{dur:.25}],
+  [4.48,"fade","#topic-alter",{dur:.24}],
+  [4.98,"fade","#topic-alter-hi",{dur:.25}],
+  [6.94,"fade","#inland-scope",{dur:.26}]
+ ]
+})
+</script>
+</section>
