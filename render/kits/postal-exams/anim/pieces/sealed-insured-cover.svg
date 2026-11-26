@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="paper"><rect x="22" y="26" width="596" height="368" rx="22" fill="#c8a06a"/><rect x="30" y="34" width="580" height="352" rx="15" fill="none" stroke="#b28b5b" stroke-width="2"/></g>
+<g id="flaps"><path d="M47 52 309 192Q315 197 320 197T331 192L593 52" fill="#d8b788"/><path d="M47 368 308 225Q315 221 320 221T332 225L593 368" fill="#d9b889"/><path d="M47 52 307 202Q321 210 307 218L47 368" fill="#cea674"/><path d="M593 52 333 202Q319 210 333 218L593 368" fill="#d0aa79"/></g>
+<g id="seams" fill="none" stroke="#8e6643" stroke-width="2"><path d="M56 81v256m528-256v256" stroke-dasharray="5 6"/></g>
+<g id="string" fill="none"><path d="M23 207q148 2 297 4t297-4M319 26q3 92 1 184t-1 184" stroke="#503524" stroke-width="6"/><path d="M324 216q34 31 82 34m-87-31q-33 42-71 43" stroke="#503524" stroke-width="5"/><path d="M28 206q136 1 267 3m52 1q133 0 266-4m-294-174q2 79 2 165" stroke="#af895d" stroke-width="1.6"/></g>
+<g id="knot"><path d="M320 210q-19-22-36-14q-9 5 2 12q14 9 34 2Zm0 0q18-21 35-13q9 5-2 12q-13 9-33 1Z" fill="none" stroke="#503524" stroke-width="5"/><ellipse cx="320" cy="210" rx="9" ry="7" fill="#6d4b33"/></g>
+<g id="seal-spots" fill="none" stroke="#4f4032" stroke-width="2.3" stroke-dasharray="4 4"><circle cx="320" cy="181" r="14"/><circle cx="320" cy="239" r="14"/><circle cx="278" cy="210" r="14"/><circle cx="362" cy="210" r="14"/><circle cx="56" cy="210" r="15"/><circle cx="584" cy="210" r="15"/><circle cx="320" cy="210" r="16"/><circle cx="248" cy="262" r="15"/><circle cx="406" cy="250" r="15"/></g>
+<circle data-anchor="base" cx="320" cy="395" r="0" stroke="none"/><circle data-anchor="top" cx="320" cy="25" r="0" stroke="none"/>
+</svg>
