@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480">
+<title>viscera pack</title>
+<defs>
+<pattern id="visc-dots" width="14" height="14" patternUnits="userSpaceOnUse">
+<circle cx="3.5" cy="3.5" r="2.2" fill="#b9b2a6"/>
+<circle cx="10.5" cy="10.5" r="2.2" fill="#b9b2a6"/>
+</pattern>
+</defs>
+<g id="cloth">
+<rect x="80" y="84" width="480" height="356" rx="22" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+<path d="M110 424 q30 -6 60 0 M470 424 q30 -6 52 -2" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+<path d="M100 104 H540" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-dasharray="10 9"/>
+</g>
+<g id="box">
+<path fill-rule="evenodd" d="M118 128 H522 V412 H118 Z M142 152 V388 H498 V152 Z" fill="#d9b98a" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+<path d="M160 140 h90 M330 140 h120 M150 400 h110 M360 400 h80 M130 200 v60 M130 300 v50 M510 190 v70 M510 300 v60" stroke="#8a5d00" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+</g>
+<g id="cotton">
+<rect x="142" y="152" width="356" height="236" fill="#fffdf8"/>
+<rect x="142" y="152" width="356" height="236" fill="url(#visc-dots)"/>
+<rect x="142" y="152" width="356" height="236" fill="none" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<g id="jar" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M262 206 H378 Q392 206 392 222 V340 Q392 356 376 356 H264 Q248 356 248 340 V222 Q248 206 262 206 Z" fill="#eef4f2"/>
+<path d="M266 228 V330" stroke="#ffffff" stroke-width="6"/>
+<rect x="276" y="190" width="88" height="18" rx="3" fill="#eef4f2"/>
+<path d="M286 190 L290 168 H350 L354 190 Z" fill="#e6d6b4"/>
+</g>
+<g id="bracket" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M146 270 H244"/>
+<path d="M146 258 V282 M244 258 V282"/>
+<path d="M156 263 L146 270 L156 277 M234 263 L244 270 L234 277"/>
+</g>
+<g id="seal-1"><circle cx="164" cy="104" r="17" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/><circle cx="164" cy="104" r="9" fill="none" stroke="#7d1414" stroke-width="3"/></g>
+<g id="seal-2"><circle cx="268" cy="104" r="17" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/><circle cx="268" cy="104" r="9" fill="none" stroke="#7d1414" stroke-width="3"/></g>
+<g id="seal-3"><circle cx="372" cy="104" r="17" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/><circle cx="372" cy="104" r="9" fill="none" stroke="#7d1414" stroke-width="3"/></g>
+<g id="seal-4"><circle cx="476" cy="104" r="17" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/><circle cx="476" cy="104" r="9" fill="none" stroke="#7d1414" stroke-width="3"/></g>
+<circle data-anchor="base" cx="320" cy="440" r="0"/>
+<circle data-anchor="top" cx="320" cy="84" r="0"/>
+</svg>
