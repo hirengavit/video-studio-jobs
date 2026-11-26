@@ -12,7 +12,8 @@
     </g>
     <rect id="matrix-weight-fill" x="120" y="279" width="306" height="601" rx="20" fill="#f3ead6"/>
     <rect id="matrix-distance-fill" x="441.5" y="280.5" width="1353" height="118" rx="7.5" fill="#f3ead6"/>
-    <rect id="r1-band" x="666" y="413" width="1127" height="144" rx="8" fill="#fde9a6"/>
+    <defs><clipPath id="nonlocal-row-clip"><rect x="666" y="412" width="1127" height="146" rx="8"/></clipPath></defs>
+    <g clip-path="url(#nonlocal-row-clip)"><rect id="r1-band" x="666" y="413" width="1127" height="144" rx="8" fill="#fde9a6"/></g>
     <rect id="head-local-hl" x="445" y="283" width="216" height="113" rx="9" fill="#fde9a6"/>
     <rect id="head-far-hl" x="1575" y="283" width="216" height="113" rx="9" fill="#fde9a6"/>
     <g id="matrix-grid" fill="none" stroke="#ead9a8" stroke-width="3">
@@ -76,10 +77,15 @@
   shots:[[0,'#matrix']],
   on:[
     [0.48,'stamp','#oior',{from:1.06,rot:0,spring:'fast'}],
-    [4.68,'pulse','#r1-band',{scale:1.025,dur:.45}],
+    [4.68,'pulse','#r1-band',{amount:.035}],
     [7.58,'pop','#r1-rate-2,#r1-rate-3,#r1-rate-4,#r1-rate-5,#r1-rate-6',{from:.91,spring:'fast',stagger:.08}]
   ],
   update(t,section,$){
+    const band=$('#r1-band')[0];
+    if(band){
+      const f=Math.max(0, 1-Math.abs(t-4.89)/.21);
+      band.setAttribute('fill', 'rgb('+Math.round(253-6*f)+','+Math.round(233-24*f)+','+Math.round(166-52*f)+')');
+    }
     const h=$('#slab-1')[0], line=$('#carried-slab-underline')[0];
     if(h&&line){
       const b=h.getBBox(), y=b.y+b.height+6;
