@@ -10,18 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s191",
-   "message": "pop: option \"dur\" isn't used (it takes: spring, from)",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s191",
-   "message": "stamp: option \"dur\" isn't used (it takes: from, spring, rot)",
-   "t": 0.3
-  },
-  {
    "kind": "low-contrast",
    "scene": "s191",
    "text": "कुछ कीमती सामान (1.9:1)",
