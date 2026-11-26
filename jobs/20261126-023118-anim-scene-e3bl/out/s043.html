@@ -34,7 +34,7 @@
    <use href="piece:post-office-icon" transform="translate(425 264) scale(.85)"/>
    <text x="561" y="566" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">Office of posting</text>
   </g>
-  <path id="return-to-posting" d="M1098 410C967 373 846 373 722 410m35-36-35 36 48 6" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="return-to-posting" d="M1098 410C967 373 846 373 722 410l35-36M722 410l48 6" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
   <g id="sender-home">
    <use href="piece:house-icon" transform="translate(112 278) scale(.70)"/>
    <text x="217" y="566" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="760" fill="#2b2622">sender</text>
@@ -48,8 +48,8 @@
  on:[
   [.54,"fade","#standard-reason-note",{dur:.28}],
   [3.10,"fade","#returned-status",{dur:.30}],
-  [5.48,"out","#duration",{to:"left",dist:140,dur:.26,scale:1}],
-  [5.48,"out","#return-label",{to:"left",dist:100,dur:.25,scale:1}],
+  [5.48,"out","#duration",{dur:.26,scale:1}],
+  [5.48,"out","#return-label",{dur:.25,scale:1}],
   [5.48,"pop","#posting-office",{from:.86,spring:"soft"}],
   [5.48,"draw","#return-to-posting",{dur:.72}],
   [8.34,"pop","#sender-home",{from:.86,spring:"soft"}],
