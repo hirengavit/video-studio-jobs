@@ -1,0 +1,64 @@
+<section class="vs-scene" id="s196" data-in="cut" data-section="PART 9 · INSURANCE" data-series="PRODUCTS">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+
+    <g id="valuables-card">
+      <rect x="120" y="170" width="800" height="650" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <g id="gold-photo" transform="rotate(-1.5 520 332)">
+        <image href="photo:gold-jewellery-cutout" x="320" y="195" width="400" height="268" preserveAspectRatio="xMidYMid meet"/>
+      </g>
+      <text x="520" y="488" text-anchor="middle" font-size="36" font-weight="520" fill="#6f6a63" style="font-family:'Noto Sans Devanagari',Inter,sans-serif">केश आभूषण · Honolulu Academy of Arts</text>
+      <g id="metals">
+        <rect x="151" y="510" width="389" height="70" rx="35" fill="#f3ead6"/>
+        <text x="345.5" y="560" text-anchor="middle" font-family="Inter" font-size="48" font-weight="700" fill="#2b2622">Precious metals</text>
+      </g>
+      <g id="stones">
+        <rect x="557" y="510" width="332" height="70" rx="35" fill="#f3ead6"/>
+        <text x="723" y="560" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="700" fill="#2b2622">कीमती पत्थर</text>
+      </g>
+      <g id="jewellery">
+        <rect x="151" y="600" width="310" height="70" rx="35" fill="#f3ead6"/>
+        <text x="306" y="650" text-anchor="middle" font-family="Inter" font-size="48" font-weight="700" fill="#2b2622">Jewellery</text>
+      </g>
+      <g id="real-value">
+        <rect x="151" y="710" width="738" height="80" rx="40" fill="#f3ead6"/>
+        <text x="520" y="764" text-anchor="middle" font-size="48" font-weight="760" fill="#9e1b1b" style="font-family:'Noto Sans Devanagari',Inter,sans-serif">असली value पर insured</text>
+      </g>
+    </g>
+
+    <g id="currency-card">
+      <rect x="1000" y="170" width="800" height="650" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <use href="piece:rupee-deposit" transform="translate(1208 210) scale(1.6)"/>
+      <g id="currency-notes">
+        <rect x="1031" y="510" width="405" height="70" rx="35" fill="#f3ead6"/>
+        <text x="1233.5" y="560" text-anchor="middle" font-family="Inter" font-size="48" font-weight="700" fill="#2b2622">Currency notes</text>
+      </g>
+      <g id="coins">
+        <rect x="1453" y="510" width="316" height="70" rx="35" fill="#f3ead6"/>
+        <text x="1611" y="560" text-anchor="middle" font-family="Inter" font-size="48" font-weight="700" fill="#2b2622">Coins</text>
+      </g>
+      <g id="bank-notes">
+        <rect x="1031" y="600" width="330" height="70" rx="35" fill="#f3ead6"/>
+        <text x="1196" y="650" text-anchor="middle" font-family="Inter" font-size="48" font-weight="700" fill="#2b2622">Bank notes</text>
+      </g>
+      <g id="special-method">
+        <rect x="1031" y="710" width="390" height="80" rx="40" fill="#f3ead6"/>
+        <text x="1226" y="763" text-anchor="middle" font-size="42" font-weight="700" fill="#9e1b1b" style="font-family:'Noto Sans Devanagari',Inter,sans-serif">तय खास तरीके से</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0, 'pop', '#metals', {from: 0.94}],
+      [0.96, 'pop', '#stones', {from: 0.94}],
+      [2.68, 'pop', '#jewellery', {from: 0.94}],
+      [3.46, 'fade', '#real-value', {dur: 0.27}],
+      [6.08, 'pop', '#currency-card', {from: 0.96}],
+      [7.36, 'pop', '#coins', {from: 0.94}],
+      [8.80, 'pop', '#bank-notes', {from: 0.94}],
+      [9.98, 'fade', '#special-method', {dur: 0.24}],
+    ],
+  }
+  </script>
+</section>
