@@ -1,0 +1,35 @@
+<section class="vs-scene" id="s113" data-in="cut" data-duration="11.09" data-section="PART 5 · CANCELLATION" data-series="DELIVERY RULES" lang="hi">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" aria-label="Exceptions: the request cannot be completed, or the item is delivered contrary to it; liability is limited under the prescribed conditions.">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="exam">
+   <use href="piece:key-fact-card" transform="translate(140 190)"/>
+   <text id="exam-kicker" x="228" y="287" class="hi" font-size="48" font-weight="800" fill="#9e1b1b">Exam angle · परीक्षा की बात</text>
+   <g id="exam-row-1">
+    <circle cx="235" cy="433" r="9" fill="#f2b705"/>
+    <text x="269" y="449" class="hi" font-size="52" font-weight="720" fill="#fff">Self-booked item: स्वीकार होने से पहले cancellation</text>
+   </g>
+   <g id="exam-row-2">
+    <circle cx="235" cy="542" r="9" fill="#f2b705"/>
+    <text x="269" y="558" class="hi" font-size="52" font-weight="720" fill="#fff">Counter booking: booking वाले दिन</text>
+   </g>
+   <g id="exam-row-3">
+    <circle cx="235" cy="651" r="9" fill="#f2b705"/>
+    <text x="269" y="667" class="hi" font-size="52" font-weight="720" fill="#fff">Cancellation refund: administrative instructions से</text>
+   </g>
+   <g id="exam-row-4">
+    <circle cx="235" cy="760" r="9" fill="#f2b705"/>
+    <text id="exam-request-fee" x="269" y="776" class="hi" font-size="52" font-weight="720" fill="#fff">Request पूरी न हो: request fee वापस</text>
+   </g>
+  </g>
+ </svg>
+ <script type="text/scene">
+ ({
+  camera:[[0,{zoom:1}]],on:[
+   [0,"fade","#exam-row-2",{dur:.32}],
+   [2.68,"fade","#exam-row-3",{dur:.32}],
+   [7.32,"fade","#exam-row-4",{dur:.32}],
+   [9.22,"highlight","#exam-request-fee",{words:"request fee",color:"#f2b705",opacity:.35,pad:8,dur:.34}]
+  ]
+ })
+ </script>
+</section>
