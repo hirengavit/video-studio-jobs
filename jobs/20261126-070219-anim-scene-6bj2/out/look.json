@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.79",
+  "3.58",
+  "5.36",
+  "7.15",
+  "8.79"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s147",
+   "text": "POSTE / RESTANTE",
+   "t": 1.79
+  }
+ ]
+}
