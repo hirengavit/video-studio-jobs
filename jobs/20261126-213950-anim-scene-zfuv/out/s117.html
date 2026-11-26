@@ -53,7 +53,18 @@
     [7.74,'fade','#working-td-tag',{dur:0.22}],
     [7.74,'type','#working-td',{cps:16}],
     [8.82,'fade','#working-td-equals',{dur:0.20}]
-  ]
+  ],
+  update(t,sec,$){
+    for(const id of ['#working-ntd','#working-td']){
+      const f=$(id)[0];
+      if(!f)continue;
+      f.removeAttribute('textLength');
+      if(f.getComputedTextLength()>384){
+        f.setAttribute('textLength','384');
+        f.setAttribute('lengthAdjust','spacingAndGlyphs');
+      }
+    }
+  }
 }
 </script>
 </section>
