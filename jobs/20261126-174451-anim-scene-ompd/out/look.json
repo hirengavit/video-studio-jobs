@@ -8,12 +8,5 @@
   "12.01"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s051",
-   "text": "gross और volumetric में / जो ज़्यादा",
-   "t": 12.01
-  }
- ]
+ "warnings": []
 }
