@@ -1,0 +1,36 @@
+[
+  {
+    "id": "po-counter",
+    "kind": "set",
+    "description": "The recurring post office counter: a pigeonhole-rack behind (x 510-1410, y 150-560) and the library posting-counter in front at translate(510 560) (sign plate y 582-678, counter top y 730, postal-red front to y 977), on the cream canvas. The recurring white envelope with its red POSTE RESTANTE postmark rests on the counter or in the centre pigeonhole; a person-icon customer stands at the right.",
+    "pieces": [
+      "posting-counter",
+      "pigeonhole-rack",
+      "domestic-envelope",
+      "postmark-ring",
+      "person-icon"
+    ],
+    "spots": [
+      "counter-left",
+      "counter-centre",
+      "counter-right",
+      "rack-slot",
+      "customer-side"
+    ],
+    "framings": [
+      "wide",
+      "medium",
+      "close"
+    ],
+    "scenes": [
+      "s001",
+      "s008",
+      "s029",
+      "s051",
+      "s066",
+      "s067",
+      "s183"
+    ],
+    "reuse": false
+  }
+]

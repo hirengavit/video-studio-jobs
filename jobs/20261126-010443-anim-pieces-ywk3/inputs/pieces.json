@@ -1,0 +1,97 @@
+[
+  {
+    "id": "postmark-ring",
+    "description": "Round postal-red (#9e1b1b) postmark 220x220: double ring 4 px, five wavy cancel lines running right to x 420, blank centre band for the scene's words (POSTE RESTANTE, a date, a regulation number). Parts #ring, #band, #cancels.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s001",
+      "s002",
+      "s012",
+      "s017",
+      "s023",
+      "s052",
+      "s064",
+      "s105",
+      "s107",
+      "s123",
+      "s148",
+      "s183"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "post-office-icon",
+    "description": "Small flat post office 320x300: white walls with 3 px ink outline, postal-red roof band, blank sand sign band (x 40-280, y 70-110) for the scene's words, a door, a small red post box beside it, ground line; no emblem or logo.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s002",
+      "s003",
+      "s009",
+      "s012",
+      "s019",
+      "s025",
+      "s033",
+      "s034",
+      "s035",
+      "s042",
+      "s043",
+      "s060",
+      "s090",
+      "s116",
+      "s119",
+      "s120",
+      "s121",
+      "s122",
+      "s127",
+      "s128",
+      "s129",
+      "s130",
+      "s141",
+      "s143",
+      "s159"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "written-request",
+    "description": "White letter sheet 420x560, 3 px ink outline, a blank header line, five grey ruled lines, a signature line bottom right and a small blank chip bottom left (for a fee); the scene letters it (लिखित request, Declaration, पता बदलने की सूचना).",
+    "anchors": [
+      "base",
+      "grip"
+    ],
+    "scenes": [
+      "s060",
+      "s068",
+      "s083",
+      "s084",
+      "s086",
+      "s087",
+      "s088",
+      "s122",
+      "s123",
+      "s130",
+      "s142",
+      "s183"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "day-strip",
+    "description": "A row of 12 square day tiles 1320x130 (100 px tiles, 10 px gaps), white with 3 px ink outline, blank for the scene's day numbers; parts #tile-1 to #tile-12 so tiles can be tinted.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s152",
+      "s157",
+      "s158",
+      "s164",
+      "s168"
+    ],
+    "reuse": false
+  }
+]
