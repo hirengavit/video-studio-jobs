@@ -37,10 +37,12 @@
   shots:[[0,"#dates"],[5.45,"#refund"]],
   on:[
    [.96,"fade","#notification-date-label",{dur:.23}],
-   [4.24,"out","#gazette-arrow",{dur:.11}],
    [4.24,"draw","#not-equal",{dur:.29}],
    [4.24,"fade","#contrast-line",{dur:.21}]
-  ]
+  ],
+  update(t,section,$){
+   for(const arrow of $("#gazette-arrow")) arrow.style.opacity=t>=4.24?"0":"1";
+  }
  })
  </script>
 </section>
