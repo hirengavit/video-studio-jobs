@@ -1,0 +1,35 @@
+<section class="vs-scene" id="s047" data-in="cut" data-section="PART 2 · WEIGHT AND SIZE" data-series="PRODUCTS">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g>
+   <rect x="160" y="207" width="152" height="69" rx="34.5" fill="#eeeae4"/>
+   <text x="236" y="253" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="720" fill="#4b4f58">6 / 6</text>
+  </g>
+  <use href="piece:declaration-tag" transform="translate(140 300) scale(2.2)"/>
+  <text x="492" y="384" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" font-weight="770" fill="#fff">Declaration</text>
+  <text id="parcel" x="940" y="411" font-family="Inter, sans-serif" font-size="68" font-weight="790" fill="#2b2622">Domestic parcel</text>
+  <text id="required" x="945" y="486" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="50" font-weight="660" fill="#2b2622">के साथ ज़रूरी</text>
+  <g id="instructions">
+   <rect x="940" y="526" width="788" height="108" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+   <rect x="961" y="549" width="6" height="61" rx="3" fill="#9e1b1b"/>
+   <text x="989" y="597" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="45" font-weight="700" fill="#2b2622">administrative instructions वाला</text>
+  </g>
+  <g id="form-note">
+   <rect x="140" y="830" width="1660" height="130" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+   <text id="form-label" x="206" y="915" font-family="Inter, sans-serif" font-size="51" font-weight="760" fill="#2b2622">Form No.</text>
+   <path id="form-cross" d="M493 868l51 51m0-51-51 51" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+   <text id="form-explanation" x="591" y="914" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="53" font-weight="700" fill="#4b4f58">Regulations में नहीं दिया</text>
+  </g>
+ </svg>
+ <script type="text/scene">
+ {on:[
+   [0.84,'type','#parcel',{dur:0.52}],
+   [1.78,'fade','#required',{dur:0.27}],
+   [2.18,'fade','#instructions',{dur:0.31}],
+   [5.66,'reveal','#form-note',{from:'left',dur:0.42}],
+   [8.58,'fade','#form-label',{dur:0.24}],
+   [9.26,'draw','#form-cross',{dur:0.30}],
+   [9.26,'fade','#form-explanation',{dur:0.24}]
+ ]}
+ </script>
+</section>
