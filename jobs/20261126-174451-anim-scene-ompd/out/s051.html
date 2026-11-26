@@ -1,7 +1,7 @@
 <section class="vs-scene" id="s051" data-in="cut" data-section="PART 2 · WEIGHT AND SIZE" data-series="PRODUCTS">
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
   <rect width="1920" height="1080" fill="#fbf7ee"/>
-  <g id="exam"><rect x="140" y="190" width="620" height="77" rx="38" fill="#9e1b1b"/><text x="450" y="241" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="770">EXAM ANGLE · परीक्षा की नज़र से</text></g>
+  <g id="exam"><rect x="140" y="190" width="660" height="84" rx="42" fill="#9e1b1b"/><text x="470" y="244" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="770">EXAM ANGLE · परीक्षा की नज़र से</text></g>
   <g id="weight">
     <use href="piece:key-fact-stamp" transform="translate(140 300)"/>
     <text x="420" y="489" text-anchor="middle" fill="#ffffff" font-size="124" font-weight="820">35 kg</text>
@@ -15,7 +15,7 @@
     <text x="195" y="915" fill="#9e1b1b" font-size="52" font-weight="820">Charge</text>
     <path d="M421 857v75" stroke="#d6c9ae" stroke-width="3"/>
     <text id="methods" x="475" y="910" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="680">gross और volumetric में</text>
-    <g id="higher"><rect id="higher-marker" x="1008" y="857" width="210" height="73" rx="28" fill="#fde9a6"/><text x="1113" y="910" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="790">जो ज़्यादा</text></g>
+    <g id="higher"><rect id="higher-marker" x="1090" y="857" width="210" height="73" rx="28" fill="#fde9a6"/><text x="1195" y="910" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="790">जो ज़्यादा</text></g>
   </g>
 </svg>
 <script type="text/scene">
@@ -24,7 +24,7 @@
     [1.10,'stamp','#weight',{from:1.08,rot:0}],
     [3.10,'draw','#len',{dur:0.56}],
     [3.98,'pop','#length',{from:0.93}],
-    [5.20,'draw','#girth-loop',{dur:0.67}],
+    [5.20,'reveal','#girth-loop',{from:'left',dur:0.67}],
     [6.66,'pop','#girth-limit',{from:0.94}],
     [7.82,'reveal','#charge',{from:'left',dur:0.42}],
     [8.84,'words','#methods',{gap:0.33,dist:10}],
