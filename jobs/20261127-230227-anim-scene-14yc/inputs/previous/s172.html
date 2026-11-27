@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s172" data-section="PART 7 · GANGAJAL &amp; PRASADAM" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <g id="gangajal-table">
+    <text x="160" y="201" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="780" fill="#9e1b1b">Gangajal की कीमतें</text>
+    <text x="1760" y="201" font-family="Inter, sans-serif" font-size="32" font-weight="650" text-anchor="end" fill="#6f6a63">Source: India Post</text>
+    <rect x="160" y="240" width="1600" height="520" rx="25" fill="#ffffff"/>
+    <path d="M185 241H1735Q1759 241 1759 265V350H161V265Q161 241 185 241Z" fill="#9e1b1b"/>
+    <path d="M161 350H1759V490H161ZM161 630H1759V735Q1759 759 1735 759H185Q161 759 161 735Z" fill="#fbf7ee"/>
+    <path d="M760 350V759M1260 350V759M162 350H1758M162 490H1758M162 630H1758" stroke="#ded2bd" stroke-width="3" fill="none"/>
+    <path d="M760 242V350M1260 242V350" stroke="#b8403a" stroke-width="3"/>
+    <rect x="160" y="240" width="1600" height="520" rx="25" fill="none" stroke="#d9c8a4" stroke-width="3"/>
+    <rect id="counter-highlight" x="768" y="248" width="484" height="94" rx="15" fill="none" stroke="#f2b705" stroke-width="5"/>
+    <rect id="delivered-highlight" x="1268" y="248" width="484" height="94" rx="15" fill="none" stroke="#f2b705" stroke-width="5"/>
+    <rect id="bottle-highlight" x="170" y="360" width="580" height="120" rx="18" fill="#fff1bd" stroke="#d59904" stroke-width="4"/>
+    <text x="218" y="311" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="770" fill="#fff8e8">मात्रा</text>
+    <g text-anchor="middle">
+      <text x="1010" y="292" font-family="Inter, sans-serif" font-size="48" font-weight="760" fill="#ffffff">Counter</text>
+      <text x="1010" y="330" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="33" font-weight="620" fill="#fde9a6">काउंटर पर</text>
+      <text x="1510" y="292" font-family="Inter, sans-serif" font-size="48" font-weight="760" fill="#ffffff">Delivered</text>
+      <text x="1510" y="330" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="33" font-weight="620" fill="#fde9a6">घर तक delivery</text>
+    </g>
+    <g id="row-label-1">
+      <text x="215" y="416" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="760" fill="#2b2622">1 बोतल · 250 ml</text>
+      <text x="218" y="455" font-family="Inter, sans-serif" font-size="33" font-weight="620" fill="#6f6a63">Gangotri</text>
+    </g>
+    <g id="row-label-2">
+      <text x="215" y="554" font-family="Inter, sans-serif" font-size="48" font-weight="760" fill="#2b2622">Pack of 2</text>
+      <text x="218" y="596" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="630" fill="#6f6a63">2 बोतलों का pack</text>
+    </g>
+    <g id="row-label-3">
+      <text x="215" y="694" font-family="Inter, sans-serif" font-size="48" font-weight="760" fill="#2b2622">Pack of 4</text>
+      <text x="218" y="736" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="630" fill="#6f6a63">4 बोतलों का pack</text>
+    </g>
+    <g text-anchor="middle" font-family="Inter, sans-serif" fill="#2b2622">
+      <text id="row1-counter" x="1010" y="446" font-size="72" font-weight="780">₹30</text>
+      <text id="row1-delivered" x="1510" y="446" font-size="72" font-weight="780">₹121</text>
+      <text id="row2-counter" x="1010" y="579" font-size="56" font-weight="600" fill="#6f6a63">—</text>
+      <text id="row2-delivered" x="1510" y="560" font-size="72" font-weight="780">₹201</text>
+      <text id="row2-per-pack" x="1510" y="605" font-size="32" font-weight="620" fill="#6f6a63">per pack</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  camera:[[0,{zoom:1}]],
+  on:[
+    [.05,'pop','#row1-counter'],
+    [1.26,'fade','#delivered-highlight',{dur:.28}],
+    [4.46,'pop','#row1-delivered'],
+    [7.02,'fade','#row2-counter',{dur:.25}],
+    [8.78,'pop','#row2-delivered'],
+    [9.28,'fade','#row2-per-pack',{dur:.25}]
+  ]
+})
+</script>
+</section>

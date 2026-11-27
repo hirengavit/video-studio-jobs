@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="handle" d="M233 222L336 325Q344 333 336 342L326 352Q318 360 309 351L208 249Z" fill="#9e1b1b"/>
+<g id="rim"><circle cx="165" cy="164" r="100" fill="#f3ead6"/><circle id="lens" cx="165" cy="164" r="83" fill="#fbf7ee"/></g>
+<circle data-anchor="base" cx="325" cy="355" r="0"/>
+</svg>
