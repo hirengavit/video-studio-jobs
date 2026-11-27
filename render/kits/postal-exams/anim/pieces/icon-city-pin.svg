@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 160" width="120" height="160">
+<g stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g id="pin-body"><path d="M60 150C52 137 14 92 14 61a46 46 0 1 1 92 0c0 31-38 76-46 89Z" fill="#9e1b1b" /></g>
+<g id="center-dot"><circle cx="60" cy="61" r="16" fill="#ffffff"/></g>
+</g>
+<circle data-anchor="base" cx="60" cy="150" r="0"/>
+</svg>
