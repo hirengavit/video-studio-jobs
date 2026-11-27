@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.57",
+  "5.14",
+  "7.70",
+  "10.27",
+  "12.69"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s209",
+   "text": "Service camps / सेवा शिविर",
+   "t": 2.57
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s209",
+   "message": "a card is mostly empty at 2.6 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.57
+  }
+ ]
+}
