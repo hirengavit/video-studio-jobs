@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 280" width="360" height="280">
+  <!-- The parcel of parcel-box-icon, damaged: crushed top-right corner, torn lid flap at left, split seam on the front (slate cracks). -->
+  <g id="parcel" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="box">
+      <path id="side" d="M270,100 L300,74 L314,86 L330,70 V206 L270,266 Z" fill="#ead9a8"/>
+      <path id="front" d="M30,100 H270 V266 H30 Z" fill="#f3ead6"/>
+    </g>
+    <path id="lid" d="M30,100 L90,40 H272 L286,58 L304,52 L300,74 L270,100 Z" fill="#fbf7ee"/>
+    <g id="crush">
+      <path d="M286,58 L304,52 L300,74 Z" fill="#ead9a8" stroke="#4b4f58" stroke-width="2.5"/>
+      <path d="M272,40 L286,58 L300,74 L314,86" fill="none" stroke="#4b4f58" stroke-width="2.5"/>
+      <path d="M314,86 L306,112 M300,74 L292,92 M286,58 L270,62" fill="none" stroke="#4b4f58" stroke-width="2.5"/>
+    </g>
+    <g id="string" fill="none">
+      <path d="M150,100 V266"/>
+      <path d="M30,183 H270 L330,123"/>
+      <path d="M150,100 L210,40"/>
+      <path d="M118,70 H282"/>
+      <path d="M118,70 Q108,74 112,84"/>
+    </g>
+    <g id="flap">
+      <path id="flap-hole" d="M44,86 L80,50 L94,58 L104,54 L112,66 L100,74 L96,86 L80,92 L66,96 Z" fill="#4b4f58"/>
+      <path id="flap-torn" d="M44,86 L80,50 L68,24 L60,31 L52,16 L43,30 L32,27 L28,52 Z" fill="#f3ead6"/>
+    </g>
+    <g id="seam" fill="none" stroke="#4b4f58">
+      <path d="M222,102 L213,120 L225,137 L215,154 L226,171 L219,194" stroke-width="4"/>
+      <path d="M225,137 L240,144 M215,154 L202,160 M226,171 L238,180" stroke-width="2.5"/>
+    </g>
+    <rect id="label" x="48" y="200" width="84" height="50" rx="4" fill="#ffffff"/>
+    <g id="bow">
+      <path d="M180,70 C160,46 136,54 148,72 C155,82 170,77 180,70 Z" fill="#f3ead6"/>
+      <path d="M180,70 C200,46 224,54 212,72 C205,82 190,77 180,70 Z" fill="#f3ead6"/>
+      <path d="M180,70 L166,94 M180,70 L196,92" fill="none"/>
+      <circle cx="180" cy="70" r="5" fill="#2b2622"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="180" cy="267.5" r="0"/>
+  <circle data-anchor="top" cx="180" cy="38.5" r="0"/>
+</svg>
