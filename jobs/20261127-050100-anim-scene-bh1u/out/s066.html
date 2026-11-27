@@ -24,8 +24,8 @@
 <g id="small-towns-lines"><text x="260" y="726" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="660" fill="#2b2622">उसी PIN code का</text><text x="260" y="778" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="660" fill="#2b2622">delivery इलाका</text></g>
 <rect id="local-outline" x="3" y="303" width="514" height="514" rx="26" fill="none" stroke="#f2b705" stroke-width="7"/>
 <g id="town-note" text-anchor="middle" fill="#8a5d00">
-  <text x="260" y="709" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="800">जहाँ अलग town</text>
-  <text x="260" y="755" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="800">delivery area नहीं</text>
+  <text x="260" y="735" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="800">जहाँ अलग town</text>
+  <text x="260" y="782" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="800">delivery area नहीं</text>
 </g>
 </g>
 </g>
@@ -49,9 +49,9 @@
     const u = Math.max(0, Math.min(1, (t-2.26)/0.55));
     const a = u*u*(3-2*u);
     const art=$('#town-art')[0], title=$('#town-heading')[0], desc=$('#small-towns-lines')[0];
-    if(art) art.setAttribute('transform','translate('+(44+63*a)+' 270) scale('+(1.59-.46*a)+')');
+    if(art) art.setAttribute('transform','translate('+(44+75*a)+' 270) scale('+(1.59-.55*a)+')');
     if(title) title.setAttribute('transform','translate(0 '+(-97*a)+')');
-    if(desc) desc.setAttribute('transform','translate(0 '+(-114*a)+')');
+    if(desc) desc.setAttribute('transform','translate(0 '+(-105*a)+')');
   }
 }
 </script>
