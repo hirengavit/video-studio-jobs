@@ -84,6 +84,7 @@
     [8.60,'highlight','#definition-line-2',{words:'Chief Postmaster General',color:'#fde9a6',opacity:1,dur:2.08,pad:3}]
   ],
 update(t, section, $) {
+  $("#panel-heading-opening")[0].style.display = t >= 7.48 ? "none" : "";
   for (const [id, phrase, pad] of [["point-1-line-1","administrative instructions",4],["point-2-line-1","agreement",4],["point-3-line-1","Circle Head",4]]) {
     const text = $("#"+id)[0], mark = $("#carry-"+id)[0];
     const start = text.textContent.indexOf(phrase);
