@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<g stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g id="pages"><rect x="100" y="76" width="204" height="260" rx="15" fill="#f3ead6"/></g>
+<g id="cover"><rect x="82" y="64" width="210" height="256" rx="14" fill="#9e1b1b"/><path d="M111 67v249" fill="none" stroke="#b8403a"/></g>
+<g id="rupee-mark"><path d="M148 139h95m-95 23h91m-83-23h38c24 0 36 15 36 32 0 22-20 37-51 35l50 52" fill="none" stroke="#ffffff" stroke-width="8"/></g>
+</g>
+<circle data-anchor="base" cx="200" cy="336" r="0"/>
+</svg>
