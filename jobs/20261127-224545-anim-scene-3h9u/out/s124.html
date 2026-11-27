@@ -29,8 +29,7 @@
   </g>
   <g id="band">
    <rect x="200" y="870" width="1520" height="100" rx="22" fill="#f3ead6" stroke="#dacaa8" stroke-width="3"/>
-   <text id="band-1" x="580" y="935" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#2b2622">शुरुआत के तथ्य</text>
-   <text id="band-2" x="925" y="935" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="730" fill="#2b2622">· आज की गिनती नहीं</text>
+   <text id="band-caption" x="960" y="932" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#2b2622">शुरुआत के तथ्य<tspan id="band-2" font-weight="730" opacity="0"> · आज की गिनती नहीं</tspan></text>
   </g>
 </g>
 <g id="services">
@@ -53,13 +52,17 @@
  shots:[[0,'#timeline'],[4.77,'#services']],
  on:[
   [.24,'reveal','#band',{from:'left',dur:.45}],
-  [1.70,'fade','#band-2',{dur:.23}],
-  [3.10,'underline','#band-2',{words:'आज की गिनती नहीं',color:'#b8403a',width:5,dur:.42}],
+  [3.10,'underline','#band-caption',{words:'आज की गिनती नहीं',color:'#b8403a',width:5,dur:.42}],
   [5.31,'type','#svc-title',{cps:18}],
   [7.11,'pop','#g2c',{from:.94,spring:'soft'}],
   [9.09,'type','#g2c-full',{cps:11}],
   [11.60,'fade','#g2c-hi',{dur:.23}]
- ]
+ ],
+ update(t,section,$) {
+   if (t >= 4.77) return;
+   const n = $("#band-2")[0];
+   if (n) n.setAttribute("opacity", Math.max(0,Math.min(1,(t-1.70)/.23)));
+ }
 })
 </script>
 </section>
