@@ -14,12 +14,6 @@
    "scene": "s080",
    "message": "a card (#s080-mbu-term-paper) is mostly empty at 1.9 s: bring its items in sooner, or size it for what it holds now",
    "t": 1.94
-  },
-  {
-   "kind": "text-off-frame",
-   "scene": "s080",
-   "text": "अनिवार्य बायोमेट्रिक अद्यतन",
-   "t": 3.89
   }
  ]
 }
