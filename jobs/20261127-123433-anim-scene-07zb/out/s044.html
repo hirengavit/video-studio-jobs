@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s044" data-section="PART 2 · AADHAAR" data-series="PRODUCTS" data-in="wipe" data-in-dur="0.36" data-in-opts='{"from":"right"}'>
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="authority" text-anchor="middle">
+  <rect x="120" y="200" width="740" height="700" rx="27" fill="#9e1b1b"/>
+  <rect x="120" y="200" width="740" height="700" rx="27" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+  <text x="490" y="342" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="650" fill="#fde9a6">Aadhaar को चलाता है</text>
+  <text id="uidai" x="490" y="518" font-size="120" font-weight="820" fill="#fff">UIDAI</text>
+  <path d="M268 565h444" stroke="#b8403a" stroke-width="3"/>
+  <text id="uidai-full" x="490" y="644" font-size="44" font-weight="660" fill="#fff">Unique Identification</text>
+  <text id="uidai-full2" x="490" y="703" font-size="44" font-weight="660" fill="#fff">Authority of India</text>
+  <text id="uidai-hi" x="490" y="794" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" fill="#fde9a6">भारतीय विशिष्ट पहचान प्राधिकरण</text>
+ </g>
+ <g text-anchor="middle">
+  <text id="dop-en" x="1380" y="254" font-size="56" font-weight="800" fill="#2b2622">Department of Posts</text>
+  <text id="dop-hi" x="1380" y="312" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" fill="#9e1b1b">डाक विभाग</text>
+ </g>
+ <g id="kit-drawing">
+  <rect x="1060" y="356" width="640" height="410" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <rect x="1090" y="386" width="580" height="309" rx="17" fill="#f3ead6"/>
+  <path d="M1135 647h493" stroke="#baa27e" stroke-width="3" stroke-linecap="round"/>
+  <use href="piece:system-screen-icon" transform="translate(1124 397) scale(.74)"/>
+  <use href="piece:fingerprint-scanner" transform="translate(1394 474) scale(.62)"/>
+  <text x="1380" y="736" text-anchor="middle" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="36" fill="#6f6a63">Aadhaar नामांकन किट · चित्र</text>
+ </g>
+ <g id="chip-auth" text-anchor="middle">
+  <rect x="960" y="810" width="370" height="118" rx="22" fill="#2e7d4f"/>
+  <text x="1145" y="860" font-size="44" font-weight="750" fill="#fff">authorised</text>
+  <text x="1145" y="910" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="37" fill="#fff">अधिकृत</text>
+ </g>
+ <g id="chip-enrol" text-anchor="middle">
+  <rect x="1350" y="810" width="430" height="118" rx="22" fill="#fde9a6"/>
+  <text id="enrol-label" x="1565" y="884" font-size="42" font-weight="700" fill="#2b2622">enrolment + update</text>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [1.24,'pop','#uidai',{from:0.97,spring:'soft'}],
+  [4.50,'type','#uidai-full',{cps:16}],
+  [6.06,'type','#uidai-full2',{cps:16}],
+  [7.12,'fade','#uidai-hi',{dur:0.32}],
+  [8.38,'type','#dop-en',{cps:24}],
+  [8.90,'fade','#dop-hi',{dur:0.32}],
+  [10.44,'fade','#kit-drawing',{dur:0.60}],
+  [11.36,'pop','#chip-auth',{from:0.97,spring:'soft'}],
+  [11.98,'pop','#chip-enrol',{from:0.97,spring:'soft'}],
+  [13.40,'highlight','#enrol-label',{words:'update',color:'#f2b705',opacity:0.50,pad:5,dur:0.35}]
+ ]
+}
+</script>
+</section>
