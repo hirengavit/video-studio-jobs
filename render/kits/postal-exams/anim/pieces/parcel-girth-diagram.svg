@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420">
+<!-- Blank label space: above #length-arrow (x 260-600, y 30-95); above-right of #girth-loop (x 650-880, y 50-140). -->
+<g id="parcel" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M100 230 L230 150 H630 L500 230 Z" fill="#fbf7ee"/>
+  <path d="M500 230 L630 150 V290 L500 370 Z" fill="#ead9a8"/>
+  <rect x="100" y="230" width="400" height="140" fill="#f3ead6"/>
+</g>
+<g id="length-arrow" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M236 112 H624" stroke-dasharray="14 10"/>
+  <path d="M250 100 L232 112 L250 124 M610 100 L628 112 L610 124"/>
+  <path d="M230 132 V96 M630 132 V96" stroke-width="2" opacity="0.6"/>
+</g>
+<g id="girth-loop" fill="none" stroke="#f2b705" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M576 144 V286 L436 374" stroke-dasharray="14 10" opacity="0.35"/>
+  <path d="M436 374 V226 L576 144" stroke-dasharray="14 10"/>
+</g>
+<circle data-anchor="base" cx="365" cy="370" r="0"/>
+</svg>
