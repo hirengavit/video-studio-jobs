@@ -8,12 +8,5 @@
   "8.53"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s053",
-   "text": "बाहर वाले: / अपनी status",
-   "t": 8.53
-  }
- ]
+ "warnings": []
 }
