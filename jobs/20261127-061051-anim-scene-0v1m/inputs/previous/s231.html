@@ -1,0 +1,32 @@
+<section class="vs-scene" id="s231" data-in="cut" data-section="PART 10 · COMPENSATION" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect x="-200" y="-200" width="2320" height="1480" fill="#fbf7ee"/>
+  <g id="stamp">
+    <use href="piece:key-fact-stamp" transform="translate(240 340) scale(1.15)"/>
+    <text x="562" y="541" text-anchor="middle" font-size="140" font-weight="830" fill="#ffffff" font-family="Inter, 'Noto Sans Devanagari', sans-serif">₹1,000</text>
+    <text x="562" y="631" text-anchor="middle" font-size="44" font-weight="710" fill="#fde9a6" font-family="Inter, 'Noto Sans Devanagari', sans-serif">ऊपरी सीमा</text>
+  </g>
+  <g id="ceil">
+    <circle cx="1041" cy="451" r="35" fill="#2e7d4f"/>
+    <path d="M1024 450l12 13 24-24" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1118" y="470" fill="#2b2622" font-size="56" font-weight="780" font-family="Inter, 'Noto Sans Devanagari', sans-serif">Ceiling</text>
+  </g>
+  <text id="payment" x="1118" y="650" fill="#2b2622" font-size="56" font-weight="780" font-family="Inter, 'Noto Sans Devanagari', sans-serif">तय payment</text>
+  <g id="reject">
+    <circle cx="1041" cy="631" r="35" fill="#4b4f58"/>
+    <path d="M1029 619l24 24m0-24-24 24" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  camera: [[0, {zoom:1, x:0}], [1.40, {zoom:1, x:0}], [3.08, {zoom:1.05, x:10}], [3.80, {zoom:1, x:0}]],
+  on: [
+    [0.00, 'stamp', '#stamp', {from:1.14, rot:-1}],
+    [1.40, 'pop', '#ceil', {from:0.91}],
+    [2.34, 'fade', '#payment', {dur:0.20}],
+    [3.08, 'strike', '#payment', {color:'#4b4f58', width:7, dur:0.23, dim:0.92}],
+    [3.08, 'pop', '#reject', {from:0.91}]
+  ]
+}
+</script>
+</section>
