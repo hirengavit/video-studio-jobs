@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 240" width="220" height="240">
+  <!-- Recall / stop sign: a raised cream palm with ink outline inside a slate disc (not red). -->
+  <g id="stop-hand" stroke-linecap="round" stroke-linejoin="round">
+    <circle id="disc" cx="110" cy="120" r="98" fill="#4b4f58" stroke="#2b2622" stroke-width="3"/>
+    <g id="hand">
+      <g id="hand-outline" fill="#2b2622" stroke="#2b2622" stroke-width="7">
+        <rect x="72" y="58" width="20" height="70" rx="10"/>
+        <rect x="94" y="46" width="20" height="82" rx="10"/>
+        <rect x="116" y="52" width="20" height="76" rx="10"/>
+        <rect x="138" y="68" width="18" height="60" rx="9"/>
+        <rect x="72" y="104" width="84" height="78" rx="24"/>
+        <rect x="-10" y="-34" width="20" height="60" rx="10" transform="translate(68 142) rotate(-38)"/>
+        <rect x="86" y="168" width="56" height="36" rx="6"/>
+      </g>
+      <g id="hand-fill" fill="#fbf7ee">
+        <rect x="72" y="58" width="20" height="70" rx="10"/>
+        <rect x="94" y="46" width="20" height="82" rx="10"/>
+        <rect x="116" y="52" width="20" height="76" rx="10"/>
+        <rect x="138" y="68" width="18" height="60" rx="9"/>
+        <rect x="72" y="104" width="84" height="78" rx="24"/>
+        <rect x="-10" y="-34" width="20" height="60" rx="10" transform="translate(68 142) rotate(-38)"/>
+        <rect x="86" y="168" width="56" height="36" rx="6"/>
+      </g>
+      <path id="palm-crease" d="M92,150 Q110,160 132,146" fill="none" stroke="#6f6a63" stroke-width="2.5"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="110" cy="219.5" r="0"/>
+</svg>

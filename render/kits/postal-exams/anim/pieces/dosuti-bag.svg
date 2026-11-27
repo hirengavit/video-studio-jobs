@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380" width="300" height="380">
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="bag" d="M88 104 C 30 140, 18 240, 22 330 Q 24 372 150 372 Q 276 372 278 330 C 282 240, 270 140, 212 104 Z" fill="#f3ead6"/>
+<g id="weave" stroke="#6f6a63" stroke-width="2" stroke-dasharray="2 10" opacity="0.55" fill="none">
+<path d="M48 190 L252 190"/><path d="M36 240 L264 240"/><path d="M32 290 L268 290"/><path d="M38 336 L262 336"/>
+</g>
+<path id="ruffle" d="M92 100 L70 30 Q 98 16 112 40 Q 132 8 150 36 Q 168 8 188 40 Q 202 16 230 30 L208 100 Z" fill="#f3ead6"/>
+<path id="cord" d="M84 100 Q 150 118 216 100" fill="none" stroke-width="6"/>
+<path d="M150 110 Q 140 132 126 152" fill="none"/>
+<g id="tag">
+<path d="M150 110 Q 196 130 214 200" fill="none" stroke-width="2.5"/>
+<path d="M198 200 L218 168 L286 168 L286 236 L218 236 Z" fill="#ffffff"/>
+<circle cx="214" cy="200" r="4" fill="#2b2622" stroke="none"/>
+</g>
+</g>
+<circle data-anchor="base" cx="150" cy="372" r="0"/>
+<circle data-anchor="top" cx="150" cy="22" r="0"/>
+</svg>
