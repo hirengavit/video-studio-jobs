@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s149" data-section="PART 6 · JEEVAN PRAMAAN" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="flow">
+ <text id="flow-title" x="120" y="202" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="790" fill="#9e1b1b">DLC कैसे बनता है?</text>
+ <g id="flow-slots" fill="#fff" stroke="#dfd1b3" stroke-width="3">
+  <rect id="slot1" x="120" y="250" width="520" height="340" rx="24"/>
+  <rect id="slot2" x="700" y="250" width="520" height="340" rx="24"/>
+  <rect id="slot3" x="1280" y="250" width="520" height="340" rx="24"/>
+  <rect id="slot4" x="120" y="640" width="520" height="340" rx="24"/>
+  <rect id="slot5" x="700" y="640" width="520" height="340" rx="24"/>
+  <rect id="slot6" x="1280" y="640" width="520" height="340" rx="24"/>
+ </g>
+ <g id="f1">
+  <rect x="120" y="250" width="520" height="340" rx="24" fill="#fff" stroke="#c8a064" stroke-width="4"/>
+  <circle cx="579" cy="312" r="33" fill="#9e1b1b"/>
+  <text x="579" y="325" text-anchor="middle" font-family="Inter, sans-serif" font-size="37" font-weight="800" fill="#fff">1</text>
+  <path id="f1-icon" transform="translate(0 -26)" d="M168 395V334H230V395M160 335L199 306L238 335M185 395V364H213V395M241 394V355L263 337L287 355V394M254 394V374H274V394M160 395H294" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="f1-post" x="158" y="420" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#2b2622">Post office</text>
+  <text id="f1-a" x="158" y="475" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">नज़दीकी post office</text>
+  <text id="f1-b" x="158" y="525" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">या घर पर visit की request</text>
+ </g>
+ <path id="arrow12" d="M650 420H688M674 406L688 420L674 434" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="f2">
+  <rect x="700" y="250" width="520" height="340" rx="24" fill="#fff" stroke="#c8a064" stroke-width="4"/>
+  <circle cx="1159" cy="312" r="33" fill="#9e1b1b"/>
+  <text x="1159" y="325" text-anchor="middle" font-family="Inter, sans-serif" font-size="37" font-weight="800" fill="#fff">2</text>
+  <use href="piece:invoice-sheet" transform="translate(974 280) scale(.45)"/>
+  <text id="f2-op" x="738" y="420" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#2b2622">Operator</text>
+  <text id="f2-a" x="738" y="475" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">पहचान + pension details</text>
+  <text id="f2-b" x="738" y="525" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">डालता<tspan id="f2-tail"> या confirm करता</tspan></text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.54,'fade','#f1-b',{dur:.28}],
+  [2.94,'draw','#arrow12',{dur:.28}],
+  [2.94,'pop','#f2',{from:.98,spring:[22,1]}],
+  [2.94,'type','#f2-op',{cps:15}],
+  [4.82,'fade','#f2-a',{dur:.28}],
+  [6.74,'fade','#f2-b',{dur:.25}]
+ ],
+ update(t, section, $) {
+  const tail = $('#f2-tail')[0];
+  if (tail) tail.setAttribute('opacity', Math.max(0, Math.min(1, (t - 8.18) / .25)));
+ }
+})
+</script>
+</section>
