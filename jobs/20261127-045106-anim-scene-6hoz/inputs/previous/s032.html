@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s032" data-in="cut" data-section="PART 2 · WEIGHT AND SIZE" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+<rect x="-100" y="-100" width="2120" height="1280" fill="#fbf7ee"/>
+<g id="pmin">
+  <g id="pmin-card">
+  <rect x="120" y="180" width="1680" height="120" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+  <text id="pmin-heading" x="176" y="257" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#2b2622">Speed Post Parcel</text>
+  <text id="pmin-subhead" x="1742" y="254" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="41" font-weight="750" fill="#2b2622">कम से कम नाप</text>
+  <rect x="140" y="330" width="1640" height="630" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <rect id="pmin-highlight" x="153" y="345" width="1614" height="129" rx="16" fill="#fde9a6"/>
+  <path d="M166 487H1754 M503 645H1754 M166 802H1754 M1325 348V942" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  </g>
+  <g id="minimum-flat">
+    <use href="piece:speed-post-parcel" transform="translate(178 355) scale(.4)"/>
+    <text id="flat-label" x="530" y="430" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Roll के अलावा parcel</text>
+  </g>
+  <g id="roll-rows">
+    <g id="roll-row-2">
+      <use href="piece:document-roll" transform="translate(173 542) scale(.45)"/>
+      <text id="roll-length-label" x="530" y="587" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Roll · लंबाई</text>
+    </g>
+    <g id="roll-row-3">
+      <text id="roll-diameter-label" x="530" y="744" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Roll · लंबाई + 2 × diameter</text>
+    </g>
+  </g>
+  <g id="minimum-tolerance">
+    <text id="tolerance-label" x="530" y="902" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">छूट (tolerance)</text>
+  </g>
+  <g id="flat-minimum-value">
+    <text id="flat-min-width" x="1375" y="435" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="750" fill="#2b2622">140 ×</text>
+    <text id="flat-min-height" x="1548" y="435" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="750" fill="#2b2622">90 mm</text>
+  </g>
+
+  <text id="roll-minimum-length" x="1375" y="592" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="750" fill="#2b2622">100 mm</text>
+  <text id="roll-minimum-combined" x="1375" y="749" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="750" fill="#2b2622">170 mm</text>
+  <path id="roll-end-diameter" d="M443 555.5V600.5M437 562l6-6.5 6 6.5M437 594l6 6.5 6-6.5" fill="none" stroke="#2b2622" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+<script type="text/scene">
+{
+ camera:[[0,{zoom:1,x:0,y:0}],[0.40,{zoom:1,x:0,y:0}],[8.9,{zoom:1.06,x:0,y:-4}],[9.40,{zoom:1.06,x:0,y:-4}],[10.40,{zoom:1,x:0,y:0}]],
+ on:[
+  [0,'move','#pmin-highlight',{by:[0,157],spring:'soft'}],
+  [3.00,'pop','#roll-minimum-length',{from:0.91,spring:'soft'}],
+  [5.37,'move','#pmin-highlight',{by:[0,157],spring:'soft'}],
+  [7.75,'draw','#roll-end-diameter',{dur:0.32}],
+  [8.62,'pop','#roll-minimum-combined',{from:0.91,spring:'soft'}]
+ ]
+}
+</script>
+</section>
