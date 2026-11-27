@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s014" data-in="wipe" data-in-dur="0.38" data-in-opts='{"from":"right"}' data-section="PART 1 · RETAIL POST" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="rule-stamp" text-anchor="middle">
+  <rect x="120" y="200" width="440" height="720" rx="26" fill="#9e1b1b"/>
+  <rect x="120" y="200" width="440" height="720" rx="26" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-linecap="round" stroke-dasharray="0 24"/>
+  <text x="340" y="321" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="700" fill="#fde9a6">RULE · नियम</text>
+  <text x="340" y="563" font-size="222" font-weight="800" fill="#ffffff">4</text>
+  <path d="M220 624H460" fill="none" stroke="#b8403a" stroke-width="3"/>
+  <text x="340" y="707" font-size="43" font-weight="700" fill="#fff">Post Office</text>
+  <text x="340" y="762" font-size="43" font-weight="700" fill="#fff">Rules, 2024</text>
+  <text x="340" y="838" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" fill="#fde9a6">डाकघर नियम</text>
+ </g>
+ <g id="document">
+  <rect x="620" y="200" width="1180" height="720" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text id="director" x="690" y="294" font-size="64" font-weight="750" fill="#2b2622">Director General</text>
+  <text id="director-hi" x="690" y="353" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="600" fill="#9e1b1b">महानिदेशक</text>
+  <path d="M690 395H1730" stroke="#ead9a8" stroke-width="2"/>
+  <text id="products" x="690" y="480" font-family="Georgia, 'Times New Roman', serif" font-size="44" fill="#2b2622">may introduce, modify or discontinue products</text>
+  <text id="partnerships" x="690" y="560" font-family="Georgia, 'Times New Roman', serif" font-size="44" fill="#2b2622">and enter into collaborations.</text>
+  <text id="source" x="690" y="641" font-size="32" fill="#6f6a63">Post Office Rules, 2024 · Rule 4</text>
+  <g id="gist">
+   <rect x="690" y="722" width="1040" height="142" rx="16" fill="#f3ead6"/>
+   <text x="726" y="775" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650" fill="#2b2622">सार (gist): products शुरू, बदलना, बंद करना;</text>
+   <text x="726" y="830" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650" fill="#2b2622">collaborations भी — Director General</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ on: [
+  [0.72,'type','#director',{cps:24}],
+  [1.26,'fade','#director-hi',{dur:0.28}],
+  [1.74,'reveal','#products',{from:'left',dur:0.36}],
+  [1.74,'fade','#source',{dur:0.30}],
+  [2.84,'highlight','#products',{words:'introduce',color:'#f2b705',opacity:0.27,dur:0.34,pad:4}],
+  [4.80,'highlight','#products',{words:'modify',color:'#f2b705',opacity:0.27,dur:0.34,pad:4}],
+  [6.52,'highlight','#products',{words:'discontinue',color:'#f2b705',opacity:0.27,dur:0.34,pad:4}],
+  [9.54,'reveal','#partnerships',{from:'left',dur:0.30}],
+  [9.80,'highlight','#partnerships',{words:'collaborations',color:'#f2b705',opacity:0.27,dur:0.34,pad:4}],
+  [11.26,'fade','#gist',{dur:0.30}]
+ ]
+}
+</script>
+</section>
