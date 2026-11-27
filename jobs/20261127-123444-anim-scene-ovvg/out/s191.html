@@ -1,0 +1,42 @@
+<section class="vs-scene" id="s191" data-section="PART 8 · DAK GHAR NIRYAT KENDRA" data-series="PRODUCTS" data-in="fade" data-in-dur="0.42">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <use href="set:citizen-counter" layer="back"/>
+ <text id="sign-dnk" x="960" y="274" text-anchor="middle" font-size="80" font-weight="800" fill="#fff">DNK</text>
+ <use id="parcel-world" href="piece:globe-parcel" transform="translate(760 359)"/>
+ <g text-anchor="middle">
+  <text id="dnk-first" x="400" y="427" font-size="56" font-weight="770" fill="#2b2622">Dak Ghar</text>
+  <text id="dnk-second" x="400" y="500" font-size="56" font-weight="770" fill="#2b2622">Niryat Kendra</text>
+  <text id="dnk-hi" x="400" y="574" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" fill="#6f6a63">डाक घर निर्यात केंद्र</text>
+ </g>
+ <g id="exporter-chip" text-anchor="middle">
+  <rect x="1300" y="380" width="440" height="140" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="1520" y="427" font-size="44" font-weight="740" fill="#2b2622">commercial</text>
+  <text x="1520" y="476" font-size="44" font-weight="740" fill="#2b2622">exporters</text>
+  <text id="exporter-hi" x="1520" y="508" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" fill="#6f6a63">व्यावसायिक निर्यातक</text>
+ </g>
+ <g text-anchor="middle" fill="#2b2622" font-weight="620">
+  <text id="channel-line" x="1520" y="584" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40">postal channel से</text>
+  <text id="export-line" x="1520" y="636" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40">export</text>
+ </g>
+ <use href="set:citizen-counter" layer="front"/>
+</svg>
+<script type="text/scene">
+{
+ set:'citizen-counter',
+ camera:[[0,'wide']],
+ on:[
+  [0,'place','#parcel-world',{spot:'window'}],
+  [0.18,'type','#sign-dnk',{cps:10}],
+  [1.80,'words','#dnk-first',{gap:0.38,dist:15,from:'down',spring:'soft'}],
+  [2.60,'words','#dnk-second',{gap:0.58,dist:15,from:'down',spring:'soft'}],
+  [3.68,'fade','#dnk-hi',{dur:0.30}],
+  [4.28,'pop','#exporter-chip',{from:0.97,spring:'soft'}],
+  [4.78,'fade','#exporter-hi',{dur:0.28}],
+  [6.26,'words','#channel-line',{gap:0.48,dist:14,from:'down',spring:'soft'}],
+  [7.62,'words','#export-line',{gap:0.12,dist:14,from:'down',spring:'soft'}],
+  [7.62,'pulse','#globe',{amount:0.10}]
+ ]
+}
+</script>
+</section>
