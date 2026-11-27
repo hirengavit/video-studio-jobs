@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" width="560" height="360">
+<title>parcel scale</title>
+<g id="body" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect x="250" y="150" width="60" height="44" fill="#2b2622"/>
+<path d="M90 194 H470 L500 336 H60 Z" fill="#2b2622"/>
+<circle cx="110" cy="344" r="12" fill="#2b2622"/>
+<circle cx="450" cy="344" r="12" fill="#2b2622"/>
+<circle cx="120" cy="232" r="9" fill="#f3ead6"/>
+<circle cx="440" cy="232" r="9" fill="#f3ead6"/>
+</g>
+<g id="platform">
+<rect x="30" y="122" width="500" height="28" rx="6" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+<path d="M54 136 H506" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+</g>
+<g id="display">
+<rect x="174" y="244" width="212" height="72" rx="10" fill="#6f6a63" stroke="#2b2622" stroke-width="3"/>
+<rect x="180" y="250" width="200" height="60" rx="6" fill="#151210"/>
+</g>
+<circle data-anchor="top" cx="280" cy="122" r="0"/>
+<circle data-anchor="base" cx="280" cy="356" r="0"/>
+<circle data-anchor="mouth" cx="280" cy="280" r="0"/>
+</svg>
