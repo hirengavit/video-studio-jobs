@@ -8,18 +8,5 @@
   "8.72"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s054",
-   "text": "मौजूदा / Aad",
-   "t": 7.1
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s054",
-   "text": "मौजूदा / Aadhaar number",
-   "t": 8.72
-  }
- ]
+ "warnings": []
 }
