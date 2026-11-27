@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="220" height="220">
+  <!-- Round double-ring postmark. The centre (inside the inner ring, r 74) stays blank for the scene's word or day. -->
+  <g id="postmark" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle id="centre" cx="110" cy="110" r="90" fill="#ffffff" stroke="none"/>
+    <circle id="ring-outer" cx="110" cy="110" r="90" stroke="#9e1b1b" stroke-width="7"/>
+    <circle id="ring-inner" cx="110" cy="110" r="76" stroke="#9e1b1b" stroke-width="3"/>
+    <g id="cancel-lines" stroke="#9e1b1b" stroke-width="4">
+      <path d="M190,86 q6,-6 12,0 t12,0"/>
+      <path d="M192,110 q6,-6 12,0 t12,0"/>
+      <path d="M190,134 q6,-6 12,0 t12,0"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="110" cy="203.5" r="0"/>
+  <circle data-anchor="top" cx="110" cy="16.5" r="0"/>
+  <circle data-anchor="centre" cx="110" cy="110" r="0"/>
+</svg>
