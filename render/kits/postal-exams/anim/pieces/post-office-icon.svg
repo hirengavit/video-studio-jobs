@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" width="320" height="300" stroke-linecap="round" stroke-linejoin="round">
+<g id="building" stroke="#2b2622" stroke-width="3">
+<path d="M23 276H297" fill="none"/>
+<rect x="29" y="61" width="262" height="215" rx="7" fill="#ffffff"/>
+<path d="M22 67l18-36h240l18 36Z" fill="#9e1b1b"/>
+<rect id="sign-band" x="40" y="70" width="240" height="40" rx="6" fill="#f3ead6"/>
+<g fill="#fde9a6"><rect x="52" y="132" width="54" height="55" rx="4"/><rect x="214" y="132" width="54" height="55" rx="4"/></g>
+<path d="M79 132v55m-27-27h54m135-28v55m-27-27h54" fill="none" stroke-width="2"/>
+<g id="door"><path d="M122 276V174a33 33 0 0 1 66 0v102Z" fill="#f3ead6"/><path d="M153 146v130" stroke-width="2"/><circle cx="168" cy="223" r="3" fill="#9e1b1b" stroke="none"/></g>
+<g id="postbox"><path d="M219 276v-52a21 21 0 0 1 42 0v52Z" fill="#9e1b1b"/><path d="M229 225h22" stroke="#7d1414" stroke-width="5"/><path d="M230 248h20" fill="none" stroke="#fde9a6" stroke-width="2"/></g>
+</g>
+<circle data-anchor="base" cx="160" cy="276" r="0"/>
+</svg>
