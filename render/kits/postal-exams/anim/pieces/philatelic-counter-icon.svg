@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" width="360" height="300">
+<title>philatelic-counter-icon</title>
+<rect id="wall" x="34" y="70" width="292" height="170" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+<path id="awning" d="M24 30 H336 V78 A13 13 0 0 1 310 78 A13 13 0 0 1 284 78 A13 13 0 0 1 258 78 A13 13 0 0 1 232 78 A13 13 0 0 1 206 78 A13 13 0 0 1 180 78 A13 13 0 0 1 154 78 A13 13 0 0 1 128 78 A13 13 0 0 1 102 78 A13 13 0 0 1 76 78 A13 13 0 0 1 50 78 A13 13 0 0 1 24 78 Z" fill="#9e1b1b" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+<rect id="glass" x="74" y="104" width="212" height="124" rx="4" fill="#e9eff0" stroke="#2b2622" stroke-width="3"/>
+<g id="stamp-sheet">
+<rect x="128" y="116" width="104" height="100" rx="2" fill="#ffffff" stroke="#2b2622" stroke-width="2.5"/>
+<g fill="#ffffff" stroke="#2b2622" stroke-width="1.5">
+<rect x="138" y="124" width="38" height="38"/>
+<rect x="184" y="124" width="38" height="38"/>
+<rect x="138" y="170" width="38" height="38"/>
+<rect x="184" y="170" width="38" height="38"/>
+</g>
+<g fill="#9e1b1b">
+<rect x="144" y="130" width="26" height="26"/>
+<rect x="190" y="130" width="26" height="26"/>
+<rect x="144" y="176" width="26" height="26"/>
+<rect x="190" y="176" width="26" height="26"/>
+</g>
+<g fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="0 6.333">
+<rect x="138" y="124" width="38" height="38"/>
+<rect x="184" y="124" width="38" height="38"/>
+<rect x="138" y="170" width="38" height="38"/>
+<rect x="184" y="170" width="38" height="38"/>
+</g>
+</g>
+<g id="glare" stroke="#ffffff" stroke-width="5" stroke-linecap="round">
+<line x1="92" y1="210" x2="116" y2="122"/>
+<line x1="252" y1="212" x2="268" y2="154"/>
+</g>
+<rect id="counter-top" x="16" y="232" width="328" height="20" rx="4" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+<rect id="counter-front" x="34" y="252" width="292" height="36" fill="#ead9a8" stroke="#2b2622" stroke-width="3"/>
+<circle data-anchor="base" cx="180" cy="288" r="0"/>
+</svg>
