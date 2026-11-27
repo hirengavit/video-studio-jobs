@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 90" width="60" height="90">
+  <!-- Postal-red map pin; its tip (base) marks the place. -->
+  <g id="map-pin" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path id="pin" d="M30,86 C24,70 6,54 6,30 A24,24 0 1 1 54,30 C54,54 36,70 30,86 Z" fill="#9e1b1b"/>
+    <circle id="dot" cx="30" cy="30" r="9" fill="#ffffff"/>
+  </g>
+  <circle data-anchor="base" cx="30" cy="86" r="0"/>
+</svg>
