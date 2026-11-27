@@ -1,0 +1,61 @@
+<section class="vs-scene" id="step-list-gu" data-in="fade" data-in-dur="0.4" data-section="બચત બેંક">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text id="title" x="160" y="254" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="64" font-weight="700" fill="#9e1b1b">POSB બચત ખાતું કેવી રીતે ખોલવું</text>
+    <text id="titlehi" x="160" y="318" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="40" font-weight="600" fill="#6f6a63">ચાર સરળ પગલાં</text>
+    <path id="link1" d="M236 492 V540" stroke="#ead9a8" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path id="link2" d="M236 652 V700" stroke="#ead9a8" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <path id="link3" d="M236 812 V860" stroke="#ead9a8" stroke-width="8" stroke-linecap="round" fill="none"/>
+    <g class="step" id="st1">
+      <rect x="320" y="372" width="1440" height="140" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="380" y="432" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="44" font-weight="700" fill="#2b2622">ખાતું ખોલવાનું ફોર્મ ભરો</text>
+      <text x="380" y="486" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="500" fill="#6f6a63">ફોટો લગાવો અને નોમિનીનું નામ લખો</text>
+    </g>
+    <g class="badge" id="n1"><circle cx="236" cy="442" r="50" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="10"/><text x="236" y="462" text-anchor="middle" font-family="Inter, sans-serif" font-size="54" font-weight="800" fill="#ffffff">1</text></g>
+    <g class="step" id="st2">
+      <rect x="320" y="532" width="1440" height="140" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="380" y="592" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="44" font-weight="700" fill="#2b2622">KYC આપો: આધાર અને PAN</text>
+      <text x="380" y="646" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="500" fill="#6f6a63">PAN ન હોય તો ફોર્મ 60 ભરો</text>
+    </g>
+    <g class="badge" id="n2"><circle cx="236" cy="602" r="50" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="10"/><text x="236" y="622" text-anchor="middle" font-family="Inter, sans-serif" font-size="54" font-weight="800" fill="#ffffff">2</text></g>
+    <g class="step" id="st3">
+      <rect x="320" y="692" width="1440" height="140" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text id="st3a" x="380" y="752" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="44" font-weight="700" fill="#2b2622">ઓછામાં ઓછા ₹500 જમા કરો</text>
+      <text x="380" y="806" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="500" fill="#6f6a63">લઘુતમ બેલેન્સ પણ ₹500 રાખવું પડે છે</text>
+    </g>
+    <g class="badge" id="n3"><circle cx="236" cy="762" r="50" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="10"/><text x="236" y="782" text-anchor="middle" font-family="Inter, sans-serif" font-size="54" font-weight="800" fill="#ffffff">3</text></g>
+    <g class="step" id="st4">
+      <rect x="320" y="852" width="1440" height="140" rx="26" fill="#f3ead6"/>
+      <text x="380" y="912" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="44" font-weight="700" fill="#2b2622">Passbook મળી જાય છે</text>
+      <text x="380" y="966" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="500" fill="#6f6a63">દરેક વ્યવહાર તેમાં નોંધાય છે</text>
+    </g>
+    <g class="badge" id="n4"><circle cx="236" cy="922" r="50" fill="#2e7d4f" stroke="#fbf7ee" stroke-width="10"/><path d="M212 922 L230 940 L262 904" stroke="#ffffff" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g id="rate">
+      <rect x="1280" y="866" width="450" height="112" rx="20" fill="#9e1b1b"/>
+      <text x="1505" y="912" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="38" font-weight="700" fill="#ffffff">4% વાર્ષિક</text>
+      <text x="1505" y="958" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="32" font-weight="600" fill="#fde9a6">ઑક્ટોબર–ડિસેમ્બર 2026</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}], [9, {zoom: 1.02, y: 10}]],
+    on: [
+      [0.05, 'words', '#title', {gap: 0.1, dist: 20, spring: 'soft'}],
+      [0.7, 'fade', '#titlehi', {dur: 0.5}],
+      [1.2, 'pop', '#n1', {from: 0.4, spring: 'soft'}],
+      [1.3, 'slide', '#st1', {from: 'right', dist: 80, spring: 'soft'}],
+      [2.3, 'draw', '#link1', {dur: 0.3}],
+      [2.5, 'pop', '#n2', {from: 0.4, spring: 'soft'}],
+      [2.6, 'slide', '#st2', {from: 'right', dist: 80, spring: 'soft'}],
+      [3.6, 'draw', '#link2', {dur: 0.3}],
+      [3.8, 'pop', '#n3', {from: 0.4, spring: 'soft'}],
+      [3.9, 'slide', '#st3', {from: 'right', dist: 80, spring: 'soft'}],
+      [4.8, 'highlight', '#st3a', {words: '₹500', color: '#f2b705', opacity: 0.45}],
+      [5.6, 'draw', '#link3', {dur: 0.3}],
+      [5.8, 'pop', '#n4', {from: 0.4, spring: 'soft'}],
+      [5.9, 'slide', '#st4', {from: 'right', dist: 80, spring: 'soft'}],
+      [6.9, 'pop', '#rate', {from: 0.6, spring: 'soft'}],
+    ],
+  }
+  </script>
+</section>
