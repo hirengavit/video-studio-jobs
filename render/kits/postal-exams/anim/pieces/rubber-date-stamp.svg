@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" width="200" height="300">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="handle">
+      <path id="neck" d="M72 98H128L124 168Q124 185 141 198V221H59V198Q76 185 76 168Z" fill="#b38a5f"/>
+      <path id="knob" d="M35 64C35 34 64 18 100 18S165 34 165 64C165 92 144 110 100 110S35 92 35 64Z" fill="#c9a978"/>
+      <path d="M52 62C57 45 73 39 88 36" fill="none" stroke="#ead9a8"/>
+    </g>
+    <g id="base">
+      <path d="M58 210H142L164 224V251H36V224Z" fill="#6f6a63"/>
+      <path d="M36 224H164" fill="none" stroke="#2b2622"/>
+      <rect x="31" y="246" width="138" height="26" rx="5" fill="#4b4f58"/>
+      <path d="M46 260H154" fill="none" stroke="#2b2622"/>
+    </g>
+  </g>
+  <circle data-anchor="grip" cx="100" cy="65" r="0"/>
+  <circle data-anchor="base" cx="100" cy="272" r="0"/>
+</svg>
