@@ -42,9 +42,9 @@
     <text id="r4-en" x="226" y="893" font-size="52" font-weight="790" fill="#2b2622">G2C · B2C</text>
     <text id="r4-hi" x="228" y="944" class="hi" font-size="39" font-weight="620" fill="#6f6a63">सरकार से नागरिक · व्यापार से नागरिक</text>
     <g id="r4-pill">
-      <rect x="900" y="850" width="700" height="100" rx="50" fill="#fde9a6"/>
-      <text x="1250" y="891" class="hi" text-anchor="middle" font-size="36" font-weight="650" fill="#644400">loan का फैसला:</text>
-      <text x="1250" y="932" class="hi" text-anchor="middle" font-size="37" font-weight="760" fill="#644400">ज़िम्मेदार संस्था</text>
+      <rect id="r4-pill-bg" x="900" y="850" width="700" height="100" rx="50" fill="#fde9a6"/>
+      <text id="r4-loan-label" x="1250" y="891" class="hi" text-anchor="middle" font-size="36" font-weight="650" fill="#644400">loan का फैसला:</text>
+      <text id="r4-loan-fact" x="1250" y="929" class="hi" text-anchor="middle" font-size="37" font-weight="760" fill="#644400">ज़िम्मेदार संस्था</text>
     </g>
     <circle id="r4-tick-back" cx="1661" cy="900" r="32" fill="#e3f1e8"/>
     <path id="r4-tick" d="M1647 900l10 10 20-23" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
@@ -87,7 +87,9 @@
   on: [
     [0,'fade','#r4-en',{dur:.22}],
     [.96,'fade','#r4-hi',{dur:.22}],
-    [1.96,'pop','#r4-pill',{from:.96,spring:[22,1]}],
+    [1.96,'pop','#r4-pill-bg',{from:.96,spring:[22,1]}],
+    [1.96,'fade','#r4-loan-label',{dur:.22}],
+    [3.26,'fade','#r4-loan-fact',{dur:.22}],
     [4.68,'fade','#r4-tick-back',{dur:.22}],
     [4.68,'draw','#r4-tick',{dur:.33}],
     [5.64,'fade','#j1-en',{dur:.22}],
