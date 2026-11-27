@@ -8,12 +8,5 @@
   "11.86"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s124",
-   "text": "शुरुआत के तथ्य / · आज की गिनती नहीं",
-   "t": 2.4
-  }
- ]
+ "warnings": []
 }
