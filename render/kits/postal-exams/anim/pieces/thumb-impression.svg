@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 180" width="140" height="180" fill="none">
+  <title>Thumb impression</title>
+  <g id="print" stroke="#4b4f58" stroke-width="3.2" stroke-linecap="round" opacity="0.9">
+    <path d="M80.8 19.6 A52 74 0 1 1 59.2 19.6"/>
+    <path d="M112.3 68.9 A46 65.5 0 1 1 101.4 46.6"/>
+    <path d="M103.9 127.2 A40 57 0 1 1 109.6 104.9"/>
+    <path d="M71.8 147.9 A34 48.5 0 1 1 85.4 142.7"/>
+    <path d="M47.9 126.6 A28 40 0 1 1 56.9 137.3"/>
+    <path d="M49 95.3 A22 31.5 0 1 1 48.2 108.3"/>
+    <path d="M65.1 85.1 A16 23 0 1 1 59.3 89.9"/>
+    <path d="M76 97.9 A10 14.5 0 1 1 72.3 95.4"/>
+    <path d="M68 106 C70 109 71 112 70 116"/>
+  </g>
+  <circle data-anchor="base" cx="70" cy="168" r="0"/>
+</svg>
