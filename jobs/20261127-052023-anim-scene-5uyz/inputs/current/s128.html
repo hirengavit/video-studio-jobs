@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s128" data-in="cut" data-section="PART 6 · DELIVERY" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="registration">
+<use href="piece:key-fact-stamp" width="560" height="340" transform="translate(120 260)"/>
+<text x="400" y="537" font-family="Inter, sans-serif" font-size="37" text-anchor="middle" font-weight="680" fill="#fde9a6">Registration · per item</text>
+<text id="registration-fee" x="400" y="467" font-family="Inter, sans-serif" font-size="148" text-anchor="middle" font-weight="820" fill="#fff">₹5</text>
+</g>
+<g id="registration-gst">
+<rect x="275" y="640" width="250" height="75" rx="37" fill="#eeeae4" stroke="#dad5cb" stroke-width="2"/>
+<text x="400" y="689" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="42" text-anchor="middle" font-weight="680" fill="#5c5650">GST अलग</text>
+</g>
+<path id="section-split" d="M763 211v664" stroke="#ead9a8" stroke-width="3"/>
+<g id="otp-heading">
+<text x="820" y="223" font-family="Inter, sans-serif" font-size="65" font-weight="790" fill="#9e1b1b">OTP delivery</text>
+<text x="823" y="278" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="42" font-weight="610" fill="#6f6a63">OTP से वितरण</text>
+</g>
+<g id="phone" transform="translate(860 320) scale(1.2)">
+<use href="piece:otp-phone" width="220" height="420"/>
+</g>
+<g id="phone-dots" transform="translate(860 320) scale(1.2)" fill="#2b2622">
+<circle id="digit-1" cx="35" cy="213" r="5.6"/>
+<circle id="digit-2" cx="65" cy="213" r="5.6"/>
+<circle id="digit-3" cx="95" cy="213" r="5.6"/>
+<circle id="digit-4" cx="125" cy="213" r="5.6"/>
+<circle id="digit-5" cx="155" cy="213" r="5.6"/>
+<circle id="digit-6" cx="185" cy="213" r="5.6"/>
+</g>
+<g id="parcel">
+<use href="piece:speed-post-parcel" width="360" height="300" transform="translate(1400 440)"/>
+<text x="1580" y="818" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="51" text-anchor="middle" font-weight="740" fill="#2b2622">तभी मिलेगा</text>
+</g>
+<g id="handover">
+<path id="handover-arrow" d="M1155 592h214m-24-18 24 18-24 18" fill="none" stroke="#6f6a63" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="staff-label" text-anchor="middle" fill="#6f6a63" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="34" font-weight="680"><text x="1262" y="652" font-family="Inter, sans-serif" font-size="34" font-weight="680" text-anchor="middle" fill="#6f6a63">delivery staff</text><text x="1262" y="691" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="34" font-weight="680" text-anchor="middle" fill="#6f6a63">को OTP</text></g>
+</g>
+<g id="parcel-approved">
+<circle cx="1728" cy="460" r="38" fill="#ffffff" stroke="#2e7d4f" stroke-width="4"/>
+<path d="M1710 460l12 13 24-29" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+   [0.98,'pop','#registration-fee',{from:0.91}],
+   [2.84,'fade','#registration-gst',{dur:0.25}],
+   [4.33,'fade','#otp-heading',{dur:0.24}],
+   [4.69,'draw','#phone',{dur:0.58}],
+   [6.49,'pop','#parcel',{from:0.96}],
+   [8.65,'pop','#digit-1',{from:0.65}],
+   [8.75,'pop','#digit-2',{from:0.65}],
+   [8.85,'pop','#digit-3',{from:0.65}],
+   [8.95,'pop','#digit-4',{from:0.65}],
+   [9.05,'pop','#digit-5',{from:0.65}],
+   [9.15,'pop','#digit-6',{from:0.65}],
+   [10.01,'draw','#handover-arrow',{dur:0.34}],
+   [10.01,'fade','#staff-label',{dur:0.24}],
+   [10.97,'pop','#parcel-approved',{from:0.86}]
+ ]
+}
+</script>
+</section>
