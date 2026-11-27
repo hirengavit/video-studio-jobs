@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s032" data-section="PART 1 · RETAIL POST" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="shop">
+ <rect id="shop-shelf" x="120" y="520" width="1680" height="360" rx="29" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+ <text id="shop-en" x="960" y="242" text-anchor="middle" font-family="Inter, sans-serif" font-size="88" font-weight="810" fill="#9e1b1b">One-stop shop</text>
+ <text id="shop-hi" x="960" y="315" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740" fill="#2b2622">एक ही जगह सब</text>
+ <text id="shop-select" x="960" y="382" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#6f6a63">Select post offices पर</text>
+ <g id="tile-1" transform="translate(140 550)">
+  <rect width="300" height="300" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <g transform="translate(78.4 26) scale(.8)" fill="#f3ead6" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><path d="M0 28 72 0l72 28v88l-72 32L0 116Z M0 28l72 31 72-31M72 59v89M40 13l75 31"/><path d="m119 84 38-17 22 17-12 46-36-4Z" fill="#fde9a6" stroke="#9e1b1b"/><circle cx="151" cy="83" r="4" fill="#9e1b1b" stroke="none"/></g>
+  <text x="150" y="222" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="780" fill="#2b2622">Third-party</text>
+  <text x="150" y="267" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="780" fill="#2b2622">products</text>
+ </g>
+ <g id="tile-2" transform="translate(480 550)">
+  <rect width="300" height="300" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <use href="piece:invoice-sheet" transform="translate(88 37) scale(.42)"/>
+  <text x="150" y="247" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="780" fill="#2b2622">Bills</text>
+ </g>
+ <g id="tile-3" transform="translate(820 550)">
+  <rect width="300" height="300" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <g transform="translate(150 108)" text-anchor="middle"><circle r="66" fill="#f3ead6" stroke="#9e1b1b" stroke-width="6"/><circle r="53" fill="none" stroke="#9e1b1b" stroke-width="2.5" stroke-dasharray="3 6"/><text y="24" font-family="Inter, sans-serif" font-size="71" font-weight="800" fill="#9e1b1b">₹</text></g>
+  <text x="150" y="247" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="780" fill="#2b2622">Taxes</text>
+ </g>
+ <g id="tile-4" transform="translate(1160 550)">
+  <rect width="300" height="300" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <g transform="translate(99 36)" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M0 6l13-6 13 6 13-6 13 6 13-6 13 6 13-6 11 6v139l-13-6-13 6-13-6-13 6-13-6-13 6-13-6-11 6Z" fill="#f3ead6"/><path d="M21 39h60M21 63h60M21 87h60M48 112h33" fill="none" stroke="#9e1b1b"/></g>
+  <text x="150" y="247" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="780" fill="#2b2622">Fees</text>
+ </g>
+ <g id="tile-5" transform="translate(1500 550)">
+  <rect width="300" height="300" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <g transform="translate(90 22) scale(.40)">
+   <use href="piece:invoice-sheet"/>
+   <path d="M46 134h13v13H46Zm0 32h13v13H46Zm0 32h13v13H46Zm0 32h13v13H46Z" fill="#fff" stroke="#9e1b1b" stroke-width="3" stroke-linejoin="round"/>
+  </g>
+  <text x="150" y="222" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="780" fill="#2b2622">Application</text>
+  <text x="150" y="267" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="780" fill="#2b2622">forms</text>
+ </g>
+ <path id="shelf-underline" d="M151 890C683 884 1229 895 1769 889" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+ <g id="shop-note">
+  <rect x="120" y="905" width="1680" height="85" rx="20" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text id="shop-note-text" x="960" y="962" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740" fill="#2b2622">कौन सी service? → उस service और उस office पर निर्भर</text>
+ </g>
+
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.68,'pop','#tile-5',{from:.96,spring:'soft'}],
+  [2.80,'draw','#shelf-underline',{dur:.42}],
+  [3.80,'pop','#shop-note',{from:.98,spring:'soft'}],
+  [3.86,'fade','#shop-note-text',{dur:.24}],
+  [7.82,'highlight','#shop-note-text',{words:'उस office',color:'#fde9a6',opacity:1,dur:.30,pad:3}],
+  [8.54,'highlight','#shop-note-text',{words:'निर्भर',color:'#fde9a6',opacity:1,dur:.30,pad:3}]
+ ]
+})
+</script>
+</section>
