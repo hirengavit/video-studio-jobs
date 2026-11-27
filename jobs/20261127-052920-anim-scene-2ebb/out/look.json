@@ -8,12 +8,5 @@
   "10.25"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s152",
-   "message": "out: option \"ease\" isn't used (it takes: dur, scale)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
