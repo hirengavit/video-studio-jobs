@@ -1,0 +1,15 @@
+{
+ "moments": [
+  "0.30",
+  "1.83",
+  "3.65",
+  "5.48",
+  "7.30",
+  "8.98"
+ ],
+ "problems": [
+  "s181: no photo \"somnath-temple-cutout\" in the materials",
+  "s181: no photo \"kashi-vishwanath-temple-cutout\" in the materials"
+ ],
+ "warnings": []
+}
