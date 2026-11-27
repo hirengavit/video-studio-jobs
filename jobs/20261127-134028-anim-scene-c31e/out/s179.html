@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s179" data-in="cut" data-section="PART 7 · GANGAJAL &amp; PRASADAM" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="arrangements">
+  <g id="terms" fill="#9e1b1b" text-anchor="middle" font-size="44" font-weight="750">
+    <rect x="160" y="190" width="255" height="86" rx="24" fill="#f3ead6"/>
+    <text x="287.5" y="248">Gangajal</text>
+    <text x="453" y="248" fill="#6f6a63" font-size="53">≠</text>
+    <rect x="490" y="190" width="270" height="86" rx="24" fill="#f3ead6"/>
+    <text x="625" y="248">Prasadam</text>
+  </g>
+  <path d="M804 207V259" fill="none" stroke="#e4d7bd" stroke-width="3" stroke-linecap="round"/>
+  <g id="differences" font-size="44" font-weight="650" fill="#2b2622">
+    <rect id="price-mark" x="1325" y="202" width="239" height="64" rx="13" fill="#fde9a6"/>
+    <text id="booking-word" x="868" y="251" font-family="'Noto Sans Devanagari', Inter, sans-serif">booking अलग</text>
+    <text id="divider" x="1224" y="250" fill="#6f6a63" font-size="40">·</text>
+    <text id="price-word" x="1343" y="251" font-family="'Noto Sans Devanagari', Inter, sans-serif">कीमतें अलग</text>
+  </g>
+  <text id="temple-title" x="960" y="366" text-anchor="middle" fill="#9e1b1b" font-size="52" font-weight="750" font-family="'Noto Sans Devanagari', Inter, sans-serif">हर मंदिर की अपनी व्यवस्था</text>
+  <rect id="emo-highlight" x="184" y="396" width="512" height="463" rx="32" fill="#fde9a6" opacity=".63"/>
+  <g id="temples">
+    <g id="temple-one" class="temple-tile"><use href="piece:temple-icon" transform="translate(280 404) scale(.8)"/></g>
+    <g id="temple-two" class="temple-tile"><use href="piece:temple-icon" transform="translate(800 404) scale(.8)"/></g>
+    <g id="temple-three" class="temple-tile"><use href="piece:temple-icon" transform="translate(1320 404) scale(.8)"/></g>
+  </g>
+  <g id="channel-labels" fill="#2b2622" text-anchor="middle">
+    <text id="emo-en" x="440" y="777" font-family="Inter, sans-serif" font-size="48" font-weight="750">e-Money Order</text>
+    <text id="emo-hi" x="440" y="829" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="550">ई-मनी ऑर्डर</text>
+    <text id="online" x="960" y="789" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650">मंदिर का online channel</text>
+    <text id="offline" x="1480" y="789" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650">मंदिर का offline channel</text>
+  </g>
+  <g id="one-amount">
+    <rect x="260" y="880" width="600" height="80" rx="40" fill="#e9e9e9" stroke="#9a9ba1" stroke-width="2"/>
+    <text class="no-single-word" id="amount-option" x="560" y="937" text-anchor="middle" fill="#4b4f58" font-size="47" font-weight="700" font-family="'Noto Sans Devanagari', Inter, sans-serif">एक booking amount</text>
+  </g>
+  <g id="one-payee">
+    <rect x="1060" y="880" width="600" height="80" rx="40" fill="#e9e9e9" stroke="#9a9ba1" stroke-width="2"/>
+    <text class="no-single-word" id="payee-option" x="1360" y="937" text-anchor="middle" fill="#4b4f58" font-size="47" font-weight="700" font-family="'Noto Sans Devanagari', Inter, sans-serif">एक पाने वाला</text>
+  </g>
+</g>
+  <g fill="none" stroke="#4b4f58" stroke-width="5.5" stroke-linecap="round">
+    <path class="no-single-cross" d="M307 909l22 22m0-22l-22 22"/>
+    <path class="no-single-cross" d="M1107 909l22 22m0-22l-22 22"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  "camera": [[0, {"zoom": 1}]],
+  "on": [
+    [0.94, "strike", ".no-single-word", {"stagger":0.2,"color":"#4b4f58","width":5.5,"dur":0.30,"dim":0.66}],
+    [0.94, "draw", ".no-single-cross", {"stagger":0.2,"dur":0.30}],
+    [2.60, "pop", "#emo-en", {"spring":"soft","from":0.94}],
+    [3.10, "fade", "#emo-hi", {"dur":0.28}],
+    [5.42, "pop", "#online", {"spring":"soft","from":0.94}],
+    [6.68, "pop", "#offline", {"spring":"soft","from":0.94}],
+    [8.35, "reveal", "#emo-highlight", {"from":"left","dur":0.48}],
+    [12.41, "pulse", "#emo-en", {"amount":0.065}]
+  ]
+}
+</script>
+</section>
