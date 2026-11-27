@@ -1,0 +1,65 @@
+<section class="vs-scene" id="s198" data-section="PART 8 · DAK GHAR NIRYAT KENDRA" data-series="PRODUCTS" data-in="cut">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <g id="pbe">
+    <g id="pbe-stamp">
+      <rect x="160" y="200" width="660" height="500" rx="28" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+      <rect x="175" y="215" width="630" height="470" rx="20" fill="none" stroke="#fbf7ee" stroke-width="11" stroke-dasharray="0 24" stroke-linecap="round"/>
+      <text id="pbe-term-first" x="230" y="342" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="#fff">Postal Bill</text>
+      <text id="pbe-term-second" x="230" y="423" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="#fff">of Export</text>
+      <text id="pbe-term-hi" x="230" y="509" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="690" fill="#fde9a6">डाक निर्यात बिल</text>
+      <g id="pbe-abbr">
+        <rect x="230" y="570" width="246" height="96" rx="44" fill="#7d1414"/>
+        <text x="353" y="642" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="810" fill="#fff">PBE</text>
+      </g>
+    </g>
+    <rect id="pbe-meaning" x="880" y="200" width="880" height="500" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <g id="pbe-definition" fill="#2b2622">
+      <text id="pbe-means-postal" x="950" y="350" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650">postal channel से भेजे गए</text>
+      <text id="pbe-means-goods" x="950" y="445" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650">commercial goods का</text>
+      <rect id="pbe-export-held" x="940" y="493" width="492" height="74" rx="4" fill="#f2b705" opacity=".38"/>
+      <text id="pbe-means-export" x="950" y="551" font-family="Inter, sans-serif" font-size="52" font-weight="790">export declaration</text>
+    </g>
+    <g id="pbe-iec-chip">
+      <rect x="160" y="790" width="460" height="150" rx="40" fill="#fde9a6"/>
+      <text x="390" y="886" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="800" fill="#795000">valid IEC</text>
+    </g>
+    <g id="iec-code">
+      <rect x="680" y="790" width="1080" height="150" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <text x="728" y="855" font-family="Inter, sans-serif" font-size="56" font-weight="790" fill="#2b2622">Import-Export Code</text>
+      <text id="iec-code-hi" x="731" y="909" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="620" fill="#6f6a63">आयात-निर्यात कोड</text>
+    </g>
+  </g>
+  <g id="grid">
+    <text id="grid-title" x="160" y="199" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="780" fill="#9e1b1b">PBE का form · दो बातें</text>
+    <rect id="grid-card" x="160" y="230" width="1600" height="590" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <path id="grid-header" d="M187 230h1546a27 27 0 0 1 27 27v93H160v-93a27 27 0 0 1 27-27Z" fill="#9e1b1b"/>
+    <path id="row-head-bg" d="M160 350h460v470H187a27 27 0 0 1-27-27Z" fill="#f3ead6"/>
+    <path id="row-head-hl" d="M160 350h460v470H187a27 27 0 0 1-27-27Z" fill="#fde9a6"/>
+    <path id="grid-header-rules" d="M620 231v118m570-118v118" stroke="#b8403a" stroke-width="3" fill="none"/>
+    <path id="grid-rules" d="M620 350v468m570-468v468M161 585h1598" stroke="#ead9a8" stroke-width="3" fill="none"/>
+    <g id="manual-row-head">
+      <text id="manual-label" x="197" y="429" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#2b2622">Manual</text>
+      <text id="manual-detail" x="199" y="488" font-family="Inter, sans-serif" font-size="36" font-weight="650" fill="#514b43">at Foreign Post Office</text>
+      <text id="manual-hi" x="200" y="545" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="650" fill="#6f6a63">विदेश डाकघर पर</text>
+    </g>
+    <g id="electronic-row-head">
+      <text id="electronic-label" x="197" y="663" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#2b2622">Electronic</text>
+      <text id="electronic-detail" x="199" y="721" font-family="Inter, sans-serif" font-size="36" font-weight="650" fill="#514b43">on DNK portal</text>
+      <text id="electronic-hi" x="200" y="781" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="650" fill="#6f6a63">DNK portal पर</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,'#pbe'],[2.85,'#grid']],
+ on:[
+  [.96,'reveal','#iec-code',{from:'left',dur:.40}],
+  [1.46,'fade','#iec-code-hi',{dur:.25}],
+  [7.29,'fade','#row-head-hl',{dur:.28}],
+  [7.77,'pop','#manual-row-head',{from:.96,spring:'soft'}],
+  [9.07,'pop','#electronic-row-head',{from:.96,spring:'soft'}]
+ ]
+})
+</script>
+</section>
