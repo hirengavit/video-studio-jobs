@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 700" width="1300" height="700">
+<title>pda-passbook</title>
+<rect id="cover" x="2" y="2" width="1296" height="696" rx="22" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/>
+<g id="page-left">
+<rect x="34" y="30" width="612" height="640" rx="6" fill="#ffffff" stroke="#2b2622" stroke-width="2.5"/>
+<rect id="header-left" x="62" y="58" width="556" height="70" rx="4" fill="#f3ead6"/>
+<path id="rows-left" fill="none" stroke="#cfc7b9" stroke-width="2" stroke-linecap="round" d="M62 186 H618 M62 238 H618 M62 290 H618 M62 342 H618 M62 394 H618 M62 446 H618 M62 498 H618 M62 550 H618 M62 602 H618"/>
+<path id="columns-left" fill="none" stroke="#cfc7b9" stroke-width="2" d="M204 150 V642 M486 150 V642"/>
+<line id="margin-left" x1="90" y1="150" x2="90" y2="642" stroke="#b8403a" stroke-width="3"/>
+</g>
+<g id="page-right">
+<rect x="654" y="30" width="612" height="640" rx="6" fill="#ffffff" stroke="#2b2622" stroke-width="2.5"/>
+<rect id="header-right" x="682" y="58" width="556" height="70" rx="4" fill="#f3ead6"/>
+<path id="rows-right" fill="none" stroke="#cfc7b9" stroke-width="2" stroke-linecap="round" d="M682 186 H1238 M682 238 H1238 M682 290 H1238 M682 342 H1238 M682 394 H1238 M682 446 H1238 M682 498 H1238 M682 550 H1238 M682 602 H1238"/>
+<path id="columns-right" fill="none" stroke="#cfc7b9" stroke-width="2" d="M824 150 V642 M1106 150 V642"/>
+<line id="margin-right" x1="710" y1="150" x2="710" y2="642" stroke="#b8403a" stroke-width="3"/>
+</g>
+<line id="spine" x1="650" y1="24" x2="650" y2="676" stroke="#2b2622" stroke-width="5" stroke-linecap="round"/>
+<circle data-anchor="base" cx="650" cy="700" r="0"/>
+<circle data-anchor="top" cx="650" cy="0" r="0"/>
+</svg>
