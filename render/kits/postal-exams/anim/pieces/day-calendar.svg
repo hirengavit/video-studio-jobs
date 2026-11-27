@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" width="320" height="360">
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="page-stack">
+<path d="M30 96 L30 350 L294 350 L294 96" fill="#f3ead6"/>
+<path d="M26 96 L26 344 L290 344 L290 96" fill="#ffffff"/>
+</g>
+<g id="page">
+<rect x="22" y="80" width="276" height="258" rx="6" fill="#ffffff"/>
+</g>
+<g id="top-bar">
+<path d="M22 92 L22 40 Q22 24 38 24 L282 24 Q298 24 298 40 L298 92 Z" fill="#9e1b1b"/>
+</g>
+<g id="rings" fill="none">
+<path d="M100 54 L100 18 Q100 6 112 6 Q122 6 122 18" stroke-width="6"/>
+<path d="M200 54 L200 18 Q200 6 212 6 Q222 6 222 18" stroke-width="6"/>
+<circle cx="100" cy="58" r="7" fill="#7d1414"/>
+<circle cx="200" cy="58" r="7" fill="#7d1414"/>
+</g>
+</g>
+<circle data-anchor="base" cx="160" cy="350" r="0"/>
+<circle data-anchor="top" cx="160" cy="6" r="0"/>
+<circle data-anchor="number" cx="160" cy="215" r="0"/>
+</svg>
