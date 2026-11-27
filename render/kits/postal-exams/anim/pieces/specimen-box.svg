@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300">
+  <g stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <path id="side" d="M259 99l69-43v151l-69 49Z" fill="#e5d3ae"/>
+    <path id="top-face" d="M28 99l69-43h231l-69 43Z" fill="#f3ead6"/>
+    <rect id="front" x="28" y="99" width="231" height="157" rx="4" fill="#f3ead6"/>
+    <path id="seal-strip" d="M126 99l69-43h47l-69 43Z" fill="#fff"/>
+    <path d="M126 101h47v14h-47Z" fill="#fff"/>
+    <rect id="label-panel" x="60" y="123" width="169" height="104" rx="9" fill="#fff"/>
+    <g id="vial-mark" transform="rotate(22 144 176)">
+      <path d="M132 150h24v44q0 9-12 9t-12-9Z" fill="#f3ead6"/>
+      <rect x="132" y="143" width="24" height="11" rx="3" fill="#6f6a63"/>
+      <path d="M135 178h18m-18 8h18" fill="none" stroke="#b8403a"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="143.5" cy="257.5" r="0"/>
+</svg>
