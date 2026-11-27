@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s037" data-section="PART 1 · RETAIL POST" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="offers">
+ <text x="120" y="200" class="hi" font-size="52" font-weight="750" fill="#9e1b1b">India Post: क्या देता है, क्या नहीं</text>
+ <g id="no-card">
+  <rect x="120" y="270" width="640" height="610" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M144 270H736Q760 270 760 294V349H120V294Q120 270 144 270Z" fill="#4b4f58"/>
+  <text x="172" y="326" class="hi" font-size="44" font-weight="720" fill="#fff">नहीं देता</text>
+  <g id="credit-picture" fill="none" stroke="#4b4f58" stroke-linejoin="round" stroke-linecap="round">
+   <rect x="258" y="406" width="364" height="183" rx="25" fill="#f5f4f2" stroke-width="5"/>
+   <path d="M261 457H619" stroke-width="14"/>
+   <rect x="289" y="496" width="68" height="43" rx="8" stroke-width="4"/>
+   <path d="M295 511h56m-26-12v36m140 12h112m-112-18h75" stroke-width="4"/>
+  </g>
+  <text id="credit-en" x="440" y="675" text-anchor="middle" font-size="60" font-weight="770" fill="#4b4f58">Credit card</text>
+  <text id="credit-hi" x="440" y="733" text-anchor="middle" class="hi" font-size="40" fill="#6f6a63">क्रेडिट कार्ड</text>
+  <path id="credit-strike" d="M277 651q162 8 326-3" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+  <path id="credit-cross" d="m406 773 68 55m0-55-68 55" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+ </g>
+ <g id="yes-card">
+  <rect x="820" y="270" width="980" height="610" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M844 270H1776Q1800 270 1800 294V349H820V294Q820 270 844 270Z" fill="#2e7d4f"/>
+  <text x="874" y="326" class="hi" font-size="44" font-weight="720" fill="#fff">देता है</text>
+  <path d="M865 498h892m-892 180h892" fill="none" stroke="#ead9a8" stroke-width="2"/>
+  <g id="tick-jan"><circle cx="906" cy="397" r="25" fill="#2e7d4f"/><path d="m895 398 8 8 15-17" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text id="jan-en" x="962" y="407" font-size="48" font-weight="770" fill="#2b2622">Jan Suraksha schemes</text>
+  <text id="jan-hi" x="962" y="458" class="hi" font-size="36" fill="#6f6a63">जन सुरक्षा योजनाएँ</text>
+  <g id="tick-mutual"><circle cx="906" cy="558" r="25" fill="#2e7d4f"/><path d="m895 559 8 8 15-17" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text id="mutual-en" x="962" y="560" font-size="48" font-weight="770" fill="#2b2622">Mutual funds</text>
+  <text id="mutual-hi" x="962" y="611" class="hi" font-size="36" fill="#6f6a63">म्यूचुअल फंड</text>
+  <g id="uti-chip">
+   <rect x="1389" y="520" width="332" height="57" rx="19" fill="#fde9a6"/>
+   <text x="1555" y="560" class="hi" text-anchor="middle" font-size="40" font-weight="740" fill="#8a5d00">सिर्फ UTI</text>
+  </g>
+  <text id="uti-expanded" x="1555" y="620" text-anchor="middle" font-size="30" fill="#6f6a63">Unit Trust of India</text>
+  <g id="tick-ecs"><circle cx="906" cy="738" r="25" fill="#2e7d4f"/><path d="m895 739 8 8 15-17" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <text id="ecs-en" x="962" y="748" font-size="56" font-weight="770" fill="#2b2622">ECS</text>
+  <text id="ecs-expanded" x="962" y="804" font-size="36" fill="#6f6a63">Electronic Clearance Service</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{"on":[
+ [0,"pop","#tick-mutual",{"from":0.8,"spring":[22,1]}],
+ [0,"type","#mutual-en",{"cps":26}],
+ [0.5,"fade","#mutual-hi",{"dur":0.28}],
+ [1.68,"pop","#tick-ecs",{"from":0.8,"spring":[22,1]}],
+ [1.68,"type","#ecs-en",{"cps":26}],
+ [3.7,"fade","#ecs-expanded",{"dur":0.27}],
+ [7.54,"highlight","#mutual-en",{"color":"#f2b705","opacity":0.36,"dur":0.42}],
+ [9.22,"pop","#uti-chip",{"from":0.94,"spring":[22,1]}],
+ [11.48,"fade","#uti-expanded",{"dur":0.25}]
+]}
+</script>
+</section>
