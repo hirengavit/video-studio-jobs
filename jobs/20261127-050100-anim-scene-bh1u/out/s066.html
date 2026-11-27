@@ -49,7 +49,7 @@
     const u = Math.max(0, Math.min(1, (t-2.26)/0.55));
     const a = u*u*(3-2*u);
     const art=$('#town-art')[0], title=$('#town-heading')[0], desc=$('#small-towns-lines')[0];
-    if(art) art.setAttribute('transform','translate('+(44+75*a)+' 270) scale('+(1.59-.55*a)+')');
+    if(art) art.setAttribute('transform','translate('+(44+82*a)+' '+(270+10*a)+') scale('+(1.59-.60*a)+')');
     if(title) title.setAttribute('transform','translate(0 '+(-97*a)+')');
     if(desc) desc.setAttribute('transform','translate(0 '+(-105*a)+')');
   }
