@@ -1,0 +1,51 @@
+[
+  {
+    "id": "citizen-counter",
+    "kind": "set",
+    "description": "Recurring simple ink post-office counter window: sand counter top across the lower frame (x 160-1760, top y 760, face to y 860), white-framed window opening 640x400 (x 640-1280, y 330-730) with cream glass, a half-round speaking hole and a sill; a blank postal-red sign board above (x 700-1220, y 200-290). Each part's icon rests in the window; part title on the sign. No logo, no lettering.",
+    "pieces": [
+      "counter-window",
+      "invoice-calendar-icon",
+      "id-card-icon",
+      "passport-icon",
+      "system-screen-icon",
+      "pensioner-phone-icon",
+      "gangajal-bottle",
+      "temple-bell-parcel",
+      "globe-parcel",
+      "mobile-post-van"
+    ],
+    "spots": [
+      "window",
+      "sign",
+      "counter-left",
+      "counter-right",
+      "counter-centre"
+    ],
+    "framings": [
+      "wide",
+      "medium",
+      "close"
+    ],
+    "scenes": [
+      "s001",
+      "s005",
+      "s006",
+      "s007",
+      "s008",
+      "s009",
+      "s010",
+      "s011",
+      "s042",
+      "s073",
+      "s099",
+      "s119",
+      "s139",
+      "s168",
+      "s191",
+      "s206",
+      "s230"
+    ],
+    "reuse": false
+  }
+]

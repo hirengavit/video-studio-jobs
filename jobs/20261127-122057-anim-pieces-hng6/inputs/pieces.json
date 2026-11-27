@@ -1,0 +1,99 @@
+[
+  {
+    "id": "pensioner-phone-icon",
+    "description": "Old man's head-and-shoulders ink silhouette (white hair, glasses, no face detail) beside a phone 140x260 with a green tick on the screen; 400x400, 3 px ink.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s139",
+      "s140",
+      "s148"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "fingerprint-scanner",
+    "description": "Slate fingerprint scanner: rounded box 260x160 with a glass oval holding an ink fingerprint whorl, short cable stub; 3 px ink.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s049",
+      "s064",
+      "s150"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "gangajal-bottle",
+    "description": "Clear plastic bottle 120x300, pale blue water (#cfe3ee) with ink outline, red cap, blank white label band.",
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "scenes": [
+      "s168",
+      "s169",
+      "s170",
+      "s172",
+      "s173"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "temple-bell-parcel",
+    "description": "Brass temple bell (#d9a514, ink outline) hanging above a small brown-paper parcel tied with string; 400x400.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s168",
+      "s176"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "globe-parcel",
+    "description": "Parcel 280x200 (brown paper, ink outline, string) with a round pale-blue globe tag with ink meridians tied to it.",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "scenes": [
+      "s191",
+      "s196"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "phone-sms",
+    "description": "Phone 220x420, cream screen with a white chat bubble (blank grey lines) and a speech tail; for SMS and app moments.",
+    "anchors": [
+      "base",
+      "screen"
+    ],
+    "scenes": [
+      "s089",
+      "s110",
+      "s151",
+      "s187"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "temple-icon",
+    "description": "Simple ink temple outline (shikhara spire, small flag, steps), sand fill, 320x360; generic, not a specific real temple.",
+    "anchors": [
+      "base"
+    ],
+    "scenes": [
+      "s176",
+      "s178",
+      "s188"
+    ],
+    "reuse": false
+  }
+]
