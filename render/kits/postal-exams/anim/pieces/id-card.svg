@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" width="300" height="200">
+<g stroke-linecap="round" stroke-linejoin="round">
+<rect id="card" x="3" y="3" width="294" height="194" rx="14" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+<line id="top-line" x1="24" y1="48" x2="276" y2="48" stroke="#ead9a8" stroke-width="4"/>
+<g id="photo">
+<rect x="24" y="66" width="88" height="108" rx="6" fill="#e4dfd7" stroke="#6f6a63" stroke-width="2.5"/>
+<circle cx="68" cy="104" r="17" fill="#a9a29a"/>
+<path d="M38 172 Q 40 132 68 132 Q 96 132 98 172 Z" fill="#a9a29a"/>
+</g>
+<g id="lines" stroke="#cfc6b8" stroke-width="6">
+<line x1="132" y1="96" x2="268" y2="96"/>
+<line x1="132" y1="126" x2="250" y2="126"/>
+<line x1="132" y1="156" x2="220" y2="156"/>
+</g>
+</g>
+<circle data-anchor="base" cx="150" cy="197" r="0"/>
+</svg>
