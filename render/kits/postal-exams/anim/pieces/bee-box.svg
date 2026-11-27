@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<defs><pattern id="bee-box-grid" x="80" y="130" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M12 0V12M0 12H12" fill="none" stroke="#6f6a63" stroke-width="1.2"/></pattern>
+<g id="bee-box-bee"><ellipse cx="-4" cy="-11" rx="9" ry="6" fill="#ffffff" stroke-width="1.5"/><ellipse cx="6" cy="-11" rx="9" ry="6" fill="#ffffff" stroke-width="1.5"/><ellipse cx="0" cy="0" rx="15" ry="9" fill="#f2b705" stroke-width="2"/><path d="M-4 -8v16M4 -8v16" stroke-width="3"/><circle cx="15" cy="0" r="5" fill="#2b2622" stroke="none"/></g></defs>
+<g id="box"><rect x="20" y="70" width="360" height="260" rx="6" fill="#d9b77c"/><path d="M20 108H380M20 300H380" stroke="#a8834a" stroke-width="2.5" fill="none"/>
+<g fill="#2b2622" stroke="none"><circle cx="36" cy="88" r="3"/><circle cx="364" cy="88" r="3"/><circle cx="36" cy="316" r="3"/><circle cx="364" cy="316" r="3"/></g>
+<rect x="80" y="130" width="240" height="160" fill="#fbf7ee"/></g>
+<g id="bees"><use href="#bee-box-bee" transform="translate(132 182) rotate(-15)"/><use href="#bee-box-bee" transform="translate(222 244) rotate(10)"/><use href="#bee-box-bee" transform="translate(270 170) rotate(20)"/><use href="#bee-box-bee" transform="translate(160 258) rotate(-5)"/></g>
+<rect id="mesh" x="80" y="130" width="240" height="160" fill="url(#bee-box-grid)" stroke="none" opacity=".8"/>
+<rect x="80" y="130" width="240" height="160" fill="none" stroke-width="4"/>
+<circle data-anchor="base" cx="200" cy="330" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="200" cy="70" r="0" fill="none" stroke="none"/>
+</svg>
