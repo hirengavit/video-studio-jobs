@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s054" data-section="RECAP · PARTS 1–2" data-series="PRODUCTS" data-in="cut">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="recap-envelope">
+      <rect x="140" y="170" width="1260" height="820" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M170 171H1370Q1399 171 1399 199V204L782 318Q770 322 758 318L141 204V199Q141 171 170 171Z" fill="#f3ead6"/>
+      <path d="M141 204 758 318Q770 322 782 318L1399 204" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M169 460H1370M169 590H1370M169 720H1370M169 850H1370" stroke="#ead9a8" stroke-width="2" opacity=".59"/>
+      <text x="770" y="225" text-anchor="middle" fill="#6f6a63" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="36" font-weight="650">RECAP · दोहराव</text>
+      <text x="770" y="282" text-anchor="middle" fill="#9e1b1b" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800">Parts 1–2 · भाग 1 और 2</text>
+      <g id="recap-seal">
+        <circle cx="1271" cy="259" r="44" fill="#9e1b1b"/>
+        <circle cx="1271" cy="259" r="34" fill="none" stroke="#f3ead6" stroke-width="2" stroke-dasharray="3 5"/>
+        <text x="1271" y="273" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="800" fill="#fff">5</text>
+      </g>
+    </g>
+    <g id="row1-term">
+      <text x="190" y="383" fill="#2b2622" font-family="Inter, sans-serif" font-size="48" font-weight="780">Document · Parcel</text>
+      <text x="190" y="432" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="620">दस्तावेज · पार्सल</text>
+    </g>
+    <g id="row1-pill">
+      <rect x="820" y="359" width="510" height="74" rx="37" fill="#fde9a6"/>
+      <text x="1075" y="410" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="720">दो classes</text>
+    </g>
+    <path id="row1-tick" d="M1354 397l14 14 28-30" fill="none" stroke="#2e7d4f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <use id="recap-emblem" href="piece:speed-post-emblem" transform="translate(1450 750.7) scale(0.65)"/>
+  
+<g id="row2-term"><text x="190" y="513" font-family="Inter, sans-serif" font-size="48" font-weight="780" fill="#2b2622">Commercial item</text><text x="190" y="562" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="620" fill="#6f6a63">व्यापारिक सामान</text></g>
+<g id="row2-pill">
+  <rect x="820" y="489" width="510" height="74" rx="37" fill="#fde9a6"/>
+  <text x="845" y="540" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="730">500 g से कम भी</text>
+  <text id="row2-parcel" x="1129" y="540" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="730">→ Parcel</text>
+</g>
+<path id="row2-tick" d="M1354 527l14 14 28-30" fill="none" stroke="#2e7d4f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="row3-term"><text x="190" y="643" font-family="Inter, sans-serif" font-size="48" font-weight="780" fill="#2b2622">Speed Post Document</text><text x="190" y="692" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="620" fill="#6f6a63">स्पीड पोस्ट दस्तावेज</text></g>
+<g id="row3-pill">
+  <rect x="680" y="619" width="179" height="74" rx="37" fill="#fde9a6"/>
+  <rect id="row3-extension" x="680" y="619" width="650" height="74" rx="37" fill="#fde9a6"/>
+  <text x="712" y="670" fill="#2b2622" font-family="Inter, sans-serif" font-size="40" font-weight="750">500 g</text>
+  <text id="doc-dims" x="846" y="670" fill="#2b2622" font-family="Inter, sans-serif" font-size="40" font-weight="750">· 420 × 297 × 24 mm</text>
+</g>
+<path id="row3-tick" d="M1354 657l14 14 28-30" fill="none" stroke="#2e7d4f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.00,'fade','#row2-term',{dur:0.28}],
+    [1.90,'pop','#row2-pill',{from:0.93,spring:'soft'}],
+    [3.90,'type','#row2-parcel',{cps:17}],
+    [4.30,'draw','#row2-tick',{dur:0.29}],
+    [5.20,'fade','#row3-term',{dur:0.28}],
+    [5.62,'pop','#row3-pill',{from:0.94,spring:'soft'}],
+    [7.00,'reveal','#row3-extension',{from:'left',dur:0.40}],
+    [11.96,'draw','#row3-tick',{dur:0.29}]
+  ],
+  update(t, section, $) {
+    const dims = $('#doc-dims')[0];
+    if (!dims) return;
+    const stops = [[7.00, '· 420'], [8.56, '· 420 ×'], [9.16, '· 420 × 297'], [9.94, '· 420 × 297 ×'], [11.12, '· 420 × 297 × 24'], [11.96, '· 420 × 297 × 24 mm']];
+    let value = '';
+    for (const [cue, text] of stops) if (t >= cue) value = text;
+    if (dims.textContent !== value) dims.textContent = value;
+  }
+}
+</script>
+</section>
