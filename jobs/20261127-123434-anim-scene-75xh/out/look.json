@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "2.37",
+  "4.73",
+  "7.10",
+  "9.46",
+  "11.68"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s043",
+   "text": "private agencies (2.6:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  }
+ ]
+}
