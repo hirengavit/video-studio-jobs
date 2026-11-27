@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200">
+  <!-- Stack of three sand coins, an ink ₹ on the top coin, a folded note behind. -->
+  <g id="money" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="note" transform="rotate(-7 125 64)">
+      <rect x="38" y="22" width="174" height="86" rx="4" fill="#ffffff"/>
+      <rect x="48" y="32" width="154" height="66" rx="2" fill="none" stroke="#ead9a8" stroke-width="2.5"/>
+      <circle cx="176" cy="54" r="12" fill="none" stroke="#ead9a8" stroke-width="2.5"/>
+      <path d="M125,22 V108" fill="none" stroke="#6f6a63" stroke-width="2"/>
+    </g>
+    <g id="coin-1">
+      <path d="M54,150 V168 A74,22 0 0 0 202,168 V150 Z" fill="#ead9a8"/>
+      <ellipse cx="128" cy="150" rx="74" ry="22" fill="#ead9a8"/>
+    </g>
+    <g id="coin-2">
+      <path d="M48,130 V148 A74,22 0 0 0 196,148 V130 Z" fill="#ead9a8"/>
+      <ellipse cx="122" cy="130" rx="74" ry="22" fill="#ead9a8"/>
+    </g>
+    <g id="coin-3">
+      <path d="M54,110 V128 A74,22 0 0 0 202,128 V110 Z" fill="#ead9a8"/>
+      <ellipse cx="128" cy="110" rx="74" ry="22" fill="#ead9a8"/>
+      <ellipse cx="128" cy="110" rx="60" ry="16" fill="none" stroke="#f3ead6" stroke-width="3"/>
+      <g id="rupee-sign" transform="translate(128 110) scale(1 0.6)" fill="none" stroke-width="4.5">
+        <path d="M-18,-24 H18 M-18,-12 H18 M-8,-24 C12,-24 12,0 -8,0 H-16 L12,26" vector-effect="non-scaling-stroke"/>
+      </g>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="128" cy="191.5" r="0"/>
+  <circle data-anchor="top" cx="128" cy="86.5" r="0"/>
+</svg>
