@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="wall"><rect x="16" y="14" width="648" height="423" rx="20" fill="#e6cf9a"/><path d="M79 368V55H601V368Z" fill="#6a6155"/><path d="M103 363V76H577V363Z" fill="#a18a6c" stroke="none"/><path d="M117 354V110H563V354Z" fill="#b8a384" stroke="none"/><path d="M103 332q81-34 237-34t237 34v43H103Z" fill="#947e61" stroke="none"/></g>
+<g id="frame"><path fill="#fff" fill-rule="evenodd" d="M75 49h530v336H75ZM98 73v289h484V73Z"/><path d="M93 196h494v16H93Z" fill="#f3ead6"/></g>
+<g id="grille" fill="none"><path d="M105 79h470v113H105Z" stroke="#6f6a63"/><path d="M157 79v113m61-113v113m61-113v113m61-113v113m61-113v113m61-113v113m61-113v113M105 135h470" stroke="#2b2622" stroke-width="4"/></g>
+<g id="ledge"><path d="M75 363h530l49 19H26Z" fill="#fbf7ee"/><path d="M26 382h628v27q0 10-10 10H36q-10 0-10-10Z" fill="#f3ead6"/><path d="M38 399h604" stroke="#ba9d73" stroke-width="2"/></g>
+<circle data-anchor="base" cx="340" cy="438" r="0" stroke="none"/><circle data-anchor="top" cx="340" cy="373" r="0" stroke="none"/>
+</svg>
