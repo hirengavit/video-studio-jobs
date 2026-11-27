@@ -28,8 +28,8 @@
     </g>
     <g id="kicker">
       <rect x="1240" y="468" width="532" height="56" rx="28" fill="#fde9a6"/>
-      <text x="1282" y="507" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="760" fill="#67460b">दो खास व्यवस्थाएँ</text>
-      <text id="kicker-free" x="1602" y="507" font-family="Inter, sans-serif" font-size="36" font-weight="810" fill="#2e7d4f">: free</text>
+      <text x="1282" y="507" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="760" fill="#67460b">दो खास व्यवस्थाएँ<tspan id="kicker-free" x="1544" y="507" font-family="Inter, sans-serif" font-weight="810" fill="#2e7d4f">: free</tspan></text>
+      <rect id="kicker-free-mask" x="1537" y="476" width="135" height="40" fill="#fde9a6"/>
     </g>
     <text id="eps" x="184" y="605" font-family="Inter, sans-serif" font-size="72" font-weight="820" fill="#2b2622">EPS</text>
     <text id="eps-full" x="184" y="665" font-family="Inter, sans-serif" font-size="36" font-weight="710" fill="#2b2622">Employees' Pension Scheme</text>
@@ -39,7 +39,7 @@
 <script type="text/scene">
 {camera:[[0,{zoom:1}]],on:[
 [0.70,"fade","#kicker",{dur:0.26}],
-[2.26,"fade","#kicker-free",{dur:0.26}],
+[2.26,"out","#kicker-free-mask",{dur:0.26,scale:false}],
 [4.08,"pop","#eps",{from:0.95,spring:"soft"}],
 [5.88,"type","#eps-full",{cps:16}],
 [8.06,"fade","#eps-hi",{dur:0.27}]
