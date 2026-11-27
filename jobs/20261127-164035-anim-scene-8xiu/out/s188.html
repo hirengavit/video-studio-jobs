@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s188" data-section="PART 7 · GANGAJAL &amp; PRASADAM" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <g id="ttd">
+    <g id="temple-plate">
+      <rect x="160" y="198" width="400" height="405" rx="26" fill="#f3ead6" stroke="#dacaa8" stroke-width="3"/>
+      <use id="ttd-temple" href="piece:temple-icon" transform="translate(161 201) scale(1.0)"/>
+    </g>
+    <g id="ttd-name">
+      <text id="ttd-line-one" x="620" y="352" font-family="Inter, sans-serif" font-size="76" font-weight="750" fill="#2b2622">Tirumala Tirupati</text>
+      <text id="ttd-line-two" x="620" y="449" font-family="Inter, sans-serif" font-size="76" font-weight="750" fill="#2b2622">Devasthanam</text>
+    </g>
+    <g id="ttd-pill">
+      <rect x="620" y="491" width="194" height="65" rx="32" fill="#9e1b1b"/>
+      <text x="717" y="536" font-family="Inter, sans-serif" font-size="38" font-weight="750" text-anchor="middle" fill="#ffffff">(TTD)</text>
+    </g>
+    <g id="ttd-flow">
+      <g id="order-box">
+        <rect x="160" y="650" width="460" height="290" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text id="order" x="390" y="786" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="780" fill="#2b2622">order</text>
+        <text id="payment" x="390" y="852" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="760" fill="#9e1b1b">+ payment</text>
+      </g>
+      <g id="arrow-order" stroke="#2b2622" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M638 795H702"/><path d="M685 778l17 17-17 17"/>
+      </g>
+      <g id="channel-box">
+        <rect x="720" y="650" width="520" height="290" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <text x="980" y="762" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="780" fill="#2b2622">TTD का अपना channel</text>
+        <g id="online">
+          <rect x="770" y="810" width="195" height="64" rx="32" fill="#fde9a6"/>
+          <text x="867.5" y="853" text-anchor="middle" font-family="Inter, sans-serif" font-size="42" font-weight="740" fill="#724b00">online</text>
+        </g>
+        <g id="offline">
+          <rect x="995" y="810" width="195" height="64" rx="32" fill="#fde9a6"/>
+          <text x="1092.5" y="853" text-anchor="middle" font-family="Inter, sans-serif" font-size="42" font-weight="740" fill="#724b00">offline</text>
+        </g>
+      </g>
+      <g id="arrow-speed" stroke="#2b2622" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1258 795H1322"/><path d="M1305 778l17 17-17 17"/>
+      </g>
+      <g id="speed-box">
+        <rect x="1340" y="650" width="420" height="290" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <use href="piece:parcel-icon" transform="translate(1430 614) scale(0.6)"/>
+        <text x="1550" y="850" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#9e1b1b">Speed Post</text>
+        <text id="speed-hi" x="1550" y="902" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#6f6a63">स्पीड पोस्ट</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{camera:[[0,{zoom:1}]],on:[
+[1.52,"pop","#order-box",{from:0.96,spring:"soft"}],
+[2.72,"type","#payment",{cps:21}],
+[3.62,"draw","#arrow-order",{dur:0.28}],
+[3.62,"pop","#channel-box",{from:0.96,spring:"soft"}],
+[5.36,"pop","#online",{from:0.95,spring:"soft"}],
+[6.22,"pop","#offline",{from:0.95,spring:"soft"}],
+[8.44,"draw","#arrow-speed",{dur:0.28}],
+[8.44,"pop","#speed-box",{from:0.96,spring:"soft"}],
+[9.60,"fade","#speed-hi",{dur:0.27}],
+[10.13,"pulse","#speed-box",{amount:0.045}]
+]}
+</script>
+</section>
