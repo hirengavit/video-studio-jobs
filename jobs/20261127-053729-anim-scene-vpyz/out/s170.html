@@ -1,0 +1,86 @@
+<section class="vs-scene" id="s170" data-in="cut" data-section="PART 8 · 24 AND 48 SPEED POST" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="customers">
+  <g id="retail-card">
+    <rect x="140" y="230" width="760" height="390" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <use href="piece:booking-counter" transform="translate(405 278) scale(0.36)"/>
+    <text x="520" y="500" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="760" fill="#2b2622">Retail customers</text>
+    <text x="520" y="561" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="600" fill="#6f6a63">खुदरा ग्राहक</text>
+    <g id="retail-ok">
+      <circle cx="820" cy="307" r="45" fill="#e9f3ec" stroke="#2e7d4f" stroke-width="2"/>
+      <path id="retail-tick" d="M800 307l14 14 28-31" fill="none" stroke="#2e7d4f" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+    </g>
+  </g>
+  <g id="agreement-card">
+    <rect x="1020" y="230" width="760" height="390" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+    <g id="office" transform="translate(1330 274)" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 144h132" fill="none"/>
+      <rect x="16" y="42" width="108" height="102" rx="4" fill="#f3ead6"/>
+      <path d="M44 42V8h54v34" fill="#ffffff"/>
+      <path d="M29 61h82M29 83h82M29 105h82M52 61v44M72 61v44M92 61v44" fill="none"/>
+      <path d="M57 144v-26h28v26" fill="#ffffff"/>
+    </g>
+    <text id="agreement-title" x="1400" y="500" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="760" fill="#2b2622">Bulk / Corporate customers</text>
+    <text x="1400" y="561" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="600" fill="#6f6a63">agreement वाले ग्राहक</text>
+    <g id="agreement-ok">
+      <circle cx="1700" cy="307" r="45" fill="#e9f3ec" stroke="#2e7d4f" stroke-width="2"/>
+      <path id="agreement-tick" d="M1680 307l14 14 28-31" fill="none" stroke="#2e7d4f" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+    </g>
+  </g>
+  <text id="both" x="960" y="717" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="680" fill="#2b2622">दोनों premium documents ले सकते हैं</text>
+  <g id="question-band">
+    <rect x="140" y="800" width="1640" height="160" rx="32" fill="#f3ead6"/>
+    <text id="question-start" x="184" y="871" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="680" fill="#2b2622">Ordinary और premium documents</text>
+    <text id="question-end" x="184" y="926" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="680" fill="#2b2622">कहाँ book होंगे?</text>
+    <g id="circle-heads">
+      <path d="M1122 827V933" stroke="#d8c79e" stroke-width="3" stroke-linecap="round"/>
+      <text x="1160" y="871" font-family="Inter" font-size="52" font-weight="800" fill="#9e1b1b">Circle Heads</text>
+      <text x="1160" y="926" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="650" fill="#6f6a63">सर्किल प्रमुख तय करते हैं</text>
+    </g>
+  </g>
+</g>
+<g id="benefits">
+  <text id="benefits-title" x="120" y="210" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="54" font-weight="780" fill="#9e1b1b">Premium services में क्या मिलता है?</text>
+  <rect id="benefits-frame" x="120" y="250" width="1680" height="180" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+  <path class="benefits-rule" data-rule-y="430" d="M152 430H1768" fill="none" stroke="#ead9a8" stroke-width="2" opacity="0"/>
+  <path class="benefits-rule" data-rule-y="600" d="M152 600H1768" fill="none" stroke="#ead9a8" stroke-width="2" opacity="0"/>
+  <path class="benefits-rule" data-rule-y="770" d="M152 770H1768" fill="none" stroke="#ead9a8" stroke-width="2" opacity="0"/>
+  <g id="otp-row">
+    <use href="piece:otp-phone" transform="translate(194 266) scale(0.35)"/>
+    <text x="330" y="365" font-family="Inter" font-size="52" font-weight="790" fill="#2b2622">OTP delivery</text>
+  </g>
+  <g id="premium-documents-pill">
+    <rect x="1100" y="269" width="660" height="68" rx="34" fill="#f3ead6"/>
+    <text x="1430" y="318" text-anchor="middle" font-family="Inter" font-size="44" font-weight="690" fill="#2b2622">Premium documents</text>
+  </g>
+  <g id="premium-parcel-pill">
+    <rect x="1100" y="347" width="660" height="68" rx="34" fill="#f3ead6"/>
+    <text x="1430" y="396" text-anchor="middle" font-family="Inter" font-size="44" font-weight="690" fill="#2b2622">24 Speed Post Parcel</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0, '#customers'], [3.53, '#benefits']],
+  on: [
+    [0, 'highlight', '#agreement-title', {words:'Bulk',dur:0.01,pad:5,color:'#f2b705',opacity:0.35}],
+    [0, 'highlight', '#agreement-title', {words:'Corporate',dur:0.01,pad:5,color:'#f2b705',opacity:0.35}],
+    [1.00, 'pop', '#circle-heads', {from: 0.94}],
+    [3.53, 'words', '#benefits-title', {gap: 0.28, dist: 14}],
+    [5.61, 'pop', '#otp-row', {from: 0.94}],
+    [7.37, 'pop', '#premium-documents-pill', {from: 0.94}],
+    [9.33, 'pop', '#premium-parcel-pill', {from: 0.94}],
+  ],
+  update(t, section, $) {
+    const u = Math.max(0, Math.min(1, (t - 9.33) / 0.44));
+    const h = 180 + 530 * u * u * (3 - 2 * u);
+    for (const card of $('#benefits-frame')) card.setAttribute('height', h);
+    for (const rule of $('.benefits-rule')) {
+      const space = 250 + h - Number(rule.getAttribute('data-rule-y'));
+      rule.setAttribute('opacity', Math.max(0, Math.min(1, (space - 8) / 32)));
+    }
+  }
+}
+</script>
+</section>
