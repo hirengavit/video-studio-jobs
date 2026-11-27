@@ -8,18 +8,5 @@
   "10.31"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "error",
-   "scene": "s148",
-   "message": "update(): $(...).setAttribute is not a function",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s148",
-   "text": "अभी बुक, बाद में भुगतान / ₹2 लाख तक:",
-   "t": 2.09
-  }
- ]
+ "warnings": []
 }
