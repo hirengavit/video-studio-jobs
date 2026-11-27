@@ -1,0 +1,76 @@
+<section class="vs-scene" id="s057" data-in="cut" data-section="PART 3 · TARIFF" data-series="PRODUCTS">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="factors" font-family="Inter, sans-serif">
+      <text x="140" y="230" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="780" fill="#9e1b1b">Postage · तीन बातें</text>
+      <g id="factor-one">
+        <rect x="140" y="290" width="500" height="320" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+        <circle cx="192" cy="342" r="30" fill="#9e1b1b"/>
+        <text x="192" y="355" text-anchor="middle" font-size="34" font-weight="780" fill="#ffffff">1</text>
+        <use href="piece:speed-post-emblem" transform="translate(272 343) scale(0.45)"/>
+        <text id="label-one" x="390" y="563" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740" fill="#2b2622">Product · उत्पाद</text>
+      </g>
+<g id="factor-two">
+        <rect x="710" y="290" width="500" height="320" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+        <circle cx="762" cy="342" r="30" fill="#9e1b1b"/>
+        <text x="762" y="355" text-anchor="middle" font-size="34" font-weight="780" fill="#ffffff">2</text>
+        <use href="piece:parcel-scale" transform="translate(854 343) scale(0.38)"/>
+        <text id="label-two" x="960" y="563" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740" fill="#2b2622">charge वाला वजन</text>
+      </g>
+<g id="factor-three">
+        <rect x="1280" y="290" width="500" height="320" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+        <circle cx="1332" cy="342" r="30" fill="#9e1b1b"/>
+        <text x="1332" y="355" text-anchor="middle" font-size="34" font-weight="780" fill="#ffffff">3</text>
+        <use href="piece:india-outline-map" transform="translate(1464 328) scale(0.18)"/>
+        <text id="label-three" x="1530" y="563" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="740" fill="#2b2622">दूरी / इलाके की category</text>
+      </g>
+    </g>
+    <g id="cust">
+      <rect x="140" y="640" width="1640" height="120" rx="27" fill="#f3ead6"/>
+      <text x="178" y="716" font-family="Inter" font-size="41" font-weight="760" fill="#2b2622">Customer:</text>
+      <g id="retail">
+        <rect x="423" y="664" width="273" height="72" rx="36" fill="#fff"/>
+        <text x="559.5" y="714" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="680" fill="#2b2622">retail · खुदरा</text>
+      </g>
+      <g id="contractual">
+        <rect x="721" y="664" width="575" height="72" rx="36" fill="#fff"/>
+        <text x="1008.5" y="714" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="39" font-weight="680" fill="#2b2622">contractual bulk · अनुबंध (थोक)</text>
+      </g>
+      <text id="customer-matters" x="1318" y="713" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="38" font-weight="650" fill="#6f6a63">इससे भी फ़र्क पड़ता है</text>
+    </g>
+    <g id="one">
+      <rect x="140" y="800" width="1640" height="160" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <g id="document-tag">
+        <rect x="240" y="817" width="630" height="69" rx="34.5" fill="#9e1b1b"/>
+        <text x="555" y="864" text-anchor="middle" font-family="Inter" font-size="44" font-weight="770" fill="#ffffff">Speed Post Document</text>
+      </g>
+      <path id="transfer-arrow" d="M894 851H1026 M1008 833L1026 851 1008 869" fill="none" stroke="#2b2622" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="parcel-tag">
+        <rect x="1050" y="817" width="630" height="69" rx="34.5" fill="#f3ead6"/>
+        <text x="1365" y="864" text-anchor="middle" font-family="Inter" font-size="44" font-weight="770" fill="#2b2622">Speed Post Parcel</text>
+      </g>
+      <g id="cross-arrow">
+        <circle cx="960" cy="851" r="26" fill="#ffffff" stroke="#4b4f58" stroke-width="3"/>
+        <path d="M949 840L971 862 M971 840L949 862" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+      </g>
+      <text id="rule-line" x="960" y="937" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="730" fill="#4b4f58">एक product का tariff, दूसरे पर नहीं</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.00,'highlight','#label-three',{words:'category',color:'#fde9a6',opacity:0.95,dur:0.01,pad:6}],
+      [0.00,'fade','#cust',{dur:0.23}],
+      [1.27,'pop','#contractual',{from:0.94}],
+      [3.69,'fade','#customer-matters',{dur:0.23}],
+      [5.43,'fade','#one',{dur:0.18}],
+      [5.43,'pop','#document-tag',{from:0.94}],
+      [6.88,'draw','#transfer-arrow',{dur:0.34}],
+      [6.88,'pop','#parcel-tag',{from:0.94}],
+      [8.17,'color','#transfer-arrow',{to:'#4b4f58',prop:'stroke',dur:0.14}],
+      [8.17,'pop','#cross-arrow',{from:0.93}],
+      [8.17,'fade','#rule-line',{dur:0.24}],
+    ],
+  }
+  </script>
+</section>
