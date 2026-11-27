@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s023" data-in="cut" data-section="PART 1 · RETAIL POST" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="reg104">
+    <rect id="reg104-paper" x="120" y="170" width="1680" height="790" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <path id="reg104-edge" d="M145 173H1775" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+    <text id="reg104-source" x="200" y="230" font-family="Inter, sans-serif" font-size="34" font-weight="720" fill="#9e1b1b">Post Office Regulations, 2024 · Reg. 104</text>
+    <text id="epayment" x="200" y="360" font-family="Inter, sans-serif" font-size="88" font-weight="820" fill="#2b2622">e-Payment</text>
+    <text id="epayment-hi" x="202" y="430" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#6f6a63">ई-भुगतान</text>
+    <path id="reg104-divider" d="M200 481H1720" stroke="#ead9a8" stroke-width="2"/>
+    <g id="reg104-postmark">
+      <g transform="rotate(-9 1680 300)">
+        <circle cx="1680" cy="300" r="70" fill="#fff9f6" stroke="#9e1b1b" stroke-width="4"/>
+        <circle cx="1680" cy="300" r="60" fill="none" stroke="#b8403a" stroke-width="2" stroke-dasharray="3 4"/>
+        <text x="1680" y="311" text-anchor="middle" font-family="Inter, sans-serif" font-size="26" font-weight="820" fill="#9e1b1b">REG. 104</text>
+      </g>
+    </g>
+    <g id="reg104-fact">
+      <g id="reg104-carried-marks">
+        <rect x="449" y="492" width="423" height="63" rx="4" fill="#fde9a6"/>
+        <rect x="968" y="492" width="203" height="63" rx="4" fill="#fde9a6"/>
+      </g>
+      <text id="reg104-line-1" x="200" y="540" font-family="Georgia, 'Times New Roman', serif" font-size="48" fill="#2b2622">Collection of bills or other payments for a third party</text>
+      <g id="reg104-line-2-wrap">
+        <text id="reg104-line-2" x="200" y="680" font-family="Georgia, 'Times New Roman', serif" font-size="48" fill="#2b2622">Agreement with the concerned postal authority</text>
+      </g>
+    </g>
+    <g id="reg104-bill">
+      <g transform="rotate(2 1610 670)">
+        <rect x="1497" y="517" width="226" height="306" rx="7" fill="#fff" stroke="#ded2bd" stroke-width="2" filter="url(#vs-shadow)"/>
+        <image href="photo:printed-invoice-bill" x="1506" y="526" width="208" height="288" preserveAspectRatio="xMidYMid meet"/>
+      </g>
+      <text id="reg104-bill-caption" x="1610" y="859" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="28" font-weight="600" fill="#6f6a63">ऐतिहासिक बिल · 1793</text>
+    </g>
+    <g id="reg104-gist">
+      <rect x="200" y="780" width="1235" height="170" rx="20" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+      <rect x="234" y="811" width="8" height="109" rx="4" fill="#f2b705"/>
+      <text id="reg104-gist-line-1" x="269" y="843" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="730" fill="#2b2622">सार (gist): third party के bills या payments, post office से जमा</text>
+      <text id="reg104-gist-line-2" x="269" y="910" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="730" fill="#2b2622">शर्तें और fees: administrative instructions से</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,'out','#reg104-carried-marks',{dur:.4}],
+  [0,'reveal','#reg104-line-2',{from:'left',dur:.45}],
+  [1.24,'highlight','#reg104-line-2',{words:'concerned postal authority',color:'#fde9a6',opacity:1,pad:3,dur:.34}],
+  [4.3,'fade','#reg104-gist-line-2',{dur:.30}],
+  [4.6,'out','#reg104-line-2-wrap [data-vs-mark]',{dur:.4}],
+  [5,'highlight','#reg104-gist-line-2',{words:'administrative instructions',color:'#fde9a6',opacity:1,pad:4,dur:.36}]
+ ]
+})
+</script>
+</section>
