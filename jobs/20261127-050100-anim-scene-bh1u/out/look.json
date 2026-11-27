@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.30",
+  "4.60",
+  "6.90",
+  "9.20",
+  "11.35"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s066",
+   "text": "छोटे towns / mofussil / उसी PIN code का",
+   "t": 4.6
+  }
+ ]
+}
