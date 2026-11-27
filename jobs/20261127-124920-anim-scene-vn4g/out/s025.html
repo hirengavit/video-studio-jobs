@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s025" data-in="cut" data-section="PART 1 · RETAIL POST" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080">
+<text id="compare-heading" x="960" y="221" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="760" fill="#9e1b1b">फ़र्क: एक example</text>
+<g id="epayment-card">
+<rect x="580" y="270" width="760" height="620" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<path d="M608 270H1312Q1340 270 1340 298V400H580V298Q580 270 608 270Z" fill="#9e1b1b"/>
+<text id="epayment-title" x="960" y="335" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="780" fill="#fff">e-Payment</text>
+<text id="epayment-hi" x="960" y="382" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="650" fill="#fde9a6">ई-भुगतान</text>
+<g id="electric-example">
+<g fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M795 524c0-29 22-51 51-51s51 21 51 51c0 18-8 30-22 43-6 6-8 13-8 19h-43c0-7-3-14-9-20-13-11-20-24-20-42Z" fill="#fde9a6"/>
+<path d="M829 587h33v17h-33z" fill="#f3ead6"/><path d="M833 615h25m-19 9h13m-21-94 15 15 15-15m-15 15v41m-61-111-14-14m135 14 14-14m-74-06v-17m-67 83h-18m152 0h18"/>
+</g>
+<use href="piece:invoice-calendar-icon" transform="translate(973 431) scale(.6)"/>
+</g>
+<text id="epayment-example" x="960" y="704" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#2b2622">बिजली का bill जमा</text>
+<g id="epayment-pill">
+<rect x="690" y="750" width="540" height="86" rx="43" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+<text x="960" y="807" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#2b2622">company के लिए collection</text>
+</g>
+</g>
+
+<g id="retail-card">
+ <rect x="1040" y="270" width="760" height="620" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <path d="M1068 270H1772Q1800 270 1800 298V400H1040V298Q1040 270 1068 270Z" fill="#f2b705"/>
+ <text id="retail-title" x="1420" y="335" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="780" fill="#2b2622">Retail Post</text>
+ <text id="retail-hi" x="1420" y="382" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="650" fill="#2b2622">खुदरा डाक</text>
+ <g id="form-and-tag">
+  <use href="piece:invoice-sheet" transform="translate(1287 437) scale(.5)"/>
+  <g stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+   <path d="M1424 501q23-22 40-8 4 4-1 13" fill="none"/>
+   <path d="M1453 515l26-20h71v96h-97Z" fill="#9e1b1b"/>
+   <circle cx="1475" cy="513" r="4" fill="#fff" stroke="none"/>
+  </g>
+  <text x="1503" y="570" text-anchor="middle" font-family="Inter, sans-serif" fill="#fff" font-size="52" font-weight="720">₹</text>
+ </g>
+ <text id="retail-example" x="1420" y="704" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#2b2622">college का form बेचा</text>
+ <g id="retail-pill">
+  <rect x="1150" y="750" width="540" height="86" rx="43" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+  <text x="1420" y="807" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#2b2622">बिक्री</text>
+ </g>
+</g>
+<g id="versus">
+ <circle cx="960" cy="580" r="50" fill="#2b2622"/>
+ <text x="960" y="595" text-anchor="middle" font-family="Inter, sans-serif" font-size="41" font-weight="760" fill="#fff">VS</text>
+</g>
+<g id="takeaway">
+ <rect x="120" y="910" width="1680" height="80" rx="22" fill="#f3ead6"/>
+ <text id="takeaway-text" x="960" y="966" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="710" fill="#2b2622">दोनों में सुविधा, पर काम अलग</text>
+</g>
+</svg>
+<script type="text/scene">
+{"camera":[[0,{"zoom":1}]],"on":[
+[0,"move","#epayment-card",{"by":[-460,0],"spring":"soft"}],
+[0,"slide","#retail-card",{"from":"right","dist":760,"spring":"soft"}],
+[1.22,"draw","#form-and-tag",{"dur":0.66}],
+[1.22,"pop","#versus",{"from":0.92,"spring":"soft"}],
+[2.76,"fade","#retail-example",{"dur":0.27}],
+[4.04,"pop","#retail-pill",{"from":0.97,"spring":"soft"}],
+[5.58,"type","#retail-title",{"cps":21}],
+[6.08,"fade","#retail-hi",{"dur":0.22}],
+[7.04,"fade","#takeaway",{"dur":0.3}],
+[9.32,"highlight","#takeaway-text",{"words":"काम अलग","color":"#f2b705","opacity":0.40,"pad":9,"dur":0.38}]
+]}
+</script>
+</section>
