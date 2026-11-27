@@ -1,0 +1,50 @@
+<section class="vs-scene" id="compare-cards-gu" data-in="fade" data-in-dur="0.4" data-section="ટપાલ વીમો">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text id="question" x="960" y="232" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="68" font-weight="800" fill="#2b2622">PLI કે RPLI?</text>
+    <text id="questionhi" x="960" y="290" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="38" font-weight="500" fill="#6f6a63">બંને ટપાલ વીમા છે, પણ કોના માટે કયો?</text>
+    <g id="left">
+      <rect x="160" y="324" width="740" height="540" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M188 324 L872 324 A28 28 0 0 1 900 352 L900 494 L160 494 L160 352 A28 28 0 0 1 188 324 Z" fill="#9e1b1b"/>
+      <text x="530" y="422" text-anchor="middle" font-family="Inter, sans-serif" font-size="96" font-weight="800" fill="#ffffff">PLI</text>
+      <text x="530" y="470" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="#ffffff">Postal Life Insurance</text>
+      <text x="530" y="552" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="40" font-weight="700" fill="#6f6a63">ટપાલ જીવન વીમો</text>
+      <rect x="260" y="582" width="540" height="2" fill="#ead9a8"/>
+      <text x="230" y="640" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="700" fill="#6f6a63">શરૂઆત</text>
+      <text x="230" y="698" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#2b2622">1 Feb 1884</text>
+      <text x="230" y="764" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="700" fill="#6f6a63">કોના માટે</text>
+      <text x="230" y="822" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="42" font-weight="700" fill="#2b2622">સરકારી કર્મચારી, પ્રોફેશનલ</text>
+    </g>
+    <g id="right">
+      <rect x="1020" y="324" width="740" height="540" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M1048 324 L1732 324 A28 28 0 0 1 1760 352 L1760 494 L1020 494 L1020 352 A28 28 0 0 1 1048 324 Z" fill="#f2b705"/>
+      <text x="1390" y="422" text-anchor="middle" font-family="Inter, sans-serif" font-size="96" font-weight="800" fill="#2b2622">RPLI</text>
+      <text x="1390" y="470" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="#2b2622">Rural Postal Life Insurance</text>
+      <text x="1390" y="552" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="40" font-weight="700" fill="#6f6a63">ગ્રામીણ ટપાલ જીવન વીમો</text>
+      <rect x="1120" y="582" width="540" height="2" fill="#ead9a8"/>
+      <text x="1090" y="640" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="700" fill="#6f6a63">શરૂઆત</text>
+      <text x="1090" y="698" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#2b2622">24 Mar 1995</text>
+      <text x="1090" y="764" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="700" fill="#6f6a63">કોના માટે</text>
+      <text x="1090" y="822" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="42" font-weight="700" fill="#2b2622">ગામડાંના લોકો</text>
+    </g>
+    <g id="vs">
+      <circle cx="960" cy="590" r="58" fill="#2b2622" stroke="#fbf7ee" stroke-width="10"/>
+      <text x="960" y="606" text-anchor="middle" font-family="Inter, sans-serif" font-size="42" font-weight="800" fill="#fde9a6">VS</text>
+    </g>
+    <text id="note" x="960" y="952" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="42" font-weight="700" fill="#2b2622">RPLI 111 વર્ષ પછી આવ્યો, મલ્હોત્રા સમિતિની ભલામણથી</text>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}], [2.4, {zoom: 1.03, x: -40}], [4.4, {zoom: 1.03, x: 40}], [6.0, {zoom: 1.0}, 'inOut']],
+    on: [
+      [0.05, 'words', '#question', {gap: 0.1, dist: 20}],
+      [0.6, 'fade', '#questionhi', {dur: 0.5}],
+      [1.2, 'slide', '#left', {from: 'left', dist: 120, spring: 'soft'}],
+      [3.1, 'slide', '#right', {from: 'right', dist: 120, spring: 'soft'}],
+      [3.4, 'pop', '#vs', {from: 0.5, spring: 'soft'}],
+      [5.4, 'fade', '#note', {dur: 0.5}],
+      [6.3, 'highlight', '#note', {words: '111 વર્ષ પછી', color: '#f2b705', opacity: 0.45}],
+    ],
+  }
+  </script>
+</section>
