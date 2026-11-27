@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+<g id="coin">
+  <circle cx="60" cy="60" r="55" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<circle id="coin-ring" cx="60" cy="60" r="45" fill="none" stroke="#2b2622" stroke-width="2" stroke-dasharray="1.5 6" stroke-linecap="round" opacity="0.7"/>
+<circle data-anchor="base" cx="60" cy="115" r="0"/>
+</svg>
