@@ -1,0 +1,67 @@
+<section class="vs-scene" id="s034" data-section="PART 1 · RETAIL POST" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <text id="similar-heading" x="960" y="220" text-anchor="middle" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="52" font-weight="750" fill="#9e1b1b">Retail Post जैसे दो नाम</text>
+ <g id="media-card">
+  <rect x="560" y="280" width="800" height="600" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M588 280h744q28 0 28 28v130H560V308q0-28 28-28z" fill="#9e1b1b"/>
+  <text id="media-en" x="960" y="362" text-anchor="middle" font-size="72" font-weight="800" fill="#fff">Media Post</text>
+  <text id="media-hi" x="960" y="413" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" fill="#fde9a6">विज्ञापन डाक सेवा</text>
+  <rect id="media-highlight-carry" x="719" y="477" width="253" height="59" rx="4" fill="#f2b705" fill-opacity=".34"/>
+  <text id="media-meaning" x="960" y="523" text-anchor="middle" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="44" font-weight="650" fill="#2b2622">advertising की service</text>
+  <path d="M615 561h690M960 604v207" stroke="#ead9a8" stroke-width="2"/>
+  <g id="stationery-icon" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+   <rect x="649" y="610" width="227" height="143" rx="12" fill="#f3ead6"/>
+   <path d="M667 644h191v31H667z" fill="#fff"/>
+   <path d="M680 660h150" stroke="#9e1b1b" stroke-width="7"/>
+   <path d="M752 690v46m18-12h71m-71-16h71M681 708h44m-44 16h35" stroke="#6f6a63"/>
+   <rect x="821" y="615" width="33" height="23" rx="3" stroke="#9e1b1b" stroke-width="3"/>
+  </g>
+  <text id="stationery-label" x="762" y="826" text-anchor="middle" font-size="40" font-weight="620" fill="#2b2622">postal stationery</text>
+  <g id="premises-icon" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+   <path d="M1058 749V616h194v133z" fill="#f3ead6"/>
+   <path d="M1045 753h221m-221-137h221" stroke="#6f6a63"/>
+   <path d="M1073 728v-72h55v72z" fill="#fff"/>
+   <rect x="1144" y="639" width="83" height="86" rx="5" fill="#fff"/>
+   <path d="M1157 655h56" stroke="#9e1b1b" stroke-width="7"/>
+   <path d="M1157 680h54m-54 15h50m-50 15h31" stroke="#6f6a63"/>
+  </g>
+  <text id="premises-label" x="1162" y="826" text-anchor="middle" font-size="40" font-weight="620" fill="#2b2622">postal premises</text>
+ </g>
+ <g id="direct-card">
+  <rect x="1000" y="280" width="800" height="600" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M1028 280h744q28 0 28 28v130h-800V308q0-28 28-28z" fill="#9e1b1b"/>
+  <text id="direct-en" x="1400" y="362" text-anchor="middle" font-family="Inter,sans-serif" font-size="72" font-weight="800" fill="#fff">Direct Post</text>
+  <text id="direct-hi" x="1400" y="413" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" fill="#fde9a6">बिना पते की प्रचार डाक</text>
+  <text id="direct-meaning" x="1400" y="523" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="650" fill="#2b2622">बिना पते वाली प्रचार सामग्री बाँटना</text>
+  <path d="M1055 561h690M1400 604v207" stroke="#ead9a8" stroke-width="2"/>
+  <g id="brochure">
+   <use href="piece:offer-leaflet" transform="translate(1130 586) scale(.6)"/>
+   <text x="1202" y="826" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="620" fill="#2b2622">brochures</text>
+  </g>
+  <g id="pamphlet">
+   <use href="piece:offer-leaflet" transform="translate(1530 586) scale(.6)"/>
+   <text x="1602" y="826" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="620" fill="#2b2622">pamphlets</text>
+  </g>
+ </g>
+ <g id="three-band">
+  <rect x="120" y="910" width="1680" height="80" rx="20" fill="#f3ead6" stroke="#dacaa8" stroke-width="3"/>
+  <text x="960" y="966" text-anchor="middle" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="44" font-weight="750" fill="#2b2622">तीन काम, तीन नाम</text>
+ </g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [0,'move','#media-card',{by:[-440,0],spring:[22,1]}],
+  [0,'slide','#direct-card',{from:'right',dist:246,spring:[22,1]}],
+  [.50,'fade','#direct-hi',{dur:.25}],
+  [1.06,'fade','#direct-meaning',{dur:.27}],
+  [2.04,'highlight','#direct-meaning',{words:'बिना पते',color:'#f2b705',opacity:.34,pad:5,dur:.35}],
+  [5.06,'pop','#brochure',{from:.94,spring:'soft'}],
+  [6.36,'pop','#pamphlet',{from:.94,spring:'soft'}],
+  [7.48,'fade','#three-band',{dur:.30}]
+ ]
+})
+</script>
+</section>
