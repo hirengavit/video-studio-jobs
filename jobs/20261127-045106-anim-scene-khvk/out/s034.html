@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s034" data-in="cut" data-section="PART 2 · WEIGHT AND SIZE" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="dimension-art" transform="translate(120 250) scale(1.375)">
+<g transform="matrix(1.45 0 0 1.33 -139.5 -67.1)" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g id="box-pulse"><path vector-effect="non-scaling-stroke" id="box" d="M110 134 285 64 474 131 295 205Z M110 134V246L295 317 474 244V131 M295 205V317"/></g>
+  <path vector-effect="non-scaling-stroke" id="len" d="M104 273 282 344 M104 273l9 14m-9-14 16-2 M282 344l-10-15m10 15-18 2"/>
+  <path vector-effect="non-scaling-stroke" id="wid" d="M316 344 491 271 M316 344l11-15m-11 15 19 2 M491 271l-17-2m17 2-10 15"/>
+  <path vector-effect="non-scaling-stroke" id="ht" d="M523 126v116m0-116-8 13m8-13 8 13m-8 103-8-13m8 13 8-13"/>
+</g>
+</g>
+<g font-family="Inter, sans-serif" text-anchor="middle" fill="#2b2622">
+<text id="label-len" x="315" y="843" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="730" fill="#2b2622">100 cm</text>
+<text id="label-wid" x="735" y="843" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="730" fill="#2b2622">40 cm</text>
+<text id="label-ht" x="957" y="665" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="730" fill="#2b2622">30 cm</text>
+</g>
+<g id="working-card">
+<rect x="1060" y="220" width="740" height="740" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<text x="1124" y="292" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="51" font-weight="800" fill="#9e1b1b">Girth का हिसाब</text>
+<path d="M1124 320h612 M1124 486h612 M1124 650h612" fill="none" stroke="#ead9a8" stroke-width="2"/>
+<text id="width-tag" x="1124" y="452" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="610" fill="#6f6a63">चौड़ाई + मोटाई</text>
+<text id="calc-first" x="1124" y="403" font-family="Georgia, serif" font-size="63" font-weight="700" fill="#2b2622">40 + 30</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [2.49,'draw','#len',{dur:0.36}],
+  [2.49,'pop','#label-len',{from:0.9}],
+  [4.43,'draw','#wid',{dur:0.36}],
+  [4.43,'pop','#label-wid',{from:0.9}],
+  [6.49,'draw','#ht',{dur:0.36}],
+  [6.49,'pop','#label-ht',{from:0.9}],
+  [8.43,'fade','#width-tag',{dur:0.26}],
+  [10.50,'type','#calc-first',{cps:24}]
+ ],
+ update(t, section, $) {
+   const phase = Math.max(0, Math.min(1, (t - 1.38) / 0.5));
+   const scale = 1 + 0.04 * Math.sin(Math.PI * phase);
+   const box = $('#box-pulse')[0];
+   if (box) box.setAttribute('transform', 'translate(292 190.5) scale(' + scale + ') translate(-292 -190.5)');
+ }
+}
+</script>
+</section>
