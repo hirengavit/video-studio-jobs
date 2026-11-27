@@ -8,12 +8,5 @@
   "11.59"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s027",
-   "text": "operating procedures / and",
-   "t": 7.04
-  }
- ]
+ "warnings": []
 }
