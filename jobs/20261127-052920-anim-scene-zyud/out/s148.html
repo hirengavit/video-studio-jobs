@@ -14,8 +14,8 @@
       <circle cx="960" cy="390" r="26" fill="none" stroke="#fde9a6" stroke-width="2" stroke-dasharray="3 5" stroke-linecap="round"/>
       <text x="960" y="403" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="800" fill="#fde9a6">3</text>
     </g>
-    <path d="M332 610H841M332 790H1588" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
-    <path id="right-divider" d="M841 610H1588" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <path id="row-divider" d="M332 610H1588" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <path d="M332 790H1588" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
   </g>
   <g id="row-1">
     <g id="bnpl-title">
@@ -35,8 +35,8 @@
   </g>
   <g id="row-2">
     <g id="discount-title">
-      <text x="420" y="690" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="56" font-weight="800" fill="#2b2622" text-anchor="start">Discount</text>
-      <text x="420" y="745" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="36" font-weight="640" fill="#6f6a63" text-anchor="start">छूट</text>
+      <text x="420" y="608" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="56" font-weight="800" fill="#2b2622" text-anchor="start">Discount</text>
+      <text x="420" y="654" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="36" font-weight="640" fill="#6f6a63" text-anchor="start">छूट</text>
     </g>
     <g id="discount-a">
       <rect x="871" y="562" rx="24" width="729" height="48" fill="#f3ead6"/>
@@ -48,26 +48,31 @@
       <text x="901" y="660" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="750" fill="#2b2622" text-anchor="start">₹9 लाख तक:</text>
     </g>
     <g id="discount-ntd">
-      <rect x="1120" y="618" rx="30" width="222" height="60" fill="#ead9a8"/>
-      <text x="1144" y="660" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="800" fill="#2b2622" text-anchor="start">NTD</text>
+      <rect x="1131" y="618" rx="30" width="238" height="60" fill="#ead9a8"/>
+      <text x="1151" y="660" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="800" fill="#2b2622" text-anchor="start">NTD</text>
     </g>
-    <text id="discount-ten" x="1319" y="660" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="820" fill="#2b2622" text-anchor="end">10%</text>
+    <text id="discount-ten" x="1349" y="660" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="820" fill="#2b2622" text-anchor="end">10%</text>
     <g id="discount-td">
-      <rect x="1360" y="618" rx="30" width="237" height="60" fill="#9e1b1b"/>
-      <text x="1387" y="660" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="800" fill="#ffffff" text-anchor="start">TD</text>
+      <rect x="1382" y="618" rx="30" width="215" height="60" fill="#9e1b1b"/>
+      <text x="1403" y="660" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="800" fill="#ffffff" text-anchor="start">TD</text>
     </g>
     <text id="discount-twenty" x="1569" y="660" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="820" fill="#ffffff" text-anchor="end">20%</text>
     <g id="discount-ok">
-      <circle cx="369" cy="709" r="32" fill="#e9f3ec"/>
-      <path id="discount-tick" d="M354 710l10 10 19-23" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="369" cy="611" r="32" fill="#e9f3ec"/>
+      <path id="discount-tick" d="M354 612l10 10 19-23" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
   </g>
 </svg>
 <script type="text/scene">
 {
-  update(t,section,$){ $('#right-divider').setAttribute('opacity',String(1-Math.max(0,Math.min(1,(t-0.45)/0.23)))); },
+  update(t,section,$){
+    const p=Math.max(0,Math.min(1,(t-0.07)/0.51));
+    const ease=p*p*(3-2*p);
+    $('#row-1')[0].setAttribute('transform','translate(0 '+(-42*ease)+')');
+    $('#row-divider')[0].setAttribute('transform','translate(0 '+(-59*ease)+')');
+  },
   on:[
-    [0,'fade','#discount-title',{dur:0.24}],
+    [0.42,'fade','#discount-title',{dur:0.24}],
     [0.68,'fade','#discount-a',{dur:0.25}],
     [3.32,'fade','#discount-b',{dur:0.25}],
     [5.34,'pop','#discount-ntd',{spring:'soft',from:0.93}],
