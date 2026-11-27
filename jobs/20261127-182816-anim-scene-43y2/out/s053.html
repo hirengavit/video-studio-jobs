@@ -52,9 +52,13 @@
   <circle cx="868" cy="930" r="5" fill="#9e1b1b"/>
   <text id="note-a" x="177" y="945" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="730" fill="#2b2622">हर form की अपनी category</text>
   <g id="note-b" font-size="42" font-weight="710" fill="#2b2622">
-   <text id="note-b-prefix" x="920" y="945" font-family="'Noto Sans Devanagari', Inter, sans-serif">बाहर वाले:</text>
-   <text id="note-b-focus" x="1138" y="945" font-family="'Noto Sans Devanagari', Inter, sans-serif">अपनी status</text>
-   <text id="note-b-tail" x="1403" y="945" font-family="'Noto Sans Devanagari', Inter, sans-serif">वाला form</text>
+   <rect id="note-b-mark" x="1133" y="904" width="250" height="60" rx="4" fill="#f2b705" opacity="0.40"/>
+   <text y="945" font-family="'Noto Sans Devanagari', Inter, sans-serif"><tspan x="920">बाहर वाले:</tspan><tspan x="1138">अपनी status</tspan><tspan x="1403">वाला form</tspan></text>
+   <g fill="#f3ead6">
+    <rect id="note-prefix-mask" x="912" y="894" width="219" height="70"/>
+    <rect id="note-focus-mask" x="1132" y="894" width="262" height="70"/>
+    <rect id="note-tail-mask" x="1397" y="894" width="345" height="70"/>
+   </g>
   </g>
  </g>
 </g>
@@ -67,10 +71,10 @@
 [3.48,"pulse","#badge-f1, #badge-f3, #badge-f5",{amount:0.042,stagger:0.15}],
 [4.16,"reveal","#note-strip",{from:"left",dur:0.35}],
 [4.40,"type","#note-a",{cps:26}],
-[6.26,"type","#note-b-prefix",{cps:20}],
-[7.20,"type","#note-b-focus",{cps:26}],
-[7.50,"highlight","#note-b-focus",{color:"#f2b705",opacity:0.40,dur:0.30,pad:5}],
-[7.84,"type","#note-b-tail",{cps:19}]
+[6.26,"out","#note-prefix-mask",{dur:0.30,scale:false}],
+[7.20,"out","#note-focus-mask",{dur:0.25,scale:false}],
+[7.50,"reveal","#note-b-mark",{from:"left",dur:0.30}],
+[7.84,"out","#note-tail-mask",{dur:0.29,scale:false}]
 ]}
 </script>
 </section>
