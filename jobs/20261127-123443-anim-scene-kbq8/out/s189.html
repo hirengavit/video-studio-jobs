@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s189" data-in="wipe" data-in-opts='{"from":"right"}' data-section="PART 7 · GANGAJAL &amp; PRASADAM" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<g id="temple-comparison">
+  <g id="somnath">
+    <rect x="160" y="190" width="600" height="330" rx="30" fill="#fffdf8" stroke="#2b2622" stroke-width="3"/>
+    <path d="M162 340V220Q162 192 190 192H730Q758 192 758 220V340Z" fill="#a51d2a"/>
+    <text x="460" y="289" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="750" fill="#ffffff">Somnath</text>
+    <text x="460" y="436" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" font-weight="650" fill="#2b2622">e-Money Order ₹270</text>
+  </g>
+  <g id="kashi">
+    <rect x="1160" y="190" width="600" height="330" rx="30" fill="#fffdf8" stroke="#2b2622" stroke-width="3"/>
+    <path d="M1162 340V220Q1162 192 1190 192H1730Q1758 192 1758 220V340Z" fill="#a51d2a"/>
+    <text x="1460" y="289" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="750" fill="#ffffff">Kashi Vishwanath</text>
+    <text x="1460" y="436" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" font-weight="650" fill="#2b2622">e-Money Order ₹251</text>
+  </g>
+  <path id="temple-arrow" d="M812 355H1105M1073 325L1105 355L1073 385" fill="none" stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="temple-strike" d="M820 392L1098 316" fill="none" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+  <g id="temple-no">
+    <circle cx="960" cy="355" r="43" fill="#fbf7ee" stroke="#64748b" stroke-width="4"/>
+    <path d="M943 338L977 372M977 338L943 372" fill="none" stroke="#64748b" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <text id="temple-own" x="960" y="640" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="760" fill="#a51d2a">हर मंदिर का अपना:</text>
+  <g id="temple-payee">
+    <rect x="160" y="720" width="500" height="160" rx="30" fill="#fffdf8" stroke="#a51d2a" stroke-width="3"/>
+    <text x="410" y="818" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#2b2622">पाने वाला</text>
+  </g>
+  <g id="temple-payment">
+    <rect x="710" y="720" width="500" height="160" rx="30" fill="#fffdf8" stroke="#a51d2a" stroke-width="3"/>
+    <text x="960" y="818" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#2b2622">payment तरीका</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+  on: [
+    [3.02, "pop", "#kashi"],
+    [3.02, "draw", "#temple-arrow", {dur:0.44}],
+    [4.78, "draw", "#temple-strike", {dur:0.25}],
+    [4.78, "pop", "#temple-no"],
+    [5.85, "words", "#temple-own", {gap:0.19,dist:12}],
+    [7.18, "pop", "#temple-payee"],
+    [8.94, "pop", "#temple-payment"]
+  ]
+})
+</script>
+</section>
