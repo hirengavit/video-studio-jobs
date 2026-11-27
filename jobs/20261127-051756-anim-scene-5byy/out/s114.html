@@ -14,7 +14,7 @@
         <rect x="1510" y="290" width="300" height="110" fill="#9e1b1b"/>
         <text x="150" y="337" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="790" fill="#2b2622" text-anchor="start">Monthly revenue</text>
         <path id="gst-rule-underline" d="M468 389H671" fill="none" stroke="#b18500" stroke-width="5" stroke-linecap="round"/>
-        <rect id="revenue-label-band" x="144" y="345" width="307" height="50" rx="3" fill="#f2b705" opacity=".38"/>
+        <rect id="revenue-label-band" x="144" y="345" width="307" height="50" rx="4" fill="#f2b705" fill-opacity=".38"/>
         <text id="revenue-hindi" x="150" y="380" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="690" fill="#2b2622" text-anchor="start">महीने की revenue (GST के बिना)</text>
         <text x="1360" y="363" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="830" fill="#2b2622" text-anchor="middle">NTD</text>
         <text x="1660" y="363" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="830" fill="#ffffff" text-anchor="middle">TD</text>
@@ -22,11 +22,11 @@
           <g id="slab-1">
             <rect x="110" y="400" width="1700" height="100" fill="#ffffff"/>
             <text x="150" y="465" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="720" fill="#2b2622" text-anchor="start">₹2,00,000 तक</text>
-            <text id="zero-ntd" x="1360" y="465" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="790" fill="#2b2622" text-anchor="middle">0%</text>
-            <text id="zero-td" x="1660" y="465" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="790" fill="#2b2622" text-anchor="middle">0%</text>
+            <text id="zero-ntd" x="1360" y="465" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="790" fill="#8a5d00" text-anchor="middle">0%</text>
+            <text id="zero-td" x="1660" y="465" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="790" fill="#8a5d00" text-anchor="middle">0%</text>
           </g>
 <g id="slab-2">
-            <rect x="110" y="500" width="1700" height="100" fill="#fbf7ee"/>
+            <rect x="110" y="500" width="1700" height="100" fill="#ffffff"/>
             <rect id="slab-2-fill" x="110" y="500" width="1700" height="100" fill="#fde9a6"/>
             <text x="150" y="565" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="720" fill="#2b2622" text-anchor="start">₹2,00,000 से ऊपर – ₹9,00,000</text>
             <text id="slab-2-ntd-rate" x="1360" y="565" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="790" fill="#2b2622" text-anchor="middle">10%</text>
@@ -71,6 +71,8 @@
  on:[
   [0.20,'move','#row-hl',{by:[0,100],spring:'soft'}],
   [0.20,'fade','#slab-2-fill',{dur:0.40}],
+  [0.20,'color','#zero-ntd',{to:'#2b2622',dur:0.40}],
+  [0.20,'color','#zero-td',{to:'#2b2622',dur:0.40}],
   [4.46,'color','#slab-2-ntd-rate',{to:'#8a5d00',dur:0.23}],
   [4.46,'pulse','#slab-2-ntd-rate',{amount:0.10}],
   [6.16,'color','#slab-2-td-rate',{to:'#8a5d00',dur:0.23}],
@@ -78,7 +80,20 @@
   [7.96,'move','#row-hl',{by:[0,400],spring:'soft'}],
   [10.18,'color','#slab-6-ntd-rate',{to:'#8a5d00',dur:0.23}],
   [10.18,'pulse','#slab-6-ntd-rate',{amount:0.10}]
- ]
+ ],
+ update(t, section, $) {
+  const label=$('#revenue-hindi')[0], band=$('#revenue-label-band')[0];
+  if (!label || !band || typeof label.getExtentOfChar !== 'function') return;
+  let x0=Infinity, y0=Infinity, x1=-Infinity, y1=-Infinity;
+  for (let k=0; k<'महीने की revenue'.length; k++) {
+   const b=label.getExtentOfChar(k);
+   x0=Math.min(x0,b.x); y0=Math.min(y0,b.y);
+   x1=Math.max(x1,b.x+b.width); y1=Math.max(y1,b.y+b.height);
+  }
+  if (!Number.isFinite(x0)) return;
+  band.setAttribute('x',x0-6); band.setAttribute('y',y0-3);
+  band.setAttribute('width',(x1-x0+12).toFixed(2)); band.setAttribute('height',y1-y0+6);
+ }
 }
 </script>
 </section>
