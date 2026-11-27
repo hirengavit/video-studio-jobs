@@ -1,0 +1,45 @@
+# Fix animated scene s211
+
+Read `inputs/CRAFT.md` (rules every scene follows), `inputs/storyboard.md` (the parts for this scene: "Shared",
+"Continuity", its section "## s211" and its neighbours'; follow its section closely), `inputs/SCENES.md` (the narration and word times for
+s211), `inputs/SCENE-API.md` (how to write a scene file on the engine), `inputs/kit.json` (the channel
+kit) and `inputs/pieces.md` (library pieces:
+place them with `<use href="piece:<id>" transform="..."/>` and animate their parts by id; and sets: places with
+named spots and framings, pictured in `inputs/sets/<id>.jpg` with the spots marked). If the storyboard puts
+this scene in a set, build it on the set (see SCENE-API.md, "Sets"): the character and props on its spots, the
+camera on its framings.
+`inputs/screen-notes.md` is the script writer's notes for the visuals: what goes on screen that the voice
+doesn't read (full tables, lists, document cards, on-screen words). Where the narration says something is on screen
+("the table is on screen", "screen पर है"), show every row or item the notes give for it, complete, spelled as the notes give them and readable: never only the ones the voice names. Fit it on screen (smaller rows, two columns), never let it run off the frame.
+
+**The header is drawn by the app.** A fixed frame (section, series) sits above every scene: never draw a section label, a series tag or anything in the top band (y < 150). Instead put the words on your <section>: `data-section="…"` and `data-series="…"` (from the storyboard).
+
+**Continuity.** The scene before this one, as finally written, is `inputs/previous/s210.html`. Where the storyboard continues its layout, keep the same positions, sizes and colours, and start from the camera framing it ended on (a zoom that is held at its end continues here, or it returns before the cut). Reuse its element ids and pieces rather than redrawing them differently.
+
+**Real photos and clips** for this scene (SCENE-API.md, "Real photos and clips"; the files are in `inputs/materials/`, open them to see what they show): `photo:india-post-delivery-van` (and `photo:india-post-delivery-van-cutout`, its subject cut out): a red India Post mail or delivery van on a street or outside a post office, whole van visible, side or three-quarter view (Mail Van) (shown in the scene before; use it where this scene continues that frame), 1920×1440. **They were found, so use them:** the storyboard's plan for them applies, and any "no photo" alternative it describes does not. Show them in the way that suits this moment.
+
+## What to change
+
+The current file is `inputs/current/s211.html`. Change it as follows, and keep everything else that works. Fix crowding by moving or resizing things, never by deleting what the storyboard planned to show:
+
+The director asked for these fixes:
+
+The seam with s210 is exact. The pins pulse at 0.74 s, and the pill pops on "Dak Chaupal" at 1.42 s and holds until the fade, so the idea lands on its word. The "frozen" note only means the moves are small, which is fine for a 3 s beat. The problem is the pill.
+
+1. #pill: the text "हर पड़ाव पर Dak Chaupal" is 36 px and fills the pill from edge to edge (x 1380–1760) with no padding, so it reads as cramped and tiny. Make the pill x 1420–1760, y 860–990 (radius 30), and set the text to 44 px on two lines, "हर पड़ाव पर" / "Dak Chaupal", centred at x 1590, with 24 px of side padding. Keep the text inside the pill's group.
+2. Match s210's revised layout: postmark at a diameter of 380 (x 1000–1380), route at y 690 with pins 60 tall at x 1450 / 1590 / 1730, and the label on two lines at y 770 / 822. This keeps the seam exact. Grow the small yellow dots round each pin to r 8 so they still read beside the larger pins.
+
+The scene lasts 3.21 s: every time in it is between 0 and 3.21.
+
+**No character.** This channel has NO recurring character: never place the host rig (no data-rig, no rigs block) and plan no person on screen. Present ideas the way a great lecture deck would, but animated: exact-word document cards (highlighted phrase by phrase), points that build one at a time, timelines, side-by-side compare cards, one key term in focus, icons and small drawn objects, quick checks and recap cards, in the kit's colours and fonts, with the fixed places the channel's rules name. Every element lands on the word it belongs to, then holds long enough to read. Clarity first: big readable text and elements that use the frame (even margins, never a small card in a big empty canvas), nothing cramped or cut off at the frame edge.
+
+Write `out/s211.html`: one `<section class="vs-scene" id="s211" …>` with the SVG and a
+`<script type="text/scene">` block. Use the engine's
+physical actions (hold, pour, fall, place, level) instead of building them yourself.
+
+**Look at your own frames before you finish.** Run `node look.mjs`: it renders your scene with the real engine
+and writes `out/look.jpg`, six moments across the scene, plus `out/look.json` with the engine's warnings.
+Open the picture and check it like a viewer on a phone would: is every word readable, on its own background,
+inside its card, inside the frame? Does each thing arrive on its word and hold? Nothing missing, nothing
+doubled, nothing squashed? Fix what you see, run `node look.mjs` again, and only then run `node check.mjs`
+and fix what it reports.
