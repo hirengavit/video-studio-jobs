@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.36",
+  "4.71",
+  "7.07",
+  "9.42",
+  "11.63"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s065",
+   "message": "highlight: \"MBU\" isn't in that <text> (it says \"\")",
+   "t": 0.3
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s065",
+   "message": "a card is mostly empty at 4.7 s: bring its items in sooner, or size it for what it holds now",
+   "t": 4.71
+  }
+ ]
+}
