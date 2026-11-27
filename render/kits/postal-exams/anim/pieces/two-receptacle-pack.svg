@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<defs><pattern id="two-receptacle-pack-dots" width="24" height="22" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="2.6" fill="#a8834a" stroke="none"/><circle cx="18" cy="17" r="2.4" fill="#a8834a" stroke="none"/><circle cx="15" cy="4" r="1.6" fill="#a8834a" stroke="none"/></pattern></defs>
+<g id="fill"><rect x="92" y="112" width="516" height="336" fill="#e6cf9a" stroke="none"/><rect x="92" y="112" width="516" height="336" fill="url(#two-receptacle-pack-dots)" stroke="none"/></g>
+<g id="outer"><path d="M60 80H640V480H60ZM92 112V448H608V112Z" fill="#d9b77c" fill-rule="evenodd"/>
+<path d="M68 96H632M68 464H632M76 120V440M624 120V440" stroke="#a8834a" stroke-width="2" fill="none"/>
+<g fill="#a7aaad"><path d="M60 80H104V96H76V124H60Z"/><path d="M640 80H596V96H624V124H640Z"/><path d="M60 480H104V464H76V436H60Z"/><path d="M640 480H596V464H624V436H640Z"/></g></g>
+<g id="inner"><path d="M330 150H370V186Q370 196 384 204Q410 218 410 244V402Q410 420 392 420H308Q290 420 290 402V244Q290 218 316 204Q330 196 330 186Z" fill="#cfe3e8"/>
+<path d="M304 250V396" stroke="#ffffff" stroke-width="6" fill="none"/><rect x="324" y="132" width="52" height="24" rx="5" fill="#53616a"/></g>
+<circle data-anchor="base" cx="350" cy="480" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="350" cy="80" r="0" fill="none" stroke="none"/>
+</svg>

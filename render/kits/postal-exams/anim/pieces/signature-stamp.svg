@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 400" fill="none">
+<g id="signature-stamp-tool">
+<g id="signature-stamp-handle">
+<path d="M130,8 C168,8 186,34 182,66 C179,92 160,106 152,118 L156,164 L104,164 L108,118 C100,106 81,92 78,66 C74,34 92,8 130,8 Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M104,48 C108,34 118,26 130,24" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.8"/>
+<line x1="106" y1="130" x2="154" y2="130" stroke="#2b2622" stroke-width="2.5" stroke-linecap="round"/>
+</g>
+<g id="signature-stamp-body">
+<path d="M60,164 L200,164 C210,164 216,170 216,180 L216,250 L44,250 L44,180 C44,170 50,164 60,164 Z" fill="#4b4f58" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="30" y="250" width="200" height="22" rx="4" fill="#4b4f58" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<rect id="signature-stamp-pad" x="40" y="272" width="180" height="26" rx="4" fill="#9e1b1b" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="signature-stamp-impression" opacity="0" stroke="#2b2622" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M14,370 C30,340 44,318 52,322 C62,328 40,372 48,376 C58,380 70,330 82,334 C92,338 80,370 90,370 C102,370 108,344 118,346 C128,348 120,368 132,368 C146,368 150,338 162,340 C172,342 162,366 176,366 C192,366 200,346 214,346 C228,346 236,356 246,352"/>
+<path d="M20,388 C80,382 170,380 248,384"/>
+</g>
+<circle data-anchor="grip" cx="130" cy="70" r="0"/>
+<circle data-anchor="base" cx="130" cy="300" r="0"/>
+</svg>
