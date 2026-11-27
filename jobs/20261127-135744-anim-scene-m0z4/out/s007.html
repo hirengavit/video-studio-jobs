@@ -1,7 +1,13 @@
 <section class="vs-scene" id="s007" data-section="RETAIL &amp; CITIZEN SERVICES" data-series="PRODUCTS" data-in="cut">
 <svg viewBox="0 0 1920 1080">
 <g id="parts">
+<defs>
+  <clipPath id="s007-window-clip"><rect x="660" y="346" width="600" height="360"/></clipPath>
+  <clipPath id="s007-caption-en-clip"><rect x="160" y="761" width="1600" height="98"/></clipPath>
+  <clipPath id="s007-caption-hi-clip"><rect x="160" y="864" width="1600" height="90"/></clipPath>
+</defs>
 <use href="set:citizen-counter" layer="back"/>
+<g clip-path="url(#s007-window-clip)">
 <use id="parts-window-bill" href="piece:invoice-calendar-icon" transform="scale(0.79)"/>
 <g id="parts-window-id-entrance">
   <g id="parts-window-id-exit"><use id="parts-window-id-icon" href="piece:id-card-icon" transform="scale(.92)"/></g>
@@ -12,6 +18,7 @@
     <circle r="34" fill="#f3ead6" stroke="#8a5d00" stroke-width="3"/>
     <text y="14" text-anchor="middle" font-size="43" font-weight="800" fill="#8a5d00">₹</text>
   </g>
+</g>
 </g>
 <use href="set:citizen-counter" layer="front"/>
 <text id="parts-sign" x="960" y="263" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="780" fill="#fff">नौ हिस्से</text>
@@ -35,12 +42,16 @@
   <use href="piece:id-card-icon" transform="translate(146 537) scale(.51)"/>
   <g transform="translate(303 690)"><circle r="21" fill="#f3ead6" stroke="#8a5d00" stroke-width="2"/><text y="11" text-anchor="middle" font-size="30" font-weight="800" fill="#8a5d00">₹</text></g>
 </g>
+<g clip-path="url(#s007-caption-en-clip)">
 <text id="parts-caption-en" x="960" y="829" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="790" fill="#2b2622">Retail Post &amp; e-Payment</text>
-<text id="parts-caption-hi" x="960" y="913" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#6f6a63">कानूनी आधार · खुदरा डाक · ई-भुगतान</text>
 <g id="parts-caption-2-en-in"><text id="parts-caption-2-en-out" x="960" y="829" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="790" fill="#2b2622">Aadhaar: enrolment, update, forms</text></g>
-<g id="parts-caption-2-hi-in"><text id="parts-caption-2-hi-out" x="960" y="913" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#6f6a63">आधार नामांकन · अद्यतन · forms</text></g>
 <text id="parts-caption-3-en" x="960" y="829" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="790" fill="#2b2622">Aadhaar fees</text>
+</g>
+<g clip-path="url(#s007-caption-hi-clip)">
+<text id="parts-caption-hi" x="960" y="913" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#6f6a63">कानूनी आधार · खुदरा डाक · ई-भुगतान</text>
+<g id="parts-caption-2-hi-in"><text id="parts-caption-2-hi-out" x="960" y="913" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#6f6a63">आधार नामांकन · अद्यतन · forms</text></g>
 <text id="parts-caption-3-hi" x="960" y="913" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#6f6a63">fees · free सेवाएँ · घर पर सेवा</text>
+</g>
 </g>
 </svg>
 <script type="text/scene">
