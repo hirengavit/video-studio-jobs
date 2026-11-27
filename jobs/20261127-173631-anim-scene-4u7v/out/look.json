@@ -34,12 +34,6 @@
    "t": 7.63
   },
   {
-   "kind": "text-overlap",
-   "scene": "s149",
-   "text": "डालता / या confirm करता",
-   "t": 9.39
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s149",
    "message": "a card (#s149-slot3) is mostly empty at 9.4 s: bring its items in sooner, or size it for what it holds now",
