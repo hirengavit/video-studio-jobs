@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 440" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <rect id="page" x="6" y="24" width="408" height="410" rx="16" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+  <path id="header" d="M22 24 H398 Q414 24 414 40 V112 H6 V40 Q6 24 22 24 Z" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/>
+  <g id="rings" stroke="#2b2622" stroke-width="3" fill="#fbf7ee">
+    <rect x="98" y="8" width="14" height="36" rx="7"/>
+    <rect x="308" y="8" width="14" height="36" rx="7"/>
+  </g>
+  <g id="cells" fill="#fbf7ee" stroke="#2b2622" stroke-width="2">
+    <rect id="cell-1" x="25" y="131" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-2" x="78.7" y="131" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-3" x="132.4" y="131" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-4" x="186.1" y="131" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-5" x="239.9" y="131" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-6" x="293.6" y="131" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-7" x="347.3" y="131" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-8" x="25" y="189.4" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-9" x="78.7" y="189.4" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-10" x="132.4" y="189.4" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-11" x="186.1" y="189.4" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-12" x="239.9" y="189.4" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-13" x="293.6" y="189.4" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-14" x="347.3" y="189.4" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-15" x="25" y="247.8" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-16" x="78.7" y="247.8" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-17" x="132.4" y="247.8" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-18" x="186.1" y="247.8" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-19" x="239.9" y="247.8" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-20" x="293.6" y="247.8" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-21" x="347.3" y="247.8" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-22" x="25" y="306.2" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-23" x="78.7" y="306.2" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-24" x="132.4" y="306.2" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-25" x="186.1" y="306.2" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-26" x="239.9" y="306.2" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-27" x="293.6" y="306.2" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-28" x="347.3" y="306.2" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-29" x="25" y="364.6" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-30" x="78.7" y="364.6" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-31" x="132.4" y="364.6" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-32" x="186.1" y="364.6" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-33" x="239.9" y="364.6" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-34" x="293.6" y="364.6" width="47.7" height="52.4" rx="6"/>
+    <rect id="cell-35" x="347.3" y="364.6" width="47.7" height="52.4" rx="6"/>
+  </g>
+  <circle data-anchor="base" cx="210" cy="434" r="0"/>
+  <circle data-anchor="top" cx="210" cy="24" r="0"/>
+  <circle data-anchor="header" cx="210" cy="68" r="0"/>
+</svg>
