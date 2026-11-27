@@ -1,0 +1,36 @@
+<section class="vs-scene" id="s026" data-section="PART 1 · RETAIL POST" data-series="PRODUCTS" data-in="wipe" data-in-dur="0.45" data-in-dir="right">
+<svg viewBox="0 0 1920 1080"><rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="map">
+<text id="title" x="960" y="203" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="800" fill="#2b2622">Citizen-centric collaborations</text>
+<text id="title-hi" x="960" y="263" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="800" fill="#9e1b1b">नागरिक-केंद्रित साझेदारी</text>
+<g fill="none" stroke="#c5a565" stroke-width="7" stroke-linecap="round">
+  <path id="link-central" d="M960 600L770 405H640"/>
+  <path id="link-state" d="M960 600L1150 405H1280"/>
+  <path id="link-local" d="M960 600L770 865H640"/>
+</g>
+<g id="core">
+  <circle cx="960" cy="600" r="150" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+  <circle cx="960" cy="600" r="150" fill="none" stroke="#fbf7ee" stroke-width="11" stroke-dasharray="0 23" stroke-linecap="round"/>
+  <text x="960" y="596" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#fff">Post office</text>
+  <text x="960" y="646" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="650" fill="#fff">network</text>
+</g>
+<g id="central"><rect x="120" y="320" width="520" height="170" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/><path d="M146 320h468a26 26 0 0 1 26 26v-17h-520v17a26 26 0 0 1 26-26Z" fill="#9e1b1b"/><text x="380" y="397" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Central Government</text><text id="central-detail" x="380" y="450" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="600" fill="#6f6a63">Ministries · Departments</text></g>
+<g id="state"><rect x="1280" y="320" width="520" height="170" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/><path d="M1306 320h468a26 26 0 0 1 26 26v-17h-520v17a26 26 0 0 1 26-26Z" fill="#9e1b1b"/><text x="1540" y="397" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">State Governments</text><text x="1540" y="450" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="600" fill="#6f6a63">राज्य सरकारें</text></g>
+<g id="local"><rect x="120" y="780" width="520" height="170" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/><path d="M146 780h468a26 26 0 0 1 26 26v-17h-520v17a26 26 0 0 1 26-26Z" fill="#9e1b1b"/><text x="380" y="857" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Local bodies</text><text x="380" y="910" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="600" fill="#6f6a63">स्थानीय निकाय</text></g>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+[0.58,'type','#title',{cps:40}],
+[1.18,'fade','#title-hi',{dur:0.28}],
+[4.18,'pulse','#core',{amount:0.04}],
+[4.70,'draw','#link-central',{dur:0.23}],
+[4.70,'pop','#central',{from:0.94,spring:'fast'}],
+[5.96,'fade','#central-detail',{dur:0.30}],
+[10.36,'draw','#link-state',{dur:0.24}],
+[10.36,'pop','#state',{from:0.94,spring:'fast'}],
+[11.80,'draw','#link-local',{dur:0.25}],
+[11.80,'pop','#local',{from:0.94,spring:'fast'}]
+]}
+</script>
+</section>
