@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" width="240" height="300">
+<title>blank-postage-stamp</title>
+<defs>
+<mask id="bps-outer" maskUnits="userSpaceOnUse" x="-20" y="-20" width="280" height="340">
+<rect x="-20" y="-20" width="280" height="340" fill="#fff"/>
+<rect x="0" y="0" width="240" height="300" fill="none" stroke="#000" stroke-width="16" stroke-linecap="round" stroke-dasharray="0 20"/>
+</mask>
+<mask id="bps-inner" maskUnits="userSpaceOnUse" x="-20" y="-20" width="280" height="340">
+<rect x="-20" y="-20" width="280" height="340" fill="#fff"/>
+<rect x="0" y="0" width="240" height="300" fill="none" stroke="#000" stroke-width="22" stroke-linecap="round" stroke-dasharray="0 20"/>
+</mask>
+</defs>
+<g id="stamp-body">
+<rect x="0" y="0" width="240" height="300" fill="#2b2622" mask="url(#bps-outer)"/>
+<rect x="3" y="3" width="234" height="294" fill="#ffffff" mask="url(#bps-inner)"/>
+</g>
+<rect id="window" x="28" y="28" width="184" height="204" rx="3" fill="#f3ead6" stroke="#2b2622" stroke-width="2"/>
+<rect id="value" x="146" y="246" width="66" height="30" rx="4" fill="none" stroke="#6f6a63" stroke-width="2"/>
+<circle data-anchor="base" cx="120" cy="300" r="0"/>
+<circle data-anchor="top" cx="120" cy="0" r="0"/>
+<circle data-anchor="window" cx="120" cy="130" r="0"/>
+<circle data-anchor="value" cx="179" cy="261" r="0"/>
+</svg>
