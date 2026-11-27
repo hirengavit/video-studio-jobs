@@ -1,0 +1,42 @@
+<section class="vs-scene" id="s051" data-in="cut" data-section="PART 2 · WEIGHT AND SIZE" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="exam"><rect x="140" y="190" width="660" height="84" rx="42" fill="#9e1b1b"/><text x="470" y="244" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="770">EXAM ANGLE · परीक्षा की नज़र से</text></g>
+  <g id="weight">
+    <use href="piece:key-fact-stamp" transform="translate(140 300)"/>
+    <text x="420" y="489" text-anchor="middle" fill="#ffffff" font-size="124" font-weight="820">35 kg</text>
+    <text x="420" y="566" text-anchor="middle" fill="#fde9a6" font-size="42" font-weight="720">Ordinary parcel</text>
+  </g>
+  <g id="diagram" transform="translate(960 270) scale(1.1)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path id="box" d="M20 155 355 45 615 126 265 245Z M20 155V260L265 350 615 231V126 M265 245V350" stroke="#2b2622" stroke-width="2.72"/>
+    <path id="wid" d="M16 285 244 369 M16 285l15-2m-15 2 9 13 M244 369l-9-13m9 13-15 2" stroke="#877c6e" stroke-width="2.1"/>
+    <path id="ht" d="M632 130v99m0-99-7 10m7-10 7 10m-7 89-7-10m7 10 7-10" stroke="#877c6e" stroke-width="2.1"/>
+    <path id="len" d="M280 380 626 263 M280 380l10-14m-10 14 17 4 M626 263l-17-4m17 4-10 14" stroke="#2b2622" stroke-width="3.2"/>
+    <path id="girth-loop" d="M195 97 440 186Q444 188 444 194V283Q444 291 436 288L195 201Q189 199 189 191V103Q189 95 195 97Z" stroke="#f2b705" stroke-width="4.5454545"/>
+  </g>
+  <text id="length" x="1460" y="696" text-anchor="middle" fill="#2b2622" font-size="48" font-weight="780">1.5 m</text>
+  <g id="girth-limit"><rect x="995" y="740" width="660" height="72" rx="36" fill="#f3ead6"/><text x="1325" y="791" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="760">लंबाई + Girth = 3 m</text></g>
+  <g id="charge">
+    <rect x="140" y="830" width="1640" height="130" rx="28" fill="#f3ead6"/>
+    <text x="195" y="915" fill="#9e1b1b" font-size="52" font-weight="820">Charge</text>
+    <path d="M421 857v75" stroke="#d6c9ae" stroke-width="3"/>
+    <text id="methods" x="475" y="910" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="680">gross और volumetric में</text>
+    <g id="higher"><rect id="higher-marker" x="1090" y="857" width="210" height="73" rx="28" fill="#fde9a6"/><text x="1195" y="910" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="790">जो ज़्यादा</text></g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [1.10,'stamp','#weight',{from:1.08,rot:0}],
+    [3.10,'draw','#len',{dur:0.56}],
+    [3.98,'pop','#length',{from:0.93}],
+    [5.50,'draw','#girth-loop',{dur:0.60}],
+    [6.66,'pop','#girth-limit',{from:0.94}],
+    [7.82,'reveal','#charge',{from:'left',dur:0.42}],
+    [8.84,'words','#methods',{gap:0.33,dist:10}],
+    [11.24,'fade','#higher',{dur:0.20}],
+    [11.48,'reveal','#higher-marker',{from:'left',dur:0.34}]
+  ]
+}
+</script>
+</section>
