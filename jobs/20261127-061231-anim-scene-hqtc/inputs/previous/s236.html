@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s236" data-in="cut" data-section="PART 11 · EMS" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="customs-rule">
+ <rect x="140" y="180" width="720" height="260" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <text id="customs-en" x="191" y="295" font-size="54" font-weight="810" fill="#2b2622">Customs declaration</text>
+ <text id="customs-hi" class="hi" x="195" y="365" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#6f6a63">सीमा-शुल्क घोषणा</text>
+ <g id="sdr-stamp">
+  <rect x="920" y="180" width="860" height="260" rx="24" fill="#9e1b1b"/>
+  <rect x="920" y="180" width="860" height="260" rx="24" fill="none" stroke="#fbf7ee" stroke-width="15" stroke-dasharray="0 23" stroke-linecap="round"/>
+  <rect x="951" y="209" width="798" height="202" rx="14" fill="none" stroke="#b8403a" stroke-width="3"/>
+  <text x="985" y="349" font-size="112" font-weight="850" fill="#fff">SDR</text>
+  <text id="sdr-full" x="1270" y="294" font-size="42" font-weight="740" fill="#fff">Special Drawing Right</text>
+  <text id="sdr-hi" class="hi" x="1272" y="356" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="700" fill="#fde9a6">विशेष आहरण अधिकार</text>
+ </g>
+ <text id="declared" class="hi" x="960" y="538" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="750" fill="#2b2622">Declared value · घोषित मूल्य</text>
+ <path id="value-line" d="M200 600H1720" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round"/>
+ <g id="threshold">
+  <path d="M960 577V625" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+  <text id="threshold-label" x="960" y="686" text-anchor="middle" font-size="49" font-weight="820" fill="#9e1b1b">300 SDR</text>
+ </g>
+ <text id="up-to" class="hi" x="480" y="676" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#2b2622">300 SDR तक</text>
+ <g id="tag-22">
+  <use href="piece:declaration-tag" transform="translate(336 716) scale(.9)"/>
+  <text x="480" y="753" text-anchor="middle" font-size="35" font-weight="820" fill="#fff">CN 22</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [0.18,'pop','#customs-en',{spring:'soft'}],
+  [0.68,'fade','#customs-hi',{dur:0.28}],
+  [1.76,'pop','#sdr-stamp',{spring:'soft'}],
+  [3.58,'words','#sdr-full',{gap:0.70,dist:13,spring:'soft'}],
+  [4.08,'fade','#sdr-hi',{dur:0.33}],
+  [5.80,'draw','#value-line',{dur:0.72}],
+  [5.80,'fade','#declared',{dur:0.29}],
+  [6.64,'pop','#threshold',{spring:'soft'}],
+  [8.30,'fade','#up-to',{dur:0.25}],
+  [9.16,'pop','#tag-22',{spring:'soft'}],
+ ]
+}
+</script>
+</section>
