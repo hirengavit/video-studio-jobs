@@ -1,0 +1,62 @@
+<section class="vs-scene" id="mind-map" data-in="fade" data-in-dur="0.4" data-section="डाक उत्पाद">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <path id="ln1" d="M960 590 L680 410" stroke="#ead9a8" stroke-width="6" stroke-linecap="round"/>
+    <path id="ln2" d="M960 590 L1240 410" stroke="#ead9a8" stroke-width="6" stroke-linecap="round"/>
+    <path id="ln3" d="M960 590 L680 760" stroke="#ead9a8" stroke-width="6" stroke-linecap="round"/>
+    <path id="ln4" d="M960 590 L1240 760" stroke="#ead9a8" stroke-width="6" stroke-linecap="round"/>
+    <g id="core">
+      <circle cx="960" cy="590" r="175" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+      <circle cx="960" cy="590" r="175" fill="none" stroke="#fbf7ee" stroke-width="12" stroke-dasharray="0 24" stroke-linecap="round"/>
+      <text x="960" y="560" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" font-weight="800" fill="#ffffff">Post Office</text>
+      <text x="960" y="612" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="700" fill="#fde9a6">डाकघर</text>
+      <rect x="920" y="636" width="80" height="5" rx="2.5" fill="#f2b705"/>
+      <text x="960" y="692" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="700" fill="#ffffff">चार सेवाएँ</text>
+    </g>
+    <g class="br" id="b1">
+      <rect x="160" y="226" width="520" height="210" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="192" y="262" width="8" height="42" rx="4" fill="#9e1b1b"/>
+      <text x="220" y="298" font-family="Inter, sans-serif" font-size="42" font-weight="800" fill="#2b2622">Mail &amp; Parcels</text>
+      <text x="220" y="348" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">डाक और पार्सल</text>
+      <text x="220" y="404" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="500" fill="#2b2622">चिट्ठी, Speed Post, पार्सल</text>
+    </g>
+    <g class="br" id="b2">
+      <rect x="1240" y="226" width="520" height="210" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="1272" y="262" width="8" height="42" rx="4" fill="#9e1b1b"/>
+      <text x="1300" y="298" font-family="Inter, sans-serif" font-size="42" font-weight="800" fill="#2b2622">POSB</text>
+      <text x="1300" y="348" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">डाकघर बचत बैंक</text>
+      <text x="1300" y="404" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="500" fill="#2b2622">SB, RD, TD, MIS, PPF खाते</text>
+    </g>
+    <g class="br" id="b3">
+      <rect x="160" y="724" width="520" height="210" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="192" y="760" width="8" height="42" rx="4" fill="#9e1b1b"/>
+      <text x="220" y="796" font-family="Inter, sans-serif" font-size="42" font-weight="800" fill="#2b2622">PLI / RPLI</text>
+      <text x="220" y="846" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">डाक जीवन बीमा</text>
+      <text x="220" y="902" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="500" fill="#2b2622">1884 से जीवन बीमा</text>
+    </g>
+    <g class="br" id="b4">
+      <rect x="1240" y="724" width="520" height="210" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <rect x="1272" y="760" width="8" height="42" rx="4" fill="#9e1b1b"/>
+      <text x="1300" y="796" font-family="Inter, sans-serif" font-size="42" font-weight="800" fill="#2b2622">IPPB</text>
+      <text x="1300" y="846" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="600" fill="#6f6a63">इंडिया पोस्ट पेमेंट्स बैंक</text>
+      <text x="1300" y="902" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="500" fill="#2b2622">पेमेंट्स बैंक, 2018 से</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1.05}], [1.0, {zoom: 1.05}], [5.0, {zoom: 1.0}, 'inOut']],
+    on: [
+      [0.05, 'pop', '#core', {from: 0.5, spring: 'soft'}],
+      [1.1, 'draw', '#ln1', {dur: 0.4}],
+      [1.4, 'pop', '#b1', {from: 0.6, spring: 'soft'}],
+      [2.2, 'draw', '#ln2', {dur: 0.4}],
+      [2.5, 'pop', '#b2', {from: 0.6, spring: 'soft'}],
+      [3.3, 'draw', '#ln3', {dur: 0.4}],
+      [3.6, 'pop', '#b3', {from: 0.6, spring: 'soft'}],
+      [4.4, 'draw', '#ln4', {dur: 0.4}],
+      [4.7, 'pop', '#b4', {from: 0.6, spring: 'soft'}],
+      [5.6, 'pulse', '#core', {amount: 0.05}],
+    ],
+  }
+  </script>
+</section>

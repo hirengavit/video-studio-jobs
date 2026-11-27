@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <rect id="paper" x="26" y="92" width="348" height="216" fill="#ffffff" rx="7"/>
+  <g id="embossed-stamp">
+    <circle cx="316" cy="145" r="33" fill="#fbf7ee" stroke="#ead9a8"/>
+    <circle cx="316" cy="145" r="27" stroke="#aaa39a" stroke-width="1.5"/>
+  </g>
+  <path id="address-rules" d="M167 219h162m-162 14h149m-149 14h135" stroke="#aaa39a" stroke-width="2.5"/>
+  <circle data-anchor="base" cx="200" cy="308" r="0"/>
+  <circle data-anchor="top" cx="200" cy="92" r="0"/>
+</svg>
