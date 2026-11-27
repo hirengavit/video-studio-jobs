@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 420" width="220" height="420">
+ <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path id="pillar" d="M39 86h142v293H39z" fill="#9e1b1b"/>
+  <path id="cap" d="M25 85h170q-2-67-85-67T25 85z" fill="#9e1b1b"/>
+  <rect x="25" y="79" width="170" height="15" rx="5" fill="#7d1414"/>
+  <rect id="service-door" x="53" y="161" width="114" height="199" rx="10" fill="#b8403a"/>
+  <rect id="slot" x="57" y="112" width="106" height="23" rx="6" fill="#2b2622"/>
+  <rect id="plate" x="62" y="176" width="96" height="47" rx="5" fill="#f3ead6"/>
+  <path d="M72 338h76" fill="none" stroke="#7d1414"/>
+  <path id="foot" d="M39 370h142l14 15v17H25v-17z" fill="#6f6a63"/>
+  <path d="M29 387h162" fill="none"/>
+ </g>
+ <circle data-anchor="base" cx="110" cy="402" r="0"/>
+ <circle data-anchor="mouth" cx="110" cy="123.5" r="0"/>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <rect id="frank-paper" x="4" y="4" width="512" height="292" rx="10" fill="#ffffff" stroke="#2456a6" stroke-width="3"/>
+  <rect id="value-box" x="28" y="26" width="272" height="96" rx="6" fill="#ffffff" stroke="#2456a6" stroke-width="3"/>
+  <g id="date-line"><rect x="28" y="152" width="8" height="8" rx="1.5" fill="#2456a6"/><path d="M46 160H300" stroke="#2456a6" stroke-width="3"/></g>
+  <g id="pin-line"><rect x="28" y="190" width="8" height="8" rx="1.5" fill="#2456a6"/><path d="M46 198H300" stroke="#2456a6" stroke-width="3"/></g>
+  <g id="id-line"><rect x="28" y="228" width="8" height="8" rx="1.5" fill="#2456a6"/><path d="M46 236H300" stroke="#2456a6" stroke-width="3"/></g>
+  <g id="crn-line"><rect x="28" y="264" width="8" height="8" rx="1.5" fill="#2456a6"/><path d="M46 272H300" stroke="#2456a6" stroke-width="3"/></g>
+  <g id="barcode" fill="#2456a6">
+    <path d="M334 72h13v13h-13zM360 72h13v13h-13zM386 72h13v13h-13zM412 72h13v13h-13zM438 72h13v13h-13zM464 72h13v13h-13z"/>
+    <path d="M334 85h13v13h-13zM360 85h26v13h-26zM399 85h13v13h-13zM438 85h13v13h-13zM464 85h26v13h-26z"/>
+    <path d="M334 98h39v13h-39zM386 98h13v13h-13zM425 98h26v13h-26z"/>
+    <path d="M334 111h13v13h-13zM373 111h39v13h-39zM425 111h13v13h-13zM451 111h39v13h-39z"/>
+    <path d="M334 124h26v13h-26zM373 124h13v13h-13zM412 124h13v13h-13zM438 124h26v13h-26z"/>
+    <path d="M334 137h13v13h-13zM360 137h39v13h-39zM425 137h13v13h-13zM464 137h26v13h-26z"/>
+    <path d="M334 150h39v13h-39zM399 150h26v13h-26zM438 150h13v13h-13z"/>
+    <path d="M334 163h13v13h-13zM373 163h13v13h-13zM399 163h39v13h-39zM451 163h39v13h-39z"/>
+    <path d="M334 176h26v13h-26zM373 176h26v13h-26zM438 176h26v13h-26z"/>
+    <path d="M334 189h13v13h-13zM360 189h13v13h-13zM399 189h39v13h-39zM464 189h26v13h-26z"/>
+    <path d="M334 202h52v13h-52zM412 202h13v13h-13zM438 202h26v13h-26z"/>
+    <path d="M334 215h156v13h-156z"/>
+  </g>
+  <circle data-anchor="base" cx="260" cy="296" r="0"/>
+</svg>
