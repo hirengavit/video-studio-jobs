@@ -68,7 +68,8 @@
   update(t,sec,$){
     if(t>=1.04){
       const definition=$('#fm-def-2')[0],mark=$('#fm-rule-highlight')[0];
-      if(!definition||!mark||t<6.28)return;
+      if(!definition||!mark)return;
+      if(t<6.28){mark.setAttribute('width',0);return;}
       const words='लागू शर्तों', first=definition.textContent.indexOf(words);
       if(first<0)return;
       let left=Infinity,right=-Infinity;
