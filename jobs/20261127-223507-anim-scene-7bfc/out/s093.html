@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s093" data-section="PART 3 · AADHAAR FEES" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+<g id="charge">
+ <text id="charge-title" x="140" y="215" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="820" fill="#9e1b1b">Home service charge · घर पर सेवा शुल्क</text>
+ <rect id="charge-first-frame" x="140" y="340" width="1640" height="220" rx="26" fill="none" stroke="#ead9a8" stroke-width="3"/>
+ <rect id="charge-next-frame" x="140" y="600" width="1640" height="220" rx="26" fill="none" stroke="#ead9a8" stroke-width="3"/>
+ <g id="charge-first">
+  <rect x="140" y="340" width="1640" height="220" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <g id="first-person-icon" stroke="#2b2622" stroke-width="5" fill="#f3ead6"><circle cx="258" cy="418" r="29"/><path d="M194 510q8-58 64-58t64 58Z" stroke-linejoin="round"/></g>
+  <text id="first-person-label" x="366" y="475" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="750" fill="#2b2622">पहला व्यक्ति</text>
+  <text id="first-charge" x="1400" y="486" font-family="Inter, sans-serif" font-size="96" font-weight="810" fill="#9e1b1b">₹700</text>
+ </g>
+ <g id="charge-next">
+  <rect x="140" y="600" width="1640" height="220" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <g id="next-person-icon" stroke="#2b2622" stroke-width="5" fill="#f3ead6" stroke-linejoin="round"><circle cx="230" cy="680" r="25"/><circle cx="285" cy="688" r="22"/><path d="M176 764q6-51 54-51t54 51ZM250 764q5-45 39-45t43 45Z"/></g>
+  <text id="next-person-line1" x="366" y="699" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#2b2622">उसी Aadhaar address पर</text>
+  <text id="next-person-line2" x="368" y="761" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">हर अगला व्यक्ति</text>
+  <text id="next-charge" x="1400" y="746" font-family="Inter, sans-serif" font-size="96" font-weight="810" fill="#9e1b1b">₹350</text>
+ </g>
+
+ <g id="gst-chip">
+  <rect x="1026" y="402" width="300" height="82" rx="24" fill="#fde9a6"/>
+  <text x="1176" y="455" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="760" fill="#795000">GST शामिल</text>
+ </g>
+ <g id="normal-fee">
+  <rect x="140" y="864" width="1100" height="107" rx="24" fill="#f3ead6"/>
+  <text id="normal-fee-text" x="178" y="934" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="730" fill="#2b2622">+ normal demographic या biometric fee</text>
+ </g>
+ <g id="tax-receipt">
+  <use href="piece:invoice-sheet" transform="translate(1543 919) scale(.38)"/>
+  <text id="tax-receipt-text" x="1260" y="1002" font-family="Inter, sans-serif" font-size="44" font-weight="790" fill="#2b2622">Tax invoice</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ on:[
+  [.86,'pop','#gst-chip',{from:.94,spring:'soft'}],
+  [2.90,'fade','#normal-fee',{dur:.28}],
+  [6.90,'highlight','#normal-fee-text',{words:'+ normal',color:'#f2b705',opacity:.35,pad:5,dur:.31}],
+  [9.42,'pop','#tax-receipt',{from:.95,spring:'soft'}],
+  [11.48,'type','#tax-receipt-text',{cps:20}]
+ ]
+})
+</script>
+</section>
