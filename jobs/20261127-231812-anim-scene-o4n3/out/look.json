@@ -8,12 +8,5 @@
   "9.07"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s210",
-   "text": "14 Oct 2026 / Navrangpura HPO,",
-   "t": 3.69
-  }
- ]
+ "warnings": []
 }
