@@ -1,0 +1,80 @@
+<section class="vs-scene" id="s230" data-section="RETAIL &amp; CITIZEN SERVICES" data-series="PRODUCTS" data-in="fade" data-in-dur="0.40">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <use href="set:citizen-counter" layer="back"/>
+ <g id="counter-letterbox">
+  <g transform="rotate(1.5 1450 752)">
+   <image href="photo:india-post-letter-box-cutout" x="1387" y="393" width="126" height="357" preserveAspectRatio="xMidYMid meet" filter="url(#vs-cutout)"/>
+  </g>
+  <g text-anchor="middle" fill="#6f6a63">
+   <text x="1460" y="360" font-size="28" font-weight="700">India Post letter box</text>
+   <text x="1460" y="387" font-size="20" font-weight="520">Suyash.dwivedi · CC BY-SA 4.0</text>
+  </g>
+ </g>
+ <text id="sign-t" x="960" y="263" fill="#fff" font-weight="800" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="middle" font-size="52">सही service</text>
+ <text id="close-1" x="960" y="480" fill="#2b2622" font-weight="700" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="middle" font-size="52">उसके counter से कोई</text>
+ <text id="close-2" x="960" y="570" fill="#2b2622" font-weight="740" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="middle" font-size="52">ख़ाली हाथ नहीं लौटता।</text>
+ <use href="set:citizen-counter" layer="front"/>
+ <g id="tiles">
+  <g id="tile-1">
+   <rect x="438" y="772" width="84" height="78" rx="8" fill="#fff" stroke="#b0a189" stroke-width="2.5" stroke-dasharray="1 5" stroke-linecap="round"/>
+   <use href="piece:invoice-calendar-icon" transform="translate(444.80 775.80) scale(0.176)"/>
+  </g>
+  <g id="tile-2">
+   <rect x="558" y="772" width="84" height="78" rx="8" fill="#fff" stroke="#b0a189" stroke-width="2.5" stroke-dasharray="1 5" stroke-linecap="round"/>
+   <use href="piece:id-card-icon" transform="translate(561.60 772.60) scale(0.192)"/>
+  </g>
+  <g id="tile-3">
+   <rect x="678" y="772" width="84" height="78" rx="8" fill="#fff" stroke="#b0a189" stroke-width="2.5" stroke-dasharray="1 5" stroke-linecap="round"/>
+   <use href="piece:id-card-icon" transform="translate(681.60 772.60) scale(0.192)"/>
+  </g>
+  <g id="tile-4">
+   <rect x="798" y="772" width="84" height="78" rx="8" fill="#fff" stroke="#b0a189" stroke-width="2.5" stroke-dasharray="1 5" stroke-linecap="round"/>
+   <use href="piece:passport-icon" transform="translate(819.21 782.65) scale(0.189)"/>
+  </g>
+  <g id="tile-5">
+   <rect x="918" y="772" width="84" height="78" rx="8" fill="#fff" stroke="#b0a189" stroke-width="2.5" stroke-dasharray="1 5" stroke-linecap="round"/>
+   <use href="piece:system-screen-icon" transform="translate(925.00 776.00) scale(0.175)"/>
+  </g>
+  <g id="tile-6">
+   <rect x="1038" y="772" width="84" height="78" rx="8" fill="#fff" stroke="#b0a189" stroke-width="2.5" stroke-dasharray="1 5" stroke-linecap="round"/>
+   <use href="piece:pensioner-phone-icon" transform="translate(1047.00 778.00) scale(0.165)"/>
+  </g>
+  <g id="tile-7">
+   <rect x="1158" y="772" width="84" height="78" rx="8" fill="#fff" stroke="#b0a189" stroke-width="2.5" stroke-dasharray="1 5" stroke-linecap="round"/>
+   <use href="piece:gangajal-bottle" transform="translate(1153.00 784.00) scale(0.135)"/>
+   <use href="piece:temple-bell-parcel" transform="translate(1190.60 786.60) scale(0.122)"/>
+  </g>
+  <g id="tile-8">
+   <rect x="1278" y="772" width="84" height="78" rx="8" fill="#fff" stroke="#b0a189" stroke-width="2.5" stroke-dasharray="1 5" stroke-linecap="round"/>
+   <use href="piece:globe-parcel" transform="translate(1284.40 775.40) scale(0.178)"/>
+  </g>
+  <g id="tile-9">
+   <rect x="1398" y="772" width="84" height="78" rx="8" fill="#fff" stroke="#b0a189" stroke-width="2.5" stroke-dasharray="1 5" stroke-linecap="round"/>
+   <use href="piece:mobile-post-van" transform="translate(1405.76 791.74) scale(0.107)"/>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ set:'citizen-counter',
+ camera:[[0,'wide'],[.20,'wide'],[8.20,{zoom:1.08,x:0,y:-20},'inOut']],
+ on:[
+  [0,'fade','#counter-letterbox',{dur:.45}],
+  [1.52,'pop','#tile-1',{from:.85,spring:'soft'}],
+  [1.62,'pop','#tile-2',{from:.85,spring:'soft'}],
+  [1.72,'pop','#tile-3',{from:.85,spring:'soft'}],
+  [1.82,'pop','#tile-4',{from:.85,spring:'soft'}],
+  [1.92,'pop','#tile-5',{from:.85,spring:'soft'}],
+  [2.02,'pop','#tile-6',{from:.85,spring:'soft'}],
+  [2.12,'pop','#tile-7',{from:.85,spring:'soft'}],
+  [2.22,'pop','#tile-8',{from:.85,spring:'soft'}],
+  [2.32,'pop','#tile-9',{from:.85,spring:'soft'}],
+  [2.20,'type','#sign-t',{cps:15}],
+  [4.50,'type','#close-1',{cps:18}],
+  [5.62,'type','#close-2',{cps:11}],
+  [7.64,'underline','#close-2',{words:'ख़ाली हाथ नहीं',color:'#f2b705',width:6,dur:.40,gap:8}]
+ ]
+}
+</script>
+</section>
