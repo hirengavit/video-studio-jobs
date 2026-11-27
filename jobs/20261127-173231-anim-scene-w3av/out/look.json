@@ -8,12 +8,5 @@
   "9.33"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s158",
-   "text": "दो खास व्यवस्थाएँ / : free",
-   "t": 3.79
-  }
- ]
+ "warnings": []
 }
