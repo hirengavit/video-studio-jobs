@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360">
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect id="card" x="4" y="4" width="592" height="352" rx="6" fill="#cfdbe3"/>
+<g id="fold">
+<path d="M4 124 L596 124" fill="none" stroke-width="2" stroke-dasharray="10 8"/>
+<path d="M4 124 L22 110 L22 138 Z" fill="#b6c6d1" stroke-width="2"/>
+<path d="M596 124 L578 110 L578 138 Z" fill="#b6c6d1" stroke-width="2"/>
+</g>
+<g id="address-rules" fill="none" stroke-width="2.5">
+<path d="M300 210 L562 210 M300 256 L562 256 M300 302 L562 302"/>
+</g>
+<rect id="stamp-square" x="484" y="20" width="80" height="90" rx="3" fill="none" stroke-dasharray="8 7"/>
+</g>
+<circle data-anchor="base" cx="300" cy="356" r="0"/>
+<circle data-anchor="top" cx="300" cy="4" r="0"/>
+<circle data-anchor="stamp" cx="524" cy="65" r="0"/>
+</svg>
