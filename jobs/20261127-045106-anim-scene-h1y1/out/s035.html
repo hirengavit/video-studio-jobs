@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s035" data-in="cut" data-section="PART 2 · WEIGHT AND SIZE" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="dimension-art" transform="translate(120 250) scale(1.375)">
+<g fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path id="box" d="M110 134 285 64 474 131 295 205Z M110 134V246L295 317 474 244V131 M295 205V317"/>
+  <path id="len" d="M104 273 282 344 M104 273l9 14m-9-14 16-2 M282 344l-10-15m10 15-18 2"/>
+  <path id="wid" d="M316 344 491 271 M316 344l11-15m-11 15 19 2 M491 271l-17-2m17 2-10 15"/>
+  <path id="ht" d="M523 126v116m0-116-8 13m8-13 8 13m-8 103-8-13m8 13 8-13"/>
+</g>
+<path id="girth-loop" d="M205 168 373 99Q382 95 382 106V199Q382 208 373 212L212 278Q202 282 202 272V177Q202 171 205 168Z" fill="none" stroke="#f2b705" stroke-width="4.363636" stroke-dasharray="8 8" stroke-linecap="round"/>
+</g>
+<g font-family="Inter, sans-serif" text-anchor="middle" fill="#2b2622">
+<text id="label-len" x="385" y="788" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="730" fill="#2b2622">100 cm</text>
+<text id="label-wid" x="691" y="788" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="730" fill="#2b2622">40 cm</text>
+<text id="label-ht" x="935" y="515" text-anchor="middle" font-family="Inter, sans-serif" font-size="49" font-weight="730" fill="#2b2622">30 cm</text>
+</g>
+<g id="working-card">
+<rect x="1060" y="220" width="740" height="740" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<text x="1124" y="292" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="51" font-weight="800" fill="#9e1b1b">Girth का हिसाब</text>
+<path d="M1124 320h612 M1124 486h612 M1124 650h612" fill="none" stroke="#ead9a8" stroke-width="2"/>
+<text id="width-tag" x="1124" y="452" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="610" fill="#6f6a63">चौड़ाई + मोटाई</text>
+<text id="calc-first" x="1124" y="403" font-family="Georgia, serif" font-size="63" font-weight="700" fill="#2b2622">40 + 30</text>
+<text id="calc-first-result" x="1366" y="403" font-family="Georgia, serif" font-size="63" font-weight="700" fill="#2b2622">= 70 cm</text>
+<text id="calc-double" x="1124" y="563" font-family="Georgia, serif" font-size="56" font-weight="700" fill="#2b2622">Girth = 2 × 70</text>
+<text id="calc-double-result" x="1500" y="563" font-family="Georgia, serif" font-size="56" font-weight="700" fill="#2b2622">= 140 cm</text>
+<text id="double-tag" x="1124" y="616" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="610" fill="#6f6a63">दो गुना</text>
+<text id="calc-length" x="1124" y="723" font-family="Georgia, serif" font-size="56" font-weight="700" fill="#2b2622">100 + 140</text>
+<rect id="length-result-mark" x="1462" y="664" width="184" height="80" rx="4" fill="#f2b705" fill-opacity="0.40"/>
+<text id="calc-length-result" x="1420" y="723" font-family="Georgia, serif" font-size="56" font-weight="700" fill="#2b2622">= 240 cm</text>
+<text id="length-tag" x="1124" y="776" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="42" font-weight="610" fill="#6f6a63">लंबाई + Girth</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.00, 'type', '#calc-first-result', {cps: 17}],
+    [1.57, 'draw', '#girth-loop', {dur: 0.57}],
+    [2.19, 'type', '#calc-double', {cps: 21}],
+    [2.19, 'fade', '#double-tag', {dur: 0.28}],
+    [4.95, 'type', '#calc-double-result', {cps: 18}],
+    [6.71, 'fade', '#length-tag', {dur: 0.27}],
+    [8.06, 'type', '#calc-length', {cps: 14}],
+    [11.10, 'type', '#calc-length-result', {cps: 18}],
+    [11.81, 'reveal', '#length-result-mark', {from: 'left', dur: 0.30}]
+  ],
+  update(t, section, $) {
+    if (t >= 2.14) {
+      const loop = $('#girth-loop')[0];
+      if (loop) { loop.style.strokeDasharray = '8 8'; loop.style.strokeDashoffset = '0'; }
+    }
+  }
+}
+</script>
+</section>
