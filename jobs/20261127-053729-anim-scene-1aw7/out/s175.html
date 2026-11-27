@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s175" data-in="cut" data-section="PART 8 · 24 AND 48 SPEED POST" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="parcel-title">
+      <rect x="120" y="190" width="120" height="90" rx="26" fill="#9e1b1b"/>
+      <text x="180" y="255" text-anchor="middle" font-family="Inter, sans-serif" font-size="58" font-weight="850" fill="#fff">24</text>
+      <text x="270" y="235" font-family="Inter, sans-serif" font-size="56" font-weight="780" fill="#2b2622">24 Speed Post Parcel</text>
+      <text x="270" y="288" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="620" fill="#6f6a63">24 स्पीड पोस्ट पार्सल</text>
+    </g>
+  <g id="limit">
+    <use href="piece:key-fact-stamp" transform="translate(132 413) scale(1.1)"/>
+    <text x="440" y="606" text-anchor="middle" fill="#ffffff" font-size="140" font-weight="820">5 kg</text>
+    <text x="440" y="694" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650">24 Speed Post Parcel की सीमा</text>
+  </g>
+  <g id="tariff">
+    <rect id="tariff-bg" x="900" y="200" width="900" height="200" rx="32" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="960" y="311" fill="#9e1b1b" font-size="56" font-weight="750">Premium tariff</text>
+    <text x="960" y="377" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="620">प्रीमियम शुल्क</text>
+    <g id="gst">
+      <rect x="1470" y="248" width="270" height="76" rx="38" fill="#f3ead6"/>
+      <text x="1605" y="299" text-anchor="middle" fill="#4b4f58" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="720">GST अलग</text>
+    </g>
+    <text id="documents" x="960" y="440" fill="#2b2622" font-size="40" font-weight="750">Premium documents</text>
+    <g id="retail">
+      <rect x="960" y="470" width="780" height="200" rx="26" fill="#f3ead6"/>
+      <text x="1010" y="552" fill="#2b2622" font-size="50" font-weight="760">Retail</text>
+      <text x="1010" y="619" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="640">रिटेल ग्राहक</text>
+    </g>
+    <g id="bulk">
+      <rect x="960" y="700" width="780" height="200" rx="26" fill="#f3ead6"/>
+      <text x="1010" y="782" fill="#2b2622" font-size="50" font-weight="760">Contractual bulk</text>
+      <text x="1010" y="849" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="640">अनुबंध वाले bulk ग्राहक</text>
+    </g>
+    <path id="bracket" d="M1516 568h27q15 0 15 15v84q0 18 15 18h12m-12 0q-15 0-15 18v84q0 15-15 15h-27" fill="none" stroke="#f2b705" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="separate">
+      <rect x="1600" y="651" width="121" height="68" rx="22" fill="#fde9a6"/>
+      <text x="1660" y="703" text-anchor="middle" fill="#8a5d00" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740">अलग</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on:[
+    [1.06,'stamp','#limit',{from:1.09,rot:0}],
+    [2.65,'fade','#tariff',{dur:0.26}],
+    [3.75,'pop','#gst',{from:0.94}],
+    [7.00,'fade','#documents',{dur:0.22}],
+    [7.01,'pop','#retail',{from:0.97}],
+    [7.99,'pop','#bulk',{from:0.97}],
+    [9.55,'draw','#bracket',{dur:0.34}],
+    [9.55,'fade','#separate',{dur:0.22}]
+  ],
+  update(t, section, $) {
+    const progress = Math.max(0, Math.min(1,(t-6.90)/0.24));
+    const eased = 1-(1-progress)*(1-progress)*(1-progress);
+    $('#tariff-bg')[0].setAttribute('height',200+540*eased);
+  }
+}
+</script>
+</section>
