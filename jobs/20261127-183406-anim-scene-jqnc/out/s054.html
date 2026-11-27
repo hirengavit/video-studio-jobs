@@ -73,9 +73,13 @@
  </g>
  <g id="idcard-small"><use href="piece:id-card-icon" transform="translate(276 650) scale(0.6)"/></g>
  <g id="row2" font-size="52" font-weight="740" fill="#2b2622">
-  <text id="row2-prefix" x="533" y="793" font-family="'Noto Sans Devanagari', Inter, sans-serif">मौजूदा</text>
-  <text id="row2-mark" x="719" y="793" font-family="Inter, sans-serif">Aadhaar number</text>
-  <text id="row2-tail" x="1200" y="793" font-family="'Noto Sans Devanagari', Inter, sans-serif">देता है</text>
+  <rect id="row2-mark" x="713" y="740" width="440" height="69" rx="4" fill="#f2b705" opacity="0.38"/>
+  <text y="793" font-family="'Noto Sans Devanagari', Inter, sans-serif"><tspan x="533">मौजूदा </tspan><tspan x="719" font-family="Inter, sans-serif">Aadhaar number </tspan><tspan x="1200">देता है</tspan></text>
+  <g fill="#fff">
+   <rect id="row2-existing-mask" x="524" y="727" width="178" height="90"/>
+   <rect id="row2-number-mask" x="707" y="727" width="475" height="90"/>
+   <rect id="row2-tail-mask" x="1193" y="727" width="215" height="90"/>
+  </g>
  </g>
 </g>
 </svg>
@@ -87,10 +91,10 @@
 [4.04,"type","#row1-mark",{cps:18}],
 [4.92,"highlight","#row1-mark",{color:"#f2b705",opacity:0.38,dur:0.31,pad:5}],
 [6.14,"pop","#idcard-small",{from:0.96,spring:"soft"}],
-[6.42,"type","#row2-prefix",{cps:18}],
-[6.96,"type","#row2-mark",{cps:26}],
-[7.48,"highlight","#row2-mark",{color:"#f2b705",opacity:0.38,dur:0.31,pad:5}],
-[7.86,"type","#row2-tail",{cps:22}]
+[6.42,"out","#row2-existing-mask",{dur:0.22,scale:false}],
+[6.96,"out","#row2-number-mask",{dur:0.25,scale:false}],
+[7.48,"reveal","#row2-mark",{from:"left",dur:0.31}],
+[7.86,"out","#row2-tail-mask",{dur:0.22,scale:false}]
 ]}
 </script>
 </section>
