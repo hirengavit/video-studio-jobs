@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s156" data-section="PART 6 · JEEVAN PRAMAAN" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <g id="trap">
+    <g id="flag">
+      <rect x="120" y="170" width="1680" height="150" rx="28" fill="#9e1b1b"/>
+      <path d="M196 282L237 205L278 282Z" fill="#f2b705" stroke="#f2b705" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M237 230V252" fill="none" stroke="#7d1414" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="237" cy="268" r="5" fill="#7d1414"/>
+      <text id="kicker" x="320" y="267" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="800" fill="#fffdf8">EXAM TRAP · परीक्षा का जाल</text>
+    </g>
+    <g id="myth">
+      <rect x="120" y="360" width="1680" height="240" rx="28" fill="#ffffff" stroke="#d9cdb8" stroke-width="3"/>
+      <rect x="174" y="422" width="9" height="116" rx="4.5" fill="#4b4f58"/>
+      <text id="myth-t" x="222" y="507" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="780" fill="#2b2622">Pramaan ID: ज़िंदगी भर valid</text>
+      <path id="myth-strike" d="M218 483H1047" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+      <g id="myth-cross" fill="none" stroke="#4b4f58" stroke-linecap="round">
+        <circle cx="1705" cy="480" r="47" stroke-width="4"/>
+        <path d="M1687 462l36 36m0-36-36 36" stroke-width="8"/>
+      </g>
+    </g>
+    <g id="fact">
+      <rect x="120" y="640" width="1680" height="340" rx="28" fill="#f3ead6" stroke="#dacaa8" stroke-width="3"/>
+      <rect x="174" y="685" width="9" height="154" rx="4.5" fill="#9e1b1b"/>
+      <text id="fact-1" x="222" y="742" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="780" fill="#9e1b1b">Certificate की validity</text>
+      <rect id="authority-hl" x="864" y="771" width="426" height="63" rx="12" fill="#fde9a6"/>
+      <text id="fact-2" x="222" y="819" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#2b2622">pension sanction करने वाली</text>
+      <text id="authority-text" x="879" y="819" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#2b2622">authority के नियम</text>
+      <g font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740" fill="#2b2622">
+        <text id="f3a" x="222" y="900">Validity ख़त्म →</text>
+        <text id="f3b" x="583" y="900">नया certificate</text>
+        <text id="f3c" x="934" y="900">+ नई Pramaan ID</text>
+      </g>
+    </g>
+  </g>
+  <g id="charges" font-family="'Noto Sans Devanagari', Inter, sans-serif">
+    <text x="120" y="211" font-size="64" font-weight="800" fill="#2b2622">DLC charges</text>
+    <text x="591" y="210" font-size="40" font-weight="720" fill="#4b4f58">शुल्क</text>
+    <rect x="120" y="260" width="1680" height="730" rx="28" fill="#fff" stroke="#d9cdb8" stroke-width="3"/>
+    <path d="M153 487H1767 M153 767H1767" fill="none" stroke="#e6d9bd" stroke-width="4"/>
+    <text id="r1-lab" x="184" y="381" font-size="48" font-weight="800" fill="#2b2622">IPPB normal</text>
+    <g id="r1-fee">
+      <rect x="560" y="292" width="240" height="121" rx="13" fill="#9e1b1b"/>
+      <rect x="567" y="299" width="226" height="107" rx="8" fill="none" stroke="#fffdf8" stroke-width="3" stroke-dasharray="1 8" stroke-linecap="round"/>
+      <text x="680" y="382" text-anchor="middle" font-size="80" font-weight="820" fill="#fffdf8">₹70</text>
+    </g>
+    <text id="r1-per" x="680" y="459" text-anchor="middle" font-size="40" font-weight="740" fill="#2b2622">हर सफल DLC पर</text>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  camera:[[0,{zoom:1}]],
+  shots:[[0,'#trap'],[6.45,'#charges']],
+  on:[
+    [1.04,'fade','#f3a',{dur:.24}],
+    [2.58,'fade','#f3b',{dur:.24}],
+    [4.30,'fade','#f3c',{dur:.25}],
+    [7.77,'type','#r1-lab',{cps:11}],
+    [10.33,'fade','#r1-per',{dur:.22}],
+    [11.59,'stamp','#r1-fee',{from:1.14,rot:-3,spring:'soft'}]
+  ]
+})
+</script>
+</section>
