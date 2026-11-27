@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" height="520">
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="cover">
+<rect x="18" y="40" width="864" height="462" rx="10" fill="#9e1b1b"/>
+</g>
+<g id="cover-tag">
+<path d="M66 40 L66 10 Q66 4 72 4 L218 4 Q224 4 224 10 L224 40" fill="#ffffff"/>
+<circle cx="82" cy="20" r="5" fill="#f3ead6"/>
+</g>
+<g id="left-page">
+<path d="M40 58 Q240 48 444 66 L444 488 Q240 470 40 480 Z" fill="#fffaf0"/>
+</g>
+<g id="right-page">
+<path d="M456 66 Q660 48 860 58 L860 480 Q660 470 456 488 Z" fill="#fffaf0"/>
+</g>
+<g id="spine">
+<rect x="440" y="44" width="20" height="456" rx="4" fill="#7d1414"/>
+</g>
+<g id="column-heads">
+<rect x="62" y="80" width="362" height="52" rx="3" fill="#f3ead6" stroke-width="2"/>
+<path d="M142 80 L142 132 M244 80 L244 132 M334 80 L334 132" fill="none" stroke-width="2"/>
+</g>
+<g id="columns" fill="none" stroke="#b9b2a6" stroke-width="2">
+<path d="M142 132 L142 462 M244 132 L244 462 M334 132 L334 462"/>
+</g>
+<g id="rows" fill="none" stroke="#b9b2a6" stroke-width="2">
+<path d="M62 174 L424 174 M62 216 L424 216 M62 258 L424 258 M62 300 L424 300 M62 342 L424 342 M62 384 L424 384 M62 426 L424 426"/>
+<path d="M476 132 L838 132 M476 174 L838 174 M476 216 L838 216 M476 258 L838 258 M476 300 L838 300 M476 342 L838 342 M476 384 L838 384 M476 426 L838 426"/>
+</g>
+</g>
+<circle data-anchor="base" cx="450" cy="502" r="0"/>
+<circle data-anchor="top" cx="450" cy="44" r="0"/>
+<circle data-anchor="tag" cx="145" cy="24" r="0"/>
+<circle data-anchor="head-1" cx="102" cy="106" r="0"/>
+<circle data-anchor="head-2" cx="193" cy="106" r="0"/>
+<circle data-anchor="head-3" cx="289" cy="106" r="0"/>
+<circle data-anchor="head-4" cx="379" cy="106" r="0"/>
+</svg>
