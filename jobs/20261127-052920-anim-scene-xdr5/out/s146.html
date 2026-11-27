@@ -9,7 +9,7 @@
 <g id="registration-row">
 <rect x="160" y="300" width="1600" height="150" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
 <text x="230" y="366" font-family="Inter, sans-serif" font-size="56" font-weight="760" fill="#2b2622">Registration</text>
-<text x="231" y="415" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="37" font-weight="610" fill="#6f6a63">रजिस्ट्री</text>
+<text x="231" y="421" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="36" font-weight="610" fill="#6f6a63">रजिस्ट्री</text>
 </g>
 <g id="otp-row">
 <rect x="160" y="470" width="1600" height="150" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
@@ -25,14 +25,14 @@
 </g>
 <path id="both-bracket" d="M1460 373h28v174h-28" fill="none" stroke="#9b958c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 <g id="gst-chip">
-<rect x="1510" y="426" width="220" height="68" rx="34" fill="#eeebe6" stroke="#dad5cb" stroke-width="2"/>
-<text x="1620" y="471" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="39" font-weight="700" fill="#504b45">GST अलग</text>
+<rect x="1510" y="424" width="240" height="72" rx="36" fill="#f3ead6"/>
+<text x="1630" y="474" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="780" fill="#2b2622">GST अलग</text>
 </g>
 <g id="otp-note">
 <rect x="160" y="631" width="1600" height="60" rx="19" fill="#f3ead6"/>
 <circle cx="206" cy="661" r="5" fill="#9e1b1b"/>
-<rect x="223" y="644" width="355" height="41" rx="6" fill="#f2b705" opacity=".36"/>
-<text id="delivery-note" x="229" y="675" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="43" font-weight="670" fill="#2b2622">delivery के समय देना</text>
+<rect id="delivery-note-mark" rx="4" fill="#f2b705" fill-opacity=".36"/>
+<text id="delivery-note" x="229" y="675" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="44" font-weight="670" fill="#2b2622">delivery के समय देना</text>
 </g>
 <g id="pod-row"><rect x="160" y="720" width="1600" height="130" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
 <text x="230" y="780" font-size="52" font-weight="770" fill="#2b2622">POD</text>
@@ -61,6 +61,19 @@
 <script type="text/scene">
 {
  shots:[[0,'#fees'],[7.60,'#facilities']],
+ update(t, section, $) {
+  const label = $('#delivery-note')[0], mark = $('#delivery-note-mark')[0];
+  if (!label || !mark || t >= 7.60) return;
+  const phrase = 'delivery के समय';
+  let x = Infinity, y = Infinity, right = -Infinity, bottom = -Infinity;
+  for (let i = 0; i < phrase.length; i++) {
+    const b = label.getExtentOfChar(i);
+    x = Math.min(x,b.x); y = Math.min(y,b.y);
+    right = Math.max(right,b.x+b.width); bottom = Math.max(bottom,b.y+b.height);
+  }
+  mark.setAttribute('x',x-6); mark.setAttribute('y',y-3);
+  mark.setAttribute('width',right-x+12); mark.setAttribute('height',bottom-y+6);
+ },
  on:[
   [0.36,'pop','#pod-fee',{spring:'soft',from:0.88}],
   [3.72,'pop','#insured-free',{spring:'soft',from:0.9}],
