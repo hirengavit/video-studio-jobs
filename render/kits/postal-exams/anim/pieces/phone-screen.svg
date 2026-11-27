@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g id="side-keys">
+    <rect x="111" y="98" width="8" height="47" fill="#2b2622" rx="3"/>
+    <rect x="281" y="117" width="8" height="29" fill="#2b2622" rx="3"/>
+  </g>
+  <rect id="housing" x="115" y="29" width="170" height="342" fill="#2b2622" rx="25"/>
+  <rect id="screen" x="125" y="50" width="150" height="297" fill="#fbf7ee" rx="16"/>
+  <path id="speaker" d="M184 40H216" stroke="#aaa39a" stroke-width="2.6"/>
+  <path id="home-indicator" d="M184 358H216" stroke="#aaa39a" stroke-width="2.6"/>
+  <circle data-anchor="base" cx="200" cy="371" r="0"/>
+</svg>
