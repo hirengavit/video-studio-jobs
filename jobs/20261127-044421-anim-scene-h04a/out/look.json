@@ -8,12 +8,5 @@
   "12.99"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s016",
-   "text": "packets: / a a",
-   "t": 7.88
-  }
- ]
+ "warnings": []
 }
