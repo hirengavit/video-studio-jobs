@@ -31,7 +31,7 @@
         <text x="270" y="863" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="610" fill="#6f6a63">बिना insurance नुकसान</text>
       </g>
       <g id="loss-panel">
-        <rect x="800" y="642" width="780" height="274" rx="22" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+        <rect id="loss-panel-back" x="800" y="642" width="780" height="274" rx="22" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
         <text id="twice-postage" x="840" y="718" font-family="Inter" font-size="54" font-weight="790" fill="#2b2622">2 × postage</text>
         <text id="loss-ceiling" x="840" y="722" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="750" fill="#2b2622" text-anchor="start">या ₹1,000</text>
         <text id="loss-lower" x="840" y="774" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="720" fill="#2b2622" text-anchor="start">जो कम,</text>
@@ -89,6 +89,8 @@
       const q=p*p*(3-2*p);
       el.setAttribute('y',718-48*q);
       el.setAttribute('font-size',54-14*q);
+      const back=$('#loss-panel-back')[0];
+      if(back){back.setAttribute('y',642-12*q);back.setAttribute('height',274+26*q);}
     }
   }
   </script>
