@@ -16,21 +16,15 @@
    "t": 0.3
   },
   {
-   "kind": "text-overlap",
+   "kind": "off-frame",
    "scene": "s223",
-   "text": "काम के घंटों में / वेब पोर्टल",
+   "message": "a card or panel runs 53 px past the frame edge at 6.9 s (check the camera zoom and the layout)",
    "t": 6.89
   },
   {
    "kind": "off-frame",
    "scene": "s223",
-   "message": "a card or panel runs 103 px past the frame edge at 6.9 s (check the camera zoom and the layout)",
-   "t": 6.89
-  },
-  {
-   "kind": "off-frame",
-   "scene": "s223",
-   "message": "a card or panel runs 103 px past the frame edge at 9.2 s (check the camera zoom and the layout)",
+   "message": "a card or panel runs 53 px past the frame edge at 9.2 s (check the camera zoom and the layout)",
    "t": 9.18
   }
  ]
