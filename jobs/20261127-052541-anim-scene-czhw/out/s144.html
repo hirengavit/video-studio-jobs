@@ -1,0 +1,70 @@
+<section class="vs-scene" id="s144" data-in="cut" data-section="PART 6 · DELIVERY" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="tamper">
+    <text id="cover-heading" x="120" y="252" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="780">Cover से छेड़छाड़ का शक</text>
+    <g transform="translate(160 400) scale(1.4)">
+      <use href="piece:speed-post-parcel"/>
+      <path id="cover-tear" d="M166 73l7 12 12-4-4 12 12 1-3 13 15 4" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+<g id="postmaster">
+  <rect x="160" y="850" width="504" height="86" rx="43" fill="#9e1b1b"/>
+  <text x="412" y="904" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="33" font-weight="770" fill="#fff">Postmaster के सामने खुलता है</text>
+</g>
+<g id="inventory">
+  <use id="inventory-piece" href="piece:inventory-sheet" transform="translate(800 320)"/>
+  <text x="826" y="373" font-size="42" font-weight="770" fill="#2b2622">Inventory</text>
+  <g id="inventory-sign">
+    <path d="M980 708c15-15 28-23 34-16 7 9-17 25-30 20-4-2 0-10 10-13 14-4 5 17 25 6 8-4 16-14 20-8 3 4-8 11-3 11 12 1 20-12 27-10 4 1-4 13 4 11 6-1 15-5 24-3" fill="none" stroke="#2b2622" stroke-width="3.3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</g>
+<g id="two-copies">
+  <rect x="828" y="809" width="268" height="77" rx="38" fill="#fde9a6"/>
+  <text x="962" y="860" text-anchor="middle" font-size="44" font-weight="790" fill="#2b2622">2 copies</text>
+</g>
+<path id="pod-arrow" d="M1169 598H1280m-17-14 17 14-17 14" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="proof">
+  <use href="piece:pod-card" transform="translate(1300 400) scale(.8)"/>
+  <text x="1508" y="443" text-anchor="middle" fill="#fff" font-size="40" font-weight="800">POD</text>
+</g>
+<g id="unsigned">
+  <rect x="1345" y="700" width="326" height="72" rx="36" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+  <text x="1508" y="747" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="750" fill="#2b2622">बिना signature</text>
+</g>
+<g id="sender">
+  <rect x="1345" y="790" width="326" height="72" rx="36" fill="#9e1b1b"/>
+  <text x="1508" y="837" text-anchor="middle" font-size="42" font-weight="780" fill="#fff">→ sender</text>
+</g>
+</g>
+<g id="damaged-notice">
+  <g id="damaged-photo-card" transform="rotate(2 490 548)">
+    <rect x="140" y="294" width="700" height="515" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="2" filter="url(#vs-shadow)"/>
+    <image href="photo:damaged-parcel-cutout" x="182" y="317" width="616" height="467" preserveAspectRatio="xMidYMid meet" filter="url(#vs-cutout)"/>
+  </g>
+  <text x="490" y="884" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="34" font-weight="690">खराब हालत में पहुँचा item</text>
+  <text x="490" y="929" text-anchor="middle" fill="#6f6a63" font-size="24" font-weight="580">Meanwell Packaging · CC BY 2.0 · cutout</text>
+  <g id="notice-heading">
+    <text x="960" y="255" fill="#9e1b1b" font-size="52" font-weight="800">Domestic accountable item</text>
+  </g>
+  <text id="notice-addressee" x="1000" y="330" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="680" fill="#2b2622">addressee को</text>
+  <g id="notice-stamp">
+    <use href="piece:key-fact-stamp" transform="translate(1000 400)"/>
+    <text x="1280" y="587" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="121" font-weight="830" fill="#fff">7 दिन</text>
+    <text id="notice-caption" x="1280" y="681" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="730" fill="#fde9a6">में आने का notice</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0,'#tamper'],[1.10,'#damaged-notice']],
+  on: [
+    [0.00,'color','#inventory-piece #copy-back rect',{to:'#fde9a6',dur:0.01}],
+    [0.00,'pop','#sender',{from:0.94,spring:'soft'}],
+    [2.90,'fade','#notice-heading',{dur:0.29}],
+    [5.64,'fade','#notice-addressee',{dur:0.25}],
+    [6.62,'pop','#notice-stamp',{from:0.94,spring:'soft'}],
+    [8.10,'type','#notice-caption',{cps:35}]
+  ]
+}
+</script>
+</section>
