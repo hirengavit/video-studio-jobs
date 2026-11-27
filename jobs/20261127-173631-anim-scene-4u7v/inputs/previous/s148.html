@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s148" data-section="PART 6 · JEEVAN PRAMAAN" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="notelig">
+ <text id="q" x="260" y="241" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="790" fill="#9e1b1b">किसे नहीं मिलती?</text>
+ <g id="elig-board">
+ <rect x="260" y="330" width="1400" height="430" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <path d="M304 545H1616" fill="none" stroke="#ead9a8" stroke-width="3"/>
+ </g>
+ <g id="elig-row1">
+  <text id="n1" x="433" y="457" font-family="Inter, sans-serif" font-size="60" font-weight="750" fill="#4b4f58">Remarried pensioners</text>
+  <g id="n1-cross" fill="none" stroke="#4b4f58" stroke-linecap="round">
+   <circle cx="357" cy="437" r="36" stroke-width="4"/>
+   <path d="m343 423 28 28m0-28-28 28" stroke-width="7"/>
+  </g>
+ </g>
+ <g id="elig-row2">
+  <text id="n2" x="433" y="672" font-family="Inter, sans-serif" font-size="60" font-weight="750" fill="#4b4f58">Re-employed pensioners</text>
+  <g id="n2-cross" fill="none" stroke="#4b4f58" stroke-linecap="round">
+   <circle cx="357" cy="652" r="36" stroke-width="4"/>
+   <path d="m343 638 28 28m0-28-28 28" stroke-width="7"/>
+  </g>
+ </g>
+ <rect id="notelig-strip" x="260" y="812" width="1400" height="97" rx="20" fill="#f6f2e9" stroke="#e2d8c8" stroke-width="2"/>
+ <text id="notelig-line" x="960" y="876" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#4b4f58">Jeevan Pramaan की पात्रता शर्तों में ये सुविधा नहीं</text>
+</g>
+<g id="flow">
+ <text id="flow-title" x="120" y="202" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="790" fill="#9e1b1b">DLC कैसे बनता है?</text>
+ <g id="flow-slots" fill="#fff" stroke="#dfd1b3" stroke-width="3">
+  <rect id="slot1" x="120" y="250" width="520" height="340" rx="24"/>
+  <rect id="slot2" x="700" y="250" width="520" height="340" rx="24"/>
+  <rect id="slot3" x="1280" y="250" width="520" height="340" rx="24"/>
+  <rect id="slot4" x="120" y="640" width="520" height="340" rx="24"/>
+  <rect id="slot5" x="700" y="640" width="520" height="340" rx="24"/>
+  <rect id="slot6" x="1280" y="640" width="520" height="340" rx="24"/>
+ </g>
+ <g id="f1">
+  <rect x="120" y="250" width="520" height="340" rx="24" fill="#fff" stroke="#c8a064" stroke-width="4"/>
+  <circle cx="579" cy="312" r="33" fill="#9e1b1b"/>
+  <text x="579" y="325" text-anchor="middle" font-family="Inter, sans-serif" font-size="37" font-weight="800" fill="#fff">1</text>
+  <path id="f1-icon" d="M168 395V334H230V395M160 335L199 306L238 335M185 395V364H213V395M241 394V355L263 337L287 355V394M254 394V374H274V394M160 395H294" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="f1-post" x="158" y="461" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#2b2622">Post office</text>
+  <text id="f1-a" x="158" y="514" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63">नज़दीकी post office</text>
+ </g>
+
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,'#notelig'],[4.90,'#flow']],
+ on:[
+  [1.50,'fade','#notelig-strip',{dur:.22}],
+  [1.50,'words','#notelig-line',{gap:.13,dist:11,from:'down',spring:'soft'}],
+  [6.82,'pop','#f1',{from:.97,spring:'soft'}],
+  [6.82,'draw','#f1-icon',{dur:.64}],
+  [7.72,'fade','#f1-a',{dur:.27}]
+ ]
+})
+</script>
+</section>

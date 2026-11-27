@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 420" stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g id="phone"><rect x="1.5" y="1.5" width="217" height="417" rx="26" fill="#4b4f58"/><rect id="screen" x="14" y="35" width="192" height="347" rx="12" fill="#fbf7ee"/><path d="M92 19h36m-38 382h40" stroke="#b8b4ad" stroke-width="4"/></g><g id="bubble"><path d="M46 137h128q12 0 12 12v69q0 12-12 12H79l-24 19v-19h-9q-12 0-12-12v-69q0-12 12-12z" fill="#fff"/><path d="M54 164h109m-109 19h90m-90 19h61" fill="none" stroke="#6f6a63"/></g>
+<circle data-anchor="base" cx="110" cy="420" r="0" stroke="none"/>
+<circle data-anchor="screen" cx="110" cy="208.5" r="0" stroke="none"/>
+</svg>
