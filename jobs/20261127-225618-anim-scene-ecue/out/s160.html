@@ -50,8 +50,8 @@
     </g>
     <text id="cond-lab" x="760" y="731" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#4b4f58">शर्तें:</text>
     <g id="cond1">
-      <rect x="895" y="690" width="378" height="58" rx="29" fill="#f3ead6"/>
-      <text x="1084" y="731" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="730" fill="#2b2622">IPPB से बना, सफल</text>
+      <rect x="860" y="690" width="378" height="58" rx="29" fill="#f3ead6"/>
+      <text x="874" y="731" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="730" fill="#2b2622">IPPB से बना, सफल</text>
     </g>
     <g id="cond2">
       <rect x="760" y="760" width="125" height="58" rx="29" fill="#f3ead6"/>
@@ -65,14 +65,14 @@
 ({
  camera:[[0,{zoom:1}]],
  on:[
-  [0,'move','#free-eps',{by:[465,0],dur:.36}],
+  [0,'move','#free-eps',{by:[465,0]}],
   [.36,'fade','#cond-lab',{dur:.24}],
   [2.06,'pop','#cond1',{from:.96,spring:'soft'}],
-  [4.90,'move','#r2-floor',{by:[0,63],dur:.40}],
+  [4.90,'move','#r2-floor',{by:[0,63]}],
   [5.52,'pop','#cond2',{from:.96,spring:'soft'}],
   [7.00,'fade','#due-wide',{dur:.2}],
   [7.00,'fade','#cond2b',{dur:.25}],
-  [8.32,'highlight','#cond2b',{words:'30 दिन',color:'#f2b705',opacity:.38,pad:4,dur:.34}]
+  [8.32,'highlight','#cond2b',{words:'30 दिन',color:'#f2b705',opacity:.38,pad:2,dur:.34}]
  ]
 })
 </script>
