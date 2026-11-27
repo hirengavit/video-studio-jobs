@@ -1,0 +1,68 @@
+<section class="vs-scene" id="s141" data-section="PART 6 · JEEVAN PRAMAAN" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="paper-strip">
+  <rect x="120" y="180" width="1680" height="180" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+  <use href="piece:invoice-sheet" transform="translate(150 190) scale(.4)"/>
+  <text id="paper-line" opacity="0.52" x="330" y="287" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="48" font-weight="650" fill="#2b2622">office जाकर paper life certificate</text>
+  <path id="paper-strike" d="M324 270Q720 273 1110 268" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+  <g id="paper-cross" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"><path id="paper-cross-a" d="M1690 269l-26-26m26 26 26 26"/><path id="paper-cross-b" d="M1690 269l26-26m-26 26-26 26"/></g>
+ </g>
+ <g id="ippb-card">
+  <rect x="120" y="410" width="540" height="570" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M142 410h496q22 0 22 22v114H120V432q0-22 22-22z" fill="#9e1b1b"/>
+  <text id="ippb" x="152" y="496" font-size="60" font-weight="800" fill="#fff">IPPB</text>
+  <text id="ippb-hi" x="152" y="599" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="600" fill="#6f6a63">इंडिया पोस्ट पेमेंट्स बैंक</text>
+  <path d="M152 650H628" stroke="#ead9a8" stroke-width="2"/>
+  <text id="ippb-line" x="152" y="762" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="620" fill="#2b2622">postal network से</text>
+  <text id="ippb-line2" x="152" y="840" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="620" fill="#2b2622">DLC बनवाने में मदद</text>
+ </g>
+ <g id="post-card">
+  <rect x="690" y="410" width="540" height="604" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M712 410h496q22 0 22 22v114H690V432q0-22 22-22z" fill="#9e1b1b"/>
+  <text id="postmen" x="722" y="497" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#fff">Postmen</text>
+  <text id="postmen-hi" x="722" y="583" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" style="line-height:1.3" font-weight="620" fill="#6f6a63">डाकिया</text>
+  <text id="gds" x="722" y="640" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Gramin Dak Sevaks</text>
+  <text id="gds-hi" x="722" y="687" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" style="line-height:1.3" font-weight="620" fill="#6f6a63">ग्रामीण डाक सेवक</text>
+  <path d="M722 714H1198" stroke="#ead9a8" stroke-width="2"/>
+  <text id="home" x="722" y="834" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="680" fill="#2b2622">घर जाकर भी</text>
+  <g id="photo-postman">
+   <g transform="rotate(2 1074 852)">
+    <rect x="955" y="736" width="245" height="230" rx="13" fill="#fff" stroke="#ead9a8" stroke-width="2" filter="url(#vs-shadow)"/>
+    <image href="photo:postman-delivering-parcel-cutout" x="964" y="741" width="226" height="220" preserveAspectRatio="xMidYMid meet" filter="url(#vs-cutout)"/>
+   </g>
+   <text id="postman-credit" x="960" y="997" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="550" fill="#6f6a63">Harvinder Chandigarh · CC BY-SA 4.0</text>
+  </g>
+ </g>
+ <g id="nic-card">
+  <rect x="1260" y="410" width="540" height="570" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M1282 410h496q22 0 22 22v114H1260V432q0-22 22-22z" fill="#9e1b1b"/>
+  <text id="nic" x="1292" y="505" font-family="Inter, sans-serif" font-size="80" font-weight="800" fill="#fff">NIC</text>
+  <path d="M1292 702H1768" stroke="#ead9a8" stroke-width="2"/>
+  <text id="jp-app" x="1292" y="772" font-family="Inter, sans-serif" font-size="40" font-weight="730" fill="#2b2622">Jeevan Pramaan<tspan x="1292" dy="49">application</tspan></text>
+  <text id="nic-line" x="1292" y="902" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#2b2622">बनाता और चलाता</text>
+ </g>
+</svg>
+<script type="text/scene">
+{update(t,section,$) {
+ const paper=$("#paper-line")[0];
+ const mark=$("#paper-strike")[0];
+ if (paper && mark) {
+  const b=paper.getBBox(), y=b.y+b.height*0.55, w=b.height*0.06;
+  mark.setAttribute("d","M"+(b.x-6)+" "+y+" Q"+(b.x+b.width/2)+" "+(y+w)+" "+(b.x+b.width+6)+" "+(y-w/2));
+ }
+},on:[
+[0,"pop","#post-card",{from:0.97,spring:"soft"}],
+[0,"type","#postmen",{cps:26}],
+[0.50,"fade","#postmen-hi",{dur:0.28}],
+[1.04,"type","#gds",{cps:18}],
+[2.40,"fade","#gds-hi",{dur:0.28}],
+[3.74,"fade","#home",{dur:0.36}],
+[3.74,"pop","#photo-postman",{from:0.94,spring:"soft"}],
+[5.14,"pop","#nic-card",{from:0.97,spring:"soft"}],
+[5.14,"reveal","#jp-app",{from:"left",dur:0.75}],
+[7.22,"stamp","#nic",{from:1.13,rot:-2}],
+[8.16,"fade","#nic-line",{dur:0.36}]
+]}
+</script>
+</section>
