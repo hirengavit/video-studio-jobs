@@ -1,0 +1,37 @@
+<section class="vs-scene" id="s065" data-in="cut" data-section="PART 3 · TARIFF" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="local-cases">
+<text x="960" y="224" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="790" fill="#9e1b1b">Local · स्थानीय — तीन हालात</text>
+<g id="metro" transform="translate(130 0)">
+<rect y="300" width="520" height="520" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<g transform="translate(57 299) scale(1.45)" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M24 175v-64h54v64m14 0V67h67v108m13 0v-79h69v79" fill="#f3ead6"/><path d="M10 177h255m-222-46h17m-17 20h17m50-62h30m-30 22h30m-30 22h30m-30 22h30m54-38h22m-22 22h22m-22 22h22" fill="none"/><path d="M50 99c-8-12-24-30-24-44a24 24 0 0 1 48 0c0 14-16 32-24 44z" fill="#9e1b1b" stroke="#9e1b1b"/><circle cx="50" cy="55" r="8" fill="#fff" stroke="none"/><path d="M204 83c-8-12-24-30-24-44a24 24 0 0 1 48 0c0 14-16 32-24 44z" fill="#9e1b1b" stroke="#9e1b1b"/><circle cx="204" cy="39" r="8" fill="#fff" stroke="none"/></g>
+<text x="260" y="598" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="760" fill="#2b2622">Metro</text>
+<g id="metro-lines"><text x="260" y="658" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="660" fill="#2b2622">तय PIN codes के अंदर</text><text x="260" y="712" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="660" fill="#2b2622">booking और delivery</text></g>
+</g>
+<g id="other-cities" transform="translate(700 0)">
+<rect y="300" width="520" height="520" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<g transform="translate(84 300) scale(1.27)" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path id="municipal-boundary" d="M33 51C72 11 213 12 251 45C277 68 276 154 253 182Q193 205 43 187Q8 169 10 118Q8 74 33 51Z" fill="none" stroke="#9e1b1b" stroke-dasharray="11 9"/>
+<path d="M46 160V98h62v62m19 0V62h88v98M34 162h195" fill="#f3ead6"/><path d="M64 115h26m-26 20h26m55-54h51m-51 24h51m-51 24h51" fill="none"/></g>
+<text x="260" y="598" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="760" fill="#2b2622">दूसरे शहर</text>
+<g id="other-cities-lines"><text x="260" y="658" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="660" fill="#2b2622">municipal सीमा के अंदर</text></g>
+</g>
+<g id="small-towns" transform="translate(1270 0)">
+<rect y="300" width="520" height="520" rx="29" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<g transform="translate(44 270) scale(1.59)" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M26 105l53-42 50 42v76H26zM151 116l47-39 47 39v65h-94z" fill="#f3ead6"/><path d="M65 181v-44h27v44m96 0v-36h20v36M13 182h244" fill="none"/><path d="M142 102c-8-12-24-30-24-44a24 24 0 0 1 48 0c0 14-16 32-24 44z" fill="#9e1b1b" stroke="#9e1b1b"/><circle cx="142" cy="58" r="8" fill="#fff" stroke="none"/></g>
+<text x="260" y="598" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="760" fill="#2b2622">छोटे towns<tspan x="260" y="649">/ mofussil</tspan></text>
+<g id="small-towns-lines"><text x="260" y="705" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="660" fill="#2b2622">उसी PIN code का</text><text x="260" y="757" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="660" fill="#2b2622">delivery इलाका</text></g>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+{ on:[
+ [1.58,'fade','#metro-lines',{dur:0.36}],
+ [4.46,'pop','#other-cities',{spring:'soft'}],
+ [6.28,'fade','#other-cities-lines',{dur:0.36}],
+ [6.28,'fade','#municipal-boundary',{dur:0.46}],
+ [8.88,'pop','#small-towns',{spring:'soft'}],
+ [11.92,'fade','#small-towns-lines',{dur:0.36}]
+] }
+</script>
+</section>
