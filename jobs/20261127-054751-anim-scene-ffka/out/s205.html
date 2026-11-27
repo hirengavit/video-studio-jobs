@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s205" data-in="cut" data-section="PART 9 · INSURANCE" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="waive">
+ <g id="sender">
+  <rect x="140" y="300" width="520" height="460" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <g fill="none" stroke="#2b2622" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="325" y="377" width="150" height="94" rx="10" fill="#f3ead6"/><path d="M329 383L398 429L470 383M328 465L382 420M471 465L416 420"/></g>
+  <text x="400" y="556" text-anchor="middle" font-size="65" font-weight="800" fill="#2b2622">Sender</text>
+  <text class="hi" x="400" y="621" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="680" fill="#6f6a63">प्रेषक</text>
+  <text id="option" class="hi" x="400" y="704" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="650" fill="#6f6a63">चाहे तो</text>
+ </g>
+ <g id="addressee">
+  <rect x="1260" y="300" width="520" height="460" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <g fill="none" stroke="#2b2622" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1445 433H1595L1579 472H1461Z" fill="#f3ead6"/><path d="M1454 433L1475 381H1565L1586 433M1520 388V425M1506 411L1520 425L1534 411"/></g>
+  <text x="1520" y="556" text-anchor="middle" font-size="65" font-weight="800" fill="#2b2622">Addressee</text>
+  <text class="hi" x="1520" y="621" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="680" fill="#6f6a63">प्राप्तकर्ता</text>
+ </g>
+ <path id="claim-arrow" d="M700 530H1206M1176 506L1206 530L1176 554" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="claim">
+  <rect x="160" y="200" width="480" height="72" rx="26" fill="#9e1b1b"/>
+  <text x="400" y="251" text-anchor="middle" font-size="43" font-weight="780" fill="#fff">Compensation claim</text>
+ </g>
+</g>
+<g id="exam">
+ <text id="exam-title" class="hi" x="140" y="225" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="790" fill="#9e1b1b">Exam angle · परीक्षा की नज़र से</text>
+ <g id="exam-list-reveal">
+ <rect id="exam-list" x="720" y="260" width="1100" height="730" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <path d="M755 450H1785M755 645H1785M755 825H1785" fill="none" stroke="#ead9a8" stroke-width="2"/>
+ </g>
+ <g id="ceiling">
+  <use href="piece:key-fact-stamp" transform="translate(100 400)"/>
+  <text class="hi" x="380" y="586" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="108" font-weight="830" fill="#fff">₹5 लाख</text>
+  <text x="380" y="661" text-anchor="middle" font-size="39" font-weight="700" fill="#fde9a6">General insurance ceiling</text>
+  <text x="380" y="807" text-anchor="middle" font-size="34" font-weight="620" fill="#6f6a63">India Post · 1 Apr 2026</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,'#waive'],[6.34,'#exam']],
+ on:[
+  [0.54,'fade','#option',{dur:0.3}],
+  [1.50,'pop','#claim',{spring:'soft'}],
+  [3.56,'pop','#addressee',{spring:'soft'}],
+  [4.52,'draw','#claim-arrow',{dur:0.42}],
+  [4.98,'move','#claim',{by:[1100,0],spring:'snug'}],
+  [8.94,'stamp','#ceiling',{from:1.12,rot:-3,spring:'snug'}],
+  [9.40,'fade','#exam-list-reveal',{dur:0.30}],
+ ]
+}
+</script>
+</section>
