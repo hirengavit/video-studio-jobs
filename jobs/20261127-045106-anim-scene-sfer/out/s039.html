@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s039" data-in="cut" data-section="PART 2 · WEIGHT AND SIZE" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="reg">
+ <rect x="120" y="200" width="500" height="520" rx="30" fill="#9e1b1b"/>
+ <rect x="120" y="200" width="500" height="520" rx="30" fill="none" stroke="#fbf7ee" stroke-width="16" stroke-dasharray="0 25" stroke-linecap="round"/>
+ <rect x="152" y="232" width="436" height="456" rx="16" fill="none" stroke="#b8403a" stroke-width="3"/>
+ <text class="hi" x="370" y="340" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="730" fill="#fde9a6">REG. · नियम</text>
+ <text x="370" y="490" text-anchor="middle" font-size="103" font-weight="850" fill="#fff">2(1)(r)</text>
+ <path d="M261 532H479" stroke="#b8403a" stroke-width="4" stroke-linecap="round"/>
+ <text x="370" y="600" text-anchor="middle" font-size="39" font-weight="740" fill="#fff">Post Office</text>
+ <text x="370" y="652" text-anchor="middle" font-size="39" font-weight="740" fill="#fff">Regulations 2024</text>
+ <rect x="680" y="200" width="1120" height="535" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <path d="M710 200H1770a30 30 0 0 1 30 30v6H680v-6a30 30 0 0 1 30-30Z" fill="#9e1b1b"/>
+ <text id="weight-title" class="hi" x="741" y="338" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="66" font-weight="790" fill="#9e1b1b">Weight · वजन</text>
+ <path d="M740 380H1740" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+ <g id="gist-label"><rect x="741" y="425" width="205" height="61" rx="19" fill="#f3ead6"/><text class="hi" x="843.5" y="468" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="37" font-weight="720" fill="#6f6a63">सार (gist)</text></g>
+ <text id="gist-1" class="hi" x="741" y="547" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="750" fill="#2b2622">Gross weight और volumetric weight में</text>
+ <rect id="gist-marker" x="737" y="566" width="204" height="59" rx="12" fill="#fde9a6"/>
+ <text id="gist-2" class="hi" x="747" y="611" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="750" fill="#2b2622">जो ज़्यादा हो</text>
+ <text id="other" class="hi" x="741" y="682" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="660" fill="#6f6a63">जब तक अलग से कुछ न कहा गया हो</text>
+ <text x="680" y="760" font-size="34" font-weight="610" fill="#6f6a63">Post Office Regulations 2024 · Reg. 2(1)(r)</text>
+</g>
+<g id="charge-chip">
+ <rect x="120" y="800" width="820" height="170" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+ <text x="170" y="869" font-family="Inter, sans-serif" font-size="48" font-weight="810" fill="#2b2622">Speed Post Document</text>
+ <text id="charge-detail" x="170" y="929" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="710" fill="#2b2622">charge भी ज़्यादा वाले वजन पर</text>
+</g>
+<g id="limit-chip">
+ <rect x="980" y="800" width="820" height="170" rx="26" fill="#fde9a6" stroke="#f2b705" stroke-width="2"/>
+ <text x="1030" y="873" font-family="Inter, sans-serif" font-size="56" font-weight="820" fill="#2b2622">500 g</text>
+ <text id="limit-detail" x="1030" y="929" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="710" fill="#2b2622">सीमा में volumetric weight शामिल</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+   [0.86, 'pop', '#charge-chip', {from: 0.95, spring: 'soft'}],
+   [1.80, 'fade', '#charge-detail', {dur: 0.26}],
+   [4.82, 'pop', '#limit-chip', {from: 0.95, spring: 'soft'}],
+   [6.96, 'fade', '#limit-detail', {dur: 0.27}],
+   [8.26, 'underline', '#limit-detail', {words: 'शामिल', color: '#8a5d00', width: 4, gap: 2, dur: 0.31}]
+ ]
+}
+</script>
+</section>
