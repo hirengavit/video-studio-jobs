@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300" width="320" height="300">
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="stand" d="M100 290 L220 290 L196 262 L124 262 Z" fill="#f3ead6"/>
+<line x1="160" y1="262" x2="160" y2="56"/>
+<g id="beam">
+<line x1="70" y1="66" x2="250" y2="66"/>
+<g id="pan-left">
+<line x1="70" y1="72" x2="24" y2="182"/><line x1="70" y1="72" x2="116" y2="182"/>
+<path d="M14 182 L126 182 Q120 224 70 224 Q20 224 14 182 Z" fill="#f3ead6"/>
+</g>
+<g id="pan-right">
+<line x1="250" y1="72" x2="204" y2="182"/><line x1="250" y1="72" x2="296" y2="182"/>
+<path d="M194 182 L306 182 Q300 224 250 224 Q200 224 194 182 Z" fill="#f3ead6"/>
+</g>
+</g>
+<circle id="pivot" cx="160" cy="48" r="12" fill="#9e1b1b"/>
+</g>
+<circle data-anchor="base" cx="160" cy="291" r="0"/>
+</svg>
