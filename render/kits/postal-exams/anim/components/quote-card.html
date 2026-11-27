@@ -1,0 +1,54 @@
+<section class="vs-scene" id="quote-card" data-in="fade" data-in-dur="0.4" data-section="सेवा नियम">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="card">
+      <rect x="160" y="200" width="1600" height="600" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M188 200 L1732 200 A28 28 0 0 1 1760 228 L1760 214 L160 214 L160 228 A28 28 0 0 1 188 200 Z" fill="#9e1b1b"/>
+    </g>
+    <g id="source">
+      <rect x="236" y="262" width="10" height="44" rx="5" fill="#9e1b1b"/>
+      <text x="264" y="298" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#9e1b1b">CCS (Conduct) Rules, 1964 · Rule 3(1)</text>
+    </g>
+    <text id="sourcehi" x="264" y="346" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="32" font-weight="600" fill="#6f6a63">केंद्रीय सिविल सेवा (आचरण) नियम, 1964 · नियम 3(1)</text>
+    <text id="lead" x="236" y="430" font-family="Georgia, serif" font-style="italic" font-size="44" fill="#6f6a63">“Every Government servant shall at all times—</text>
+    <text id="q1" x="296" y="512" font-family="Georgia, serif" font-size="56" fill="#2b2622">(i) maintain absolute integrity;</text>
+    <text id="q2" x="296" y="588" font-family="Georgia, serif" font-size="56" fill="#2b2622">(ii) maintain devotion to duty; and</text>
+    <text id="q3" x="296" y="664" font-family="Georgia, serif" font-size="56" fill="#2b2622">(iii) do nothing which is unbecoming</text>
+    <text id="q4" x="376" y="740" font-family="Georgia, serif" font-size="56" fill="#2b2622">of a Government servant.”</text>
+    <g id="postmark">
+      <circle cx="1460" cy="540" r="140" fill="none" stroke="#9e1b1b" stroke-width="6"/>
+      <circle cx="1460" cy="540" r="116" fill="none" stroke="#9e1b1b" stroke-width="3"/>
+      <text x="1460" y="490" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="700" fill="#9e1b1b">नियम</text>
+      <text x="1460" y="572" text-anchor="middle" font-family="Inter, sans-serif" font-size="76" font-weight="800" fill="#9e1b1b">3(1)</text>
+      <text x="1460" y="622" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="700" letter-spacing="3" fill="#9e1b1b">1964</text>
+      <path d="M1612 500 q18 -14 36 0 t36 0 t36 0" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+      <path d="M1612 540 q18 -14 36 0 t36 0 t36 0" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+      <path d="M1612 580 q18 -14 36 0 t36 0 t36 0" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g id="gist">
+      <rect x="160" y="836" width="1600" height="160" rx="28" fill="#f3ead6"/>
+      <rect x="236" y="868" width="10" height="40" rx="5" fill="#f2b705"/>
+      <text x="264" y="900" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="700" fill="#6f6a63">सार <tspan font-weight="500" font-size="32">· आधिकारिक पाठ नहीं</tspan></text>
+    </g>
+    <text id="gisthi" x="236" y="962" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="700" fill="#2b2622">हर समय: पूरी ईमानदारी, कर्तव्य के प्रति निष्ठा, और सरकारी कर्मचारी के योग्य आचरण</text>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}], [9, {zoom: 1.02}]],
+    on: [
+      [0.05, 'reveal', '#card', {from: 'up', dur: 0.6}],
+      [0.45, 'tracking', '#source', {from: 20, dur: 0.7}],
+      [0.9, 'fade', '#sourcehi', {dur: 0.5}],
+      [1.3, 'fade', '#lead', {dur: 0.5}],
+      [1.8, 'words', '#q1', {gap: 0.1, dist: 18, spring: 'soft'}],
+      [2.6, 'words', '#q2', {gap: 0.1, dist: 18, spring: 'soft'}],
+      [3.4, 'words', '#q3', {gap: 0.1, dist: 18, spring: 'soft'}],
+      [4.0, 'words', '#q4', {gap: 0.1, dist: 18, spring: 'soft'}],
+      [4.8, 'highlight', '#q1', {words: 'absolute integrity', color: '#f2b705', opacity: 0.45}],
+      [5.2, 'stamp', '#postmark', {from: 1.8, rot: -8, spring: 'soft'}],
+      [6.0, 'slide', '#gist', {from: 'down', dist: 40, spring: 'soft'}],
+      [6.4, 'fade', '#gisthi', {dur: 0.6}],
+    ],
+  }
+  </script>
+</section>
