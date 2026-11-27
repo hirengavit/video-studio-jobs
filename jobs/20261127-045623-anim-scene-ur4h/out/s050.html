@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s050" data-in="cut" data-section="PART 2 · WEIGHT AND SIZE" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="exam-angle">
+ <rect x="140" y="190" width="660" height="84" rx="42" fill="#9e1b1b"/>
+ <text x="174" y="244" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="730" fill="#ffffff">EXAM ANGLE · परीक्षा की नज़र से</text>
+</g>
+<g id="weight-stamp">
+ <use href="piece:key-fact-stamp" transform="translate(140 300)"/>
+ <text x="420" y="485" text-anchor="middle" font-family="Inter, sans-serif" font-size="115" font-weight="800" fill="#ffffff">500 g</text>
+</g>
+<text id="including-volume" x="420" y="686" text-anchor="middle" style="font-family:'Noto Sans Devanagari',Inter,sans-serif" font-size="40" font-weight="690" fill="#2b2622">volumetric weight मिलाकर</text>
+<g id="envelope"><use href="piece:domestic-envelope" transform="translate(900 290)"/></g>
+<g fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+ <path id="length-arrow" d="M915 719h732m-710-13-22 13 22 13m688-26 22 13-22 13"/>
+ <path id="width-arrow" d="M1704 302v376m-13-354 13-22 13 22m-26 332 13 22 13-22"/>
+ <path id="thickness-mark" stroke-width="3" d="M1642 278L1700 263 M1653 267L1642 278L1657 282 M1685 259L1700 263L1689 274"/>
+</g>
+<g id="dimension-strip">
+ <rect x="140" y="780" width="1640" height="160" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+ <path d="M574 812v96" stroke="#ead9a8" stroke-width="3"/>
+ <text x="358" y="884" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="720" fill="#6f6a63">Document के नाप</text>
+ <g fill="#2b2622">
+ <text id="length-value" x="870" y="887" text-anchor="end" font-family="Georgia, serif" font-size="72" font-weight="700">420</text>
+ <text id="width-value" x="911" y="887" font-family="Georgia, serif" font-size="72" font-weight="700">× 297</text>
+ <text id="thickness-value" x="1120" y="887" font-family="Georgia, serif" font-size="72" font-weight="700">× 24 mm</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [1.04,'pulse','#envelope',{amount:0.04}],
+  [1.70,'stamp','#weight-stamp',{spring:'soft'}],
+  [3.28,'fade','#including-volume',{dur:0.34}],
+  [6.42,'fade','#dimension-strip',{dur:0.35}],
+  [7.74,'draw','#length-arrow',{dur:0.43}],
+  [7.74,'type','#length-value',{cps:24}],
+  [9.30,'draw','#width-arrow',{dur:0.43}],
+  [9.30,'fade','#width-value',{dur:0.26}],
+  [11.52,'draw','#thickness-mark',{dur:0.35}],
+  [11.52,'type','#thickness-value',{cps:25}]
+ ]
+}
+</script>
+</section>
