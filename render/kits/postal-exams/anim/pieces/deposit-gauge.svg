@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 520" width="220" height="520">
+<defs>
+  <clipPath id="deposit-clip"><rect x="34" y="44" width="152" height="448" rx="10"/></clipPath>
+</defs>
+<g id="tank">
+  <rect x="88" y="10" width="44" height="22" rx="4" fill="#ead9a8" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="20" y="30" width="180" height="476" rx="18" fill="#ead9a8" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="34" y="44" width="152" height="448" rx="10" fill="#ffffff"/>
+</g>
+<g clip-path="url(#deposit-clip)">
+  <rect id="deposit-level" data-state="br-deposit" x="34" y="44" width="152" height="448" fill="#fde9a6" style="transform-box: view-box; transform-origin: 110px 492px"/>
+</g>
+<g id="ticks" fill="none" stroke="#2b2622" stroke-width="2" stroke-linecap="round" opacity="0.5">
+  <path d="M166 156 L186 156"/>
+  <path d="M166 268 L186 268"/>
+  <path d="M166 380 L186 380"/>
+</g>
+<rect x="34" y="44" width="152" height="448" rx="10" fill="none" stroke="#2b2622" stroke-width="1.5" opacity="0.35"/>
+<circle data-anchor="base" cx="110" cy="506" r="0"/>
+</svg>
