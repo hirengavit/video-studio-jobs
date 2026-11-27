@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s029" data-section="PART 1 · RETAIL POST" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="trap">
+ <g id="trap-banner">
+  <rect x="120" y="170" width="1680" height="150" rx="26" fill="#9e1b1b"/>
+  <text x="960" y="222" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="740" fill="#fde9a6">EXAM TRAP · परीक्षा का जाल</text>
+  <text x="960" y="282" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="780" fill="#ffffff">यहीं confusion होता है</text>
+ </g>
+<g id="trap-left">
+  <rect x="120" y="360" width="820" height="340" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <path d="M174 390h712" stroke="#b8403a" stroke-width="3" stroke-linecap="round"/>
+  <text id="trap-left-topic" x="530" y="457" font-family="Inter, sans-serif" font-size="48" font-weight="770" fill="#2b2622" text-anchor="middle">Retail Post agreement</text>
+  <text id="trap-left-topic-hi" x="530" y="506" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="620" fill="#6f6a63" text-anchor="middle">खुदरा डाक का समझौता</text>
+  <path id="trap-left-arrow" d="M530 529v46m-12-12 12 12 12-12" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="trap-left-role" x="530" y="633" font-family="Inter, sans-serif" font-size="60" font-weight="790" fill="#2b2622" text-anchor="middle">Circle Head</text>
+  <text id="trap-left-role-hi" x="530" y="676" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63" text-anchor="middle">डाक परिमंडल प्रमुख</text>
+</g>
+<g id="trap-right">
+  <rect x="980" y="360" width="820" height="340" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <path d="M1034 390h712" stroke="#b8403a" stroke-width="3" stroke-linecap="round"/>
+  <text id="trap-right-topic" x="1390" y="457" font-family="Inter, sans-serif" font-size="48" font-weight="770" fill="#2b2622" text-anchor="middle">Partnership instructions</text>
+  <text id="trap-right-topic-hi" x="1390" y="506" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="620" fill="#6f6a63" text-anchor="middle">साझेदारी के निर्देश</text>
+  <path id="trap-right-arrow" d="M1390 529v46m-12-12 12 12 12-12" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="trap-right-role" x="1390" y="633" font-family="Inter, sans-serif" font-size="60" font-weight="790" fill="#2b2622" text-anchor="middle">Director General</text>
+  <text id="trap-right-role-hi" x="1390" y="676" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#6f6a63" text-anchor="middle">महानिदेशक</text>
+</g>
+
+ <g id="option">
+  <rect id="option-bg" x="120" y="740" width="1680" height="220" rx="25" fill="#f3ead6" stroke="#dacaa8" stroke-width="3"/>
+  <text id="wrong-option" x="190" y="862" font-family="Inter,sans-serif" font-size="52" font-weight="720" fill="#2b2622">Retail Post agreement → Director General</text>
+  <g id="option-cross">
+   <circle cx="1700" cy="843" r="40" fill="#e7e3da" stroke="#4b4f58" stroke-width="4"/>
+   <path d="m1684 827 32 32m0-32-32 32" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+  </g>
+ </g>
+</g>
+<g id="what">
+ <text id="what-question" x="960" y="220" text-anchor="middle" class="hi" font-size="52" font-weight="760" fill="#9e1b1b">क्या-क्या आता है?</text>
+ <g id="what-core">
+  <circle cx="960" cy="580" r="160" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+  <circle cx="960" cy="580" r="160" fill="none" stroke="#fbf7ee" stroke-width="10" stroke-dasharray="0 23" stroke-linecap="round"/>
+  <circle cx="960" cy="580" r="139" fill="none" stroke="#eac5a1" stroke-opacity=".78" stroke-width="2"/>
+  <text id="what-title" x="960" y="573" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="790" fill="#fff">Retail Post</text>
+  <text id="what-title-hi" x="960" y="630" text-anchor="middle" class="hi" font-size="36" font-weight="650" fill="#fde9a6">खुदरा डाक</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ camera:[[0,{zoom:1}]],
+ shots:[[0,'#trap'],[5.83,'#what']],
+ on:[
+  [0,'pop','#option-bg',{from:.96,spring:'soft'}],
+  [0,'type','#wrong-option',{cps:30}],
+  [4.92,'strike','#wrong-option',{color:'#4b4f58',width:7,dur:.31,dim:.64}],
+  [4.92,'draw','#option-cross',{dur:.36}],
+  [4.92,'color','#trap-left-role',{to:'#2e7d4f',dur:.27}],
+  [7.19,'words','#what-question',{from:'up',dist:10,gap:.12,spring:'soft'}]
+ ]
+})
+</script>
+</section>
