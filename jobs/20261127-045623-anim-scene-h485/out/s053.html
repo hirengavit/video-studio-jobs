@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s053" data-section="RECAP · PARTS 1–2" data-series="PRODUCTS" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}'>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="recap-envelope">
+      <rect x="140" y="170" width="1260" height="820" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M170 171H1370Q1399 171 1399 199V204L782 318Q770 322 758 318L141 204V199Q141 171 170 171Z" fill="#f3ead6"/>
+      <path d="M141 204 758 318Q770 322 782 318L1399 204" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M169 460H1370M169 590H1370M169 720H1370M169 850H1370" stroke="#ead9a8" stroke-width="2" opacity=".59"/>
+      <text x="770" y="225" text-anchor="middle" fill="#6f6a63" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="36" font-weight="650">RECAP · दोहराव</text>
+      <text x="770" y="282" text-anchor="middle" fill="#9e1b1b" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800">Parts 1–2 · भाग 1 और 2</text>
+      <g id="recap-seal">
+        <circle cx="1271" cy="259" r="44" fill="#9e1b1b"/>
+        <circle cx="1271" cy="259" r="34" fill="none" stroke="#f3ead6" stroke-width="2" stroke-dasharray="3 5"/>
+        <text x="1271" y="273" text-anchor="middle" font-family="Inter, sans-serif" font-size="39" font-weight="800" fill="#fff">5</text>
+      </g>
+    </g>
+    <g id="row1-term">
+      <text x="190" y="383" fill="#2b2622" font-family="Inter, sans-serif" font-size="48" font-weight="780">Document · Parcel</text>
+      <text x="190" y="432" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="620">दस्तावेज · पार्सल</text>
+    </g>
+    <g id="row1-pill">
+      <rect x="820" y="359" width="510" height="74" rx="37" fill="#fde9a6"/>
+      <text x="1075" y="410" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="720">दो classes</text>
+    </g>
+    <path id="row1-tick" d="M1354 397l14 14 28-30" fill="none" stroke="#2e7d4f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <use id="recap-emblem" href="piece:speed-post-emblem" transform="translate(1450 750.7) scale(0.65)"/>
+  </svg>
+  <script type="text/scene">
+  {
+    on:[
+      [6.56,'fade','#row1-term',{dur:0.28}],
+      [7.96,'pop','#row1-pill',{spring:'soft',from:0.92}],
+      [10.48,'draw','#row1-tick',{dur:0.28}]
+    ],
+    update(t, section, $) {
+      const seal = $('#recap-seal')[0];
+      if (!seal) return;
+      const q = (t - 1.58) / 0.50;
+      const scale = q > 0 && q < 1 ? 1 + 0.12 * Math.sin(Math.PI * q) : 1;
+      seal.setAttribute('transform', 'translate(1271 259) scale(' + scale + ') translate(-1271 -259)');
+    }
+  }
+  </script>
+</section>
