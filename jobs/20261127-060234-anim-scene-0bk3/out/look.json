@@ -1,0 +1,37 @@
+{
+ "moments": [
+  "0.30",
+  "2.30",
+  "4.59",
+  "6.89",
+  "9.18",
+  "11.33"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s223",
+   "text": "15 दिन बाद = सिर्फ न मिलने की complaint  / delivery का वादा नहीं",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s223",
+   "text": "काम के घंटों में / वेब पोर्टल",
+   "t": 6.89
+  },
+  {
+   "kind": "off-frame",
+   "scene": "s223",
+   "message": "a card or panel runs 103 px past the frame edge at 6.9 s (check the camera zoom and the layout)",
+   "t": 6.89
+  },
+  {
+   "kind": "off-frame",
+   "scene": "s223",
+   "message": "a card or panel runs 103 px past the frame edge at 9.2 s (check the camera zoom and the layout)",
+   "t": 9.18
+  }
+ ]
+}
