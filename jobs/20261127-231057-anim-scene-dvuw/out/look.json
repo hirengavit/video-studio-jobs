@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.52",
+  "5.04",
+  "7.57",
+  "10.09",
+  "12.46"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "mostly-empty",
+   "scene": "s196",
+   "message": "a card (#s196-pbe-meaning) is mostly empty at 10.1 s: bring its items in sooner, or size it for what it holds now",
+   "t": 10.09
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s196",
+   "message": "a card (#s196-pbe-meaning) is mostly empty at 12.5 s: bring its items in sooner, or size it for what it holds now",
+   "t": 12.46
+  }
+ ]
+}
