@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" width="360" height="200">
+<defs>
+<clipPath id="plane-body-clip"><path d="M40 104 Q40 78 80 76 L276 76 Q318 78 326 104 Q318 128 276 130 L120 130 Q60 128 40 104 Z"/></clipPath>
+</defs>
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="wheels">
+<path d="M150 130 L140 168 M220 130 L230 168" fill="none"/>
+<circle cx="140" cy="176" r="10" fill="#2b2622"/>
+<circle cx="230" cy="176" r="10" fill="#2b2622"/>
+</g>
+<g id="tail">
+<path d="M64 82 L40 30 L72 30 L110 78 Z" fill="#ffffff"/>
+<path d="M48 104 L18 112 L22 122 L70 114 Z" fill="#ffffff"/>
+</g>
+<g id="plane-body">
+<path d="M40 104 Q40 78 80 76 L276 76 Q318 78 326 104 Q318 128 276 130 L120 130 Q60 128 40 104 Z" fill="#ffffff"/>
+<rect x="0" y="100" width="360" height="12" fill="#9e1b1b" stroke="none" clip-path="url(#plane-body-clip)"/>
+<path d="M40 104 Q40 78 80 76 L276 76 Q318 78 326 104 Q318 128 276 130 L120 130 Q60 128 40 104 Z" fill="none"/>
+<path d="M254 78 Q270 80 286 92 L252 92 Z" fill="#cfdbe3" stroke-width="2"/>
+</g>
+<g id="wing">
+<path d="M150 106 L232 106 L196 150 L150 150 Z" fill="#ffffff"/>
+</g>
+<g id="propeller">
+<circle cx="328" cy="104" r="6" fill="#2b2622"/>
+<path d="M334 70 Q342 104 334 138" fill="none" stroke-width="6"/>
+</g>
+</g>
+<circle data-anchor="base" cx="180" cy="186" r="0"/>
+</svg>
