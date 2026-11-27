@@ -8,12 +8,5 @@
   "11.14"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s208",
-   "text": "डाक जीवन बीमा · ग्रामीण डाक जीवन बीमा",
-   "t": 6.77
-  }
- ]
+ "warnings": []
 }
