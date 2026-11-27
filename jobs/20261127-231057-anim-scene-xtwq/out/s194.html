@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s194" data-section="PART 8 · DAK GHAR NIRYAT KENDRA" data-series="PRODUCTS" data-in="wipe" data-in-opts='{"from":"right"}'>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <g id="dnk-two-parts">
+    <text x="160" y="213" font-family="Inter, sans-serif" font-size="57" font-weight="810" fill="#9e1b1b">DNK</text>
+    <text id="two-parts-title" x="307" y="213" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="740" fill="#9e1b1b">= दो चीज़ें साथ</text>
+    <g id="dnk-facility">
+      <rect id="facility-body" x="160" y="260" width="740" height="700" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <g id="facility-band">
+      <path d="M161 364V287Q161 261 187 261H873Q899 261 899 287V364Z" fill="#9e1b1b"/>
+      <text x="530" y="310" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="770" fill="#fff">Authorised postal facility</text>
+      <text id="facility-hi" x="530" y="351" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="630" fill="#fff">अधिकृत डाक सुविधा</text>
+      </g>
+      <text id="staff-help" x="225" y="432" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="760" fill="#2b2622">staff की मदद</text>
+    </g>
+    <text id="two-parts-plus" x="960" y="532" text-anchor="middle" font-family="Inter, sans-serif" font-size="78" font-weight="700" fill="#9e1b1b">+</text>
+    <g id="dnk-documentation">
+      <rect id="documentation-body" x="1020" y="260" width="740" height="700" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <g id="documentation-band">
+      <path d="M1021 364V287Q1021 261 1047 261H1733Q1759 261 1759 287V364Z" fill="#fde9a6"/>
+      <text x="1043" y="310" font-family="Inter, sans-serif" font-size="38" textLength="390" lengthAdjust="spacing" font-weight="770" fill="#2b2622">Online documentation</text>
+      <text x="1043" y="351" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="630" fill="#2b2622">ऑनलाइन दस्तावेज़</text>
+      </g>
+      <g id="dnk-monitor">
+        <use href="piece:system-screen-icon" transform="translate(1415 223) scale(0.9)"/>
+        <text id="dnk-portal" x="1595" y="388" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="750" fill="#2b2622">DNK portal</text>
+      </g>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.96,"words","#two-parts-title",{gap:0.19,dist:10}],
+    [0.96,"fade","#facility-body, #documentation-body",{dur:0.40}],
+    [2.62,"pop","#facility-band",{from:0.97,spring:"soft"}],
+    [3.12,"fade","#facility-hi",{dur:0.22}],
+    [4.90,"fade","#staff-help",{dur:0.24}],
+    [6.10,"fade","#two-parts-plus",{dur:0.21}],
+    [6.88,"pop","#documentation-band",{from:0.97,spring:"soft"}],
+    [7.12,"fade","#dnk-monitor",{dur:0.22}],
+    [7.38,"type","#dnk-portal",{cps:22}]
+  ]
+}
+</script>
+</section>
