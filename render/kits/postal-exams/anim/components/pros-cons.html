@@ -1,0 +1,40 @@
+<section class="vs-scene" id="pros-cons" data-in="fade" data-in-dur="0.4" data-section="पेमेंट्स बैंक">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text id="title" x="160" y="246" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="62" font-weight="800" fill="#9e1b1b">IPPB की खूबियाँ और सीमाएँ</text>
+    <text id="titlehi" x="160" y="306" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="600" fill="#6f6a63">क्या कर सकता है, क्या नहीं</text>
+    <g id="pros">
+      <rect x="160" y="356" width="780" height="456" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M160 450 V386 a30 30 0 0 1 30 -30 H910 a30 30 0 0 1 30 30 V450 Z" fill="#9e1b1b"/>
+      <text x="216" y="416" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="700" fill="#fde9a6">खूबियाँ</text>
+    </g>
+    <g id="cons">
+      <rect x="980" y="356" width="780" height="456" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M980 450 V386 a30 30 0 0 1 30 -30 H1730 a30 30 0 0 1 30 30 V450 Z" fill="#f3ead6"/>
+      <text x="1036" y="416" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="700" fill="#6f6a63">सीमाएँ</text>
+    </g>
+    <g class="pro" id="p1"><circle cx="228" cy="520" r="12" fill="#9e1b1b"/><text x="264" y="536" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="700" fill="#2b2622">घर बैठे बैंकिंग</text><text x="264" y="590" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="500" fill="#6f6a63">Postman और GDS घर पर सेवा देते हैं</text></g>
+    <g class="pro" id="p2"><circle cx="228" cy="666" r="12" fill="#9e1b1b"/><text x="264" y="682" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="700" fill="#2b2622">आधार से भुगतान</text><text x="264" y="736" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="500" fill="#6f6a63">AePS से पैसे निकालें और भेजें</text></g>
+    <g class="con" id="k1"><rect x="1036" y="516" width="24" height="8" rx="4" fill="#6f6a63"/><text x="1084" y="536" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="700" fill="#2b2622">लोन नहीं दे सकता</text><text x="1084" y="590" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="500" fill="#6f6a63">पेमेंट्स बैंक को कर्ज़ की अनुमति नहीं</text></g>
+    <g class="con" id="k2"><rect x="1036" y="662" width="24" height="8" rx="4" fill="#6f6a63"/><text x="1084" y="682" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="42" font-weight="700" fill="#2b2622">जमा सीमा ₹2 लाख</text><text x="1084" y="736" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="500" fill="#6f6a63">हर ग्राहक की अधिकतम जमा</text></g>
+    <g id="verdict">
+      <rect x="160" y="842" width="1600" height="150" rx="40" fill="#f3ead6"/>
+      <text x="960" y="904" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="700" fill="#2b2622">IPPB पूरी तरह Department of Posts का अपना बैंक है</text>
+      <text x="960" y="958" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="34" font-weight="500" fill="#6f6a63">बचत खाता, भुगतान, पैसे भेजना — पर लोन नहीं</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}], [2.8, {zoom: 1.02, x: -20}], [5.0, {zoom: 1.02, x: 20}], [8, {zoom: 1}, 'inOut']],
+    on: [
+      [0.05, 'words', '#title', {gap: 0.1, dist: 20, spring: 'soft'}],
+      [0.6, 'fade', '#titlehi', {dur: 0.5}],
+      [1.0, 'slide', '#pros', {from: 'left', dist: 80, spring: 'soft'}],
+      [1.5, 'slide', '.pro', {from: 'left', dist: 30, spring: 'soft', stagger: 0.5}],
+      [3.0, 'slide', '#cons', {from: 'right', dist: 80, spring: 'soft'}],
+      [3.5, 'slide', '.con', {from: 'right', dist: 30, spring: 'soft', stagger: 0.5}],
+      [5.0, 'slide', '#verdict', {from: 'down', dist: 30, spring: 'soft'}],
+    ],
+  }
+  </script>
+</section>
