@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s131" data-in="cut" data-section="PART 6 · DELIVERY" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="definition">
+    <rect x="120" y="220" width="640" height="640" rx="30" fill="#9e1b1b"/>
+    <rect x="129" y="229" width="622" height="622" rx="23" fill="none" stroke="#fbf7ee" stroke-width="16" stroke-dasharray="0 26" stroke-linecap="round"/>
+    <rect x="159" y="259" width="562" height="562" rx="17" fill="none" stroke="#b8403a" stroke-width="2"/>
+    <text x="440" y="519" text-anchor="middle" fill="#ffffff" font-size="155" font-weight="825">POD</text>
+    <text id="term-en" x="440" y="637" text-anchor="middle" fill="#ffffff" font-size="52" font-weight="740">Proof of Delivery</text>
+    <text id="term-hi" x="440" y="710" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="740">वितरण का प्रमाण</text>
+    <g id="meaning">
+      <rect x="860" y="220" width="940" height="640" rx="32" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <text id="meaning-1" x="1330" y="342" text-anchor="middle" fill="#2b2622" style="font-family:'Noto Sans Devanagari',Inter,sans-serif;line-height:1.35" font-size="48" font-weight="730">delivery के बाद</text>
+      <text id="meaning-2" x="1330" y="407" text-anchor="middle" fill="#2b2622" style="font-family:'Noto Sans Devanagari',Inter,sans-serif;line-height:1.35" font-size="48" font-weight="760">sender को मिलने वाला सबूत</text>
+      <g id="pod-mini">
+        <use href="piece:pod-card" transform="translate(1044 433) scale(1.1)"/>
+        <text x="1330" y="487" text-anchor="middle" fill="#ffffff" font-size="38" font-weight="770">POD</text>
+      </g>
+    </g>
+  </g>
+  <g id="fee-shot">
+    <text id="accountable" x="120" y="250" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="760">Domestic accountable item का sender</text>
+    <g id="pod-large">
+      <use href="piece:pod-card" transform="translate(960 330) scale(1.4)"/>
+      <text x="1324" y="398" text-anchor="middle" fill="#ffffff" font-size="54" font-weight="800">POD</text>
+    </g>
+    <g id="fee">
+      <use href="piece:key-fact-stamp" transform="translate(120 360)"/>
+      <text x="400" y="548" text-anchor="middle" fill="#ffffff" font-size="132" font-weight="820">₹10</text>
+      <text x="400" y="622" text-anchor="middle" fill="#fde9a6" font-size="36" font-weight="690">per item</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  shots:[[0,'#definition'],[6.60,'#fee-shot']],
+  on:[
+    [1.36,'fade','#term-en',{dur:0.24}],
+    [1.86,'fade','#term-hi',{dur:0.25}],
+    [2.70,'fade','#meaning',{dur:0.25}],
+    [2.70,'words','#meaning-1',{gap:0.21,dist:11}],
+    [3.08,'draw','#pod-mini',{dur:0.65}],
+    [4.10,'words','#meaning-2',{gap:0.25,dist:11}],
+    [6.70,'words','#accountable',{gap:0.42,dist:12}],
+    [10.36,'pop','#fee',{from:0.94}]
+  ]
+}
+</script>
+</section>
