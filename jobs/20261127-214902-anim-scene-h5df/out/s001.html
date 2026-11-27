@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s001" data-section="RETAIL &amp; CITIZEN SERVICES" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<use href="set:citizen-counter" layer="back"/>
+<text x="960" y="262" fill="#fff" text-anchor="middle" font-size="48" font-weight="700">POST OFFICE</text>
+<g id="invoice-window" transform="translate(760 340)">
+ <use href="piece:invoice-calendar-icon"/>
+ <circle data-anchor="base" cx="200" cy="360" r="0"/>
+</g>
+<g text-anchor="middle" font-size="72" font-weight="700" fill="#2b2622">
+ <text x="360" y="368" id="retail">Retail &amp;</text>
+ <text x="360" y="448" id="citizen">Citizen</text>
+ <text x="360" y="528" id="services">Services</text>
+</g>
+<g id="title-hi" class="hi" font-family="Noto Sans Devanagari, Inter, sans-serif" text-anchor="middle" font-size="44" fill="#9e1b1b">
+ <text x="360" y="585" font-family="Noto Sans Devanagari, Inter, sans-serif">खुदरा और</text>
+ <text x="360" y="644" font-family="Noto Sans Devanagari, Inter, sans-serif">नागरिक सेवाएँ</text>
+</g>
+<g text-anchor="middle" fill="#2b2622" font-weight="700" font-size="56">
+ <text id="act-first" x="1560" y="331">Post Office</text>
+ <text id="act-second" x="1560" y="393">Act, 2023</text>
+</g>
+<text id="act-hi" class="hi" font-family="Noto Sans Devanagari, Inter, sans-serif" x="1560" y="453" text-anchor="middle" fill="#6f6a63" font-size="40">डाकघर अधिनियम, 2023</text>
+<g id="act-book" transform="translate(1345 488.05)">
+ <g transform="scale(.7)">
+  <use href="piece:regulations-book"/>
+  <g text-anchor="middle" font-size="48" font-weight="700" fill="#9e1b1b">
+   <text x="164" y="154">ACT</text>
+   <text x="164" y="208">2023</text>
+  </g>
+  <circle data-anchor="base" cx="150" cy="388.5" r="0"/>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ set: 'citizen-counter',
+ camera: [[0,'wide'],[0.50,'wide'],[9.75,{zoom:1.05},'linear'],[10,'wide','inOut']],
+ on: [
+  [0,'place','#invoice-window',{spot:'window'}],
+  [0.5,'fade','#title-hi',{dur:0.34}],
+  [2.50,'highlight','#retail',{color:'#f2b705',opacity:0.28,dur:0.36}],
+  [3.62,'highlight','#citizen',{color:'#f2b705',opacity:0.28,dur:0.36}],
+  [4.00,'highlight','#services',{color:'#f2b705',opacity:0.28,dur:0.36}],
+  [5.58,'place','#act-book',{spot:'counter-right'}],
+  [5.58,'fade','#act-book',{dur:0.25}],
+  [6.70,'type','#act-first',{cps:19}],
+  [7.62,'type','#act-second',{cps:14}],
+  [7.20,'fade','#act-hi',{dur:0.3}]
+ ]
+}
+</script>
+</section>
