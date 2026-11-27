@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s097" data-section="PART 3 · AADHAAR FEES" data-series="PRODUCTS" data-in="wipe" data-in-dur="0.45" data-in-opts='{"from":"right"}'>
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="comparison">
+<g id="home">
+<rect x="140" y="200" width="620" height="740" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+<g id="house" stroke="#2b2622" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+<path d="M326 448 450 346l124 102v146H326Z" fill="#fff"/>
+<path d="M299 449 450 324l151 125-20 23-131-108-131 108Z" fill="#9e1b1b"/>
+<path d="M424 594V505a6 6 0 0 1 6-6h40a6 6 0 0 1 6 6v89Z" fill="#f3ead6"/>
+<rect x="348" y="476" width="48" height="49" rx="5" fill="#f3ead6"/><rect x="504" y="476" width="48" height="49" rx="5" fill="#f3ead6"/>
+<path d="M308 594h284" fill="none"/>
+</g>
+<text x="450" y="682" font-family="Inter, sans-serif" font-size="54" font-weight="750" fill="#2b2622" text-anchor="middle">Home enrolment</text>
+<text x="450" y="742" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#6f6a63" text-anchor="middle">घर पर नामांकन</text>
+<rect x="260" y="802" width="380" height="73" rx="36" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<text x="450" y="852" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="750" fill="#2b2622" text-anchor="middle">UIDAI की मंज़ूरी</text>
+</g>
+<g id="celc">
+<rect x="960" y="200" width="820" height="740" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<rect x="960" y="200" width="820" height="355" rx="30" fill="#9e1b1b"/>
+<rect x="960" y="200" width="820" height="355" rx="30" fill="none" stroke="#fbf7ee" stroke-width="13" stroke-dasharray="0 25" stroke-linecap="round"/>
+<rect x="1620" y="230" width="121" height="54" rx="27" fill="#7d1414"/>
+<text x="1680" y="267" font-family="Inter, sans-serif" font-size="33" font-weight="750" fill="#fff" text-anchor="middle">IPPB</text>
+<text id="celc-abbr" x="1370" y="331" font-family="Inter, sans-serif" font-size="80" font-weight="820" fill="#fff" text-anchor="middle">CELC</text>
+<g id="celc-full">
+<text x="1370" y="397" font-family="Inter, sans-serif" font-size="36" font-weight="750" fill="#fff" text-anchor="middle">Child Enrolment Lite Client</text>
+<text x="1370" y="453" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="750" fill="#fde9a6" text-anchor="middle">बाल नामांकन</text>
+</g>
+<text id="doorstep" x="1370" y="517" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="750" fill="#fff" text-anchor="middle">doorstep सुविधा</text>
+<path d="M1000 757h740" stroke="#ead9a8" stroke-width="2"/>
+<text id="mobile-update" x="1008" y="688" font-family="Inter, sans-serif" font-size="43" font-weight="750" fill="#2b2622">mobile number update</text>
+<g id="fee">
+<rect x="1587" y="626" width="146" height="91" rx="20" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+<text x="1660" y="689" font-family="Inter, sans-serif" font-size="51" font-weight="820" fill="#9e1b1b" text-anchor="middle">₹75</text>
+</g>
+</g>
+<g id="not-equal">
+<circle cx="860" cy="570" r="51" fill="#2b2622"/>
+<text x="860" y="595" font-family="Inter, sans-serif" font-size="67" font-weight="750" fill="#fff" text-anchor="middle">≠</text>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+[1.68,'pop','#celc',{from:0.97,spring:'fast'}],
+[3.00,'type','#celc-abbr',{cps:28}],
+[3.50,'fade','#celc-full',{dur:0.29}],
+[4.06,'fade','#doorstep',{dur:0.29}],
+[5.42,'pop','#not-equal',{from:0.91,spring:'fast'}],
+[8.44,'type','#mobile-update',{cps:28}],
+[9.90,'pop','#fee',{from:0.92,spring:'fast'}]
+]}
+</script>
+</section>
