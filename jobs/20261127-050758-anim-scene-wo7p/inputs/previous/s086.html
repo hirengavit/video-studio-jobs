@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s086" data-in="cut" data-section="PART 4 · BOOKING AND TRACKING" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="cnb">
+ <text x="140" y="320" font-family="Inter, sans-serif" font-size="80" font-weight="810" fill="#2b2622">Click N Book</text>
+ <text id="cnb-hi" x="140" y="400" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="680" fill="#6f6a63">ऑनलाइन बुकिंग</text>
+ <g id="speed-chip">
+  <rect x="140" y="520" width="620" height="110" rx="27" fill="#f3ead6"/>
+  <rect x="140" y="543" width="8" height="64" rx="4" fill="#9e1b1b"/>
+  <text x="178" y="591" font-family="Inter, sans-serif" font-size="53" font-weight="770" fill="#2b2622">Speed Post</text>
+ </g>
+ <g id="registration-chip">
+  <rect x="140" y="660" width="620" height="110" rx="27" fill="#f3ead6"/>
+  <rect x="140" y="683" width="8" height="64" rx="4" fill="#9e1b1b"/>
+  <text x="178" y="731" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="730" fill="#2b2622">Registration वाली services</text>
+ </g>
+ <g id="browser">
+  <rect x="900" y="200" width="880" height="700" rx="33" fill="#fff" stroke="#2b2622" stroke-width="3"/>
+  <path d="M933 201H1747A32 32 0 0 1 1779 233V298H901V233A32 32 0 0 1 933 201Z" fill="#f3ead6"/>
+  <path d="M901 298H1779" stroke="#ead9a8" stroke-width="3"/>
+  <circle cx="949" cy="249" r="9" fill="#9e1b1b"/><circle cx="979" cy="249" r="9" fill="#c9bba1"/><circle cx="1009" cy="249" r="9" fill="#c9bba1"/>
+  <rect x="1060" y="229" width="554" height="40" rx="20" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+  <rect x="1090" y="354" width="500" height="308" rx="25" fill="#fbf7ee"/>
+  <use href="piece:speed-post-parcel" transform="translate(1232 414) scale(0.6)"/>
+  <rect x="1160" y="720" width="360" height="96" rx="29" fill="#9e1b1b"/>
+  <text x="1340" y="780" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="760" fill="#ffffff">Book</text>
+ </g>
+</g>
+<g id="pair">
+ <g id="booking-card">
+  <rect x="140" y="220" width="760" height="640" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M170 220H870A30 30 0 0 1 900 250V380H140V250A30 30 0 0 1 170 220Z" fill="#9e1b1b"/>
+  <text x="520" y="295" text-anchor="middle" font-family="Inter, sans-serif" font-size="62" font-weight="790" fill="#ffffff">Online booking</text>
+  <text x="520" y="351" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="660" fill="#fff4df">ऑनलाइन बुकिंग</text>
+ </g>
+ <g id="tracking-card">
+  <rect x="1020" y="220" width="760" height="640" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M1050 220H1750A30 30 0 0 1 1780 250V380H1020V250A30 30 0 0 1 1050 220Z" fill="#f3ead6"/>
+  <text x="1400" y="295" text-anchor="middle" font-family="Inter, sans-serif" font-size="62" font-weight="790" fill="#2b2622">Online tracking</text>
+  <text x="1400" y="351" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="660" fill="#6f6a63">ऑनलाइन ट्रैकिंग</text>
+ </g>
+ <g id="separate-disc">
+  <circle cx="960" cy="540" r="44" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+  <text x="960" y="563" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="790" fill="#4b4f58">≠</text>
+ </g>
+ <text id="separate-caption" x="960" y="940" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="760" fill="#2b2622">दो अलग चीज़ें</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,'#cnb'],[5.70,'#pair']],
+ on:[
+  [0.66,'fade','#cnb-hi',{dur:0.3}],
+  [1.74,'pop','#speed-chip',{spring:'soft'}],
+  [2.98,'pop','#registration-chip',{spring:'soft'}],
+  [7.02,'pop','#tracking-card',{spring:'soft'}],
+  [8.22,'pop','#separate-disc',{spring:'soft'}],
+  [8.22,'fade','#separate-caption',{dur:0.34}]
+ ]
+}
+</script>
+</section>
