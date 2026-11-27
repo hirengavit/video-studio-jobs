@@ -8,13 +8,5 @@
   "11.27"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "low-contrast",
-   "scene": "s020",
-   "text": "Circle Head (2.8:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 9.14
-  }
- ]
+ "warnings": []
 }
