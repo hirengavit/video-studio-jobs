@@ -1,0 +1,107 @@
+# Storyboard: Retail and citizen services at the post office (Postal Exams, Hindi)
+
+No character, no rigs. Calm annotated slides in the kit's colours: cream canvas #fbf7ee, ink #2b2622, postal red cards, yellow only for highlights, green only for correct/allowed, slate + strike for wrong. Kit denies: smear, ticker, scatter, spin, float, wiggle, shake, bounce, flip, letters. Transitions: cut (same layout / same part), fade (new part, recap), wipe (`{"from":"right"}`, change of topic inside a part).
+
+## Shared
+
+**Series tag:** PRODUCTS (top-right pill, every scene, never animated).
+
+**Section labels** (top-left, English, change only with the part):
+- s001–s010: `RETAIL & CITIZEN SERVICES`
+- s011–s038: `PART 1 · RETAIL POST`
+- s039–s041: `RECAP · PART 1`
+- s042–s070: `PART 2 · AADHAAR`
+- s071–s072: `RECAP · PART 2`
+- s073–s098: `PART 3 · AADHAAR FEES`
+- s099–s115: `PART 4 · POPSK`
+- s116–s118: `RECAP · PARTS 3–4`
+- s119–s138: `PART 5 · CSC & RETAIL`
+- s139–s164: `PART 6 · JEEVAN PRAMAAN`
+- s165–s167: `RECAP · PARTS 5–6`
+- s168–s190: `PART 7 · GANGAJAL & PRASADAM`
+- s191–s202: `PART 8 · DAK GHAR NIRYAT KENDRA`
+- s203–s205: `RECAP · PARTS 7–8`
+- s206–s211: `PART 9 · DAK CHAUPAL`
+- s212–s229: `KEY POINTS`
+- s230: `RETAIL & CITIZEN SERVICES`
+
+**Safe area:** the app's header (label + pill) owns y 0–130. Content lives in x 100–1820, y 160–1000, even margins.
+
+**Set `citizen-counter`** (new, the recurring picture): a simple ink post-office counter window, 3 px ink, rounded ends. Built from `counter-window`. Pieces: a sand (#f3ead6) counter top across the lower frame (x 160–1760, top edge y 760, front face to y 860, ink outline); above it, centred, a white-framed window opening 640×400 (x 640–1280, y 330–730) with a thin cream glass panel, a small half-round speaking hole at its bottom edge and a sill (y 730); a blank postal-red sign board above the window (x 700–1220, y 200–290) for the scene's words. No logo, no lettering in the piece. Spots: `window` [960, 700] (a part's icon rests on the inner sill, centred in the glass), `sign` [960, 245] (centre of the sign board, for text), `counter-left` [470, 760], `counter-right` [1450, 760], `counter-centre` [960, 760]. Framings: `wide` (zoom 1), `medium` (zoom 1.3 on the window), `close` (zoom 1.7 on the window). Used for the opening hook, the intro's nine-part list, and each part's opener, where that part's icon rests in the window (`place` on spot `window`) and the part title is on the sign:
+- Part 1: `invoice-calendar-icon` (bill with rupee; reuse) · Part 2–3: `id-card-icon` (new) · Part 4: `passport-icon` (reuse) · Part 5: `system-screen-icon` (reuse) · Part 6: `pensioner-phone-icon` (new) · Part 7: `gangajal-bottle` (new) with `temple-bell-parcel` (new) · Part 8: `globe-parcel` (new) · Part 9: `mobile-post-van` (reuse; rests on `counter-centre`, too big for the window).
+
+**New pieces** (flat ink icons, 3 px ink, kit colours, no lettering):
+- `counter-window`: the window + sign board + counter top above, as one piece (1920×1080 viewBox, real size). Anchors: base, top, window, sign. Scenes: set citizen-counter.
+- `id-card-icon`: a plain white ID card 360×230, red top strip, grey photo box at left (simple bust silhouette), three grey lines, a small square QR-like block bottom right; never an Aadhaar design or emblem. Anchors: base, top, grip. Parts: #card, #strip, #photo, #lines, #qr.
+- `pensioner-phone-icon`: an old man's head-and-shoulders silhouette in ink (white hair, glasses, simple, no face detail) beside a phone 140×260 with a green tick on its screen. 400×400. Anchors: base. Parts: #pensioner, #phone, #tick.
+- `fingerprint-scanner`: a slate fingerprint scanner (rounded box 260×160, glass oval with a drawn fingerprint whorl in ink), cable stub. Anchors: base, top. Parts: #body, #glass, #print.
+- `gangajal-bottle`: a clear plastic bottle 120×300 with a pale blue water level (#cfe3ee fill, ink outline), red cap, a blank white label band. Anchors: base, top, grip. Parts: #bottle, #water, #cap, #label.
+- `temple-bell-parcel`: a brass temple bell (#d9a514 with ink) hanging over a small brown-paper parcel tied with string. 400×400. Anchors: base. Parts: #bell, #parcel.
+- `globe-parcel`: a parcel 280×200 with a round globe tag (meridian lines in ink, pale blue) tied to it. Anchors: base, top. Parts: #parcel, #tag, #globe.
+- `phone-sms`: a phone 220×420, cream screen with a white chat bubble (blank grey lines) and a small speech-tail; for SMS / app moments. Anchors: base, screen. Parts: #phone, #screen, #bubble.
+- `temple-icon`: a simple ink temple outline (shikhara spire, flag, steps), sand fill, 320×360, no specific real temple. Anchors: base. Parts: #temple, #flag.
+
+**Library pieces reused:** `invoice-calendar-icon`, `passport-icon`, `system-screen-icon`, `mobile-post-van`, `regulations-book` (Act/Rules/Regulations book stack), `icon-circle-office` (Circle Head), `offer-leaflet` (Direct Post), `passbook` (Dak Chaupal), `india-outline-map` (POPSK network, Gujarat pin by approximate position; no state lines), `registration-envelope` (registration definition), `invoice-sheet` (tax invoice / acknowledgement / PBE form), `system-screen-icon` also for portals (myAadhaar, Digital Sewa, DNK portal, Passport Seva) with its name typed on the screen.
+
+**Drawn in scenes (not pieces):** document cards, stamp-edge term cards, postmarks, pills, tables, envelopes for recaps, ticks and crosses.
+
+**Components** (starting points, moulded per scene): `chapter-title` (part openers when not on the counter), `key-term`, `rule-card` / `quote-card` (Act s.3, Rules 3/4/2(1)(c), Reg. 105/104/174(3)), `compare-cards` (e-Payment vs Retail Post), `exam-trap` (every "trap" line), `myth-fact`, `step-list` (operator's 5 steps, POPSK 5 steps), `timeline` (POPSK and CSC dates), `big-number` (13,352 · 452 · 1,013), `compare-table` (Aadhaar update types, fees, Gangajal prices, Prasadam e-MO, PBE grid), `cause-chain` / `mail-flow` (DLC flow, ONDC Click & Book), `mind-map` (what Retail Post covers, Dak Chaupal), `glossary-list` (PoI/PoA/PoR/PDB), `recap-card` (all recaps).
+
+**Real photos** (library first; each scene must also work drawn if the photo is missing): `photo:post-office-counter-scale` (opening), `photo:india-post-letter-box-cutout` (close), `photo:india-post-parcel-cutout` (Speed Post delivery moments), `photo:postman-delivering-parcel-cutout` (doorstep DLC, Prasadam by Speed Post; no face prominent), `photo:printed-invoice-bill` (bills / e-Payment), `photo:speed-post-barcode-label-cutout` (registration), `photo:india-post-delivery-van-cutout` (Dak Chaupal), `photo:business-mailroom` / `photo:parcel-sorting-hub` (DNK export). New ones are in materials.json: `aadhaar-enrolment-kit`, `passport-seva-kendra-sign`, `fingerprint-scanner-device`, `gangajal-bottles-photo`, `mobile-phone-qr-payment`, `gangotri-bhagirathi`, `somnath-temple`, `kashi-vishwanath-temple`. All photos as paper cut-outs (white border, `url(#vs-cutout)` or a white frame + soft shadow, tilt 1–2°) with a small grey caption, unless a scene says otherwise. No photos of identifiable people.
+
+## Continuity
+
+- No character, so continuity is layout: each **part opener** is the citizen-counter set (wide → medium push-in on the window icon); the cards that follow cut in (`cut` while one card holds across scenes, `wipe` from right to a new card within a part, `fade` into a new part and into each recap).
+- Long cards hold across scenes: a document card or table that the voice keeps explaining carries over with `Continues: sNNN`; the next scene starts on its exact last frame (same positions, highlights already made stay).
+- Screen direction: flows and timelines run left → right; "wrong" on the left/top struck in slate, "right" on the right/bottom in green.
+- Same colour meanings in every scene: e-Payment and Retail Post are both neutral cards (e-Payment always with a postal-red header band, Retail Post always with a yellow header band, as in compare-cards); green and slate appear only when one option is right or wrong.
+- Recap envelopes look identical each time (same envelope, same row style, ticks green as said, one-second hold after the last keyword).
+## s011
+Continues: no
+Section label: PART 1 · RETAIL POST
+In: fade · Framing: wide → medium on the window, then sub-shot (camera returns: #act is static)
+Idea: Part 1 opens on the counter: the bill icon in the window, the Act on the counter; then Section 3 of the Act. Component: rule-card — label "SECTION · धारा", number 3, "Post Office Act, 2023" / "डाकघर अधिनियम"; drop the postmark and chips.
+Sub-shots: #open @ 0.00, #act @ 4.38.
+Layout: #open = set: `invoice-calendar-icon` on spot window, sign "Retail Post" white 52px, counter front "कानूनी आधार · Retail Post · e-Payment" Hindi 40px; `regulations-book` (scale 0.55, panel "ACT 2023") on counter-left. #act = stamp x 120–620, y 200–900; white document card x 680–1800, y 200–900: Georgia 52px "Services prescribed by the Central Government." (y 420–560), source grey 30px "Post Office Act, 2023 · Section 3" (y 640), "सार (gist)" 32px label + "post office वो services देगा जो Central Government तय करे" 40px (y 740–840).
+| time | camera | character | actions |
+|---|---|---|---|
+| 0.00 | wide | — | set with icon, sign, counter line |
+| 0.38 | medium by 2.0 | — | — |
+| 1.48 | — | — | `place` act-book on counter-left |
+| 4.38 | static | — | cut to #act: stamp + empty card |
+| 4.72 | — | — | `pop` "3" |
+| 6.38 | — | — | `reveal` Georgia text + source |
+| 9.62 | — | — | `highlight` "Central Government" |
+| 10.52 | — | — | `fade` gist |
+
+## s012
+Continues: no
+Section label: PART 1 · RETAIL POST
+In: wipe from right · Framing: static
+Idea: Rule 3 counts three kinds of services; the first one. Component: quote-card — three numbered Georgia lines, red postmark "RULE 3", a sand gist panel.
+Layout: white card x 120–1800, y 180–960, #ead9a8 border, red top edge. Source label red 36px "Post Office Rules, 2024 · Rule 3" (y 240); postmark r 70 at (1680, 270). Lines Georgia 44px from x 260 at y 400 / 520 / 640 with red discs 1–3 at x 200. Line 1: "Citizen-centric services authorised by the Central Government". Gist panel y 760–920: "सार (gist)" 32px grey; keywords 40px x 400 / 900 / 1400.
+| time | camera | character | actions |
+|---|---|---|---|
+| 0.00 | static | — | card, label and postmark |
+| 3.06 | — | — | `pop` discs 1–3 (stagger 0.15) |
+| 5.46 | — | — | `pulse` disc 1 |
+| 6.48 | — | — | `reveal` line 1 |
+| 7.94 | — | — | `highlight` "authorised" |
+| 9.82 | — | — | `highlight` "Citizen-centric"; `pop` gist panel + `fade` keyword 1 "केंद्र सरकार" |
+
+## s013
+Continues: s012
+Section label: PART 1 · RETAIL POST
+In: cut · Framing: static
+Idea: kinds two and three on the same Rule 3 card, the highlight moving down.
+Layout: as s012. Line 2: "Services offered by State or Local Governments". Line 3: "Services through collaboration with public or private entities".
+| time | camera | character | actions |
+|---|---|---|---|
+| 0.00 | static | — | s012's last frame (line 1, its highlights, gist 1) |
+| 1.20 | — | — | `reveal` line 2 |
+| 2.38 | — | — | `highlight` "State or Local Governments" |
+| 3.72 | — | — | `fade` keyword 2 "राज्य / स्थानीय सरकार" |
+| 5.06 | — | — | `reveal` line 3 |
+| 6.30 | — | — | `highlight` "public or private" |
+| 7.34 | — | — | `fade` keyword 3 "public / private साझेदारी" |
+
