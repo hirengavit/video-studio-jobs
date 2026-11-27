@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 220" width="200" height="220">
+  <!-- White tear-off calendar leaf. Body (x 14–186, y 72–200) is blank for the scene's day number or weekday. -->
+  <g id="leaf" stroke-linecap="round" stroke-linejoin="round">
+    <path id="body" d="M6,26 H194 V196 Q194,212 178,212 H22 Q6,212 6,196 Z" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+    <path id="band" d="M6,26 Q6,18 14,18 H186 Q194,18 194,26 V64 H6 Z" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/>
+    <g id="rings">
+      <circle cx="58" cy="38" r="7" fill="#fbf7ee" stroke="#2b2622" stroke-width="3"/>
+      <circle cx="142" cy="38" r="7" fill="#fbf7ee" stroke="#2b2622" stroke-width="3"/>
+      <path d="M58,38 V8" fill="none" stroke="#2b2622" stroke-width="5"/>
+      <path d="M142,38 V8" fill="none" stroke="#2b2622" stroke-width="5"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="100" cy="213.5" r="0"/>
+  <circle data-anchor="top" cx="100" cy="16.5" r="0"/>
+</svg>
