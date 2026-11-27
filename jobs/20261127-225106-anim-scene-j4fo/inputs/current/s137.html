@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s137" data-section="PART 5 · CSC &amp; RETAIL" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<g id="ondc-route">
+<text id="ondc" x="807" y="230" text-anchor="end" font-family="Inter, sans-serif" font-size="72" font-weight="780" fill="#9e1b1b">ONDC</text>
+<text id="cab" x="821" y="230" font-family="Inter, sans-serif" font-size="72" font-weight="780" fill="#9e1b1b">· Click and Book</text>
+<text id="title-hi" x="960" y="290" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="560" fill="#6f6a63">ONDC का Click and Book model</text>
+<path id="route-guide" d="M360 540H1560" fill="none" stroke="#d9cdb3" stroke-width="4" stroke-dasharray="9 11" stroke-linecap="round"/>
+<g id="arrow12" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M490 540H830"/><path d="M810 525l20 15-20 15"/></g>
+<g id="stop1"><circle cx="360" cy="540" r="110" fill="#fff" stroke="#ead9a8" stroke-width="3"/><use href="piece:phone-sms" transform="translate(312 449) scale(.435)"/></g>
+<g id="stop2"><circle cx="960" cy="540" r="110" fill="#fff" stroke="#ead9a8" stroke-width="3"/><use href="piece:mobile-post-van" transform="translate(862 485) scale(.305)"/></g>
+<text id="s1-who" x="360" y="732" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Seller</text>
+<text id="s1-lab" x="360" y="797" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="580" fill="#6f6a63">pickup की request, online</text>
+<text id="s2-en" x="960" y="732" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Department of Posts</text>
+<text id="s2-hi" x="960" y="797" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="580" fill="#6f6a63">= logistics provider</text>
+
+<g id="arrow23" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M1090 540H1430"/><path d="M1410 525l20 15-20 15"/></g>
+<g id="stop3"><circle cx="1560" cy="540" r="110" fill="#fde9a6" stroke="#ead9a8" stroke-width="3"/><circle cx="1560" cy="540" r="67" fill="#fff5d1" stroke="#8a5d00" stroke-width="5"/><circle cx="1560" cy="540" r="57" fill="none" stroke="#b88c30" stroke-width="2" stroke-dasharray="3 6"/><text x="1560" y="571" text-anchor="middle" class="hi" font-size="85" font-weight="780" fill="#644400">₹</text></g>
+<text id="s3-lab" x="1560" y="732" text-anchor="middle" class="hi" font-size="44" font-weight="680" fill="#2b2622">postage, pickup पर जमा</text>
+</g>
+<g id="reg">
+  <use href="piece:registration-envelope" transform="translate(140 300) scale(1.5)"/>
+  <rect x="820" y="200" width="980" height="760" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M845 203h930" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round"/>
+  <text id="reg-title" x="885" y="340" font-size="84" font-weight="800" fill="#9e1b1b">Registration</text>
+  <text id="reg-hi" x="885" y="402" class="hi" font-size="40" font-weight="630" fill="#6f6a63">रजिस्ट्रेशन</text>
+  <path d="M885 436h850" stroke="#ead9a8" stroke-width="3"/>
+  <text id="reg-rp" x="885" y="501" class="hi" font-size="46" font-weight="690" fill="#2b2622">= Registered Post</text>
+  <text id="reg-sp" x="885" y="563" class="hi" font-size="46" font-weight="690" fill="#2b2622">Speed Post documents और parcels</text>
+  <text id="reg-va" x="885" y="624" class="hi" font-size="46" font-weight="690" fill="#2b2622">की value-added service</text>
+</g>
+</svg>
+<script type="text/scene">
+{"shots":[[0,"#ondc-route"],[4.31,"#reg"]],"on":[
+ [0.62,"draw","#arrow23",{"dur":0.48}],
+ [0.62,"pop","#stop3",{"from":0.95,"spring":[22,1]}],
+ [0.62,"fade","#s3-lab",{"dur":0.28}],
+ [2.92,"highlight","#s3-lab",{"words":"pickup पर","color":"#fde9a6","opacity":1,"dur":0.32,"pad":4}],
+ [8.13,"type","#reg-title",{"cps":20}],
+ [8.70,"fade","#reg-hi",{"dur":0.28}],
+ [9.93,"fade","#reg-rp",{"dur":0.28}],
+ [11.31,"words","#reg-sp",{"gap":0.52,"from":"none"}],
+ [14.79,"fade","#reg-va",{"dur":0.30}]
+]}
+</script>
+</section>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="300" height="400">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect id="paper" x="6" y="6" width="288" height="388" rx="9" fill="white" stroke="#ead9a8" stroke-width="6"/>
+    <rect x="6" y="6" width="288" height="388" rx="9" fill="none"/>
+    <rect id="header" x="25" y="28" width="250" height="51" rx="4" fill="#f3ead6" stroke="none"/>
+    <path id="rows" d="M26 123H274 M26 155H274 M26 187H274 M26 219H274 M26 251H274 M26 283H274" fill="none" stroke="#a4a098" stroke-width="2"/>
+    <path id="signature-line" d="M163 355H274" fill="none" stroke="#6f6a63" stroke-width="2"/>
+  </g>
+  <circle data-anchor="base" cx="150" cy="394" r="0"/>
+  <circle data-anchor="top" cx="150" cy="6" r="0"/>
+</svg>
