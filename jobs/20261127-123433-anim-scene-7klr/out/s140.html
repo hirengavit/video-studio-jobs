@@ -5,7 +5,7 @@
   <rect x="120" y="180" width="1680" height="180" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
   <use href="piece:invoice-sheet" transform="translate(150 190) scale(.4)"/>
   <text id="paper-line" x="330" y="287" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="48" font-weight="650" fill="#2b2622">office जाकर paper life certificate</text>
-  <path id="paper-cross" d="M1664 243l52 52m0-52-52 52" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+  <g id="paper-cross" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"><path id="paper-cross-a" d="M1690 269l-26-26m26 26 26 26"/><path id="paper-cross-b" d="M1690 269l26-26m-26 26-26 26"/></g>
  </g>
  <g id="ippb-card">
   <rect x="120" y="410" width="540" height="570" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
@@ -22,7 +22,7 @@
  on:[
   [0,'words','#paper-line',{gap:0.24,dist:14,from:'down',spring:'soft'}],
   [4.22,'strike','#paper-line',{color:'#4b4f58',width:5,dur:0.35,dim:0.52}],
-  [4.22,'draw','#paper-cross',{dur:0.35}],
+  [4.22,'fade','#paper-cross',{dur:0.15}],
   [5.03,'pop','#ippb-card',{from:0.97,spring:'soft'}],
   [5.03,'type','#ippb',{cps:19}],
   [5.60,'fade','#ippb-hi',{dur:0.32}],
