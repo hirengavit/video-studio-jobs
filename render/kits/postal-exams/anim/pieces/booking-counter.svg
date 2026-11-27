@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" fill="none">
+<defs><mask id="booking-counter-hole" maskUnits="userSpaceOnUse" x="0" y="0" width="640" height="420">
+<rect x="0" y="0" width="640" height="420" fill="#fff"/>
+<path d="M226,334 L226,290 C226,256 254,232 288,232 L352,232 C386,232 414,256 414,290 L414,334 Z" fill="#000"/>
+</mask></defs>
+<rect id="booking-counter-frame" x="16" y="10" width="608" height="326" rx="12" fill="#9e1b1b" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="booking-counter-grille">
+<rect x="46" y="38" width="548" height="292" rx="4" fill="#fbf7ee" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g mask="url(#booking-counter-hole)" stroke="#2b2622" stroke-width="3" stroke-linecap="round" opacity="0.55">
+<line x1="80" y1="46" x2="80" y2="324"/><line x1="120" y1="46" x2="120" y2="324"/><line x1="160" y1="46" x2="160" y2="324"/><line x1="200" y1="46" x2="200" y2="324"/><line x1="240" y1="46" x2="240" y2="324"/><line x1="280" y1="46" x2="280" y2="324"/><line x1="320" y1="46" x2="320" y2="324"/><line x1="360" y1="46" x2="360" y2="324"/><line x1="400" y1="46" x2="400" y2="324"/><line x1="440" y1="46" x2="440" y2="324"/><line x1="480" y1="46" x2="480" y2="324"/><line x1="520" y1="46" x2="520" y2="324"/><line x1="560" y1="46" x2="560" y2="324"/>
+<line x1="50" y1="140" x2="590" y2="140"/>
+</g>
+</g>
+<path id="booking-counter-opening" d="M230,330 L230,290 C230,259 256,236 288,236 L352,236 C384,236 410,259 410,290 L410,330" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="booking-counter-ledge">
+<path d="M8,330 L632,330 L636,372 L4,372 Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="18" y="372" width="604" height="40" rx="4" fill="#ead9a8" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<circle data-anchor="top" cx="320" cy="10" r="0"/>
+<circle data-anchor="base" cx="320" cy="412" r="0"/>
+</svg>
