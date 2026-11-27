@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<g id="parcel-box" ><path d="M91 151L125 111H272L309 151V275Q309 289 295 289H105Q91 289 91 275Z" fill="#f3ead6" /><path d="M91 151H309 M125 111L150 151 M272 111L250 151" fill="none" /></g><g id="parcel-string" ><path d="M199 111L204 151V289 M92 183H308 M204 182C184 177 181 165 192 168C200 169 203 175 204 182C206 173 213 166 220 169C230 176 214 184 204 182Z M204 183L190 196M204 183L219 196" fill="none" /></g><g id="parcel-label" ><rect x="226" y="211" width="62" height="43" rx="4" fill="#ffffff" /></g>
+</g>
+<circle data-anchor="base" cx="200" cy="289" r="0"/><circle data-anchor="top" cx="200" cy="111" r="0"/>
+</svg>
