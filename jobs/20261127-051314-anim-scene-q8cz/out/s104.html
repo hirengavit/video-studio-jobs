@@ -24,12 +24,17 @@
 </g>
 <g id="d2">
   <rect x="1000" y="180" width="820" height="800" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
-  <use href="piece:invoice-sheet" transform="translate(1040 240) scale(.8)"/>
-  <text x="1160" y="287" fill="#2b2622" text-anchor="middle" font-size="37" font-weight="780">Bill</text>
-  <text id="agreement" x="1310" y="342" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="36" font-weight="750">Department से agreement</text>
-  <g id="credit"><rect x="1310" y="389" width="422" height="85" rx="42" fill="#fde9a6"/><text x="1521" y="444" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="43" font-weight="770">credit की सुविधा</text></g>
-  <path d="M1057 628H1763 M1057 770H1763" fill="none" stroke="#ead9a8" stroke-width="3"/>
-  <text id="counter-pay" x="1064" y="724" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#4b4f58" font-size="42" font-weight="750">हर booking पर counter पर भुगतान</text>
+  <use href="piece:invoice-sheet" transform="translate(1040 230) scale(1.1)"/>
+  <text x="1205" y="298" fill="#2b2622" text-anchor="middle" font-size="37" font-weight="780">Bill</text>
+  <g id="agreement">
+    <text id="agreement-dept" x="1400" y="340" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="36" font-weight="750">Department से</text>
+    <text id="agreement-word" x="1400" y="384" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="36" font-weight="750">agreement</text>
+  </g>
+  <g id="credit"><rect x="1400" y="419" width="390" height="85" rx="42" fill="#fde9a6"/><text x="1595" y="474" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="43" font-weight="770">credit की सुविधा</text></g>
+  <path id="counter-rule" d="M1057 686H1763" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <path id="billing-rule" d="M1057 785H1763" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <text id="counter-pay" x="1064" y="724" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#4b4f58" font-size="40" font-weight="750">हर booking पर counter पर भुगतान</text>
+  <path id="settled-counter-strike" d="M1058 712H1720" stroke="#4b4f58" stroke-width="3.5" stroke-linecap="round" fill="none"/>
   <text id="billing-pay" x="1064" y="847" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2e7d4f" font-size="48" font-weight="790">तय billing से भुगतान</text>
   <g id="billing-tick"><circle cx="1719" cy="829" r="30" fill="#2e7d4f"/><path d="M1705 829 l10 10 18-20" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
 </g>
@@ -64,7 +69,6 @@
 {
   shots:[[0,'#d2'],[1.18,'#d3'],[5.20,'#d4']],
   on:[
-    [0,'strike','#counter-pay',{color:'#4b4f58',dur:0.01}],
     [0.20,'color','#facility-2 circle',{to:'#e8e0d6',dur:0.01}],
     [0.20,'color','#facility-2 text,#bnpl-en,#bnpl-pill text',{to:'#6f6a63',dur:0.01}],
     [1.18,'fade','#facility-3-active',{dur:0.01}],
@@ -79,7 +83,17 @@
     [8.28,'words','#corporate-customer',{gap:0.43,dist:14}],
     [10.06,'pop','#central-account',{from:0.94}],
     [12.18,'pop','#billing-chip',{from:0.94}],
-  ]
+  ],
+  update(t, section, $) {
+    const copy = $('#counter-pay')[0], line = $('#settled-counter-strike')[0];
+    if (copy && line) {
+      const b = copy.getBBox();
+      if (b.width > 0) {
+        const y = b.y + b.height * 0.55, wob = b.height * 0.06;
+        line.setAttribute('d', 'M'+(b.x-6)+' '+y+' Q'+(b.x+b.width/2)+' '+(y+wob)+' '+(b.x+b.width+6)+' '+(y-wob*0.5));
+      }
+    }
+  }
 }
 </script>
 </section>
