@@ -1,0 +1,65 @@
+<section class="vs-scene" id="s004" data-in="cut" data-section="SPEED POST · OVERVIEW" data-series="PRODUCTS">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="heading">
+      <text x="140" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="820" fill="#9e1b1b">पूरी तस्वीर</text>
+      <text id="two-lines" x="458" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="650" fill="#6f6a63">· दो lines</text>
+    </g>
+    <g id="line1">
+      <rect x="140" y="280" width="1640" height="340" rx="30" fill="#fff" stroke="#2b2622" stroke-width="3" filter="url(#vs-shadow)"/>
+      <circle cx="210" cy="360" r="40" fill="#9e1b1b"/>
+      <text x="210" y="378" text-anchor="middle" font-family="Inter, sans-serif" font-size="51" font-weight="820" fill="#fff">1</text>
+      <text id="speed-post-title" x="300" y="380" font-family="Inter, sans-serif" font-size="72" font-weight="820" fill="#2b2622">Speed Post</text>
+      <g id="documents">
+        <use href="piece:domestic-envelope" transform="translate(190 443) scale(0.3)"/>
+        <rect x="190.9" y="443.9" width="226.2" height="118.2" rx="3" fill="none" stroke="#2b2622" stroke-width="3"/>
+        <text x="440" y="520" font-family="Inter, sans-serif" font-size="48" font-weight="710" fill="#2b2622">documents</text>
+      </g>
+      <g id="parcels">
+        <use href="piece:speed-post-parcel" transform="translate(705 453) scale(0.3)"/>
+        <text x="831" y="520" font-family="Inter, sans-serif" font-size="48" font-weight="710" fill="#2b2622">parcels</text>
+      </g>
+      <g id="fast">
+        <rect x="1044" y="460" width="167" height="86" rx="43" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+        <text x="1127.5" y="518" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="760" fill="#2b2622">तेज़</text>
+      </g>
+      <g id="timed">
+        <rect x="1242" y="460" width="460" height="86" rx="43" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+        <rect id="timed-settled-marker" x="1245" y="472" width="248" height="68" rx="4" fill="#f2b705" opacity=".38"/>
+        <text id="timed-label" x="1472" y="518" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="760" fill="#2b2622">समय से बँधी <tspan font-size="48">delivery</tspan></text>
+      </g>
+    </g>
+  
+<g id="line2" font-family="Inter, sans-serif">
+  <rect x="140" y="650" width="1640" height="350" rx="30" fill="#fff" stroke="#2b2622" stroke-width="3" filter="url(#vs-shadow)"/>
+  <circle cx="210" cy="720" r="40" fill="#9e1b1b"/>
+  <text x="210" y="738" text-anchor="middle" font-size="51" font-weight="820" fill="#fff">2</text>
+  <text x="300" y="743" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="760" fill="#2b2622">हर item:</text>
+  <g id="booking"><rect x="549" y="683" width="220" height="82" rx="41" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/><text x="659" y="738" text-anchor="middle" font-size="48" font-weight="750" fill="#2b2622">booking</text></g>
+  <path id="booking-arrow" d="M795 724H879M865 710L879 724 865 738" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="delivery"><rect x="904" y="683" width="220" height="82" rx="41" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/><text x="1014" y="738" text-anchor="middle" font-size="48" font-weight="750" fill="#2b2622">delivery</text></g>
+  <g id="record"><use href="piece:receipt-slip" transform="translate(1260 672) scale(.35)"/><text x="1376" y="742" font-size="48" font-weight="760" fill="#2b2622">record</text></g>
+  <path id="line2-divider" d="M300 817H1695" fill="none" stroke="#ead9a8" stroke-width="2"/>
+  <text id="each-product" x="300" y="907" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#2b2622">हर product की अपनी:</text>
+  <g id="limit"><rect x="815" y="850" width="228" height="82" rx="41" fill="#fff" stroke="#9e1b1b" stroke-width="3"/><text x="929" y="905" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="760" fill="#9e1b1b">सीमा</text></g>
+<g id="tariff"><rect x="1080" y="850" width="228" height="82" rx="41" fill="#fff" stroke="#9e1b1b" stroke-width="3"/><text x="1194" y="905" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="760" fill="#9e1b1b">tariff</text></g>
+<g id="promise"><rect x="1345" y="850" width="228" height="82" rx="41" fill="#fff" stroke="#9e1b1b" stroke-width="3"/><text x="1459" y="905" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="760" fill="#9e1b1b">वादा</text></g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.00,'pop','#line2',{from:0.975,spring:'soft'}],
+    [0.92,'pop','#booking',{from:0.92,spring:'soft'}],
+    [1.48,'draw','#booking-arrow',{dur:0.32}],
+    [1.48,'pop','#delivery',{from:0.92,spring:'soft'}],
+    [2.16,'pop','#record',{from:0.93,spring:'soft'}],
+    [4.10,'draw','#line2-divider',{dur:0.5}],
+    [4.10,'fade','#each-product',{dur:0.31}],
+    [5.10,'pop','#limit',{from:0.93,spring:'soft'}],
+    [6.40,'pop','#tariff',{from:0.93,spring:'soft'}],
+    [7.94,'pop','#promise',{from:0.93,spring:'soft'}]
+  ]
+}
+</script>
+</section>
