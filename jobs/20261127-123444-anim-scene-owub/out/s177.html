@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s177" data-section="PART 7 · GANGAJAL &amp; PRASADAM" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="delivery-row">
+ <rect x="160" y="177" width="1600" height="323" rx="28" fill="#f3ead6"/>
+ <use href="piece:temple-icon" transform="translate(178 189) scale(0.7)"/>
+ <path id="route-one" d="M465 345h179m-22-22 22 22-22 22" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="courier-photo"><image href="photo:postman-delivering-parcel-cutout" x="701" y="193" width="393" height="290" transform="rotate(1.5 897 338)" preserveAspectRatio="xMidYMid meet"/></g>
+ <g id="speed-post">
+  <rect x="1140" y="256" width="338" height="178" rx="33" fill="#9e1b1b"/>
+  <text x="1309" y="324" text-anchor="middle" fill="#fff" font-size="52" font-weight="800">Speed Post</text>
+  <text id="speed-hi" x="1309" y="390" text-anchor="middle" fill="#fff" class="hi" font-size="46" font-weight="650">स्पीड पोस्ट</text>
+ </g>
+ <g id="route-home" stroke="#2b2622" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+  <path d="M1498 345h61m-18-18 18 18-18 18" fill="none"/>
+  <path d="M1593 323l72-62 72 62m-129-10v103h114V313" fill="#fff"/>
+  <path d="M1648 416v-56h36v56" fill="#ead9a8"/>
+ </g>
+</g>
+<g id="gangajal">
+ <rect x="160" y="560" width="740" height="400" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+ <rect x="198" y="602" width="252" height="316" rx="22" fill="#f3ead6"/>
+ <use href="piece:gangajal-bottle" transform="translate(168 604) scale(0.78)"/>
+ <text x="490" y="742" font-size="64" fill="#9e1b1b" font-weight="800">Gangajal</text>
+ <text id="gangajal-hi" x="490" y="826" class="hi" font-size="48" fill="#2b2622" font-weight="650">बोतल वाला पानी</text>
+</g>
+<text id="not-same" x="960" y="789" text-anchor="middle" fill="#6f6a63" font-size="72" font-weight="750">≠</text>
+<g id="prasadam">
+ <rect x="1020" y="560" width="740" height="400" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+ <rect x="1058" y="602" width="252" height="316" rx="22" fill="#f3ead6"/>
+ <use href="piece:temple-bell-parcel" transform="translate(1060 633) scale(0.62)"/>
+ <text x="1350" y="742" font-size="64" fill="#9e1b1b" font-weight="800">Prasadam</text>
+ <text id="prasadam-hi" x="1350" y="826" class="hi" font-size="48" fill="#2b2622" font-weight="650">मंदिर की भेंट</text>
+</g>
+</svg>
+<script type="text/scene">
+{"on":[
+ [0.70,"draw","#route-one",{"dur":0.40}],
+ [0.70,"fade","#courier-photo",{"dur":0.40}],
+ [3.46,"pop","#speed-post",{"from":0.94,"spring":[22,1]}],
+ [3.96,"fade","#speed-hi",{"dur":0.26}],
+ [4.44,"draw","#route-home",{"dur":0.45}],
+ [5.40,"pop","#gangajal",{"from":0.97,"spring":[22,1]}],
+ [6.16,"fade","#gangajal-hi",{"dur":0.30}],
+ [7.64,"pop","#prasadam",{"from":0.97,"spring":[22,1]}],
+ [7.64,"fade","#not-same",{"dur":0.30}],
+ [8.80,"fade","#prasadam-hi",{"dur":0.30}]
+]}
+</script>
+</section>
