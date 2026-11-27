@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s155" data-section="PART 6 · JEEVAN PRAMAAN" data-series="PRODUCTS" data-in="wipe" data-in-opts='{"from":"right"}' data-in-dur="0.42">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <g id="trap">
+    <g id="flag">
+      <rect x="120" y="170" width="1680" height="150" rx="28" fill="#9e1b1b"/>
+      <path d="M196 282L237 205L278 282Z" fill="#f2b705" stroke="#f2b705" stroke-width="8" stroke-linejoin="round"/>
+      <path d="M237 230V252" fill="none" stroke="#7d1414" stroke-width="8" stroke-linecap="round"/>
+      <circle cx="237" cy="268" r="5" fill="#7d1414"/>
+      <text id="kicker" x="320" y="267" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="800" fill="#fffdf8">EXAM TRAP · परीक्षा का जाल</text>
+    </g>
+    <g id="myth">
+      <rect x="120" y="360" width="1680" height="240" rx="28" fill="#ffffff" stroke="#d9cdb8" stroke-width="3"/>
+      <rect x="174" y="422" width="9" height="116" rx="4.5" fill="#4b4f58"/>
+      <text id="myth-t" x="222" y="507" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="780" fill="#2b2622">Pramaan ID: ज़िंदगी भर valid</text>
+      <path id="myth-strike" d="M218 483H1047" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+      <g id="myth-cross" fill="none" stroke="#4b4f58" stroke-linecap="round">
+        <circle cx="1705" cy="480" r="47" stroke-width="4"/>
+        <path d="M1687 462l36 36m0-36-36 36" stroke-width="8"/>
+      </g>
+    </g>
+    <g id="fact">
+      <rect x="120" y="640" width="1680" height="340" rx="28" fill="#f3ead6" stroke="#dacaa8" stroke-width="3"/>
+      <rect x="174" y="685" width="9" height="154" rx="4.5" fill="#9e1b1b"/>
+      <text id="fact-1" x="222" y="742" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="780" fill="#9e1b1b">Certificate की validity</text>
+      <rect id="authority-hl" x="826" y="771" width="365" height="63" rx="12" fill="#fde9a6"/>
+      <text id="fact-2" x="222" y="819" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#2b2622">pension sanction करने वाली</text>
+      <text id="authority-text" x="843" y="819" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#2b2622">authority के नियम</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  camera:[[0,{zoom:1}]],
+  on:[
+    [.38,'type','#kicker',{cps:34}],
+    [1.48,'pop','#myth',{spring:'soft'}],
+    [1.51,'type','#myth-t',{cps:13}],
+    [4.50,'draw','#myth-strike',{dur:.30}],
+    [4.50,'draw','#myth-cross',{dur:.40}],
+    [6.24,'pop','#fact',{spring:'soft'}],
+    [6.24,'words','#fact-1',{gap:.17,dist:9}],
+    [8.32,'words','#fact-2',{gap:.31,dist:9}],
+    [10.08,'words','#authority-text',{gap:.38,dist:9}],
+    [10.90,'fade','#authority-hl',{dur:.28}]
+  ]
+})
+</script>
+</section>
