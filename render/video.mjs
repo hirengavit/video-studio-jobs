@@ -13,10 +13,22 @@ if (!fs.existsSync(scene)) { console.log("write out/" + id + ".html first"); pro
 const work = path.join(here, "out/.video");
 fs.rmSync(work, { recursive: true, force: true });
 fs.mkdirSync(work, { recursive: true });
+// The job's real photos and clips (inputs/materials/<id>.jpg, <id>-cutout.png, <id>.mp4), so photo:<id> and clip:<id>
+// show in the video as they do in look.mjs's stills (2026-11-28: the van and invoice photos were missing from MP4s).
+function materialsOf(dir) {
+  if (!fs.existsSync(dir)) return {};
+  const out = {};
+  for (const f of fs.readdirSync(dir)) {
+    const ext = path.extname(f).toLowerCase();
+    const kind = [".jpg", ".jpeg", ".png", ".webp"].includes(ext) ? "photo" : [".mp4", ".webm", ".mov"].includes(ext) ? "clip" : null;
+    if (kind) out[path.basename(f, path.extname(f))] = { file: path.join(dir, f), kind };
+  }
+  return out;
+}
 const kit = path.join(RENDER, "kits", kitName, "anim");
 const voice = path.join(here, "inputs", "voice.wav");
 const plan = { duration: dur, width: W, height: H, kit, pieces: [path.join(kit, "pieces"), path.join(kit, "..", "pieces")], sets: path.join(kit, "sets"),
-  scenes: [{ id, file: scene, at: 0, dur }], materials: {}, ...(fs.existsSync(voice) ? { voice } : {}) };
+  scenes: [{ id, file: scene, at: 0, dur }], materials: materialsOf(path.join(here, "inputs/materials")), ...(fs.existsSync(voice) ? { voice } : {}) };
 fs.writeFileSync(path.join(work, "plan.json"), JSON.stringify(plan));
 const res = JSON.parse(execFileSync("node", [path.join(RENDER, "tools/assemble_scenes.mjs"), path.join(work, "plan.json"), path.join(work, "page")])
   .toString().trim().split("\n").pop());
