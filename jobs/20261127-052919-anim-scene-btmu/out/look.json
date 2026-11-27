@@ -8,5 +8,12 @@
   "12.90"
  ],
  "problems": [],
- "warnings": []
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s149",
+   "text": "· ₹10,000 / महीना / · Document",
+   "t": 0.3
+  }
+ ]
 }
