@@ -11,6 +11,11 @@
   <rect id="slot5" x="700" y="640" width="520" height="340" rx="24"/>
   <rect id="slot6" x="1280" y="640" width="520" height="340" rx="24"/>
  </g>
+ <g id="next-slots" fill="none" stroke="#dfd1b3" stroke-width="3" stroke-dasharray="8 9" stroke-linecap="round">
+  <path id="next-slot4" d="M144 640H616Q640 640 640 664V956Q640 980 616 980H144Q120 980 120 956V664Q120 640 144 640Z"/>
+  <path id="next-slot5" d="M724 640H1196Q1220 640 1220 664V956Q1220 980 1196 980H724Q700 980 700 956V664Q700 640 724 640Z"/>
+  <path id="next-slot6" d="M1304 640H1776Q1800 640 1800 664V956Q1800 980 1776 980H1304Q1280 980 1280 956V664Q1280 640 1304 640Z"/>
+ </g>
  <g id="f1">
   <rect x="120" y="250" width="520" height="340" rx="24" fill="#fff" stroke="#c8a064" stroke-width="4"/>
   <circle cx="579" cy="312" r="33" fill="#9e1b1b"/>
@@ -66,6 +71,8 @@
 </svg>
 <script type="text/scene">
 {camera:[[0,{zoom:1}]],on:[
+[1.06,"out","#slot4, #slot5, #slot6",{dur:0.32,scale:false}],
+[1.06,"fade","#next-slots",{dur:0.32}],
 [1.06,"draw","#arrow23",{dur:0.30}],
 [1.06,"pop","#f3",{from:0.98,spring:"soft"}],
 [1.06,"type","#f3-en",{cps:20}],
