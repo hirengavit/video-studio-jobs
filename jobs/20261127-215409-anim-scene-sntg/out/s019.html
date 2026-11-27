@@ -9,7 +9,7 @@
     <path id="focus-1" d="M119 306v45" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
     <g id="row-1">
   <g id="disc-1"><circle cx="154" cy="325" r="24" fill="#9e1b1b"/><text x="154" y="335" text-anchor="middle" fill="#fff" font-family="Inter, sans-serif" font-size="29" font-weight="800">1</text></g>
-  <g id="point-1"><text x="200" y="338" fill="#2b2622" font-family="Georgia, 'Times New Roman', serif" font-size="44" id="point-1-line-1">Departmental products: by administrative instructions</text></g>
+  <g id="point-1"><rect id="carry-highlight-1" rx="4" fill="#fde9a6"/><text x="200" y="338" fill="#2b2622" font-family="Georgia, 'Times New Roman', serif" font-size="44" id="point-1-line-1">Departmental products: by administrative instructions</text></g>
   <text id="keyword-1" x="200" y="390" fill="#6f6a63" font-size="36" font-family="'Noto Sans Devanagari', Inter, sans-serif">विभागीय products: प्रशासनिक निर्देश</text>
 </g>
 <g id="row-2">
@@ -50,8 +50,7 @@
   </g>
 </svg>
 <script type="text/scene">
-{"on":[
- [0,"highlight","#point-1-line-1",{"words":"administrative instructions","color":"#fde9a6","opacity":1,"dur":0.001,"pad":4}],
+({"on":[
  [0,"draw","#focus-2",{"dur":0.25}],
  [4.50,"highlight","#point-2-line-1",{"words":"agreement","color":"#fde9a6","opacity":1,"dur":0.32,"pad":4}],
  [5.00,"fade","#keyword-2",{"dur":0.27}],
@@ -62,6 +61,20 @@
  [9.40,"type","#circle-label",{"cps":24}],
  [9.90,"fade","#circle-label-hi",{"dur":0.24}],
  [9.90,"fade","#keyword-3",{"dur":0.25}]
-]}
+],
+ update(t, section, $) {
+   const text = $("#point-1-line-1")[0], mark = $("#carry-highlight-1")[0];
+   const phrase = "administrative instructions";
+   const start = text.textContent.indexOf(phrase);
+   let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity;
+   for (let i = start; i < start + phrase.length; i++) {
+     const box = text.getExtentOfChar(i);
+     x0 = Math.min(x0, box.x); y0 = Math.min(y0, box.y);
+     x1 = Math.max(x1, box.x + box.width); y1 = Math.max(y1, box.y + box.height);
+   }
+   mark.setAttribute("x", x0 - 4); mark.setAttribute("y", y0 - 2);
+   mark.setAttribute("width", (x1 - x0 + 8).toFixed(2)); mark.setAttribute("height", y1 - y0 + 4);
+ }
+})
 </script>
 </section>
