@@ -65,8 +65,9 @@
       <rect x="120" y="768" width="1680" height="221" fill="none"/>
       <text id="guj" x="184" y="840" font-family="Inter, sans-serif" font-size="56" font-weight="810" fill="#2b2622">Gujarat Govt</text>
       <g id="guj-hi" fill="#6f6a63" font-size="36" font-weight="650">
-        <text x="184" y="899" font-family="'Noto Sans Devanagari', Inter, sans-serif">गुजरात सरकार के</text>
-        <text x="184" y="945" font-family="Inter, sans-serif">covered retired pensioners</text>
+        <text id="guj-hi-lead" x="184" y="899" font-family="'Noto Sans Devanagari', Inter, sans-serif">गुजरात सरकार के</text>
+        <text id="guj-hi-wide" x="184" y="945" font-family="Inter, sans-serif">covered retired pensioners</text>
+        <text id="guj-hi-wrap" x="184" y="923" font-family="Inter, sans-serif" opacity="0"><tspan x="184">covered retired</tspan><tspan x="184" y="963">pensioners</tspan></text>
       </g>
       <g id="guj-date-card">
         <rect x="760" y="787" width="405" height="66" rx="33" fill="#fff8e8" stroke="#9e1b1b" stroke-width="3"/>
@@ -115,6 +116,13 @@
   [4.36,'draw','#guj-free-underline',{dur:.50}]
  ],
  update(t,section,$) {
+  const old=$("#guj-hi-wide")[0], wrapped=$("#guj-hi-wrap")[0], hi=$("#guj-hi-lead")[0];
+  const ease=v=>{const u=Math.max(0,Math.min(1,v));return u*u*(3-2*u);};
+  hi.setAttribute("y",899-14*ease((t-.20)/.32));
+  old.style.display=t>=.41?"none":"";
+  old.setAttribute("opacity",1-ease((t-.21)/.20));
+  wrapped.style.display=t<.42?"none":"";
+  wrapped.setAttribute("opacity",ease((t-.42)/.24));
   const el=$("#cond2b")[0], r=$("#carry-30-days")[0], phrase="30 दिन";
   const i=el.textContent.indexOf(phrase);
   let x0=Infinity,y0=Infinity,x1=-Infinity,y1=-Infinity;
