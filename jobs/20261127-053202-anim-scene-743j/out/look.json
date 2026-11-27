@@ -8,24 +8,5 @@
   "8.71"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "error",
-   "scene": "s154",
-   "message": "update(): Cannot read properties of null (reading 'setAttribute')",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s154",
-   "text": "Cut-off के बाद booking → posting का दिन  / Counter खुला है, इसका मतलब उस दिन का dis",
-   "t": 1.77
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s154",
-   "text": "Cut-off के बाद booking → posting का दिन  / ऐसा नहीं",
-   "t": 1.77
-  }
- ]
+ "warnings": []
 }
