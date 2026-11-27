@@ -7,7 +7,6 @@
         <g id="facility-1"><circle cx="137" cy="230" r="32" fill="#e8e0d6"/><text x="137" y="243" text-anchor="middle" font-size="36" font-weight="770" fill="#6f6a63">1</text></g>
       <g id="facility-2"><circle cx="137" cy="400" r="32" fill="#9e1b1b"/><text x="137" y="413" text-anchor="middle" font-size="36" font-weight="770" fill="#ffffff">2</text></g>
       <g id="facility-3"><circle cx="137" cy="570" r="32" fill="#e8e0d6"/><text x="137" y="583" text-anchor="middle" font-size="36" font-weight="770" fill="#6f6a63">3</text></g>
-      <g id="facility-3-active"><circle cx="137" cy="570" r="32" fill="#9e1b1b"/><text x="137" y="583" text-anchor="middle" font-size="36" font-weight="770" fill="#ffffff">3</text></g>
       <g id="facility-4"><circle cx="137" cy="740" r="32" fill="#e8e0d6"/><text x="137" y="753" text-anchor="middle" font-size="36" font-weight="770" fill="#6f6a63">4</text></g>
       <g id="facility-5"><circle cx="137" cy="910" r="32" fill="#e8e0d6"/><text x="137" y="923" text-anchor="middle" font-size="36" font-weight="770" fill="#6f6a63">5</text></g>
         <text id="pickup-en" x="193" y="242" font-size="48" font-weight="770" fill="#6f6a63">Free pickup</text>
@@ -71,10 +70,8 @@
   on:[
     [0.20,'color','#facility-2 circle',{to:'#e8e0d6',dur:0.01}],
     [0.20,'color','#facility-2 text,#bnpl-en,#bnpl-pill text',{to:'#6f6a63',dur:0.01}],
-    [1.18,'fade','#facility-3-active',{dur:0.01}],
     [1.18,'fade','#facility-3-label',{dur:0.25}],
     [2.66,'fade','#eligible-customers',{dur:0.4}],
-    [5.20,'out','#facility-3-active',{dur:0.01,scale:1}],
     [5.20,'color','#facility-3-label text',{to:'#6f6a63',dur:0.01}],
     [6.12,'color','#facility-4 circle',{to:'#9e1b1b',dur:0.01}],
     [6.12,'color','#facility-4 text',{to:'#ffffff',dur:0.01}],
@@ -85,6 +82,10 @@
     [12.18,'pop','#billing-chip',{from:0.94}],
   ],
   update(t, section, $) {
+    const badge = $('#facility-3 circle')[0], number = $('#facility-3 text')[0];
+    const discountActive = t >= 1.18 && t < 5.20;
+    if (badge) badge.setAttribute('fill', discountActive ? '#9e1b1b' : '#e8e0d6');
+    if (number) number.setAttribute('fill', discountActive ? '#ffffff' : '#6f6a63');
     const copy = $('#counter-pay')[0], line = $('#settled-counter-strike')[0];
     if (copy && line) {
       const b = copy.getBBox();
