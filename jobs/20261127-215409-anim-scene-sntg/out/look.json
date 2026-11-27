@@ -8,12 +8,5 @@
   "10.41"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s019",
-   "text": "Circle Head / डाक परिमंडल प्रमुख",
-   "t": 10.41
-  }
- ]
+ "warnings": []
 }
