@@ -1,0 +1,37 @@
+<section class="vs-scene" id="s206" data-in="fade" data-in-dur="0.42" data-section="PART 9 · DAK CHAUPAL" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="counter">
+<use href="set:citizen-counter" layer="back"/>
+<use id="chaupal-van" href="piece:mobile-post-van" transform="scale(0.85)"/>
+<use href="set:citizen-counter" layer="front"/>
+<text id="counter-sign" x="960" y="268" text-anchor="middle" fill="#fff" font-family="Inter, sans-serif" font-size="64" font-weight="800">Dak Chaupal</text>
+<g id="outreach">
+<text id="public" x="180" y="403" fill="#2b2622" font-family="Inter, sans-serif" font-size="52" font-weight="795">Public</text>
+<text id="outreach-word" x="180" y="465" fill="#2b2622" font-family="Inter, sans-serif" font-size="52" font-weight="795">outreach</text>
+<text id="programme" x="180" y="527" fill="#2b2622" font-family="Inter, sans-serif" font-size="52" font-weight="795">programme</text>
+<text id="outreach-hi" x="180" y="612" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650">जन संपर्क कार्यक्रम</text>
+</g>
+<g id="people-chip">
+<rect x="1320" y="340" width="420" height="90" rx="18" fill="#fff" stroke="#9e1b1b" stroke-width="3"/>
+<text x="1530" y="398" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="680">लोगों के बीच जाकर</text>
+</g>
+<g id="services-chip">
+<rect x="1320" y="440" width="420" height="90" rx="18" fill="#fff" stroke="#9e1b1b" stroke-width="3"/>
+<text x="1530" y="498" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="680">services समझाना</text>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+{set:"citizen-counter",camera:[[0,"wide"]],on:[
+[0,"place","#chaupal-van",{spot:"counter-centre"}],
+[0.16,"type","#counter-sign",{cps:33}],
+[2.04,"words","#public",{gap:0.08,dist:11}],
+[2.36,"words","#outreach-word",{gap:0.08,dist:11}],
+[2.94,"words","#programme",{gap:0.08,dist:11}],
+[2.94,"fade","#outreach-hi",{dur:0.38}],
+[5.80,"pop","#people-chip",{from:0.94,spring:"soft"}],
+[7.38,"pop","#services-chip",{from:0.94,spring:"soft"}],
+]}
+</script>
+</section>
