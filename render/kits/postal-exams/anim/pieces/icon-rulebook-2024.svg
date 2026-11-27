@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<g id="tabs"><path id="tab-1" d="M310 123H335V163H310Z" fill="#e3cfa3"/><path id="tab-2" d="M310 191H335V231H310Z" fill="#fbf7ee"/></g>
+<path id="pages" d="M88 66H312V335H88Q70 335 70 318V84Q70 66 88 66Z" fill="#fbf7ee"/>
+<path d="M91 310H312M91 321H312" stroke="#ead9a8"/>
+<path id="cover" d="M88 50H312V305H88Q70 305 70 321V67Q70 50 88 50Z" fill="#9e1b1b"/>
+<path id="spine" d="M96 51V304" stroke="#7d1414" stroke-width="10"/>
+<rect id="label" x="123" y="101" width="163" height="116" rx="4" fill="#ffffff" stroke="#ead9a8"/>
+<circle data-anchor="base" cx="191" cy="335" r="0"/>
+</svg>
