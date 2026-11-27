@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<g stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g id="skull-cap"><path d="M97 170v65q104 62 206 0v-65Z" fill="#2b2622" /></g>
+<g id="mortarboard"><path d="M27 159l173-65 173 65-173 65Z" fill="#2b2622" /><path d="M52 160l148 54 148-54" fill="none" stroke="#6f6a63"/></g>
+<g id="tassel"><path d="M200 150l130 18v92" fill="none" stroke="#9e1b1b" stroke-width="6"/><path d="M330 257l-14 48h28Z" fill="#9e1b1b" /></g>
+</g>
+<circle data-anchor="base" cx="200" cy="305" r="0"/>
+</svg>
