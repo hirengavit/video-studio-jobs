@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<g id="tree"><path id="trunk" d="M321 183H337L345 311H315Z" fill="#e3cfa3"/><path id="canopy" d="M285 182C266 167 273 141 288 133C280 111 296 87 318 92C331 72 359 84 361 104C385 109 390 136 374 151C387 173 369 194 349 189C327 204 303 199 285 182Z" fill="#fbf7ee"/><path d="M329 230V157M329 195L308 176M329 176L347 157"/></g>
+<g id="hut-1"><path d="M35 205H148V312H35Z" fill="#fbf7ee"/><path id="roof-1" d="M20 209L91 143L163 209Z" fill="#e3cfa3"/><path d="M44 202L91 154L139 202M66 202L91 167L117 202"/><path d="M76 251Q91 234 106 251V312H76Z" fill="#9e1b1b"/><path d="M47 230H64V251H47Z" fill="#e3cfa3"/></g>
+<g id="hut-2"><path d="M174 229H283V312H174Z" fill="#fbf7ee"/><path id="roof-2" d="M160 232L229 173L298 232Z" fill="#e3cfa3"/><path d="M181 223L229 185L277 223M205 223L229 196L253 223"/><path d="M218 260H246V312H218Z" fill="#9e1b1b"/><path d="M184 249H203V268H184Z" fill="#e3cfa3"/></g>
+<path id="ground" d="M18 313H379"/>
+<circle data-anchor="base" cx="200" cy="313" r="0"/>
+</svg>
