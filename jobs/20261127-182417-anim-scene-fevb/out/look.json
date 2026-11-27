@@ -8,12 +8,5 @@
   "10.27"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s162",
-   "text": "या 30 दिन में due",
-   "t": 4.17
-  }
- ]
+ "warnings": []
 }
