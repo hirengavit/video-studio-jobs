@@ -8,5 +8,12 @@
   "11.62"
  ],
  "problems": [],
- "warnings": []
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s055",
+   "text": "500 g से कम भी / → Parcel",
+   "t": 0.3
+  }
+ ]
 }
