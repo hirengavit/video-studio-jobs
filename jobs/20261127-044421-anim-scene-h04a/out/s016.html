@@ -57,15 +57,15 @@
   [12.08,'highlight','#no-resale',{words:'resale value',color:'#f2b705',opacity:.36,dur:.32}],
  ],
  update(t, section, $) {
-   const advance = id => $(id).getComputedTextLength();
-   const spaceProbe = $('#space-advance');
+   const advance = id => $(id)[0].getComputedTextLength();
+   const spaceProbe = $('#space-advance')[0];
    const space = spaceProbe.getSubStringLength(1, 1) || 12;
    const row1 = 277 + advance('#letter-prefix') + space;
    const row2 = 277 + advance('#packet-prefix') + space;
    const row2End = row2 + advance('#free') + space;
-   $('#letter-kinds-position').setAttribute('transform', 'translate(' + row1 + ' 0)');
-   $('#free-position').setAttribute('transform', 'translate(' + row2 + ' 0)');
-   $('#no-resale-position').setAttribute('transform', 'translate(' + row2End + ' 0)');
+   $('#letter-kinds-position')[0].setAttribute('transform', 'translate(' + row1 + ' 0)');
+   $('#free-position')[0].setAttribute('transform', 'translate(' + row2 + ' 0)');
+   $('#no-resale-position')[0].setAttribute('transform', 'translate(' + row2End + ' 0)');
  }
 }
 </script>
