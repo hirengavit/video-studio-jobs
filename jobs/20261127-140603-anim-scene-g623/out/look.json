@@ -1,0 +1,21 @@
+{
+ "moments": [
+  "0.30",
+  "1.97",
+  "3.94",
+  "5.90",
+  "7.87",
+  "9.69"
+ ],
+ "problems": [
+  "s142: no photo \"postman-delivering-parcel-cutout\" in the materials"
+ ],
+ "warnings": [
+  {
+   "kind": "text-off-frame",
+   "scene": "s142",
+   "text": "राष्ट्रीय सूचना विज्ञान केंद्र",
+   "t": 3.94
+  }
+ ]
+}
