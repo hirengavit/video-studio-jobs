@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g id="heap" transform="translate(5 88) scale(0.75)" fill="#f3ead6" stroke="#2b2622" stroke-width="4">
+    <g id="envelope-1"><g transform="translate(70 200) rotate(-14)"><rect x="-75" y="-48" width="150" height="96" rx="6"/><path d="M-71 -44 L0 8 L71 -44" fill="none"/></g></g>
+    <g id="envelope-2"><g transform="translate(452 206) rotate(12)"><rect x="-75" y="-48" width="150" height="96" rx="6"/><path d="M-71 -44 L0 8 L71 -44" fill="none"/></g></g>
+    <g id="envelope-3"><g transform="translate(90 240) rotate(-6)"><rect x="-75" y="-48" width="150" height="96" rx="6"/><path d="M-71 -44 L0 8 L71 -44" fill="none"/></g></g>
+    <g id="envelope-4"><g transform="translate(205 244) rotate(3)"><rect x="-75" y="-48" width="150" height="96" rx="6"/><path d="M-71 -44 L0 8 L71 -44" fill="none"/></g></g>
+    <g id="envelope-5"><g transform="translate(322 240) rotate(-3)"><rect x="-75" y="-48" width="150" height="96" rx="6"/><path d="M-71 -44 L0 8 L71 -44" fill="none"/></g></g>
+    <g id="envelope-6"><g transform="translate(432 242) rotate(7)"><rect x="-75" y="-48" width="150" height="96" rx="6"/><path d="M-71 -44 L0 8 L71 -44" fill="none"/></g></g>
+    <g id="envelope-7"><g transform="translate(140 192) rotate(8)"><rect x="-75" y="-48" width="150" height="96" rx="6"/><path d="M-71 -44 L0 8 L71 -44" fill="none"/></g></g>
+    <g id="envelope-8"><g transform="translate(262 196) rotate(-5)"><rect x="-75" y="-48" width="150" height="96" rx="6"/><path d="M-71 -44 L0 8 L71 -44" fill="none"/></g></g>
+    <g id="envelope-9"><g transform="translate(382 194) rotate(4)"><rect x="-75" y="-48" width="150" height="96" rx="6"/><path d="M-71 -44 L0 8 L71 -44" fill="none"/></g></g>
+    <g id="envelope-10"><g transform="translate(200 150) rotate(-10)"><rect x="-75" y="-48" width="150" height="96" rx="6"/><path d="M-71 -44 L0 8 L71 -44" fill="none"/></g></g>
+    <g id="envelope-11"><g transform="translate(322 148) rotate(6)"><rect x="-75" y="-48" width="150" height="96" rx="6"/><path d="M-71 -44 L0 8 L71 -44" fill="none"/></g></g>
+    <g id="envelope-12"><g transform="translate(258 108) rotate(-3)"><rect x="-75" y="-48" width="150" height="96" rx="6"/><path d="M-71 -44 L0 8 L71 -44" fill="none"/></g></g>
+  </g>
+  <circle data-anchor="base" cx="200" cy="310" r="0"/>
+  <circle data-anchor="top" cx="198" cy="133" r="0"/>
+</svg>

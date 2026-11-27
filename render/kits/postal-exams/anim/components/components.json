@@ -1,0 +1,725 @@
+[
+  {
+    "id": "key-term",
+    "name": "Key term",
+    "description": "A red stamp-edged card with the postal term in English (big) and its official translation beneath, an exam pill, beside a white meaning card (the meaning in the video's language with English terms inline, two yellow fact chips) and an envelope panel showing where the term sits in a chain (English office names with their translation beneath).",
+    "use": "The first time an exam term appears (a glossary moment): BO/SO/HO, Speed Post, IPPB, a rule name.",
+    "adapt": "the term, its translation and abbreviation; the meaning line; the chips; replace the chain with an example or a rule line; drop the exam pill",
+    "ideas": [
+      "term",
+      "glossary",
+      "definition",
+      "meaning",
+      "bilingual"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "quote-card",
+    "name": "Quote card",
+    "description": "A full-width white document card with a postal-red top edge: a red source label (rule and year), the exact words in big Georgia (one phrase on a soft yellow band), and a red round postmark at the right naming the rule number; beneath, a sand panel labelled 'HINDI GIST · सार (आधिकारिक पाठ नहीं)' carries the Hindi gist in one line.",
+    "use": "Whenever the exact wording of a rule, definition or section matters (CCS rules, Post Office Act, Post Office Guide, Constitution) and the viewer needs the English words plus a Hindi gist.",
+    "adapt": "the source label, the Georgia lines (2 to 5, one optional italic lead line), the postmark text (rule/section number and year), the highlighted phrase, the Hindi gist (always labelled as gist unless it is the official Hindi text); drop the postmark for a long quote",
+    "ideas": [
+      "quote",
+      "exact words",
+      "definition",
+      "rule",
+      "act",
+      "conduct rules",
+      "gist",
+      "document"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "rule-card",
+    "name": "Rule / section card",
+    "description": "Left: a perforated postal-red stamp badge with 'SECTION · धारा', a huge section number in white, a yellow rule, the act name and year in white and its Hindi name in pale yellow. Right: a white document card with the section heading in red, the exact text in Georgia (key phrase on a yellow band), a grey Hindi gist line and a red round postmark giving the date in force; below, two chips (sand and soft yellow) with an English fact and its Hindi line.",
+    "use": "Teaching one section of an act or one rule number with its exact text: Post Office Act 2023, CCS (CCA)/Leave rules, GDS rules, Post Office Guide clauses, Constitution articles.",
+    "adapt": "the label (SECTION/RULE/ARTICLE · धारा/नियम/अनुच्छेद), the number, the act name in English and Hindi, heading, 2 to 4 Georgia lines, highlighted phrase, Hindi gist, postmark text (in-force date, notification, or act number), the two chips (definition, what it replaced, exceptions) or drop them",
+    "ideas": [
+      "section",
+      "rule number",
+      "act",
+      "law",
+      "exact text",
+      "post office act",
+      "postmark",
+      "source"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "compare-cards",
+    "name": "Compare cards",
+    "description": "An English question with a grey Hindi line under it, then two white cards side by side with coloured header bands (postal red on the left, India Post yellow on the right) carrying a big short name and its full English name; under each band the Hindi name, a thin rule, and two labelled facts (bilingual caps labels, big English values, the second with a Hindi line under it); a dark VS disc between them and a two-line takeaway below (English with one phrase on a yellow band, Hindi under it). Hindi is 32px or larger.",
+    "use": "Two things candidates mix up: PLI vs RPLI, Speed Post vs registered items, SO vs BO, CCS (CCA) minor vs major penalty, two look-alike words or formulas.",
+    "adapt": "question (English + Hindi), the two names, full names and Hindi names, two labelled facts per card (dates, who, limit, rule), the takeaway; which band is red or yellow; no right/wrong colours unless one is actually wrong (then slate strike, green tick)",
+    "ideas": [
+      "compare",
+      "versus",
+      "difference",
+      "confusion",
+      "two things",
+      "pli rpli",
+      "side by side"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "compare-table",
+    "name": "Compare table",
+    "description": "An English title with its Hindi on the right, then a white table card with a postal-red header row (scheme short names in white, Hindi names in pale yellow beneath, 'SCHEME · योजना' at left); four rows alternating cream and white, each with an English row label and Hindi under it and big centred values; a yellow outline draws round the key row, and a grey source line with the quarter sits below with a Hindi note in amber.",
+    "use": "Several points across two or three items: small savings schemes (rate, tenure, minimum, who), PLI vs RPLI products, leave types, penalties, exam patterns.",
+    "adapt": "two or three columns (re-space the centres), three to five rows, which row gets the outline, the source line; interest rates must name the quarter and the source",
+    "ideas": [
+      "table",
+      "compare",
+      "schemes",
+      "rates",
+      "posb",
+      "small savings",
+      "features",
+      "grid"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "exam-trap",
+    "name": "Exam trap",
+    "description": "A full-width postal-red banner with a yellow warning triangle, 'EXAM TRAP · परीक्षा का जाल' in pale yellow caps, the trap in one white line and its Hindi in pale yellow under it; two white cards below (the tricky one with a yellow border), each with a bilingual caps label, an English name, its Hindi line, a small perforated red stamp at the right carrying the big number, and a closing English line with Hindi under it (the trick underlined in yellow); a sand bar at the bottom gives the rule to remember in English with amber Hindi under it.",
+    "use": "A classic confusion in departmental or SSC papers: PIN zone 9 is the Army Postal Service, look-alike rules or sections, numbers that are easy to swap.",
+    "adapt": "the banner sentence, the two cards' labels, names, Hindi lines and stamp numbers or short codes (up to about 4 characters), which card is the trap, the underlined words, the remember bar",
+    "ideas": [
+      "trap",
+      "confusion",
+      "tricky",
+      "exam",
+      "pin code",
+      "look-alike",
+      "remember",
+      "stamp"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "myth-fact",
+    "name": "Myth vs fact",
+    "description": "A white myth card with a slate 'MYTH · भ्रम' pill, the wrong belief in big Inter with the wrong word struck through in slate and a slate cross in a circle at the right, and the wrong reasoning in a grey Hindi line; below, a sand fact card with a green 'FACT · सही' pill, the correct sentence big (key word on a yellow band), an English reason and a Hindi reason, and a green round postmark 'CORRECT · सही' stamped at the right. Wrong is slate, never red.",
+    "use": "Correcting a common wrong belief or classic wrong answer: grammar (subject-verb agreement), a rule people misremember, a scheme fact, a maths shortcut misuse.",
+    "adapt": "the myth (strike one word with words:, or the whole line dimmed), the Hindi wrong-reasoning line, the fact, the highlighted word, one or two reason lines (English + Hindi), the postmark word",
+    "ideas": [
+      "myth",
+      "misconception",
+      "wrong",
+      "fact",
+      "correction",
+      "grammar",
+      "common mistake",
+      "postmark"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "question-card",
+    "name": "Question card",
+    "description": "A quick-check MCQ on a full postal-red panel with a perforated stamp edge: a 'QUICK CHECK · झटपट जाँच' kicker, the question in large white English with its Hindi in pale yellow beneath, four cream option cards (A to D, English option with Hindi under it) that slide up, a yellow ring timer during the pause, then the right option turns green with a white tick while the others dim to grey (never red). Sample: what the first digit of a PIN code shows (zone).",
+    "use": "A pause-and-try question before the answer: any MCQ in GDS/MTS, PA/SA or SSC lessons.",
+    "adapt": "the question (two English lines + one Hindi line) and 2 to 4 options, each with an optional Hindi line; which one is right; drop the timer or the Hindi option lines when options are numbers",
+    "ideas": [
+      "quiz",
+      "quick check",
+      "mcq",
+      "question",
+      "pause",
+      "answer",
+      "bilingual"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "pyq-card",
+    "name": "Practice question card",
+    "description": "A white exam-paper card with a surface-coloured header strip labelled 'PRACTICE QUESTION · अभ्यास प्रश्न', the question in English with its Hindi below, four (a)-(d) options with the Hindi inline in grey, the right one turning soft green with a tick, a green round postmark 'ANSWER (c) उत्तर' stamped beside the question, and a why strip (green edge) with the reason in English and Hindi. Sample: Article 17 abolishes untouchability.",
+    "use": "Show how a topic is asked in the exam, with the answer and a one-line reason. Use the generic practice label; name a past paper and year only when verified.",
+    "adapt": "the label (a verified 'PYQ · exam · year' instead of practice), the question and options, the right option, the postmark letter, the reason line in both languages",
+    "ideas": [
+      "previous year question",
+      "pyq",
+      "practice question",
+      "exam pattern",
+      "answer",
+      "postmark",
+      "bilingual"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "recap-card",
+    "name": "Recap envelope",
+    "description": "A white envelope card whose top flap is a soft V fold, with 'RECAP · दोहराव' and a red title on the flap and a small red wax-seal circle (the count of points) at the V tip; below, three keyword rows divided by thin lines, each an English term in bold with its Hindi beneath, a yellow pill with the key fact on the right, and a green tick drawn in as each is said. Sample: PLI since 1 Feb 1884, RPLI since 24 Mar 1995, Malhotra Committee suggested RPLI.",
+    "use": "End of a part or video: 3 to 4 things to remember, each ticking green as the voice says it.",
+    "adapt": "title and seal number; 3 or 4 rows (English term, Hindi term, fact pill); pills can hold a date, a number or a short Hindi phrase",
+    "ideas": [
+      "recap",
+      "summary",
+      "remember",
+      "keywords",
+      "checklist",
+      "envelope",
+      "bilingual"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "chapter-title",
+    "name": "Chapter title stamp",
+    "description": "An opener on the cream canvas: a red 'PART 3 · भाग 3' kicker, a two-line English title in big ink type, the Hindi title in postal red under it with a yellow hand-drawn underline drawn on, a grey bilingual subtitle and progress dots ('Part 3 of 6 · भाग 3 / 6'); on the right a large red perforated postage stamp whose white window holds a simple ink icon drawn on (a passbook with a rupee sign) and the part number '03' as the stamp's value. Sample: Post Office Savings Bank.",
+    "use": "The start of a video or a part within it.",
+    "adapt": "part number and total; English and Hindi title; subtitle; the icon in the stamp (post box, envelope, parcel, scales, building) and the small word beside the value",
+    "ideas": [
+      "chapter",
+      "title",
+      "part",
+      "opener",
+      "section start",
+      "stamp",
+      "bilingual"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "big-number",
+    "name": "Big number with postmark",
+    "description": "One sourced figure shown huge in white on a red perforated stamp card with a bilingual kicker and a Hindi reading under it (in lakh), a bold English takeaway with Hindi beneath, a white breakdown card on the right (three rows, English abbreviation + Hindi name + number, the biggest share on a soft yellow band), and a grey round postmark 'AS ON 31.03.2025 स्थिति' with wavy cancel lines stamped in as the date, plus a source line. Sample: 1,64,999 post offices (HO 810, SO 24,281, BO 1,39,908), indiapost.gov.in, as on 31.03.2025.",
+    "use": "One striking, sourced number that a lesson turns on, with its date and source shown.",
+    "adapt": "the number (written in Indian grouping; it pops in, since the engine's count move formats en-US), the Hindi reading, the takeaway, 2 to 4 breakdown rows or none, the postmark date and the source",
+    "ideas": [
+      "statistic",
+      "big number",
+      "fact",
+      "figure",
+      "postmark",
+      "source",
+      "breakdown",
+      "bilingual"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "data-chart",
+    "name": "Bar chart, labelled",
+    "description": "A red English title naming the period with a Hindi line under it, a white card holding four horizontal bars labelled directly on the left (English name bold, Hindi under it at 34px), red bars growing from a thin axis with the values counting up at their ends, one bar in India Post yellow to mark the point, and a source line naming the authority and quarter. Sample: post office scheme interest rates for Oct-Dec 2026 (Savings 4.0, RD 6.7, MIS 7.4, SCSS 8.2; Ministry of Finance memo of 30.09.2026, unchanged from the previous quarter).",
+    "use": "Comparing a few sourced figures: scheme interest rates for a named quarter, vacancies, marks, cut-offs.",
+    "adapt": "3 to 4 rows (English label, Hindi label, value); scale the bars to the largest; which bar is yellow; title, period and source",
+    "ideas": [
+      "chart",
+      "bar chart",
+      "interest rates",
+      "compare numbers",
+      "data",
+      "source",
+      "bilingual"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "timeline",
+    "name": "Timeline",
+    "description": "A red title with its Hindi line beneath, a cream track that fills in red as four dated events arrive: big red years above, white cards below with the day in grey caps, the event in English and its Hindi under it; the key event in India Post yellow and larger; a surface band at the end with an English line and its Hindi under it. Sample: 1854, PIN 1972, Speed Post 1986, Post Office Act 2023 (in force 18.06.2024).",
+    "use": "Dates in order: postal history, acts and rule changes, schemes over time, GK chronology.",
+    "adapt": "the number of events (3 to 4 on a bilingual screen) and their spacing; which event is the key one; the caption band (English line with Hindi under it) or drop it",
+    "ideas": [
+      "timeline",
+      "dates",
+      "history",
+      "milestones",
+      "years",
+      "chronology",
+      "postal history"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "step-list",
+    "name": "Step list",
+    "description": "A red title with its Hindi line, then four stacked white step cards each with a red numbered badge, the step in English and its Hindi under it; the last step on the cream surface with a green tick badge, a red chip holding a key figure, and one yellow highlight on the number that matters.",
+    "use": "A procedure in order: opening an account, booking an article, filling a form, a rule's steps, solving a sum.",
+    "adapt": "3 to 4 steps (bilingual screens hold fewer); the closing chip (a rate with its quarter, a fee, a time limit) or drop it; move the highlight to the key word, written as its own text so the band fits",
+    "ideas": [
+      "steps",
+      "procedure",
+      "how to",
+      "process",
+      "sequence",
+      "method",
+      "account opening"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "cause-chain",
+    "name": "Chain of stages",
+    "description": "A red title with its Hindi line, four tall white cards in a row joined by red arrows, each with a red number, a simple ink-line icon, the stage in English with its Hindi in red beneath, a thin rule and a short bilingual detail; the last card in yellow; a surface note strip below with a yellow bar and one highlighted phrase.",
+    "use": "How one thing leads to the next: the movement of mail, a cause and its effects, a reasoning chain, a maths method.",
+    "adapt": "3 to 4 stages; swap the icons (envelope, sorting rack, van, house) for any flat ink icon; the bottom note in English plus Hindi; which card is the outcome",
+    "ideas": [
+      "cause and effect",
+      "chain",
+      "flow",
+      "process",
+      "mail movement",
+      "sorting",
+      "delivery",
+      "sequence"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "cycle",
+    "name": "Cycle",
+    "description": "A round red centre with a perforated stamp edge naming the cycle in English and Hindi, ringed by four white stage cards (top, right, bottom, left), each with an English line and its Hindi beneath, joined clockwise by red curved arrows; the stage that closes the loop in yellow.",
+    "use": "A process that repeats: a day at a Branch Office, a cash or account cycle, a rotation, any loop.",
+    "adapt": "the four stages (keep each English line short, about 26 characters, so the Hindi fits too); the centre words; which stage closes the loop",
+    "ideas": [
+      "cycle",
+      "loop",
+      "repeating process",
+      "daily routine",
+      "branch office",
+      "circular flow"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "hierarchy",
+    "name": "Hierarchy",
+    "description": "A red title with its Hindi line; two labelled columns of stacked cards, the top level in red, each card with the level in English, its Hindi under it (34px) and the officer in charge in a pill on the right; the Region level is marked 'where present' as not every Circle has Regions; a red elbow arrow carries the left column's last level into the right column; the key level in yellow; a round postmark with a count (23 Postal Circles) and wavy cancel lines closes the screen.",
+    "use": "Who reports to whom: postal administration, office classes, courts, ranks, any chain of command.",
+    "adapt": "the levels (up to 4 per column; one column if there are 4 or fewer); the officer pills; the postmark figure (circles, offices) or drop it",
+    "ideas": [
+      "hierarchy",
+      "structure",
+      "chain of command",
+      "administration",
+      "levels",
+      "organisation",
+      "reporting"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "mind-map",
+    "name": "Mind map",
+    "description": "A red round centre with a perforated stamp edge naming the idea in English with Hindi beneath, and four white branch cards in the corners linked by pale lines; each card has a red bar, the branch in English, its Hindi in red (36px) and a short grey example line.",
+    "use": "One idea with its parts: the products of a post office, features of a law, types of something, branches of a topic.",
+    "adapt": "up to 4 branches (bilingual screens hold fewer); the grey example lines or drop them; the centre words",
+    "ideas": [
+      "mind map",
+      "branches",
+      "overview",
+      "types",
+      "products",
+      "services",
+      "features",
+      "classification"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "pros-cons",
+    "name": "Merits and limits",
+    "description": "A red title with its Hindi line; two white panels side by side, merits with a red header and red dots, limits with a cream header and grey dashes (never red for the weaker side), two points a side, each in English with its Hindi (36px) beneath; a surface band at the bottom with an English line and its Hindi under it. Sample: IPPB (₹2 lakh balance cap per RBI, 2021).",
+    "use": "Two-sided points kept neutral: a product, a reform, a rule change, a scheme's strengths and limits.",
+    "adapt": "2 points a side (max 4 bilingual points on screen); the header words (merits/limits, advantages/challenges, for/against); the bottom line or drop it",
+    "ideas": [
+      "pros and cons",
+      "merits",
+      "limits",
+      "advantages",
+      "disadvantages",
+      "two sides",
+      "evaluation"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "profile-card",
+    "name": "Profile card",
+    "description": "A red stamp card with a perforated edge on the left showing what the person is known for (here a big PIN with six white digit boxes, an English caption with Hindi under it and a 'SINCE 1972 · 1972 से' pill), a white name card with a grey caps label, the name in English and the name in Hindi in red, and three fact strips, each English with Hindi beneath, the key one in yellow. Sample facts are only ones checkable on a government source (PIN from 15.08.1972, his post, the 9 zones); no birth/death years or awards.",
+    "use": "A person in the syllabus: a postal pioneer, a Postmaster General, a reformer, a constitutional figure.",
+    "adapt": "the left stamp's emblem (a number, a symbol, a year; no faked photo of a real person); the label; the three facts",
+    "ideas": [
+      "profile",
+      "person",
+      "biography",
+      "who is",
+      "pioneer",
+      "personality",
+      "father of"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "scheme-card",
+    "name": "Savings scheme card",
+    "description": "A red hero with a perforated stamp edge: the scheme's short name very large, its full name in English and in Hindi, and a yellow rate badge naming the quarter; a 2×2 grid of white fact cards (eligible, maximum, tenure, tax benefit), each with a bilingual caps label, a big value on the left and an English line with its Hindi (34px) under it on the right. Sample: SCSS, 8.2% for Oct-Dec 2026, 60+, ₹30 lakh, 5 years (+3), 80C.",
+    "use": "Any POSB scheme or government savings product: SCSS, PPF, SSA, MIS, NSC, KVP, RD, TD.",
+    "adapt": "the scheme, its rate and the quarter it applies to (always name the quarter); the four fact cards (keep to four; each value short, each with one English and one Hindi line)",
+    "ideas": [
+      "savings scheme",
+      "POSB",
+      "small savings",
+      "interest rate",
+      "SCSS",
+      "PPF",
+      "post office scheme",
+      "tax"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "exam-pattern",
+    "name": "Exam pattern",
+    "description": "An exam's pattern at a glance: a red title with its Hindi line under it and a 'NEW 2025 · नया पैटर्न' pill, then a white table with a red header row (PAPER · पेपर, QUESTIONS · प्रश्न, MARKS · अंक, TIME · समय). Each paper is a row with the paper name big and its type in English + Hindi (34px) under it. Below: a cream 'To pass' card (English rule with one yellow highlight, the same rule in Hindi under it) and a perforated red stamp card with the total marks. Sample: Inspector Posts LDCE pattern of 22.08.2025 (3 papers, 600 marks).",
+    "use": "When a lecture introduces an exam: how many papers, questions, marks and time, and what it takes to pass. Works for departmental exams and for SSC tiers or sessions.",
+    "adapt": "the exam name and its Hindi; 2 to 4 paper rows (or sections/sessions); change the columns (add negative marking, drop questions); the pass rule and its Hindi; the total stamp can show total time or the number of questions instead. Keep each row's type line bilingual and take every number from the official notice.",
+    "ideas": [
+      "exam pattern",
+      "papers",
+      "marks",
+      "duration",
+      "scheme of exam",
+      "qualifying marks",
+      "table"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "syllabus-map",
+    "name": "Syllabus map",
+    "description": "One topic and the exams it serves. On the left, a perforated red stamp card with the topic in English (large, white), its Hindi under it in yellow, and a subject pill. On the right, a white card titled ASKED IN · किन परीक्षाओं में with two labelled columns of cream chips, each with a green tick (Departmental · विभागीय on the left, SSC on the right with a short part label under each), then a yellow summary band (English line, Hindi line under it) and a grey source line (DoP pattern letter of 10.05.2019; SSC MTS 2025 and CGL 2026 notices).",
+    "use": "When a lecture says 'this topic covers these exams', to show the viewer why it is worth learning: maths, reasoning, GK, rules or postal knowledge shared across exams.",
+    "adapt": "the topic, its Hindi and subject; the groups (Departmental, SSC, UPSC) and 3 to 6 exam chips; a slate cross chip for an exam that does not ask it; the summary line; the source. Check each exam's syllabus before ticking it.",
+    "ideas": [
+      "syllabus",
+      "which exams",
+      "topic coverage",
+      "exam overlap",
+      "chips",
+      "matrix"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "pin-code",
+    "name": "PIN code anatomy",
+    "description": "A 6-digit PIN code (110001) shown as big digit tiles: the first in postal red, the second in deep red, the third in India Post yellow, the last three on one white tile. Ink elbow lines run down from each group to four white cards with matching coloured caps: Region / क्षेत्र (ज़ोन), Sub-region / उप-क्षेत्र, Sorting district / छँटाई ज़िला, Delivery office / वितरण डाकघर, each with an example value pill. A cream band at the bottom gives the 9 zones and the 1972 start in English + Hindi.",
+    "use": "Explaining a code or number built from parts: a PIN code, and by changing the digits and cards an account number, a form code or any coded format.",
+    "adapt": "the example code and its digit groups (colours follow the groups); the four cards' names, Hindi and example values; the bottom fact. Keep the parts at 3 to 4 cards.",
+    "ideas": [
+      "pin code",
+      "postal index number",
+      "digits",
+      "anatomy",
+      "code structure",
+      "postal gk"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "formula-card",
+    "name": "Formula card",
+    "description": "A maths formula and a worked example. On the left, a perforated red stamp card: FORMULA · सूत्र, the formula's name in English and Hindi, the formula itself in Georgia as a fraction on a white panel, and a key for its letters in Hindi and English. On the right, a white card: the question in English (bold) and Hindi, then the working in Georgia, one line at a time with the equals signs lined up, the answer in a green pill, and a cream box with the follow-on result (Amount · मिश्रधन).",
+    "use": "Maths for SSC and departmental papers: any formula followed by a solved example (interest, percentage, profit and loss, average, time and work, speed).",
+    "adapt": "the formula, its name and the letter key; the question (English + Hindi) and 2 to 3 working lines; the answer; the cream follow-on box or drop it. Keep the working in Georgia and the numbers right.",
+    "ideas": [
+      "formula",
+      "maths",
+      "worked example",
+      "simple interest",
+      "solution",
+      "steps",
+      "arithmetic"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "eligibility-card",
+    "name": "Eligibility card",
+    "description": "Who can sit an exam. On the left, a perforated red stamp card with the exam in big type (PA/SA), the exam name and year, the post names in Hindi in yellow, and a deep-red pill with the date the service is counted from. On the right, a white card WHO CAN SIT · कौन बैठ सकता है: tick rows, each with the post and its pay level or category in English, a Hindi condition under it (34px), and the years needed in big green on the right; a final slate row with a cross and a strike-through for who is not eligible, and a grey footnote. Sample from the Odisha Circle PA/SA LDCE 2026 notice (PA/SA RR 2022 as amended).",
+    "use": "Eligibility for a departmental exam or recruitment: service years by post, age limit, education, or who is left out.",
+    "adapt": "the exam and date; 2 to 4 tick rows (post, condition in Hindi, years, age or qualification on the right); the slate 'not eligible' row or drop it; the footnote. Take every condition from the notice.",
+    "ideas": [
+      "eligibility",
+      "who can apply",
+      "service years",
+      "age limit",
+      "conditions",
+      "ldce",
+      "tick list"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "glossary-list",
+    "name": "Glossary list",
+    "description": "Four terms in a 2×2 grid of white cards under a red kicker. Each card has a flat ink icon on a perforated stamp tile, the English term large, its Hindi in red under it, a thin rule, and a short meaning as an English line with its Hindi line (34px) under it. The cards pop in one by one. Sample: Speed Post, Money Order (up to ₹10,000), Registration (a ₹5 + GST add-on to Speed Post since Registered Post was merged in 2025), Parcel.",
+    "use": "A quick revision moment: postal products, banking terms, rule names, grammar words, any set of four terms with short meanings.",
+    "adapt": "the four terms, their Hindi and meanings (about 4 words; Hindi line under the English); the icons (envelope, rupee note, seal, parcel; draw new simple ink icons for other terms); 3 terms in a row or 4 in the grid.",
+    "ideas": [
+      "glossary",
+      "revision",
+      "terms",
+      "vocabulary",
+      "postal products",
+      "quick recap"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "mail-flow",
+    "name": "Mail flow",
+    "description": "An article's journey as a route of five numbered round stops drawn with flat ink icons: post box → sorting rack → mail van → delivery office → postman (the last one in soft yellow), joined by arrows that draw on between stops. Each stop has its English label and Hindi under it. A red title with a Hindi subtitle sits above, and a cream band at the bottom gives one point to remember with a yellow highlight.",
+    "use": "Any process in steps along a route: how mail moves, how a money order is paid, how a complaint is handled, how a parcel is booked and delivered.",
+    "adapt": "3 to 5 stops with their icons, English and Hindi labels; which stop is highlighted; the bottom note or drop it.",
+    "ideas": [
+      "process",
+      "flow",
+      "journey",
+      "steps",
+      "mail operations",
+      "route",
+      "delivery"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  },
+  {
+    "id": "rule-number-card",
+    "name": "Rule number card",
+    "description": "A rule to remember. On the left, a perforated red stamp card with a huge rule number (11), the rules' name (CCS (CCA) Rules, 1965) and what it covers in Hindi + English in yellow, with a round postmark stamped at the end. On the right, a white document card: WHAT IT COVERS · विषय with a short Georgia line quoting the rule's words, a Hindi gist marked (सार), and two panels (cream for minor, red for major penalties). Below, a cream REMEMBER · याद रखें card compares two easily confused terms, each with an English line and a Hindi line, with the key one highlighted.",
+    "use": "Service rules for departmental exams: CCS (Conduct) Rules, CCS (CCA) Rules, Leave Rules, GDS rules, any act section where the number itself is asked.",
+    "adapt": "the rule number and the rules' name; what it covers; the two panels (lists, conditions, or before/after); the remember card's pair or a single point. Verify the rule number and keep any quoted words exact in Georgia.",
+    "ideas": [
+      "rule",
+      "ccs rules",
+      "penalties",
+      "section",
+      "conduct rules",
+      "act",
+      "remember"
+    ],
+    "scope": "channel",
+    "approved": true,
+    "createdAt": "2026-10-02T12:00:00.000Z",
+    "languages": {
+      "gu": {
+        "approved": true
+      }
+    }
+  }
+]
