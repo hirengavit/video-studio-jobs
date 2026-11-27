@@ -8,12 +8,5 @@
   "10.81"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s078",
-   "text": "मानी जा सकती है · booking कहीं से भी",
-   "t": 4.38
-  }
- ]
+ "warnings": []
 }
