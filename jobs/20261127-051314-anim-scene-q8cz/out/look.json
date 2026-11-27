@@ -8,19 +8,5 @@
   "12.73"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "low-contrast",
-   "scene": "s104",
-   "text": "3 (1.5:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s104",
-   "text": "3 / 3",
-   "t": 2.58
-  }
- ]
+ "warnings": []
 }
