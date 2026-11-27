@@ -1,0 +1,111 @@
+{
+  "id": "rules-counter",
+  "description": "The recurring sorting picture: a deep sand post-office counter top across the lower frame (x 80-1840, back edge y 740, front edge y 952, face to y 976) with three open sorting trays (440x200) centred at x 420 / 960 / 1500 (back rims y 774, front lips y 860, bases y 946): prohibited (slate rim and pale slate front, slate cross), restricted (yellow band, small padlock), suspect (round grey postmark). The tray fronts (y 860-946) are blank right of each mark for the scene's Hindi label; the label spots mark the centre of that clear space. An article falls onto its tray spot (the tray's front lip, y 860) and its tag goes on the tag spot above. No person.",
+  "ideas": [
+    "sorting",
+    "prohibited",
+    "restricted",
+    "suspect",
+    "post office counter",
+    "classify",
+    "three categories",
+    "rules"
+  ],
+  "back": [
+    {
+      "piece": "counter-ledge",
+      "transform": "translate(80 720)"
+    },
+    {
+      "piece": "tray-prohibited",
+      "transform": "translate(200 760)"
+    },
+    {
+      "piece": "tray-restricted",
+      "transform": "translate(740 760)"
+    },
+    {
+      "piece": "tray-suspect",
+      "transform": "translate(1280 760)"
+    }
+  ],
+  "front": [],
+  "spots": {
+    "tray-prohibited": [
+      420,
+      860
+    ],
+    "tray-restricted": [
+      960,
+      860
+    ],
+    "tray-suspect": [
+      1500,
+      860
+    ],
+    "counter-left": [
+      200,
+      740
+    ],
+    "counter-right": [
+      1720,
+      740
+    ],
+    "tag-prohibited": [
+      420,
+      600
+    ],
+    "tag-restricted": [
+      960,
+      600
+    ],
+    "tag-suspect": [
+      1500,
+      600
+    ],
+    "label-prohibited": [
+      470,
+      910
+    ],
+    "label-restricted": [
+      1010,
+      911
+    ],
+    "label-suspect": [
+      1550,
+      910
+    ]
+  },
+  "framings": {
+    "wide": {
+      "zoom": 1
+    },
+    "medium": {
+      "zoom": 1.25,
+      "x": 0,
+      "y": 108
+    },
+    "close": {
+      "zoom": 1.6,
+      "x": 0,
+      "y": 202
+    },
+    "close-prohibited": {
+      "zoom": 1.6,
+      "x": -360,
+      "y": 202
+    },
+    "close-restricted": {
+      "zoom": 1.6,
+      "x": 0,
+      "y": 202
+    },
+    "close-suspect": {
+      "zoom": 1.6,
+      "x": 360,
+      "y": 202
+    }
+  },
+  "source": "20261121-050117-prohibited-and-restricted-articles",
+  "createdAt": "2026-11-21T14:11:53.357Z"
+}
