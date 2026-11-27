@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s123" data-section="PART 5 · CSC &amp; RETAIL" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="timeline">
+  <text id="timeline-title" x="200" y="215" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="780" fill="#9e1b1b">PO-CSC की शुरुआत</text>
+  <text id="two-dates" x="200" y="278" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="630" fill="#6f6a63">दो तारीखें</text>
+  <rect id="track-base" x="200" y="463" width="1520" height="14" rx="7" fill="#ead9a8"/>
+  <rect id="track" x="200" y="463" width="608" height="14" rx="2.8" ry="7" fill="#9e1b1b"/>
+  <rect id="track-extension" x="801" y="463" width="919" height="14" rx="7" fill="#9e1b1b"/>
+  <g id="ev1-card">
+    <circle id="ev1-pin" cx="520" cy="470" r="20" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="7"/>
+    <rect x="220" y="520" width="600" height="280" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <text x="520" y="603" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="780" fill="#2b2622">Pilot</text>
+    <text x="520" y="655" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="630" fill="#6f6a63">पायलट</text>
+    <text id="ev1-circles" x="520" y="715" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="740" fill="#2b2622">11 Circles</text>
+    <text id="ev1-offices" x="520" y="771" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="740" fill="#2b2622">22 post offices</text>
+  </g>
+  <text id="ev1-date" x="520" y="423" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="800" fill="#9e1b1b">4 May 2020</text>
+  <g id="ev2-card">
+    <circle cx="1360" cy="470" r="23" fill="#f2b705" stroke="#fbf7ee" stroke-width="7"/>
+    <rect x="1040" y="520" width="660" height="310" rx="26" fill="#fde9a6" stroke="#f2b705" stroke-width="3" filter="url(#vs-shadow)"/>
+    <text id="ev2-agree" x="1360" y="612" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="780" fill="#2b2622">Agreement</text>
+    <text id="ev2-agree-hi" x="1360" y="664" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#6f6a63">समझौता</text>
+    <text id="ev2-spv" x="1360" y="759" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="800" fill="#2b2622">CSC-SPV</text>
+  </g>
+  <g id="ev2-stamp">
+    <rect x="1064" y="328" width="592" height="116" rx="22" fill="#fde9a6" stroke="#f2b705" stroke-width="2"/>
+    <text id="ev2-date" x="1360" y="416" text-anchor="middle" font-family="Inter, sans-serif" font-size="80" font-weight="800" fill="#9e1b1b">15 Dec 2020</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{camera:[[0,{zoom:1}]],on:[
+[0.00,"type","#ev1-circles",{cps:19}],
+[1.32,"type","#ev1-offices",{cps:16}],
+[3.28,"grow","#track-extension",{axis:"x",origin:"left",to:1,spring:"soft"}],
+[5.06,"pop","#ev2-card",{from:0.96,spring:"soft"}],
+[5.06,"type","#ev2-spv",{cps:17}],
+[6.68,"fade","#ev2-agree",{dur:0.25}],
+[7.20,"fade","#ev2-agree-hi",{dur:0.25}],
+[7.40,"fade","#ev2-stamp",{dur:0.22}],
+[7.40,"type","#ev2-date",{cps:16}]
+]}
+</script>
+</section>
