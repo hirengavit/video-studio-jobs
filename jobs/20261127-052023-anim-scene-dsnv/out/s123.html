@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s123" data-in="cut" data-section="PART 5 · BUSINESS CUSTOMERS" data-series="PRODUCTS">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="dp">
+ <g id="document-card">
+  <rect x="140" y="300" width="720" height="640" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <path d="M170 301h660q29 0 29 29v92H141v-92q0-29 29-29Z" fill="#9e1b1b"/>
+  <g id="document-discount">
+   <text x="500" y="355" text-anchor="middle" font-family="Inter, sans-serif" font-size="53" font-weight="800" fill="#fff">Document discount</text>
+   <text x="500" y="403" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="40" font-weight="700" fill="#fde9a6">दस्तावेज़ की छूट</text>
+  </g>
+  <g id="document-envelope" transform="translate(500 590) scale(1.75) translate(-500 -542)" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+   <path d="M347 474Q347 460 361 460H639Q653 460 653 474V610Q653 624 639 624H361Q347 624 347 610Z"/>
+   <path d="M352 468L490 558Q500 565 510 558L648 468M353 615L456 536M647 615L544 536"/>
+  </g>
+ </g>
+ <g id="parcel-card">
+  <rect x="1060" y="300" width="720" height="640" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <path d="M1090 301h660q29 0 29 29v92h-718v-92q0-29 29-29Z" fill="#f3ead6"/>
+  <g id="parcel-discount">
+   <text x="1420" y="355" text-anchor="middle" font-family="Inter, sans-serif" font-size="53" font-weight="800" fill="#2b2622">Parcel discount</text>
+   <text x="1420" y="403" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="40" font-weight="700" fill="#6f6a63">पार्सल की छूट</text>
+  </g>
+  <text id="india-post-parcel" x="1120" y="477" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#2b2622">India Post Parcel</text>
+  <text id="speed-post-parcel" x="1120" y="560" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#2b2622">Speed Post Parcel</text>
+  <text id="own-discount" x="1120" y="680" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="730" fill="#2b2622">अपना discount इंतज़ाम</text>
+  <g id="parcel-icon"><use href="piece:speed-post-parcel" transform="translate(1494 678) scale(.8)"/></g>
+ </g>
+ <g id="not-equal">
+  <circle cx="960" cy="600" r="57" fill="#4b4f58"/>
+  <text x="960" y="627" text-anchor="middle" font-family="Inter, sans-serif" font-size="86" font-weight="830" fill="#fff">≠</text>
+ </g>
+ <g id="transfer-arc">
+  <path d="M500 269Q960 123 1420 269" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-dasharray="14 10" stroke-linecap="round"/>
+  <path d="M1395 242L1420 269L1384 277" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+ <g id="transfer-cross"><circle cx="960" cy="196" r="25" fill="#fbf7ee"/><path d="M938 174L982 218M982 174L938 218" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/></g>
+ <g id="transfer-note">
+  <rect x="810" y="221" width="300" height="58" rx="29" fill="#fbf7ee"/>
+  <text x="960" y="262" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="800" fill="#4b4f58">अपने आप नहीं</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [0.12,'fade','#india-post-parcel',{dur:.28}],
+  [1.64,'fade','#speed-post-parcel',{dur:.28}],
+  [2.22,'pop','#parcel-icon',{from:.88,spring:'fast'}],
+  [3.10,'fade','#own-discount',{dur:.28}],
+  [3.18,'highlight','#own-discount',{words:'अपना',color:'#f2b705',opacity:.40,pad:8,dur:.31}],
+  [5.24,'draw','#document-envelope',{dur:.57}],
+  [7.30,'reveal','#transfer-arc',{from:'left',dur:.65}],
+  [8.50,'pop','#transfer-cross',{from:.80,spring:'fast'}],
+  [8.50,'fade','#transfer-note',{dur:.25}]
+ ]
+}
+</script>
+</section>
