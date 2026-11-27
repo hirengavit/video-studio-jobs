@@ -8,5 +8,12 @@
   "10.04"
  ],
  "problems": [],
- "warnings": []
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s200",
+   "text": "postage + registration / के ऊपर · tax अलग",
+   "t": 0.3
+  }
+ ]
 }
