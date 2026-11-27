@@ -14,12 +14,6 @@
    "scene": "s011",
    "message": "a card is mostly empty at 4.8 s: bring its items in sooner, or size it for what it holds now",
    "t": 4.75
-  },
-  {
-   "kind": "text-off-frame",
-   "scene": "s011",
-   "text": "post office वो services देगा जो Central ",
-   "t": 11.73
   }
  ]
 }
