@@ -8,13 +8,5 @@
   "9.15"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "low-contrast",
-   "scene": "s120",
-   "text": "थोक booking का data (2.8:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 5.58
-  }
- ]
+ "warnings": []
 }
