@@ -1,0 +1,63 @@
+<section class="vs-scene" id="s102" data-section="PART 4 · POPSK" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="timeline">
+ <text id="timeline-title" x="960" y="211" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="760" fill="#9e1b1b">मकसद: passport services नागरिक के पास</text>
+ <path d="M200 520H1720" fill="none" stroke="#d6c9b2" stroke-width="10" stroke-linecap="round"/>
+ <path id="pilot-track" d="M200 520H520" fill="none" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round"/>
+ <circle id="pilot-dot" cx="520" cy="520" r="18" fill="#9e1b1b" stroke="#fbf7ee" stroke-width="4"/>
+ <text id="pilot-date" x="520" y="395" text-anchor="middle" font-family="Inter,sans-serif" font-size="64" font-weight="780" fill="#9e1b1b">25 Jan 2017</text>
+ <text id="pilot-label" x="520" y="461" text-anchor="middle" font-family="Inter,sans-serif" font-size="40" font-weight="600" fill="#6f6a63">pilot centres</text>
+ <g id="pilot-metagali">
+  <rect x="200" y="580" width="700" height="180" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="255" y="656" font-family="Inter, sans-serif" font-size="48" font-weight="780" fill="#2b2622">Metagali PO</text>
+  <text id="pilot-metagali-loc" x="255" y="717" font-family="Inter, sans-serif" font-size="40" font-weight="620" fill="#6f6a63">Mysuru, Karnataka</text>
+ </g>
+ <g id="pilot-dahod">
+  <rect x="200" y="790" width="700" height="170" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <text x="255" y="862" font-family="Inter, sans-serif" font-size="48" font-weight="780" fill="#2b2622">Dahod HPO</text>
+  <text id="pilot-dahod-loc" x="255" y="922" font-family="Inter, sans-serif" font-size="40" font-weight="620" fill="#6f6a63">Gujarat</text>
+ </g>
+ <g id="distance-chip">
+  <rect x="1000" y="600" width="280" height="104" rx="38" fill="#fde9a6"/>
+  <text x="1140" y="668" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#795000">दूरी ↓</text>
+ </g>
+ <g id="time-chip">
+  <rect x="1000" y="722" width="280" height="104" rx="38" fill="#fde9a6"/>
+  <text x="1140" y="790" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#795000">समय ↓</text>
+ </g>
+ <g id="cost-chip">
+  <rect x="1000" y="844" width="280" height="104" rx="38" fill="#fde9a6"/>
+  <text x="1140" y="912" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#795000">खर्च ↓</text>
+ </g>
+</g>
+<g id="role">
+ <g id="pops-role-card">
+  <rect x="140" y="240" width="760" height="660" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <path d="M141 376V267Q141 241 167 241H873Q899 241 899 267V376Z" fill="#fde9a6"/>
+  <text id="pops-role-header" x="520" y="332" text-anchor="middle" font-family="Inter, sans-serif" font-size="62" font-weight="800" fill="#2b2622">POPSK</text>
+  <text id="pops-role-main" x="200" y="501" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="720" fill="#2b2622">passport की formalities</text>
+  <text id="pops-role-end" x="200" y="566" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="720" fill="#2b2622">की जगह</text>
+ </g>
+ <g id="mea-role-card">
+  <rect x="1020" y="240" width="760" height="660" rx="27" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <path d="M1021 376V267Q1021 241 1047 241H1753Q1779 241 1779 267V376Z" fill="#9e1b1b"/>
+  <text id="mea-role-header" x="1400" y="325" text-anchor="middle" font-family="Inter, sans-serif" font-size="43" font-weight="770" fill="#fff">MEA · passport administration</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ "camera":[[0,{"zoom":1}]],
+ "shots":[[0,"#timeline"],[4.05,"#role"]],
+ "on":[
+  [0,"fade","#time-chip",{"dur":0.27}],
+  [1.10,"fade","#cost-chip",{"dur":0.27}],
+  [6.11,"type","#pops-role-main",{"cps":24}],
+  [7.23,"highlight","#pops-role-main",{"words":"formalities","color":"#f2b705","opacity":0.38,"dur":0.43}],
+  [8.50,"type","#pops-role-end",{"cps":12}]
+ ]
+}
+</script>
+</section>
+
