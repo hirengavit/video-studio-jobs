@@ -8,12 +8,5 @@
   "9.71"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s191",
-   "text": "exporters / व्यावसायिक निर्यातक",
-   "t": 5.92
-  }
- ]
+ "warnings": []
 }
