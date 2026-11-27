@@ -1,0 +1,68 @@
+<section class="vs-scene" id="s130" data-section="PART 6 · DELIVERY" data-series="PRODUCTS" data-in="cut">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="registration">
+      <rect x="120" y="200" width="780" height="420" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <g transform="translate(412 248)" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="196" height="136" rx="18" fill="#f3ead6"/>
+        <rect x="19" y="25" width="68" height="87" rx="9" fill="#fff"/>
+        <circle cx="53" cy="50" r="11" fill="#f3ead6"/>
+        <path d="M32 92q2-18 21-18t21 18" fill="#f3ead6"/>
+        <path d="M109 40h59M109 67h49M109 94h38" fill="none"/>
+      </g>
+      <text x="510" y="477" text-anchor="middle" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="68" font-weight="820">Registration</text>
+      <text id="registration-explainer" x="510" y="555" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="700">सही व्यक्ति तय</text>
+    </g>
+    <g id="otp">
+      <rect x="1020" y="200" width="780" height="420" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <g id="keypad-lock" transform="translate(1329 234)" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M34 59V46a47 47 0 1 1 94 0v13h-18V46a29 29 0 1 0-58 0v13Z" fill="#fff"/>
+        <rect x="0" y="58" width="162" height="103" rx="18" fill="#f3ead6"/>
+        <path d="M55 87h.2m26 0h.2m26 0h.2M55 112h.2m26 0h.2m26 0h.2M55 137h.2m26 0h.2m26 0h.2" stroke-width="11"/>
+      </g>
+      <text x="1410" y="477" text-anchor="middle" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="68" font-weight="820">OTP</text>
+      <text id="otp-explainer" x="1410" y="555" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="700">password की जाँच</text>
+    </g>
+    <g id="service-1">
+      <rect x="110" y="723" width="380" height="112" rx="56" fill="#f3ead6"/>
+      <text x="300" y="797" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="49" font-weight="750">Registration</text>
+    </g>
+    <g id="service-2">
+      <rect x="550" y="723" width="380" height="112" rx="56" fill="#f3ead6"/>
+      <text x="740" y="797" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="49" font-weight="750">OTP</text>
+    </g>
+    <g id="service-3">
+      <rect x="990" y="723" width="380" height="112" rx="56" fill="#f3ead6"/>
+      <text x="1180" y="797" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="49" font-weight="750">SMS</text>
+    </g>
+    <g id="service-4">
+      <rect x="1430" y="723" width="380" height="112" rx="56" fill="#f3ead6"/>
+      <text x="1620" y="797" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="49" font-weight="750">POD</text>
+    </g>
+    <g id="service-links" fill="none" stroke="#6f6a63" stroke-width="4" stroke-linecap="round">
+      <path d="M493 779h9m36 0h9" stroke-dasharray="3 4"/><path d="M510 779h20m-10-10v20"/>
+      <path d="M933 779h9m36 0h9" stroke-dasharray="3 4"/><path d="M950 779h20m-10-10v20"/>
+      <path d="M1373 779h9m36 0h9" stroke-dasharray="3 4"/><path d="M1390 779h20m-10-10v20"/>
+    </g>
+    <g id="no-auto-links" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M506 765l28 28m0-28-28 28" stroke="#fbf7ee" stroke-width="12"/><path d="M506 765l28 28m0-28-28 28" stroke="#4b4f58" stroke-width="6"/>
+      <path d="M946 765l28 28m0-28-28 28" stroke="#fbf7ee" stroke-width="12"/><path d="M946 765l28 28m0-28-28 28" stroke="#4b4f58" stroke-width="6"/>
+      <path d="M1386 765l28 28m0-28-28 28" stroke="#fbf7ee" stroke-width="12"/><path d="M1386 765l28 28m0-28-28 28" stroke="#4b4f58" stroke-width="6"/>
+    </g>
+    <text id="no-auto-caption" x="960" y="936" text-anchor="middle" fill="#4b4f58" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="750">अपने आप नहीं मिलतीं</text>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.92, 'words', '#registration-explainer', {gap:0.32,dist:10,from:'down',spring:'soft'}],
+      [3.28, 'pop', '#otp', {spring:'soft',from:0.965}],
+      [3.28, 'draw', '#keypad-lock', {dur:0.48}],
+      [4.40, 'words', '#otp-explainer', {gap:0.34,dist:10,from:'down',spring:'soft'}],
+      [7.02, 'pop', '#service-1,#service-2,#service-3,#service-4', {stagger:0.12,spring:'soft',from:0.94}],
+      [8.12, 'draw', '#service-links', {dur:0.48}],
+      [9.88, 'draw', '#no-auto-links', {dur:0.18}],
+      [9.88, 'fade', '#no-auto-caption', {dur:0.23}]
+    ]
+  }
+  </script>
+</section>
