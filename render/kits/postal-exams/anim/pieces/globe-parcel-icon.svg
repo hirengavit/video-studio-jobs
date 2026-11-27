@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <clipPath id="globe-parcel-icon-clip"><circle cx="190" cy="174" r="118"/></clipPath>
+  </defs>
+  <g id="globe-stand" stroke="#2b2622" stroke-width="3">
+    <path d="M190 292 V322"/>
+    <rect x="136" y="320" width="108" height="20" rx="10" fill="#f3ead6"/>
+  </g>
+  <g id="globe">
+    <circle cx="190" cy="174" r="118" fill="#fbf7ee"/>
+    <g clip-path="url(#globe-parcel-icon-clip)">
+      <g id="land" fill="#ead9a8" stroke="#2b2622" stroke-width="3">
+        <path d="M96 92 C122 70 160 72 176 90 C188 104 170 118 178 134 C186 152 168 170 146 166 C130 162 132 186 116 196 C98 206 84 186 82 166 C80 140 76 110 96 92 Z"/>
+        <path d="M206 112 C226 98 262 100 280 120 C296 138 290 162 270 170 C254 176 256 200 240 222 C228 238 210 232 208 212 C206 194 214 180 204 164 C194 148 192 122 206 112 Z"/>
+        <path d="M134 238 C150 228 176 232 186 246 C194 258 180 272 160 272 C142 272 124 252 134 238 Z"/>
+      </g>
+      <g id="globe-lines" stroke="#6f6a63" stroke-width="1.5" opacity="0.7">
+        <ellipse cx="190" cy="174" rx="54" ry="118"/>
+        <path d="M190 56 V292"/>
+        <path d="M72 174 H308"/>
+        <path d="M84 120 Q190 140 296 120"/>
+        <path d="M84 228 Q190 248 296 228"/>
+      </g>
+    </g>
+    <circle cx="190" cy="174" r="118" stroke="#2b2622" stroke-width="3"/>
+  </g>
+  <path id="plane-arc" d="M58 262 Q96 54 300 84" stroke="#2b2622" stroke-width="3" stroke-dasharray="2 12"/>
+  <g id="plane" transform="translate(314 86) rotate(9)" stroke="#2b2622" stroke-width="2.5" fill="#ffffff">
+    <path d="M-4 -3 L-12 -18 L-5 -18 L8 -3 Z"/>
+    <path d="M-4 3 L-12 18 L-5 18 L8 3 Z"/>
+    <path d="M-15 -3 L-21 -11 L-16 -11 L-9 -3 Z"/>
+    <path d="M-18 -3.5 H12 Q21 0 12 3.5 H-18 Z"/>
+  </g>
+  <g id="parcel" stroke="#2b2622" stroke-width="3">
+    <path d="M236 262 L256 244 H338 L318 262 Z" fill="#f3ead6"/>
+    <path d="M318 262 L338 244 V322 L318 340 Z" fill="#ead9a8"/>
+    <rect x="236" y="262" width="82" height="78" rx="2" fill="#f3ead6"/>
+    <path d="M277 263 V339 M278 261 L296 245" stroke="#9e1b1b" stroke-width="8" stroke-linecap="butt"/>
+    <path d="M236 262 L256 244 H338 L318 262 Z M318 262 L338 244 V322 L318 340 M236 262 H318 V340 H236 Z"/>
+  </g>
+  <circle data-anchor="base" cx="200" cy="340" r="0"/>
+</svg>
