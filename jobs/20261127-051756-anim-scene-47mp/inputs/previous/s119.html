@@ -1,0 +1,32 @@
+<section class="vs-scene" id="s119" data-in="cut" data-section="PART 5 · BUSINESS CUSTOMERS" data-series="PRODUCTS">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="advance-payment">
+      <text x="960" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="790" fill="#9e1b1b">Advance payment</text>
+      <text x="960" y="280" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#6f6a63">अग्रिम भुगतान की छूट</text>
+      <g id="tier-one">
+        <use href="piece:key-fact-stamp" transform="translate(200 350)"/>
+        <text x="480" y="574" text-anchor="middle" font-family="Inter, sans-serif" font-size="150" font-weight="790" fill="#ffffff">1%</text>
+      </g>
+      <text id="deposit" x="480" y="788" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="720" fill="#2b2622">Advance deposit या booking पर भुगतान</text>
+      <text id="eligibility" x="480" y="857" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="590" fill="#6f6a63">eligible customers</text>
+      <g id="tier-two">
+        <use href="piece:key-fact-stamp" transform="translate(1160 350)"/>
+      </g>
+      <text id="monthly" x="1440" y="788" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="720" fill="#2b2622">महीने की eligible revenue</text>
+      <text id="threshold" x="1440" y="857" text-anchor="middle" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="790" fill="#2b2622">₹25 लाख से ज़्यादा</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.56,'fade','#deposit',{dur:0.30}],
+      [3.40,'fade','#eligibility',{dur:0.27}],
+      [5.08,'stamp','#tier-one',{from:1.10,rot:-2,spring:'soft'}],
+      [7.32,'fade','#monthly',{dur:0.27}],
+      [8.98,'fade','#threshold',{dur:0.25}],
+      [10.64,'fade','#tier-two',{dur:0.27}]
+    ]
+  }
+  </script>
+</section>
