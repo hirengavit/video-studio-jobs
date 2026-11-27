@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<rect id="phone-shell" x="110" y="27" width="180" height="346" rx="24" fill="#4b4f58"/><rect id="screen" x="123" y="53" width="154" height="284" rx="9" fill="#fff"/><path id="speaker" d="M184 40h32" fill="none" stroke="#fbf7ee"/><path id="home-bar" d="M180 354h40" fill="none" stroke="#fbf7ee"/><path id="side-button" d="M291 102v36" fill="none" stroke="#2b2622"/>
+<circle data-anchor="base" cx="200" cy="373" r="0"/>
+<circle data-anchor="grip" cx="288" cy="215" r="0"/>
+</svg>

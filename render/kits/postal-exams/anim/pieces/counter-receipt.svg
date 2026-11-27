@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="receipt-paper" d="M110 39h180v310l-9 9-9-9l-9 9-9-9l-9 9-9-9l-9 9-9-9l-9 9-9-9l-9 9-9-9l-9 9-9-9l-9 9-9-9l-9 9-9-9l-9 9-9-9z" fill="#fff"/><path id="receipt-header-rule" d="M132 96h136" fill="none" stroke="#6f6a63"/><g id="receipt-placeholder-lines" opacity=".54"><path d="M132 119h86m-86 27h111m-111 27h72m-72 27h107m-107 27h91m-91 27h125" fill="none" stroke="#6f6a63"/></g><path id="receipt-divider" d="M132 278h136" fill="none" stroke="#ead9a8"/><path id="receipt-footer-rule" d="M191 303h77" fill="none" stroke="#6f6a63"/>
+<circle data-anchor="base" cx="200" cy="358" r="0"/>
+</svg>
