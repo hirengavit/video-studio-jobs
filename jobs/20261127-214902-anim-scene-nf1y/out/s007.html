@@ -1,0 +1,75 @@
+<section class="vs-scene" id="s007" data-section="RETAIL &amp; CITIZEN SERVICES" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+<g id="parts">
+<defs>
+  <clipPath id="s007-window-clip"><rect x="660" y="346" width="600" height="360"/></clipPath>
+  <clipPath id="s007-caption-en-clip"><rect x="160" y="761" width="1600" height="98"/></clipPath>
+  <clipPath id="s007-caption-hi-clip"><rect x="160" y="864" width="1600" height="90"/></clipPath>
+</defs>
+<use href="set:citizen-counter" layer="back"/>
+<g clip-path="url(#s007-window-clip)">
+<use id="parts-window-bill" href="piece:invoice-calendar-icon" transform="scale(0.79)"/>
+<g id="parts-window-id-entrance">
+  <g id="parts-window-id-exit"><use id="parts-window-id-icon" href="piece:id-card-icon" transform="scale(.92)"/></g>
+</g>
+<g id="parts-window-fees">
+  <use id="parts-window-fees-icon" href="piece:id-card-icon" transform="scale(.92)"/>
+  <g id="parts-window-coin" transform="translate(1079 671)">
+    <circle r="34" fill="#f3ead6" stroke="#8a5d00" stroke-width="3"/>
+    <text y="14" text-anchor="middle" font-size="43" font-weight="800" fill="#8a5d00">₹</text>
+  </g>
+</g>
+</g>
+<use href="set:citizen-counter" layer="front"/>
+<text id="parts-sign" x="960" y="263" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="780" fill="#fff">नौ हिस्से</text>
+<g id="parts-tile-1">
+<rect x="130" y="320" width="220" height="200" rx="19" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<use href="piece:invoice-calendar-icon" transform="translate(146.25 326.25) scale(0.46875)"/>
+<circle cx="167" cy="358" r="28" fill="#9e1b1b"/>
+<text x="167" y="373" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="780" fill="#fff">1</text>
+</g>
+<g id="parts-tile-2">
+  <rect x="390" y="320" width="220" height="200" rx="19" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <use href="piece:id-card-icon" transform="translate(348 268) scale(.76)"/>
+  <circle cx="427" cy="358" r="28" fill="#9e1b1b"/>
+  <text x="427" y="373" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="780" fill="#fff">2</text>
+</g>
+<g id="parts-tile-3">
+  <rect x="130" y="540" width="220" height="200" rx="19" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <use href="piece:id-card-icon" transform="translate(88 488) scale(.76)"/>
+  <circle cx="167" cy="578" r="28" fill="#9e1b1b"/>
+  <text x="167" y="593" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="780" fill="#fff">3</text>
+  <g transform="translate(310 702)"><circle r="25" fill="#f3ead6" stroke="#8a5d00" stroke-width="2"/><text y="12" text-anchor="middle" font-size="35" font-weight="800" fill="#8a5d00">₹</text></g>
+</g>
+<g clip-path="url(#s007-caption-en-clip)">
+<text id="parts-caption-en" x="960" y="829" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="790" fill="#2b2622">Retail Post &amp; e-Payment</text>
+<g id="parts-caption-2-en-in"><text id="parts-caption-2-en-out" x="960" y="829" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="790" fill="#2b2622">Aadhaar: enrolment, update, forms</text></g>
+<text id="parts-caption-3-en" x="960" y="829" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="790" fill="#2b2622">Aadhaar fees</text>
+</g>
+<g clip-path="url(#s007-caption-hi-clip)">
+<text id="parts-caption-hi" x="960" y="915" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="500" fill="#6f6a63">कानूनी आधार · खुदरा डाक · ई-भुगतान</text>
+<g id="parts-caption-2-hi-in"><text id="parts-caption-2-hi-out" x="960" y="915" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="500" fill="#6f6a63">आधार नामांकन · अद्यतन · forms</text></g>
+<text id="parts-caption-3-hi" x="960" y="915" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="500" fill="#6f6a63">fees · free सेवाएँ · घर पर सेवा</text>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ "set":"citizen-counter",
+ "camera":[[0,"wide"]],
+ "on":[
+ [0,"place","#parts-window-bill",{"spot":"window"}],
+ [0,"place","#parts-window-id-icon",{"spot":"window"}],
+ [0,"place","#parts-window-fees-icon",{"spot":"window"}],
+ [1.34,"pop","#parts-tile-2",{"from":0.92}],
+ [1.34,"swap","#parts-window-bill",{"to":"#parts-window-id-entrance","dist":160,"dur":0.42}],
+ [1.82,"swap","#parts-caption-en",{"to":"#parts-caption-2-en-in","dist":61,"dur":0.36}],
+ [1.82,"swap","#parts-caption-hi",{"to":"#parts-caption-2-hi-in","dist":61,"dur":0.36}],
+ [6.22,"pop","#parts-tile-3",{"from":0.92}],
+ [6.22,"swap","#parts-window-id-exit",{"to":"#parts-window-fees","dist":150,"dur":0.42}],
+ [6.42,"swap","#parts-caption-2-en-out",{"to":"#parts-caption-3-en","dist":61,"dur":0.36}],
+ [6.42,"swap","#parts-caption-2-hi-out",{"to":"#parts-caption-3-hi","dist":61,"dur":0.36}]
+ ]
+}
+</script>
+</section>
