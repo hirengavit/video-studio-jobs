@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="vane"><path d="M200 334Q138 304 138 200Q138 92 206 14Q264 100 264 200Q264 304 200 334Z" fill="#e6d9bb"/>
+<path d="M206 14Q152 72 146 140Q176 122 203 122Q232 122 258 140Q254 72 206 14Z" fill="#c8cbcc" stroke-width="2"/>
+<g stroke="#a7aaad" stroke-width="1.8" fill="none"><path d="M202 90l-40-24M204 90l40-24"/><path d="M202 112l-44-26M204 112l44-26"/><path d="M201 134l-44-26M203 134l44-26"/><path d="M201 156l-46-26M203 156l46-26"/><path d="M200 178l-46-26M202 178l46-26"/><path d="M200 200l-46-26M202 200l46-26"/><path d="M200 222l-46-26M202 222l46-26"/><path d="M199 244l-46-26M201 244l46-26"/><path d="M199 266l-44-26M201 266l44-26"/><path d="M198 288l-40-24M200 288l40-24"/><path d="M198 310l-30-18M200 310l30-18"/></g>
+<path d="M140 214l14 6M262 176l-14 6" stroke-width="3" fill="none"/>
+<path d="M198 334q-18 10-26 24M202 334q18 8 26 22M200 344q-8 10-12 22" stroke="#6f6a63" stroke-width="2" fill="none"/></g>
+<path id="shaft" d="M200 390Q194 200 206 14" fill="none" stroke-width="4"/>
+<circle data-anchor="base" cx="200" cy="390" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="206" cy="14" r="0" fill="none" stroke="none"/>
+</svg>
