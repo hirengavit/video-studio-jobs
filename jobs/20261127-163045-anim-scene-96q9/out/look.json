@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.20",
+  "4.39",
+  "6.59",
+  "8.78",
+  "10.83"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s038",
+   "message": "pulse: option \"to\" isn't used (it takes: amount)",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s038",
+   "message": "pulse: option \"dur\" isn't used (it takes: amount)",
+   "t": 0.3
+  }
+ ]
+}
