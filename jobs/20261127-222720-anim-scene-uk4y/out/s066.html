@@ -1,0 +1,74 @@
+<section class="vs-scene" id="s066" data-section="PART 2 · AADHAAR" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="mbu">
+  <g id="mbu-card">
+   <rect x="140" y="190" width="1640" height="230" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <rect id="mbu-mark" x="1345" y="242" width="151" height="72" rx="6" fill="#f2b705" fill-opacity=".38"/>
+   <text id="mbu-en" x="960" y="304" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="780" fill="#2b2622">Mandatory Biometric Update (MBU)</text>
+   <text id="mbu-hi" x="960" y="371" text-anchor="middle" class="hi" font-size="44" font-weight="700" fill="#9e1b1b">अनिवार्य बायोमेट्रिक अद्यतन</text>
+  </g>
+  <path id="mbu-track" d="M220 600H1700" fill="none" stroke="#e5d4af" stroke-width="12" stroke-linecap="round"/>
+  <g id="m5">
+   <circle cx="640" cy="600" r="90" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+   <circle cx="640" cy="600" r="77" fill="none" stroke="#fde9a6" stroke-width="2.5" stroke-dasharray="2 7" stroke-linecap="round"/>
+   <text x="640" y="618" text-anchor="middle" class="hi" font-size="52" font-weight="800" fill="#fff">5 साल</text>
+  </g>
+  <g id="m15">
+   <circle cx="1280" cy="600" r="90" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+   <circle cx="1280" cy="600" r="77" fill="none" stroke="#fde9a6" stroke-width="2.5" stroke-dasharray="2 7" stroke-linecap="round"/>
+   <text x="1280" y="616" text-anchor="middle" class="hi" font-size="45" font-weight="800" fill="#fff">15 साल</text>
+  </g>
+  <g id="chip-row">
+   <g id="c-photo">
+    <rect class="mbu-chip-paper" x="410" y="720" width="300" height="80" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+    <text x="560" y="777" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="780" fill="#2b2622">Photo</text>
+   </g>
+   <g id="c-fp">
+    <rect class="mbu-chip-paper" x="740" y="720" width="440" height="80" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+    <text x="960" y="777" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="780" fill="#2b2622">Fingerprints</text>
+   </g>
+   <g id="c-iris">
+    <rect class="mbu-chip-paper" x="1210" y="720" width="300" height="80" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+    <text x="1360" y="777" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="780" fill="#2b2622">Irises</text>
+   </g>
+  </g>
+  <g id="same-card">
+   <rect x="140" y="850" width="1640" height="130" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+   <use href="piece:id-card-icon" transform="translate(177 795) scale(.6)"/>
+   <g id="same-line">
+   <text id="same-line-en" x="415" y="929" font-family="Inter, sans-serif" font-size="52" font-weight="760" fill="#2b2622">Aadhaar number</text>
+   <text id="same-line-hi" x="856" y="929" class="hi" font-size="52" font-weight="760" fill="#2b2622">वही रहता है</text>
+   </g>
+  </g>
+ </g>
+ <g id="celc">
+  <g id="celc-stamp">
+   <rect x="120" y="200" width="700" height="500" rx="28" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+   <rect x="135" y="215" width="670" height="470" rx="19" fill="none" stroke="#fbf7ee" stroke-width="11" stroke-dasharray="0 24" stroke-linecap="round"/>
+   <text id="celc-big" x="470" y="450" text-anchor="middle" font-family="Inter, sans-serif" font-size="140" font-weight="800" fill="#fff">CELC</text>
+  </g>
+  <g id="celc-providers">
+   <rect x="880" y="200" width="920" height="500" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <path d="M882 285V228Q882 202 908 202H1772Q1798 202 1798 228V285Z" fill="#f3ead6"/>
+   <text id="celc-provider-header" x="936" y="260" class="hi" font-size="44" font-weight="740" fill="#9e1b1b">किससे होता है</text>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ "camera":[[0,{"zoom":1}]],
+ "shots":[[0,"#mbu"],[7.65,"#celc"]],
+ "on":[
+  [0,"pop","#c-photo",{"from":0.95,"spring":"soft"}],
+  [0.36,"pop","#c-fp",{"from":0.95,"spring":"soft"}],
+  [1.53,"pop","#c-iris",{"from":0.95,"spring":"soft"}],
+  [2.97,"color",".mbu-chip-paper",{"to":"#fde9a6","dur":0.32}],
+  [4.30,"pop","#same-card",{"from":0.95,"spring":"soft"}],
+  [4.50,"fade","#same-line",{"dur":0.15}],
+  [6.40,"highlight","#same-line-hi",{"words":"वही","color":"#f2b705","opacity":0.38,"dur":0.32,"pad":6}],
+  [7.65,"pop","#celc-big",{"from":0.92,"spring":"soft"}]
+ ]
+}
+</script>
+</section>
