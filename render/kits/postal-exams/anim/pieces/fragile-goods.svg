@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" width="520" height="200">
+<defs>
+<clipPath id="fragile-goods-bottle-in"><path d="M70 36 L94 36 L94 70 Q 124 86 124 116 L124 180 Q 124 188 116 188 L48 188 Q 40 188 40 180 L40 116 Q 40 86 70 70 Z"/></clipPath>
+<clipPath id="fragile-goods-glass-in"><path d="M398 30 L482 30 Q 484 96 440 112 Q 396 96 398 30 Z"/></clipPath>
+</defs>
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<line x1="10" y1="194" x2="510" y2="194" stroke="#cfc6b8"/>
+<g id="bottle">
+<g clip-path="url(#fragile-goods-bottle-in)"><g id="bottle-liquid"><rect x="36" y="112" width="92" height="76" fill="#f3ead6" stroke="none"/><line x1="36" y1="112" x2="128" y2="112"/></g></g>
+<path d="M70 36 L94 36 L94 70 Q 124 86 124 116 L124 180 Q 124 188 116 188 L48 188 Q 40 188 40 180 L40 116 Q 40 86 70 70 Z" fill="none"/>
+<rect x="66" y="18" width="32" height="20" rx="4" fill="#6f6a63"/>
+</g>
+<g id="fruit">
+<path d="M260 70 C 230 52, 192 70, 196 118 C 200 160, 226 190, 246 188 C 254 187, 258 182, 260 182 C 262 182, 266 187, 274 188 C 294 190, 320 160, 324 118 C 328 70, 290 52, 260 70 Z" fill="#9e1b1b"/>
+<path d="M260 70 Q 258 48 266 32" fill="none"/>
+<path d="M266 46 Q 290 26 308 40 Q 288 60 266 46 Z" fill="#f3ead6"/>
+<path d="M222 104 Q 226 88 238 82" fill="none" stroke="#ffffff" stroke-width="5" opacity="0.7"/>
+</g>
+<g id="glass">
+<g clip-path="url(#fragile-goods-glass-in)"><g id="glass-liquid"><rect x="394" y="66" width="92" height="50" fill="#7d1414" stroke="none"/></g></g>
+<path d="M398 30 L482 30 Q 484 96 440 112 Q 396 96 398 30 Z" fill="none"/>
+<line x1="440" y1="112" x2="440" y2="180"/>
+<path d="M404 188 Q 440 172 476 188 Z" fill="#ffffff"/>
+</g>
+</g>
+<circle data-anchor="base" cx="260" cy="194" r="0"/>
+</svg>
