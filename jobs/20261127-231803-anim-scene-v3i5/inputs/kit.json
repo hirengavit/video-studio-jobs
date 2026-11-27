@@ -1,0 +1,123 @@
+{
+  "palette": {
+    "canvas": "#fbf7ee",
+    "surface": "#f3ead6",
+    "ink": "#2b2622",
+    "heading": "#9e1b1b",
+    "card": "#9e1b1b",
+    "cardDeep": "#7d1414",
+    "cardLine": "#b8403a",
+    "seriesTag": "#9e1b1b",
+    "highlight": "#f2b705",
+    "highlightSoft": "#fde9a6",
+    "highlightText": "#8a5d00",
+    "added": "#8a5d00",
+    "changed": "#8a5d00",
+    "correct": "#2e7d4f",
+    "answer": "#2e7d4f",
+    "wrong": "#4b4f58",
+    "rejected": "#4b4f58",
+    "supporting": "#6f6a63",
+    "label": "#6f6a63",
+    "documentPaper": "#ffffff",
+    "documentBorder": "#ead9a8"
+  },
+  "fonts": {
+    "default": "Inter",
+    "files": [
+      {
+        "family": "Noto Sans Devanagari",
+        "file": "noto-sans-devanagari-devanagari-wght-normal.woff2",
+        "weight": "100 900"
+      },
+      {
+        "family": "Noto Sans Gujarati",
+        "file": "noto-sans-gujarati-gujarati-wght-normal.woff2",
+        "weight": "100 900"
+      }
+    ]
+  },
+  "boil": {
+    "fps": 8,
+    "amount": 0,
+    "all": false
+  },
+  "texture": {
+    "paper": 0
+  },
+  "transitions": [
+    "cut",
+    "fade",
+    "wipe"
+  ],
+  "moves": {
+    "deny": [
+      "smear",
+      "ticker",
+      "scatter",
+      "spin",
+      "float",
+      "wiggle",
+      "shake",
+      "bounce",
+      "flip",
+      "letters"
+    ]
+  },
+  "rules": {
+    "do": [
+      "Use one idea per screen, shown big: the main card or element fills most of the space below the header, with even margins.",
+      "Keep a small uppercase section label at top left and a series tag at top right on every screen; they stay still and change only with the section.",
+      "Build each point on its spoken word, then hold it still long enough to read (about a second per two or three words plus a second, never under 3 s); space visual beats 3 to 5 seconds apart.",
+      "Give each colour role one meaning: the highlight colour only for highlights and what was added or changed, the correct colour only for right answers, the wrong colour only for wrong or rejected ideas, the heading colour for headings and cards, the supporting colour for labels and secondary lines.",
+      "Put exact definitions, article text, quotations and formulae in a serif face on a document card with a soft highlight-coloured border and the source beneath; sweep a highlight band behind the phrase being explained and put keywords, not sentences, beside it.",
+      "Use at most one hand-drawn annotation per screen: an underline, a circle round a word, a tick, a cross, an arrow or a small handwritten note.",
+      "Draw simple flat icons and figures with ink outlines about 3 px wide with rounded ends, filled with the palette.",
+      "Use charts, tables and maps only with sourced figures, label them directly, print the source beneath, and fill the relevant map region in a light highlight tint with a labelled pin or arrow.",
+      "Make quick-check and recap cards look the same every time: a heading-coloured card with a highlight-coloured label, the question in white, a slowly filling ring timer during the silence, then the answer on a correct-coloured pill; recap keywords tick in the correct colour as they are said.",
+      "Show real public-domain pictures as paper cut-outs with a white border and soft shadow, tilted a degree or two, with a small caption and credit, unless another treatment (full-bleed, framed, cropped to a detail) suits the moment better.",
+      "Use the cream paper canvas (#fbf7ee) with ink #2b2622 for text and outlines.",
+      "Keep the grey (#6f6a63) section label at top left in English only, whatever the video's language (POSTAL NETWORK; PART 1 · CENTRAL ADMINISTRATION), with a small yellow bar before it, and the postal red (#9e1b1b) series pill at top right naming the subject only in English (RULES, POSB, MATHS, ACCOUNTS), never the exams, at most 24 characters; in portrait only the series pill stays.",
+      "Language on screen, like the key-term component: postal and exam terms (offices, posts, products, schemes, rules, acts, abbreviations) appear in English first, bold and large, with their official translation directly beneath, smaller and lighter. Everything else (labels, meanings, points, steps, questions, takeaways) is written only in the video's language: Hindi, or Gujarati in a Gujarati video. A postal term inside a sentence stays in English as it is (\"GDS BPM चलाते हैं\", \"Sub Office से जुड़ा\"). No English labels such as MEANING or KEY TERM.",
+      "Fonts: \"'Noto Sans Devanagari', Inter, sans-serif\" on Hindi text, \"'Noto Sans Gujarati', Inter, sans-serif\" on Gujarati text, \"Inter, sans-serif\" on English terms. Hindi and Gujarati never under 32px, with about 1.3 times the line height of English, never touching the line above or a card edge.",
+      "A screen holds at most four or five items; when a term pair and its explanation don't fit comfortably, split it into two beats.",
+      "Colours: postal red #9e1b1b for cards, headings and the series pill (#7d1414 for pills on red, #b8403a for card lines); India Post yellow #f2b705 only for highlights and added or changed material (soft band #fde9a6, deep amber #8a5d00 for highlighted words); green #2e7d4f only for correct answers, allowed and passed rules; slate #4b4f58 with a strike-through and a slate cross for wrong or rejected; warm grey #6f6a63 for supporting text and labels; envelope #f3ead6 for secondary panels; white document cards with a #ead9a8 border.",
+      "Red is the brand, never the signal for wrong: mark a wrong option with a slate strike-through and a slate cross.",
+      "Use postal motifs as the cards themselves: a perforated stamp edge for a key term or key fact; a round postmark for a verdict, a source or a date; an envelope fold for the recap; simple ink icons (post box, envelope, parcel, mail bag, passbook, rupee, scales, building, van).",
+      "Put exact text of the Post Office Act 2023, CCS rules and the Post Office Guide in Georgia on a white document card with its source (act, section, year) beneath in grey; put the official Hindi version beside it if it exists, otherwise a short Hindi gist under it labelled \"सार (gist)\".",
+      "Show interest rates, marks, vacancies, cut-offs, fees and limits only with their source and the date or quarter they apply to (\"Rates for Oct–Dec 2026 quarter · Source: India Post / Ministry of Finance\").",
+      "Real photos (a red letter box, a post office front) are fine as paper cut-outs with a credit.",
+      "Lectures teach only: no quick-check cards, MCQs or answer pauses (the owner's decision, Oct 2026); where the library style above describes quick checks, it does not apply to Postal Exams lectures. Recap: an envelope card with three to five keywords (postal terms in English with the translation beneath), each ticking green as said."
+    ],
+    "dont": [
+      "Do not put more than five items on a screen or let text overlap; fade earlier points to the supporting colour when a screen gets busy.",
+      "Do not use colour for decoration, or add glows, gradients, heavy texture or constant motion.",
+      "Do not change the layout during a point's reading hold, and never animate the fixed section label and series tag.",
+      "Do not invent numbers, source text, quotations, chart values or map facts.",
+      "Do not fake real people or real documents.",
+      "Do not show anything before the voice reaches it: a word turns highlighted when it is said, not before.",
+      "Do not put whole sentences on screen in two languages: only postal and exam terms appear in English (with their translation); everything else is in the video's language alone.",
+      "Do not shrink Hindi or Gujarati to make a card fit; cut items or split the screen into two beats instead.",
+      "Do not letter-space Devanagari or Gujarati: their conjuncts and matras break apart.",
+      "Do not machine-translate exam terms that are used in English in the papers (Speed Post, IPPB, Branch Office, CCS Conduct Rules): keep the English and add the Hindi meaning.",
+      "Do not use the India Post logo, the Department of Posts emblem or the national emblem, or a layout that looks like an official circular; the channel is independent.",
+      "Do not pass off a Hindi gist as official text unless it is the official Hindi version."
+    ]
+  },
+  "css": ".vs-scene { background: #fbf7ee; font-family: Inter, 'Noto Sans Devanagari', sans-serif; color: #2b2622; } .vs-scene .heading { fill: #9e1b1b; font-family: Inter, 'Noto Sans Devanagari', sans-serif; font-weight: 700; } .vs-scene .hi { font-family: 'Noto Sans Devanagari', Inter, sans-serif; } .vs-scene .supporting, .vs-scene .section-label { fill: #6f6a63; font-family: Inter, 'Noto Sans Devanagari', sans-serif; } .vs-scene .section-label { letter-spacing: .14em; } .vs-scene .document-text { fill: #2b2622; font-family: Georgia, 'Noto Sans Devanagari', serif; } .vs-scene .ink-line { fill: none; stroke: #2b2622; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }",
+  "frame": {
+    "svg": "frame.svg",
+    "slots": [
+      "section",
+      "series"
+    ],
+    "portrait": "frame-portrait.svg",
+    "portraitSlots": [
+      "series"
+    ]
+  },
+  "numbers": {
+    "locale": "en-IN"
+  },
+  "style": "calm-annotated-slides"
+}
