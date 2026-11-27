@@ -11,17 +11,17 @@
     </g>
     <text id="text24" x="430" y="418" fill="#2b2622" font-size="52" font-weight="800">Speed Post</text>
     <g id="badge48">
-      <rect x="760" y="351" width="98" height="98" rx="20" fill="#7d1414"/>
-      <text x="809" y="418" text-anchor="middle" fill="#ffffff" font-size="57" font-weight="810">48</text>
+      <rect x="740" y="351" width="98" height="98" rx="20" fill="#7d1414"/>
+      <text x="789" y="418" text-anchor="middle" fill="#ffffff" font-size="57" font-weight="810">48</text>
     </g>
-    <text id="text48" x="880" y="418" fill="#2b2622" font-size="52" font-weight="800">Speed Post</text>
+    <text id="text48" x="860" y="418" fill="#2b2622" font-size="52" font-weight="800">Speed Post</text>
     <g id="ahmedabad">
-      <rect x="1225" y="351" width="500" height="98" rx="32" fill="#f3ead6"/>
-      <text x="1475" y="418" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="760">Ahmedabad की service</text>
+      <rect x="1182" y="351" width="570" height="98" rx="32" fill="#f3ead6"/>
+      <text x="1467" y="418" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="760">Ahmedabad की service</text>
     </g>
   </g>
   <g id="chapter-nine">
-    <rect x="140" y="600" width="1640" height="260" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <rect id="insurance-paper" x="140" y="600" width="1640" height="260" rx="24" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
     <circle cx="220" cy="730" r="45" fill="#9e1b1b"/>
     <text x="220" y="747" text-anchor="middle" fill="#fff" font-size="48" font-weight="800">9</text>
     <g id="insurance">
@@ -57,6 +57,9 @@
     [7.84,'fade','#insurance',{dur:0.25}]
   ],
   update(t, section, $) {
+    const paper=$('#insurance-paper')[0];
+    const progress=Math.max(0,Math.min(1,(t-7.84)/0.18));
+    if(paper) paper.setAttribute('width',160+1480*progress*(2-progress));
     const dot=$('#p008-dot-9')[0], numeral=$('#p008-num-9')[0], active=t>=6.47;
     if(dot && numeral) {
       dot.setAttribute('fill',active?'#9e1b1b':'#fff');
