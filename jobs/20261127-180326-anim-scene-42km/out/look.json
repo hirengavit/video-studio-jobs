@@ -8,12 +8,5 @@
   "9.37"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s050",
-   "message": "highlight: \"name या address बदला\" isn't in that <text> (it says \"\")",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
