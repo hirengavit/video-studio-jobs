@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="crate"><rect x="50" y="90" width="300" height="220" rx="4" fill="#d9b77c"/>
+<path d="M76 163H324M76 236H324" stroke="#a8834a" stroke-width="2.5" fill="none"/>
+<path d="M50 90H76V310H50ZM324 90H350V310H324Z" fill="#c9a66a"/>
+<g fill="#2b2622" stroke="none"><circle cx="63" cy="104" r="3"/><circle cx="63" cy="296" r="3"/><circle cx="337" cy="104" r="3"/><circle cx="337" cy="296" r="3"/><circle cx="63" cy="200" r="3"/><circle cx="337" cy="200" r="3"/></g></g>
+<g id="warning"><path d="M200 132 268 200 200 268 132 200Z" fill="#4b4f58"/><path d="M200 148 252 200 200 252 148 200Z" fill="#fbf7ee" stroke="none"/>
+<path d="M200 172L205 190L221.2 180.8L212 197L230 202L212 207L221.2 223.2L205 214L200 232L195 214L178.8 223.2L188 207L170 202L188 197L178.8 180.8L195 190Z" fill="#2b2622" stroke-width="2"/></g>
+<circle data-anchor="base" cx="200" cy="310" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="200" cy="90" r="0" fill="none" stroke="none"/>
+</svg>
