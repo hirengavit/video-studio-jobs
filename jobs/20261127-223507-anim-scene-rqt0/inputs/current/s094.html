@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s094" data-section="PART 3 · AADHAAR FEES" data-series="PRODUCTS" data-in="wipe" data-in-dur="0.36" data-in-opts='{"from":"right"}'>
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <text x="140" y="219" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="48" font-weight="750" fill="#9e1b1b">Example · उदाहरण</text>
+ <g id="person" text-anchor="middle">
+  <circle cx="400" cy="364" r="70" fill="#f3ead6"/>
+  <circle cx="400" cy="346" r="21" fill="#fff" stroke="#2b2622" stroke-width="4"/>
+  <path d="M361 402v-6a39 27 0 0 1 78 0v6z" fill="#fff" stroke="#2b2622" stroke-width="4" stroke-linejoin="round"/>
+  <text x="400" y="516" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="650" fill="#2b2622">एक व्यक्ति</text>
+ </g>
+ <g id="home" text-anchor="middle">
+  <circle cx="900" cy="364" r="70" fill="#f3ead6"/>
+  <path d="M853 358l47-38 47 38v49h-94z" fill="#fff" stroke="#2b2622" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M889 407v-28h22v28" fill="#f3ead6" stroke="#2b2622" stroke-width="4"/>
+  <circle cx="948" cy="390" r="25" fill="#fff" stroke="#2e7d4f" stroke-width="4"/>
+  <path d="M936 390l8 9 16-19" fill="none" stroke="#2e7d4f" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="900" y="516" font-size="44" font-weight="650" fill="#2b2622">approved home visit</text>
+ </g>
+ <g id="biometric" text-anchor="middle">
+  <circle cx="1450" cy="364" r="70" fill="#f3ead6"/>
+  <use href="piece:id-card-icon" transform="translate(1350 264) scale(.5)"/>
+  <text x="1450" y="516" font-size="44" font-weight="650" fill="#2b2622">ordinary biometric update</text>
+ </g>
+ <g id="sum-card">
+  <rect x="140" y="640" width="1640" height="300" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <path d="M648 703v170m503-170v170" stroke="#ead9a8" stroke-width="2"/>
+  <g text-anchor="middle" fill="#2b2622">
+   <text id="visit-amount" x="400" y="799" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="110" font-weight="800">₹700</text>
+   <text id="visit-label" x="400" y="867" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" fill="#6f6a63">घर पर सेवा</text>
+   <text id="update-amount" x="900" y="799" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="110" font-weight="800">+ ₹125</text>
+   <text id="update-label" x="900" y="867" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" fill="#6f6a63">बायोमेट्रिक अद्यतन</text>
+   <g id="total">
+    <rect x="1220" y="694" width="460" height="130" rx="18" fill="#fde9a6"/>
+    <text x="1450" y="799" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="110" font-weight="800">= ₹825</text>
+    <text x="1450" y="867" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" fill="#6f6a63">कुल शुल्क</text>
+   </g>
+  </g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [1.22,'pop','#person',{from:0.97,spring:'soft'}],
+  [1.92,'pop','#home',{from:0.97,spring:'soft'}],
+  [4.72,'pop','#biometric',{from:0.97,spring:'soft'}],
+  [7.20,'pop','#visit-amount',{from:0.97,spring:'soft'}],
+  [7.20,'fade','#visit-label',{dur:0.28}],
+  [9.20,'pop','#update-amount',{from:0.97,spring:'soft'}],
+  [9.20,'fade','#update-label',{dur:0.28}],
+  [11.38,'stamp','#total',{from:1.12,spring:'soft',rot:-2}]
+ ]
+}
+</script>
+</section>
