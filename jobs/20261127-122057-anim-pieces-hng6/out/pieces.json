@@ -1,0 +1,165 @@
+[
+  {
+    "id": "pensioner-phone-icon",
+    "kind": "prop",
+    "description": "Old man's head-and-shoulders ink silhouette (white hair, glasses, no face detail) beside a phone 140x260 with a green tick on the screen; 400x400, 3 px ink.",
+    "ideas": [
+      "pensioner",
+      "digital life certificate",
+      "verified phone"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "pensioner",
+      "phone",
+      "tick"
+    ]
+  },
+  {
+    "id": "fingerprint-scanner",
+    "kind": "prop",
+    "description": "Slate fingerprint scanner: rounded box 260x160 with a glass oval holding an ink fingerprint whorl, short cable stub; 3 px ink.",
+    "ideas": [
+      "fingerprint",
+      "biometrics",
+      "scanner"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "body",
+      "glass",
+      "print",
+      "cable"
+    ]
+  },
+  {
+    "id": "gangajal-bottle",
+    "kind": "prop",
+    "description": "Clear plastic bottle 120x300, pale blue water (#cfe3ee) with ink outline, red cap, blank white label band.",
+    "ideas": [
+      "Gangajal",
+      "water",
+      "bottle"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "parts": [
+      "bottle",
+      "water",
+      "cap",
+      "label"
+    ]
+  },
+  {
+    "id": "temple-bell-parcel",
+    "kind": "prop",
+    "description": "Brass temple bell (#d9a514, ink outline) hanging above a small brown-paper parcel tied with string; 400x400.",
+    "ideas": [
+      "Prasadam",
+      "brass bell",
+      "tied parcel"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "bell",
+      "parcel"
+    ]
+  },
+  {
+    "id": "globe-parcel",
+    "kind": "prop",
+    "description": "Parcel 280x200 (brown paper, ink outline, string) with a round pale-blue globe tag with ink meridians tied to it.",
+    "ideas": [
+      "international parcel",
+      "export",
+      "globe tag"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "parcel",
+      "tag",
+      "globe"
+    ]
+  },
+  {
+    "id": "phone-sms",
+    "kind": "prop",
+    "description": "Phone 220x420, cream screen with a white chat bubble (blank grey lines) and a speech tail; for SMS and app moments.",
+    "ideas": [
+      "SMS",
+      "acknowledgement",
+      "mobile app"
+    ],
+    "viewBox": "0 0 220 420",
+    "anchors": [
+      "base",
+      "screen"
+    ],
+    "parts": [
+      "phone",
+      "screen",
+      "bubble"
+    ]
+  },
+  {
+    "id": "temple-icon",
+    "kind": "prop",
+    "description": "Simple ink temple outline (shikhara spire, small flag, steps), sand fill, 320x360; generic, not a specific real temple.",
+    "ideas": [
+      "generic temple",
+      "Prasadam",
+      "shikhara"
+    ],
+    "viewBox": "0 0 400 400",
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "temple",
+      "flag"
+    ]
+  },
+  {
+    "id": "citizen-counter-window",
+    "kind": "place",
+    "description": "Citizen-counter set backplate: blank postal-red sign, cream glass, speaking hole, sill and sand counter. Set-specific counter-window variant preserving the earlier library art.",
+    "ideas": [
+      "citizen services",
+      "postal counter",
+      "part opener"
+    ],
+    "viewBox": "0 0 1920 1080",
+    "anchors": [
+      "base",
+      "top",
+      "window",
+      "sign"
+    ],
+    "parts": [
+      "counter-top",
+      "window-frame",
+      "glass",
+      "speaking-hole",
+      "sill",
+      "sign"
+    ]
+  }
+]

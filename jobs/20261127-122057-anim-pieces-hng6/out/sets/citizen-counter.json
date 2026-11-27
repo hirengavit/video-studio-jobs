@@ -1,0 +1,55 @@
+{
+  "id": "citizen-counter",
+  "description": "Ink post-office service window with a blank red sign and sand counter. Scenes place only the active part’s icon; the window is left empty.",
+  "ideas": [
+    "citizen services",
+    "post-office counter",
+    "part openers"
+  ],
+  "back": [
+    {
+      "piece": "citizen-counter-window",
+      "transform": "translate(0 0)"
+    }
+  ],
+  "front": [],
+  "spots": {
+    "window": [
+      960,
+      700
+    ],
+    "sign": [
+      960,
+      245
+    ],
+    "counter-left": [
+      470,
+      760
+    ],
+    "counter-right": [
+      1450,
+      760
+    ],
+    "counter-centre": [
+      960,
+      760
+    ]
+  },
+  "framings": {
+    "wide": {
+      "zoom": 1,
+      "x": 0,
+      "y": 0
+    },
+    "medium": {
+      "zoom": 1.3,
+      "x": 0,
+      "y": 0
+    },
+    "close": {
+      "zoom": 1.7,
+      "x": 0,
+      "y": -30
+    }
+  }
+}
