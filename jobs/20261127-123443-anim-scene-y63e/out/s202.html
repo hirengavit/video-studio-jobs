@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s202" data-section="PART 8 · DAK GHAR NIRYAT KENDRA" data-series="PRODUCTS" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="answer">
+ <rect x="160" y="180" width="1600" height="220" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <circle cx="245" cy="288" r="30" fill="#2e7d4f"/><path d="m232 289 9 9 18-20" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+ <text x="304" y="306" class="hi" font-size="48" font-weight="750" fill="#2b2622">PBE नहीं: आम व्यक्ति · personal gift</text>
+ <g id="firm">
+  <rect x="1280" y="242" width="411" height="92" rx="27" fill="#f1f0ee"/>
+  <text id="firm-label" x="1452" y="300" text-anchor="middle" font-size="40" font-weight="700" fill="#4b4f58">firm / company</text>
+  <path id="firm-cross" d="m1628 275 25 25m0-25-25 25" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+ </g>
+</g>
+<g id="myth">
+ <rect x="160" y="440" width="1600" height="220" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <rect x="208" y="493" width="158" height="82" rx="25" fill="#4b4f58"/>
+ <text x="287" y="548" text-anchor="middle" class="hi" font-size="42" font-weight="740" fill="#fff">भ्रम</text>
+ <text id="myth-claim" x="412" y="551" class="hi" font-size="44" font-weight="650" fill="#2b2622">PBE से छूट = customs declaration और restrictions खत्म</text>
+ <path id="myth-cross" d="m1661 515 31 31m0-31-31 31" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+</g>
+<g id="fact">
+ <rect x="160" y="700" width="1600" height="280" rx="24" fill="#f3ead6"/>
+ <rect x="208" y="785" width="158" height="82" rx="25" fill="#2e7d4f"/>
+ <text x="287" y="840" text-anchor="middle" class="hi" font-size="42" font-weight="750" fill="#fff">सही</text>
+ <text id="fact-claim" x="412" y="845" class="hi" font-size="52" font-weight="750" fill="#2b2622">Customs declaration और restrictions लागू रहते हैं</text>
+</g>
+</svg>
+<script type="text/scene">
+{"on":[
+ [0.05,"fade","#firm",{"dur":0.28}],
+ [1.36,"strike","#firm-label",{"color":"#4b4f58","width":5,"dur":0.31,"dim":0.72}],
+ [1.36,"draw","#firm-cross",{"dur":0.32}],
+ [2.36,"pop","#myth",{"from":0.96,"spring":[22,1]}],
+ [4.34,"strike","#myth-claim",{"words":"खत्म","color":"#4b4f58","width":5,"dur":0.32}],
+ [4.34,"draw","#myth-cross",{"dur":0.32}],
+ [5.14,"pop","#fact",{"from":0.96,"spring":[22,1]}],
+ [5.14,"highlight","#fact-claim",{"words":"Customs declaration","color":"#f2b705","opacity":0.38,"pad":7,"dur":0.37}],
+ [7.16,"highlight","#fact-claim",{"words":"restrictions","color":"#f2b705","opacity":0.38,"pad":7,"dur":0.37}]
+]}
+</script>
+</section>
