@@ -19,6 +19,7 @@
     <g id="chip-door">
       <rect x="840" y="352" width="620" height="58" rx="29" fill="#f3ead6"/>
       <text id="door-label" x="1150" y="396" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740" fill="#2b2622">घर आने का अलग charge नहीं</text>
+      <path id="door-underline" d="M1358 417 Q1390 420 1424 415.5" fill="none" stroke="#9e1b1b" stroke-width="3" stroke-linecap="round"/>
     </g>
     <g id="chip-both">
       <rect x="840" y="422" width="580" height="58" rx="29" fill="#f3ead6"/>
@@ -38,7 +39,6 @@
 </svg>
 <script type="text/scene">
 {camera:[[0,{zoom:1}]],on:[
-[0,"underline","#door-label",{words:"नहीं",color:"#9e1b1b",width:3,gap:3,dur:0.001}],
 [0.70,"fade","#kicker",{dur:0.26}],
 [2.26,"fade","#kicker-free",{dur:0.14}],
 [2.40,"pulse","#kicker-free",{amount:0.08}],
