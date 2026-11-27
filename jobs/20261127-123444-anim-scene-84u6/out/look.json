@@ -8,12 +8,5 @@
   "12.33"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s155",
-   "text": "pension sanction करने वाली / authority के नियम",
-   "t": 12.33
-  }
- ]
+ "warnings": []
 }
