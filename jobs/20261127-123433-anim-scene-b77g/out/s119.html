@@ -1,0 +1,25 @@
+<section class="vs-scene" id="s119" data-section="PART 5 · CSC &amp; RETAIL" data-series="PRODUCTS" data-in="fade" data-in-dur="0.45">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<use href="set:citizen-counter" layer="back"/>
+<text id="sign-csc" x="960" y="269" text-anchor="middle" font-size="72" font-weight="800" fill="#fff">CSC</text>
+<g id="screen-icon">
+ <use id="screen-piece" href="piece:system-screen-icon" transform="translate(700 273.6) scale(1.3)"/>
+ <text id="screen-text" x="960" y="506" text-anchor="middle" font-size="40" font-weight="680" fill="#2b2622">digital services</text>
+</g>
+<use href="set:citizen-counter" layer="front"/>
+<text id="csc-full" x="960" y="838" text-anchor="middle" font-size="60" font-weight="800" fill="#2b2622">Common Service Centre</text>
+<text id="csc-hi" x="960" y="915" text-anchor="middle" class="hi" font-size="44" font-weight="600" fill="#6f6a63">सामान्य सेवा केंद्र</text>
+</svg>
+<script type="text/scene">
+{"set":"citizen-counter","camera":[[0,"wide"],[3.46,"wide"],[8.40,{"zoom":1.05},"inOut"]],"on":[
+ [0.16,"place","#screen-piece",{"spot":"window"}],
+ [0.16,"fade","#screen-icon",{"dur":0.30}],
+ [0.16,"type","#sign-csc",{"cps":16}],
+ [1.74,"type","#csc-full",{"cps":23}],
+ [2.30,"fade","#csc-hi",{"dur":0.36}],
+ [6.28,"type","#screen-text",{"cps":21}],
+ [8.40,"pulse","#screen-icon",{"amount":0.028}]
+]}
+</script>
+</section>
