@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220" width="420" height="220" stroke-linecap="round" stroke-linejoin="round">
+<g id="ring" fill="none" stroke="#9e1b1b" stroke-width="4"><circle cx="110" cy="110" r="106"/><circle cx="110" cy="110" r="94"/></g>
+<rect id="band" x="39" y="81" width="142" height="58" rx="10" fill="none" stroke="#9e1b1b" stroke-width="2"/>
+<g id="cancels" fill="none" stroke="#9e1b1b" stroke-width="4"><path d="M218 67q24 -12 48 0t48 0t48 0t48 0"/><path d="M224 88q24 -12 48 0t48 0t48 0t48 0"/><path d="M224 110q24 -12 48 0t48 0t48 0t48 0"/><path d="M224 132q24 -12 48 0t48 0t48 0t48 0"/><path d="M218 153q24 -12 48 0t48 0t48 0t48 0"/></g>
+<circle data-anchor="base" cx="110" cy="218" r="0"/>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <defs>
+    <mask id="stamp-card-perf" maskUnits="userSpaceOnUse" x="0" y="0" width="640" height="400">
+      <rect width="640" height="400" fill="#ffffff"/>
+      <rect width="640" height="400" stroke="#000000" stroke-width="18" stroke-dasharray="0.01 31.99" stroke-linecap="round"/>
+    </mask>
+  </defs>
+  <g id="paper" mask="url(#stamp-card-perf)">
+    <rect x="1" y="1" width="638" height="398" fill="#ffffff" stroke="#ead9a8" stroke-width="2"/>
+  </g>
+  <rect id="body" x="24" y="24" width="592" height="352" rx="4" fill="#9e1b1b"/>
+  <rect id="frame" x="44" y="44" width="552" height="312" rx="4" stroke="#ffffff" stroke-width="3"/>
+  <circle data-anchor="base" cx="320" cy="400" r="0"/>
+  <circle data-anchor="top" cx="320" cy="0" r="0"/>
+  <circle data-anchor="centre" cx="320" cy="200" r="0"/>
+</svg>
