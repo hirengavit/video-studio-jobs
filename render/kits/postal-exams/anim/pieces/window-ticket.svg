@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path id="ticket" fill-rule="evenodd" d="M14 4H306A10 10 0 0 1 316 14V186A10 10 0 0 1 306 196H14A10 10 0 0 1 4 186V14A10 10 0 0 1 14 4ZM28 91A9 9 0 1 0 28 109A9 9 0 1 0 28 91Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+  <rect id="photo-box" x="52" y="44" width="80" height="104" rx="4" fill="#ffffff" stroke="#6f6a63" stroke-width="2.5"/>
+  <g id="rules" stroke="#6f6a63" stroke-width="3">
+    <path d="M156 100H292"/>
+    <path d="M156 144H292"/>
+  </g>
+  <circle data-anchor="base" cx="160" cy="196" r="0"/>
+</svg>
