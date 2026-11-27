@@ -8,12 +8,5 @@
   "15.04"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s219",
-   "text": "PCC / P",
-   "t": 9.11
-  }
- ]
+ "warnings": []
 }
