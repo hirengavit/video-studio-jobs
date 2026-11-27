@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g id="closed-book">
+    <path d="M53 253H342Q350 253 350 263V316H55Q42 316 42 303V266Q42 253 53 253Z" fill="#4b4f58"/>
+    <path d="M62 266H338V304H62Q53 304 53 285Q53 266 62 266Z" fill="#f3ead6"/>
+    <path d="M75 277H328M75 293H328" stroke="#c8b99a"/>
+    <path d="M64 253V265M64 305V316"/>
+  </g>
+  <g id="open-book">
+    <path d="M22 106Q109 75 200 119Q291 75 378 106V259Q290 237 200 276Q110 237 22 259Z" fill="#4b4f58"/>
+    <path d="M29 94Q113 72 200 116Q287 72 371 94V245Q286 226 200 264Q114 226 29 245Z" fill="#e7dbc1"/>
+    <path d="M40 85Q120 70 200 116Q280 70 360 85V232Q280 219 200 258Q120 219 40 232Z" fill="#f3ead6"/>
+    <path d="M200 117V258"/>
+    <path d="M31 246Q119 229 192 261M208 261Q281 229 369 246" stroke="#c8b99a"/>
+    <g id="page-rules" stroke="#c8b99a">
+      <path d="M61 120Q122 115 176 141M61 145Q122 140 176 166M61 170Q122 165 176 191M224 141Q278 115 339 120M224 166Q278 140 339 145M224 191Q278 165 339 170"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="196" cy="316" r="0"/>
+  <circle data-anchor="top" cx="200" cy="116" r="0"/>
+</svg>
