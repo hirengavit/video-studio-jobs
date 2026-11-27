@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 720" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="paper"><rect x="2" y="2" width="1496" height="716" rx="10" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/></g>
+<path id="top-edge" d="M12 2H1488Q1498 2 1498 12V16H2V12Q2 2 12 2Z" fill="#9e1b1b" stroke="none"/>
+<path id="source-rule" d="M64 630H1436" stroke="#6f6a63" stroke-width="2"/>
+<circle data-anchor="top" cx="750" cy="2" r="0"/>
+<circle data-anchor="base" cx="750" cy="718" r="0"/>
+</svg>
