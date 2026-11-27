@@ -37,7 +37,7 @@
 <path id="sum1-fee-note-underline" transform="translate(0 16)" opacity=".60" d="M578 907.5Q645 912 712 905.5" stroke="#6f6a63" stroke-width="6" stroke-linecap="round" fill="none"/>
 <g id="sum1-per-field">
 <rect x="1400" y="540" width="320" height="70" rx="32" fill="#f3ead6" stroke="#d7d8de" stroke-width="2"/>
-<text id="sum1-per-field-text" x="1560" y="591" text-anchor="middle" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="44" font-weight="730" fill="#4b4f58" opacity=".45">₹75 + ₹75</text>
+<text id="sum1-per-field-text" x="1560" y="591" text-anchor="middle" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="44" font-weight="730" fill="#4b4f58" opacity=".85">₹75 + ₹75</text>
 <path id="sum1-per-field-strike" stroke="#4b4f58" stroke-width="3" stroke-linecap="round" fill="none"/>
 </g>
 <text id="sum2-fee-note" x="1560" y="815" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="650" fill="#6f6a63">chargeable biometric update</text>
@@ -62,7 +62,7 @@
 <g id="channel-app"><rect x="1260" y="330" width="520" height="570" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/></g>
 </g></svg>
 <script type="text/scene">
-{"shots":[[0,"#sums"],[3.81,"#channel"]],"on":[[2.02,"pop","#sum2-extra",{"from":0.96}],[3.00,"strike","#sum2-extra-text",{"color":"#4b4f58","width":6}],[6.25,"draw","#channel-monitor",{"dur":0.56}],[6.25,"type","#channel-online-name",{"cps":15}],[7.48,"fade","#channel-online-label",{"dur":0.26}],[8.36,"pop","#channel-online-fee",{"from":0.96}]],
+{"shots":[[0,"#sums"],[3.81,"#channel"]],"on":[[2.02,"pop","#sum2-extra",{"from":0.96}],[3.00,"strike","#sum2-extra-text",{"color":"#4b4f58","width":6,"dim":0.85}],[6.25,"draw","#channel-monitor",{"dur":0.56}],[6.25,"type","#channel-online-name",{"cps":15}],[7.48,"fade","#channel-online-label",{"dur":0.26}],[8.36,"pop","#channel-online-fee",{"from":0.96}]],
 "update": function(t,section,$) {
  if (t >= 3.81) return;
  const b = $("#sum1-per-field-text")[0].getBBox();
