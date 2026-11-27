@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="coins">
+<path d="M110 240V262A90 22 0 0 0 290 262V240Z" fill="#c9950a"/><path d="M114 251A90 22 0 0 0 286 251" fill="none" stroke-width="14" stroke-linecap="butt" stroke-dasharray="1.5 9" opacity=".35"/><ellipse cx="200" cy="240" rx="90" ry="22" fill="#f2b705"/>
+<path d="M116 212V234A90 22 0 0 0 296 234V212Z" fill="#a7aaad"/><path d="M120 223A90 22 0 0 0 292 223" fill="none" stroke-width="14" stroke-linecap="butt" stroke-dasharray="1.5 9" opacity=".35"/><ellipse cx="206" cy="212" rx="90" ry="22" fill="#d6d8da"/>
+<path d="M106 184V206A90 22 0 0 0 286 206V184Z" fill="#c9950a"/><path d="M110 195A90 22 0 0 0 282 195" fill="none" stroke-width="14" stroke-linecap="butt" stroke-dasharray="1.5 9" opacity=".35"/><ellipse cx="196" cy="184" rx="90" ry="22" fill="#f2b705"/>
+<path d="M115 156V178A90 22 0 0 0 295 178V156Z" fill="#c9950a"/><path d="M119 167A90 22 0 0 0 291 167" fill="none" stroke-width="14" stroke-linecap="butt" stroke-dasharray="1.5 9" opacity=".35"/><ellipse cx="205" cy="156" rx="90" ry="22" fill="#f2b705"/>
+<path d="M108 128V150A90 22 0 0 0 288 150V128Z" fill="#a7aaad"/><path d="M112 139A90 22 0 0 0 284 139" fill="none" stroke-width="14" stroke-linecap="butt" stroke-dasharray="1.5 9" opacity=".35"/><ellipse cx="198" cy="128" rx="90" ry="22" fill="#d6d8da"/>
+<ellipse cx="198" cy="128" rx="66" ry="15" fill="none" stroke="#a7aaad" stroke-width="2"/></g>
+<circle data-anchor="base" cx="200" cy="284" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="198" cy="106" r="0" fill="none" stroke="none"/>
+</svg>
