@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200">
+  <rect id="label-face" x="2" y="2" width="636" height="196" rx="4" fill="#fff" stroke="#2456a6" stroke-width="3"/>
+  <rect id="label-border" x="12" y="12" width="616" height="176" rx="2" fill="none" stroke="#2456a6" stroke-width="3"/>
+  <circle data-anchor="base" cx="320" cy="199.5" r="0"/>
+</svg>
