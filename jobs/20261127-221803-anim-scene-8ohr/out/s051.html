@@ -109,6 +109,13 @@
 [5.13,"fade","#pill-resident-hi",{dur:0.28}],
 [7.57,"pop","#pill-nri",{from:0.96,spring:"soft"}],
 [8.07,"fade","#pill-nri-hi",{dur:0.28}]
-]}
+],
+update(t, section, $) {
+ if (t >= 3.69) return;
+ const line = $('#wrong-strike')[0], copy = $('#wrong-line')[0];
+ if (!line || !copy) return;
+ const b = copy.getBBox(), y = b.y + b.height * .55, wobble = b.height * .06;
+ if (b.width) line.setAttribute('d','M'+(b.x-6)+' '+y+' Q'+(b.x+b.width/2)+' '+(y+wobble)+' '+(b.x+b.width+6)+' '+(y-wobble*.5));
+}}
 </script>
 </section>
