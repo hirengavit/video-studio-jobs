@@ -43,7 +43,7 @@
 <text id="sum2-fee-note" x="1560" y="815" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="650" fill="#6f6a63">chargeable biometric update</text>
 </g></svg>
 <script type="text/scene">
-{"on":[[0,"out","#sum1-slot",{"dur":0.02,"scale":false}],[0,"pop","#sum1-result",{"from":0.96}],[1.88,"pop","#sum1-per-field",{"from":0.96}],[2.94,"strike","#sum1-per-field-text",{"color":"#4b4f58","width":3}],[4.40,"color","#sum1-fee-note",{"to":"#6f6a63","dur":0.30}],[4.40,"color","#sum1-fee-note-underline",{"to":"#6f6a63","prop":"stroke","dur":0.30}],[4.40,"pop","#sum2-photo",{"from":0.96}],[5.54,"pop","#sum2-mobile",{"from":0.96}],[7.48,"fade","#sum2-fee-note",{"dur":0.26}],[10.42,"pop","#sum2-result",{"from":0.96}]],
+{"on":[[0,"out","#sum1-slot",{"dur":0.02,"scale":false}],[0,"pop","#sum1-result",{"from":0.96}],[1.88,"pop","#sum1-per-field",{"from":0.96}],[2.94,"strike","#sum1-per-field-text",{"color":"#4b4f58","width":3,"dim":0.85}],[4.40,"color","#sum1-fee-note",{"to":"#6f6a63","dur":0.30}],[4.40,"color","#sum1-fee-note-underline",{"to":"#6f6a63","prop":"stroke","dur":0.30}],[4.40,"pop","#sum2-photo",{"from":0.96}],[5.54,"pop","#sum2-mobile",{"from":0.96}],[7.48,"fade","#sum2-fee-note",{"dur":0.26}],[10.42,"pop","#sum2-result",{"from":0.96}]],
 "update": function(t, section, $) {
  const clamp = (v) => Math.min(1, Math.max(0, v));
  const ease = (v) => { const f = clamp(v); return f*f*(3-2*f); };
