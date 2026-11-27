@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s015" data-section="PART 1 · RETAIL POST" data-series="PRODUCTS" data-in="wipe" data-in-dur="0.5" data-in-opts='{"from":"right"}'>
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="term-card">
+ <rect x="120" y="200" width="700" height="560" rx="25" fill="#9e1b1b"/>
+ <rect x="120" y="200" width="700" height="560" rx="25" fill="none" stroke="#fbf7ee" stroke-width="18" stroke-dasharray="0 27" stroke-linecap="round"/>
+ <text x="181" y="287" font-size="32" font-weight="650" fill="#fde9a6">Post Office Regulations, 2024</text>
+ <text id="term" x="178" y="443" font-size="96" font-weight="800" fill="#fff">Retail Post</text>
+ <text id="translation" x="181" y="525" class="hi" font-size="48" font-weight="550" fill="#fde9a6">खुदरा डाक</text>
+ <g id="reg" transform="translate(674 632) rotate(-8)" stroke="#fde9a6" fill="none">
+  <circle r="85" stroke-width="3"/><circle r="73" stroke-width="2" stroke-dasharray="2 7" stroke-linecap="round"/>
+  <path d="M-47-27H47M-47 28H47" stroke-width="2"/>
+  <text y="10" text-anchor="middle" font-size="30" font-weight="750" fill="#fde9a6" stroke="none">REG. 105</text>
+ </g>
+</g>
+<g id="meaning-card">
+ <rect x="880" y="200" width="920" height="560" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <text id="heading" x="942" y="280" class="hi" font-size="48" font-weight="700" fill="#9e1b1b">लोगों की सुविधा के लिए</text>
+ <g id="post-box" transform="translate(942 345)" fill="#9e1b1b" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M15 108V30Q15 12 37 8Q59 12 59 30v78z"/><path d="M10 108h54v12H10z" fill="#f3ead6"/>
+  <path d="M21 38h32v10H21z" fill="#7d1414"/><rect x="23" y="61" width="28" height="26" rx="3" fill="#f3ead6"/>
+  <path d="M30 70h14m-14 7h10" stroke="#6f6a63"/>
+ </g>
+ <text id="row1" x="1047" y="420" class="hi" font-size="44" font-weight="650" fill="#2b2622">अपने products और services</text>
+</g>
+</svg>
+<script type="text/scene">
+{ "on":[
+ [0.18,"type","#term",{"cps":22}],
+ [0.68,"fade","#translation",{"dur":0.34}],
+ [1.98,"stamp","#reg",{"from":1.23,"spring":"fast","rot":5}],
+ [4.56,"fade","#heading",{"dur":0.32}],
+ [6.52,"draw","#post-box",{"dur":0.65}],
+ [6.52,"fade","#row1",{"dur":0.4}],
+ [8.34,"highlight","#row1",{"words":"अपने","color":"#f2b705","opacity":0.38,"dur":0.38,"pad":5}]
+] }
+</script>
+</section>
