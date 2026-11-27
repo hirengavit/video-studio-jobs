@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+ <path id="building" d="M52 119h256v153H52Z" fill="#f3ead6"/>
+ <path id="roof" d="M30 119L180 15l150 104-12 20H42Z" fill="#9e1b1b"/>
+ <path d="M42 139h276v13H42z" fill="#e0c8a0"/>
+ <rect id="sign-plate" x="60" y="40" width="240" height="60" rx="5" fill="#fff"/>
+ <path id="entry" d="M144 272v-79q0-24 36-24t36 24v79Z" fill="#6f6a63"/>
+ <g id="columns" fill="#fff"><path d="M70 155h36v14h-4v84h4v19H70v-19h4v-84h-4Z"/><path d="M254 155h36v14h-4v84h4v19h-36v-19h4v-84h-4Z"/></g>
+ <path id="steps" d="M45 271h270v13h10v12h10v12H25v-12h10v-12h10Z" fill="#e0c8a0"/><path d="M36 284h288M25 296h310" fill="none"/>
+ <circle data-anchor="base" cx="180" cy="309.5" r="0"/>
+</svg>
