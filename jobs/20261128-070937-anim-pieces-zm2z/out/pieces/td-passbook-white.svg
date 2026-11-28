@@ -6,7 +6,8 @@
     </g>
     <g id="cover">
       <path d="M13 1.5H224Q237 1.5 237 15V266C222 275 209 293 197 305H13Q1.5 305 1.5 293V14Q1.5 1.5 13 1.5Z" fill="#ffffff"/>
-      <path d="M23 13H222Q225 13 225 17V260M189 293H22Q13 293 13 285V22Q13 13 23 13Z" fill="none" stroke="#ead9a8" stroke-width="1.5"/>
+      <path d="M23 13H222Q225 13 225 17V260" fill="none" stroke="#ead9a8" stroke-width="1.5"/>
+      <path d="M189 293H22Q13 293 13 285V22Q13 13 23 13" fill="none" stroke="#ead9a8" stroke-width="1.5"/>
       <path d="M24 13V293" fill="none" stroke="#ead9a8" stroke-width="1.5"/>
     </g>
     <g id="label">
