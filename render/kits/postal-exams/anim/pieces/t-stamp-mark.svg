@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+<g id="t-stamp-mark-rings" stroke="#4b4f58">
+<circle cx="120" cy="120" r="110" stroke-width="9"/>
+<circle cx="120" cy="120" r="90" stroke-width="4"/>
+</g>
+<path id="t-stamp-mark-letter" d="M70,70 L170,70 L170,96 L134,96 L134,176 L106,176 L106,96 L70,96 Z" fill="#4b4f58" stroke="#4b4f58" stroke-width="3" stroke-linejoin="round"/>
+<circle data-anchor="base" cx="120" cy="235" r="0"/>
+</svg>
