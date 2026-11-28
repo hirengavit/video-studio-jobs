@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "2.30",
+  "4.61",
+  "6.91",
+  "9.22",
+  "11.37"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s028",
+   "message": "highlight: \"section 3A\" isn't in that <text> (it says \"\")",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s028",
+   "message": "highlight: \"section 3A\" isn't in that <text> (it says \"section 3\")",
+   "t": 4.61
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s028",
+   "text": "सरकारी बचत संवर्धन अधिनियम, 1873",
+   "t": 6.91
+  }
+ ]
+}
