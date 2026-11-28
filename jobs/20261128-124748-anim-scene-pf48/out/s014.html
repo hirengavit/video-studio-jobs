@@ -33,8 +33,11 @@
     <path id="mis-band" d="M980 524q0 -24 24 -24h792q24 0 24 24v58H980Z" fill="#9e1b1b"/>
     <text id="mis-name" x="1014" y="555" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="800" fill="#ffffff"><tspan font-family="Inter, sans-serif">MIS</tspan> · <tspan fill="#fde9a6">मासिक आय योजना</tspan></text>
     <text id="row-7" x="1014" y="654" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">7 जमा और सीमाएँ</text>
+    <text id="row-7-ink" x="1014" y="654" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">7 जमा और सीमाएँ</text>
     <text id="row-8" x="1014" y="722" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">8 monthly ब्याज</text>
+    <text id="row-8-ink" x="1014" y="722" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">8 monthly ब्याज</text>
     <text id="row-9" x="1014" y="790" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">9 closure, maturity, death</text>
+    <text id="row-9-ink" x="1014" y="790" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">9 closure, maturity, death</text>
     <g id="mis-book" transform="translate(1691 616) scale(.35)">
       <use href="piece:passbook"/>
       <text x="132" y="119" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#701616">MIS · SB-5</text>
@@ -50,13 +53,16 @@
 </svg>
 <script type="text/scene">
 {
-  camera: [[0, {zoom:1}], [.34, {zoom:1}], [2.85, {zoom:1.03}, "inOut"]],
+  camera: [[0, {zoom:1}], [.34, {zoom:1}], [2.85, {zoom:1.03, y:-12}, "inOut"]],
   on: [
-    [.34, "out", "#mis-focus", {dur:.21, scale:1}],
+    [.34, "out", "#mis-focus", {dur:.21, scale:false}],
     [.34, "fade", "#records-focus", {dur:.23}],
     [.34, "color", "#row-7, #row-8, #row-9", {to:"#6f6a63", dur:.20}],
     [1.26, "fade", "#row-10", {dur:.23}],
-    [2.40, "color", "#row-1, #row-2, #row-3, #row-4, #row-5, #row-6, #row-7, #row-8, #row-9", {to:"#2b2622", dur:.22}],
+    [2.40, "color", "#row-1, #row-2, #row-3, #row-4, #row-5, #row-6", {to:"#2b2622", dur:.22}],
+    [2.40, "swap", "#row-7", {to:"#row-7-ink", dist:0, dur:.07}],
+    [2.40, "swap", "#row-8", {to:"#row-8-ink", dist:0, dur:.07}],
+    [2.40, "swap", "#row-9", {to:"#row-9-ink", dist:0, dur:.07}],
   ]
 }
 </script>
