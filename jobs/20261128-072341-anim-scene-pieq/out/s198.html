@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s198" data-section="PART 9 · MIS CLOSURE AND DEATH" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g font-family="Inter, sans-serif" fill="#2b2622">
+<text id="savings-en" x="960" y="260" text-anchor="middle" fill="#9e1b1b" font-size="88" font-weight="800">Post Office Savings Account</text>
+<text id="savings-hi" x="960" y="330" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="52" font-weight="650">डाकघर बचत खाता</text>
+<path d="M220 700H960" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round"/>
+<path d="M960 700H1700" stroke="#d8c9aa" stroke-width="12" stroke-linecap="round"/>
+<circle cx="220" cy="700" r="11" fill="#9e1b1b"/><circle cx="1700" cy="700" r="11" fill="#b8a685"/>
+<path d="M960 570V770" stroke="#9e1b1b" stroke-width="5"/>
+<circle cx="960" cy="506" r="85" fill="#fbf7ee" stroke="#9e1b1b" stroke-width="6"/>
+<circle cx="960" cy="506" r="72" fill="none" stroke="#b8403a" stroke-width="2" stroke-dasharray="4 5"/>
+<text x="960" y="518" text-anchor="middle" fill="#9e1b1b" font-size="27" font-weight="800" letter-spacing="1">MATURITY</text>
+<g id="mis-book"><use href="piece:passbook" transform="translate(1080 502) scale(.6)"/><rect x="1117" y="548" width="63" height="43" rx="4" fill="#fde9a6"/><text x="1148.5" y="566" text-anchor="middle" font-size="16" font-weight="800">MIS</text><text x="1148.5" y="583" text-anchor="middle" font-size="13" font-weight="750">SB-5</text></g>
+<text id="left-open" x="1152" y="800" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="52" font-weight="700">बंद नहीं किया</text>
+<g id="savings-rate"><rect x="1380" y="520" width="260" height="130" rx="21" fill="#fde9a6"/><text x="1510" y="627" text-anchor="middle" fill="#8a5d00" font-size="120" font-weight="800">4%</text></g>
+<text id="rate-source" x="960" y="930" text-anchor="middle" fill="#6f6a63" font-size="44">1 Oct–31 Dec 2026 · Source: SB Order 12/2026</text>
+<text id="old-rate" x="564" y="640" text-anchor="middle" fill="#9e1b1b" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700">MIS की original दर</text>
+<path id="wrong-extension" d="M758 662H1280" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-dasharray="16 13" stroke-linecap="round"/>
+<path id="past-strike" d="M971 648L1267 676" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+<g id="slate-cross"><circle cx="1200" cy="662" r="25" fill="#fbf7ee"/><path d="m1188 650 24 24m0-24-24 24" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/></g>
+</g>
+</svg>
+<script type="text/scene">
+({on:[
+[0.34,"pop","#mis-book",{from:.72}],
+[1.24,"fade","#left-open",{dur:.32}],
+[3.28,"words","#savings-en",{gap:.43,dist:14,from:"down"}],
+[3.78,"fade","#savings-hi",{dur:.34}],
+[6.36,"pop","#savings-rate",{from:.78}],
+[6.36,"fade","#rate-source",{dur:.38}],
+[8.0,"fade","#old-rate",{dur:.3}],
+[8.24,"reveal","#wrong-extension",{from:"left",dur:.6}],
+[11.84,"draw","#past-strike",{dur:.34}],
+[12.4,"pop","#slate-cross",{from:.75}]
+]})
+</script>
+</section>
