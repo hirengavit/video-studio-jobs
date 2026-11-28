@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 220" width="180" height="220">
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="pouch" d="M60 70 C 20 96, 12 150, 18 186 Q 22 216 90 216 Q 158 216 162 186 C 168 150, 160 96, 120 70 Z" fill="#f3ead6"/>
+<path id="ruffle" d="M62 66 L50 22 Q 70 12 78 28 Q 90 6 102 28 Q 112 12 130 22 L118 66 Z" fill="#f3ead6"/>
+<path id="cord" d="M56 68 Q 90 80 124 68" fill="none" stroke-width="5"/>
+<path d="M102 82 Q 140 92 148 124" fill="none" stroke-width="2.5"/>
+<circle id="seal" cx="90" cy="76" r="14" fill="#9e1b1b"/>
+<g id="tag">
+<path d="M112 112 L156 112 L164 124 L156 168 L112 168 Z" fill="#ffffff"/>
+<circle cx="148" cy="124" r="3" fill="#2b2622" stroke="none"/>
+<path d="M126.4 130.1 L142.5 130.1 M126.4 136.9 L142.5 136.9 M126.4 130.1 L132.3 130.1 C142.5 130.1 142.5 143.7 132.3 143.7 L126.4 143.7 L140.8 155.6" fill="none" stroke-width="2.6"/>
+</g>
+</g>
+<circle data-anchor="base" cx="90" cy="216" r="0"/>
+<circle data-anchor="top" cx="90" cy="14" r="0"/>
+</svg>
