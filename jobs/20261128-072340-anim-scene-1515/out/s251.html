@@ -1,0 +1,29 @@
+<section class="vs-scene" id="s251" data-section="FULL RECAP" data-series="POSB" data-in="fade" data-in-dur="0.5">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <use href="set:citizen-counter" layer="back"/>
+  <path d="M160 838H1760V985H160Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+  <use href="set:citizen-counter" layer="front"/>
+  <g fill="#f3ead6"><rect x="163" y="828" width="1594" height="46"/></g>
+  <g text-anchor="middle" font-weight="700">
+    <text x="960" y="240" font-size="56" font-family="Inter,sans-serif" fill="#ffffff">Savings Bank</text>
+    <text x="960" y="279" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" fill="#fde9a6">बचत बैंक</text>
+  </g>
+  <g transform="translate(404 584) scale(.55)">
+    <use href="piece:td-passbook-white"/>
+    <text x="132" y="127" text-anchor="middle" font-family="Inter,sans-serif" font-weight="750" font-size="26" fill="#2b2622">TD · SB-5A</text>
+  </g>
+  <g transform="translate(1384 584) scale(.55)">
+    <use href="piece:passbook"/>
+    <text x="132" y="127" text-anchor="middle" font-family="Inter,sans-serif" font-weight="750" font-size="26" fill="#2b2622">MIS · SB-5</text>
+  </g>
+  <text id="trust" x="960" y="930" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="750" font-size="60" fill="#2b2622">साफ़ फ़र्क, पक्का भरोसा</text>
+</svg>
+<script type="text/scene">
+({
+  set: 'citizen-counter',
+  camera: [[0, 'wide'], [7.16, {zoom: 1.05, x: 0, y: 0}]],
+  on: [[4.54, 'fade', '#trust', {dur: 0.8}]]
+})
+</script>
+</section>
