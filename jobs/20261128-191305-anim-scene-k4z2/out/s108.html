@@ -51,10 +51,12 @@
         for (const id of ["#years-label", "#td-rate"]) $(id)[0].setAttribute("x", 710 - 30 * q);
         $("#td-panel")[0].setAttribute("height", 160 - 70 * q);
         $("#td-rate")[0].setAttribute("y", 827 - 25 * q);
+        const m = Math.max(0, Math.min(1, (t - 2.22) / 0.28));
+        $("#months-bar")[0].setAttribute("width", 452 + 128 * (m * m * (3 - 2 * m)));
       },
       on: [
         [0.70, "fade", "#fixed-term", {dur: 0.24}],
-        [2.22, "grow", "#months-bar", {axis: "x", origin: "left", spring: "soft"}],
+        [2.22, "fade", "#months-bar", {dur: 0.18}],
         [2.22, "fade", "#months-label", {dur: 0.24}],
         [3.82, "fade", "#savings-card", {dur: 0.22}],
         [3.87, "tracking", "#savings-en", {from: 3, dur: 0.36}],
