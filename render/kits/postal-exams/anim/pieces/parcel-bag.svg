@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 440" width="360" height="440">
+<title>parcel bag</title>
+<g id="bag">
+<path d="M150 132 C120 170 50 220 44 330 C40 400 90 424 180 424 C270 424 320 400 316 330 C310 220 240 170 210 132 Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M120 250 q-10 60 10 120 M250 240 q16 70 -6 130 M180 200 v40" fill="none" stroke="#e6d6b4" stroke-width="5" stroke-linecap="round"/>
+</g>
+<g id="neck" stroke="#2b2622" stroke-linecap="round" stroke-linejoin="round">
+<path d="M146 126 L126 64 Q140 52 152 66 Q164 50 180 62 Q196 50 208 66 Q220 52 234 64 L214 126 Z" fill="#f3ead6" stroke-width="3"/>
+<path d="M158 120 L150 74 M180 122 V70 M202 120 L210 74" fill="none" stroke-width="2.4"/>
+</g>
+<g id="cord" fill="none" stroke="#2b2622" stroke-linecap="round" stroke-linejoin="round">
+<path d="M142 124 Q180 140 218 124" stroke-width="7"/>
+<path d="M214 128 C232 120 238 136 226 142 M214 128 C240 136 248 156 256 170" stroke-width="3"/>
+</g>
+<g id="label">
+<g transform="rotate(8 286 198)">
+<path d="M246 172 L262 160 H326 V236 H246 Z" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+<circle cx="258" cy="174" r="4" fill="#fbf7ee" stroke="#2b2622" stroke-width="2"/>
+</g>
+</g>
+<circle data-anchor="base" cx="180" cy="424" r="0"/>
+<circle data-anchor="top" cx="180" cy="56" r="0"/>
+<circle data-anchor="mouth" cx="180" cy="60" r="0"/>
+</svg>
