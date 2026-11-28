@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g id="invoice">
+    <path d="M52 40 H214 L250 76 V318 Q250 322 246 322 H56 Q52 322 52 318 Z" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+    <path d="M214 40 V72 Q214 76 218 76 H250" fill="#f3ead6" stroke="#2b2622" stroke-width="3"/>
+    <g id="invoice-lines" stroke="#6f6a63" stroke-width="6">
+      <path d="M78 150 H222"/>
+      <path d="M78 184 H200"/>
+      <path d="M78 218 H176"/>
+    </g>
+    <g id="rupee" transform="translate(108 96)">
+      <circle r="28" fill="#ffffff" stroke="#9e1b1b" stroke-width="3.5"/>
+      <path d="M-11 -14 H12 M-11 -5 H12 M-4 -14 C10 -14 10 4 -4 4 H-8 L9 16" stroke="#9e1b1b" stroke-width="3.5"/>
+    </g>
+  </g>
+  <g id="calendar">
+    <rect x="202" y="186" width="168" height="168" rx="12" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+    <path id="calendar-band" d="M214 186 H358 Q370 186 370 198 V226 H202 V198 Q202 186 214 186 Z" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/>
+    <g id="calendar-rings" stroke="#2b2622" stroke-width="3" fill="#fbf7ee">
+      <rect x="236" y="174" width="10" height="26" rx="5"/>
+      <rect x="326" y="174" width="10" height="26" rx="5"/>
+    </g>
+    <g id="calendar-grid" fill="#fbf7ee" stroke="#6f6a63" stroke-width="1.5">
+      <rect x="217" y="237" width="30" height="31" rx="5"/>
+      <rect x="253" y="237" width="30" height="31" rx="5"/>
+      <rect x="289" y="237" width="30" height="31" rx="5"/>
+      <rect x="325" y="237" width="30" height="31" rx="5"/>
+      <rect x="217" y="274" width="30" height="31" rx="5"/>
+      <rect x="253" y="274" width="30" height="31" rx="5"/>
+      <rect x="325" y="274" width="30" height="31" rx="5"/>
+      <rect x="217" y="311" width="30" height="31" rx="5"/>
+      <rect x="253" y="311" width="30" height="31" rx="5"/>
+      <rect x="289" y="311" width="30" height="31" rx="5"/>
+      <rect x="325" y="311" width="30" height="31" rx="5"/>
+    </g>
+    <rect id="date-cell" x="289" y="274" width="30" height="31" rx="5" fill="#ffffff" stroke="#2b2622" stroke-width="2.5"/>
+  </g>
+  <circle data-anchor="base" cx="200" cy="360" r="0"/>
+  <circle data-anchor="top" cx="200" cy="40" r="0"/>
+  <circle data-anchor="date" cx="304" cy="289.5" r="0"/>
+</svg>
