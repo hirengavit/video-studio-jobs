@@ -17,8 +17,8 @@
 <text x="960" y="210" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="800" fill="#9e1b1b">ब्याज जाता कहाँ है?</text>
 <g id="date-pill"><rect x="760" y="270" width="400" height="70" rx="34" fill="#fde9a6"/><text x="960" y="321" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="730" fill="#805400">1 April 2022 से</text></g>
 <g id="transfer-book"><use href="piece:td-passbook-white" transform="translate(160 440)"/><text x="292" y="563" text-anchor="middle" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="#332e29">TD · SB-5A</text></g>
-<g id="interest-coin"><use href="piece:rupee-coin" transform="translate(231 354) scale(0.75)"/><text x="276" y="411" text-anchor="middle" font-family="Inter, sans-serif" font-size="41" font-weight="800" fill="#332e29">₹</text></g>
-<g id="phone-unit"><use href="piece:phone-transfer" transform="translate(700 400)"/><text x="812" y="662" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#332e29">ब्याज</text></g>
+<g id="interest-coin"><use href="piece:rupee-coin" transform="translate(231 358) scale(0.75)"/><text x="276" y="415" text-anchor="middle" font-family="Inter, sans-serif" font-size="41" font-weight="800" fill="#332e29">₹</text></g>
+<g id="phone-unit"><use href="piece:phone-transfer" transform="translate(700 400)"/><text id="phone-label" x="812" y="662" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#332e29">ब्याज</text></g>
 <g id="po-card"><rect x="1200" y="400" width="580" height="240" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/><text x="1490" y="479" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#332e29">Post Office</text><text x="1490" y="542" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#332e29">Savings Account</text><text id="po-hindi" x="1490" y="609" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="680" fill="#6f6a63">डाकघर बचत खाता</text></g>
 <g id="bank-card"><rect x="1200" y="700" width="580" height="200" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/><text x="1490" y="780" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#332e29">Bank account</text><text id="bank-hindi" x="1490" y="854" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="680" fill="#6f6a63">बैंक खाता</text></g>
 </g>
@@ -35,6 +35,7 @@
  [7.31, 'pop', '#transfer-book',{from:0.92,spring:'soft'}],
  [8.13, 'fade', '#interest-coin', {dur:0.22}],
  [9.88, 'draw', '#phone-unit',{dur:0.56}],
+ [10.22, 'fade', '#phone-label', {dur:0.20}],
  [10.29, 'pop', '#po-card',{from:0.94,spring:'soft'}],
  [10.79, 'fade', '#po-hindi',{dur:0.25}],
  [12.84, 'pop', '#bank-card',{from:0.94,spring:'soft'}],
