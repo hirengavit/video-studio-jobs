@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.32",
+  "4.64",
+  "6.95",
+  "9.27",
+  "11.44"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s164",
+   "message": "highlight: \"67\" isn't in that <text> (it says \"\")",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s164",
+   "text": "Monthly ब्याज: नज़दीकी रुपये तक round / 3 नियम",
+   "t": 11.44
+  }
+ ]
+}
