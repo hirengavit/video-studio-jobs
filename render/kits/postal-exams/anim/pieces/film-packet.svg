@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect id="film-wrap" x="27" y="30" width="586" height="340" rx="28" fill="#f3ead6"/>
+    <path id="film-seams" d="M56 31v338m528-338v338M29 62h25m532 0h25M29 338h25m532 0h25" fill="none" stroke="#ac9071"/>
+    <g id="film-reel" fill="none" stroke="#ac9071">
+      <circle cx="330" cy="199" r="144"/>
+      <circle cx="330" cy="199" r="122"/>
+    </g>
+    <rect id="film-label" x="120" y="120" width="400" height="160" rx="13" fill="#fff"/>
+  </g>
+  <circle data-anchor="base" cx="320" cy="370" r="0"/>
+</svg>
