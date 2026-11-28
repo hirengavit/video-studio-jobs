@@ -1,0 +1,36 @@
+<section class="vs-scene" id="s141" data-section="PART 7 · MIS DEPOSIT AND LIMITS" data-series="POSB" data-in="cut">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="card">
+      <g transform="translate(160 330) scale(1.1)"><use href="piece:passbook"/><text x="132" y="123" font-family="Inter, sans-serif" font-size="25" font-weight="750" fill="#7d1414" text-anchor="middle">MIS · SB-5</text></g>
+      <text x="520" y="240" font-family="Inter, sans-serif" font-size="88" font-weight="750" fill="#2b2622" >Monthly Income Scheme</text>
+      <text x="520" y="305" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750" fill="#9e1b1b" id="scheme-hi">मासिक आय योजना</text>
+      <rect x="500" y="350" width="1300" height="640" rx="29" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <path d="M530 470H1770M530 590H1770M530 710H1770M530 830H1770" fill="none" stroke="#ead9a8" stroke-width="2" stroke-opacity=".7"/>
+      <text x="550" y="428" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622" id="minimum">न्यूनतम जमा</text>
+      <g id="amount"><rect x="1420" y="367" width="320" height="85" rx="41" fill="#fde9a6"/><text x="1580" y="435" font-family="Inter, sans-serif" font-size="72" font-weight="750" fill="#8a5d00" text-anchor="middle">₹1,000</text></g>
+      <rect id="multiples-mark" x="538" y="494" width="540" height="70" rx="14" fill="#fde9a6"/>
+      <text x="550" y="548" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622" id="multiples">₹1,000 के multiples में</text>
+      <text x="1750" y="956" font-family="Inter, sans-serif" font-size="36" font-weight="750" fill="#6f6a63" text-anchor="end">Post Office Monthly Income Account Scheme, 2019</text>
+      <text id="one-deposit" x="550" y="668" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">हर खाते में एक ही deposit</text>
+      <text id="five-years" x="550" y="788" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">खुलने से 5 साल बाद</text>
+      <text id="maturity" x="1740" y="764" font-family="Inter, sans-serif" font-size="56" font-weight="750" fill="#9e1b1b" text-anchor="end">Maturity</text>
+      <text id="maturity-hi" x="1740" y="815" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#6f6a63" text-anchor="end">परिपक्वता</text>
+      <g id="opening-chip">
+        <rect x="1300" y="487" width="480" height="86" rx="43" fill="#fde9a6"/>
+        <text x="1540" y="548" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#8a5d00" text-anchor="middle" textLength="412" lengthAdjust="spacingAndGlyphs">सिर्फ opening deposit</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    { on: [
+      [1.34,"words","#one-deposit",{gap:0.10,dist:12}],
+      [2.06,"underline","#one-deposit",{words:"एक ही",color:"#f2b705",width:6,gap:11,dur:0.38}],
+      [4.02,"words","#five-years",{gap:0.11,dist:12}],
+      [4.96,"fade","#maturity",{dur:0.25}],
+      [5.46,"fade","#maturity-hi",{dur:0.27}],
+      [6.84,"fade","#multiples-mark",{dur:0.36}],
+      [9.06,"slide","#opening-chip",{from:"right",dist:95,spring:"soft"}]
+    ] }
+  </script>
+</section>
