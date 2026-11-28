@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 460" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path id="body" d="M69 37Q69 20 86 20H154Q171 20 171 37L185 175V407H55V175Z" fill="#4b4f58"/>
+  <path id="front-panel" d="M70 174H170V401H70Z" fill="#f3ead6"/>
+  <path id="screen-bezel" d="M85 49H155L166 158H74Z" fill="#2b2622"/>
+  <path id="screen" d="M94 59H146L153 144H87Z" fill="#fbf7ee" stroke="#ead9a8"/>
+  <rect id="postal-trim" x="55" y="172" width="130" height="24" rx="4" fill="#9e1b1b"/>
+  <g id="receipt-slot">
+    <rect x="85" y="222" width="70" height="25" rx="5" fill="#6f6a63"/>
+    <path d="M97 234H143" fill="none" stroke="#2b2622" stroke-width="5"/>
+  </g>
+  <path id="service-panel" d="M91 292H149V368H91Z" fill="#fbf7ee" stroke="#ead9a8"/>
+  <rect id="base" x="34" y="400" width="172" height="33" rx="7" fill="#9e1b1b"/>
+  <circle data-anchor="base" cx="120" cy="434.5" r="0" stroke="none"/>
+</svg>
