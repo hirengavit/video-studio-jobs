@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s157" data-in="cut" data-section="PART 7 · MIS DEPOSIT AND LIMITS" data-series="POSB">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="trap">
+<g id="flag">
+<rect x="100" y="170" width="1720" height="210" rx="30" fill="#9e1b1b"/>
+<path d="M171 308l48-84 48 84z" fill="#f2b705" stroke="#f2b705" stroke-width="8" stroke-linejoin="round"/>
+<path d="M219 253v25m0 14v1" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round"/>
+<text x="310" y="247" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="750" fill="#fde9a6">EXAM TRAP · परीक्षा का जाल</text>
+<text id="trap-line" x="310" y="329" font-family="Inter, sans-serif" font-size="60" font-weight="800" fill="#fff">₹15 lakh = account, not person</text>
+</g>
+<g id="left-card">
+<rect x="140" y="430" width="790" height="390" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+<text x="535" y="548" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Joint खाते की सीमा</text>
+<g id="left-stamp"><rect x="320" y="606" width="430" height="135" rx="22" fill="#9e1b1b"/>
+<rect x="332" y="618" width="406" height="111" rx="12" fill="none" stroke="#f3ead6" stroke-width="3" stroke-dasharray="3 8" stroke-linecap="round"/>
+<text id="left-amount" x="535" y="699" text-anchor="middle" font-family="Inter, sans-serif" font-size="76" font-weight="800" fill="#fff">₹15 lakh</text></g>
+<path id="left-mark" d="M778 672l19 20 39-44" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</g>
+<g id="right-card">
+<rect x="990" y="430" width="790" height="390" rx="28" fill="#fff" stroke="#f2b705" stroke-width="4"/>
+<text x="1385" y="548" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="45" font-weight="750" fill="#2b2622">हर joint holder की personal सीमा</text>
+<g id="right-stamp"><rect x="1170" y="606" width="430" height="135" rx="22" fill="#f3ead6"/>
+<rect x="1182" y="618" width="406" height="111" rx="12" fill="none" stroke="#8a5d00" stroke-width="3" stroke-dasharray="3 8" stroke-linecap="round"/>
+<text id="right-amount" x="1385" y="699" text-anchor="middle" font-family="Inter, sans-serif" font-size="76" font-weight="800" fill="#2b2622" opacity=".65">₹15 lakh</text><path d="M1227 675H1543" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/></g>
+<path id="right-mark" d="M1630 652l40 40m0-40l-40 40" stroke="#4b4f58" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</g>
+
+<rect id="remember" x="140" y="850" width="1640" height="140" rx="28" fill="#f3ead6"/>
+<g font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">
+<text id="personal-total" x="205" y="933">Personal कुल सीमा</text>
+<text id="joint-included" x="661" y="933">(joint shares मिलाकर)</text>
+</g>
+<g id="personal-pill"><rect x="1450" y="868" width="290" height="104" rx="48" fill="#fff" stroke="#ead9a8" stroke-width="3"/><text x="1595" y="945" text-anchor="middle" font-family="Inter,sans-serif" font-size="72" font-weight="800" fill="#2e7d4f">₹9 lakh</text></g>
+</g></svg>
+<script type="text/scene">
+{on:[
+[0.41,"reveal","#remember",{from:"left",dur:.52}],
+[0.49,"words","#personal-total",{gap:.17,dist:10,spring:"firm"}],
+[2.26,"words","#joint-included",{gap:.15,dist:10,spring:"firm"}],
+[2.26,"underline","#joint-included",{color:"#8a5d00",width:5,dur:.85,gap:7}],
+[4.41,"pop","#personal-pill",{spring:"soft"}],
+[5.89,"pulse","#personal-pill",{amount:.07}]
+]}
+</script>
+</section>
