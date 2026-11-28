@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "2.48",
+  "4.96",
+  "7.45",
+  "9.93",
+  "12.26"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s068",
+   "message": "fade: nothing found for \"#slot-open,#slot-maturity,#slot-extension\"",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s068",
+   "text": "पहली maturity के बाद / extension",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s068",
+   "text": "सिर्फ / दो बार",
+   "t": 0.3
+  }
+ ]
+}
