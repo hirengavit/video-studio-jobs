@@ -43,7 +43,6 @@
         <rect x="202" y="882" width="60" height="60" rx="17" fill="#9e1b1b"/>
         <text x="232" y="927" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="790" fill="#ffffff">5</text>
         <text id="pledgee-en5" x="295" y="909" font-family="Inter, sans-serif" font-size="56" font-weight="790" fill="#2b2622">Housing finance company</text>
-        <text id="pledgee-hi5" x="295" y="965" font-family="Inter, sans-serif" font-size="44" font-weight="580" fill="#6f6a63" visibility="hidden">NHB approved + Central Govt notified</text>
         <text id="nhb-approved" x="360" y="965" font-family="Inter, sans-serif" font-size="44" font-weight="580" fill="#6f6a63">NHB approved</text>
         <text id="central-government-notified" x="760" y="965" font-family="Inter, sans-serif" font-size="44" font-weight="580" fill="#6f6a63">+ Central Govt notified</text>
         <path id="nhb-approval-mark" fill="none" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/>
@@ -77,11 +76,13 @@
         const el=get(id),[x,w]=span(get(text),word),u=ease((t-cue)/.43);
         el.setAttribute('d',u>0?'M'+x+' 976 Q'+(x+w*u/2)+' 979 '+(x+w*u)+' 975':'');
       };
+      const approved=get('#nhb-approved'), notified=get('#central-government-notified');
+      const n=approved.getSubStringLength(0,approved.textContent.length);
+      const spread=ease((t-1.63)/.40), startRight=295+n+12;
+      approved.setAttribute('x',295+65*spread);
+      notified.setAttribute('x',startRight+(760-startRight)*spread);
       underline('#nhb-approval-mark','#nhb-approved','NHB approved',3.70);
       underline('#central-notified-mark','#central-government-notified','notified',8.32);
-      get('#pledgee-hi5').setAttribute('visibility',t<1.63?'visible':'hidden');
-      get('#nhb-approved').setAttribute('visibility',t<1.63?'hidden':'visible');
-      get('#central-government-notified').setAttribute('visibility',t<1.63?'hidden':'visible');
     }
   }
   </script>
