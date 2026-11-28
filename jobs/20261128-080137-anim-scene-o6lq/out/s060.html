@@ -1,0 +1,93 @@
+<section class="vs-scene" id="s060" data-section="PART 4 · TD MATURITY" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="forms">
+ <g id="form-left">
+  <use href="piece:complaint-form-sheet" transform="translate(380 220) scale(1.3)"/>
+  <text id="form2" x="614" y="294" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="62" font-weight="800">Form-2</text>
+  <g id="form2-caption" text-anchor="middle" fill="#6f6a63">
+   <text x="614" y="910" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="680">Scheme का repayment form</text>
+  </g>
+ </g>
+ <g id="form-right">
+  <use href="piece:complaint-form-sheet" transform="translate(1240 220) scale(1.3)"/>
+  <text id="sb7a" x="1474" y="294" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="62" font-weight="800">SB-7A</text>
+  <g id="sb-caption" text-anchor="middle" fill="#6f6a63">
+   <text id="sb-en" x="1474" y="906" font-family="Inter, sans-serif" font-size="46" font-weight="700">Maturity closure · common form</text>
+   <text id="sb-hi" x="1474" y="967" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="680">परिपक्वता पर बंद</text>
+  </g>
+ </g>
+ <g id="with-passbook">
+  <g transform="rotate(7 1640 584)">
+   <use href="piece:td-passbook-white" transform="translate(1515 420) scale(1.12)"/>
+   <text x="1663" y="552" fill="#2b2622" text-anchor="middle" font-family="Inter, sans-serif" font-size="31" font-weight="800">TD · SB-5A</text>
+  </g>
+ </g>
+ <g id="plus">
+  <circle cx="1467" cy="585" r="36" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+  <path id="plus-ink" d="M1451 585h32m-16-16v32" stroke="#2b2622" stroke-width="6" stroke-linecap="round" fill="none"/>
+ </g>
+</g>
+<g id="checks">
+ <rect x="260" y="190" width="1400" height="750" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+ <text x="338" y="278" fill="#9e1b1b" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="68" font-weight="800">Office क्या जाँचता है</text>
+ <path d="M337 311H1583" stroke="#ead9a8" stroke-width="3"/>
+ <g fill="#fbf7ee">
+  <rect x="330" y="343" width="1260" height="114" rx="16"/>
+  <rect x="330" y="473" width="1260" height="114" rx="16"/>
+  <rect x="330" y="603" width="1260" height="114" rx="16"/>
+  <rect x="330" y="733" width="1260" height="114" rx="16"/>
+ </g>
+ <g fill="#fff" stroke="#d4c6a4" stroke-width="2">
+  <circle cx="1534" cy="400" r="33"/><circle cx="1534" cy="530" r="33"/>
+  <circle cx="1534" cy="660" r="33"/><circle cx="1534" cy="790" r="33"/>
+ </g>
+ <g id="date-row">
+  <use href="piece:calendar-page" transform="translate(385 357) scale(.28)"/>
+  <text x="554" y="420" fill="#2b2622" font-family="Inter, sans-serif" font-size="59" font-weight="800">Maturity date</text>
+  <text id="date-hi" x="1010" y="418" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="690">· परिपक्वता तिथि</text>
+ </g>
+ <g id="principal-row">
+  <use href="piece:rupee-note-bundle" transform="translate(358 488) scale(.4)"/>
+  <text x="554" y="550" fill="#2b2622" font-family="Inter, sans-serif" font-size="59" font-weight="800">Principal</text>
+  <text id="principal-hi" x="1010" y="548" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="690">· मूलधन</text>
+ </g>
+ <g id="interest-row">
+  <use href="piece:rupee-coin" transform="translate(386 624) scale(.6)"/>
+  <text x="422" y="673" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="34" font-weight="800">₹</text>
+  <text x="554" y="681" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="59" font-weight="800">बाकी ब्याज</text>
+ </g>
+ <g id="recovery-row">
+  <g fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+   <rect x="386" y="764" width="72" height="52" rx="9"/>
+   <path d="M404 790h36"/>
+  </g>
+  <text x="554" y="811" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="59" font-weight="800">वसूली <tspan fill="#6f6a63" font-size="51" font-weight="690">(अगर हो)</tspan></text>
+ </g>
+ <g fill="none" stroke="#25704d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+  <path id="tick-date" d="m1518 400 11 11 21-23"/><path id="tick-principal" d="m1518 530 11 11 21-23"/>
+  <path id="tick-interest" d="m1518 660 11 11 21-23"/><path id="tick-recovery" d="m1518 790 11 11 21-23"/>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots: [[0, "#forms"], [2.04, "#checks"]],
+ on: [
+  [0.10, "slide", "#with-passbook", {from:"right",dist:82,dur:.42}],
+  [1.14, "fade", "#plus", {dur:.16}],
+  [1.14, "draw", "#plus-ink", {dur:.25}],
+  [2.36, "slide", "#date-row", {from:"left",dist:32,dur:.3}],
+  [2.86, "fade", "#date-hi", {dur:.22}],
+  [3.96, "slide", "#principal-row", {from:"left",dist:32,dur:.3}],
+  [4.46, "fade", "#principal-hi", {dur:.22}],
+  [5.28, "slide", "#interest-row", {from:"left",dist:32,dur:.3}],
+  [7.36, "slide", "#recovery-row", {from:"left",dist:32,dur:.3}],
+  [8.84, "draw", "#tick-date", {dur:.22}],
+  [8.96, "draw", "#tick-principal", {dur:.22}],
+  [9.08, "draw", "#tick-interest", {dur:.22}],
+  [9.20, "draw", "#tick-recovery", {dur:.22}]
+ ]
+}
+</script>
+</section>
