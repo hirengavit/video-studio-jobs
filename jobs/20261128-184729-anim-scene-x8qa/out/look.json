@@ -10,10 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-off-frame",
+   "kind": "text-overlap",
    "scene": "s030",
-   "text": "ये schemes बनाती है",
-   "t": 0.3
+   "text": "Government Savings / Promotion General",
+   "t": 5.52
   }
  ]
 }
