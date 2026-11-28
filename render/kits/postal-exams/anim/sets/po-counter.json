@@ -1,0 +1,62 @@
+{
+  "id": "po-counter",
+  "description": "Poste Restante counter with the existing postal sorting rack behind the blank posting-counter. No figure is included; the scene supplies the envelope and addressee when needed.",
+  "ideas": [
+    "Poste Restante",
+    "mail retention",
+    "post office counter",
+    "identity check",
+    "sender recall"
+  ],
+  "back": [
+    {
+      "piece": "pigeonhole-rack",
+      "transform": "translate(690.6 148) scale(.79)"
+    }
+  ],
+  "front": [
+    {
+      "piece": "posting-counter",
+      "transform": "translate(510 560)"
+    }
+  ],
+  "spots": {
+    "counter-left": [
+      700,
+      730
+    ],
+    "counter-centre": [
+      960,
+      730
+    ],
+    "counter-right": [
+      1220,
+      730
+    ],
+    "rack-slot": [
+      960,
+      360
+    ],
+    "customer-side": [
+      1640,
+      990
+    ]
+  },
+  "framings": {
+    "wide": {
+      "zoom": 1
+    },
+    "medium": {
+      "zoom": 1.35,
+      "x": 0,
+      "y": 60
+    },
+    "close": {
+      "zoom": 2,
+      "x": 0,
+      "y": 190
+    }
+  },
+  "source": "20261125-103251-poste-restante-recall-and-alteration-of-",
+  "createdAt": "2026-11-26T01:09:31.890Z"
+}
