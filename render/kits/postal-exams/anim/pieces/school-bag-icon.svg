@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+<title>school-bag-icon</title>
+<defs>
+<mask id="sbi-outer" maskUnits="userSpaceOnUse" x="-10" y="-10" width="70" height="80">
+<rect x="-10" y="-10" width="70" height="80" fill="#fff"/>
+<rect x="0" y="0" width="50" height="60" fill="none" stroke="#000" stroke-width="6" stroke-linecap="round" stroke-dasharray="0 10"/>
+</mask>
+<mask id="sbi-inner" maskUnits="userSpaceOnUse" x="-10" y="-10" width="70" height="80">
+<rect x="-10" y="-10" width="70" height="80" fill="#fff"/>
+<rect x="0" y="0" width="50" height="60" fill="none" stroke="#000" stroke-width="10" stroke-linecap="round" stroke-dasharray="0 10"/>
+</mask>
+</defs>
+<path id="handle" d="M122 84 V64 A28 28 0 0 1 178 64 V84" fill="none" stroke="#2b2622" stroke-width="9" stroke-linecap="round"/>
+<rect id="bag-body" x="58" y="80" width="184" height="200" rx="30" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/>
+<path id="flap" d="M58 112 A32 32 0 0 1 90 80 H210 A32 32 0 0 1 242 112 V150 A28 28 0 0 1 214 178 H86 A28 28 0 0 1 58 150 Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+<g id="straps" stroke="#2b2622" stroke-width="3" stroke-linejoin="round">
+<rect x="96" y="80" width="18" height="116" rx="4" fill="#2b2622"/>
+<rect x="186" y="80" width="18" height="116" rx="4" fill="#2b2622"/>
+<rect x="92" y="176" width="26" height="18" rx="3" fill="#fde9a6"/>
+<rect x="182" y="176" width="26" height="18" rx="3" fill="#fde9a6"/>
+</g>
+<g id="pocket-stamp">
+<g transform="translate(126 184) rotate(8 25 30)">
+<rect x="0" y="0" width="50" height="60" fill="#2b2622" mask="url(#sbi-outer)"/>
+<rect x="2" y="2" width="46" height="56" fill="#ffffff" mask="url(#sbi-inner)"/>
+<rect x="9" y="9" width="32" height="42" rx="1" fill="#f3ead6" stroke="#2b2622" stroke-width="1.5"/>
+</g>
+</g>
+<rect id="pocket" x="92" y="214" width="116" height="54" rx="14" fill="#7d1414" stroke="#2b2622" stroke-width="3"/>
+<line x1="106" y1="227" x2="194" y2="227" stroke="#b8403a" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 8"/>
+<circle data-anchor="base" cx="150" cy="280" r="0"/>
+</svg>
