@@ -8,12 +8,5 @@
   "13.85"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s007",
-   "text": "ब्याज: हर महीने / ₹",
-   "t": 2.8
-  }
- ]
+ "warnings": []
 }
