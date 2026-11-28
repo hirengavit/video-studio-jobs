@@ -1,0 +1,47 @@
+<section class="vs-scene" id="s102" data-section="PART 5 · TD EARLY CLOSURE" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="old">
+      <use id="old-calendar" href="piece:calendar-page" transform="translate(160 170) scale(1)"/>
+      <text id="day" x="290" y="389" text-anchor="middle" font-family="Inter, sans-serif" font-size="122" font-weight="800" fill="#2b2b2b">9</text>
+      <text id="month" x="290" y="245" text-anchor="middle" textLength="220" lengthAdjust="spacingAndGlyphs" font-family="Inter, sans-serif" font-size="44" font-weight="740" fill="#ffffff">November 2023</text>
+      <text id="before" x="470" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="740" fill="#2b2622">9 Nov 2023 से पहले खुले</text>
+      <text id="old-term" x="470" y="320" font-family="Inter, sans-serif" font-size="80" font-weight="800" fill="#2b2622">5-year TD</text>
+      <text id="old-hi" x="470" y="370" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#514e4a">5 साल की सावधि जमा</text>
+      <text id="old-conditions" x="470" y="450" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="760" fill="#9e1b1b">उनकी अपनी शर्तें लागू</text>
+    </g>
+<g id="old-track">
+<rect id="old-bar" x="160" y="600" width="1600" height="60" rx="20" fill="#dfd9cd"/>
+<g id="six-month"><path d="M320 590v80" stroke="#495964" stroke-width="4"/><circle cx="320" cy="630" r="8" fill="#495964"/><text id="six-month-label" x="320" y="572" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="680" fill="#514e4a">6 महीने</text></g>
+<g id="one-year"><path d="M480 590v80" stroke="#495964" stroke-width="4"/><circle cx="480" cy="630" r="8" fill="#495964"/><text id="one-year-label" x="480" y="572" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="680" fill="#514e4a">1 साल</text></g>
+<rect id="card1" x="160" y="720" width="500" height="260" rx="24" fill="#fffaf0" stroke="#d7c7a3" stroke-width="3"/><text id="can-close-a" x="410" y="812" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="680" fill="#2b2622">6 महीने बाद बंद</text><text id="can-close-b" x="410" y="880" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="680" fill="#2b2622">हो सकते हैं</text>
+<path id="can-close-tick" d="M385 929l15 14 32-33" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect id="card2" x="700" y="720" width="500" height="260" rx="24" fill="#fffaf0" stroke="#d7c7a3" stroke-width="3"/><text id="savings-period" x="950" y="800" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="680" fill="#6f6a63">6 महीने – 1 साल</text><text id="save-a" x="950" y="873" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="680" fill="#2b2622">Savings Account</text><text id="save-b" x="950" y="937" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="680" fill="#2b2622">का ब्याज</text>
+<rect id="card3" x="1240" y="720" width="520" height="260" rx="24" fill="#fffaf0" stroke="#d7c7a3" stroke-width="3"/><text id="completed-period" x="1500" y="800" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="680" fill="#6f6a63">1 साल के बाद</text><text id="completed-a" x="1500" y="873" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="680" fill="#2b2622">पूरे हुए समय</text><text id="completed-b" x="1500" y="937" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="680" fill="#2b2622">वाला हिसाब</text>
+</g>
+</svg>
+<script type="text/scene">
+{ on: [
+  [0.24,"color","#day",{to:"#6f6a63",dur:0.26}],
+  [0.24,"color","#before",{to:"#6f6a63",dur:0.26}],
+  [0.24,"color","#old-term",{to:"#6f6a63",dur:0.26}],
+  [0.24,"color","#old-hi",{to:"#6f6a63",dur:0.26}],
+  [0.24,"color","#old-conditions",{to:"#6f6a63",dur:0.26}],
+  [0.24,"grow","#old-bar",{axis:"x",origin:"left",spring:"smooth"}],
+  [0.24,"pop","#six-month",{from:0.92,spring:"snap"}],
+  [0.24,"fade","#card1",{dur:0.24}],
+  [0.24,"words","#can-close-a",{gap:0.29,dist:7}],
+  [1.56,"words","#can-close-b",{gap:0.24,dist:7}],
+  [2.04,"draw","#can-close-tick",{dur:0.32}],
+  [2.66,"fade","#card2",{dur:0.24}],
+  [2.66,"words","#savings-period",{gap:0.23,dist:7}],
+  [3.60,"pop","#one-year",{from:0.92,spring:"snap"}],
+  [4.66,"words","#save-a",{gap:0.88,dist:7}],
+  [5.84,"words","#save-b",{gap:0.42,dist:7}],
+  [6.86,"fade","#card3",{dur:0.24}],
+  [6.86,"words","#completed-period",{gap:0.26,dist:7}],
+  [8.24,"words","#completed-a",{gap:0.48,dist:7}],
+  [9.58,"words","#completed-b",{gap:0.32,dist:7}]
+] }
+</script>
+</section>
