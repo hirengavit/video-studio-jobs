@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "1.81",
+  "3.62",
+  "5.43",
+  "7.24",
+  "8.90"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s027",
+   "message": "fade: nothing found for \"#last-day,#last-day-label\"",
+   "t": 0.3
+  }
+ ]
+}
