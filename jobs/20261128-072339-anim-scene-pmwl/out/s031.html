@@ -9,7 +9,7 @@
       <g transform="translate(191 265) scale(0.37)" clip-path="url(#adult-only)"><use href="piece:person-icons" transform="translate(-53 0)"/></g>
       <path d="M226 339l9 10 17-19" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
-    <text x="305" y="315" fill="#fff" font-family="Inter, sans-serif" font-size="76" font-weight="810">Nomination</text>
+    <text x="305" y="315" fill="#fff" font-family="Inter, sans-serif" font-size="73" font-weight="810">Nomination</text>
     <text id="nomination-hindi" x="308" y="381" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="700">नामांकन</text>
   </g>
   <g id="nominee-1"><rect x="120" y="548" width="130" height="234" rx="40" fill="#f3ead6"/><g transform="translate(146 568) scale(0.67)" clip-path="url(#adult-only)"><use href="piece:person-icons" transform="translate(-53 0)"/></g></g>
@@ -41,15 +41,15 @@
   camera: [[0, {zoom: 1}]],
   on: [
     [0.68, "fade", "#nomination-hindi", {dur:0.24}],
-    [1.34, "pop", "#nominee-1", {dur:0.28}],
-    [1.49, "pop", "#nominee-2", {dur:0.28}],
-    [1.64, "pop", "#nominee-3", {dur:0.28}],
-    [1.79, "pop", "#nominee-4", {dur:0.28}],
+    [1.34, "pop", "#nominee-1", {from:0.88}],
+    [1.49, "pop", "#nominee-2", {from:0.88}],
+    [1.64, "pop", "#nominee-3", {from:0.88}],
+    [1.79, "pop", "#nominee-4", {from:0.88}],
     [2.88, "stamp", "#nominee-cap", {from:1.25,rot:-3}],
     [4.98, "fade", "#nominee-shares", {dur:0.25}],
     [5.74, "highlight", "#share-label-1, #share-label-2, #share-label-3, #share-label-4", {color:"#f2b705",opacity:0.40,dur:0.35,pad:3}],
     [7.26, "fade", "#nomination-pay-heading", {dur:0.30}],
-    [9.36, "pop", "#nomination-owner", {dur:0.32}]
+    [9.36, "pop", "#nomination-owner", {from:0.93}]
   ]
 }
 </script>
