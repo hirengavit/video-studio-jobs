@@ -30,7 +30,8 @@
   <path id="owner-strike" d="M864 934l193-13m33-5 35 35m0-35-35 35" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
   <g id="limit-chip" text-anchor="middle">
     <rect x="1120" y="380" width="600" height="140" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
-    <text id="limit-copy" x="1420" y="468" font-size="52" font-weight="800" font-family="'Noto Sans Devanagari', Inter, sans-serif">Single adult: ₹9 lakh सीमा</text>
+    <text x="1420" y="437" font-size="52" font-weight="750">Single adult:</text>
+    <text id="limit-copy" x="1420" y="495" font-size="52" font-weight="850" font-family="'Noto Sans Devanagari', Inter, sans-serif">₹9 lakh सीमा</text>
   </g>
   <text id="limit-source" x="1420" y="573" text-anchor="middle" font-size="44" font-weight="650" fill="#6f6a63">MIS scheme</text>
 </g>
@@ -38,7 +39,8 @@
 <script type="text/scene">
 ({on:[
   [0.58,"reveal","#survivor-halo",{from:"left",dur:0.36}],
-  [3.22,"swap","#joint-mode",{to:"#single-mode",dist:12,dur:0.32}],
+  [3.22,"out","#joint-mode",{dur:0.11}],
+  [3.34,"fade","#single-mode",{dur:0.12}],
   [3.56,"pulse","#joint-book",{amount:0.045}],
   [5.00,"slide","#limit-chip",{from:"right",dist:50,spring:"soft"}],
   [6.04,"fade","#limit-source",{dur:0.25}],
