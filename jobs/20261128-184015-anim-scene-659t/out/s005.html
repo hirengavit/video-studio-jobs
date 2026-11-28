@@ -35,7 +35,7 @@
 </g>
 
 <g id="premature-timeline">
- <rect x="1000" y="792" width="454" height="13" rx="6.5" fill="#ead9a8"/>
+ <rect id="timeline-track" x="1000" y="792" width="454" height="13" rx="6.5" fill="#ead9a8"/>
  <rect id="timeline-fill" x="1000" y="792" width="454" height="13" rx="6.5" fill="#8a5d00"/>
  <circle cx="1007" cy="798" r="13" fill="#8a5d00"/>
  <text x="1000" y="869" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#2b2622">जमा</text>
@@ -74,6 +74,7 @@
     [1.67,'out','#principal-return-label',{dur:.22,scale:1}],
     [1.78,'move','#maturity-calendar',{by:[237,0],spring:'soft'}],
     [1.90,'fade','#premature-timeline',{dur:.17}],
+    [2.43,'fade','#timeline-track',{dur:.12}],
     [1.90,'grow','#timeline-fill',{axis:'x',origin:'left',spring:'soft'}],
     [2.84,'fade','#early-reveal',{dur:.10}],
     [2.84,'fall','#early-marker',{by:76,bounce:0.12}],
