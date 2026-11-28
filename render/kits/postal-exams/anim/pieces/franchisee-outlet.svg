@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 320" width="360" height="320">
+<g id="building">
+  <rect x="34" y="96" width="292" height="214" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="34" y="262" width="292" height="48" fill="#ead9a8" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="counter">
+  <rect x="70" y="160" width="220" height="90" rx="4" fill="#e3d4b3" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="58" y="246" width="244" height="16" rx="3" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="awning">
+  <path d="M20 96 L340 96 L340 132 Q 320 150 300 132 Q 280 150 260 132 Q 240 150 220 132 Q 200 150 180 132 Q 160 150 140 132 Q 120 150 100 132 Q 80 150 60 132 Q 40 150 20 132 Z" fill="#9e1b1b"/>
+  <rect x="40" y="96" width="20" height="36" fill="#b8403a"/>
+  <rect x="80" y="96" width="20" height="36" fill="#b8403a"/>
+  <rect x="120" y="96" width="20" height="36" fill="#b8403a"/>
+  <rect x="160" y="96" width="20" height="36" fill="#b8403a"/>
+  <rect x="200" y="96" width="20" height="36" fill="#b8403a"/>
+  <rect x="240" y="96" width="20" height="36" fill="#b8403a"/>
+  <rect x="280" y="96" width="20" height="36" fill="#b8403a"/>
+  <rect x="320" y="96" width="20" height="36" fill="#b8403a"/>
+  <path d="M20 96 L340 96 L340 132 Q 320 150 300 132 Q 280 150 260 132 Q 240 150 220 132 Q 200 150 180 132 Q 160 150 140 132 Q 120 150 100 132 Q 80 150 60 132 Q 40 150 20 132 Z" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="sign">
+  <path d="M110 80 L110 96 M250 80 L250 96" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round"/>
+  <rect x="64" y="18" width="232" height="62" rx="6" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M14 310 L346 310" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round"/>
+<circle data-anchor="base" cx="180" cy="310" r="0"/>
+</svg>
