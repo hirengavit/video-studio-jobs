@@ -21,8 +21,8 @@
 <path id="refund-tick" d="M1284 855l19 20 38-48" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path id="lock-strike" d="M222 481H514" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
 <path id="no-lock-cross" d="M346 397l44 40m0-40l-44 40" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
-<path id="strike-two" d="M758 481H866" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
-<path id="strike-one" d="M1350 481H1458" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+<path id="strike-two" d="M758 481H866" stroke="#4b4f58" stroke-width="4" stroke-linecap="round"/>
+<path id="strike-one" d="M1350 481H1458" stroke="#4b4f58" stroke-width="4" stroke-linecap="round"/>
 </g>
 <g id="term">
  <use href="piece:stamp-term-card" transform="translate(280 333) scale(.97)"/>
@@ -43,7 +43,7 @@
  <g id="heirs"><rect x="160" y="560" width="540" height="220" rx="26" fill="#fffdf8" stroke="#9e1b1b" stroke-width="4"/>
  <text x="430" y="655" text-anchor="middle" fill="#2b2622" font-family="Inter,sans-serif" font-size="71" font-weight="800">Legal heirs</text>
  <text id="heirs-hi" x="430" y="732" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="700">कानूनी वारिस</text></g>
- <path id="claim-arrow" d="M747 520H950L913 486M950 520L913 554" fill="none" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+ <path id="claim-arrow" d="M747 520H918M914 485L950 520L914 555" fill="none" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
  <g id="office"><rect x="1000" y="300" width="760" height="400" rx="32" fill="#f4e6c8" stroke="#9e1b1b" stroke-width="4"/>
  <path d="M1319 422h122m-114-9l53-26 53 26m-100 39v-24m31 24v-24m32 24v-24m31 24v-24m-108 30h122" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
  <text x="1380" y="544" text-anchor="middle" fill="#2b2622" font-family="Inter,sans-serif" font-size="75" font-weight="800">Accounts Office</text>
@@ -55,10 +55,10 @@
 {shots:[[0,"#track"],[3.5,"#term"],[6.8,"#claim"]],on:[
 [.48,"draw","#strike-two",{dur:.25}], [1.18,"draw","#strike-one",{dur:.25}],
 [4.46,"type","#term-en",{cps:26}], [4.96,"fade","#term-hi",{dur:.32}],
-[5.64,"draw","#term-slash",{dur:.32}], [5.64,"draw","#term-slash-slate",{dur:.32}], [5.67,"draw","#term-cross",{dur:.31}],
+[5.64,"draw","#term-slash",{dur:.32}], [5.64,"draw","#term-slash-slate",{dur:.32}], [5.67,"fade","#term-cross",{dur:.23}],
 [7.30,"fade","#nom-hi",{dur:.24}], [7.46,"fade","#or",{dur:.24}], 
 [8.10,"fade","#heirs",{dur:.27}], [8.60,"fade","#heirs-hi",{dur:.23}],
-[8.86,"draw","#claim-arrow",{dur:.35}], [8.86,"fade","#office",{dur:.32}], [9.36,"fade","#office-hi",{dur:.27}],
+[8.86,"fade","#claim-arrow",{dur:.26}], [8.86,"fade","#office",{dur:.32}], [9.36,"fade","#office-hi",{dur:.27}],
 [10.06,"pop","#claim-pill",{from:.93}]
 ]}
 </script>
