@@ -33,7 +33,7 @@
 </g>
 <g id="td-book">
 <use href="piece:td-passbook-white" transform="translate(1480 420) scale(.8)"/>
-<text id="book-title" x="1586" y="521" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="760" fill="#2b2622">TD · SB-5A</text>
+<text id="book-title" x="1586" y="504" text-anchor="middle" font-family="Inter, sans-serif" font-size="33" font-weight="760" fill="#2b2622"><tspan x="1586" y="504">TD</tspan><tspan x="1586" y="535">SB-5A</tspan></text>
 </g>
 <text id="book-caption" x="1630" y="740" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="650" fill="#6f6a63">passbook के साथ</text>
 </g>
@@ -42,6 +42,8 @@
 {
  update(t, section, $) {
    const u = Math.max(0, Math.min(1, (t - 0.72) / 0.70));
+   const fade = Math.max(0, Math.min(1, (t - 0.72) / 0.40));
+   $('#checks')[0].setAttribute('opacity', (1 - fade) ** 3);
    const rest = 1 - u * u * (3 - 2 * u);
    $('#scheme-form')[0].setAttribute('transform', 'translate(' + (1020 * rest) + ' ' + (-50 * rest) + ')');
    $('#sheet-title')[0].setAttribute('y', 347 + 6 * rest);
@@ -51,13 +53,12 @@
    $('#form-kind')[0].setAttribute('y', 960 + 40 * rest);
  },
  on:[
- [0.72,"out","#checks",{dur:0.4,scale:1}],
  [1.20,"draw","#common-sheet",{dur:0.68}],
  [1.70,"pop","#common-title",{from:0.94,spring:"soft"}],
  [1.70,"tracking","#common-name",{from:4,dur:0.32}],
  [2.20,"fade","#common-kind",{dur:0.28}],
  [3.28,"slide","#td-book",{from:"right",dist:100,spring:"soft"}],
- [3.92,"fade","#book-caption",{dur:0.28}],
+ [3.74,"fade","#book-caption",{dur:0.22}],
  [5.84,"words","#next-rule",{gap:0.13,dist:8}]
  ]
 }
