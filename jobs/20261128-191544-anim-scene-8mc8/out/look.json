@@ -1,0 +1,31 @@
+{
+ "moments": [
+  "0.30",
+  "2.11",
+  "4.22",
+  "6.32",
+  "8.43",
+  "10.39"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-off-frame",
+   "scene": "s118",
+   "text": "authorised officer",
+   "t": 2.11
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s118",
+   "text": "प्राधिकृत अधिकारी",
+   "t": 2.11
+  },
+  {
+   "kind": "off-frame",
+   "scene": "s118",
+   "message": "a card or panel runs 437 px past the frame edge at 4.2 s (check the camera zoom and the layout)",
+   "t": 4.22
+  }
+ ]
+}
