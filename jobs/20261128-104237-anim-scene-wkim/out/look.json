@@ -8,55 +8,5 @@
   "15.02"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s162",
-   "message": "pulse: option \"dur\" isn't used (it takes: amount)",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s162",
-   "text": "Example · उदाहरण / 7.4% पर हर महीने ब्याज",
-   "t": 6.07
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s162",
-   "text": "₹3 lakh / 1 Oct–31 Dec 2026 · Source: SB Order 12/",
-   "t": 6.07
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s162",
-   "text": "1 Oct–31 Dec 2026 · / ₹1,850",
-   "t": 6.07
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s162",
-   "text": "Source: SB Order 12/2026 / ₹1,850",
-   "t": 6.07
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s162",
-   "text": "(3,00,000 × 7.4) ÷ (100 × 12) / ₹1,850",
-   "t": 6.07
-  },
-  {
-   "kind": "low-contrast",
-   "scene": "s162",
-   "text": "₹3 lakh वहीं रहता है (1.4:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 6.07
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s162",
-   "text": "= ₹1,850 / महीना / ₹5,550",
-   "t": 9.1
-  }
- ]
+ "warnings": []
 }
