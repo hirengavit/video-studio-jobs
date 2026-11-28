@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 332" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="paper" d="M18 12 H191 L242 63 V320 H18Z" fill="#ffffff" stroke="#ead9a8"/><path id="fold" d="M191 12 V63 H242" fill="#f3ead6"/><g id="rules" stroke="#6f6a63"><path d="M44 102 H211 M44 132 H211 M44 162 H187 M44 205 H211 M44 235 H211 M44 265 H171"/></g>
+<circle data-anchor="base" cx="130" cy="320" r="0"/><circle data-anchor="top" cx="104.5" cy="12" r="0"/>
+</svg>
