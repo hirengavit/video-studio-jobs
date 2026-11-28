@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g id="counter-top"><path d="M160 760h1600v100H160z" fill="#f3ead6"/><path d="M160 775h1600" stroke="#baa27e"/><path d="M177 785h1566" stroke="#fbf7ee"/></g><g id="window-frame"><rect x="640" y="330" width="640" height="400" rx="12" fill="#fff"/><rect id="glass" x="657" y="347" width="606" height="353" rx="5" fill="#fbf7ee"/><path d="M674 370h105m-105 16h64M1238 370v113" stroke="#eadeca" fill="none"/></g><path id="speaking-hole" d="M918 700a42 42 0 0 1 84 0z" fill="#e2d5ba"/><g id="sill"><path d="M657 700h606l8 14H649z" fill="#f3ead6"/><path d="M649 714h622v16H649z" fill="#fff"/></g><rect id="sign" x="700" y="200" width="520" height="90" rx="12" fill="#9e1b1b"/>
+<circle data-anchor="base" cx="960" cy="860" r="0" stroke="none"/>
+<circle data-anchor="top" cx="960" cy="760" r="0" stroke="none"/>
+<circle data-anchor="window" cx="960" cy="700" r="0" stroke="none"/>
+<circle data-anchor="sign" cx="960" cy="245" r="0" stroke="none"/>
+</svg>
