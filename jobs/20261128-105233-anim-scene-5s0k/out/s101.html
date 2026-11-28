@@ -32,7 +32,7 @@
         <text id="zone-b-caption" x="1410" y="760" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="670" fill="#514e4a">maturity से पहले बंद</text>
         <text id="savings" x="1410" y="815" text-anchor="middle" font-family="Inter, sans-serif" font-size="45" font-weight="780" fill="#2b2622">Post Office Savings Account</text>
         <text id="savings-hi" x="1410" y="868" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#514e4a">डाकघर बचत खाता</text>
-        <text id="rejected-rate" x="1410" y="929" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#4b4f58" opacity=".82">5-year TD की तय दर</text>
+        <text id="rejected-rate" x="1410" y="929" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#565a61">5-year TD की तय दर</text>
         <path id="rejected-strike" d="M1194 913L1626 913" stroke="#495964" stroke-width="5" stroke-linecap="round"/>
       </g>
     </g>
@@ -49,7 +49,7 @@
   <script type="text/scene">
     { shots: [[0, "#track5"], [5.13, "#old"]], on: [
       [0.22, "move", "#early-only", {by: [-340, 0], spring: "snap"}],
-      [0.22, "words", "#minimum", {gap: 0.19, dist: 7}],
+      [0.36, "words", "#minimum", {gap: 0.19, dist: 7}],
       [2.34, "highlight", "#maturity", {color: "#f2b705", opacity: 0.40, pad: 6, dur: 0.42}],
       [2.98, "pop", "#maturity-chip", {from: 0.90, spring: "snap"}],
       [5.13, "stamp", "#day", {from: 1.24, rot: -4, spring: "snap"}],
