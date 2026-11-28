@@ -1,0 +1,3261 @@
+[
+  {
+    "id": "comment-box",
+    "kind": "prop",
+    "description": "White rounded comment field with soft yellow border, grey avatar dot at left, static caret bar and postal-red send arrow at right. Blank text area x170–960, y45–175. Real-size 1100×220 viewBox for translate-only scene placement; top anchor (550,3).",
+    "ideas": [
+      "viewer response",
+      "quick check",
+      "comment prompt"
+    ],
+    "anchors": [
+      "top"
+    ],
+    "parts": [
+      "field",
+      "avatar",
+      "caret",
+      "send-arrow"
+    ],
+    "viewBox": "0 0 1100 220",
+    "source": "20261002-090000-speed-post-after-2025",
+    "createdAt": "2026-10-02T11:09:20.218Z"
+  },
+  {
+    "id": "envelope-article",
+    "kind": "prop",
+    "description": "White flat ink envelope, postal-red stripe and grey address rules, no lettering. Drawing 260×170 centred in a transparent 400-square prop.",
+    "ideas": [
+      "postal article",
+      "Speed Post",
+      "delivery"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "paper",
+      "postal-stripe",
+      "address-lines"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261002-090000-speed-post-after-2025",
+    "createdAt": "2026-10-02T11:09:20.219Z"
+  },
+  {
+    "id": "old-book-stack",
+    "kind": "prop",
+    "description": "Two flat ink guide books: one closed below an open book, faded sand pages and slate-grey covers and spines. No titles or sample lettering. Transparent 400-square prop; base (196,316), top at the open book’s upper gutter (200,116).",
+    "ideas": [
+      "old guide",
+      "outdated rule",
+      "exam trap"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "closed-book",
+      "open-book",
+      "page-rules"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261002-090000-speed-post-after-2025",
+    "createdAt": "2026-10-02T11:09:20.219Z"
+  },
+  {
+    "id": "post-counter-icon",
+    "kind": "prop",
+    "description": "Flat ink post-office counter with a blank sign plate, cream desk, postal-red trim and a glass window frame. Transparent 400-square prop; drawing spans x20–380 and y66–332. Top anchor is the usable desk surface at (200,232), base (200,332).",
+    "ideas": [
+      "post office",
+      "customer service",
+      "registration"
+    ],
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "window-frame",
+      "sign-plate",
+      "desk"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261002-090000-speed-post-after-2025",
+    "createdAt": "2026-10-02T11:09:20.220Z"
+  },
+  {
+    "id": "round-postmark",
+    "kind": "symbol",
+    "description": "Postal-red double-ring postmark, 260×260 ring with five wavy cancellation lines to its right. Blank transparent centre for scene-written date or verdict. Ring centre (156,200), base (156,330); complete prop centred within a transparent 400-square viewBox. Recolour the postmark group to green for a positive verdict.",
+    "ideas": [
+      "date",
+      "verdict",
+      "postal change"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "postmark",
+      "rings",
+      "cancel-lines"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261002-090000-speed-post-after-2025",
+    "createdAt": "2026-10-02T11:09:20.220Z"
+  },
+  {
+    "id": "signature-slip",
+    "kind": "prop",
+    "description": "White delivery slip with an abstract ink signature scribble, muted rules and a postal-red pen lying diagonally across the lower right. Ink outlines 3 px, transparent 400-square prop; paper 320×200. No sample text.",
+    "ideas": [
+      "proof of delivery",
+      "signature",
+      "receipt"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "slip",
+      "signature",
+      "pen"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261002-090000-speed-post-after-2025",
+    "createdAt": "2026-10-02T11:09:20.221Z"
+  },
+  {
+    "id": "document-card-blank",
+    "kind": "prop",
+    "description": "White document card 1500x720 with a #ead9a8 border, a 14 px postal-red top edge and an empty grey source rule at the bottom; no lettering.",
+    "ideas": [
+      "rule explanation",
+      "source excerpt",
+      "comparison"
+    ],
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "paper",
+      "top-edge",
+      "source-rule"
+    ],
+    "viewBox": "0 0 1500 720",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-10-25T11:31:44.791Z"
+  },
+  {
+    "id": "govt-building-icon",
+    "kind": "prop",
+    "description": "Flat ink office building with columns, steps and a blank sign plate; cream walls, postal-red roof line, 3 px ink. Transparent 400-square prop. Stands for Dak Bhawan when no photo, and marks a headquarters city.",
+    "ideas": [
+      "headquarters",
+      "office",
+      "administration"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "building",
+      "roof",
+      "sign-plate",
+      "columns",
+      "entrance",
+      "steps"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-10-25T11:31:44.791Z"
+  },
+  {
+    "id": "icon-boat",
+    "kind": "prop",
+    "description": "Flat ink river boat carrying a mail bag, cream hull, red trim, two wavy water lines. Transparent 400-square prop.",
+    "ideas": [
+      "river transport",
+      "mail conveyance"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "cabin",
+      "mail-bag",
+      "hull",
+      "water"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-10-25T11:31:44.791Z"
+  },
+  {
+    "id": "icon-mail-van",
+    "kind": "prop",
+    "description": "Flat ink mail van, side view, postal-red body with a cream window band, no lettering. Transparent 400-square prop.",
+    "ideas": [
+      "road transport",
+      "mail logistics"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "van-body",
+      "window-band",
+      "rear-door",
+      "bumper",
+      "wheels",
+      "wheel-hubs"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-10-25T11:31:44.791Z"
+  },
+  {
+    "id": "icon-plane",
+    "kind": "prop",
+    "description": "Flat ink cargo plane, side view, cream body, postal-red tail stripe, no lettering. Transparent 400-square prop.",
+    "ideas": [
+      "air transport",
+      "mail logistics"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "tail",
+      "fuselage",
+      "cockpit",
+      "windows",
+      "engine-pod",
+      "wing",
+      "tailplane"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-10-25T11:31:44.791Z"
+  },
+  {
+    "id": "icon-train",
+    "kind": "prop",
+    "description": "Flat ink mail train engine and one mail coach, cream body, postal-red stripe, 3 px ink. Transparent 400-square prop.",
+    "ideas": [
+      "rail conveyance",
+      "RMS"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "coach",
+      "coach-windows",
+      "coupler",
+      "engine",
+      "cab-window",
+      "wheels",
+      "wheel-hubs",
+      "grille",
+      "pantograph",
+      "bogies",
+      "rail"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-10-25T11:31:44.791Z"
+  },
+  {
+    "id": "magnifier-icon",
+    "kind": "prop",
+    "description": "Flat ink magnifying glass, cream lens, postal-red handle, 3 px ink. Transparent 400-square prop.",
+    "ideas": [
+      "definition focus",
+      "careful distinction"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "handle",
+      "rim",
+      "lens"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-10-25T11:31:44.792Z"
+  },
+  {
+    "id": "postal-ladder",
+    "kind": "prop",
+    "description": "Vertical postal-red rail (#9e1b1b) on the left with five empty white rung cards (#ead9a8 border, 1300x120, 40 px gaps) stepping up from #rung-1 (bottom) to #rung-5 (top, red fill); each rung has a blank pill slot at its right for an officer name. About 1500x820 at scale 1. No lettering.",
+    "ideas": [
+      "hierarchy",
+      "level emphasis",
+      "reporting sequence"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "rail",
+      "rung-1",
+      "officer-slot-1",
+      "rung-2",
+      "officer-slot-2",
+      "rung-3",
+      "officer-slot-3",
+      "rung-4",
+      "officer-slot-4",
+      "rung-5",
+      "officer-slot-5"
+    ],
+    "viewBox": "0 0 1500 820",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-10-25T11:31:44.792Z"
+  },
+  {
+    "id": "icon-act-document",
+    "kind": "prop",
+    "description": "White document with a folded top-right corner, #ead9a8 border, grey text rules, no lettering, 3 px ink; ~260 px. Stands for an Act or Rules.",
+    "ideas": [
+      "Generic document icon only; authoritative wording belongs in the scene."
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "paper",
+      "fold",
+      "rules"
+    ],
+    "viewBox": "0 0 260 332",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T06:35:11.510Z"
+  },
+  {
+    "id": "icon-army-mailbag",
+    "kind": "prop",
+    "description": "Khaki-olive mail bag tied at the top with a postal-red tag and a small ink star, 3 px ink; ~220 px. Base Circle / Army Postal Service.",
+    "ideas": [
+      "The star is a generic five-point mark, not an official emblem."
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "bag",
+      "tie",
+      "tag",
+      "star"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T06:35:11.511Z"
+  },
+  {
+    "id": "icon-insurance-shield",
+    "kind": "prop",
+    "description": "Flat ink shield, cream fill, small postal-red heart-line across it, 3 px ink; ~200 px. Life insurance (PLI / RPLI).",
+    "ideas": [
+      "Draw the small heart-line once, then hold."
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "shield",
+      "heart-line"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T06:35:11.511Z"
+  },
+  {
+    "id": "icon-money-order",
+    "kind": "prop",
+    "description": "Flat ink envelope with a cream note sliding out carrying a rupee sign, 3 px ink, postal-red stripe; ~200 px. Money remittance.",
+    "ideas": [
+      "Slide the note vertically behind the envelope front."
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "envelope-back",
+      "note",
+      "envelope-front"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T06:35:11.511Z"
+  },
+  {
+    "id": "icon-passbook",
+    "kind": "prop",
+    "description": "Closed savings passbook, postal-red cover, cream page edge, small rupee mark, 3 px ink; ~200 px.",
+    "ideas": [
+      "Keep the rupee as the only cover mark."
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "pages",
+      "cover"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T06:35:11.511Z"
+  },
+  {
+    "id": "postmark-round",
+    "kind": "prop",
+    "description": "Round postmark: double ring in postal red #9e1b1b with three wavy cancel lines to its right, blank centre for the scene's words (a date, a source); 260 px, scaled up to 1.6.",
+    "ideas": [
+      "Keep source/date inside the inner ring; reveal cancellation separately."
+    ],
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "rings",
+      "cancellation"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T06:35:11.511Z"
+  },
+  {
+    "id": "stamp-card-red",
+    "kind": "prop",
+    "description": "Blank postal-red #9e1b1b card with a perforated postage-stamp edge and a thin #b8403a inner line, 4:3, no lettering; holds a key term in white with its Hindi in pale yellow.",
+    "ideas": [
+      "Text-safe area: x48–672, y48–492; add bilingual terms in the scene."
+    ],
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "card",
+      "inner-line"
+    ],
+    "viewBox": "0 0 720 540",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T06:35:11.511Z"
+  },
+  {
+    "id": "city-pin",
+    "kind": "prop",
+    "description": "Small ink map pin with a postal-red head and cream centre; 80 px.",
+    "ideas": [
+      "city pin",
+      "postal administration"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "pin"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T10:48:15.660Z"
+  },
+  {
+    "id": "icon-common-seal",
+    "kind": "prop",
+    "description": "Round postal-red seal disc with a scalloped edge, an inner ink ring and small ribbon tails, blank centre; 260 px, 3 px ink.",
+    "ideas": [
+      "common seal",
+      "postal administration"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "ribbons",
+      "seal"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T10:48:15.660Z"
+  },
+  {
+    "id": "icon-foundation-stone",
+    "kind": "prop",
+    "description": "Grey stone block with a blank plaque and a trowel leaning on it, 3 px ink; 260 px.",
+    "ideas": [
+      "foundation stone",
+      "postal administration"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "stone",
+      "plaque",
+      "trowel"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T10:48:15.661Z"
+  },
+  {
+    "id": "icon-globe-mail",
+    "kind": "prop",
+    "description": "Ink globe with cream land and an envelope in front of it; 220 px.",
+    "ideas": [
+      "globe mail",
+      "postal administration"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "globe",
+      "mail"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T10:48:15.661Z"
+  },
+  {
+    "id": "icon-laptop-code",
+    "kind": "prop",
+    "description": "Open laptop with three ink code lines and a small envelope on the screen; 220 px.",
+    "ideas": [
+      "laptop code",
+      "postal administration"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "screen",
+      "code",
+      "mail",
+      "keyboard"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T10:48:15.661Z"
+  },
+  {
+    "id": "icon-mail-plane",
+    "kind": "prop",
+    "description": "Flat ink cargo plane, side view, cream body with a postal-red stripe, no lettering; 300 px.",
+    "ideas": [
+      "mail plane",
+      "postal administration"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "tail",
+      "fuselage",
+      "wing",
+      "engine"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T10:48:15.661Z"
+  },
+  {
+    "id": "icon-old-chart",
+    "kind": "prop",
+    "description": "A faded organisation-chart sheet on sand #f3ead6 paper with slate-grey boxes and connector lines, curled corner, no lettering; 420x320.",
+    "ideas": [
+      "old chart",
+      "postal administration"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "paper",
+      "connectors",
+      "boxes"
+    ],
+    "viewBox": "0 0 420 320",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T10:48:15.661Z"
+  },
+  {
+    "id": "icon-parcel",
+    "kind": "prop",
+    "description": "Cream-brown parcel tied with ink string, small blank postal-red label; 220 px.",
+    "ideas": [
+      "parcel",
+      "postal administration"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "box",
+      "string",
+      "label"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T10:48:15.661Z"
+  },
+  {
+    "id": "icon-sports-medal",
+    "kind": "prop",
+    "description": "Round India Post yellow medal on a postal-red ribbon, ink outline; 200 px.",
+    "ideas": [
+      "sports medal",
+      "postal administration"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "ribbon",
+      "medal"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T10:48:15.662Z"
+  },
+  {
+    "id": "icon-stamp-sheet",
+    "kind": "prop",
+    "description": "Small sheet of six perforated stamps in postal red and India Post yellow, blank faces; 220 px.",
+    "ideas": [
+      "stamp sheet",
+      "postal administration"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "stamp-0",
+      "stamp-1",
+      "stamp-2",
+      "stamp-3",
+      "stamp-4",
+      "stamp-5"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T10:48:15.662Z"
+  },
+  {
+    "id": "icon-stores-carton",
+    "kind": "prop",
+    "description": "Open cardboard carton with blank forms and a pad sticking out, 3 px ink; 220 px.",
+    "ideas": [
+      "stores carton",
+      "postal administration"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "back",
+      "forms",
+      "front",
+      "flaps"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T10:48:15.662Z"
+  },
+  {
+    "id": "icon-training-cap",
+    "kind": "prop",
+    "description": "Graduation cap resting on a closed red book, 3 px ink; 220 px.",
+    "ideas": [
+      "training cap",
+      "postal administration"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "book",
+      "cap",
+      "tassel"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-06T10:48:15.662Z"
+  },
+  {
+    "id": "icon-calendar-page",
+    "kind": "prop",
+    "description": "Wall-calendar sheet with a postal-red header band and a blank day grid (scene writes or marks the days). ~200 px.",
+    "ideas": [
+      "opening days",
+      "dates"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "page",
+      "header",
+      "bindings",
+      "day-grid"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.966Z"
+  },
+  {
+    "id": "icon-clock",
+    "kind": "prop",
+    "description": "Round clock face: red rim, cream face, ink hour ticks; hands as separate parts #hour and #minute. ~220 px.",
+    "ideas": [
+      "business hours",
+      "time limits"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "rim",
+      "face",
+      "ticks",
+      "hour",
+      "minute",
+      "pivot"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.966Z"
+  },
+  {
+    "id": "icon-envelope-letter",
+    "kind": "prop",
+    "description": "Plain white envelope with a red airmail stripe edge and flap line; no writing. ~120 px.",
+    "ideas": [
+      "letter delivery",
+      "mail sorting"
+    ],
+    "anchors": [
+      "base",
+      "grip"
+    ],
+    "parts": [
+      "envelope",
+      "airmail",
+      "folds",
+      "flap"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.967Z"
+  },
+  {
+    "id": "icon-house-small",
+    "kind": "prop",
+    "description": "One small addressee house: cream walls, postal-red door and roof edge. ~110 px.",
+    "ideas": [
+      "addressee",
+      "home delivery"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "walls",
+      "roof",
+      "door",
+      "windows",
+      "step"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.967Z"
+  },
+  {
+    "id": "icon-houseboat",
+    "kind": "prop",
+    "description": "Kashmiri-style wooden houseboat: sand hull, postal-red roof, carved rail, sitting on three ink water lines. ~320 px.",
+    "ideas": [
+      "floating post office",
+      "Dal Lake"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "cabin",
+      "door",
+      "roof",
+      "rail",
+      "hull",
+      "water"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.968Z"
+  },
+  {
+    "id": "icon-ledger-book",
+    "kind": "prop",
+    "description": "Open account ledger: postal-red cover, cream ruled pages, a rupee sign on the spine; flat ink 3 px. ~200 px.",
+    "ideas": [
+      "accounts",
+      "money flow"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "cover",
+      "left-page",
+      "right-page",
+      "spine",
+      "rupee"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.968Z"
+  },
+  {
+    "id": "icon-mail-bag-red",
+    "kind": "prop",
+    "description": "Postman's satchel in postal red with a flap, buckle and strap; no person. ~180 px.",
+    "ideas": [
+      "postman satchel",
+      "delivery"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "strap",
+      "body",
+      "flap",
+      "buckle"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.968Z"
+  },
+  {
+    "id": "icon-moon-star",
+    "kind": "symbol",
+    "description": "Crescent moon with one small star, India Post yellow fill, ink outline; a symbol for night service. ~160 px.",
+    "ideas": [
+      "night service",
+      "night post office"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "moon",
+      "star"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.969Z"
+  },
+  {
+    "id": "icon-mountain-peak",
+    "kind": "symbol",
+    "description": "Snow-capped mountain peak, slate and white, ink outline. ~360 px.",
+    "ideas": [
+      "high altitude",
+      "mountain post office"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "mountain",
+      "snow",
+      "ridge"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.969Z"
+  },
+  {
+    "id": "icon-nameplate",
+    "kind": "prop",
+    "description": "Blank desk nameplate for a designation: postal-red base, white plate with a thin #ead9a8 border; no lettering (scene writes the designation). ~300x90 px.",
+    "ideas": [
+      "officer designation",
+      "authority"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "stand",
+      "plate",
+      "base"
+    ],
+    "viewBox": "0 0 300 90",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.969Z"
+  },
+  {
+    "id": "icon-navy-ship",
+    "kind": "prop",
+    "description": "Grey naval ship side view, slate #4b4f58 hull, ink outline, no numbers or flag lettering. ~280 px.",
+    "ideas": [
+      "naval mail",
+      "armed forces post"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "superstructure",
+      "bridge-windows",
+      "mast",
+      "radar",
+      "deck",
+      "hull",
+      "portholes"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.969Z"
+  },
+  {
+    "id": "icon-parcel-box",
+    "kind": "prop",
+    "description": "Brown-paper parcel (sand #e3cfa3 fill) tied with an ink string cross. ~120 px.",
+    "ideas": [
+      "parcel",
+      "article types"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "box",
+      "folds",
+      "string"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.970Z"
+  },
+  {
+    "id": "icon-pin-tag",
+    "kind": "prop",
+    "description": "Luggage-style tag with a string, reading 'PIN' with six empty digit boxes (no digits). ~220 px.",
+    "ideas": [
+      "PIN code",
+      "address sorting"
+    ],
+    "anchors": [
+      "grip",
+      "base"
+    ],
+    "parts": [
+      "string",
+      "tag",
+      "eyelet",
+      "pin-lettering",
+      "digit-boxes",
+      "digit-1",
+      "digit-2",
+      "digit-3",
+      "digit-4",
+      "digit-5",
+      "digit-6"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.970Z"
+  },
+  {
+    "id": "icon-post-office-building",
+    "kind": "prop",
+    "description": "Small flat-ink post-office front: cream walls, postal-red #9e1b1b roof band and door, a blank sign plate, 3 px ink #2b2622 rounded outlines. No lettering. Used at fixed scales: HO 1.0 (~260 px), SO 0.8, BO 0.62.",
+    "ideas": [
+      "office hierarchy",
+      "postal network"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "walls",
+      "roof",
+      "sign",
+      "windows",
+      "door"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.970Z"
+  },
+  {
+    "id": "icon-rulebook-2024",
+    "kind": "prop",
+    "description": "One closed book with a postal-red cover and a blank white label panel on the front (scene writes 'Regulations 2024'); room for two side tabs. ~200 px. Pairs with old-book-stack as the new rules.",
+    "ideas": [
+      "new regulations",
+      "rules comparison"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "tabs",
+      "tab-1",
+      "tab-2",
+      "pages",
+      "cover",
+      "spine",
+      "label"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.971Z"
+  },
+  {
+    "id": "icon-town-skyline",
+    "kind": "symbol",
+    "description": "Row of four flat town buildings of different heights, cream and sand fills, ink outlines, no signs. ~520 px wide.",
+    "ideas": [
+      "town offices",
+      "urban network"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "building-1",
+      "building-2",
+      "building-3",
+      "building-4",
+      "ground"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.971Z"
+  },
+  {
+    "id": "icon-village-huts",
+    "kind": "symbol",
+    "description": "Two village huts with thatched roofs and a tree on a ground line, flat ink. ~420 px wide.",
+    "ideas": [
+      "village network",
+      "rural service"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "tree",
+      "trunk",
+      "canopy",
+      "hut-1",
+      "roof-1",
+      "hut-2",
+      "roof-2",
+      "ground"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.971Z"
+  },
+  {
+    "id": "pigeonhole-rack",
+    "kind": "prop",
+    "description": "Postal sorting rack: postal-red frame, 2 rows x 4 cream compartments, a blank label strip under each compartment (scene writes the labels). ~900x520 px.",
+    "ideas": [
+      "sorting compartments",
+      "postal recap"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "frame",
+      "compartment-1",
+      "compartment-2",
+      "compartment-3",
+      "compartment-4",
+      "compartment-5",
+      "compartment-6",
+      "compartment-7",
+      "compartment-8",
+      "label-1",
+      "label-2",
+      "label-3",
+      "label-4",
+      "label-5",
+      "label-6",
+      "label-7",
+      "label-8"
+    ],
+    "viewBox": "0 0 900 520",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-12T18:01:33.977Z"
+  },
+  {
+    "id": "letter-box-pillar",
+    "kind": "prop",
+    "description": "Round red pillar letter box with a domed cap, ink outline, dark slot near the top, blank cream collection plate, grey base; 200x420.",
+    "ideas": [
+      "letter box",
+      "posting a letter",
+      "clearance",
+      "last collection"
+    ],
+    "anchors": [
+      "base",
+      "top",
+      "mouth"
+    ],
+    "parts": [
+      "cap",
+      "body",
+      "slot",
+      "collection-plate",
+      "door-line",
+      "base-plinth"
+    ],
+    "viewBox": "0 0 200 420",
+    "source": "20261112-110007-business-hours-holidays-and-night-post-o",
+    "createdAt": "2026-11-12T18:29:32.360Z"
+  },
+  {
+    "id": "newspaper-bundle",
+    "kind": "prop",
+    "description": "Folded newspaper bundle, white with grey column lines and a blank masthead band, papers stacked beneath, tied crosswise with a sand string and bow; 300x200.",
+    "ideas": [
+      "newspapers",
+      "registered newspaper",
+      "bulk posting",
+      "printed matter"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "paper",
+      "masthead",
+      "columns",
+      "string",
+      "lower-papers"
+    ],
+    "viewBox": "0 0 300 200",
+    "source": "20261112-110007-business-hours-holidays-and-night-post-o",
+    "createdAt": "2026-11-12T18:29:32.360Z"
+  },
+  {
+    "id": "post-office-front",
+    "kind": "prop",
+    "description": "Flat ink small post-office building, front view: cream walls, postal-red roof band and gable, red arched door, two pale-yellow windows, blank white sign plate under the roof band for the scene to letter (Branch Office, Night Post Office, 24 x 7). Ink outline 3 px, 420x340 at scale 1.",
+    "ideas": [
+      "post office",
+      "branch office",
+      "night post office",
+      "office hours",
+      "a working office"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "building",
+      "roof-band",
+      "gable",
+      "walls",
+      "sign-plate",
+      "door",
+      "window-left",
+      "window-right",
+      "step",
+      "plinth"
+    ],
+    "viewBox": "0 0 420 340",
+    "source": "20261112-110007-business-hours-holidays-and-night-post-o",
+    "createdAt": "2026-11-12T18:29:32.361Z"
+  },
+  {
+    "id": "timings-notice-board",
+    "kind": "prop",
+    "description": "White notice board on two ink posts, blank postal-red header strip, five blank grey rule lines for timings the scene writes; 520x560.",
+    "ideas": [
+      "timings",
+      "public notice",
+      "office hours board",
+      "holiday list"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "board",
+      "header-strip",
+      "rule-lines",
+      "line-1",
+      "line-2",
+      "line-3",
+      "line-4",
+      "line-5",
+      "posts"
+    ],
+    "viewBox": "0 0 520 560",
+    "source": "20261112-110007-business-hours-holidays-and-night-post-o",
+    "createdAt": "2026-11-12T18:29:32.361Z"
+  },
+  {
+    "id": "aerogramme",
+    "kind": "prop",
+    "description": "Pale blue folded aerogramme with an inset red-and-blue airmail border and an outlined printed stamp. No lettering.",
+    "ideas": [
+      "airmail sheet",
+      "compare international stationery",
+      "printed postage"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "paper",
+      "airmail-border",
+      "fold",
+      "printed-stamp"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-15T19:05:57.340Z"
+  },
+  {
+    "id": "embossed-envelope",
+    "kind": "prop",
+    "description": "White address-side envelope with faint address rules and a round double-outline embossed stamp in the top-right corner.",
+    "ideas": [
+      "embossed stationery",
+      "prepaid envelope",
+      "compare postal articles"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "paper",
+      "embossed-stamp",
+      "address-rules"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-15T19:05:57.340Z"
+  },
+  {
+    "id": "franking-impression",
+    "kind": "symbol",
+    "description": "Postal-red franking impression with a blank date ring, three short cancellation waves and a blank rectangular value box.",
+    "ideas": [
+      "machine-paid postage",
+      "date and value",
+      "franking example"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "date-ring",
+      "cancellation",
+      "value-box"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-15T19:05:57.340Z"
+  },
+  {
+    "id": "franking-machine",
+    "kind": "prop",
+    "description": "Slate side-view desktop franking machine with a cream feed plate, a visible feeder slot, a separately animatable roller, and postal-red trim.",
+    "ideas": [
+      "feed an envelope",
+      "metered postage",
+      "print an impression"
+    ],
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "chassis",
+      "feet",
+      "feed-plate",
+      "feed-slot",
+      "roller",
+      "trim",
+      "control-panel"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-15T19:05:57.341Z"
+  },
+  {
+    "id": "letter-card",
+    "kind": "prop",
+    "description": "Pale blue-grey inland letter card. The folded front shows by default; the hidden open sheet has three individually named flaps and a blank interior.",
+    "ideas": [
+      "inland letter card",
+      "open and folded views",
+      "postal stationery comparison"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "folded",
+      "folded-paper",
+      "printed-stamp",
+      "sender-box",
+      "letter-address-rules",
+      "open",
+      "open-sheet",
+      "flaps",
+      "flap-top",
+      "flap-left",
+      "flap-right"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-15T19:05:57.341Z"
+  },
+  {
+    "id": "office-safe",
+    "kind": "prop",
+    "description": "A steel office safe with a visibly open door, two interior shelves, steel fittings and a combination dial.",
+    "ideas": [
+      "secure stamp storage",
+      "open a safe",
+      "shelves for stock"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "feet",
+      "cabinet",
+      "compartments",
+      "shelf-top",
+      "shelf-bottom",
+      "hinges",
+      "door",
+      "door-panel",
+      "dial",
+      "boltwork"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-15T19:05:57.341Z"
+  },
+  {
+    "id": "phone-screen",
+    "kind": "prop",
+    "description": "Ink smartphone housing with a blank cream display, slim speaker and simple home indicator.",
+    "ideas": [
+      "digital postage",
+      "scan a code",
+      "postal app view"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "housing",
+      "screen",
+      "speaker",
+      "home-indicator",
+      "side-keys"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-15T19:05:57.341Z"
+  },
+  {
+    "id": "postage-due-mark",
+    "kind": "symbol",
+    "description": "A slate handstamp with a lightly irregular outline, a blank amount box and a separate blank initials rule.",
+    "ideas": [
+      "postage due",
+      "initials field",
+      "amount stamped by scene"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "impression",
+      "amount-box",
+      "initials-line"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-15T19:05:57.341Z"
+  },
+  {
+    "id": "postage-stamp",
+    "kind": "prop",
+    "description": "A single perforated postage stamp with a postal-red border, a cream face and a blank value box. No lettering or emblem.",
+    "ideas": [
+      "postage paid",
+      "added stamp",
+      "stamp denomination"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "perforated-frame",
+      "face",
+      "value-box"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-15T19:05:57.342Z"
+  },
+  {
+    "id": "postcard-blank",
+    "kind": "prop",
+    "description": "Buff postcard with an address-side stamp, a centre divider and grey address rules. The hidden back group is a plain reverse.",
+    "ideas": [
+      "postcard address side",
+      "plain reverse",
+      "postal stationery comparison"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "front",
+      "front-paper",
+      "printed-stamp",
+      "divider",
+      "address-rules",
+      "back"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-15T19:05:57.342Z"
+  },
+  {
+    "id": "postmark",
+    "kind": "symbol",
+    "description": "Double-ring round postmark with a blank horizontal date band and three cancellation waves. Recolour the impression group as a unit.",
+    "ideas": [
+      "date in force",
+      "mail cancellation",
+      "validity marker"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "impression",
+      "rings",
+      "date-band",
+      "cancellation"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-15T19:05:57.342Z"
+  },
+  {
+    "id": "qr-tile",
+    "kind": "symbol",
+    "description": "A white tile with a deliberately unencoded decorative code pattern: three uneven corner motifs and abstract ink modules.",
+    "ideas": [
+      "placeholder for a scan",
+      "digital postage illustration"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "tile",
+      "corner-motifs",
+      "modules"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-15T19:05:57.342Z"
+  },
+  {
+    "id": "registration-envelope",
+    "kind": "prop",
+    "description": "White registration envelope with a blank red-outlined band down the left side and a printed stamp at top right.",
+    "ideas": [
+      "registered letter",
+      "registered stationery",
+      "printed postage"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "paper",
+      "registration-band",
+      "printed-stamp",
+      "address-rules"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-15T19:05:57.342Z"
+  },
+  {
+    "id": "rupee-cash",
+    "kind": "prop",
+    "description": "Two generic folded notes in muted green-grey behind a sand-coloured coin carrying a hand-drawn rupee sign (₹). No real note design.",
+    "ideas": [
+      "pay in cash",
+      "postage amount",
+      "payment option"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "back-note",
+      "front-note",
+      "coin",
+      "rupee-sign"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-15T19:05:57.343Z"
+  },
+  {
+    "id": "scales-icon",
+    "kind": "symbol",
+    "description": "Level justice scales with two sand-filled pans, a flat ink stand and separately animatable pans and beam.",
+    "ideas": [
+      "weigh a rule",
+      "legal comparison",
+      "balance an argument"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "stand",
+      "beam",
+      "left-pan",
+      "right-pan"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-15T19:05:57.343Z"
+  },
+  {
+    "id": "business-reply-card",
+    "kind": "prop",
+    "description": "White card, address side, 560x360: two thick ink vertical bars near the right edge (#bars), blank top band for postmarks (#top-band), blank address block (#address-block), blank permit-number line (#permit-line). No lettering.",
+    "ideas": [
+      "Business reply layout",
+      "Postmark band and permit fields",
+      "Two identifying vertical bars"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "paper",
+      "top-band",
+      "bars",
+      "address-block",
+      "permit-line"
+    ],
+    "viewBox": "0 0 560 360",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-16T09:38:15.794Z"
+  },
+  {
+    "id": "envelope-face-large",
+    "kind": "prop",
+    "description": "Big white address-side envelope diagram, 1200x760 at scale 1, #ead9a8 border, ink outline 3 px: blank dashed top-right stamp box (#stamp-box), blank address block of 4 grey rules (#address-block), faint top band (#top-zone). No lettering.",
+    "ideas": [
+      "Stamp placement",
+      "Address-side clear zones",
+      "Postmark placement"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "paper",
+      "top-zone",
+      "stamp-box",
+      "address-block"
+    ],
+    "viewBox": "0 0 1200 760",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-16T09:38:15.795Z"
+  },
+  {
+    "id": "invoice-sheet",
+    "kind": "prop",
+    "description": "White ruled form sheet 300x400: blank surface-coloured header strip, six blank rows, signature line at the bottom; ink outline. Used as invoice, statement of mailing, journal, bill and daily account.",
+    "ideas": [
+      "Invoice form",
+      "Mailing statement or journal",
+      "Bill or daily account"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "paper",
+      "header",
+      "rows",
+      "signature-line"
+    ],
+    "viewBox": "0 0 300 400",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-16T09:38:15.795Z"
+  },
+  {
+    "id": "letter-box",
+    "kind": "prop",
+    "description": "Drawn postal-red (#9e1b1b) pillar letter box, 260x520: rounded cap, dark slot, cream plate (blank), plinth; ink outline 3 px. Stand-in when the photo is missing.",
+    "ideas": [
+      "Pillar letter box",
+      "Posting at a slot",
+      "Photo stand-in"
+    ],
+    "anchors": [
+      "base",
+      "top",
+      "mouth"
+    ],
+    "parts": [
+      "body",
+      "cap",
+      "slot",
+      "plate",
+      "plinth"
+    ],
+    "viewBox": "0 0 260 520",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-16T09:38:15.796Z"
+  },
+  {
+    "id": "mail-bag",
+    "kind": "prop",
+    "description": "Canvas-sand mail bag with drawstring neck and a postal-red band, envelope corners peeking out of the mouth; 320x380.",
+    "ideas": [
+      "Open mail sack",
+      "Letters awaiting dispatch"
+    ],
+    "anchors": [
+      "base",
+      "mouth"
+    ],
+    "parts": [
+      "back-fabric",
+      "opening",
+      "envelopes",
+      "sack",
+      "band",
+      "drawstring",
+      "seams"
+    ],
+    "viewBox": "0 0 320 380",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-16T09:38:15.796Z"
+  },
+  {
+    "id": "non-postage-labels",
+    "kind": "symbol",
+    "description": "Two generic labels side by side, no real design, words or emblem: #revenue a grey-green rectangular stamp with wavy frame and blank centre; #charity a round pale-yellow sticker with a heart outline. 360x200.",
+    "ideas": [
+      "Revenue versus charity labels",
+      "Separate non-postage designs"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "revenue",
+      "charity"
+    ],
+    "viewBox": "0 0 360 200",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-16T09:38:15.797Z"
+  },
+  {
+    "id": "parcel-with-tag",
+    "kind": "prop",
+    "description": "Brown-paper packet (#c9a978 on cream) tied crosswise with sand string, a white blank tag hanging from a loop; 420x320. Parts #packet, #string, #tag.",
+    "ideas": [
+      "Tied parcel",
+      "Show placement on tag",
+      "Mail transfer"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "packet",
+      "string",
+      "tag"
+    ],
+    "viewBox": "0 0 420 320",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-16T09:38:15.797Z"
+  },
+  {
+    "id": "postal-date-stamp",
+    "kind": "symbol",
+    "description": "Round ink postal date-stamp impression, 300x300: double ring, blank straight date bar across the middle, blank office arc; ink #2b2622 at 85% opacity. No real office name.",
+    "ideas": [
+      "Date impression",
+      "Office arc overlay",
+      "Cancellation"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "rings",
+      "office-arc",
+      "date-bar"
+    ],
+    "viewBox": "0 0 300 300",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-16T09:38:15.798Z"
+  },
+  {
+    "id": "rubber-date-stamp",
+    "kind": "prop",
+    "description": "Hand-held rubber date stamp: wooden knob, neck, slate base, side view; 200x300.",
+    "ideas": [
+      "Hand-held date stamp",
+      "Cancellation from the side"
+    ],
+    "anchors": [
+      "grip",
+      "base"
+    ],
+    "parts": [
+      "handle",
+      "neck",
+      "knob",
+      "base"
+    ],
+    "viewBox": "0 0 200 300",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-16T09:38:15.799Z"
+  },
+  {
+    "id": "accounting-meter",
+    "kind": "prop",
+    "description": "Slate counter box with a blank cream digit window, two small buttons and a slot, and a small sand arrow plate on a post on top (the scene draws an up or down arrow there)",
+    "ideas": [
+      "ascending meter",
+      "descending meter",
+      "postage used / credit left",
+      "meter reading"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "meter-body",
+      "digit-window",
+      "arrow-plate"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261116-094733-franking-machines",
+    "createdAt": "2026-11-16T17:02:13.734Z"
+  },
+  {
+    "id": "adhesive-stamp",
+    "kind": "symbol",
+    "description": "Plain perforated postage stamp, 160x190 at real size: white paper with a perforated edge, postal-red border, blank white centre",
+    "ideas": [
+      "adhesive postage stamp",
+      "stamps vs franking",
+      "postage paid",
+      "fact stamp"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "paper",
+      "border",
+      "centre"
+    ],
+    "viewBox": "0 0 160 190",
+    "source": "20261116-094733-franking-machines",
+    "createdAt": "2026-11-16T17:02:13.735Z"
+  },
+  {
+    "id": "calendar-page",
+    "kind": "prop",
+    "description": "Tear-off calendar page, 260x300 at real size: red top strip with three rings, a big blank day box and a dotted tear line near the bottom (the scene writes the day)",
+    "ideas": [
+      "date / deadline",
+      "number of days",
+      "daily posting",
+      "time limit"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "page",
+      "top-strip",
+      "rings",
+      "day-box"
+    ],
+    "viewBox": "0 0 260 300",
+    "source": "20261116-094733-franking-machines",
+    "createdAt": "2026-11-16T17:02:13.735Z"
+  },
+  {
+    "id": "lead-seal",
+    "kind": "prop",
+    "description": "Grey lead seal disk crimped on a twisted wire loop, with two short wire ends below: the old mechanical seal",
+    "ideas": [
+      "old lead seal",
+      "sealing the machine",
+      "mechanical era",
+      "replaced by PSD"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "wire",
+      "disk"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261116-094733-franking-machines",
+    "createdAt": "2026-11-16T17:02:13.735Z"
+  },
+  {
+    "id": "licence-certificate",
+    "kind": "prop",
+    "description": "White licence certificate, 360x460 at real size, with a blank postal-red top band, five grey rules and a red round seal at bottom right; no lettering (the scene can write a title in white on the band)",
+    "ideas": [
+      "franking licence",
+      "licence granted / renewed",
+      "licensing authority",
+      "licence period"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "sheet",
+      "band",
+      "rules",
+      "seal"
+    ],
+    "viewBox": "0 0 360 460",
+    "source": "20261116-094733-franking-machines",
+    "createdAt": "2026-11-16T17:02:13.735Z"
+  },
+  {
+    "id": "psd-chip",
+    "kind": "prop",
+    "description": "Postal Security Device: dark slate security chip, 240x240 with its pins, gold pins on all four sides and a gold shield outline on its face",
+    "ideas": [
+      "Postal Security Device",
+      "secure accounting",
+      "replaces the lead seal",
+      "tamper-proof"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "pins",
+      "chip-body",
+      "shield"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261116-094733-franking-machines",
+    "createdAt": "2026-11-16T17:02:13.736Z"
+  },
+  {
+    "id": "rmfm-digital-frank",
+    "kind": "symbol",
+    "description": "Blue (#2456a6) digital RMFM frank on white, 520x300 at real size: an empty value box top left, four blank lines below it (date, PIN, licence identifier, CRN), each with a small blue marker where the scene writes the value, and a square 2D barcode at the right; no lettering",
+    "ideas": [
+      "RMFM digital frank",
+      "what a frank shows",
+      "blue impression on mail",
+      "unique frank / barcode"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "frank-paper",
+      "value-box",
+      "date-line",
+      "pin-line",
+      "id-line",
+      "crn-line",
+      "barcode"
+    ],
+    "viewBox": "0 0 520 300",
+    "source": "20261116-094733-franking-machines",
+    "createdAt": "2026-11-16T17:02:13.736Z"
+  },
+  {
+    "id": "rmfs-server",
+    "kind": "prop",
+    "description": "Flat ink server tower: slate body with three dark drive slots, two vent lines and a small green status dot, three signal arcs above it; ink 3 px",
+    "ideas": [
+      "RMFS central server",
+      "remote management",
+      "online resetting",
+      "data sent to the server"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "signal-arcs",
+      "tower",
+      "drive-slots",
+      "status-dot"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261116-094733-franking-machines",
+    "createdAt": "2026-11-16T17:02:13.736Z"
+  },
+  {
+    "id": "window-ticket",
+    "kind": "prop",
+    "description": "Small sand-coloured ticket card, 320x200 at real size, with a punched hole at left (a real hole), a blank photo box and two rules: the old window (delivery) ticket",
+    "ideas": [
+      "window ticket",
+      "delivery at the window",
+      "old procedure",
+      "identity of the licensee"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "ticket",
+      "photo-box",
+      "rules"
+    ],
+    "viewBox": "0 0 320 200",
+    "source": "20261116-094733-franking-machines",
+    "createdAt": "2026-11-16T17:02:13.736Z"
+  },
+  {
+    "id": "airtight-tin",
+    "kind": "prop",
+    "description": "Round grey metal tin with a sealed lid seam, ink outline; 220x240",
+    "ideas": [
+      "identify sealed metal packaging",
+      "highlight the continuous lid seam"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "body",
+      "lid",
+      "sealed-seam"
+    ],
+    "viewBox": "0 0 220 240",
+    "source": "20261116-174103-packing-sealing-and-posting",
+    "createdAt": "2026-11-16T22:03:32.337Z"
+  },
+  {
+    "id": "booking-kiosk",
+    "kind": "prop",
+    "description": "Ink self-booking kiosk: screen, receipt slot, base, postal-red trim; 240x460",
+    "ideas": [
+      "show self-booking",
+      "highlight the screen and receipt slot"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "body",
+      "front-panel",
+      "screen-bezel",
+      "screen",
+      "postal-trim",
+      "receipt-slot",
+      "service-panel",
+      "base"
+    ],
+    "viewBox": "0 0 240 460",
+    "source": "20261116-174103-packing-sealing-and-posting",
+    "createdAt": "2026-11-16T22:03:32.338Z"
+  },
+  {
+    "id": "booking-receipt",
+    "kind": "prop",
+    "description": "White receipt slip with a barcode, a tracking-number line and blank rules; 260x380",
+    "ideas": [
+      "show the receipt handoff",
+      "highlight the tracking line and barcode"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "paper",
+      "header-band",
+      "blank-rules",
+      "barcode",
+      "tracking-line"
+    ],
+    "viewBox": "0 0 260 380",
+    "source": "20261116-174103-packing-sealing-and-posting",
+    "createdAt": "2026-11-16T22:03:32.338Z"
+  },
+  {
+    "id": "ceramic-cup",
+    "kind": "prop",
+    "description": "White ceramic cup with a thin red rim line, ink outline; 180x160",
+    "ideas": [
+      "illustrate fragile goods",
+      "identify the rim and handle"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "handle",
+      "cup-body",
+      "opening",
+      "red-rim"
+    ],
+    "viewBox": "0 0 180 160",
+    "source": "20261116-174103-packing-sealing-and-posting",
+    "createdAt": "2026-11-16T22:03:32.338Z"
+  },
+  {
+    "id": "clock-face",
+    "kind": "prop",
+    "description": "Round ink clock with hour ticks on a cream face; hands are parts #hour-hand and #minute-hand; 260x260",
+    "ideas": [
+      "show collection cutoffs and office hours",
+      "animate each hand around the centre"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "rim",
+      "dial",
+      "hour-ticks",
+      "hour-hand",
+      "minute-hand",
+      "hub"
+    ],
+    "viewBox": "0 0 260 260",
+    "source": "20261116-174103-packing-sealing-and-posting",
+    "createdAt": "2026-11-16T22:03:32.338Z"
+  },
+  {
+    "id": "glass-bottle",
+    "kind": "prop",
+    "description": "Glass bottle with a tight screw cap and pale blue liquid (part #liquid), ink outline; 140x300",
+    "ideas": [
+      "show a tightly closed liquid container",
+      "animate liquid as one group"
+    ],
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "parts": [
+      "glass",
+      "liquid",
+      "glass-glint",
+      "cap"
+    ],
+    "viewBox": "0 0 140 300",
+    "source": "20261116-174103-packing-sealing-and-posting",
+    "createdAt": "2026-11-16T22:03:32.338Z"
+  },
+  {
+    "id": "letter-box-icon",
+    "kind": "prop",
+    "description": "Flat ink pillar letter box, postal red, black slot, blank plate for lettering; 220x420",
+    "ideas": [
+      "identify postal collection",
+      "label the blank plate and point to the slot"
+    ],
+    "anchors": [
+      "base",
+      "mouth"
+    ],
+    "parts": [
+      "pillar",
+      "cap",
+      "service-door",
+      "slot",
+      "plate",
+      "foot"
+    ],
+    "viewBox": "0 0 220 420",
+    "source": "20261116-174103-packing-sealing-and-posting",
+    "createdAt": "2026-11-16T22:03:32.338Z"
+  },
+  {
+    "id": "phone-app",
+    "kind": "prop",
+    "description": "Ink smartphone with a blank screen panel for the scene to fill; 200x380",
+    "ideas": [
+      "show mobile booking",
+      "overlay the scene interface in the blank screen"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "side-buttons",
+      "case",
+      "screen",
+      "speaker",
+      "home-bar"
+    ],
+    "viewBox": "0 0 200 380",
+    "source": "20261116-174103-packing-sealing-and-posting",
+    "createdAt": "2026-11-16T22:03:32.339Z"
+  },
+  {
+    "id": "protective-box",
+    "kind": "prop",
+    "description": "Cut-away protective box (outer walls metal grey or wood brown via part colours) with a central cavity and sawdust-dot absorbent filling round it; 420x360. Parts #outer #filling #cavity",
+    "ideas": [
+      "show an inner container surrounded by absorbent filling",
+      "contrast wooden and metal protection"
+    ],
+    "anchors": [
+      "base",
+      "mouth"
+    ],
+    "parts": [
+      "outer",
+      "box-shell",
+      "filling",
+      "cavity"
+    ],
+    "viewBox": "0 0 420 360",
+    "source": "20261116-174103-packing-sealing-and-posting",
+    "createdAt": "2026-11-16T22:03:32.339Z"
+  },
+  {
+    "id": "regulations-book",
+    "kind": "prop",
+    "description": "Closed hard-cover book, postal-red #9e1b1b cover with a blank white title panel for the scene to letter (Post Office Regulations 2024), cream page edges, 3 px ink outline; 300x400",
+    "ideas": [
+      "distinguish current regulations from the old Guide",
+      "letter an empty cover title"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "back-cover",
+      "page-edges",
+      "cover",
+      "spine",
+      "title-panel",
+      "binding-detail"
+    ],
+    "viewBox": "0 0 300 400",
+    "source": "20261116-174103-packing-sealing-and-posting",
+    "createdAt": "2026-11-16T22:03:32.339Z"
+  },
+  {
+    "id": "straight-pin",
+    "kind": "prop",
+    "description": "Ink straight pin with a round red head and a sharp point; 200x30",
+    "ideas": [
+      "show a pin hazard",
+      "call out the exposed point"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "shaft",
+      "head"
+    ],
+    "viewBox": "0 0 200 30",
+    "source": "20261116-174103-packing-sealing-and-posting",
+    "createdAt": "2026-11-16T22:03:32.339Z"
+  },
+  {
+    "id": "wax-seal",
+    "kind": "prop",
+    "description": "Round red sealing-wax blob (#9e1b1b with a darker edge) with a blank raised device ring; 120x120",
+    "ideas": [
+      "show a seal on a flap",
+      "highlight tamper-evident closure"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "wax",
+      "device-bed",
+      "device-ring",
+      "sheen"
+    ],
+    "viewBox": "0 0 120 120",
+    "source": "20261116-174103-packing-sealing-and-posting",
+    "createdAt": "2026-11-16T22:03:32.339Z"
+  },
+  {
+    "id": "window-envelope",
+    "kind": "prop",
+    "description": "White DL envelope 600x300 with a transparent window (pale blue tint, ink outline) holding three address lines and a barcode strip; faint dashed zones for logo (top-left), postage (top-right) and barcode (bottom strip). Parts #paper #window #address-block #barcode #logo-zone #postage-zone #barcode-zone",
+    "ideas": [
+      "measure DL size",
+      "highlight the window and postal zones"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "paper",
+      "logo-zone",
+      "postage-zone",
+      "barcode-zone",
+      "window",
+      "window-glint",
+      "address-block",
+      "barcode"
+    ],
+    "viewBox": "0 0 600 300",
+    "source": "20261116-174103-packing-sealing-and-posting",
+    "createdAt": "2026-11-16T22:03:32.340Z"
+  },
+  {
+    "id": "wooden-case",
+    "kind": "prop",
+    "description": "Small wooden case with plank lines and metal corners; 360x240",
+    "ideas": [
+      "show reinforced packaging",
+      "point to the plank walls and metal corners"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "case-planks",
+      "metal-corners"
+    ],
+    "viewBox": "0 0 360 240",
+    "source": "20261116-174103-packing-sealing-and-posting",
+    "createdAt": "2026-11-16T22:03:32.340Z"
+  },
+  {
+    "id": "icon-airplane",
+    "kind": "prop",
+    "description": "Flat ink mail plane, side view, cream body with a postal-red stripe. 400 square.",
+    "ideas": [
+      "air mail",
+      "flight transport"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "tail",
+      "far-wing",
+      "fuselage",
+      "stripe",
+      "near-wing",
+      "cockpit"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-18T16:05:50.722Z"
+  },
+  {
+    "id": "icon-city-pin",
+    "kind": "symbol",
+    "description": "Postal-red map pin with a white centre dot, ink outline. 120x160, base at the tip.",
+    "ideas": [
+      "map location",
+      "headquarters pin"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "pin-body",
+      "center-dot"
+    ],
+    "viewBox": "0 0 120 160",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-18T16:05:50.722Z"
+  },
+  {
+    "id": "icon-dak-bhawan",
+    "kind": "prop",
+    "description": "Generic multi-storey government office block, flat ink 3 px, cream walls, postal-red band and door, flat roof; no emblem, logo or lettering. 400 square, shown 260-420 px.",
+    "ideas": [
+      "central administration",
+      "headquarters"
+    ],
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "building",
+      "red-band",
+      "windows",
+      "entrance"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-18T16:05:50.722Z"
+  },
+  {
+    "id": "icon-designation-plate",
+    "kind": "prop",
+    "description": "Desk name plate: ink outline, white blank face for the scene's lettering, postal-red base strip. 400x200.",
+    "ideas": [
+      "blank job title",
+      "desk plate"
+    ],
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "feet",
+      "face",
+      "red-base"
+    ],
+    "viewBox": "0 0 400 200",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-18T16:05:50.722Z"
+  },
+  {
+    "id": "icon-envelope",
+    "kind": "prop",
+    "description": "Cream envelope with a postal-red flap line, flat ink 3 px. 400 square.",
+    "ideas": [
+      "mail",
+      "postal service"
+    ],
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "body",
+      "folds",
+      "flap"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-18T16:05:50.723Z"
+  },
+  {
+    "id": "icon-forms-stack",
+    "kind": "prop",
+    "description": "Stack of cream forms with a pencil on top, flat ink 3 px. 400 square.",
+    "ideas": [
+      "forms",
+      "supplies"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "rear-sheets",
+      "top-sheet",
+      "pencil"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-18T16:05:50.723Z"
+  },
+  {
+    "id": "icon-graduation-cap",
+    "kind": "prop",
+    "description": "Ink mortarboard with a postal-red tassel. 400 square.",
+    "ideas": [
+      "training",
+      "staff development"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "skull-cap",
+      "mortarboard",
+      "tassel"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-18T16:05:50.723Z"
+  },
+  {
+    "id": "icon-notice-document",
+    "kind": "prop",
+    "description": "White sheet with a sand header strip, grey placeholder lines and a folded corner; nothing official-looking, no emblem. 300x400.",
+    "ideas": [
+      "generic notice",
+      "order document"
+    ],
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "sheet",
+      "header",
+      "fold",
+      "placeholder-lines"
+    ],
+    "viewBox": "0 0 300 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-18T16:05:50.723Z"
+  },
+  {
+    "id": "icon-passbook-rupee",
+    "kind": "prop",
+    "description": "Postal-red passbook with a white rupee sign, flat ink 3 px. 400 square.",
+    "ideas": [
+      "passbook",
+      "savings"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "pages",
+      "cover",
+      "rupee-mark"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-18T16:05:50.724Z"
+  },
+  {
+    "id": "icon-tech-laptop",
+    "kind": "prop",
+    "description": "Open laptop, cream screen with ink code lines and a small gear. 400 square.",
+    "ideas": [
+      "postal software",
+      "technology support"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "display",
+      "code-lines",
+      "gear",
+      "keyboard-base"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-18T16:05:50.724Z"
+  },
+  {
+    "id": "icon-village-post-office",
+    "kind": "prop",
+    "description": "Small one-storey village post office, cream walls, red roof strip, a tiny red letter box beside the door, blank signboard. 400 square.",
+    "ideas": [
+      "village office",
+      "local postal access"
+    ],
+    "anchors": [
+      "top",
+      "base"
+    ],
+    "parts": [
+      "walls",
+      "roof",
+      "sign",
+      "door",
+      "window",
+      "letter-box",
+      "threshold"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-18T16:05:50.724Z"
+  },
+  {
+    "id": "icon-welfare-hands",
+    "kind": "prop",
+    "description": "Two cupped ink hands holding a small postal-red heart. 400 square.",
+    "ideas": [
+      "employee welfare",
+      "care and support"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "heart",
+      "left-hand",
+      "right-hand"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-18T16:05:50.724Z"
+  },
+  {
+    "id": "step-ladder-diagram",
+    "kind": "symbol",
+    "description": "Five wide cream steps rising left to right with ink edges, each tread blank for a label the scene writes; bottom step at left. 1200x600.",
+    "ideas": [
+      "administrative hierarchy",
+      "five blank steps"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "step-1",
+      "step-2",
+      "step-3",
+      "step-4",
+      "step-5"
+    ],
+    "viewBox": "0 0 1200 600",
+    "source": "20261024-150608-department-of-posts-structure-circles-an",
+    "createdAt": "2026-11-18T16:05:50.724Z"
+  },
+  {
+    "id": "account-ledger",
+    "kind": "prop",
+    "description": "Open account book seen from above: cream pages with faint ink ruled lines and a column rule, postal-red cloth cover and spine, a small red rupee sign drawn top-left of the right page; 3 px ink. Book spans about x 44-356, y 100-312 (~310x210) centred in the 400x400 box.",
+    "ideas": [
+      "HO accounts",
+      "accounts kept",
+      "money recorded",
+      "bookkeeping"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "ledger",
+      "cover",
+      "page-left",
+      "page-right",
+      "spine",
+      "rules-left",
+      "rules-right",
+      "rupee"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-18T20:32:08.399Z"
+  },
+  {
+    "id": "address-envelope",
+    "kind": "prop",
+    "description": "White envelope front, real size 640x400, with a thin #ead9a8 border and inner rule, a blank dashed stamp box top-right (#stamp-box, x 516-604, y 34-138) and four blank grey address rule lines lower-right (#line-1 to #line-4 at y 222, 264, 306, 348, x 290-604); the scene letters the address just above each line.",
+    "ideas": [
+      "how to address mail",
+      "army / navy postal address",
+      "C/o Fleet Mail Office",
+      "address lines"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "envelope",
+      "stamp-box",
+      "address-lines",
+      "line-1",
+      "line-2",
+      "line-3",
+      "line-4"
+    ],
+    "viewBox": "0 0 640 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-18T20:32:08.400Z"
+  },
+  {
+    "id": "calendar-sheet",
+    "kind": "prop",
+    "description": "Tear-off calendar page, real size 260x300: blank postal-red header strip (#header, y 22-88) for a short month or label, two ink binding rings on top, a dotted tear line, and a white body with a big blank writing area (#date-area, x 20-240, y 110-280) for the day or date the scene writes.",
+    "ideas": [
+      "Sunday",
+      "postal holiday",
+      "special opening day",
+      "working day"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "sheet",
+      "body",
+      "header",
+      "rings",
+      "date-area"
+    ],
+    "viewBox": "0 0 260 300",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-18T20:32:08.400Z"
+  },
+  {
+    "id": "mail-van",
+    "kind": "prop",
+    "description": "Closed mail transport van, side view facing right: slate cargo box with a postal-red band, small rear door outline at the back, no window or counter on its side, postal-red cab, dark wheels with cream hubs. Real-size viewBox 560x320; rests on base (280, 306).",
+    "ideas": [
+      "mail transport only",
+      "carries mail bags",
+      "no public counter"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "van",
+      "body",
+      "band",
+      "rear-door",
+      "cab",
+      "wheel-back",
+      "wheel-front"
+    ],
+    "viewBox": "0 0 560 320",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-18T20:32:08.400Z"
+  },
+  {
+    "id": "mobile-post-van",
+    "kind": "prop",
+    "description": "Postal-red van, side view facing right: open counter hatch (dark inside, cream counter ledge) under a scalloped cream awning, blank white sign panel (#sign, x 120-370, y 54-94) above it, two slate wheels. #shutter is drawn closed over the hatch but hidden (opacity 0): show it and grow scaleY from its top edge to roll it down. Wheels #wheel-back and #wheel-front have their own centred origins. Real-size viewBox 640x360; rests on base (320, 340).",
+    "ideas": [
+      "mobile post office",
+      "post office on wheels",
+      "fixed stops on a schedule",
+      "counter closed on holidays"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "van",
+      "body",
+      "cab",
+      "sign",
+      "hatch",
+      "counter",
+      "awning",
+      "shutter",
+      "wheel-back",
+      "wheel-front"
+    ],
+    "viewBox": "0 0 640 360",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-18T20:32:08.400Z"
+  },
+  {
+    "id": "wall-clock",
+    "kind": "prop",
+    "description": "Round wall clock (~260x260 centred in the 400x400 box): cream face, 6 px ink rim, twelve tick marks (quarters longer), ink hour hand #hand-hour and minute hand #hand-min as separate parts, red centre dot. Both hands point to 12 at rest; turn them with rotate(deg) about the centre (200, 200), which is set as their transform-origin.",
+    "ideas": [
+      "business hours",
+      "working hours",
+      "opening time",
+      "extended hours"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "clock",
+      "face",
+      "ticks",
+      "hand-hour",
+      "hand-min",
+      "centre-dot"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261106-175055-classes-and-types-of-post-offices",
+    "createdAt": "2026-11-18T20:32:08.401Z"
+  },
+  {
+    "id": "bo-hours-register",
+    "kind": "prop",
+    "description": "Open hand-written register lying flat, 640x420: sand pages with ink outline, postal-red cloth spine, right page split into two blank columns by a red rule (x 462) with a blank header row (y 40-90) and six faint ruled lines (y 136-366, 46 apart); left page blank. Scenes write the column heads and entries.",
+    "ideas": [
+      "BO hours register",
+      "office record",
+      "two columns",
+      "entries written in"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "cover",
+      "page-left",
+      "page-right",
+      "header-row",
+      "rows",
+      "col-rule"
+    ],
+    "viewBox": "0 0 640 420",
+    "source": "20261112-110007-business-hours-holidays-and-night-post-o",
+    "createdAt": "2026-11-19T06:47:46.795Z"
+  },
+  {
+    "id": "crescent-moon",
+    "kind": "symbol",
+    "description": "Symbol for night: flat crescent moon in India Post yellow #f2b705 with a 3 px ink outline and two small ink stars, 180x180; a symbol, never a sky.",
+    "ideas": [
+      "night",
+      "Night Post Office",
+      "late hours",
+      "after dark"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "moon",
+      "star-1",
+      "star-2"
+    ],
+    "viewBox": "0 0 180 180",
+    "source": "20261112-110007-business-hours-holidays-and-night-post-o",
+    "createdAt": "2026-11-19T06:47:46.796Z"
+  },
+  {
+    "id": "parcel-box",
+    "kind": "prop",
+    "description": "Sand cardboard parcel, 320x240, seen three-quarter, tied crosswise with ink string and a knot, blank white address label on the front face (x 118-250, y 128-218); 3 px ink outline.",
+    "ideas": [
+      "parcel",
+      "Speed Post parcel",
+      "booking",
+      "delivery"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "box",
+      "string",
+      "label"
+    ],
+    "viewBox": "0 0 320 240",
+    "source": "20261112-110007-business-hours-holidays-and-night-post-o",
+    "createdAt": "2026-11-19T06:47:46.796Z"
+  },
+  {
+    "id": "passbook",
+    "kind": "prop",
+    "description": "Closed savings passbook, 240x320: postal-red cover with a thin ink border and a blank cream label panel (x 62-202, y 70-154), lower right corner lifted showing cream pages.",
+    "ideas": [
+      "Savings Bank",
+      "deposit",
+      "account",
+      "cash certificates"
+    ],
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "parts": [
+      "cover",
+      "label",
+      "pages"
+    ],
+    "viewBox": "0 0 240 320",
+    "source": "20261112-110007-business-hours-holidays-and-night-post-o",
+    "createdAt": "2026-11-19T06:47:46.796Z"
+  },
+  {
+    "id": "week-day-tile",
+    "kind": "symbol",
+    "description": "White day tile, 220x240, #ead9a8 inner border, blank postal-red header strip (y 0-60) for the day name and a big blank body (x 12-208, y 72-226) for a note; 3 px ink outline.",
+    "ideas": [
+      "a day of the week",
+      "holiday",
+      "next working day",
+      "Sat Sun Mon row"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "tile",
+      "header",
+      "body"
+    ],
+    "viewBox": "0 0 220 240",
+    "source": "20261112-110007-business-hours-holidays-and-night-post-o",
+    "createdAt": "2026-11-19T06:47:46.797Z"
+  },
+  {
+    "id": "cancelled-stamp",
+    "kind": "prop",
+    "description": "The postage-stamp look with a grey part-postmark ring and wavy cancel lines across it; 400x400.",
+    "ideas": [
+      "cancel mark",
+      "generic used stamp"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "perforated-frame",
+      "face",
+      "value-box",
+      "cancel-mark",
+      "postmark-ring",
+      "cancel-lines"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-19T11:54:41.816Z"
+  },
+  {
+    "id": "counter-receipt",
+    "kind": "prop",
+    "description": "Narrow white till receipt with blank grey lines and a torn zigzag bottom edge; 220x420.",
+    "ideas": [
+      "counter proof of payment",
+      "blank till receipt"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "receipt-paper",
+      "receipt-header-rule",
+      "receipt-placeholder-lines",
+      "receipt-divider",
+      "receipt-footer-rule"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-19T11:54:41.817Z"
+  },
+  {
+    "id": "letter-scale",
+    "kind": "prop",
+    "description": "Small postal letter scale: flat cream pan (top) on a slate body with a blank white readout window; 420x360.",
+    "ideas": [
+      "letter weighing",
+      "blank scale display"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "scale-body",
+      "front-panel",
+      "left-foot",
+      "right-foot",
+      "readout",
+      "readout-window",
+      "pan",
+      "pan-surface"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-19T11:54:41.817Z"
+  },
+  {
+    "id": "packet-stack",
+    "kind": "prop",
+    "description": "Neat stack of brown-paper packets tied with string, front view; 420x360.",
+    "ideas": [
+      "stack of bulk packets",
+      "tied paper packets"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "packet-bottom",
+      "packet-middle",
+      "packet-top"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-19T11:54:41.818Z"
+  },
+  {
+    "id": "perforated-initials-stamp",
+    "kind": "prop",
+    "description": "Stamp with small punched holes forming two letters across its centre, value box still clear; 400x400.",
+    "ideas": [
+      "identifying perforation",
+      "clear value box"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "punched-mask",
+      "initial-holes",
+      "perforated-stamp",
+      "perforated-frame",
+      "face",
+      "value-box",
+      "hole-rims"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-19T11:54:41.818Z"
+  },
+  {
+    "id": "qr-code-stand",
+    "kind": "prop",
+    "description": "White counter standee on a postal-red foot holding a generic square QR pattern (ink modules, no logo), blank caption strip below; 300x420.",
+    "ideas": [
+      "non-functional QR stand",
+      "counter payment"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "stand-body",
+      "qr-panel",
+      "qr-pattern",
+      "caption-strip",
+      "stand-foot"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-19T11:54:41.818Z"
+  },
+  {
+    "id": "smartphone-blank",
+    "kind": "prop",
+    "description": "Ink-outlined phone, slate frame, blank white screen for the scene to letter; 260x500.",
+    "ideas": [
+      "blank phone screen",
+      "mobile payment"
+    ],
+    "anchors": [
+      "base",
+      "grip"
+    ],
+    "parts": [
+      "phone-shell",
+      "screen",
+      "speaker",
+      "home-bar",
+      "side-button"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-19T11:54:41.819Z"
+  },
+  {
+    "id": "stamp-sheet",
+    "kind": "prop",
+    "description": "Sheet of 4x5 blank perforated stamps with red borders and cream faces, white margin; 400x480.",
+    "ideas": [
+      "twenty blank stamps",
+      "supply sheet"
+    ],
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "parts": [
+      "sheet-margin",
+      "stamp-grid",
+      "stamp-1",
+      "stamp-2",
+      "stamp-3",
+      "stamp-4",
+      "stamp-5",
+      "stamp-6",
+      "stamp-7",
+      "stamp-8",
+      "stamp-9",
+      "stamp-10",
+      "stamp-11",
+      "stamp-12",
+      "stamp-13",
+      "stamp-14",
+      "stamp-15",
+      "stamp-16",
+      "stamp-17",
+      "stamp-18",
+      "stamp-19",
+      "stamp-20",
+      "perforations"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-19T11:54:41.819Z"
+  },
+  {
+    "id": "stamp-tin-box",
+    "kind": "prop",
+    "description": "Open wooden/tin box with its lid hinged back and stamp sheets inside; 360x240.",
+    "ideas": [
+      "stamp storage",
+      "protected stock"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "hinged-lid",
+      "box-cavity",
+      "stamp-sheets",
+      "front-wall",
+      "front-seam",
+      "latch"
+    ],
+    "viewBox": "0 0 400 400",
+    "source": "20261115-174412-payment-of-postage-stamps-and-postal-sta",
+    "createdAt": "2026-11-19T11:54:41.819Z"
+  },
+  {
+    "id": "calendar-quarters",
+    "kind": "prop",
+    "description": "White financial-year strip in four equal blocks (Apr-Jun, Jul-Sep, Oct-Dec, Jan-Mar, each 350 wide), each with a dashed blank value slot at the bottom; no lettering, the scene writes months and values. Each #qN holds a .q-fill rect to tint for a highlight.",
+    "ideas": [
+      "four quarters",
+      "financial year",
+      "quarterly fee",
+      "renewal timing"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "q1",
+      "q2",
+      "q3",
+      "q4"
+    ],
+    "viewBox": "0 0 1400 200",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-19T12:08:46.963Z"
+  },
+  {
+    "id": "city-big",
+    "kind": "symbol",
+    "description": "Big-city skyline icon: four tall blocks with window grids and an antenna, ink lines, sand fill, ground line.",
+    "ideas": [
+      "big cities",
+      "metro",
+      "urban offices"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "block1",
+      "block2",
+      "block3",
+      "block4"
+    ],
+    "viewBox": "0 0 320 260",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-19T12:08:46.963Z"
+  },
+  {
+    "id": "deposit-gauge",
+    "kind": "prop",
+    "description": "Vertical tank with #ead9a8 border, ink outline, small inlet on top and level ticks; soft-yellow fill rect #deposit-level, drawn full, transform-origin at the inner bottom so scaleY = state br-deposit 0-1 (or set y/height inside the inner box y 44-492).",
+    "ideas": [
+      "advance deposit",
+      "balance level",
+      "draining and refilling"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "tank",
+      "deposit-level",
+      "ticks"
+    ],
+    "viewBox": "0 0 220 520",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-19T12:08:46.963Z"
+  },
+  {
+    "id": "franchisee-outlet",
+    "kind": "prop",
+    "description": "Small shop front: sand walls, postal-red striped scalloped awning, a blank white sign board on two posts, an open counter window with a white ledge.",
+    "ideas": [
+      "franchise outlet",
+      "small post shop",
+      "booking point"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "building",
+      "counter",
+      "awning",
+      "sign"
+    ],
+    "viewBox": "0 0 360 320",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-19T12:08:46.963Z"
+  },
+  {
+    "id": "packet-with-tag",
+    "kind": "prop",
+    "description": "Sand brown-paper packet with ink outline, crossed string with a bow on top, and a separate loose white luggage tag (hole + its own string) hanging from the knot at the right. Blank: a scene may stamp onto #packet or #tag.",
+    "ideas": [
+      "small packet",
+      "parcel item",
+      "loose tag vs item",
+      "stamp on the item"
+    ],
+    "anchors": [
+      "base",
+      "top"
+    ],
+    "parts": [
+      "packet",
+      "string",
+      "tag"
+    ],
+    "viewBox": "0 0 360 240",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-19T12:08:46.963Z"
+  },
+  {
+    "id": "reply-label",
+    "kind": "prop",
+    "description": "White rectangular Business Reply label with the 2 thick vertical ink bars at right, three blank grey address lines, a folded peel corner top-left, and clear space top-left for scene text.",
+    "ideas": [
+      "business reply label",
+      "authorised label",
+      "reply article"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "label",
+      "peel",
+      "lines",
+      "bars"
+    ],
+    "viewBox": "0 0 420 240",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-19T12:08:46.964Z"
+  },
+  {
+    "id": "rupee-coin",
+    "kind": "symbol",
+    "description": "Round coin, sand fill, ink outline and a dotted inner ring; centre left blank for the scene's ₹1.",
+    "ideas": [
+      "₹1",
+      "small fee",
+      "coin payment"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "coin",
+      "coin-ring"
+    ],
+    "viewBox": "0 0 120 120",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-19T12:08:46.964Z"
+  },
+  {
+    "id": "town-small",
+    "kind": "symbol",
+    "description": "Small-town icon: three low houses with pitched roofs, doors and windows, ink lines, sand fill, ground line.",
+    "ideas": [
+      "small towns",
+      "smaller places",
+      "rural offices"
+    ],
+    "anchors": [
+      "base"
+    ],
+    "parts": [
+      "house1",
+      "house2",
+      "house3"
+    ],
+    "viewBox": "0 0 320 180",
+    "source": "20261116-035318-affixing-stamps-date-stamps-and-bulk-cas",
+    "createdAt": "2026-11-19T12:08:46.964Z"
+  }
+]
