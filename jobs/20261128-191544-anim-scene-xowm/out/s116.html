@@ -53,9 +53,7 @@
   {
     on: [
       [0,"color","#pledgee-en3",{to:"#6f6a63",dur:0.27}],
-      [1.63,"color","#pledgee-en4",{to:"#6f6a63",dur:0.28}],
-      [3.70,"color","#nhb-approved",{to:"#8a5d00",dur:0.3}],
-      [6.88,"color","#central-government-notified",{to:"#8a5d00",dur:0.3}]
+      [1.63,"color","#pledgee-en4",{to:"#6f6a63",dur:0.28}]
     ],
     update(t,section,$) {
       const get = id => $(id)[0];
@@ -71,6 +69,14 @@
       mark('#phrase-mark-3','Government company','#pledgee-en3',1,1-ease(t/.26));
       mark('#local-authority-marker','Local authority','#pledgee-en4',ease(t/.38),1-ease((t-1.63)/.28));
       mark('#housing-company-marker','Housing finance company','#pledgee-en5',ease((t-1.63)/.46));
+      // Recolour the inline spans without moving their shared text run.
+      const tint = (id, cue) => {
+        const u = ease((t-cue)/.30);
+        const rgb = [111,106,99].map((v,i) => Math.round(v+([138,93,0][i]-v)*u));
+        get(id).setAttribute('fill','rgb('+rgb.join(',')+')');
+      };
+      tint('#nhb-approved',3.70);
+      tint('#central-government-notified',6.88);
       const underline = (id,text,word,cue) => {
         const el=get(id),[x,w]=span(get(text),word),u=ease((t-cue)/.43);
         el.setAttribute('d',u>0?'M'+x+' 976 Q'+(x+w*u/2)+' 979 '+(x+w*u)+' 975':'');
