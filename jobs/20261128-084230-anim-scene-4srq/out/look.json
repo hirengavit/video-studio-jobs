@@ -8,12 +8,5 @@
   "10.57"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s192",
-   "text": "3 साल के बाद बंद: / 1%",
-   "t": 10.57
-  }
- ]
+ "warnings": []
 }
