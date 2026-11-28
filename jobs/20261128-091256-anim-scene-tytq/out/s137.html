@@ -29,6 +29,7 @@
     <g id="row2-pill">
       <rect x="900" y="600" width="740" height="145" rx="29" fill="#fde9a6"/>
       <text id="row2-line1" x="1270" y="663" fill="#8a5d00" font-size="48" font-weight="750" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="middle">1 साल बाद:</text>
+      <rect id="deduction-mark" x="1217" y="678" width="66" height="53" rx="9" fill="#f2b705" fill-opacity=".56"/>
       <text id="row2-line2" x="1270" y="719" fill="#8a5d00" font-size="44" font-weight="750" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="middle" textLength="666" lengthAdjust="spacingAndGlyphs">पूरे सालों की TD दर − 2 percentage points</text>
     </g>
     <path id="row2-tick" d="M1684 675l11 11 23-26" fill="none" stroke="#25734a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -49,7 +50,7 @@
 {
   on: [
     [0.00, "fade", "#row2-line2", {dur: 0.32}],
-    [2.02, "highlight", "#row2-line2", {words: "− 2", color: "#ffd54a", opacity: 0.74, pad: 4, dur: 0.40}],
+    [2.02, "fade", "#deduction-mark", {dur: 0.27}],
     [3.84, "draw", "#row2-tick", {dur: 0.38}],
     [4.48, "pop", "#row3-en", {from: 0.97, spring: "soft"}],
     [4.98, "pop", "#row3-hi", {from: 0.97, spring: "soft"}],
