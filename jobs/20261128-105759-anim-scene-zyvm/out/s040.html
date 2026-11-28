@@ -39,9 +39,9 @@
       <g id="first-bundle"><use href="piece:rupee-note-bundle" transform="translate(560 680)"/></g>
       <text id="first-caption" x="540" y="300" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="720" fill="#2b2622">1 खाता = 1 deposit</text>
       <g id="second-bundle"><use href="piece:rupee-note-bundle" transform="translate(1000 680)"/></g>
-      <text id="investment-caption" x="1155" y="300" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="700" fill="#2b2622">दूसरा निवेश</text>
+      <text id="investment-caption" x="1136" y="300" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="700" fill="#2b2622">दूसरा निवेश</text>
       <g id="second-book"><use href="piece:td-passbook-white" transform="translate(1380 464) scale(1.3)"/><text x="1551.6" y="612" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="750" fill="#9e1b1b" aria-hidden="true">TD · SB-5A</text></g>
-      <text id="second-caption" x="1550" y="300" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="700" fill="#2b2622">→ दूसरा खाता</text>
+      <text id="second-caption" x="1570" y="300" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="700" fill="#2b2622">→ दूसरा खाता</text>
       <path id="account-check" d="M1694 414l22 22 43-48" fill="none" stroke="#317650" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
     </g>
   </svg>
@@ -50,7 +50,9 @@
     shots: [[0,'#limits'],[5.82,'#one']],
     on: [
       [0,'fade','#accounts-question',{dur:.3}],
-      [.74,'pop',['#small-book-1','#small-book-2','#small-book-3'],{stagger:.12,spring:'soft',from:.94}],
+      [.74,'pop','#small-book-1',{spring:'soft',from:.94}],
+      [.86,'pop','#small-book-2',{spring:'soft',from:.94}],
+      [.98,'pop','#small-book-3',{spring:'soft',from:.94}],
       [3.14,'fade','#unlimited-accounts',{dur:.22}],
       [3.17,'words','#account-answer',{gap:.20,dist:6,spring:'soft'}],
       [6.34,'pop','#first-bundle',{spring:'soft',from:.95}],
