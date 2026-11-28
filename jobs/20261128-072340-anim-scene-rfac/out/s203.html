@@ -11,9 +11,9 @@
   <path id="rule-arrow" d="M644 477H995m-66-54 66 54-66 54" fill="none" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
   <rect id="rule-paper" x="1060" y="320" width="660" height="320" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
   <g id="rule-copy" text-anchor="middle" font-size="60">
-    <text x="1390" y="447" font-weight="700" font-family="'Noto Sans Devanagari', Inter, sans-serif">maturity के बाद वाला</text>
+    <text id="rule-opening" x="1390" y="447" font-weight="700" font-family="'Noto Sans Devanagari', Inter, sans-serif">maturity के बाद वाला</text>
     <rect id="rule-mark" x="1232" y="493" width="316" height="83" rx="12" fill="#fde9a6"/>
-    <text x="1390" y="558" font-weight="850" fill="#9e1b1b" font-family="'Noto Sans Devanagari', Inter, sans-serif">अलग नियम</text>
+    <text id="rule-emphasis" x="1390" y="558" font-weight="850" fill="#9e1b1b" font-family="'Noto Sans Devanagari', Inter, sans-serif">अलग नियम</text>
   </g>
 </g>
 <g id="joint" font-family="Inter, sans-serif" fill="#2b2622">
@@ -46,7 +46,8 @@
 ({shots:[[0,"#after"],[5.05,"#joint"]],on:[
   [1.68,"draw","#rule-arrow",{dur:.56}],
   [1.68,"reveal","#rule-paper",{from:"left",dur:.55}],
-  [3.20,"fade","#rule-copy",{dur:.26}],
+  [1.92,"fade","#rule-opening",{dur:.28}],
+  [3.20,"fade","#rule-emphasis",{dur:.26}],
   [3.74,"reveal","#rule-mark",{from:"left",dur:.40}],
   [5.67,"fade","#survivor",{dur:.3}],
   [7.57,"color","#holder-two-label",{to:"#6f6a63",dur:.3}],
