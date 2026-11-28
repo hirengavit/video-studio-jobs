@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" fill="none">
+<rect id="service-postcard-card" x="3" y="3" width="594" height="374" rx="10" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="service-postcard-stamp">
+<rect x="462" y="26" width="100" height="120" rx="3" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="470" y="34" width="84" height="104" rx="2" fill="#f3ead6" stroke="#2b2622" stroke-width="2"/>
+<g stroke="#2b2622" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M486,54.3 L512,44 L538,54.3 Z" fill="#fbf7ee"/>
+<line x1="489" y1="58.3" x2="535" y2="58.3"/>
+<line x1="495.4" y1="62.5" x2="495.4" y2="70"/><line x1="506.3" y1="62.5" x2="506.3" y2="70"/><line x1="517.7" y1="62.5" x2="517.7" y2="70"/><line x1="528.6" y1="62.5" x2="528.6" y2="70"/>
+<line x1="488" y1="73.5" x2="536" y2="73.5"/>
+<line x1="484" y1="78.5" x2="540" y2="78.5"/>
+</g>
+<rect id="service-postcard-band" x="470" y="88" width="84" height="22" fill="#9e1b1b"/>
+</g>
+<line id="service-postcard-divider" x1="300" y1="40" x2="300" y2="340" stroke="#2b2622" stroke-width="2.5" stroke-linecap="round"/>
+<g id="service-postcard-rules" stroke="#6f6a63" stroke-width="3" stroke-linecap="round" opacity="0.7">
+<line x1="330" y1="220" x2="560" y2="220"/><line x1="330" y1="270" x2="560" y2="270"/><line x1="330" y1="320" x2="560" y2="320"/>
+</g>
+<circle data-anchor="top" cx="300" cy="0" r="0"/>
+<circle data-anchor="base" cx="300" cy="380" r="0"/>
+</svg>
