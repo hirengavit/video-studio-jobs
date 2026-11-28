@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s169" data-section="PART 8 · MIS MONTHLY INTEREST" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+<defs>
+ <mask id="s168-perforations" maskUnits="userSpaceOnUse" x="416" y="158" width="1088" height="556">
+  <rect x="416" y="158" width="1088" height="556" fill="#fff"/>
+  <path d="M428 170 H1492 V702 H428 Z" fill="none" stroke="#000" stroke-width="15" stroke-linecap="round" stroke-dasharray="0 24"/>
+ </mask>
+ <clipPath id="s168-stamp-inset"><rect x="500" y="250" width="920" height="285" rx="8"/></clipPath>
+</defs>
+<defs><mask id="loop-reveal" maskUnits="userSpaceOnUse" x="375" y="275" width="721" height="160"><path id="loop-pen" d="M1058 420 V359 Q1058 301 998 301 H468 Q404 301 404 338" fill="none" stroke="#fff" stroke-width="30" stroke-linecap="round"/></mask></defs>
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="s169-term">
+ <rect x="428" y="170" width="1064" height="532" fill="#9e1b1b" mask="url(#s168-perforations)"/>
+ <rect x="465" y="207" width="990" height="458" rx="10" fill="none" stroke="#b8403a" stroke-width="4"/>
+ <!-- The installed piece has a horizontal icon window. Use its red stock as the inset and cover its window for this centered two-line variant. -->
+ <g clip-path="url(#s168-stamp-inset)">
+  <use href="piece:stamp-term-card" transform="translate(415 207) scale(0.78)"/>
+  <rect x="495" y="250" width="225" height="265" fill="#9e1b1b"/>
+ </g>
+ <text id="unclaimed-en" x="960" y="387" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="96" font-weight="800">Unclaimed interest</text>
+ <rect id="window" x="520" y="450" width="880" height="126" rx="18" fill="#7d1414" stroke="#b8403a" stroke-width="2"/>
+ <text id="unclaimed-hi" x="960" y="530" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="740">बिना लिया गया ब्याज</text>
+ <text id="unclaimed-explanation" x="960" y="780" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="680">जो monthly ब्याज लिया नहीं गया</text>
+ <g id="extra-line"><text id="mis-prefix" x="943" y="880" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="740" fill="#2b2622">MIS में</text>
+ <text id="extra-phrase" x="967" y="880" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="740" fill="#2b2622">extra ब्याज</text></g>
+ <path id="extra-cross" d="M1264 842 L1302 880 M1302 842 L1264 880" stroke="#4b4f58" stroke-width="8" stroke-linecap="round" fill="none"/>
+</g>
+<g id="s169-payout">
+ <g id="mis-book"><use href="piece:passbook" transform="translate(260 330) scale(1.2)"/>
+ <text id="mis-book-label" x="418" y="464" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="31" font-weight="740" fill="#2b2622">MIS · SB-5</text></g>
+ <path id="payout-arrow" d="M600 520 H940 M908 493 L940 520 L908 547" fill="none" stroke="#2b2622" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+ <text id="payout-label" x="770" y="465" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="740" fill="#2b2622">हर महीने payout</text>
+ <g id="payout-coin"><use href="piece:rupee-coin" transform="translate(980 442) scale(1.3)"/><text id="coin-rupee" x="1058" y="542" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="740" fill="#2b2622">₹</text></g>
+ <path id="return-dashed" d="M1058 420 V359 Q1058 301 998 301 H468 Q404 301 404 338" fill="none" stroke="#4b4f58" stroke-width="7" stroke-dasharray="14 14" stroke-linecap="round" mask="url(#loop-reveal)"/>
+ <path id="return-arrowhead" d="M390 320 L404 337 L418 320" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+ <text id="return-label" x="726" y="254" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="740" fill="#4b4f58">unpaid ब्याज → principal में</text>
+ <text id="compound-en" x="870" y="860" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="61" font-weight="740" fill="#2b2622">compounding</text>
+ <text id="compound-hi" x="870" y="928" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="740" fill="#4b4f58">चक्रवृद्धि</text>
+ <g id="loop-cross"><circle cx="760" cy="301" r="32" fill="#fbf7ee"/><path d="M741 282 L779 320 M779 282 L741 320" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/></g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots: [[0,"#s169-term"],[3.90,"#s169-payout"]],
+ on: [
+  [2.56,"fade","#extra-line",{dur:0.26}],
+  [3.42,"strike","#extra-phrase",{color:"#4b4f58",width:6,dur:0.22,dim:0.75}],
+  [3.42,"draw","#extra-cross",{dur:0.22}],
+  [5.34,"draw","#payout-arrow",{dur:0.40}],
+  [5.34,"fade","#payout-label",{dur:0.30}],
+  [5.34,"pop","#payout-coin",{spring:"soft",from:0.06}],
+  [7.54,"draw","#loop-pen",{dur:0.64}],
+  [8.08,"draw","#return-arrowhead",{dur:0.21}],
+  [8.84,"fade","#return-label",{dur:0.35}],
+  [10.42,"fade","#compound-en",{dur:0.24}],
+  [10.80,"strike","#compound-en",{color:"#4b4f58",width:6,dur:0.25,dim:0.75}],
+  [10.80,"fade","#loop-cross",{dur:0.20}],
+  [10.92,"fade","#compound-hi",{dur:0.25}]
+ ]
+}
+</script>
+</section>
