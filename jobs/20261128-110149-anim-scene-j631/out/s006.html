@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s006" data-in="cut" data-section="INTRO · TD AND MIS" data-series="POSB">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="twolines">
+ <text id="two-lines-title" x="960" y="217" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="800" fill="#2b2622">पूरी तस्वीर, दो lines में</text>
+ <g id="td-card">
+  <rect x="100" y="282" width="840" height="697" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M128 284 H912 Q938 284 938 310 V486 H102 V310 Q102 284 128 284Z" fill="#f3ead6"/>
+  <path d="M103 486 H937" stroke="#ead9a8" stroke-width="3"/>
+  <use id="td-icon" href="piece:td-passbook-white" transform="translate(174 291) scale(.6)"/>
+  <text id="td-name" x="396" y="416" font-family="Inter, sans-serif" font-size="92" font-weight="800" fill="#2b2622">TD</text>
+ <path d="M156 704 H884" fill="none" stroke="#ead9a8" stroke-width="3"/>
+<g id="td-duration-icon"><g transform="translate(155 532)" fill="none" stroke="#8a5d00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="0" y="6" width="63" height="54" rx="9" fill="#fff4ce"/><path d="M1 24H62 M16 1V13 M47 1V13 M15 36H23 M39 36H47 M15 48H23 M39 48H47"/></g></g>
+<text id="td-duration" x="250" y="584" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#2b2622">अवधि: चुनी हुई</text>
+<text id="td-interest" x="250" y="824" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#2b2622">ब्याज: साल में एक बार</text>
+<g id="td-annual-coin" transform="translate(151 767)"><use href="piece:rupee-coin" transform="scale(.6)"/></g>
+ </g>
+ <g id="mis-card">
+  <rect x="980" y="282" width="840" height="697" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+  <path d="M1008 284 H1792 Q1818 284 1818 310 V486 H982 V310 Q982 284 1008 284Z" fill="#f3ead6"/>
+  <path d="M983 486 H1817" stroke="#ead9a8" stroke-width="3"/>
+  <use id="mis-icon" href="piece:passbook" transform="translate(1054 291) scale(.6)"/>
+  <text id="mis-name" x="1276" y="416" font-family="Inter, sans-serif" font-size="92" font-weight="800" fill="#2b2622">MIS</text>
+ <path d="M1036 704 H1764" fill="none" stroke="#ead9a8" stroke-width="3"/>
+<g id="mis-duration-icon"><g transform="translate(1035 532)" fill="none" stroke="#8a5d00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><rect x="0" y="6" width="63" height="54" rx="9" fill="#fff4ce"/><path d="M1 24H62 M16 1V13 M47 1V13 M15 36H23 M39 36H47 M15 48H23 M39 48H47"/></g></g>
+<text id="mis-duration" x="1130" y="584" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#2b2622">अवधि: 5 साल</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{ on: [
+ [0,'pulse','#td-name',{amount:.08}],
+ [1.08,'words','#td-duration',{gap:.09,dist:10,spring:'soft'}],
+ [1.08,'fade','#td-duration-icon',{dur:.24}],
+ [3.74,'words','#td-interest',{gap:.11,dist:10,spring:'soft'}],
+ [4.82,'pop','#td-annual-coin',{spring:'soft'}],
+ [6.58,'pulse','#mis-name',{amount:.08}],
+ [7.62,'words','#mis-duration',{gap:.09,dist:10,spring:'soft'}],
+ [7.62,'fade','#mis-duration-icon',{dur:.24}],
+ [7.96,'highlight','#mis-duration',{words:'5 साल',color:'#f2b705',opacity:.36,dur:.38,pad:8}]
+] }
+</script>
+</section>
