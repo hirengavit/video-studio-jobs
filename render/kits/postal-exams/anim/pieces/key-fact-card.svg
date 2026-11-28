@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1640 780" width="1640" height="780">
+<defs><mask id="key-fact-card-perf" maskUnits="userSpaceOnUse" x="0" y="0" width="1640" height="780">
+<rect width="1640" height="780" fill="#fff"/>
+<rect x="0" y="0" width="1640" height="780" fill="none" stroke="#000" stroke-width="22" stroke-linecap="round" stroke-dasharray="0 40"/>
+</mask></defs>
+<g id="card">
+<rect width="1640" height="780" fill="#9e1b1b" mask="url(#key-fact-card-perf)"/>
+<rect x="26" y="26" width="1588" height="728" rx="6" fill="none" stroke="#b8403a" stroke-width="3"/>
+</g>
+<rect id="kicker" x="60" y="48" width="760" height="70" rx="8" fill="#ffffff"/>
+<line id="rule" x1="60" y1="146" x2="1580" y2="146" stroke="#b8403a" stroke-width="3" stroke-linecap="round"/>
+<g id="body"/>
+<circle data-anchor="base" cx="820" cy="780" r="0"/>
+<circle data-anchor="top" cx="820" cy="0" r="0"/>
+</svg>
