@@ -1,0 +1,24 @@
+<section class="vs-scene" id="s001" data-section="INTRO · TD AND MIS" data-series="POSB" data-in="cut">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text id="hook-headline" x="960" y="230" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="800" fill="#9e1b1b">Post Office की 2 deposit schemes</text>
+    <g id="opening-pair">
+      <use id="opening-td" href="piece:td-passbook-white" transform="translate(392 452) scale(1.4)"/>
+      <use id="opening-mis" href="piece:passbook" transform="translate(1192 452) scale(1.4)"/>
+      <g id="two-stamp">
+        <rect x="890" y="530" width="140" height="140" rx="6" fill="#9e1b1b"/>
+        <path d="M904 530h112 M904 670h112 M890 544v112 M1030 544v112" fill="none" stroke="#fbf7ee" stroke-width="10" stroke-linecap="round" stroke-dasharray="0 14"/>
+        <rect x="904" y="544" width="112" height="112" rx="4" fill="none" stroke="#b8403a" stroke-width="3"/>
+        <text x="960" y="632" text-anchor="middle" font-family="Inter, sans-serif" font-size="88" font-weight="850" fill="#fff">2</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [2.10, 'pulse', '#two-stamp', {amount: 0.11}],
+      [2.32, 'underline', '#hook-headline', {words: 'deposit schemes', color: '#f2b705', width: 7, gap: 9, dur: 0.42}]
+    ]
+  }
+  </script>
+</section>
