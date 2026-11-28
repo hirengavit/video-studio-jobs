@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260">
+  <g fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="papers">
+      <path d="M50 130 H330 V210 H50 Z" fill="#f3ead6"/>
+      <path d="M330 130 L350 60 V140 L330 210 Z" fill="#f3ead6"/>
+      <path d="M70 60 H350 L330 130 H50 Z" fill="#ffffff"/>
+      <path d="M52 146 H328 M52 162 H328 M52 178 H328 M52 194 H328 M334 122 L348 72" stroke="#6f6a63" stroke-width="1.5"/>
+      <g stroke="#6f6a63" stroke-width="3">
+        <path d="M84 74 H178 M232 74 H318"/>
+        <path d="M82 84 H160 M232 84 H298"/>
+        <path d="M76 108 H174 M226 108 H314"/>
+        <path d="M72 118 H148 M222 118 H306"/>
+      </g>
+    </g>
+    <g id="string">
+      <path d="M210 56 L190 130 V214"/>
+      <path d="M56 95 H340 V176"/>
+      <path d="M200 95 C186 78 170 84 180 98 C186 104 194 100 200 95 Z" fill="#ffffff"/>
+      <path d="M200 95 C214 78 230 84 220 98 C214 104 206 100 200 95 Z" fill="#ffffff"/>
+      <path d="M200 95 L188 116 M200 95 L214 114"/>
+      <circle cx="200" cy="95" r="5" fill="#2b2622"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="200" cy="210" r="0"/>
+  <circle data-anchor="top" cx="210" cy="60" r="0"/>
+</svg>
