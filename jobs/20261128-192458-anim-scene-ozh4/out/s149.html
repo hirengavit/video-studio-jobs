@@ -17,11 +17,11 @@
 <path id="sand-part" d="M1277 421H1693.33V509H1277Q1261 509 1261 493V437Q1261 421 1277 421Z" fill="#f3ead6"/>
 <path id="yellow-part" d="M1693.33 421H1762Q1779 421 1779 437V493Q1779 509 1762 509H1693.33Z" fill="#f2b705"/>
 <path id="personal-divider" d="M1693.33 421V509" fill="none" stroke="#8a5d00" stroke-width="3"/>
-<rect id="share-marker" x="1261" y="513" width="106" height="36" rx="8" fill="#fde9a6"/>
-<text id="personal-share" x="1268" y="540" fill="#2b2622" font-family="Georgia, serif" font-size="44" font-weight="700">₹7.5 lakh</text>
-<text id="personal-room" x="1767" y="540" text-anchor="end" fill="#8a5d00" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="760">₹1.5 lakh और</text>
+<rect id="share-marker" x="1261" y="526" width="106" height="36" rx="8" fill="#fde9a6"/>
+<text id="personal-share" x="1268" y="540" dy="13" fill="#2b2622" font-family="Georgia, serif" font-size="44" font-weight="700">₹7.5 lakh</text>
+<text id="personal-room" x="1767" y="540" dy="13" text-anchor="end" fill="#8a5d00" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="760">₹1.5 lakh और</text>
 <text id="limit-source" x="1780" y="600" text-anchor="end" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="32" font-weight="600">MIS योजना, 2019</text>
-</g><text id="limit-source-new" x="1180" y="600" text-anchor="end" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="32" font-weight="600">MIS योजना, 2019</text>
+</g>
 <g id="sum-pill"><rect id="sum-panel" x="1270" y="580" width="500" height="67" rx="31" fill="#2e7d4f"/><text id="sum-text" x="1520" y="627" text-anchor="middle" font-family="Georgia, serif" font-size="46" font-weight="700" fill="#ffffff">₹7.5 + ₹1.5 = ₹9 lakh</text></g>
 <g id="three-row">
 <g id="three-book"><use href="piece:passbook" transform="translate(183 703) scale(.6)"/><text x="255" y="942" text-anchor="middle" fill="#2b2622" font-family="Inter,sans-serif" font-size="46" font-weight="790">Joint MIS</text></g>
@@ -49,8 +49,7 @@
 </svg>
 <script type="text/scene">{
 on:[
-[.33,"out","#limit-source",{dur:.15,scale:1}],
-[.54,"fade","#limit-source-new",{dur:.23}],
+[.03,"move","#limit-source",{by:[-600,0],spring:"fast"}],
 [.54,"pop","#sum-pill",{spring:"fast",from:.96}],
 [2.01,"color","#example-title",{to:"#6f6a63",dur:.3}],
 [2.01,"color","#example-amount",{to:"#6f6a63",dur:.3}],
