@@ -10,10 +10,10 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-overlap",
+   "kind": "error",
    "scene": "s187",
-   "text": "1 साल के बाद, / 3 साल तक",
-   "t": 4.14
+   "message": "update(): $(...).setAttribute is not a function",
+   "t": 0.3
   }
  ]
 }
