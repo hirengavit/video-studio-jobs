@@ -1,0 +1,49 @@
+<section class="vs-scene" id="s118" data-section="PART 6 · TD PLEDGE" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080" role="img" aria-label="The security transfer entry and the pledgee’s status until transfer back">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="ledger">
+      <use id="pledge-ledger" href="piece:pda-passbook" transform="translate(212.5 249) scale(1.15)"/>
+      <rect id="entry-highlight" x="1162" y="423" width="320" height="34" rx="8" fill="#f2b705" fill-opacity=".29"/>
+      <text id="officer-en" x="960" y="186" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="740" fill="#2b2622">authorised officer</text>
+      <text id="officer-hi" x="960" y="233" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">प्राधिकृत अधिकारी</text>
+    
+<rect id="entry-paper" x="1163" y="455" width="313" height="170" rx="4" fill="#fffdf8"/>
+<rect id="security-sweep" x="1175" y="514" width="147" height="45" rx="10" fill="#ffd54a" fill-opacity=".55"/>
+<text id="transfer-first" x="1184" y="501" font-family="Georgia, serif" font-size="48" fill="#2b2622">Transferred as</text>
+<text id="transfer-last" x="1184" y="548" font-family="Georgia, serif" font-size="48" fill="#2b2622">security to</text>
+<path id="detail-lines" d="M1184 580H1454 M1184 612H1454" fill="none" stroke="#b1a79a" stroke-width="3" stroke-linecap="round"/>
+<rect id="detail-back" x="1170" y="627" width="403" height="60" rx="7" fill="#fffdf8"/>
+<text id="pledgee-details" x="1184" y="667" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" fill="#6f6a63">pledgee की details</text>
+</g>
+<g id="equal">
+<rect id="transfer-bar" x="460" y="470" width="1000" height="90" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+<text id="transfer-rule" x="960" y="531" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="690" fill="#2b2622">वापस transfer होने तक</text>
+<text id="pledgee-en" x="580" y="320" text-anchor="middle" font-family="Inter, sans-serif" font-size="100" font-weight="790" fill="#2b2622">Pledgee</text>
+<text id="pledgee-hi" x="580" y="396" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="660" fill="#9e1b1b">गिरवीदार</text>
+<path id="equal-sign" d="M922 265h76 M922 302h76" fill="none" stroke="#9e1b1b" stroke-width="13" stroke-linecap="round" aria-label="equals"/>
+<text id="depositor-en" x="1340" y="320" text-anchor="middle" font-family="Inter, sans-serif" font-size="100" font-weight="790" fill="#2b2622">Depositor</text>
+<text id="depositor-hi" x="1340" y="396" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="660" fill="#9e1b1b">जमाकर्ता</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+shots: [[0,"#ledger"],[6.24,"#equal"]],
+camera: [[0,{zoom:1,x:0,y:0}],[0.85,{zoom:1.055,x:20,y:8},"inOut"],[6.2,{zoom:1.055,x:20,y:8}],[6.24,{zoom:1,x:0,y:0}]],
+on: [
+[0.04,"fade","#entry-paper",{dur:0.24}],
+[0,"type","#transfer-first",{cps:18}],
+[0.79,"type","#transfer-last",{cps:18}],
+[1.22,"fade","#security-sweep",{dur:0.35}],
+[2.96,"draw","#detail-lines",{dur:0.45}],
+[2.96,"fade","#detail-back",{dur:0.42}],
+[2.96,"fade","#pledgee-details",{dur:0.42}],
+[6.24,"fade","#transfer-rule",{dur:0.4}],
+[8.16,"pop","#pledgee-en"],
+[8.66,"fade","#pledgee-hi",{dur:0.28}],
+[8.88,"draw","#equal-sign",{dur:0.3}],
+[8.88,"pop","#depositor-en"],
+[9.38,"fade","#depositor-hi",{dur:0.28}]
+]
+}
+</script>
+</section>
