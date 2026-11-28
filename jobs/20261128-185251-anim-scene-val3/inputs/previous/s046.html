@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s046" data-in="cut" data-section="PART 3 · TD INTEREST" data-series="POSB">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Noto Sans Devanagari, sans-serif" text-anchor="middle">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text font-family="'Noto Sans Devanagari', Inter, sans-serif" x="960" y="221" fill="#9e1b1b" font-size="72" font-weight="800">ब्याज का साल</text>
+    <text font-family="'Noto Sans Devanagari', Inter, sans-serif" id="rule" x="960" y="309" fill="#6f6a63" font-size="56" font-weight="550">खाता खुलने की तारीख से गिना जाता है</text>
+
+    <path id="bracket" d="M480 599 V570 Q480 560 490 560 H1430 Q1440 560 1440 570 V599" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round"/>
+    <text font-family="'Noto Sans Devanagari', Inter, sans-serif" id="interest" x="960" y="520" fill="#9e1b1b" font-size="56" font-weight="750">पहला सालाना ब्याज</text>
+
+    <path id="track" d="M480 640 H1440" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round"/>
+    <rect id="elapsed" x="480" y="630" width="960" height="20" rx="10" fill="#f2b705"/>
+    <g id="leftPage" transform="translate(160 440)">
+      <use href="piece:calendar-page" transform="scale(1.2)"/>
+      <text x="156" y="210" fill="#2b2622" font-size="80" font-weight="800">20</text>
+      <text x="156" y="268" fill="#2b2622" font-size="44" font-weight="600">October</text>
+    </g>
+    <g id="rightPage" transform="translate(1448 440)">
+      <use href="piece:calendar-page" transform="scale(1.2)"/>
+      <text x="156" y="210" fill="#2b2622" font-size="80" font-weight="800">20</text>
+      <text x="156" y="268" fill="#2b2622" font-size="44" font-weight="600">October</text>
+    </g>
+    <text font-family="'Noto Sans Devanagari', Inter, sans-serif" id="opening" x="316" y="871" fill="#6f6a63" font-size="52" font-weight="650">खाता खुला</text>
+    <text font-family="'Noto Sans Devanagari', Inter, sans-serif" id="anniversary" x="1604" y="871" fill="#6f6a63" font-size="52" font-weight="650">अगला 20 October</text>
+    <g id="annualCoin" transform="translate(1661 373) scale(0.84)">
+      <use href="piece:rupee-coin"/>
+      <text x="60" y="79" fill="#2b2622" font-size="56" font-weight="800">₹</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  ({
+    camera: [[0, {zoom: 1}]],
+    on: [
+      [1.55, 'words', '#rule', {gap: 0.27, dist: 8}],
+      [1.55, 'draw', '#track', {dur: 0.75}],
+      [5.11, 'pop', '#leftPage', {spring: 'fast', from: 0.86}],
+      [6.31, 'fade', '#opening', {dur: 0.28}],
+      [7.47, 'draw', '#bracket', {dur: 0.57}],
+      [8.07, 'fade', '#interest', {dur: 0.35}],
+      [10.21, 'pop', '#rightPage', {spring: 'fast', from: 0.86}],
+      [10.50, 'fade', '#anniversary', {dur: 0.29}],
+      [11.33, 'grow', '#elapsed', {axis: 'x', origin: 'left', spring: 'soft'}],
+      [12.81, 'pop', '#annualCoin', {spring: 'fast', from: 0.76}]
+    ]
+  })
+  </script>
+</section>
