@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s091" data-section="PART 5 · TD EARLY CLOSURE" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="saving-stamp">
+    <rect x="120" y="200" width="580" height="760" rx="30" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+    <rect x="134" y="214" width="552" height="732" rx="24" fill="none" stroke="#fbf7ee" stroke-width="8" stroke-dasharray="0 22" stroke-linecap="round"/>
+    <text x="410" y="332" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="56" font-weight="800">Savings Account</text>
+    <text x="410" y="395" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650">बचत खाता</text>
+    <text x="410" y="598" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="160" font-weight="850">4%</text>
+    <text x="410" y="696" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="700">सालाना</text>
+    <rect x="153" y="746" width="514" height="158" rx="19" fill="#ffffff"/>
+    <text x="410" y="810" text-anchor="middle" fill="#6f6a63" font-family="Inter, sans-serif" font-size="44" font-weight="630">1 Oct–31 Dec 2026 ·</text>
+    <text x="410" y="870" text-anchor="middle" fill="#6f6a63" font-family="Inter, sans-serif" font-size="36" font-weight="630">Source: SB Order 12/2026</text>
+  </g>
+  <g id="formula-card">
+    <rect x="760" y="200" width="1040" height="760" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <text x="822" y="254" text-anchor="start" fill="#9e1b1b" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="720">उदाहरण</text>
+    <text id="principal" x="822" y="329" text-anchor="start" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="800">₹10,000 का TD</text>
+    <text id="months" x="822" y="406" text-anchor="start" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="650">8 पूरे महीने बाद बंद</text>
+    <g id="passbook">
+      <use href="piece:td-passbook-white" transform="translate(1580 230) scale(0.6)"/>
+      <text x="1659.2" y="301" text-anchor="middle" fill="#2b2622" font-family="Inter, sans-serif" font-size="13.5" font-weight="770">TD · SB-5A</text>
+    </g>
+    <path d="M822 450H1738" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <rect x="808" y="480" width="944" height="116" rx="18" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+    <g id="working" font-family="Georgia, serif" fill="#2b2622">
+      <text id="capital" x="824" y="560" text-anchor="start" fill="#2b2622" font-family="Georgia, serif" font-size="76" font-weight="600">10,000</text>
+      <text id="rate-fraction" x="1088" y="560" text-anchor="start" fill="#2b2622" font-family="Georgia, serif" font-size="76" font-weight="600">× 4/100</text>
+      <text id="time-numerator" x="1402" y="560" text-anchor="start" fill="#2b2622" font-family="Georgia, serif" font-size="76" font-weight="600">× 8</text>
+      <text id="time-denominator" x="1512" y="560" text-anchor="start" fill="#2b2622" font-family="Georgia, serif" font-size="76" font-weight="600">/12</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+ camera: [[0, {zoom:1,x:0,y:0}], [5.42,{zoom:1,x:0,y:0}], [7.20,{zoom:1.04,x:15,y:2},"inOut"]],
+ on: [
+   [1.46, "pop", "#principal", {from:0.96,spring:"soft"}],
+   [2.32, "pop", "#passbook", {from:0.94,spring:"soft"}],
+   [2.86, "words", "#months", {gap:0.16,dist:12}],
+   [5.42, "type", "#capital", {cps:20}],
+   [6.36, "type", "#rate-fraction", {cps:18}],
+   [8.02, "type", "#time-numerator", {cps:18}],
+   [9.32, "type", "#time-denominator", {cps:18}]
+ ]
+}
+</script>
+</section>
