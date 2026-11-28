@@ -1,0 +1,37 @@
+{
+ "moments": [
+  "0.30",
+  "1.21",
+  "2.42",
+  "3.64",
+  "4.85",
+  "5.91"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "mostly-empty",
+   "scene": "s237",
+   "message": "a card (#s237-row-three-bed) is mostly empty at 2.4 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.42
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s237",
+   "message": "a card (#s237-row-three-bed) is mostly empty at 3.6 s: bring its items in sooner, or size it for what it holds now",
+   "t": 3.64
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s237",
+   "message": "a card (#s237-row-three-bed) is mostly empty at 4.8 s: bring its items in sooner, or size it for what it holds now",
+   "t": 4.85
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s237",
+   "message": "a card (#s237-row-three-bed) is mostly empty at 5.9 s: bring its items in sooner, or size it for what it holds now",
+   "t": 5.91
+  }
+ ]
+}
