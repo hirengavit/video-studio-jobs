@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s179" data-section="PART 8 · MIS MONTHLY INTEREST" data-series="POSB" data-in="cut">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text x="120" y="218" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="800" fill="#9e1b1b">savings schemes: दरों की तुलना</text>
+    <rect id="card" x="120" y="250" width="1680" height="620" rx="27" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+    <g id="row1">
+      <g id="row1-label">
+        <text x="172" y="330" font-family="Inter, sans-serif" font-size="46" font-weight="800" fill="#2b2622">Sukanya Samriddhi Account</text>
+        <text x="172" y="383" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">सुकन्या समृद्धि खाता</text>
+        <rect x="860" y="318" width="680" height="48" rx="24" fill="#f3ead6"/>
+      </g>
+      <rect id="bar1" x="860" y="318" width="680.00" height="48" rx="24" fill="#9e1b1b"/>
+      <text id="rate1" x="1740" y="365" text-anchor="end" font-family="Inter, sans-serif" font-size="64" font-weight="800" fill="#9e1b1b">8.2%</text>
+    </g>
+    <g id="row2">
+      <g id="row2-label">
+        <text x="172" y="460" font-family="Inter, sans-serif" font-size="46" font-weight="800" fill="#2b2622">5-year TD</text>
+        <text x="172" y="513" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">5 साल का TD</text>
+        <rect x="860" y="448" width="680" height="48" rx="24" fill="#f3ead6"/>
+      </g>
+      <rect id="bar2" x="860" y="448" width="621.95" height="48" rx="24" fill="#9e1b1b"/>
+      <text id="rate2" x="1740" y="495" text-anchor="end" font-family="Inter, sans-serif" font-size="64" font-weight="800" fill="#9e1b1b">7.5%</text>
+    </g>
+    <g id="row3">
+      <g id="row3-label">
+        <text x="172" y="590" font-family="Inter, sans-serif" font-size="46" font-weight="800" fill="#2b2622">Public Provident Fund</text>
+        <text x="172" y="643" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">लोक भविष्य निधि</text>
+        <rect x="860" y="578" width="680" height="48" rx="24" fill="#f3ead6"/>
+      </g>
+      <rect id="bar3" x="860" y="578" width="588.78" height="48" rx="24" fill="#9e1b1b"/>
+      <text id="rate3" x="1740" y="625" text-anchor="end" font-family="Inter, sans-serif" font-size="64" font-weight="800" fill="#9e1b1b">7.1%</text>
+    </g>
+    <g id="row4">
+      <g id="row4-label">
+        <text x="172" y="720" font-family="Inter, sans-serif" font-size="46" font-weight="800" fill="#2b2622">5-year Recurring Deposit</text>
+        <text x="172" y="773" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">5 साल का आवर्ती जमा</text>
+        <rect x="860" y="708" width="680" height="48" rx="24" fill="#f3ead6"/>
+      </g>
+      <rect id="bar4" x="860" y="708" width="555.61" height="48" rx="24" fill="#9e1b1b"/>
+      <text id="rate4" x="1740" y="755" text-anchor="end" font-family="Inter, sans-serif" font-size="64" font-weight="800" fill="#9e1b1b">6.7%</text>
+    </g>
+    <g id="source">
+      <path d="M160 801H1760" stroke="#ead9a8" stroke-width="2"/>
+      <text x="168" y="845" font-family="Inter, sans-serif" font-size="44" font-weight="620" fill="#6f6a63">1 Oct–31 Dec 2026 · Source: SB Order 12/2026</text>
+    </g>
+    <g id="focus-step-3"><g id="focus-step-2"><path id="focus" d="M171 283H1749Q1769 283 1769 303V384Q1769 404 1749 404H171Q151 404 151 384V303Q151 283 171 283Z" fill="none" stroke="#f2b705" stroke-width="5" stroke-linejoin="round"/></g></g>
+  </svg>
+  <script type="text/scene">
+    { on: [
+      [0.00, "pulse", "#rate1", {amount: 0.07}],
+      [2.09, "move", "#focus-step-2", {by: [0, 130], spring: "soft"}],
+      [3.50, "pulse", "#rate2", {amount: 0.07}],
+      [5.00, "move", "#focus-step-3", {by: [0, 130], spring: "soft"}],
+      [7.24, "pulse", "#rate3", {amount: 0.07}]
+    ] }
+  </script>
+</section>
