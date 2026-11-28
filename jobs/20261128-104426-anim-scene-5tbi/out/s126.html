@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s126" data-section="PART 6 · TD DEATH CLAIM" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="split">
+ <text id="split-heading" x="960" y="230" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="800" fill="#9e1b1b">Payment कैसे बँटता है</text>
+ <rect id="split-bar" x="200" y="420" width="1520" height="140" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+ <text id="written-caption" x="200" y="380" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#2b2622">लिखे shares</text>
+ <rect id="written-1" x="206" y="426" width="624" height="128" rx="16" fill="#9e1b1b"/>
+ <rect id="written-2" x="836" y="426" width="344" height="128" rx="16" fill="#b8403a"/>
+ <rect id="written-3" x="1186" y="426" width="528" height="128" rx="16" fill="#7d1414"/>
+ <g fill="#2b2622" font-family="Inter, sans-serif" font-size="44" font-weight="700" text-anchor="middle">
+  <text id="nominee-1" x="518" y="610">Nominee 1</text>
+  <text id="nominee-2" x="1008" y="610">Nominee 2</text>
+  <text id="nominee-3" x="1450" y="610">Nominee 3</text>
+ </g>
+ <text id="death" x="1008" y="662" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="700" fill="#6f6a63">death</text>
+ <text id="equal-caption" x="200" y="680" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#2b2622">shares नहीं लिखे</text>
+ <rect id="equal-bar" x="200" y="720" width="1520" height="140" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+ <rect id="equal-1" x="206" y="726" width="498" height="128" rx="16" fill="#9e1b1b"/>
+ <rect id="equal-2" x="711" y="726" width="498" height="128" rx="16" fill="#9e1b1b"/>
+ <rect id="equal-3" x="1216" y="726" width="498" height="128" rx="16" fill="#9e1b1b"/>
+ <text id="equal-word" x="960" y="920" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">बराबर</text>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+[0.74,"fade","#nominee-1",{dur:0.23}],
+[0.89,"fade","#nominee-2",{dur:0.23}],
+[1.04,"fade","#nominee-3",{dur:0.23}],
+[3.16,"fade","#written-caption",{dur:0.24}],
+[3.16,"grow","#written-1",{axis:"x",origin:"left"}],
+[3.36,"grow","#written-2",{axis:"x",origin:"left"}],
+[3.56,"grow","#written-3",{axis:"x",origin:"left"}],
+[5.26,"fade","#equal-caption",{dur:0.26}],
+[5.26,"draw","#equal-bar",{dur:0.58}],
+[7.04,"grow","#equal-1",{axis:"x",origin:"left"}],
+[7.04,"grow","#equal-2",{axis:"x",origin:"left"}],
+[7.04,"grow","#equal-3",{axis:"x",origin:"left"}],
+[7.04,"pop","#equal-word",{spring:"snap"}],
+[8.26,"color","#written-2",{to:"#6f6a63",dur:0.35}],
+[9.04,"fade","#death",{dur:0.22}]
+]}
+</script>
+</section>
