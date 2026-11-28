@@ -8,18 +8,5 @@
   "11.15"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s190",
-   "message": "highlight: \"on or before\" isn't in that <text> (it says \"\")",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s190",
-   "message": "highlight: \"सिर्फ\" isn't in that <text> (it says \"\")",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
