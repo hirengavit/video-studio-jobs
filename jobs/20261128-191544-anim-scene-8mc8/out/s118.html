@@ -2,13 +2,16 @@
 <svg viewBox="0 0 1920 1080" role="img" aria-label="The security transfer entry and the pledgee’s status until transfer back">
 <rect width="1920" height="1080" fill="#fbf7ee"/>
 <g id="ledger">
-      <use id="pledge-ledger" href="piece:pda-passbook" transform="translate(290.5 277) scale(1.03)"/>
+      <g id="ledger-book-motion"><use id="pledge-ledger" href="piece:pda-passbook" transform="translate(290.5 277) scale(1.03)"/></g>
       <rect id="entry-highlight" x="1140" y="436" width="289" height="34" rx="8" fill="#f2b705" fill-opacity=".29"/>
       <text id="officer-en" x="960" y="186" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="740" fill="#2b2622">authorised officer</text>
       <text id="officer-hi" x="960" y="233" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">प्राधिकृत अधिकारी</text>
     <g id="entry">
 <rect id="entry-paper" x="1040" y="473" width="498" height="182" rx="9" fill="#fffdf8" stroke="#ead9a8" stroke-width="2"/>
-<text id="transfer-entry" x="1056" y="528" font-family="Georgia, serif" font-size="48" textLength="466" lengthAdjust="spacingAndGlyphs" fill="#2b2622">Transferred as security to</text>
+<text id="entry-transferred" x="1056" y="528" font-family="Georgia, serif" font-size="48" textLength="200" lengthAdjust="spacingAndGlyphs" fill="#2b2622">Transferred</text>
+<text id="entry-as" x="1267" y="528" font-family="Georgia, serif" font-size="48" textLength="40" lengthAdjust="spacingAndGlyphs" fill="#2b2622">as</text>
+<text id="entry-security" x="1318" y="528" font-family="Georgia, serif" font-size="48" textLength="151" lengthAdjust="spacingAndGlyphs" fill="#2b2622">security</text>
+<text id="entry-to" x="1480" y="528" font-family="Georgia, serif" font-size="48" textLength="40" lengthAdjust="spacingAndGlyphs" fill="#2b2622">to</text>
 <path id="detail-lines" d="M1403 580H1518 M1403 614H1518" fill="none" stroke="#a59b8d" stroke-width="3" stroke-linecap="round"/>
 <text id="pledgee-details" x="1056" y="609" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" textLength="312" lengthAdjust="spacingAndGlyphs" fill="#6f6a63">pledgee की details</text>
 </g>
@@ -26,11 +29,16 @@
 <script type="text/scene">
 {
 shots: [[0,"#ledger"],[6.24,"#equal"]],
-camera: [[0,{zoom:1,x:0,y:0}],[1,{on:"#entry",zoom:1.45,y:72},"inOut"],[6.23,{on:"#entry",zoom:1.45,y:72}],[6.24,{zoom:1,x:0,y:0}]],
+camera: [[0,{zoom:1,x:0,y:0}],[1,{on:"#entry",zoom:1.45,y:40},"inOut"],[6.23,{on:"#entry",zoom:1.45,y:40}],[6.24,{zoom:1,x:0,y:0}]],
 on: [
 [0.04,"fade","#entry-paper",{dur:0.24}],
-[0,"type","#transfer-entry",{cps:18}],
-[1.22,"highlight","#transfer-entry",{words:"security",dur:0.35,pad:4}],
+[0,"reveal","#entry-transferred",{from:"left",dur:0.42}],
+[0.56,"reveal","#entry-as",{from:"left",dur:0.14}],
+[1.22,"reveal","#entry-security",{from:"left",dur:0.34}],
+[1.68,"reveal","#entry-to",{from:"left",dur:0.15}],
+[1.22,"highlight","#entry-security",{dur:0.42,pad:4}],
+[0.08,"out","#officer-en",{dur:0.30}],
+[0.08,"out","#officer-hi",{dur:0.30}],
 [2.96,"draw","#detail-lines",{dur:0.45}],
 [2.96,"fade","#pledgee-details",{dur:0.42}],
 [6.24,"fade","#transfer-rule",{dur:0.4}],
@@ -39,7 +47,13 @@ on: [
 [8.88,"draw","#equal-sign",{dur:0.3}],
 [8.88,"pop","#depositor-en"],
 [9.38,"fade","#depositor-hi",{dur:0.28}]
-]
+],
+update(t, section, $) {
+  const p = Math.min(1, Math.max(0, t));
+  const k = p * p * (3 - 2 * p);
+  const book = $("#ledger-book-motion")[0];
+  if (book) book.setAttribute("transform", "translate(" + (136.52*k) + " " + (80.58*k) + ") scale(" + (1-.106796*k) + ")");
+}
 }
 </script>
 </section>
