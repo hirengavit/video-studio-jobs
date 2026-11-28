@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1620 220">
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<path d="M30 120H1590" fill="none" id="day-line" stroke="#6f6a63" stroke-width="4"/><path d="M60 110V132" fill="none" id="tick-1" stroke="#6f6a63"/><path d="M167 110V132" fill="none" id="tick-2" stroke="#6f6a63"/><path d="M274 110V132" fill="none" id="tick-3" stroke="#6f6a63"/><path d="M381 110V132" fill="none" id="tick-4" stroke="#6f6a63"/><path d="M488 110V132" fill="none" id="tick-5" stroke="#6f6a63"/><path d="M595 110V132" fill="none" id="tick-6" stroke="#6f6a63"/><path d="M702 110V132" fill="none" id="tick-7" stroke="#6f6a63"/><path d="M809 110V132" fill="none" id="tick-8" stroke="#6f6a63"/><path d="M916 110V132" fill="none" id="tick-9" stroke="#6f6a63"/><path d="M1023 110V132" fill="none" id="tick-10" stroke="#6f6a63"/><path d="M1130 110V132" fill="none" id="tick-11" stroke="#6f6a63"/><path d="M1237 110V132" fill="none" id="tick-12" stroke="#6f6a63"/><path d="M1344 110V132" fill="none" id="tick-13" stroke="#6f6a63"/><path d="M1451 110V132" fill="none" id="tick-14" stroke="#6f6a63"/><path d="M1558 110V132" fill="none" id="tick-15" stroke="#6f6a63"/>
+</g>
+<circle data-anchor="base" cx="809" cy="132" r="0"/>
+</svg>
