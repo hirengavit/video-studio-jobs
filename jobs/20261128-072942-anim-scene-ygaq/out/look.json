@@ -8,12 +8,5 @@
   "11.70"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s182",
-   "text": "व्यक्ति की कुल सीमा / ₹9 lakh",
-   "t": 7.11
-  }
- ]
+ "warnings": []
 }
