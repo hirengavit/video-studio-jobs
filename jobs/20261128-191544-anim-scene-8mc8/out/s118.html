@@ -29,9 +29,10 @@
 <script type="text/scene">
 {
 shots: [[0,"#ledger"],[6.24,"#equal"]],
-camera: [[0,{zoom:1,x:0,y:0}],[1,{on:"#entry",zoom:1.45,y:40},"inOut"],[6.23,{on:"#entry",zoom:1.45,y:40}],[6.24,{zoom:1,x:0,y:0}]],
+camera: [[0,{zoom:1,x:0,y:0}],[1,{on:"#entry",zoom:1.45,y:40},"inOut"],[6.239,{on:"#entry",zoom:1.45,y:40}],[6.24,{zoom:1,x:0,y:0}]],
 on: [
 [0.04,"fade","#entry-paper",{dur:0.24}],
+[0.14,"out","#entry-highlight",{dur:0.40}],
 [0,"reveal","#entry-transferred",{from:"left",dur:0.42}],
 [0.56,"reveal","#entry-as",{from:"left",dur:0.14}],
 [1.22,"reveal","#entry-security",{from:"left",dur:0.34}],
@@ -52,7 +53,7 @@ update(t, section, $) {
   const p = Math.min(1, Math.max(0, t));
   const k = p * p * (3 - 2 * p);
   const book = $("#ledger-book-motion")[0];
-  if (book) book.setAttribute("transform", "translate(" + (136.52*k) + " " + (80.58*k) + ") scale(" + (1-.106796*k) + ")");
+  if (book) book.setAttribute("transform", "translate(" + (183.40*k) + " " + (108.34*k) + ") scale(" + (1-.145631*k) + ")");
 }
 }
 </script>
