@@ -1,0 +1,75 @@
+<section class="vs-scene" id="s037" data-in="cut" data-section="PART 3 · TD DEPOSIT" data-series="POSB">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text x="130" y="220" font-family="Noto Sans Devanagari, sans-serif" font-size="64" font-weight="700" fill="#9e1b1b">TD की अवधि</text>
+    <g fill="#f7efe1" stroke="#d9cab3" stroke-width="3">
+      <rect x="130" y="270" width="300" height="300" rx="20"/>
+      <rect x="470" y="270" width="300" height="300" rx="20"/>
+      <rect x="810" y="270" width="300" height="300" rx="20"/>
+      <rect x="1490" y="270" width="300" height="300" rx="20"/>
+    </g>
+    <rect x="1150" y="270" width="300" height="300" rx="20" fill="#f4efe8" stroke="#66717a" stroke-width="4" stroke-dasharray="13 11"/>
+    <g font-weight="700" text-anchor="middle">
+      <g id="tile1">
+      <rect x="132" y="272" width="296" height="296" rx="20" fill="#9e1b1b" stroke="#9e1b1b" stroke-width="4" id="edge1"/>
+      <rect x="144" y="284" width="272" height="272" rx="12" fill="none" stroke="#e3a28d" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+      <text x="280" y="440" font-family="Inter, sans-serif" font-size="150" fill="#fffdf9">1</text>
+      <text x="280" y="521" font-family="Noto Sans Devanagari, sans-serif" font-size="52" fill="#fde9a6">साल</text>
+    </g>
+    <g id="tile2">
+      <rect x="472" y="272" width="296" height="296" rx="20" fill="#9e1b1b" stroke="#9e1b1b" stroke-width="4" id="edge2"/>
+      <rect x="484" y="284" width="272" height="272" rx="12" fill="none" stroke="#e3a28d" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+      <text x="620" y="440" font-family="Inter, sans-serif" font-size="150" fill="#fffdf9">2</text>
+      <text x="620" y="521" font-family="Noto Sans Devanagari, sans-serif" font-size="52" fill="#fde9a6">साल</text>
+    </g>
+    <g id="tile3">
+      <rect x="812" y="272" width="296" height="296" rx="20" fill="#9e1b1b" stroke="#9e1b1b" stroke-width="4" id="edge3"/>
+      <rect x="824" y="284" width="272" height="272" rx="12" fill="none" stroke="#e3a28d" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+      <text x="960" y="440" font-family="Inter, sans-serif" font-size="150" fill="#fffdf9">3</text>
+      <text x="960" y="521" font-family="Noto Sans Devanagari, sans-serif" font-size="52" fill="#fde9a6">साल</text>
+    </g>
+    <g id="tile5">
+      <rect x="1492" y="272" width="296" height="296" rx="20" fill="#9e1b1b" stroke="#9e1b1b" stroke-width="4" id="edge5"/>
+      <rect x="1504" y="284" width="272" height="272" rx="12" fill="none" stroke="#e3a28d" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+      <text x="1640" y="440" font-family="Inter, sans-serif" font-size="150" fill="#fffdf9">5</text>
+      <text x="1640" y="521" font-family="Noto Sans Devanagari, sans-serif" font-size="52" fill="#fde9a6">साल</text>
+    </g>
+      <text id="four" x="1300" y="415" font-family="Noto Sans Devanagari, sans-serif" font-size="64" fill="#535e67">4 साल</text>
+      <path id="cross" d="M1278 466l44 44m0-44l-44 44" fill="none" stroke="#535e67" stroke-width="9" stroke-linecap="round"/>
+    </g>
+    <g id="verdict">
+      <rect x="160" y="650" width="646" height="323" rx="26" fill="#9e1b1b"/>
+      <use href="piece:stamp-term-card" transform="translate(160 705) scale(0.46)"/>
+      <circle cx="266" cy="811" r="47" fill="#f4efe8" stroke="#66717a" stroke-width="3"/>
+      <path d="M249 794l34 34m0-34l-34 34" fill="none" stroke="#535e67" stroke-width="7" stroke-linecap="round"/>
+      <text x="361" y="800" font-family="Inter, sans-serif" font-weight="700" font-size="59" fill="#fffdf9">No 4-year TD</text>
+      <text id="hindi" x="361" y="876" font-family="Noto Sans Devanagari, sans-serif" font-weight="700" font-size="52" fill="#fde9a6">4 साल का TD नहीं</text>
+    </g>
+    <g id="note">
+      <rect x="920" y="650" width="860" height="320" rx="26" fill="#fffdf9" stroke="#e6d3b3" stroke-width="4"/>
+      <rect x="972" y="700" width="84" height="10" rx="5" fill="#ffd54a"/>
+      <text x="972" y="787" font-family="Inter, sans-serif" font-weight="700" font-size="64" fill="#9e1b1b">5-year TD</text>
+      <text id="condition" x="972" y="865" font-family="Noto Sans Devanagari, sans-serif" font-weight="700" font-size="52" fill="#272421">4 साल वाली एक शर्त</text>
+      <text id="later" x="972" y="928" font-family="Noto Sans Devanagari, sans-serif" font-weight="600" font-size="48" fill="#6f6a63">आगे आएगी</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0, 'pop', '#tile1'],
+      [0.20, 'pop', '#tile2'],
+      [1.14, 'pop', '#tile3'],
+      [2.12, 'pop', '#tile5'],
+      [3.10, 'fade', '#four', {dur: 0.30}],
+      [4.36, 'strike', '#four', {color: '#535e67', width: 7, dur: 0.25, dim: 0.65}],
+      [4.36, 'pop', '#cross'],
+      [4.68, 'pop', '#verdict'],
+      [5.14, 'fade', '#hindi', {dur: 0.28}],
+      [6.46, 'color', '#edge5', {to: '#ffd54a', prop: 'stroke', dur: 0.25}],
+      [6.46, 'fade', '#note', {dur: 0.28}],
+      [7.42, 'words', '#condition', {gap: 0.10, dist: 8}],
+      [9.44, 'fade', '#later', {dur: 0.23}],
+    ],
+  }
+  </script>
+</section>
