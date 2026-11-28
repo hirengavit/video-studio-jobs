@@ -8,12 +8,5 @@
   "11.43"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s080",
-   "text": "TD में जमा की सीमा / TD",
-   "t": 6.95
-  }
- ]
+ "warnings": []
 }
