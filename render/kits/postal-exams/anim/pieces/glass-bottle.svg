@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 300" fill="none" stroke-linejoin="round" stroke-linecap="round">
+  <path id="glass" d="M47 49h46v39c0 14 10 24 19 31 12 9 17 20 17 36v113c0 13-8 22-22 22H33c-14 0-22-9-22-22V155c0-16 5-27 17-36 9-7 19-17 19-31Z" fill="#f1f8f8" stroke="#2b2622" stroke-width="3"/>
+  <g id="liquid">
+    <path d="M18 173c20-9 36 7 54 4 19-3 25-8 50-4v94q0 15-15 15H33q-15 0-15-15Z" fill="#badde8"/>
+    <path d="M18 173c20-9 36 7 54 4 19-3 25-8 50-4" stroke="#78a9b7" stroke-width="2.5"/>
+  </g>
+  <path id="glass-glint" d="M30 158v96q0 12 7 16m-7-118q1-10 7-14" stroke="#fff" stroke-width="4" opacity=".8"/>
+  <g id="cap"><rect x="43" y="14" width="54" height="45" rx="8" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/>
+    <path d="M47 45h46m-39-23v16m8-16v16m8-16v16m8-16v16m8-16v16" stroke="#d2655d" stroke-width="2"/>
+    <path d="M46 50h48" stroke="#7d1414" stroke-width="2.5"/>
+  </g>
+  <circle data-anchor="base" cx="70" cy="291.5" r="0"/>
+  <circle data-anchor="top" cx="70" cy="12.5" r="0"/>
+  <circle data-anchor="grip" cx="70" cy="151" r="0"/>
+</svg>
