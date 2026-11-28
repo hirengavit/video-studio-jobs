@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.22",
+  "4.44",
+  "6.67",
+  "8.89",
+  "10.96"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s076",
+   "message": "fade #verdict: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
+   "t": 0.3
+  }
+ ]
+}
