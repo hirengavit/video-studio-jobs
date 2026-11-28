@@ -118,7 +118,8 @@
  update(t,section,$) {
   const old=$("#guj-hi-wide")[0], wrapped=$("#guj-hi-wrap")[0], hi=$("#guj-hi-lead")[0];
   const ease=v=>{const u=Math.max(0,Math.min(1,v));return u*u*(3-2*u);};
-  hi.setAttribute("y",899-21*ease((t-.20)/.32));
+  hi.setAttribute("y",899-15*ease((t-.20)/.32));
+  $("#guj")[0].setAttribute("y",840-10*ease((t-.20)/.32));
   old.style.display=t>=.41?"none":"";
   old.setAttribute("opacity",1-ease((t-.21)/.20));
   wrapped.style.display=t<.42?"none":"";
