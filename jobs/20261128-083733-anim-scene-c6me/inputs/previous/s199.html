@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s199" data-in="cut" data-section="PART 9 · MIS CLOSURE AND DEATH" data-series="POSB">
+<svg viewBox="0 0 1920 1080">
+<defs><pattern id="lock-hatch" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="20" height="20" fill="#e8e4de"/><path d="M0 0V20" stroke="#b7b0a8" stroke-width="6"/></pattern></defs>
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="track">
+<g id="mis-book"><g transform="translate(160 234) scale(.5)"><use href="piece:passbook"/><text x="132" y="128" font-family="Inter,sans-serif" font-size="34" font-weight="800" text-anchor="middle" fill="#2b2622">MIS</text></g></g>
+<g id="death-pin"><path d="M1399 387V432M1399 512V548" fill="none" stroke="#6f6a63" stroke-width="4" stroke-dasharray="9 10"/><circle cx="1399" cy="560" r="13" fill="#6f6a63" stroke="#fbf7ee" stroke-width="4"/><rect x="1147" y="271" width="504" height="104" rx="52" fill="#4b4f58"/><path d="M1380 371h38l-19 22Z" fill="#4b4f58"/><text x="1399" y="341" font-family="'Noto Sans Devanagari', Inter, sans-serif" text-anchor="middle" font-weight="700" font-size="52" fill="#fff">holder की death</text></g>
+<rect x="220" y="523" width="296" height="37" rx="10" fill="url(#lock-hatch)"/>
+<rect x="516" y="523" width="592" height="37" fill="#f3ead6"/>
+<rect x="1108" y="523" width="592" height="37" rx="10" fill="#f3ead6"/>
+<rect id="lock-mark" x="200" y="450" width="336" height="65" rx="10" fill="#fde9a6"/>
+<text id="lock-label" x="368" y="500" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800" fill="#4b4f58">1 साल की रोक</text>
+<text id="rate-two" x="812" y="500" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="800" fill="#9e1b1b">2%</text>
+<text id="rate-one" x="1404" y="500" text-anchor="middle" font-family="Inter,sans-serif" font-size="52" font-weight="800" fill="#9e1b1b">1%</text>
+<path d="M220 560H1700M220 543v32M516 543v32M1108 543v32M1700 543v32" stroke="#2b2622" stroke-width="7" fill="none" stroke-linecap="round"/>
+<g font-family="Inter,sans-serif" font-size="46" font-weight="700" fill="#2b2622" text-anchor="middle"><text x="220" y="628">0</text><text x="516" y="628">1</text><text x="1108" y="628">3</text><text x="1700" y="628">5</text></g>
+<path id="maturity-bracket" d="M220 645v18h1460v-18" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linejoin="round"/>
+<text id="pre-maturity" x="950" y="730" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#9e1b1b">maturity से पहले</text>
+<text id="deposit-label" x="900" y="880" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="800" fill="#2e7d4f">deposit वापस</text>
+<g id="money-bundle"><use href="piece:rupee-note-bundle" transform="translate(1380 790) scale(.9)"/></g>
+<path id="refund-tick" d="M1284 855l19 20 38-48" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="lock-strike" d="M222 481H514" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+<path id="no-lock-cross" d="M346 397l44 40m0-40l-44 40" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+[0.14,"draw","#maturity-bracket",{dur:.30}],
+[0.50,"fade","#pre-maturity",{dur:.30}],
+[1.52,"pop","#death-pin",{from:.90}],
+[3.34,"pulse","#mis-book"],
+[4.58,"slide","#money-bundle",{from:"down",dist:55}],
+[4.90,"fade","#deposit-label",{dur:.28}],
+[4.90,"draw","#refund-tick",{dur:.37}],
+[7.78,"fade","#lock-mark",{dur:.27}],
+[8.76,"draw","#lock-strike",{dur:.24}],
+[9.04,"draw","#no-lock-cross",{dur:.24}]
+]}
+</script>
+</section>
