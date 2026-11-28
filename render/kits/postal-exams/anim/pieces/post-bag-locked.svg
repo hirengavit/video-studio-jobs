@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 380" width="300" height="380" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <g id="bag">
+    <path d="M128 112 C100 132 52 172 46 242 C40 302 52 348 70 362 L230 362 C248 348 260 302 254 242 C248 172 200 132 172 112 Z" fill="#e9d8b0" stroke="#2b2622" stroke-width="3"/>
+    <path d="M74 356 C110 348 190 348 226 356" stroke="#b89f6c" stroke-width="2.5"/>
+    <path d="M118 134 C96 184 88 252 98 330" stroke="#c9b383" stroke-width="2.5"/>
+    <path d="M182 134 C204 184 212 252 202 330" stroke="#c9b383" stroke-width="2.5"/>
+    <path d="M128 112 C110 100 96 82 104 62 C118 70 128 58 140 64 C150 54 160 66 168 58 C180 68 194 60 198 66 C204 84 190 102 172 112 Z" fill="#e9d8b0" stroke="#2b2622" stroke-width="3"/>
+    <path d="M136 102 L140 74 M152 104 L152 68 M164 102 L170 72" stroke="#c9b383" stroke-width="2.5"/>
+    <rect x="122" y="104" width="56" height="16" rx="7" fill="#c9b383" stroke="#2b2622" stroke-width="3"/>
+  </g>
+  <g id="tag">
+    <path d="M174 116 C190 124 202 144 214 164" stroke="#2b2622" stroke-width="2"/>
+    <g transform="rotate(8 240 165)">
+      <path d="M216 142 L268 142 Q274 142 274 148 L274 182 Q274 188 268 188 L216 188 L203 165 Z" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+      <circle cx="215" cy="165" r="4" fill="#e9d8b0" stroke="#2b2622" stroke-width="2"/>
+    </g>
+  </g>
+  <g id="padlock">
+    <circle cx="150" cy="126" r="8" stroke="#2b2622" stroke-width="7"/>
+    <circle cx="150" cy="126" r="8" stroke="#d9ab3f" stroke-width="3"/>
+    <path d="M137 154 V146 A13 13 0 0 1 163 146 V154" stroke="#2b2622" stroke-width="10"/>
+    <path d="M137 154 V146 A13 13 0 0 1 163 146 V154" stroke="#d9ab3f" stroke-width="4"/>
+    <rect x="124" y="150" width="52" height="42" rx="7" fill="#d9ab3f" stroke="#2b2622" stroke-width="3"/>
+    <path d="M127 181 H173" stroke="#b98a28" stroke-width="3"/>
+    <circle cx="150" cy="165" r="4.5" fill="#2b2622"/>
+    <path d="M148 167 L146 177 H154 L152 167 Z" fill="#2b2622"/>
+  </g>
+  <circle data-anchor="base" cx="150" cy="362" r="0"/>
+  <circle data-anchor="top" cx="150" cy="58" r="0"/>
+  <circle data-anchor="grip" cx="150" cy="112" r="0"/>
+</svg>
