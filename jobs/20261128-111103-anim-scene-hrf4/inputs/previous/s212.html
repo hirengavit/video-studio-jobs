@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s212" data-section="PART 10 · FORMS AND RECORDS" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="passbooks" font-family="Inter, sans-serif">
+<text id="passbook-title" x="960" y="245" text-anchor="middle" font-size="67" font-weight="790" fill="#9e1b1b" font-family="'Noto Sans Devanagari', Inter, sans-serif">Passbook · पासबुक</text>
+<g id="mis-group">
+<g id="mis-book">
+<use href="piece:passbook" transform="translate(792 286) scale(1.4)"/>
+<text id="cover-label" x="977" y="460" text-anchor="middle" font-size="45" font-weight="820" fill="#9e1b1b">SB-5</text>
+</g>
+<text id="mis-caption" x="960" y="800" text-anchor="middle" font-size="56" font-weight="810" fill="#2b2622">SB-5 · MIS</text>
+<g id="mis-note"><rect x="696" y="826" width="528" height="80" rx="27" fill="#f6ebca" stroke="#e8d7a0" stroke-width="3"/><rect x="847" y="843" width="67" height="45" rx="10" fill="#f4d678"/><text x="833" y="883" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#9e1b1b">लाल ·</text><text x="880.5" y="883" text-anchor="middle" font-size="48" font-weight="800" fill="#2b2622">12</text><text x="929" y="883" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="650" fill="#2b2622">पन्ने + cover</text></g>
+</g>
+<text id="common-en" x="960" y="875" text-anchor="middle" font-size="48" font-weight="650" fill="#2b2622">Common CBS passbook</text>
+<text id="common-hi" x="960" y="946" text-anchor="middle" font-size="48" font-weight="600" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif">सामान्य CBS पासबुक</text>
+<g id="td-panel">
+<g id="td-book"><use href="piece:td-passbook-white" transform="translate(372 286) scale(1.4)"/><text id="td-code" x="557" y="454" text-anchor="middle" font-size="45" font-weight="820" fill="#403a32">SB-5A</text></g>
+<g fill="#2b2622" font-size="56" font-weight="810"><text id="td-prefix" x="448" y="800" text-anchor="end">SB-5A ·</text><g id="td-names"><text id="td-name" x="354" y="800">TD,</text><text id="nsc-name" x="463" y="800">NSC,</text><text id="kvp-name" x="609" y="800">KVP</text></g></g>
+<text id="td-note" x="540" y="883" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="650" fill="#6f6a63">सफ़ेद</text>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+({on:[
+[0.60,"pulse","#mis-book",{amount:0.055}],
+[1.30,"out","#common-en",{dur:0.24}],
+[1.30,"out","#common-hi",{dur:0.24}],
+[1.58,"pop","#mis-note"],
+[4.00,"move","#mis-group",{by:[420,0],spring:{stiffness:175,damping:26}}],
+[4.00,"slide","#td-panel",{from:"left",dist:430,spring:{stiffness:145,damping:24}}],
+[4.78,"pop","#td-name"],
+[5.38,"pop","#nsc-name"],
+[5.98,"pop","#kvp-name"],
+[7.34,"type","#td-code",{cps:19}],
+[7.34,"move","#td-names",{by:[112,0],spring:{stiffness:265,damping:34}}],
+[7.47,"pop","#td-prefix"],
+[9.34,"fade","#td-note",{dur:0.30}],
+[9.34,"pulse","#td-book",{amount:0.055}]
+]})
+</script>
+</section>
