@@ -26,7 +26,7 @@
     </g>
     <path id="total-bracket" d="M260 706v14h1400v-14" fill="none" stroke="#8a5d00" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
     <text id="total-label" x="690" y="813" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="62" font-weight="800" fill="#2b2622">कुल ₹1,80,000</text>
-    <path id="cap-line" d="M1427 440V760" stroke="#9e1b1b" stroke-width="7" stroke-dasharray="13 11" stroke-linecap="round"/>
+    <path id="cap-line" d="M1427 491V760" stroke="#9e1b1b" stroke-width="7" stroke-dasharray="13 11" stroke-linecap="round"/>
     <text id="cap-label" x="1427" y="410" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="61" font-weight="800" fill="#9e1b1b">सीमा ₹1,50,000</text>
     <text id="overage" x="1000" y="820" font-family="Inter, sans-serif" font-size="57" font-weight="800" fill="#56606b">₹30,000</text>
     <text id="no-deduction" x="1250" y="820" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="750" fill="#56606b">· कोई deduction नहीं</text>
@@ -38,10 +38,10 @@
       on: [
         [1.66, "draw", "#total-bracket", {dur: 0.42}],
         [1.72, "pop", "#total-label", {from: 0.98}],
+        [2.85, "move", "#other-value", {by: [-120, 0], spring: "soft"}],
         [3.10, "grow", "#cap-line", {axis: "y", origin: "top", spring: "soft"}],
         [4.76, "pop", "#cap-label", {from: 0.98}],
         [5.20, "fade", "#source", {dur: 0.28}],
-        [7.20, "move", "#other-value", {by: [-116, 0], spring: "soft"}],
         [7.26, "fade", "#excess-fill", {dur: 0.33}],
         [7.30, "pop", "#overage", {from: 0.98}],
         [9.80, "words", "#no-deduction", {gap: 0.18, dist: 8, from: "up"}],
