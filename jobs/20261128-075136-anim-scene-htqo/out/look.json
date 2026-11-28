@@ -8,12 +8,5 @@
   "5.26"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s084",
-   "text": "Deduction: सिर्फ / 5-year TD",
-   "t": 2.16
-  }
- ]
+ "warnings": []
 }
