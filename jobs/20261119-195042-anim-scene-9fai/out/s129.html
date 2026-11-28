@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s129" data-in="cut" data-section="PART 6 · POSTAL STATIONERY" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="prices">
+  <g id="col-1">
+    <rect x="120" y="200" width="540" height="780" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <g id="postcard"><use href="piece:postcard-blank" transform="translate(220 225) scale(0.85)"/></g>
+    <text x="390" y="640" text-anchor="middle" fill="#9e1b1b" font-family="Inter,sans-serif" font-size="56" font-weight="700">Ordinary postcard</text>
+    <text id="postcard-hi" x="390" y="695" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="40">साधारण पोस्टकार्ड</text>
+    <g id="price-postcard">
+      <rect x="215" y="780" width="350" height="150" rx="13" fill="#9e1b1b"/>
+      <rect x="215" y="780" width="350" height="150" rx="13" fill="none" stroke="#fff" stroke-width="10" stroke-dasharray="0 18" stroke-linecap="round"/>
+      <text x="390" y="859" text-anchor="middle" fill="#fff" font-family="Inter,sans-serif" font-size="72" font-weight="800">50 paise</text>
+      <text x="390" y="905" text-anchor="middle" fill="#fff" font-family="'Noto Sans Devanagari',Inter,sans-serif" font-size="36" font-weight="600">50 पैसे</text>
+    </g>
+  </g>
+
+  <g id="col-2"><rect x="690" y="200" width="540" height="780" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <g id="letter-prop"><use href="piece:letter-card" transform="translate(790 225) scale(.85)"/></g>
+    <text x="960" y="640" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="750" fill="#9e1b1b">Letter card</text><text x="960" y="695" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#2b2622">अंतर्देशीय पत्र</text>
+    <g id="price-letter"><rect x="785" y="780" width="350" height="150" rx="13" fill="#9e1b1b"/><rect x="785" y="780" width="350" height="150" rx="13" fill="none" stroke="#fff" stroke-width="10" stroke-dasharray="0 18" stroke-linecap="round"/><text x="960" y="879.48" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="750" fill="#fff">₹2.50</text></g>
+  </g>
+  <g id="col-3"><rect x="1260" y="200" width="540" height="780" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <g id="embossed-prop"><use href="piece:embossed-envelope" transform="translate(1360 225) scale(.85)"/></g>
+    <g id="embossed-term"><text x="1530" y="596" text-anchor="middle" font-family="Inter, sans-serif" font-size="47" font-weight="750" fill="#9e1b1b">Domestic embossed</text><text x="1530" y="649" text-anchor="middle" font-family="Inter, sans-serif" font-size="47" font-weight="750" fill="#9e1b1b">envelope</text></g>
+    <g id="embossed-hi"><text x="1530" y="708" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="650" fill="#2b2622">देशी छपे टिकट वाला लिफ़ाफ़ा</text></g>
+    <g id="price-embossed"><rect x="1355" y="780" width="350" height="150" rx="13" fill="#9e1b1b"/><rect x="1355" y="780" width="350" height="150" rx="13" fill="none" stroke="#fff" stroke-width="10" stroke-dasharray="0 18" stroke-linecap="round"/><text x="1530" y="879.48" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="750" fill="#fff">₹5</text></g>
+  </g>
+</g>
+<g id="reg">
+  <rect id="reg-small-shell" x="120" y="180" width="1680" height="390" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+  <rect id="reg-large-shell" opacity="0" x="120" y="600" width="1680" height="390" rx="30" fill="none" stroke="#ead9a8" stroke-width="3"/>
+  <g id="small-envelope"><use href="piece:registration-envelope" transform="translate(145 208) scale(.85)"/></g>
+  <g id="small-term"><text x="520" y="286" text-anchor="start" font-family="Inter, sans-serif" font-size="56" font-weight="750" fill="#9e1b1b">Small registration</text><text x="520" y="352" text-anchor="start" font-family="Inter, sans-serif" font-size="56" font-weight="750" fill="#9e1b1b">envelope</text>
+  <g id="small-hi"><text x="522" y="413" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="650" fill="#2b2622">छोटा रजिस्ट्री लिफ़ाफ़ा</text></g></g>
+  <g id="price-small"><rect x="1180" y="237" width="280" height="155" rx="13" fill="#9e1b1b"/><rect x="1180" y="237" width="280" height="155" rx="13" fill="none" stroke="#fff" stroke-width="10" stroke-dasharray="0 18" stroke-linecap="round"/><text x="1320" y="336.26" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="750" fill="#fff">₹22.50</text></g>
+</g>
+</svg><script type="text/scene">
+{shots:[[0,'#prices'],[6.16,'#reg']],on:[
+ [0,'fade','#col-2',{dur:.18}],[0,'draw','#letter-prop',{dur:.48}],[1.46,'stamp','#price-letter',{from:1.10,rot:-3}],
+ [2.37,'fade','#col-3',{dur:.24}],[2.37,'draw','#embossed-prop',{dur:.47}],
+ [3.33,'fade','#embossed-term',{dur:.29}],[3.83,'fade','#embossed-hi',{dur:.29}],[5.11,'stamp','#price-embossed',{from:1.10,rot:-3}],
+ [6.16,'draw','#small-envelope',{dur:.47}],[7.07,'fade','#small-term',{dur:.29}],[7.57,'fade','#small-hi',{dur:.27}],[9.22,'stamp','#price-small',{from:1.10,rot:-3}]
+]}
+</script></section>
