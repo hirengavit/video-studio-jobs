@@ -12,7 +12,7 @@
 <text x="805" y="481">₹7.5 lakh</text><text x="1055" y="481">₹7.5 lakh</text></g>
 <g id="personal-bar">
 <text id="holder" x="1260" y="364" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="49" font-weight="740">हर holder</text>
-<g id="personal-cap"><path d="M1780 404V526" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/><text x="1770" y="364" text-anchor="end" fill="#6f6a63" font-family="Georgia, serif" font-size="46" font-weight="700">₹9 lakh</text></g>
+<g id="personal-cap"><path id="cap-line" d="M1780 404V526" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/><text id="cap-label" x="1770" y="364" text-anchor="end" fill="#6f6a63" font-family="Georgia, serif" font-size="46" font-weight="700">₹9 lakh</text></g>
 <g id="personal-track"><rect x="1260" y="420" width="520" height="90" rx="17" fill="#fff" stroke="#ead9a8" stroke-width="3"/></g>
 <path id="sand-part" d="M1277 421H1693.33V509H1277Q1261 509 1261 493V437Q1261 421 1277 421Z" fill="#f3ead6"/>
 <path id="yellow-part" d="M1693.33 421H1762Q1779 421 1779 437V493Q1779 509 1762 509H1693.33Z" fill="#f2b705"/>
@@ -29,7 +29,8 @@ on:[
 [.95,"draw","#joint-divider",{dur:.27}],
 [2.10,"pop","#share-labels",{from:.92}],
 [3.90,"fade","#holder",{dur:.25}],
-[3.90,"fade","#personal-cap",{dur:.27}],
+[3.90,"draw","#cap-line",{dur:.29}],
+[4.00,"fade","#cap-label",{dur:.24}],
 [3.90,"fade","#personal-track",{dur:.25}],
 [3.90,"fade","#limit-source",{dur:.3}],
 [5.80,"grow","#sand-part",{axis:"x",origin:"left",spring:"fast"}],
