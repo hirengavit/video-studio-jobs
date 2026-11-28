@@ -10,18 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s076",
-   "message": "draw: nothing found for \"#strike1,#strike2,#strike3\"",
-   "t": 0.3
-  },
-  {
-   "kind": "misuse",
-   "scene": "s076",
-   "message": "fade #verdict: that's a word inside a <text>; animate the whole <text>, or write the word as its own <text> (marks like highlight, underline and strike can take {words: '…'})",
-   "t": 0.3
-  },
-  {
    "kind": "low-contrast",
    "scene": "s076",
    "text": "₹1,50,000 (2.7:1) / ₹1,50,000 (2.7:1) / ₹1,50,000 (2.7:1)",
@@ -31,8 +19,14 @@
   {
    "kind": "text-overlap",
    "scene": "s076",
-   "text": "5-year TD का निवेश इस deduction में / नई concessional regime: नहीं",
+   "text": "5-year TD का निवेश इस deduction में / नई concessional regime",
    "t": 8.89
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s076",
+   "text": "नई concessional regime / : नहीं",
+   "t": 10.96
   }
  ]
 }
