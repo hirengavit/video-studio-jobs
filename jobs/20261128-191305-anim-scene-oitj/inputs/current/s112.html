@@ -1,0 +1,52 @@
+<section class="vs-scene" id="s112" data-in="cut" data-section="PART 6 · TD PLEDGE" data-series="POSB">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="pledgee">
+      <path d="M179 912H1665" fill="none" stroke="#ead9a8" stroke-width="3"/>
+      <g id="passbook">
+        <use href="piece:td-passbook-white" transform="translate(240 560)"/>
+        <text x="372" y="690" text-anchor="middle" font-family="Inter" font-weight="750" font-size="44" fill="#2b2622">TD</text>
+      </g>
+      <g id="institution" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1165 542L1380 424L1595 542Z" fill="#f3ead6"/>
+        <path d="M1194 542H1566V845H1194Z" fill="#fff"/>
+        <path d="M1175 542H1585V569H1175Z" fill="#9e1b1b"/>
+        <path d="M1221 574H1271V832H1221ZM1321 574H1371V832H1321ZM1389 574H1439V832H1389ZM1489 574H1539V832H1489Z" fill="#f3ead6"/>
+        <path d="M1181 835H1579V863H1181ZM1165 865H1595V899H1165Z" fill="#f3ead6"/>
+      </g>
+      <path id="security-arrow" d="M522 720H1120M1091 698L1120 720L1091 742" fill="none" stroke="#2b2622" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="pledgee-en" x="1380" y="300" text-anchor="middle" font-family="Inter" font-weight="800" font-size="96" fill="#2b2622">Pledgee</text>
+      <text id="pledgee-hi" x="1380" y="365" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-weight="700" font-size="52" fill="#9e1b1b">गिरवीदार</text>
+    </g>
+    <g id="form5">
+      <use href="piece:complaint-form-sheet" transform="translate(200 260) scale(1.4)"/>
+      <rect id="form-hilite" x="247" y="294" width="410" height="64" rx="8" fill="#7d1414" stroke="#f2b705" stroke-width="3"/>
+      <text id="form-title" x="452" y="344" text-anchor="middle" font-family="Inter" font-weight="800" font-size="56" fill="#fff">TD Form-5</text>
+      <text id="depositor-en" x="860" y="330" font-family="Inter" font-weight="800" font-size="88" fill="#2b2622">Depositor</text>
+      <text id="depositor-hi" x="860" y="400" font-family="Noto Sans Devanagari, Inter, sans-serif" font-weight="650" font-size="52" fill="#6f6a63">जमाकर्ता</text>
+      <path id="field-line-1" d="M272 430H475M491 430H588" fill="none" stroke="#6f6a63" stroke-width="5" stroke-linecap="round"/>
+      <path id="field-line-2" d="M272 514H415M432 514H560" fill="none" stroke="#6f6a63" stroke-width="5" stroke-linecap="round"/>
+      <path id="field-line-3" d="M272 598H496M512 598H610" fill="none" stroke="#6f6a63" stroke-width="5" stroke-linecap="round"/>
+      <text id="apply-hi" x="744" y="535" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="52" font-weight="680" fill="#6f6a63">आवेदन</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots:[[0,"#pledgee"],[6.18,"#form5"]],
+    on:[
+      [0.26,"pulse","#institution",{amount:0.045}],
+      [1.52,"draw","#security-arrow",{dur:0.44}],
+      [4.56,"tracking","#pledgee-en",{from:10,dur:0.35}],
+      [5.06,"fade","#pledgee-hi",{dur:0.22}],
+      [6.18,"pop","#depositor-en",{from:0.95,spring:"soft"}],
+      [6.68,"fade","#depositor-hi",{dur:0.24}],
+      [7.28,"fade","#form-hilite",{dur:0.28}],
+      [7.28,"type","#form-title",{cps:30}],
+      [8.92,"draw","#field-line-1",{dur:0.25}],
+      [9.07,"draw","#field-line-2",{dur:0.25}],
+      [9.22,"draw","#field-line-3",{dur:0.25}],
+      [8.92,"fade","#apply-hi",{dur:0.24}]
+    ]
+  }
+  </script>
+</section>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="shield">
+      <path d="M150 30 C192 50 224 56 252 56 V140 C252 204 212 244 150 272 C88 244 48 204 48 140 V56 C76 56 108 50 150 30 Z" fill="#9e1b1b"/>
+      <path d="M150 52 C184 68 210 74 232 75 V140 C232 192 200 226 150 250 C100 226 68 192 68 140 V75 C90 74 116 68 150 52 Z" fill="none" stroke="#b8403a"/>
+    </g>
+    <g id="lock">
+      <path id="lock-shackle" d="M124 152 V128 A26 26 0 0 1 176 128 V152" fill="none" stroke="#2b2622" stroke-width="18"/>
+      <path d="M124 152 V128 A26 26 0 0 1 176 128 V152" fill="none" stroke="#f3ead6" stroke-width="12"/>
+      <rect id="lock-body" x="106" y="148" width="88" height="72" rx="10" fill="#f3ead6"/>
+      <circle cx="150" cy="176" r="8" fill="#2b2622"/>
+      <rect x="146" y="180" width="8" height="22" rx="3" fill="#2b2622" stroke="none"/>
+    </g>
+  </g>
+  <circle data-anchor="top" cx="150" cy="30" r="0"/>
+  <circle data-anchor="base" cx="150" cy="272" r="0"/>
+</svg>
