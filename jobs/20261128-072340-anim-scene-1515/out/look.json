@@ -8,12 +8,5 @@
   "7.01"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s251",
-   "text": "Savings Bank / बचत बैंक",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
