@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s203" data-in="cut" data-section="PART 9 · MIS CLOSURE AND DEATH" data-series="POSB">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="after" font-family="Inter, sans-serif" fill="#2b2622">
+  <path d="M236 665H630" stroke="#ead9a8" stroke-width="5" stroke-linecap="round"/>
+  <use href="piece:passbook" transform="translate(300 300) scale(1.1)"/>
+  <g transform="translate(435 461) rotate(-9)">
+    <rect x="-153" y="-47" width="306" height="88" rx="13" fill="#fff" stroke="#9e1b1b" stroke-width="6"/>
+    <text x="0" y="16" text-anchor="middle" font-size="46" font-weight="850" fill="#9e1b1b">MATURITY</text>
+  </g>
+  <path id="rule-arrow" d="M644 477H995m-66-54 66 54-66 54" fill="none" stroke="#9e1b1b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="rule-paper" x="1060" y="320" width="660" height="320" rx="25" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+  <g id="rule-copy" text-anchor="middle" font-size="60">
+    <text id="rule-opening" x="1390" y="447" font-weight="700" font-family="'Noto Sans Devanagari', Inter, sans-serif">maturity के बाद वाला</text>
+    <rect id="rule-mark" x="1232" y="493" width="316" height="83" rx="12" fill="#fde9a6"/>
+    <text id="rule-emphasis" x="1390" y="558" font-weight="850" fill="#9e1b1b" font-family="'Noto Sans Devanagari', Inter, sans-serif">अलग नियम</text>
+  </g>
+</g>
+<g id="joint" font-family="Inter, sans-serif" fill="#2b2622">
+  <g id="joint-book">
+    <use href="piece:passbook" transform="translate(840 220)"/>
+    <rect x="905" y="292" width="134" height="80" rx="4" fill="#f3ead6"/>
+    <text id="joint-book-label" x="972" y="321" font-size="39" font-weight="850" text-anchor="middle">MIS<tspan x="972" y="357" font-size="33">· Joint</tspan></text>
+  </g>
+  <path d="M960 542v49 M550 639v-48h820v48" fill="none" stroke="#d6c49e" stroke-width="5" stroke-linecap="round"/>
+  <g id="holder-one">
+    <rect x="300" y="640" width="500" height="180" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text x="550" y="713" text-anchor="middle" font-size="53" font-weight="800">Joint holder 1</text>
+    <text id="survivor" x="550" y="785" text-anchor="middle" font-size="48" font-weight="800" fill="#2e7d4f" font-family="'Noto Sans Devanagari', Inter, sans-serif">जीवित</text>
+  </g>
+  <g id="holder-two">
+    <rect x="1120" y="640" width="500" height="180" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <text id="holder-two-label" x="1370" y="713" text-anchor="middle" font-size="53" font-weight="800">Joint holder 2</text>
+    <text id="death-tag" x="1370" y="785" text-anchor="middle" font-size="48" font-weight="750" fill="#6f6a63">death</text>
+  </g>
+  <g id="nominee-card" text-anchor="middle">
+    <rect x="1240" y="860" width="500" height="140" rx="23" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+    <text x="1490" y="918" font-size="49" font-weight="850" fill="#9e1b1b">Nominee</text>
+    <text x="1490" y="978" font-size="46" font-weight="750" font-family="'Noto Sans Devanagari', Inter, sans-serif">नामिती</text>
+  </g>
+  <text id="owner-word" x="960" y="953" text-anchor="middle" font-size="56" font-weight="800" fill="#4b4f58">owner</text>
+  <path id="owner-strike" d="M864 934l193-13m33-5 35 35m0-35-35 35" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+</g>
+</svg>
+<script type="text/scene">
+({shots:[[0,"#after"],[5.05,"#joint"]],on:[
+  [1.68,"draw","#rule-arrow",{dur:.56}],
+  [1.68,"reveal","#rule-paper",{from:"left",dur:.55}],
+  [1.92,"fade","#rule-opening",{dur:.28}],
+  [3.20,"fade","#rule-emphasis",{dur:.26}],
+  [3.74,"reveal","#rule-mark",{from:"left",dur:.40}],
+  [5.67,"fade","#survivor",{dur:.3}],
+  [7.57,"color","#holder-two-label",{to:"#6f6a63",dur:.3}],
+  [7.84,"fade","#death-tag",{dur:.34}],
+  [9.01,"slide","#nominee-card",{from:"down",dist:42,spring:"soft"}],
+  [10.45,"fade","#owner-word",{dur:.20}],
+  [10.75,"draw","#owner-strike",{dur:.29}]
+]})
+</script>
+</section>
