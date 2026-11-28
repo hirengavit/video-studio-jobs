@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<path id="string" d="M87 184C51 186 18 148 35 123C55 93 105 123 91 164" stroke="#2b2622"/>
+<path id="tag" d="M104 123H353V287H104L63 246V164Z" fill="#fbf7ee"/>
+<circle id="eyelet" cx="91" cy="183" r="10" fill="#e3cfa3"/>
+<g id="pin-lettering" stroke-width="5"><path d="M174 183V147H185Q200 147 200 158Q200 169 185 169H174M213 147H231M222 147V183M213 183H231M246 183V147L271 183V147"/></g>
+<g id="digit-boxes" fill="#ffffff" stroke="#ead9a8">
+<rect id="digit-1" x="112" y="213" width="30" height="43" rx="2"/><rect id="digit-2" x="149" y="213" width="30" height="43" rx="2"/><rect id="digit-3" x="186" y="213" width="30" height="43" rx="2"/><rect id="digit-4" x="223" y="213" width="30" height="43" rx="2"/><rect id="digit-5" x="260" y="213" width="30" height="43" rx="2"/><rect id="digit-6" x="297" y="213" width="30" height="43" rx="2"/>
+</g>
+<circle data-anchor="grip" cx="58" cy="124" r="0"/>
+<circle data-anchor="base" cx="208" cy="287" r="0"/>
+</svg>
