@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s210" data-section="PART 10 · FORMS AND RECORDS" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="sb-forms" font-family="Inter, sans-serif">
+<path d="M930 192 V916" stroke="#ead9a8" stroke-width="4"/>
+<g id="pay-sheet">
+<use href="piece:complaint-form-sheet" transform="translate(200 200)"/>
+<text x="380" y="259" text-anchor="middle" font-size="52" font-weight="800" fill="#fff">SB-103</text>
+</g>
+<text id="pay-en" x="380" y="770" text-anchor="middle" font-size="60" font-weight="750" fill="#272421">Pay-in slip</text>
+<text id="pay-hi" x="380" y="840" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="600" fill="#6f6a63">जमा पर्ची</text>
+<g id="withdraw-sheet">
+<use href="piece:complaint-form-sheet" transform="translate(1050 200)"/>
+<text x="1230" y="259" text-anchor="middle" font-size="52" font-weight="800" fill="#fff">SB-7</text>
+</g>
+<text id="withdraw-en" x="1230" y="770" text-anchor="middle" font-size="60" font-weight="750" fill="#272421">Withdrawal form</text>
+<text id="withdraw-hi" x="1230" y="840" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="600" fill="#6f6a63">निकासी फ़ॉर्म</text>
+<g id="ordinary-chip">
+<rect x="1450" y="260" width="340" height="106" rx="21" fill="#f4e6bf" stroke="#ead9a8" stroke-width="3"/>
+<text x="1620" y="329" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#272421">सामान्य निकासी</text>
+</g>
+<g id="interest-chip">
+<rect x="1450" y="420" width="340" height="124" rx="21" fill="#f4e6bf" stroke="#ead9a8" stroke-width="3"/>
+<text x="1620" y="471" text-anchor="middle" font-size="44" font-weight="650" fill="#272421">periodical</text>
+<text x="1620" y="522" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#272421">ब्याज निकालना</text>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+({on:[
+[1.42,"words","#pay-en",{gap:0.12,dist:14}],
+[1.90,"fade","#pay-hi",{dur:0.30}],
+[3.68,"slide","#withdraw-sheet",{from:"right",dist:85}],
+[4.84,"words","#withdraw-en",{gap:0.12,dist:14}],
+[5.34,"fade","#withdraw-hi",{dur:0.30}],
+[6.68,"pop","#ordinary-chip"],
+[8.16,"pop","#interest-chip"]
+]})
+</script>
+</section>
