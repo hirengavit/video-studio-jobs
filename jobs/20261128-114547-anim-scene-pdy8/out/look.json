@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s164",
-   "message": "highlight: \"67\" isn't in that <text> (it says \"\")",
-   "t": 0.3
-  },
-  {
    "kind": "text-overlap",
    "scene": "s164",
    "text": "Monthly ब्याज: नज़दीकी रुपये तक round / 3 नियम",
