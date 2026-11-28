@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <rect id="tile" x="70" y="70" width="260" height="260" fill="#ffffff" rx="6" stroke="#aaa39a" stroke-width="2"/>
+  <g id="corner-motifs" stroke="none">
+    <g id="finder-100-100">
+    <rect x="100" y="100" width="60" height="60" fill="#2b2622"/>
+    <rect x="112" y="112" width="36" height="36" fill="#ffffff"/>
+    <rect x="124" y="124" width="12" height="12" fill="#2b2622"/>
+  </g>
+    <g id="finder-236-100">
+    <rect x="236" y="100" width="64" height="64" fill="#2b2622"/>
+    <rect x="246.5" y="110.5" width="43" height="43" fill="#ffffff"/>
+    <rect x="258" y="122" width="20" height="20" fill="#2b2622"/>
+  </g>
+    <g id="finder-100-236">
+    <rect x="100" y="236" width="63" height="63" fill="#2b2622"/>
+    <rect x="111.5" y="247.5" width="40" height="40" fill="#ffffff"/>
+    <rect x="123.5" y="259.5" width="16" height="16" fill="#2b2622"/>
+  </g>
+  </g>
+  <path id="modules" d="M182 102h29v17h-14v17h-15Z M177 153h42v16h-27v15h-15Z M246 178h31v26h20v20h-37v-30h-14Z M113 178h15v16h36v16h-51Z M192 193h20v19h19v15h-39Z M179 242h18v22h26v36h-16v-20h-28Z M246 245h27v15h25v38h-20v-23h-32Z M241 285h17v15h-17Z" fill="#2b2622" stroke="none"/>
+  <circle data-anchor="base" cx="200" cy="330" r="0"/>
+</svg>
