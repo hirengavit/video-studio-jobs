@@ -8,12 +8,5 @@
   "9.05"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s030",
-   "text": "Government Savings / Promotion General",
-   "t": 5.52
-  }
- ]
+ "warnings": []
 }
