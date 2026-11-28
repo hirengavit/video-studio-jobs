@@ -10,21 +10,9 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-off-frame",
-   "scene": "s118",
-   "text": "authorised officer",
-   "t": 2.11
-  },
-  {
-   "kind": "text-off-frame",
-   "scene": "s118",
-   "text": "प्राधिकृत अधिकारी",
-   "t": 2.11
-  },
-  {
    "kind": "off-frame",
    "scene": "s118",
-   "message": "a card or panel runs 437 px past the frame edge at 4.2 s (check the camera zoom and the layout)",
+   "message": "a card or panel (#s118-cover) runs 332 px past the frame edge at 4.2 s (check the camera zoom and the layout)",
    "t": 4.22
   }
  ]
