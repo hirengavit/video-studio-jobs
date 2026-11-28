@@ -8,18 +8,5 @@
   "10.87"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s040",
-   "message": "pop: nothing found for \"#small-book-1,#small-book-2,#small-book-3\"",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s040",
-   "text": "दूसरा निवेश / → दूसरा खाता",
-   "t": 10.87
-  }
- ]
+ "warnings": []
 }
