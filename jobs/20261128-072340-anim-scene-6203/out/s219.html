@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s219" data-in="cut" data-section="PART 10 · FORMS AND RECORDS" data-series="POSB">
+<svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="condition-minor">
+    <rect x="200" y="180" width="660" height="140" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text id="minor-en" x="530" y="239" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="760" fill="#9e1b1b">Minor</text>
+    <text id="minor-hi" x="530" y="297" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="550" fill="#6f6a63">नाबालिग</text>
+  </g>
+  <circle id="or-disc" cx="960" cy="250" r="43" fill="#fbf7ee" stroke="#ead9a8" stroke-width="3"/>
+  <text id="condition-or" x="960" y="266" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#6f6a63">या</text>
+  <g id="condition-operation">
+    <rect x="1060" y="180" width="660" height="140" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text x="1390" y="269" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="650" fill="#2b2622">खुद खाता न चला सके</text>
+  </g>
+  <path id="document-arrow" d="M960 326v58m-15-15 15 15 15-15" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="declaration">
+    <rect x="300" y="400" width="1320" height="590" rx="24" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M324 403h1272a21 21 0 0 1 21 21v125H303V424a21 21 0 0 1 21-21Z" fill="#f3ead6"/>
+    <text id="guardian-en" x="960" y="472" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="780" fill="#9e1b1b">Guardian</text>
+    <text id="guardian-hi" x="960" y="529" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="570" fill="#9e1b1b">अभिभावक</text>
+    <text id="written" x="960" y="611" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="600" fill="#6f6a63">लिखकर देता है</text>
+    <g id="alive-row">
+      <rect x="370" y="648" width="1180" height="115" rx="17" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+      <rect x="406" y="682" width="47" height="47" rx="10" fill="#fff" stroke="#d7c8a5" stroke-width="3"/>
+      <text id="alive-text" x="488" y="724" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="650" fill="#2b2622">व्यक्ति जीवित है</text>
+    </g>
+    <path id="alive-tick" d="m416 705 10 10 19-22" fill="none" stroke="#2e7d4f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="purpose-row">
+      <rect x="370" y="796" width="1180" height="115" rx="17" fill="#fbf7ee" stroke="#ead9a8" stroke-width="2"/>
+      <rect x="406" y="830" width="47" height="47" rx="10" fill="#fff" stroke="#d7c8a5" stroke-width="3"/>
+      <text id="purpose-text" x="488" y="872" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="650" fill="#2b2622">पैसा उसी के काम के लिए चाहिए</text>
+    </g>
+    <path id="purpose-tick" d="m416 853 10 10 19-22" fill="none" stroke="#2e7d4f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.44,'fade','#minor-en',{dur:0.22}],
+    [0.94,'fade','#minor-hi',{dur:0.25}],
+    [1.42,'pop','#condition-operation',{spring:'none',from:0.94}],
+    [1.42,'fade','#or-disc',{dur:0.18}],
+    [1.42,'fade','#condition-or',{dur:0.22}],
+    [3.30,'draw','#document-arrow',{dur:0.45}],
+    [5.10,'type','#guardian-en',{cps:28}],
+    [5.42,'fade','#written',{dur:0.30}],
+    [5.60,'fade','#guardian-hi',{dur:0.28}],
+    [7.43,'fade','#alive-row',{dur:0.22}],
+    [7.46,'words','#alive-text',{gap:0.13,dist:8}],
+    [8.46,'draw','#alive-tick',{dur:0.30}],
+    [9.42,'fade','#purpose-row',{dur:0.23}],
+    [9.46,'words','#purpose-text',{gap:0.17,dist:8}],
+    [11.28,'draw','#purpose-tick',{dur:0.30}]
+  ]
+}
+</script>
+</section>
