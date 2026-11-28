@@ -8,12 +8,5 @@
   "9.59"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s006",
-   "message": "fade: nothing found for \"#td-duration-icon,#td-row-divider,#mis-row-divider\"",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
