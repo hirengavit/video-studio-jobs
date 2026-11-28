@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "1.95",
+  "3.90",
+  "5.85",
+  "7.80",
+  "9.60"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s067",
+   "text": "पहली maturity के बाद / extension",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s067",
+   "text": "सिर्फ / दो बार",
+   "t": 0.3
+  }
+ ]
+}
