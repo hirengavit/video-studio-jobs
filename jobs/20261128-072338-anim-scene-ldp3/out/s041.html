@@ -1,0 +1,32 @@
+<section class="vs-scene" id="s041" data-in="wipe" data-in-dur="0.6" data-in-opts='{"from":"right"}' data-section="PART 3 · TD INTEREST" data-series="POSB">
+  <svg viewBox="0 0 1920 1080" role="img" aria-label="TD interest rates for deposits opened 1 October through 31 December 2026">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text x="960" y="267" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="72" font-weight="800" fill="#9e1b1b">TD ब्याज दरें</text>
+    <use id="calendar" href="piece:calendar-quarters" transform="translate(120 380) scale(1.2)"/>
+    <rect id="active-quarter" x="966" y="386" width="408" height="228" rx="16" fill="#fde9a6" fill-opacity=".82" stroke="#f2b705" stroke-width="4"/>
+    <g font-size="44" font-weight="700" fill="#2b2622" text-anchor="middle">
+      <text x="330" y="515" font-family="Noto Sans Devanagari, sans-serif">अप्रैल–जून</text>
+      <text x="750" y="515" font-family="Noto Sans Devanagari, sans-serif">जुलाई–सितंबर</text>
+      <text x="1170" y="515" font-family="Noto Sans Devanagari, sans-serif">अक्टूबर–दिसंबर</text>
+      <text x="1590" y="515" font-family="Noto Sans Devanagari, sans-serif">जनवरी–मार्च</text>
+    </g>
+    <path id="pointer" d="M1170 619 V689 M1158 678 L1170 690 L1182 678" fill="none" stroke="#8a5d00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <g id="period">
+      <rect x="560" y="700" width="800" height="100" rx="50" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text id="dates" x="960" y="774" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="750" fill="#2b2622">1 Oct – 31 Dec 2026</text>
+    </g>
+    <text id="source" x="960" y="898" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48" font-weight="600" fill="#6f6a63">नए deposits पर · Source: SB Order 12/2026</text>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.02, 'fade', '#active-quarter', {dur: 0.24}],
+      [1.02, 'draw', '#pointer', {dur: 0.32}],
+      [1.15, 'pop', '#period'],
+      [1.28, 'type', '#dates', {cps: 9}],
+      [5.18, 'fade', '#source', {dur: 0.4}],
+      [6.96, 'pulse', '#period', {amount: 0.05}],
+    ],
+  }
+  </script>
+</section>
