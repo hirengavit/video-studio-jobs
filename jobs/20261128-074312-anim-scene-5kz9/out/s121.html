@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s121" data-section="PART 6 · TD PLEDGE" data-series="POSB" data-in="cut">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="guardian">
+      <use href="piece:td-passbook-white" transform="translate(200 360)"/>
+      <text x="332" y="482" text-anchor="middle" font-family="Inter, sans-serif" font-size="21" font-weight="760" fill="#2b2622">TD · SB-5A</text>
+      <text id="guardian-account" x="350" y="760" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">Guardian वाला खाता</text>
+      <g id="declaration">
+        <rect x="700" y="200" width="1020" height="760" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+        <path d="M760 372H1660" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+        <text id="guardian-heading" x="760" y="290" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="800" fill="#9e1b1b">Guardian लिखकर देता है</text>
+        <text id="guardian-hi" x="760" y="349" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="630" fill="#6f6a63">अभिभावक</text>
+        <text id="statement-first" x="760" y="440" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="680" fill="#2b2622">minor या unsound mind वाला व्यक्ति</text>
+        <text id="statement-alive" x="760" y="500" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="680" fill="#2b2622">जीवित है</text>
+        <path id="alive-tick" d="M1624 483l12 12 22-25" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+        <text id="statement-benefit" x="760" y="620" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="680" fill="#2b2622">transfer उसी के फ़ायदे के लिए है</text>
+        <path id="benefit-tick" d="M1624 603l12 12 22-25" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+    <g id="depositor">
+      <rect x="160" y="220" width="840" height="740" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="220" y="352" font-family="Inter, sans-serif" font-size="88" font-weight="800" fill="#9e1b1b">Depositor</text>
+      <text id="depositor-hi" x="220" y="430" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#9e1b1b">जमाकर्ता</text>
+      <path d="M220 465H940" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+      <g id="blindness-chip">
+        <rect x="220" y="496" width="720" height="104" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+        <text x="270" y="568" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="700" fill="#2b2622">अंधापन</text>
+      </g>
+      <g id="weakness-chip">
+        <rect x="220" y="636" width="720" height="104" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+        <text x="270" y="708" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="700" fill="#2b2622">शारीरिक कमज़ोरी</text>
+      </g>
+      <text id="account-operation" x="220" y="860" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#2b2622">खुद खाता न चला सके</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {
+      shots: [[0, "#guardian"], [4.42, "#depositor"]],
+      on: [
+        [0.38, "words", "#statement-alive", {gap: 0.39, dist: 10, spring: "soft"}],
+        [0.92, "draw", "#alive-tick", {dur: 0.26}],
+        [1.90, "words", "#statement-benefit", {gap: 0.26, dist: 10, spring: "soft"}],
+        [3.90, "draw", "#benefit-tick", {dur: 0.24}],
+        [4.92, "fade", "#depositor-hi", {dur: 0.24}],
+        [5.00, "pop", "#blindness-chip", {from: 0.92, spring: "soft"}],
+        [6.22, "pop", "#weakness-chip", {from: 0.92, spring: "soft"}],
+        [8.02, "fade", "#account-operation", {dur: 0.28}]
+      ]
+    }
+  </script>
+</section>
