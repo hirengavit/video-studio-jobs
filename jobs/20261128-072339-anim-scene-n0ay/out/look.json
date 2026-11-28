@@ -8,12 +8,5 @@
   "12.96"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s017",
-   "text": "10 / Minor · साल पूरे",
-   "t": 10.49
-  }
- ]
+ "warnings": []
 }
