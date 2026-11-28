@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 300" width="260" height="300" fill="none">
+  <title>Calendar card</title>
+  <g id="page">
+    <path d="M26 290 H234" stroke="#2b2622" stroke-width="3" stroke-linecap="round"/>
+    <path d="M20 283 H240" stroke="#6f6a63" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="14" y="30" width="232" height="246" rx="8" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+    <path id="word-line" d="M70 252 H190" stroke="#6f6a63" stroke-width="3" stroke-linecap="round"/>
+    <rect id="number-area" x="40" y="100" width="180" height="132" fill="none"/>
+  </g>
+  <g id="strip">
+    <path d="M14 82 V38 C14 33 18 30 22 30 H238 C242 30 246 33 246 38 V82 Z" fill="#9e1b1b" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="80" cy="54" r="8" fill="#7d1414" stroke="#2b2622" stroke-width="2.5"/>
+    <circle cx="180" cy="54" r="8" fill="#7d1414" stroke="#2b2622" stroke-width="2.5"/>
+    <path d="M80 54 V16 C80 6 96 6 96 16 V30" stroke="#6f6a63" stroke-width="4" stroke-linecap="round"/>
+    <path d="M180 54 V16 C180 6 196 6 196 16 V30" stroke="#6f6a63" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <circle data-anchor="base" cx="130" cy="291" r="0"/>
+  <circle data-anchor="top" cx="130" cy="8" r="0"/>
+</svg>

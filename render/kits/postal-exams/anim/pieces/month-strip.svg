@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 170" width="1600" height="170">
+  <rect id="bar" x="1.5" y="1.5" width="1597" height="167" rx="16" fill="#ffffff" stroke="#2b2622" stroke-width="3"/>
+  <rect id="window" x="496" y="12" width="1064" height="118" rx="6" fill="#fde9a6"/>
+  <g id="ticks" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round">
+    <path d="M40 130 H1560"/>
+    <path d="M40 130 V106 M90.7 130 V118 M141.3 130 V118 M192 130 V118 M242.7 130 V118 M293.3 130 V118 M344 130 V118 M394.7 130 V118 M445.3 130 V118 M496 130 V106"/>
+    <path d="M546.7 130 V118 M597.3 130 V118 M648 130 V118 M698.7 130 V118 M749.3 130 V118 M800 130 V118 M850.7 130 V118 M901.3 130 V118 M952 130 V118 M1002.7 130 V106"/>
+    <path d="M1053.3 130 V118 M1104 130 V118 M1154.7 130 V118 M1205.3 130 V118 M1256 130 V118 M1306.7 130 V118 M1357.3 130 V118 M1408 130 V118 M1458.7 130 V118 M1509.3 130 V118 M1560 130 V106"/>
+  </g>
+  <g id="day-numbers" fill="#6f6a63" font-family="Inter, sans-serif" font-size="22" font-weight="600" text-anchor="middle">
+    <text x="40" y="158">1</text>
+    <text x="496" y="158">10</text>
+    <text x="1002.7" y="158">20</text>
+    <text x="1560" y="158">31</text>
+  </g>
+  <path id="line" d="M40 66 H1560" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round"/>
+  <circle data-anchor="base" cx="800" cy="170" r="0"/>
+  <circle data-anchor="top" cx="800" cy="0" r="0"/>
+</svg>
