@@ -1,0 +1,44 @@
+{
+ "moments": [
+  "0.30",
+  "2.50",
+  "5.00",
+  "7.50",
+  "10.00",
+  "12.35"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s064",
+   "message": "move: option \"dur\" isn't used (it takes: by, spring)",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s064",
+   "message": "move: option \"ease\" isn't used (it takes: by, spring)",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s064",
+   "message": "slide: option \"dur\" isn't used (it takes: from, dist, spring)",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s064",
+   "message": "pop: option \"dur\" isn't used (it takes: spring, from)",
+   "t": 0.3
+  },
+  {
+   "kind": "low-contrast",
+   "scene": "s064",
+   "text": "maturity की तारीख से (1.9:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  }
+ ]
+}
