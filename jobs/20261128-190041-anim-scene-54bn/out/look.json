@@ -8,12 +8,5 @@
   "11.61"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s070",
-   "text": "अगले 3 साल · maturity से",
-   "t": 9.41
-  }
- ]
+ "warnings": []
 }
