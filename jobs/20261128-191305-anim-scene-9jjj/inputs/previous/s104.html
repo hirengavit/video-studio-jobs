@@ -1,0 +1,38 @@
+<section class="vs-scene" id="s104" data-in="cut" data-section="PART 5 · TD EARLY CLOSURE" data-series="POSB">
+<svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="date-rule">
+    <use href="piece:calendar-page" transform="translate(220 220) scale(2.2)"/>
+    <g font-family="Inter, sans-serif" fill="#fff" font-size="51" font-weight="750">
+      <text id="month" x="546" y="375" text-anchor="end">November</text>
+      <text id="year" x="564" y="375">2023</text>
+    </g>
+    <text id="day" x="506" y="708" text-anchor="middle" font-family="Inter, sans-serif" font-size="240" font-weight="830" fill="#2b2622">10</text>
+    <text id="eligible" x="900" y="420" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="700" fill="#2b2622">या बाद खुले खाते</text>
+    <!-- Moulded stamp motif: the library key-term card has a wide icon window and cannot be scaled to this geometry without distortion. -->
+    <g id="rule">
+      <rect x="900" y="520" width="684" height="342" rx="24" fill="#9e1b1b"/>
+      <rect x="932" y="552" width="620" height="278" rx="13" fill="none" stroke="#b8403a" stroke-width="3"/>
+      <g fill="#fbf7ee"><circle cx="922" cy="525" r="6.5"/><circle cx="954" cy="525" r="6.5"/><circle cx="986" cy="525" r="6.5"/><circle cx="1018" cy="525" r="6.5"/><circle cx="1050" cy="525" r="6.5"/><circle cx="1082" cy="525" r="6.5"/><circle cx="1114" cy="525" r="6.5"/><circle cx="1146" cy="525" r="6.5"/><circle cx="1178" cy="525" r="6.5"/><circle cx="1210" cy="525" r="6.5"/><circle cx="1242" cy="525" r="6.5"/><circle cx="1274" cy="525" r="6.5"/><circle cx="1306" cy="525" r="6.5"/><circle cx="1338" cy="525" r="6.5"/><circle cx="1370" cy="525" r="6.5"/><circle cx="1402" cy="525" r="6.5"/><circle cx="1434" cy="525" r="6.5"/><circle cx="1466" cy="525" r="6.5"/><circle cx="1498" cy="525" r="6.5"/><circle cx="1530" cy="525" r="6.5"/><circle cx="1562" cy="525" r="6.5"/><circle cx="922" cy="857" r="6.5"/><circle cx="954" cy="857" r="6.5"/><circle cx="986" cy="857" r="6.5"/><circle cx="1018" cy="857" r="6.5"/><circle cx="1050" cy="857" r="6.5"/><circle cx="1082" cy="857" r="6.5"/><circle cx="1114" cy="857" r="6.5"/><circle cx="1146" cy="857" r="6.5"/><circle cx="1178" cy="857" r="6.5"/><circle cx="1210" cy="857" r="6.5"/><circle cx="1242" cy="857" r="6.5"/><circle cx="1274" cy="857" r="6.5"/><circle cx="1306" cy="857" r="6.5"/><circle cx="1338" cy="857" r="6.5"/><circle cx="1370" cy="857" r="6.5"/><circle cx="1402" cy="857" r="6.5"/><circle cx="1434" cy="857" r="6.5"/><circle cx="1466" cy="857" r="6.5"/><circle cx="1498" cy="857" r="6.5"/><circle cx="1530" cy="857" r="6.5"/><circle cx="1562" cy="857" r="6.5"/><circle cx="908" cy="557" r="6.5"/><circle cx="908" cy="589" r="6.5"/><circle cx="908" cy="621" r="6.5"/><circle cx="908" cy="653" r="6.5"/><circle cx="908" cy="685" r="6.5"/><circle cx="908" cy="717" r="6.5"/><circle cx="908" cy="749" r="6.5"/><circle cx="908" cy="781" r="6.5"/><circle cx="908" cy="813" r="6.5"/><circle cx="1576" cy="557" r="6.5"/><circle cx="1576" cy="589" r="6.5"/><circle cx="1576" cy="621" r="6.5"/><circle cx="1576" cy="653" r="6.5"/><circle cx="1576" cy="685" r="6.5"/><circle cx="1576" cy="717" r="6.5"/><circle cx="1576" cy="749" r="6.5"/><circle cx="1576" cy="781" r="6.5"/><circle cx="1576" cy="813" r="6.5"/></g>
+      <text x="1242" y="719" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="800" fill="#fff">4 साल वाला नियम</text>
+    </g>
+  </g>
+  <g id="recovery">
+    <text id="recovery-title" x="160" y="260" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="96" font-weight="800" fill="#9e1b1b">वसूली</text>
+    <use id="recovery-bundle" href="piece:rupee-note-bundle" transform="translate(1340 640) scale(1.2)"/>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  shots: [[0, '#date-rule'], [8.75, '#recovery']],
+  on: [
+    [1.29, 'stamp', '#day', {from: 1.2, rot: -4}],
+    [1.95, 'fade', '#month', {dur: 0.24}],
+    [2.33, 'fade', '#year', {dur: 0.24}],
+    [3.53, 'words', '#eligible', {gap: 0.17, dist: 14, from: 'down'}],
+    [6.19, 'pop', '#rule', {from: 0.98, spring: 'soft'}],
+    [8.75, 'fade', '#recovery-title', {dur: 0.23}]
+  ]
+}
+</script>
+</section>
