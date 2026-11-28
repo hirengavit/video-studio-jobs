@@ -8,12 +8,5 @@
   "15.03"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s021",
-   "message": "pulse: option \"scale\" isn't used (it takes: amount)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
