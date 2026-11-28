@@ -24,8 +24,7 @@
 <g id="form121"><g id="form121-ghost" opacity=".24" filter="url(#tax-ghost)"><use href="piece:complaint-form-sheet" transform="translate(1020 225) scale(.9)"/></g>
 <g id="form121-solid"><use href="piece:complaint-form-sheet" transform="translate(1020 225) scale(.9)"/></g>
 <text id="form121-name" x="1182" y="282" text-anchor="middle" font-family="Inter, sans-serif" font-size="46" font-weight="800" fill="#fff">Form 121</text>
-<text id="no-tax-first" x="1380" y="310" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="690" fill="#2b2622">ब्याज पर</text>
-<text id="no-tax-cue" x="1548" y="310" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="690" fill="#2b2622">tax न काटने</text>
+<text id="no-tax-first" x="1380" y="310" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="690" fill="#2b2622">ब्याज पर<tspan id="no-tax-cue"> tax न काटने</tspan></text>
 <text id="no-tax-second" x="1380" y="375" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="690" fill="#2b2622">का declaration</text>
 <text id="eligible-customer" x="1380" y="510" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#6f6a63">पात्र ग्राहक से</text>
 </g>
@@ -36,11 +35,12 @@
 [4.12,'highlight','#retention-copy',{words:'6 साल',color:'#f0b83f',opacity:.65,pad:7,dur:.40}],
 [6.84,'fade','#form121-solid',{dur:.34}],
 [6.92,'fade','#no-tax-first',{dur:.28}],
-[7.68,'fade','#no-tax-cue',{dur:.34}],
 [8.94,'words','#no-tax-second',{gap:.20,dist:9}],
 [9.54,'fade','#eligible-customer',{dur:.38}],
 [11.82,'pop','#form121-name',{from:.91}]
 ],update(t,section,$){
+ const cue=$('#no-tax-cue')[0];
+ if(cue){cue.style.opacity=String(Math.max(0,Math.min(1,(t-7.68)/.34)));}
  const g=$('#form97')[0];
  if(g){const u=Math.max(0,Math.min(1,(t-12.40)/.52));g.style.opacity=String(1-u*.28);g.style.filter='grayscale('+u+')';}
  const ghost=$('#form121-ghost')[0];
