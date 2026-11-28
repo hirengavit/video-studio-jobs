@@ -17,8 +17,9 @@
 <circle cx="171" cy="380" r="26" fill="#f3ead6"/><text x="171" y="395" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="750" fill="#6f6a63">4</text><circle cx="171" cy="589" r="26" fill="#f3ead6"/><text x="171" y="604" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="750" fill="#6f6a63">5</text><circle cx="171" cy="773" r="26" fill="#f3ead6"/><text x="171" y="788" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="39" font-weight="750" fill="#6f6a63">6</text>
 </g>
 <g id="row-four">
-<text id="early-label" x="211" y="393" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#2b2622">Premature closure</text>
+<text id="early-label" textLength="350" lengthAdjust="spacingAndGlyphs" x="211" y="393" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">Premature closure</text>
 <g id="early-hindi"><text x="211" y="456" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#6f6a63">समय से पहले</text><text x="211" y="513" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#6f6a63">खाता बंद करना</text></g>
+<rect id="rate-marker" x="886" y="403" width="122" height="74" rx="4" fill="#f2b705" opacity=".36"/>
 <text id="early-td" x="630" y="442" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">ब्याज की दर घटती है</text>
 <path id="td-down" d="M1112 402v49m-16-16 16 16 16-16" fill="none" stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 <text id="early-mis" x="1255" y="428" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">Principal से कटौती</text>
@@ -41,7 +42,7 @@
  [0.50,'fade','#early-hindi',{dur:0.24}],
  [1.94,'words','#early-td',{gap:0.23,dist:10,spring:'soft'}],
  [2.88,'draw','#td-down',{dur:0.25}],
- [2.88,'highlight','#early-td',{words:'घटती',color:'#f2b705',opacity:0.36,dur:0.28}],
+ [2.88,'reveal','#rate-marker',{dur:0.28}],
  [5.24,'words','#early-mis',{gap:0.27,dist:10,spring:'soft'}],
  [5.74,'fade','#early-principal',{dur:0.27}],
  [6.80,'draw','#row-four-tick',{dur:0.28}],
