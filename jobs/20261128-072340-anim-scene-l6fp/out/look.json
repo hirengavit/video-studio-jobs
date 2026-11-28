@@ -8,5 +8,12 @@
   "8.99"
  ],
  "problems": [],
- "warnings": []
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s196",
+   "text": "अवधि / पूरी",
+   "t": 7.31
+  }
+ ]
 }
