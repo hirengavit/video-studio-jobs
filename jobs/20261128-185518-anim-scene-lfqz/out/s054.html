@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s054" data-in="cut" data-section="PART 3 · TD INTEREST" data-series="POSB">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="myth2">
+      <rect id="myth-card" x="160" y="330" width="1600" height="400" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+      <use id="myth-book" href="piece:td-passbook-white" transform="translate(220 450) scale(0.8)"/>
+      <text id="myth-book-label" x="326" y="554" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="800" fill="#332e29">TD</text>
+      <g id="myth-pill">
+        <rect x="220" y="360" width="180" height="72" rx="36" fill="#e4e5e8"/>
+        <text x="310" y="412" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="800" fill="#4b4f58">भ्रम</text>
+      </g>
+      <text id="myth-line-one" x="470" y="530" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="760" fill="#332e29">सारा सालाना ब्याज पूरी अवधि</text>
+      <text id="myth-line-two" x="470" y="635" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="760" fill="#332e29">जमा रहकर compound होता रहे</text>
+      <path id="myth-cross" d="M 1554 502 L 1641 589 M 1641 502 L 1554 589" fill="none" stroke="#4b4f58" stroke-width="13" stroke-linecap="round"/>
+    </g>
+<g id="where">
+<defs><clipPath id="s054-phone-body"><rect x="798" y="400" width="220" height="520"/></clipPath></defs>
+<text x="160" y="250" dominant-baseline="central" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="800" fill="#9e1b1b">ब्याज जाता कहाँ है?</text>
+<g id="date-pill"><rect x="900" y="220" width="400" height="70" rx="34" fill="#fde9a6"/><text x="1100" y="255" text-anchor="middle" dominant-baseline="central" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="730" fill="#805400">1 April 2022 से</text></g>
+<g id="transfer-book"><use href="piece:td-passbook-white" transform="translate(140 420) scale(1.15625)"/><text x="293" y="560" text-anchor="middle" font-family="Inter, sans-serif" font-size="30" font-weight="800" fill="#332e29">TD · SB-5A</text></g>
+<g id="interest-coin"><use href="piece:rupee-coin" transform="translate(248 332.6) scale(0.75)"/><text x="293" y="390" text-anchor="middle" font-family="Inter, sans-serif" font-size="41" font-weight="800" fill="#332e29">₹</text></g>
+<g id="phone-unit"><g clip-path="url(#s054-phone-body)"><use href="piece:phone-transfer" transform="translate(798 400)"/></g><text id="phone-label" x="910" y="662" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#332e29">ब्याज</text></g>
+<path id="to-post-office" d="M 1010 640 C 1088 640 1087 520 1190 520 L 1175 511 M 1190 520 L 1175 529" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="to-bank" d="M 1010 640 C 1092 640 1084 800 1190 800 L 1175 791 M 1190 800 L 1175 809" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="po-card"><rect x="1200" y="400" width="580" height="240" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/><text x="1490" y="479" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#332e29">Post Office</text><text x="1490" y="542" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#332e29">Savings Account</text><text id="po-hindi" x="1490" y="609" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="680" fill="#6f6a63">डाकघर बचत खाता</text></g>
+<g id="bank-card"><rect x="1200" y="700" width="580" height="200" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/><text x="1490" y="780" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#332e29">Bank account</text><text id="bank-hindi" x="1490" y="854" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="680" fill="#6f6a63">बैंक खाता</text></g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots: [[0, '#myth2'], [2.88, '#where']],
+ on: [
+ [0, 'words', '#myth-line-two', {gap: 0.32, dist: 12, spring:'soft'}],
+ [2.08, 'strike', '#myth-line-one', {color:'#4b4f58', width:8, dur:0.30, dim:0.60}],
+ [2.08, 'strike', '#myth-line-two', {color:'#4b4f58', width:8, dur:0.30, dim:0.60}],
+ [2.08, 'pop', '#myth-cross', {from:0.86,spring:'soft'}],
+ [5.70, 'pop', '#date-pill', {from:0.92,spring:'soft'}],
+ [5.70, 'pop', '#transfer-book',{from:0.92,spring:'soft'}],
+ [8.13, 'fade', '#interest-coin', {dur:0.22}],
+ [9.88, 'draw', '#phone-unit',{dur:0.56}],
+ [9.88, 'draw', '#to-post-office', {dur:0.41}],
+ [10.22, 'fade', '#phone-label', {dur:0.20}],
+ [10.29, 'pop', '#po-card',{from:0.94,spring:'soft'}],
+ [10.79, 'fade', '#po-hindi',{dur:0.25}],
+ [12.84, 'pop', '#bank-card',{from:0.94,spring:'soft'}],
+ [12.84, 'draw', '#to-bank', {dur:0.48}],
+ [13.34, 'fade', '#bank-hindi',{dur:0.25}]
+ ]
+}
+</script>
+</section>
