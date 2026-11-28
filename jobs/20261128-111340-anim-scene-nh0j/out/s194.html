@@ -47,8 +47,8 @@
   <g id="opening-mark">
    <circle cx="220" cy="720" r="15" fill="#9e1b1b"/>
    <use href="piece:passbook" transform="translate(160 542) scale(0.5)"/>
-   <rect x="179" y="579" width="82" height="42" rx="3" fill="#fbf7ee"/>
-   <text x="220" y="607" text-anchor="middle" font-family="Inter,sans-serif" font-weight="800" font-size="18" fill="#9e1b1b">MIS · SB-5</text>
+   <rect x="169" y="577" width="102" height="44" rx="3" fill="#fbf7ee"/>
+   <text x="220" y="607" text-anchor="middle" font-family="Inter,sans-serif" font-weight="800" font-size="20" fill="#9e1b1b">MIS · SB-5</text>
    <text x="220" y="800" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#6f6a63">खुलना</text>
   </g>
   <g id="year-five">
@@ -62,13 +62,9 @@
   </g>
  </g>
  <g id="forms">
-  <text x="960" y="268" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="78" font-weight="810" fill="#9e1b1b">MIS maturity पर forms</text>
-  <g id="scheme-form">
-   <rect x="220" y="337" width="590" height="598" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
-   <use href="piece:complaint-form-sheet" transform="translate(350 364) scale(0.92)"/>
-   <text x="516" y="425" text-anchor="middle" font-family="Inter,sans-serif" font-size="47" font-weight="825" fill="#fff">Form-3</text>
-  </g>
-  <text id="scheme-caption" x="515" y="891" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="760" fill="#6f6a63">scheme का form</text>
+    <text x="140" y="216" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="800" fill="#9e1b1b">MIS maturity पर forms</text>
+    <g id="scheme-form"><use href="piece:complaint-form-sheet" transform="translate(180 270) scale(1.15)"/><text id="scheme-form-name" x="387" y="339" text-anchor="middle" font-family="Inter" font-size="57" font-weight="790" fill="#fff">Form-3</text></g>
+    <text id="scheme-form-caption" x="387" y="900" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="620" fill="#2b2622">scheme का form</text>
  </g>
 </svg>
 <script type="text/scene">
@@ -83,7 +79,7 @@
  [6.78,"grow","#elapsed",{axis:"x",origin:"left",spring:"soft"}],
  [7.78,"stamp","#mailmark",{from:1.12,rot:0,spring:"snap"}],
  [10.84,"slide","#scheme-form",{from:"down",dist:54,spring:"snap"}],
- [11.34,"fade","#scheme-caption",{dur:0.23}]
+ [11.34,"fade","#scheme-form-caption",{dur:0.23}]
  ]
 }
 </script>
