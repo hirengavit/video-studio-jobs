@@ -43,21 +43,21 @@
 <text x="1331.1" y="830.6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="33" font-weight="720" fill="#2b2622" text-anchor="middle">29</text>
 <text x="1398.3" y="830.6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="33" font-weight="720" fill="#2b2622" text-anchor="middle">30</text>
 <text x="1465.5" y="830.6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="33" font-weight="720" fill="#2b2622" text-anchor="middle">31</text>
-<path id="prior-arrow" d="M1465 637Q1462 606 1432 607Q1400 607 1398 635M1389 625l9 10 10-9" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="prior-arrow" d="M1465 654C1456 642 1413 642 1398 654M1401 645l-3 9 11 1" fill="none" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 <text id="holiday-label" x="1532.5" y="940" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#6f6a63">छुट्टी</text>
 <text id="business-label" x="1532.5" y="940" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#6f6a63">business day</text>
 </svg>
 <script type="text/scene">
 {on:[
-[0,"slide","#step1",{from:"left",dist:30,dur:0.28}],
+[0,"slide","#step1",{from:"left",dist:30,spring:"soft"}],
 [0.88,"reveal","#month",{from:"up",dur:0.32}],
 [0.88,"fade","#holiday-tint,#holiday-label",{dur:0.24}],
 [3.12,"fade","#result1",{dur:0.26}],
 [3.72,"draw","#prior-arrow",{dur:0.48}],
 [4.50,"fade","#business-tint",{dur:0.25}],
 [4.50,"swap","#holiday-label",{to:"#business-label",dur:0.24,dist:12}],
-[6.36,"slide","#step2",{from:"left",dist:30,dur:0.3}],
+[6.36,"slide","#step2",{from:"left",dist:30,spring:"soft"}],
 [6.94,"pop","#date-29",{from:0.9,spring:"soft"}],
 [8.10,"pop","#date-30",{from:0.9,spring:"soft"}],
 [9.28,"pop","#date-31",{from:0.9,spring:"soft"}]
