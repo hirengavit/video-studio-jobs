@@ -1,0 +1,50 @@
+{
+ "moments": [
+  "0.30",
+  "2.78",
+  "5.56",
+  "8.35",
+  "11.13",
+  "13.76"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s149",
+   "message": "color: nothing found for \"#example-title,#example-amount,#example-book-label,#share-left,#share-right,#holder,#personal-share,#personal-room\"",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s149",
+   "message": "color: nothing found for \"#yellow-part,#share-marker,#example-bar\"",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s149",
+   "message": "color: nothing found for \"#example-bar,#joint-divider,#personal-divider\"",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s149",
+   "message": "fade: nothing found for \"#three-holder,#three-cap-label,#three-track\"",
+   "t": 0.3
+  },
+  {
+   "kind": "low-contrast",
+   "scene": "s149",
+   "text": "MIS योजना, 2019 (1.1:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s149",
+   "text": "MIS योजना, 2019 / ₹7.5 + ₹1.5 = ₹9 lakh",
+   "t": 2.78
+  }
+ ]
+}
