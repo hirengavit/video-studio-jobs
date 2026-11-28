@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g id="impression" stroke="#9e1b1b">
+    <g id="rings">
+    <circle cx="156" cy="200" r="94"/>
+    <circle cx="156" cy="200" r="83"/>
+  </g>
+    <path id="date-band" d="M78 173H234M78 227H234" stroke-width="2"/>
+    <path id="cancellation" d="M265 178q8 -5 16 0t16 0t16 0t16 0 M265 200q8 -5 16 0t16 0t16 0t16 0 M265 222q8 -5 16 0t16 0t16 0t16 0"/>
+  </g>
+  <circle data-anchor="base" cx="156" cy="294" r="0"/>
+</svg>
