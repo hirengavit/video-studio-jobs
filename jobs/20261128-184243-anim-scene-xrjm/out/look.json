@@ -8,12 +8,5 @@
   "13.61"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s010",
-   "text": "Option: MIS हर महीने principal लौटाता है / गलत",
-   "t": 11.01
-  }
- ]
+ "warnings": []
 }
