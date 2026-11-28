@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s062" data-section="PART 4 · TD MATURITY" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="ext">
+ <g id="card-shift"><g id="extension-card">
+  <use href="piece:stamp-term-card" transform="translate(288 280) scale(.96)"/>
+  <use href="piece:td-passbook-white" transform="translate(432 393) scale(.65)"/>
+  <text  x="518" y="472" text-anchor="middle" fill="#30271f" font-family="Inter, sans-serif" font-size="23" font-weight="750">TD · SB-5A</text>
+  <text id="extension-word" x="1130" y="495" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="110" font-weight="800">Extension</text>
+  <text id="extension-hi" x="1130" y="605" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="750">अवधि बढ़ाना</text>
+ </g></g>
+ <g id="extension-line">
+  <text id="matured" x="660" y="864" text-anchor="middle" fill="#30271f" font-family="Inter, sans-serif" font-size="58" font-weight="750">Matured TD</text>
+  <circle cx="888" cy="842" r="5" fill="#9e1b1b" id="line-dot"/>
+  <rect x="940" y="807" width="260" height="73" rx="9" fill="#f2b705" opacity=".29"/>
+  <text id="same-term" x="1160" y="864" text-anchor="middle" fill="#30271f" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750">उसी अवधि के लिए</text>
+ </g>
+ <g id="settled-card"><g transform="translate(528 54) scale(.45)">
+  <use href="piece:stamp-term-card" transform="translate(288 280) scale(.96)"/>
+  <use href="piece:td-passbook-white" transform="translate(432 393) scale(.65)"/>
+  <text id="extension-word-small" x="1130" y="495" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="110" font-weight="800">Extension</text>
+  <text id="extension-hi-small" x="1130" y="605" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="100" font-weight="750">अवधि बढ़ाना</text>
+ </g></g>
+</g>
+<g id="term-track">
+ <g id="original-term">
+  <rect id="original-block" x="200" y="550" width="700" height="146" rx="20" fill="#f0e1b8" stroke="#b09558" stroke-width="3"/>
+  <text id="original-label" x="550" y="646" text-anchor="middle" fill="#30271f" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="760">2 साल का TD</text>
+ </g>
+ <g id="more-term">
+  <rect id="more-block" x="912" y="550" width="700" height="146" rx="20" fill="#f4f9ef" stroke="#347350" stroke-width="5"/>
+  <text id="more-label" x="1240" y="646" text-anchor="middle" fill="#245c40" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="760">+ 2 साल</text>
+  <path id="same-term-tick" d="m1450 623 16 16 29-33" fill="none" stroke="#347350" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+</g>
+<g id="different-term">
+ <rect x="560" y="788" width="800" height="120" rx="28" fill="#eeeae4" stroke="#b6b0a8" stroke-width="3"/>
+ <text id="different-label" x="922" y="865" text-anchor="middle" fill="#504a47" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="700">अपनी मर्ज़ी की दूसरी अवधि</text>
+ <path id="different-cross" d="m1262 830 32 32m0-32-32 32" stroke="#55515b" stroke-width="8" stroke-linecap="round" fill="none"/>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [.40,"out","#extension-line",{dur:.26,scale:1}],
+  [.43,"move","#card-shift",{by:[0,-105],spring:"soft"}],
+  [.51,"out","#extension-card",{dur:.52,scale:.45}],
+  [1.03,"fade","#settled-card",{dur:.16}],
+  [2.34,"grow","#original-block",{axis:"x",origin:"left",spring:"soft"}],
+  [3.04,"fade","#original-label",{dur:.24}],
+  [4.40,"grow","#more-block",{axis:"x",origin:"left",spring:"soft"}],
+  [5.04,"fade","#more-label",{dur:.25}],
+  [5.66,"draw","#same-term-tick",{dur:.33}],
+  [7.58,"fade","#different-term",{dur:.24}],
+  [8.36,"strike","#different-label",{color:"#55515b",dur:.32,dim:.82,width:5}],
+  [8.64,"draw","#different-cross",{dur:.26}]
+ ]
+}
+</script>
+</section>
