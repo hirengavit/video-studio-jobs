@@ -36,7 +36,7 @@
 <text id="bank-hi" x="1390" y="300" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="650" fill="#6f6a63">बैंक खाता</text>
 <g id="ecs-form">
 <use href="piece:complaint-form-sheet" transform="translate(1010 330) scale(.75)"/>
-<text id="ecs-title" x="1145" y="384" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="800" fill="#fff">ECS-1</text>
+<text id="ecs-title" x="1145" y="380" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="800" fill="#fff">ECS-1</text>
 </g>
 <use id="cancel-leaf" href="piece:cheque-leaf" transform="translate(1320 340) scale(.7)"/>
 <text id="cancel-en" x="1544" y="588" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#2b2622">Cancelled cheque</text>
@@ -86,7 +86,7 @@
  update(t,section,$){
    const q=Math.max(0,Math.min(1,t/.63));
    const u=q*q*(3-2*q);
-   $("#posta-shift").setAttribute("transform","translate(" + (-238.8*u) + " " + (37.4*u) + ") scale(" + (1-.22*u) + ")");
+   $("#posta-shift")[0]?.setAttribute("transform","translate(" + (-238.8*u) + " " + (37.4*u) + ") scale(" + (1-.22*u) + ")");
  }
 }
 </script>
