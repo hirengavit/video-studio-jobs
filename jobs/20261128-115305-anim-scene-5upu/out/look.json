@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s068",
-   "message": "fade: nothing found for \"#slot-open,#slot-maturity,#slot-extension\"",
-   "t": 0.3
-  },
-  {
    "kind": "text-overlap",
    "scene": "s068",
    "text": "पहली maturity के बाद / extension",
