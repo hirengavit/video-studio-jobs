@@ -8,13 +8,5 @@
   "12.35"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "low-contrast",
-   "scene": "s064",
-   "text": "maturity की तारीख से (1.9:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
