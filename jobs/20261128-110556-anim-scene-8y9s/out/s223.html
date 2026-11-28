@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s223" data-in="cut" data-section="PART 10 · FORMS AND RECORDS" data-series="POSB">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="trap">
+ <rect x="110" y="170" width="1700" height="160" rx="26" fill="#9e1b1b"/>
+ <path d="M208 206l43 75h-86z" fill="#fff0bb" stroke="#fff0bb" stroke-width="6" stroke-linejoin="round"/>
+ <path d="M208 231v23m0 12v0.5" fill="none" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+ <text id="trap-title" x="284" y="270" fill="#fff0bb" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750">form का trap</text>
+ <rect id="td-form-card" x="1020" y="400" width="760" height="500" rx="27" fill="#fffdf8" stroke="#e7ddc9" stroke-width="3"/>
+ <g id="gspr-form-card">
+  <rect x="140" y="400" width="760" height="500" rx="27" fill="#fffdf8" stroke="#d9a93c" stroke-width="6"/>
+ </g>
+ <text id="gspr-form-name" x="520" y="611" text-anchor="middle" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="72" font-weight="800">GSPR Form-5</text>
+ <text id="gspr-form-purpose" x="520" y="749" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="650">Offices के बीच transfer</text>
+
+<g id="td-content">
+<use href="piece:td-passbook-white" transform="translate(1637 422) scale(.45)"/>
+<text x="1696" y="470" text-anchor="middle" fill="#2b2622" font-family="Inter,sans-serif" font-size="26" font-weight="800" textLength="57" lengthAdjust="spacingAndGlyphs">TD · SB-5A</text>
+</g>
+<text id="td-form-name" x="1400" y="611" text-anchor="middle" fill="#9e1b1b" font-family="Inter,sans-serif" font-size="72" font-weight="800">TD Form-5</text>
+<text id="pledge" x="1220" y="747" fill="#2b2622" font-family="Inter,sans-serif" font-size="52" font-weight="750">Pledge</text>
+<text id="pledge-hi" x="1430" y="747" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="650">· गिरवी रखना</text>
+<text id="pledge-purpose" x="1400" y="831" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650">TD को pledge करना</text>
+<text id="not-equal" x="960" y="650" text-anchor="middle" fill="#4b4f58" font-family="Inter,sans-serif" font-size="140" font-weight="800">≠</text>
+<text id="trap-verdict" x="1730" y="272" text-anchor="end" fill="#fffdf8" font-family="Inter,sans-serif" font-size="60" font-weight="800">GSPR Form-5 ≠ TD Form-5</text>
+</g>
+<g id="nomination">
+<g id="nom">
+<use href="piece:stamp-term-card" transform="translate(580 200) scale(.542857 .826087)"/>
+<rect x="619" y="258" width="175" height="265" fill="#9e1b1b"/>
+<text id="nom-term" x="960" y="382" text-anchor="middle" fill="#fffdf8" font-family="Inter,sans-serif" font-size="96" font-weight="800">Nomination</text>
+<text id="nom-hi" x="960" y="485" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="700">नामांकन</text>
+<g id="nom-cancel"><rect x="580" y="640" width="760" height="120" rx="23" fill="#f3ead6" stroke="#d8c7a1" stroke-width="3"/><text x="960" y="718" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700">cancel करना</text></g>
+<g id="nom-change"><rect x="580" y="800" width="760" height="120" rx="23" fill="#f3ead6" stroke="#d8c7a1" stroke-width="3"/><text x="960" y="878" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700">या बदलना</text></g>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+({
+  shots: [[0,"#trap"],[6.82,"#nomination"]],
+  on: [
+    [0.46,"slide","#td-content",{from:"down",dist:56,spring:"soft"}],
+    [0.46,"words","#pledge",{gap:0.12,dist:12}],
+    [0.96,"fade","#pledge-hi",{dur:0.25}],
+    [1.66,"pop","#td-form-name",{spring:"soft"}],
+    [1.66,"fade","#pledge-purpose",{dur:0.32}],
+    [2.64,"stamp","#not-equal",{from:1.1,spring:"soft",rot:-3}],
+    [2.64,"words","#trap-verdict",{gap:0.14,dist:12}],
+    [4.72,"underline","#not-equal",{color:"#d9a93c",width:6,gap:6,dur:0.4}],
+    [7.32,"fade","#nom-hi",{dur:0.24}],
+    [7.36,"pop","#nom-cancel",{spring:"soft"}],
+    [9.10,"pop","#nom-change",{spring:"soft"}]
+  ]
+})
+</script>
+</section>
