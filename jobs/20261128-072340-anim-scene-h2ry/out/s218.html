@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s218" data-section="PART 10 · FORMS AND RECORDS" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <path d="M960 176V910" stroke="#ccc2b3" stroke-width="3"/>
+ <g text-anchor="middle" font-family="Inter, sans-serif">
+  <text x="515" y="218" font-size="62" font-weight="750" fill="#9e1b1b">Transfer</text>
+  <text id="transfer-hi" x="515" y="274" font-size="48" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63">स्थानांतरण</text>
+  <g id="account-card">
+   <rect x="215" y="306" width="600" height="334" rx="22" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+   <path d="M237 309H793Q812 309 812 328V390H218V328Q218 309 237 309Z" fill="#f3ead6"/>
+   <path d="M256 413H775" stroke="#e9e1d4" stroke-width="3"/>
+   <rect x="257" y="447" width="519" height="18" rx="9" fill="#eee7db"/>
+   <rect x="257" y="500" width="442" height="18" rx="9" fill="#eee7db"/>
+   <rect x="257" y="553" width="488" height="18" rx="9" fill="#eee7db"/>
+   <circle cx="267" cy="349" r="18" fill="none" stroke="#9e1b1b" stroke-width="4"/>
+   <path d="M260 344h15m-15 5h15m-14-5q14 6 1 8l9 8" fill="none" stroke="#9e1b1b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+   <path d="M306 349h142" stroke="#ac9980" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text id="account-en" x="515" y="716" font-size="54" font-weight="720" fill="#2b2622">Savings Account</text>
+  <text id="account-hi" x="515" y="776" font-size="46" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63">बचत खाता</text>
+  <text id="verify" x="538" y="871" font-size="50" font-weight="700" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2e7d4f">details जाँचिए</text>
+  <path id="tick" d="M328 846l13 14 27-28" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="cheque-en" x="1405" y="218" font-size="62" font-weight="750" fill="#9e1b1b">Crossed cheque</text>
+  <text id="cheque-hi" x="1405" y="274" font-size="48" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63">रेखांकित चेक</text>
+  <g id="cheque-card"><use href="piece:cheque-leaf" transform="translate(1037 310) scale(1.15)"/></g>
+  <g id="cheque-data" fill="#f2b705" opacity=".32">
+   <rect x="1100" y="420" width="373" height="15" rx="7"/>
+   <rect x="1100" y="477" width="427" height="15" rx="7"/>
+  </g>
+  <text id="record" x="1405" y="763" font-size="49" font-weight="700" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622">cheque की details दर्ज कीजिए</text>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ on: [
+  [0.50, 'fade', '#transfer-hi', {dur: 0.26}],
+  [1.58, 'slide', '#account-card', {from: 'down', dist: 64}],
+  [2.34, 'words', '#account-en', {gap: 0.14, dist: 16}],
+  [2.84, 'fade', '#account-hi', {dur: 0.25}],
+  [3.70, 'pop', '#verify'],
+  [3.76, 'draw', '#tick', {dur: 0.38}],
+  [5.08, 'fade', '#cheque-en', {dur: 0.22}],
+  [5.16, 'slide', '#cheque-card', {from: 'down', dist: 66}],
+  [5.58, 'fade', '#cheque-hi', {dur: 0.24}],
+  [6.74, 'reveal', '#cheque-data', {from: 'left', dur: 0.36}],
+  [7.08, 'words', '#record', {gap: 0.08, dist: 13}]
+ ]
+}
+</script>
+</section>
