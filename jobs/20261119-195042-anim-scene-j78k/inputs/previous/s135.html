@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s135" data-in="cut" data-section="PART 6 · POSTAL STATIONERY" data-series="STAMPS &amp; STATIONERY">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="150" width="1920" height="930" fill="#fbf7ee"/>
+<g id="scale">
+  <rect x="140" y="345" width="600" height="577" rx="26" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+  <use id="scale-prop" href="piece:letter-scale" transform="translate(160 416.6) scale(1.4)"/>
+  <g id="scale-pan-spot"><circle data-anchor="top" cx="440" cy="542.6" r="0"/></g>
+  <g id="weighed-letter">
+    <use href="piece:envelope-article" transform="translate(300 343.1) scale(.70)"/>
+    <circle data-anchor="base" cx="440" cy="542.6" r="0"/>
+  </g>
+  <text id="readout-weight" x="440" y="755" text-anchor="middle" font-family="Inter,sans-serif" font-size="48" font-weight="800" fill="#2b2622">35 g</text>
+  <g id="letter-rate-card">
+    <rect x="860" y="200" width="920" height="780" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="932" y="282" font-family="Inter,sans-serif" font-size="64" font-weight="800" fill="#9e1b1b">Ordinary letter</text>
+    <text id="ordinary-hi" class="hi" x="934" y="338" font-size="44" font-weight="570" fill="#6f6a63">साधारण पत्र</text>
+    <path d="M932 366H1708" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <g id="initial-weight-rate">
+      <text id="first-weight-step" x="934" y="466" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="785" fill="#2b2622">20 g तक</text>
+      <g id="first-rate-chip">
+        <rect x="1493" y="396" width="215" height="98" rx="21" fill="#f3ead6" stroke="#ead9a8" stroke-width="2.5"/>
+        <text x="1600" y="468" text-anchor="middle" font-size="64" font-weight="850" fill="#9e1b1b">₹5</text>
+      </g>
+    </g>
+    <g id="additional-weight-rate">
+      <text id="next-weight-line" x="934" y="572" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="780" fill="#2b2622">हर अगले 20 g</text>
+      <text id="portion-line" x="934" y="636" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="780" fill="#2b2622">या उसके हिस्से पर</text>
+      <g id="additional-rate-chip">
+        <rect x="1493" y="533" width="215" height="117" rx="21" fill="#f3ead6" stroke="#ead9a8" stroke-width="2.5"/>
+        <text x="1600" y="614" text-anchor="middle" font-size="61" font-weight="850" fill="#9e1b1b">+ ₹5</text>
+      </g>
+    </g>
+    <path id="rate-total-rule" d="M932 720H1708" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+    <text id="rate-total-label" x="934" y="848" class="hi" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="830" fill="#2b2622">इस letter पर</text>
+    <g id="letter-total-stamp">
+      <rect x="1369" y="766" width="339" height="151" rx="22" fill="#9e1b1b"/>
+      <rect x="1381" y="778" width="315" height="127" rx="14" fill="none" stroke="#fbf7ee" stroke-width="7" stroke-dasharray="0 19" stroke-linecap="round"/>
+      <text id="total-cost" x="1538" y="872" text-anchor="middle" font-size="90" font-weight="880" fill="#fff">₹10</text>
+      <path id="total-cost-sweep" d="M1466 886H1610" fill="none" stroke="#f2b705" stroke-width="8" stroke-linecap="round"/>
+    </g>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots:[[0,'#scale']],
+  camera:[[0,{zoom:1}]],
+  on:[
+    [0,'fade','#first-weight-step',{dur:0.28}],
+    [1.26,'pop','#first-rate-chip',{from:0.94,spring:'soft'}],
+    [2.02,'words','#next-weight-line',{gap:0.62,dist:12,spring:'soft'}],
+    [4.44,'words','#portion-line',{gap:0.53,dist:12,spring:'soft'}],
+    [6.30,'pop','#additional-rate-chip',{from:0.94,spring:'soft'}],
+    [8.22,'draw','#rate-total-rule',{dur:0.34}],
+    [8.22,'fade','#rate-total-label',{dur:0.32}],
+    [9.10,'stamp','#letter-total-stamp',{from:1.12,rot:-5,spring:'soft'}],
+    [9.47,'draw','#total-cost-sweep',{dur:0.33}]
+  ]
+}
+</script>
+</section>
