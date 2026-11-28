@@ -9,18 +9,19 @@
 <g id="example">
 <rect x="120" y="700" width="1680" height="260" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
 <text id="deposit" x="180" y="858" font-family="Georgia, 'DejaVu Serif', serif" font-size="80" font-weight="700" fill="#2b2622">₹10,000</text>
+<rect id="paise-marker" x="883" y="775" width="96" height="108" rx="6" fill="#ffd54a" fill-opacity="0.50"/>
 <text id="raw-monthly" x="640" y="858" font-family="Georgia, 'DejaVu Serif', serif" font-size="80" font-weight="700" fill="#2b2622">≈ ₹61.67</text>
 <path id="rounding-arrow" d="M1080 830H1258m-26-24 26 24-26 24" fill="none" stroke="#2b2622" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
 <g id="payment"><rect x="1300" y="769" width="440" height="122" rx="61" fill="#245932"/><text x="1520" y="849" text-anchor="middle" font-family="Inter, sans-serif" font-size="62" font-weight="780" fill="#fff">payment ₹62</text></g>
 </g>
-<g id="three-rules"><rect x="1560" y="160" width="240" height="70" rx="35" fill="#9e1b1b"/><text x="1680" y="213" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="760" fill="#fff">3 नियम</text></g>
+<g id="three-rules"><rect x="1560" y="160" width="240" height="70" rx="35" fill="#9e1b1b"/><text x="1680" y="211" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="760" fill="#fff">3 नियम</text></g>
 </svg>
 <script type="text/scene">
 { on:[
 [0.76,"slide","#example",{from:"down",dist:42,spring:"gentle"}],
 [0.80,"type","#deposit",{cps:25}],
 [3.96,"type","#raw-monthly",{cps:24}],
-[4.88,"highlight","#raw-monthly",{words:"67",color:"#ffd54a",opacity:0.50,pad:7,dur:0.33}],
+[4.88,"fade","#paise-marker",{dur:0.30}],
 [4.88,"pulse","#round-left",{amount:0.032}],
 [6.72,"draw","#rounding-arrow",{dur:0.27}],
 [7.00,"pop","#payment",{from:0.94,spring:"soft"}],
