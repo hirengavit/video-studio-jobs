@@ -1,0 +1,31 @@
+<section class="vs-scene" id="s077" data-section="PART 4 · TD TAX BENEFIT" data-series="POSB" data-in="cut">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <!-- s078: carry the entire settled example group without its prior entrances. -->
+    <g id="example">
+      <text x="160" y="240" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="82" font-weight="800" fill="#9e1b1b">उदाहरण</text>
+      <rect x="260" y="520" width="1400" height="160" fill="none" stroke="#ead9a8" stroke-width="4"/>
+      <rect id="td-segment" x="260" y="520" width="778" height="160" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <rect id="other-segment" x="1038" y="520" width="622" height="160" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <g id="td-label">
+        <use href="piece:td-passbook-white" transform="translate(300 398) scale(.3)"/>
+        <text x="392" y="468" font-family="Inter, sans-serif" font-weight="800" font-size="60" fill="#2b2622">5-year TD</text>
+      </g>
+      <text id="other-label" x="1068" y="468" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700" font-size="50" fill="#2b2622">दूसरे qualifying payments</text>
+      <text id="td-value" x="649" y="630" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="82" fill="#2b2622">₹1,00,000</text>
+      <text id="other-value" x="1349" y="630" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="82" fill="#2b2622">₹80,000</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {
+      on: [
+        [2.44, "grow", "#td-segment", {axis: "x", origin: "left", spring: "soft"}],
+        [2.58, "pop", "#td-value", {from: 0.97}],
+        [3.48, "fade", "#td-label", {dur: 0.28}],
+        [5.88, "fade", "#other-label", {dur: 0.28}],
+        [7.92, "grow", "#other-segment", {axis: "x", origin: "left", spring: "soft"}],
+        [8.06, "pop", "#other-value", {from: 0.97}]
+      ]
+    }
+  </script>
+</section>
