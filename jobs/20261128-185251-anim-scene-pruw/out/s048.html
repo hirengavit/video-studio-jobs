@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s048" data-in="cut" data-section="PART 3 · TD INTEREST" data-series="POSB">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="example-card">
+      <rect x="120" y="170" width="600" height="830" rx="26" fill="#9e1b1b"/>
+      <rect x="120" y="170" width="600" height="830" rx="26" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+      <rect x="144" y="194" width="552" height="782" rx="14" fill="none" stroke="#b8403a" stroke-width="3"/>
+      <text x="182" y="269" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="760" fill="#fde9a6">उदाहरण</text>
+      <path d="M182 302H658" stroke="#b8403a" stroke-width="3"/>
+      <text id="deposit" x="182" y="465" font-family="Inter, sans-serif" font-size="110" font-weight="800" fill="#ffffff">₹10,000</text>
+      <text id="term" x="182" y="581" font-family="Inter, sans-serif" font-size="72" font-weight="730" fill="#ffffff">5-year TD</text>
+      <text id="annual-rate" x="182" y="741" font-family="Inter, sans-serif" font-size="110" font-weight="800" fill="#ffffff">7.5%</text>
+      <g id="rate-source">
+        <path d="M182 814H658" stroke="#b8403a" stroke-width="3"/>
+        <text x="182" y="875" font-family="Inter, sans-serif" font-size="39" font-weight="600" fill="#fde9a6">1 Oct–31 Dec 2026 ·<tspan x="182" y="929">Source: SB Order 12/2026</tspan></text>
+      </g>
+    </g>
+    <g id="calculation-card">
+      <rect x="780" y="170" width="1020" height="830" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="846" y="220" width="10" height="51" rx="5" fill="#f2b705"/>
+      <text x="880" y="266" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="760" fill="#9e1b1b">हिसाब</text>
+      <path d="M830 367H1744 M830 487H1744 M830 607H1744 M830 727H1744 M830 847H1744" fill="none" stroke="#f3ead6" stroke-width="3"/>
+      <text id="quarter-label" x="830" y="330" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="60" fill="#6f6a63">Quarter की दर</text>
+      <text id="quarter-divide" x="830" y="450" font-family="Georgia, serif" font-size="88" font-variant-numeric="lining-nums" fill="#2b2622">7.5 ÷ 4</text>
+      <g id="quarter-rate">
+        <rect x="1108" y="374" width="435" height="96" rx="15" fill="#fde9a6"/>
+        <text x="1122" y="450" font-family="Georgia, serif" font-variant-numeric="lining-nums" font-size="88" fill="#2b2622">= 1.875%</text>
+      </g>
+      <text id="year-quarters" x="830" y="560" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" fill="#6f6a63">एक साल · चार quarters</text>
+      <text id="compound-formula" x="830" y="660" font-family="'Liberation Serif', 'Times New Roman', serif" font-size="64" fill="#2b2622">10,000 × [(1 + 7.5/400)</text>
+      <g id="exponent">
+        <rect x="1432" y="596" width="36" height="43" fill="#ffffff"/>
+        <text x="1438" y="634" font-family="'Liberation Serif', 'Times New Roman', serif" font-size="44" fill="#2b2622">4</text>
+      </g>
+      <text id="formula-end" x="1470" y="660" font-family="'Liberation Serif', 'Times New Roman', serif" font-size="64" fill="#2b2622">− 1]</text>
+      <g id="interest-result">
+        <rect x="814" y="684" width="490" height="104" rx="15" fill="#fde9a6"/>
+        <text x="830" y="760" font-family="Georgia, serif" font-variant-numeric="lining-nums" font-size="96" fill="#2b2622">≈ ₹771.36</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.46, 'pop', '#quarter-rate', {from: 0.94, spring: 'soft'}],
+      [5.62, 'fade', '#year-quarters', {dur: 0.30}],
+      [6.76, 'type', '#compound-formula', {cps: 18}],
+      [7.99, 'fade', '#exponent', {dur: 0.09}],
+      [8.04, 'type', '#formula-end', {cps: 18}],
+      [8.60, 'pop', '#interest-result', {from: 0.96, spring: 'soft'}],
+    ],
+  }
+  </script>
+</section>
