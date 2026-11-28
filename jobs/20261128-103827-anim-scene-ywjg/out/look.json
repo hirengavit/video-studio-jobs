@@ -8,12 +8,5 @@
   "14.09"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s231",
-   "text": "ब्याज पर tax न काटने",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
