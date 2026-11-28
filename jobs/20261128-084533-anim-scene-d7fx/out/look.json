@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-overlap",
-   "scene": "s226",
-   "text": "20 April / 2024 से",
-   "t": 0.3
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s226",
    "message": "a card is mostly empty at 3.5 s: bring its items in sooner, or size it for what it holds now",
