@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" fill="none">
+<line id="icon-camp-pole" x1="160" y1="56" x2="160" y2="12" stroke="#2b2622" stroke-width="3" stroke-linecap="round"/>
+<path id="icon-camp-pennant" d="M162,12 L210,25 L162,38 Z" fill="#9e1b1b" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="icon-camp-tent">
+<path d="M160,56 L282,222 L38,222 Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M146,86 L64,200" stroke="#ead9a8" stroke-width="8" stroke-linecap="round"/>
+</g>
+<path id="icon-camp-door" d="M160,104 L198,222 L122,222 Z" fill="#2b2622" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="14" y1="224" x2="306" y2="224" stroke="#2b2622" stroke-width="3" stroke-linecap="round"/>
+<circle data-anchor="base" cx="160" cy="225" r="0"/>
+</svg>
