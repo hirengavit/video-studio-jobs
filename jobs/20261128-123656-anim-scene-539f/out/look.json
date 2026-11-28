@@ -8,24 +8,5 @@
   "9.97"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s012",
-   "text": "Option: MIS हर महीने principal लौटाता है / 1 कौन खोल सकता है",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s012",
-   "text": "Principal: maturity तक / TD · SB-5A",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s012",
-   "text": "Option: MIS हर महीने principal लौटाता है / 2 nomination",
-   "t": 4.05
-  }
- ]
+ "warnings": []
 }
