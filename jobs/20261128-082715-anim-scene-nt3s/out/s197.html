@@ -1,0 +1,62 @@
+<section class="vs-scene" id="s197" data-section="PART 9 · MIS CLOSURE AND DEATH" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="new">
+<rect x="140" y="210" width="1640" height="460" rx="32" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+<g id="old-account">
+<use href="piece:passbook" transform="translate(300 260)" opacity=".32"/>
+<rect x="305" y="265" width="229" height="309" rx="10" fill="#8b8d93" fill-opacity=".76" stroke="#666971" stroke-width="3"/>
+<rect x="361" y="327" width="142" height="97" rx="8" fill="#fbf7ee"/>
+<text x="432" y="369" font-size="44" text-anchor="middle" fill="#4b4f58" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700">पुराना</text>
+<text x="432" y="411" font-size="44" text-anchor="middle" fill="#4b4f58" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700">खाता</text>
+<g transform="translate(496 521) rotate(-8)">
+<circle r="94" fill="#fbf7ee" stroke="#6f6a63" stroke-width="4"/>
+<circle r="84" fill="none" stroke="#6f6a63" stroke-width="2" stroke-dasharray="4 5"/>
+<text x="0" y="-16" font-size="44" text-anchor="middle" fill="#4b4f58" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700">अवधि</text><text x="0" y="46" font-size="44" text-anchor="middle" fill="#4b4f58" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700">पूरी</text>
+</g></g>
+<path id="account-arrow" d="M620 425H1220m-52 -32 52 32 -52 32" fill="none" stroke="#9e1b1b" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="replacement-book">
+<use href="piece:passbook" transform="translate(1300 260)"/>
+<rect id="new-account-highlight" x="1358" y="328" width="145" height="91" rx="8" fill="#fde9a6"/>
+<text x="1432" y="370" font-size="49" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700">नया</text>
+<text x="1432" y="414" font-size="45" text-anchor="middle" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700">खाता</text>
+</g>
+<text id="open-new" x="1432" y="640" font-size="52" text-anchor="middle" fill="#9e1b1b" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700">खोलना होगा</text>
+
+<text id="on-that-day" x="940" y="704" font-size="44" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700">उस समय की</text>
+<g id="eligibility"><rect x="940" y="740" width="260" height="120" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/><text x="1070" y="819" text-anchor="middle" font-size="52" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700">पात्रता</text></g>
+<g id="limit"><rect x="1230" y="740" width="260" height="120" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/><text x="1360" y="819" text-anchor="middle" font-size="52" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700">सीमा</text></g>
+<g id="rate"><rect x="1520" y="740" width="260" height="120" rx="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/><text x="1650" y="819" text-anchor="middle" font-size="52" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700">दर</text></g>
+</g>
+<g id="verdict">
+<g id="open-row">
+<rect x="200" y="300" width="1520" height="200" rx="32" fill="#ffffff" stroke="#d9e7d8" stroke-width="4"/>
+<text id="open-row-words" x="400" y="427" font-size="72" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700">नया खाता खोलना</text>
+<g id="open-tick"><circle cx="1600" cy="400" r="57" fill="#e9f3e8"/><path id="tick-path" d="M1570 400l21 20 40-45" fill="none" stroke="#2e7d4f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+<g id="old-row">
+<rect x="200" y="600" width="1520" height="200" rx="32" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
+<text id="old-row-words" x="400" y="727" font-size="72" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700">पुराने को बढ़ाना</text>
+<g id="old-cross"><circle cx="1600" cy="700" r="57" fill="#e6e3dd"/><path d="M1578 678l44 44m0-44l-44 44" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/></g>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,'#new'],[4.10,'#verdict']],
+ on:[
+ [.28,'fade','#on-that-day',{dur:.23}],
+ [.82,'pop','#eligibility',{spring:'snap',from:.9}],
+ [1.72,'pop','#limit',{spring:'snap',from:.9}],
+ [2.66,'pop','#rate',{spring:'snap',from:.9}],
+ [4.10,'words','#open-row-words',{gap:.21,dist:12}],
+ [4.94,'fade','#open-tick',{dur:.18}],
+ [4.94,'draw','#tick-path',{dur:.26}],
+ [5.76,'fade','#old-row',{dur:.18}],
+ [5.78,'words','#old-row-words',{gap:.23,dist:12}],
+ [7.60,'strike','#old-row-words',{color:'#4b4f58',width:8,dur:.27,dim:.82}],
+ [7.98,'fade','#old-cross',{dur:.18}]
+ ]
+}
+</script>
+</section>
