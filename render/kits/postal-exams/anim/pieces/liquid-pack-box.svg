@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 520" width="480" height="520">
+  <defs>
+    <pattern id="liquid-pack-box-sawdust" width="34" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="6" r="2.5" fill="#6f6a63"/>
+      <circle cx="22" cy="4" r="2" fill="#6f6a63"/>
+      <circle cx="14" cy="17" r="3" fill="#6f6a63"/>
+      <circle cx="29" cy="22" r="2.5" fill="#6f6a63"/>
+      <circle cx="6" cy="26" r="2" fill="#6f6a63"/>
+    </pattern>
+  </defs>
+  <g fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="outer-box">
+      <rect x="60" y="120" width="360" height="360" rx="4" fill="#f3ead6" stroke-width="4"/>
+      <rect x="80" y="136" width="320" height="328" fill="#fbf7ee" stroke-width="2.5"/>
+      <path d="M64 160 L76 148 M64 200 L76 188 M64 240 L76 228 M64 280 L76 268 M64 320 L76 308 M64 360 L76 348 M64 400 L76 388 M64 440 L76 428 M404 160 L416 148 M404 200 L416 188 M404 240 L416 228 M404 280 L416 268 M404 320 L416 308 M404 360 L416 348 M404 400 L416 388 M404 440 L416 428 M120 476 L132 466 M180 476 L192 466 M240 476 L252 466 M300 476 L312 466 M360 476 L372 466" stroke="#6f6a63" stroke-width="2"/>
+    </g>
+    <g id="padding">
+      <path d="M82 138 H398 V462 H82 Z M168 194 V444 H312 V194 Z" fill="url(#liquid-pack-box-sawdust)" fill-rule="evenodd" stroke="none"/>
+      <path d="M100 170 q8 -12 18 -4 q10 -8 16 4 q8 8 -2 14 q-8 8 -16 2 q-12 4 -16 -6 q-6 -6 0 -10 Z" fill="#ffffff" stroke-width="2"/>
+      <path d="M342 250 q8 -12 18 -4 q10 -8 16 4 q8 8 -2 14 q-8 8 -16 2 q-12 4 -16 -6 q-6 -6 0 -10 Z" fill="#ffffff" stroke-width="2"/>
+      <path d="M104 380 q8 -12 18 -4 q10 -8 16 4 q8 8 -2 14 q-8 8 -16 2 q-12 4 -16 -6 q-6 -6 0 -10 Z" fill="#ffffff" stroke-width="2"/>
+      <path d="M336 420 q8 -12 18 -4 q10 -8 16 4 q8 8 -2 14 q-8 8 -16 2 q-12 4 -16 -6 q-6 -6 0 -10 Z" fill="#ffffff" stroke-width="2"/>
+    </g>
+    <g id="jar">
+      <path d="M192 216 H288 V232 Q310 234 310 256 V418 Q310 440 288 440 H192 Q170 440 170 418 V256 Q170 234 192 232 Z" fill="#fbf7ee"/>
+      <rect x="184" y="196" width="112" height="24" rx="5" fill="#2b2622"/>
+      <path d="M190 202 V214 M202 202 V214 M214 202 V214 M226 202 V214 M238 202 V214 M250 202 V214 M262 202 V214 M274 202 V214 M286 202 V214" stroke="#6f6a63" stroke-width="2"/>
+    </g>
+    <g id="liquid">
+      <path d="M173 292 H307 V418 Q307 437 288 437 H192 Q173 437 173 418 Z" fill="#ead9a8" stroke="none"/>
+      <path d="M173 292 H307" stroke-width="2.5"/>
+      <path d="M190 312 V400" stroke="#ffffff" stroke-width="4"/>
+    </g>
+    <g id="lid">
+      <rect x="50" y="98" width="380" height="26" rx="5" fill="#f3ead6" stroke-width="4"/>
+      <path d="M70 111 H410" stroke="#6f6a63" stroke-width="2"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="240" cy="482" r="0"/>
+  <circle data-anchor="top" cx="240" cy="98" r="0"/>
+</svg>
