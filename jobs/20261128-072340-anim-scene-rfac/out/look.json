@@ -8,12 +8,5 @@
   "11.77"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "mostly-empty",
-   "scene": "s203",
-   "message": "a card (#s203-rule-paper) is mostly empty at 2.4 s: bring its items in sooner, or size it for what it holds now",
-   "t": 2.38
-  }
- ]
+ "warnings": []
 }
