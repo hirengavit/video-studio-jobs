@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s096" data-section="PART 5 · TD EARLY CLOSURE" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <g id="myth">
+   <rect x="200" y="340" width="1520" height="400" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+   <rect x="278" y="373" width="167" height="63" rx="31" fill="#4b4f58"/>
+   <text x="362" y="418" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740" fill="#ffffff">भ्रम</text>
+   <text id="the-account" x="298" y="530" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="720" fill="#2b2622">लंबी अवधि का खाता</text>
+   <text id="wrong" x="298" y="630" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="720" fill="#2b2622">→ पूरी अवधि पर original दर</text>
+   <path id="reject-line" d="M299 607Q680 597 1064 608" stroke="#4b4f58" stroke-width="8" stroke-linecap="round" fill="none"/>
+   <path id="cross" d="M1576 568L1624 616M1624 568L1576 616" stroke="#4b4f58" stroke-width="12" stroke-linecap="round" fill="none"/>
+ </g>
+ <g id="ex">
+   <text x="160" y="230" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="800" fill="#9e1b1b">उदाहरण</text>
+   <use href="piece:td-passbook-white" transform="translate(220 300) scale(1.1)"/>
+   <text id="book-label" x="365" y="435" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="27" font-weight="760" fill="#2b2622">TD · 3 साल</text>
+   <text id="when-opened" x="900" y="300" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="680" fill="#2b2622">खुलते समय</text>
+   <g id="stamp">
+     <rect x="900" y="340" width="684" height="342" rx="26" fill="#9e1b1b" stroke="#7d1414" stroke-width="3" filter="url(#vs-shadow)"/>
+     <rect x="921" y="361" width="642" height="300" rx="16" fill="none" stroke="#fde9a6" stroke-opacity=".55" stroke-width="3" stroke-dasharray="3 10" stroke-linecap="round"/>
+     <text x="1242" y="439" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="780" fill="#ffffff">2-year rate</text>
+   </g>
+   <text id="rate-hi" x="1242" y="508" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="680" fill="#fde9a6">2 साल की दर</text>
+   <text id="rate" x="1242" y="639" text-anchor="middle" font-family="Inter, sans-serif" font-size="140" font-weight="820" fill="#ffffff">7.0%</text>
+   <text id="opening-note" x="1242" y="723" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">उदाहरण · खुलने के दिन की दर</text>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,"#myth"],[7.72,"#ex"]],
+ on:[
+  [1.0,"words","#the-account",{gap:0.15,dist:13}],
+  [3.82,"words","#wrong",{gap:0.21,dist:13}],
+  [6.60,"draw","#reject-line",{dur:0.28}],
+  [6.88,"draw","#cross",{dur:0.35}],
+  [9.16,"pop","#book-label",{from:0.94,spring:"soft"}],
+  [10.54,"fade","#when-opened",{dur:0.25}],
+  [12.78,"fade","#stamp",{dur:0.28}],
+  [13.28,"fade","#rate-hi",{dur:0.21}],
+  [13.40,"count","#rate",{from:6,to:7,dur:0.42,decimals:1,suffix:"%"}],
+  [13.90,"fade","#opening-note",{dur:0.22}]
+ ]
+}
+</script>
+</section>
