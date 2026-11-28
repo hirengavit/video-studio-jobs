@@ -1,0 +1,66 @@
+<section class="vs-scene" id="s040" data-in="cut" data-section="PART 3 · TD DEPOSIT" data-series="POSB">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="limits">
+      <g id="maximum-card">
+        <rect x="120" y="200" width="760" height="380" rx="27" fill="#9e1b1b"/>
+        <use href="piece:stamp-term-card" transform="translate(120 282) scale(.542857143)"/>
+        <g id="maximum-icon" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M207 435h75M245 432v-84m-27 27 27-27 27 27"/>
+        </g>
+        <text x="601" y="350" text-anchor="middle" font-family="Inter, sans-serif" font-size="80" font-weight="760" fill="#fffdf9">Maximum</text>
+        <text x="601" y="427" text-anchor="middle" font-family="Inter, sans-serif" font-size="80" font-weight="760" fill="#fffdf9">deposit</text>
+        <text id="maximum-hi" x="601" y="494" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="680" fill="#fde9a6">अधिकतम जमा</text>
+      </g>
+      <g id="unlimited-card">
+        <rect x="960" y="200" width="840" height="380" rx="27" fill="#fffdf9" stroke="#ead9a8" stroke-width="4"/>
+        <g id="td-book">
+          <use href="piece:td-passbook-white" transform="translate(1000 294) scale(.6)"/>
+          <text x="1079" y="374" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="750" fill="#9e1b1b">TD</text>
+        </g>
+        <text id="no-limit" x="1475" y="422" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="720" fill="#2b2622">कोई सीमा नहीं</text>
+      </g>
+      <g id="accounts-question">
+        <rect x="120" y="640" width="760" height="340" rx="27" fill="#f3ead6"/>
+        <text x="500" y="715" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="700" fill="#2b2622">कितने TD खाते?</text>
+      </g>
+      <g id="small-book-1"><use href="piece:td-passbook-white" transform="translate(240 765) scale(.5)"/><text x="306" y="827" text-anchor="middle" font-family="Inter, sans-serif" font-size="27" font-weight="750" fill="#9e1b1b" aria-hidden="true">TD</text></g>
+      <g id="small-book-2"><use href="piece:td-passbook-white" transform="translate(440 765) scale(.5)"/><text x="506" y="827" text-anchor="middle" font-family="Inter, sans-serif" font-size="27" font-weight="750" fill="#9e1b1b" aria-hidden="true">TD</text></g>
+      <g id="small-book-3"><use href="piece:td-passbook-white" transform="translate(640 765) scale(.5)"/><text x="706" y="827" text-anchor="middle" font-family="Inter, sans-serif" font-size="27" font-weight="750" fill="#9e1b1b" aria-hidden="true">TD</text></g>
+      <g id="unlimited-accounts">
+        <rect x="960" y="640" width="840" height="340" rx="27" fill="#fffdf9" stroke="#ead9a8" stroke-width="4"/>
+        <text id="account-answer" x="1380" y="830" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="720" fill="#2b2622">कोई तय सीमा नहीं</text>
+      </g>
+    </g>
+    <g id="one">
+      <rect x="120" y="880" width="1680" height="20" rx="8" fill="#ead9a8"/>
+      <path d="M940 225v640" stroke="#d8c9aa" stroke-width="4" stroke-dasharray="12 16"/>
+      <g id="first-book"><use href="piece:td-passbook-white" transform="translate(200 464) scale(1.3)"/><text x="371.6" y="612" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="750" fill="#9e1b1b" aria-hidden="true">TD · SB-5A</text></g>
+      <g id="first-bundle"><use href="piece:rupee-note-bundle" transform="translate(560 680)"/></g>
+      <text id="first-caption" x="540" y="300" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="720" fill="#2b2622">1 खाता = 1 deposit</text>
+      <g id="second-bundle"><use href="piece:rupee-note-bundle" transform="translate(1000 680)"/></g>
+      <text id="investment-caption" x="1155" y="300" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="700" fill="#2b2622">दूसरा निवेश</text>
+      <g id="second-book"><use href="piece:td-passbook-white" transform="translate(1380 464) scale(1.3)"/><text x="1551.6" y="612" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="750" fill="#9e1b1b" aria-hidden="true">TD · SB-5A</text></g>
+      <text id="second-caption" x="1550" y="300" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="700" fill="#2b2622">→ दूसरा खाता</text>
+      <path id="account-check" d="M1694 414l22 22 43-48" fill="none" stroke="#317650" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0,'#limits'],[5.82,'#one']],
+    on: [
+      [0,'fade','#accounts-question',{dur:.3}],
+      [.74,'pop',['#small-book-1','#small-book-2','#small-book-3'],{stagger:.12,spring:'soft',from:.94}],
+      [3.14,'fade','#unlimited-accounts',{dur:.22}],
+      [3.17,'words','#account-answer',{gap:.20,dist:6,spring:'soft'}],
+      [6.34,'pop','#first-bundle',{spring:'soft',from:.95}],
+      [6.34,'words','#first-caption',{gap:.07,dist:6,spring:'soft'}],
+      [7.44,'slide','#second-bundle',{from:'right',dist:75,spring:'soft'}],
+      [7.44,'fade','#investment-caption',{dur:.23}],
+      [9.54,'pop','#second-book',{spring:'soft',from:.95}],
+      [9.54,'fade','#second-caption',{dur:.26}],
+      [9.54,'draw','#account-check',{dur:.32}]
+    ]
+  }
+  </script>
+</section>
