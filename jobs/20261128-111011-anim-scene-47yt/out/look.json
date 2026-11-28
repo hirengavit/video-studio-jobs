@@ -24,18 +24,6 @@
   {
    "kind": "text-overlap",
    "scene": "s239",
-   "text": "हर तिमाही compound / ₹",
-   "t": 3.72
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s239",
-   "text": "हर महीने भुगतान / ₹",
-   "t": 7.44
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s239",
    "text": "साल में एक बार भुगतान / compounding नहीं",
    "t": 9.15
   }
