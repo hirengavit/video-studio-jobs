@@ -8,12 +8,5 @@
   "10.03"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s159",
-   "text": "₹ / हर महीने payable",
-   "t": 10.03
-  }
- ]
+ "warnings": []
 }
