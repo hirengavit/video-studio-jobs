@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g id="parcel"><path d="M60 176l35-35h213l32 35v165H60z" fill="#d8af7f"/><path d="M60 176h280m-245-35v35" fill="none"/><path d="M213 141l-11 35v165M60 257h280M202 176q-33-29-46-20-13 14 46 20 43-33 55-21 12 15-55 21" stroke="#745a3d" fill="none"/></g><g id="tag"><path d="M202 176q20-64 61-72 17-2 19 9" fill="none" stroke="#745a3d"/><circle cx="282" cy="157" r="58" fill="#cfe3ee"/><circle cx="282" cy="113" r="4" fill="#fbf7ee"/><g id="globe" fill="none"><circle cx="282" cy="165" r="34"/><ellipse cx="282" cy="165" rx="15" ry="34"/><path d="M248 165h68m-61-19q27 12 54 0m-54 38q27-12 54 0"/></g></g>
+<circle data-anchor="base" cx="200" cy="341" r="0" stroke="none"/>
+<circle data-anchor="top" cx="200" cy="141" r="0" stroke="none"/>
+</svg>
