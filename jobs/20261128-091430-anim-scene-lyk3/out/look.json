@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.24",
+  "4.49",
+  "6.73",
+  "8.98",
+  "11.07"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s155",
+   "message": "out: nothing found for \"#deposit-date,#refund-month,#deposit-pin,#refund-pin,#track-rate\"",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s155",
+   "text": "refund से पिछले महीने का आख़िर / 30",
+   "t": 8.98
+  }
+ ]
+}
