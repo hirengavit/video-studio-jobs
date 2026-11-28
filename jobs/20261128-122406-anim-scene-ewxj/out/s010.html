@@ -27,6 +27,7 @@
 <g id="option">
   <rect id="option-card" x="160" y="220" width="1600" height="260" rx="28" fill="#fffdfa" stroke="#ead9a8" stroke-width="4"/>
   <text id="option-text" x="222" y="366" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="800" fill="#2b2622">Option: MIS हर महीने principal लौटाता है</text>
+  <path id="option-strike" d="M219 345H1322" fill="none" stroke="#485669" stroke-width="8" stroke-linecap="round"/>
   <g id="option-wrong">
     <circle cx="1500" cy="347" r="37" fill="#eff2f6" stroke="#485669" stroke-width="5"/>
     <path d="M1488 335l24 24m0-24-24 24" fill="none" stroke="#485669" stroke-width="7" stroke-linecap="round"/>
@@ -52,7 +53,7 @@
     [2.82, "draw", "#arrow-strike", {dur:.22}],
     [2.82, "pop", "#arrow-no", {from:.74, spring:"soft"}],
     [4.38, "words", "#option-text", {gap:.135, dist:19, spring:"soft"}],
-    [8.50, "strike", "#option-text", {color:"#485669", width:8, dur:.35, dim:.64}],
+    [8.50, "draw", "#option-strike", {dur:.35}],
     [8.50, "pop", "#option-wrong", {from:.82, spring:"soft"}],
     [9.26, "slide", "#fact-card", {from:"down", dist:70, spring:"soft"}],
     [9.66, "fade", "#fact-one", {dur:.28}],
