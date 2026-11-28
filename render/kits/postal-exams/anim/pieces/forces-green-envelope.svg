@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400">
+  <g id="paper" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="12" y="12" width="616" height="376" rx="8" fill="#cfe3d6"/>
+    <path d="M12 40 L628 40" fill="none" stroke="#9fbfab" stroke-width="2"/>
+  </g>
+  <g id="stamp-box" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="510" y="58" width="94" height="112" rx="4" stroke-dasharray="8 8"/>
+  </g>
+  <g id="address-lines" fill="none" stroke="#6f6a63" stroke-width="3" stroke-linecap="round">
+    <path d="M300 214 L590 214"/>
+    <path d="M300 256 L590 256"/>
+    <path d="M300 298 L590 298"/>
+    <path d="M300 340 L520 340"/>
+  </g>
+  <circle data-anchor="base" cx="320" cy="388" r="0"/>
+  <circle data-anchor="top" cx="320" cy="12" r="0"/>
+</svg>
