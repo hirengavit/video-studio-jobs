@@ -1,0 +1,43 @@
+{
+ "moments": [
+  "0.30",
+  "1.86",
+  "3.72",
+  "5.58",
+  "7.44",
+  "9.15"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s239",
+   "text": "कोई सीमा / नहीं",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s239",
+   "text": "एक व्यक्ति: / ₹9 लाख",
+   "t": 0.3
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s239",
+   "text": "हर तिमाही compound / ₹",
+   "t": 3.72
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s239",
+   "text": "हर महीने भुगतान / ₹",
+   "t": 7.44
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s239",
+   "text": "साल में एक बार भुगतान / compounding नहीं",
+   "t": 9.15
+  }
+ ]
+}
