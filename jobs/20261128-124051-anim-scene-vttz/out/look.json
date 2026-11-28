@@ -8,12 +8,5 @@
   "10.51"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s072",
-   "text": "कोई ब्याज नहीं / ₹",
-   "t": 10.51
-  }
- ]
+ "warnings": []
 }
