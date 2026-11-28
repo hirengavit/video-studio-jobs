@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="padlock-shackle">
+      <path d="M81 142 V96 A44 44 0 0 1 169 96 V142" fill="none" stroke="#2b2622" stroke-width="24"/>
+      <path d="M81 142 V96 A44 44 0 0 1 169 96 V142" fill="none" stroke="#d5cebf" stroke-width="18"/>
+    </g>
+    <g id="padlock-body">
+      <rect x="55" y="138" width="140" height="118" rx="16" fill="#4b4f58"/>
+      <circle cx="125" cy="186" r="12" fill="#fbf7ee"/>
+      <path d="M119 192 L115 222 H135 L131 192 Z" fill="#fbf7ee"/>
+    </g>
+    <path id="padlock-string" d="M195 172 C204 186 210 204 217 222" fill="none" stroke-width="2.5"/>
+    <g id="padlock-tag" transform="rotate(10 236 224)">
+      <path d="M206 224 L224 202 H268 V246 H224 Z" fill="#ffffff"/>
+      <circle cx="219" cy="224" r="4" fill="#fbf7ee"/>
+    </g>
+  </g>
+  <circle data-anchor="top" cx="125" cy="40" r="0"/>
+  <circle data-anchor="base" cx="125" cy="256" r="0"/>
+</svg>

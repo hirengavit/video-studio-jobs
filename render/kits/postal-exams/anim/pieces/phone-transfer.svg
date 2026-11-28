@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 520" width="300" height="520">
+<g id="phone" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="12" y="10" width="200" height="500" rx="32" fill="#f3ead6"/>
+  <line x1="88" y1="32" x2="136" y2="32" fill="none"/>
+  <circle cx="112" cy="482" r="12" fill="none"/>
+</g>
+<g id="screen">
+  <rect x="28" y="50" width="168" height="410" rx="12" fill="#fbf7ee" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<g id="arrow" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M226 300 C 236 230, 262 196, 286 178"/>
+  <path d="M262 175 L 287 177 L 281 201"/>
+</g>
+<circle data-anchor="base" cx="112" cy="510" r="0"/>
+<circle data-anchor="top" cx="112" cy="10" r="0"/>
+</svg>
