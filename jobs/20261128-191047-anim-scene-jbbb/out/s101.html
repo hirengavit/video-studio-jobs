@@ -52,7 +52,7 @@
       update(t, section, $) {
         if (t >= 5.13) return;
         const tail = $('#minimum')[0], lead = $('#early-only')[0];
-        const a = Math.min(1, Math.max(0, (t - 0.02) / 0.29));
+        const a = Math.min(1, Math.max(0, (t - 0.02) / 0.19));
         lead.setAttribute('x', 1380 - (tail.getComputedTextLength() + 14) * (a*a*(3-2*a)));
         const b = $('#rejected-rate')[0].getBBox();
         $('#rejected-strike')[0].setAttribute('d', 'M' + (b.x-6) + ' ' + (b.y+b.height*.55) + ' Q' + (b.x+b.width/2) + ' ' + (b.y+b.height*.61) + ' ' + (b.x+b.width+6) + ' ' + (b.y+b.height*.52));
