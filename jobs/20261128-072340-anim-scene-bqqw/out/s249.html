@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s249" data-in="cut" data-section="FULL RECAP" data-series="POSB">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="mis-closure-recap">
+<rect x="210" y="160" width="1500" height="830" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+<path d="M238 163H1682Q1707 163 1707 188V345H213V188Q213 163 238 163Z" fill="#f3ead6"/>
+<path d="M214 345H1706 M1140 166L1390 310L1705 166" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="300" y="295" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="800" fill="#9e1b1b">MIS: बंद करना</text>
+<g id="mis-seal">
+<circle cx="1390" cy="257" r="45" fill="#9e1b1b"/><circle cx="1390" cy="257" r="35" fill="none" stroke="#fde9a6" stroke-width="2" stroke-dasharray="4 6"/>
+<text x="1390" y="274" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="#fde9a6">2</text>
+</g>
+<use href="piece:passbook" transform="translate(1480 195) scale(.3)"/>
+<path d="M300 680H1617" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linecap="round"/>
+<g id="row-closure">
+<text id="closure-en" x="300" y="436" font-family="Inter, sans-serif" font-size="60" font-weight="800" fill="#2b2622">Premature closure</text>
+<text id="closure-hi" x="300" y="495" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">समय से पहले खाता बंद करना</text>
+<g id="first-pill">
+<rect x="300" y="519" width="620" height="83" rx="41.5" fill="#fde9a6"/>
+<rect id="exact-mark" x="339" y="533" width="83" height="56" rx="12" fill="#f2b705"/>
+<text x="348" y="578" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#2b2622">ठीक 3 साल तक:</text>
+</g>
+<text id="first-rate" x="874" y="582" text-anchor="end" font-family="Inter, sans-serif" font-size="58" font-weight="850" fill="#8a5d00">2%</text>
+<g id="second-pill">
+<rect x="950" y="519" width="590" height="83" rx="41.5" fill="#fde9a6"/>
+<text x="1000" y="578" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#2b2622">उसके बाद:</text>
+</g>
+<text id="second-rate" x="1494" y="582" text-anchor="end" font-family="Inter, sans-serif" font-size="58" font-weight="850" fill="#8a5d00">1%</text>
+<g id="principal-note">
+<text x="300" y="653" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#2b2622">Principal से कटौती</text>
+<text x="900" y="653" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">मूलधन</text>
+</g>
+<circle id="closure-ok-disc" cx="1600" cy="560" r="30" fill="#e3f1e8"/>
+<path id="closure-ok" d="M1584 560l11 11 22-25" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+[1.06,'pop','#closure-en',{from:0.92}],
+[1.56,'fade','#closure-hi',{dur:.34}],
+[3.18,'reveal','#first-pill',{from:'left',dur:.35}],
+[4.56,'pop','#first-rate',{from:.9}],
+[5.64,'reveal','#second-pill',{from:'left',dur:.35}],
+[6.56,'pop','#second-rate',{from:.9}],
+[7.76,'fade','#principal-note',{dur:.3}],
+[8.36,'fade','#closure-ok-disc',{dur:.22}],
+[8.36,'draw','#closure-ok',{dur:.36}]
+]}
+</script>
+</section>
