@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 440" width="520" height="440">
+<title>parcel emblem</title>
+<g id="stamp-frame">
+<rect x="40" y="22" width="440" height="352" fill="none" stroke="#2b2622" stroke-width="20" stroke-linecap="round" stroke-dasharray="0.01 22"/>
+<rect x="40" y="22" width="440" height="352" fill="none" stroke="#2b2622" stroke-width="6"/>
+<rect x="40" y="22" width="440" height="352" fill="#ffffff"/>
+<rect x="40" y="22" width="440" height="352" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-dasharray="0.01 22"/>
+<rect x="62" y="44" width="396" height="308" rx="4" fill="none" stroke="#ead9a8" stroke-width="3"/>
+</g>
+<g id="box">
+<path d="M90 150 L150 110 L450 110 L390 150 Z" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="90" y="150" width="300" height="240" fill="#f3ead6" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="side">
+<path d="M390 150 L450 110 L450 350 L390 390 Z" fill="#e6d6b4" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="string" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M240 150 V390"/>
+<path d="M90 270 H390 L450 230"/>
+<path d="M240 150 L300 110"/>
+<path d="M120 130 H420"/>
+<path d="M270 130 C252 112 236 118 246 128 C254 136 266 134 270 130 C276 116 300 112 296 126 C292 136 278 134 270 130"/>
+<path d="M270 130 L258 144 M270 130 L284 142"/>
+<circle cx="270" cy="130" r="4" fill="#2b2622"/>
+</g>
+<g id="label">
+<rect x="150" y="230" width="180" height="70" rx="6" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<circle data-anchor="base" cx="240" cy="390" r="0"/>
+<circle data-anchor="top" cx="270" cy="130" r="0"/>
+<circle data-anchor="grip" cx="270" cy="124" r="0"/>
+<circle data-anchor="mouth" cx="240" cy="265" r="0"/>
+</svg>
