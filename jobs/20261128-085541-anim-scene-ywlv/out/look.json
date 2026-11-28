@@ -10,9 +10,9 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "text-off-frame",
+   "kind": "text-overlap",
    "scene": "s230",
-   "text": "ब्याज पर tax न काटने",
+   "text": "ब्याज पर / tax न काटने",
    "t": 8.78
   }
  ]
