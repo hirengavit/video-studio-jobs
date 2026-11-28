@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s113" data-in="cut" data-section="PART 6 · TD PLEDGE" data-series="POSB">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="docs">
+    <g id="form5">
+      <use href="piece:complaint-form-sheet" transform="translate(200 260) scale(1.4)"/>
+      <rect id="form-hilite" x="247" y="294" width="410" height="64" rx="8" fill="#7d1414" stroke="#f2b705" stroke-width="3"/>
+      <text id="form-title" x="452" y="344" text-anchor="middle" font-family="Inter" font-weight="800" font-size="56" fill="#fff">TD Form-5</text>
+      <text id="depositor-en" x="860" y="330" font-family="Inter" font-weight="800" font-size="88" fill="#2b2622">Depositor</text>
+      <text id="depositor-hi" x="860" y="400" font-family="Noto Sans Devanagari, Inter, sans-serif" font-weight="650" font-size="52" fill="#6f6a63">जमाकर्ता</text>
+      <path id="field-line-1" d="M272 430H475M491 430H588" fill="none" stroke="#6f6a63" stroke-width="5" stroke-linecap="round"/>
+      <path id="field-line-2" d="M272 514H415M432 514H560" fill="none" stroke="#6f6a63" stroke-width="5" stroke-linecap="round"/>
+      <path id="field-line-3" d="M272 598H496M512 598H610" fill="none" stroke="#6f6a63" stroke-width="5" stroke-linecap="round"/>
+      <text id="apply-hi" x="744" y="535" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="52" font-weight="680" fill="#6f6a63">आवेदन</text>
+    </g>
+<text id="addition" x="800" y="570" text-anchor="middle" font-family="Inter" font-weight="800" font-size="80" fill="#2b2622">+</text>
+<g id="letter-sheet">
+  <path d="M900 470H1132L1200 538V870H900Z" fill="#fff" stroke="#ead9a8" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M1132 470V538H1200Z" fill="#f3ead6" stroke="#ead9a8" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M941 567H1040" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/>
+  <path d="M941 616H1159M941 655H1144M941 694H1159M941 733H1075" fill="none" stroke="#c9c3b9" stroke-width="5" stroke-linecap="round"/>
+  <path d="M1027 804C1041 785 1056 783 1050 798C1044 814 1067 798 1079 797C1101 793 1098 807 1125 795M1018 826H1154" fill="none" stroke="#6f6a63" stroke-width="4" stroke-linecap="round"/>
+</g>
+<text id="accept-en" x="1050" y="920" text-anchor="middle" font-family="Inter" font-weight="750" font-size="56" fill="#2b2622">acceptance letter</text>
+<text id="accept-hi" x="1050" y="975" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-weight="650" font-size="48" fill="#6f6a63">स्वीकृति पत्र</text>
+</g>
+<g id="fee">
+  <rect x="542" y="300" width="836" height="440" rx="26" fill="#9e1b1b"/>
+  <rect x="567" y="325" width="786" height="390" rx="12" fill="none" stroke="#f3b8ad" stroke-width="3" stroke-dasharray="3 13" stroke-linecap="round"/>
+  <text x="960" y="409" text-anchor="middle" font-family="Inter" font-size="80" font-weight="800" fill="#fff">Pledging fee</text>
+  <text id="fee-hi" x="960" y="475" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="52" font-weight="700" fill="#fde9a6">गिरवी शुल्क</text>
+  <text id="price" x="960" y="650" text-anchor="middle" font-family="Inter" font-size="150" font-weight="850" fill="#fff">₹100</text>
+  <text id="tax" x="960" y="840" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="64" font-weight="750" fill="#2b2622">+ लागू tax</text>
+  <text id="source" x="960" y="930" text-anchor="middle" font-family="Inter" font-size="44" font-weight="600" fill="#6f6a63">Post Office Time Deposit Scheme</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+  shots:[[0,"#docs"],[4.02,"#fee"]],
+  on:[
+    [0.43,"out","#apply-hi",{dur:0.20,scale:1}],
+    [0.68,"pop","#addition",{from:0.8,spring:"soft"}],
+    [1.42,"slide","#letter-sheet",{from:"right",dist:180,spring:"soft"}],
+    [2.22,"fade","#accept-en",{dur:0.18}],
+    [2.72,"fade","#accept-hi",{dur:0.18}],
+    [4.52,"fade","#fee-hi",{dur:0.17}],
+    [4.84,"count","#price",{to:100,from:0,dur:0.64,prefix:"₹"}],
+    [7.34,"fade","#tax",{dur:0.22}],
+    [7.84,"fade","#source",{dur:0.18}]
+  ]
+}
+</script>
+</section>
