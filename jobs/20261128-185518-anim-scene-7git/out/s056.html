@@ -38,8 +38,9 @@
       </g>
     </g>
     <g id="bank-page-chip">
-      <rect x="1330" y="700" width="470" height="90" rx="18" fill="#f3ead6" stroke="#ba9c62" stroke-width="3"/>
-      <text x="1565" y="759" font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="40" font-weight="670">या bank passbook का page</text>
+      <rect x="1330" y="690" width="470" height="130" rx="18" fill="#f3ead6" stroke="#ba9c62" stroke-width="3"/>
+      <text x="1565" y="740" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="670">या bank passbook</text>
+      <text x="1565" y="789" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="40" font-weight="670">का page</text>
     </g>
   </g>
 </g>
@@ -49,7 +50,7 @@
   <use id="open-td-book" href="piece:pda-passbook" transform="translate(342 290) scale(0.95)"/>
   <text id="td-book-title" x="665" y="392" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="800" fill="#2b2622">TD · SB-5A</text>
   <g font-family="Inter, 'Noto Sans Devanagari', sans-serif" font-size="36" font-weight="600" fill="#6f6a63">
-    <text id="entry-name" x="558" y="504">नाम</text>
+    <text id="entry-name" font-family="'Noto Sans Devanagari', Inter, sans-serif" x="558" y="504">नाम</text>
     <text id="entry-account" x="558" y="553">Account no.</text>
     <text id="entry-ifsc" x="558" y="602">IFSC</text>
   </g>
@@ -78,7 +79,7 @@
    [0.47, 'pop', '#cheque-evidence', {from:0.94, spring:'soft'}],
    [0.93, 'fade', '#cancelled-label', {dur:0.16}],
    [2.17, 'pop', '#bank-page-chip', {from:0.94, spring:'soft'}],
-   [6.10, 'type', '#entry-name', {cps:80}],
+   [6.10, 'fade', '#entry-name', {dur:0.10}],
    [6.25, 'type', '#entry-account', {cps:80}],
    [6.33, 'draw', '#check-row-one', {dur:0.17}],
    [6.40, 'type', '#entry-ifsc', {cps:80}],
