@@ -8,12 +8,5 @@
   "10.39"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s118",
-   "message": "fade: nothing found for \"#detail-back,#pledgee-details\"",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
