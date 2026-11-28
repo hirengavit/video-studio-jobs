@@ -1,0 +1,56 @@
+<section class="vs-scene" id="s063" data-section="PART 4 · TD MATURITY" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="window-table">
+    <rect x="140" y="180" width="1040" height="780" rx="27" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+    <text x="191" y="232" font-family="Inter, sans-serif" font-size="56" font-weight="810" fill="#9e1b1b">Extension window</text>
+    <text id="window-title-hi" x="191" y="288" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="690" fill="#9e1b1b">विस्तार की समय सीमा</text>
+    <g id="window-headings" fill="#6f6a63" font-family="Inter, sans-serif" font-size="44" font-weight="600" text-anchor="middle">
+      <text x="396" y="345">TD</text>
+      <text x="921" y="345">Window</text>
+    </g>
+    <path d="M185 361H1135 M185 450H1135 M185 590H1135 M185 730H1135 M185 870H1135 M655 362V870" fill="none" stroke="#ead9a8" stroke-width="2"/>
+    <rect id="window-focus" x="177" y="362" width="966" height="87" rx="15" fill="#fde9a6" fill-opacity=".65" stroke="#f2b705" stroke-width="4"/>
+    <g id="window-row-1">
+  <text x="396" y="420" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="710" fill="#2b2622">1 year</text>
+  <text id="window-value-1" x="921" y="420" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="760" fill="#2b2622">6 महीने</text>
+</g>
+<g id="window-row-2">
+  <text x="396" y="560" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="710" fill="#2b2622">2 years</text>
+  <text id="window-value-2" x="921" y="560" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="760" fill="#2b2622">12 महीने</text>
+</g>
+<g id="window-row-3">
+  <text x="396" y="700" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="710" fill="#2b2622">3 years</text>
+  <text id="window-value-3" x="921" y="700" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="760" fill="#2b2622">18 महीने</text>
+</g>
+<g id="window-row-4">
+  <text x="396" y="840" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="710" fill="#2b2622">5 years</text>
+  <text id="window-value-4" x="921" y="840" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="760" fill="#2b2622">18 महीने</text>
+</g>
+  </g>
+  <g id="maturity-calendar">
+    <use id="calendar-piece" href="piece:calendar-page" transform="translate(1338 226) scale(1.4)"/>
+    <text id="maturity-day" x="1520" y="490" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="800" fill="#2b2622">Maturity</text>
+    <g id="maturity-note">
+      <text x="1520" y="711" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="680" fill="#2b2622">maturity की तारीख से</text>
+      <text x="1520" y="772" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="680" fill="#2b2622">गिनकर</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0.44,"fade","#window-title-hi",{dur:0.33}],
+    [1.88,"reveal","#calendar-piece",{from:"up",dur:0.55}],
+    [4.12,"type","#maturity-day",{cps:20}],
+    [5.00,"fade","#maturity-note",{dur:0.35}],
+    [6.78,"fade","#window-row-1",{dur:0.24}],
+    [6.93,"fade","#window-row-2",{dur:0.24}],
+    [7.08,"fade","#window-row-3",{dur:0.24}],
+    [7.23,"fade","#window-row-4",{dur:0.24}],
+    [7.62,"fade","#window-focus",{dur:0.25}],
+    [9.48,"pulse","#window-value-1",{amount:0.06}]
+  ]
+}
+</script>
+</section>
