@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.15",
+  "4.30",
+  "6.44",
+  "8.59",
+  "10.59"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s130",
+   "text": "TD नहीं चलाया / → बंद",
+   "t": 2.15
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s130",
+   "message": "a card is mostly empty at 2.1 s: bring its items in sooner, or size it for what it holds now",
+   "t": 2.15
+  }
+ ]
+}
