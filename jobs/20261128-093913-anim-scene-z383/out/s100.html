@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s100" data-section="PART 5 · TD EARLY CLOSURE" data-series="POSB" data-in="cut">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="track5">
+      <rect x="160" y="180" width="740" height="60" rx="20" fill="#ebe8e2"/>
+      <text x="184" y="223" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="660" fill="#514e4a">10 Nov 2023 या बाद · 5-year TD</text>
+      <text x="160" y="396" font-family="Inter, sans-serif" font-size="48" font-weight="690" fill="#2b2622">Deposit</text>
+      <text id="year-four" x="1440" y="396" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="780" fill="#2b2622">4 साल</text>
+      <text x="1760" y="396" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#2b2622">5 साल</text>
+      <text id="maturity" x="1760" y="294" text-anchor="end" font-family="Inter, sans-serif" font-size="52" font-weight="800" fill="#2b2622">Maturity</text>
+      <text id="maturity-hi" x="1760" y="345" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="680" fill="#514e4a">परिपक्वता</text>
+      <text id="early-only" x="1484" y="346" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="690" fill="#2b2622">जल्दी बंद करने</text>
+      <path id="year-four-mark" d="M1378 407 Q1439 411 1502 405" fill="none" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/>
+      <g id="bar">
+        <path id="segment-a" d="M184 420H1440V500H184Q160 500 160 476V444Q160 420 184 420Z" fill="#a8b5bd"/>
+        <path d="M1440 420H1736Q1760 420 1760 444V476Q1760 500 1736 500H1440Z" fill="#dfd9cd"/>
+        <path id="segment-b-highlight" d="M1440 420H1736Q1760 420 1760 444V476Q1760 500 1736 500H1440Z" fill="#f2b705"/>
+        <path d="M1440 420V500" stroke="#514e4a" stroke-width="4"/>
+      </g>
+      <g id="zone-a">
+        <rect x="160" y="540" width="840" height="140" rx="25" fill="#e4e9eb" stroke="#b6c1c7" stroke-width="3"/>
+        <text id="zone-a-caption" x="287" y="630" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="760" fill="#29343c">normal तरीके से बंद नहीं</text>
+        <path id="cross" d="M215 588L249 622 M249 588L215 622" fill="none" stroke="#495964" stroke-width="8" stroke-linecap="round"/>
+      </g>
+      <g id="zone-b">
+        <path id="zone-b-card" d="M1600 502V700 M1085 700H1735Q1760 700 1760 725V955Q1760 980 1735 980H1085Q1060 980 1060 955V725Q1060 700 1085 700Z" fill="#fffaf0" stroke="#9b843e" stroke-width="3" stroke-linejoin="round"/>
+        <text id="zone-b-caption" x="1410" y="854" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="670" fill="#514e4a">maturity से पहले बंद</text>
+        <text id="savings" x="1410" y="808" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="790" fill="#2b2622">Post Office Savings Account</text>
+        <text id="savings-hi" x="1410" y="856" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#514e4a">डाकघर बचत खाता</text>
+        <text id="rejected-rate" x="1410" y="929" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#4b4f58">5-year TD की तय दर</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    { on: [
+      [0.05, "move", "#zone-b-caption", {by: [0, -106], spring: "snap"}],
+      [0.58, "tracking", "#savings", {from: 1.1, dur: 0.46}],
+      [1.08, "fade", "#savings-hi", {dur: 0.22}],
+      [4.14, "fade", "#rejected-rate", {dur: 0.24}],
+      [5.98, "strike", "#rejected-rate", {color: "#495964", width: 5, dur: 0.34, dim: 0.82}],
+      [7.62, "pulse", "#year-four", {amount: 0.055}],
+      [7.62, "draw", "#year-four-mark", {dur: 0.38}],
+      [8.36, "words", "#early-only", {gap: 0.21, dist: 8}]
+    ] }
+  </script>
+</section>
