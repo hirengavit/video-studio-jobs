@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s024" data-in="cut" data-section="PART 1 · WHO CAN OPEN" data-series="POSB">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" fill="#2b2622" font-family="Inter, sans-serif">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="nri-card">
+    <rect x="140" y="180" width="1640" height="800" rx="34" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
+    <path d="M184 365H1736M184 510H1736M184 650H1736M184 790H1736" fill="none" stroke="#eee6d6" stroke-width="3"/>
+    <g id="adult" transform="translate(250 263)">
+      <circle r="57" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <circle cy="-22" r="13" fill="#ead9a8" stroke="#2b2622" stroke-width="4"/>
+      <path d="M-25 28v-9q0-22 25-22t25 22v9z" fill="#ead9a8" stroke="#2b2622" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M68 0h45m-13-13 13 13-13 13" fill="none" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text id="nri-title" x="404" y="276" fill="#9e1b1b" font-size="92" font-weight="800">Depositor → NRI</text>
+    <text id="nri-gloss" x="408" y="339" fill="#6f6a63" font-size="56" font-weight="550">non-resident Indian</text>
+    <g id="maturity-tick">
+      <circle cx="250" cy="436" r="35" fill="#edf5ee" stroke="#2e7d4f" stroke-width="3"/>
+      <path d="m233 436 12 12 23-25" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text id="maturity-text" x="333" y="456" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="650">maturity तक चल सकता है</text>
+    <g id="basis-icon">
+      <rect x="218" y="538" width="64" height="64" rx="16" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <path d="M237 560h26m-26 11h26m-26 11h18" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round"/>
+    </g>
+    <rect id="basis-highlight" x="317" y="519" width="767" height="65" rx="13" fill="#fde9a6"/>
+    <text id="basis-title" x="333" y="570" font-size="64" font-weight="750">Non-repatriation basis</text>
+    <text id="basis-gloss" x="335" y="637" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#6f6a63" font-size="48" font-weight="550">गैर-प्रत्यावर्तन आधार</text>
+  </g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [1.94, 'type', '#nri-title', {cps:34}],
+    [2.40, 'fade', '#nri-gloss', {dur:0.36}],
+    [4.16, 'words', '#maturity-text', {gap:0.36, dist:10}],
+    [6.12, 'fade', '#maturity-tick', {dur:0.25}],
+    [8.46, 'fade', '#basis-icon', {dur:0.20}],
+    [8.46, 'type', '#basis-title', {cps:24}],
+    [8.96, 'fade', '#basis-gloss', {dur:0.32}],
+    [9.72, 'reveal', '#basis-highlight', {from:'left',dur:0.48}]
+  ]
+}
+</script>
+</section>
