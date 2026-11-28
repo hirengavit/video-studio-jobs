@@ -35,10 +35,11 @@
 <use href="piece:stamp-term-card"/>
 <rect x="74" y="73" width="1252" height="314" rx="25" fill="#9e1b1b"/>
 </svg>
-<text id="kicker" x="960" y="303" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="760" fill="#fde9a6">EXAM TRAP · परीक्षा का जाल</text>
-<text id="trap-en" x="960" y="440" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="84" font-weight="760" fill="#ffffff">Monthly pay ≠ compounding</text>
-<rect x="490" y="498" width="940" height="114" rx="22" fill="#fbf7ee"/>
-<text id="trap-hi" x="960" y="574" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="760" fill="#9e1b1b">हर महीने भुगतान ≠ चक्रवृद्धि</text>
+<text id="kicker" x="960" y="272" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="760" fill="#fde9a6">EXAM TRAP · परीक्षा का जाल</text>
+<text id="trap-en" x="960" y="397" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="84" font-weight="760" fill="#ffffff">Monthly pay ≠</text>
+<text id="trap-comp" x="960" y="500" text-anchor="middle" font-family="Inter, sans-serif" font-size="84" font-weight="760" fill="#ffffff">compounding</text>
+<g id="trap-window"><rect x="490" y="551" width="940" height="112" rx="22" fill="#fbf7ee"/>
+<text id="trap-hi" x="960" y="628" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="760" fill="#9e1b1b">हर महीने भुगतान ≠ चक्रवृद्धि</text></g>
 <g id="left-card">
 <rect x="200" y="780" width="740" height="200" rx="26" fill="#ffffff" stroke="#d8c59b" stroke-width="4"/>
 <text id="pay-en" x="545" y="860" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="57" font-weight="760" fill="#2b2622">Monthly payment</text>
@@ -60,7 +61,8 @@
  [2.90,'strike','#outside-line',{color:'#4b4f58',width:6,dur:.3,dim:.72}],
  [2.90,'draw','#outside-cross',{dur:.3}],
  [5.95,'words','#trap-en',{gap:.12,dist:14}],
- [6.45,'fade','#trap-hi',{dur:.22}],
+ [6.20,'fade','#trap-comp',{dur:.2}],
+ [6.45,'fade','#trap-window',{dur:.22}],
  [6.39,'slide','#left-card',{from:'down',dist:32,spring:'soft'}],
  [6.89,'fade','#pay-hi',{dur:.2}],
  [6.89,'draw','#pay-tick',{dur:.34}],
