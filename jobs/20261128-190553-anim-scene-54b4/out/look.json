@@ -8,5 +8,12 @@
   "8.77"
  ],
  "problems": [],
- "warnings": []
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s087",
+   "text": "पहले चार चीज़ें पक्की करें / आगे: normal premature closure की शर्तें",
+   "t": 7.14
+  }
+ ]
 }
