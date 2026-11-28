@@ -1,0 +1,44 @@
+<section class="vs-scene" id="s018" data-in="cut" data-section="PART 1 · WHO CAN OPEN" data-series="POSB">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <defs>
+      <clipPath id="adult-crop"><rect x="222" y="357" width="139" height="162"/></clipPath>
+      <clipPath id="guardian-crop"><rect x="222" y="588" width="125" height="162"/></clipPath>
+    </defs>
+    <g id="rule">
+      <rect x="140" y="200" width="1640" height="760" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="196" y="247" width="10" height="56" rx="5" fill="#9e1b1b"/>
+      <text x="228" y="297" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="800" fill="#9e1b1b">शर्त</text>
+      <path d="M196 330H1724 M196 560H1724 M196 790H1724" fill="none" stroke="#ead9a8" stroke-width="3"/>
+      <g id="adult-row">
+        <rect x="214" y="354" width="155" height="165" rx="18" fill="#f3ead6"/>
+        <g clip-path="url(#adult-crop)"><use href="piece:person-icons" transform="translate(235 359) scale(.50)"/></g>
+        <text x="420" y="421" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="800" fill="#9e1b1b">Adult depositor:</text>
+      </g>
+      <rect id="citizen-highlight" x="628" y="455" width="430" height="63" rx="9" fill="#fde9a6"/>
+      <g id="india-condition">
+        <text x="420" y="505" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="700" fill="#2b2622">India का</text>
+        <text x="648" y="505" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="700" fill="#2b2622">resident citizen</text>
+      </g>
+      <g id="guardian-row">
+        <rect x="214" y="584" width="155" height="165" rx="18" fill="#f3ead6"/>
+        <g clip-path="url(#guardian-crop)"><use href="piece:person-icons" transform="translate(10 589) scale(.50)"/></g>
+        <text x="420" y="651" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="800" fill="#9e1b1b">Guardian वाला खाता:</text>
+      </g>
+      <text x="420" y="735" id="guardian-phrase" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#2b2622">guardian +</text>
+      <text x="715" y="735" id="beneficiary-phrase" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#2b2622">जिसकी ओर से खाता</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.02, "fade", "#adult-row", {dur: 0.32}],
+      [2.28, "words", "#india-condition text", {gap: 0.14, dist: 12}],
+      [3.26, "reveal", "#citizen-highlight", {from: "left", dur: 0.38}],
+      [5.64, "fade", "#guardian-row", {dur: 0.32}],
+      [7.26, "fade", "#guardian-phrase", {dur: 0.3}],
+      [8.60, "fade", "#beneficiary-phrase", {dur: 0.3}]
+    ]
+  }
+  </script>
+</section>
