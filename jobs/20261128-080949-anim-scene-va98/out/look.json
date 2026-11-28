@@ -8,12 +8,5 @@
   "11.99"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s043",
-   "message": "pop: nothing found for \"#new-rate-1,#new-rate-2,#new-rate-3\"",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
