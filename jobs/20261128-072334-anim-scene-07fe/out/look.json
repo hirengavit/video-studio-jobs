@@ -8,12 +8,5 @@
   "8.49"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s138",
-   "text": "· acceptance letter / · ₹100",
-   "t": 5.18
-  }
- ]
+ "warnings": []
 }
