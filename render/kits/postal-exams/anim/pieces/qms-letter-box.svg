@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 600">
+  <g stroke="#2b2622" stroke-width="3" stroke-linejoin="round">
+    <rect id="body" x="66" y="120" width="228" height="408" rx="20" fill="#9e1b1b"/>
+    <path id="body-side" d="M246 122h27q21 0 21 20v360q0 22-21 24h-27Z" fill="#7d1414" stroke="none"/>
+    <g id="bands" fill="#f2b705">
+      <path id="band-upper" d="M66 208q115 23 228 0v34q-112 23-228 0Z"/>
+      <path id="band-lower" d="M66 434q115 23 228 0v34q-112 23-228 0Z"/>
+    </g>
+    <path id="cap" d="M54 122l16-38q13-33 54-39l41-5v-9q0-8 15-8t15 8v9l41 5q41 6 54 39l16 38q4 17-11 19H65q-15-2-11-19Z" fill="#9e1b1b"/>
+    <path d="M73 118h214" stroke="#b8403a" fill="none" stroke-linecap="round"/>
+    <rect id="slot" x="105" y="166" width="150" height="19" rx="7" fill="#2b2622"/>
+    <rect id="plate" x="101" y="270" width="158" height="61" rx="7" fill="#f3ead6"/>
+    <path d="M111 281h.1m136 0h.1m-136 39h.1m136 0h.1" stroke="#6f6a63" stroke-width="5" stroke-linecap="round"/>
+    <path id="service-door" d="M116 359q0-12 12-12h104q12 0 12 12v52H116Z" fill="none" stroke="#b8403a"/>
+    <circle cx="228" cy="379" r="4" fill="#2b2622"/>
+    <path id="plinth" d="M68 523h224l14 17v29H54v-29Z" fill="#7d1414"/>
+    <path d="M56 541h248" fill="none" stroke="#b8403a"/>
+  </g>
+  <circle data-anchor="base" cx="180" cy="570.5" r="0"/>
+</svg>
