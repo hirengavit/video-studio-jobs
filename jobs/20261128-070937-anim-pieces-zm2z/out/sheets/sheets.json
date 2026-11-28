@@ -1,6 +1,6 @@
 {
-  "made": [],
-  "warnings": [
-    "pieces: Chrome did not start: "
-  ]
+  "made": [
+    "out/sheets/pieces.jpg"
+  ],
+  "warnings": []
 }
