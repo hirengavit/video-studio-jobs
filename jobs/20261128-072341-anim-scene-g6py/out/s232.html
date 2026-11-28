@@ -1,0 +1,42 @@
+<section class="vs-scene" id="s232" data-in="cut" data-section="PART 10 · TAX FORMS" data-series="POSB">
+<svg viewBox="0 0 1920 1080" font-family="Inter, sans-serif">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="myth-card">
+ <rect x="160" y="190" width="1600" height="330" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+ <rect x="234" y="236" width="160" height="72" rx="36" fill="#e4e5e8"/>
+ <text x="314" y="286" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#4b4f58">भ्रम</text>
+ <text id="form-121" x="234" y="420" font-size="72" font-weight="790" fill="#2b2622">Form 121</text>
+ <text id="wrong-claim" x="594" y="420" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="760" fill="#2b2622">= ब्याज tax-free</text>
+ <g id="slate-cross" fill="none" stroke="#4b4f58" stroke-linecap="round">
+   <circle cx="1605" cy="374" r="57" stroke-width="6"/>
+   <path d="m1583 352 44 44m0-44-44 44" stroke-width="9"/>
+ </g>
+</g>
+<g id="fact-card">
+ <rect x="160" y="580" width="1600" height="380" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+ <rect x="234" y="628" width="160" height="72" rx="36" fill="#2e7d4f"/>
+ <text x="314" y="677" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#fff">सही</text>
+ <rect id="fact-band" x="525" y="774" width="526" height="98" rx="13" fill="#fde9a6"/>
+ <text id="fact-prefix" x="234" y="847" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="760" fill="#2b2622">सिर्फ tax</text>
+ <text id="fact-assertion" x="547" y="847" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="760" fill="#2b2622">काटा नहीं जाता</text>
+ <g id="verdict" fill="none" stroke="#2e7d4f">
+   <circle cx="1595" cy="770" r="103" stroke-width="6"/>
+   <circle cx="1595" cy="770" r="86" stroke-width="3"/>
+   <text x="1595" y="794" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="61" font-weight="800" stroke="none" fill="#2e7d4f">सही</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{on:[
+ [0.82,"type","#form-121",{cps:15}],
+ [4.46,"words","#wrong-claim",{gap:0.22,dist:10}],
+ [5.92,"strike","#wrong-claim",{words:"tax-free",color:"#4b4f58",width:7,dur:0.27,dim:0.57}],
+ [5.92,"draw","#slate-cross",{dur:0.32}],
+ [6.82,"slide","#fact-card",{from:"down",dist:42,spring:"snap"}],
+ [6.91,"words","#fact-prefix",{gap:0.25,dist:10}],
+ [7.78,"reveal","#fact-band",{from:"left",dur:0.33}],
+ [7.78,"words","#fact-assertion",{gap:0.35,dist:9}],
+ [8.54,"stamp","#verdict",{from:1.18,rot:-7,spring:"snap"}]
+]}
+</script>
+</section>
