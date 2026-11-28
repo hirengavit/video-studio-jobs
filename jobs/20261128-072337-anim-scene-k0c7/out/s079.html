@@ -8,21 +8,21 @@
     </g>
     <g id="myth">
       <rect x="160" y="300" width="1600" height="240" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
-      <rect x="210" y="342" width="142" height="52" rx="26" fill="#4b4f58"/>
+      <rect x="210" y="334" width="142" height="62" rx="31" fill="#4b4f58"/>
       <text x="281" y="379" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="730" fill="#fff">भ्रम</text>
       <text id="principal" x="210" y="477" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="67" font-weight="770" fill="#2b2622">principal पर deduction</text>
       <path id="arrow" d="M1000 453H1070M1053 436L1070 453L1053 470" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
       <text id="interest" x="1104" y="477" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="67" font-weight="750" fill="#2b2622">ब्याज</text>
-      <text id="taxfree" x="1280" y="477" font-family="Inter, sans-serif" font-size="67" font-weight="760" fill="#2b2622">tax-free</text>
-      <path id="cross" d="M1627 431L1671 475M1671 431L1627 475" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+      <text id="taxfree" x="1312" y="477" font-family="Inter, sans-serif" font-size="67" font-weight="760" fill="#2b2622">tax-free</text>
+      <path id="cross" d="M1638 431L1682 475M1682 431L1638 475" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
     </g>
     <g id="fact">
       <rect x="160" y="590" width="1600" height="240" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
-      <rect x="210" y="632" width="142" height="52" rx="26" fill="#2e7d4f"/>
+      <rect x="210" y="623" width="142" height="62" rx="31" fill="#2e7d4f"/>
       <text x="281" y="669" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="730" fill="#fff">सही</text>
       <text x="210" y="767" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="780" fill="#2b2622">TD का ब्याज</text>
-      <text id="taxable" x="630" y="767" font-family="Inter, sans-serif" font-size="72" font-weight="780" fill="#2b2622">taxable</text>
-      <text x="924" y="767" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="780" fill="#2b2622">रहता है</text>
+      <text id="taxable" x="654" y="767" font-family="Inter, sans-serif" font-size="72" font-weight="780" fill="#2b2622">taxable</text>
+      <text id="remains" x="968" y="767" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="780" fill="#2b2622">रहता है</text>
     </g>
     <g id="recap">
       <rect x="160" y="870" width="1600" height="90" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
@@ -41,7 +41,9 @@
       [7.14, "strike", "#taxfree", {words:"tax-free", color:"#4b4f58", width:8, dur:0.31, dim:0.53}],
       [7.52, "draw", "#cross", {dur:0.34}],
       [8.20, "slide", "#fact", {from:"down", dist:23, spring:"soft"}],
-      [9.20, "highlight", "#taxable", {words:"taxable", color:"#f2b705", opacity:0.35, dur:0.36}],
+      [9.20, "fade", "#taxable", {dur:0.16}],
+      [9.25, "highlight", "#taxable", {words:"taxable", color:"#f2b705", opacity:0.35, dur:0.36}],
+      [10.22, "fade", "#remains", {dur:0.18}],
       [10.22, "stamp", "#recap", {from:1.035, rot:0, spring:"soft"}]
     ]
   }
