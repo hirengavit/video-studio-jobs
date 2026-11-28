@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s214" data-section="PART 10 · FORMS AND RECORDS" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="category" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif">
+<use href="piece:td-passbook-white" transform="translate(240 269) scale(0.7)"/>
+<g id="category-heading" font-size="60" font-weight="760">
+<text id="heading-td" x="420" y="300" font-family="'Noto Sans Devanagari', Inter, sans-serif">TD</text>
+<text id="heading-rec" x="529" y="300" font-family="'Noto Sans Devanagari', Inter, sans-serif">records</text>
+<text id="heading-in" x="772" y="300" font-family="'Noto Sans Devanagari', Inter, sans-serif">में</text>
+<text id="heading-right" x="891" y="300" font-family="'Noto Sans Devanagari', Inter, sans-serif">सही</text>
+<text id="heading-cat" x="1049" y="300" font-family="'Noto Sans Devanagari', Inter, sans-serif">category</text>
+<text id="heading-write" x="1357" y="300" font-family="'Noto Sans Devanagari', Inter, sans-serif">लिखिए</text>
+<path d="M1049 311 Q1174 313 1308 311" stroke="#f2b705" stroke-width="8" stroke-linecap="round" fill="none"/>
+</g>
+<g id="category-tiles" fill="none" stroke="#af9c72" stroke-width="5" stroke-dasharray="14 11" stroke-linecap="round">
+<rect id="tile-1" x="300" y="520" width="300" height="200" rx="30"/>
+<rect id="tile-2" x="640" y="520" width="300" height="200" rx="30"/>
+<rect id="tile-3" x="980" y="520" width="300" height="200" rx="30"/>
+<rect id="tile-4" x="1320" y="520" width="300" height="200" rx="30"/>
+</g><text id="years-1" x="450" y="646" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="790" fill="#9e1b1b">1 साल</text>
+<text id="years-2" x="790" y="646" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="790" fill="#9e1b1b">2 साल</text>
+<text id="years-3" x="1130" y="646" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="790" fill="#9e1b1b">3 साल</text>
+<text id="years-4" x="1470" y="646" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="790" fill="#9e1b1b">5 साल</text></g>
+<g id="checks" font-family="'Noto Sans Devanagari', Inter, sans-serif">
+<text id="paper-heading" x="130" y="220" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" fill="#9e1b1b" font-weight="790">Paper closure: payment की जाँच</text>
+<g id="officer-card">
+<use href="piece:stamp-term-card" transform="translate(130 330) scale(0.407142857)"/>
+<path d="M186 387H258V450H186Z M200 403H244 M200 416H235 M200 429H226" fill="none" stroke="#9e1b1b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="248" cy="443" r="19" fill="#fde9a6" stroke="#9e1b1b" stroke-width="3"/>
+<path d="m238 442 7 7 12-14" fill="none" stroke="#9e1b1b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text id="officer-en" x="318" y="415" fill="#fff" textLength="335" lengthAdjust="spacing" font-family="Inter, sans-serif" font-size="44" font-weight="780">Authorised officer</text>
+<text id="officer-hi" x="318" y="473" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="720">अधिकृत अधिकारी</text>
+</g>
+<g id="check-card">
+<rect x="780" y="300" width="1010" height="680" rx="36" fill="#f3ead6" stroke="#ddcda7" stroke-width="3"/>
+<rect x="808" y="328" width="954" height="150" rx="23" fill="#fffdf8" stroke="#e3d5b6" stroke-width="2"/>
+<rect x="808" y="490" width="954" height="150" rx="23" fill="#fffdf8" stroke="#e3d5b6" stroke-width="2"/>
+<circle cx="870" cy="403" r="26" fill="#eef3e6" stroke="#8cad91" stroke-width="3"/>
+<circle cx="870" cy="565" r="26" fill="#eef3e6" stroke="#8cad91" stroke-width="3"/>
+</g>
+<text id="claimant-label" x="931" y="420" fill="#2b2622" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="58" font-weight="735">claimant की पहचान</text>
+<path id="row-one-tick" d="m854 402 11 12 23-26" fill="none" stroke="#2e7d4f" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+</svg>
+<script type="text/scene">
+({shots:[[0,"#category"],[4.26,"#checks"]],on:[
+[0,"pop","#years-1",{spring:"snap"}],
+[0.94,"pop","#years-2",{spring:"snap"}],
+[1.94,"pop","#years-3",{spring:"snap"}],
+[2.84,"pop","#years-4",{spring:"snap"}],
+[4.26,"words","#paper-heading",{gap:0.18,dist:12}],
+[6.74,"slide","#officer-card",{from:"left",dist:95,spring:"snap"}],
+[7.24,"fade","#officer-hi",{dur:0.22}],
+[8.07,"fade","#check-card",{dur:0.18}],
+[8.07,"words","#claimant-label",{gap:0.31,dist:12}],
+[8.93,"draw","#row-one-tick",{dur:0.24}]
+]})
+</script>
+</section>
