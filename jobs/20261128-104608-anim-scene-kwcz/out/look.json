@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s156",
-   "message": "slide: option \"dur\" isn't used (it takes: from, dist, spring)",
-   "t": 0.3
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s156",
    "message": "a card (#s156-remember) is mostly empty at 5.1 s: bring its items in sooner, or size it for what it holds now",
