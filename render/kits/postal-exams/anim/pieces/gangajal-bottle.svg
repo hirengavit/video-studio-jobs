@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<path id="bottle" d="M179 81h42v27c0 23 12 27 23 37s16 22 16 42v136q0 24-20 27h-80q-20-3-20-27V187c0-20 5-32 16-42s23-14 23-37z" fill="#eef5f7"/><g id="water"><path d="M143 178q27-8 57 0t57 0v143q0 23-18 26h-78q-18-3-18-26z" fill="#cfe3ee" stroke="#7a9eaf"/></g><rect id="label" x="140" y="211" width="120" height="55" rx="3" fill="#fff"/><path d="M154 294h92m-92 15h92m-94-120q0-16 13-28" fill="none" stroke="#7a9eaf"/><g id="cap"><rect x="173" y="50" width="54" height="35" rx="6" fill="#9e1b1b"/><path d="M183 57v21m11-21v21m12-21v21m11-21v21" stroke="#7d1414"/></g>
+<circle data-anchor="base" cx="200" cy="350" r="0" stroke="none"/>
+<circle data-anchor="top" cx="200" cy="50" r="0" stroke="none"/>
+<circle data-anchor="grip" cx="200" cy="238" r="0" stroke="none"/>
+</svg>
