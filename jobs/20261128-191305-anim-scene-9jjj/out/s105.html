@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s105" data-in="cut" data-section="PART 5 · TD EARLY CLOSURE" data-series="POSB">
+<svg viewBox="0 0 1920 1080">
+  <rect width="1920" height="1080" fill="#fbf7ee"/>
+  <g id="recovery">
+    <text id="recovery-title" x="160" y="260" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="96" font-weight="800" fill="#9e1b1b">वसूली</text>
+    <g id="recovery-bundle" transform="translate(1340 640) scale(1.2)"><use href="piece:rupee-note-bundle"/></g>
+    <text id="premature" x="160" y="400" font-family="Inter, sans-serif" font-size="88" font-weight="800" fill="#231f20">Premature closure</text>
+    <text id="definition" x="160" y="460" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="650" fill="#57433a">समय से पहले खाता बंद करना</text>
+    <text id="recompute" x="160" y="620" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="680" fill="#231f20">असल पूरे समय का ब्याज दोबारा निकाला जाता है</text>
+    <text id="annual-interest" x="160" y="780" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750" fill="#231f20">पहले दिया सालाना ब्याज</text>
+    <g id="interest-coins">
+      <g id="coin-one"><g transform="translate(900 716) scale(.8)">
+        <use href="piece:rupee-coin"/>
+        <circle class="interest-face" cx="60" cy="60" r="42" fill="#e8bf6b"/>
+        <path d="M45 44H76M45 53H76M45 44H56C70 44 70 62 55 62H46L67 79" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </g></g>
+      <g id="coin-two"><g transform="translate(1012 716) scale(.8)">
+        <use href="piece:rupee-coin"/>
+        <circle class="interest-face" cx="60" cy="60" r="42" fill="#e8bf6b"/>
+        <path d="M45 44H76M45 53H76M45 44H56C70 44 70 62 55 62H46L67 79" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </g></g>
+      <g id="coin-three"><g transform="translate(1124 716) scale(.8)">
+        <use href="piece:rupee-coin"/>
+        <circle class="interest-face" cx="60" cy="60" r="42" fill="#e8bf6b"/>
+        <path d="M45 44H76M45 53H76M45 44H56C70 44 70 62 55 62H46L67 79" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      </g></g>
+    </g>
+    <text id="payout" x="1596" y="940" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750" fill="#231f20">लौटने वाली रकम</text>
+    <g id="deduction">
+      <rect x="1376" y="764" width="440" height="86" rx="22" fill="#ffdf9f" stroke="#9b5316" stroke-width="3"/>
+      <text x="1596" y="822" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="800" fill="#67310d">− पहले दिया ब्याज</text>
+    </g>
+  </g>
+</svg>
+<script type="text/scene">
+({
+  on: [
+    [0, 'tracking', '#premature', {from: 16, dur: .68}],
+    [.90, 'fade', '#definition', {dur: .25}],
+    [1.96, 'words', '#recompute', {gap: .16, dist: 10}],
+    [4.00, 'underline', '#recompute', {words: 'दोबारा', color: '#9e1b1b', width: 5, dur: .45, gap: 11}],
+    [6.46, 'words', '#annual-interest', {gap: .14, dist: 10}],
+    [7.14, 'pop', '#coin-one'],
+    [7.26, 'pop', '#coin-two'],
+    [7.38, 'pop', '#coin-three'],
+    [10.02, 'fade', '#payout', {dur: .27}],
+    [11.52, 'pop', '#deduction', {spring: 'soft', from: 0.94}],
+    [11.52, 'color', '.interest-face', {to: '#aaa7a1', dur: .28}]
+  ],
+  update(t, section, $) {
+    const p = S.clamp((t - .93) / .72, 0, 1);
+    const q = p * p * (3 - 2 * p);
+    for (const bundle of $('#recovery-bundle')) bundle.setAttribute('transform', 'translate(1340 ' + (640 - 80 * q) + ') scale(' + (1.2 + .4 * q) + ')');
+  }
+})
+</script>
+</section>
