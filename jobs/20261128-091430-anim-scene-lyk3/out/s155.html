@@ -1,0 +1,40 @@
+<section class="vs-scene" id="s155" data-in="cut" data-section="PART 7 · MIS DEPOSIT AND LIMITS" data-series="POSB">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="months">
+<g id="track" font-family="Inter,sans-serif">
+ <path id="track-line" d="M200 860H1720" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round"/>
+ <rect id="interest-band" x="270" y="801" width="1380" height="35" rx="17" fill="#f3ead6"/>
+ <g id="deposit-pin"><path d="M270 856V741" stroke="#9e1b1b" stroke-width="6"/><circle cx="270" cy="730" r="15" fill="#9e1b1b"/></g>
+ <text id="deposit-date" x="270" y="675" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="750" fill="#2b2622">जमा की तारीख</text>
+ <g id="refund-pin"><path d="M1650 856V741" stroke="#9e1b1b" stroke-width="6"/><circle cx="1650" cy="730" r="15" fill="#9e1b1b"/></g>
+ <text id="refund-month" x="1650" y="675" text-anchor="end" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">refund से पिछले महीने का आख़िर</text>
+ <text id="track-rate" x="960" y="770" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="800" fill="#8a5d00">4% SB ब्याज</text>
+
+<g id="aug-calendar"><use href="piece:calendar-month-page" transform="translate(200 330) scale(.85)"/><text x="378.5" y="405" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="750" fill="#fff">August</text><rect x="313.424" y="491.84000000000003" width="39" height="43" rx="5" fill="#fde9a6" stroke="#8a5d00" stroke-width="2"/><text x="332.8465" y="523.29" text-anchor="middle" font-family="Inter,sans-serif" font-size="33" font-weight="800" fill="#2b2622">10</text></g>
+<g id="sep-calendar"><use href="piece:calendar-month-page" transform="translate(780 330) scale(.85)"/><text x="958.5" y="405" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="750" fill="#fff">September</text><rect x="847.762" y="640.76" width="39" height="43" rx="5" fill="#fde9a6" stroke="#8a5d00" stroke-width="2"/><text x="867.1845" y="672.21" text-anchor="middle" font-family="Inter,sans-serif" font-size="33" font-weight="800" fill="#2b2622">30</text></g>
+<g id="oct-calendar"><use href="piece:calendar-month-page" transform="translate(1360 330) scale(.85)"/><text x="1538.5" y="405" text-anchor="middle" font-family="Inter,sans-serif" font-size="46" font-weight="750" fill="#fff">October</text><rect x="1382.1" y="541.48" width="39" height="43" rx="5" fill="#e2e2e3" stroke="#4b4f58" stroke-width="2"/><text x="1401.5225" y="572.9300000000001" text-anchor="middle" font-family="Inter,sans-serif" font-size="33" font-weight="800" fill="#4b4f58">15</text></g>
+<g id="deposit-tag"><rect x="294" y="715" width="169" height="64" rx="29" fill="#fde9a6"/><text x="378.5" y="761" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#2b2622">जमा</text></g>
+<g id="refund-tag"><rect x="1450" y="715" width="177" height="64" rx="29" fill="#e2e2e3"/><text x="1538.5" y="761" text-anchor="middle" font-family="Inter,sans-serif" font-size="44" font-weight="750" fill="#4b4f58">refund</text></g>
+<g id="excess-tag"><rect x="200" y="239" width="372" height="72" rx="33" fill="#f3ead6"/><text x="386" y="290" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#2b2622">excess रकम</text></g>
+<rect id="green-band" x="333" y="844" width="793" height="32" rx="16" fill="#2e7d4f"/>
+<g id="range-labels" font-family="Inter,sans-serif" font-size="48" font-weight="780" fill="#2e7d4f"><text x="333" y="944" text-anchor="middle">10 Aug</text><text x="1126" y="944" text-anchor="middle">30 Sep</text></g>
+</g>
+<text id="rate-source" x="160" y="980" font-family="Inter,sans-serif" font-size="44" font-weight="600" fill="#6f6a63">1 Oct–31 Dec 2026 · Source: SB Order 12/2026</text>
+</svg>
+<script type="text/scene">
+{on:[
+ [0.90,"out",["#deposit-date","#refund-month","#deposit-pin","#refund-pin","#track-rate"],{dur:.28}],
+ [0.90,"fade","#excess-tag",{dur:.32}],
+ [2.22,"pop","#aug-calendar",{from:.92,spring:"soft"}],
+ [2.22,"out","#rate-source",{dur:.28}],
+ [3.66,"fade","#deposit-tag",{dur:.28}],
+ [4.50,"pop","#oct-calendar",{from:.92,spring:"soft"}],
+ [5.94,"fade","#refund-tag",{dur:.28}],
+ [7.20,"pop","#sep-calendar",{from:.92,spring:"soft"}],
+ [7.76,"out","#interest-band",{dur:.28}],
+ [7.76,"grow","#green-band",{axis:"x",origin:"left",spring:"soft"}],
+ [10.18,"fade","#range-labels",{dur:.27}]
+]}
+</script>
+</section>
