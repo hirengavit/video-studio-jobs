@@ -1,0 +1,53 @@
+<section class="vs-scene" id="cycle-gu" data-in="fade" data-in-dur="0.4" data-section="શાખા ટપાલ કચેરી">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <path id="ar1" d="M1232 280 Q1500 280 1500 506 M1486 492 L1500 506 L1514 492" stroke="#9e1b1b" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="ar2" d="M1500 692 Q1500 920 1234 920 M1248 906 L1234 920 L1248 934" stroke="#9e1b1b" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="ar3" d="M688 920 Q420 920 420 694 M406 708 L420 694 L434 708" stroke="#9e1b1b" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="ar4" d="M420 508 Q420 280 686 280 M672 266 L686 280 L672 294" stroke="#9e1b1b" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <g class="stage" id="g1">
+      <rect x="700" y="200" width="520" height="160" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="960" y="268" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="38" font-weight="700" fill="#2b2622">SO થી Mail bag આવે છે</text>
+      <text x="960" y="320" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="500" fill="#6f6a63">સવારની ટપાલ</text>
+    </g>
+    <g class="stage" id="g2">
+      <rect x="1240" y="520" width="520" height="160" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="1500" y="588" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="38" font-weight="700" fill="#2b2622">ABPM ટપાલ વહેંચે છે</text>
+      <text x="1500" y="640" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="500" fill="#6f6a63">ગામમાં ઘરે-ઘરે</text>
+    </g>
+    <g class="stage" id="g3">
+      <rect x="700" y="840" width="520" height="160" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="960" y="908" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="38" font-weight="700" fill="#2b2622">કાઉન્ટર ખૂલે છે</text>
+      <text x="960" y="960" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="500" fill="#6f6a63">Booking અને જમા-ઉપાડ</text>
+    </g>
+    <g class="stage" id="g4">
+      <rect x="160" y="520" width="520" height="160" rx="28" fill="#fde9a6" stroke="#f2b705" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="420" y="588" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="38" font-weight="700" fill="#2b2622">સાંજે Mail bag SO ને</text>
+      <text x="420" y="640" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="34" font-weight="500" fill="#8a5d00">સાથે દિવસનો હિસાબ</text>
+    </g>
+    <g id="centre">
+      <circle cx="960" cy="600" r="172" fill="#9e1b1b" filter="url(#vs-shadow)"/>
+      <circle cx="960" cy="600" r="172" fill="none" stroke="#fbf7ee" stroke-width="12" stroke-dasharray="0 24" stroke-linecap="round"/>
+      <text x="960" y="566" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="50" font-weight="800" fill="#ffffff">BO માં</text>
+      <text x="960" y="630" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="50" font-weight="800" fill="#ffffff">એક દિવસ</text>
+      <text x="960" y="690" text-anchor="middle" font-family="'Noto Sans Gujarati', Inter, sans-serif" font-size="32" font-weight="600" fill="#fde9a6">સવારથી સાંજ સુધી</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    camera: [[0, {zoom: 1}], [9, {zoom: 1.02}]],
+    on: [
+      [0.1, 'pop', '#centre', {from: 0.5, spring: 'soft'}],
+      [0.9, 'pop', '#g1', {from: 0.6, spring: 'soft'}],
+      [1.6, 'draw', '#ar1', {dur: 0.5}],
+      [2.1, 'pop', '#g2', {from: 0.6, spring: 'soft'}],
+      [2.8, 'draw', '#ar2', {dur: 0.5}],
+      [3.3, 'pop', '#g3', {from: 0.6, spring: 'soft'}],
+      [4.0, 'draw', '#ar3', {dur: 0.5}],
+      [4.5, 'pop', '#g4', {from: 0.6, spring: 'soft'}],
+      [5.2, 'draw', '#ar4', {dur: 0.5}],
+      [6.0, 'pulse', '#centre', {amount: 0.06}],
+    ],
+  }
+  </script>
+</section>
