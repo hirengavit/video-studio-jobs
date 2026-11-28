@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="case-handle">
+      <path d="M112 92 V72 A14 14 0 0 1 126 58 H174 A14 14 0 0 1 188 72 V92" fill="none" stroke="#2b2622" stroke-width="18"/>
+      <path d="M112 92 V72 A14 14 0 0 1 126 58 H174 A14 14 0 0 1 188 72 V92" fill="none" stroke="#f3ead6" stroke-width="12"/>
+    </g>
+    <g id="case">
+      <rect x="40" y="88" width="220" height="162" rx="18" fill="#ffffff"/>
+      <path d="M40 118 H260" fill="none"/>
+      <rect x="70" y="111" width="24" height="14" rx="4" fill="#f3ead6"/>
+      <rect x="206" y="111" width="24" height="14" rx="4" fill="#f3ead6"/>
+    </g>
+    <path id="cross" d="M134 140 H166 V170 H196 V202 H166 V232 H134 V202 H104 V170 H134 Z" fill="#9e1b1b"/>
+  </g>
+  <circle data-anchor="top" cx="150" cy="49" r="0"/>
+  <circle data-anchor="base" cx="150" cy="250" r="0"/>
+</svg>
