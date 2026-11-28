@@ -1,0 +1,53 @@
+<section class="vs-scene" id="s172" data-section="PART 8 · MIS MONTHLY INTEREST" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="postmark" fill="none" stroke="#9e1b1b">
+<ellipse cx="280" cy="252" rx="142" ry="76" stroke-width="4"/><ellipse cx="280" cy="252" rx="133" ry="67" stroke-width="2"/>
+<path d="M172 227h216M172 276h216" stroke-width="2"/>
+<text stroke="none" x="280" y="267" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="750" fill="#9e1b1b" text-anchor="middle">1 April 2022 से</text>
+</g>
+<g id="mis-source">
+<g id="mis-book" transform="translate(200 400) scale(1.2)"><use href="piece:passbook"/><text x="132" y="125" font-family="Inter, sans-serif" font-size="23" font-weight="750" fill="#7d1414" text-anchor="middle">MIS · SB-5</text></g>
+<text x="344" y="855" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="47" font-weight="750" fill="#6f6a63" text-anchor="middle">MIS का ब्याज</text>
+</g>
+<path id="in-link" d="M540 566H668m-22-16 22 16-22 16" fill="none" stroke="#2b2622" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="phone-route">
+<g id="phone-body" transform="translate(700 330) scale(0.9)"><use href="piece:phone-transfer"/></g>
+<g id="rupee-mark"><circle cx="801" cy="564" r="59" fill="#fde9a6"/><path d="M774 538h55m-55 15h55m-55-15h14c31 0 31 38 0 38h-14l44 35" stroke="#8a5d00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" transform="translate(0 -7)"/></g>
+</g>
+<g id="linked-chip"><rect x="930" y="407" width="153" height="60" rx="30" fill="#fde9a6"/><text x="1006.5" y="448" font-family="Inter, sans-serif" font-size="40" font-weight="750" fill="#8a5d00" text-anchor="middle">linked</text></g>
+<path id="po-arrow" d="M976 548H1018Q1050 548 1050 516V390Q1050 357 1084 357h24m-18-13 18 13-18 13" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="bank-arrow" d="M976 580H1018Q1050 580 1050 613V726Q1050 760 1084 760h24m-18-13 18 13-18 13" fill="none" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="po-panel">
+<rect x="1120" y="200" width="680" height="320" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+<g id="po-title"><text x="1460" y="316" font-family="Inter, sans-serif" font-size="60" font-weight="750" fill="#2b2622" text-anchor="middle">Post Office</text><text x="1460" y="386" font-family="Inter, sans-serif" font-size="60" font-weight="750" fill="#2b2622" text-anchor="middle">Savings Account</text></g>
+<text id="po-hi" x="1460" y="467" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="750" fill="#6f6a63" text-anchor="middle">डाकघर बचत खाता</text>
+</g>
+<g id="bank-panel">
+<rect x="1120" y="600" width="680" height="320" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+<text x="1460" y="745" font-family="Inter, sans-serif" font-size="66" font-weight="750" fill="#2b2622" text-anchor="middle">Bank account</text>
+<text id="bank-hi" x="1460" y="829" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="53" font-weight="750" fill="#6f6a63" text-anchor="middle">बैंक खाता</text>
+</g>
+<path id="po-line" d="M1214 399q239 12 494 0" fill="none" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/>
+<path id="bank-line" d="M1238 761q209 12 444 0" fill="none" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/>
+</svg>
+<script type="text/scene">
+{ on: [
+[0,"stamp","#postmark",{from:1.05,rot:-3,spring:"soft"}],
+[2.14,"pop","#mis-source",{from:0.97,spring:"soft"}],
+[3.10,"slide","#phone-route",{from:"left",dist:38,spring:"soft"}],
+[3.14,"pop","#rupee-mark",{from:0.88,spring:"soft"}],
+[4.54,"draw","#in-link",{dur:0.32}],
+[4.54,"pop","#linked-chip",{from:0.94,spring:"soft"}],
+[4.86,"slide","#po-panel",{from:"right",dist:44,spring:"soft"}],
+[4.88,"draw","#po-arrow",{dur:0.40}],
+[5.72,"fade","#po-title",{dur:0.25}],
+[6.22,"fade","#po-hi",{dur:0.25}],
+[7.60,"slide","#bank-panel",{from:"right",dist:44,spring:"soft"}],
+[7.62,"draw","#bank-arrow",{dur:0.40}],
+[8.10,"fade","#bank-hi",{dur:0.25}],
+[8.72,"draw","#po-line",{dur:0.37}],
+[8.72,"draw","#bank-line",{dur:0.37}]
+] }
+</script>
+</section>
