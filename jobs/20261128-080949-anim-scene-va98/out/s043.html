@@ -27,13 +27,19 @@
     <g id="lock">
       <text x="120" y="218" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="700" fill="#9e1b1b">Exam का point</text>
       <use href="piece:calendar-page" transform="translate(160 320) scale(1.1)"/>
-      <text x="303" y="530" text-anchor="middle" font-family="Inter, sans-serif" font-size="68" font-weight="800" fill="#9e1b1b">1</text>
+      <g fill="#dcd2c2">
+        <circle cx="265" cy="484" r="10"/><circle cx="303" cy="484" r="10"/><circle cx="341" cy="484" r="10"/>
+        <circle cx="265" cy="520" r="10"/><circle cx="341" cy="520" r="10"/>
+        <circle cx="265" cy="556" r="10"/><circle cx="303" cy="556" r="10"/><circle cx="341" cy="556" r="10"/>
+        <circle cx="303" cy="520" r="16" fill="#f2b705" stroke="#8a5d00" stroke-width="3"/>
+      </g>
       <text x="303" y="710" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#2b2622">खुलने का दिन</text>
       <g id="rate-pill">
         <rect x="560" y="420" width="340" height="80" rx="24" fill="#f3ead6"/>
         <text id="rate-text" x="730" y="477" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#2b2622">उस दिन की दर</text>
       </g>
-      <path id="rate-arrow" d="M520 540H1380M1349 517l31 23-31 23" fill="none" stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="rate-arrow" d="M520 540H1380" fill="none" stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="rate-arrow-tip" d="M1349 517l31 23-31 23" fill="none" stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
       <text id="maturity" x="1420" y="520" font-family="Inter, sans-serif" font-size="96" font-weight="800" fill="#2b2622">Maturity</text>
       <text id="maturity-hi" x="1420" y="598" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="500" fill="#6f6a63">परिपक्वता</text>
       <g id="new-rates" font-size="48" font-weight="700">
@@ -52,10 +58,13 @@
       [1.48, 'grow', '#b4', {axis: 'x', origin: 'left', spring: 'soft'}],
       [1.48, 'count', '#v4', {from: 0, to: 7.5, decimals: 1, suffix: '%', dur: .55}],
       [6.36, 'pop', '#rate-pill', {spring: 'soft'}],
-      [7.12, 'draw', '#rate-arrow', {dur: .56}],
+      [7.12, 'draw', '#rate-arrow', {dur: .52}],
+      [7.64, 'fade', '#rate-arrow-tip', {dur: .12}],
       [7.78, 'type', '#maturity', {cps: 22}],
       [8.28, 'fade', '#maturity-hi', {dur: .3}],
-      [10.42, 'pop', ['#new-rate-1', '#new-rate-2', '#new-rate-3'], {spring: 'soft', stagger: .15}],
+      [10.42, 'pop', '#new-rate-1', {spring: 'soft'}],
+      [10.57, 'pop', '#new-rate-2', {spring: 'soft'}],
+      [10.72, 'pop', '#new-rate-3', {spring: 'soft'}],
       [10.76, 'fade', '#new-rates-caption', {dur: .3}],
     ],
   }
