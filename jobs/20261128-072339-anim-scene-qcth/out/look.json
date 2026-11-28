@@ -8,12 +8,5 @@
   "11.01"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s024",
-   "text": "Non-repatriation basis / गैर-प्रत्यावर्तन आधार",
-   "t": 11.01
-  }
- ]
+ "warnings": []
 }
