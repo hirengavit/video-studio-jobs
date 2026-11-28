@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+<path id="box" d="M48 111H352V302H48Z" fill="#e3cfa3"/>
+<path id="folds" d="M48 111L70 131H330L352 111M48 302L70 282H330L352 302M70 131V282M330 131V282" stroke="#b19a71"/>
+<g id="string"><path d="M193 111V302M206 111V302M48 198H352M48 211H352"/><path d="M199 204C171 192 168 171 184 174C197 178 199 194 199 204C212 173 232 173 229 187C225 200 208 205 199 204L180 231M199 204L219 230"/></g>
+<circle data-anchor="base" cx="200" cy="302" r="0"/>
+</svg>
