@@ -1,0 +1,32 @@
+{
+ "moments": [
+  "0.30",
+  "1.77",
+  "3.55",
+  "5.32",
+  "7.10",
+  "8.72"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s032",
+   "text": "4 तक (1.0:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s032",
+   "text": "वो व्यक्ति दर्ज करें जो",
+   "t": 7.1
+  },
+  {
+   "kind": "text-off-frame",
+   "scene": "s032",
+   "text": "नाबालिगी में पैसा लेगा",
+   "t": 7.1
+  }
+ ]
+}
