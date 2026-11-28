@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 300" width="420" height="300">
+  <g fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="book">
+      <rect x="120" y="86" width="272" height="140" rx="6" fill="#9e1b1b"/>
+      <rect x="132" y="98" width="248" height="116" rx="3" stroke="#b8403a" stroke-width="3"/>
+      <rect x="296" y="130" width="64" height="52" rx="4" fill="#fbf7ee"/>
+    </g>
+    <g id="sleeve">
+      <path d="M36 70 H262 V130 A26 26 0 0 0 262 182 V240 H36 Q30 240 30 234 V76 Q30 70 36 70 Z" fill="#f3ead6"/>
+      <path d="M252 76 V126 M252 186 V234" stroke="#6f6a63" stroke-width="2"/>
+      <path d="M48 84 H236 M48 226 H236" stroke="#ead9a8" stroke-width="3"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="210" cy="240" r="0"/>
+  <circle data-anchor="top" cx="210" cy="70" r="0"/>
+</svg>
