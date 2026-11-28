@@ -8,12 +8,5 @@
   "10.84"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s228",
-   "message": "words: option \"step\" isn't used (it takes: gap, dist, from, spring)",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
