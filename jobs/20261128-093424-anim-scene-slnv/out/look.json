@@ -8,18 +8,5 @@
   "9.44"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s116",
-   "text": "NHB approved + Central Govt notified / NHB approved",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s116",
-   "text": "NHB approved + Central Govt notified / + Central Govt notified",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
