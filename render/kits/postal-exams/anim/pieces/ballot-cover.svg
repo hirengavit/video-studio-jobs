@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 300" fill="none">
+<path id="ballot-cover-flap" d="M20,118 L220,36 L420,118 Z" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="ballot-cover-sheet">
+<rect x="96" y="10" width="248" height="200" rx="3" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g stroke="#6f6a63" stroke-width="2.5" stroke-linecap="round" opacity="0.7">
+<line x1="114" y1="28" x2="326" y2="28"/><line x1="114" y1="46" x2="326" y2="46"/><line x1="114" y1="82" x2="326" y2="82"/><line x1="114" y1="118" x2="326" y2="118"/>
+<line x1="114" y1="28" x2="114" y2="136"/><line x1="270" y1="28" x2="270" y2="136"/><line x1="326" y1="28" x2="326" y2="136"/>
+</g>
+</g>
+<path id="ballot-cover-tick" d="M286,62 L296,74 L314,52" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="ballot-cover-front">
+<path d="M20,118 L420,118 L420,288 C420,292 418,294 414,294 L26,294 C22,294 20,292 20,288 Z" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M22,290 L220,192 L418,290" stroke="#ead9a8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<circle data-anchor="top" cx="220" cy="10" r="0"/>
+<circle data-anchor="base" cx="220" cy="294" r="0"/>
+</svg>
