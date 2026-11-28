@@ -1,0 +1,48 @@
+<section class="vs-scene" id="s236" data-in="fade" data-in-dur="0.5" data-section="FULL RECAP" data-series="POSB">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="intro">
+  <rect x="460" y="220" width="1000" height="680" rx="30" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+  <path d="M490 222H1430Q1458 222 1458 250V260L960 445 462 260V250Q462 222 490 222Z" fill="#f3ead6"/>
+  <path d="M462 260L960 445 1458 260M462 869L648 684M1458 869L1272 684" fill="none" stroke="#ead9a8" stroke-width="4" stroke-linejoin="round"/>
+  <text x="960" y="326" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="750" font-size="52" fill="#9e1b1b">दोहराव</text>
+  <text id="recap-title" x="960" y="575" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="750" font-size="88" textLength="867" lengthAdjust="spacingAndGlyphs" fill="#2b2622">पूरे topic की ज़रूरी बातें</text>
+  <text id="recap-together" x="960" y="696" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="750" font-size="72" fill="#9e1b1b">एक साथ</text>
+</g>
+<g id="compare"><g id="compare-page-1">
+<g id="compare-header">
+<rect x="120" y="156" width="1680" height="844" rx="25" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+<path d="M145 158H1775Q1798 158 1798 181V330H122V181Q122 158 145 158Z" fill="#9e1b1b"/>
+<g id="difference-badge"><rect x="164" y="193" width="205" height="89" rx="44" fill="#7d1414"/>
+<text x="266" y="252" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750" fill="#fde9a6">6 फ़र्क</text></g>
+<g id="td-header"><use href="piece:td-passbook-white" transform="translate(650 161) scale(.49)"/><text x="714.7" y="220" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="13" font-weight="750" fill="#2b2622">TD · SB-5A</text><text x="790" y="231" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#fff">TD</text><text id="td-hindi" x="790" y="288" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#fde9a6">सावधि जमा</text> </g>
+<g id="mis-header"><use href="piece:passbook" transform="translate(1255 161) scale(.49)"/><text x="1319.7" y="220" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="13" font-weight="750" fill="#2b2622">MIS · SB-5</text><text x="1395" y="231" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750" fill="#fff">MIS</text><text id="mis-hindi" x="1395" y="288" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#fde9a6">मासिक आय योजना</text> </g>
+</g>
+<g id="compare-grid">
+<rect id="row-one-bed" x="134" y="340" width="1652" height="190" rx="12" fill="#fbf7ee"/>
+<rect id="row-three-bed" x="134" y="730" width="1652" height="256" rx="12" fill="#fbf7ee"/>
+<path id="compare-columns" d="M603 340V986M1220 340V986" fill="none" stroke="#ead9a8" stroke-width="3"/>
+<path id="compare-rows" d="M134 535H1786M134 725H1786" fill="none" stroke="#ead9a8" stroke-width="3"/>
+<g id="row-numbers"><circle cx="171" cy="380" r="26" fill="#f3ead6"/><text x="171" y="395" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="750" font-size="39" fill="#6f6a63">1</text>
+<circle cx="171" cy="589" r="26" fill="#f3ead6"/><text x="171" y="604" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="750" font-size="39" fill="#6f6a63">2</text>
+<circle cx="171" cy="773" r="26" fill="#f3ead6"/><text x="171" y="788" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="750" font-size="39" fill="#6f6a63">3</text></g>
+</g></g></g>
+</svg>
+<script type="text/scene">
+{
+ shots: [[0,'#intro'],[4,'#compare']],
+ on: [
+ [0.20,'words','#recap-title',{gap:0.30,dist:12,spring:'soft'}],
+ [2.66,'fade','#recap-together',{dur:.35}],
+ [4.00,'draw','#compare-columns',{dur:.45}],
+ [4.80,'stamp','#difference-badge',{from:1.28,rot:-4,spring:'soft'}],
+ [6.48,'pop','#td-header',{from:.93,spring:'soft'}],
+ [6.98,'fade','#td-hindi',{dur:.26}],
+ [7.86,'pop','#mis-header',{from:.93,spring:'soft'}],
+ [8.36,'fade','#mis-hindi',{dur:.26}],
+ [9.00,'draw','#compare-rows',{dur:.34}],
+ [9.00,'fade','#row-numbers',{dur:.40}]
+ ]
+}
+</script>
+</section>
