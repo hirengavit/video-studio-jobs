@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+<g stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g id="feet"><path d="M57 143h21v21H48Zm265 0h21l9 21h-30Z" fill="#f3ead6" /></g>
+<g id="face"><path d="M65 36h270l31 111H34Z" fill="#ffffff" /></g>
+<g id="red-base"><rect x="30" y="144" width="340" height="20" rx="4" fill="#9e1b1b"/></g>
+</g>
+<circle data-anchor="top" cx="200" cy="36" r="0"/>
+<circle data-anchor="base" cx="200" cy="164" r="0"/>
+</svg>
