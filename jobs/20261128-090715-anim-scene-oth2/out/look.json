@@ -10,16 +10,16 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s161",
-   "message": "type: option \"dur\" isn't used (it takes: cps)",
-   "t": 0.3
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s161",
    "message": "a card is mostly empty at 2.9 s: bring its items in sooner, or size it for what it holds now",
    "t": 2.9
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s161",
+   "text": "Principal / ₹3 lakh वहीं रहता है",
+   "t": 14.37
   }
  ]
 }
