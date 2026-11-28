@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 160" width="700" height="160">
+  <g fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="roll-body">
+      <path d="M600 30 H66 A26 50 0 0 0 66 130 H600" fill="#ffffff"/>
+      <path d="M70 38 H596 M70 122 H596" stroke="#ead9a8" stroke-width="4"/>
+      <path d="M150 30 C146 60 146 100 150 130" stroke="#ead9a8" stroke-width="3"/>
+    </g>
+    <g id="roll-end">
+      <ellipse cx="600" cy="80" rx="26" ry="50" fill="#ffffff"/>
+      <ellipse cx="600" cy="80" rx="21" ry="42" stroke="#ead9a8" stroke-width="3"/>
+    </g>
+    <g id="roll-spiral">
+      <path d="M600 80 A3 6 0 0 1 606 80 A6 12 0 0 1 594 80 A9 18 0 0 1 612 80 A12 24 0 0 1 588 80 A15 30 0 0 1 618 80 A18 36 0 0 1 582 80 A20 40 0 0 1 622 80" stroke-width="2"/>
+      <circle cx="600" cy="80" r="2.5" fill="#2b2622" stroke="none"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="333" cy="130" r="0"/>
+  <circle data-anchor="top" cx="333" cy="30" r="0"/>
+  <circle data-anchor="end-centre" cx="600" cy="80" r="0"/>
+</svg>
