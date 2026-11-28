@@ -17,7 +17,8 @@
     <text id="row3" x="302" y="658" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#2b2622">कितना समय पूरा हुआ</text>
     <text id="row4" x="302" y="778" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#2b2622">कितना ब्याज पहले दिया जा चुका</text>
   </g>
-  <g id="sheet"><use href="piece:complaint-form-sheet" transform="translate(1300 230) scale(1.15)"/></g>
+  <defs><clipPath id="form-clearance" clipPathUnits="userSpaceOnUse"><rect id="form-clearance-window" x="1778" y="180" width="142" height="660"/></clipPath></defs>
+  <g clip-path="url(#form-clearance)"><g id="sheet"><use href="piece:complaint-form-sheet" transform="translate(1300 230) scale(1.15)"/></g></g>
   <text id="sheet-title" x="1507" y="303" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="780" fill="#ffffff">Form-4</text>
   <text id="form-name" x="1510" y="880" text-anchor="middle" font-family="Inter, sans-serif" font-size="96" font-weight="800" fill="#2b2622">Form-4</text>
   <text id="form-kind" x="1510" y="950" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="650" fill="#6f6a63">Scheme का form</text>
@@ -30,6 +31,10 @@
     const width = 1600 - 640 * progress;
     $("#checks-back")[0]?.setAttribute("width", width);
     $("#checks-rule")[0]?.setAttribute("d", "M222 317H" + (width + 98));
+    const clearance = 178 + width;
+    const window = $("#form-clearance-window")[0];
+    window?.setAttribute("x", clearance);
+    window?.setAttribute("width", 1920 - clearance);
   },
   on: [
     [0.72,"words","#row1",{gap:0.08,dist:10}],
