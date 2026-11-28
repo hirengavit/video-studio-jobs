@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" width="640" height="280">
+<g id="leaf">
+  <rect x="4" y="4" width="632" height="272" rx="12" fill="#ffffff"/>
+  <path d="M5.5 52 H634.5 V16 A10.5 10.5 0 0 0 624 5.5 H16 A10.5 10.5 0 0 0 5.5 16 Z" fill="#f3ead6"/>
+  <line x1="5.5" y1="52" x2="634.5" y2="52" stroke="#ead9a8" stroke-width="2"/>
+  <rect x="4" y="4" width="632" height="272" rx="12" fill="none" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<g id="crossing" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round">
+  <line x1="30" y1="96" x2="96" y2="20"/>
+  <line x1="54" y1="96" x2="120" y2="20"/>
+</g>
+<g id="lines" fill="none" stroke="#6f6a63" stroke-width="2.5" stroke-linecap="round">
+  <line x1="440" y1="36" x2="604" y2="36"/>
+  <line x1="140" y1="122" x2="604" y2="122"/>
+  <line x1="40" y1="166" x2="420" y2="166"/>
+  <line x1="40" y1="206" x2="420" y2="206"/>
+  <line x1="420" y1="250" x2="604" y2="250"/>
+</g>
+<g id="amount-box">
+  <rect x="446" y="146" width="158" height="60" rx="6" fill="#fbf7ee" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<circle data-anchor="base" cx="320" cy="280" r="0"/>
+<circle data-anchor="top" cx="320" cy="0" r="0"/>
+<circle data-anchor="grip" cx="70" cy="160" r="0"/>
+</svg>
