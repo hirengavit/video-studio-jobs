@@ -8,12 +8,5 @@
   "8.90"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "misuse",
-   "scene": "s027",
-   "message": "fade: nothing found for \"#last-day,#last-day-label\"",
-   "t": 0.3
-  }
- ]
+ "warnings": []
 }
