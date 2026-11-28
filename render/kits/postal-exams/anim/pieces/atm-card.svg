@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="600" height="380">
+  <g id="card">
+    <rect id="card-body" x="1.5" y="1.5" width="597" height="377" rx="30" fill="#9e1b1b" stroke="#2b2622" stroke-width="3"/>
+    <rect x="18" y="18" width="564" height="344" rx="20" fill="none" stroke="#b8403a" stroke-width="3"/>
+  </g>
+  <g id="chip">
+    <rect x="60" y="110" width="104" height="80" rx="14" fill="#e6cf98" stroke="#2b2622" stroke-width="3"/>
+    <path d="M60 136 H96 M60 164 H96 M128 136 H164 M128 164 H164 M96 110 V190 M128 110 V190" fill="none" stroke="#2b2622" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+  <g id="number-bars" fill="#d8d2c8" stroke="#2b2622" stroke-width="2.5">
+    <rect x="60" y="246" width="150" height="30" rx="15"/>
+    <rect x="228" y="246" width="150" height="30" rx="15"/>
+    <rect x="396" y="246" width="150" height="30" rx="15"/>
+  </g>
+  <circle data-anchor="base" cx="300" cy="380" r="0"/>
+  <circle data-anchor="grip" cx="300" cy="190" r="0"/>
+</svg>
