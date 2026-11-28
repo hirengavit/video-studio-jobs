@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path id="canvas" d="M89 99q19 53-9 151-24 84 10 98h220q34-14 10-98-28-98-9-151Z" fill="#e6cf9a"/>
+<ellipse id="mouth" cx="200" cy="89" rx="116" ry="37" fill="#aa8458"/>
+<ellipse id="interior" cx="200" cy="89" rx="99" ry="22" fill="#4f3a29"/>
+<path id="lip" d="M86 92q17 34 114 34t114-34" stroke="#8a674a" stroke-width="6" fill="none"/>
+<path id="canvas-seams" d="M114 162q8 73-15 143m190-143q-8 73 15 143M109 332h182" stroke="#ab8152" fill="none"/>
+<path id="drawstring" d="M94 130q106 25 212 0c38-10 38 38 2 16m0-16q18 15 26 37m-27-30q8 13 4 33" stroke-width="4" fill="none"/>
+<circle data-anchor="base" cx="200" cy="348" r="0" fill="none" stroke="none"/>
+<circle data-anchor="mouth" cx="200" cy="89" r="0" fill="none" stroke="none"/>
+<circle data-anchor="grip" cx="309" cy="138" r="0" fill="none" stroke="none"/>
+</svg>
