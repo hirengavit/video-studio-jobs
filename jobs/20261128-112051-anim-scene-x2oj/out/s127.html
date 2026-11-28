@@ -22,7 +22,7 @@
  <text id="equal-word" x="960" y="920" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="800" fill="#9e1b1b">बराबर</text>
  <rect id="share-left" x="562" y="476" width="274" height="28" rx="14" fill="#fde9a6"/>
  <rect id="share-right" x="1180" y="476" width="232" height="28" rx="14" fill="#fde9a6"/>
- <text id="ratio" x="1190" y="662" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="800" fill="#8a5d00">अनुपात में</text>
+ <text id="ratio" x="1500" y="681" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="800" fill="#8a5d00">अनुपात में</text>
 </g>
 <g id="minor">
  <g id="minor-left">
@@ -30,13 +30,15 @@
   <text x="510" y="505" text-anchor="middle" font-family="Inter, sans-serif" font-size="80" font-weight="800" fill="#2b2622">Minor nominee</text>
   <text id="minor-hindi" x="510" y="605" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#9e1b1b">नाबालिग नामिती</text>
  </g>
- <rect x="1060" y="300" width="700" height="460" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
  <path id="minor-arrow" d="M 895 530 H 1025 M 1001 506 L 1025 530 L 1001 554" fill="none" stroke="#8a5d00" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="minor-right">
+ <rect x="1060" y="300" width="700" height="460" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="4"/>
  <text id="minor-recipient" x="1410" y="445" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="750" fill="#2b2622">
   <tspan x="1410">जिसे इसके</tspan>
   <tspan x="1410" dy="93">लिए नियुक्त</tspan>
   <tspan x="1410" dy="93">किया गया</tspan>
  </text>
+ </g>
 </g>
 </svg>
 <script type="text/scene">
@@ -51,7 +53,7 @@
  [5.58,"pop","#minor-left",{spring:[24,1]}],
  [6.08,"fade","#minor-hindi",{dur:0.25}],
  [7.34,"draw","#minor-arrow",{dur:0.50}],
- [8.94,"pop","#minor-recipient",{spring:[24,1]}]
+ [8.94,"pop","#minor-right",{spring:[24,1]}]
 ]}
 </script>
 </section>
