@@ -1,0 +1,55 @@
+<section class="vs-scene" id="s049" data-in="cut" data-section="PART 3 · TD INTEREST" data-series="POSB">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="example-card">
+      <rect x="120" y="170" width="600" height="830" rx="26" fill="#9e1b1b"/>
+      <rect x="120" y="170" width="600" height="830" rx="26" fill="none" stroke="#fbf7ee" stroke-width="14" stroke-dasharray="0 26" stroke-linecap="round"/>
+      <rect x="144" y="194" width="552" height="782" rx="14" fill="none" stroke="#b8403a" stroke-width="3"/>
+      <text x="182" y="269" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="760" fill="#fde9a6">उदाहरण</text>
+      <path d="M182 302H658" stroke="#b8403a" stroke-width="3"/>
+      <text id="deposit" x="182" y="465" font-family="Inter, sans-serif" font-size="110" font-weight="800" fill="#ffffff">₹10,000</text>
+      <text id="term" x="182" y="581" font-family="Inter, sans-serif" font-size="72" font-weight="730" fill="#ffffff">5-year TD</text>
+      <text id="annual-rate" x="182" y="741" font-family="Inter, sans-serif" font-size="110" font-weight="800" fill="#ffffff">7.5%</text>
+      <g id="rate-source">
+        <path d="M182 814H658" stroke="#b8403a" stroke-width="3"/>
+        <text x="182" y="875" font-family="Inter, sans-serif" font-size="39" font-weight="600" fill="#fde9a6">1 Oct–31 Dec 2026 ·<tspan x="182" y="929">Source: SB Order 12/2026</tspan></text>
+      </g>
+    </g>
+    <g id="calculation-card">
+      <rect x="780" y="170" width="1020" height="830" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="846" y="220" width="10" height="51" rx="5" fill="#f2b705"/>
+      <text x="880" y="266" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="760" fill="#9e1b1b">हिसाब</text>
+      <path d="M846 358H1734 M846 462H1734 M846 553H1734 M846 643H1734 M846 750H1734" fill="none" stroke="#f3ead6" stroke-width="3"/>
+      <text id="quarter-label" x="846" y="337" font-family="Georgia, 'Noto Sans Devanagari', serif" font-size="60" fill="#6f6a63">Quarter की दर</text>
+      <text id="quarter-divide" x="846" y="427" font-family="Georgia, serif" font-size="60" fill="#2b2622">7.5 ÷ 4</text>
+      <text id="quarter-rate" x="1058" y="427" font-family="Georgia, serif" font-size="60" fill="#2b2622">= 1.875%</text>
+      <text id="year-quarters" x="846" y="530" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" fill="#6f6a63">एक साल · चार quarters</text>
+      <text id="compound-formula" x="846" y="620" font-family="Georgia, serif" font-size="56" fill="#2b2622">10,000 × [(1 + 7.5/400)⁴ − 1]</text>
+      <g id="interest-result">
+        <rect x="834" y="655" width="388" height="82" rx="13" fill="#fde9a6"/>
+        <text x="854" y="720" font-family="Georgia, serif" font-size="72" fill="#2b2622">≈ ₹771.36</text>
+      </g>
+      <g id="rounded-pill">
+        <rect x="800" y="790" width="380" height="90" rx="45" fill="#2e7d4f"/>
+        <text id="rounded-amount" x="990" y="858" text-anchor="middle" font-family="Inter, sans-serif" font-size="72" font-weight="770" fill="#ffffff">₹771</text>
+      </g>
+      <text id="rounded-label" x="990" y="934" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#2e7d4f">सालाना ब्याज</text>
+      <g id="shortcut">
+        <text id="shortcut-formula" x="1220" y="850" font-family="Georgia, serif" font-size="48" fill="#4b4f58">7.5% × 10,000 =</text>
+        <text id="shortcut-result" x="1582" y="850" font-family="Georgia, serif" font-size="48" fill="#4b4f58">₹750</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [1.46, 'color', '#quarter-divide', {to: '#6f6a63', dur: 0.34}],
+      [1.46, 'color', '#quarter-rate', {to: '#6f6a63', dur: 0.34}],
+      [2.98, 'pop', '#rounded-pill', {from: 0.94, spring: 'soft'}],
+      [2.98, 'fade', '#rounded-label', {dur: 0.28}],
+      [6.02, 'type', '#shortcut-formula', {cps: 24}],
+      [7.94, 'pop', '#shortcut-result', {from: 0.94, spring: 'soft'}],
+    ],
+  }
+  </script>
+</section>
