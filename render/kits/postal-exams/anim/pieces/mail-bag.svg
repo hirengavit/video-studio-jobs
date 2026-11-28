@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 380" width="320" height="380">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path id="back-fabric" d="M81 116L65 77Q155 48 255 77L239 116Z" fill="#b99a71"/>
+    <ellipse id="opening" cx="160" cy="100" rx="77" ry="20" fill="#4b4f58"/>
+    <g id="envelopes">
+      <g transform="rotate(-21 132 88)">
+        <rect x="85" y="47" width="109" height="64" rx="4" fill="#f3ead6"/>
+        <path d="M86 49L139 82L193 49" fill="none" stroke="#ae9977" stroke-width="2"/>
+      </g>
+      <g transform="rotate(17 177 93)">
+        <rect x="140" y="50" width="91" height="68" rx="4" fill="white"/>
+        <path d="M141 52L185 80L230 52" fill="none" stroke="#c0ae90" stroke-width="2"/>
+      </g>
+    </g>
+    <path id="sack" d="M82 108Q160 124 238 108L226 149C254 191 289 249 284 303Q282 360 221 360H99Q38 360 36 303C31 249 66 191 94 149Z" fill="#d8bc8c"/>
+    <path id="band" d="M94 132Q160 142 226 132L226 152Q160 165 94 152Z" fill="#9e1b1b"/>
+    <g id="drawstring">
+      <path d="M91 146Q158 159 226 146M196 151C205 134 229 126 231 139C232 153 200 152 196 151ZM196 151C186 138 167 136 168 145C169 152 184 153 196 151ZM196 151Q216 169 206 187M196 151Q196 179 182 190" fill="none" stroke="#8f744f" stroke-width="6"/>
+      <path d="M91 146Q158 159 226 146M196 151C205 134 229 126 231 139C232 153 200 152 196 151ZM196 151C186 138 167 136 168 145C169 152 184 153 196 151ZM196 151Q216 169 206 187M196 151Q196 179 182 190" fill="none" stroke="#f3ead6" stroke-width="3"/>
+    </g>
+    <path id="seams" d="M90 185Q62 244 63 298M226 185Q249 242 252 277M70 321Q84 341 109 342H215" fill="none" stroke="#aa8a5e" stroke-width="2"/>
+  </g>
+  <circle data-anchor="base" cx="160" cy="360" r="0"/>
+  <circle data-anchor="mouth" cx="160" cy="101" r="0"/>
+</svg>
