@@ -1,0 +1,43 @@
+<section class="vs-scene" id="s148" data-section="PART 7 · MIS DEPOSIT AND LIMITS" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="example"><text x="160" y="220" font-family="Inter,sans-serif" font-size="64" font-weight="790" fill="#2b2622">Example</text>
+<text x="160" y="272" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#6f6a63">उदाहरण</text>
+<g id="example-book"><use href="piece:passbook" transform="translate(183 353) scale(.6)"/><text x="255" y="592" text-anchor="middle" fill="#2b2622" font-family="Inter,sans-serif" font-size="46" font-weight="790">Joint MIS</text></g>
+<g id="example-adults" fill="#ead9a8" stroke="#2b2622" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"><g transform="translate(400 397) scale(.52)"><path d="M53 290 V146 A38 38 0 0 1 91 108 H133 A38 38 0 0 1 171 146 V290 Z"/><circle cx="112" cy="57" r="35"/></g><g transform="translate(518 397) scale(.52)"><path d="M53 290 V146 A38 38 0 0 1 91 108 H133 A38 38 0 0 1 171 146 V290 Z"/><circle cx="112" cy="57" r="35"/></g></g>
+<g id="joint-amount"><rect id="example-bar" x="680" y="420" width="500" height="90" rx="17" fill="#fde9a6" stroke="#8a5d00" stroke-width="3"/><text id="example-amount" x="930" y="481" text-anchor="middle" font-family="Georgia,serif" font-size="57" font-weight="700" fill="#2b2622">₹15 lakh</text></g>
+
+<path id="joint-divider" d="M930 421V509" stroke="#8a5d00" stroke-width="3" fill="none"/>
+<g id="share-labels" fill="#2b2622" font-family="Georgia, serif" font-size="47" font-weight="700" text-anchor="middle">
+<text x="805" y="481">₹7.5 lakh</text><text x="1055" y="481">₹7.5 lakh</text></g>
+<g id="personal-bar">
+<text id="holder" x="1260" y="364" font-family="'Noto Sans Devanagari', Inter, sans-serif" fill="#2b2622" font-size="49" font-weight="740">हर holder</text>
+<g id="personal-cap"><path d="M1780 404V526" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/><text x="1770" y="364" text-anchor="end" fill="#6f6a63" font-family="Georgia, serif" font-size="46" font-weight="700">₹9 lakh</text></g>
+<g id="personal-track"><rect x="1260" y="420" width="520" height="90" rx="17" fill="#fff" stroke="#ead9a8" stroke-width="3"/></g>
+<path id="sand-part" d="M1277 421H1693.33V509H1277Q1261 509 1261 493V437Q1261 421 1277 421Z" fill="#f3ead6"/>
+<path id="yellow-part" d="M1693.33 421H1762Q1779 421 1779 437V493Q1779 509 1762 509H1693.33Z" fill="#f2b705"/>
+<path id="personal-divider" d="M1693.33 421V509" fill="none" stroke="#8a5d00" stroke-width="3"/>
+<rect id="share-marker" x="1261" y="529" width="110" height="42" rx="8" fill="#fde9a6"/>
+<text id="personal-share" x="1268" y="562" fill="#2b2622" font-family="Georgia, serif" font-size="43" font-weight="700">₹7.5 lakh</text>
+<text id="personal-room" x="1780" y="562" text-anchor="end" fill="#8a5d00" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="760">₹1.5 lakh और</text>
+<text id="limit-source" x="1780" y="634" text-anchor="end" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="32" font-weight="600">MIS योजना, 2019</text>
+</g></g>
+</svg>
+<script type="text/scene">{
+on:[
+[.80,"move","#example-amount",{by:[0,-106],spring:"fast"}],
+[.95,"draw","#joint-divider",{dur:.27}],
+[2.10,"pop","#share-labels",{from:.92}],
+[3.90,"fade","#holder",{dur:.25}],
+[3.90,"fade","#personal-cap",{dur:.27}],
+[3.90,"fade","#personal-track",{dur:.25}],
+[3.90,"fade","#limit-source",{dur:.3}],
+[5.80,"grow","#sand-part",{axis:"x",origin:"left",spring:"fast"}],
+[5.96,"fade","#personal-share",{dur:.20}],
+[7.52,"grow","#yellow-part",{axis:"x",origin:"left",spring:"fast"}],
+[7.62,"fade","#personal-divider",{dur:.16}],
+[7.52,"pop","#personal-room",{from:.94}],
+[9.82,"grow","#share-marker",{axis:"x",origin:"left",spring:"fast"}]
+]
+}</script>
+</section>
