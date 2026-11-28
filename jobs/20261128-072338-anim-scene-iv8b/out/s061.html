@@ -1,0 +1,58 @@
+<section class="vs-scene" id="s061" data-section="PART 4 · TD MATURITY" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="closure">
+ <text  x="420" y="257" text-anchor="middle" fill="#9e1b1b" font-family="Inter, sans-serif" font-size="66" font-weight="750">Closure</text>
+ <use href="piece:td-passbook-white" transform="translate(240 300) scale(1.5)"/>
+ <text  x="438" y="480" text-anchor="middle" fill="#30271f" font-family="Inter, sans-serif" font-size="37" font-weight="750">TD · SB-5A</text>
+ <path id="return-arrow" d="M692 549h-65m0 0 22-22m-22 22 22 22" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+ <g id="principal"><use href="piece:rupee-note-bundle" transform="translate(692 520) scale(1.3)"/><text  x="900" y="839" text-anchor="middle" fill="#30271f" font-family="Inter, sans-serif" font-size="63" font-weight="750">Principal</text></g>
+ <text id="principal-hi" x="900" y="905" text-anchor="middle" fill="#665a4f" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="750">मूलधन</text>
+ <g id="interest">
+   <rect x="1240" y="325" width="520" height="516" rx="30" fill="#fffdf8" stroke="#ead9a8" stroke-width="3"/>
+   <g id="coin0"><use href="piece:rupee-coin" transform="translate(1298 394) scale(.9)"/><text  x="1352" y="464" text-anchor="middle" fill="#725123" font-family="Inter, sans-serif" font-size="48" font-weight="750">₹</text></g>
+<g id="coin1"><use href="piece:rupee-coin" transform="translate(1446 394) scale(.9)"/><text  x="1500" y="464" text-anchor="middle" fill="#725123" font-family="Inter, sans-serif" font-size="48" font-weight="750">₹</text></g>
+<g id="coin2"><use href="piece:rupee-coin" transform="translate(1594 394) scale(.9)"/><text  x="1648" y="464" text-anchor="middle" fill="#725123" font-family="Inter, sans-serif" font-size="48" font-weight="750">₹</text></g>
+   <g id="annual"><text  x="1500" y="562" text-anchor="middle" fill="#30271f" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="750">पहले मिल चुका</text><text  x="1500" y="625" text-anchor="middle" fill="#30271f" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="750">सालाना ब्याज</text></g>
+   <circle id="empty-coin" cx="1353" cy="735" r="49" fill="none" stroke="#706e73" stroke-width="5" stroke-dasharray="8 7"/>
+   <g id="no-again"><path d="m1335 716 37 38m0-38-37 38" fill="none" stroke="#54515a" stroke-width="8" stroke-linecap="round"/><text  x="1546" y="750" text-anchor="middle" fill="#54515a" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="750">दोबारा नहीं</text></g>
+ </g>
+</g>
+<g id="ext">
+ <g id="extension-card">
+  <use href="piece:stamp-term-card" transform="translate(288 280) scale(.96)"/>
+  <use href="piece:td-passbook-white" transform="translate(432 393) scale(.65)"/>
+  <text  x="518" y="472" text-anchor="middle" fill="#30271f" font-family="Inter, sans-serif" font-size="23" font-weight="750">TD · SB-5A</text>
+  <text id="extension-word" x="1130" y="495" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="110" font-weight="800">Extension</text>
+  <text id="extension-hi" x="1130" y="605" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="750">अवधि बढ़ाना</text>
+ </g>
+ <g id="extension-line">
+  <text id="matured" x="660" y="864" text-anchor="middle" fill="#30271f" font-family="Inter, sans-serif" font-size="58" font-weight="750">Matured TD</text>
+  <circle cx="888" cy="842" r="5" fill="#9e1b1b" id="line-dot"/>
+  <text id="same-term" x="1160" y="864" text-anchor="middle" fill="#30271f" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750">उसी अवधि के लिए</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,"#closure"],[7.93,"#ext"]],
+ on:[
+  [.82,"slide","#principal",{from:"right",dist:85,dur:.32}],
+  [1.28,"draw","#return-arrow",{dur:.35}],
+  [1.32,"fade","#principal-hi",{dur:.23}],
+  [2.86,"fade","#interest",{dur:.18}],
+  [3.02,"pop","#coin0",{from:.90}],
+  [3.17,"pop","#coin1",{from:.90}],
+  [3.32,"pop","#coin2",{from:.90}],
+  [3.64,"fade","#annual",{dur:.27}],
+  [6.02,"draw","#empty-coin",{dur:.42}],
+  [6.66,"fade","#no-again",{dur:.22}],
+  [8.11,"stamp","#extension-word",{from:1.12,rot:-1}],
+  [8.61,"fade","#extension-hi",{dur:.25}],
+  [9.25,"fade","#matured",{dur:.23}],
+  [11.55,"fade","#line-dot,#same-term",{dur:.24}],
+  [12.51,"highlight","#same-term",{words:"उसी अवधि",color:"#f2b705",opacity:.32,dur:.36}]
+ ]
+}
+</script>
+</section>
