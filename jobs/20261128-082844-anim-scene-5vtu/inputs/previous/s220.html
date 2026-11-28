@@ -1,0 +1,39 @@
+<section class="vs-scene" id="s220" data-section="PART 10 · FORMS AND RECORDS" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="transfer" font-family="Inter, sans-serif">
+<g id="old-office"><g transform="translate(150 197)" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M9 76 130 10 251 76Z" fill="#f3ead6"/><rect x="27" y="76" width="206" height="155" rx="4" fill="#fffdf8"/><path d="M81 226v-97m98 97v-97" stroke="#ead9a8" stroke-width="9"/><rect x="108" y="147" width="44" height="84" rx="3" fill="#f3ead6"/><rect x="46" y="113" width="38" height="40" rx="3" fill="#f3ead6"/><rect x="175" y="113" width="38" height="40" rx="3" fill="#f3ead6"/><path d="M15 232h230" stroke="#9e1b1b" stroke-width="7"/><circle cx="130" cy="53" r="9" fill="#9e1b1b" stroke="none"/></g>
+<text x="280" y="495" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" fill="#2b2622" font-weight="650">खाते वाला office</text></g>
+<g id="new-office"><g transform="translate(1510 197)" stroke="#2b2622" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+<path d="M9 76 130 10 251 76Z" fill="#f3ead6"/><rect x="27" y="76" width="206" height="155" rx="4" fill="#fffdf8"/><path d="M81 226v-97m98 97v-97" stroke="#ead9a8" stroke-width="9"/><rect x="108" y="147" width="44" height="84" rx="3" fill="#f3ead6"/><rect x="46" y="113" width="38" height="40" rx="3" fill="#f3ead6"/><rect x="175" y="113" width="38" height="40" rx="3" fill="#f3ead6"/><path d="M15 232h230" stroke="#9e1b1b" stroke-width="7"/><circle cx="130" cy="53" r="9" fill="#9e1b1b" stroke="none"/></g>
+<text x="1640" y="495" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" fill="#2b2622" font-weight="650">नया accounts office</text></g>
+<text id="transfer-en" x="960" y="294" text-anchor="middle" font-size="60" font-weight="780" fill="#9e1b1b">Transfer</text>
+<text id="transfer-hi" x="960" y="359" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="650" fill="#6f6a63">स्थानांतरण</text>
+<path id="office-arrow" d="M560 410H1360m-37-31 37 31-37 31" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="form-sheet"><use href="piece:complaint-form-sheet" transform="translate(420 570) scale(0.85)"/><text id="form-name" x="573" y="624" textLength="244" lengthAdjust="spacingAndGlyphs" text-anchor="middle" font-size="44" font-weight="740" fill="#fff">GSPR Form-5</text></g>
+<text id="plus-sign" x="840" y="766" text-anchor="middle" font-size="80" font-weight="690" fill="#9e1b1b">+</text>
+<g id="original-book" transform="translate(960 600)" stroke="#2b2622" stroke-width="4" stroke-linejoin="round">
+<rect x="0" y="7" width="200" height="253" rx="14" fill="#fffdf8"/><rect width="200" height="243" rx="14" fill="#f3ead6"/><path d="M26 8v226" fill="none" stroke="#927d63"/><rect x="49" y="66" width="123" height="72" rx="8" fill="#fff9ec" stroke="#b49c77"/><path d="M73 91h75m-62 20h49" fill="none" stroke="#927d63" stroke-linecap="round"/>
+</g>
+<text id="book-en" x="1220" y="681" font-size="52" font-weight="760" fill="#2b2622">Original passbook</text>
+<text id="book-hi" x="1220" y="733" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="620" fill="#9e1b1b">मूल पासबुक</text>
+<text id="or-doc" x="1220" y="787" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="560" fill="#6f6a63">या खाते का document</text>
+</g>
+</svg>
+<script type="text/scene">
+({on:[
+[0.96,"pop","#new-office",{from:0.83}],
+[2.86,"draw","#office-arrow",{dur:0.65}],
+[2.86,"words","#transfer-en",{dist:10}],
+[3.36,"fade","#transfer-hi",{dur:0.32}],
+[3.76,"slide","#form-sheet",{from:"down",dist:42}],
+[4.98,"pop","#form-name",{from:0.94}],
+[6.34,"pop","#plus-sign",{from:0.86}],
+[6.34,"pop","#original-book",{from:0.9}],
+[6.34,"words","#book-en",{gap:0.68,dist:10}],
+[7.5,"fade","#book-hi",{dur:0.28}],
+[8.4,"fade","#or-doc",{dur:0.42}]
+]})
+</script>
+</section>
