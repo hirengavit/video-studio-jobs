@@ -1,0 +1,20 @@
+{
+ "moments": [
+  "0.30",
+  "2.41",
+  "4.83",
+  "7.24",
+  "9.66",
+  "11.92"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "low-contrast",
+   "scene": "s166",
+   "text": "महीने का उदाहरण (1.5:1)",
+   "message": "text too close in colour to what's behind it",
+   "t": 0.3
+  }
+ ]
+}
