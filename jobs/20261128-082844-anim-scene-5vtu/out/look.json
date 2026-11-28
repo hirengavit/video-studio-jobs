@@ -8,13 +8,5 @@
   "14.69"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "low-contrast",
-   "scene": "s221",
-   "text": "₹100 (1.0:1) / + लागू tax (1.2:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 2.97
-  }
- ]
+ "warnings": []
 }
