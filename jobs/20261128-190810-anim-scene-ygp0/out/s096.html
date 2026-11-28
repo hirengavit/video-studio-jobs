@@ -1,15 +1,13 @@
 <section class="vs-scene" id="s096" data-section="PART 5 · TD EARLY CLOSURE" data-series="POSB" data-in="cut">
 <svg viewBox="0 0 1920 1080">
- <style>#s096-myth-line [data-vs-mark] { transform: translateY(-22px); }</style>
  <rect width="1920" height="1080" fill="#fbf7ee"/>
  <g id="myth">
    <rect x="200" y="340" width="1520" height="400" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
    <rect x="278" y="398" width="167" height="63" rx="31" fill="#4b4f58"/>
    <text x="362" y="444" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="740" fill="#ffffff">भ्रम</text>
    <text id="the-account" x="298" y="560" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="720" fill="#2b2622">लंबी अवधि का खाता</text>
-   <g id="s096-myth-line">
    <text id="wrong" x="298" y="660" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="720" fill="#2b2622">→ पूरी अवधि पर original दर</text>
-   </g>
+   <rect id="s096-strike-target" x="298" y="613" width="765" height="49" fill="transparent"/>
    <g id="s096-cross" stroke="#4b4f58" stroke-width="12" stroke-linecap="round" fill="none">
      <path d="M1576 556L1624 604"/><path d="M1624 556L1576 604"/>
    </g>
@@ -35,7 +33,7 @@
  on:[
   [1.0,"words","#the-account",{gap:0.15,dist:13}],
   [3.82,"words","#wrong",{gap:0.21,dist:13}],
-  [6.60,"strike","#wrong",{dur:0.40,color:"#4b4f58",width:8,dim:0.72}],
+  [6.60,"strike","#s096-strike-target",{dur:0.40,color:"#4b4f58",width:8,dim:1}],
   [6.88,"draw","#s096-cross",{dur:0.35}],
   [9.16,"pop","#book-label",{from:0.94,spring:"soft"}],
   [10.54,"fade","#when-opened",{dur:0.25}],
