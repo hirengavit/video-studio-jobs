@@ -12,11 +12,13 @@
 </g>
 <defs><clipPath id="bar-clip"><rect x="260" y="750" width="1400" height="130" rx="18"/></clipPath></defs>
 <g clip-path="url(#bar-clip)">
+<g id="td-segment">
 <rect id="td-fill" x="260" y="750" width="440" height="130" fill="#fff"/>
+<text id="td-label" x="480" y="834" text-anchor="middle" fill="#2b2622" font-size="52" font-weight="760" font-family="Inter,sans-serif">5-year TD</text>
+</g>
 <rect id="shared-fill" x="700" y="750" width="960" height="130" fill="#f3ead6"/>
 </g>
 <rect id="bar-outline" x="260" y="750" width="1400" height="130" rx="18" fill="none" stroke="#2b2622" stroke-width="4"/>
-<text id="td-label" x="480" y="834" text-anchor="middle" fill="#2b2622" font-size="52" font-weight="760" font-family="Inter,sans-serif">5-year TD</text>
 <path id="bar-split" d="M700 752V878" stroke="#2b2622" stroke-width="3"/>
 <text id="shared-label" x="1180" y="834" text-anchor="middle" fill="#2b2622" font-size="52" font-weight="670" font-family="'Noto Sans Devanagari', Inter, sans-serif">दूसरे qualifying payments और निवेश</text>
 <path id="bracket" d="M260 746V730H1660V746" fill="none" stroke="#f2b705" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
@@ -25,6 +27,6 @@
 </g>
 </svg>
 <script type="text/scene">
-{"on":[[3,"pop","#amount",{"from":0.94}],[4.56,"fade","#tax-year",{"dur":0.24}],[5.2,"fade","#source",{"dur":0.28}],[6.06,"draw","#bar-outline",{"dur":0.36}],[6.06,"grow","#td-fill",{"axis":"x","origin":"left"}],[6.06,"fade","#td-label",{"dur":0.34}],[7.1,"grow","#shared-fill",{"axis":"x","origin":"left"}],[7.29,"fade","#bar-split",{"dur":0.24}],[7.52,"fade","#shared-label",{"dur":0.28}],[9.66,"draw","#bracket",{"dur":0.32}],[9.98,"fade","#share",{"dur":0.23}]]}
+{"on":[[3,"pop","#amount",{"from":0.94}],[4.56,"fade","#tax-year",{"dur":0.24}],[5.2,"fade","#source",{"dur":0.28}],[6.06,"draw","#bar-outline",{"dur":0.36}],[6.06,"grow","#td-fill",{"axis":"x","origin":"left"}],[6.06,"reveal","#td-segment",{"from":"left","dur":0.40,"ease":"inOut"}],[7.1,"grow","#shared-fill",{"axis":"x","origin":"left"}],[7.29,"fade","#bar-split",{"dur":0.24}],[7.52,"fade","#shared-label",{"dur":0.28}],[9.66,"draw","#bracket",{"dur":0.32}],[9.98,"fade","#share",{"dur":0.23}]]}
 </script>
 </section>
