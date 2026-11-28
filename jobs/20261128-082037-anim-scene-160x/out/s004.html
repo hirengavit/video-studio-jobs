@@ -34,11 +34,14 @@
 </svg>
 <script type="text/scene">
 { on: [
- [1.52, 'swap', '#principal-en', {to:'#maturity-en', dur:0.33, dist:19}],
- [2.02, 'swap', '#principal-hi', {to:'#maturity-hi', dur:0.30, dist:15}],
+ [1.52, 'out', '#principal-en', {dur:0.12}],
+ [1.67, 'fade', '#maturity-en', {dur:0.17}],
+ [2.02, 'out', '#principal-hi', {dur:0.12}],
+ [2.17, 'fade', '#maturity-hi', {dur:0.17}],
  [2.90, 'pop', '#maturity-calendar', {from:0.95,spring:'soft'}],
  [3.02, 'fade', '#maturity-day', {dur:0.24}],
- [4.22, 'swap', '#principal-caption', {to:'#maturity-caption', dur:0.33, dist:19}],
+ [4.22, 'out', '#principal-caption', {dur:0.12}],
+ [4.37, 'fade', '#maturity-caption', {dur:0.17}],
  [6.40, 'draw', '#return-arrow', {dur:0.55}],
  [6.91, 'fade', '#return-tip', {dur:0.12}],
  [6.78, 'fade', '#return-label', {dur:0.22}],
