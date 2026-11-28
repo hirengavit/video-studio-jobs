@@ -12,6 +12,7 @@
 <text id="transfer-first" x="1184" y="501" font-family="Georgia, serif" font-size="48" fill="#2b2622">Transferred as</text>
 <text id="transfer-last" x="1184" y="548" font-family="Georgia, serif" font-size="48" fill="#2b2622">security to</text>
 <path id="detail-lines" d="M1184 580H1454 M1184 612H1454" fill="none" stroke="#b1a79a" stroke-width="3" stroke-linecap="round"/>
+<rect id="detail-back" x="1170" y="627" width="403" height="60" rx="7" fill="#fffdf8"/>
 <text id="pledgee-details" x="1184" y="667" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" fill="#6f6a63">pledgee की details</text>
 </g>
 <g id="equal">
@@ -27,14 +28,14 @@
 <script type="text/scene">
 {
 shots: [[0,"#ledger"],[6.24,"#equal"]],
-camera: [[0,{zoom:1,x:0,y:0}],[0.85,{zoom:1.12,x:-50,y:0},"inOut"],[6.2,{zoom:1.12,x:-50,y:0}],[6.24,{zoom:1,x:0,y:0}]],
+camera: [[0,{zoom:1,x:0,y:0}],[0.85,{zoom:1.055,x:20,y:8},"inOut"],[6.2,{zoom:1.055,x:20,y:8}],[6.24,{zoom:1,x:0,y:0}]],
 on: [
 [0.04,"fade","#entry-paper",{dur:0.24}],
 [0,"type","#transfer-first",{cps:18}],
 [0.79,"type","#transfer-last",{cps:18}],
 [1.22,"fade","#security-sweep",{dur:0.35}],
 [2.96,"draw","#detail-lines",{dur:0.45}],
-[2.96,"fade","#pledgee-details",{dur:0.42}],
+[2.96,"fade",["#detail-back","#pledgee-details"],{dur:0.42}],
 [6.24,"fade","#transfer-rule",{dur:0.4}],
 [8.16,"pop","#pledgee-en"],
 [8.66,"fade","#pledgee-hi",{dur:0.28}],
