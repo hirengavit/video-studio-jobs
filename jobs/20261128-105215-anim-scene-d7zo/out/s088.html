@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s088" data-section="PART 5 · TD EARLY CLOSURE" data-series="POSB" data-in="cut">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="forms">
+<text id="next-rule" x="960" y="217" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="690" fill="#6f6a63">आगे: normal premature closure की शर्तें</text>
+<g id="scheme-form">
+<use href="piece:complaint-form-sheet" transform="translate(280 280) scale(1.15)"/>
+<text id="scheme-title" x="487" y="347" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="780" fill="#ffffff">Form-4</text>
+<text id="scheme-name" x="487" y="900" text-anchor="middle" font-family="Inter, sans-serif" font-size="96" font-weight="800" fill="#2b2622">Form-4</text>
+<text id="scheme-kind" x="487" y="960" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="650" fill="#6f6a63">Scheme का form</text>
+</g>
+<g id="common-form">
+<g id="common-sheet"><use href="piece:complaint-form-sheet" transform="translate(1000 280) scale(1.15)"/></g>
+<text id="common-title" x="1207" y="347" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="780" fill="#ffffff">SB-7B</text>
+<text id="common-name" x="1207" y="900" text-anchor="middle" font-family="Inter, sans-serif" font-size="96" font-weight="800" fill="#2b2622">SB-7B</text>
+<text id="common-kind" x="1207" y="960" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="650" fill="#6f6a63">Post office का common form</text>
+</g>
+<g id="td-book">
+<use href="piece:td-passbook-white" transform="translate(1480 420) scale(.8)"/>
+<text id="book-title" x="1586" y="521" text-anchor="middle" font-family="Inter, sans-serif" font-size="23" font-weight="760" fill="#2b2622">TD · SB-5A</text>
+</g>
+<text id="book-caption" x="1630" y="740" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="650" fill="#6f6a63">passbook के साथ</text>
+<text id="later-rule" x="960" y="217" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="690" fill="#6f6a63">Death के बाद payment: नियम अलग · बाद में</text>
+</g>
+<g id="track">
+<g id="year-1"><use href="piece:td-passbook-white" transform="translate(700 154) scale(.5)"/><text id="year-label-1" x="760" y="355" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#9e1b1b">1 साल</text></g>
+<g id="year-2"><use href="piece:td-passbook-white" transform="translate(900 154) scale(.5)"/><text id="year-label-2" x="960" y="355" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#9e1b1b">2 साल</text></g>
+<g id="year-3"><use href="piece:td-passbook-white" transform="translate(1100 154) scale(.5)"/><text id="year-label-3" x="1160" y="355" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#9e1b1b">3 साल</text></g>
+<rect id="time-bar" x="160" y="440" width="1600" height="40" rx="20" fill="#f1e4c5"/>
+<rect id="zone-one-segment" x="160" y="440" width="540" height="40" rx="20" fill="#cdd6df"/>
+<g id="deposit-mark">
+<path d="M160 431v58" stroke="#6f6a63" stroke-width="4" stroke-linecap="round"/>
+<text x="160" y="420" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#2b2622">Deposit की तारीख</text>
+</g>
+<g id="six-mark">
+<path d="M700 431v58" stroke="#536678" stroke-width="4" stroke-linecap="round"/>
+<text x="700" y="420" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#405362">6 महीने</text>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,"#forms"],[3.66,"#track"]],
+ on:[
+ [0.52,"swap","#next-rule",{to:"#later-rule",dur:0.40,dist:13}],
+ [4.14,"pop","#year-1",{from:0.94,spring:"soft"}],
+ [4.98,"pop","#year-2",{from:0.94,spring:"soft"}],
+ [6.34,"pop","#year-3",{from:0.94,spring:"soft"}],
+ [7.78,"color",["#year-label-1","#year-label-2","#year-label-3"],{to:"#6f6a63",dur:0.35}],
+ [7.78,"grow","#time-bar",{axis:"x",origin:"left",dur:0.72}],
+ [9.30,"pop","#deposit-mark",{from:0.97,spring:"soft"}],
+ [11.08,"pop","#six-mark",{from:0.97,spring:"soft"}],
+ [12.68,"fade","#zone-one-segment",{dur:0.33}]
+ ]
+}
+</script>
+</section>
