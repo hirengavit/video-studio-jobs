@@ -3,7 +3,7 @@
 <rect width="1920" height="1080" fill="#fbf7ee"/>
 <g id="names" fill="#2b2622" font-family="Inter, sans-serif">
     <text id="hook-headline" x="960" y="230" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="800" fill="#9e1b1b">Post Office की 2 deposit schemes</text>
-    <path id="settled-underline" d="M1040 246 Q1305 243 1560 247" fill="none" stroke="#f2b705" stroke-width="7" stroke-linecap="round"/>
+    <path id="settled-underline" d="M944 269 Q1250 273 1558 267" fill="none" stroke="#f2b705" stroke-width="7" stroke-linecap="round"/>
     <g id="opening-pair">
       <use id="opening-td" href="piece:td-passbook-white" transform="translate(392 452) scale(1.4)"/>
       <use id="opening-mis" href="piece:passbook" transform="translate(1192 452) scale(1.4)"/>
@@ -20,8 +20,10 @@
 <text id="mis-title-1" x="1360" y="266" text-anchor="middle" font-size="88" font-weight="800" fill="#9e1b1b">Monthly</text>
 <text id="mis-title-2" x="1360" y="351" text-anchor="middle" font-size="88" font-weight="800" fill="#9e1b1b">Income Scheme</text>
 <text id="mis-hi" x="1360" y="421" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="600">मासिक आय योजना</text>
-<text id="td-ref" x="577" y="620" text-anchor="middle" font-size="44" font-weight="800">TD · SB-5A</text>
-<text id="mis-ref" x="1377" y="620" text-anchor="middle" font-size="44" font-weight="800">MIS · SB-5</text>
+<text id="td-ref" x="577" y="594" text-anchor="middle" font-size="44" font-weight="800">TD</text>
+<text id="td-code" x="577" y="644" text-anchor="middle" font-size="44" font-weight="750">· SB-5A</text>
+<text id="mis-ref" x="1377" y="594" text-anchor="middle" font-size="44" font-weight="800">MIS</text>
+<text id="mis-code" x="1377" y="644" text-anchor="middle" font-size="44" font-weight="750">· SB-5</text>
 </g>
 <g id="lump" fill="#2b2622" font-family="Inter, sans-serif">
 <g id="counter-drawing">
@@ -55,12 +57,14 @@
     [0.32,'fade','#td-title',{dur:.25}],
     [0.50,'fade','#td-hi',{dur:.32}],
     [1.90,'type','#td-ref',{cps:25}],
+    [2.03,'type','#td-code',{cps:25}],
     [3.66,'type','#mis-title-1',{cps:27}],
     [4.10,'type','#mis-title-2',{cps:32}],
     [4.57,'fade','#mis-hi',{dur:.30}],
     [6.14,'type','#mis-ref',{cps:25}],
+    [6.30,'type','#mis-code',{cps:25}],
     [7.92,'fade','#counter-drawing',{dur:.33}],
-    [8.74,'pop','#one-bundle',{dur:.34}],
+    [8.74,'pop','#one-bundle'],
     [9.96,'fade','#lump-caption',{dur:.24}],
     [10.82,'draw','#branch-arrows',{dur:.36}]
   ]
