@@ -1,0 +1,46 @@
+<section class="vs-scene" id="s207" data-section="PART 10 · FORMS AND RECORDS" data-series="POSB" data-in="cut">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="table">
+ <rect x="110" y="160" width="1700" height="830" rx="20" fill="#fff"/>
+ <path d="M130 160H1790Q1810 160 1810 180V290H110V180Q110 160 130 160Z" fill="#9e1b1b"/>
+ <path d="M111 290H1809V465H111ZM111 640H1809V815H111Z" fill="#fbf7ee"/>
+ <rect x="110" y="160" width="1700" height="830" rx="20" fill="none" stroke="#ead9a8" stroke-width="4"/>
+ <path d="M110 290H1810M110 465H1810M110 640H1810M110 815H1810M580 290V990M920 290V990M1260 290V990" fill="none" stroke="#ead9a8" stroke-width="3"/>
+ <path d="M580 161V289M920 161V289M1260 161V289" stroke="#b8403a" stroke-width="3"/>
+ <text id="head-work" x="345" y="244" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="650" font-size="61" fill="#fff">काम</text>
+ <g id="head-td"><text x="750" y="216" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="58" fill="#fff">TD</text><text id="head-td-hi" x="750" y="272" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="650" font-size="48" fill="#fde9a6">सावधि जमा</text></g>
+ <g id="head-mis"><text x="1090" y="216" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="58" fill="#fff">MIS</text><text id="head-mis-hi" textLength="292" lengthAdjust="spacingAndGlyphs" x="1090" y="272" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="650" font-size="45" fill="#fde9a6">मासिक आय योजना</text></g>
+ <g id="head-common"><text x="1535" y="216" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="58" fill="#fff">Common</text><text id="head-common-hi" x="1535" y="272" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="650" font-size="48" fill="#fde9a6">सामान्य फ़ॉर्म</text></g>
+ <g id="slot-1"><circle cx="533" cy="378" r="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/><text x="533" y="394" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="44" fill="#6f6a63">1</text></g>
+ <g id="slot-2"><circle cx="533" cy="553" r="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/><text x="533" y="569" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="44" fill="#6f6a63">2</text></g>
+ <g id="slot-3"><circle cx="533" cy="728" r="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/><text x="533" y="744" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="44" fill="#6f6a63">3</text></g>
+ <g id="slot-4"><circle cx="533" cy="903" r="28" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/><text x="533" y="919" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="44" fill="#6f6a63">4</text></g>
+
+<g id="opening-row">
+<path id="row-one-outline" d="M130 296H1790Q1803 296 1803 309V446Q1803 459 1790 459H130Q117 459 117 446V309Q117 296 130 296Z" fill="none" stroke="#e6b72c" stroke-width="6" stroke-linejoin="round"/>
+<text id="opening-en" x="150" y="367" text-anchor="start" font-family="Inter, sans-serif" font-weight="800" font-size="52" fill="#2b2622">Opening</text>
+<text id="opening-hi" x="150" y="426" text-anchor="start" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="650" font-size="44" fill="#6f6a63">खाता खोलना</text>
+<text id="td-opening" x="750" y="399" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="60" fill="#2b2622">Form-1</text>
+<text id="mis-opening" x="1090" y="399" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="60" fill="#2b2622">Form-1</text>
+<text id="common-opening" x="1535" y="370" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="60" fill="#2b2622">AOF</text>
+<text id="aof-hi" x="1535" y="426" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="650" font-size="44" fill="#6f6a63">खाता खोलने का फ़ॉर्म</text>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+({
+ on: [
+   [0.50,'fade','#opening-hi',{dur:0.3}],
+   [0.50,'draw','#row-one-outline',{dur:0.55}],
+   [1.16,'pulse','#head-td',{amount:0.065}],
+   [2.10,'pulse','#head-mis',{amount:0.065}],
+   [3.96,'pop','#td-opening'],
+   [4.11,'pop','#mis-opening'],
+   [5.32,'pulse','#head-common',{amount:0.065}],
+   [6.30,'pop','#common-opening'],
+   [6.80,'fade','#aof-hi',{dur:0.30}]
+ ]
+})
+</script>
+</section>
