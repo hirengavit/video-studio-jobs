@@ -1,0 +1,43 @@
+[
+  {
+    "id": "td-passbook-white",
+    "kind": "prop",
+    "description": "TD passbook SB-5A, 240x320: white cover with a 3 px ink border and a thin #ead9a8 inner line, a blank cream label panel (x 62-202, y 70-154), lower right corner lifted showing cream pages; no lettering (the scene writes 'TD · SB-5A'). The recurring TD icon, always on the left beside MIS.",
+    "ideas": [
+      "TD comparison",
+      "TD account record"
+    ],
+    "viewBox": "0 0 240 320",
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "parts": [
+      "pages",
+      "cover",
+      "label",
+      "corner"
+    ]
+  },
+  {
+    "id": "rupee-note-bundle",
+    "kind": "prop",
+    "description": "Flat ink bundle of rupee notes 320x200: sand notes, a red paper band round the middle with a small ₹ in a circle, 3 px ink; no amounts. The lump sum / principal object.",
+    "ideas": [
+      "lump sum",
+      "principal"
+    ],
+    "viewBox": "0 0 320 200",
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "parts": [
+      "notes",
+      "band",
+      "rupee"
+    ]
+  }
+]
