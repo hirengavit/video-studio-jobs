@@ -1,0 +1,39 @@
+<section class="vs-scene" id="s053" data-in="cut" data-section="PART 3 · TD INTEREST" data-series="POSB">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="due">
+      <rect id="due-ledge" x="120" y="820" width="1680" height="20" rx="7" fill="#dfca98"/>
+      <rect id="due-box" x="140" y="300" width="620" height="520" rx="26" fill="#fffdf8" stroke="#6f6a63" stroke-width="5" stroke-dasharray="15 13"/>
+      <text id="due-account" x="450" y="392" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#6f6a63">TD का हिसाब</text>
+      <g id="due-book" transform="translate(330 484)"><use href="piece:td-passbook-white"/><text x="132" y="122" text-anchor="middle" font-family="Inter, sans-serif" font-size="25" font-weight="800" fill="#332e29">TD · SB-5A</text></g>
+      <g id="due-coin"><use href="piece:rupee-coin" transform="translate(900 676) scale(1.2)"/><text x="972" y="773" text-anchor="middle" font-family="Inter, sans-serif" font-size="58" font-weight="800" fill="#332e29">₹</text></g>
+      <g id="due-pill"><rect x="876" y="543" width="192" height="82" rx="41" fill="#fde9a6" stroke="#f2b705" stroke-width="3"/><text x="972" y="597" text-anchor="middle" font-family="Inter, sans-serif" font-size="49" font-weight="780" fill="#805400">due</text></g>
+      <text id="due-unwithdrawn" x="1116" y="640" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#6f6a63">निकाला नहीं</text>
+      <g id="extra-chip"><rect x="1200" y="720" width="520" height="90" rx="23" fill="#f3ead6"/><text id="extra-label" x="1440" y="786" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="740" fill="#6b6352">+ extra ब्याज</text></g>
+      <path id="extra-strike" d="M 1269 776 Q 1442 780 1611 774" fill="none" stroke="#4b4f58" stroke-width="8" stroke-linecap="round"/>
+      <path id="extra-cross" d="M 1640 752 L 1676 782 M 1676 752 L 1640 782" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+      <path id="due-out-arrow" d="M 771 744 C 812 735 850 734 889 743 M 866 726 L 889 743 L 863 755" fill="none" stroke="#332e29" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <g id="myth2">
+      <rect id="myth-card" x="160" y="330" width="1600" height="400" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4" filter="url(#vs-shadow)"/>
+      <use id="myth-book" href="piece:td-passbook-white" transform="translate(220 450) scale(0.8)"/>
+      <text id="myth-book-label" x="326" y="554" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" font-weight="800" fill="#332e29">TD</text>
+      <g id="myth-pill">
+        <rect x="220" y="360" width="180" height="72" rx="36" fill="#e4e5e8"/>
+        <text x="310" y="412" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="800" fill="#4b4f58">भ्रम</text>
+      </g>
+      <text id="myth-line-one" x="470" y="530" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="760" fill="#332e29">सारा सालाना ब्याज पूरी अवधि</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#due'], [3.34, '#myth2']],
+    on: [
+      [1.00, 'pulse', '#due-box', {amount: 0.035}],
+      [1.82, 'draw', '#due-out-arrow', {dur: 0.48}],
+      [5.96, 'pulse', '#myth-pill', {amount: 0.08}],
+      [7.72, 'words', '#myth-line-one', {gap: 0.56, dist: 13, spring: 'soft'}]
+    ]
+  }
+  </script>
+</section>
