@@ -21,7 +21,8 @@
 <text id="personal-share" x="1268" y="562" fill="#2b2622" font-family="Georgia, serif" font-size="43" font-weight="700">₹7.5 lakh</text>
 <text id="personal-room" x="1780" y="562" text-anchor="end" fill="#8a5d00" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="43" font-weight="760">₹1.5 lakh और</text>
 <text id="limit-source" x="1780" y="634" text-anchor="end" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="32" font-weight="600">MIS योजना, 2019</text>
-</g><g id="sum-pill"><rect id="sum-panel" x="1270" y="580" width="500" height="67" rx="31" fill="#2e7d4f"/><text id="sum-text" x="1520" y="627" text-anchor="middle" font-family="Georgia, serif" font-size="46" font-weight="700" fill="#ffffff">₹7.5 + ₹1.5 = ₹9 lakh</text></g>
+</g><text id="limit-source-new" x="1180" y="634" text-anchor="end" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="32" font-weight="600">MIS योजना, 2019</text>
+<g id="sum-pill"><rect id="sum-panel" x="1270" y="580" width="500" height="67" rx="31" fill="#2e7d4f"/><text id="sum-text" x="1520" y="627" text-anchor="middle" font-family="Georgia, serif" font-size="46" font-weight="700" fill="#ffffff">₹7.5 + ₹1.5 = ₹9 lakh</text></g>
 <g id="three-row">
 <g id="three-book"><use href="piece:passbook" transform="translate(183 703) scale(.6)"/><text x="255" y="942" text-anchor="middle" fill="#2b2622" font-family="Inter,sans-serif" font-size="46" font-weight="790">Joint MIS</text></g>
 <g id="group" fill="#ead9a8" stroke="#2b2622" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
@@ -48,10 +49,23 @@
 </svg>
 <script type="text/scene">{
 on:[
+[.33,"out","#limit-source",{dur:.15,scale:1}],
+[.54,"fade","#limit-source-new",{dur:.23}],
 [.54,"pop","#sum-pill",{spring:"fast",from:.96}],
-[2.01,"color",["#example-title","#example-amount","#example-book-label","#share-left","#share-right","#holder","#personal-share","#personal-room"],{to:"#6f6a63",dur:.3}],
-[2.01,"color",["#yellow-part","#share-marker","#example-bar"],{to:"#ece6db",dur:.3}],
-[2.01,"color",["#example-bar","#joint-divider","#personal-divider"],{to:"#aaa397",prop:"stroke",dur:.3}],
+[2.01,"color","#example-title",{to:"#6f6a63",dur:.3}],
+[2.01,"color","#example-amount",{to:"#6f6a63",dur:.3}],
+[2.01,"color","#example-book-label",{to:"#6f6a63",dur:.3}],
+[2.01,"color","#share-left",{to:"#6f6a63",dur:.3}],
+[2.01,"color","#share-right",{to:"#6f6a63",dur:.3}],
+[2.01,"color","#holder",{to:"#6f6a63",dur:.3}],
+[2.01,"color","#personal-share",{to:"#6f6a63",dur:.3}],
+[2.01,"color","#personal-room",{to:"#6f6a63",dur:.3}],
+[2.01,"color","#yellow-part",{to:"#ece6db",dur:.3}],
+[2.01,"color","#share-marker",{to:"#ece6db",dur:.3}],
+[2.01,"color","#example-bar",{to:"#ece6db",dur:.3}],
+[2.01,"color","#example-bar",{to:"#aaa397",prop:"stroke",dur:.3}],
+[2.01,"color","#joint-divider",{to:"#aaa397",prop:"stroke",dur:.3}],
+[2.01,"color","#personal-divider",{to:"#aaa397",prop:"stroke",dur:.3}],
 [2.01,"color","#sum-panel",{to:"#6f6a63",dur:.3}],
 [2.01,"pop","#three-book",{spring:"fast",from:.95}],
 [2.53,"grow","#three-joint-bar",{axis:"x",origin:"left",spring:"fast"}],
@@ -59,7 +73,9 @@ on:[
 [4.05,"draw","#group",{dur:.35}],
 [6.53,"draw","#three-dividers",{dur:.25}],
 [6.62,"pop","#three-shares",{spring:"fast",from:.94}],
-[8.69,"fade",["#three-holder","#three-cap-label","#three-track"],{dur:.22}],
+[8.69,"fade","#three-holder",{dur:.22}],
+[8.69,"fade","#three-cap-label",{dur:.22}],
+[8.69,"fade","#three-track",{dur:.22}],
 [8.69,"draw","#three-cap-line",{dur:.26}],
 [8.73,"grow","#three-sand",{axis:"x",origin:"left",spring:"fast"}],
 [8.86,"fade","#three-personal-share",{dur:.19}],
