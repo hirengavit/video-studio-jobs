@@ -1,0 +1,61 @@
+<section class="vs-scene" id="s017" data-in="cut" data-section="PART 1 · WHO CAN OPEN" data-series="POSB">
+<svg viewBox="0 0 1920 1080">
+ <rect width="1920" height="1080" fill="#fbf7ee"/>
+ <defs>
+   <pattern id="teeth" width="20" height="20" patternUnits="userSpaceOnUse">
+     <circle cx="10" cy="10" r="5.5" fill="#fbf7ee"/>
+   </pattern>
+   <g id="exam-stamp">
+     <rect width="760" height="380" rx="18" fill="#9e1b1b"/>
+     <rect x="0" y="-10" width="760" height="20" fill="url(#teeth)" transform="translate(0 10)"/>
+     <rect x="0" y="360" width="760" height="20" fill="url(#teeth)"/>
+     <rect x="0" y="0" width="20" height="380" fill="url(#teeth)"/>
+     <rect x="740" y="0" width="20" height="380" fill="url(#teeth)"/>
+     <rect x="23" y="23" width="714" height="334" rx="11" fill="none" stroke="#c46556" stroke-width="3"/>
+   </g>
+   <clipPath id="clip-child" clipPathUnits="userSpaceOnUse"><rect x="1365" y="714" width="123" height="267"/></clipPath>
+ </defs>
+ <text x="140" y="222" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700" font-size="64" fill="#9e1b1b">Exam के 2 numbers</text>
+ <g id="joint">
+   <g transform="translate(140 300)"><use href="#exam-stamp"/></g>
+   <text id="three" x="520" y="498" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="200" fill="#ffffff">3</text>
+   <text x="520" y="566" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="52" fill="#ffffff">Joint · maximum adults</text>
+   <text x="520" y="628" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="600" font-size="46" fill="#fde9a6">संयुक्त · अधिकतम adults</text>
+ </g>
+ <g id="minor">
+   <g transform="translate(1020 300)"><use href="#exam-stamp"/></g>
+   <text id="ten" x="1400" y="498" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="200" fill="#ffffff">10</text>
+   <text x="1400" y="566" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="700" font-size="52" fill="#ffffff">Minor · साल पूरे</text>
+   <text x="1400" y="628" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-weight="600" font-size="46" fill="#fde9a6">नाबालिग · खुद खाता</text>
+ </g>
+ <g id="td-icon">
+   <use href="piece:td-passbook-white" transform="translate(314 732) scale(0.55)"/>
+   <text x="380" y="974" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="44" fill="#342a23">TD · SB-5A</text>
+ </g>
+ <g id="mis-icon">
+   <use href="piece:passbook" transform="translate(594 732) scale(0.55)"/>
+   <text x="660" y="974" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="44" fill="#342a23">MIS · SB-5</text>
+ </g>
+ <g id="td-ok"><circle cx="451" cy="857" r="25" fill="#217149" stroke="#fbf7ee" stroke-width="4"/><path d="M439 857l8 8 15-17" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
+ <g id="mis-ok"><circle cx="731" cy="857" r="25" fill="#217149" stroke="#fbf7ee" stroke-width="4"/><path d="M719 857l8 8 15-17" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
+ <g id="minor-icon">
+   <ellipse cx="1427" cy="934" rx="67" ry="10" fill="#ead9a8"/>
+   <g clip-path="url(#clip-child)"><use href="piece:person-icons" transform="translate(1157 700) scale(0.8)"/></g>
+ </g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+ [3.18,'pop','#joint',{from:0.86}],
+ [3.88,'stamp','#three',{from:1.16,rot:-3}],
+ [5.14,'pop','#td-icon',{from:0.86}],
+ [5.54,'pop','#td-ok'],
+ [6.80,'pop','#mis-icon',{from:0.86}],
+ [7.44,'pop','#mis-ok'],
+ [8.56,'pop','#minor',{from:0.86}],
+ [8.84,'stamp','#ten',{from:1.16,rot:-3}],
+ [10.76,'fade','#minor-icon',{dur:0.35}],
+ ]
+}
+</script>
+</section>
