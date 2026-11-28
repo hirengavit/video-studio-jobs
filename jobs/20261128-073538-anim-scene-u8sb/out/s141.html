@@ -13,6 +13,7 @@
       <text x="550" y="548" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622" id="multiples">₹1,000 के multiples में</text>
       <text x="1750" y="956" font-family="Inter, sans-serif" font-size="36" font-weight="750" fill="#6f6a63" text-anchor="end">Post Office Monthly Income Account Scheme, 2019</text>
       <text id="one-deposit" x="550" y="668" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">हर खाते में एक ही deposit</text>
+      <path id="one-only-underline" d="M752 689 Q816 693 881 689" fill="none" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/>
       <text id="five-years" x="550" y="788" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="750" fill="#2b2622">खुलने से 5 साल बाद</text>
       <text id="maturity" x="1740" y="764" font-family="Inter, sans-serif" font-size="56" font-weight="750" fill="#9e1b1b" text-anchor="end">Maturity</text>
       <text id="maturity-hi" x="1740" y="815" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#6f6a63" text-anchor="end">परिपक्वता</text>
@@ -25,7 +26,7 @@
   <script type="text/scene">
     { on: [
       [1.34,"words","#one-deposit",{gap:0.10,dist:12}],
-      [2.06,"underline","#one-deposit",{words:"एक ही",color:"#f2b705",width:6,gap:11,dur:0.38}],
+      [2.06,"draw","#one-only-underline",{dur:0.38}],
       [4.02,"words","#five-years",{gap:0.11,dist:12}],
       [4.96,"fade","#maturity",{dur:0.25}],
       [5.46,"fade","#maturity-hi",{dur:0.27}],
