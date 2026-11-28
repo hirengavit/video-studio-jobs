@@ -12,27 +12,8 @@
   {
    "kind": "text-overlap",
    "scene": "s101",
-   "text": "4 साल / की न्यूनतम अवधि",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s101",
    "text": "परिपक्वता / की न्यूनतम अवधि",
-   "t": 0.3
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s101",
-   "text": "जल्दी बंद करने / की न्यूनतम अवधि",
-   "t": 0.3
-  },
-  {
-   "kind": "low-contrast",
-   "scene": "s101",
-   "text": "5-year TD की तय दर (2.6:1)",
-   "message": "text too close in colour to what's behind it",
-   "t": 0.3
+   "t": 2.35
   }
  ]
 }
