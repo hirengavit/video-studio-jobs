@@ -8,12 +8,5 @@
   "13.91"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s069",
-   "text": "Maturity · परिपक्वता / बाद की तारीख",
-   "t": 11.25
-  }
- ]
+ "warnings": []
 }
