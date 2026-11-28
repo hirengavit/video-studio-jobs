@@ -1,0 +1,57 @@
+<section class="vs-scene" id="s020" data-in="cut" data-section="PART 1 · WHO CAN OPEN" data-series="POSB">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <defs>
+      <clipPath id="joint-a-crop"><rect x="687" y="380" width="181" height="182"/></clipPath>
+      <clipPath id="joint-b-crop"><rect x="1564" y="378" width="108" height="145"/></clipPath>
+      <clipPath id="joint-b-adult-crop"><rect x="1671" y="402" width="70" height="103"/></clipPath>
+    </defs>
+    <g id="joint">
+      <text id="joint-heading" x="960" y="258" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="800" fill="#9e1b1b">Joint account: दो तरह</text>
+      <g id="joint-a">
+        <rect x="100" y="326" width="840" height="630" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <path d="M128 326H912Q940 326 940 354V545H100V354Q100 326 128 326Z" fill="#9e1b1b"/>
+        <text id="a-en" x="167" y="433" font-family="Inter, sans-serif" font-size="96" font-weight="800" fill="#ffffff">Joint A</text>
+        <text id="a-hi" x="167" y="513" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="650" fill="#fde9a6">संयुक्त A</text>
+        <rect x="644" y="372" width="230" height="156" rx="18" fill="#f3ead6"/>
+        <g clip-path="url(#joint-a-crop)"><use href="piece:person-icons" transform="translate(302 351) scale(.57)"/></g>
+        <path d="M166 699H874 M166 818H874" fill="none" stroke="#ead9a8" stroke-width="2"/>
+        <text id="a-line-1" x="167" y="650" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="750" fill="#2b2622">सारे depositors</text>
+        <text id="a-line-2" x="167" y="765" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="750" fill="#2b2622">(या सारे बचे हुए)</text>
+        <g id="a-joint-action">
+          <rect id="a-marker" x="153" y="844" width="154" height="64" rx="10" fill="#fde9a6"/>
+          <text id="a-line-3" x="167" y="894" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="750" fill="#2b2622">मिलकर चलाते हैं</text>
+        </g>
+      </g>
+      <g id="joint-b">
+        <rect x="980" y="326" width="840" height="630" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <path d="M1008 326H1792Q1820 326 1820 354V545H980V354Q980 326 1008 326Z" fill="#9e1b1b"/>
+        <text id="b-en" x="1047" y="433" font-family="Inter, sans-serif" font-size="96" font-weight="800" fill="#ffffff">Joint B</text>
+        <text id="b-hi" x="1047" y="513" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="650" fill="#fde9a6">संयुक्त B</text>
+        <rect x="1524" y="372" width="230" height="156" rx="18" fill="#f3ead6"/>
+        <g id="b-figures" clip-path="url(#joint-b-crop)"><use href="piece:person-icons" transform="translate(1230 363) scale(.49)"/></g>
+        <g id="b-one">
+          <rect x="1668" y="386" width="76" height="130" rx="15" fill="#fde9a6" stroke="#2e7d4f" stroke-width="4"/>
+          <g id="b-adult" clip-path="url(#joint-b-adult-crop)"><use href="piece:person-icons" transform="translate(1656 402) scale(.35)"/></g>
+        </g>
+        <path d="M1046 699H1754 M1046 818H1754" fill="none" stroke="#ead9a8" stroke-width="2"/>
+        <text id="b-line-1" x="1047" y="650" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="750" fill="#2b2622">कोई भी एक depositor</text>
+        <text id="b-line-2" x="1047" y="765" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="750" fill="#2b2622">(या कोई भी बचा हुआ)</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [0.52, "fade", "#a-line-2", {dur: 0.28}],
+      [2.60, "fade", "#a-line-3", {dur: 0.30}],
+      [2.68, "grow", "#a-marker", {axis: "x", origin: "left", spring: "soft"}],
+      [4.92, "slide", "#joint-b", {from: "right", dist: 86, spring: "soft"}],
+      [5.42, "fade", "#b-hi", {dur: 0.24}],
+      [6.32, "fade", "#b-line-1", {dur: 0.30}],
+      [6.48, "fade", "#b-one", {dur: 0.26}],
+      [7.94, "fade", "#b-line-2", {dur: 0.28}]
+    ]
+  }
+  </script>
+</section>
