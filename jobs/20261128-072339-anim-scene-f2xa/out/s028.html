@@ -9,15 +9,17 @@
       <text id="law-number" x="330" y="373" text-anchor="middle" font-family="Inter, sans-serif" font-size="130" font-weight="800" fill="#ffffff">3A</text>
       <g id="law-act">
         <path d="M248 388H412" stroke="#b8403a" stroke-width="3"/>
-        <text x="330" y="432" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="700" fill="#ffffff">Government Savings</text>
-        <text x="330" y="476" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="700" fill="#ffffff">Promotion Act, 1873</text>
-        <text x="330" y="532" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="32" font-weight="650" fill="#fde9a6">सरकारी बचत संवर्धन अधिनियम, 1873</text>
+        <text x="330" y="414" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="700" fill="#ffffff">Government Savings</text>
+        <text x="330" y="454" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="700" fill="#ffffff">Promotion Act, 1873</text>
+        <text x="330" y="499" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#fde9a6">सरकारी बचत संवर्धन</text>
+        <text x="330" y="537" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="650" fill="#fde9a6">अधिनियम, 1873</text>
       </g>
     </g>
     <g id="law-doc">
       <rect x="600" y="170" width="1220" height="410" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
       <text x="660" y="253" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="750" fill="#9e1b1b">कानून, एक line में</text>
       <path d="M660 280H1760" stroke="#ead9a8" stroke-width="3"/>
+      <rect id="law-highlight" x="652" y="301" width="236" height="59" rx="6" fill="#f2b705" fill-opacity="0.38"/>
       <text id="law-clause" x="660" y="345" font-family="Georgia, serif" font-size="52" fill="#2b2622">section 3A,</text>
       <text id="law-citation" x="660" y="411" font-family="Georgia, serif" font-size="52" fill="#2b2622">Government Savings Promotion Act, 1873</text>
       <g id="law-gist">
@@ -25,7 +27,7 @@
         <rect x="649" y="482" width="7" height="46" rx="3.5" fill="#9e1b1b"/>
         <text x="679" y="520" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#6f6a63">सार (gist):</text>
         <text x="918" y="520" font-family="Inter, sans-serif" font-size="44" font-weight="750" fill="#2b2622">Central Government</text>
-        <text id="law-gist-end" x="1393" y="520" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#2b2622">ये schemes बनाती है</text>
+        <text id="law-gist-end" x="1368" y="520" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#2b2622">ये schemes बनाती है</text>
       </g>
     </g>
   </svg>
@@ -37,7 +39,7 @@
       [4.74, 'type', '#law-citation', {cps: 18}],
       [6.50, 'fade', '#law-act', {dur: 0.3}],
       [8.84, 'stamp', '#law-number', {from: 1.25, rot: -5, spring: 'soft'}],
-      [8.84, 'highlight', '#law-clause', {words: 'section 3A', color: '#f2b705', opacity: 0.38, dur: 0.42}],
+      [8.84, 'reveal', '#law-highlight', {from: 'left', dur: 0.42}],
       [10.42, 'fade', '#law-gist-end', {dur: 0.26}],
     ],
   }
