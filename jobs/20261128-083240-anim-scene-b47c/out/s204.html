@@ -32,6 +32,7 @@
     <rect x="1120" y="380" width="600" height="140" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/>
     <text x="1420" y="437" font-size="52" font-weight="750">Single adult:</text>
     <text id="limit-copy" x="1420" y="495" font-size="52" font-weight="850" font-family="'Noto Sans Devanagari', Inter, sans-serif">₹9 lakh सीमा</text>
+    <path id="limit-mark" d="M1268 507 Q1358 510 1455 507" fill="none" stroke="#9e1b1b" stroke-width="5" stroke-linecap="round"/>
   </g>
   <text id="limit-source" x="1420" y="573" text-anchor="middle" font-size="44" font-weight="650" fill="#6f6a63">MIS scheme</text>
 </g>
@@ -44,7 +45,7 @@
   [3.56,"pulse","#joint-book",{amount:0.045}],
   [5.00,"slide","#limit-chip",{from:"right",dist:50,spring:"soft"}],
   [6.04,"fade","#limit-source",{dur:0.25}],
-  [6.66,"underline","#limit-copy",{words:"₹9 lakh",color:"#9e1b1b",width:5,gap:7,dur:0.38}]
+  [6.66,"draw","#limit-mark",{dur:0.38}]
 ]})
 </script>
 </section>
