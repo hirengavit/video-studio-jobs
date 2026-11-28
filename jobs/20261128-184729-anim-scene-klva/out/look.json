@@ -8,12 +8,5 @@
   "11.37"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s028",
-   "text": "ये schemes बनाती है",
-   "t": 11.37
-  }
- ]
+ "warnings": []
 }
