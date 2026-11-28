@@ -1,0 +1,70 @@
+<section class="vs-scene" id="s111" data-in="wipe" data-in-dur="0.6" data-in-opts='{"from":"right"}' data-section="PART 6 · TD PLEDGE" data-series="POSB">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="def">
+ <g id="term-card">
+  <rect x="585" y="164" width="750" height="372" rx="25" fill="#9e1b1b" stroke="#7d1414" stroke-width="4"/>
+  <rect x="604" y="184" width="712" height="333" rx="15" fill="none" stroke="#b8403a" stroke-width="3"/>
+  <rect x="585" y="166" width="750" height="368" rx="23" fill="none" stroke="#fbf7ee" stroke-width="8" stroke-dasharray="1 22" stroke-linecap="round"/>
+  <text x="960" y="330" text-anchor="middle" font-family="Inter, sans-serif" font-size="112" font-weight="780" fill="#ffffff">Pledging</text>
+  <text id="pledging-hi" x="960" y="430" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="56" font-weight="780" fill="#fde9a6">गिरवी रखना</text>
+ </g>
+ <g id="book">
+  <use href="piece:td-passbook-white" transform="translate(200 620)"/>
+  <text x="332" y="747" text-anchor="middle" font-family="Inter, sans-serif" font-size="23" font-weight="780" fill="#2b2622">TD · SB-5A</text>
+ </g>
+ <g id="institution-icon" transform="translate(1360 620) scale(.818182 .708333) translate(-1160 -420)" stroke="#2b2622" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1165 542L1380 424L1595 542Z" fill="#f3ead6"/>
+        <path d="M1194 542H1566V845H1194Z" fill="#fff"/>
+        <path d="M1175 542H1585V569H1175Z" fill="#9e1b1b"/>
+        <path d="M1221 574H1271V832H1221ZM1321 574H1371V832H1321ZM1389 574H1439V832H1389ZM1489 574H1539V832H1489Z" fill="#f3ead6"/>
+        <path d="M1181 835H1579V863H1181ZM1165 865H1595V899H1165Z" fill="#f3ead6"/>
+      </g>
+ <text id="institution-label" x="1540" y="588" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48" font-weight="720" fill="#2b2622">पात्र संस्था या authority</text>
+ <path id="security-arrow" d="M470 800H1330M1300 778L1330 800L1300 822" fill="none" stroke="#2b2622" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+ <text id="security-en" x="900" y="690" text-anchor="middle" font-family="Inter, sans-serif" font-size="64" font-weight="780" fill="#2b2622">security</text>
+ <text id="security-hi" x="900" y="745" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48" font-weight="650" fill="#6f6a63">ज़मानत</text>
+ <text id="transfer-en" x="900" y="870" text-anchor="middle" font-family="Inter, sans-serif" font-size="56" font-weight="780" fill="#2b2622">transfer</text>
+ <text id="transfer-hi" x="900" y="930" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="48" font-weight="650" fill="#6f6a63">हस्तांतरण</text>
+</g>
+<g id="notwithdraw">
+ <rect x="180" y="338" width="640" height="588" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+ <rect x="1100" y="338" width="640" height="588" rx="30" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+ <g id="pledging-side">
+  <text x="500" y="510" text-anchor="middle" font-family="Inter, sans-serif" font-size="96" font-weight="780" fill="#9e1b1b">Pledging</text>
+  <text x="500" y="580" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="52" font-weight="680" fill="#6f6a63">गिरवी रखना</text>
+  <use href="piece:td-passbook-white" transform="translate(416 639) scale(.7)"/>
+  <text x="508" y="729" text-anchor="middle" font-family="Inter, sans-serif" font-size="17" font-weight="780" fill="#2b2622">TD · SB-5A</text>
+ </g>
+ <g id="withdrawal-side">
+  <text x="1420" y="539" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="80" font-weight="780" fill="#2b2622">पैसा निकालना</text>
+  <use href="piece:rupee-note-bundle" transform="translate(1260 640)"/>
+ </g>
+ <path id="not-equal" d="M903 544H1017M903 581H1017M929 618L991 509" fill="none" stroke="#9e1b1b" stroke-width="11" stroke-linecap="round"/>
+ <g id="separate"><text x="960" y="736" text-anchor="middle" font-family="Noto Sans Devanagari, Inter, sans-serif" font-size="64" font-weight="780" fill="#9e1b1b">अलग</text></g>
+ <path id="underline" d="M896 759Q960 767 1026 757" fill="none" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,"#def"],[8.76,"#notwithdraw"]],
+ on:[
+  [0.50,"fade","#pledging-hi",{dur:.22}],
+  [0.94,"pop","#book",{from:.92,spring:"soft"}],
+  [2.76,"draw","#institution-icon",{dur:.46}],
+  [2.76,"fade","#institution-label",{dur:.27}],
+  [5.44,"draw","#security-arrow",{dur:.5}],
+  [5.44,"fade","#security-en",{dur:.24}],
+  [5.94,"fade","#security-hi",{dur:.22}],
+  [7.48,"fade","#transfer-en",{dur:.21}],
+  [7.48,"pulse","#book",{amount:.035}],
+  [7.98,"fade","#transfer-hi",{dur:.20}],
+  [8.76,"pop","#pledging-side",{from:.95,spring:"soft"}],
+  [9.06,"draw","#not-equal",{dur:.26}],
+  [9.56,"fade","#withdrawal-side",{dur:.28}],
+  [10.74,"pop","#separate",{from:.96,spring:"soft"}],
+  [10.94,"draw","#underline",{dur:.26}]
+ ]
+}
+</script>
+</section>
