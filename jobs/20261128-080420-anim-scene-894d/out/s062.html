@@ -15,11 +15,11 @@
   <rect x="940" y="807" width="260" height="73" rx="9" fill="#f2b705" opacity=".29"/>
   <text id="same-term" x="1160" y="864" text-anchor="middle" fill="#30271f" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="750">उसी अवधि के लिए</text>
  </g>
- <g id="settled-card"><g transform="translate(528 34) scale(.45)">
+ <g id="settled-card"><g transform="translate(528 54) scale(.45)">
   <use href="piece:stamp-term-card" transform="translate(288 280) scale(.96)"/>
   <use href="piece:td-passbook-white" transform="translate(432 393) scale(.65)"/>
   <text id="extension-word-small" x="1130" y="495" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-size="110" font-weight="800">Extension</text>
-  <text id="extension-hi-small" x="1130" y="605" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="87" font-weight="750">अवधि बढ़ाना</text>
+  <text id="extension-hi-small" x="1130" y="605" text-anchor="middle" fill="#fde9a6" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="100" font-weight="750">अवधि बढ़ाना</text>
  </g></g>
 </g>
 <g id="term-track">
@@ -43,9 +43,9 @@
 {
  on:[
   [.40,"out","#extension-line",{dur:.26,scale:1}],
-  [.43,"move","#card-shift",{by:[0,-275],spring:"soft"}],
+  [.43,"move","#card-shift",{by:[0,-105],spring:"soft"}],
   [.51,"out","#extension-card",{dur:.52,scale:.45}],
-  [.82,"fade","#settled-card",{dur:.21}],
+  [1.03,"fade","#settled-card",{dur:.16}],
   [2.34,"grow","#original-block",{axis:"x",origin:"left",spring:"soft"}],
   [3.04,"fade","#original-label",{dur:.24}],
   [4.40,"grow","#more-block",{axis:"x",origin:"left",spring:"soft"}],
