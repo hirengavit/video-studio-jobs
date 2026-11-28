@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s079" data-in="cut" data-section="PART 4 · TD TAX BENEFIT" data-series="POSB">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text x="450" y="231" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="62" font-weight="780" fill="#9e1b1b">दो अलग बातें</text>
+    <g id="point-one">
+      <rect x="160" y="174" width="254" height="82" rx="41" fill="#9e1b1b"/>
+      <text x="287" y="227" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="750" fill="#fff">1 · पहला</text>
+    </g>
+    <g id="myth">
+      <rect x="160" y="300" width="1600" height="240" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="210" y="334" width="142" height="62" rx="31" fill="#4b4f58"/>
+      <text x="281" y="379" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="730" fill="#fff">भ्रम</text>
+      <text id="principal" x="210" y="477" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="67" font-weight="770" fill="#2b2622">principal पर deduction</text>
+      <path id="arrow" d="M1000 453H1070M1053 436L1070 453L1053 470" fill="none" stroke="#4b4f58" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text id="interest" x="1104" y="477" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="67" font-weight="750" fill="#2b2622">ब्याज</text>
+      <text id="taxfree" x="1365" y="477" font-family="Inter, sans-serif" font-size="67" font-weight="760" fill="#2b2622">tax-free</text>
+      <path id="cross" d="M1672 431L1716 475M1716 431L1672 475" fill="none" stroke="#4b4f58" stroke-width="10" stroke-linecap="round"/>
+    </g>
+    <g id="fact">
+      <rect x="160" y="590" width="1600" height="240" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+      <rect x="210" y="623" width="142" height="62" rx="31" fill="#2e7d4f"/>
+      <text x="281" y="669" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="730" fill="#fff">सही</text>
+      <text x="210" y="767" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="780" fill="#2b2622">TD का ब्याज</text>
+      <text id="taxable" x="720" y="767" font-family="Inter, sans-serif" font-size="72" font-weight="780" fill="#2b2622">taxable</text>
+      <text id="remains" x="1045" y="767" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="72" font-weight="780" fill="#2b2622">रहता है</text>
+    </g>
+    <g id="recap">
+      <rect x="160" y="870" width="1600" height="90" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+      <text x="960" y="932" text-anchor="middle" font-family="Inter, sans-serif" font-size="55" font-weight="780" fill="#9e1b1b">Deduction ≠ tax-free interest</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    on: [
+      [2.62, "pop", "#point-one", {from:0.94, spring:"soft"}],
+      [3.24, "slide", "#myth", {from:"down", dist:25, spring:"soft"}],
+      [3.30, "words", "#principal", {gap:0.42, dist:8}],
+      [5.48, "draw", "#arrow", {dur:0.28}],
+      [5.68, "fade", "#interest", {dur:0.19}],
+      [6.36, "fade", "#taxfree", {dur:0.19}],
+      [7.14, "strike", "#taxfree", {words:"tax-free", color:"#4b4f58", width:8, dur:0.31, dim:0.53}],
+      [7.52, "draw", "#cross", {dur:0.34}],
+      [8.20, "slide", "#fact", {from:"down", dist:23, spring:"soft"}],
+      [9.20, "fade", "#taxable", {dur:0.16}],
+      [9.25, "highlight", "#taxable", {words:"taxable", color:"#f2b705", opacity:0.35, dur:0.36}],
+      [10.22, "fade", "#remains", {dur:0.18}],
+      [10.22, "stamp", "#recap", {from:1.035, rot:0, spring:"soft"}]
+    ]
+  }
+  </script>
+</section>
