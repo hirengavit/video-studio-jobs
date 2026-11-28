@@ -1,0 +1,35 @@
+<section class="vs-scene" id="s098" data-section="PART 5 · TD EARLY CLOSURE" data-series="POSB" data-in="cut">
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <!-- Carry the settled date-shot unchanged at the start of s099. -->
+    <g id="date-shot">
+      <use href="piece:td-passbook-white" transform="translate(180 220) scale(1.2)"/>
+      <text id="book-label" x="338.4" y="366" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="28" font-weight="750" fill="#2b2622">TD · 5 साल</text>
+      <text id="term" x="160" y="730" font-family="Inter, sans-serif" font-size="96" font-weight="820" fill="#2b2622">5-year TD</text>
+      <text id="term-hi" x="160" y="800" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="640" fill="#6f6a63">5 साल की सावधि जमा</text>
+      <text id="strict" x="160" y="900" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="760" fill="#9e1b1b">शर्त ज़्यादा सख्त</text>
+      <use id="calendar" href="piece:calendar-page" transform="translate(1000 200) scale(2)"/>
+      <text id="day" x="1260" y="643" text-anchor="middle" font-family="Inter, sans-serif" font-size="220" font-weight="820" fill="#2b2622">10</text>
+      <text id="month" x="1052" y="345" font-family="Inter, sans-serif" font-size="52" font-weight="750" fill="#ffffff">November</text>
+      <text id="year" x="1341" y="345" font-family="Inter, sans-serif" font-size="52" font-weight="750" fill="#ffffff">2023</text>
+      <text id="opened" x="1260" y="900" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="730" fill="#2b2622">या उसके बाद खुला</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {
+      on: [
+        [0.58, "pop", "#book-label", {from: 0.92}],
+        [0.58, "tracking", "#term", {from: 8, dur: 0.40}],
+        [1.08, "fade", "#term-hi", {dur: 0.26}],
+        [2.40, "words", "#strict", {gap: 0.23, dist: 10}],
+        [3.32, "underline", "#strict", {words: "सख्त", color: "#f2b705", width: 8, gap: 11, dur: 0.42}],
+        [4.64, "pop", "#calendar", {from: 0.96}],
+        [4.64, "stamp", "#day", {from: 1.20, rot: -4}],
+        [4.84, "fade", "#month", {dur: 0.20}],
+        [5.62, "fade", "#year", {dur: 0.20}],
+        [7.52, "words", "#opened", {gap: 0.17, dist: 12}],
+        [9.26, "pulse", "#term", {amount: 0.05}]
+      ]
+    }
+  </script>
+</section>
