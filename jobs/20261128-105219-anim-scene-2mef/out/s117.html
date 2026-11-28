@@ -74,10 +74,10 @@
       <text id="need-both" x="960" y="915" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="740" fill="#9e1b1b">दोनों चाहिए</text>
     </g>
     <g id="ledger">
-      <use id="pledge-ledger" href="piece:pda-passbook" transform="translate(180 224) scale(1.2)"/>
-      <rect id="entry-highlight" x="1170" y="406" width="334" height="39" rx="8" fill="#f2b705" fill-opacity=".29"/>
-      <text id="officer-en" x="960" y="192" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="740" fill="#2b2622">authorised officer</text>
-      <text id="officer-hi" x="960" y="241" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">प्राधिकृत अधिकारी</text>
+      <use id="pledge-ledger" href="piece:pda-passbook" transform="translate(212.5 249) scale(1.15)"/>
+      <rect id="entry-highlight" x="1162" y="423" width="320" height="34" rx="8" fill="#f2b705" fill-opacity=".29"/>
+      <text id="officer-en" x="960" y="186" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="740" fill="#2b2622">authorised officer</text>
+      <text id="officer-hi" x="960" y="233" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">प्राधिकृत अधिकारी</text>
     </g>
   </svg>
   <script type="text/scene">
@@ -89,7 +89,7 @@
       [4.59,"pop","#approval-chip",{spring:"snap"}],[4.80,"draw","#approval-tick",{dur:.27}],
       [5.88,"pop","#notification-chip",{spring:"snap"}],[6.09,"draw","#notification-tick",{dur:.27}],
       [6.61,"fade","#need-both",{dur:.31}],
-      [10.54,"fade","#officer-en",{dur:.32}],[11.04,"fade","#officer-hi",{dur:.32}],
+      [10.54,"fade","#officer-en",{dur:.32}],[11.04,"fade","#officer-hi",{dur:.073}],
       [12.36,"fade","#entry-highlight",{dur:.4}]
     ],
     update(t,section,$) {
