@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1640 300" width="1640" height="300">
+  <rect id="card" x="1.5" y="1.5" width="1637" height="297" rx="16" fill="#ffffff" stroke="#ead9a8" stroke-width="3"/>
+  <g id="boxes" stroke="#2b2622" stroke-width="3" stroke-linejoin="round">
+    <rect id="box-1" x="40" y="70" width="92" height="150" rx="8" fill="#d5cebf"/>
+    <rect id="box-2" x="140" y="70" width="92" height="150" rx="8" fill="#f3ead6"/>
+    <rect id="box-3" x="240" y="70" width="92" height="150" rx="8" fill="#f3ead6"/>
+    <rect id="box-4" x="340" y="70" width="92" height="150" rx="8" fill="#f3ead6"/>
+    <rect id="box-5" x="440" y="70" width="92" height="150" rx="8" fill="#f3ead6"/>
+    <rect id="box-6" x="540" y="70" width="92" height="150" rx="8" fill="#f3ead6"/>
+    <rect id="box-7" x="640" y="70" width="92" height="150" rx="8" fill="#f3ead6"/>
+    <rect id="box-8" x="740" y="70" width="92" height="150" rx="8" fill="#f3ead6"/>
+    <rect id="box-9" x="840" y="70" width="92" height="150" rx="8" fill="#f3ead6"/>
+    <rect id="box-10" x="940" y="70" width="92" height="150" rx="8" fill="#f3ead6"/>
+    <rect id="box-11" x="1040" y="70" width="92" height="150" rx="8" fill="#f3ead6"/>
+    <rect id="box-12" x="1140" y="70" width="92" height="150" rx="8" fill="#f3ead6"/>
+    <rect id="box-13" x="1240" y="70" width="92" height="150" rx="8" fill="#f3ead6"/>
+    <rect id="box-14" x="1340" y="70" width="92" height="150" rx="8" fill="#f3ead6"/>
+    <rect id="box-15" x="1440" y="70" width="92" height="150" rx="8" fill="#f3ead6"/>
+    <rect id="box-16" x="1540" y="70" width="92" height="150" rx="8" fill="#f3ead6"/>
+  </g>
+  <path id="count-arrow" d="M132 242 V262 M132 252 H1630 M1616 242 L1630 252 L1616 262" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g id="maturity-mark" fill="none" stroke="#9e1b1b">
+    <circle cx="1584" cy="186" r="52" stroke-width="5"/>
+    <circle cx="1584" cy="186" r="42" stroke-width="2"/>
+  </g>
+  <circle data-anchor="top" cx="820" cy="0" r="0"/>
+  <circle data-anchor="base" cx="820" cy="300" r="0"/>
+</svg>
