@@ -8,12 +8,5 @@
   "6.89"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-overlap",
-   "scene": "s164",
-   "text": "Gujarat Govt / गुजरात सरकार के",
-   "t": 1.41
-  }
- ]
+ "warnings": []
 }
