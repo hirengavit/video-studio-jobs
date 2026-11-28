@@ -44,8 +44,7 @@
         <rect x="202" y="882" width="60" height="60" rx="17" fill="#9e1b1b"/>
         <text x="232" y="927" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="790" fill="#ffffff">5</text>
         <text id="pledgee-en5" x="295" y="909" font-family="Inter, sans-serif" font-size="56" font-weight="790" fill="#2b2622">Housing finance company</text>
-        <text id="nhb-approved" x="360" y="965" font-family="Inter, sans-serif" font-size="44" font-weight="580" fill="#8a5d00">NHB approved</text>
-        <text id="central-government-notified" x="760" y="965" font-family="Inter, sans-serif" font-size="44" font-weight="580" fill="#8a5d00">+ Central Govt notified</text>
+        <text id="pledgee-hi5" x="295" y="965" font-family="Inter, sans-serif" font-size="44" font-weight="580" fill="#6f6a63"><tspan id="nhb-approved" fill="#8a5d00">NHB approved</tspan> <tspan id="central-government-notified" fill="#8a5d00">+ Central Govt notified</tspan></text>
         <path id="nhb-approval-mark" d="M360 976 Q512 979 666 975" fill="none" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/>
         <path id="central-notified-mark" d="M1060 976 Q1145 979 1224 975" fill="none" stroke="#f2b705" stroke-width="6" stroke-linecap="round"/>
       </g>
@@ -74,8 +73,8 @@
       <text id="need-both" x="960" y="915" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="740" fill="#9e1b1b">दोनों चाहिए</text>
     </g>
     <g id="ledger">
-      <use id="pledge-ledger" href="piece:pda-passbook" transform="translate(212.5 299) scale(1.15)"/>
-      <rect id="entry-highlight" x="1162" y="473" width="320" height="34" rx="8" fill="#f2b705" fill-opacity=".29"/>
+      <use id="pledge-ledger" href="piece:pda-passbook" transform="translate(290.5 277) scale(1.03)"/>
+      <rect id="entry-highlight" x="1140" y="436" width="289" height="34" rx="8" fill="#f2b705" fill-opacity=".29"/>
       <text id="officer-en" x="960" y="186" text-anchor="middle" font-family="Inter, sans-serif" font-size="60" font-weight="740" fill="#2b2622">authorised officer</text>
       <text id="officer-hi" x="960" y="233" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="600" fill="#6f6a63">प्राधिकृत अधिकारी</text>
     </g>
@@ -95,8 +94,8 @@
     update(t,section,$) {
       const spans=[
         ["#housing-company-marker","#pledgee-en5","Housing finance company",true],
-        ["#nhb-approval-mark","#nhb-approved","NHB approved",false],
-        ["#central-notified-mark","#central-government-notified","notified",false]
+        ["#nhb-approval-mark","#pledgee-hi5","NHB approved",false],
+        ["#central-notified-mark","#pledgee-hi5","notified",false]
       ];
       if(t>=0.40)return;
       for(const [id,selector,word,box] of spans){
