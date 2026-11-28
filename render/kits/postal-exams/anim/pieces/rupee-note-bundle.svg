@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g id="notes">
+      <rect x="1.5" y="16" width="317" height="182.5" rx="12" fill="#ead9a8"/>
+      <path d="M3 172H317M3 182H317M6 191H314" fill="none" stroke="#6f6a63" stroke-width="1.6"/>
+      <rect x="1.5" y="1.5" width="317" height="163" rx="12" fill="#f3ead6"/>
+      <rect x="13" y="13" width="294" height="140" rx="7" fill="none" stroke="#6f6a63" stroke-width="1.5"/>
+      <path d="M25 39V26H40M280 26H295V39M25 126V140H40M280 140H295V126" fill="none" stroke="#6f6a63" stroke-width="1.6"/>
+      <path d="M53 81h24m-19 13h14m171-13h24m-19 13h14" fill="none" stroke="#6f6a63" stroke-width="2"/>
+    </g>
+    <g id="band">
+      <path d="M118 1.5H202V188Q202 198.5 191 198.5H129Q118 198.5 118 188Z" fill="#9e1b1b"/>
+      <path d="M118 164.5H202V188Q202 198.5 191 198.5H129Q118 198.5 118 188Z" fill="#7d1414"/>
+      <path d="M128 2V160M192 2V160" fill="none" stroke="#b8403a" stroke-width="1.7"/>
+    </g>
+    <g id="rupee">
+      <circle cx="160" cy="83" r="22" fill="#fbf7ee" stroke="#7d1414" stroke-width="2"/>
+      <path d="M150 74H170M150 80H170M150 74H157C165 74 166 88 153 88H150L164 99" fill="none" stroke="#9e1b1b" stroke-width="2.6"/>
+    </g>
+  </g>
+  <circle data-anchor="base" cx="160" cy="200" r="0"/>
+  <circle data-anchor="top" cx="160" cy="0" r="0"/>
+  <circle data-anchor="grip" cx="160" cy="100" r="0"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" width="1200" height="760">
+  <g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect id="paper" x="7" y="7" width="1186" height="746" rx="17" fill="white" stroke="#ead9a8" stroke-width="9"/>
+    <path id="top-zone" d="M20 26Q20 20 26 20H1174Q1180 20 1180 26V232H20Z" fill="#fbf7ee" stroke="none"/>
+    <rect x="7" y="7" width="1186" height="746" rx="17" fill="none"/>
+    <rect id="stamp-box" x="973" y="51" width="179" height="151" rx="7" fill="none" stroke="#6f6a63" stroke-dasharray="13 9"/>
+    <path id="address-block" d="M437 412H923 M437 463H875 M437 514H903 M437 565H777" fill="none" stroke="#a4a098"/>
+  </g>
+  <circle data-anchor="base" cx="600" cy="753" r="0"/>
+  <circle data-anchor="top" cx="600" cy="7" r="0"/>
+</svg>

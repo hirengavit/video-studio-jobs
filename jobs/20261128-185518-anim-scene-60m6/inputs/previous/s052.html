@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s052" data-in="cut" data-section="PART 3 · TD INTEREST" data-series="POSB">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="holiday">
+      <text id="holiday-heading" x="120" y="220" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="760" fill="#9e1b1b">ब्याज की तारीख पर छुट्टी</text>
+      <use id="previous-calendar" href="piece:calendar-page" transform="translate(300 360) scale(1.3)"/>
+      <use id="holiday-calendar" href="piece:calendar-page" transform="translate(1280 360) scale(1.3)"/>
+      <text id="week-day" x="469" y="596" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="650" letter-spacing="-1.25" fill="#332e29">working day</text>
+      <text id="closed-day" x="1449" y="596" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="700" fill="#6f6a63">छुट्टी</text>
+      <text id="previous-caption" x="469" y="820" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#6f6a63">ठीक पहले वाला</text>
+      <text id="holiday-caption" x="1449" y="820" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#6f6a63">ब्याज की तारीख</text>
+      <path id="holiday-arrow" d="M 1222 527 C 1060 468 863 468 697 527 M 722 504 L 697 527 L 733 537" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="due-postmark"><circle cx="614" cy="430" r="59" fill="#fbf7ee" stroke="#9e1b1b" stroke-width="7"/><circle cx="614" cy="430" r="49" fill="none" stroke="#9e1b1b" stroke-width="2.5" stroke-dasharray="3 5"/><text x="614" y="445" text-anchor="middle" font-family="Inter, sans-serif" font-weight="800" font-size="43" fill="#9e1b1b">due</text></g>
+    </g>
+    <g id="due">
+      <rect id="due-ledge" x="120" y="820" width="1680" height="20" rx="7" fill="#dfca98"/>
+      <rect id="due-box" x="140" y="300" width="620" height="520" rx="26" fill="#fffdf8" stroke="#6f6a63" stroke-width="5" stroke-dasharray="15 13"/>
+      <text id="due-account" x="450" y="392" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="730" fill="#6f6a63">TD का हिसाब</text>
+      <g id="due-book" transform="translate(330 484)"><use href="piece:td-passbook-white"/><text x="132" y="122" text-anchor="middle" font-family="Inter, sans-serif" font-size="25" font-weight="800" fill="#332e29">TD · SB-5A</text></g>
+      <g id="due-coin"><use href="piece:rupee-coin" transform="translate(900 676) scale(1.2)"/><text x="972" y="773" text-anchor="middle" font-family="Inter, sans-serif" font-size="58" font-weight="800" fill="#332e29">₹</text></g>
+      <g id="due-pill"><rect x="876" y="543" width="192" height="82" rx="41" fill="#fde9a6" stroke="#f2b705" stroke-width="3"/><text x="972" y="597" text-anchor="middle" font-family="Inter, sans-serif" font-size="49" font-weight="780" fill="#805400">due</text></g>
+      <text id="due-unwithdrawn" x="1116" y="640" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#6f6a63">निकाला नहीं</text>
+      <g id="extra-chip"><rect x="1200" y="720" width="520" height="90" rx="23" fill="#f3ead6"/><text id="extra-label" x="1440" y="786" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="740" fill="#332e29">+ extra ब्याज</text></g>
+      <path id="extra-cross" d="M 1640 752 L 1676 782 M 1676 752 L 1640 782" fill="none" stroke="#4b4f58" stroke-width="9" stroke-linecap="round"/>
+    </g>
+  </svg>
+  <script type="text/scene">
+  {
+    shots: [[0, '#holiday'], [2.38, '#due']],
+    on: [
+      [0.32, 'stamp', '#due-postmark', {from: 1.28, rot: -8, spring: 'soft'}],
+      [2.62, 'pop', '#due-coin', {from: 0.92, spring: 'soft'}],
+      [3.08, 'pop', '#due-pill', {from: 0.92, spring: 'soft'}],
+      [4.48, 'fade', '#due-unwithdrawn', {dur: 0.24}],
+      [8.02, 'pop', '#extra-chip', {from: 0.92, spring: 'soft'}],
+      [9.14, 'strike', '#extra-label', {color: '#4b4f58', width: 8, dur: 0.22, dim: 0.68}],
+      [9.14, 'pop', '#extra-cross', {from: 0.85, spring: 'soft'}]
+    ]
+  }
+  </script>
+</section>
