@@ -1,0 +1,75 @@
+<section class="vs-scene" id="s122" data-section="PART 6 · TD PLEDGE" data-series="POSB" data-in="cut">
+  <svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="depositor">
+      <rect x="160" y="220" width="840" height="740" rx="26" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text x="220" y="352" font-family="Inter, sans-serif" font-size="88" font-weight="800" fill="#9e1b1b">Depositor</text>
+      <text id="depositor-hi" x="220" y="430" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#9e1b1b">जमाकर्ता</text>
+      <path d="M220 465H940" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+      <g id="blindness-chip">
+        <rect x="220" y="496" width="720" height="104" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+        <text x="270" y="568" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="700" fill="#2b2622">अंधापन</text>
+      </g>
+      <g id="weakness-chip">
+        <rect x="220" y="636" width="720" height="104" rx="24" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+        <text x="270" y="708" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="700" fill="#2b2622">शारीरिक कमज़ोरी</text>
+      </g>
+      <text id="account-operation" x="220" y="860" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#2b2622">खुद खाता न चला सके</text>
+
+      <g id="authority-arrow" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <path id="authority-shaft" d="M1018 575h44"/>
+        <path id="authority-tip" d="M1048 561l14 14-14 14"/>
+      </g>
+      <g id="authority">
+        <rect x="1080" y="220" width="680" height="740" rx="26" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+        <use href="piece:signature-slip" transform="translate(1180 245) scale(1.2)"/>
+        <g id="authority-text" fill="#2b2622" font-weight="700" font-size="52" text-anchor="middle">
+          <text x="1420" y="760" font-family="Inter, sans-serif">authorised</text>
+          <text x="1420" y="830" font-family="'Noto Sans Devanagari', Inter, sans-serif">पढ़े-लिखे व्यक्ति के ज़रिए</text>
+        </g>
+      </g>
+    </g>
+    <g id="rule">
+      <text id="rule-heading" x="160" y="243" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="800" fill="#9e1b1b">ज़रूरी नियम</text>
+      <path id="rule-underline" d="M162 261H514" stroke="#f2b705" stroke-width="8" stroke-linecap="round"/>
+      <g id="security-book">
+        <use href="piece:td-passbook-white" transform="translate(200 335) scale(1.3)"/>
+        <text x="371.6" y="493" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="760" textLength="150" lengthAdjust="spacingAndGlyphs" fill="#2b2622">TD · SB-5A</text>
+        <rect x="269.6" y="760" width="204" height="64" rx="22" fill="#f3ead6" stroke="#ead9a8" stroke-width="2"/>
+        <text x="371.6" y="807" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="600" fill="#2b2622">security</text>
+      </g>
+      <path id="transfer-tip" d="M886 525l22 22-22 22" fill="none" stroke="#9e1b1b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path id="transfer-arrow" d="M560 547H908" fill="none" stroke="#9e1b1b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <g id="nomination-slip">
+        <rect x="960" y="340" width="640" height="414" rx="23" fill="#fff" stroke="#ead9a8" stroke-width="3"/>
+        <path d="M983 340h594q23 0 23 23v105H960V363q0-23 23-23z" fill="#9e1b1b"/>
+        <text id="nomination-header" x="1280" y="426" text-anchor="middle" fill="#fff" font-family="Inter, sans-serif" font-size="64" font-weight="760">Nomination</text>
+        <path d="M1020 535h485m-485 65h456m-456 65h438" fill="none" stroke="#c6c0b6" stroke-width="6" stroke-linecap="round"/>
+        <path id="nomination-strike" d="M1080 405H1480" fill="none" stroke="#4b4f58" stroke-width="7" stroke-linecap="round"/>
+      </g>
+      <text id="nomination-hi" x="1280" y="820" text-anchor="middle" fill="#6f6a63" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="670">नामांकन</text>
+      <path id="cancel-cross" d="M1630 517l60 60m0-60-60 60" fill="none" stroke="#4b4f58" stroke-width="12" stroke-linecap="round"/>
+      <text id="cancel" x="1280" y="930" text-anchor="middle" fill="#4b4f58" font-family="Inter, sans-serif" font-size="72" font-weight="800">cancel</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {
+      shots: [[0, "#depositor"], [4.83, "#rule"]],
+      on: [
+        [0.84,"draw","#authority-shaft",{dur:0.21}],
+        [1.04,"fade","#authority-tip",{dur:0.10}],
+        [0.84,"pop","#authority",{from:0.96,spring:"soft"}],
+        [2.00,"fade","#authority-text",{dur:0.28}],
+        [5.23,"draw","#rule-underline",{dur:0.43}],
+        [6.47,"pop","#security-book",{from:0.94,spring:"soft"}],
+        [7.53,"draw","#transfer-arrow",{dur:0.40}],
+        [7.92,"fade","#transfer-tip",{dur:0.12}],
+        [8.57,"pop","#nomination-slip",{from:0.96,spring:"soft"}],
+        [9.07,"fade","#nomination-hi",{dur:0.28}],
+        [9.55,"draw","#nomination-strike",{dur:0.27}],
+        [9.55,"fade","#cancel-cross",{dur:0.25}],
+        [9.55,"fade","#cancel",{dur:0.3}]
+      ]
+    }
+  </script>
+</section>
