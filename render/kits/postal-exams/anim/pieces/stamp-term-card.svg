@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 460" width="1400" height="460">
+<title>stamp-term-card</title>
+<defs>
+<mask id="stc-perf" maskUnits="userSpaceOnUse" x="-20" y="-20" width="1440" height="500">
+<rect x="-20" y="-20" width="1440" height="500" fill="#fff"/>
+<rect x="0" y="0" width="1400" height="460" fill="none" stroke="#000" stroke-width="16" stroke-linecap="round" stroke-dasharray="0 20"/>
+</mask>
+</defs>
+<g id="card-body"><rect x="0" y="0" width="1400" height="460" fill="#9e1b1b" mask="url(#stc-perf)"/></g>
+<rect id="card-line" x="30" y="30" width="1340" height="400" rx="6" fill="none" stroke="#b8403a" stroke-width="4"/>
+<rect id="icon-window" x="80" y="80" width="300" height="300" rx="14" fill="#ffffff"/>
+<rect id="term-area" x="440" y="80" width="880" height="300" fill="none"/>
+<circle data-anchor="base" cx="700" cy="460" r="0"/>
+<circle data-anchor="top" cx="700" cy="0" r="0"/>
+<circle data-anchor="icon" cx="230" cy="230" r="0"/>
+<circle data-anchor="term" cx="460" cy="230" r="0"/>
+</svg>
