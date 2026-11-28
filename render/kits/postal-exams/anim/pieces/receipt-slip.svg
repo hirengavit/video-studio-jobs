@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 380" width="260" height="380">
+<title>receipt slip</title>
+<g id="slip">
+<path d="M24 12 H236 V362 l-10.6 -8 l-10.6 8 l-10.6 -8 l-10.6 8 l-10.6 -8 l-10.6 8 l-10.6 -8 l-10.6 8 l-10.6 -8 l-10.6 8 l-10.6 -8 l-10.6 8 l-10.6 -8 l-10.6 8 l-10.6 -8 l-10.6 8 l-10.6 -8 l-10.6 8 l-10.6 -8 l-10.6 8 V12 Z" fill="#ffffff" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M34 318 H226" fill="none" stroke="#6f6a63" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 8"/>
+</g>
+<g id="barcode" fill="#2b2622">
+<rect x="46" y="36" width="4" height="56"/><rect x="53" y="36" width="2" height="56"/><rect x="58" y="36" width="6" height="56"/>
+<rect x="67" y="36" width="3" height="56"/><rect x="73" y="36" width="2" height="56"/><rect x="78" y="36" width="7" height="56"/>
+<rect x="88" y="36" width="3" height="56"/><rect x="94" y="36" width="2" height="56"/><rect x="99" y="36" width="5" height="56"/>
+<rect x="107" y="36" width="2" height="56"/><rect x="112" y="36" width="4" height="56"/><rect x="119" y="36" width="6" height="56"/>
+<rect x="128" y="36" width="2" height="56"/><rect x="133" y="36" width="3" height="56"/><rect x="139" y="36" width="7" height="56"/>
+<rect x="149" y="36" width="2" height="56"/><rect x="154" y="36" width="4" height="56"/><rect x="161" y="36" width="3" height="56"/>
+<rect x="167" y="36" width="5" height="56"/><rect x="175" y="36" width="2" height="56"/><rect x="180" y="36" width="6" height="56"/>
+<rect x="189" y="36" width="3" height="56"/><rect x="195" y="36" width="2" height="56"/><rect x="200" y="36" width="4" height="56"/>
+<rect x="207" y="36" width="2" height="56"/><rect x="211" y="36" width="3" height="56"/>
+</g>
+<g id="lines" stroke="#6f6a63" stroke-width="2.4" stroke-linecap="round" opacity=".55">
+<path d="M44 150 H216"/><path d="M44 204 H216"/><path d="M44 258 H180"/>
+</g>
+<circle data-anchor="base" cx="130" cy="362" r="0"/>
+<circle data-anchor="grip" cx="130" cy="190" r="0"/>
+</svg>
