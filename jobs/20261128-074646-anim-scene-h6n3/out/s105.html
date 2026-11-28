@@ -36,7 +36,7 @@
   ],
   update(t, section, $) {
     const amount = S.clamp((t - 11.52) / .28, 0, 1);
-    $('#interest-coins').style.filter = 'grayscale(' + amount + ')';
+    for (const coins of $('#interest-coins')) coins.style.filter = 'grayscale(' + amount + ')';
   }
 })
 </script>
