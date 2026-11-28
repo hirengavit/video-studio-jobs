@@ -10,12 +10,6 @@
  "problems": [],
  "warnings": [
   {
-   "kind": "misuse",
-   "scene": "s133",
-   "message": "stamp: option \"dur\" isn't used (it takes: from, spring, rot)",
-   "t": 0.3
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s133",
    "message": "a card (#s133-trap-right) is mostly empty at 6.2 s: bring its items in sooner, or size it for what it holds now",
