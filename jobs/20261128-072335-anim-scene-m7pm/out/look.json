@@ -8,12 +8,5 @@
   "8.48"
  ],
  "problems": [],
- "warnings": [
-  {
-   "kind": "text-off-frame",
-   "scene": "s114",
-   "text": "रिज़र्व बैंक, अनुसूचित बैंक, सहकारी समित",
-   "t": 3.45
-  }
- ]
+ "warnings": []
 }
