@@ -1,0 +1,59 @@
+<section class="vs-scene" id="s114" data-section="PART 6 · TD PLEDGE" data-series="POSB" data-in="cut">
+  <svg viewBox="0 0 1920 1080" role="img" aria-label="The five groups eligible to be a Time Deposit pledgee">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <g id="pledgees-table">
+      <rect x="160" y="170" width="1600" height="820" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+      <text id="pledgees-title" x="208" y="252" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="780" fill="#9e1b1b">Pledgee कौन हो सकता है</text>
+      <g id="five-groups">
+        <rect x="1412" y="197" width="294" height="66" rx="33" fill="#f3ead6"/>
+        <text x="1559" y="242" text-anchor="middle" font-family="Inter, sans-serif" font-size="45" font-weight="780" fill="#9e1b1b">5 groups</text>
+      </g>
+      <path d="M208 292H1712" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+      <path d="M208 452H1712 M208 586H1712 M208 720H1712 M208 854H1712" fill="none" stroke="#ead9a8" stroke-opacity=".7" stroke-width="2"/>
+      <g id="pledgee-row1">
+        <rect x="202" y="346" width="60" height="60" rx="17" fill="#9e1b1b"/>
+        <text x="232" y="391" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="790" fill="#ffffff">1</text>
+        <text id="pledgee-en1" x="295" y="373" font-family="Inter, sans-serif" font-size="56" font-weight="790" fill="#2b2622">President of India / State Governor</text>
+        <text id="pledgee-hi1" x="295" y="429" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="580" fill="#6f6a63">सरकारी हैसियत में</text>
+      </g>
+      <g id="pledgee-row2">
+        <rect x="202" y="480" width="60" height="60" rx="17" fill="#9e1b1b"/>
+        <text x="232" y="525" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="790" fill="#ffffff">2</text>
+        <text id="pledgee-en2" x="295" y="507" font-family="Inter, sans-serif" font-size="44" font-weight="790" fill="#2b2622">RBI · Scheduled Bank · Cooperative Society / Cooperative Bank</text>
+        <text id="pledgee-hi2" textLength="979" lengthAdjust="spacing" x="295" y="563" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="580" fill="#6f6a63">रिज़र्व बैंक, अनुसूचित बैंक, सहकारी समिति या सहकारी बैंक</text>
+      </g>
+      <g id="pledgee-row3">
+        <rect x="202" y="614" width="60" height="60" rx="17" fill="#9e1b1b"/>
+        <text x="232" y="659" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="790" fill="#ffffff">3</text>
+        <text id="pledgee-en3" x="295" y="641" font-family="Inter, sans-serif" font-size="53" font-weight="790" fill="#2b2622">Public / private corporation · Government company</text>
+        <text id="pledgee-hi3" x="295" y="697" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="580" fill="#6f6a63">सार्वजनिक या निजी निगम, सरकारी कंपनी</text>
+      </g>
+      <g id="pledgee-row4">
+        <rect x="202" y="748" width="60" height="60" rx="17" fill="#9e1b1b"/>
+        <text x="232" y="793" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="790" fill="#ffffff">4</text>
+        <text id="pledgee-en4" x="295" y="775" font-family="Inter, sans-serif" font-size="56" font-weight="790" fill="#2b2622">Local authority</text>
+        <text id="pledgee-hi4" x="295" y="831" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="580" fill="#6f6a63">स्थानीय प्राधिकरण</text>
+      </g>
+      <g id="pledgee-row5">
+        <rect x="202" y="882" width="60" height="60" rx="17" fill="#9e1b1b"/>
+        <text x="232" y="927" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" font-weight="790" fill="#ffffff">5</text>
+        <text id="pledgee-en5" x="295" y="909" font-family="Inter, sans-serif" font-size="56" font-weight="790" fill="#2b2622">Housing finance company</text>
+        <text id="pledgee-hi5" x="295" y="965" font-family="Inter, sans-serif" font-size="44" font-weight="580" fill="#6f6a63">NHB approved + Central Govt notified</text>
+      </g>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {
+      on: [
+        [1.74, "pop", "#five-groups", {from: 0.94, spring: "soft"}],
+        [2.70, "fade", "#pledgee-row1", {dur: 0.25}],
+        [2.82, "fade", "#pledgee-row2", {dur: 0.25}],
+        [2.94, "fade", "#pledgee-row3", {dur: 0.25}],
+        [3.06, "fade", "#pledgee-row4", {dur: 0.25}],
+        [3.18, "fade", "#pledgee-row5", {dur: 0.25}],
+        [3.37, "highlight", "#pledgee-en1", {color: "#f2b705", opacity: 0.34, dur: 0.55, pad: 9}],
+        [6.83, "underline", "#pledgee-hi1", {color: "#f2b705", width: 6, gap: -5, dur: 0.44}]
+      ]
+    }
+  </script>
+</section>
