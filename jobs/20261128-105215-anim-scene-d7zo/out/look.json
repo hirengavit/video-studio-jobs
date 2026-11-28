@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.66",
+  "5.32",
+  "7.98",
+  "10.64",
+  "13.15"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "misuse",
+   "scene": "s088",
+   "message": "grow: option \"dur\" isn't used (it takes: axis, origin, spring, to)",
+   "t": 0.3
+  },
+  {
+   "kind": "misuse",
+   "scene": "s088",
+   "message": "color: nothing found for \"#year-label-1,#year-label-2,#year-label-3\"",
+   "t": 0.3
+  }
+ ]
+}
