@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <g id="moon">
+    <path d="M77.7 32.3 A64 64 0 1 0 144.4 117.2 A54 54 0 0 1 77.7 32.3 Z" fill="#f2b705" stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+  </g>
+  <g id="star-1">
+    <path d="M146 22 Q148 34 158 36 Q148 38 146 50 Q144 38 134 36 Q144 34 146 22 Z" fill="#2b2622" stroke="#2b2622" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+  <g id="star-2">
+    <path d="M162 70 Q163.5 78 170 79.5 Q163.5 81 162 89 Q160.5 81 154 79.5 Q160.5 78 162 70 Z" fill="#2b2622" stroke="#2b2622" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+  <circle data-anchor="base" cx="84" cy="160" r="0"/>
+</svg>
