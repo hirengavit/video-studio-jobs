@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.12",
+  "4.23",
+  "6.35",
+  "8.46",
+  "10.43"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s045",
+   "text": "Quarterly compounding / तिमाही चक्रवृद्धि",
+   "t": 2.12
+  },
+  {
+   "kind": "mostly-empty",
+   "scene": "s045",
+   "message": "a card is mostly empty at 6.3 s: bring its items in sooner, or size it for what it holds now",
+   "t": 6.35
+  }
+ ]
+}
