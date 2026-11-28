@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600">
+<g stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+<rect x="2" y="2" width="956" height="596" rx="15" fill="#f3ead6" /><g id="parcel-string" ><path d="M475 3V597M3 242H957 M475 242C436 229 433 211 451 214C466 216 473 229 475 242C481 225 496 213 510 218C524 226 503 242 475 242Z M475 242L451 268 M475 242L500 267" fill="none" /></g><g id="zone-cod" ><rect x="40" y="40" width="380" height="170" rx="9" fill="#ffffff" /></g><g id="zone-sender" ><rect x="40" y="400" width="380" height="160" rx="9" fill="#ffffff" /></g><g id="zone-address" ><rect x="520" y="280" width="400" height="240" rx="9" fill="#ffffff" /><path d="M548 363H886 M548 418H886 M548 473H886" fill="none" stroke="#6f6a63" stroke-opacity=".65"/></g>
+</g>
+<circle data-anchor="base" cx="480" cy="598" r="0"/><circle data-anchor="top" cx="480" cy="2" r="0"/>
+</svg>
