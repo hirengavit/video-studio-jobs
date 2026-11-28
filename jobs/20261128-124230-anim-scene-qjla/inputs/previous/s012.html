@@ -1,0 +1,60 @@
+<section class="vs-scene" id="s012" data-in="cut" data-section="INTRO · TD AND MIS" data-series="POSB">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="map">
+  <g id="common">
+    <rect id="common-paper" x="100" y="160" width="840" height="310" rx="25" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+    <path id="common-band" d="M100 184q0 -24 24 -24h792q24 0 24 24v58H100Z" fill="#9e1b1b"/>
+    <text id="common-name" x="134" y="215" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="800" fill="#ffffff"><tspan font-family="Inter, sans-serif">COMMON</tspan> · <tspan fill="#fde9a6">साझा</tspan></text>
+    <text id="row-1" x="134" y="318" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">1 कौन खोल सकता है</text>
+    <text id="row-2" x="134" y="386" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">2 nomination</text>
+  </g>
+  <g id="records">
+    <rect id="records-paper" x="980" y="160" width="840" height="310" rx="25" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+    <path id="records-band" d="M980 184q0 -24 24 -24h792q24 0 24 24v58H980Z" fill="#9e1b1b"/>
+    <text id="records-name" x="1014" y="215" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="800" fill="#ffffff"><tspan font-family="Inter, sans-serif">RECORDS</tspan> · <tspan fill="#fde9a6">रिकॉर्ड</tspan></text>
+  </g>
+  <g id="td">
+    <rect id="td-paper" x="100" y="500" width="840" height="490" rx="25" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+    <path id="td-band" d="M100 524q0 -24 24 -24h792q24 0 24 24v58H100Z" fill="#9e1b1b"/>
+    <text id="td-name" x="134" y="555" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="800" fill="#ffffff"><tspan font-family="Inter, sans-serif">TD</tspan> · <tspan fill="#fde9a6">सावधि जमा</tspan></text>
+    <text id="row-3" x="134" y="654" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">3 जमा और ब्याज</text>
+    <text id="row-4" x="134" y="722" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">4 maturity, extension, tax</text>
+    <text id="row-5" x="134" y="790" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="700" fill="#2b2622">5 premature closure</text>
+    <g id="td-book" transform="translate(811 616) scale(.35)">
+      <use href="piece:td-passbook-white"/>
+      <text x="132" y="119" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#701616">TD · SB-5A</text>
+    </g>
+  </g>
+  <g id="mis">
+    <rect id="mis-paper" x="980" y="500" width="840" height="490" rx="25" fill="#ffffff" stroke="#ead9a8" stroke-width="4"/>
+    <path id="mis-band" d="M980 524q0 -24 24 -24h792q24 0 24 24v58H980Z" fill="#9e1b1b"/>
+    <text id="mis-name" x="1014" y="555" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="46" font-weight="800" fill="#ffffff"><tspan font-family="Inter, sans-serif">MIS</tspan> · <tspan fill="#fde9a6">मासिक आय योजना</tspan></text>
+    <g id="mis-book" transform="translate(1691 616) scale(.35)">
+      <use href="piece:passbook"/>
+      <text x="132" y="119" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" font-weight="800" fill="#701616">MIS · SB-5</text>
+    </g>
+  </g>
+  <rect id="common-focus" x="103" y="163" width="834" height="304" rx="22" fill="none" stroke="#f2b705" stroke-width="8"/>
+  <rect id="td-focus" x="103" y="503" width="834" height="484" rx="22" fill="none" stroke="#f2b705" stroke-width="8"/>
+  <g id="map-counter">
+    <rect x="831" y="451" width="258" height="68" rx="34" fill="#f3ead6" stroke="#ead9a8" stroke-width="3"/>
+    <text id="map-counter-value" x="960" y="501" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="800" fill="#2b2622">10 हिस्से</text>
+  </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+  on: [
+    [0, "fade", "#row-1", {dur:.24}],
+    [2.54, "fade", "#row-2", {dur:.23}],
+    [4.14, "out", "#common-focus", {dur:.18, scale:1}],
+    [4.14, "fade", "#td-focus", {dur:.19}],
+    [4.14, "color", "#row-1, #row-2", {to:"#6f6a63", dur:.19}],
+    [4.92, "fade", "#row-3", {dur:.24}],
+    [7.08, "fade", "#row-4", {dur:.24}],
+    [8.22, "fade", "#row-5", {dur:.24}],
+  ]
+}
+</script>
+</section>
