@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 170" width="520" height="170">
+  <!-- Blank name plate: white rounded card, postal-red left strip with a small white passbook glyph.
+       The scene writes the holder's name and role in the clear area x 70-500, y 20-150. -->
+  <g id="card">
+    <rect x="1.5" y="1.5" width="517" height="167" rx="18" fill="#ffffff"/>
+  </g>
+  <g id="strip">
+    <path d="M41.5 1.5 V168.5 H19.5 A18 18 0 0 1 1.5 150.5 V19.5 A18 18 0 0 1 19.5 1.5 Z" fill="#9e1b1b"/>
+  </g>
+  <g id="glyph" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="11.5" y="70" width="20" height="28" rx="2.5" fill="#ffffff"/>
+    <path d="M15.5 70 V98" fill="none" stroke="#9e1b1b" stroke-width="2"/>
+    <rect x="19" y="77" width="9" height="6" rx="1" fill="#9e1b1b"/>
+  </g>
+  <g id="outline">
+    <rect x="1.5" y="1.5" width="517" height="167" rx="18" fill="none" stroke="#2b2622" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M41.5 1.5 V168.5" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  <circle data-anchor="top" cx="260" cy="0" r="0"/>
+  <circle data-anchor="base" cx="260" cy="170" r="0"/>
+</svg>

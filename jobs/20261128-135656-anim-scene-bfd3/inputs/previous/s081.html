@@ -1,0 +1,50 @@
+<section class="vs-scene" id="s081" data-section="RECAP · PARTS 3–4" data-series="POSB" data-in="fade" data-in-dur="0.5">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="recap">
+<rect x="200" y="170" width="1520" height="820" rx="28" fill="#ffffff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+<path d="M230 172H1690Q1710 172 1718 195V279L960 350L202 279V195Q210 172 230 172Z" fill="#f3ead6"/>
+<path d="M204 279L960 350L1716 279" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linejoin="round"/>
+<use href="piece:td-passbook-white" transform="translate(270 195) scale(0.4)"/>
+<text x="960" y="231" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#6f6a63" text-anchor="middle">RECAP · दोहराव</text>
+<text x="960" y="303" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="700" fill="#9e1b1b" id="title" text-anchor="middle">TD · Part 3 और 4</text>
+<g id="seal">
+<circle cx="960" cy="352" r="33" fill="#9e1b1b" stroke="#7d1414" stroke-width="3"/>
+<circle cx="960" cy="352" r="24" fill="none" stroke="#fde9a6" stroke-dasharray="3 5" stroke-width="2"/>
+<text x="960" y="366" text-anchor="middle" font-family="Inter, sans-serif" font-size="42" font-weight="800" fill="#fde9a6">3</text>
+</g>
+<path d="M250 548H1670M250 748H1670" fill="none" stroke="#ead9a8" stroke-width="2"/>
+<g id="term-row">
+<text id="term-en" x="300" y="459" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#2b2622">Term</text>
+<text x="300" y="514" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#6f6a63" id="term-hi">अवधि</text>
+<rect id="term-pill" x="700" y="424" width="420" height="82" rx="41" fill="#fde9a6"/>
+<text x="752" y="479" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#8a5d00" id="term-1">1,</text>
+<text x="800" y="479" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#8a5d00" id="term-2">2,</text>
+<text x="855" y="479" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#8a5d00" id="term-3">3,</text>
+<text x="910" y="479" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" fill="#8a5d00" id="term-5">5 साल</text>
+<path id="term-tick" d="M1616 466l18 17 33-38" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="deposit-row">
+<text id="deposit-en" x="300" y="654" font-family="Inter, sans-serif" font-size="56" font-weight="800" fill="#2b2622">Deposit</text>
+<text x="300" y="709" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="700" fill="#6f6a63" id="deposit-hi">जमा</text>
+<g id="deposit-pill"><rect x="700" y="619" width="870" height="82" rx="41" fill="#fde9a6"/>
+<text x="752" y="673" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#8a5d00" id="minimum">₹1,000 minimum</text>
+</g>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+{ on: [
+[1.50,"fade","#seal",{dur:0.26}],
+[2.50,"words","#title",{gap:0.09,dist:14}],
+[5.80,"fade","#term-en",{dur:0.22}],
+[6.30,"fade","#term-hi",{dur:0.22}],
+[6.82,"fade","#term-pill, #term-1",{dur:0.18}],
+[7.48,"fade","#term-2",{dur:0.18}],
+[8.82,"fade","#term-3",{dur:0.18}],
+[9.22,"fade","#term-5",{dur:0.18}],
+[10.16,"draw","#term-tick",{dur:0.30}],
+[11.76,"fade","#deposit-en, #deposit-hi, #deposit-pill",{dur:0.22}]
+] }
+</script>
+</section>
