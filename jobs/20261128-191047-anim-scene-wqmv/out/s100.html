@@ -25,7 +25,7 @@
       <g id="zone-b">
         <path id="zone-b-card" d="M1600 502V700 M1085 700H1735Q1760 700 1760 725V955Q1760 980 1735 980H1085Q1060 980 1060 955V725Q1060 700 1085 700Z" fill="#fffaf0" stroke="#9b843e" stroke-width="3" stroke-linejoin="round"/>
         <text id="zone-b-caption" x="1410" y="854" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="670" fill="#514e4a">maturity से पहले बंद</text>
-        <text id="savings" x="1380" y="810" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="780" fill="#2b2622">Post Office Savings Account</text>
+        <text id="savings" x="1380" y="810" textLength="700" lengthAdjust="spacingAndGlyphs" text-anchor="middle" font-family="Inter, sans-serif" font-size="52" font-weight="780" fill="#2b2622">Post Office Savings Account</text>
         <text id="savings-hi" x="1380" y="865" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#514e4a">डाकघर बचत खाता</text>
         <text id="rejected-rate" x="1380" y="960" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="700" fill="#4b4f58">5-year TD की तय दर</text>
       </g>
@@ -43,7 +43,10 @@
         const card = $('#zone-b-card')[0], caption = $('#zone-b-caption')[0];
         card.setAttribute('d', `M1600 502V${top} M${left+r} ${top}H1735Q1760 ${top} 1760 ${top+r}V${bottom-r}Q1760 ${bottom} 1735 ${bottom}H${left+r}Q${left} ${bottom} ${left} ${bottom-r}V${top+r}Q${left} ${top} ${left+r} ${top}Z`);
         caption.setAttribute('x', 1410 - 30 * expand);
-        caption.setAttribute('y', 854 - 124 * lift);
+        caption.setAttribute('y', Math.max(top + 49, 854 - 124 * lift));
+        const savings = $('#savings')[0];
+        savings.setAttribute('x', 1410 - 30 * expand);
+        savings.setAttribute('textLength', 640 + 60 * expand);
         caption.setAttribute('font-size', 48 - 4 * lift);
       },
       on: [
@@ -53,7 +56,7 @@
       [5.98, "strike", "#rejected-rate", {color: "#495964", width: 5, dur: 0.34, dim: 0.82}],
       [7.62, "pulse", "#year-four", {amount: 0.055}],
       [7.62, "draw", "#year-four-mark", {dur: 0.38}],
-      [8.36, "words", "#early-only", {gap: 0.21, dist: 8}]
+      [8.36, "words", "#early-only", {gap: 0.40, dist: 8}]
     ] }
   </script>
 </section>
