@@ -12,21 +12,9 @@
   {
    "kind": "low-contrast",
    "scene": "s076",
-   "text": "₹1,50,000 (2.7:1) / ₹1,50,000 (2.7:1) / ₹1,50,000 (2.7:1)",
+   "text": "₹1,50,000 (1.4:1) / ₹1,50,000 (1.4:1) / ₹1,50,000 (1.4:1)",
    "message": "text too close in colour to what's behind it",
    "t": 4.44
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s076",
-   "text": "5-year TD का निवेश इस deduction में / नई concessional regime",
-   "t": 8.89
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s076",
-   "text": "नई concessional regime / : नहीं",
-   "t": 10.96
   }
  ]
 }
