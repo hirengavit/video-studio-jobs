@@ -1,0 +1,54 @@
+<section class="vs-scene" id="s195" data-in="cut" data-section="PART 9 · MIS CLOSURE AND DEATH" data-series="POSB">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="forms">
+    <text x="140" y="216" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="60" font-weight="800" fill="#9e1b1b">MIS maturity पर forms</text>
+    <g id="scheme-form"><use href="piece:complaint-form-sheet" transform="translate(180 270) scale(1.15)"/><text id="scheme-form-name" x="387" y="339" text-anchor="middle" font-family="Inter" font-size="57" font-weight="790" fill="#fff">Form-3</text></g>
+    <text id="scheme-form-caption" x="387" y="900" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="620" fill="#2b2622">scheme का form</text>
+ <g id="common-form"><use href="piece:complaint-form-sheet" transform="translate(1326 270) scale(1.15)"/><text id="common-name" x="1533" y="339" text-anchor="middle" font-family="Inter" font-size="57" font-weight="760" fill="#fff">SB-7A</text></g>
+ <text id="common-caption" x="1533" y="900" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="760" fill="#2b2622">post office का common form</text>
+</g>
+<g id="flow">
+ <g id="holder">
+ <rect x="140" y="220" width="480" height="680" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+ <text id="holder-title" x="380" y="352" text-anchor="middle" font-family="Inter" font-size="88" font-weight="760" fill="#9e1b1b">Holder</text>
+ <text id="holder-hi" x="380" y="425" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="760" fill="#6f6a63">खाताधारक</text>
+ <path d="M188 460H572" stroke="#ead9a8" stroke-width="3"/>
+ <g id="application"><use href="piece:complaint-form-sheet" transform="translate(188 518) scale(0.45)"/><text x="269" y="552" text-anchor="middle" font-family="Inter" font-size="23" font-weight="760" fill="#fff">application</text><text x="269" y="815" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="760" fill="#2b2622">आवेदन</text></g>
+ <g id="holder-passbook"><use href="piece:passbook" transform="translate(438 538) scale(0.55)"/><text x="504" y="815" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="760" fill="#2b2622">पासबुक</text></g>
+ </g>
+ <path id="arrow-office" d="M643 554 h53 m-16 -15 16 15 -16 15" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="office">
+ <rect x="720" y="220" width="480" height="680" rx="28" fill="#fff" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+ <text x="960" y="347" text-anchor="middle" font-family="Inter" font-size="82" font-weight="760" fill="#9e1b1b">Post office</text>
+ <text x="960" y="425" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="760" fill="#6f6a63">डाकघर</text>
+ <path d="M768 460H1152" stroke="#ead9a8" stroke-width="3"/>
+ <use href="piece:pda-passbook" transform="translate(752 515) scale(0.32)"/>
+ <text x="948" y="815" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="760" fill="#2b2622">records जाँच</text>
+ <path id="records-tick" d="m1090 790 13 13 26 -29" fill="none" stroke="#2e7d4f" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+ </g>
+ <path id="arrow-pay" d="M1223 554 h53 m-16 -15 16 15 -16 15" fill="none" stroke="#9e1b1b" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+ <g id="payout">
+ <rect x="1300" y="220" width="480" height="680" rx="28" fill="#fff4cc" stroke="#ead9a8" stroke-width="3" filter="url(#vs-shadow)"/>
+ <g id="principal"><use href="piece:rupee-note-bundle" transform="translate(1396 286) scale(0.9)"/><text x="1540" y="533" text-anchor="middle" font-family="Inter" font-size="58" font-weight="760" fill="#2b2622">principal</text></g>
+ <path d="M1350 581H1730" stroke="#d8bd73" stroke-width="3"/>
+ <g id="interest-coin"><use href="piece:rupee-coin" transform="translate(1486 625) scale(0.9)"/><text x="1540" y="697" text-anchor="middle" font-family="Inter" font-size="50" font-weight="760" fill="#8a5d00">₹</text></g>
+ <text id="interest-label" x="1540" y="820" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="54" font-weight="760" fill="#2b2622">बाकी ब्याज</text>
+ </g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ shots:[[0,"#forms"],[3.55,"#flow"]],
+ on:[
+ [1.23,"slide","#common-form",{from:"down",dist:54,spring:"snap"}],
+ [1.28,"type","#common-name",{cps:22}],[1.73,"fade","#common-caption",{dur:0.24}],
+ [4.05,"fade","#holder-hi",{dur:0.24}],[3.79,"pop","#application",{spring:"snap"}],[5.31,"pop","#holder-passbook",{spring:"snap"}],
+ [6.95,"draw","#arrow-office",{dur:0.45}],[6.95,"slide","#office",{from:"down",dist:46,spring:"snap"}],
+ [7.83,"draw","#records-tick",{dur:0.35}],
+ [8.83,"draw","#arrow-pay",{dur:0.43}],[8.83,"fade","#payout",{dur:0.2}],[8.83,"pop","#principal",{spring:"snap"}],
+ [10.31,"pop","#interest-coin",{spring:"snap"}],[10.31,"fade","#interest-label",{dur:0.24}]
+ ]
+}
+</script>
+</section>
