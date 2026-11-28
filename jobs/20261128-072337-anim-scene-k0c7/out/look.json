@@ -1,0 +1,25 @@
+{
+ "moments": [
+  "0.30",
+  "2.29",
+  "4.58",
+  "6.86",
+  "9.15",
+  "11.29"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s079",
+   "text": "ब्याज / tax-free",
+   "t": 6.86
+  },
+  {
+   "kind": "text-overlap",
+   "scene": "s079",
+   "text": "TD का ब्याज / taxable",
+   "t": 9.15
+  }
+ ]
+}
