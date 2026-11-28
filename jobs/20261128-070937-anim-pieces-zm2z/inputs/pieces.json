@@ -1,0 +1,82 @@
+[
+  {
+    "id": "td-passbook-white",
+    "description": "TD passbook SB-5A, 240x320: white cover with a 3 px ink border and a thin #ead9a8 inner line, a blank cream label panel (x 62-202, y 70-154), lower right corner lifted showing cream pages; no lettering (the scene writes 'TD · SB-5A'). The recurring TD icon, always on the left beside MIS.",
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "scenes": [
+      "s001",
+      "s005",
+      "s007",
+      "s011",
+      "s017",
+      "s026",
+      "s036",
+      "s039",
+      "s040",
+      "s052",
+      "s053",
+      "s054",
+      "s055",
+      "s058",
+      "s059",
+      "s060",
+      "s061",
+      "s068",
+      "s071",
+      "s073",
+      "s077",
+      "s080",
+      "s081",
+      "s085",
+      "s087",
+      "s088",
+      "s091",
+      "s093",
+      "s096",
+      "s098",
+      "s108",
+      "s111",
+      "s177",
+      "s196",
+      "s205",
+      "s212",
+      "s213",
+      "s223",
+      "s236",
+      "s242",
+      "s246",
+      "s251"
+    ],
+    "reuse": false
+  },
+  {
+    "id": "rupee-note-bundle",
+    "description": "Flat ink bundle of rupee notes 320x200: sand notes, a red paper band round the middle with a small ₹ in a circle, 3 px ink; no amounts. The lump sum / principal object.",
+    "anchors": [
+      "base",
+      "top",
+      "grip"
+    ],
+    "scenes": [
+      "s002",
+      "s003",
+      "s009",
+      "s010",
+      "s040",
+      "s060",
+      "s061",
+      "s104",
+      "s111",
+      "s162",
+      "s195",
+      "s199",
+      "s201",
+      "s202"
+    ],
+    "reuse": false
+  }
+]
