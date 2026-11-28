@@ -1,0 +1,28 @@
+<section class="vs-scene" id="s033" data-in="cut" data-section="PART 2 · NOMINATION" data-series="POSB">
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<rect x="100" y="170" width="1720" height="160" rx="32" fill="#9e1b1b"/>
+<g id="s033-trap-label"><rect x="136" y="206" width="330" height="88" rx="44" fill="#7d1414" stroke="#b8403a" stroke-width="3"/><path d="M171 269l19-39 19 39z" fill="none" stroke="#fde9a6" stroke-width="4" stroke-linejoin="round"/><path d="M190 241v11m0 7v1" stroke="#fde9a6" stroke-width="4" stroke-linecap="round"/><text x="233" y="267" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="49" font-weight="700" fill="#fde9a6" >EXAM TRAP</text></g>
+<text x="516" y="277" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="73" font-weight="700" fill="#fff" id="s033-banner-rule">4 nominees ≠ 4 holders</text>
+<g id="s033-nominee-card"><rect x="146" y="390" width="800" height="400" rx="32" fill="#eee4d0"/><rect x="140" y="380" width="800" height="400" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/><path d="M189 430h100" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round"/><text x="189" y="541" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="700" fill="#9e1b1b" >Nominees</text><text x="189" y="618" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="700" fill="#4b4f58" >नामांकित</text><rect x="720" y="464" width="150" height="184" rx="14" fill="#9e1b1b"/><rect x="732" y="476" width="126" height="160" rx="8" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="4 9" stroke-linecap="round"/><text x="795" y="602" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="130" font-weight="700" fill="#fff" text-anchor="middle">4</text></g>
+<g id="s033-joint-card"><rect x="986" y="390" width="800" height="400" rx="32" fill="#eee4d0"/><rect x="980" y="380" width="800" height="400" rx="32" fill="#fff" stroke="#ead9a8" stroke-width="4"/><path d="M1029 430h100" stroke="#9e1b1b" stroke-width="6" stroke-linecap="round"/><text x="1029" y="541" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="700" fill="#9e1b1b" >Joint holders</text><text x="1029" y="618" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="50" font-weight="700" fill="#4b4f58" >संयुक्त धारक</text><rect x="1560" y="464" width="150" height="184" rx="14" fill="#4b4f58"/><rect x="1572" y="476" width="126" height="160" rx="8" fill="none" stroke="#fff" stroke-width="4" stroke-dasharray="4 9" stroke-linecap="round"/><text x="1635" y="602" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="130" font-weight="700" fill="#fff" text-anchor="middle">4</text></g>
+<g id="s033-allowed-mark"><circle cx="809" cy="704" r="38" fill="#2e7d4f"/><path d="M792 703l12 13 23-27" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
+<path id="s033-reject-stroke" d="M1575 613l120-100" fill="none" stroke="#fde9a6" stroke-width="13" stroke-linecap="round"/>
+<g id="s033-reject-mark"><circle cx="1649" cy="704" r="38" fill="#4b4f58"/><path d="M1638 693l22 22m0-22l-22 22" stroke="#fff" stroke-width="7" stroke-linecap="round"/></g>
+<g id="s033-retain-bar"><rect x="140" y="820" width="1640" height="160" rx="30" fill="#f3ead6" stroke="#ead9a8" stroke-width="4"/><path d="M185 870v60" stroke="#9e1b1b" stroke-width="7" stroke-linecap="round"/><text x="221" y="927" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="700" fill="#9e1b1b" >Joint holders:</text><text x="661" y="931" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="79" font-weight="700" fill="#2b2622" id="s033-true-number">3</text><text x="723" y="928" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="64" font-weight="700" fill="#2b2622" >ही</text></g>
+</svg>
+<script type="text/scene">
+{
+camera:[[0,{zoom:1}]],
+on:[[0.88,'stamp','#s033-trap-label',{from:1.18,rot:-4}],
+[2.58,'pop','#s033-nominee-card',{from:0.96}],
+[3.56,'pop','#s033-allowed-mark'],
+[4.84,'pop','#s033-joint-card',{from:0.96}],
+[4.84,'type','#s033-banner-rule',{dur:0.65}],
+[6.62,'draw','#s033-reject-stroke',{dur:0.22}],
+[6.62,'pop','#s033-reject-mark'],
+[8.58,'slide','#s033-retain-bar',{from:'down',dist:32,spring:'fast'}],
+[8.92,'highlight','#s033-true-number',{color:'#f2b705',opacity:0.58,pad:7,dur:0.26}]]
+}
+</script>
+</section>
