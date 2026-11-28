@@ -1,0 +1,19 @@
+{
+ "moments": [
+  "0.30",
+  "2.23",
+  "4.46",
+  "6.70",
+  "8.93",
+  "11.01"
+ ],
+ "problems": [],
+ "warnings": [
+  {
+   "kind": "text-overlap",
+   "scene": "s024",
+   "text": "Depositor → NRI / non-resident Indian",
+   "t": 4.46
+  }
+ ]
+}
