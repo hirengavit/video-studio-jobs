@@ -22,22 +22,10 @@
    "t": 4.9
   },
   {
-   "kind": "text-overlap",
-   "scene": "s034",
-   "text": "Joint / संयुक्त",
-   "t": 7.34
-  },
-  {
    "kind": "mostly-empty",
    "scene": "s034",
    "message": "a card is mostly empty at 7.3 s: bring its items in sooner, or size it for what it holds now",
    "t": 7.34
-  },
-  {
-   "kind": "text-overlap",
-   "scene": "s034",
-   "text": "Minor / नाबालिग",
-   "t": 9.79
   },
   {
    "kind": "mostly-empty",
