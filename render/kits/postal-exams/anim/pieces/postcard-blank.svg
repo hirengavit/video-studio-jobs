@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+  <g id="back" opacity="0">
+    <rect x="22" y="85" width="356" height="230" fill="#efdfb8" rx="4"/>
+  </g>
+  <g id="front">
+    <rect id="front-paper" x="22" y="85" width="356" height="230" fill="#efdfb8" rx="4"/>
+    <g id="printed-stamp">
+    <rect x="311" y="101" width="45" height="48" fill="none" stroke="#9e1b1b" rx="2"/>
+    <path d="M318 109h31v32h-31Z" stroke="#9e1b1b" stroke-width="1.5"/>
+  </g>
+    <path id="divider" d="M201 115V289" stroke="#aaa39a" stroke-width="2"/>
+    <path id="address-rules" d="M221 207h134m-134 14h121m-121 14h107" stroke="#aaa39a" stroke-width="2.5"/>
+  </g>
+  <circle data-anchor="base" cx="200" cy="315" r="0"/>
+</svg>

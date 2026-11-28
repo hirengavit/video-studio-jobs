@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke="#2b2622" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<g id="lid"><rect x="80" y="96" width="240" height="82" rx="8" fill="#f3ead6"/><rect x="92" y="106" width="216" height="64" rx="5" fill="#9e1b1b" stroke-width="2"/></g>
+<g id="box"><rect x="70" y="176" width="260" height="124" rx="8" fill="#f3ead6"/><path d="M78 180H322L316 212H84Z" fill="#7d1414" stroke-width="2"/>
+<path d="M70 212H330" fill="none"/><rect x="190" y="212" width="20" height="16" rx="3" fill="#f2b705" stroke-width="2"/></g>
+<g id="necklace" fill="#f2b705" stroke="#8a5d00" stroke-width="1.5">
+<path d="M126 118Q200 206 274 118" fill="none" stroke-width="2"/>
+<circle cx="126" cy="118" r="6"/><circle cx="144.5" cy="137.3" r="6"/><circle cx="163" cy="151" r="6"/><circle cx="181.5" cy="159.3" r="6"/><circle cx="200" cy="162" r="6"/><circle cx="218.5" cy="159.3" r="6"/><circle cx="237" cy="151" r="6"/><circle cx="255.5" cy="137.3" r="6"/><circle cx="274" cy="118" r="6"/>
+<path d="M200 168q12 12 0 26q-12-14 0-26Z" stroke="#2b2622" stroke-width="2"/></g>
+<circle data-anchor="base" cx="200" cy="300" r="0" fill="none" stroke="none"/>
+<circle data-anchor="top" cx="200" cy="96" r="0" fill="none" stroke="none"/>
+</svg>
