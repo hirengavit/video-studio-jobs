@@ -1,0 +1,41 @@
+<section class="vs-scene" id="s225" data-section="PART 10 · INTERNET BANKING" data-series="POSB" data-in="wipe" data-in-dur="0.6" data-in-opts='{"from":"right"}'>
+<svg viewBox="0 0 1920 1080">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="browser">
+<use href="piece:browser-window" transform="translate(330 190) scale(1.4)"/>
+<!-- Replace the generic placeholders with two actual options and a heading. -->
+<rect x="400" y="355" width="1150" height="559" fill="#ffffff"/>
+<path d="M410 531H1510 M410 712H1510" stroke="#e2d8c7" stroke-width="3"/>
+<text id="address" x="565" y="264" font-family="Inter" font-size="40" font-weight="650" fill="#2b2622">Department of Posts Internet Banking</text>
+<text id="internet" x="548" y="425" font-family="Inter" font-size="60" font-weight="800" fill="#9e1b1b">Internet Banking</text>
+<text id="internet-hi" x="550" y="492" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="48" font-weight="650" fill="#6f6a63">इंटरनेट बैंकिंग</text>
+<g id="check-boxes" fill="#fbf7ee" stroke="#c7bda8" stroke-width="3">
+<rect x="421" y="588" width="67" height="67" rx="11"/><rect x="421" y="765" width="67" height="67" rx="11"/>
+</g>
+<text id="maturity" x="548" y="609" font-family="Inter" font-size="52" font-weight="750" fill="#2b2622">MIS closure</text>
+<text id="maturity-hi" x="550" y="672" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#6f6a63">परिपक्वता पर बंद करना</text>
+<text id="early" x="548" y="787" font-family="Inter" font-size="52" font-weight="750" fill="#2b2622">MIS premature closure</text>
+<text id="early-hi" x="550" y="850" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="44" font-weight="650" fill="#6f6a63">समय से पहले खाता बंद करना</text>
+<path id="check-1" d="M436 622l14 14 23-28" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="check-2" d="M436 799l14 14 23-28" fill="none" stroke="#2e7d4f" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="mis-pass">
+<use href="piece:passbook" transform="translate(1620 210) scale(.6)"/>
+<text x="1699" y="283" text-anchor="middle" font-family="Inter" font-size="31" font-weight="800" fill="#9e1b1b">MIS</text>
+</g>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+ [0.22,'pop','#mis-pass',{from:.78,spring:'snap'}],
+ [1.12,'words','#internet',{gap:.34,dist:10}],
+ [1.62,'fade','#internet-hi',{dur:.30}],
+ [3.22,'type','#address',{cps:18}],
+ [6.76,'fade','#maturity',{dur:.22}],[6.76,'draw','#check-1',{dur:.32}],
+ [7.26,'fade','#maturity-hi',{dur:.26}],
+ [7.90,'fade','#early',{dur:.22}],[7.90,'draw','#check-2',{dur:.32}],
+ [8.44,'fade','#early-hi',{dur:.26}]
+ ]
+}
+</script>
+</section>
