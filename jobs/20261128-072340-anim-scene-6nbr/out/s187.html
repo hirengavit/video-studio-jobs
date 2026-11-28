@@ -22,7 +22,7 @@
 <script type="text/scene">
 {
   update(t, section, $) {
-    $('#by-three').setAttribute('opacity', t < 3.52 ? 0 : Math.min(1, (t - 3.52) / .24));
+    $('#by-three')[0].setAttribute('opacity', t < 3.52 ? 0 : Math.min(1, (t - 3.52) / .24));
   },
   on: [
     [0.86, 'fade', '#deduction-slots', {dur: .35}],
