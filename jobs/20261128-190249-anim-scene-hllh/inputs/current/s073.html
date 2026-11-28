@@ -1,0 +1,51 @@
+<section class="vs-scene" id="s073" data-section="PART 4 · TD TAX BENEFIT" data-series="POSB" data-in="wipe" data-in-dur="0.6" data-in-opts='{"from":"right"}'>
+  <svg viewBox="0 0 1920 1080">
+    <rect width="1920" height="1080" fill="#fbf7ee"/>
+    <text x="160" y="250" font-family="Inter, sans-serif" font-size="96" font-weight="830" fill="#9e1b1b">Tax benefit</text>
+    <text id="tax-hi" x="160" y="319" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="55" font-weight="650" fill="#6f6a63">कर लाभ</text>
+    <path d="M154 768H1710" fill="none" stroke="#ead9a8" stroke-width="3" stroke-linecap="round"/>
+    <g id="term1">
+      <g id="book1"><use href="piece:td-passbook-white" transform="translate(216 455) scale(0.95)"/><text x="341.4" y="570" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="730" fill="#2b2622">TD · SB-5A</text></g>
+      
+      <text id="label1" x="330" y="407" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="780" fill="#2b2622">1 year · 1 साल</text>
+    </g>
+    <g id="term2">
+      <g id="book2"><use href="piece:td-passbook-white" transform="translate(616 455) scale(0.95)"/><text x="741.4" y="570" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="730" fill="#2b2622">TD · SB-5A</text></g>
+      
+      <text id="label2" x="730" y="407" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="780" fill="#2b2622">2 years</text>
+    </g>
+    <g id="term3">
+      <g id="book3"><use href="piece:td-passbook-white" transform="translate(1016 455) scale(0.95)"/><text x="1141.4" y="570" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="730" fill="#2b2622">TD · SB-5A</text></g>
+      
+      <text id="label3" x="1130" y="407" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="780" fill="#2b2622">3 years</text>
+    </g>
+    <g id="term4">
+      <g id="book4"><use href="piece:td-passbook-white" transform="translate(1416 455) scale(0.95)"/><text x="1541.4" y="570" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="730" fill="#2b2622">TD · SB-5A</text></g>
+      <rect id="selected" x="1385" y="354" width="290" height="76" rx="38" fill="#fde9a6"/>
+      <text id="label4" x="1530" y="407" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="51" font-weight="780" fill="#2b2622">5 years</text>
+    </g>
+    <g id="no1">
+      <rect x="161" y="824" width="338" height="102" rx="23" fill="#ffffff" stroke="#4b4f58" stroke-width="3"/>
+      <text x="311" y="885" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="680" fill="#4b4f58">Deduction नहीं</text>
+      <path id="cross1" d="M462 864l20 20m0 -20l-20 20" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g id="no2">
+      <rect x="561" y="824" width="338" height="102" rx="23" fill="#ffffff" stroke="#4b4f58" stroke-width="3"/>
+      <text x="711" y="885" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="680" fill="#4b4f58">Deduction नहीं</text>
+      <path id="cross2" d="M862 864l20 20m0 -20l-20 20" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g id="no3">
+      <rect x="961" y="824" width="338" height="102" rx="23" fill="#ffffff" stroke="#4b4f58" stroke-width="3"/>
+      <text x="1111" y="885" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="36" font-weight="680" fill="#4b4f58">Deduction नहीं</text>
+      <path id="cross3" d="M1262 864l20 20m0 -20l-20 20" fill="none" stroke="#4b4f58" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g id="yes">
+      <rect x="1361" y="820" width="338" height="110" rx="23" fill="#2e7d4f"/>
+      <text x="1530" y="865" text-anchor="middle" font-family="Inter, sans-serif" font-size="43" font-weight="780" fill="#fff">Deduction</text>
+      <text id="cut-hi" x="1530" y="910" text-anchor="middle" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="38" font-weight="630" fill="#fff">कटौती</text>
+    </g>
+  </svg>
+  <script type="text/scene">
+    {"on":[[0.7,"fade","#tax-hi",{"dur":0.27}],[1.86,"pop","#term1",{"from":0.94,"spring":"soft"}],[2.0100000000000002,"pop","#term2",{"from":0.94,"spring":"soft"}],[2.16,"pop","#term3",{"from":0.94,"spring":"soft"}],[2.31,"pop","#term4",{"from":0.94,"spring":"soft"}],[3.48,"fade","#selected",{"dur":0.24}],[3.48,"pulse","#book4",{"amount":0.065}],[6.04,"slide","#yes",{"from":"down","dist":36,"spring":"soft"}],[6.54,"fade","#cut-hi",{"dur":0.25}],[8.08,"color","#label1",{"to":"#6f6a63","dur":0.25}],[8.22,"color","#label2",{"to":"#6f6a63","dur":0.25}],[9.26,"color","#label3",{"to":"#6f6a63","dur":0.25}],[13.02,"fade","#no1",{"dur":0.22}],[13.14,"fade","#no2",{"dur":0.22}],[13.26,"fade","#no3",{"dur":0.22}],[13.84,"draw","#cross1",{"dur":0.25}],[13.92,"draw","#cross2",{"dur":0.25}],[14,"draw","#cross3",{"dur":0.25}]]}
+  </script>
+</section>
