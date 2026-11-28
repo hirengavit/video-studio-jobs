@@ -1,0 +1,45 @@
+<section class="vs-scene" id="s003" data-in="cut" data-section="INTRO · TD AND MIS" data-series="POSB">
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+<rect width="1920" height="1080" fill="#fbf7ee"/>
+<g id="money-board">
+<ellipse cx="520" cy="816" rx="265" ry="19" fill="#ead9a8" opacity=".50"/>
+<use id="bundle-actor" href="piece:rupee-note-bundle" transform="translate(264 500) scale(1.6)"/>
+<text id="deposit-caption" x="520" y="920" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" text-anchor="middle" fill="#2b2622">एक बार में जमा रकम</text>
+<text id="principal-caption" x="520" y="920" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="52" font-weight="700" text-anchor="middle" fill="#2b2622">शुरू में जमा रकम</text>
+<g id="interest-reveal"><g id="interest-actor">
+<use href="piece:rupee-coin" transform="translate(454 242) scale(1.1)"/>
+<text x="520" y="330" font-family="Inter, sans-serif" text-anchor="middle" font-weight="800" font-size="60" fill="#2b2622">₹</text>
+</g></g>
+<g id="interest-tag">
+<rect x="708" y="416" width="220" height="86" rx="34" fill="#fde9a6" stroke="#f2b705" stroke-width="3"/>
+<text id="interest-label" x="818" y="477" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#2b2622">ब्याज</text>
+</g>
+</g>
+<g id="term-panel">
+<rect x="1000" y="260" width="760" height="380" rx="12" fill="#9e1b1b"/>
+<g fill="#fbf7ee"><circle cx="1010" cy="260" r="9"/><circle cx="1010" cy="640" r="9"/><circle cx="1053.53" cy="260" r="9"/><circle cx="1053.53" cy="640" r="9"/><circle cx="1097.06" cy="260" r="9"/><circle cx="1097.06" cy="640" r="9"/><circle cx="1140.59" cy="260" r="9"/><circle cx="1140.59" cy="640" r="9"/><circle cx="1184.12" cy="260" r="9"/><circle cx="1184.12" cy="640" r="9"/><circle cx="1227.65" cy="260" r="9"/><circle cx="1227.65" cy="640" r="9"/><circle cx="1271.18" cy="260" r="9"/><circle cx="1271.18" cy="640" r="9"/><circle cx="1314.71" cy="260" r="9"/><circle cx="1314.71" cy="640" r="9"/><circle cx="1358.24" cy="260" r="9"/><circle cx="1358.24" cy="640" r="9"/><circle cx="1401.77" cy="260" r="9"/><circle cx="1401.77" cy="640" r="9"/><circle cx="1445.3" cy="260" r="9"/><circle cx="1445.3" cy="640" r="9"/><circle cx="1488.83" cy="260" r="9"/><circle cx="1488.83" cy="640" r="9"/><circle cx="1532.3600000000001" cy="260" r="9"/><circle cx="1532.3600000000001" cy="640" r="9"/><circle cx="1575.8899999999999" cy="260" r="9"/><circle cx="1575.8899999999999" cy="640" r="9"/><circle cx="1619.42" cy="260" r="9"/><circle cx="1619.42" cy="640" r="9"/><circle cx="1662.95" cy="260" r="9"/><circle cx="1662.95" cy="640" r="9"/><circle cx="1706.48" cy="260" r="9"/><circle cx="1706.48" cy="640" r="9"/><circle cx="1750.01" cy="260" r="9"/><circle cx="1750.01" cy="640" r="9"/><circle cx="1000" cy="300" r="9"/><circle cx="1760" cy="300" r="9"/><circle cx="1000" cy="343.4" r="9"/><circle cx="1760" cy="343.4" r="9"/><circle cx="1000" cy="386.8" r="9"/><circle cx="1760" cy="386.8" r="9"/><circle cx="1000" cy="430.2" r="9"/><circle cx="1760" cy="430.2" r="9"/><circle cx="1000" cy="473.6" r="9"/><circle cx="1760" cy="473.6" r="9"/><circle cx="1000" cy="517" r="9"/><circle cx="1760" cy="517" r="9"/><circle cx="1000" cy="560.4" r="9"/><circle cx="1760" cy="560.4" r="9"/><circle cx="1000" cy="603.8" r="9"/><circle cx="1760" cy="603.8" r="9"/></g>
+<rect x="1025" y="285" width="710" height="330" rx="12" fill="none" stroke="#b8403a" stroke-width="4"/>
+<text id="lump-en" x="1380" y="447" font-family="Inter" font-weight="800" font-size="96" text-anchor="middle" fill="#ffffff">Lump sum</text>
+<text id="principal-en" x="1380" y="447" font-family="Inter" font-weight="800" font-size="96" text-anchor="middle" fill="#ffffff">Principal</text>
+<text id="lump-hi" x="1380" y="548" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#fde9a6">एकमुश्त राशि</text>
+<text id="principal-hi" x="1380" y="548" font-family="'Noto Sans Devanagari', Inter, sans-serif" font-size="56" font-weight="700" text-anchor="middle" fill="#fde9a6">मूलधन</text>
+</g>
+</svg>
+<script type="text/scene">
+{
+ on:[
+  [2.22, 'pop', '#term-panel', {from:0.94,spring:'soft'}],
+  [2.27, 'type', '#lump-en', {cps:28}],
+  [2.72, 'fade', '#lump-hi', {dur:0.24}],
+  [6.34, 'swap', '#lump-en', {to:'#principal-en',dur:0.33,dist:19}],
+  [6.34, 'swap', '#deposit-caption', {to:'#principal-caption',dur:0.33,dist:19}],
+  [6.34, 'out', '#lump-hi', {dur:0.25,scale:1}],
+  [6.84, 'fade', '#principal-hi', {dur:0.24}],
+  [7.84, 'pulse', '#bundle-actor', {amount:0.07}],
+  [10.52, 'fade', '#interest-reveal', {dur:0.08}],
+  [10.52, 'fall', '#interest-actor', {onto:'#bundle-actor',bounce:0.11}],
+  [10.65, 'pop', '#interest-tag', {from:0.88,spring:'soft'}],
+ ]
+}
+</script>
+</section>
