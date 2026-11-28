@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<g stroke="#2b2622" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<g id="rear-sheets"><rect x="64" y="107" width="263" height="216" rx="8" fill="#ead9a8"/><rect x="73" y="96" width="263" height="216" rx="8" fill="#f3ead6"/></g>
+<g id="top-sheet"><rect x="83" y="83" width="263" height="216" rx="8" fill="#fbf7ee"/><path d="M104 131h166m-166 30h203m-203 29h179m-179 29h191m-191 29h118" fill="none" stroke="#6f6a63" stroke-opacity=".58"/></g>
+<g id="pencil"><path d="M124 248l158-153 21 22-158 153-30 6Z" fill="#f3ead6" /><path d="M282 95l14-14q8-7 15 0l10 10q7 7 0 15l-18 11Z" fill="#9e1b1b" /><path d="M115 276l30-6-21-22Z" fill="#ead9a8" /><path d="M115 276l7-20 13 16Z" fill="#2b2622" /></g>
+</g>
+<circle data-anchor="base" cx="200" cy="323" r="0"/>
+</svg>
